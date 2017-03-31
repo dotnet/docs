@@ -51,7 +51,7 @@ This sample demonstrates the syntax and features for C# delegates and events. Th
 
 **[Expression Trees](../csharp/expression-trees.md)**
 
-This sample demonstrates the use of Expression Trees to solve problems. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/csharp/expression-trees) is available in the dotnet/docs repository on GitHub.
+This sample demonstrates many of the problems that can be solved by using Expression Trees. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/csharp/expression-trees) is available in the dotnet/docs repository on GitHub.
 
 **LINQ Samples**
 
@@ -95,12 +95,16 @@ This tutorial demonstrates how to deploy an existing console app in a Windows co
 
 ## Viewing or downloading samples
 
-Many topics show source code and samples that are available for viewing or download from GitHub. To locally view or obtain the code mentioned in a topic, follow these instructions:
+Many topics show source code and samples that are available for viewing or download from GitHub. To view the sample, follow the sample link to the sample folder at the dotnet/docs repository on GitHub. To obtain the code for the sample mentioned in a topic, follow these instructions:
 
-1. Either fork, clone, or download a ZIP of the dotnet/docs repository.
+1. Obtain the dotnet/docs repository for your local system by performing one of the following:
+   * [Fork](https://help.github.com/articles/fork-a-repo/) the dotnet/docs repository and [clone](https://help.github.com/articles/cloning-a-repository/) your fork locally.
+   * Clone the dotnet/docs GitHub repository locally.
+   * Download a ZIP of the dotnet/docs repository to your local system. Un-ZIP the compressed archive.
 1. Navigate within the repository to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample in the topic.
 1. If you intend to run the sample code locally and prefer to run it from a different location on your system, copy the sample's files and folders to your preferred location.
 1. To run a sample, you have several options:
-   * [dotnet CLI tools](../tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
-   * [Visual Studio](https://www.visualstudio.com/) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project's *.csproj* file.
-   * [Visual Studio Code](https://code.visualstudio.com/): Open the sample by selecting **File > Open Folder** from the menu bar and selecting the sample's project folder.
+   * Use the [dotnet CLI tools](../tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
+   * Use [Visual Studio](https://www.visualstudio.com/) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project's *.csproj* file.
+   * Use [Visual Studio Code](https://code.visualstudio.com/): Open the sample by selecting **File > Open Folder** from the menu bar and selecting the sample's project folder.
+   * Use a different IDE that supports .NET Core projects.

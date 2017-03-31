@@ -56,8 +56,8 @@
   
  The next example shows a more complicated and complete project that uses the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class to save and restore the state of an object by using JSON serialization. This code uses a custom converter that is provided for the <xref:System.Web.Script.Serialization.JavaScriptConverter> class.  
   
- [!code-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]
- [!code-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Serialization#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization/CS/Default.aspx#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Serialization#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization/VB/Default.aspx#4)]  -->  
   
  ]]></format>
     </remarks>

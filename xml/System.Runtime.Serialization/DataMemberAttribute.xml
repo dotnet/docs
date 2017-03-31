@@ -42,7 +42,7 @@
 > [!NOTE]
 >  Properties to which the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute has been applied must have both `get` and `set` fields; they cannot be `get`-only or `set`-only.  
   
- For more information about data contracts and data members, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md). For more information about member names, see [Data Member Default Values](../Topic/Data%20Member%20Default%20Values.md).  
+ For more information about data contracts and data members, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md). For more information about member names, see [Data Member Default Values](~/docs/framework/wcf/feature-details/data-member-default-values.md).  
   
    
   
@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property is used for ensuring compatibility with future versions of a type. For more information, see [Data Contract Versioning](../Topic/Data%20Contract%20Versioning.md) and [Best Practices: Data Contract Versioning](../Topic/Best%20Practices:%20Data%20Contract%20Versioning.md).  
+ The property is used for ensuring compatibility with future versions of a type. For more information, see [Data Contract Versioning](~/docs/framework/wcf/feature-details/data-contract-versioning.md) and [Best Practices: Data Contract Versioning](~/docs/framework/wcf/best-practices-data-contract-versioning.md).  
   
  ]]></format>
         </remarks>
@@ -253,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a type requires that one member be serialized or deserialized before another, use this property to specify the order. For more information, see [Data Member Order](../Topic/Data%20Member%20Order.md).  
+ If a type requires that one member be serialized or deserialized before another, use this property to specify the order. For more information, see [Data Member Order](~/docs/framework/wcf/feature-details/data-member-order.md).  
   
  ]]></format>
         </remarks>

@@ -43,10 +43,10 @@
 > [!NOTE]
 >  If your primary interest is to validate a string by determining whether it conforms to a particular pattern, you can use the <xref:System.Configuration.RegexStringValidator?displayProperty=fullName> class.  
   
- To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.  
+ To use regular expressions, you define the pattern that you want to identify in a text stream by using the syntax documented in [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). Next, you can optionally instantiate a <xref:System.Text.RegularExpressions.Regex> object. Finally, you call a method that performs some operation, such as replacing text that matches the regular expression pattern, or identifying a pattern match.  
   
 > [!NOTE]
->  For some common regular expression patterns, see [Regular Expression Examples](../Topic/Regular%20Expression%20Examples.md). There are also a number of online libraries of regular expression patterns, such as the one at [Regular-Expressions.info](http://www.regular-expressions.info/examples.html).  
+>  For some common regular expression patterns, see [Regular Expression Examples](~/docs/standard/base-types/regular-expression-examples.md). There are also a number of online libraries of regular expression patterns, such as the one at [Regular-Expressions.info](http://www.regular-expressions.info/examples.html).  
   
 <a name="remarks"></a> For more information about using the <xref:System.Text.RegularExpressions.Regex> class, see the following sections in this topic:  
   
@@ -58,14 +58,14 @@
   
 -   [Defining a Time-Out Value](#define_timeout)  
   
- For more information about the regular expression language, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md) or download and print one of these brochures:  
+ For more information about the regular expression language, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md) or download and print one of these brochures:  
   
  [Quick Reference in Word (.docx) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
  [Quick Reference in PDF (.pdf) format](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)  
   
 <a name="regex_vs_string"></a>   
 ## Regex vs. String Methods  
- The <xref:System.String?displayProperty=fullName> class includes several search and comparison methods that you can use to perform pattern matching with text. For example, the <xref:System.String.Contains%2A?displayProperty=fullName>, <xref:System.String.EndsWith%2A?displayProperty=fullName>, and <xref:System.String.StartsWith%2A?displayProperty=fullName> methods determine whether a string instance contains a specified substring; and the <xref:System.String.IndexOf%2A?displayProperty=fullName>, <xref:System.String.IndexOfAny%2A?displayProperty=fullName>, <xref:System.String.LastIndexOf%2A?displayProperty=fullName>, and <xref:System.String.LastIndexOfAny%2A?displayProperty=fullName> methods return the starting position of a specified substring in a string. Use the methods of the <xref:System.String?displayProperty=fullName> class when you are searching for a specific string. Use the <xref:System.Text.RegularExpressions.Regex> class when you are searching for a specific pattern in a string. For more information and examples, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md).  
+ The <xref:System.String?displayProperty=fullName> class includes several search and comparison methods that you can use to perform pattern matching with text. For example, the <xref:System.String.Contains%2A?displayProperty=fullName>, <xref:System.String.EndsWith%2A?displayProperty=fullName>, and <xref:System.String.StartsWith%2A?displayProperty=fullName> methods determine whether a string instance contains a specified substring; and the <xref:System.String.IndexOf%2A?displayProperty=fullName>, <xref:System.String.IndexOfAny%2A?displayProperty=fullName>, <xref:System.String.LastIndexOf%2A?displayProperty=fullName>, and <xref:System.String.LastIndexOfAny%2A?displayProperty=fullName> methods return the starting position of a specified substring in a string. Use the methods of the <xref:System.String?displayProperty=fullName> class when you are searching for a specific string. Use the <xref:System.Text.RegularExpressions.Regex> class when you are searching for a specific pattern in a string. For more information and examples, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
  [Back to Remarks](#remarks)  
   
@@ -126,7 +126,7 @@
   
 <a name="define_timeout"></a>   
 ## Defining a Time-Out Value  
- The .NET Framework supports a full-featured regular expression language that provides substantial power and flexibility in pattern matching. However, the power and flexibility come at a cost: the risk of poor performance. Regular expressions that perform poorly are surprisingly easy to create. In some cases, regular expression operations that rely on excessive backtracking can appear to stop responding when they process text that nearly matches the regular expression pattern. For more information about the .NET Framework regular expression engine, see [Details of Regular Expression Behavior](../Topic/Details%20of%20Regular%20Expression%20Behavior.md). For more information about excessive backtracking, see [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md).  
+ The .NET Framework supports a full-featured regular expression language that provides substantial power and flexibility in pattern matching. However, the power and flexibility come at a cost: the risk of poor performance. Regular expressions that perform poorly are surprisingly easy to create. In some cases, regular expression operations that rely on excessive backtracking can appear to stop responding when they process text that nearly matches the regular expression pattern. For more information about the .NET Framework regular expression engine, see [Details of Regular Expression Behavior](~/docs/standard/base-types/details-of-regular-expression-behavior.md). For more information about excessive backtracking, see [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md).  
   
  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can define a time-out interval for regular expression matches. If the regular expression engine cannot identify a match within this time interval, the matching operation throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. In most cases, this prevents the regular expression engine from wasting processing power by trying to match text that nearly matches the regular expression pattern. It also could indicate, however, that the timeout interval has been set too low, or that the current machine load has caused an overall degradation in performance.  
   
@@ -139,7 +139,7 @@
 -   By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.  
   
 > [!IMPORTANT]
->  We recommend that you set a time-out value in all regular expression pattern-matching operations. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md).  
+>  We recommend that you set a time-out value in all regular expression pattern-matching operations. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md).  
   
  [Back to Remarks](#remarks)  
   
@@ -185,7 +185,7 @@
   
  ]]></format>
     </remarks>
-    <threadsafe>The <see cref="T:System.Text.RegularExpressions.Regex" /> class is immutable (read-only) and thread safe. <see cref="T:System.Text.RegularExpressions.Regex" /> objects can be created on any thread and shared between threads. For more information, see [Thread Safety](../Topic/Thread%20Safety%20in%20Regular%20Expressions.md).</threadsafe>
+    <threadsafe>The <see cref="T:System.Text.RegularExpressions.Regex" /> class is immutable (read-only) and thread safe. <see cref="T:System.Text.RegularExpressions.Regex" /> objects can be created on any thread and shared between threads. For more information, see [Thread Safety](~/docs/standard/base-types/thread-safety-in-regular-expressions.md).</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -253,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md) topics.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md) topics.  
   
  Calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%29> constructor is equivalent to calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29> constructor with a value of <xref:System.Text.RegularExpressions.RegexOptions> for the `options` argument.  
   
@@ -343,7 +343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md) topics.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md) topics.  
   
  A <xref:System.Text.RegularExpressions.Regex> object is immutable, which means that it can be used only for the match parameters you define when you create it. However, it can be used any number of times without being recompiled.  
   
@@ -404,7 +404,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md) topics.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md) topics.  
   
  A <xref:System.Text.RegularExpressions.Regex> object is immutable, which means that it can be used only for the match pattern that you define when you create it. However, it can be used any number of times without being recompiled.  
   
@@ -422,7 +422,7 @@
   
 -   <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=fullName>  
   
- Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md) and [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md). To set a reasonable time-out interval, consider the following factors:  
+ Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). To set a reasonable time-out interval, consider the following factors:  
   
 -   The length and complexity of the regular expression pattern. Longer and more complex regular expressions require more time than shorter and simpler ones.  
   
@@ -1137,7 +1137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A regular expression pattern may contain either named or numbered capturing groups, which delineate subexpressions within a pattern match. Numbered groups are delimited by the syntax (*subexpression*) and are assigned numbers based on their order in the regular expression. Named groups are delimited by the syntax (?`<`*name*`>`*subexpression*) or (?'*name*'*subexpression*), where *name* is the name by which the subexpression will be identified. (For more information, see [Grouping Constructs](../Topic/Grouping%20Constructs%20in%20Regular%20Expressions.md).) The <xref:System.Text.RegularExpressions.Regex.GroupNameFromNumber%2A> method identifies both named groups and numbered groups by their ordinal positions in the regular expression. Ordinal position zero always represents the entire regular expression. All numbered groups are then counted before named groups, regardless of their actual position in the regular expression pattern.  
+ A regular expression pattern may contain either named or numbered capturing groups, which delineate subexpressions within a pattern match. Numbered groups are delimited by the syntax (*subexpression*) and are assigned numbers based on their order in the regular expression. Named groups are delimited by the syntax (?`<`*name*`>`*subexpression*) or (?'*name*'*subexpression*), where *name* is the name by which the subexpression will be identified. (For more information, see [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md).) The <xref:System.Text.RegularExpressions.Regex.GroupNameFromNumber%2A> method identifies both named groups and numbered groups by their ordinal positions in the regular expression. Ordinal position zero always represents the entire regular expression. All numbered groups are then counted before named groups, regardless of their actual position in the regular expression pattern.  
   
  If `i` is the number of a named group, the method returns the name of the group. If `i` is the number of an unnamed group, the method returns the string representation of the number. For example, if `i` is 1, the method returns "1". If `i` is not the number of a capturing group, the method returns <xref:System.String?displayProperty=fullName>.  
   
@@ -1203,7 +1203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A regular expression pattern may contain either named or numbered capturing groups, which delineate subexpressions within a pattern match. Numbered groups are delimited by the syntax (*subexpression*) and are assigned numbers based on their order in the regular expression. Named groups are delimited by the syntax (?`<`*name*`>`*subexpression*) or (?'*name*'*subexpression*), where *name* is the name by which the subexpression will be identified. (For more information, see [Grouping Constructs](../Topic/Grouping%20Constructs%20in%20Regular%20Expressions.md).) The <xref:System.Text.RegularExpressions.Regex.GroupNumberFromName%2A> method identifies both named groups and numbered groups by their ordinal positions in the regular expression. Ordinal position zero always represents the entire regular expression. All numbered groups are then counted before named groups, regardless of their actual position in the regular expression pattern.  
+ A regular expression pattern may contain either named or numbered capturing groups, which delineate subexpressions within a pattern match. Numbered groups are delimited by the syntax (*subexpression*) and are assigned numbers based on their order in the regular expression. Named groups are delimited by the syntax (?`<`*name*`>`*subexpression*) or (?'*name*'*subexpression*), where *name* is the name by which the subexpression will be identified. (For more information, see [Grouping Constructs](~/docs/standard/base-types/grouping-constructs-in-regular-expressions.md).) The <xref:System.Text.RegularExpressions.Regex.GroupNumberFromName%2A> method identifies both named groups and numbered groups by their ordinal positions in the regular expression. Ordinal position zero always represents the entire regular expression. All numbered groups are then counted before named groups, regardless of their actual position in the regular expression pattern.  
   
  If `name` is the string representation of a group number that is present in the regular expression pattern, the method returns that number. If `name` corresponds to a named capturing group that is present in the regular expression pattern, the method returns its corresponding number. The comparison of `name` with the group name is case-sensitive. If `name` does not correspond to the name of a capturing group or to the string representation of the number of a capturing group, the method returns -1.  
   
@@ -1248,7 +1248,7 @@
 > [!WARNING]
 >  Setting the regular expression engine's time-out value to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout> can cause regular expressions that rely on excessive backtracking to appear to stop responding when processing text that nearly matches the regular expression pattern. If you disable time-outs, you should ensure that your regular expression does not rely on excessive backtracking and that it handles text that nearly matches the regular expression pattern.  
 >   
->  For more information about handling backtracking, see [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md).  
+>  For more information about handling backtracking, see [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout> constant can be supplied as the value of the `matchTimeout` argument of the following members:  
   
@@ -1528,7 +1528,7 @@
   
  The static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%29> method is equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the regular expression pattern specified by `pattern` and calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%29> instance method. This regular expression pattern is cached for rapid retrieval by the regular expression engine.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the matching operation exceeds the time-out interval specified for the application domain in which the method is called. If no time-out is defined in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown.  
   
@@ -1615,7 +1615,7 @@
   
  The static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> method is equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the regular expression pattern specified by `pattern` and the regular expression options specified by `options` and calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%29> instance method. This regular expression pattern is cached for rapid retrieval by the regular expression engine.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the matching operation exceeds the time-out interval specified for the application domain in which the method is called. If no time-out is defined in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown.  
   
@@ -1714,9 +1714,9 @@
   
  The static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> method is equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the regular expression pattern specified by `pattern` and the regular expression options specified by `options` and calling the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%29> instance method. This regular expression pattern is cached for rapid retrieval by the regular expression engine.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md) and [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
+ The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
   
    
   
@@ -1812,7 +1812,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  You can determine whether the regular expression pattern has been found in the input string by checking the value of the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Group.Success%2A> property. If a match is found, the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Capture.Value%2A> property contains the substring from `input` that matches the regular expression pattern. If no match is found, its value is <xref:System.String.Empty?displayProperty=fullName>.  
   
@@ -1881,9 +1881,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29> method returns the first substring that matches a regular expression pattern, starting at or after the `startat` character position, in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29> method returns the first substring that matches a regular expression pattern, starting at or after the `startat` character position, in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  You can optionally specify a starting position in the string by using the `startat` parameter. When the regular expression engine parses from left to right (the default), the match and the scan move rightward, starting at the character specified in `startat`. When the regular expression engine parses from right to left (when the regular expression pattern is constructed with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option), the match and scan move in the opposite direction and begin with the character at `startat` -1. If you do not specify a starting position, the search begins at the default `startat` position. If the regular expression searches from left to right, the default `startat` position is at the left end of `input`; if it searches from right to left, the default `startat` position is at the right end of `input`.  
   
@@ -1941,11 +1941,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The static <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29> method is equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance <xref:System.Text.RegularExpressions.Regex.Match%28System.String%29> method. In this case, the regular expression engine caches the regular expression pattern.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  You can determine whether the regular expression pattern has been found in the input string by checking the value of the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Group.Success%2A> property. If a match is found, the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Capture.Value%2A> property contains the substring from `input` that matches the regular expression pattern. If no match is found, its value is <xref:System.String.Empty?displayProperty=fullName>.  
   
@@ -2021,9 +2021,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method returns the first substring that matches a regular expression pattern in a portion of an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method returns the first substring that matches a regular expression pattern in a portion of an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches the portion of `input` defined by the `beginning` and `length` parameters for the regular expression pattern. `beginning` always defines the index of the leftmost character to include in the search, and `length` defines the maximum number of characters to search. Together, they define the range of the search. If the search proceeds from left to right (the default), the regular expression engine searches from the character at index `beginning` to the character at index `beginning``+``length``– 1`. If the regular expression engine was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the search proceeds from right to left, the regular expression engine searches from the character at index `beginning``+``length``– 1` to the character at index `beginning`. This method returns the first match that it finds within this range. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=fullName> method.  
   
@@ -2087,11 +2087,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The static <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> method is equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29> constructor and calling the instance <xref:System.Text.RegularExpressions.Regex.Match%28System.String%29> method.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  You can determine whether the regular expression pattern has been found in the input string by checking the value of the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Group.Success%2A> property. If a match is found, the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Capture.Value%2A> property contains the substring from `input` that matches the regular expression pattern. If no match is found, its value is <xref:System.String.Empty?displayProperty=fullName>.  
   
@@ -2170,17 +2170,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> method returns the first substring that matches a regular expression pattern in an input string. For information about the language elements used to build a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The static <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> method is equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29> constructor and calling the instance <xref:System.Text.RegularExpressions.Regex.Match%28System.String%29> method.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  You can determine whether the regular expression pattern has been found in the input string by checking the value of the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Group.Success%2A> property. If a match is found, the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Capture.Value%2A> property contains the substring from `input` that matches the regular expression pattern. If no match is found, its value is <xref:System.String.Empty?displayProperty=fullName>.  
   
  This method returns the first substring found in `input` that matches the regular expression pattern. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A> method. You can also retrieve all matches in a single method call by calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method.  
   
- The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md) and [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
+ The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
   
  ]]></format>
         </remarks>
@@ -2247,7 +2247,7 @@
   
  The collection includes only matches and terminates at the first non-match.  
   
- The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
   
@@ -2318,7 +2318,7 @@
  [!code-csharp[System.Text.RegularExpressions.Regex.Matches#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.matches/cs/matchespattern.cs#6)]
  [!code-vb[System.Text.RegularExpressions.Regex.Matches#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.matches/vb/matchespattern.vb#6)]  
   
- The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
   
@@ -2393,7 +2393,7 @@
   
  The static `Matches` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Matches`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
   
@@ -2472,7 +2472,7 @@
   
  The static `Matches` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Matches`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
   
@@ -2555,7 +2555,7 @@
   
  The static `Matches` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Matches`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
   
@@ -2631,7 +2631,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A> property defines the approximate maximum time interval for a <xref:System.Text.RegularExpressions.Regex> instance to execute a single matching operation before the operation times out. The regular expression engine throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception during its next timing check after the time-out interval has elapsed. This prevents the regular expression engine from processing input strings that require excessive backtracking. For more information, see [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md) and [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md).  
+ The <xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A> property defines the approximate maximum time interval for a <xref:System.Text.RegularExpressions.Regex> instance to execute a single matching operation before the operation times out. The regular expression engine throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception during its next timing check after the time-out interval has elapsed. This prevents the regular expression engine from processing input strings that require excessive backtracking. For more information, see [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md) and [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md).  
   
  This property is read-only. You can set its value explicitly for an individual <xref:System.Text.RegularExpressions.Regex> object by calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor; and you can set its value for all <xref:System.Text.RegularExpressions.Regex> matching operations in an application domain by calling the <xref:System.AppDomain.SetData%2A?displayProperty=fullName> method and providing a <xref:System.TimeSpan> value for the "REGEX_DEFAULT_MATCH_TIMEOUT" property, as the following example illustrates.  
   
@@ -2675,7 +2675,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Text.RegularExpressions.Regex.Options%2A> property consists of one or more members of the <xref:System.Text.RegularExpressions.RegexOptions> enumeration. If no options were defined in the <xref:System.Text.RegularExpressions.Regex> class constructor, its value is <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>. The available options are discussed in detail in the [Regular Expression Options](../Topic/Regular%20Expression%20Options.md) topic.  
+ The value of the <xref:System.Text.RegularExpressions.Regex.Options%2A> property consists of one or more members of the <xref:System.Text.RegularExpressions.RegexOptions> enumeration. If no options were defined in the <xref:System.Text.RegularExpressions.Regex> class constructor, its value is <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>. The available options are discussed in detail in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.  
   
  Note that the <xref:System.Text.RegularExpressions.Regex.Options%2A> property does not reflect inline options defined in the regular expression pattern itself.  
   
@@ -2753,10 +2753,10 @@
 ## Remarks  
  The search for matches starts at the beginning of the `input` string. The regular expression is the pattern defined by the constructor for the current <xref:System.Text.RegularExpressions.Regex> object.  
   
- The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
+ The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
 > [!NOTE]
->  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
+>  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the replacement operation exceeds the time-out interval specified by the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor. If you do not set a time-out interval when you call the constructor, the exception is thrown if the operation exceeds any time-out value established for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. If no time-out is defined in the <xref:System.Text.RegularExpressions.Regex> constructor call or in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown  
   
@@ -2911,10 +2911,10 @@
 ## Remarks  
  The search for matches starts at the beginning of the `input` string. The regular expression is the pattern that is defined by the constructor for the current <xref:System.Text.RegularExpressions.Regex> object. If `count` is negative, replacements continue to the end of the string. If `count` exceeds the number of matches, all matches are replaced.  
   
- The `replacement` parameter specifies the string that is to replace the first `count` matches in `input`. `replacement` can consist of any combination of literal text and [substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
+ The `replacement` parameter specifies the string that is to replace the first `count` matches in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
 > [!NOTE]
->  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
+>  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the replacement operation exceeds the time-out interval specified by the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor. If you do not set a time-out interval when you call the constructor, the exception is thrown if the operation exceeds any time-out value established for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. If no time-out is defined in the <xref:System.Text.RegularExpressions.Regex> constructor call or in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown  
   
@@ -2976,12 +2976,12 @@
 ## Remarks  
  The static `Replace` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Replace`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md). The search for matches starts at the beginning of the `input` string.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). The search for matches starts at the beginning of the `input` string.  
   
- The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
+ The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
 > [!NOTE]
->  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
+>  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the replacement operation exceeds the time-out interval specified for the application domain in which the method is called. If no time-out is defined in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown.  
   
@@ -3077,7 +3077,7 @@
   
  The method is equivalent to calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method and passing each <xref:System.Text.RegularExpressions.Match> object in the returned <xref:System.Text.RegularExpressions.MatchCollection> collection to the `evaluator` delegate.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The `evaluator` parameter is the delegate for a custom method that you define and that examines each match. The custom method must have the following signature to match the <xref:System.Text.RegularExpressions.MatchEvaluator> delegate.  
   
@@ -3239,10 +3239,10 @@
 ## Remarks  
  The search for matches starts in the `input` string at the position specified by the `startat` parameter. The regular expression is the pattern defined by the constructor for the current <xref:System.Text.RegularExpressions.Regex> object. If `count` is negative, replacements continue to the end of the string. If `count` exceeds the number of matches, all matches are replaced.  
   
- The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
+ The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
 > [!NOTE]
->  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
+>  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the replacement operation exceeds the time-out interval specified by the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.TimeSpan%29?displayProperty=fullName> constructor. If you do not set a time-out interval when you call the constructor, the exception is thrown if the operation exceeds any time-out value established for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. If no time-out is defined in the <xref:System.Text.RegularExpressions.Regex> constructor call or in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown  
   
@@ -3318,12 +3318,12 @@
 ## Remarks  
  The static `Replace` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Replace`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
- The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
+ The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
 > [!NOTE]
->  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
+>  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the replacement operation exceeds the time-out interval specified for the application domain in which the method is called. If no time-out is defined in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown.  
   
@@ -3418,7 +3418,7 @@
   
  The method is equivalent to calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method and passing each <xref:System.Text.RegularExpressions.Match> object in the returned <xref:System.Text.RegularExpressions.MatchCollection> collection to the `evaluator` delegate.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The `evaluator` parameter is the delegate for a custom method that you define and that examines each match. The custom method must have the following signature to match the <xref:System.Text.RegularExpressions.MatchEvaluator> delegate.  
   
@@ -3569,14 +3569,14 @@
 ## Remarks  
  The static `Replace` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Replace`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
- The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
+ The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
 > [!NOTE]
->  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
+>  Substitutions are the only regular expression language elements that are recognized in a replacement pattern. All other regular expression language elements, including [character escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md), are allowed in regular expression patterns only and are not recognized in replacement patterns.  
   
- The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md) and [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
+ The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
   
  Because the method returns `input` unchanged if there is no match, you can use the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method to determine whether the method has made any replacements to the input string.  
   
@@ -3681,7 +3681,7 @@
   
  The method is equivalent to calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method and passing each <xref:System.Text.RegularExpressions.Match> object in the returned <xref:System.Text.RegularExpressions.MatchCollection> collection to the `evaluator` delegate.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  The `evaluator` parameter is the delegate for a custom method that you define and that examines each match. The custom method must have the following signature to match the <xref:System.Text.RegularExpressions.MatchEvaluator> delegate.  
   
@@ -3692,7 +3692,7 @@
   
  If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
- The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to "stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md) and [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
+ The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to "stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
   
  Because the method returns `input` unchanged if there is no match, you can use the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method to determine whether the method has made any replacements to the input string.  
   
@@ -3971,7 +3971,7 @@
 ## Remarks  
  The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the <xref:System.String.Split%2A?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The `input` string is split as many times as possible. If `pattern` is not found in the `input` string, the return value contains one element whose value is the original `input` string.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
 > [!IMPORTANT]
 >  Compiled regular expressions used in calls to static <xref:System.Text.RegularExpressions.Regex.Split%2A> methods are automatically cached. To manage the lifetime of compiled regular expressions yourself, use the instance <xref:System.Text.RegularExpressions.Regex.Split%2A> methods.  
@@ -4130,7 +4130,7 @@
 ## Remarks  
  The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the [String.Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original `input` string.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
 > [!IMPORTANT]
 >  Compiled regular expressions used in calls to static <xref:System.Text.RegularExpressions.Regex.Split%2A> methods are automatically cached. To manage the lifetime of compiled regular expressions yourself, use the instance <xref:System.Text.RegularExpressions.Regex.Split%2A> methods.  
@@ -4212,7 +4212,7 @@
 ## Remarks  
  The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the [String.Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original `input` string.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
 > [!IMPORTANT]
 >  Compiled regular expressions used in calls to static <xref:System.Text.RegularExpressions.Regex.Split%2A> methods are automatically cached. To manage the lifetime of compiled regular expressions yourself, use the instance <xref:System.Text.RegularExpressions.Regex.Split%2A> methods.  
@@ -4236,7 +4236,7 @@
   
  If the regular expression can match the empty string, <xref:System.Text.RegularExpressions.Regex.Split%2A> will split the string into an array of single-character strings because the empty string delimiter can be found at every location.  
   
- The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](../Topic/Best%20Practices%20for%20Regular%20Expressions%20in%20the%20.NET%20Framework.md) and [Backtracking](../Topic/Backtracking%20in%20Regular%20Expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
+ The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
   
  ]]></format>
         </remarks>
@@ -4321,7 +4321,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md) and [Regular Expression Language - Quick Reference](../Topic/Regular%20Expression%20Language%20-%20Quick%20Reference.md).  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
  ]]></format>
         </remarks>

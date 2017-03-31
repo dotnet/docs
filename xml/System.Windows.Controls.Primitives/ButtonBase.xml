@@ -224,7 +224,7 @@
 ## Remarks  
  This property is used to associate a command with a particular button instance.  
   
- In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], this property is most often set to be a static command value from one of the existing command libraries, such as <xref:System.Windows.Input.ApplicationCommands> or <xref:System.Windows.Input.NavigationCommands>. For details, see [Commanding Overview](../Topic/Commanding%20Overview.md) or <xref:System.Windows.Input.ICommand>.  
+ In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], this property is most often set to be a static command value from one of the existing command libraries, such as <xref:System.Windows.Input.ApplicationCommands> or <xref:System.Windows.Input.NavigationCommands>. For details, see [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md) or <xref:System.Windows.Input.ICommand>.  
   
 <a name="xamlAttributeUsage_Command"></a>   
 ## XAML Attribute Usage  
@@ -280,7 +280,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Most existing commands from the command libraries do not use a command parameter. Of the commands that do use a command parameter, most of these take a parameter with some primitive type value, such as an integer or a string. However, it is possible to create a custom command where that command expects a nonprimitive type as its command parameter. For a custom command case like this, setting <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> in code might require a new or existing object instance. Setting <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> in markup might require property element syntax, where the object element filling the property element syntax is a new element of the type expected by that command. Alternatively, setting in markup might require a reference through a markup extension to an existing object (typically these references are made with [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) or [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md)).  
+ Most existing commands from the command libraries do not use a command parameter. Of the commands that do use a command parameter, most of these take a parameter with some primitive type value, such as an integer or a string. However, it is possible to create a custom command where that command expects a nonprimitive type as its command parameter. For a custom command case like this, setting <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> in code might require a new or existing object instance. Setting <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> in markup might require property element syntax, where the object element filling the property element syntax is a new element of the type expected by that command. Alternatively, setting in markup might require a reference through a markup extension to an existing object (typically these references are made with [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) or [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md)).  
   
 <a name="xamlAttributeUsage_CommandParameter"></a>   
 ## XAML Attribute Usage  
@@ -469,7 +469,7 @@
 ## Remarks  
  <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is the state of a button that indicates the left mouse button or SPACEBAR is pressed over the button. When <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`, the control captures the mouse.  As a result, the control will raise mouse events such as <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.IsMouseDirectlyOverChanged>. Note that using the <xref:System.Windows.Controls.AccessText> or ENTER does not change <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> or capture the mouse, but is does raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
- Starting with the .NET Framework version 3.0 Service Pack 1, <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ Starting with the .NET Framework version 3.0 Service Pack 1, <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 <a name="dependencyPropertyInfo_IsPressed"></a>   
 ## Dependency Property Information  
@@ -554,7 +554,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ The control raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>

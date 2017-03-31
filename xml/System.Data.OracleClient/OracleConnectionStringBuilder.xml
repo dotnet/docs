@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
   
  The connection string builders allow developers to programmatically create syntactically correct connection strings, and to parse and rebuild existing connection strings, using properties and methods of the class. The connection string builder provides strongly typed properties corresponding to the known key/value pairs allowed by Oracle. The <xref:System.Data.OracleClient.OracleConnectionStringBuilder> class implements the <xref:System.ComponentModel.ICustomTypeDescriptor> interface. This means that the class works with Visual Studio .NET designers at design time. When developers use the designer to build strongly typed **DataSets** and strongly typed connections within Visual Studio .NET, the strongly typed connection string builder class will display the properties associated with its type and will also have converters that can map common values for known keys.  
   

@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCellStyle> class lets you share style information across multiple <xref:System.Windows.Forms.DataGridView> cells, rows, columns, and row or column headers, avoiding the memory requirements of setting style properties on individual cells. For more information about classes that have a property of type <xref:System.Windows.Forms.DataGridViewCellStyle> and how they relate to each other, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewCellStyle> class lets you share style information across multiple <xref:System.Windows.Forms.DataGridView> cells, rows, columns, and row or column headers, avoiding the memory requirements of setting style properties on individual cells. For more information about classes that have a property of type <xref:System.Windows.Forms.DataGridViewCellStyle> and how they relate to each other, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -355,7 +355,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property specifies how cell values are formatted as strings. For more information, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ The <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property specifies how cell values are formatted as strings. For more information, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -588,7 +588,7 @@
 ## Examples  
  The following code example illustrates the use of this property in a <xref:System.Windows.Forms.DataGridView> control that contains owner-drawn rows. Each row displays text that spans the entire width of the row underneath the regular cell content. The <xref:System.Windows.Forms.DataGridViewCellStyle.Padding%2A> property is used to provide the extra space for this text. In the example, the extra height required is stored in a constant called `CUSTOM_CONTENT_HEIGHT`.  
   
- This code example is part of a larger example. For the complete example, see [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code example is part of a larger example. For the complete example, see [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#10)]  

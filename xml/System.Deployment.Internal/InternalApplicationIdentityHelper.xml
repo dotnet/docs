@@ -39,7 +39,7 @@
       </Parameters>
       <Docs>
         <param name="id">The object from which to extract the identifier.</param>
-        <summary>Gets an [IDefinitionAppId Interface](../Topic/IDefinitionAppId%20Interface.md) representing the unique identifier of an <see cref="T:System.ApplicationIdentity" /> object.</summary>
+        <summary>Gets an [IDefinitionAppId Interface](~/docs/framework/unmanaged-api/fusion/idefinitionappid-interface.md) representing the unique identifier of an <see cref="T:System.ApplicationIdentity" /> object.</summary>
         <returns>The unique identifier held by the <see cref="T:System.ApplicationIdentity" /> object.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>

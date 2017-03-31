@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can chain a <xref:System.Windows.Media.Imaging.CroppedBitmap> to another <xref:System.Windows.Media.Imaging.BitmapSource> by setting the <xref:System.Windows.Media.Imaging.CroppedBitmap.Source%2A> property of the <xref:System.Windows.Media.Imaging.CroppedBitmap> to the appropriate <xref:System.Windows.Media.Imaging.BitmapSource>. For more information about chaining, see [How to: Chain BitmapSource Objects Together](../Topic/How%20to:%20Chain%20BitmapSource%20Objects%20Together.md).  
+ You can chain a <xref:System.Windows.Media.Imaging.CroppedBitmap> to another <xref:System.Windows.Media.Imaging.BitmapSource> by setting the <xref:System.Windows.Media.Imaging.CroppedBitmap.Source%2A> property of the <xref:System.Windows.Media.Imaging.CroppedBitmap> to the appropriate <xref:System.Windows.Media.Imaging.BitmapSource>. For more information about chaining, see [How to: Chain BitmapSource Objects Together](~/docs/framework/wpf/graphics-multimedia/how-to-chain-bitmapsource-objects-together.md).  
   
 <a name="dependencyPropertyInfo_Source"></a>   
 ## Dependency Property Information  

@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class when you have created a Web service that incorporates data represented by common language runtime (CLR) types and when you need to export XML schemas for each type to be consumed by other Web services. That is, <xref:System.Runtime.Serialization.XsdDataContractExporter> transforms a set of CLR types into XML schemas. (For more information about the types that can be used, see [Types Supported by the Data Contract Serializer](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md).) The schemas can then be exposed through a Web Services Description Language (WSDL) document for use by others who need to interoperate with your service.  
+ Use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class when you have created a Web service that incorporates data represented by common language runtime (CLR) types and when you need to export XML schemas for each type to be consumed by other Web services. That is, <xref:System.Runtime.Serialization.XsdDataContractExporter> transforms a set of CLR types into XML schemas. (For more information about the types that can be used, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).) The schemas can then be exposed through a Web Services Description Language (WSDL) document for use by others who need to interoperate with your service.  
   
  Conversely, if you are creating a Web service that must interoperate with an existing Web service, use the <xref:System.Runtime.Serialization.XsdDataContractImporter> to transform XML schemas and create the CLR types that represent the data in a selected programming language.  
   
@@ -439,7 +439,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Not all CLR types can be used in data contracts. For more information about what can be serialized, see [Types Supported by the Data Contract Serializer](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md).  
+ Not all CLR types can be used in data contracts. For more information about what can be serialized, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
  ]]></format>
         </remarks>

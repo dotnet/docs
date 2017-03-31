@@ -457,7 +457,7 @@
   
  The `isAnimationProhibited` parameter sets the initial value of the <xref:System.Windows.UIPropertyMetadata.IsAnimationProhibited%2A> property declared by the immediate base <xref:System.Windows.UIPropertyMetadata> class.  
   
- For more information about the update source behavior for bindings, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information about the update source behavior for bindings, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  Values marked as set flags in the `flags` parameter will set the Boolean value of <xref:System.Windows.FrameworkPropertyMetadata> properties that match that <xref:System.Windows.FrameworkPropertyMetadataOptions> flag's name to `true`. You can still change the values of the properties in the metadata, as long as the metadata has not yet been applied to a specific property system operation.  
   
@@ -784,7 +784,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Property value inheritance is a feature of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system at the WPF framework level, whereby certain dependency properties can be locally set on an element at or near the root of a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] element tree and then have their value inherited by all elements within the logical tree of child elements that also possess that property. Property value inheritance is not enabled by default, and enabling it does have some performance implications. For details, see [Property Value Inheritance](../Topic/Property%20Value%20Inheritance.md).  
+ Property value inheritance is a feature of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system at the WPF framework level, whereby certain dependency properties can be locally set on an element at or near the root of a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] element tree and then have their value inherited by all elements within the logical tree of child elements that also possess that property. Property value inheritance is not enabled by default, and enabling it does have some performance implications. For details, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
   
 > [!NOTE]
 >  Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain object-object divisions in the runtime tree is undefined. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata.  

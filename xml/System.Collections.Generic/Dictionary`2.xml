@@ -483,7 +483,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute an object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+ This constructor is called during deserialization to reconstitute an object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
   
  ]]></format>
         </remarks>
@@ -1853,7 +1853,7 @@ finally {
   
  You can also use the [IDictionary.Item\<xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the dictionary; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the dictionary, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
   
- The C# language uses the [this](../Topic/this%20\(C%23%20Reference\).md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.Dictionary%602.System%23Collections%23IDictionary%23Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.Dictionary%602.System%23Collections%23IDictionary%23Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.Dictionary%602.System%23Collections%23IDictionary%23Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.Dictionary%602.System%23Collections%23IDictionary%23Item%2A> as a default property, which provides the same indexing functionality.  
   
  Getting or setting the value of this property approaches an O(1) operation.  
   

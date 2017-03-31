@@ -732,7 +732,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event is raised on the server after the <xref:System.Web.UI.WebControls.AdRotator> control is created, but before the page is rendered. If the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is set, the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event is raised after an advertisement has been selected by the <xref:System.Web.UI.WebControls.AdRotator> control.  
   
- Raising an event invokes the event-handling method through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event-handling method through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   

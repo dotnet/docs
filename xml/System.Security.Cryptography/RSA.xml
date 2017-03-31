@@ -340,7 +340,7 @@
  Use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method to conveniently initialize <xref:System.Security.Cryptography.RSA> key information.  
   
 > [!CAUTION]
->  Persisting an XML string containing a private key to an insecure location is a security threat.  The security of your application can be compromised if a malicious third party can access your private key.  To safely persist a private key, use a secure key container.  For more information about persisting private keys in a key container, see [How to: Store Asymmetric Keys in a Key Container](../Topic/How%20to:%20Store%20Asymmetric%20Keys%20in%20a%20Key%20Container.md).  
+>  Persisting an XML string containing a private key to an insecure location is a security threat.  The security of your application can be compromised if a malicious third party can access your private key.  To safely persist a private key, use a secure key container.  For more information about persisting private keys in a key container, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
   
  ]]></format>
         </remarks>
@@ -723,7 +723,7 @@
  Use the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method whenever you need to conveniently persist RSA key information.  To initialize an <xref:System.Security.Cryptography.RSA> object with the key in an XML string, use the <xref:System.Security.Cryptography.RSA.FromXmlString%2A> method.  
   
 > [!CAUTION]
->  Persisting an XML string containing a private key to an insecure location is a security threat.  The security of your application can be compromised if a malicious third party can access your private key.  To safely persist a private key, use a secure key container.  For more information about persisting private keys in a key container, see [How to: Store Asymmetric Keys in a Key Container](../Topic/How%20to:%20Store%20Asymmetric%20Keys%20in%20a%20Key%20Container.md).  
+>  Persisting an XML string containing a private key to an insecure location is a security threat.  The security of your application can be compromised if a malicious third party can access your private key.  To safely persist a private key, use a secure key container.  For more information about persisting private keys in a key container, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
   
  When you pass `true` to the <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, the resulting XML string takes the following form:  
   

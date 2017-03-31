@@ -80,7 +80,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call the <xref:System.Windows.Forms.HtmlHistory.Dispose%2A> method when you are finished using the <xref:System.Windows.Forms.HtmlHistory> object. <xref:System.Windows.Forms.HtmlHistory.Dispose%2A> leaves the <xref:System.Windows.Forms.HtmlHistory> object in an unusable state. After calling <xref:System.Windows.Forms.HtmlHistory.Dispose%2A>, you must release all references to <xref:System.Windows.Forms.HtmlHistory> so the garbage collector can reclaim the memory that <xref:System.Windows.Forms.HtmlHistory> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ Call the <xref:System.Windows.Forms.HtmlHistory.Dispose%2A> method when you are finished using the <xref:System.Windows.Forms.HtmlHistory> object. <xref:System.Windows.Forms.HtmlHistory.Dispose%2A> leaves the <xref:System.Windows.Forms.HtmlHistory> object in an unusable state. After calling <xref:System.Windows.Forms.HtmlHistory.Dispose%2A>, you must release all references to <xref:System.Windows.Forms.HtmlHistory> so the garbage collector can reclaim the memory that <xref:System.Windows.Forms.HtmlHistory> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Windows.Forms.HtmlHistory.Dispose%2A> before you release your last reference to <xref:System.Windows.Forms.HtmlHistory>. Otherwise, the resources <xref:System.Windows.Forms.HtmlHistory> is using will not be freed until the garbage collector calls the object's `Finalize` method.  
@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You will need to add a reference to the unmanaged MSHTML.dll in order to use <xref:System.Windows.Forms.HtmlHistory.DomHistory%2A>. For more information, see [Importing a Type Library as an Assembly](../Topic/Importing%20a%20Type%20Library%20as%20an%20Assembly.md).  
+ You will need to add a reference to the unmanaged MSHTML.dll in order to use <xref:System.Windows.Forms.HtmlHistory.DomHistory%2A>. For more information, see [Importing a Type Library as an Assembly](~/docs/framework/interop/importing-a-type-library-as-an-assembly.md).  
   
  ]]></format>
         </remarks>

@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Registration is needed when the objects within an assembly are being used by COM clients. The [Regasm.exe (Assembly Registration Tool)](../Topic/Regasm.exe%20\(Assembly%20Registration%20Tool\).md) and [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)] use methods exposed by the <xref:System.Runtime.InteropServices.RegistrationServices> class to add or remove COM-enabling registry entries for managed assemblies.  
+ Registration is needed when the objects within an assembly are being used by COM clients. The [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) and [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)] use methods exposed by the <xref:System.Runtime.InteropServices.RegistrationServices> class to add or remove COM-enabling registry entries for managed assemblies.  
   
  You can use the following methods to assist you in preparing a registration file:  
   
@@ -43,7 +43,7 @@
   
 -   <xref:System.Runtime.InteropServices.RegistrationServices.TypeRepresentsComType%2A>  
   
- Although these methods help in gathering information to be used in a registration file, they do not actually produce a registration file. Instead, you can use the [Regasm.exe (Assembly Registration Tool)](../Topic/Regasm.exe%20\(Assembly%20Registration%20Tool\).md) tool with the `/regfile` option to perform this task. <xref:System.Runtime.InteropServices.RegistrationServices> methods cannot export and register a type library. To export and register a type library, you can use the [Regasm.exe (Assembly Registration Tool)](../Topic/Regasm.exe%20\(Assembly%20Registration%20Tool\).md) tool and the [Tlbexp.exe (Type Library Exporter)](../Topic/Tlbexp.exe%20\(Type%20Library%20Exporter\).md) tool.  
+ Although these methods help in gathering information to be used in a registration file, they do not actually produce a registration file. Instead, you can use the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool with the `/regfile` option to perform this task. <xref:System.Runtime.InteropServices.RegistrationServices> methods cannot export and register a type library. To export and register a type library, you can use the [Regasm.exe (Assembly Registration Tool)](~/docs/framework/tools/regasm-exe-assembly-registration-tool.md) tool and the [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) tool.  
   
  ]]></format>
     </remarks>

@@ -969,7 +969,7 @@
  When using Windows authentication, credentials used by the service are based on the current context thread. The credentials are obtained when the `Open` method is called.  
   
 > [!NOTE]
->  For asynchronous calls, credentials are captured when the <xref:System.ServiceModel.Channels.CommunicationObject.BeginOpen%2A> is invoked. However, the actual credentials cannot be guaranteed. That is, the credentials of the caller may be switched to another identity. For more information, see [Message Security with a Windows Client](../Topic/Message%20Security%20with%20a%20Windows%20Client.md).  
+>  For asynchronous calls, credentials are captured when the <xref:System.ServiceModel.Channels.CommunicationObject.BeginOpen%2A> is invoked. However, the actual credentials cannot be guaranteed. That is, the credentials of the caller may be switched to another identity. For more information, see [Message Security with a Windows Client](~/docs/framework/wcf/feature-details/message-security-with-a-windows-client.md).  
   
  ]]></format>
         </remarks>

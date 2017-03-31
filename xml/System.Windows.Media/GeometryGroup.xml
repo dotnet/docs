@@ -23,7 +23,7 @@
 ## Remarks  
  Composite geometry objects can be created using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or by calling the static <xref:System.Windows.Media.Geometry> method <xref:System.Windows.Media.Geometry.Combine%2A>. A <xref:System.Windows.Media.CombinedGeometry> creates a composite geometry from exactly two geometry objects. A <xref:System.Windows.Media.GeometryGroup>, on the other hand, creates a composite geometry from any number of geometry objects.  
   
- <xref:System.Windows.Media.GeometryGroup> uses the <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property to specify how its geometry objects are combined. See [How to: Control the Fill of a Composite Shape](../Topic/How%20to:%20Control%20the%20Fill%20of%20a%20Composite%20Shape.md) for more information on using <xref:System.Windows.Media.GeometryGroup.FillRule%2A>.  
+ <xref:System.Windows.Media.GeometryGroup> uses the <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property to specify how its geometry objects are combined. See [How to: Control the Fill of a Composite Shape](~/docs/framework/wpf/graphics-multimedia/how-to-control-the-fill-of-a-composite-shape.md) for more information on using <xref:System.Windows.Media.GeometryGroup.FillRule%2A>.  
   
  Geometries can be combined in several ways: using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or the <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class.  
   

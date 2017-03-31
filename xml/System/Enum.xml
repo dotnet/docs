@@ -144,7 +144,7 @@
   
 <a name="formatting"></a>   
 ### Formatting enumeration values  
- You can convert enumeration values to their string representations by calling the static <xref:System.Enum.Format%2A> method, as well as the overloads of the instance <xref:System.Enum.ToString%2A> method. You can use a format string to control the precise way in which an enumeration value is represented as a string. For more information, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md). The following example uses each of the supported enumeration format strings ("G" or "g", "D" or "d", "X" or "x", and "F" or "f" ) to convert a member of the `ArrivalStatus` enumeration to its string representations.  
+ You can convert enumeration values to their string representations by calling the static <xref:System.Enum.Format%2A> method, as well as the overloads of the instance <xref:System.Enum.ToString%2A> method. You can use a format string to control the precise way in which an enumeration value is represented as a string. For more information, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). The following example uses each of the supported enumeration format strings ("G" or "g", "D" or "d", "X" or "x", and "F" or "f" ) to convert a member of the `ArrivalStatus` enumeration to its string representations.  
   
  [!code-csharp[System.Enum.Class#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.enum.class/cs/classformat1.cs#10)]
  [!code-vb[System.Enum.Class#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.enum.class/vb/classformat1.vb#10)]  
@@ -2298,7 +2298,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value is formatted with the general format specifier ("G"). That is, if the <xref:System.FlagsAttribute> is not applied to this enumerated type and there is a named constant equal to the value of this instance, then the return value is a string containing the name of the constant. If the <xref:System.FlagsAttribute> is applied and there is a combination of one or more named constants equal to the value of this instance, then the return value is a string containing a delimiter-separated list of the names of the constants. Otherwise, the return value is the string representation of the numeric value of this instance. For more information about formatting enumeration values, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md). For more information about formatting in general, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ The return value is formatted with the general format specifier ("G"). That is, if the <xref:System.FlagsAttribute> is not applied to this enumerated type and there is a named constant equal to the value of this instance, then the return value is a string containing the name of the constant. If the <xref:System.FlagsAttribute> is applied and there is a combination of one or more named constants equal to the value of this instance, then the return value is a string containing a delimiter-separated list of the names of the constants. Otherwise, the return value is the string representation of the numeric value of this instance. For more information about formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -2391,7 +2391,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md). For more information about formatting in general, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -2456,7 +2456,7 @@ thisInstance And flag = flag
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md). For more information about formatting in general, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ The `format` parameter can contain the "G" or "g", "D" or "d", "X" or "x", and "F" or "f" format strings (the format string is not case-sensitive). If `format` is `null` or an empty string (""), the general format specifier ("G") is used. For more information about the enumeration format strings and formatting enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md). For more information about formatting in general, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  Specify only `format`; the `provider` parameter is obsolete.  
   

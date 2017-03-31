@@ -159,7 +159,7 @@
 ## Remarks  
  <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on values of the data that is returned. For example, if you are displaying a list of task items, you may want to display a task with a red background if it is of high priority and has not been looked at for more than two weeks.  
   
- You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  Note that if it is a condition for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Property%2A> value would cause an exception in that case.  
   
@@ -184,7 +184,7 @@
 <a name="xamlValues_PriorityBinding"></a>   
 ## XAML Values  
  *declaration*  
- A binding declaration. See [Binding Declarations Overview](../Topic/Binding%20Declarations%20Overview.md) for more information.  
+ A binding declaration. See [Binding Declarations Overview](~/docs/framework/wpf/data/binding-declarations-overview.md) for more information.  
   
    
   
@@ -331,7 +331,7 @@
 ## Remarks  
  You can set this property to the name of any element within the scope of where the trigger collection (the collection that the trigger that contains this condition is part of) is applied. This is typically a named element that is within the template that contains the trigger.  
   
- You can name an object using the [x:Name Directive](../Topic/x:Name%20Directive.md) syntax.  
+ You can name an object using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) syntax.  
   
  ]]></format>
         </remarks>

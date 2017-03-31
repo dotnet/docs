@@ -41,7 +41,7 @@
 ## Remarks  
  Use an <xref:System.AsyncCallback> delegate to process the results of an asynchronous operation in a separate thread. The <xref:System.AsyncCallback> delegate represents a callback method that is called when the asynchronous operation completes. The callback method takes an <xref:System.IAsyncResult> parameter, which is subsequently used to obtain the results of the asynchronous operation.  
   
- For more information about asynchronous programming, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](../Topic/Using%20an%20AsyncCallback%20Delegate%20to%20End%20an%20Asynchronous%20Operation.md) and [Using an AsyncCallback Delegate and State Object](../Topic/Using%20an%20AsyncCallback%20Delegate%20and%20State%20Object.md) in [Event-based Asynchronous Pattern (EAP)](../Topic/Event-based%20Asynchronous%20Pattern%20\(EAP\).md).  
+ For more information about asynchronous programming, see [Using an AsyncCallback Delegate to End an Asynchronous Operation](~/docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md) and [Using an AsyncCallback Delegate and State Object](~/docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-and-state-object.md) in [Event-based Asynchronous Pattern (EAP)](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md).  
   
    
   

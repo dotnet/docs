@@ -376,7 +376,7 @@ Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));
 ## Remarks  
  The <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> and <xref:System.Data.OleDb.OleDbParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.OleDb.OleDbParameter.DbType%2A> changes the <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> to a supporting <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A>.  
   
- For a list of the supported data types, see the appropriate <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
    
   
@@ -547,7 +547,7 @@ public void CreateOleDbParameter()
 ## Remarks  
  The <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> and <xref:System.Data.OleDb.OleDbParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.OleDb.OleDbParameter.DbType%2A> changes the <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> to a supporting <xref:System.Data.OleDb.OleDbType>.  
   
- For a list of the supported data types, see the appropriate <xref:System.Data.OleDb.OleDbType> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate <xref:System.Data.OleDb.OleDbType> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
  ]]></format>
         </remarks>
@@ -878,7 +878,7 @@ public void CreateOleDbParameter()
 ## Remarks  
  When <xref:System.Data.OleDb.OleDbParameter.SourceColumn%2A> is set to anything other than an empty string, the value of the parameter is retrieved from the column with the <xref:System.Data.OleDb.OleDbParameter.SourceColumn%2A> name. If <xref:System.Data.OleDb.OleDbParameter.Direction%2A> is set to `Input`, the value is taken from the <xref:System.Data.DataSet>. If <xref:System.Data.OleDb.OleDbParameter.Direction%2A> is set to `Output`, the value is taken from the data source. A <xref:System.Data.OleDb.OleDbParameter.Direction%2A> of `InputOutput` is a combination of both.  
   
- For more information about how to use the <xref:System.Data.OleDb.OleDbParameter.SourceColumn%2A> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md) and [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
+ For more information about how to use the <xref:System.Data.OleDb.OleDbParameter.SourceColumn%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md) and [Updating Data Sources with DataAdapters](~/docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  
   
    
   

@@ -18,7 +18,7 @@
  This enumeration is used by <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A>.  
   
 > [!NOTE]
->  In the .NET Framework version 2.0, the common language runtime behavior changed to allow unhandled exceptions to propagate up the call stack. This behavior can be disabled via the application configuration file. For more information, see [Exceptions in Managed Threads](../Topic/Exceptions%20in%20Managed%20Threads.md).  
+>  In the .NET Framework version 2.0, the common language runtime behavior changed to allow unhandled exceptions to propagate up the call stack. This behavior can be disabled via the application configuration file. For more information, see [Exceptions in Managed Threads](~/docs/standard/threading/exceptions-in-managed-threads.md).  
   
    
   

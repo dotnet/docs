@@ -51,7 +51,7 @@
   
  The <xref:System.AppDomain> class implements a set of events that enable applications to respond when an assembly is loaded, when an application domain will be unloaded, or when an unhandled exception is thrown.  
   
- For more information on using application domains, see [Application Domains](../Topic/Application%20Domains.md).  
+ For more information on using application domains, see [Application Domains](~/docs/framework/app-domains/application-domains.md).  
   
  This class implements the <xref:System.MarshalByRefObject>, <xref:System._AppDomain>, and <xref:System.Security.IEvidenceFactory> interfaces.  
   
@@ -247,7 +247,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.AssemblyLoad> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_AssemblyLoad#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_AssemblyLoad/CPP/assemblyload.cpp#1)]
  [!code-csharp[AppDomain_AssemblyLoad#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_AssemblyLoad/CS/assemblyload.cs#1)]
@@ -283,7 +283,7 @@
 ## Remarks  
  It is the responsibility of the <xref:System.ResolveEventHandler> for this event to return the assembly that is specified by the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property, or to return null if the assembly is not recognized. The assembly must be loaded into an execution context; if it is loaded into the reflection-only context, the load that caused this event to be raised fails.  
   
- For guidance on the use of this event, see [Resolving Assembly Loads](../Topic/Resolving%20Assembly%20Loads.md).  
+ For guidance on the use of this event, see [Resolving Assembly Loads](~/docs/framework/app-domains/resolving-assembly-loads.md).  
   
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName> property returns the assembly that requested the assembly load that could not be resolved. For example, the loader might be unable to load a dependency of the requesting assembly because the requesting assembly and its dependency are not in the probing path. Knowing the identity of the requesting assembly might be useful in locating the dependency or in identifying the correct version, if more than one version of the dependency is available. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName>.  
   
@@ -302,7 +302,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AssemblyResolve#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyResolve/CPP/assemblyresolve.cpp#1)]
  [!code-csharp[AssemblyResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyResolve/CS/assemblyresolve.cs#1)]
@@ -435,7 +435,7 @@
 ## Remarks  
  The shadow copy path is a list of directories where shadow copied assemblies are stored.  
   
- For more information, see <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=fullName>and [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information, see <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=fullName>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -807,7 +807,7 @@
 ## Remarks  
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
- For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
 > [!IMPORTANT]
 >  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
@@ -869,7 +869,7 @@
   
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
- For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
 > [!IMPORTANT]
 >  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
@@ -2106,7 +2106,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2291,7 +2291,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2405,7 +2405,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2473,7 +2473,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2595,7 +2595,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2665,7 +2665,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2740,7 +2740,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -2819,7 +2819,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.DefineDynamicAssembly%2A> method and <xref:System.AppDomain.AssemblyResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CPP/definedynamicassembly.cpp#1)]
  [!code-csharp[AppDomain_DefineDynamicAssembly#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_DefineDynamicAssembly/CS/definedynamicassembly.cs#1)]
@@ -3922,7 +3922,7 @@
  The following example creates a series of application domains named `AD0` through `AD3`, with a `Worker` object in each application domain. Each `Worker` object has a reference to the `Worker` object in the next application domain, except for the `Worker` in the last application domain. The <xref:System.AppDomain.FirstChanceException> event is handled in all application domains except `AD1`.  
   
 > [!NOTE]
->  In addition to this example, which demonstrates first-chance exception notifications in multiple application domains, you can find simple use cases in [How to: Receive First-Chance Exception Notifications](../Topic/How%20to:%20Receive%20First-Chance%20Exception%20Notifications.md).  
+>  In addition to this example, which demonstrates first-chance exception notifications in multiple application domains, you can find simple use cases in [How to: Receive First-Chance Exception Notifications](~/docs/framework/app-domains/how-to-receive-first-chance-exception-notifications.md).  
   
  When the application domains have been created, the default application domain calls the `TestException` method for the first application domain. Each `Worker` object calls the `TestException` method for the next application domain, until the last `Worker` throws an exception that is either handled or unhandled. Thus, the current thread passes through all the application domains, and `TestException` is added to the stack in each application domain.  
   
@@ -4254,11 +4254,11 @@
   
 |Switch|Meaning|  
 |------------|-------------|  
-|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](../Topic/%3CNetFx40_LegacySecurityPolicy%3E%20Element.md).|  
-|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Its success requires sort00001000.dll to be installed. See [\&lt;CompatSortNLSVersion\&gt; Element](../Topic/%3CCompatSortNLSVersion%3E%20Element.md).|  
+|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
+|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Its success requires sort00001000.dll to be installed. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
 |"NetFx40_Legacy40SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]and Unicode 5.0 are enabled in this application domain. Its success requires sort00060101.dll to be installed.|  
-|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain.  See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](../Topic/%3CTimeSpan_LegacyFormatMode%3E%20Element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
-|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](../Topic/%3CUseRandomizedStringHashAlgorithm%3E%20Element.md).|  
+|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain.  See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
+|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
   
  ]]></format>
         </remarks>
@@ -4466,7 +4466,7 @@
 ## Examples  
  The following sample demonstrates the use of loading a raw assembly.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_LoadRaw#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_LoadRaw/CPP/loadraw.cpp#1)]
  [!code-csharp[AppDomain_LoadRaw#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_LoadRaw/CS/loadraw.cs#1)]
@@ -4640,7 +4640,7 @@
 ## Examples  
  The following sample demonstrates the use of loading a raw assembly.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_LoadRaw#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_LoadRaw/CPP/loadraw.cpp#1)]
  [!code-csharp[AppDomain_LoadRaw#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_LoadRaw/CS/loadraw.cs#1)]
@@ -4814,7 +4814,7 @@
 ## Examples  
  The following sample demonstrates the use of loading a raw assembly.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_LoadRaw#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_LoadRaw/CPP/loadraw.cpp#1)]
  [!code-csharp[AppDomain_LoadRaw#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_LoadRaw/CS/loadraw.cs#1)]
@@ -5056,7 +5056,7 @@
  Beginning with the .NET Framework version 2.0, this event is raised in each application domain that registers an event handler.  
   
 > [!NOTE]
->  The total execution time of all <xref:System.AppDomain.ProcessExit> event handlers is limited, just as the total execution time of all finalizers is limited at process shutdown. The default is two seconds. An unmanaged host can change this execution time by calling the [ICLRPolicyManager::SetTimeout](../Topic/ICLRPolicyManager::SetTimeout%20Method.md) method with the [OPR_ProcessExit](../Topic/EClrOperation%20Enumeration.md) enumeration value.  
+>  The total execution time of all <xref:System.AppDomain.ProcessExit> event handlers is limited, just as the total execution time of all finalizers is limited at process shutdown. The default is two seconds. An unmanaged host can change this execution time by calling the [ICLRPolicyManager::SetTimeout](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) method with the [OPR_ProcessExit](~/docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) enumeration value.  
   
  In the .NET Framework versions 1.0 and 1.1, this event is raised only in the default application domain, and only if an event handler is registered in the default application domain.  
   
@@ -5303,7 +5303,7 @@
 ## Remarks  
  The cache path is ignored if the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set. See the <xref:System.AppDomainSetup.CachePath%2A?displayProperty=fullName> property.  
   
- For more information on shadow copying see [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information on shadow copying see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -5525,7 +5525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on shadow copying, see [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
    
   
@@ -5580,7 +5580,7 @@
   
  This method sets the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property of the internal <xref:System.AppDomainSetup> associated with this instance.  
   
- For more information on shadow copying, see [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
    
   
@@ -5684,7 +5684,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=fullName> and [Shadow Copying Assemblies](../Topic/Shadow%20Copying%20Assemblies.md).  
+ For more information, see <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=fullName> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -5909,7 +5909,7 @@
 ## Examples  
  The following sample demonstrates the <xref:System.AppDomain.TypeResolve> event.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[AppDomain_TypeResolve#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_TypeResolve/CPP/typeresolve.cpp#1)]
  [!code-csharp[AppDomain_TypeResolve#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_TypeResolve/CS/typeresolve.cs#1)]
@@ -5964,7 +5964,7 @@
   
  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], this event is not raised for exceptions that corrupt the state of the process, such as stack overflows or access violations, unless the event handler is security-critical and has the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute.  
   
- In the .NET Framework versions 1.0 and 1.1, an unhandled exception that occurs in a thread other than the main application thread is caught by the runtime and therefore does not cause the application to terminate. Thus, it is possible for the <xref:System.AppDomain.UnhandledException> event to be raised without the application terminating. Starting with the .NET Framework version 2.0, this backstop for unhandled exceptions in child threads was removed, because the cumulative effect of such silent failures included performance degradation, corrupted data, and lockups, all of which were difficult to debug. For more information, including a list of cases in which the runtime does not terminate, see [Exceptions in Managed Threads](../Topic/Exceptions%20in%20Managed%20Threads.md).  
+ In the .NET Framework versions 1.0 and 1.1, an unhandled exception that occurs in a thread other than the main application thread is caught by the runtime and therefore does not cause the application to terminate. Thus, it is possible for the <xref:System.AppDomain.UnhandledException> event to be raised without the application terminating. Starting with the .NET Framework version 2.0, this backstop for unhandled exceptions in child threads was removed, because the cumulative effect of such silent failures included performance degradation, corrupted data, and lockups, all of which were difficult to debug. For more information, including a list of cases in which the runtime does not terminate, see [Exceptions in Managed Threads](~/docs/standard/threading/exceptions-in-managed-threads.md).  
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   

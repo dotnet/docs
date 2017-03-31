@@ -886,7 +886,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
 ## Remarks  
  The default <xref:System.Data.UpdateRowSource> value is **Both** unless the command is automatically generated, as with the <xref:System.Data.Odbc.OdbcCommandBuilder>, in which case the default is **None**.  
   
- For more information about how to use the <xref:System.Data.Odbc.OdbcCommand.UpdatedRowSource%2A> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For more information about how to use the <xref:System.Data.Odbc.OdbcCommand.UpdatedRowSource%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
  ]]></format>
         </remarks>

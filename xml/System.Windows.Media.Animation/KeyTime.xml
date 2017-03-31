@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each key frame's <xref:System.Windows.Media.Animation.KeyTime> specifies when that key frame ends. It does not specify how long the key time plays. The amount of time a key frame plays is determined by when the key frame ends, when the previous key frame ended, and the animation's duration. See [Key-Frame Animations Overview](../Topic/Key-Frame%20Animations%20Overview.md) for more information.  
+ Each key frame's <xref:System.Windows.Media.Animation.KeyTime> specifies when that key frame ends. It does not specify how long the key time plays. The amount of time a key frame plays is determined by when the key frame ends, when the previous key frame ended, and the animation's duration. See [Key-Frame Animations Overview](~/docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md) for more information.  
   
  A <xref:System.Windows.Media.Animation.KeyTime> may be expressed in several different formats, including a numeric time value, as a percentage, or as one of the special sentinel values <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A> or <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>.  
   

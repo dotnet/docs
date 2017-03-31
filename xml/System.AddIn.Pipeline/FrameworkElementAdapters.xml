@@ -29,7 +29,7 @@
   
  Once the <xref:System.AddIn.Contract.INativeHandleContract> is passed across the isolation boundary, it must be converted to a type that can be displayed by the host application or the add-in. In this case, the static <xref:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter%2A> method is called to convert an <xref:System.AddIn.Contract.INativeHandleContract> to a <xref:System.Windows.FrameworkElement>.  
   
- For more detailed exposition of [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] add-ins, see [WPF Add-Ins Overview](../Topic/WPF%20Add-Ins%20Overview.md).  
+ For more detailed exposition of [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] add-ins, see [WPF Add-Ins Overview](~/docs/framework/wpf/app-development/wpf-add-ins-overview.md).  
   
  ]]></format>
     </remarks>

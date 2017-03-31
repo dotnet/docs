@@ -1225,7 +1225,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1291,7 +1291,7 @@
 ## Remarks  
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1357,7 +1357,7 @@
 ## Remarks  
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1426,7 +1426,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1498,7 +1498,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsClient%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1674,7 +1674,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1745,7 +1745,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
   
- The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous authentication operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndAuthenticateAsServer%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -1813,7 +1813,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
   
- The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndRead%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndRead%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous read operations. If you attempt to start a read operation while another read operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
   
@@ -1896,7 +1896,7 @@
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use the <xref:System.Net.Security.NegotiateStream.Read%2A> method.  
   
- The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndWrite%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ The asynchronous read operation must be completed by calling the <xref:System.Net.Security.NegotiateStream.EndWrite%2A> method. Typically, the method is invoked by the `asyncCallback` delegate. For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  The <xref:System.Net.Security.NegotiateStream> class does not support multiple simultaneous write operations. If you attempt to start a write operation while another write operation is already executing on the same stream, a <xref:System.NotSupportedException> exception will be thrown.  
   
@@ -2156,9 +2156,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>

@@ -33,7 +33,7 @@
  The Hijri calendar recognizes one era: A.H. (Latin "Anno Hegirae", which means "the year of the migration," in reference to the migration of Muhammad (PBUH) from Mecca).  
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.HijriCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](../Topic/Working%20with%20Calendars.md).  
+>  For information about using the <xref:System.Globalization.HijriCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  In every 30-year cycle that ends with a year that is evenly divisible by 30, the 2nd, 5th, 7th, 10th, 13th, 16th, 18th, 21st, 24th, 26th, and 29th years are leap years. A common year has 354 days and a leap year has 355 days.  
   
@@ -1151,7 +1151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Microsoft Visual Basic represents time of day as the specified time on the minimum date  supported by the <xref:System.DateTime> type, which is January 1, 0001 C.E. However, the <xref:System.Globalization.HijriCalendar> type does not support that minimum date. Consequently, if you call a method to format the time of day using the current calendar but you do not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md).  
+ Microsoft Visual Basic represents time of day as the specified time on the minimum date  supported by the <xref:System.DateTime> type, which is January 1, 0001 C.E. However, the <xref:System.Globalization.HijriCalendar> type does not support that minimum date. Consequently, if you call a method to format the time of day using the current calendar but you do not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
   
    
   

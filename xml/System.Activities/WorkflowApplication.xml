@@ -2130,7 +2130,7 @@ Hello, Steve
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](../Topic/How%20to:%20Run%20a%20Workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](../Topic/Getting%20Started%20Tutorial2.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
+ The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](~/docs/framework/wf/how-to-run-a-workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/wf/getting-started-tutorial.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
   
 ```Output  
 BookmarkName: EnterGuess - OwnerDisplayName: ReadInt  
@@ -2161,7 +2161,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates a WorkflowApplication instance and then configures the <xref:System.Activities.WorkflowApplication.InstanceStore%2A> using a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This code example is part of [How to: Create and Run a Long Running Workflow](../Topic/How%20to:%20Create%20and%20Run%20a%20Long%20Running%20Workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](../Topic/Getting%20Started%20Tutorial2.md).  
+ The following example creates a WorkflowApplication instance and then configures the <xref:System.Activities.WorkflowApplication.InstanceStore%2A> using a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This code example is part of [How to: Create and Run a Long Running Workflow](~/docs/framework/wf/how-to-create-and-run-a-long-running-workflow.md), which is part of the [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/wf/getting-started-tutorial.md).  
   
  [!code-csharp[CFX_WorkflowApplicationExample#28](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#28)]  
   
@@ -2212,7 +2212,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](../Topic/Persisting%20a%20Workflow%20Application.md) sample.  
+ The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](~/docs/framework/wf/samples/persisting-a-workflow-application.md) sample.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#27](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#27)]  
   
@@ -2290,7 +2290,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](../Topic/Persisting%20a%20Workflow%20Application.md) sample.  
+ The following example calls <xref:System.Activities.WorkflowApplication.Load%2A> to load persisted workflow instance from a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the `LoadAndCompleteInstance` method in the [Persisting a Workflow Application](~/docs/framework/wf/samples/persisting-a-workflow-application.md) sample.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#27](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#27)]  
   
@@ -2665,7 +2665,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
    
   
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is part of the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](../Topic/Persisting%20a%20Workflow%20Application.md) sample.  
+ The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is part of the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](~/docs/framework/wf/samples/persisting-a-workflow-application.md) sample.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#34](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#34)]  
   
@@ -2700,7 +2700,7 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
    
   
 ## Examples  
- The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is from the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](../Topic/Persisting%20a%20Workflow%20Application.md) sample.  
+ The following example calls <xref:System.Activities.WorkflowApplication.Persist%2A> to persist a workflow instance before the workflow is started. This example is from the `StartAndUnloadInstance` method in the [Persisting a Workflow Application](~/docs/framework/wf/samples/persisting-a-workflow-application.md) sample.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#34](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#34)]  
   
@@ -3221,7 +3221,7 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
    
   
 ## Examples  
- The following code example is part of the [NoPersistScope Activity](../Topic/NoPersistScope%20Activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
+ The following code example is part of the [NoPersistScope Activity](~/docs/framework/wf/samples/nopersistscope-activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#20)]  
   
@@ -3256,7 +3256,7 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
    
   
 ## Examples  
- The following code example is part of the [NoPersistScope Activity](../Topic/NoPersistScope%20Activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
+ The following code example is part of the [NoPersistScope Activity](~/docs/framework/wf/samples/nopersistscope-activity.md) sample. In this example, the workflow is idle and the host application is waiting for user input. If the user chooses to unload, <xref:System.Activities.WorkflowApplication.Unload%2A> is called. If successful, the workflow is persisted and unloaded from memory.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#20](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#20)]  
   

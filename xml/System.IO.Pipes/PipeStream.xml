@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.IO.Pipes.PipeStream> class provides the base class for named and anonymous pipes operations in the .NET Framework. Use the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes for named pipe operations. Use the <xref:System.IO.Pipes.AnonymousPipeServerStream> and <xref:System.IO.Pipes.AnonymousPipeClientStream> classes for anonymous pipe operations.  
   
- For more information about pipes, see [Pipes](../Topic/Pipe%20Operations%20in%20the%20.NET%20Framework.md). For an example of anonymous pipes, see [How to: Use Anonymous Pipes for Local Interprocess Communication](../Topic/How%20to:%20Use%20Anonymous%20Pipes%20for%20Local%20Interprocess%20Communication.md). For an example of named pipes, see [How to: Use Named Pipes for Network Interprocess Communication](../Topic/How%20to:%20Use%20Named%20Pipes%20for%20Network%20Interprocess%20Communication.md).  
+ For more information about pipes, see [Pipes](~/docs/standard/io/pipe-operations.md). For an example of anonymous pipes, see [How to: Use Anonymous Pipes for Local Interprocess Communication](~/docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md). For an example of named pipes, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
   
  ]]></format>
     </remarks>
@@ -450,9 +450,9 @@
         <block subset="none" type="overrides">
           <para>In derived classes, put all <see cref="T:System.IO.Stream" /> cleanup logic in the <see cref="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" /> method.  
   
- <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>
@@ -601,7 +601,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  ]]></format>
         </remarks>
@@ -1209,7 +1209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An access control list (ACL) describes individuals and/or groups that have, or do not have, rights to perform specific actions on a specified file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  ]]></format>
         </remarks>

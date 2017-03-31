@@ -428,7 +428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](../Topic/Asynchronous%20Operations%20\(WCF%20Data%20Services\).md).  
+ The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
   
  The method <xref:System.Data.Services.Client.DataServiceContext.BeginExecute%2A> uses the same semantics as <xref:System.Data.Services.Client.DataServiceContext.Execute%2A>, however this method asynchronously sends the request so that this call does not block processing while waiting for the results from the service. According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved.  
   
@@ -478,7 +478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](../Topic/Asynchronous%20Operations%20\(WCF%20Data%20Services\).md).  
+ The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
   
  The queries are specified as <xref:System.Data.Services.Client.DataServiceRequest%601> instances. Returns a <xref:System.Data.Services.Client.DataServiceResponse> that represents the response of the batch request as a whole. Individual query responses are represented as <xref:System.Data.Services.Client.DataServiceResponse> objects that can be accessed by enumerating the <xref:System.Data.Services.Client.DataServiceResponse> instance.  
   
@@ -769,7 +769,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IAsyncResult> object passed to the `asyncResult` parameter is the object returned when an operation is executed asynchronously. For more information, see [Asynchronous Operations](../Topic/Asynchronous%20Operations%20\(WCF%20Data%20Services\).md).Until this request is processed, the <xref:System.Data.Services.Client.DataServiceContext> instance is not in a predictable state. The <xref:System.Data.Services.Client.DataServiceContext> can be safely used when the <xref:System.IAsyncResult.IsCompleted%2A> property of the `asyncResult` returns a value of `true`.  
+ The <xref:System.IAsyncResult> object passed to the `asyncResult` parameter is the object returned when an operation is executed asynchronously. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).Until this request is processed, the <xref:System.Data.Services.Client.DataServiceContext> instance is not in a predictable state. The <xref:System.Data.Services.Client.DataServiceContext> can be safely used when the <xref:System.IAsyncResult.IsCompleted%2A> property of the `asyncResult` returns a value of `true`.  
   
  ]]></format>
         </remarks>
@@ -1019,7 +1019,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved. For more information, see [Asynchronous Operations](../Topic/Asynchronous%20Operations%20\(WCF%20Data%20Services\).md).  
+ According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
   
  When the callback is invoked, all results have been read from the HTTP stream, but they have not been processed; no local user-facing objects have been materialized or modified and identity resolution has not occurred. When <xref:System.Data.Services.Client.DataServiceContext.EndExecute%2A> is invoked, a <xref:System.Data.Services.Client.DataServiceResponse> is created and returned but the results still have not been processed. Identity resolution, object materialization, and manipulation occur only when the user enumerates the results.  
   

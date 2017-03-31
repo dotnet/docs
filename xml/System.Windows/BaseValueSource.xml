@@ -17,7 +17,7 @@
 ## Remarks  
  This enumeration is used by a property within the <xref:System.Windows.ValueSource> structure, which in turn is obtained by calling a <xref:System.Windows.DependencyPropertyHelper.GetValueSource%2A> method against a particular dependency property.  
   
- Each value of this enumeration indicates that a particular aspect of the overall [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system was responsible for the effective value determination of a certain dependency property value on a specific dependency object. To learn more about the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system and the precedence at which each aspect of the property system operates, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ Each value of this enumeration indicates that a particular aspect of the overall [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system was responsible for the effective value determination of a certain dependency property value on a specific dependency object. To learn more about the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system and the precedence at which each aspect of the property system operates, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  The value Default is not the default value of the enumeration.  
   

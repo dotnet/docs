@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.FullTrustAssembliesSection> class enables you to specify full-trust assemblies within an ASP.NET partial-trust application domain.  
   
- To configure an assembly, you must have the hexadecimal string representation of its public key. You get this key by using the Strong Name (Sn.exe) tool. This tool produces the public-key hexadecimal string representation that you use in configuration. It also produces the public-key token. For more information, see [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).  
+ To configure an assembly, you must have the hexadecimal string representation of its public key. You get this key by using the Strong Name (Sn.exe) tool. This tool produces the public-key hexadecimal string representation that you use in configuration. It also produces the public-key token. For more information, see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md).  
   
    
   

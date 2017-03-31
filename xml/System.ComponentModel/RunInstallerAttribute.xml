@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies whether the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md) should be invoked when the assembly is installed.</summary>
+    <summary>Specifies whether the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should be invoked when the assembly is installed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -200,7 +200,7 @@
         <ReturnType>System.ComponentModel.RunInstallerAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md) should not be invoked when the assembly is installed. This <see langword="static" /> field is read-only.</summary>
+        <summary>Specifies that the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should not be invoked when the assembly is installed. This <see langword="static" /> field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -255,7 +255,7 @@
         <ReturnType>System.ComponentModel.RunInstallerAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md) should be invoked when the assembly is installed. This <see langword="static" /> field is read-only.</summary>
+        <summary>Specifies that the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should be invoked when the assembly is installed. This <see langword="static" /> field is read-only.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

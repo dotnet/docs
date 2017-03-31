@@ -2874,7 +2874,7 @@ From i As Integer In objects
   
  The default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A> is used to compare keys.  
   
- In query expression syntax, a `group by` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](../Topic/group%20clause%20\(C%23%20Reference\).md) and [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md).  
+ In query expression syntax, a `group by` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
   
  ]]></format>
         </remarks>
@@ -2943,7 +2943,7 @@ From i As Integer In objects
   
  If two keys are considered equal according to `comparer`, the first key is chosen as the key for that grouping.  
   
- In query expression syntax, a `group by` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](../Topic/group%20clause%20\(C%23%20Reference\).md) and [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md).  
+ In query expression syntax, a `group by` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
   
  ]]></format>
         </remarks>
@@ -3092,7 +3092,7 @@ From i As Integer In objects
   
  If two keys are considered equal according to `comparer`, the first key is chosen as the key for that grouping.  
   
- In query expression syntax, a `group by` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](../Topic/group%20clause%20\(C%23%20Reference\).md) and [Group By Clause](../Topic/Group%20By%20Clause%20\(Visual%20Basic\).md).  
+ In query expression syntax, a `group by` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group By Into` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupBy%2A>. For more information and usage examples, see [group clause](~/docs/csharp/language-reference/keywords/group-clause.md) and [Group By Clause](~/docs/visual-basic/language-reference/queries/group-by-clause.md).  
   
  ]]></format>
         </remarks>

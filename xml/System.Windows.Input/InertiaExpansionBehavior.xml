@@ -26,12 +26,12 @@
   
  Set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
    
   
 ## Examples  
- The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
  [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
@@ -76,7 +76,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A> property to specify the desired deceleration of the inertia. Set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -108,7 +108,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> property to specify the desired expansion of the manipulation when inertia ends. Set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -133,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -158,7 +158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>

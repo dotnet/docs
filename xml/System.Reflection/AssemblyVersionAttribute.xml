@@ -38,7 +38,7 @@
 ## Remarks  
  The <xref:System.Reflection.AssemblyVersionAttribute> attribute is used to assign a version number to an assembly. That version number is then stored with the assembly's metadata.  
   
- The assembly version number is part of an assembly's identity and plays a key part in binding to the assembly and in version policy. The default version policy for the runtime is that applications run only with the versions they were built and tested with, unless overridden by explicit version policy in configuration files (the application configuration file, the publisher policy file, and the computer's administrator configuration file). See [Assemblies in the Common Language Runtime](../Topic/Assemblies%20in%20the%20Common%20Language%20Runtime.md) for more information.  
+ The assembly version number is part of an assembly's identity and plays a key part in binding to the assembly and in version policy. The default version policy for the runtime is that applications run only with the versions they were built and tested with, unless overridden by explicit version policy in configuration files (the application configuration file, the publisher policy file, and the computer's administrator configuration file). See [Assemblies in the Common Language Runtime](~/docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) for more information.  
   
 > [!NOTE]
 >  Version checking only occurs with strong-named assemblies.  

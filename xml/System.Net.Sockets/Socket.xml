@@ -135,7 +135,7 @@
 >  If this constructor throws a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -180,7 +180,7 @@
 >  If this constructor throws a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -235,7 +235,7 @@
 >  Before calling the <xref:System.Net.Sockets.Socket.Accept%2A> method, you must first call the <xref:System.Net.Sockets.Socket.Listen%2A> method to listen for and queue incoming connection requests.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -399,7 +399,7 @@
  If the remote host shuts down or closes the connection, <xref:System.Net.Sockets.Socket.Available%2A> can throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -453,7 +453,7 @@
   
  The system may also use the calling thread to invoke the callback method. In this case, the <xref:System.IAsyncResult.CompletedSynchronously%2A> property on the returned <xref:System.IAsyncResult> will be set to indicate that the <xref:System.Net.Sockets.Socket.BeginAccept%2A>method completed synchronously.  
   
- For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  To cancel a pending call to the <xref:System.Net.Sockets.Socket.BeginAccept%2A> method, close the <xref:System.Net.Sockets.Socket>. When the<xref:System.Net.Sockets.Socket.Close%2A>method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginAccept%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndAccept%2A>method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
@@ -464,7 +464,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in MSDN for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -536,7 +536,7 @@
   
  The system may also use the calling thread to invoke the callback method. In this case, the <xref:System.IAsyncResult.CompletedSynchronously%2A> property on the returned <xref:System.IAsyncResult> will be set to indicate that the <xref:System.Net.Sockets.Socket.BeginAccept%2A>method completed synchronously.  
   
- For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  To cancel a pending call to the <xref:System.Net.Sockets.Socket.BeginAccept%2A> method, close the <xref:System.Net.Sockets.Socket>.  When the <xref:System.Net.Sockets.Socket.Close%2A>method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginAccept%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndAccept%2A>method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
@@ -547,7 +547,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -620,7 +620,7 @@
   
  The system may also use the calling thread to invoke the callback method. In this case, the <xref:System.IAsyncResult.CompletedSynchronously%2A> property on the returned <xref:System.IAsyncResult> will be set to indicate that the <xref:System.Net.Sockets.Socket.BeginAccept%2A>method completed synchronously.  
   
- For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  To cancel a pending call to the <xref:System.Net.Sockets.Socket.BeginAccept%2A> method, close the <xref:System.Net.Sockets.Socket>. When the <xref:System.Net.Sockets.Socket.Close%2A>method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginAccept%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndAccept%2A>method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
@@ -631,7 +631,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -694,7 +694,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method. At the very minimum, you must pass the <xref:System.Net.Sockets.Socket> to <xref:System.Net.Sockets.Socket.BeginConnect%2A> through the `state` parameter. If your callback needs more information, you can create a small class to hold the <xref:System.Net.Sockets.Socket>, and the other required information. Pass an instance of this class to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndConnect%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginConnect%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndConnect%2A> until the <xref:System.Net.Sockets.Socket> connects successfully or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method, use <xref:System.Threading.WaitHandle.WaitOne%2A>. Call the Set method on a <xref:System.Threading.ManualResetEvent> in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndConnect%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginConnect%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndConnect%2A> until the <xref:System.Net.Sockets.Socket> connects successfully or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method, use <xref:System.Threading.WaitHandle.WaitOne%2A>. Call the Set method on a <xref:System.Threading.ManualResetEvent> in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  If you are using a connectionless protocol such as UDP, you do not have to call <xref:System.Net.Sockets.Socket.BeginConnect%2A> before sending and receiving data. You can use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> and <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> to communicate with a remote host. If you do call <xref:System.Net.Sockets.Socket.BeginConnect%2A>, any datagrams that arrive from an address other than the specified default will be discarded. If you wish to set your default remote host to a broadcast address, you must first call <xref:System.Net.Sockets.Socket.SetSocketOption%2A> and set Broadcast to `true`. If you cannot, <xref:System.Net.Sockets.Socket.BeginConnect%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
@@ -709,7 +709,7 @@
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -773,7 +773,7 @@
   
  To cancel a pending call to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method, close the <xref:System.Net.Sockets.Socket>. When the <xref:System.Net.Sockets.Socket.Close%2A> method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndConnect%2A> method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -782,7 +782,7 @@
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider. Also the <xref:System.Net.EndPoint> that is used must be different.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -850,7 +850,7 @@
   
  To cancel a pending call to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method, close the <xref:System.Net.Sockets.Socket>. When the <xref:System.Net.Sockets.Socket.Close%2A> method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndConnect%2A> method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -859,7 +859,7 @@
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider. Also the <xref:System.Net.EndPoint> that is used must be different.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -927,7 +927,7 @@
   
  To cancel a pending call to the  <xref:System.Net.Sockets.Socket.BeginConnect%2A> method, close the <xref:System.Net.Sockets.Socket>. When the <xref:System.Net.Sockets.Socket.Close%2A> method is called while an asynchronous operation is in progress, the callback provided to the <xref:System.Net.Sockets.Socket.BeginConnect%2A> method is called.  A subsequent call to the <xref:System.Net.Sockets.Socket.EndConnect%2A> method will throw an <xref:System.ObjectDisposedException> to indicate that the operation has been cancelled.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -936,7 +936,7 @@
 >  If this socket has previously been disconnected, then <xref:System.Net.Sockets.Socket.BeginConnect%2A> must be called on a thread that will not exit until the operation is complete. This is a limitation of the underlying provider. Also the <xref:System.Net.EndPoint> that is used must be different.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -997,13 +997,13 @@
 ## Remarks  
  If you are using a connection-oriented protocol, you can call the <xref:System.Net.Sockets.Socket.BeginDisconnect%2A> method to request a disconnect from a remote endpoint. If `reuseSocket` is `true`, you can reuse the socket.  
   
- The <xref:System.Net.Sockets.Socket.BeginDisconnect%2A> method uses a separate thread to invoke the specified callback method. The <xref:System.Net.Sockets.Socket.EndDisconnect%2A> method blocks until the pending disconnect is complete. For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ The <xref:System.Net.Sockets.Socket.BeginDisconnect%2A> method uses a separate thread to invoke the specified callback method. The <xref:System.Net.Sockets.Socket.EndDisconnect%2A> method blocks until the pending disconnect is complete. For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -1065,7 +1065,7 @@
   
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceive%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1077,7 +1077,7 @@
 >  `state` is an instantiation of a user-defined class.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1138,7 +1138,7 @@
   
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceive%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1150,7 +1150,7 @@
 >  `state` is an instantiation of a user-defined class.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket>methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1208,7 +1208,7 @@
   
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceive%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1220,7 +1220,7 @@
 >  `state` is an instantiation of a user-defined class.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1311,7 +1311,7 @@
   
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceive%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1323,7 +1323,7 @@
 >  `state` is an instantiation of a user-defined class.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1395,7 +1395,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method. To do this, at the very minimum, your `state` parameter must contain the connected or default <xref:System.Net.Sockets.Socket> being used for communication. If your callback needs more information, you can create a small class to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this class to the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A>, the system will use a separate thread to execute the specified callback method, and it will block on <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> until the <xref:System.Net.Sockets.Socket> reads data or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method, use <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName>. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A>, the system will use a separate thread to execute the specified callback method, and it will block on <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A> until the <xref:System.Net.Sockets.Socket> reads data or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method, use <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName>. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods, see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
 > [!NOTE]
 >  Before calling <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A>, you must explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method, or <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
@@ -1414,7 +1414,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1506,7 +1506,7 @@
   
  To cancel a pending <xref:System.Net.Sockets.Socket.BeginReceiveMessageFrom%2A>, call the <xref:System.Net.Sockets.Socket.Close%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  This method reads data into the `buffer` parameter, and captures the remote host endpoint from which the data is sent, as well as information about the received packet. For information on how to retrieve this endpoint, refer to <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A>. This method is most useful if you intend to asynchronously receive connectionless datagrams from an unknown host or multiple hosts.  
   
@@ -1514,7 +1514,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1584,7 +1584,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the <xref:System.Net.Sockets.Socket.BeginSend%2A> method. To do this, at the very minimum, your `state` parameter must contain the connected or default <xref:System.Net.Sockets.Socket> being used for communication. If your callback needs more information, you can create a small class or structure to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this class to the <xref:System.Net.Sockets.Socket.BeginSend%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
@@ -1603,7 +1603,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1663,7 +1663,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the <xref:System.Net.Sockets.Socket.BeginSend%2A> method. To do this, at the very minimum, your `state` parameter must contain the connected or default <xref:System.Net.Sockets.Socket> being used for communication. If your callback needs more information, you can create a small class or structure to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this class to the <xref:System.Net.Sockets.Socket.BeginSend%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a <xref:System.Threading.ManualResetEvent> in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a <xref:System.Threading.ManualResetEvent> in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
@@ -1682,7 +1682,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1739,7 +1739,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> method. To do this, at the very minimum, your `state` parameter must contain the connected or default <xref:System.Net.Sockets.Socket> being used for communication. If your callback needs more information, you can create a small class or structure to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this class to the [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  Although intended for connection-oriented protocols, [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and [BeginSend Method (Byte\<xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
@@ -1758,7 +1758,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1838,7 +1838,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the <xref:System.Net.Sockets.Socket.BeginSend%2A> method. To do this, at the very minimum, your `state` parameter must contain the connected or default <xref:System.Net.Sockets.Socket> being used for communication. If your callback needs more information, you can create a small class or structure to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this class to the <xref:System.Net.Sockets.Socket.BeginSend%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSend%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSend%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSend%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSend%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
@@ -1857,7 +1857,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -1924,7 +1924,7 @@
   
  To complete the operation, you can create a callback method that is invoked by the <xref:System.AsyncCallback> delegate parameter. To do this, at the very minimum, the `state` parameter must contain the <xref:System.Net.Sockets.Socket> object being used for communication. If your callback needs more information, you can create a class or structure to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this custom object to the <xref:System.Net.Sockets.Socket.BeginSendFile%2A> method through the `state` parameter.  
   
- Your callback method must invoke the <xref:System.Net.Sockets.Socket.EndSendFile%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSendFile%2A>, the system uses a separate thread to execute the specified callback method, and blocks on <xref:System.Net.Sockets.Socket.EndSendFile%2A> until the <xref:System.Net.Sockets.Socket> sends the entire file or throws an exception. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method must invoke the <xref:System.Net.Sockets.Socket.EndSendFile%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSendFile%2A>, the system uses a separate thread to execute the specified callback method, and blocks on <xref:System.Net.Sockets.Socket.EndSendFile%2A> until the <xref:System.Net.Sockets.Socket> sends the entire file or throws an exception. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSendFile%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. With connectionless protocols, you must be sure that the size of your file does not exceed the maximum packet size of the underlying service provider. If it does, the datagram is not sent and <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws a <xref:System.Net.Sockets.SocketException> exception.  
   
@@ -1932,7 +1932,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -2001,7 +2001,7 @@
   
  To complete the operation, you can create a callback method that is invoked by the <xref:System.AsyncCallback> delegate parameter. To do this, at the very minimum, the `state` parameter must contain the <xref:System.Net.Sockets.Socket> object being used for communication. If your callback needs more information, you can create a class or structure to hold the <xref:System.Net.Sockets.Socket> and the other required information. Pass an instance of this custom object to the<xref:System.Net.Sockets.Socket.BeginSendFile%2A> method through the `state` parameter.  
   
- Your callback method must invoke the <xref:System.Net.Sockets.Socket.EndSendFile%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSendFile%2A>, the system uses a separate thread to execute the specified callback method, and blocks on <xref:System.Net.Sockets.Socket.EndSendFile%2A> until the <xref:System.Net.Sockets.Socket> sends the entire file or throws an exception. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method must invoke the <xref:System.Net.Sockets.Socket.EndSendFile%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSendFile%2A>, the system uses a separate thread to execute the specified callback method, and blocks on <xref:System.Net.Sockets.Socket.EndSendFile%2A> until the <xref:System.Net.Sockets.Socket> sends the entire file or throws an exception. For additional information on writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSendFile%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. With connectionless protocols, you must also be sure that the size of your file does not exceed the maximum packet size of the underlying service provider. If it does, the datagram is not sent and <xref:System.Net.Sockets.Socket.BeginSendFile%2A> throws a <xref:System.Net.Sockets.SocketException> exception.  
   
@@ -2009,7 +2009,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException> exception, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -2078,7 +2078,7 @@
   
  You can create a callback method that implements the <xref:System.AsyncCallback> delegate and pass its name to the <xref:System.Net.Sockets.Socket.BeginSendTo%2A> method. To do this, at the very minimum, your `state` parameter must contain the connected or default <xref:System.Net.Sockets.Socket> being used for communication. If your callback needs more information, you can create a small class to hold the <xref:System.Net.Sockets.Socket>, and the other required information. Pass an instance of this class to the <xref:System.Net.Sockets.Socket.BeginSendTo%2A> method through the `state` parameter.  
   
- Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSendTo%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSendTo%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSendTo%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSendTo%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information about writing callback methods see [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md).  
+ Your callback method should invoke the <xref:System.Net.Sockets.Socket.EndSendTo%2A> method. When your application calls <xref:System.Net.Sockets.Socket.BeginSendTo%2A>, the system will use a separate thread to execute the specified callback method, and will block on <xref:System.Net.Sockets.Socket.EndSendTo%2A> until the <xref:System.Net.Sockets.Socket> sends the number of bytes requested or throws an exception. If you want the original thread to block after you call the <xref:System.Net.Sockets.Socket.BeginSendTo%2A> method, use the <xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName> method. Call the Set method on a T:System.Threading.ManualResetEvent in the callback method when you want the original thread to continue executing. For additional information about writing callback methods see [Marshaling a Delegate as a Callback Method](~/docs/framework/interop/marshaling-a-delegate-as-a-callback-method.md).  
   
  If you are using a connection-oriented protocol, you must first call the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Accept%2A>, or <xref:System.Net.Sockets.Socket.BeginAccept%2A> method, or <xref:System.Net.Sockets.Socket.BeginSendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>. <xref:System.Net.Sockets.Socket.BeginSendTo%2A> will ignore the `remoteEP` parameter and send data to the <xref:System.Net.EndPoint> established in the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.BeginConnect%2A>, <xref:System.Net.Sockets.Socket.Accept%2A>, or <xref:System.Net.Sockets.Socket.BeginAccept%2A> method.  
   
@@ -2092,7 +2092,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The execution context (the security context, the impersonated user, and the calling context) is cached for the asynchronous <xref:System.Net.Sockets.Socket> methods. After the first use of a particular context (a specific asynchronous <xref:System.Net.Sockets.Socket> method, a specific <xref:System.Net.Sockets.Socket> instance, and a specific callback), subsequent uses of that context will see a performance improvement.  
@@ -2182,7 +2182,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Bind%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2240,7 +2240,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2323,7 +2323,7 @@
 >  To set the <xref:System.Net.Sockets.SocketOptionName> socket option to `false`, create a <xref:System.Net.Sockets.LingerOption>, set the enabled property to `true`, and set the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property to the desired time out period. Use this <xref:System.Net.Sockets.LingerOption> along with the <xref:System.Net.Sockets.SocketOptionName> socket option to call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2375,7 +2375,7 @@
 >  To set the <xref:System.Net.Sockets.SocketOptionName> socket option to `false`, create a <xref:System.Net.Sockets.LingerOption>, set the enabled property to `true`, and set the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property to the desired time-out period. Use this <xref:System.Net.Sockets.LingerOption> along with the <xref:System.Net.Sockets.SocketOptionName> socket option to call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2434,7 +2434,7 @@
 >  If the socket has been previously disconnected, then you cannot use this method to restore the connection. Use one of the asynchronous <xref:System.Net.Sockets.Socket.BeginConnect%2A> methods to reconnect. This is a limitation of the underlying provider.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2502,7 +2502,7 @@
 >  If the socket has been previously disconnected, then you cannot use this method to restore the connection. Use one of the asynchronous <xref:System.Net.Sockets.Socket.BeginConnect%2A> methods to reconnect. This is a limitation of the underlying provider.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2570,7 +2570,7 @@
 >  If the socket has been previously disconnected, then you cannot use this method to restore the connection. Use one of the asynchronous <xref:System.Net.Sockets.Socket.BeginConnect%2A> methods to reconnect. This is a limitation of the underlying provider.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2640,7 +2640,7 @@
 >  If the socket has been previously disconnected, then you cannot use this method to restore the connection. Use one of the asynchronous <xref:System.Net.Sockets.Socket.BeginConnect%2A> methods to reconnect. This is a limitation of the underlying provider.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2899,7 +2899,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2987,7 +2987,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Net.Sockets.Socket>. The `Dispose` method leaves the <xref:System.Net.Sockets.Socket> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Net.Sockets.Socket> so the garbage collector can reclaim the memory that the <xref:System.Net.Sockets.Socket> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Net.Sockets.Socket>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Net.Sockets.Socket> object's `Finalize` method.  
@@ -3033,15 +3033,15 @@
  When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Sockets.Socket> references. This method invokes the `Dispose()` method of each referenced object.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see cref="M:System.Net.Sockets.Socket.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -3255,12 +3255,12 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
 ## Examples  
- The following code example ends an asynchronous request and creates a new <xref:System.Net.Sockets.Socket> to accept an incoming connection request. For a complete example that demonstrates asynchronous communications with sockets, see [Socket Code Examples](../Topic/Socket%20Code%20Examples.md).  
+ The following code example ends an asynchronous request and creates a new <xref:System.Net.Sockets.Socket> to accept an incoming connection request. For a complete example that demonstrates asynchronous communications with sockets, see [Socket Code Examples](~/docs/framework/network-programming/socket-code-examples.md).  
   
  [!code-cpp[Socket_Async_Send_Receive#7](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Async_Send_Receive/CPP/source.cpp#7)]
  [!code-csharp[Socket_Async_Send_Receive#7](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Async_Send_Receive/CS/source.cs#7)]
@@ -3319,7 +3319,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3384,7 +3384,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3444,12 +3444,12 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
 ## Examples  
- The following code example ends the asynchronous connection attempt. For a complete example that demonstrates asynchronous communications with sockets, see [Socket Code Examples](../Topic/Socket%20Code%20Examples.md).  
+ The following code example ends the asynchronous connection attempt. For a complete example that demonstrates asynchronous communications with sockets, see [Socket Code Examples](~/docs/framework/network-programming/socket-code-examples.md).  
   
  [!code-cpp[Socket_Async_Send_Receive#5](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Async_Send_Receive/CPP/source.cpp#5)]
  [!code-csharp[Socket_Async_Send_Receive#5](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Async_Send_Receive/CS/source.cs#5)]
@@ -3500,7 +3500,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3571,12 +3571,12 @@
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
 ## Examples  
- The following code example ends a pending asynchronous read. For a complete example that demonstrates asynchronous communications with sockets, see [Socket Code Examples](../Topic/Socket%20Code%20Examples.md).  
+ The following code example ends a pending asynchronous read. For a complete example that demonstrates asynchronous communications with sockets, see [Socket Code Examples](~/docs/framework/network-programming/socket-code-examples.md).  
   
  [!code-cpp[Socket_Async_Send_Receive#8](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Async_Send_Receive/CPP/source.cpp#8)]
  [!code-csharp[Socket_Async_Send_Receive#8](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Async_Send_Receive/CS/source.cs#8)]
@@ -3641,7 +3641,7 @@
 >  All I/O initiated by a given thread is canceled when that thread exits. A pending asynchronous operation can fail if the thread exits before the operation completes.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3697,7 +3697,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3829,7 +3829,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3902,7 +3902,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3955,7 +3955,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4018,7 +4018,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4166,7 +4166,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4227,7 +4227,7 @@
  When the length of the `optionValue` array is smaller than the number of bytes required to store the value of the specified <xref:System.Net.Sockets.Socket> option, <xref:System.Net.Sockets.Socket.GetSocketOption%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. Use this overload for any sockets that are represented by Boolean values or integers.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4290,7 +4290,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4376,7 +4376,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4437,7 +4437,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4599,7 +4599,7 @@
 >  You must call the <xref:System.Net.Sockets.Socket.Bind%2A> method before calling <xref:System.Net.Sockets.Socket.Listen%2A>, or <xref:System.Net.Sockets.Socket.Listen%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  The backlog parameter is limited to different values depending on the Operating System. You may specify a higher value, but the backlog will be limited based on the Operating System.  
@@ -4655,7 +4655,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4938,7 +4938,7 @@
 >  This method cannot detect certain kinds of connection problems, such as a broken network cable, or that the remote host was shut down ungracefully. You must attempt to send or receive data to detect these kinds of errors.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5047,7 +5047,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5115,7 +5115,7 @@
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
- **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5175,7 +5175,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5251,7 +5251,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5327,7 +5327,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5407,7 +5407,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5475,7 +5475,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5573,7 +5573,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5776,7 +5776,7 @@
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5859,7 +5859,7 @@
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5941,7 +5941,7 @@
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6038,7 +6038,7 @@
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the<xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6215,7 +6215,7 @@
 >  The <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> needs to match the <xref:System.Net.Sockets.AddressFamily> of the <xref:System.Net.EndPoint> used in <xref:System.Net.Sockets.Socket.SendTo%2A>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6409,7 +6409,7 @@
  The <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> is set after a call to either <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.Connect%2A>. If you try to access this property earlier, <xref:System.Net.Sockets.Socket.RemoteEndPoint%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6554,7 +6554,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6622,7 +6622,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6686,7 +6686,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see[Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see[Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6754,7 +6754,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6820,7 +6820,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6902,7 +6902,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6972,7 +6972,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7069,7 +7069,7 @@
 >  The successful completion of a send does not indicate that the data was successfully delivered. If no buffer space is available within the transport system to hold the data to be transmitted, send will block unless the socket has been placed in nonblocking mode.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see[Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see[Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7260,7 +7260,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7328,7 +7328,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7518,7 +7518,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7591,7 +7591,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7666,7 +7666,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -7744,7 +7744,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -8038,7 +8038,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -8162,7 +8162,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -8295,7 +8295,7 @@
 >  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   

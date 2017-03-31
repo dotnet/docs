@@ -26,7 +26,7 @@
   
 -   Multitexture Support: Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
   
- The pixel shader, vertex shader, and multitexture features are used to define specific [!INCLUDE[TLA2#tla_dx](~/includes/tla2sharptla-dx-md.md)] version levels, which, in turn, are used to define the different rendering tiers in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For a full description of the rendering tiers, see [Graphics Rendering Tiers](../Topic/Graphics%20Rendering%20Tiers.md).  
+ The pixel shader, vertex shader, and multitexture features are used to define specific [!INCLUDE[TLA2#tla_dx](~/includes/tla2sharptla-dx-md.md)] version levels, which, in turn, are used to define the different rendering tiers in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For a full description of the rendering tiers, see [Graphics Rendering Tiers](~/docs/framework/wpf/advanced/graphics-rendering-tiers.md).  
   
  ]]></format>
     </remarks>
@@ -219,7 +219,7 @@
 |Vertex shader|No requirement.|Version level must greater than or equal to 2.0.|  
 |Multitexture units|No requirement.|Number of units must greater than or equal to 4.|  
   
- For more information on the definitions for the rendering tiers, see [Graphics Rendering Tiers](../Topic/Graphics%20Rendering%20Tiers.md).  
+ For more information on the definitions for the rendering tiers, see [Graphics Rendering Tiers](~/docs/framework/wpf/advanced/graphics-rendering-tiers.md).  
   
  If the current thread does not have an associated <xref:System.Windows.Threading.Dispatcher> object, one is automatically created.  
   

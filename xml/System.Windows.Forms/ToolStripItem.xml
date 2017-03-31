@@ -1180,9 +1180,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -5295,7 +5295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can create an access key to the item by adding an ampersand ("&") before a letter in the text value. For more information, see [How to: Create Access Keys for Windows Forms Controls](../Topic/How%20to:%20Create%20Access%20Keys%20for%20Windows%20Forms%20Controls.md).  
+ You can create an access key to the item by adding an ampersand ("&") before a letter in the text value. For more information, see [How to: Create Access Keys for Windows Forms Controls](~/docs/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md).  
   
  <xref:System.Windows.Forms.ToolStripItem> uses the <xref:System.Windows.Forms.ToolStripItem.Text%2A> property as the default source for the <xref:System.Windows.Forms.ToolTip> content. Set <xref:System.Windows.Forms.ToolStripItem.AutoToolTip%2A> to `false` to use <xref:System.Windows.Forms.ToolStripItem.ToolTipText%2A> as the source for <xref:System.Windows.Forms.ToolTip> content.  
   

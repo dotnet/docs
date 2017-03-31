@@ -87,7 +87,7 @@
   
 -   The search direction for <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> is toward child objects (down the tree); the search direction for the `FindName` methods is towards parent objects (up the tree).  
   
--   The `FindName` methods are governed by the concept of a XAML namescope. Using `FindName` you are guaranteed that only one object of that name exists, because XAML namescopes enforce uniqueness. In contrast, <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> ignores XAML namescope and might cross XAML namescope boundaries during the search. As such, there is no guarantee of uniqueness of the `elementName` name once boundaries are crossed. For more information about XAML namescopes, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+-   The `FindName` methods are governed by the concept of a XAML namescope. Using `FindName` you are guaranteed that only one object of that name exists, because XAML namescopes enforce uniqueness. In contrast, <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> ignores XAML namescope and might cross XAML namescope boundaries during the search. As such, there is no guarantee of uniqueness of the `elementName` name once boundaries are crossed. For more information about XAML namescopes, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
  ]]></format>
         </remarks>

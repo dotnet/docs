@@ -73,7 +73,7 @@
   
  Note that if a parent task is configured with the <see cref="F:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" /> option, the <see cref="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" /> option in the child task has no effect, and the child task will execute as a detached child task.  
   
- For more information, see [Attached and Detached Child Tasks](../Topic/Attached%20and%20Detached%20Child%20Tasks.md).</summary>
+ For more information, see [Attached and Detached Child Tasks](~/docs/standard/parallel-programming/attached-and-detached-child-tasks.md).</summary>
       </Docs>
     </Member>
     <Member MemberName="DenyChildAttach">
@@ -99,7 +99,7 @@
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that any child task that attempts to execute as an attached child task (that is, it is created with the <see cref="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" /> option) will not be able to attach to the parent task and will execute instead as a detached child task. For more information, see [Attached and Detached Child Tasks](../Topic/Attached%20and%20Detached%20Child%20Tasks.md).</summary>
+        <summary>Specifies that any child task that attempts to execute as an attached child task (that is, it is created with the <see cref="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" /> option) will not be able to attach to the parent task and will execute instead as a detached child task. For more information, see [Attached and Detached Child Tasks](~/docs/standard/parallel-programming/attached-and-detached-child-tasks.md).</summary>
       </Docs>
     </Member>
     <Member MemberName="HideScheduler">

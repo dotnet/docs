@@ -29,7 +29,7 @@
   
  When adding behaviors programmatically, the behavior is added to the appropriate `Behaviors` property on the <xref:System.ServiceModel.ChannelFactory> prior to the creation of any channel. See the example section for a code sample.  
   
- Frequently client or calling applications (for example, middle-tier applications are client applications, too) using this type also have complex state management needs as well as performance needs. For more information about these scenarios, please see [Middle-Tier Client Applications](../Topic/Middle-Tier%20Client%20Applications.md).  
+ Frequently client or calling applications (for example, middle-tier applications are client applications, too) using this type also have complex state management needs as well as performance needs. For more information about these scenarios, please see [Middle-Tier Client Applications](~/docs/framework/wcf/feature-details/middle-tier-client-applications.md).  
   
    
   

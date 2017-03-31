@@ -39,7 +39,7 @@
 > [!NOTE]
 >  Applying the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to a method that throws a <xref:System.StackOverflowException> has no effect. You still cannot handle the exception from user code.  
   
- If your app hosts the common language runtime (CLR), it can specify that the CLR should unload the application domain where the stack overflow exception occurs and let the corresponding process continue. For more information, see [ICLRPolicyManager Interface](../Topic/ICLRPolicyManager%20Interface.md).  
+ If your app hosts the common language runtime (CLR), it can specify that the CLR should unload the application domain where the stack overflow exception occurs and let the corresponding process continue. For more information, see [ICLRPolicyManager Interface](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md).  
   
  ]]></format>
     </remarks>

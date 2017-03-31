@@ -24,11 +24,11 @@
   
 |To|See|  
 |--------|---------|  
-|Check connection status|[How to: Check Connection Status](../Topic/How%20to:%20Check%20Connection%20Status%20in%20Visual%20Basic.md)|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
-|Create a registry key|[How to: Create a Registry Key and Set Its Value](../Topic/How%20to:%20Create%20a%20Registry%20Key%20and%20Set%20Its%20Value%20in%20Visual%20Basic.md)|  
-|Access the Clipboard|[Storing Data to and Reading from the Clipboard](../Topic/Storing%20Data%20to%20and%20Reading%20from%20the%20Clipboard%20\(Visual%20Basic\).md)|  
+|Check connection status|[How to: Check Connection Status](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-check-connection-status.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+|Create a registry key|[How to: Create a Registry Key and Set Its Value](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)|  
+|Access the Clipboard|[Storing Data to and Reading from the Clipboard](~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)|  
   
    
   
@@ -100,7 +100,7 @@
   
  The file name should reference a .wav sound file on your system.  
   
- To simplify the management of your sound files, consider storing the files as application resources. The files can then be accessed through the [My.Resources Object](../Topic/My.Resources%20Object.md).  
+ To simplify the management of your sound files, consider storing the files as application resources. The files can then be accessed through the [My.Resources Object](~/docs/visual-basic/language-reference/objects/my-resources-object.md).  
   
  ]]></format>
         </remarks>

@@ -2343,7 +2343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](../Topic/How%20to:%20Create%20a%20Text%20Decoration.md).  
+ A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline.  For more information about text decorations, see [How to: Create a Text Decoration](~/docs/framework/wpf/advanced/how-to-create-a-text-decoration.md).  
   
  By default, this property is set to `null` and has no <xref:System.Windows.TextDecorationCollection> associated with it.  Before adding any text effects, create a new <xref:System.Windows.TextDecorationCollection> and assign it to this property.  
   
@@ -2604,7 +2604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.TextBlock.Typography%2A> property is applicable only to [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts. A typography variant has no effect on fonts that do not support the variant.  For more information on this topic, see [Typography in WPF](../Topic/Typography%20in%20WPF.md).  
+ The <xref:System.Windows.Controls.TextBlock.Typography%2A> property is applicable only to [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts. A typography variant has no effect on fonts that do not support the variant.  For more information on this topic, see [Typography in WPF](~/docs/framework/wpf/advanced/typography-in-wpf.md).  
   
    
   

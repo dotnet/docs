@@ -35,7 +35,7 @@
   
  The site navigation data that is loaded by these providers is used by other components of the site map infrastructure, such as the <xref:System.Web.UI.WebControls.SiteMapPath> and <xref:System.Web.UI.WebControls.TreeView> controls, to display site map information for users.  
   
- If you implement your own site map provider, you can place the source file in the App_Code directory of your ASP.NET application, and then the assembly will be compiled automatically. You can also place your own site map provider in the Global Assembly Cache (GAC), and provide a fully-qualified reference to it in the Web.config file. For more information on compiler services, see [Working with Assemblies and the Global Assembly Cache](../Topic/Working%20with%20Assemblies%20and%20the%20Global%20Assembly%20Cache.md).  
+ If you implement your own site map provider, you can place the source file in the App_Code directory of your ASP.NET application, and then the assembly will be compiled automatically. You can also place your own site map provider in the Global Assembly Cache (GAC), and provide a fully-qualified reference to it in the Web.config file. For more information on compiler services, see [Working with Assemblies and the Global Assembly Cache](~/docs/framework/app-domains/working-with-assemblies-and-the-gac.md).  
   
    
   

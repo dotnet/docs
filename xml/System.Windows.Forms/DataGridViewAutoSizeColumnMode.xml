@@ -23,12 +23,12 @@
   
  This enumeration is used by the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> and <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> properties of columns and the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A?displayProperty=fullName> method.  
   
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md). For more information about column fill mode in particular, see [Column Fill Mode in the Windows Forms DataGridView Control](../Topic/Column%20Fill%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md). For more information about column fill mode in particular, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example illustrates the use of this enumeration to configure a fixed-width column. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](../Topic/How%20to:%20Set%20the%20Sizing%20Modes%20of%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this enumeration to configure a fixed-width column. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#10)]  

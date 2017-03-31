@@ -102,7 +102,7 @@
 ## Conversions from Custom Objects to Base Types  
  In addition to supporting conversions between the base types, the <xref:System.Convert> method supports conversion of any custom type to any base type. To do this, the custom type must implement the <xref:System.IConvertible> interface, which defines methods for converting the implementing type to each of the base types. Conversions that are not supported by a particular type should throw an <xref:System.InvalidCastException>.  
   
- When the <xref:System.Convert.ChangeType%2A> method is passed a custom type as its first parameter, or when the `Convert.To`*Type* method (such as <xref:System.Convert.ToInt32%28System.Object%29?displayProperty=fullName> or <xref:System.Convert.ToDouble%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> is called and passed an instance of a custom type as its first parameter, the <xref:System.Convert> method, in turn, calls the custom type's <xref:System.IConvertible> implementation to perform the conversion. For more information, see [Type Conversion in the .NET Framework](../Topic/Type%20Conversion%20in%20the%20.NET%20Framework.md).  
+ When the <xref:System.Convert.ChangeType%2A> method is passed a custom type as its first parameter, or when the `Convert.To`*Type* method (such as <xref:System.Convert.ToInt32%28System.Object%29?displayProperty=fullName> or <xref:System.Convert.ToDouble%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> is called and passed an instance of a custom type as its first parameter, the <xref:System.Convert> method, in turn, calls the custom type's <xref:System.IConvertible> implementation to perform the conversion. For more information, see [Type Conversion in the .NET Framework](~/docs/standard/base-types/type-conversion.md).  
   
 <a name="Culture"></a>   
 ## Culture-Specific Formatting Information  
@@ -142,7 +142,7 @@
  The <xref:System.BitConverter> class  provides methods that convert the primitive numeric types (including <xref:System.Boolean>) to byte arrays and from byte arrays back to primitive data types.  
   
  Character encoding and decoding  
- The <xref:System.Text.Encoding> class and its derived classes (such as <xref:System.Text.UnicodeEncoding> and <xref:System.Text.UTF8Encoding>) provide methods to encode a character array or a string (that is, to convert them to a byte array in a particular encoding) and to decode an encoded byte array (that is, convert a byte array back to UTF16-encoded Unicode characters. For more information, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md)  
+ The <xref:System.Text.Encoding> class and its derived classes (such as <xref:System.Text.UnicodeEncoding> and <xref:System.Text.UTF8Encoding>) provide methods to encode a character array or a string (that is, to convert them to a byte array in a particular encoding) and to decode an encoded byte array (that is, convert a byte array back to UTF16-encoded Unicode characters. For more information, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md)  
   
    
   

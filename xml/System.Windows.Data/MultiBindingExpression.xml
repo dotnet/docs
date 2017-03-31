@@ -18,7 +18,7 @@
 ## Remarks  
  <xref:System.Windows.Data.MultiBindingExpression> describes a single run-time instance of a <xref:System.Windows.Data.MultiBinding>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects attached to a single binding target property.  
   
- For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  With the use of a converter, the property values of the <xref:System.Windows.Data.BindingExpression> objects in a <xref:System.Windows.Data.MultiBindingExpression> produce a final value for the target property. In the reverse direction, the target property value is translated to a set of values that are fed back into the <xref:System.Windows.Data.BindingExpression> objects. For more information, see <xref:System.Windows.Data.MultiBinding>.  
   

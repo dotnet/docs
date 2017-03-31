@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation casts the generic handler as an <xref:System.EventHandler%601> of type <xref:System.Windows.Input.TouchEventArgs> and then invokes it. For more information about this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ This implementation casts the generic handler as an <xref:System.EventHandler%601> of type <xref:System.Windows.Input.TouchEventArgs> and then invokes it. For more information about this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>

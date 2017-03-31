@@ -23,7 +23,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.OperationContext> from within a service operation to access the current operation execution environment. In particular, the operation context is used to access callback channels in duplex services, to store extra state data across portions of the operations, and to access incoming message headers and properties as well as add outgoing message headers and properties.  
   
- For more information about using extensions to store state data, see [Extensible Objects](../Topic/Extensible%20Objects.md).  
+ For more information about using extensions to store state data, see [Extensible Objects](~/docs/framework/wcf/extending/extensible-objects.md).  
   
  The <xref:System.ServiceModel.OperationContext> has the following properties and methods.  
   
@@ -219,7 +219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationContext.Extensions%2A> property to obtain a collection of all extensions of the <xref:System.ServiceModel.OperationContext> used to modify the context or add custom state. For more information about extensions, see [Extensible Objects](../Topic/Extensible%20Objects.md).  
+ Use the <xref:System.ServiceModel.OperationContext.Extensions%2A> property to obtain a collection of all extensions of the <xref:System.ServiceModel.OperationContext> used to modify the context or add custom state. For more information about extensions, see [Extensible Objects](~/docs/framework/wcf/extending/extensible-objects.md).  
   
  ]]></format>
         </remarks>

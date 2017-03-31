@@ -33,7 +33,7 @@
  The Hebrew calendar recognizes two eras: B.C.E. (before the common era) and A.M. (Latin "Anno Mundi", which means "the year of the world"). This implementation of the <xref:System.Globalization.HebrewCalendar> class recognizes only the current era (A.M.) and the Hebrew years 5343 to 5999 (1583 to 2239 in the Gregorian calendar).  
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.HebrewCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](../Topic/Working%20with%20Calendars.md).  
+>  For information about using the <xref:System.Globalization.HebrewCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  In every 19-year cycle that ends with a year that is evenly divisible by 19, the 3rd, 6th, 8th, 11th, 14th, 17th, and 19th years are leap years. A common year can have from 353 to 355 days, depending on the placement of Jewish holidays. A leap year can have from 383 to 385 days.  
   
@@ -1059,7 +1059,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Microsoft Visual Basic represents time of day as the specified time on the minimum date supported by the <xref:System.DateTime> type, which is January 1, 0001 C.E. However, the <xref:System.Globalization.HebrewCalendar> type does not support that minimum date. Consequently, if you call a method to format the time of day using the current calendar but you do not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md).  
+ Microsoft Visual Basic represents time of day as the specified time on the minimum date supported by the <xref:System.DateTime> type, which is January 1, 0001 C.E. However, the <xref:System.Globalization.HebrewCalendar> type does not support that minimum date. Consequently, if you call a method to format the time of day using the current calendar but you do not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
   
    
   

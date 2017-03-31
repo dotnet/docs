@@ -3451,7 +3451,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to lowercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to lowercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToLower(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -3725,7 +3725,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to uppercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling character-casing and string-casing methods that substitute default values. Instead, you should call methods that require parameters to be explicitly specified. To convert a character to uppercase by using the casing conventions of the current culture, call the <see cref="M:System.Char.ToUpper(System.Char,System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
       </Docs>
     </Member>

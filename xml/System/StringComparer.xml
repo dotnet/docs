@@ -522,7 +522,7 @@
 ## Remarks  
  The <xref:System.StringComparer.GetHashCode%28System.String%29> method is more efficient than the <xref:System.StringComparer.GetHashCode%2A> method because the `obj` parameter does not have to be unboxed to perform the operation.  
   
- The <xref:System.StringComparer.GetHashCode%28System.Object%29> method allocates an amount of memory that is proportional to the size of `obj` to calculate the hash code of `obj`. In the case of large strings, trying to retrieve the hash code can throw an <xref:System.ArgumentException>. Instead, you can use an alternate algorithm that allocates a fixed amount of memory when calculating hash codes. To use this algorithm, add the [<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](../Topic/%3CNetFx45_CultureAwareComparerGetHashCode_LongStrings%3E%20Element.md) element to the [\<runtime>](../Topic/%3Cruntime%3E%20Element.md) section of your application's configuration file.  
+ The <xref:System.StringComparer.GetHashCode%28System.Object%29> method allocates an amount of memory that is proportional to the size of `obj` to calculate the hash code of `obj`. In the case of large strings, trying to retrieve the hash code can throw an <xref:System.ArgumentException>. Instead, you can use an alternate algorithm that allocates a fixed amount of memory when calculating hash codes. To use this algorithm, add the [<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](~/docs/framework/configuring-apps/file-schema/runtime/netfx45-cultureawarecomparergethashcode-longstrings-element.md) element to the [\<runtime>](~/docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your application's configuration file.  
   
  ]]></format>
         </remarks>
@@ -567,7 +567,7 @@
 ## Remarks  
  The <xref:System.StringComparer.GetHashCode%28System.String%29> method is more efficient than the <xref:System.StringComparer.GetHashCode%28System.Object%29> method because the `obj` parameter does not have to be unboxed to perform the operation.  
   
- The <xref:System.StringComparer.GetHashCode%28System.String%29> method allocates an amount of memory that is proportional to the size of `obj` to calculate the hash code of `obj`. In the case of large strings, trying to retrieve the hash code can throw an <xref:System.ArgumentException>. Instead, you can use an alternate algorithm that allocates a fixed amount of memory when calculating hash codes. To use this algorithm, add the [<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](../Topic/%3CNetFx45_CultureAwareComparerGetHashCode_LongStrings%3E%20Element.md) element to the [\<runtime>](../Topic/%3Cruntime%3E%20Element.md) section of your application's configuration file.  
+ The <xref:System.StringComparer.GetHashCode%28System.String%29> method allocates an amount of memory that is proportional to the size of `obj` to calculate the hash code of `obj`. In the case of large strings, trying to retrieve the hash code can throw an <xref:System.ArgumentException>. Instead, you can use an alternate algorithm that allocates a fixed amount of memory when calculating hash codes. To use this algorithm, add the [<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](~/docs/framework/configuring-apps/file-schema/runtime/netfx45-cultureawarecomparergethashcode-longstrings-element.md) element to the [\<runtime>](~/docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your application's configuration file.  
   
  ]]></format>
         </remarks>

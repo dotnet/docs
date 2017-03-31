@@ -26,9 +26,9 @@
 ## Remarks  
  The <xref:System.Windows.Controls.ControlTemplate> allows you to specify the visual structure of a control. The control author can define the default <xref:System.Windows.Controls.ControlTemplate> and the application author can override the <xref:System.Windows.Controls.ControlTemplate> to reconstruct the visual structure of the control.  
   
- Control templating is one of the many features offered by the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] styling and templating model. The styling and templating model provides you with such great flexibility that in many cases you do not need to write your own controls. If you are an application author that wants to change the visualization of your control or to replace the <xref:System.Windows.Controls.ControlTemplate> of an existing control, see the [Styling and Templating](../Topic/Styling%20and%20Templating.md) topic for examples and an in-depth discussion.  
+ Control templating is one of the many features offered by the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] styling and templating model. The styling and templating model provides you with such great flexibility that in many cases you do not need to write your own controls. If you are an application author that wants to change the visualization of your control or to replace the <xref:System.Windows.Controls.ControlTemplate> of an existing control, see the [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md) topic for examples and an in-depth discussion.  
   
- If you are writing your own control, see "Create a Custom Control" in the [Control Authoring Overview](../Topic/Control%20Authoring%20Overview.md).  
+ If you are writing your own control, see "Create a Custom Control" in the [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
   
  A <xref:System.Windows.Controls.ControlTemplate> is intended to be a self-contained unit of implementation detail that is invisible to outside users and objects, including styles. The only way to manipulate the content of the control template is from within the same control template.  
   
@@ -148,7 +148,7 @@
 <a name="xamlValues_TargetType"></a>   
 ## XAML Values  
  *typeName*  
- The type name of the class. To refer to the <xref:System.Type> name of the class, use the [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md).  
+ The type name of the class. To refer to the <xref:System.Type> name of the class, use the [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
    
   

@@ -28,7 +28,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the Microsoft .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the Microsoft .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must use the namespace `http://www.w3.org/1999/XSL/Transform`.  
   
@@ -112,9 +112,9 @@
 > [!NOTE]
 >  `msxsl:script` and `msxsl:node-list` are the only functions from the `urn:schemas-microsoft-com:xslt` namespace that are supported by the <xref:System.Xml.Xsl.XslTransform> class.  
   
- <xref:System.Xml.Xsl.XslTransform> has the ability to utilize common language runtime (CLR) code as an extension mechanism. This is accomplished by passing an instance of a class to the <xref:System.Xml.Xsl.XslTransform> class and calling its public methods within an XSLT style sheet. Methods that are defined with the `params` keyword, which allows an unspecified number of parameters to be passed, do not work correctly in this scenario. See [params](../Topic/params%20\(C%23%20Reference\).md) for more details.  
+ <xref:System.Xml.Xsl.XslTransform> has the ability to utilize common language runtime (CLR) code as an extension mechanism. This is accomplished by passing an instance of a class to the <xref:System.Xml.Xsl.XslTransform> class and calling its public methods within an XSLT style sheet. Methods that are defined with the `params` keyword, which allows an unspecified number of parameters to be passed, do not work correctly in this scenario. See [params](~/docs/csharp/language-reference/keywords/params.md) for more details.  
   
- For more information see [XSLT Transformations with the XslTransform Class](../Topic/XSLT%20Transformations%20with%20the%20XslTransform%20Class.md).  
+ For more information see [XSLT Transformations with the XslTransform Class](~/docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md).  
   
    
   
@@ -179,7 +179,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl=``http://www.w3.org/1999/XSL/Transform`.  
   
@@ -244,7 +244,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -313,7 +313,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -359,7 +359,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -413,7 +413,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -483,7 +483,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -537,7 +537,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -585,7 +585,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -637,7 +637,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -704,7 +704,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -756,7 +756,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -814,7 +814,7 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -876,14 +876,14 @@
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
 > [!NOTE]
 >  This method is now obsolete. The setting of the <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A> property determines how the XSLT `document()` function is resolved. The recommended practice is to use the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method which takes an <xref:System.Xml.XmlResolver> object as one of its arguments.  
   
- The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlReader> (the `xsl:output` element is ignored). See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlReader> (the `xsl:output` element is ignored). See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
  This method enables you to do an asynchronous transformation of the source document.  
   
@@ -973,13 +973,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation has been performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, which is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- Because <xref:System.Xml.XmlReader> provides read-only output, the `xsl:output` element is ignored. See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ Because <xref:System.Xml.XmlReader> provides read-only output, the `xsl:output` element is ignored. See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
  This method enables you to do an asynchronous transformation of the source document.  
   
@@ -1028,7 +1028,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -1078,7 +1078,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -1177,7 +1177,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -1186,7 +1186,7 @@ Root node is book.
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet.  
   
- The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for specifics on which `xsl:output` attributes are supported.  
+ The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for specifics on which `xsl:output` attributes are supported.  
   
  Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an <xref:System.Xml.XmlDocument> containing just the node fragment, and pass that <xref:System.Xml.XmlDocument> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
@@ -1281,11 +1281,11 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
- The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlReader> (the `xsl:output` element is ignored). See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlReader> (the `xsl:output` element is ignored). See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
  This method enables you to do an asynchronous transformation of the source document.  
   
@@ -1385,14 +1385,14 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
 > [!NOTE]
 >  This method is now obsolete. The setting of the <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A> property determines how the XSLT `document()` function is resolved. The recommended practice is to use the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method which takes an <xref:System.Xml.XmlResolver> object as one of its arguments.  
   
- The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
  Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an <xref:System.Xml.XmlDocument> containing just the node fragment and pass that <xref:System.Xml.XmlDocument> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
@@ -1484,13 +1484,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation has been performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, which is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for specifics on which `xsl:output` attributes are supported.  
+ See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for specifics on which `xsl:output` attributes are supported.  
   
 > [!NOTE]
 >  This method is now obsolete. The setting of the <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A> property determines how the XSLT `document()` function is resolved. The recommended practice is to use the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method which takes an <xref:System.Xml.XmlResolver> object as one of its arguments.  
@@ -1535,13 +1535,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation is performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, which is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for specifics on which `xsl:output` attributes are supported.  
+ The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for specifics on which `xsl:output` attributes are supported.  
   
 > [!NOTE]
 >  This method is now obsolete. The setting of the <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A> property determines how the XSLT `document()` function is resolved. The recommended practice is to use the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method which takes an <xref:System.Xml.XmlResolver> object as one of its arguments.  
@@ -1589,13 +1589,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation has been performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, which is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- Because <xref:System.Xml.XmlReader> provides read-only output, the `xsl:output` element is ignored. See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ Because <xref:System.Xml.XmlReader> provides read-only output, the `xsl:output` element is ignored. See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
  This method enables you to do an asynchronous transformation of the source document.  
   
@@ -1639,13 +1639,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation is performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, that is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
 > [!NOTE]
 >  This method is now obsolete. The setting of the <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A> property determines how the XSLT `document()` function is resolved. The recommended practice is to use the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method which takes an <xref:System.Xml.XmlResolver> object as one of its arguments.  
@@ -1694,7 +1694,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
@@ -1802,13 +1802,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet.  
   
- The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for specifics on which `xsl:output` attributes are supported.  
+ The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for specifics on which `xsl:output` attributes are supported.  
   
  Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an <xref:System.Xml.XmlDocument> containing just the node fragment and pass that <xref:System.Xml.XmlDocument> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
@@ -1916,11 +1916,11 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
- The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ The `args` are matched with the `xsl:param` elements defined in the style sheet. The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
  Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an <xref:System.Xml.XmlDocument> containing just the node fragment and pass that <xref:System.Xml.XmlDocument> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
@@ -2035,13 +2035,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation has been performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, which is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for specifics on which `xsl:output` attributes are supported.  
+ See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for specifics on which `xsl:output` attributes are supported.  
   
    
   
@@ -2099,13 +2099,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation is performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, which is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for specifics on which `xsl:output` attributes are supported.  
+ The encoding attribute on an `xsl:output` element is not supported when outputting to a <xref:System.IO.TextWriter>. See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for specifics on which `xsl:output` attributes are supported.  
   
  ]]></format>
         </remarks>
@@ -2151,13 +2151,13 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  <xref:System.Xml.Xsl.XslTransform> supports the XSLT 1.0 syntax. The XSLT style sheet must include the namespace declaration `xmlns:xsl= http://www.w3.org/1999/XSL/Transform`.  
   
  The `args` are matched with the `xsl:param` elements defined in the style sheet. The transformation selections apply to the document as a whole. In other words, if the current node is set on a node tree other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. After the transformation is performed, the <xref:System.Xml.XPath.XPathNavigator> remains in its original state. This means that the node, that is current before the transformation process, remains the current node after the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method has been called.  
   
- The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](../Topic/Outputs%20from%20an%20XslTransform.md) for more information.  
+ The `xsl:output` element is not supported when outputting to an <xref:System.Xml.XmlWriter> (`xsl:output` is ignored). See [Outputs from an XslTransform](~/docs/standard/data/xml/outputs-from-an-xsltransform.md) for more information.  
   
    
   
@@ -2201,7 +2201,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  In version 1.1 of the .NET Framework, the trust level of the application determines the default behavior:  
   
@@ -2232,7 +2232,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  ]]></format>
         </remarks>
@@ -2252,7 +2252,7 @@ Root node is book.
 ## Remarks  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+>  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is the new XSLT processor. For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
  ]]></format>
         </remarks>

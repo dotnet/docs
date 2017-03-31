@@ -21,9 +21,9 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
-|Check connection status|[How to: Check Connection Status](../Topic/How%20to:%20Check%20Connection%20Status%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+|Check connection status|[How to: Check Connection Status](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-check-connection-status.md)|  
   
    
   
@@ -77,7 +77,7 @@
 ## Remarks  
  If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files, provide user credentials, or specify a specific timeout value.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -87,7 +87,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files, provide user credentials, or specify a specific timeout value. `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files, provide user credentials, or specify a specific timeout value. `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -145,7 +145,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -199,7 +199,7 @@
 ## Remarks  
  If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files or specify a specific timeout value.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -212,7 +212,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -266,7 +266,7 @@
 ## Remarks  
  If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files or specify a specific timeout value.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -279,7 +279,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -344,7 +344,7 @@
   
  If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -357,7 +357,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -425,7 +425,7 @@
   
  If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -438,7 +438,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -510,7 +510,7 @@
   
  If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -523,7 +523,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -590,7 +590,7 @@
   
  If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -603,7 +603,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -672,7 +672,7 @@
   
  If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -685,7 +685,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -754,7 +754,7 @@
   
  If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
   
- `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
@@ -767,7 +767,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Download a file|[How to: Download a File](../Topic/How%20to:%20Download%20a%20File%20in%20Visual%20Basic.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
   
    
   
@@ -821,7 +821,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Check whether a computer is connected to a network|[How to: Check Connection Status](../Topic/How%20to:%20Check%20Connection%20Status%20in%20Visual%20Basic.md)|  
+|Check whether a computer is connected to a network|[How to: Check Connection Status](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-check-connection-status.md)|  
   
    
   
@@ -1131,14 +1131,14 @@
 ## Remarks  
  You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to provide user credentials or specify a specific timeout value.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
  The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
   
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1189,14 +1189,14 @@
 ## Remarks  
  You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to provide user credentials or specify a specific timeout value.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
  The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
   
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1251,7 +1251,7 @@
 ## Remarks  
  You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to specify a specific timeout value.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1261,7 +1261,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1317,7 +1317,7 @@
 ## Remarks  
  You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to specify a specific timeout value.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1327,7 +1327,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1388,7 +1388,7 @@
   
  If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1398,7 +1398,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1462,7 +1462,7 @@
   
  If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1472,7 +1472,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1536,7 +1536,7 @@
   
  If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1546,7 +1546,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1610,7 +1610,7 @@
   
  If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1620,7 +1620,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1685,7 +1685,7 @@
   
  If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1695,7 +1695,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   
@@ -1760,7 +1760,7 @@
   
  If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
   
- `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](../Topic/Enabling%20Network%20Tracing.md).  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
   
 > [!NOTE]
 >  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
@@ -1770,7 +1770,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Upload a file|[How to: Upload a File](../Topic/How%20to:%20Upload%20a%20File%20in%20Visual%20Basic.md)|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
   
    
   

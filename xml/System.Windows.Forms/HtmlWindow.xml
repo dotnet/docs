@@ -284,7 +284,7 @@
 ## Remarks  
  Use the underlying unmanaged interface pointers to the Document Object Model (DOM) to execute methods not exposed by <xref:System.Windows.Forms.HtmlWindow>.  
   
- You must add a referenced to the unmanaged MSHTML.dll in order to use <xref:System.Windows.Forms.HtmlWindow.DomWindow%2A>. For more information, see [Importing a Type Library as an Assembly](../Topic/Importing%20a%20Type%20Library%20as%20an%20Assembly.md).  
+ You must add a referenced to the unmanaged MSHTML.dll in order to use <xref:System.Windows.Forms.HtmlWindow.DomWindow%2A>. For more information, see [Importing a Type Library as an Assembly](~/docs/framework/interop/importing-a-type-library-as-an-assembly.md).  
   
    
   

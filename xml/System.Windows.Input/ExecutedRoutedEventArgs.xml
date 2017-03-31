@@ -20,7 +20,7 @@
   
  This event data class is also used for <xref:System.Windows.Input.CommandManager.Executed?displayProperty=fullName> and <xref:System.Windows.Input.CommandManager.PreviewExecuted?displayProperty=fullName>. But most practical handlers will handle the <xref:System.Windows.Input.CommandBinding.Executed> events from a particular <xref:System.Windows.Input.CommandBinding>, rather than work at the <xref:System.Windows.Input.CommandManager> level.  
   
- For more information on commanding, see [Commanding Overview](../Topic/Commanding%20Overview.md).  
+ For more information on commanding, see [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
   
    
   

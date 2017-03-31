@@ -24,7 +24,7 @@
 > [!NOTE]
 >  <xref:System.Data.SqlClient.SqlDependency> was designed to be used in ASP.NET or middle-tier services where there is a relatively small number of servers having dependencies active against the database. It was not designed for use in client applications, where hundreds or thousands of client computers would have <xref:System.Data.SqlClient.SqlDependency> objects set up for a single database server. If you are developing an application where you need reliable sub-second notifications when data changes, review the sections **Planning an Efficient Query Notifications Strategy** and **Alternatives to Query Notifications** in the [Planning for Notifications](http://go.microsoft.com/fwlink/?LinkId=211984) topic in SQL Server Books Online.  
   
- For more information, see [Query Notifications in SQL Server](../Topic/Query%20Notifications%20in%20SQL%20Server.md) and "Building Notification Solutions" in SQL Server Books Online.  
+ For more information, see [Query Notifications in SQL Server](~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md) and "Building Notification Solutions" in SQL Server Books Online.  
   
 > [!NOTE]
 >  The <xref:System.Data.SqlClient.SqlDependency.OnChange> event may be generated on a different thread from the thread that initiated command execution.  

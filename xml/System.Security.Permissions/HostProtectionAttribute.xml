@@ -44,7 +44,7 @@
 >  If you are creating a class library that is to be called by applications that may execute in a host protected environment, you should apply this attribute to members that expose <xref:System.Security.Permissions.HostProtectionResource> resource categories. The .NET Framework class library members with this attribute cause only the immediate caller to be checked.  Your library member must also cause a check of its immediate caller in the same manner.  
   
 > [!NOTE]
->  Do not use the [Ngen.exe (Native Image Generator)](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md) to create a native image of assemblies that are protected by the <xref:System.Security.Permissions.HostProtectionAttribute>. In a full-trust environment, the image is always loaded, without regard to the <xref:System.Security.Permissions.HostProtectionAttribute>, and in a partial-trust environment the image is not loaded.  
+>  Do not use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to create a native image of assemblies that are protected by the <xref:System.Security.Permissions.HostProtectionAttribute>. In a full-trust environment, the image is always loaded, without regard to the <xref:System.Security.Permissions.HostProtectionAttribute>, and in a partial-trust environment the image is not loaded.  
   
    
   

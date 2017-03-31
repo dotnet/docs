@@ -29,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a parameter to a <see cref="T:System.Data.SqlClient.SqlCommand" /> and optionally its mapping to <see cref="T:System.Data.DataSet" /> columns. This class cannot be inherited. For more information on parameters, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).</summary>
+    <summary>Represents a parameter to a <see cref="T:System.Data.SqlClient.SqlCommand" /> and optionally its mapping to <see cref="T:System.Data.DataSet" /> columns. This class cannot be inherited. For more information on parameters, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -39,12 +39,12 @@
 > [!NOTE]
 >  Nameless, also called ordinal, parameters are not supported by the .NET Framework Data Provider for SQL Server.  
   
- For more information, along with additional sample code demonstrating how to use parameters, see [Commands and Parameters](../Topic/Commands%20and%20Parameters.md).  
+ For more information, along with additional sample code demonstrating how to use parameters, see [Commands and Parameters](~/docs/framework/data/adonet/commands-and-parameters.md).  
   
    
   
 ## Examples  
- The following example creates multiple instances of <xref:System.Data.SqlClient.SqlParameter> through the <xref:System.Data.SqlClient.SqlParameterCollection> collection within the <xref:System.Data.SqlClient.SqlDataAdapter>. These parameters are used to select data from the data source and put the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created by using the appropriate schema, commands, and connection. For more information and additional examples on using parameters, see [Retrieving and Modifying Data in ADO.NET](../Topic/Retrieving%20and%20Modifying%20Data%20in%20ADO.NET.md) and [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ The following example creates multiple instances of <xref:System.Data.SqlClient.SqlParameter> through the <xref:System.Data.SqlClient.SqlParameterCollection> collection within the <xref:System.Data.SqlClient.SqlDataAdapter>. These parameters are used to select data from the data source and put the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created by using the appropriate schema, commands, and connection. For more information and additional examples on using parameters, see [Retrieving and Modifying Data in ADO.NET](~/docs/framework/data/adonet/retrieving-and-modifying-data.md) and [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
  [!code-csharp[Classic WebData SqlParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/CS/source.cs#1)]
  [!code-vb[Classic WebData SqlParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/VB/source.vb#1)]  
@@ -452,7 +452,7 @@ Parameter = new SqlParameter("@pname", (object)0);
 ## Remarks  
  The <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> and <xref:System.Data.SqlClient.SqlParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> changes the <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> to a supporting <xref:System.Data.SqlDbType>.  
   
- For a list of the supported data types, see the appropriate <xref:System.Data.SqlDbType> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate <xref:System.Data.SqlDbType> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
    
   
@@ -508,9 +508,9 @@ Parameter = new SqlParameter("@pname", (object)0);
 ## Examples  
  The following example creates a <xref:System.Data.SqlClient.SqlParameter> and sets some of its properties.  
   
- [Commands and Parameters](../Topic/Commands%20and%20Parameters.md)  
+ [Commands and Parameters](~/docs/framework/data/adonet/commands-and-parameters.md)  
   
- [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md)  
+ [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md)  
   
  [SQL Server and ADO.NET](../Topic/SQL%20Server%20and%20ADO.NET.md)  
   
@@ -951,7 +951,7 @@ static void CreateSqlParameterLocaleId(){
   
  For fixed length data types, the value of <xref:System.Data.SqlClient.SqlParameter.Size%2A> is ignored. It can be retrieved for informational purposes, and returns the maximum amount of bytes the provider uses when transmitting the value of the parameter to the server.  
   
- For information about streaming, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
    
   
@@ -995,7 +995,7 @@ static void CreateSqlParameterLocaleId(){
 ## Remarks  
  When <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A> is set to anything other than an empty string, the value of the parameter is retrieved from the column with the <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A> name. If <xref:System.Data.SqlClient.SqlParameter.Direction%2A> is set to `Input`, the value is taken from the <xref:System.Data.DataSet>. If <xref:System.Data.SqlClient.SqlParameter.Direction%2A> is set to `Output`, the value is taken from the data source. A <xref:System.Data.SqlClient.SqlParameter.Direction%2A> of `InputOutput` is a combination of both.  
   
- For more information about how to use the <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md) and [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
+ For more information about how to use the <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md) and [Updating Data Sources with DataAdapters](~/docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  
   
    
   
@@ -1131,9 +1131,9 @@ FieldName = @OriginalFieldName
 ## Remarks  
  The <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> and <xref:System.Data.SqlClient.SqlParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> changes the <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> to a supporting <xref:System.Data.SqlDbType>.  
   
- For a list of the supported data types, see the appropriate <xref:System.Data.SqlDbType> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate <xref:System.Data.SqlDbType> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
- For information about streaming, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1187,7 +1187,7 @@ FieldName = @OriginalFieldName
   
  Use the <xref:System.Data.SqlClient.SqlParameter.Value%2A> property to return parameter values as common language runtime (CLR) types.  
   
- For information about streaming, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1359,7 +1359,7 @@ FieldName = @OriginalFieldName
   
  The <xref:System.Data.SqlClient.SqlParameter.Value%2A> property is overwritten by `SqlDataAdapter.UpdateCommand`.  
   
- For information about streaming, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
    
   

@@ -18,7 +18,7 @@
 ## Remarks  
   
 ## Interactively Controlling Storyboards  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in markup, you specify the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of the <xref:System.Windows.Media.Animation.BeginStoryboard> object that creates it; for an example, see [How to: Use Event Triggers to Control a Storyboard After It Starts](../Topic/How%20to:%20Use%20Event%20Triggers%20to%20Control%20a%20Storyboard%20After%20It%20Starts.md). To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in markup, you specify the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of the <xref:System.Windows.Media.Animation.BeginStoryboard> object that creates it; for an example, see [How to: Use Event Triggers to Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md). To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
 ## Data Binding and Animating Timelines  
  Most timeline properties can be data bound or animated; however, because of the way the timing system works, data bound or animated timelines do not behave like other data bound or animated objects. To understand their behavior, it helps to understand what it means to activate a timeline.  
@@ -223,7 +223,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
    
   
@@ -386,7 +386,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
    
   
@@ -485,7 +485,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
  ]]></format>
         </remarks>
@@ -534,7 +534,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
    
   
@@ -599,7 +599,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
  ]]></format>
         </remarks>
@@ -714,7 +714,7 @@
 ## Remarks  
  A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -745,7 +745,7 @@
 ## Remarks  
  A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -775,7 +775,7 @@
   
  If this storyboard has a <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> setting of `true`, a full iteration consists of a forward-reverse pair, not just one of these segments.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -808,7 +808,7 @@
   
  If this storyboard has a <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> setting of `true`, a full iteration consists of a forward-reverse pair, not just one of these segments.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -843,7 +843,7 @@
   
  Regardless of its current iteration, seeking a clock returns its current iteration to 1. Restarting a clock also returns its current iteration to 1.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -870,7 +870,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -900,7 +900,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -930,7 +930,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -958,7 +958,7 @@
 ## Remarks  
  This method does not tell you whether a storyboard is paused. To determine whether a storyboard is paused, use the <xref:System.Windows.Media.Animation.Storyboard.GetIsPaused%2A> method.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -989,7 +989,7 @@
 ## Remarks  
  This method does not tell you whether a storyboard is paused. To determine whether a storyboard is paused, use the <xref:System.Windows.Media.Animation.Storyboard.GetIsPaused%2A> method.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1020,7 +1020,7 @@
 ## Remarks  
  This method does not tell you whether a storyboard is paused. To determine whether a storyboard is paused, use the <xref:System.Windows.Media.Animation.Storyboard.GetIsPaused%2A> method.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1047,7 +1047,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1077,7 +1077,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1107,7 +1107,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1134,7 +1134,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1164,7 +1164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1194,7 +1194,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1228,7 +1228,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Media.Animation.Storyboard.Target%2A> attached property with animation timelines to indicate the object that they target. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ Use the <xref:System.Windows.Media.Animation.Storyboard.Target%2A> attached property with animation timelines to indicate the object that they target. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1257,7 +1257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method gets the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ This method gets the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1286,7 +1286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method gets the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property. For more information about how attached properties work, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ This method gets the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property. For more information about how attached properties work, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
  Note that if the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> was set in markup, this method returns an empty <xref:System.Windows.PropertyPath> because the property reference is resolved and stored internally when it is parsed.  
   
@@ -1315,7 +1315,7 @@
 ## Remarks  
  This method pauses the storyboard, but has no discernible effect if it is not active or currently paused. As a side effect, all associated children are also paused.  
   
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
 ## Beginning a Paused Storyboard  
  When you <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> a storyboard that was paused, it appears to resume and restart. However, that is not what actually happens. The <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method actually replaces the paused <xref:System.Windows.Media.Animation.Storyboard> with a new unpaused version. Each time the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method is called, clock objects are created for the storyboard. These clocks are distributed to the properties they animate. So, when the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method is called again, it does not restart its clocks; it replaces them with new clocks.  
@@ -1350,7 +1350,7 @@
   
  Seeking a paused storyboard does not resume it. The only way to resume a paused storyboard is to use the <xref:System.Windows.Media.Animation.Storyboard.Resume%2A> method. Calling the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method again replaces the paused storyboard with a new one, which has the appearance of resuming it.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. Fro an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. Fro an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Pausing a storyboard's clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
@@ -1395,7 +1395,7 @@
   
  Seeking a paused storyboard does not resume it. The only way to resume a paused storyboard is to use the <xref:System.Windows.Media.Animation.Storyboard.Resume%2A> method. Calling the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method again replaces the paused storyboard with a new one, which has the appearance of resuming it.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Pausing a storyboard's clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
@@ -1425,7 +1425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  All interactive actions taken on a <xref:System.Windows.Media.Animation.Clock>, and therefore also on a <xref:System.Windows.Media.Animation.Storyboard>, occur on the next tick of the timing engine, which happens shortly before the next render. This means that the <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> method still affects the animated properties until this time. In other words, the next time the frame is displayed, the storyboard is removed. If you need to disassociate an animation from a property before this time, use the <xref:System.Windows.UIElement.BeginAnimation%2A> method with an `animation` parameter value of `null`.  
   
@@ -1455,7 +1455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Removing a storyboard's clock triggers the <xref:System.Windows.Media.Animation.Timeline.RemoveRequested> event.  
   
@@ -1485,7 +1485,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Removing a storyboard's clock triggers the <xref:System.Windows.Media.Animation.Timeline.RemoveRequested> event.  
   
@@ -1512,7 +1512,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1542,7 +1542,7 @@
 ## Remarks  
  Resuming a storyboard that is not paused has no effect.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Seeking a paused storyboard does not resume it. The only way to resume a paused storyboard is to use the <xref:System.Windows.Media.Animation.Storyboard.Resume%2A> method. Calling the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method after the storyboard has started replaces the old storyboard, which has the appearance of resuming it.  
   
@@ -1584,7 +1584,7 @@
 ## Remarks  
  Resuming a storyboard that is not paused has no effect.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Seeking a paused storyboard does not resume it. The only way to resume a paused storyboard is to use the <xref:System.Windows.Media.Animation.Storyboard.Resume%2A> method. Calling the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method after the storyboard has started replaces the old storyboard, which has the appearance of resuming it.  
   
@@ -1618,7 +1618,7 @@
 ## Remarks  
  Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account. The storyboard is treated as though it has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1650,7 +1650,7 @@
 ## Remarks  
  Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account. The storyboard is treated as though it has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1686,7 +1686,7 @@
   
  This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events are also not raised until then.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
@@ -1732,7 +1732,7 @@
   
  This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events are also not raised until then.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed if it is made controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed if it is made controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
@@ -1779,7 +1779,7 @@
   
  Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account. The storyboard is treated as though it has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1813,7 +1813,7 @@
   
  Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account. The storyboard is treated as though it has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1855,7 +1855,7 @@
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
    
   
@@ -1905,7 +1905,7 @@
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
    
   
@@ -1941,7 +1941,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -1971,7 +1971,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Calling this method triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
@@ -2011,7 +2011,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  Calling this method triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
@@ -2043,7 +2043,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method sets the <xref:System.Windows.Media.Animation.Storyboard.Target%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ This method sets the <xref:System.Windows.Media.Animation.Storyboard.Target%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Media.Animation.Storyboard.Target%2A> property is not serializable, because it can be set to any <xref:System.Windows.DependencyObject>. It is not guaranteed that this object can be correctly referenced from XAML.  
@@ -2076,7 +2076,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method sets the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ This method sets the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>. For more information about how attached properties work, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
  ]]></format>
         </remarks>
@@ -2106,7 +2106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method sets the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A>. For more information about how attached properties work, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ This method sets the <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A> attached property on the specified object. For more information about how storyboard targeting works, see <xref:System.Windows.Media.Animation.Storyboard.TargetProperty%2A>. For more information about how attached properties work, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
  ]]></format>
         </remarks>
@@ -2131,7 +2131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -2165,7 +2165,7 @@
   
  Advancing a clock to its fill period triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
    
   
@@ -2207,7 +2207,7 @@
   
  Advancing a clock to its fill period triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -2264,7 +2264,7 @@
   
  Stopping a clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events, but not the <xref:System.Windows.Media.Animation.Timeline.Completed> event.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
    
   
@@ -2304,7 +2304,7 @@
   
  Stopping a clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events, but not the <xref:System.Windows.Media.Animation.Timeline.Completed> event.  
   
- To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -2372,7 +2372,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>
@@ -2391,7 +2391,7 @@
 ## Remarks  
  A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
   
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](../Topic/How%20to:%20Control%20a%20Storyboard%20After%20It%20Starts.md).  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
  ]]></format>
         </remarks>

@@ -321,7 +321,7 @@
   
  Therefore, the order in which <xref:System.Data.OleDb.OleDbParameter> objects are added to the <xref:System.Data.OleDb.OleDbParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter.  
   
- For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ For more information, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
    
   
@@ -395,7 +395,7 @@
   
  `SELECT * FROM Customers WHERE CustomerID = ?`  
   
- Therefore, the order in which <xref:System.Data.OleDb.OleDbParameter> objects are added to the <xref:System.Data.OleDb.OleDbParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter. For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ Therefore, the order in which <xref:System.Data.OleDb.OleDbParameter> objects are added to the <xref:System.Data.OleDb.OleDbParameterCollection> must directly correspond to the position of the question mark placeholder for the parameter. For more information, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
  ]]></format>
         </remarks>
@@ -823,7 +823,7 @@ Int32 count = (int32) ExecuteScalar();
 > [!NOTE]
 >  If the parameters in the collection do not match the requirements of the query to be executed, an error may result.  
   
- For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ For more information, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
    
   
@@ -1048,7 +1048,7 @@ Int32 count = (int32) ExecuteScalar();
 ## Remarks  
  The default <xref:System.Data.OleDb.OleDbCommand.UpdatedRowSource%2A> value is Both unless the command is automatically generated (as with the <xref:System.Data.OleDb.OleDbCommandBuilder>), in which case the default is None.  
   
- For more information about how to use the <xref:System.Data.OleDb.OleDbCommand.UpdatedRowSource%2A> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For more information about how to use the <xref:System.Data.OleDb.OleDbCommand.UpdatedRowSource%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
  ]]></format>
         </remarks>

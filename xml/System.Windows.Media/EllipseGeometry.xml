@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Media.EllipseGeometry> class with a <xref:System.Windows.Shapes.Path> element or a <xref:System.Windows.Media.GeometryDrawing> to draw an ellipse, or with the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> to define an elliptical clip region. The <xref:System.Windows.Media.EllipseGeometry> class also has many other uses. For more information about <xref:System.Windows.Media.EllipseGeometry>, see [Geometry Overview](../Topic/Geometry%20Overview.md).  
+ Use the <xref:System.Windows.Media.EllipseGeometry> class with a <xref:System.Windows.Shapes.Path> element or a <xref:System.Windows.Media.GeometryDrawing> to draw an ellipse, or with the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> to define an elliptical clip region. The <xref:System.Windows.Media.EllipseGeometry> class also has many other uses. For more information about <xref:System.Windows.Media.EllipseGeometry>, see [Geometry Overview](~/docs/framework/wpf/graphics-multimedia/geometry-overview.md).  
   
 ## EllipseGeometry Compared to Ellipse  
  The <xref:System.Windows.Shapes.Ellipse> class has a <xref:System.Windows.Shapes.Shape.Fill%2A>, <xref:System.Windows.Shapes.Shape.Stroke%2A>, and other rendering properties that <xref:System.Windows.Media.EllipseGeometry> lacks. The <xref:System.Windows.Shapes.Ellipse> class is a <xref:System.Windows.FrameworkElement> and therefore participates in the layout system; it can be used as the content of any element that supports <xref:System.Windows.UIElement> children.  
@@ -24,7 +24,7 @@
  The <xref:System.Windows.Media.EllipseGeometry> class, on the other hand, simply defines the geometry of an ellipse, and cannot render itself. Because of its simplicity, it has a wider range of uses.  
   
 ## Freezable Features  
- An <xref:System.Windows.Media.EllipseGeometry> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ An <xref:System.Windows.Media.EllipseGeometry> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
    
   

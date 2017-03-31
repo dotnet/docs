@@ -59,7 +59,7 @@ ListBox
 > [!NOTE]
 >  Using <xref:System.Collections.IList.Insert%2A> to add a file to the <xref:System.Windows.Controls.SpellCheck.CustomDictionaries%2A> collection causes an exception. Instead, use <xref:System.Collections.IList.Add%2A> and <xref:System.Collections.IList.Remove%2A> to update the collection.  
   
- The lexicon files can be included in the application as content files installed on the local computer or as resource files compiled into a local referenced assembly. You can reference the file by using pack URIs. For more information, see [Pack URIs in WPF](../Topic/Pack%20URIs%20in%20WPF.md).  
+ The lexicon files can be included in the application as content files installed on the local computer or as resource files compiled into a local referenced assembly. You can reference the file by using pack URIs. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
  To enable the spelling checker, set the <xref:System.Windows.Controls.SpellCheck.IsEnabled%2A?displayProperty=fullName> property to `true` on a <xref:System.Windows.Controls.TextBox> or on any class that derives from <xref:System.Windows.Controls.Primitives.TextBoxBase>. All custom dictionaries for that <xref:System.Windows.Controls.TextBox> are used in addition to the default spelling checker. For more information about the spelling checker, see <xref:System.Windows.Controls.SpellCheck>.  
   

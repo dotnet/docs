@@ -58,7 +58,7 @@
   
  Most of these classes expose additional members that implement functionality that is specific to the processing of the tokens for which the class is designed. In many cases it may be better to derive from one of these classes rather than directly from the <xref:System.IdentityModel.Tokens.SecurityTokenHandler> class.  
   
- A security token handler can be added or removed from  a token handler collection by specifying the [\&lt;add\&gt;](../Topic/%3Cadd%3E.md), [\&lt;remove\&gt;](../Topic/%3Cremove%3E.md), or [\&lt;clear\&gt;](../Topic/%3Cclear%3E.md) elements under the [\&lt;securityTokenHandlers\&gt;](../Topic/%3CsecurityTokenHandlers%3E.md) element in a configuration file. The <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object that contains the configuration settings for the handler collection can be accessed through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property and the handler collection that the token handler is a member of can be accessed from the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ContainingCollection%2A> property. You can override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.LoadCustomConfiguration%2A> method to process any custom configuration elements that your handler takes.  
+ A security token handler can be added or removed from  a token handler collection by specifying the [\&lt;add\&gt;](~/docs/framework/configuring-apps/file-schema/wif/add.md), [\&lt;remove\&gt;](~/docs/framework/configuring-apps/file-schema/wif/remove.md), or [\&lt;clear\&gt;](~/docs/framework/configuring-apps/file-schema/wif/clear.md) elements under the [\&lt;securityTokenHandlers\&gt;](~/docs/framework/configuring-apps/file-schema/wif/securitytokenhandlers.md) element in a configuration file. The <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object that contains the configuration settings for the handler collection can be accessed through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property and the handler collection that the token handler is a member of can be accessed from the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ContainingCollection%2A> property. You can override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.LoadCustomConfiguration%2A> method to process any custom configuration elements that your handler takes.  
   
  The <xref:System.IdentityModel.Tokens.SecurityTokenHandler> class exposes several other properties and methods. Depending on the functionality that you choose to implement, you may override some or all of these members.  
   
@@ -83,7 +83,7 @@
    
   
 ## Examples  
- The code examples in all of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md). The following XML shows how to add the SWT token handler to the token handlers collection.  
+ The code examples in all of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following XML shows how to add the SWT token handler to the token handlers collection.  
   
 ```xml  
 <system.identityModel>  
@@ -216,7 +216,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A> method to determine whether a token can be read by a handler. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A> method to determine whether a token can be read by a handler. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#1)]  
   
@@ -249,7 +249,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanValidateToken%2A> property to indicate that a custom handler can validate tokens. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanValidateToken%2A> property to indicate that a custom handler can validate tokens. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#2)]  
   
@@ -314,7 +314,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanWriteToken%2A> property to indicate that a custom handler can serialize tokens. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanWriteToken%2A> property to indicate that a custom handler can serialize tokens. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#3)]  
   
@@ -341,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property is typically set by the configuration infrastructure from the [\&lt;securityTokenHandlerConfiguration\&gt;](../Topic/%3CsecurityTokenHandlerConfiguration%3E.md) element in the configuration file during application start up.  
+ The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property is typically set by the configuration infrastructure from the [\&lt;securityTokenHandlerConfiguration\&gt;](~/docs/framework/configuring-apps/file-schema/wif/securitytokenhandlerconfiguration.md) element in the configuration file during application start up.  
   
  In derived classes, you use the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property to access configuration settings; for example, the issuer name registry to use in the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method can be accessed from the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry%2A?displayProperty=fullName> property of the configuration object.  
   
@@ -411,7 +411,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CreateSecurityTokenReference%2A> method to create a key identifier clause from the specified token. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CreateSecurityTokenReference%2A> method to create a key identifier clause from the specified token. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#5](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#5)]  
   
@@ -449,7 +449,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CreateToken%2A> method to create and return a token from a token descriptor. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CreateToken%2A> method to create and return a token from a token descriptor. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#4](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#4)]  
   
@@ -483,7 +483,7 @@
   
  Derived classes should throw a <xref:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException> if the token has already been used.  
   
- Windows Identity Foundation (WIF) provides the <xref:System.IdentityModel.Tokens.TokenReplayCache> class from which replay caches may be derived and the [\&lt;tokenReplayCache\&gt;](../Topic/%3CtokenReplayCache%3E.md) configuration element, which can be used to configure the replay cache used by token handlers in an application; however, the exact implementation of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.DetectReplayedToken%2A> method is up to the designer of the derived class.  
+ Windows Identity Foundation (WIF) provides the <xref:System.IdentityModel.Tokens.TokenReplayCache> class from which replay caches may be derived and the [\&lt;tokenReplayCache\&gt;](~/docs/framework/configuring-apps/file-schema/wif/tokenreplaycache.md) configuration element, which can be used to configure the replay cache used by token handlers in an application; however, the exact implementation of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.DetectReplayedToken%2A> method is up to the designer of the derived class.  
   
  ]]></format>
         </remarks>
@@ -514,7 +514,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.GetTokenTypeIdentifiers%2A> method to return the token type identifiers for a custom token. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.GetTokenTypeIdentifiers%2A> method to return the token type identifiers for a custom token. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#17](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#17)]  
 [!code-csharp[WifRcCustomToken#6](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#6)]  
@@ -545,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the token handler’s [\&lt;add\&gt;](../Topic/%3Cadd%3E.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
+ The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the token handler’s [\&lt;add\&gt;](~/docs/framework/configuring-apps/file-schema/wif/add.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
   
  The default implementation throws a <xref:System.NotImplementedException>. Override this method in your derived class to enable initialization of your security token handler from a configuration file.  
   
@@ -653,7 +653,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A> method to read a custom token from the specified XML reader. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A> method to read a custom token from the specified XML reader. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#7](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#7)]  
 [!code-csharp[WifRcCustomToken#8](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#8)]  
@@ -724,7 +724,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.TokenType%2A> property to return the <xref:System.Type> of the security tokens that are processed by a custom handler. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.TokenType%2A> property to return the <xref:System.Type> of the security tokens that are processed by a custom handler. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#18](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#18)]  
   
@@ -817,27 +817,27 @@
   
  The <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method is called by the infrastructure to validate and extract the claims from the deserialized security token. These claims are returned in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the method. In the typical case, this collection will contain a single identity.  
   
- In derived classes, validation typically includes validating the intended audience specified in the token against the audience URIs specified in the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.AudienceRestriction%2A?displayProperty=fullName> property of the token handler configuration object specified on the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. These URIs are typically set in the configuration file under the [\&lt;audienceUris\&gt;](../Topic/%3CaudienceUris%3E.md) element. If the audience cannot be validated, an <xref:System.IdentityModel.Tokens.AudienceUriValidationFailedException> exception should be thrown.  
+ In derived classes, validation typically includes validating the intended audience specified in the token against the audience URIs specified in the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.AudienceRestriction%2A?displayProperty=fullName> property of the token handler configuration object specified on the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. These URIs are typically set in the configuration file under the [\&lt;audienceUris\&gt;](~/docs/framework/configuring-apps/file-schema/wif/audienceuris.md) element. If the audience cannot be validated, an <xref:System.IdentityModel.Tokens.AudienceUriValidationFailedException> exception should be thrown.  
   
- When processing the token, the issuer is typically validated by passing the issuer token to one of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> methods on the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> object that is configured for the handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. The issuer name registry is typically configured through the [\&lt;issuerNameRegistry\&gt;](../Topic/%3CissuerNameRegistry%3E.md) element in the configuration file. The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns the name of the issuer. This name should be used to set the <xref:System.Security.Claims.Claim.Issuer%2A?displayProperty=fullName> property in claims contained in the token. If the issuer name registry does not contain an entry for the issuer token, <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns `null`. In this case a <xref:System.IdentityModel.Tokens.SecurityTokenException> is typically thrown in derived classes, but this behavior is up to the designer of the class.  
+ When processing the token, the issuer is typically validated by passing the issuer token to one of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> methods on the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> object that is configured for the handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property. The issuer name registry is typically configured through the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configuring-apps/file-schema/wif/issuernameregistry.md) element in the configuration file. The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns the name of the issuer. This name should be used to set the <xref:System.Security.Claims.Claim.Issuer%2A?displayProperty=fullName> property in claims contained in the token. If the issuer name registry does not contain an entry for the issuer token, <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> returns `null`. In this case a <xref:System.IdentityModel.Tokens.SecurityTokenException> is typically thrown in derived classes, but this behavior is up to the designer of the class.  
   
    
   
 ## Examples  
- The following code shows an override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method for a security token handler that processes simple web tokens (SWT). The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows an override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method for a security token handler that processes simple web tokens (SWT). The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#9](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#9)]  
   
- The following code shows `CreateClaims` method that is invoked from the override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method in the previous example. This method returns a <xref:System.Security.Claims.ClaimsIdentity> object that is created from the claims in the token. The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows `CreateClaims` method that is invoked from the override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method in the previous example. This method returns a <xref:System.Security.Claims.ClaimsIdentity> object that is created from the claims in the token. The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#15](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#15)]  
   
- The following code shows `ValidateSignature` method that is invoked from the override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method in the simple web token handler. This method validates the signature on the token by using the configured <xref:System.IdentityModel.Tokens.IssuerTokenResolver>. The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows `ValidateSignature` method that is invoked from the override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method in the simple web token handler. This method validates the signature on the token by using the configured <xref:System.IdentityModel.Tokens.IssuerTokenResolver>. The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#12](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#12)]  
 [!code-csharp[WifRcCustomToken#11](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#11)]  
   
- The following code shows `ValidateAudience` method that is invoked from the override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method in the simple web token handler. This method validates the audience contained in the token against the audience URIs that were specified in configuration. The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows `ValidateAudience` method that is invoked from the override of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method in the simple web token handler. This method validates the audience contained in the token against the audience URIs that were specified in configuration. The code is taken from the `CustomToken` sample. For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#13](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#13)]  
   
@@ -939,7 +939,7 @@
    
   
 ## Examples  
- The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.WriteToken%2A> method to serialize a custom token. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](../Topic/WIF%20Code%20Sample%20Index.md).  
+ The following code shows how to override the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.WriteToken%2A> method to serialize a custom token. The code is taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). For information about this sample and other samples available for WIF and where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
   
  [!code-csharp[WifRcCustomToken#10](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#10)]  
 [!code-csharp[WifRcCustomToken#11](~/samples/snippets/csharp/VS_Snippets_Misc/wifrccustomtoken/cs/simplewebtoken/simplewebtokenhandler.cs#11)]  

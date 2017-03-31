@@ -102,7 +102,7 @@
   
  The defined cultures have a hierarchy in which the parent of a specific culture is a neutral culture and the parent of a neutral culture is the invariant culture. The <xref:System.Globalization.CultureInfo.Parent%2A> property contains the neutral culture associated with a specific culture. Custom cultures should define the <xref:System.Globalization.CultureInfo.Parent%2A> property in conformance with this pattern.  
   
- If the resources for a specific culture are not available in the operating system, the resources for the associated neutral culture are used. If the resources for the neutral culture are not available, the resources embedded in the main assembly are used. For more information on the resource fallback process, see [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).  
+ If the resources for a specific culture are not available in the operating system, the resources for the associated neutral culture are used. If the resources for the neutral culture are not available, the resources embedded in the main assembly are used. For more information on the resource fallback process, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
  The list of locales in the Windows API is slightly different from the list of cultures supported by the .NET Framework. If interoperability with Windows is required, for example, through the p/invoke mechanism, the application should use a specific culture that is defined for the operating system. Use of the specific culture ensures consistency with the equivalent Windows locale, which is identified with a locale identifier that is the same as <xref:System.Globalization.CultureInfo.LCID%2A>.  
   
@@ -233,7 +233,7 @@
   
 <a name="Async"></a>   
 ## Culture and task-based asynchronous operations  
- The [task-based asynchronous programming pattern](../Topic/Task-based%20Asynchronous%20Programming.md) uses <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects to asynchronously execute delegates on thread pool threads. The specific thread on which a particular task runs is not known in advance, but is determined only at runtime.  
+ The [task-based asynchronous programming pattern](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md) uses <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects to asynchronously execute delegates on thread pool threads. The specific thread on which a particular task runs is not known in advance, but is determined only at runtime.  
   
  For apps that target the [!INCLUDE[net_v46](~/includes/net-v46-md.md)] or later versions, culture is part of an asynchronous operation's context. In other words, starting with apps that target the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], asynchronous operations by default inherit the values of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties of the thread from which they are launched. If the current culture or current UI culture differs from the system culture, the current culture crosses thread boundaries and becomes the current culture of the thread pool thread that is executing an asynchronous operation.  
   
@@ -1403,7 +1403,7 @@ greeting =Hello again!
 newGreeting=Hello!  
 ```  
   
- It is compiled to a binary .resources file named GreetingStrings.resources by using the  [Resource File Generator](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) with the following command.  
+ It is compiled to a binary .resources file named GreetingStrings.resources by using the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) with the following command.  
   
 ```  
 resgen greetingstrings.txt  
@@ -1416,7 +1416,7 @@ greeting=Еще раз привет!
 newGreeting=Привет!  
 ```  
   
- It is compiled to a binary .resources file named GreetingStrings.ru-RU.resources by using the  [Resource File Generator](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) with the following command.  
+ It is compiled to a binary .resources file named GreetingStrings.ru-RU.resources by using the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) with the following command.  
   
 ```  
 resgen greetingstrings.ru-RU.txt  
@@ -1434,7 +1434,7 @@ vbc Example1.vb /resource:GreetingStrings.resources
 csc /resource:GreetingStrings.resources Example1.cs  
 ```  
   
- This creates an assembly that includes the example's executable code along with the resources for its fallback culture. You can also use the  [Assembly Linker](../Topic/Al.exe%20\(Assembly%20Linker\).md) to create the resource file for the Russian (Russia) culture with the following command:  
+ This creates an assembly that includes the example's executable code along with the resources for its fallback culture. You can also use the  [Assembly Linker](~/docs/framework/tools/al-exe-assembly-linker.md) to create the resource file for the Russian (Russia) culture with the following command:  
   
 ```  
 >al /embed:greetingstrings.ru-RU.resources /c:ru-RU /template:example1.exe /out:ru-RU\Example1.resources.dll  
@@ -2586,7 +2586,7 @@ csc /resource:GreetingStrings.resources Example1.cs
 ## Remarks  
  The cultures have a hierarchy in which the parent of a specific culture is a neutral culture, the parent of a neutral culture is the <xref:System.Globalization.CultureInfo.InvariantCulture%2A>, and the parent of the <xref:System.Globalization.CultureInfo.InvariantCulture%2A> is the invariant culture itself. The parent culture encompasses only the set of information that is common among its children.  
   
- If the resources for the specific culture are not available in the system, the resources for the neutral culture are used. If the resources for the neutral culture are not available, the resources embedded in the main assembly are used. For more information on the resource fallback process, see [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).  
+ If the resources for the specific culture are not available in the system, the resources for the neutral culture are used. If the resources for the neutral culture are not available, the resources embedded in the main assembly are used. For more information on the resource fallback process, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
    
   

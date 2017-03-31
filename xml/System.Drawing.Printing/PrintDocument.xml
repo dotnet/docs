@@ -29,7 +29,7 @@
 ## Remarks  
  Typically, you create an instance of the <xref:System.Drawing.Printing.PrintDocument> class, set properties such as the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A>and <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A>, and call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to start the printing process. Handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event where you specify the output to print, by using the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A><xref:System.Drawing.Graphics> property of the <xref:System.Drawing.Printing.PrintPageEventArgs>.  
   
- For more information about printing from a Windows Form application, see the [Windows Forms Print Support](../Topic/Windows%20Forms%20Print%20Support.md). If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
+ For more information about printing from a Windows Form application, see the [Windows Forms Print Support](~/docs/framework/winforms/advanced/windows-forms-print-support.md). If you wish to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
   
    
   
@@ -560,7 +560,7 @@
 ## Examples  
  The following code example demonstrates handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
   
- For another example, see [How to: Print a Multi-Page Text File in Windows Forms](../Topic/How%20to:%20Print%20a%20Multi-Page%20Text%20File%20in%20Windows%20Forms.md).  
+ For another example, see [How to: Print a Multi-Page Text File in Windows Forms](~/docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md).  
   
  Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.IO> namespaces for this example.  
   

@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following code example shows how to associate the `AcitivityDesigner1` custom activity designer with a custom activity. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to create custom activity designers, see [How to: Create a Custom Activity Designer](../Topic/How%20to:%20Create%20a%20Custom%20Activity%20Designer.md).  
+ The following code example shows how to associate the `AcitivityDesigner1` custom activity designer with a custom activity. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to create custom activity designers, see [How to: Create a Custom Activity Designer](~/docs/framework/wf/how-to-create-a-custom-activity-designer.md).  
   
 ```  
 internal class Metadata : IRegisterMetadata  

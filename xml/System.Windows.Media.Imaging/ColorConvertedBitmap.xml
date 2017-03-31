@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For XAML usage information, see [ColorConvertedBitmap Markup Extension](../Topic/ColorConvertedBitmap%20Markup%20Extension.md).  
+ For XAML usage information, see [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
   
  <xref:System.Windows.Media.Imaging.ColorConvertedBitmap> implements the <xref:System.ComponentModel.ISupportInitialize> interface to optimize initialization on multiple properties. Property changes can only occur during object initialization. Call <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.BeginInit%2A> to signal that initialization has begun and <xref:System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit%2A> to signal that initialization has completed. After initialization, property changes are ignored.  
   

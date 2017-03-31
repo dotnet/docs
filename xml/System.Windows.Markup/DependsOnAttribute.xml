@@ -32,7 +32,7 @@
   
  Applying this attribute to a property definition ensures that the dependent properties are processed first in XAML object writing. It is part of the general rules of XAML markup that attribute values applied for a created object should be able to be processed in any order. Usages of <xref:System.Windows.Markup.DependsOnAttribute> specify the exceptional cases of properties on types where a specific order of parsing must be followed for valid object creation.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.DependsOnAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.DependsOnAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 ## WPF Usage Notes  
  The <xref:System.Windows.Setter.Value%2A> property on the <xref:System.Windows.Setter> class is an example of a property in WPF where the <xref:System.Windows.Markup.DependsOnAttribute> attribute is applied.  <xref:System.Windows.Setter.Value%2A> depends on <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.TargetName%2A> being processed first, otherwise there is no way to know what type is supposed to be created for value converter cases.  

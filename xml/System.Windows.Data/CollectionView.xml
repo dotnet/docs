@@ -37,9 +37,9 @@
   
  In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=fullName> method. An internal class based on <xref:System.Windows.Data.CollectionView> is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
   
- Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class. For an example, see [How to: Sort and Group Data Using a View in XAML](../Topic/How%20to:%20Sort%20and%20Group%20Data%20Using%20a%20View%20in%20XAML.md).  
+ Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class. For an example, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
   
- For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  To set a view in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], use the <xref:System.Windows.Data.CollectionViewSource> class. <xref:System.Windows.Data.CollectionViewSource> is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class, and it exposes the most commonly used members of the <xref:System.Windows.Data.CollectionView> class.  
   
@@ -814,7 +814,7 @@
 ## Remarks  
  If the specified item is not found, the method returns `false` and the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is positioned before the beginning of the collection in the view.  
   
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  For more information about the current item of a view, see <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
   
@@ -851,7 +851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -878,7 +878,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -905,7 +905,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -935,7 +935,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -962,7 +962,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1436,7 +1436,7 @@
 ## Remarks  
  Call this overload from constructor of a derived class.  Do not pass the <xref:System.Windows.Data.CollectionView.Count%2A> property, which is a virtual property, as `count`. Instead, pass the count of the internal <xref:System.Collections.IList> that represents the collection.  
   
- <xref:System.Windows.Data.CollectionView.SetCurrent%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Data.CollectionView.SetCurrent%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

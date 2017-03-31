@@ -26,7 +26,7 @@
  [!code-csharp[ListViewSnips#ItemStyleSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml.cs#itemstyleselector)]
  [!code-vb[ListViewSnips#ItemStyleSelector](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewSnips/visualbasic/window1.xaml.vb#itemstyleselector)]  
   
- The following example shows how to define a <xref:System.Windows.ResourceKey> for the <xref:System.Windows.Controls.StyleSelector>. The `namespc` prefix maps to a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace and the corresponding assembly where the <xref:System.Windows.Controls.StyleSelector> is defined. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ The following example shows how to define a <xref:System.Windows.ResourceKey> for the <xref:System.Windows.Controls.StyleSelector>. The `namespc` prefix maps to a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace and the corresponding assembly where the <xref:System.Windows.Controls.StyleSelector> is defined. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
  [!code-xml[ListViewSnips#myStyleSelectorKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#mystyleselectorkey)]  
   
@@ -90,7 +90,7 @@
  [!code-csharp[ListViewSnips#ItemStyleSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml.cs#itemstyleselector)]
  [!code-vb[ListViewSnips#ItemStyleSelector](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewSnips/visualbasic/window1.xaml.vb#itemstyleselector)]  
   
- The following example shows how to define a <xref:System.Windows.ResourceKey> for the <xref:System.Windows.Controls.StyleSelector>. The `namespc` prefix maps to a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace and the corresponding assembly where the <xref:System.Windows.Controls.StyleSelector> is defined. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ The following example shows how to define a <xref:System.Windows.ResourceKey> for the <xref:System.Windows.Controls.StyleSelector>. The `namespc` prefix maps to a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace and the corresponding assembly where the <xref:System.Windows.Controls.StyleSelector> is defined. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
  [!code-xml[ListViewSnips#myStyleSelectorKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#mystyleselectorkey)]  
   

@@ -44,7 +44,7 @@
   
  An <xref:System.Xml.XPath.XPathNavigator> object is created from a class that implements the <xref:System.Xml.XPath.IXPathNavigable> interface such as the <xref:System.Xml.XPath.XPathDocument> and <xref:System.Xml.XmlDocument> classes. <xref:System.Xml.XPath.XPathNavigator> objects created by <xref:System.Xml.XPath.XPathDocument> objects are read-only while <xref:System.Xml.XPath.XPathNavigator> objects created by <xref:System.Xml.XmlDocument> objects can be edited. An <xref:System.Xml.XPath.XPathNavigator> object's read-only or editable status is determined using the <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property of the <xref:System.Xml.XPath.XPathNavigator> class.  
   
- For more information about processing XML data using the XPath data model, see the [Process XML Data Using the XPath Data Model](../Topic/Process%20XML%20Data%20Using%20the%20XPath%20Data%20Model.md) topic.  
+ For more information about processing XML data using the XPath data model, see the [Process XML Data Using the XPath Data Model](~/docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md) topic.  
   
 > [!IMPORTANT]
 >  Exceptions raised as a result of using the <xref:System.Xml.XPath.XPathNavigator> class, such as the <xref:System.Xml.XPath.XPathException> class, may contain sensitive information that should not be exposed in untrusted scenarios. Exceptions should be properly handled so that this sensitive information is not exposed in untrusted scenarios.  
@@ -7666,7 +7666,7 @@ XPathNodeIterator ni = nav.Select(expr);
   
  For example, an element of type `xs:int` would have a <xref:System.Xml.XPath.XPathItem.ValueType%2A> of <xref:System.Int32> by default. However, the <xref:System.Xml.XPath.XPathItem.ValueType%2A> could be any one of the valid types that can be mapped to `xs:int` such as <xref:System.Int16> or <xref:System.Double>.  
   
- If a node has no type, this is equivalent to the type annotation on the node being `xdt:untypedAtomic`. In this case, the <xref:System.Xml.XPath.XPathNavigator.ValueType%2A> property returns a string for the node. For more information, see [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md).  
+ If a node has no type, this is equivalent to the type annotation on the node being `xdt:untypedAtomic`. In this case, the <xref:System.Xml.XPath.XPathNavigator.ValueType%2A> property returns a string for the node. For more information, see [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md).  
   
    
   

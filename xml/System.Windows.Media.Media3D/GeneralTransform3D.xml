@@ -27,7 +27,7 @@
 ## Remarks  
  Transformations between 3-D objects take place through the <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> and <xref:System.Windows.Media.Media3D.Visual3D.TransformToDescendant%2A> methods, both of which return a <xref:System.Windows.Media.Media3D.GeneralTransform3D> object. In the case that the transformation between the 3-D objects may be represented by a 4x4 matrix, the methods return an instance of the <xref:System.Windows.Media.Media3D.MatrixTransform3D> class. The <xref:System.Windows.Media.Media3D.GeneralTransform3D> class can transform a <xref:System.Windows.Media.Media3D.Point3D> to a <xref:System.Windows.Media.Media3D.Point3D> and a <xref:System.Windows.Media.Media3D.Rect3D> to a <xref:System.Windows.Media.Media3D.Rect3D>.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
     </remarks>
@@ -59,7 +59,7 @@
   
  When copying dependency properties, this method copies resource references and data bindings (they might no longer resolve) but not animations or their current values.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.Clone%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.Clone%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -89,7 +89,7 @@
   
  For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.CloneCurrentValue%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.CloneCurrentValue%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.Inverse%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.Inverse%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -155,7 +155,7 @@
 ## Remarks  
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Media.Media3D.GeneralTransform3D> instance is cast to an <xref:System.IFormattable> interface.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.System%23IFormattable%23ToString%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.System%23IFormattable%23ToString%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.ToString%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.ToString%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -211,7 +211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.ToString%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.ToString%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -240,7 +240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.Transform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.Transform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -270,7 +270,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -304,7 +304,7 @@
 ## Remarks  
  Unlike the <xref:System.Windows.Media.Media3D.GeneralTransform3D.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

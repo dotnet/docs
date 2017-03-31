@@ -24,7 +24,7 @@
   
  By default, in a workflow hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache used by <xref:System.ServiceModel.Activities.Send> messaging activities is shared across all workflow instances in the <xref:System.ServiceModel.WorkflowServiceHost> (host-level caching). For a client workflow that is not hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache is available only to the workflow instance (instance-level caching). Caching is disabled by default for any send activity in your workflow that has endpoints defined in configuration.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](../Topic/Changing%20the%20Cache%20Sharing%20Levels%20for%20Send%20Activities.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](~/docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
   
    
   

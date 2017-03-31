@@ -33,7 +33,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.MemberAccessException> instead.  
+>  This exception is not included in the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), but it is thrown by some members that are. To catch the exception in that case, write a `catch` statement for <xref:System.MemberAccessException> instead.  
   
  This exception is thrown in situations such as the following:  
   
@@ -44,7 +44,7 @@
 -   The access level of a method in a class library has changed, and one or more assemblies that reference the library have not been recompiled.  
   
 > [!NOTE]
->  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the common language runtime treats application code as transparent when it is run with partial trust. See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).  
+>  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the common language runtime treats application code as transparent when it is run with partial trust. See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
   
  <xref:System.MethodAccessException> uses the HRESULT COR_E_METHODACCESS, that has the value 0x80131510.  
   
@@ -159,7 +159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
   
  ]]></format>
         </remarks>

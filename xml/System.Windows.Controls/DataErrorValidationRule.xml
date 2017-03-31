@@ -20,9 +20,9 @@
   
  An alternative syntax to setting the <xref:System.Windows.Controls.DataErrorValidationRule> explicitly is to set the <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> property to `true` on your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object.  
   
- You can create a custom rule by creating a class that derives from <xref:System.Windows.Controls.ValidationRule>. For more information and a detailed discussion of data validation, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ You can create a custom rule by creating a class that derives from <xref:System.Windows.Controls.ValidationRule>. For more information and a detailed discussion of data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
- <xref:System.Windows.Controls.DataErrorValidationRule> is introduced in the .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.DataErrorValidationRule> is introduced in the .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
     </remarks>
@@ -44,7 +44,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.DataErrorValidationRule.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.DataErrorValidationRule.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -75,7 +75,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.DataErrorValidationRule.Validate%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.DataErrorValidationRule.Validate%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

@@ -54,7 +54,7 @@
   
 <a name="instantiate"></a>   
 ## Instantiating a ResourceReader Object  
- A .resources file is a binary file that has been compiled from either a text file or an XML .resx file by [Resgen.exe (Resource File Generator)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md). A <xref:System.Resources.ResourceReader> object can represent either a standalone .resources file or a .resources file that has been embedded in an assembly.  
+ A .resources file is a binary file that has been compiled from either a text file or an XML .resx file by [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md). A <xref:System.Resources.ResourceReader> object can represent either a standalone .resources file or a .resources file that has been embedded in an assembly.  
   
  To instantiate a <xref:System.Resources.ResourceReader> object that reads from a standalone .resources file, use the <xref:System.Resources.ResourceReader> class constructor with either an input stream or a string that contains the .resources file name. The following example illustrates both approaches. The first instantiates a <xref:System.Resources.ResourceReader> object that represents a .resources file named `Resources1.resources` by using its file name. The second instantiates a <xref:System.Resources.ResourceReader> object that represents a .resources file named `Resources2.resources` by using a stream created from the file.  
   
@@ -406,7 +406,7 @@ Label11="Mobile Phone:"
 ## Remarks  
  When you are finished using this instance of <xref:System.Resources.ResourceReader>, call <xref:System.Resources.ResourceReader.Dispose%2A> to release all resources used by this instance. You should eliminate further references to this <xref:System.Resources.ResourceReader> instance so that the garbage collector can reclaim the memory of the instance instead of keeping it alive for finalization.  
   
- <xref:System.Resources.ResourceReader.Dispose%2A> calls the private Dispose(Boolean) method, which contains the code to release managed and unmanaged resources. For more information, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ <xref:System.Resources.ResourceReader.Dispose%2A> calls the private Dispose(Boolean) method, which contains the code to release managed and unmanaged resources. For more information, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
  ]]></format>
         </remarks>

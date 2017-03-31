@@ -98,7 +98,7 @@
  Use the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods to mark the beginning and end of a critical section.  
   
 > [!NOTE]
->  The functionality provided by the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods is identical to that provided by the [lock](../Topic/lock%20Statement%20\(C%23%20Reference\).md) statement in C# and the [SyncLock](../Topic/SyncLock%20Statement.md) statement in Visual Basic, except that the language constructs wrap the <xref:System.Threading.Monitor.Enter%28System.Object%2CSystem.Boolean%40%29?displayProperty=fullName> method overload and the <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> method in a `try`…`finally` block to ensure that the monitor is released.  
+>  The functionality provided by the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods is identical to that provided by the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic, except that the language constructs wrap the <xref:System.Threading.Monitor.Enter%28System.Object%2CSystem.Boolean%40%29?displayProperty=fullName> method overload and the <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> method in a `try`…`finally` block to ensure that the monitor is released.  
   
  If the critical section is a set of contiguous instructions, then the lock acquired by the <xref:System.Threading.Monitor.Enter%2A> method guarantees that only a single thread can execute the enclosed code with the locked object. In this case, we recommend that you place that code in a `try` block and place the call to the <xref:System.Threading.Monitor.Exit%2A> method in a `finally` block. This ensures that the lock is released even if an exception occurs. The following code fragment illustrates this pattern.  
   
@@ -112,7 +112,7 @@
  [!code-csharp[System.Threading.Monitor.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.class/cs/Pattern2.cs#3)]
  [!code-vb[System.Threading.Monitor.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.class/vb/Pattern2.vb#3)]  
   
- Note that the attribute causes the current thread to hold the lock until the method returns; if the lock can be released sooner, use the <xref:System.Threading.Monitor> class, the C# [lock](../Topic/lock%20Statement%20\(C%23%20Reference\).md) statement, or the Visual Basic [SyncLock](../Topic/SyncLock%20Statement.md) statement inside of the method instead of the attribute.  
+ Note that the attribute causes the current thread to hold the lock until the method returns; if the lock can be released sooner, use the <xref:System.Threading.Monitor> class, the C# [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement, or the Visual Basic [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement inside of the method instead of the attribute.  
   
  While it is possible for the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> statements that lock and release a given object to cross member or class boundaries or both, this practice is not recommended.  
   

@@ -162,7 +162,7 @@
         <param name="obj1">Required. Any <see langword="Boolean" /> or numeric expression.</param>
         <param name="obj2">Required. Any <see langword="Boolean" /> or numeric expression.</param>
         <summary>Performs an <see langword="Xor" /> operation.</summary>
-        <returns>A numeric value that represents the bitwise exclusion (exclusive bitwise disjunction) of two numeric bit patterns. For more information, see [Xor Operator](../Topic/Xor%20Operator%20\(Visual%20Basic\).md).</returns>
+        <returns>A numeric value that represents the bitwise exclusion (exclusive bitwise disjunction) of two numeric bit patterns. For more information, see [Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -690,7 +690,7 @@
         <param name="obj1">Required. Any <see langword="Boolean" /> or numeric expression.</param>
         <param name="obj2">Required. Any <see langword="Boolean" /> or numeric expression.</param>
         <summary>Performs an <see langword="Xor" /> comparison.</summary>
-        <returns>A <see langword="Boolean" /> or numeric value. For a <see langword="Boolean" /> comparison, the return value is the logical exclusion (exclusive logical disjunction) of two <see langword="Boolean" /> values. For bitwise (numeric) operations, the return value is a numeric value that represents the bitwise exclusion (exclusive bitwise disjunction) of two numeric bit patterns. For more information, see [Xor Operator](../Topic/Xor%20Operator%20\(Visual%20Basic\).md).</returns>
+        <returns>A <see langword="Boolean" /> or numeric value. For a <see langword="Boolean" /> comparison, the return value is the logical exclusion (exclusive logical disjunction) of two <see langword="Boolean" /> values. For bitwise (numeric) operations, the return value is a numeric value that represents the bitwise exclusion (exclusive bitwise disjunction) of two numeric bit patterns. For more information, see [Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -33,7 +33,7 @@
   
  If you have multiple <xref:System.Windows.Data.BindingListCollectionView> objects and the underlying source is a `DataTable` or a `DataView`, the view objects do not sort or filter independently. For example, if you have two <xref:System.Windows.Data.BindingListCollectionView> objects associated with the same `DataTable` and you perform sorting on one of the views, the order of items in the other view can be affected. This is because <xref:System.Windows.Data.BindingListCollectionView> objects use the underlying <xref:System.ComponentModel.IBindingList> for sorting and filtering functionalities.  
   
- For more information about collection views, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information about collection views, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
     </remarks>

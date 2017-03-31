@@ -736,7 +736,7 @@
 > [!NOTE]
 >  The z-order corresponds to the depth dimension of the screen, and the x-order and y-order corresponds to the horizontal and vertical dimensions, respectively. Z-order defines which object appears in front of which, in cases where controls or windows can overlap or occupy the same space on the screen. A control or window at the top of the z-order appears on top of all other controls or windows and is referenced by an index of 0 in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property. A control or window at the bottom of the z-order appears underneath all other controls or windows and is referenced by an index of `(Controls.Count-1)` in the <xref:System.Windows.Forms.SplitContainer.Controls%2A> property.  
   
- For more information about anchoring and docking controls, see [How to: Create a Multipane User Interface with Windows Forms](../Topic/How%20to:%20Create%20a%20Multipane%20User%20Interface%20with%20Windows%20Forms.md).  
+ For more information about anchoring and docking controls, see [How to: Create a Multipane User Interface with Windows Forms](~/docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md).  
   
    
   

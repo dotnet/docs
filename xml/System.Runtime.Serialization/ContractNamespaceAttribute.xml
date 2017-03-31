@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to an assembly that contains types to which the <xref:System.Runtime.Serialization.DataContractAttribute> has been applied. The <xref:System.Runtime.Serialization.ContractNamespaceAttribute> enables you to set a namespace that is different than the one generated when the type is serialized. For more information about how names are generated, see [Data Contract Names](../Topic/Data%20Contract%20Names.md).  
+ Apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to an assembly that contains types to which the <xref:System.Runtime.Serialization.DataContractAttribute> has been applied. The <xref:System.Runtime.Serialization.ContractNamespaceAttribute> enables you to set a namespace that is different than the one generated when the type is serialized. For more information about how names are generated, see [Data Contract Names](~/docs/framework/wcf/feature-details/data-contract-names.md).  
   
  If you are using a type to conform to an existing data contract, you must match the namespace of the existing contract by using the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> (or the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute> class).  
   

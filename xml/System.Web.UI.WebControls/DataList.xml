@@ -389,7 +389,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataList> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
@@ -563,7 +563,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataList.DeleteCommand> event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataList> control.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -632,7 +632,7 @@
 > [!CAUTION]
 >  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.DataList> control. This makes it possible to embed script within HTML tags in the text. If the values for the control come from user input, be sure to validate the values to reduce security vulnerabilities.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
@@ -1233,7 +1233,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataList.ItemCommand> event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataList> control and is commonly used when you have a button control with a custom `CommandName` value.  
   
- For more information about handling events, see[How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see[How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -1275,7 +1275,7 @@
   
  The <xref:System.Web.UI.WebControls.DataList.ItemCreated> event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataList> control.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -1315,7 +1315,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataList.ItemDataBound> event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataList> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is no longer available.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -1589,7 +1589,7 @@
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnCancelCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1642,7 +1642,7 @@
   
  A typical handler for the <xref:System.Web.UI.WebControls.DataList.DeleteCommand> event removes the selected item from the data source and then rebinds the data to the <xref:System.Web.UI.WebControls.DataList> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnDeleteCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1698,7 +1698,7 @@
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnEditCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1777,7 +1777,7 @@
   
  The <xref:System.Web.UI.WebControls.DataList.ItemCommand> event is raised when any button is clicked in the <xref:System.Web.UI.WebControls.DataList> control and is commonly used when you have a button control with a custom `CommandName` value, such as `Add`, in the <xref:System.Web.UI.WebControls.DataList> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnItemCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1830,7 +1830,7 @@
   
  The <xref:System.Web.UI.WebControls.DataList.ItemCreated> event is commonly used to control the content and appearance of a row in the <xref:System.Web.UI.WebControls.DataList> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnItemCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1881,7 +1881,7 @@
   
  The <xref:System.Web.UI.WebControls.DataList.ItemDataBound> event is raised after an item is data bound to the <xref:System.Web.UI.WebControls.DataList> control. This event provides you with the last opportunity to access the data item before it is displayed on the client. After this event is raised, the data item is no longer available.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnItemDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1937,7 +1937,7 @@
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.DataList.OnUpdateCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2910,7 +2910,7 @@
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md).  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   

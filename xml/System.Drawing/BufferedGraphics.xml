@@ -33,7 +33,7 @@
   
  The <xref:System.Drawing.BufferedGraphics.Render%2A> method with no arguments draws the contents of the graphics buffer to the surface specified when the buffer was allocated. Other overloads of the <xref:System.Drawing.BufferedGraphics.Render%2A> method allow you to specify a <xref:System.Drawing.Graphics> object or an <xref:System.IntPtr> object that points to a device context to which to draw the contents of the graphics buffer.  
   
- For more information about drawing double-buffered graphics, see [Double Buffered Graphics](../Topic/Double%20Buffered%20Graphics.md).  
+ For more information about drawing double-buffered graphics, see [Double Buffered Graphics](~/docs/framework/winforms/advanced/double-buffered-graphics.md).  
   
    
   
@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Drawing.BufferedGraphics.Dispose%2A> when you are finished using the <xref:System.Drawing.BufferedGraphics> object. The <xref:System.Drawing.BufferedGraphics.Dispose%2A> method leaves the <xref:System.Drawing.BufferedGraphics> object in an unusable state. After calling <xref:System.Drawing.BufferedGraphics.Dispose%2A>, you must release all references to the <xref:System.Drawing.BufferedGraphics> object so the garbage collector can reclaim the memory that the <xref:System.Drawing.BufferedGraphics> object was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ Call <xref:System.Drawing.BufferedGraphics.Dispose%2A> when you are finished using the <xref:System.Drawing.BufferedGraphics> object. The <xref:System.Drawing.BufferedGraphics.Dispose%2A> method leaves the <xref:System.Drawing.BufferedGraphics> object in an unusable state. After calling <xref:System.Drawing.BufferedGraphics.Dispose%2A>, you must release all references to the <xref:System.Drawing.BufferedGraphics> object so the garbage collector can reclaim the memory that the <xref:System.Drawing.BufferedGraphics> object was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Drawing.BufferedGraphics.Dispose%2A> before you release your last reference to the <xref:System.Drawing.BufferedGraphics> object. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.BufferedGraphics> object's `Finalize` method.  

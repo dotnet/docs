@@ -140,7 +140,7 @@
    
   
 ## Examples  
- The following example shows how the <xref:System.Windows.Controls.Primitives.Track.DecreaseRepeatButton%2A> and <xref:System.Windows.Controls.Primitives.Track.IncreaseRepeatButton%2A> styles are defined inside the <xref:System.Windows.Controls.Primitives.ScrollBar> control template when the <xref:System.Windows.Controls.Primitives.Track.Orientation%2A> property is <xref:System.Windows.Controls.Orientation>. For the complete sample, see the [ScrollBar Styles and Templates](../Topic/ScrollBar%20Styles%20and%20Templates.md).  
+ The following example shows how the <xref:System.Windows.Controls.Primitives.Track.DecreaseRepeatButton%2A> and <xref:System.Windows.Controls.Primitives.Track.IncreaseRepeatButton%2A> styles are defined inside the <xref:System.Windows.Controls.Primitives.ScrollBar> control template when the <xref:System.Windows.Controls.Primitives.Track.Orientation%2A> property is <xref:System.Windows.Controls.Orientation>. For the complete sample, see the [ScrollBar Styles and Templates](~/docs/framework/wpf/controls/scrollbar-styles-and-templates.md).  
   
  [!code-xml[ScrollBarTemplateExample#RepeatButtonStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/ScrollBarTemplateExample/XAML/Window1.xaml#repeatbuttonstyle)]
  [!code-xml[ScrollBarTemplateExample#RepeatButtonStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#repeatbuttonstyle)]  

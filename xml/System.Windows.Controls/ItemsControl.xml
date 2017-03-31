@@ -1027,7 +1027,7 @@ ListBox that contains multiple types of objects
 ## Remarks  
  You use this property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls.  
   
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
 <a name="xamlAttributeUsage_ItemContainerStyle"></a>   
 ## XAML Attribute Usage  
@@ -1141,7 +1141,7 @@ ListBox that contains multiple types of objects
 ## Remarks  
  You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you have more than one style defined and need to supply logic to choose which one to apply, then you use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property instead of the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property. Note that this property is ignored if the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property is set.  
   
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information about when to specify an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
 <a name="dependencyPropertyInfo_ItemContainerStyleSelector"></a>   
 ## Dependency Property Information  
@@ -1333,7 +1333,7 @@ ListBox that contains multiple types of objects
   
  To affect the layout of the items in an <xref:System.Windows.Controls.ItemsControl>, you use this property to specify a <xref:System.Windows.Controls.ItemsPanelTemplate>.  
   
- The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of the data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. You use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property. To specify the visualization of the data objects, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
 <a name="dependencyPropertyInfo_ItemsPanel"></a>   
 ## Dependency Property Information  
@@ -1417,7 +1417,7 @@ ListBox that contains multiple types of objects
  When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is in use, setting the property to `null` removes the collection and restores usage to <xref:System.Windows.Controls.ItemsControl.Items%2A>, which will be an empty <xref:System.Windows.Controls.ItemCollection>. When <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> is not in use, the value of this property is `null`, and setting it to `null` has no effect.  
   
 > [!NOTE]
->  In most cases you do not need to implement your own collections. Instead, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or other existing collections. For more information, see the "Collection Objects Used as Binding Source" in [Binding Sources Overview](../Topic/Binding%20Sources%20Overview.md).  
+>  In most cases you do not need to implement your own collections. Instead, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or other existing collections. For more information, see the "Collection Objects Used as Binding Source" in [Binding Sources Overview](~/docs/framework/wpf/data/binding-sources-overview.md).  
   
 <a name="xamlAttributeUsage_ItemsSource"></a>   
 ## XAML Attribute Usage  
@@ -1429,7 +1429,7 @@ ListBox that contains multiple types of objects
 <a name="xamlValues_ItemsSource"></a>   
 ## XAML Values  
  *bindingDeclaration*  
- A <xref:System.Windows.Data.Binding> declaration. See [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) for more information.  
+ A <xref:System.Windows.Data.Binding> declaration. See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) for more information.  
   
 <a name="dependencyPropertyInfo_ItemsSource"></a>   
 ## Dependency Property Information  
@@ -1484,7 +1484,7 @@ ListBox that contains multiple types of objects
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). If you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> of a <xref:System.Windows.Controls.ItemsControl>, the <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> property is ignored.  
+ <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md). If you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> or <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> of a <xref:System.Windows.Controls.ItemsControl>, the <xref:System.Windows.Controls.ItemsControl.ItemStringFormat%2A> property is ignored.  
   
    
   
@@ -1554,7 +1554,7 @@ ListBox that contains multiple types of objects
   
  The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. Use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property.  
   
- For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
 <a name="xamlAttributeUsage_ItemTemplate"></a>   
 ## XAML Attribute Usage  
@@ -1566,10 +1566,10 @@ ListBox that contains multiple types of objects
 <a name="xamlValues_ItemTemplate"></a>   
 ## XAML Values  
  *ResourceExtension*  
- One of the following: [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md), or [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md). Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) reference to a style is usually recommended for performance.  
+ One of the following: [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md), or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md). Unless the styles themselves contain references to potential run-time references such as system resources or user preferences, [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) reference to a style is usually recommended for performance.  
   
  *TemplateResourceKey*  
- [x:Key Directive](../Topic/x:Key%20Directive.md) string value referring to the template being requested as a resource.  
+ [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) string value referring to the template being requested as a resource.  
   
 <a name="dependencyPropertyInfo_ItemTemplate"></a>   
 ## Dependency Property Information  
@@ -1650,7 +1650,7 @@ ListBox that contains multiple types of objects
   
  The <xref:System.Windows.Controls.ItemsControl> provides great flexibility for visual customization and provides many styling and templating properties. Use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property or the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.ListBox>, the generated containers are <xref:System.Windows.Controls.ListBoxItem> controls; for <xref:System.Windows.Controls.ComboBox>, they are <xref:System.Windows.Controls.ComboBoxItem> controls. To affect the layout of the items, use the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. If you are using grouping on your control, you can use the <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> or <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A> property.  
   
- For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
 <a name="xamlAttributeUsage_ItemTemplateSelector"></a>   
 ## XAML Attribute Usage  
@@ -1691,7 +1691,7 @@ ListBox that contains multiple types of objects
   
  When you set the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property, the <xref:System.Windows.Controls.ItemsControl> is directed to automatically call the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of `AuctionItemDataTemplateSelector` for each of the items in the collection to which the <xref:System.Windows.Controls.ItemsControl> is bound. The call passes the data item as an object. The <xref:System.Windows.DataTemplate> that is returned by the method is then used to display that data item.  
   
- For another example, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ For another example, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
  ]]></format>
         </remarks>

@@ -50,7 +50,7 @@
   
  If you want to pass information to your callback method, create an object that contains the necessary information and pass it to <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> when you create the registered wait handle. Each time your callback method executes, the `state` parameter contains this object.  
   
- For more information about using callback methods to synchronize thread pool threads, see [The Managed Thread Pool](../Topic/The%20Managed%20Thread%20Pool.md).  
+ For more information about using callback methods to synchronize thread pool threads, see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
   
    
   

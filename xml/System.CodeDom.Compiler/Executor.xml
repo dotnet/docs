@@ -19,7 +19,7 @@
  This class provides a collection of methods that can be used to invoke a compiler, typically from an <xref:System.CodeDom.Compiler.ICodeCompiler> implementation.  
   
 > [!NOTE]
->  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information, see [Link Demands](../Topic/Link%20Demands.md).  
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information, see [Link Demands](~/docs/framework/misc/link-demands.md).  
   
  ]]></format>
     </remarks>

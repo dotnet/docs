@@ -106,7 +106,7 @@
 ## Remarks  
  If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> property is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode>, you must set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator%2A> property to a custom validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
   
- For more information, see [How to: Create a Service that Employs a Custom Certificate Validator](../Topic/How%20to:%20Create%20a%20Service%20that%20Employs%20a%20Custom%20Certificate%20Validator.md).  
+ For more information, see [How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
  ]]></format>
         </remarks>

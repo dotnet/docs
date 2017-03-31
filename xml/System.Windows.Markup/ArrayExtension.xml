@@ -27,11 +27,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Markup.ArrayExtension> is the class that implements the `x:Array` markup extension behavior, and the `x:ArrayExtension` information item from [MS-XAML]. `x:Array` supports a XAML language feature that allows adding arbitrary child elements within an array, through a particular markup extension enabled syntax. The markup extension syntax requires an explicit <xref:System.Windows.Markup.ArrayExtension.Type%2A> attribute on the markup extension usage, and a content syntax for specifying the <xref:System.Windows.Markup.ArrayExtension.Items%2A>. For more information and details on the syntax, see [x:Array Markup Extension](../Topic/x:Array%20Markup%20Extension.md).  
+ <xref:System.Windows.Markup.ArrayExtension> is the class that implements the `x:Array` markup extension behavior, and the `x:ArrayExtension` information item from [MS-XAML]. `x:Array` supports a XAML language feature that allows adding arbitrary child elements within an array, through a particular markup extension enabled syntax. The markup extension syntax requires an explicit <xref:System.Windows.Markup.ArrayExtension.Type%2A> attribute on the markup extension usage, and a content syntax for specifying the <xref:System.Windows.Markup.ArrayExtension.Items%2A>. For more information and details on the syntax, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
- This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of a XAML processor implementation, and the members exposed by a markup extension class are not typically called from user code. This extension supports the [x:Array Markup Extension](../Topic/x:Array%20Markup%20Extension.md) usage from XAML for .NET Framework XAML Services implementation of XAML and its XAML readers and XAML writers.  
+ This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of a XAML processor implementation, and the members exposed by a markup extension class are not typically called from user code. This extension supports the [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md) usage from XAML for .NET Framework XAML Services implementation of XAML and its XAML readers and XAML writers.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly PresentationFramework. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ArrayExtension> is in the System.Xaml assembly. This makes the `x:Array` usage available to frameworks or technologies such as [!INCLUDE[TLA#tla_workflow](~/includes/tlasharptla-workflow-md.md)] that are built on .NET Framework XAML Services. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly PresentationFramework. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ArrayExtension> is in the System.Xaml assembly. This makes the `x:Array` usage available to frameworks or technologies such as [!INCLUDE[TLA#tla_workflow](~/includes/tlasharptla-workflow-md.md)] that are built on .NET Framework XAML Services. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
  The System.Xaml assembly uses <xref:System.Windows.Markup.XmlnsDefinitionAttribute> to map types from the<xref:System.Windows.Markup> CLR namespace in the assembly to the XAML namespace for the XAML language ([!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)]). In typical XAML markup, you declare a prefix for [!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)] in a root element mapping and use the prefix `x`.  
   
@@ -194,7 +194,7 @@
   
  Type mismatches between <xref:System.Windows.Markup.ArrayExtension.Type%2A> and the items in <xref:System.Windows.Markup.ArrayExtension.Items%2A>, or any other validation issues, are not reported as exceptions until <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> is invoked. This behavior is consistent with the general design principles of XAML markup extensions.  
   
- For XAML usage information, see [x:Array Markup Extension](../Topic/x:Array%20Markup%20Extension.md).  
+ For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
 <a name="xamlTextUsage_Items"></a>   
 ## XAML Text Usage  
@@ -231,7 +231,7 @@
   
  This implementation does not rely on any services based on the passed `serviceProvider`. However, it does rely on CLR concepts as transmitted by the extension's use while processing with the default XAML schema context for .NET Framework XAML Services.  
   
- For more information on markup extensions, see [Markup Extensions for XAML Overview](../Topic/Markup%20Extensions%20for%20XAML%20Overview.md).  
+ For more information on markup extensions, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
   
  ]]></format>
         </remarks>
@@ -266,7 +266,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For XAML usage information, see [x:Array Markup Extension](../Topic/x:Array%20Markup%20Extension.md).  
+ For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
   
 <a name="xamlTextUsage_Type"></a>   
 ## XAML Text Usage  

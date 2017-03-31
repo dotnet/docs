@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.CLSCompliantAttribute> attribute is used to indicate whether a particular program element complies with the Common Language Specification (CLS), which defines the features that any language that targets the .NET Framework must support. CLS compliance is primarily of concern to library developers who want to ensure that their libraries are accessible in any language that targets the .NET Framework. For more information, See [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+ The <xref:System.CLSCompliantAttribute> attribute is used to indicate whether a particular program element complies with the Common Language Specification (CLS), which defines the features that any language that targets the .NET Framework must support. CLS compliance is primarily of concern to library developers who want to ensure that their libraries are accessible in any language that targets the .NET Framework. For more information, See [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md).  
   
  You can apply the <xref:System.CLSCompliantAttribute> attribute to the following program elements: assembly, module, class, struct, enum, constructor, method, property, field, event, interface, delegate, parameter, and return value. However, the notion of CLS compliance is only meaningful for assemblies, modules, types, and members of types, not parts of a member signature. Consequently, <xref:System.CLSCompliantAttribute> is ignored when applied to parameter or return value program elements.  
   

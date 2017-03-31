@@ -32,7 +32,7 @@
   
 -   Data slots are slower and more awkward to use than thread-relative static fields. Also, data is stored as type <xref:System.Object>, so you must cast it to the correct type before using it. However, you can use data slots when you have insufficient information at compile time to allocate static fields.  
   
- For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+ For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  Similarly, the .NET Framework provides two mechanisms for using context local storage: context-relative static fields and data slots. Context-relative static fields are static fields that are marked with the <xref:System.ContextStaticAttribute> attribute. The trade-offs between using these two mechanisms are similar to the tradeoffs between using thread-relative static fields and data slots.  
   

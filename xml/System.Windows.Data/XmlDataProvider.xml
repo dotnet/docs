@@ -30,7 +30,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  In a partial-trust sandbox, <xref:System.Windows.Data.XmlDataProvider> fails when it does not have permissions to access the given data. For more information about partial trust security, see [WPF Partial Trust Security](../Topic/WPF%20Partial%20Trust%20Security.md).  
+>  In a partial-trust sandbox, <xref:System.Windows.Data.XmlDataProvider> fails when it does not have permissions to access the given data. For more information about partial trust security, see [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md).  
   
  <xref:System.Windows.Data.XmlDataProvider> exposes the following ways to access [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.  
   
@@ -390,7 +390,7 @@
 <a name="xamlValues_XmlNamespaceManager"></a>   
 ## XAML Values  
  *mappingCollection*  
- An <xref:System.Windows.Data.XmlNamespaceMappingCollection>. To refer to a <xref:System.Windows.Data.XmlNamespaceMappingCollection>, use the [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md).  
+ An <xref:System.Windows.Data.XmlNamespaceMappingCollection>. To refer to a <xref:System.Windows.Data.XmlNamespaceMappingCollection>, use the [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
    
   

@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
   
  The <xref:System.Data.OracleClient.OracleDataAdapter> does not automatically generate the SQL statements required to reconcile changes made to a <xref:System.Data.DataSet> associated with the database. However, you can create an <xref:System.Data.OracleClient.OracleCommandBuilder> object that generates SQL statements for single-table updates by setting the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> property of the <xref:System.Data.OracleClient.OracleDataAdapter>. Then, the <xref:System.Data.OracleClient.OracleCommandBuilder> generates any additional SQL statements that you do not set.  
   
@@ -283,7 +283,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  You can only use <xref:System.Data.OracleClient.OracleCommandBuilder.DeriveParameters%2A> with stored procedures. You cannot use <xref:System.Data.OracleClient.OracleCommandBuilder.DeriveParameters%2A> to populate the <xref:System.Data.OracleClient.OracleParameterCollection> with arbitrary Transact-SQL statements, such as a parameterized SELECT statement.  
   
- For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ For more information, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
  ]]></format>
         </remarks>
@@ -316,7 +316,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -359,7 +359,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -391,7 +391,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -434,7 +434,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -532,7 +532,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -575,7 +575,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> is specified.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -699,7 +699,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -722,7 +722,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -745,7 +745,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>

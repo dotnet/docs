@@ -101,7 +101,7 @@
      [!code-csharp[System.String.Class.Instantiate#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#4)]
      [!code-vb[System.String.Class.Instantiate#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.class.instantiate/vb/instantiate1.vb#4)]  
   
--   By calling a formatting method to convert a value or object to its string representation. The following example uses the                [composite formatting](../Topic/Composite%20Formatting.md) feature to embed the string representation of two objects into a string.  
+-   By calling a formatting method to convert a value or object to its string representation. The following example uses the                [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature to embed the string representation of two objects into a string.  
   
      [!code-cpp[System.String.Class.Instantiate#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.class.instantiate/cpp/string.instantiate3.cpp#5)]
      [!code-csharp[System.String.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.class.instantiate/cs/program.cs#5)]
@@ -248,12 +248,12 @@
 >  If your application makes a security decision about a symbolic identifier such as a file name or named pipe, or about persisted data such as the text-based data in an XML file, the operation should use an ordinal comparison instead of a culture-sensitive comparison. This is because a culture-sensitive comparison can yield different results depending on the culture in effect, whereas an ordinal comparison depends solely on the binary value of the compared characters.  
   
 > [!IMPORTANT]
->  Most methods that perform string operations include an overload that has a parameter of type <xref:System.StringComparison>, which enables you to specify whether the method performs an ordinal or culture-sensitive operation. In general, you should call this overload to make the intent of your method call clear. For best practices and guidance for using ordinal and culture-sensitive operations on strings, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  Most methods that perform string operations include an overload that has a parameter of type <xref:System.StringComparison>, which enables you to specify whether the method performs an ordinal or culture-sensitive operation. In general, you should call this overload to make the intent of your method call clear. For best practices and guidance for using ordinal and culture-sensitive operations on strings, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  Operations for [casing](#casing), [parsing and formatting](#parsing), [comparison and sorting](#comparison), and [testing for equality](#equality) can be either ordinal or culture-sensitive. The following sections discuss each category of operation.  
   
 > [!TIP]
->  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison?displayProperty=fullName> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  You should always call a method overload that makes the intent of your method call clear. For example, instead of calling the <xref:System.String.Compare%28System.String%2CSystem.String%29> method to perform a culture-sensitive comparison of two strings by using the conventions of the current culture, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method with a value of <xref:System.StringComparison?displayProperty=fullName> for the `comparisonType` argument. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
 <a name="casing"></a>   
 ### Casing  
@@ -353,7 +353,7 @@
 > [!NOTE]
 >  The culture-sensitive sorting and casing rules used in string comparison depend on the version of the .NET Framework. In the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] running on the [!INCLUDE[win8](~/includes/win8-md.md)] operating system, sorting, casing, normalization, and Unicode character information conforms to the Unicode 6.0 standard. On other operating systems, it conforms to the Unicode 5.0 standard.  
   
- For more information about word, string, and ordinal sort rules, see the <xref:System.Globalization.CompareOptions?displayProperty=fullName> topic. For additional recommendations on when to use each rule, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+ For more information about word, string, and ordinal sort rules, see the <xref:System.Globalization.CompareOptions?displayProperty=fullName> topic. For additional recommendations on when to use each rule, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  Ordinarily, you do not call string comparison methods such as <xref:System.String.Compare%2A> directly to determine the sort order of strings. Instead, comparison methods are called by sorting methods such as <xref:System.Array.Sort%2A?displayProperty=fullName> or <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=fullName>. The following example performs four different sorting operations (word sort using the current culture, word sort using the invariant culture, ordinal sort, and string sort using the invariant culture) without explicitly calling a string comparison method, although they do specify the type of comparison to use. Note that each type of sort produces a unique ordering of strings in its array.  
   
@@ -459,7 +459,7 @@
 -   Methods that indicate the starting position of a substring in a string instance. These include the <xref:System.String.IndexOf%2A>, <xref:System.String.IndexOfAny%2A>, <xref:System.String.LastIndexOf%2A>, and <xref:System.String.LastIndexOfAny%2A> methods.  
   
 > [!WARNING]
->  If you want to search a string for a particular pattern rather than a specific substring, you should use regular expressions. For more information, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md).  
+>  If you want to search a string for a particular pattern rather than a specific substring, you should use regular expressions. For more information, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 ### Modifying a string  
  The <xref:System.String> class includes the following methods that appear to modify the value of a string:  
@@ -1132,7 +1132,7 @@
  The comparison is performed using word sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>.  
   
 > [!WARNING]
->  When comparing strings, you should call the<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  When comparing strings, you should call the<xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  One or both comparands can be `null`. By definition, any string, including the empty string (""), compares greater than a null reference; and two null references compare equal to each other.  
   
@@ -1255,7 +1255,7 @@
  The comparison is performed using word sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>.  
   
 > [!WARNING]
->  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  One or both comparands can be `null`. By definition, any string, including the empty string (""), compares greater than a null reference; and two null references compare equal to each other.  
   
@@ -1711,7 +1711,7 @@
  The comparison is performed using word sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>.  
   
 > [!WARNING]
->  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  One or both comparands can be `null`. By definition, any string, including the empty string (""), compares greater than a null reference; and two null references compare equal to each other.  
   
@@ -1842,7 +1842,7 @@
  The comparison is performed using word sort rules. For more information about word, string, and ordinal sorts, see <xref:System.Globalization.CompareOptions?displayProperty=fullName>.  
   
 > [!WARNING]
->  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  When comparing strings, you should call the <xref:System.String.Compare%28System.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.StringComparison%29> method, which requires that you explicitly specify the type of string comparison that the method uses. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  One or both comparands can be `null`. By definition, any string, including the empty string (""), compares greater than a null reference; and two null references compare equal to each other.  
   
@@ -3666,7 +3666,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To determine whether a string ends with a particular substring by using the string comparison rules of the current culture, call the <see cref="M:System.String.EndsWith(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To determine whether a string ends with a particular substring by using the string comparison rules of the current culture, call the <see cref="M:System.String.EndsWith(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -4103,7 +4103,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="arg0">The object to format.</param>
         <summary>Replaces one or more format items in a specified string with the string representation of a specified object.</summary>
         <returns>A copy of <paramref name="format" /> in which any format items are replaced by the string representation of <paramref name="arg0" />.</returns>
@@ -4161,7 +4161,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="args">An object array that contains zero or more objects to format.</param>
         <summary>Replaces the format item in a specified string with the string representation of a corresponding object in a specified array.</summary>
         <returns>A copy of <paramref name="format" /> in which the format items have been replaced by the string representation of the corresponding objects in <paramref name="args" />.</returns>
@@ -4214,7 +4214,7 @@
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="arg0">The object to format.</param>
         <summary>Replaces the format item or items in a specified string with the string representation of the corresponding object. A parameter supplies culture-specific formatting information.</summary>
         <returns>A copy of <paramref name="format" /> in which the format item or items have been replaced by the string representation of <paramref name="arg0" />.</returns>
@@ -4275,7 +4275,7 @@
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="args">An object array that contains zero or more objects to format.</param>
         <summary>Replaces the format items in a specified string with the string representations of corresponding objects in a specified array. A parameter supplies culture-specific formatting information.</summary>
         <returns>A copy of <paramref name="format" /> in which the format items have been replaced by the string representation of the corresponding objects in <paramref name="args" />.</returns>
@@ -4327,7 +4327,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="arg0">The first object to format.</param>
         <param name="arg1">The second object to format.</param>
         <summary>Replaces the format items in a specified string with the string representation of two specified objects.</summary>
@@ -4382,7 +4382,7 @@
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="arg0">The first object to format.</param>
         <param name="arg1">The second object to format.</param>
         <summary>Replaces the format items in a specified string with the string representation of two specified objects. A parameter supplies culture-specific formatting information.</summary>
@@ -4436,7 +4436,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="arg0">The first object to format.</param>
         <param name="arg1">The second object to format.</param>
         <param name="arg2">The third object to format.</param>
@@ -4493,7 +4493,7 @@
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
-        <param name="format">A [composite format string](../Topic/Composite%20Formatting.md).</param>
+        <param name="format">A [composite format string](~/docs/standard/base-types/composite-formatting.md).</param>
         <param name="arg0">The first object to format.</param>
         <param name="arg1">The second object to format.</param>
         <param name="arg2">The third object to format.</param>
@@ -4546,7 +4546,7 @@
 ## Remarks  
   
 > [!TIP]
->  Rather than calling the <xref:System.String.GetEnumerator%2A> method to retrieve a <xref:System.CharEnumerator> object that you then use to enumerate a string, you should instead use your language's iteration construct ( in C#,  in C++/CLR, and  in Visual Basic).                   [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) in C#,                  [for each](../Topic/for%20each,%20in.md) in C++/CLR, and                  [For Each](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md) in Visual Basic).  
+>  Rather than calling the <xref:System.String.GetEnumerator%2A> method to retrieve a <xref:System.CharEnumerator> object that you then use to enumerate a string, you should instead use your language's iteration construct ( in C#,  in C++/CLR, and  in Visual Basic).                   [foreach](../Topic/foreach,%20in%20\(C%23%20Reference\).md) in C#,                  [for each](../Topic/for%20each,%20in.md) in C++/CLR, and                  [For Each](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) in Visual Basic).  
   
  This method enables you to iterate the individual characters in a string. For example, the Visual Basic `For Each` and C# `foreach` statements invoke this method to return a <xref:System.CharEnumerator> object that can provide read-only access to the characters in this string instance.  
   
@@ -4616,7 +4616,7 @@
 >   
 >  For more information about hash codes, see <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
   
- In desktop apps, you can use the             [\<UseRandomizedStringHashAlgorithm> element](../Topic/%3CUseRandomizedStringHashAlgorithm%3E%20Element.md) to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the                [\<UseRandomizedStringHashAlgorithm> element](../Topic/%3CUseRandomizedStringHashAlgorithm%3E%20Element.md). It defines a  to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the . It defines a `DisplayString` class that includes a private string constant, `s`, whose value is "This is a string." It also includes a `ShowStringHashCode` method that displays the string value and its hash code along with the name of the application domain in which the method is executing.  
+ In desktop apps, you can use the             [\<UseRandomizedStringHashAlgorithm> element](~/docs/framework/configuring-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md) to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the                [\<UseRandomizedStringHashAlgorithm> element](~/docs/framework/configuring-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md). It defines a  to generate unique hash codes on a per application domain basis. This can reduce the number of collisions and improve the overall performance of insertions and lookups that use hash tables. The following example shows how to use the . It defines a `DisplayString` class that includes a private string constant, `s`, whose value is "This is a string." It also includes a `ShowStringHashCode` method that displays the string value and its hash code along with the name of the application domain in which the method is executing.  
   
  [!code-csharp[System.String.GetHashCode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.GetHashCode/CS/perdomain.cs#2)]
  [!code-vb[System.String.GetHashCode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.GetHashCode/VB/perdomain.vb#2)]  
@@ -4824,7 +4824,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring within a string instance by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring within a string instance by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -4948,7 +4948,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than 0 (zero) or greater than the length of this string.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring that occurs after a particular character position by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring that occurs after a particular character position by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -5157,7 +5157,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  <paramref name="count" /> is greater than the length of this string minus <paramref name="startIndex" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To use the comparison rules of the current culture to perform this operation, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To use the comparison rules of the current culture to perform this operation, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -5633,7 +5633,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 ## Performance Considerations  
  If you are trying to reduce the total amount of memory your application allocates, keep in mind that interning a string has two unwanted side effects. First, the memory allocated for interned <xref:System.String> objects is not likely be released until the common language runtime (CLR) terminates. The reason is that the CLR's reference to the interned <xref:System.String> object can persist after your application, or even your application domain, terminates. Second, to intern a string, you must first create the string. The memory used by the <xref:System.String> object must still be allocated, even though the memory will eventually be garbage collected.  
   
- The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=fullName>enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md) to compile an assembly in advance of run time, strings are not interned across modules.  
+ The .NET Framework version 2.0 introduces the <xref:System.Runtime.CompilerServices.CompilationRelaxations?displayProperty=fullName>enumeration member. The <xref:System.Runtime.CompilerServices.CompilationRelaxations> member marks an assembly as not requiring string-literal interning. You can apply <xref:System.Runtime.CompilerServices.CompilationRelaxations> to an assembly using the <xref:System.Runtime.CompilerServices.CompilationRelaxationsAttribute> attribute. Also, when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to compile an assembly in advance of run time, strings are not interned across modules.  
   
    
   
@@ -5697,7 +5697,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-vb[System.String.IsInterned#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.isinterned/vb/isinternedex1.vb#1)]  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, you can override the use of the intern pool when you use the [Ngen.exe (Native Image Generator)](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md) to install an assembly to the native image cache on a local computer. For more information, see Performance Considerations in the Remarks section for the <xref:System.String.Intern%2A> property.  
+>  Starting with the .NET Framework version 2.0, you can override the use of the intern pool when you use the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to install an assembly to the native image cache on a local computer. For more information, see Performance Considerations in the Remarks section for the <xref:System.String.Intern%2A> property.  
   
    
   
@@ -5865,7 +5865,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  You can use the <xref:System.String.IsNullOrWhiteSpace%2A> method to test whether a string is `null`, its value is <xref:System.String.Empty?displayProperty=fullName>,  or it consists only of white-space characters.  
   
 ## What is a null string?  
- A string is `null` if it has not been assigned a value (in C++ and Visual Basic) or if has explicitly been assigned a value of `null`. Although the [composite formatting](../Topic/Composite%20Formatting.md) feature can gracefully handle a null string, as the following example shows, attempting to call one if its members throws a <xref:System.NullReferenceException>.  
+ A string is `null` if it has not been assigned a value (in C++ and Visual Basic) or if has explicitly been assigned a value of `null`. Although the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature can gracefully handle a null string, as the following example shows, attempting to call one if its members throws a <xref:System.NullReferenceException>.  
   
  [!code-cpp[System.String.IsNullOrEmpty#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.string.isnullorempty/cpp/NullString1.cpp#2)]
  [!code-csharp[System.String.IsNullOrEmpty#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.isnullorempty/cs/NullString1.cs#2)]
@@ -6400,7 +6400,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the last index of a substring within a string instance by using the comparison rules of the current culture, call the <see cref="M:System.String.LastIndexOf(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the last index of a substring within a string instance by using the comparison rules of the current culture, call the <see cref="M:System.String.LastIndexOf(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -6526,7 +6526,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The current instance equals <see cref="F:System.String.Empty" />, and <paramref name="startIndex" /> is less than -1 or greater than zero.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the index of a substring that precedes a particular character position by using the comparison rules of the current culture, call the <see cref="M:System.String.LastIndexOf(System.String,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the index of a substring that precedes a particular character position by using the comparison rules of the current culture, call the <see cref="M:System.String.LastIndexOf(System.String,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -6746,7 +6746,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The current instance equals <see cref="F:System.String.Empty" /> and <paramref name="count" /> is greater than 1.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To perform this operation by using the comparison rules of the current culture, call the <see cref="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To perform this operation by using the comparison rules of the current culture, call the <see cref="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -7955,7 +7955,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  The <xref:System.String.Split%2A> method is not always the best way to break a delimited string into substrings. If you don't want to extract all of the substrings of a delimited string, or if you want to parse a string based on a pattern instead of a set of delimiter characters, consider the following alternatives.  
   
 ### Regular expressions  
- If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](../Topic/.NET%20Framework%20Regular%20Expressions.md) to extract and handle the string's elements. Here's an example:  
+ If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](~/docs/standard/base-types/regular-expressions.md) to extract and handle the string's elements. Here's an example:  
   
  [!code-csharp[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
  [!code-vb[System.String.Split#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt1.vb#8)]  
@@ -8600,7 +8600,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To determine whether a string begins with a particular substring by using the string comparison rules of the current culture, call the <see cref="M:System.String.StartsWith(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To determine whether a string begins with a particular substring by using the string comparison rules of the current culture, call the <see cref="M:System.String.StartsWith(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -9696,7 +9696,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |UTF-16|<xref:System.Text.UnicodeEncoding>|  
 |UTF-32|<xref:System.Text.UTF32Encoding>|  
   
- For more information, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md).  
+ For more information, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
    
   
@@ -9775,7 +9775,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |UTF-16|<xref:System.Text.UnicodeEncoding>|  
 |UTF-32|<xref:System.Text.UTF32Encoding>|  
   
- For more information, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md).  
+ For more information, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
    
   
@@ -9848,7 +9848,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string casing methods that substitute default values and instead call methods that require parameters to be explicitly specified. To convert a character to lowercase by using the casing conventions of the current culture, call the<see cref="M:System.String.ToLower(System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string casing methods that substitute default values and instead call methods that require parameters to be explicitly specified. To convert a character to lowercase by using the casing conventions of the current culture, call the<see cref="M:System.String.ToLower(System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -9994,7 +9994,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
    
   
 ## Examples  
- The following example demonstrates the <xref:System.String.ToString%2A> method.Note that the example does not explicitly call the <xref:System.String.ToString%2A> method. Instead, the method is called implicitly by the [composite formatting](../Topic/Composite%20Formatting.md) feature.  
+ The following example demonstrates the <xref:System.String.ToString%2A> method.Note that the example does not explicitly call the <xref:System.String.ToString%2A> method. Instead, the method is called implicitly by the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature.  
   
  [!code-cpp[string.tostring#1](~/samples/snippets/cpp/VS_Snippets_CLR/string.tostring/CPP/string.tostring.cpp#1)]
  [!code-csharp[string.tostring#1](~/samples/snippets/csharp/VS_Snippets_CLR/string.tostring/CS/string.tostring.cs#1)]
@@ -10094,7 +10094,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md), we recommend that you avoid calling string casing methods that substitute default values and instead call methods that require parameters to be explicitly specified. To convert a string to uppercase by using the casing conventions of the current culture, call the <see cref="M:System.String.ToUpper(System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string casing methods that substitute default values and instead call methods that require parameters to be explicitly specified. To convert a string to uppercase by using the casing conventions of the current culture, call the <see cref="M:System.String.ToUpper(System.Globalization.CultureInfo)" /> method overload with a value of <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> for its <paramref name="culture" /> parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -10234,7 +10234,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.String.Trim%2A> method removes from the current string all leading and trailing white-space characters. Each leading and trailing trim operation stops when a non-white-space character is encountered. For example, if the current string is "   abc   xyz   ", the <xref:System.String.Trim%2A> method returns "abc   xyz". To remove white-space characters between words in a string, use a [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md).  
+ The <xref:System.String.Trim%2A> method removes from the current string all leading and trailing white-space characters. Each leading and trailing trim operation stops when a non-white-space character is encountered. For example, if the current string is "   abc   xyz   ", the <xref:System.String.Trim%2A> method returns "abc   xyz". To remove white-space characters between words in a string, use a [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 > [!NOTE]
 >  If the <xref:System.String.Trim%2A> method removes any characters from the current instance, this method does not modify the value of the current instance. Instead, it returns a new string in which all leading and trailing white space characters found in the current instance are removed.  
@@ -10475,7 +10475,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
 |Greater than zero|The first substring follows the second substring in the sort order.|  
   
 > [!WARNING]
->  Whenever possible, you should call an overload of the <xref:System.String.Compare%2A> method that includes a <xref:System.StringComparison> parameter. For more information, see [Best Practices for Using Strings](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md).  
+>  Whenever possible, you should call an overload of the <xref:System.String.Compare%2A> method that includes a <xref:System.StringComparison> parameter. For more information, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md).  
   
  ]]></format>
         </remarks>
@@ -10562,7 +10562,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Format#32](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#32)]
  [!code-vb[System.String.Format#32](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#32)]  
   
- A number of types support format strings, including all numeric types (both                                          [standard](../Topic/Standard%20Numeric%20Format%20Strings.md) and                                          [custom](../Topic/Custom%20Numeric%20Format%20Strings.md) format strings), all dates and times (both                                          [standard](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and                                          [custom](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md) format strings) and time intervals (both                                          [standard](../Topic/Standard%20TimeSpan%20Format%20Strings.md) and                                          [custom](../Topic/Custom%20TimeSpan%20Format%20Strings.md) format strings), all enumeration types                                          [enumeration types](../Topic/Enumeration%20Format%20Strings.md), and                                          [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
+ A number of types support format strings, including all numeric types (both                                          [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both                                          [standard](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both                                          [standard](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                          [custom](~/docs/standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types                                          [enumeration types](~/docs/standard/base-types/enumeration-format-strings.md), and                                          [GUIDs](https://msdn.microsoft.com/library/97af8hh4.aspx). You can also add support for format strings to your own types.  
   
  Controlling spacing  
  You can define the width of the string that is inserted into the result string by using syntax such as `{0,12}`, which inserts a 12-character string. In this case, the string representation of the first object is right-aligned in the 12-character field.  (If the string representation of the first object is more than 12 characters in length, though, the preferred field width is ignored, and the entire string is inserted into the result string.)  
@@ -10582,7 +10582,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
  [!code-csharp[System.String.Format#34](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/starting1.cs#34)]
  [!code-vb[System.String.Format#34](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/starting1.vb#34)]  
   
- <xref:System.String.Format%2A?displayProperty=fullName> makes use of the composite formatting feature. For more information, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ <xref:System.String.Format%2A?displayProperty=fullName> makes use of the composite formatting feature. For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 <a name="Format_Syntax"></a>   
 ## Overloaded method syntax  
@@ -10640,7 +10640,7 @@ A copy of `format` in which the format items have been replaced by the string re
   
 <a name="Format_Brief"></a>   
 ## The Format method in brief  
- Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) to include zero-based indexed placeholders, called format items, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is                  `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=fullName>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
+ Each overload of the <xref:System.String.Format%2A> method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) to include zero-based indexed placeholders, called format items, in a composite format string. At run time, each format item is replaced with the string representation of the corresponding argument in a parameter list. If the value of the argument is                  `null`, the format item is replaced with <xref:System.String.Empty?displayProperty=fullName>. For example, the following call to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%2CSystem.Object%29> method includes a format string with three format items, {0}, {1}, and {2}, and an argument list with three items.  
   
  [!code-cpp[System.String.Format#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.String.Format/cpp/formatoverload1.cpp#8)]
  [!code-csharp[System.String.Format#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/formatoverload1.cs#8)]
@@ -10656,7 +10656,7 @@ A copy of `format` in which the format items have been replaced by the string re
 index[,alignment][ :formatString] }  
 ```  
   
- Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the "Escaping Braces" section in the [Composite Formatting](../Topic/Composite%20Formatting.md) article.)  
+ Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the "Escaping Braces" section in the [Composite Formatting](~/docs/standard/base-types/composite-formatting.md) article.)  
   
  For example, a format item to format a currency value might appears like this:  
   
@@ -10676,13 +10676,13 @@ index[,alignment][ :formatString] }
  *formatString*  
  Optional. A string that specifies the format of the corresponding argument's result string. If you omit *formatString*, the corresponding argument's parameterless `ToString` method is called to produce its string representation. If you specify *formatString*, the argument referenced by the format item must implement the <xref:System.IFormattable> interface. Types that support format strings include:  
   
--   All integral and floating-point types. (See                                                  [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and                                                  [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).)  
+-   All integral and floating-point types. (See                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
   
--   <xref:System.DateTime> and <xref:System.DateTimeOffset>. (See                                                 [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and                                                  [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).)  
+-   <xref:System.DateTime> and <xref:System.DateTimeOffset>. (See                                                 [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).)  
   
--   All enumeration types. (See [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).)  
+-   All enumeration types. (See [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).)  
   
--   <xref:System.TimeSpan> values. (See                                                  [Standard TimeSpan Format Strings](../Topic/Standard%20TimeSpan%20Format%20Strings.md) and                                                  [Custom TimeSpan Format Strings](../Topic/Custom%20TimeSpan%20Format%20Strings.md).)  
+-   <xref:System.TimeSpan> values. (See                                                  [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and                                                  [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md).)  
   
 -   GUIDs. (See the <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method.)  
   
@@ -10731,7 +10731,7 @@ index[,alignment][ :formatString] }
 ## Custom formatting operations  
  You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a  `provider` parameter [Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29> overload to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the<xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.  
   
- For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](../Topic/How%20to:%20Define%20and%20Use%20Custom%20Numeric%20Format%20Providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
+ For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](~/docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example 6: A custom formatting operation](#Format6_Example). For an example that converts unsigned bytes to Roman numerals, see [Example 7: An intercept provider and Roman numeral formatter](#Format7_Example).  
   
 <a name="Format1_Example"></a>   
 ## Example 1: Formatting a single argument  
@@ -10817,13 +10817,13 @@ index[,alignment][ :formatString] }
   
 ### Where can I find a list of the predefined format strings that can be used with format items?  
   
--   For all integral and floating-point types, see                                                  [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and                                                  [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For all integral and floating-point types, see                                                  [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and                                                  [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For date and time values, see                                                  [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and                                                  [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For date and time values, see                                                  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and                                                  [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For enumeration values, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For enumeration values, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For <xref:System.TimeSpan> values, see  [Standard TimeSpan Format Strings](../Topic/Standard%20TimeSpan%20Format%20Strings.md) and [Custom TimeSpan Format Strings](../Topic/Custom%20TimeSpan%20Format%20Strings.md).  
+-   For <xref:System.TimeSpan> values, see  [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md).  
   
 -   For <xref:System.Guid> values, see the Remarks section of the <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> reference page.  
   
@@ -10837,12 +10837,12 @@ index[,alignment][ :formatString] }
  where *alignment* is a signed integer that defines the field width. If this value is negative, text in the field is left-aligned. If it is positive, text is right-aligned.  
   
 ### How do I control the number of digits after the decimal separator?  
- All [standard numeric format strings](../Topic/Standard%20Numeric%20Format%20Strings.md) except "D" (which is used with integers only), "G", "R", and "X" allow a precision specifier that defines the number of decimal digits in the result string. The following example uses standard numeric format strings to control the number of decimal digits in the result string.  
+ All [standard numeric format strings](~/docs/standard/base-types/standard-numeric-format-strings.md) except "D" (which is used with integers only), "G", "R", and "X" allow a precision specifier that defines the number of decimal digits in the result string. The following example uses standard numeric format strings to control the number of decimal digits in the result string.  
   
  [!code-csharp[System.String.Format#26](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa26.cs#26)]
  [!code-vb[System.String.Format#26](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa26.vb#26)]  
   
- If you're using a [custom numeric format string](../Topic/Custom%20Numeric%20Format%20Strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.  
+ If you're using a [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md), use the "0" format specifier to control the number of decimal digits in the result string, as the following example shows.  
   
  [!code-csharp[System.String.Format#27](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa27.cs#27)]
  [!code-vb[System.String.Format#27](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa27.vb#27)]  
@@ -10853,7 +10853,7 @@ index[,alignment][ :formatString] }
  [!code-csharp[System.String.Format#29](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa29.cs#29)]
  [!code-vb[System.String.Format#29](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa29.vb#29)]  
   
- You can pad an integer or floating-point number with leading zeros to produce a result string with a specified number of integral digits by using the "0" [custom numeric format specifier](../Topic/Custom%20Numeric%20Format%20Strings.md), as the following example shows.  
+ You can pad an integer or floating-point number with leading zeros to produce a result string with a specified number of integral digits by using the "0" [custom numeric format specifier](~/docs/standard/base-types/custom-numeric-format-strings.md), as the following example shows.  
   
  [!code-csharp[System.String.Format#28](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa28.cs#28)]
  [!code-vb[System.String.Format#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa28.vb#28)]  
@@ -10919,7 +10919,7 @@ index[,alignment][ :formatString] }
  The <xref:System.String.Split%2A> method is not always the best way to break a delimited string into substrings. If you don't want to extract all of the substrings of a delimited string, or if you want to parse a string based on a pattern instead of a set of delimiter characters, consider the following alternatives.  
   
 ## Regular expressions  
- If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](../Topic/.NET%20Framework%20Regular%20Expressions.md) to extract and handle the string's elements. Here's an example:  
+ If your strings conform to a fixed pattern, you can use a regular expression to extract and handle their elements. For example, if strings take the form "*number* *operand* *number*" you can use a [regular expression](~/docs/standard/base-types/regular-expressions.md) to extract and handle the string's elements. Here's an example:  
   
  [!code-csharp[System.String.Split#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Split/cs/splitalt1.cs#8)]
  [!code-vb[System.String.Split#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Split/vb/splitalt1.vb#8)]  
@@ -11048,7 +11048,7 @@ index[,alignment][ :formatString] }
   
 <a name="Syntax"></a>   
 ## Overloaded constructor syntax  
- String constructors fall into two categories: those without pointer parameters, and those with pointer parameters. The constructors that use pointers are not CLS-compliant. In addition, Visual Basic does not support the use of pointers, and C# requires code that uses pointers to run in an unsafe context. For more information, see [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md).  
+ String constructors fall into two categories: those without pointer parameters, and those with pointer parameters. The constructors that use pointers are not CLS-compliant. In addition, Visual Basic does not support the use of pointers, and C# requires code that uses pointers to run in an unsafe context. For more information, see [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md).  
   
  For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
   

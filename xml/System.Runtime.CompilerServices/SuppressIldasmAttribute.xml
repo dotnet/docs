@@ -21,16 +21,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Prevents the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) from disassembling an assembly. This class cannot be inherited.</summary>
+    <summary>Prevents the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) from disassembling an assembly. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
  This attribute does not prevent an assembly from being viewed using reflection.  
   
- Note that <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute does not block the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) from viewing header information and meta-information.  
+ Note that <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute does not block the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) from viewing header information and meta-information.  
   
    
   
@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ Apply the <xref:System.Runtime.CompilerServices.SuppressIldasmAttribute> attribute to an assembly or module to prevent the assembly or module from being disassembled using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
    
   

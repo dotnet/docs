@@ -135,7 +135,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A?displayProperty=fullName> property, which is similar to this property. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#120)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#120)]
@@ -203,7 +203,7 @@
 |<xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A>|<xref:System.Windows.Forms.DataGridViewContentAlignment?displayProperty=fullName>|  
 |<xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>|A standard error graphic of type <xref:System.Drawing.Icon> if the initial <xref:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons%2A> property value is `true`; otherwise, a standard error graphic of type <xref:System.Drawing.Bitmap>.|  
   
- These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ These values override the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  To prevent the standard error graphic from appearing for `null` or <xref:System.DBNull.Value?displayProperty=fullName> cell values, set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A?displayProperty=fullName> property for this cell style object to `null` or your own error graphic before adding rows to the control. This does not affect the row for new records, however. To prevent the error graphic from appearing in the row for new records when the control <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property value is `true`, you must also either explicitly set the cell value to `null` or your own error graphic in a handler for the control <xref:System.Windows.Forms.DataGridView.RowsAdded> event or set the column <xref:System.Windows.Forms.DataGridViewImageColumn.CellTemplate%2A> property to an instance of a <xref:System.Windows.Forms.DataGridViewImageCell>-derived type with an overridden <xref:System.Windows.Forms.DataGridViewImageCell.DefaultNewRowValue%2A> property that returns `null` or your own error graphic.  
   
@@ -255,7 +255,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewImageColumn.Description%2A> property to reflect the image layout. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewImageColumn.Description%2A> property to reflect the image layout. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#20)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#20)]
@@ -332,7 +332,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to set the default image. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to set the default image. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#5)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#5)]
@@ -371,7 +371,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to stretch and zoom images to fit cells. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to stretch and zoom images to fit cells. This example is part of a larger example available in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#20)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#20)]

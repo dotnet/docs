@@ -643,7 +643,7 @@
   
  Calling <xref:System.Xaml.XamlXmlReader.Read%2A> generally has the side effect of advancing the <xref:System.Xaml.XamlXmlReader.LineNumber%2A> or <xref:System.Xaml.XamlXmlReader.LinePosition%2A>.  
   
- The next operation after calling <xref:System.Xaml.XamlXmlReader.Read%2A> and getting a `true` result is typically to check <xref:System.Xaml.XamlXmlReader.NodeType%2A>. For more information about XAML node stream concepts, see [Understanding XAML Node Stream Structures and Concepts](../Topic/Understanding%20XAML%20Node%20Stream%20Structures%20and%20Concepts.md).  
+ The next operation after calling <xref:System.Xaml.XamlXmlReader.Read%2A> and getting a `true` result is typically to check <xref:System.Xaml.XamlXmlReader.NodeType%2A>. For more information about XAML node stream concepts, see [Understanding XAML Node Stream Structures and Concepts](~/docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md).  
   
  ]]></format>
         </remarks>

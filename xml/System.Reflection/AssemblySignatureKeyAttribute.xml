@@ -39,7 +39,7 @@
   
  The countersignature addresses security concerns when a malicious assembly claims some other identity. For example, a malicious System.Core.dll assembly could contain the Microsoft public key in its metadata, and use the attribute to tell strong name validation to use the attacker’s signature key if no countersignature is present. Thus, it could masquerade as a strong name-validated Microsoft assembly.  
   
- For information about how to sign assemblies for use with this new attribute, see [Enhanced Strong Naming](../Topic/Enhanced%20Strong%20Naming.md).  
+ For information about how to sign assemblies for use with this new attribute, see [Enhanced Strong Naming](~/docs/framework/app-domains/enhanced-strong-naming.md).  
   
  ]]></format>
     </remarks>

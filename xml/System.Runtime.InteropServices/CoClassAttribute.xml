@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can apply this attribute to coclass interfaces, although the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) typically applies it for you when it imports a type library.  
+ You can apply this attribute to coclass interfaces, although the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) typically applies it for you when it imports a type library.  
   
  When Tlbimp.exe imports a coclass, it produces a managed class and an interface to represent the coclass. The coclass interface has the same interface identifier (IID) as the default interface of the original coclass. The imported coclass interface also retains the name of the coclass. Tlbimp.exe appends the original coclass name with "class" to identify the imported class.  
   

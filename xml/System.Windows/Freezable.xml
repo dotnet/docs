@@ -39,7 +39,7 @@
   
 -   Easy cloning: the Freezable class has already implemented several methods that produce deep clones.  
   
- For information on using and creating your own <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ For information on using and creating your own <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
@@ -47,7 +47,7 @@
   
  When the <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" />, a <see cref="T:System.Windows.Freezable" /> object can be accessed only from the thread on which it was created. Attempting to access it from another thread throws an <see cref="T:System.InvalidOperationException" />. The <see cref="Overload:System.Windows.Threading.Dispatcher.Invoke" /> and <see cref="Overload:System.Windows.Threading.Dispatcher.BeginInvoke" /> methods provide support for marshalling to the correct thread.  
   
- When their <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, <see cref="T:System.Windows.Freezable" /> objects are free-threaded.  For more information, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).</threadsafe>
+ When their <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true" />, <see cref="T:System.Windows.Freezable" /> objects are free-threaded.  For more information, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -144,7 +144,7 @@
   
 |Action|Clone method behavior|CloneCurrentValue method behavior|  
 |------------|---------------------------|---------------------------------------|  
-|Copying a dependency property that has an expression|The expression is copied, but might no longer resolve. For more information, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).|The current value of the expression is copied, but not the expression itself.|  
+|Copying a dependency property that has an expression|The expression is copied, but might no longer resolve. For more information, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).|The current value of the expression is copied, but not the expression itself.|  
 |Copying an animated dependency property|The property's base (non-animated) value is copied. Animations are not copied.|The property's current animated value is copied. Animations are not copied.|  
   
  Note that unset properties are not copied. If an unset property has a default value that is a frozen <xref:System.Windows.Freezable>, that property value remains frozen in the otherwise modifiable clone.  
@@ -196,7 +196,7 @@
   
  It is essential that all implementations call the base implementation of this method. Implementations should only perform work that is not performed by the default implementation. The default implementation makes deep copies of all writable, locally set properties, including internal expressions.  
   
- If the object has data-bound dependency properties, the expressions are copied but might no longer resolve. For more information about cloning data-bound objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md). If the object has animated dependency properties, the base (non-animated) value of those properties is copied. Animations are not copied.  
+ If the object has data-bound dependency properties, the expressions are copied but might no longer resolve. For more information about cloning data-bound objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md). If the object has animated dependency properties, the base (non-animated) value of those properties is copied. Animations are not copied.  
   
  Note that unset properties are not copied, nor are read-only properties. If such a property has a default value that is a frozen <see cref="T:System.Windows.Freezable" />, that property value remains frozen in the otherwise modifiable clone.  
   
@@ -244,7 +244,7 @@
   
 |Action|Clone method behavior|CloneCurrentValue method behavior|  
 |------------|---------------------------|---------------------------------------|  
-|Copying a dependency property that has an expression|The expression is copied, but might no longer resolve. For more information, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).|The current value of the expression is copied, but not the expression itself.|  
+|Copying a dependency property that has an expression|The expression is copied, but might no longer resolve. For more information, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).|The current value of the expression is copied, but not the expression itself.|  
 |Copying an animated dependency property|The property's base (non-animated) value is copied. Animations are not copied.|The property's current animated value is copied. Animations are not copied.|  
   
  Note that unset properties are not copied. If an unset property has a default value that is a frozen <xref:System.Windows.Freezable>, that property value remains frozen in the otherwise modifiable clone.  
@@ -558,7 +558,7 @@
   
  Classes that store all their data in dependency properties and that do not need to perform extra initialization work do not need to override <see cref="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)" />.  
   
- It is essential that all implementations call the base implementation of this method. Implementations should only perform work that is not performed by the default implementation. The default implementation makes deep copies of any unfrozen freezables and shallow copies of all other writable, locally set properties it contains. If the object has data-bound dependency properties, the expressions are copied but might no longer resolve; for more information about cloning data-bound objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md). If the object has animated dependency properties, the base (non-animated) values of those properties are copied. Animations are not copied.  
+ It is essential that all implementations call the base implementation of this method. Implementations should only perform work that is not performed by the default implementation. The default implementation makes deep copies of any unfrozen freezables and shallow copies of all other writable, locally set properties it contains. If the object has data-bound dependency properties, the expressions are copied but might no longer resolve; for more information about cloning data-bound objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md). If the object has animated dependency properties, the base (non-animated) values of those properties are copied. Animations are not copied.  
   
  Note that unset properties are not copied, nor are read-only properties.  
   
@@ -645,7 +645,7 @@
   
  Classes that store all their data in dependency properties and that do not need to perform extra initialization work do not need to override <see cref="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />.  
   
- It is essential that all implementations call the base implementation of this method. Implementations should only perform work that is not performed by the default implementation. The default implementation creates a new <see cref="T:System.Windows.Freezable" /> using the <see cref="M:System.Windows.Freezable.CreateInstance" /> method and makes deep copies of unfrozen freezables and shallow copies of all other writable, locally set properties it contains. If the object has data-bound dependency properties, the data bindings are copied but might no longer resolve; for more information about cloning data-bound objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md). If the object has animated dependency properties, the current animated value of those properties is copied, but the animations are not.  
+ It is essential that all implementations call the base implementation of this method. Implementations should only perform work that is not performed by the default implementation. The default implementation creates a new <see cref="T:System.Windows.Freezable" /> using the <see cref="M:System.Windows.Freezable.CreateInstance" /> method and makes deep copies of unfrozen freezables and shallow copies of all other writable, locally set properties it contains. If the object has data-bound dependency properties, the data bindings are copied but might no longer resolve; for more information about cloning data-bound objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md). If the object has animated dependency properties, the current animated value of those properties is copied, but the animations are not.  
   
  Read-only dependency properties within a <see cref="T:System.Windows.Freezable" /> are not copied by this default implementation.  
   

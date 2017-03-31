@@ -34,7 +34,7 @@
   
  <xref:System.Windows.Markup.AmbientAttribute> can also be applied to a CLR method, to support attributing a XAML attachable property as ambient. This is potentially necessary because in a CLR implementation a XAML attached property is implemented/represented to reflection as an accessor pattern with `get` and `set` methods. No actual CLR property to attribute exists, so restricting usage for <xref:System.AttributeTargets> to `Property` would not have enabled specifying an attachable member as ambient. For an attachable member that you want to report as ambient, attribute the `get` accessor. You should not attempt to attribute methods that are not specifically support methods of attachable members.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.AmbientAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.AmbientAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
  Ambient types (types where <xref:System.Windows.Markup.AmbientAttribute> is applied at type level) can be used for certain XAML processing situations where the type of a property needs to be resolved out of order.  
   

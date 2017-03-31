@@ -40,7 +40,7 @@
   
  To host a [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control in a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, you must assign the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control to the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> property.  
   
- Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property to assign custom mappings between a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and its hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property to assign custom mappings between a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and its hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlObjectElementUsage_WindowsFormsHost"></a>   
 ## XAML Object Element Usage  
@@ -52,7 +52,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=fullName> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](../Topic/Walkthrough:%20Hosting%20a%20Windows%20Forms%20Control%20in%20WPF%20by%20Using%20XAML.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=fullName> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](~/docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md).  
   
  [!code-xml[HostingWfInWpfWithXaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#1)]  
   
@@ -119,7 +119,7 @@
 ## Remarks  
  This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.BackgroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=fullName> properties of the hosted control.  
   
- For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Background%2A> property, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Background%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_Background"></a>   
 ## XAML Attribute Usage  
@@ -223,12 +223,12 @@
  A <xref:System.Windows.Forms.Integration.WindowsFormsHost> element (or a possible subclass).  
   
  *hostedControl*  
- An element that specifies the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control. Specifying the custom control in markup usually requires an xmlns mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ An element that specifies the hosted [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] control. Specifying the custom control in markup usually requires an xmlns mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> property to add the hosted control to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Walkthrough: Hosting an ActiveX Control in WPF](../Topic/Walkthrough:%20Hosting%20an%20ActiveX%20Control%20in%20WPF.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> property to add the hosted control to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Walkthrough: Hosting an ActiveX Control in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-an-activex-control-in-wpf.md).  
   
  [!code-csharp[HostingAxInWpf#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingAxInWpf/CSharp/HostingAxInWpf/window1.xaml.cs#11)]
  [!code-vb[HostingAxInWpf#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingAxInWpf/VisualBasic/HostingAxInWpf/window1.xaml.vb#11)]  
@@ -365,7 +365,7 @@
 ## Remarks  
  This property setting affects only those controls whose template uses the property as a parameter. It has no effect on other controls.  
   
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontFamilyProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontFamily"></a>   
 ## XAML Attribute Usage  
@@ -427,7 +427,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontSizeProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontSize"></a>   
 ## XAML Attribute Usage  
@@ -489,7 +489,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontStyleProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontStyle"></a>   
 ## XAML Attribute Usage  
@@ -551,7 +551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.FontWeightProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.Font%2A?displayProperty=fullName> property of the hosted control. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_FontWeight"></a>   
 ## XAML Attribute Usage  
@@ -613,7 +613,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.ForeColor%2A?displayProperty=fullName> property of the hosted control. For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Foreground%2A> property, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ This dependency property is identified by the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ForegroundProperty> field. By default, this property is mapped to update the <xref:System.Windows.Forms.Control.ForeColor%2A?displayProperty=fullName> property of the hosted control. For more information on mapping the <xref:System.Windows.Forms.Integration.WindowsFormsHost.Foreground%2A> property, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
 <a name="xamlAttributeUsage_Foreground"></a>   
 ## XAML Attribute Usage  
@@ -756,7 +756,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Windows.Forms.Integration.WindowsFormsHost.OnPropertyChanged%2A> method may be necessary when a property of an ancestor element has changed, but the local value of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element has not changed. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ Calling the <xref:System.Windows.Forms.Integration.WindowsFormsHost.OnPropertyChanged%2A> method may be necessary when a property of an ancestor element has changed, but the local value of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element has not changed. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
  ]]></format>
         </remarks>
@@ -850,7 +850,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ The [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
    
   
@@ -887,7 +887,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] controls do not support scaling in the same way as [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] elements. For example, scaling a [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] control from a factor of 1 to a factor of 0.5 and back to a factor of 1 does not, in general, recover the original size of the control. For more information, see [Layout Considerations for the WindowsFormsHost Element](../Topic/Layout%20Considerations%20for%20the%20WindowsFormsHost%20Element.md).  
+ [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] controls do not support scaling in the same way as [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] elements. For example, scaling a [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] control from a factor of 1 to a factor of 0.5 and back to a factor of 1 does not, in general, recover the original size of the control. For more information, see [Layout Considerations for the WindowsFormsHost Element](~/docs/framework/wpf/advanced/layout-considerations-for-the-windowsformshost-element.md).  
   
  Override the <xref:System.Windows.Forms.Integration.WindowsFormsHost.ScaleChild%2A> method to provide custom scaling behavior for the hosted [!INCLUDE[TLA2#tla_winforms](~/includes/tla2sharptla-winforms-md.md)] control.  
   

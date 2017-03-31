@@ -64,14 +64,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether to compile code that uses the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword.</summary>
+        <summary>Gets or sets a Boolean value that indicates whether to compile code that uses the [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md) keyword.</summary>
         <value>
-          <see langword="true" /> if will compile code that uses the [unsafe](../Topic/unsafe%20\(C%23%20Reference\).md) keyword; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if will compile code that uses the [unsafe](~/docs/csharp/language-reference/keywords/unsafe.md) keyword; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/unsafe (C# Compiler Options)](../Topic/-unsafe%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/unsafe (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/unsafe-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] common language runtime. For more information, see [/baseaddress (C# Compiler Options)](../Topic/-baseaddress%20\(C%23%20Compiler%20Options\).md).  
+ The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] common language runtime. For more information, see [/baseaddress (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/baseaddress-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/checked (C# Compiler Options)](../Topic/-checked%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/checked (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/checked-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -191,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/nowarn (C# Compiler Options)](../Topic/-nowarn%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/nowarn (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/nowarn-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/doc (C# Compiler Options)](../Topic/-doc%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/doc (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/doc-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -259,7 +259,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can have a value of `prompt`, `send`, or `none`. If the property is set to `prompt`, you will receive a prompt when an internal compiler error occurs. The prompt lets you send a bug report electronically to Microsoft. If the property is set to `send`, a bug report is sent automatically. If the property is set to `none`, the error is reported only in the text output of the compiler. Default is `none`. For more information, see [/errorreport (C# Compiler Options)](../Topic/-errorreport%20\(C%23%20Compiler%20Options\).md).  
+ This property can have a value of `prompt`, `send`, or `none`. If the property is set to `prompt`, you will receive a prompt when an internal compiler error occurs. The prompt lets you send a bug report electronically to Microsoft. If the property is set to `send`, a bug report is sent automatically. If the property is set to `none`, the error is reported only in the text output of the compiler. Default is `none`. For more information, see [/errorreport (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/errorreport-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -285,7 +285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default is `false`. For more information, see [/fullpaths (C# Compiler Options)](../Topic/-fullpaths%20\(C%23%20Compiler%20Options\).md).  
+ The default is `false`. For more information, see [/fullpaths (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/fullpaths-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -355,7 +355,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/langversion (C# Compiler Options)](../Topic/-langversion%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/langversion (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/langversion-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -380,7 +380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/moduleassemblyname (C# Compiler Option)](../Topic/-moduleassemblyname%20\(C%23%20Compiler%20Option\).md).  
+ For more information, see [/moduleassemblyname (C# Compiler Option)](~/docs/csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -406,7 +406,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property if you want to define or create your own System namespace and objects. For more information, see [/nostdlib (C# Compiler Options)](../Topic/-nostdlib%20\(C%23%20Compiler%20Options\).md).  
+ Use this property if you want to define or create your own System namespace and objects. For more information, see [/nostdlib (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/nostdlib-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -431,7 +431,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/pdb (C# Compiler Options)](../Topic/-pdb%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/pdb (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/pdb-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -525,7 +525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/warn (C# Compiler Options)](../Topic/-warn%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/warn (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warn-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -550,7 +550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/warnaserror (C# Compiler Options)](../Topic/-warnaserror%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/warnaserror (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md).  
   
  ]]></format>
         </remarks>
@@ -575,7 +575,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [/warnaserror (C# Compiler Options)](../Topic/-warnaserror%20\(C%23%20Compiler%20Options\).md).  
+ For more information, see [/warnaserror (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/warnaserror-compiler-option.md).  
   
  ]]></format>
         </remarks>

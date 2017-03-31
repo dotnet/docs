@@ -59,7 +59,7 @@ Example of text decoration types
   
  [!code-xml[Performance#PerformanceSnippet11](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Hyperlink.xaml#performancesnippet11)]  
   
- <xref:System.Windows.TextDecoration> objects can be performance intensive to instantiate, particularly if you have many <xref:System.Windows.Documents.Hyperlink> objects. For more information, see [How to: Specify Whether a Hyperlink is Underlined](../Topic/How%20to:%20Specify%20Whether%20a%20Hyperlink%20is%20Underlined.md).  
+ <xref:System.Windows.TextDecoration> objects can be performance intensive to instantiate, particularly if you have many <xref:System.Windows.Documents.Hyperlink> objects. For more information, see [How to: Specify Whether a Hyperlink is Underlined](~/docs/framework/wpf/advanced/how-to-specify-whether-a-hyperlink-is-underlined.md).  
   
  ]]></format>
     </remarks>
@@ -182,7 +182,7 @@ Example of a strikethrough text decoration
  ![Diagram of text decoration locations](~/add/media/textdecoration01.gif "Diagram of text decoration locations")  
 Example of an underline text decoration  
   
- By default, <xref:System.Windows.Documents.Hyperlink> uses a <xref:System.Windows.TextDecoration> object to display an underline. For more information, see [How to: Specify Whether a Hyperlink is Underlined](../Topic/How%20to:%20Specify%20Whether%20a%20Hyperlink%20is%20Underlined.md).  
+ By default, <xref:System.Windows.Documents.Hyperlink> uses a <xref:System.Windows.TextDecoration> object to display an underline. For more information, see [How to: Specify Whether a Hyperlink is Underlined](~/docs/framework/wpf/advanced/how-to-specify-whether-a-hyperlink-is-underlined.md).  
   
    
   

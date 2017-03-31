@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this method instead of <xref:System.Windows.DependencyObject.GetValue%2A> when you want to retrieve the non-animated value of an animated property. This method takes advantage of the fact that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] animations do not remove the target property's original value. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ Use this method instead of <xref:System.Windows.DependencyObject.GetValue%2A> when you want to retrieve the non-animated value of an animated property. This method takes advantage of the fact that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] animations do not remove the target property's original value. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  ]]></format>
         </remarks>

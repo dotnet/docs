@@ -151,7 +151,7 @@
   
  When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
   
- XAML only uses <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> for representing the constructor arguments of instances of <xref:System.Windows.Markup.MarkupExtension>. See [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md).  
+ XAML only uses <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> for representing the constructor arguments of instances of <xref:System.Windows.Markup.MarkupExtension>. See [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
  ]]></format>
         </remarks>

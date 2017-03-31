@@ -33,13 +33,13 @@
   
  The <xref:System.Runtime.Remoting.ObjRef> contains information that describes the <xref:System.Type> and class of the object being marshaled, its exact location, and communication-related information on how to reach the remoting subdivision where the object is located.  
   
- After a class implementing <xref:System.MarshalByRefObject> is marshaled, the <xref:System.Runtime.Remoting.ObjRef> that represents it is transferred through a channel into another application domain, possibly in another process or computer. When the <xref:System.Runtime.Remoting.ObjRef> is deserialized (see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md)) in the target application domain, it is parsed to create a transparent proxy for the remote MBR object. This operation is known as unmarshaling.  
+ After a class implementing <xref:System.MarshalByRefObject> is marshaled, the <xref:System.Runtime.Remoting.ObjRef> that represents it is transferred through a channel into another application domain, possibly in another process or computer. When the <xref:System.Runtime.Remoting.ObjRef> is deserialized (see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md)) in the target application domain, it is parsed to create a transparent proxy for the remote MBR object. This operation is known as unmarshaling.  
   
  A transparent proxy is an object that provides the illusion that the actual object resides in the client's space. It achieves this by forwarding calls made on it to the real object using the remoting infrastructure. The transparent proxy is itself housed by an instance of a managed run-time class of type <xref:System.Runtime.Remoting.Proxies.RealProxy>. The <xref:System.Runtime.Remoting.Proxies.RealProxy> implements a part of the functionality needed to forward the operations from the transparent proxy.  
   
  A proxy object can be used without regard to any remoting subdivisions within a <xref:System.AppDomain>. Applications need not distinguish between proxy references and object references. However, service providers dealing with issues such as activation, lifetime management, and transactions need to make such distinctions.  
   
- This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+ This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   

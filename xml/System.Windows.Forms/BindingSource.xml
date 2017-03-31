@@ -49,7 +49,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.BindingSource> component serves many purposes. First, it simplifies binding controls on a form to data by providing currency management, change notification, and other services between Windows Forms controls and data sources. This is accomplished by attaching the <xref:System.Windows.Forms.BindingSource> component to your data source using the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property. For complex binding scenarios you can optionally set the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property to a specific column or list in the data source. You then bind controls to the <xref:System.Windows.Forms.BindingSource>. All further interaction with the data is accomplished with calls to the <xref:System.Windows.Forms.BindingSource> component. For examples on how the <xref:System.Windows.Forms.BindingSource> can simplify the binding process, see [How to: Bind Windows Forms Controls to DBNull Database Values](../Topic/How%20to:%20Bind%20Windows%20Forms%20Controls%20to%20DBNull%20Database%20Values.md) and [How to: Handle Errors and Exceptions that Occur with Databinding](../Topic/How%20to:%20Handle%20Errors%20and%20Exceptions%20that%20Occur%20with%20Databinding.md). Navigation and updating of the data source is accomplished through methods such as <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveLast%2A>, and <xref:System.Windows.Forms.BindingSource.Remove%2A>. Operations such as sorting and filtering are handled through the <xref:System.Windows.Forms.BindingSource.Sort%2A> and <xref:System.Windows.Forms.BindingSource.Filter%2A> properties. For more information on using sorting and filtering with the <xref:System.Windows.Forms.BindingSource>, see [How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../Topic/How%20to:%20Sort%20and%20Filter%20ADO.NET%20Data%20with%20the%20Windows%20Forms%20BindingSource%20Component.md).  
+ The <xref:System.Windows.Forms.BindingSource> component serves many purposes. First, it simplifies binding controls on a form to data by providing currency management, change notification, and other services between Windows Forms controls and data sources. This is accomplished by attaching the <xref:System.Windows.Forms.BindingSource> component to your data source using the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property. For complex binding scenarios you can optionally set the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property to a specific column or list in the data source. You then bind controls to the <xref:System.Windows.Forms.BindingSource>. All further interaction with the data is accomplished with calls to the <xref:System.Windows.Forms.BindingSource> component. For examples on how the <xref:System.Windows.Forms.BindingSource> can simplify the binding process, see [How to: Bind Windows Forms Controls to DBNull Database Values](~/docs/framework/winforms/controls/how-to-bind-windows-forms-controls-to-dbnull-database-values.md) and [How to: Handle Errors and Exceptions that Occur with Databinding](~/docs/framework/winforms/controls/how-to-handle-errors-and-exceptions-that-occur-with-databinding.md). Navigation and updating of the data source is accomplished through methods such as <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveLast%2A>, and <xref:System.Windows.Forms.BindingSource.Remove%2A>. Operations such as sorting and filtering are handled through the <xref:System.Windows.Forms.BindingSource.Sort%2A> and <xref:System.Windows.Forms.BindingSource.Filter%2A> properties. For more information on using sorting and filtering with the <xref:System.Windows.Forms.BindingSource>, see [How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](~/docs/framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md).  
   
  In addition, the <xref:System.Windows.Forms.BindingSource> component can act as a strongly typed data source. Typically the type of the underlying data source is fixed through one of the following mechanisms:  
   
@@ -57,7 +57,7 @@
   
 -   Set the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property to a list, single object, or type.  
   
- Both of these mechanisms create a strongly-typed list. For more information on how to use the <xref:System.Windows.Forms.BindingSource> to bind to a type, see [How to: Bind a Windows Forms Control to a Type](../Topic/How%20to:%20Bind%20a%20Windows%20Forms%20Control%20to%20a%20Type.md). You can also use the <xref:System.Windows.Forms.BindingSource> to bind your controls to a factory object. For more information on how to do this, see [How to: Bind a Windows Forms Control to a Factory Object](../Topic/How%20to:%20Bind%20a%20Windows%20Forms%20Control%20to%20a%20Factory%20Object.md).  
+ Both of these mechanisms create a strongly-typed list. For more information on how to use the <xref:System.Windows.Forms.BindingSource> to bind to a type, see [How to: Bind a Windows Forms Control to a Type](~/docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md). You can also use the <xref:System.Windows.Forms.BindingSource> to bind your controls to a factory object. For more information on how to do this, see [How to: Bind a Windows Forms Control to a Factory Object](~/docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-factory-object.md).  
   
 > [!NOTE]
 >  Because a <xref:System.Windows.Forms.BindingSource> handles both simple and complex data sources, terminology is problematic. Within this class documentation, the term *list* refers to a data collection within the hosted data source, and *item* denotes a single element. When discussing functionality associated with complex data sources, the equivalent terms *table* and *row* are used.  
@@ -226,7 +226,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. New items are added to the list by the <xref:System.Windows.Forms.BindingSource.AddingNew> event handler. This code example is part of a larger example provided in [How to: Customize Item Addition with the Windows Forms BindingSource](../Topic/How%20to:%20Customize%20Item%20Addition%20with%20the%20Windows%20Forms%20BindingSource.md).  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. New items are added to the list by the <xref:System.Windows.Forms.BindingSource.AddingNew> event handler. This code example is part of a larger example provided in [How to: Customize Item Addition with the Windows Forms BindingSource](~/docs/framework/winforms/controls/how-to-customize-item-addition-with-the-windows-forms-bindingsource.md).  
   
  [!code-cpp[System.Windows.Forms.DataConnector.AddingNew#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CPP/form1.cpp#8)]
  [!code-csharp[System.Windows.Forms.DataConnector.AddingNew#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CS/form1.cs#8)]
@@ -273,7 +273,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. New items are added to the list by the <xref:System.Windows.Forms.BindingSource.AddingNew> event handler. This code example is part of a larger example provided in [How to: Customize Item Addition with the Windows Forms BindingSource](../Topic/How%20to:%20Customize%20Item%20Addition%20with%20the%20Windows%20Forms%20BindingSource.md).  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. New items are added to the list by the <xref:System.Windows.Forms.BindingSource.AddingNew> event handler. This code example is part of a larger example provided in [How to: Customize Item Addition with the Windows Forms BindingSource](~/docs/framework/winforms/controls/how-to-customize-item-addition-with-the-windows-forms-bindingsource.md).  
   
  [!code-cpp[System.Windows.Forms.DataConnector.AddingNew#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CPP/form1.cpp#7)]
  [!code-csharp[System.Windows.Forms.DataConnector.AddingNew#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CS/form1.cs#7)]
@@ -944,7 +944,7 @@
    
   
 ## Examples  
- The following code example assigns a list of customers to the <xref:System.Windows.Forms.BindingSource.DataSource%2A> of a <xref:System.Windows.Forms.BindingSource> component. This code example is part of a larger example provided at [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../Topic/How%20to:%20Raise%20Change%20Notifications%20Using%20the%20BindingSource%20ResetItem%20Method.md).  
+ The following code example assigns a list of customers to the <xref:System.Windows.Forms.BindingSource.DataSource%2A> of a <xref:System.Windows.Forms.BindingSource> component. This code example is part of a larger example provided at [How to: Raise Change Notifications Using the BindingSource ResetItem Method](~/docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md).  
   
  [!code-cpp[System.Windows.Forms.DataConnector.ResetItem#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CPP/form1.cpp#6)]
  [!code-csharp[System.Windows.Forms.DataConnector.ResetItem#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CS/form1.cs#6)]
@@ -1011,9 +1011,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -2358,7 +2358,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind an array list, which does not provide change notification. An item is removed from the list, and the bound controls are notified of the change by calling the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method. This code example is part of a larger example provided in [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](../Topic/How%20to:%20Reflect%20Data%20Source%20Updates%20in%20a%20Windows%20Forms%20Control%20with%20the%20BindingSource.md).  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind an array list, which does not provide change notification. An item is removed from the list, and the bound controls are notified of the change by calling the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method. This code example is part of a larger example provided in [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](~/docs/framework/winforms/controls/reflect-data-source-updates-in-a-wf-control-with-the-bindingsource.md).  
   
  [!code-cpp[System.Windows.Forms.DataConnector.ResetBindings#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/CPP/form1.cpp#3)]
  [!code-csharp[System.Windows.Forms.DataConnector.ResetBindings#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/CS/form1.cs#3)]
@@ -2422,7 +2422,7 @@
    
   
 ## Examples  
- The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. The list does not raise change notifications, so the <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method on the <xref:System.Windows.Forms.BindingSource> is used to raise the <xref:System.Windows.Forms.BindingSource.ListChanged> event. This code example is part of a larger example provided in [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../Topic/How%20to:%20Raise%20Change%20Notifications%20Using%20the%20BindingSource%20ResetItem%20Method.md).  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. The list does not raise change notifications, so the <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method on the <xref:System.Windows.Forms.BindingSource> is used to raise the <xref:System.Windows.Forms.BindingSource.ListChanged> event. This code example is part of a larger example provided in [How to: Raise Change Notifications Using the BindingSource ResetItem Method](~/docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md).  
   
  [!code-cpp[System.Windows.Forms.DataConnector.ResetItem#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CPP/form1.cpp#7)]
  [!code-csharp[System.Windows.Forms.DataConnector.ResetItem#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CS/form1.cs#7)]

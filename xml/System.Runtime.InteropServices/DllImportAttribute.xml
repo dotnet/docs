@@ -45,7 +45,7 @@
   
  **Note** JScript does not support this attribute. You can use C# or Visual Basic wrapper classes to access unmanaged API methods from JScript programs.  
   
- For additional information about using the platform invoke service to access functions in unmanaged DLLs, see [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  
+ For additional information about using the platform invoke service to access functions in unmanaged DLLs, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
 > [!NOTE]
 >  The <xref:System.Runtime.InteropServices.DllImportAttribute> does not support marshaling of generic types.  
@@ -245,7 +245,7 @@
 ## Remarks  
  Use this field with a member of the <xref:System.Runtime.InteropServices.CharSet> enumeration to specify the marshaling behavior of string parameters and to specify which entry-point name to invoke (the exact name given or a name ending with "A" or "W"). The default enumeration member for C# and Visual Basic is `CharSet.Ansi` and the default enumeration member for C++ is `CharSet.None`, which is equivalent to `CharSet.Ansi`. In Visual Basic, you use the `Declare` statement to specify the `CharSet` field.  
   
- The <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> field influences the behavior of the `CharSet` field in determining which entry-point name to invoke. For a detailed description and examples of the string marshaling and name matching behavior associated with the `CharSet` field, see [Specifying a Character Set](../Topic/Specifying%20a%20Character%20Set.md).  
+ The <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> field influences the behavior of the `CharSet` field in determining which entry-point name to invoke. For a detailed description and examples of the string marshaling and name matching behavior associated with the `CharSet` field, see [Specifying a Character Set](~/docs/framework/interop/specifying-a-character-set.md).  
   
    
   
@@ -292,7 +292,7 @@
 ## Remarks  
  You can specify the entry-point name by supplying a string indicating the name of the DLL containing the entry point, or you can identify the entry point by its ordinal. Ordinals are prefixed with the # sign, for example, #1. If you omit this field, the common language runtime uses the name of the.NET method marked with the <xref:System.Runtime.InteropServices.DllImportAttribute>.  
   
- For additional information, see [Identifying Functions in DLLs](../Topic/Identifying%20Functions%20in%20DLLs.md). For examples showing how to use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint> field, see [Specifying an Entry Point](../Topic/Specifying%20an%20Entry%20Point.md).  
+ For additional information, see [Identifying Functions in DLLs](~/docs/framework/interop/identifying-functions-in-dlls.md). For examples showing how to use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint> field, see [Specifying an Entry Point](~/docs/framework/interop/specifying-an-entry-point.md).  
   
    
   

@@ -54,12 +54,12 @@
  The<xref:System.Windows.Controls.MenuItem> handles the <xref:System.Windows.UIElement.MouseDown> event, so if you attach an event handler to <xref:System.Windows.UIElement.MouseDown>, your handler will never be called.  To add your own handler, subscribe to the <xref:System.Windows.UIElement.PreviewMouseDown> event or subscribe to <xref:System.Windows.UIElement.MouseDown> by calling <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> with `handledEventsToo` set to `true`.  
   
 ## Customizing the MenuItem Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.MenuItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.MenuItem>, see [Menu Styles and Templates](../Topic/Menu%20Styles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.MenuItem> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.MenuItem>, see [Menu Styles and Templates](~/docs/framework/wpf/controls/menu-styles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.MenuItem> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.MenuItem> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
    
   
@@ -775,7 +775,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the .NET Framework version 3.0 Service Pack 1, the <xref:System.Windows.Controls.MenuItem.IsHighlighted%2A> property has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ Starting with the .NET Framework version 3.0 Service Pack 1, the <xref:System.Windows.Controls.MenuItem.IsHighlighted%2A> property has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 <a name="dependencyPropertyInfo_IsHighlighted"></a>   
 ## Dependency Property Information  
@@ -865,7 +865,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the .NET Framework version 3.0 Service Pack 1, the <xref:System.Windows.Controls.MenuItem.IsPressed%2A> property has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ Starting with the .NET Framework version 3.0 Service Pack 1, the <xref:System.Windows.Controls.MenuItem.IsPressed%2A> property has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 <a name="dependencyPropertyInfo_IsPressed"></a>   
 ## Dependency Property Information  
@@ -1149,7 +1149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.MenuItem.Checked> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ The control raises the <xref:System.Windows.Controls.MenuItem.Checked> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1591,7 +1591,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.MenuItem.Unchecked> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ The control raises the <xref:System.Windows.Controls.MenuItem.Unchecked> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -2158,7 +2158,7 @@
         <value>
           <see langword="true" /> the menu selects different item containers; otherwise, <see langword="false" />.  
   
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+ The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -24,7 +24,7 @@
   
  Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation.  
   
- For more information about clients and the client architecture, see [Accessing Services Using a WCF Client](../Topic/Accessing%20Services%20Using%20a%20Client.md) and [WCF Client Architecture](../Topic/Client%20Architecture.md). For more information about customizing the client runtime, see [Extending Clients](../Topic/Extending%20Clients.md). For more information about using behaviors, see [Configuring and Extending the Runtime with Behaviors](../Topic/Configuring%20and%20Extending%20the%20Runtime%20with%20Behaviors.md).  
+ For more information about clients and the client architecture, see [Accessing Services Using a WCF Client](~/docs/framework/wcf/feature-details/accessing-services-using-a-client.md) and [WCF Client Architecture](~/docs/framework/wcf/feature-details/client-architecture.md). For more information about customizing the client runtime, see [Extending Clients](~/docs/framework/wcf/extending/extending-clients.md). For more information about using behaviors, see [Configuring and Extending the Runtime with Behaviors](~/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
  The following properties enable you to insert custom objects or modify the client execution behavior:  
   
@@ -333,7 +333,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=fullName>. For issues related to one-way operations, see [One-Way Services](../Topic/One-Way%20Services.md).  
+ By default this value corresponds to the value of <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=fullName>. For issues related to one-way operations, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
   
  ]]></format>
         </remarks>

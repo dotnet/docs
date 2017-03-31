@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `AsyncRecords` concept is part of [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)]. See [XAML 2009 Language Features](../Topic/XAML%202009%20Language%20Features.md).  
+ The `AsyncRecords` concept is part of [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)]. See [XAML 2009 Language Features](~/docs/framework/xaml-services/xaml-2009-language-features.md).  
   
  ]]></format>
         </remarks>
@@ -286,7 +286,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This directive is part of [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)]. See [XAML 2009 Language Features](../Topic/XAML%202009%20Language%20Features.md).  
+ This directive is part of [!INCLUDE[xaml2009](~/includes/xaml2009-md.md)]. See [XAML 2009 Language Features](~/docs/framework/xaml-services/xaml-2009-language-features.md).  
   
  ]]></format>
         </remarks>
@@ -710,7 +710,7 @@
 ## Remarks  
  A `Name` directive is used for identifiers of objects in markup. See [&#91;MS-XAML&#93; Section 5.3.4](http://go.microsoft.com/fwlink/?LinkId=114525).  
   
- Although this concept of `Name` is not completely consistent with the use that is specified in [MS-XAML], you can typically use the `Name` directive or the `Name` attribute to provide a conceptual connection between XAML objects in markup and the run-time representations that are created by XAML processing of the markup. This use depends on how specific frameworks implement their programming models to integrate XAML into their general object models. For more information, see [x:Name Directive](../Topic/x:Name%20Directive.md).  
+ Although this concept of `Name` is not completely consistent with the use that is specified in [MS-XAML], you can typically use the `Name` directive or the `Name` attribute to provide a conceptual connection between XAML objects in markup and the run-time representations that are created by XAML processing of the markup. This use depends on how specific frameworks implement their programming models to integrate XAML into their general object models. For more information, see [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md).  
   
  ]]></format>
         </remarks>
@@ -1037,7 +1037,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.16](http://go.microsoft.com/fwlink/?LinkId=114525). `TimeSpan` is not a true intrinsic, but was specified in the XAML specification because it is a commonly used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](../Topic/Built-in%20Types%20for%20Common%20XAML%20Language%20Primitives.md).  
+ See [&#91;MS-XAML&#93; Section 5.2.16](http://go.microsoft.com/fwlink/?LinkId=114525). `TimeSpan` is not a true intrinsic, but was specified in the XAML specification because it is a commonly used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](~/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
   
  ]]></format>
         </remarks>
@@ -1164,7 +1164,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [&#91;MS-XAML&#93; Section 5.2.15](http://go.microsoft.com/fwlink/?LinkId=114525). `Uri` is not a true intrinsic but was specified in the XAML specification because it is a frequently used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](../Topic/Built-in%20Types%20for%20Common%20XAML%20Language%20Primitives.md).  
+ See [&#91;MS-XAML&#93; Section 5.2.15](http://go.microsoft.com/fwlink/?LinkId=114525). `Uri` is not a true intrinsic but was specified in the XAML specification because it is a frequently used type. The XAML specification authors considered it useful to standardize the XAML representation in derived vocabularies. See also [Built-in Types for Common XAML Language Primitives](~/docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
   
  ]]></format>
         </remarks>

@@ -30,7 +30,7 @@
   
  <xref:System.Windows.Markup.IValueSerializerContext> for a <xref:System.Windows.Markup.ValueSerializer> and its APIs is analogous to <xref:System.ComponentModel.ITypeDescriptorContext> for a <xref:System.ComponentModel.TypeConverter>. In fact, <xref:System.Windows.Markup.IValueSerializerContext> inherits <xref:System.ComponentModel.ITypeDescriptorContext>. When a <xref:System.Windows.Markup.ValueSerializer> derived class API is called, the caller (typically a serializer process) passes a context that may provide certain services. Because of the general guidance that a <xref:System.Windows.Markup.ValueSerializer> must not throw exceptions. Failure to return a particular service from the context must also not throw any exceptions.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ValueSerializer> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ValueSerializer> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
  ]]></format>
     </remarks>

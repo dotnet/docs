@@ -26,7 +26,7 @@
 ## Remarks  
  This class contains the <xref:System.Windows.RoutedEvent.Name%2A>, <xref:System.Windows.RoutedEvent.RoutingStrategy%2A>, <xref:System.Windows.RoutedEvent.HandlerType%2A>, and <xref:System.Windows.RoutedEvent.OwnerType%2A> properties. None of these members can have null values.  
   
- This class has a XAML usage that is exclusively intended for providing the value of the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of an <xref:System.Windows.EventTrigger> (or derived class), or for the <xref:System.Windows.EventSetter.Event%2A> property of an <xref:System.Windows.EventSetter> (or derived class). For more information about <xref:System.Windows.EventTrigger>, <xref:System.Windows.EventSetter>, and the XAML usages for those classes, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ This class has a XAML usage that is exclusively intended for providing the value of the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of an <xref:System.Windows.EventTrigger> (or derived class), or for the <xref:System.Windows.EventSetter.Event%2A> property of an <xref:System.Windows.EventSetter> (or derived class). For more information about <xref:System.Windows.EventTrigger>, <xref:System.Windows.EventSetter>, and the XAML usages for those classes, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
 <a name="xamlAttributeUsage_RoutedEvent"></a>   
 ## XAML Attribute Usage  
@@ -44,7 +44,7 @@
  An unqualified event name, equivalent to the <xref:System.Windows.RoutedEvent.Name%2A> property of the <xref:System.Windows.RoutedEvent> field, not the actual member name of the <xref:System.Windows.RoutedEvent> identifier field within a type. Without qualification, *eventName* must name an event as found in the type that is the <xref:System.Windows.Style.TargetType%2A> of the current style containing the <xref:System.Windows.EventSetter> or <xref:System.Windows.EventTrigger>.  
   
  *type*  
- The type to use to qualify the event name. If provided without a prefix, *type* is expected to be a type within the default XAML namespace, and that can be mapped to an existing CLR type. For custom events, or events that are on types outside of the default XAML namespace, the string for *type* can include a prefix for a mapped XAML namespace. That XAML namespace should contain the XAML type that can map to a backing CLR type, and that CLR type should define the desired routed event identifier. For details on XAML namespace mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ The type to use to qualify the event name. If provided without a prefix, *type* is expected to be a type within the default XAML namespace, and that can be mapped to an existing CLR type. For custom events, or events that are on types outside of the default XAML namespace, the string for *type* can include a prefix for a mapped XAML namespace. That XAML namespace should contain the XAML type that can map to a backing CLR type, and that CLR type should define the desired routed event identifier. For details on XAML namespace mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
  ]]></format>
     </remarks>
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By convention, tunneling routed events have the name prefix "Preview" and an associated bubbling event defined. It should be rare that there would be only a tunneling version and not a matching bubbling version. For more information, see [How to: Create a Custom Routed Event](../Topic/How%20to:%20Create%20a%20Custom%20Routed%20Event.md).  
+ By convention, tunneling routed events have the name prefix "Preview" and an associated bubbling event defined. It should be rare that there would be only a tunneling version and not a matching bubbling version. For more information, see [How to: Create a Custom Routed Event](~/docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md).  
   
  The value of this property originates from the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method that defines a <xref:System.Windows.RoutedEvent>. Specifically, the value of <xref:System.Windows.RoutedEvent.RoutingStrategy%2A> is the `routingStrategy` parameter value that was passed to <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>.  
   

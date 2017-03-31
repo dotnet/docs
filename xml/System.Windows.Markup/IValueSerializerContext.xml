@@ -29,7 +29,7 @@
   
  Public types in WPF that implement a <xref:System.Windows.Markup.ValueSerializer> and thus use <xref:System.Windows.Markup.IValueSerializerContext> for context are found in the <xref:System.Windows.Converters> and <xref:System.Windows.Media.Converters> namespaces.  
   
- In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IValueSerializerContext> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IValueSerializerContext> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
  ]]></format>
     </remarks>

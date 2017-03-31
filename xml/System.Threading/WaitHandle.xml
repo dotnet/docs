@@ -38,15 +38,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.WaitHandle> class encapsulates Win32 synchronization handles, and is used to represent all synchronization objects in the runtime that allow multiple wait operations. For a comparison of wait handles with other synchronization objects, see [Overview of Synchronization Primitives](../Topic/Overview%20of%20Synchronization%20Primitives.md).  
+ The <xref:System.Threading.WaitHandle> class encapsulates Win32 synchronization handles, and is used to represent all synchronization objects in the runtime that allow multiple wait operations. For a comparison of wait handles with other synchronization objects, see [Overview of Synchronization Primitives](~/docs/standard/threading/overview-of-synchronization-primitives.md).  
   
  The <xref:System.Threading.WaitHandle> class itself is abstract. Classes derived from <xref:System.Threading.WaitHandle> define a signaling mechanism to indicate taking or releasing access to a shared resource, but they use the inherited <xref:System.Threading.WaitHandle> methods to block while waiting for access to shared resources. The classes derived from <xref:System.Threading.WaitHandle> include:  
   
--   The <xref:System.Threading.Mutex> class. See [Mutexes](../Topic/Mutexes.md).  
+-   The <xref:System.Threading.Mutex> class. See [Mutexes](~/docs/standard/threading/mutexes.md).  
   
 -   The <xref:System.Threading.EventWaitHandle> class and its derived classes, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent>. See [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../Topic/EventWaitHandle,%20AutoResetEvent,%20CountdownEvent,%20ManualResetEvent.md).  
   
--   The <xref:System.Threading.Semaphore> class. See [Semaphore and SemaphoreSlim](../Topic/Semaphore%20and%20SemaphoreSlim.md).  
+-   The <xref:System.Threading.Semaphore> class. See [Semaphore and SemaphoreSlim](~/docs/standard/threading/semaphore-and-semaphoreslim.md).  
   
  Threads can block on an individual wait handle by calling the instance method <xref:System.Threading.WaitHandle.WaitOne%2A>, which is inherited by classes derived from <xref:System.Threading.WaitHandle>.  
   
@@ -67,7 +67,7 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type or a type derived from it, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.Threading.WaitHandle.Close%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
   
- <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](../Topic/Dispose%20Pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
+ <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
   
    
   
@@ -363,7 +363,7 @@
 ## Remarks  
  When you assign a new value to the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property, the previous handle will be closed when the previous <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> object is collected. Do not manually close the handle, because this results in an <xref:System.ObjectDisposedException> when the <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> attempts to close the handle.  
   
- <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](../Topic/Dispose%20Pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
+ <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
   
  ]]></format>
         </remarks>
@@ -634,7 +634,7 @@
         <exception cref="T:System.DuplicateWaitObjectException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
   
 </para>  
 </block>  
@@ -712,7 +712,7 @@
         <exception cref="T:System.DuplicateWaitObjectException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
   
 </para>  
 </block>  
@@ -792,7 +792,7 @@
         <exception cref="T:System.DuplicateWaitObjectException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
   
 </para>  
 </block>  

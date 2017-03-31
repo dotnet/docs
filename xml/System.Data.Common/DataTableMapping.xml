@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.Common.DataTableMapping> provides a master mapping between the data returned from a query against a data source, and a <xref:System.Data.DataTable>. The <xref:System.Data.Common.DataTableMapping> name can be passed in place of the <xref:System.Data.DataTable> name to the `Fill` method of the **DataAdapter**. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
+ A <xref:System.Data.Common.DataTableMapping> provides a master mapping between the data returned from a query against a data source, and a <xref:System.Data.DataTable>. The <xref:System.Data.Common.DataTableMapping> name can be passed in place of the <xref:System.Data.DataTable> name to the `Fill` method of the **DataAdapter**. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
   
    
   

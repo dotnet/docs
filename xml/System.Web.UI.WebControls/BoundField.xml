@@ -319,7 +319,7 @@
 |`R` or `r`|Displays <xref:System.Single>, <xref:System.Double>, or `BigInteger` values in round-trip format.|Format: `{0:R}`<br /><br /> 123456789.12345678 -> 123456789.12345678|  
 |`X` or `x`|Displays integer values in hexadecimal format. You can specify the number of digits.|Format: `{0:X}`<br /><br /> 255 -> FF<br /><br /> Format: `{0:x4}`<br /><br /> 255  -> 00ff|  
   
- For more information and for examples that show formatting for other culture values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md). You can also create custom numeric format strings. For more information, see [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+ For more information and for examples that show formatting for other culture values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). You can also create custom numeric format strings. For more information, see [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
  The following table lists format characters for <xref:System.DateTime> fields. Most of these formatting specifications result in a different output depending on culture settings. The examples are for a <xref:System.DateTime> value of 6/15/2009 1:45:30 PM with a culture setting of `en-US`.  
   
@@ -341,7 +341,7 @@
 |`U`|Universal full date/time pattern.|Format: `{0:U}`<br /><br /> 6/15/2009 1:45:30 PM -> Monday, June 15, 2009 8:45:30 PM|  
 |`Y` or `y`|Year month pattern.|Format: `{0:Y}`<br /><br /> 6/15/2009 1:45:30 PM -> June, 2009|  
   
- For more information and for examples that show formatting for other culture values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md). You can also create custom date and time format strings. For more information, see [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+ For more information and for examples that show formatting for other culture values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md). You can also create custom date and time format strings. For more information, see [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
    
   

@@ -25,7 +25,7 @@
   
  The <xref:System.Data.SqlTypes.SqlFileStream> class is derived from the <xref:System.IO.Stream> class, which represents an abstraction of a sequence of bytes from some arbitrary data source such as a file or a block of memory. You can read from a FILESTREAM by transferring data from a stream into a data structure such as an array of bytes. You can write to a FILESTREAM by transferring the data from a data structure into a stream. You can also seek within the stream, which allows you to query and modify data at the current position within the stream.  
   
- For conceptual documentation and code examples, see [FILESTREAM Data](../Topic/FILESTREAM%20Data.md).  
+ For conceptual documentation and code examples, see [FILESTREAM Data](~/docs/framework/data/adonet/sql/filestream-data.md).  
   
  For documentation about setting up and configuring FILESTREAM data on SQL Server,  see [Designing and Implementing FILESTREAM Storage](http://go.microsoft.com/fwlink/?LinkId=121499) in SQL Server 2008 Books Online.  
   
@@ -711,7 +711,7 @@
 |Write|<xref:System.Security.Permissions.FileIOPermissionAccess>|  
 |ReadWrite|<xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>|  
   
- For more information about CAS, see [Code Access Security and ADO.NET](../Topic/Code%20Access%20Security%20and%20ADO.NET.md).  
+ For more information about CAS, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
   
  ]]></format>
         </remarks>

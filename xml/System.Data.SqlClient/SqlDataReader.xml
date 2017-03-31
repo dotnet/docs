@@ -736,7 +736,7 @@
 |SqlInt64|SqlMoney|SqlSingle|SqlString|  
 |String|UDT, which can be any CLR type marked with <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute>.|||  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -805,7 +805,7 @@
 |SqlInt64|SqlMoney|SqlSingle|SqlString|  
 |String|UDT, which can be any CLR type marked with <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute>.|||  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -2009,7 +2009,7 @@
   
  When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -2115,7 +2115,7 @@
   
  When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -2311,7 +2311,7 @@
   
  <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -2501,7 +2501,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -2663,7 +2663,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -2755,7 +2755,7 @@
 ## Remarks  
  If the `behavior` parameter of <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A> is set to `Default`, <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A> reads the entire row before returning the Task.  
   
- For more information, including code samples, about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information, including code samples, about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>

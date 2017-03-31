@@ -43,7 +43,7 @@
    
   
 ## Examples  
- The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the contents of this assembly.  
+ The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
   
 > [!NOTE]
 >  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  
@@ -338,7 +338,7 @@
    
   
 ## Examples  
- The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the contents of this assembly.  
+ The following code example demonstrates the construction of an enumeration within a dynamic assembly, using `EnumBuilder`. The example defines an enumeration named `Elevation`, with an underlying type of <xref:System.Int32>, and creates two elements: `Low`, with a value of 0, and `High`, with a value of 1. After the type has been created, the assembly is saved with the name `TempAssembly.dll`. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of this assembly.  
   
 > [!NOTE]
 >  Prior to the .NET Framework version 2.0, this code example does not produce a correct enumeration.  

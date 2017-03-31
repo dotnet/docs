@@ -20,9 +20,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A region is scalable because its coordinates are specified in world coordinates. On a drawing surface, however, its interior is dependent on the size and shape of the pixels representing it. An application can use regions to clip the output of drawing operations. These regions are called clipping regions. For more information on using regions for clipping, see [How to: Use Clipping with a Region](../Topic/How%20to:%20Use%20Clipping%20with%20a%20Region.md).  
+ A region is scalable because its coordinates are specified in world coordinates. On a drawing surface, however, its interior is dependent on the size and shape of the pixels representing it. An application can use regions to clip the output of drawing operations. These regions are called clipping regions. For more information on using regions for clipping, see [How to: Use Clipping with a Region](~/docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md).  
   
- An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](../Topic/How%20to:%20Use%20Hit%20Testing%20with%20a%20Region.md).  
+ An application can also use regions in hit-testing operations, such as checking whether a point or a rectangle intersects a region. For more information on using regions for hit-testing, see [How to: Use Hit Testing with a Region](~/docs/framework/winforms/advanced/how-to-use-hit-testing-with-a-region.md).  
   
  An application can fill a region by using the <xref:System.Drawing.Graphics.FillRegion%2A?displayProperty=fullName> method and a  <xref:System.Drawing.Brush> object.  
   
@@ -380,7 +380,7 @@
 ## Remarks  
  Calling <xref:System.Drawing.Region.Dispose%2A> allows the resources used by this <xref:System.Drawing.Region> to be reallocated for other purposes.  
   
- Call <xref:System.Drawing.Region.Dispose%2A> when you are finished using the <xref:System.Drawing.Region>. The <xref:System.Drawing.Region.Dispose%2A> method leaves the <xref:System.Drawing.Region> in an unusable state. After calling <xref:System.Drawing.Region.Dispose%2A>, you must release all references to the <xref:System.Drawing.Region> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Region> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ Call <xref:System.Drawing.Region.Dispose%2A> when you are finished using the <xref:System.Drawing.Region>. The <xref:System.Drawing.Region.Dispose%2A> method leaves the <xref:System.Drawing.Region> in an unusable state. After calling <xref:System.Drawing.Region.Dispose%2A>, you must release all references to the <xref:System.Drawing.Region> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Region> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Drawing.Region.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Region>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Region> object's `Finalize` method.  

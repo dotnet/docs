@@ -55,7 +55,7 @@
   
 1.  Compile the code from the command line. The name that you use for the source file is not important.  
   
-2.  Install the service from the command line using the [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md) utility. For example, `InstallUtil example.exe` if the source file name is `example.cs` or `example.vb`. You must be an administrator to install the service.  
+2.  Install the service from the command line using the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) utility. For example, `InstallUtil example.exe` if the source file name is `example.cs` or `example.vb`. You must be an administrator to install the service.  
   
 3.  Use the Services console to start the service.  
   

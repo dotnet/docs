@@ -133,7 +133,7 @@
   
 -   The <xref:System.ComponentModel.Component.Finalize%2A> method of the current object should call <xref:System.Windows.Forms.ToolStripOverflowButton.Dispose%2A> with the <xref:System.Boolean> parameter set to `false` to release only unmanaged resources.  
   
- For more information, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
  ]]></format>
         </remarks>

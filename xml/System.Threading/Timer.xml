@@ -588,7 +588,7 @@ Sub TimerCallback(state As Object)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling `Dispose` allows the resources used by the <xref:System.Threading.Timer> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
+ Calling `Dispose` allows the resources used by the <xref:System.Threading.Timer> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).  
   
 > [!NOTE]
 >  Callbacks can occur after the <xref:System.Threading.Timer.Dispose> method overload has been called, because the timer queues callbacks for execution by thread pool threads. You can use the <xref:System.Threading.Timer.Dispose%28System.Threading.WaitHandle%29> method overload to wait until all callbacks have completed.  
@@ -635,7 +635,7 @@ Sub TimerCallback(state As Object)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling `Dispose` allows the resources used by the <xref:System.Threading.Timer> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
+ Calling `Dispose` allows the resources used by the <xref:System.Threading.Timer> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).  
   
  When this method completes, it signals the <xref:System.Threading.WaitHandle> specified by the `notifyObject` parameter.Use this overload of the <xref:System.Threading.Timer.Dispose%2A> method if you want to be able to block until you are certain that the timer has been disposed. The timer is not disposed until all currently queued callbacks have completed.  
   

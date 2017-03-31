@@ -101,7 +101,7 @@
  [!code-csharp[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewkeybinding)]
  [!code-vb[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewkeybinding)]  
   
- The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] example does not literally use <xref:System.Windows.Input.InputBindingCollection.Add%2A>, but <xref:System.Windows.Input.InputBindingCollection.Add%2A> is called implicitly by the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processing support for collections. For details on [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and collections, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+ The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] example does not literally use <xref:System.Windows.Input.InputBindingCollection.Add%2A>, but <xref:System.Windows.Input.InputBindingCollection.Add%2A> is called implicitly by the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processing support for collections. For details on [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and collections, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
   
  ]]></format>
         </remarks>
@@ -658,7 +658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [Commanding Overview](../Topic/Commanding%20Overview.md)  
+ [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md)  
   
  <xref:System.Windows.Input.KeyBinding>  
   

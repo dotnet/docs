@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can apply this attribute to assemblies, interfaces, classes, enumerations, structures, or delegates, although the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) can apply it for you when it imports a type library.  
+ You can apply this attribute to assemblies, interfaces, classes, enumerations, structures, or delegates, although the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) can apply it for you when it imports a type library.  
   
  The string passed to the attribute must be in a format that is an acceptable constructor argument for the type <xref:System.Guid>. To avoid conflicts with the type <xref:System.Guid>, use the long name <xref:System.Runtime.InteropServices.GuidAttribute> explicitly. Only use an explicit GUID when a type must have a specific GUID. If the attribute is omitted, a GUID is assigned automatically.  
   

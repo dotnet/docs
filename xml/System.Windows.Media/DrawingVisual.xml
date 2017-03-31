@@ -19,7 +19,7 @@
 ## Remarks  
  <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout, input, focus, or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art.  
   
- In order to use <xref:System.Windows.Media.DrawingVisual> objects, you need to create a host container for the objects. The host container object must be derived from the <xref:System.Windows.FrameworkElement> class, which provides the layout and event handling support that the <xref:System.Windows.Media.DrawingVisual> class does not support. The host container object does not display any visual properties, since its main purpose is to contain child objects. For more information, see [Using DrawingVisual Objects](../Topic/Using%20DrawingVisual%20Objects.md).  
+ In order to use <xref:System.Windows.Media.DrawingVisual> objects, you need to create a host container for the objects. The host container object must be derived from the <xref:System.Windows.FrameworkElement> class, which provides the layout and event handling support that the <xref:System.Windows.Media.DrawingVisual> class does not support. The host container object does not display any visual properties, since its main purpose is to contain child objects. For more information, see [Using DrawingVisual Objects](~/docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md).  
   
  For a complete example showing how to create <xref:System.Windows.Media.DrawingVisual> objects with a host container, see the [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994) .  
   
@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A visual object stores its rendering data as a vector graphics instruction list. Each item in the instruction list represents a low-level set of graphics data in a serialized format. For more information on how visual objects store graphics data, see [WPF Graphics Rendering Overview](../Topic/WPF%20Graphics%20Rendering%20Overview.md).  
+ A visual object stores its rendering data as a vector graphics instruction list. Each item in the instruction list represents a low-level set of graphics data in a serialized format. For more information on how visual objects store graphics data, see [WPF Graphics Rendering Overview](~/docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md).  
   
  Any change to the returned <xref:System.Windows.Media.DrawingGroup> value is not persisted by the <xref:System.Windows.Media.DrawingVisual>.  
   

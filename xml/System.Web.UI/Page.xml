@@ -43,7 +43,7 @@
   
  The <xref:System.Web.UI.Page> object serves as the naming container for all server controls in a page, except those that implement the <xref:System.Web.UI.INamingContainer> interface or are child controls of controls that implement this interface.  
   
- The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](../Topic/Overview%20of%20Web%20Application%20Security%20Threats.md), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](../Topic/Key%20Security%20Concepts.md). For more specific information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Display Safe Error Messages](../Topic/How%20to:%20Display%20Safe%20Error%20Messages.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+ The <xref:System.Web.UI.Page> class is a control that acts as the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed. For general information on these topics, see [Overview of Web Application Security Threats](../Topic/Overview%20of%20Web%20Application%20Security%20Threats.md), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Display Safe Error Messages](../Topic/How%20to:%20Display%20Safe%20Error%20Messages.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
   
    
   
@@ -1997,7 +1997,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.Page.IsAsync%2A> property to determine whether the Web page is running in asynchronous mode. This information is useful if controls or code on the page need to modify their behavior depending on whether the page is asynchronous. For more information about asynchronous programming, see [Asynchronous Operations](../Topic/Asynchronous%20Operations.md).  
+ Use the <xref:System.Web.UI.Page.IsAsync%2A> property to determine whether the Web page is running in asynchronous mode. This information is useful if controls or code on the page need to modify their behavior depending on whether the page is asynchronous. For more information about asynchronous programming, see [Asynchronous Operations](~/docs/framework/data/adonet/sql/asynchronous-operations.md).  
   
  ]]></format>
         </remarks>

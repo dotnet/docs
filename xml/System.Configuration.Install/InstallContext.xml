@@ -97,7 +97,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the installation uses [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md), this constructor creates a log file at the specified path and parses the array of command-line parameters into the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property. If a log-file path is specified in the command-line parameters, it is used to create the file. If the log file argument is not specified in the command line, the value of the `logFilePath` parameter is used. To suppress the creation of a log file, pass the "/logfile= " command-line parameter.  
+ If the installation uses [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md), this constructor creates a log file at the specified path and parses the array of command-line parameters into the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property. If a log-file path is specified in the command-line parameters, it is used to create the file. If the log file argument is not specified in the command line, the value of the `logFilePath` parameter is used. To suppress the creation of a log file, pass the "/logfile= " command-line parameter.  
   
    
   

@@ -90,7 +90,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates that the gallery category distributes all its available width equally between its columns.</summary>
         <value>
-          <see langword="true" /> if the gallery category distributes its available width equally between its columns; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the gallery category distributes its available width equally between its columns; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Windows.Visibility" /> for the ribbon gallery header.</summary>
-        <value>One of the enumeration values that specifies the visibility of the header. The registered default is <see cref="F:System.Windows.Visibility.Visible" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>One of the enumeration values that specifies the visibility of the header. The registered default is <see cref="F:System.Windows.Visibility.Visible" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -232,7 +232,7 @@
       <Docs>
         <summary>Gets or sets a value that specifies whether this gallery category defines the scope used for uniform layout of items.</summary>
         <value>
-          <see langword="true" /> if this gallery category defines the scope used for uniform layout of items; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if this gallery category defines the scope used for uniform layout of items; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -281,7 +281,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that specifies the maximum number of columns used to lay out items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.</summary>
-        <value>The maximum number of columns used to lay out items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />. The registered default is <see cref="F:System.Int32.MaxValue" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The maximum number of columns used to lay out items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />. The registered default is <see cref="F:System.Int32.MaxValue" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -330,7 +330,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that specifies the minimum number of columns used to lay out items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.</summary>
-        <value>The minimum number of columns used to lay out items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.The registered default is 1. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The minimum number of columns used to lay out items in a gallery <see cref="P:System.Windows.Controls.ItemsControl.ItemsPanel" />.The registered default is 1. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -18,7 +18,7 @@
 ## Remarks  
   
 ## General  
- When you query for an object, you actually retrieve only the object you requested. The *related* objects are not automatically fetched at the same time. (For more information, see [Querying Across Relationships](../Topic/Querying%20Across%20Relationships.md).)  
+ When you query for an object, you actually retrieve only the object you requested. The *related* objects are not automatically fetched at the same time. (For more information, see [Querying Across Relationships](~/docs/framework/data/adonet/sql/linq/querying-across-relationships.md).)  
   
  The <xref:System.Data.Linq.DataLoadOptions> class provides two methods to achieve immediate loading of specified related data. The <xref:System.Data.Linq.DataLoadOptions.LoadWith%2A> method allows for immediate loading of data related to the main target. The <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> method allows for filtering related objects.  
   

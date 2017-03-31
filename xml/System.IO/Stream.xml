@@ -65,7 +65,7 @@
   
  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.IO.Stream> class includes async methods to simplify asynchronous operations. An async method contains `Async` in its name, such as <xref:System.IO.Stream.ReadAsync%2A>, <xref:System.IO.Stream.WriteAsync%2A>, <xref:System.IO.Stream.CopyToAsync%2A>, and <xref:System.IO.Stream.FlushAsync%2A>. These methods enable you to perform resource-intensive I/O operations without blocking the main thread. This performance consideration is particularly important in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app or [!INCLUDE[desktop_appname](~/includes/desktop-appname-md.md)] app where a time-consuming stream operation can block the UI thread and make your app appear as if it is not working. The async methods are used in conjunction with the `async` and `await` keywords in Visual Basic and C#.  
   
- When used in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app, <xref:System.IO.Stream> includes two extension methods: <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A>. These methods convert a <xref:System.IO.Stream> object to a stream in the [!INCLUDE[wrt](~/includes/wrt-md.md)]. You can also convert a stream in the [!INCLUDE[wrt](~/includes/wrt-md.md)] to a <xref:System.IO.Stream> object by using the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> methods. For more information, see [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](../Topic/How%20to:%20Convert%20Between%20.NET%20Framework%20Streams%20and%20Windows%20Runtime%20Streams.md)  
+ When used in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app, <xref:System.IO.Stream> includes two extension methods: <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream%2A>. These methods convert a <xref:System.IO.Stream> object to a stream in the [!INCLUDE[wrt](~/includes/wrt-md.md)]. You can also convert a stream in the [!INCLUDE[wrt](~/includes/wrt-md.md)] to a <xref:System.IO.Stream> object by using the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A> and <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite%2A> methods. For more information, see [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](~/docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md)  
   
  Some stream implementations perform local buffering of the underlying data to improve performance. For such streams, you can use the <xref:System.IO.Stream.Flush%2A> or <xref:System.IO.Stream.FlushAsync%2A> method to clear any internal buffers and ensure that all data has been written to the underlying data source or repository.  
   
@@ -84,7 +84,7 @@
     <block subset="none" type="overrides">
       <para>When you implement a derived class of <see cref="T:System.IO.Stream" />, you must provide implementations for the <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> methods. The asynchronous methods <see cref="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" />, <see cref="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" />, and <see cref="M:System.IO.Stream.CopyToAsync(System.IO.Stream)" /> use the synchronous methods <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> in their implementations. Therefore, your implementations of <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> will work correctly with the asynchronous methods. The default implementations of <see cref="M:System.IO.Stream.ReadByte" /> and <see cref="M:System.IO.Stream.WriteByte(System.Byte)" /> create a new single-element byte array, and then call your implementations of <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" /> and <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />. When you derive from <see cref="T:System.IO.Stream" />, we recommend that you override these methods to access your internal buffer, if you have one, for substantially better performance. You must also provide implementations of <see cref="P:System.IO.Stream.CanRead" />, <see cref="P:System.IO.Stream.CanSeek" />, <see cref="P:System.IO.Stream.CanWrite" />, <see cref="M:System.IO.Stream.Flush" />, <see cref="P:System.IO.Stream.Length" />, <see cref="P:System.IO.Stream.Position" />, <see cref="M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)" />, and <see cref="M:System.IO.Stream.SetLength(System.Int64)" />.  
   
- Do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all the <see cref="T:System.IO.Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).</para>
+ Do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all the <see cref="T:System.IO.Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).</para>
     </block>
   </Docs>
   <Members>
@@ -448,7 +448,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>In derived classes, do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all of the <see langword="Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).</para>
+          <para>In derived classes, do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all of the <see langword="Stream" /> cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method. For more information, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).</para>
         </block>
       </Docs>
     </Member>
@@ -807,7 +807,7 @@
 ## Remarks  
  This method disposes the stream, by writing any changes to the backing store and closing the stream to release resources.  
   
- Calling `Dispose` allows the resources used by the <xref:System.IO.Stream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
+ Calling `Dispose` allows the resources used by the <xref:System.IO.Stream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).  
   
  ]]></format>
         </remarks>
@@ -863,9 +863,9 @@
         <block subset="none" type="overrides">
           <para>In derived classes, do not override the <see cref="M:System.IO.Stream.Close" /> method, instead, put all of the Stream cleanup logic in the <see cref="M:System.IO.Stream.Dispose(System.Boolean)" /> method.  
   
- <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.Stream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>

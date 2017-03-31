@@ -245,7 +245,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a user-defined data value to pass to the command.</summary>
-        <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>A user-defined data value to pass to the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -311,7 +311,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the element on which to raise the specified command.</summary>
-        <value>The element on which to invoke the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The element on which to invoke the command. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -360,7 +360,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the descriptive text that is displayed in the ToolTip for the drop-down area of this control.</summary>
-        <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -409,7 +409,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the descriptive text that is displayed in the footer of the ToolTip for the drop-down area of this control.</summary>
-        <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -458,7 +458,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the image that is displayed in the footer of the ToolTip for the drop-down area of this control.</summary>
-        <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -507,7 +507,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the title text that is displayed in the footer of the ToolTip for the drop-down area of this control.</summary>
-        <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -556,7 +556,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the image that is displayed in the ToolTip for the drop-down area of this control.</summary>
-        <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -605,7 +605,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the title text that is displayed in the ToolTip for the drop-down area of this control.</summary>
-        <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -654,7 +654,7 @@ Ribbon split button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the keyboard shortcut for the header area of this control.</summary>
-        <value>The keyboard shortcut for the header area of this control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The keyboard shortcut for the header area of this control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -756,7 +756,7 @@ Ribbon split button control with drop-down open
       <Docs>
         <summary>Gets or sets a value that indicates whether a user can check and uncheck the button.</summary>
         <value>
-          <see langword="true" /> if the user can check and uncheck the button; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the user can check and uncheck the button; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -807,7 +807,7 @@ Ribbon split button control with drop-down open
       <Docs>
         <summary>Gets or sets a value that indicates whether the button is checked.</summary>
         <value>
-          <see langword="true" /> if the button is checked; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the button is checked; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

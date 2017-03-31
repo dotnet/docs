@@ -72,12 +72,12 @@
   
  You use the <xref:System.Boolean.ToString%2A> method to convert Boolean values to strings. The Boolean structure includes two <xref:System.Boolean.ToString%2A> overloads: the parameterless <xref:System.Boolean.ToString> method and the <xref:System.Boolean.ToString%28System.IFormatProvider%29> method, which includes a parameter that controls formatting. However, because this parameter is ignored, the two overloads produce identical strings. The <xref:System.Boolean.ToString%28System.IFormatProvider%29> method does not support culture-sensitive formatting.  
   
- The following example illustrates formatting with the <xref:System.Boolean.ToString%2A> method. Note that the example uses the [composite formatting](../Topic/Composite%20Formatting.md) feature, so the <xref:System.Boolean.ToString%2A> method is called implicitly.  
+ The following example illustrates formatting with the <xref:System.Boolean.ToString%2A> method. Note that the example uses the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature, so the <xref:System.Boolean.ToString%2A> method is called implicitly.  
   
  [!code-csharp[System.Boolean.Structure#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/tostring1.cs#3)]
  [!code-vb[System.Boolean.Structure#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/tostring1.vb#3)]  
   
- Because the <xref:System.Boolean> structure can have only two values, it is easy to add custom formatting. For simple custom formatting in which other string literals are substituted for "True" and "False", you can use any conditional evaluation feature supported by your language, such as the [conditional operator](../Topic/?:%20Operator%20\(C%23%20Reference\).md) in C# or the [If operator](../Topic/If%20Operator%20\(Visual%20Basic\).md) in Visual Basic. The following example uses this technique to format <xref:System.Boolean> values as "Yes" and "No" rather than "True" and "False".  
+ Because the <xref:System.Boolean> structure can have only two values, it is easy to add custom formatting. For simple custom formatting in which other string literals are substituted for "True" and "False", you can use any conditional evaluation feature supported by your language, such as the [conditional operator](~/docs/csharp/language-reference/operators/conditional-operator.md) in C# or the [If operator](~/docs/visual-basic/language-reference/operators/if-operator.md) in Visual Basic. The following example uses this technique to format <xref:System.Boolean> values as "Yes" and "No" rather than "True" and "False".  
   
  [!code-csharp[System.Boolean.Structure#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/tostring2.cs#4)]
  [!code-vb[System.Boolean.Structure#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/tostring2.vb#4)]  

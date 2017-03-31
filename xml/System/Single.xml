@@ -63,7 +63,7 @@
   
 -   [Floating-point functionality](#Functionality)  
   
- <xref:System.Single?displayProperty=fullName> provides methods to compare instances of this type, to convert the value of an instance to its string representation, and to convert the string representation of a number to an instance of this type. For information about how format specification codes control the string representation of value types, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md), [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md), and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+ <xref:System.Single?displayProperty=fullName> provides methods to compare instances of this type, to convert the value of an instance to its string representation, and to convert the string representation of a number to an instance of this type. For information about how format specification codes control the string representation of value types, see [Formatting Types](~/docs/standard/base-types/formatting-types.md), [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
 <a name="Precision"></a>   
 ## Floating-point representation and precision  
@@ -75,7 +75,7 @@
 |Exponent|23-30|  
 |Sign (0 = positive, 1 = negative)|31|  
   
- Just as decimal fractions are unable to precisely represent some fractional values (such as 1/3 or <xref:System.Math.PI?displayProperty=fullName>), binary fractions are unable to represent some fractional values. For example, 2/10, which is represented precisely by .2 as a decimal fraction, is represented by .0011111001001100 as a binary fraction, with the pattern "1100" repeating to infinity. In this case, the floating-point value provides an imprecise representation of the number that it represents. Performing additional mathematical operations on the original floating-point value often increases its lack of precision. For example, if you compare the results of multiplying .3 by 10 and adding .3 to .3 nine times, you will see that addition produces the less precise result, because it involves eight more operations than multiplication. Note that this disparity is apparent only if you display the two <xref:System.Single> values by using the "R" [standard numeric format string](../Topic/Standard%20Numeric%20Format%20Strings.md), which, if necessary, displays all 9 digits of precision supported by the <xref:System.Single> type.  
+ Just as decimal fractions are unable to precisely represent some fractional values (such as 1/3 or <xref:System.Math.PI?displayProperty=fullName>), binary fractions are unable to represent some fractional values. For example, 2/10, which is represented precisely by .2 as a decimal fraction, is represented by .0011111001001100 as a binary fraction, with the pattern "1100" repeating to infinity. In this case, the floating-point value provides an imprecise representation of the number that it represents. Performing additional mathematical operations on the original floating-point value often increases its lack of precision. For example, if you compare the results of multiplying .3 by 10 and adding .3 to .3 nine times, you will see that addition produces the less precise result, because it involves eight more operations than multiplication. Note that this disparity is apparent only if you display the two <xref:System.Single> values by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md), which, if necessary, displays all 9 digits of precision supported by the <xref:System.Single> type.  
   
  [!code-csharp[System.Single.Structure#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/representation1.cs#3)]
  [!code-vb[System.Single.Structure#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/representation1.vb#3)]  
@@ -105,7 +105,7 @@
      [!code-csharp[System.Single.Structure#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/precisionlist4a.cs#17)]
      [!code-vb[System.Single.Structure#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/PrecisionList4a.vb#17)]  
   
-     In this case, the values can be successfully round-tripped by using the "R" [standard numeric format string](../Topic/Standard%20Numeric%20Format%20Strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.  
+     In this case, the values can be successfully round-tripped by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.  
   
      [!code-csharp[System.Single.Structure#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/PrecisionList5a.cs#18)]
      [!code-vb[System.Single.Structure#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/PrecisionList5a.vb#18)]  
@@ -213,12 +213,12 @@
   
  Note that a loss of precision may result from converting a <xref:System.Single> value to another numeric type. In the case of converting non-integral <xref:System.Double> values, as the output from the example shows, the fractional component is lost when the <xref:System.Single> value is either rounded (as in Visual Basic) or truncated (as in C#). For conversions to <xref:System.Decimal> and <xref:System.Single> values, the <xref:System.Double> value may not have a precise representation in the target data type.  
   
- The following example converts a number of <xref:System.Single> values to several other numeric types. The conversions occur in a checked context in Visual Basic (the default) and in C# (because of the [checked](../Topic/checked%20\(C%23%20Reference\).md) keyword). The output from the example shows the result for conversions in both a checked an unchecked context. You can perform conversions in an unchecked context in Visual Basic by compiling with the `/removeintchecks+` compiler switch and in C# by commenting out the `checked` statement.  
+ The following example converts a number of <xref:System.Single> values to several other numeric types. The conversions occur in a checked context in Visual Basic (the default) and in C# (because of the [checked](~/docs/csharp/language-reference/keywords/checked.md) keyword). The output from the example shows the result for conversions in both a checked an unchecked context. You can perform conversions in an unchecked context in Visual Basic by compiling with the `/removeintchecks+` compiler switch and in C# by commenting out the `checked` statement.  
   
  [!code-csharp[System.Single.Structure#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.structure/cs/convert2.cs#21)]
  [!code-vb[System.Single.Structure#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.structure/vb/convert2.vb#21)]  
   
- For more information on the conversion of numeric types, see [Type Conversion in the .NET Framework](../Topic/Type%20Conversion%20in%20the%20.NET%20Framework.md) and [Type Conversion Tables](../Topic/Type%20Conversion%20Tables%20in%20the%20.NET%20Framework.md).  
+ For more information on the conversion of numeric types, see [Type Conversion in the .NET Framework](~/docs/standard/base-types/type-conversion.md) and [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md).  
   
 <a name="Functionality"></a>   
 ## Floating-point functionality  
@@ -241,7 +241,7 @@
   
 -   **Rounding**. Rounding is often used as a technique for reducing the impact of differences between values caused by problems of floating-point representation and precision. You can round a <xref:System.Single> value by calling the <xref:System.Math.Round%2A?displayProperty=fullName> method. However, note  that the <xref:System.Single> value is converted to a <xref:System.Double> before the method is called, and the conversion can involve a loss of precision.  
   
--   **Formatting**. You can convert a <xref:System.Single> value to its string representation by calling the <xref:System.Single.ToString%2A> method or by using the [composite formatting](../Topic/Composite%20Formatting.md) feature. For information about how format strings control the string representation of floating-point values, see the [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md) topics.  
+-   **Formatting**. You can convert a <xref:System.Single> value to its string representation by calling the <xref:System.Single.ToString%2A> method or by using the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature. For information about how format strings control the string representation of floating-point values, see the [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md) topics.  
   
 -   **Parsing strings**. You can convert the string representation of a floating-point value to a <xref:System.Single> value by calling the <xref:System.Single.Parse%2A> or <xref:System.Single.TryParse%2A> method. If the parse operation fails, the <xref:System.Single.Parse%2A> method throws an exception, whereas the <xref:System.Single.TryParse%2A> method returns `false`.  
   
@@ -347,7 +347,7 @@
 ## Remarks  
  The `value` parameter must be `null` or an instance of <xref:System.Single>; otherwise, an exception is thrown. Any instance of <xref:System.Single>, regardless of its value, is considered greater than `null`.  
   
- Values must be identical to be considered equal. Particularly when floating-point values depend on multiple mathematical operations, it is common for them to lose precision and for their values to be nearly identical except for their least significant digits. Because of this, the return value of the <xref:System.Single.CompareTo%2A> method may seem surprising at times. For example, multiplication by a particular value followed by division by the same value should produce the original value, but in the following example, the computed value turns out to be greater than the original value. Showing all significant digits of the two values by using the "R" [standard numeric format string](../Topic/Standard%20Numeric%20Format%20Strings.md) indicates that the computed value differs from the original value in its least significant digits. For information about handling such comparisons, see the Remarks section of the <xref:System.Single.Equals%28System.Single%29> method.  
+ Values must be identical to be considered equal. Particularly when floating-point values depend on multiple mathematical operations, it is common for them to lose precision and for their values to be nearly identical except for their least significant digits. Because of this, the return value of the <xref:System.Single.CompareTo%2A> method may seem surprising at times. For example, multiplication by a particular value followed by division by the same value should produce the original value, but in the following example, the computed value turns out to be greater than the original value. Showing all significant digits of the two values by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) indicates that the computed value differs from the original value in its least significant digits. For information about handling such comparisons, see the Remarks section of the <xref:System.Single.Equals%28System.Single%29> method.  
   
  [!code-csharp[System.Single.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto3.cs#2)]
  [!code-vb[System.Single.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.compareto/vb/compareto3.vb#2)]  
@@ -454,7 +454,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Values must be identical to be considered equal. It is common for floating-point values to lose precision and to become nearly identical except for their least significant digits, especially when the values depend on multiple mathematical operations. Because of this, the return value of the <xref:System.Single.CompareTo%2A> method at times may seem surprising. For example, multiplication by any value followed by division by the same value should produce the original value. However, in the following example, the computed value turns out to be greater than the original value. Showing all significant digits of the two values by using the "R" [standard numeric format string](../Topic/Standard%20Numeric%20Format%20Strings.md) indicates that the computed value differs from the original value in its least significant digits. For information about handling such comparisons, see the Remarks section of the <xref:System.Single.Equals%28System.Single%29> method.  
+ Values must be identical to be considered equal. It is common for floating-point values to lose precision and to become nearly identical except for their least significant digits, especially when the values depend on multiple mathematical operations. Because of this, the return value of the <xref:System.Single.CompareTo%2A> method at times may seem surprising. For example, multiplication by any value followed by division by the same value should produce the original value. However, in the following example, the computed value turns out to be greater than the original value. Showing all significant digits of the two values by using the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) indicates that the computed value differs from the original value in its least significant digits. For information about handling such comparisons, see the Remarks section of the <xref:System.Single.Equals%28System.Single%29> method.  
   
  [!code-csharp[System.Single.CompareTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.single.compareto/cs/compareto2.cs#1)]
  [!code-vb[System.Single.CompareTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.single.compareto/vb/compareto2.vb#1)]  
@@ -468,7 +468,7 @@
   
  For example, suppose the instance type is <xref:System.Single> and the parameter type is <xref:System.Int32>. The Microsoft C# compiler generates instructions to represent the value of the parameter as a <xref:System.Single> object, then generates a <xref:System.Single.CompareTo%28System.Single%29?displayProperty=fullName> method that compares the values of the instance and the widened representation of the parameter.  
   
- Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](../Topic/Type%20Conversion%20Tables%20in%20the%20.NET%20Framework.md) topic.  
+ Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md) topic.  
   
 ## Precision in Comparisons  
  The precision of floating-point numbers beyond the documented precision is specific to the implementation and version of the .NET Framework. Consequently, a comparison of two particular numbers might change between versions of the .NET Framework because the precision of the numbers' internal representation might change.  
@@ -658,7 +658,7 @@
   
  For example, suppose the instance type is <xref:System.Single> and the parameter type is <xref:System.Int32>. The Microsoft C# compiler generates instructions to represent the value of the parameter as a <xref:System.Single> object, and then generates a <xref:System.Single.Equals%28System.Single%29?displayProperty=fullName> method that compares the values of the instance and the widened representation of the parameter.  
   
- Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](../Topic/Type%20Conversion%20Tables%20in%20the%20.NET%20Framework.md) topic.  
+ Consult your programming language's documentation to determine if its compiler performs implicit widening conversions of numeric types. For more information, see the [Type Conversion Tables](~/docs/standard/base-types/conversion-tables.md) topic.  
   
 ## Precision in Comparisons  
  The<xref:System.Single.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal because of the differing precision of the two values. The following example reports that the <xref:System.Single> value .3333 and the <xref:System.Single> returned by dividing 1 by 3 are unequal.  
@@ -1718,7 +1718,7 @@
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation.|  
 |*exponential-digits*|A series of digits ranging from 0 to 9 that specify an exponent.|  
   
- For more information about numeric formats, see the [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) topic.  
+ For more information about numeric formats, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic.  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information. When the <xref:System.Single.Parse%28System.String%2CSystem.IFormatProvider%29> method is invoked, it calls the `provider` parameter's <xref:System.IFormatProvider.GetFormat%2A> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. The <xref:System.IFormatProvider.GetFormat%2A> method then returns the <xref:System.Globalization.NumberFormatInfo> object that provides information about the format of the `s` parameter. There are three ways to use the `provider` parameter to supply custom formatting information to the parse operation:  
   
@@ -2605,9 +2605,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -2694,9 +2694,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.NumberFormatInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the return value is formatted using the <xref:System.Globalization.NumberFormatInfo> data for the current culture.  
   
@@ -2768,16 +2768,16 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  By default, the return value only contains 7 digits of precision although a maximum of 9 digits is maintained internally. If the value of this instance has greater than 7 digits, <xref:System.Single.ToString%28System.String%29> returns <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A> or <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A> instead of the expected number. If you require more precision, specify `format` with the "G9" format specification, which always returns 9 digits of precision, or "R", which returns 7 digits if the number can be represented with that precision or 9 digits if the number can only be represented with maximum precision.  
   
    
   
 ## Examples  
- The following example defines a numeric value and formats it as a currency value by using the "C" standard numeric format string and as a numeric value to three decimal places by using the "N" standard numeric format string. The result strings are formatted by using the conventions of the en-US culture. For more information on numeric format strings, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+ The following example defines a numeric value and formats it as a currency value by using the "C" standard numeric format string and as a numeric value to three decimal places by using the "N" standard numeric format string. The result strings are formatted by using the conventions of the en-US culture. For more information on numeric format strings, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
  [!code-csharp[System.Single.ToString#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Single.ToString/CS/ToString7.cs#7)]
  [!code-vb[System.Single.ToString#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Single.ToString/VB/ToString7.vb#7)]  
@@ -2849,9 +2849,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.NumberFormatInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the return value is formatted with the <xref:System.Globalization.NumberFormatInfo> object for the current culture.  
   

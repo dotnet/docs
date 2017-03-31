@@ -190,7 +190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Drag-and-drop operations are not enabled by default, and must be enabled deliberately by setting <xref:System.Windows.ContentElement.AllowDrop%2A> to  `true`. Beyond this basic setting, drag-and-drop behavior is entirely implementation specific and is not defined by <xref:System.Windows.ContentElement> or any other base element class. Certain controls, for example, <xref:System.Windows.Controls.RichTextBox>, do have a default behavior, but no <xref:System.Windows.ContentElement> derived classes have such a behavior. For more information on drag and drop, see [Drag and Drop Overview](../Topic/Drag%20and%20Drop%20Overview.md).  
+ Drag-and-drop operations are not enabled by default, and must be enabled deliberately by setting <xref:System.Windows.ContentElement.AllowDrop%2A> to  `true`. Beyond this basic setting, drag-and-drop behavior is entirely implementation specific and is not defined by <xref:System.Windows.ContentElement> or any other base element class. Certain controls, for example, <xref:System.Windows.Controls.RichTextBox>, do have a default behavior, but no <xref:System.Windows.ContentElement> derived classes have such a behavior. For more information on drag and drop, see [Drag and Drop Overview](~/docs/framework/wpf/advanced/drag-and-drop-overview.md).  
   
  <xref:System.Windows.FrameworkContentElement> overrides the metadata for this dependency property in its implementation. Specifically, <xref:System.Windows.FrameworkContentElement> designates that this property allows property value inheritance (<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> is `true` in metadata). Property value inheritance in this context means that if there are child elements with no other value for <xref:System.Windows.ContentElement.AllowDrop%2A> assigned through local values or styles, the value of the nearest parent element with this value assigned (again, either in styles, by default values, or a local value), then the value from that parent element is assigned to all unassigned child elements by the property system. This means that you can specify whether to allow drop operations at the root element and then propagate the value to all <xref:System.Windows.FrameworkContentElement> child elements that have not specifically assigned it a value of `false`.  
   
@@ -944,7 +944,7 @@
   
  Even if an element is focusable and enabled, event handling within a specific tree, (such as for a composite control) might respond to the preview focus events by not allowing focus there, thus this method would return `false`.  
   
- Focus in general is governed by two separate concepts: keyboard focus and logical focus, which are not always identical. This method sets the logical focus. There is no programmatic means to set keyboard focus specifically; keyboard focus is determined by user input. For more information, see [Focus Overview](../Topic/Focus%20Overview.md) and [Input Overview](../Topic/Input%20Overview.md).  
+ Focus in general is governed by two separate concepts: keyboard focus and logical focus, which are not always identical. This method sets the logical focus. There is no programmatic means to set keyboard focus specifically; keyboard focus is determined by user input. For more information, see [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  If calling <xref:System.Windows.ContentElement.Focus%2A> returns `true`, <xref:System.Windows.ContentElement.IsKeyboardFocused%2A> and <xref:System.Windows.ContentElement.IsKeyboardFocusWithin%2A> are also `true`.  
   
@@ -1079,7 +1079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If no animations are attached to the property, then the <xref:System.Windows.ContentElement.GetAnimationBaseValue%2A> return value is always identical to the <xref:System.Windows.DependencyObject.GetValue%2A> return value. If there are animations attached, then all possible animation derived values including the start and stop values are ignored, and the property value is determined based on all other possible inputs. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ If no animations are attached to the property, then the <xref:System.Windows.ContentElement.GetAnimationBaseValue%2A> return value is always identical to the <xref:System.Windows.DependencyObject.GetValue%2A> return value. If there are animations attached, then all possible animation derived values including the start and stop values are ignored, and the property value is determined based on all other possible inputs. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  ]]></format>
         </remarks>
@@ -1695,7 +1695,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Logical focus might differ from keyboard focus if an application has multiple focus divisions, such as between menu contents and the remainder of the application. In this scenario, keyboard focus can only be on one element of the application  UI, however, certain elements in other focus divisions might still retain logical focus. For more information on logical focus, see [Input Overview](../Topic/Input%20Overview.md) and [Focus Overview](../Topic/Focus%20Overview.md).  
+ Logical focus might differ from keyboard focus if an application has multiple focus divisions, such as between menu contents and the remainder of the application. In this scenario, keyboard focus can only be on one element of the application  UI, however, certain elements in other focus divisions might still retain logical focus. For more information on logical focus, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md) and [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
   
 <a name="dependencyPropertyInfo_IsFocused"></a>   
 ## Dependency Property Information  
@@ -2224,7 +2224,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusCaptured"></a>   
 ## Dependency Property Information  
@@ -2299,7 +2299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusCaptureWithin"></a>   
 ## Dependency Property Information  
@@ -2380,7 +2380,7 @@
   
  If this element has stylus capture and this property is `true` at the time of capture, this property remains `true` until stylus capture is lost and the stylus is not over its bounds.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusDirectlyOver"></a>   
 ## Dependency Property Information  
@@ -2457,7 +2457,7 @@
 ## Remarks  
  If this element has stylus capture, this property remains `true` until stylus capture is lost and the pointer is out of its bounds.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusOver"></a>   
 ## Dependency Property Information  
@@ -3025,7 +3025,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.ContentElement.MouseEnter> is a [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.ContentElement.MouseEnter> is a [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.ContentElement.MouseEnter> tracks when the mouse pointer enters the bounds of an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsMouseOver%2A> property value has changed from `false` to `true` on this element.  
   
@@ -3090,7 +3090,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.ContentElement.MouseLeave> is a [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.ContentElement.MouseLeave> is a [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.ContentElement.MouseLeave> tracks when the mouse leaves an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsMouseOver%2A> property value has changed from `true` to `false` on this element.  
   
@@ -3155,7 +3155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -3231,7 +3231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -3361,7 +3361,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -3369,7 +3369,7 @@
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.ContentElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.ContentElement>.  
   
- Right button mouse events frequently have native handling in application scenarios. For instance, a right mouse button down might display a context menu. See [ContextMenu Overview](../Topic/ContextMenu%20Overview.md).  
+ Right button mouse events frequently have native handling in application scenarios. For instance, a right mouse button down might display a context menu. See [ContextMenu Overview](~/docs/framework/wpf/controls/contextmenu-overview.md).  
   
 <a name="routedEventInfo_MouseRightButtonDown"></a>   
 ## Routed Event Information  
@@ -3430,7 +3430,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a bubbling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -7034,7 +7034,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -7101,7 +7101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -7233,7 +7233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -7300,7 +7300,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although this [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
+ Although this [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) seems to follow a tunneling route through an element tree, it actually is a direct routed event that is raised and reraised along the element tree by each <xref:System.Windows.ContentElement>.  
   
  This event is one of several related events that report the mouse-button specifics of an underlying <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName> event, which is an attached event that is processed by each element along an event route.  
   
@@ -7564,7 +7564,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusButtonDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusButtonDown"></a>   
 ## Routed Event Information  
@@ -7629,7 +7629,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusButtonUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusButtonUp"></a>   
 ## Routed Event Information  
@@ -7694,7 +7694,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusDown"></a>   
 ## Routed Event Information  
@@ -7759,7 +7759,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusInAirMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusInAirMove"></a>   
 ## Routed Event Information  
@@ -7824,7 +7824,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusInRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusInRange"></a>   
 ## Routed Event Information  
@@ -7889,7 +7889,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusMove"></a>   
 ## Routed Event Information  
@@ -7954,7 +7954,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusOutOfRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusOutOfRange"></a>   
 ## Routed Event Information  
@@ -8021,7 +8021,7 @@
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusSystemGesture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusSystemGesture"></a>   
 ## Routed Event Information  
@@ -8086,7 +8086,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusUp"></a>   
 ## Routed Event Information  
@@ -8699,7 +8699,7 @@
   
  This `ShouldSerialize` method is provided because the <xref:System.Windows.UIElement.CommandBindings%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer or developing your own control incorporating a <xref:System.Windows.UIElement>.  
   
- For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](../Topic/Defining%20Default%20Values%20with%20the%20ShouldSerialize%20and%20Reset%20Methods.md).  
+ For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](~/docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md).  
   
  ]]></format>
         </remarks>
@@ -8735,7 +8735,7 @@
   
  This `ShouldSerialize` method is provided because the <xref:System.Windows.UIElement.InputBindings%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer or developing your own control incorporating a <xref:System.Windows.UIElement>.  
   
- For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](../Topic/Defining%20Default%20Values%20with%20the%20ShouldSerialize%20and%20Reset%20Methods.md).  
+ For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](~/docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md).  
   
  ]]></format>
         </remarks>
@@ -8761,7 +8761,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusButtonDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusButtonDown"></a>   
 ## Routed Event Information  
@@ -8826,7 +8826,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusButtonUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusButtonUp"></a>   
 ## Routed Event Information  
@@ -8891,7 +8891,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusDown> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusDown"></a>   
 ## Routed Event Information  
@@ -8954,13 +8954,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.ContentElement.StylusEnter> is a [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.ContentElement.StylusEnter> is a [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.ContentElement.StylusEnter> tracks when the stylus enters the bounds of an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsStylusOver%2A> property value has changed from `false` to `true` on this element.  
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusEnter> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusEnter> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusEnter"></a>   
 ## Routed Event Information  
@@ -9023,7 +9023,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusInAirMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusInAirMove"></a>   
 ## Routed Event Information  
@@ -9088,7 +9088,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusInRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusInRange"></a>   
 ## Routed Event Information  
@@ -9151,13 +9151,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.ContentElement.StylusLeave> is a [Routed Events Overview](../Topic/Routed%20Events%20Overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
+ <xref:System.Windows.ContentElement.StylusLeave> is a [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md) that uses the direct event handling routing strategy. Direct routed events are not raised along a route; instead, they are handled in the same element where they are raised. However, they do enable other aspects of routed event behavior, such as event triggers in styles.  
   
  Although <xref:System.Windows.ContentElement.StylusLeave> tracks when the stylus leaves the bounds of an element, this event more literally reports that the <xref:System.Windows.ContentElement.IsStylusOver%2A> property value has changed from `true` to `false` on this element.  
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusLeave> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusLeave> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusLeave"></a>   
 ## Routed Event Information  
@@ -9220,7 +9220,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusMove> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusMove"></a>   
 ## Routed Event Information  
@@ -9285,7 +9285,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusOutOfRange> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusOutOfRange"></a>   
 ## Routed Event Information  
@@ -9352,7 +9352,7 @@
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusSystemGesture> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusSystemGesture"></a>   
 ## Routed Event Information  
@@ -9417,7 +9417,7 @@
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.ContentElement.StylusUp> is part of the class members list when <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.ContentElement.StylusUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusUp"></a>   
 ## Routed Event Information  

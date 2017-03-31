@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage information, see [x:Type Markup Extension](../Topic/x:Type%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage information, see [x:Type Markup Extension](~/docs/framework/xaml-services/x-type-markup-extension.md).  
   
 > [!NOTE]
 >  The `{x:Type}` functionality is generally for user code invocation from markup. For code that is implementing XAML support, type resolution services come from <xref:System.Windows.Markup.IXamlTypeResolver> and are related to the implementation of the acting XAML schema context. Do not attempt to reference <xref:System.Windows.Markup.TypeExtension.ProvideValue%2A> as a substitute for a <xref:System.Windows.Markup.IXamlTypeResolver> service provider; the context you pass in might not be valid for a type resolution, and attempts to call without valid services will fail.  

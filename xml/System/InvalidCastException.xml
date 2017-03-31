@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework supports automatic conversion from derived types to their base types and back to the derived type, as well as from types that present interfaces to interface objects and back. It also includes a variety of mechanisms that support custom conversions. For more information, see [Type Conversion in the .NET Framework](../Topic/Type%20Conversion%20in%20the%20.NET%20Framework.md).  
+ The .NET Framework supports automatic conversion from derived types to their base types and back to the derived type, as well as from types that present interfaces to interface objects and back. It also includes a variety of mechanisms that support custom conversions. For more information, see [Type Conversion in the .NET Framework](~/docs/standard/base-types/type-conversion.md).  
   
  An <xref:System.InvalidCastException> exception is thrown when the conversion of an instance of one type to another type is not supported. For example, attempting to convert a <xref:System.Char> value to a <xref:System.DateTime> value throws an <xref:System.InvalidCastException> exception. It differs from an <xref:System.OverflowException> exception, which is thrown when a conversion of one type to another is supported, but the value of the source type is outside the range of the target type.  An <xref:System.InvalidCastException> exception is caused by developer error and should not be handled in a `try/catch` block; instead, the cause of the exception should be eliminated.  
   
@@ -250,7 +250,7 @@ Call UserControl11_MyCustomEvent(UserControl11(0), New UserControl1.MyCustomEven
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
   
  ]]></format>
         </remarks>

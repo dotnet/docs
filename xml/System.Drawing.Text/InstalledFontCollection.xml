@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Text.InstalledFontCollection> allows you to get a list of fonts families that are installed on the computer running the application with its <xref:System.Drawing.Text.FontCollection.Families%2A> property. For additional information on fonts and text, including example code, see [Using Fonts and Text](../Topic/Using%20Fonts%20and%20Text.md).  
+ The <xref:System.Drawing.Text.InstalledFontCollection> allows you to get a list of fonts families that are installed on the computer running the application with its <xref:System.Drawing.Text.FontCollection.Families%2A> property. For additional information on fonts and text, including example code, see [Using Fonts and Text](~/docs/framework/winforms/advanced/using-fonts-and-text.md).  
   
  Do not use the <xref:System.Drawing.Text.InstalledFontCollection> class to install a font to Windows. Instead use the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] `AddFontResource` function. An <xref:System.Drawing.Text.InstalledFontCollection> object sees only fonts that are installed in Windows before the object is created.  
   

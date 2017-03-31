@@ -545,7 +545,7 @@
 |`U`|Formats the date and time with the long date and long time as GMT. For example, `Wednesday, March 12, 2008 6:07:31 PM`.|  
 |`Y`, `y`|Formats the date as the year and month. For example, `March, 2008`.<br /><br /> The `Y` and `y` characters display the year in a user-defined date format.|  
   
- For more information about the application's current culture information, see [How Culture Affects Strings in Visual Basic](../Topic/How%20Culture%20Affects%20Strings%20in%20Visual%20Basic.md).  
+ For more information about the application's current culture information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
 ## User-Defined Date/Time Formats  
  The following table shows characters you can use to create user-defined date/time formats. Unlike in earlier versions of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], these format characters are case-sensitive.  
@@ -1320,7 +1320,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](../Topic/How%20Culture%20Affects%20Strings%20in%20Visual%20Basic.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -1361,7 +1361,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](../Topic/How%20Culture%20Affects%20Strings%20in%20Visual%20Basic.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -2299,7 +2299,7 @@
 ## Remarks  
  To determine the number of characters in `str`, use the `Len` function.  
   
- Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](../Topic/Mid%20Statement.md).  
+ Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
   
 > [!NOTE]
 >  The `MidB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
@@ -2346,7 +2346,7 @@
 ## Remarks  
  To determine the number of characters in `str`, use the `Len` function.  
   
- Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](../Topic/Mid%20Statement.md).  
+ Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
   
 > [!NOTE]
 >  The `MidB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
@@ -2774,7 +2774,7 @@ Dim aString As String = Replace(TestString, "o", "i")
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The strings are compared by alphanumeric sort values beginning with the first character. For further information on binary comparisons, textual comparisons, and sort order, see [Option Compare Statement](../Topic/Option%20Compare%20Statement.md).  
+ The strings are compared by alphanumeric sort values beginning with the first character. For further information on binary comparisons, textual comparisons, and sort order, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
   
  The `Compare` argument settings are:  
   
@@ -2829,7 +2829,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](../Topic/How%20Culture%20Affects%20Strings%20in%20Visual%20Basic.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
  The `Conversion` argument settings are:  
   
@@ -3093,7 +3093,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](../Topic/How%20Culture%20Affects%20Strings%20in%20Visual%20Basic.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -3134,7 +3134,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](../Topic/How%20Culture%20Affects%20Strings%20in%20Visual%20Basic.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   

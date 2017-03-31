@@ -31,7 +31,7 @@
  A proxy object can be used without regard to any remoting subdivisions within a <xref:System.AppDomain>.  
   
 > [!NOTE]
->  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -243,14 +243,14 @@
         <param name="fIsMarshalled">
           <see langword="true" /> if the object reference is requested for marshaling to a remote location; <see langword="false" /> if the object reference is requested for communication with unmanaged objects in the current process through COM.</param>
         <summary>Requests an unmanaged reference to the object represented by the current proxy instance.</summary>
-        <returns>A pointer to a [COM Callable Wrapper](../Topic/COM%20Callable%20Wrapper.md) if the object reference is requested for communication with unmanaged objects in the current process through COM, or a pointer to a cached or newly generated <see langword="IUnknown" /> COM interface if the object reference is requested for marshaling to a remote location.</returns>
+        <returns>A pointer to a [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) if the object reference is requested for communication with unmanaged objects in the current process through COM, or a pointer to a cached or newly generated <see langword="IUnknown" /> COM interface if the object reference is requested for marshaling to a remote location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If the proxy is requested for marshaling, then an `IUnknown` interface for the object represented by the current proxy instance is returned. If an `IUnknown` was previously cached by the <xref:System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown%2A> method, then that instance is returned; otherwise, a new instance is returned.  
   
- If the proxy is requested not for marshaling but for communication with unmanaged objects in the current process, then a [COM Callable Wrapper](../Topic/COM%20Callable%20Wrapper.md) (CCW), which can be used in the current process for communication through COM, is returned.  
+ If the proxy is requested not for marshaling but for communication with unmanaged objects in the current process, then a [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) (CCW), which can be used in the current process for communication through COM, is returned.  
   
    
   

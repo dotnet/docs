@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.DataSet> API has been extended with two new methods of the <xref:System.Data.DataRow> class, <xref:System.Data.DataRowExtensions.Field%2A> and <xref:System.Data.DataRowExtensions.SetField%2A>. You can use these to form [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries against <xref:System.Data.DataTable> objects. They are the recommended methods to use for accessing column values within [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries. For more information, see [Generic Field and SetField Methods](../Topic/Generic%20Field%20and%20SetField%20Methods%20\(LINQ%20to%20DataSet\).md).  
+ The <xref:System.Data.DataSet> API has been extended with two new methods of the <xref:System.Data.DataRow> class, <xref:System.Data.DataRowExtensions.Field%2A> and <xref:System.Data.DataRowExtensions.SetField%2A>. You can use these to form [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries against <xref:System.Data.DataTable> objects. They are the recommended methods to use for accessing column values within [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions and method queries. For more information, see [Generic Field and SetField Methods](~/docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md).  
   
  ]]></format>
     </remarks>

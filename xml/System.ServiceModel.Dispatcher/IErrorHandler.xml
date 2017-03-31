@@ -25,7 +25,7 @@
  All <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> implementations are called first, prior to sending a response message. When all <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> implementations have been called and return, and if `fault` is non-`null`, it is sent back to the client according to the operation contract. If `fault` is `null` after all implementations have been called, the response message is controlled by the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property value.  
   
 > [!NOTE]
->  Exceptions can occur after all <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> implementations are called and a response message is handed to the channel. If a channel exception occurs (for example, difficulty serializing the message) <xref:System.ServiceModel.Dispatcher.IErrorHandler> objects are notified. In this case, you should still make sure that your development environment catches and displays such exceptions to you or makes use of tracing to discover the problem. For more information about tracing, see [Using Tracing to Troubleshoot Your Application](../Topic/Using%20Tracing%20to%20Troubleshoot%20Your%20Application.md).  
+>  Exceptions can occur after all <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%2A> implementations are called and a response message is handed to the channel. If a channel exception occurs (for example, difficulty serializing the message) <xref:System.ServiceModel.Dispatcher.IErrorHandler> objects are notified. In this case, you should still make sure that your development environment catches and displays such exceptions to you or makes use of tracing to discover the problem. For more information about tracing, see [Using Tracing to Troubleshoot Your Application](~/docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).  
   
  After the response message has been sent, all <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> implementations are called in the same order.  
   
@@ -33,7 +33,7 @@
   
  You can add the <xref:System.ServiceModel.Dispatcher.IErrorHandler> to the runtime by implementing a behavior (either an <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=fullName>, <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName>, or <xref:System.ServiceModel.Description.IOperationBehavior?displayProperty=fullName> object) and use the behavior programmatically, from a configuration file or with a custom attribute to attach your <xref:System.ServiceModel.Dispatcher.IErrorHandler>.  
   
- For more information about using behaviors to modify the runtime, see [Configuring and Extending the Runtime with Behaviors](../Topic/Configuring%20and%20Extending%20the%20Runtime%20with%20Behaviors.md).  
+ For more information about using behaviors to modify the runtime, see [Configuring and Extending the Runtime with Behaviors](~/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
    
   

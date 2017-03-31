@@ -51,7 +51,7 @@
   
  If both assemblies are signed with a strong name, the argument to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor must consist of the name of the assembly without its directory path or file name extension, along with the full public key (and not its public key token). To get the full public key of a strong-named assembly, see the [Getting the full public key](#Key) section later in this article. For more information about using <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> with strong-named assemblies, see the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor.  
   
- Do not include values for the <xref:System.Reflection.AssemblyName.CultureInfo%2A>, <xref:System.Reflection.AssemblyName.Version%2A>, or <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A> field in the argument; the Visual Basic, C#, and C++ compilers treat this as a compiler error. If you use a compiler that does not treat it as an error (such as the [IL Assembler (ILAsm.exe)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md)) and the assemblies are strong-named, a <xref:System.MethodAccessException> exception is thrown the first time the specified friend assembly accesses the assembly that contains the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute.  
+ Do not include values for the <xref:System.Reflection.AssemblyName.CultureInfo%2A>, <xref:System.Reflection.AssemblyName.Version%2A>, or <xref:System.Reflection.AssemblyName.ProcessorArchitecture%2A> field in the argument; the Visual Basic, C#, and C++ compilers treat this as a compiler error. If you use a compiler that does not treat it as an error (such as the [IL Assembler (ILAsm.exe)](~/docs/framework/tools/ilasm-exe-il-assembler.md)) and the assemblies are strong-named, a <xref:System.MethodAccessException> exception is thrown the first time the specified friend assembly accesses the assembly that contains the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute.  
   
  For more information about how to use this attribute, see the following topics:  
   
@@ -61,7 +61,7 @@
   
 <a name="Key"></a>   
 ## Getting the full public key  
- You can use the [Strong Name Tool (Sn.exe)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) to retrieve the full public key from a strong-named key (.snk) file. To do this, you perform the following steps:  
+ You can use the [Strong Name Tool (Sn.exe)](~/docs/framework/tools/sn-exe-strong-name-tool.md) to retrieve the full public key from a strong-named key (.snk) file. To do this, you perform the following steps:  
   
 1.  Extract the public key from the strong-named key file to a separate file:  
   
@@ -145,12 +145,12 @@
 ## Remarks  
  The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor defines a friend assembly, which is an assembly that has access to the internal types and members of the current assembly.  
   
- Both the current assembly and the friend assembly must be unsigned, or both must be signed with a strong name. (For more information about strong-named assemblies, see [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md).) If both are unsigned, the `assemblyName` argument consists of the name of the friend assembly, specified without a directory path or file extension. If both are signed, `assemblyName` consists of the name of the friend assembly without its directory path or file name extension, along with its full public key (but not its public key token). The other components of a strong name, such as those that provide culture, version, or processor architecture information, cannot be specified in the `assemblyName` argument.  
+ Both the current assembly and the friend assembly must be unsigned, or both must be signed with a strong name. (For more information about strong-named assemblies, see [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/creating-and-using-strong-named-assemblies.md).) If both are unsigned, the `assemblyName` argument consists of the name of the friend assembly, specified without a directory path or file extension. If both are signed, `assemblyName` consists of the name of the friend assembly without its directory path or file name extension, along with its full public key (but not its public key token). The other components of a strong name, such as those that provide culture, version, or processor architecture information, cannot be specified in the `assemblyName` argument.  
   
 > [!IMPORTANT]
 >  If you use the C# compiler to compile the friend assembly, you must explicitly specify the name of the output file (.exe or .dll) by using the **/out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. The **/out** compiler option is optional for the Visual Basic compiler, and the corresponding **-out** or **-o** compiler option should not be used when compiling friend assemblies with the F# compiler.  
   
- You can use [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md) to retrieve the full public key from a strong-named key (.snk) file. To do this, you perform the following steps:  
+ You can use [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md) to retrieve the full public key from a strong-named key (.snk) file. To do this, you perform the following steps:  
   
 1.  Extract the public key from the strong-named key file to a separate file:  
   

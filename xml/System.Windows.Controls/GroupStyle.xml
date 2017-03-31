@@ -104,7 +104,7 @@
   
  The example also alternates the background of the items in the <xref:System.Windows.Controls.ListBox> between three colors by setting the <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> on the <xref:System.Windows.Controls.ListBox> and binding the <xref:System.Windows.Controls.Control.Background%2A> of each <xref:System.Windows.Controls.ListBox> to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>. In this case, the background alternates between three colors.  
   
- The <xref:System.Windows.Data.CollectionViewSource> that groups the items is not shown.  For information on how to group item, see [How to: Sort and Group Data Using a View in XAML](../Topic/How%20to:%20Sort%20and%20Group%20Data%20Using%20a%20View%20in%20XAML.md).  
+ The <xref:System.Windows.Data.CollectionViewSource> that groups the items is not shown.  For information on how to group item, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
   
  [!code-xml[AlternationIndexSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#3)]  
   
@@ -148,7 +148,7 @@
 <a name="xamlValues_ColumnHeaderContainerStyle"></a>   
 ## XAML Values  
  *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *StyleResourceKey*  
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
@@ -263,7 +263,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.GroupStyle.HeaderStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md). If you set the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> or <xref:System.Windows.Controls.GroupStyle.HeaderTemplateSelector%2A> property of a <xref:System.Windows.Controls.GroupStyle>, the <xref:System.Windows.Controls.GroupStyle.HeaderStringFormat%2A> property is ignored.  
+ <xref:System.Windows.Controls.GroupStyle.HeaderStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md). If you set the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> or <xref:System.Windows.Controls.GroupStyle.HeaderTemplateSelector%2A> property of a <xref:System.Windows.Controls.GroupStyle>, the <xref:System.Windows.Controls.GroupStyle.HeaderStringFormat%2A> property is ignored.  
   
    
   

@@ -24,11 +24,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is a markup extension implementation. Markup extension classes in WPF exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] XAML  processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) usage from XAML. For more information on the mechanics of static resource lookup in WPF XAML, see [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) or [XAML Resources](../Topic/XAML%20Resources.md).  
+ This class is a markup extension implementation. Markup extension classes in WPF exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] XAML  processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) usage from XAML. For more information on the mechanics of static resource lookup in WPF XAML, see [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) or [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
- `{StaticResource}` is a markup extension that is specific to the WPF implementation of XAML. You can use `{StaticResource}` when referencing the default XAML namespace for WPF, without using a prefix. In contrast, markup extensions that are defined for XAML language support (such as `{x:Type}`) require the prefix for the XAML language XAML namespace in the usage. For more information, see [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md).  
+ `{StaticResource}` is a markup extension that is specific to the WPF implementation of XAML. You can use `{StaticResource}` when referencing the default XAML namespace for WPF, without using a prefix. In contrast, markup extensions that are defined for XAML language support (such as `{x:Type}`) require the prefix for the XAML language XAML namespace in the usage. For more information, see [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
- Static resource references are generally used in XAML whenever a [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) is not explicitly necessary.  
+ Static resource references are generally used in XAML whenever a [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) is not explicitly necessary.  
   
 <a name="xamlTextUsage_StaticResourceExtension"></a>   
 ## XAML Text Usage  
@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage information, see [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage information, see [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
   
 <a name="xamlTextUsage_ResourceKey"></a>   
 ## XAML Text Usage  

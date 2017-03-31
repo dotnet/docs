@@ -59,7 +59,7 @@
 > [!NOTE]
 >  If you do not explicitly specify sort criteria for `DataView`, the `DataRowView` objects in `DataView` are sorted based on the index of DataView's corresponding `DataRow` in the `DataTable.Rows``DataRowCollection`.  
   
- [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] allows developers to create complex, powerful queries over a <xref:System.Data.DataSet> by using [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]. A [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query returns an enumeration of <xref:System.Data.DataRow> objects, however, which is not easily used in a binding scenario. <xref:System.Data.DataView> can be created from a [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query and takes on the filtering and sorting characteristics of that query. [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] extends the functionality of the <xref:System.Data.DataView> by providing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] expression-based filtering and sorting, which allows for much more complex and powerful filtering and sorting operations than string-based filtering and sorting. See [Data Binding and LINQ to DataSet](../Topic/Data%20Binding%20and%20LINQ%20to%20DataSet.md) for more information.  
+ [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] allows developers to create complex, powerful queries over a <xref:System.Data.DataSet> by using [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)]. A [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query returns an enumeration of <xref:System.Data.DataRow> objects, however, which is not easily used in a binding scenario. <xref:System.Data.DataView> can be created from a [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] query and takes on the filtering and sorting characteristics of that query. [!INCLUDE[linq_dataset](~/includes/linq-dataset-md.md)] extends the functionality of the <xref:System.Data.DataView> by providing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] expression-based filtering and sorting, which allows for much more complex and powerful filtering and sorting operations than string-based filtering and sorting. See [Data Binding and LINQ to DataSet](~/docs/framework/data/adonet/data-binding-and-linq-to-dataset.md) for more information.  
   
    
   
@@ -1209,7 +1209,7 @@
 ## Remarks  
  If you do not explicitly specify sort criteria for `DataView`, the `DataRowView` objects in `DataView` are sorted based on the index of its corresponding `DataRow` in the `DataTable.Rows``DataRowCollection`.  
   
- For more information, see [DataViews](../Topic/DataViews.md).  
+ For more information, see [DataViews](~/docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md).  
   
    
   

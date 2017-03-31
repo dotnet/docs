@@ -33,7 +33,7 @@
  The Gregorian calendar recognizes two eras: B.C. or B.C.E., and A.D. or C.E. This implementation of the <xref:System.Globalization.GregorianCalendar> class recognizes only the current era (A.D. or C.E.).  
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.GregorianCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](../Topic/Working%20with%20Calendars.md).  
+>  For information about using the <xref:System.Globalization.GregorianCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  A leap year in the Gregorian calendar is defined as a year that is evenly divisible by 4, unless it is divisible by 100. However, years that are divisible by 400 are leap years. For example, the year 1900 was not a leap year, but the year 2000 was. A common year has 365 days and a leap year has 366 days.  
   

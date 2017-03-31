@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IColumnMapping> interface enables an inheriting class to implement a Column Mapping class, which associates a data source column with a <xref:System.Data.DataSet> column. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
+ The <xref:System.Data.IColumnMapping> interface enables an inheriting class to implement a Column Mapping class, which associates a data source column with a <xref:System.Data.DataSet> column. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
   
  An application does not create an instance of the <xref:System.Data.IColumnMapping> interface directly, but creates an instance of a class that inherits <xref:System.Data.IColumnMapping>.  
   

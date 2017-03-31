@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> is used to define custom feed mapping in the data model of a reflection provider. This attribute is also applied to generated client data service classes when the metadata used to generate the classes indicates that custom feed mappings are defined in the data model. This information is necessary to make sure that the client can create and consume messages that support custom feeds. For more information, see [Feed Customization](../Topic/Feed%20Customization%20\(WCF%20Data%20Services\).md).  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> is used to define custom feed mapping in the data model of a reflection provider. This attribute is also applied to generated client data service classes when the metadata used to generate the classes indicates that custom feed mappings are defined in the data model. This information is necessary to make sure that the client can create and consume messages that support custom feeds. For more information, see [Feed Customization](~/docs/framework/data/wcf/feed-customization-wcf-data-services.md).  
   
    
   
@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Whenthe value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>is `true`, the feed is backward compatible with [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] client applications that use protocol version 1.0. When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>``is `false`, the protocol version used by the data service must be 2.0 or later versions. For more information, see [Data Service Versioning](../Topic/Data%20Service%20Versioning%20\(WCF%20Data%20Services\).md).  
+ Whenthe value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>is `true`, the feed is backward compatible with [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] client applications that use protocol version 1.0. When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>``is `false`, the protocol version used by the data service must be 2.0 or later versions. For more information, see [Data Service Versioning](~/docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
  ]]></format>
         </remarks>

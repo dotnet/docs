@@ -22,9 +22,9 @@
   
  To populate the drop-down list, first set the <xref:System.Windows.Controls.DataGridComboBoxColumn.ItemsSource%2A> property for the <xref:System.Windows.Controls.ComboBox> by using one of the following options:  
   
--   A static resource. For more information, see [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
+-   A static resource. For more information, see [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
   
--   An x:Static code entity. For more information, see [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md).  
+-   An x:Static code entity. For more information, see [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
   
 -   An inline collection of <xref:System.Windows.Controls.ComboBoxItem> types.  
   

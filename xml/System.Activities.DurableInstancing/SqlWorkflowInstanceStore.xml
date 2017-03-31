@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Persistence Participants](../Topic/Persistence%20Participants.md) sample.  
+ The following code sample demonstrates creating a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Persistence Participants](~/docs/framework/wf/persistence-participants.md) sample.  
   
 <!-- TODO: review snippet reference  [!CODE [wfs_PersistenceParticipant#2](wfs_PersistenceParticipant#2)]  -->  
   
@@ -175,7 +175,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using HostLockRenewalPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+ The following code sample demonstrates using HostLockRenewalPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/wf/samples/built-in-configuration.md) sample.  
   
  [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
   
@@ -207,7 +207,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using InstanceCompletionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+ The following code sample demonstrates using InstanceCompletionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/wf/samples/built-in-configuration.md) sample.  
   
  [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
   
@@ -239,7 +239,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using InstanceEncodingOption in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+ The following code sample demonstrates using InstanceEncodingOption in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/wf/samples/built-in-configuration.md) sample.  
   
  [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
   
@@ -277,7 +277,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using InstanceLockedExceptionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+ The following code sample demonstrates using InstanceLockedExceptionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/wf/samples/built-in-configuration.md) sample.  
   
  [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
   
@@ -374,7 +374,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using Promote in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [SQLStoreExtensibility](../Topic/SQLStoreExtensibility.md) sample.  
+ The following code sample demonstrates using Promote in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [SQLStoreExtensibility](~/docs/framework/wf/samples/sqlstoreextensibility.md) sample.  
   
  [!code-csharp[wfs_SQLStoreExtensibility#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_sqlstoreextensibility/cs/program.cs#1)]  
   
@@ -418,7 +418,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using RunnableInstancesDetectionPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](../Topic/Built-in%20Configuration.md) sample.  
+ The following code sample demonstrates using RunnableInstancesDetectionPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/wf/samples/built-in-configuration.md) sample.  
   
  [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
   

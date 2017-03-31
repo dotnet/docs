@@ -33,12 +33,12 @@
 >  All methods in <xref:System.Runtime.Remoting.Messaging.CallContext> are static and operate on the call context in the current <xref:System.Threading.Thread>.  
   
 > [!NOTE]
->  This class makes a link demand. A `SecurityException` is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
+>  This class makes a link demand. A `SecurityException` is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext> class to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext> class to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
   
  [!code-cpp[CallContext#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/client.cpp#1)]
  [!code-csharp[CallContext#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/client.cs#1)]
@@ -118,7 +118,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
   
  [!code-cpp[CallContext#3](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/service.cpp#3)]
  [!code-csharp[CallContext#3](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/service.cs#3)]
@@ -288,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext.SetData%2A> method to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.CallContext.SetData%2A> method to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `LogicalCallContextData` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface. To view the code for the `HelloServiceClass` class used in this sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see the example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class.  
   
  [!code-cpp[CallContext#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/client.cpp#1)]
  [!code-csharp[CallContext#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/client.cs#1)]

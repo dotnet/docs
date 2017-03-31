@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use client application services to retrieve user settings from an existing Web settings service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md). After configuration, you can get and set user settings through an application settings class derived from <xref:System.Configuration.ApplicationSettingsBase> and configured to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. You can use [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to generate a `Settings` class for your project (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). For more information about application settings, see [Application Settings Overview](../Topic/Application%20Settings%20Overview.md).  
+ You can use client application services to retrieve user settings from an existing Web settings service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md). After configuration, you can get and set user settings through an application settings class derived from <xref:System.Configuration.ApplicationSettingsBase> and configured to use the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. You can use [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to generate a `Settings` class for your project (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]). For more information about application settings, see [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md).  
   
  You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> through the <xref:System.Configuration.ApplicationSettingsBase.Providers%2A?displayProperty=fullName> property using the fully-qualified <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class name as a key. You can also retrieve the provider through the <xref:System.Configuration.SettingsLoadedEventArgs.Provider%2A?displayProperty=fullName> property when you handle the <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded?displayProperty=fullName> event.  
   
@@ -33,7 +33,7 @@
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
    
   
@@ -70,7 +70,7 @@
 >  This class contains a <xref:System.Security.SecurityCriticalAttribute> at the class level that applies to all members of the class. A run-time exception is thrown if the immediate caller is security-transparent or partially trusted. For more information about security-critical types and members, see [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
  ]]></format>
         </remarks>
@@ -238,7 +238,7 @@
   
 -   serviceUri  
   
- For more information about these attributes, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ For more information about these attributes, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  ]]></format>
         </remarks>
@@ -311,7 +311,7 @@
  When you set the service location programmatically, you must specify the complete service URI, which will always end with "Profile_JSON_AppService.axd".  
   
 > [!NOTE]
->  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md).  
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md).  
   
    
   

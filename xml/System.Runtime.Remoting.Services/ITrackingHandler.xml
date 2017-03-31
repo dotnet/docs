@@ -24,7 +24,7 @@
  Note that only objects can be disconnected. An exception is thrown when disconnect is called on a proxy.  
   
 > [!NOTE]
->  This interface makes a link demand. A SecurityException is thrown if the immediate caller makes the call through a reference to the interface and does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
+>  This interface makes a link demand. A SecurityException is thrown if the immediate caller makes the call through a reference to the interface and does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
   
    
   

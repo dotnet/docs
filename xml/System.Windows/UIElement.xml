@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Creating a new instance that is actually of type <xref:System.Windows.UIElement> is uncommon in application code, because <xref:System.Windows.UIElement> is a base element. See [Base Elements Overview](../Topic/Base%20Elements%20Overview.md).  
+ Creating a new instance that is actually of type <xref:System.Windows.UIElement> is uncommon in application code, because <xref:System.Windows.UIElement> is a base element. See [Base Elements Overview](~/docs/framework/wpf/advanced/base-elements-overview.md).  
   
  ]]></format>
         </remarks>
@@ -225,7 +225,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Drag-and-drop operations are not enabled by default, and must be enabled deliberately by setting <xref:System.Windows.UIElement.AllowDrop%2A> to `true`. Beyond this basic setting, drag-and-drop behavior is entirely implementation specific and is not defined by <xref:System.Windows.UIElement> or any other base element class. Certain controls, for example, <xref:System.Windows.Controls.RichTextBox>, do have a default behavior. For more information on drag and drop, see [Drag and Drop Overview](../Topic/Drag%20and%20Drop%20Overview.md).  
+ Drag-and-drop operations are not enabled by default, and must be enabled deliberately by setting <xref:System.Windows.UIElement.AllowDrop%2A> to `true`. Beyond this basic setting, drag-and-drop behavior is entirely implementation specific and is not defined by <xref:System.Windows.UIElement> or any other base element class. Certain controls, for example, <xref:System.Windows.Controls.RichTextBox>, do have a default behavior. For more information on drag and drop, see [Drag and Drop Overview](~/docs/framework/wpf/advanced/drag-and-drop-overview.md).  
   
  <xref:System.Windows.FrameworkElement> overrides the metadata for this dependency property in its implementation. Specifically, <xref:System.Windows.FrameworkElement> designates this property to allow property value inheritance (<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> is `true` in metadata). Property value inheritance in this context means that if there are child elements with no other value for <xref:System.Windows.UIElement.AllowDrop%2A> assigned through local values or styles, the value of the nearest parent element with this value assigned (again, either in styles, by default values, or a local value), then the value from the parent element will be assigned to all previously unassigned child elements by the property system. In practice this means that you can specify whether to allow drop operations at the root element, and that value will propagate to all child elements that have not specifically assigned it as `false`.  
   
@@ -505,7 +505,7 @@
   
  For WPF core-level element deriving scenarios, the behavior for <xref:System.Windows.UIElement.Arrange%2A> should not (and cannot, unless you shadow) be changed. Instead, you should override <xref:System.Windows.UIElement.ArrangeCore%2A> in your class. Your <xref:System.Windows.UIElement.ArrangeCore%2A> implementation is called internally by <xref:System.Windows.UIElement.Arrange%2A> as part of default WPF framework-level layout operations. However, this assumes you are using WPF framework-level layout and its layout system, which is often not the case if you are specifically deriving elements at the WPF core-level from the <xref:System.Windows.UIElement> base element class. Your <xref:System.Windows.UIElement.ArrangeCore%2A> implementation should also call <xref:System.Windows.UIElement.Arrange%2A> on each child element, if it has child elements. Note that the WPF core-level scenario implies that you are not using a <xref:System.Windows.FrameworkElement> derived class, because <xref:System.Windows.FrameworkElement> seals <xref:System.Windows.FrameworkElement.ArrangeCore%2A>.  
   
- Computation of WPF framework-level layout positioning in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] consists of a <xref:System.Windows.UIElement.Measure%2A> call and an <xref:System.Windows.UIElement.Arrange%2A> call. During the <xref:System.Windows.UIElement.Measure%2A> call, the layout system determines an element's size requirements using a provided <xref:System.Windows.Size> (`availableSize`) argument. During the <xref:System.Windows.UIElement.Arrange%2A> call, the layout system finalizes the size and position of an element's bounding box.  For more information, see [Layout](../Topic/Layout.md).  
+ Computation of WPF framework-level layout positioning in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] consists of a <xref:System.Windows.UIElement.Measure%2A> call and an <xref:System.Windows.UIElement.Arrange%2A> call. During the <xref:System.Windows.UIElement.Measure%2A> call, the layout system determines an element's size requirements using a provided <xref:System.Windows.Size> (`availableSize`) argument. During the <xref:System.Windows.UIElement.Arrange%2A> call, the layout system finalizes the size and position of an element's bounding box.  For more information, see [Layout](~/docs/framework/wpf/advanced/layout.md).  
   
  `availableSize` can be any number from zero to infinity. Elements to be laid out return the minimum <xref:System.Windows.Size> they require through the `availableSize` parameter.  
   
@@ -1106,7 +1106,7 @@ Image with an Elliptical Clip Region
   
  [!code-xml[commandWithHandler#CommandHandlerCommandBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlercommandbinding)]  
   
- For more information about the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for collections, see [XAML Syntax In Detail](../Topic/XAML%20Syntax%20In%20Detail.md).  
+ For more information about the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for collections, see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
  The following example does essentially the same thing in code:  
   
@@ -1489,7 +1489,7 @@ Image with an Elliptical Clip Region
   
  Even if an element is focusable and enabled, event handling within a specific tree, (such as for a composite control) might respond to the preview focus events by not allowing focus there, thus this method would return `false`.  
   
- Focus in general is governed by two separate concepts: keyboard focus and logical focus, which are not always identical.  For more information, see [Focus Overview](../Topic/Focus%20Overview.md) or [Input Overview](../Topic/Input%20Overview.md).  
+ Focus in general is governed by two separate concepts: keyboard focus and logical focus, which are not always identical.  For more information, see [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md) or [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  If calling <xref:System.Windows.UIElement.Focus%2A> returns `true`, <xref:System.Windows.UIElement.IsKeyboardFocused%2A> and <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> are also `true`.  
   
@@ -1635,7 +1635,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If no animations are attached to the property, then the <xref:System.Windows.UIElement.GetAnimationBaseValue%2A> return value is always identical to the <xref:System.Windows.DependencyObject.GetValue%2A> return value. If there are animations attached, then all possible animation derived values including the start and stop values are ignored, and the property value is determined based on all other possible inputs. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ If no animations are attached to the property, then the <xref:System.Windows.UIElement.GetAnimationBaseValue%2A> return value is always identical to the <xref:System.Windows.DependencyObject.GetValue%2A> return value. If there are animations attached, then all possible animation derived values including the start and stop values are ignored, and the property value is determined based on all other possible inputs. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
    
   
@@ -2259,7 +2259,7 @@ Image with an Elliptical Clip Region
   
  [!code-xml[CommandingOverviewSnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
- For more information about the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for collections, see [XAML Syntax In Detail](../Topic/XAML%20Syntax%20In%20Detail.md).  
+ For more information about the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for collections, see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
  ]]></format>
         </remarks>
@@ -2536,7 +2536,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Logical focus might differ from keyboard focus if an application has multiple focus divisions, such as between menu contents and the remainder of the application. In this scenario, keyboard focus can only be on one element of the application  UI, however, certain elements in other focus divisions might still retain logical focus. For more information on logical focus, see [Focus Overview](../Topic/Focus%20Overview.md).  
+ Logical focus might differ from keyboard focus if an application has multiple focus divisions, such as between menu contents and the remainder of the application. In this scenario, keyboard focus can only be on one element of the application  UI, however, certain elements in other focus divisions might still retain logical focus. For more information on logical focus, see [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
   
  You do not set focus by setting this property (it is read-only). The typical use for this property is to use it as a dependency property for a <xref:System.Windows.Setter> or <xref:System.Windows.EventTrigger>. To set focus programmatically, call <xref:System.Windows.UIElement.Focus%2A>. Focus can also be set by user action or by control implementations, which possibly include mouse capture behavior.  
   
@@ -2598,7 +2598,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The effective value of this property is influenced by the relative positions of hit testable elements in the logical tree. For instance, if an element is a child element of an element that is not hit test visible, the effective value of the property on the child will remain `false`, even if attempting to set that value locally. For this reason, it is important that you do not set <xref:System.Windows.UIElement.IsHitTestVisible%2A> to `false` on a composited control unless you do not want any input or hit testing on that control. For more information on hit testing, see [Hit Testing in the Visual Layer](../Topic/Hit%20Testing%20in%20the%20Visual%20Layer.md).  
+ The effective value of this property is influenced by the relative positions of hit testable elements in the logical tree. For instance, if an element is a child element of an element that is not hit test visible, the effective value of the property on the child will remain `false`, even if attempting to set that value locally. For this reason, it is important that you do not set <xref:System.Windows.UIElement.IsHitTestVisible%2A> to `false` on a composited control unless you do not want any input or hit testing on that control. For more information on hit testing, see [Hit Testing in the Visual Layer](~/docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md).  
   
 <a name="dependencyPropertyInfo_IsHitTestVisible"></a>   
 ## Dependency Property Information  
@@ -2855,12 +2855,12 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set this property to true if you want the <xref:System.Windows.UIElement> to receive the <xref:System.Windows.UIElement.ManipulationStarting>, <xref:System.Windows.UIElement.ManipulationStarted>, <xref:System.Windows.UIElement.ManipulationDelta>, <xref:System.Windows.UIElement.ManipulationInertiaStarting>, <xref:System.Windows.UIElement.ManipulationBoundaryFeedback>, and <xref:System.Windows.UIElement.ManipulationCompleted> events. For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ Set this property to true if you want the <xref:System.Windows.UIElement> to receive the <xref:System.Windows.UIElement.ManipulationStarting>, <xref:System.Windows.UIElement.ManipulationStarted>, <xref:System.Windows.UIElement.ManipulationDelta>, <xref:System.Windows.UIElement.ManipulationInertiaStarting>, <xref:System.Windows.UIElement.ManipulationBoundaryFeedback>, and <xref:System.Windows.UIElement.ManipulationCompleted> events. For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
    
   
 ## Examples  
- The following example creates an application that has a red Rectangle.  The <xref:System.Windows.UIElement.IsManipulationEnabled%2A> property of the Rectangle is set to true and the application's window subscribes to the <xref:System.Windows.UIElement.ManipulationStarting>, <xref:System.Windows.UIElement.ManipulationDelta>, and <xref:System.Windows.UIElement.ManipulationInertiaStarting> events. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example creates an application that has a red Rectangle.  The <xref:System.Windows.UIElement.IsManipulationEnabled%2A> property of the Rectangle is set to true and the application's window subscribes to the <xref:System.Windows.UIElement.ManipulationStarting>, <xref:System.Windows.UIElement.ManipulationDelta>, and <xref:System.Windows.UIElement.ManipulationInertiaStarting> events. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-xml[BasicManipulation#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml#ui)]  
   
@@ -3234,7 +3234,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusCaptured"></a>   
 ## Dependency Property Information  
@@ -3309,7 +3309,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusCaptureWithin"></a>   
 ## Dependency Property Information  
@@ -3390,7 +3390,7 @@ Image with an Elliptical Clip Region
   
  If this element has stylus capture and this property is `true` at the time of capture, this property remains `true` until stylus capture is lost and the stylus is not over its bounds.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusDirectlyOver"></a>   
 ## Dependency Property Information  
@@ -3467,7 +3467,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  If this element has stylus capture, this property will continue to return `true` until stylus capture is lost and the pointer is out of its bounds.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_IsStylusOver"></a>   
 ## Dependency Property Information  
@@ -4117,7 +4117,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  You can use this event to get information about the manipulation when it completes.  For example, you can use the <xref:System.Windows.Input.ManipulationCompletedEventArgs.TotalManipulation%2A?displayProperty=fullName> property to determine the total amount the position of the manipulation changed.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
 <a name="routedEventInfo_ManipulationCompleted"></a>   
 ## Routed Event Information  
@@ -4171,7 +4171,7 @@ Image with an Elliptical Clip Region
   
  The element on with <xref:System.Windows.UIElement.ManipulationDelta> event occurs is not affected in any way when the event occurs.  You must provide the logic to the element that is to be manipulated.  The <xref:System.Windows.Input.ManipulationDeltaEventArgs.CumulativeManipulation%2A> and <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> properties, which are of type <xref:System.Windows.Input.ManipulationDelta>, contain data about how the position of the manipulations change and interpreted as moving, resizing, or rotating an object.  You apply that information to the element that is to be manipulated.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
 <a name="routedEventInfo_ManipulationDelta"></a>   
 ## Routed Event Information  
@@ -4185,7 +4185,7 @@ Image with an Elliptical Clip Region
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>.  The example also checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window.  If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>.  The example also checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window.  If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -4233,7 +4233,7 @@ Image with an Elliptical Clip Region
   
  You can use this event to specify the behavior of the inertia.  For example, you can set the initial velocity that is used when inertia begins.  You can also specify the amount of inertia by setting the desired deceleration or by setting the desired placement.  You can set these values for each type of manipulation (translation, expansion, or rotation) independently.  For more information, see <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs>.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
 <a name="routedEventInfo_ManipulationInertiaStarting"></a>   
 ## Routed Event Information  
@@ -4247,7 +4247,7 @@ Image with an Elliptical Clip Region
    
   
 ## Examples  
- The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
  [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
@@ -4299,7 +4299,7 @@ Image with an Elliptical Clip Region
   
 -   Cancel the manipulation by calling the <xref:System.Windows.Input.ManipulationStartedEventArgs.Complete%2A> method.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
 <a name="routedEventInfo_ManipulationStarted"></a>   
 ## Routed Event Information  
@@ -4361,7 +4361,7 @@ Image with an Elliptical Clip Region
   
 -   Cancel the manipulation by calling the <xref:System.Windows.Input.ManipulationStartingEventArgs.Cancel%2A?displayProperty=fullName> method.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
 <a name="routedEventInfo_ManipulationStarting"></a>   
 ## Routed Event Information  
@@ -4375,7 +4375,7 @@ Image with an Elliptical Clip Region
    
   
 ## Examples  
- The following example shows the event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event and sets the <xref:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer%2A> to the parent element that receives the manipulation events so that the coordinates of the manipulation are relative to the parent element.  This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows the event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event and sets the <xref:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer%2A> to the parent element that receives the manipulation events so that the coordinates of the manipulation are relative to the parent element.  This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationstarting)]
  [!code-vb[BasicManipulation#ManipulationStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationstarting)]  
@@ -4932,7 +4932,7 @@ Image with an Elliptical Clip Region
   
  Conceptually, think of this event (and other mouse-button events on <xref:System.Windows.UIElement>) to be a mouse "service" (with the service definition provided by the <xref:System.Windows.Input.Mouse> class). The event adds the convenience of not needing to check the mouse button states (left-right, up-down) of the original mouse events in the event data. For more advanced scenarios, such as checking for states of non-standard buttons, you might need to use the [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] on the <xref:System.Windows.Input.Mouse> class rather than those on <xref:System.Windows.UIElement>.  
   
- Right button mouse events frequently have native handling in application scenarios. For instance, a right mouse button down might display a context menu. See [ContextMenu Overview](../Topic/ContextMenu%20Overview.md).  
+ Right button mouse events frequently have native handling in application scenarios. For instance, a right mouse button down might display a context menu. See [ContextMenu Overview](~/docs/framework/wpf/controls/contextmenu-overview.md).  
   
 <a name="routedEventInfo_MouseRightButtonDown"></a>   
 ## Routed Event Information  
@@ -8300,7 +8300,7 @@ Image with an Elliptical Clip Region
   
  The most typical <xref:System.Windows.Media.Brush> for this purpose is an <xref:System.Windows.Media.ImageBrush>, which can be used for a variety of photo masking techniques such as a vignette. But any defined <xref:System.Windows.Media.Brush> (such as <xref:System.Windows.Media.LinearGradientBrush>) can be used.  
   
- In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], this property value can use an inline syntax that is specific to each implementation of the <xref:System.Windows.Media.Brush> abstract class. For more information, see [Painting with Solid Colors and Gradients Overview](../Topic/Painting%20with%20Solid%20Colors%20and%20Gradients%20Overview.md).  
+ In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], this property value can use an inline syntax that is specific to each implementation of the <xref:System.Windows.Media.Brush> abstract class. For more information, see [Painting with Solid Colors and Gradients Overview](~/docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md).  
   
 <a name="dependencyPropertyInfo_OpacityMask"></a>   
 ## Dependency Property Information  
@@ -9610,7 +9610,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusButtonDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Touch Input Support in Windows Vista](http://msdn.microsoft.com/en-us/63f1d71f-03d8-4d83-a174-e3dc7c57bad0) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusButtonDown"></a>   
 ## Routed Event Information  
@@ -9675,7 +9675,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusButtonUp> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusButtonUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusButtonUp"></a>   
 ## Routed Event Information  
@@ -9740,7 +9740,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusDown"></a>   
 ## Routed Event Information  
@@ -9805,7 +9805,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusInAirMove> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInAirMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusInAirMove"></a>   
 ## Routed Event Information  
@@ -9870,7 +9870,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusInRange> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusInRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusInRange"></a>   
 ## Routed Event Information  
@@ -9935,7 +9935,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusMove> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusMove"></a>   
 ## Routed Event Information  
@@ -10000,7 +10000,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusOutOfRange> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusOutOfRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusOutOfRange"></a>   
 ## Routed Event Information  
@@ -10067,7 +10067,7 @@ Image with an Elliptical Clip Region
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusSystemGesture> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusSystemGesture?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusSystemGesture"></a>   
 ## Routed Event Information  
@@ -10132,7 +10132,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.PreviewStylusDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.PreviewStylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.PreviewStylusUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_PreviewStylusUp"></a>   
 ## Routed Event Information  
@@ -10937,7 +10937,7 @@ Image with an Elliptical Clip Region
   
  This `ShouldSerialize` method is provided because the <xref:System.Windows.UIElement.CommandBindings%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer or developing your own control incorporating a <xref:System.Windows.UIElement>.  
   
- For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](../Topic/Defining%20Default%20Values%20with%20the%20ShouldSerialize%20and%20Reset%20Methods.md).  
+ For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](~/docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md).  
   
  ]]></format>
         </remarks>
@@ -10973,7 +10973,7 @@ Image with an Elliptical Clip Region
   
  This `ShouldSerialize` method is provided because the <xref:System.Windows.UIElement.InputBindings%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer or developing your own control incorporating a <xref:System.Windows.UIElement>.  
   
- For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](../Topic/Defining%20Default%20Values%20with%20the%20ShouldSerialize%20and%20Reset%20Methods.md).  
+ For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](~/docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md).  
   
  ]]></format>
         </remarks>
@@ -11052,7 +11052,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusButtonDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusButtonDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusButtonDown"></a>   
 ## Routed Event Information  
@@ -11117,7 +11117,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusButtonUp> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusButtonUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusButtonUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusButtonUp"></a>   
 ## Routed Event Information  
@@ -11182,7 +11182,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusDown> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusDown> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusDown?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusDown"></a>   
 ## Routed Event Information  
@@ -11251,7 +11251,7 @@ Image with an Elliptical Clip Region
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusEnter> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusEnter> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusEnter?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusEnter"></a>   
 ## Routed Event Information  
@@ -11314,7 +11314,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusInAirMove> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusInAirMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInAirMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusInAirMove"></a>   
 ## Routed Event Information  
@@ -11379,7 +11379,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusInRange> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusInRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusInRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusInRange"></a>   
 ## Routed Event Information  
@@ -11448,7 +11448,7 @@ Image with an Elliptical Clip Region
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusLeave> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusLeave> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusLeave?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusLeave"></a>   
 ## Routed Event Information  
@@ -11511,7 +11511,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusMove> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusMove> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusMove?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusMove"></a>   
 ## Routed Event Information  
@@ -11576,7 +11576,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusOutOfRange> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusOutOfRange> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusOutOfRange?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusOutOfRange"></a>   
 ## Routed Event Information  
@@ -11642,7 +11642,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  An example of a control that populates this collection is <xref:System.Windows.Controls.InkCanvas>. <xref:System.Windows.Controls.InkCanvas> adds the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> as a collection item, which enables the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to interact with stylus input and produce the unique rendering in response to stylus driven events.  
   
- For information on creating custom plug-ins that can receive and interpret stylus input, see [Intercepting Input from the Stylus](../Topic/Intercepting%20Input%20from%20the%20Stylus.md).  
+ For information on creating custom plug-ins that can receive and interpret stylus input, see [Intercepting Input from the Stylus](~/docs/framework/wpf/advanced/intercepting-input-from-the-stylus.md).  
   
    
   
@@ -11678,7 +11678,7 @@ Image with an Elliptical Clip Region
   
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusSystemGesture> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusSystemGesture> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusSystemGesture?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusSystemGesture"></a>   
 ## Routed Event Information  
@@ -11743,7 +11743,7 @@ Image with an Elliptical Clip Region
 ## Remarks  
  This event creates an alias for the <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=fullName> attached event for this class, so that <xref:System.Windows.UIElement.StylusUp> is part of the class members list when <xref:System.Windows.UIElement> is inherited as a base element. Event handlers that are attached to the <xref:System.Windows.UIElement.StylusUp> event are attached to the underlying <xref:System.Windows.Input.Stylus.StylusUp?displayProperty=fullName> attached event and receive the same event data instance.  
   
- Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](../Topic/Input%20Overview.md).  
+ Touch, mouse, and stylus input exist in a particular relationship. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="routedEventInfo_StylusUp"></a>   
 ## Routed Event Information  
@@ -12251,7 +12251,7 @@ Image with an Elliptical Clip Region
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Used by designers to get the `x:Uid` value (see [WPF Globalization and Localization Overview](../Topic/WPF%20Globalization%20and%20Localization%20Overview.md) for more information).  
+ Used by designers to get the `x:Uid` value (see [WPF Globalization and Localization Overview](~/docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md) for more information).  
   
 <a name="dependencyPropertyInfo_WindowWindowStyle"></a>   
 ## Dependency Property Information  

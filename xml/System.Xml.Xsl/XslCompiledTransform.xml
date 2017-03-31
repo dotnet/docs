@@ -25,7 +25,7 @@
   
  Support for the XSLT `document()` function and embedded script blocks are disabled by default. These features can be enabled by creating an <xref:System.Xml.Xsl.XsltSettings> object and passing it to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
- For more information, see [Using the XslCompiledTransform Class](../Topic/Using%20the%20XslCompiledTransform%20Class.md) and [Migrating From the XslTransform Class](../Topic/Migrating%20From%20the%20XslTransform%20Class.md).  
+ For more information, see [Using the XslCompiledTransform Class](~/docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](~/docs/standard/data/xml/migrating-from-the-xsltransform-class.md).  
   
 ## Security Considerations  
  When creating an application that uses the <xref:System.Xml.Xsl.XslCompiledTransform> class, you should be aware of the following items and their implications:  
@@ -271,7 +271,7 @@
         <param name="compiledStylesheet">The name of the class that contains the compiled style sheet.  
   
  This is usually the name of the style sheet. Unless otherwise specified, the xsltc.exe tool uses the name of the style sheet for the class and assembly names.</param>
-        <summary>Loads the compiled style sheet that was created using the [XSLT Compiler (xsltc.exe)](../Topic/XSLT%20Compiler%20\(xsltc.exe\).md).</summary>
+        <summary>Loads the compiled style sheet that was created using the [XSLT Compiler (xsltc.exe)](~/docs/standard/data/xml/xslt-compiler-xsltc-exe.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -449,7 +449,7 @@ xslt.Load(typeof(bookOrders));
  [!code-vb[XsltDynamicMethodLoad#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XsltDynamicMethodLoad/VB/XsltDynamicMethodLoad.vb#1)]  
   
 > [!NOTE]
->  The "Transform" assembly used in this example was built using the xsltc.exe utility. For detailed information on using this command line tool, see [How to: Perform an XSLT Transformation by Using an Assembly](../Topic/How%20to:%20Perform%20an%20XSLT%20Transformation%20by%20Using%20an%20Assembly.md).  
+>  The "Transform" assembly used in this example was built using the xsltc.exe utility. For detailed information on using this command line tool, see [How to: Perform an XSLT Transformation by Using an Assembly](~/docs/standard/data/xml/how-to-perform-an-xslt-transformation-by-using-an-assembly.md).  
   
  The code example above uses the following transformation:  
   
@@ -931,7 +931,7 @@ xslt.Load(typeof(bookOrders));
   
 -   The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
   
- Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](../Topic/How%20to:%20Transform%20a%20Node%20Fragment.md).  
+ Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](~/docs/standard/data/xml/how-to-transform-a-node-fragment.md).  
   
    
   
@@ -1285,7 +1285,7 @@ xslt.Load(typeof(bookOrders));
   
 -   The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
   
- Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](../Topic/How%20to:%20Transform%20a%20Node%20Fragment.md).  
+ Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](~/docs/standard/data/xml/how-to-transform-a-node-fragment.md).  
   
    
   
@@ -1342,7 +1342,7 @@ xslt.Load(typeof(bookOrders));
   
 -   The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
   
- Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](../Topic/How%20to:%20Transform%20a%20Node%20Fragment.md).  
+ Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](~/docs/standard/data/xml/how-to-transform-a-node-fragment.md).  
   
  ]]></format>
         </remarks>
@@ -1393,7 +1393,7 @@ xslt.Load(typeof(bookOrders));
   
 -   The <xref:System.Xml.XPath.XPathDocument> class is a read-only data store based on the XPath data model. <xref:System.Xml.XPath.XPathDocument> is the recommended class for XSLT processing. It provides faster performance when compared to the <xref:System.Xml.XmlNode> class.  
   
- Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](../Topic/How%20to:%20Transform%20a%20Node%20Fragment.md).  
+ Transformations apply to the document as a whole. In other words, if you pass in a node other than the document root node, this does not prevent the transformation process from accessing all nodes in the loaded document. To transform a node fragment, you must create an object containing just the node fragment, and pass that object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. For more information, see [How to: Transform a Node Fragment](~/docs/standard/data/xml/how-to-transform-a-node-fragment.md).  
   
  ]]></format>
         </remarks>

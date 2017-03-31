@@ -280,7 +280,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Data.BindingBase.StringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ <xref:System.Windows.Data.BindingBase.StringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  If you set the <xref:System.Windows.Data.Binding.Converter%2A> and <xref:System.Windows.Data.BindingBase.StringFormat%2A> properties, the converter is applied to the data value first, and then the <xref:System.Windows.Data.BindingBase.StringFormat%2A> is applied.  
   

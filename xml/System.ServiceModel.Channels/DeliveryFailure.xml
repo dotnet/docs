@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can get the <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> property to determine why a message failed delivery and was sent to the dead-letter queue. For additional information about message processing in a dead-letter queue, see [Using Dead-Letter Queues to Handle Message Transfer Failures](../Topic/Using%20Dead-Letter%20Queues%20to%20Handle%20Message%20Transfer%20Failures.md).  
+ You can get the <xref:System.ServiceModel.Channels.MsmqMessageProperty.DeliveryFailure%2A> property to determine why a message failed delivery and was sent to the dead-letter queue. For additional information about message processing in a dead-letter queue, see [Using Dead-Letter Queues to Handle Message Transfer Failures](~/docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md).  
   
    
   

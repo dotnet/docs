@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) applies this attribute to methods.  
+ The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) applies this attribute to methods.  
   
  This attribute is applied when a type library is imported and should never be changed. It is only applied when the method's <xref:System.Runtime.InteropServices.FUNCFLAGS> evaluate to non zero. The attribute is designed to be used by tools that need to know how the original <xref:System.Runtime.InteropServices.FUNCFLAGS> were set. The common language runtime does not use this attribute.  
   

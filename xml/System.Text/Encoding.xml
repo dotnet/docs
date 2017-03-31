@@ -41,7 +41,7 @@
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/text/encoding.cs#3b6090c501893c25). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md).  
+ Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. In contrast, decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters. For information about the Unicode Transformation Formats (UTFs) and other encodings supported by <xref:System.Text.Encoding>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
  Note that <xref:System.Text.Encoding> is intended to operate on Unicode characters instead of arbitrary binary data, such as byte arrays. If you must encode arbitrary binary data into text, you should use a protocol such as uuencode, which is implemented by methods such as <xref:System.Convert.ToBase64CharArray%2A?displayProperty=fullName>.  
   
@@ -664,12 +664,12 @@
  -or-  
   
  <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
  **srcEncoding.** <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -726,12 +726,12 @@
  <paramref name="bytes" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in the byte array.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
  **srcEncoding.** <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1025,7 +1025,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="chars" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1094,7 +1094,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1168,7 +1168,7 @@
           <paramref name="chars" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1248,7 +1248,7 @@
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="chars" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1317,7 +1317,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="chars" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1386,7 +1386,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1465,7 +1465,7 @@
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="chars" />.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1551,7 +1551,7 @@
           <paramref name="charCount" /> or <paramref name="byteCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="byteCount" /> is less than the resulting number of bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1647,7 +1647,7 @@
  <paramref name="byteIndex" /> is not a valid index in <paramref name="bytes" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1742,7 +1742,7 @@
  <paramref name="byteIndex" /> is not a valid index in <paramref name="bytes" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1811,7 +1811,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1885,7 +1885,7 @@
           <paramref name="bytes" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -1971,7 +1971,7 @@
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2044,7 +2044,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2127,7 +2127,7 @@
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2217,7 +2217,7 @@
           <paramref name="byteCount" /> or <paramref name="charCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="charCount" /> is less than the resulting number of characters.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2323,7 +2323,7 @@
  <paramref name="charIndex" /> is not a valid index in <paramref name="chars" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="chars" /> does not have enough capacity from <paramref name="charIndex" /> to the end of the array to accommodate the resulting characters.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2832,7 +2832,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charCount" /> is less than zero.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -2903,7 +2903,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="byteCount" /> is less than zero.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3021,7 +3021,7 @@
   
  See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> reference topic for a discussion of decoding techniques and considerations.  
   
- Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) topic.  
+ Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) topic.  
   
    
   
@@ -3049,7 +3049,7 @@ The goal is to save this file, then open and decode it as a binary stream.
         <exception cref="T:System.ArgumentException">The byte array contains invalid Unicode code points.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="bytes" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3107,7 +3107,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  See the Remarks section of the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> reference topic for a discussion of decoding techniques and considerations.  
   
- Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) topic.  
+ Note that the precise behavior of the <xref:System.Text.Encoding.GetString%2A> method for a particular <xref:System.Text.Encoding> implementation depends on the fallback strategy defined for that <xref:System.Text.Encoding> object. For more information, see the "Choosing a Fallback Strategy" section of the [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) topic.  
   
  ]]></format>
         </remarks>
@@ -3115,7 +3115,7 @@ The goal is to save this file, then open and decode it as a binary stream.
           <paramref name="bytes" /> is a null pointer.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="byteCount" /> is less than zero.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A   fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for a complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A   fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for a complete explanation)  
   
  -and-  
   
@@ -3195,7 +3195,7 @@ The goal is to save this file, then open and decode it as a binary stream.
  -or-  
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
   
  -and-  
   
@@ -3626,7 +3626,7 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md).  
+ For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
  The <xref:System.Text.UnicodeEncoding> object that is returned by this property may not have the appropriate behavior for your app. It uses replacement fallback to replace each string that it cannot encode and each byte that it cannot decode with a question mark ("?") character. Instead, you can call the <xref:System.Text.UnicodeEncoding.%23ctor%28System.Boolean%2CSystem.Boolean%2CSystem.Boolean%29?displayProperty=fullName> constructor to instantiate a little endian <xref:System.Text.UnicodeEncoding> object whose fallback is either an <xref:System.Text.EncoderFallbackException> or a <xref:System.Text.DecoderFallbackException>, as the following example illustrates.  
   
@@ -3681,7 +3681,7 @@ The goal is to save this file, then open and decode it as a binary stream.
   
  For a discussion of little endian byte order, see the <xref:System.Text.Encoding> class topic.  
   
- For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md).  
+ For information about the encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
    
   
@@ -3768,7 +3768,7 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns a <xref:System.Text.UTF8Encoding> object that encodes Unicode (UTF-16-encoded) characters into a sequence of one to four bytes per character, and that decodes a UTF-8-encoded byte array to Unicode (UTF-16-encoded) characters. For information about the character encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](../Topic/Character%20Encoding%20in%20the%20.NET%20Framework.md).  
+ This property returns a <xref:System.Text.UTF8Encoding> object that encodes Unicode (UTF-16-encoded) characters into a sequence of one to four bytes per character, and that decodes a UTF-8-encoded byte array to Unicode (UTF-16-encoded) characters. For information about the character encodings supported by the .NET Framework and a discussion of which Unicode encoding to use, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
   
  The <xref:System.Text.UTF8Encoding> object that is returned by this property might not have the appropriate behavior for your app.  
   

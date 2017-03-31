@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Transports that support process activation using the Windows Process Activation Service (WAS) use WAS site bindings to store information about the network addresses on which the transport is listening. The transport implementation is responsible for reading this information from the ApplicationHost.config file and for constructing a set of base address URIs that can then be passed to the constructor of <xref:System.ServiceModel.ServiceHostBase>. The process by which these base addresses are constructed is transport protocol specific. Implementations of a transport that support WAS activation must provide an implementation that derives from <xref:System.ServiceModel.Activation.HostedTransportConfiguration> to encapsulate this logic. For more information about the use of this class, see the [UDP Activation](../Topic/UDP%20Activation.md) sample, which demonstrates how to create a custom user datagram protocol (UDP) to be activated by WAS.  
+ Transports that support process activation using the Windows Process Activation Service (WAS) use WAS site bindings to store information about the network addresses on which the transport is listening. The transport implementation is responsible for reading this information from the ApplicationHost.config file and for constructing a set of base address URIs that can then be passed to the constructor of <xref:System.ServiceModel.ServiceHostBase>. The process by which these base addresses are constructed is transport protocol specific. Implementations of a transport that support WAS activation must provide an implementation that derives from <xref:System.ServiceModel.Activation.HostedTransportConfiguration> to encapsulate this logic. For more information about the use of this class, see the [UDP Activation](~/docs/framework/wcf/samples/udp-activation.md) sample, which demonstrates how to create a custom user datagram protocol (UDP) to be activated by WAS.  
   
  ]]></format>
     </remarks>
@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about the use of this class, see the [UDP Activation](../Topic/UDP%20Activation.md) sample, which demonstrates how to create a custom user datagram protocol (UDP) to be activated by WAS.  
+ For more information about the use of this class, see the [UDP Activation](~/docs/framework/wcf/samples/udp-activation.md) sample, which demonstrates how to create a custom user datagram protocol (UDP) to be activated by WAS.  
   
  ]]></format>
         </remarks>

@@ -42,12 +42,12 @@
   
  To host a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element in a Windows Form, you must assign the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element to the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property.  
   
- Use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to assign custom mappings between an <xref:System.Windows.Forms.Integration.ElementHost> control and its hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ Use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to assign custom mappings between an <xref:System.Windows.Forms.Integration.ElementHost> control and its hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost> control to host a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](../Topic/Walkthrough:%20Hosting%20a%203-D%20WPF%20Composite%20Control%20in%20Windows%20Forms.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost> control to host a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](~/docs/framework/wpf/advanced/walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).  
   
  [!code-csharp[HostingWpfUserControlInWf#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/WpfUserControlHost/Form1.cs#11)]
  [!code-vb[HostingWpfUserControlInWf#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWpfUserControlInWf/VisualBasic/WpfUserControlHost/Form1.vb#11)]  
@@ -215,7 +215,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property to assign a hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](../Topic/Walkthrough:%20Hosting%20a%203-D%20WPF%20Composite%20Control%20in%20Windows%20Forms.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property to assign a hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](~/docs/framework/wpf/advanced/walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).  
   
  [!code-csharp[HostingWpfUserControlInWf#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/WpfUserControlHost/Form1.cs#11)]
  [!code-vb[HostingWpfUserControlInWf#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HostingWpfUserControlInWf/VisualBasic/WpfUserControlHost/Form1.vb#11)]  
@@ -457,9 +457,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1929,12 +1929,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md).  
+ The [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to translate the <xref:System.Windows.FrameworkElement.Margin%2A> property for a hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](../Topic/Walkthrough:%20Mapping%20Properties%20Using%20the%20ElementHost%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to translate the <xref:System.Windows.FrameworkElement.Margin%2A> property for a hosted [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element. For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](~/docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-elementhost-control.md).  
   
  [!code-csharp[PropertyMappingWithElementHost#12](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithElementHost/CSharp/PropertyMappingWithElementHost/Form1.cs#12)]
  [!code-vb[PropertyMappingWithElementHost#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertyMappingWithElementHost/VisualBasic/PropertyMappingWithElementHost/Form1.vb#12)]  

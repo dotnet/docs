@@ -24,9 +24,9 @@
 ## Remarks  
  The <xref:System.ServiceModel.MessageHeaderAttribute> attribute allows you to map fields and properties of a type marked with the <xref:System.ServiceModel.MessageContractAttribute> attribute to SOAP message headers. The field or property can be of a simple type or a composite type that can be serialized.  
   
- For information on controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](../Topic/Specifying%20Data%20Transfer%20in%20Service%20Contracts.md), and [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
+ For information on controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
- For more information about creating message contracts, see [Using Message Contracts](../Topic/Using%20Message%20Contracts.md).  
+ For more information about creating message contracts, see [Using Message Contracts](~/docs/framework/wcf/feature-details/using-message-contracts.md).  
   
  The SOAP standard defines the following attributes that can exist on a header:  
   

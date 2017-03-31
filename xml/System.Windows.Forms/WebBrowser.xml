@@ -41,7 +41,7 @@
 > [!IMPORTANT]
 >  The <xref:System.Windows.Forms.WebBrowser> control is resource-intensive. Be sure to call the <xref:System.ComponentModel.Component.Dispose> method when you are finished using the control to ensure that all resources are released in a timely fashion. You must call the <xref:System.ComponentModel.Component.Dispose> method on the same thread that attached the events, which should always be the message or user-interface (UI) thread.  
   
- The <xref:System.Windows.Forms.WebBrowser> control cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+ The <xref:System.Windows.Forms.WebBrowser> control cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
  The <xref:System.Windows.Forms.WebBrowser> control has several properties, methods, and events related to navigation. The following members let you navigate the control to a specific URL, move backward and forward through the navigation history list, and load the home page and search page of the current user:  
   
@@ -68,7 +68,7 @@
  The <xref:System.Windows.Forms.WebBrowser> control is a managed wrapper for the ActiveX [WebBrowser control](http://go.microsoft.com/fwlink/?LinkId=198812), and uses whichever version of the control is installed on the user's computer.  
   
 > [!NOTE]
->  This class makes security demands at the class level. A <xref:System.Security.SecurityException> is thrown when a derived class or any caller in the call stack does not have full trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+>  This class makes security demands at the class level. A <xref:System.Security.SecurityException> is thrown when a derived class or any caller in the call stack does not have full trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.WebBrowser> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
@@ -78,7 +78,7 @@
 ## Examples  
  The following code example demonstrates how to implement an address bar for use with the <xref:System.Windows.Forms.WebBrowser> control. This example requires that you have a form that contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`, a <xref:System.Windows.Forms.TextBox> control called `TextBoxAddress`, and a <xref:System.Windows.Forms.Button> control called `ButtonGo`. When you type a URL into the text box and press ENTER or click the **Go** button, the <xref:System.Windows.Forms.WebBrowser> control navigates to the URL specified. When you navigate by clicking a hyperlink, the text box automatically updates to display the current URL.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#6)]
  [!code-csharp[System.Windows.Forms.WebBrowser#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#6)]
@@ -262,7 +262,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.CanGoBack%2A> property to implement a **Back** button for the <xref:System.Windows.Forms.WebBrowser> control that is similar to the **Back** button in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `backButton`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#7)]
  [!code-csharp[System.Windows.Forms.WebBrowser#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#7)]
@@ -305,7 +305,7 @@
 ## Examples  
  The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.CanGoBackChanged> event to implement a **Back** button for the <xref:System.Windows.Forms.WebBrowser> control that is similar to the **Back** button in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `backButton`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#7)]
  [!code-csharp[System.Windows.Forms.WebBrowser#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#7)]
@@ -355,7 +355,7 @@
 ## Examples  
  The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.CanGoForward%2A> event to implement a **Forward** button for the <xref:System.Windows.Forms.WebBrowser> control that is similar to the **Forward** button in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonForward`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#8)]
  [!code-csharp[System.Windows.Forms.WebBrowser#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#8)]
@@ -398,7 +398,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.GoForward%2A> method to implement a **Forward** button for the <xref:System.Windows.Forms.WebBrowser> control that is similar to the **Forward** button in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonForward`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#8)]
  [!code-csharp[System.Windows.Forms.WebBrowser#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#8)]
@@ -804,7 +804,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.DocumentTitle%2A> property to update the form title bar with the title of the current document. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#15](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#15)]
  [!code-csharp[System.Windows.Forms.WebBrowser#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#15)]
@@ -849,7 +849,7 @@
 ## Examples  
  The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.DocumentTitleChanged> event to update the form title bar with the title of the current document. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#15](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#15)]
  [!code-csharp[System.Windows.Forms.WebBrowser#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#15)]
@@ -1062,7 +1062,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.GoBack%2A> method to implement a **Back** button for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `backButton`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#7)]
  [!code-csharp[System.Windows.Forms.WebBrowser#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#7)]
@@ -1103,7 +1103,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.GoForward%2A> method to implement a **Forward** button for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonForward`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#8)]
  [!code-csharp[System.Windows.Forms.WebBrowser#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#8)]
@@ -1140,7 +1140,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.GoHome%2A> method to implement a **Home** button for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonHome`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#11)]
  [!code-csharp[System.Windows.Forms.WebBrowser#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#11)]
@@ -1181,7 +1181,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.GoSearch%2A> method to implement a **Search** button for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonSearch`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#12](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#12)]
  [!code-csharp[System.Windows.Forms.WebBrowser#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#12)]
@@ -1378,7 +1378,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.Navigate%2A> method to implement an address bar for the <xref:System.Windows.Forms.WebBrowser> control. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`, a <xref:System.Windows.Forms.TextBox> control called `TextBoxAddress`, and a <xref:System.Windows.Forms.Button> control called `ButtonGo`. When you type a URL into the text box and press ENTER or click the **Go** button, the <xref:System.Windows.Forms.WebBrowser> control navigates to the URL specified. When you navigate by clicking a hyperlink, the text box automatically updates to display the current URL.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#6)]
  [!code-csharp[System.Windows.Forms.WebBrowser#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#6)]
@@ -1670,7 +1670,7 @@
 ## Examples  
  The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigated> event to implement an address bar for the <xref:System.Windows.Forms.WebBrowser> control. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`, a <xref:System.Windows.Forms.TextBox> control called `TextBoxAddress`, and a <xref:System.Windows.Forms.Button> control called `ButtonGo`. When you type a URL into the text box and press ENTER or click the **Go** button, the <xref:System.Windows.Forms.WebBrowser> control navigates to the URL specified. When you navigate by clicking a hyperlink, the text box automatically updates to display the current URL.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#6)]
  [!code-csharp[System.Windows.Forms.WebBrowser#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#6)]
@@ -1730,7 +1730,7 @@
   
  This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and that your form class has a <xref:System.Runtime.InteropServices.ComVisibleAttribute> making it accessible to COM.  
   
- For a complete code example that you can paste the following code into, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For a complete code example that you can paste the following code into, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-csharp[WebBrowserMisc#30](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#30)]
  [!code-vb[WebBrowserMisc#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#30)]  
@@ -2414,7 +2414,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.Refresh%2A> method to implement a **Refresh** button for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonRefresh`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#10)]
  [!code-csharp[System.Windows.Forms.WebBrowser#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#10)]
@@ -2632,7 +2632,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.ShowPrintPreviewDialog%2A> method to implement a **Print Preview** menu option similar to the one on the Internet Explorer **File** menu. This example requires that your form contains a menu with a menu item called `MenuItemFilePrintPreview`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#4)]
  [!code-csharp[System.Windows.Forms.WebBrowser#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#4)]
@@ -2701,7 +2701,7 @@
  You can use this method to implement a **Save As** menu item similar to the one on the Internet Explorer **File** menu. The dialog box that appears when this method is called depends on the document type currently loaded.  
   
 > [!NOTE]
->  This method allows users to save only the contents of the document as it was originally loaded. Any modifications made to the document at run time through the <xref:System.Windows.Forms.WebBrowser.Document%2A> property are not persisted. For information on retrieving the run-time modifications, see [How to: Access the HTML Source in the Managed HTML Document Object Model](../Topic/How%20to:%20Access%20the%20HTML%20Source%20in%20the%20Managed%20HTML%20Document%20Object%20Model.md).  
+>  This method allows users to save only the contents of the document as it was originally loaded. Any modifications made to the document at run time through the <xref:System.Windows.Forms.WebBrowser.Document%2A> property are not persisted. For information on retrieving the run-time modifications, see [How to: Access the HTML Source in the Managed HTML Document Object Model](~/docs/framework/winforms/controls/how-to-access-the-html-source-in-the-managed-html-document-object-model.md).  
   
    
   
@@ -2752,7 +2752,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.StatusText%2A> property to implement a status bar for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.StatusBar> control called `StatusBar1`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#14](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#14)]
  [!code-csharp[System.Windows.Forms.WebBrowser#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#14)]
@@ -2797,7 +2797,7 @@
 ## Examples  
  The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.StatusTextChanged> event to implement a status bar for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.StatusBar> control called `StatusBar1`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#14](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#14)]
  [!code-csharp[System.Windows.Forms.WebBrowser#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#14)]
@@ -2834,7 +2834,7 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Windows.Forms.WebBrowser.Stop%2A> method to implement a **Stop** button for the <xref:System.Windows.Forms.WebBrowser> control similar to the one in Internet Explorer. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1` and a <xref:System.Windows.Forms.Button> control called `ButtonStop`.  
   
- For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](../Topic/How%20to:%20Add%20Web%20Browser%20Capabilities%20to%20a%20Windows%20Forms%20Application.md).  
+ For the complete code example, see [How to: Add Web Browser Capabilities to a Windows Forms Application](~/docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md).  
   
  [!code-cpp[System.Windows.Forms.WebBrowser#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CPP/form1.cpp#9)]
  [!code-csharp[System.Windows.Forms.WebBrowser#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser/CS/form1.cs#9)]

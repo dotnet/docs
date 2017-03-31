@@ -362,7 +362,7 @@ public void CreateOdbcParameter()
 ## Remarks  
  The <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> and <xref:System.Data.Odbc.OdbcParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.Odbc.OdbcParameter.DbType%2A> changes the <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> to a supporting <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A>.  
   
- For a list of the supported data types, see the appropriate <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
 > [!NOTE]
 >  <xref:System.Data.DbType> is not supported by the Microsoft .NET Framework Data Provider for ODBC.  
@@ -521,7 +521,7 @@ public void CreateOdbcParameter()
 ## Remarks  
  The <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> and <xref:System.Data.Odbc.OdbcParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.Odbc.OdbcParameter.DbType%2A> changes the <xref:System.Data.Odbc.OdbcParameter.OdbcType%2A> to a supporting <xref:System.Data.Odbc.OdbcType>.  
   
- For a list of the supported data types, see the appropriate <xref:System.Data.Odbc.OdbcType> member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate <xref:System.Data.Odbc.OdbcType> member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
  ]]></format>
         </remarks>
@@ -877,7 +877,7 @@ public void CreateOdbcParameter()
 ## Remarks  
  When <xref:System.Data.Odbc.OdbcParameter.SourceColumn%2A> is set to anything other than an empty string, the value of the parameter is retrieved from the column with the `SourceColumn` name. If <xref:System.Data.Odbc.OdbcParameter.Direction%2A> is set to `Input`, the value is taken from the <xref:System.Data.DataSet>. If `Direction` is set to `Output`, the value is taken from the data source. A `Direction` of `InputOutput` is a combination of both.  
   
- For more information about how to use the <xref:System.Data.Odbc.OdbcParameter.SourceColumn%2A> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md) and [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
+ For more information about how to use the <xref:System.Data.Odbc.OdbcParameter.SourceColumn%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md) and [Updating Data Sources with DataAdapters](~/docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  
   
    
   

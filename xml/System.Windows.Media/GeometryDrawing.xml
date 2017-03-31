@@ -19,7 +19,7 @@
  Use the <xref:System.Windows.Media.GeometryDrawing> class with a <xref:System.Windows.Media.DrawingBrush> to paint an object with a shape, with an <xref:System.Windows.Media.DrawingImage> to create clip art, or with a <xref:System.Windows.Media.DrawingVisual>.  
   
 ## Freezable Features  
- A <xref:System.Windows.Media.GeometryDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A <xref:System.Windows.Media.GeometryDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

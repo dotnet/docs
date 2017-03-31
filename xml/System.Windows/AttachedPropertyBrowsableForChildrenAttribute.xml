@@ -35,7 +35,7 @@
   
  Whether an attached property is browsable on a child element is not an absolute guarantee that the attached property value is really processed by the parent element in some manner. Also, the <xref:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.IncludeDescendants%2A> value is not an absolute guarantee that the processing scope does or does not extend beyond the immediate parent element. All this is implementation specific. However, this  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] for reporting the browsable state is the best available mechanism for reporting the usage information and functional information for an attached property. Therefore, you can generally assume that the browsable state of an attached property is analogous to the behavior of how an attached property value on a child element is processed or interpreted by the relevant parent element in your application code.  
   
- For general information on declaring attached properties, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ For general information on declaring attached properties, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
 <a name="xamlTextUsage_AttachedPropertyBrowsableForChildrenAttribute"></a>   
 ## XAML Text Usage  

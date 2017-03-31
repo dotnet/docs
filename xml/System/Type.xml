@@ -55,7 +55,7 @@
   
  `Type` is the root of the <xref:System.Reflection> functionality and is the primary way to access metadata. Use the members of <xref:System.Type> to get information about a type declaration, about the members of a type (such as the constructors, methods, fields, properties, and events of a class), as well as the module and the assembly in which the class is deployed.  
   
- No permissions are required for code to use reflection to get information about types and their members, regardless of their access levels. No permissions are required for code to use reflection to access public members, or other members whose access levels would make them visible during normal compilation. However, in order for your code to use reflection to access members that would normally be inaccessible, such as private or internal methods, or protected fields of a type your class does not inherit, your code must have <xref:System.Security.Permissions.ReflectionPermission>. See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).  
+ No permissions are required for code to use reflection to get information about types and their members, regardless of their access levels. No permissions are required for code to use reflection to access public members, or other members whose access levels would make them visible during normal compilation. However, in order for your code to use reflection to access members that would normally be inaccessible, such as private or internal methods, or protected fields of a type your class does not inherit, your code must have <xref:System.Security.Permissions.ReflectionPermission>. See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
   
  `Type` is an abstract base class that allows multiple implementations. The system will always provide the derived class `RuntimeType`. In reflection, all classes beginning with the word Runtime are created only once per object in the system and support comparison operations.  
   
@@ -4473,7 +4473,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  If a nested type is generic, this method returns its generic type definition. This is true even if the enclosing generic type is a closed constructed type.  
   
 > [!NOTE]
->  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md).  
+>  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md).  
   
  For information on nested generic types, and on constructing nested generic types from their generic type definitions, see <xref:System.Type.MakeGenericType%2A>.  
   
@@ -4540,7 +4540,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  If a nested type is generic, this method returns its generic type definition. This is true even if the enclosing generic type is a closed constructed type.  
   
 > [!NOTE]
->  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md).  
+>  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md).  
   
  For information on nested generic types, and on constructing nested generic types from their generic type definitions, see <xref:System.Type.MakeGenericType%2A>.  
   
@@ -4601,7 +4601,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  If a nested type is generic, this method returns its generic type definition. This is true even if the enclosing generic type is a closed constructed type.  
   
 > [!NOTE]
->  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md).  
+>  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md).  
   
  For information on nested generic types, and on constructing nested generic types from their generic type definitions, see <xref:System.Type.MakeGenericType%2A>.  
   
@@ -4675,7 +4675,7 @@ TopNamespace.Sub\+Namespace.ContainingClass+NestedClass, MyAssembly, Version=1.3
  If a nested type is generic, this method returns its generic type definition. This is true even if the enclosing generic type is a closed constructed type.  
   
 > [!NOTE]
->  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md).  
+>  If the current <xref:System.Type> represents a generic type defined in C#, Visual Basic, or C++, its nested types are all generic even if they have no generic parameters of their own. This is not necessarily true of nested types defined in dynamic assemblies or compiled with the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md).  
   
  For information on nested generic types, and on constructing nested generic types from their generic type definitions, see <xref:System.Type.MakeGenericType%2A>.  
   
@@ -5689,7 +5689,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.IO.FileLoadException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -5898,7 +5898,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.IO.FileLoadException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -7482,7 +7482,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  When you invoke an `IDispatch` member, you can specify the DispID instead of the member name, using the string format "[DispID=##]". For example, if the DispID of MyComMethod is 3, you can specify the string "[DispID=3]" instead of "MyComMethod". Invoking a member by DispID is faster than looking up the member by name. In complex aggregation scenarios, the DispID is sometimes the only way to invoke the desired member.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -7671,7 +7671,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  When you invoke an `IDispatch` member you can specify the DispID instead of the member name, using the string format "[DispID=##]". For example, if the DispID of MyComMethod is 3, you can specify the string "[DispID=3]" instead of "MyComMethod". Invoking a member by DispID is faster than looking up the member by name. In complex aggregation scenarios, the DispID is sometimes the only way to invoke the desired member.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -7861,7 +7861,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  This will change string "z" in the array that F holds to string "b".  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public members is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -7956,7 +7956,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
 ## Remarks  
  The <xref:System.Type.IsAbstract%2A> property returns `true` in the following cases:  
   
--   The current type is abstract; that is, it cannot be instantiated, but can only serve as the base class for derived classes. In C#, abstract classes are marked with the [abstract](../Topic/abstract%20\(C%23%20Reference\).md) keyword; in Visual Basic, they are marked with the [MustInherit](../Topic/MustInherit%20\(Visual%20Basic\).md) keyword.  
+-   The current type is abstract; that is, it cannot be instantiated, but can only serve as the base class for derived classes. In C#, abstract classes are marked with the [abstract](~/docs/csharp/language-reference/keywords/abstract.md) keyword; in Visual Basic, they are marked with the [MustInherit](~/docs/visual-basic/language-reference/modifiers/mustinherit.md) keyword.  
   
 -   The current type is an interface.  
   
@@ -8442,7 +8442,7 @@ GetType(Array).IsAssignableFrom(type)
 ## Remarks  
  This method returns `false` for COM interfaces because they are not objects. COM interfaces can be implemented by Microsoft .NET Framework objects.  
   
- You can also load a COM class and get a `Type` object for that COM class by using the [Tlbimp.exe (Type Library Importer)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) tool.  
+ You can also load a COM class and get a `Type` object for that COM class by using the [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) tool.  
   
  If the current <xref:System.Type> represents a constructed generic type, this property applies to the generic type definition from which the type was constructed. For example, if the current <xref:System.Type> represents `MyGenericType<int`> (`MyGenericType(Of Integer)` in Visual Basic), the value of this property is determined by `MyGenericType<T>`.  
   
@@ -8721,7 +8721,7 @@ GetType(Array).IsAssignableFrom(type)
   
  Type equivalence means that a COM object that is passed from one managed assembly to another can be cast to the appropriate managed type in the receiving assembly. The <xref:System.Type.IsEquivalentTo%2A> method enables an assembly to determine that a COM object obtained from another assembly has the same COM identity as one of the first assembly's own embedded interop types, and thus can be cast to that type.  
   
- For more information, see [Type Equivalence and Embedded Interop Types](../Topic/Type%20Equivalence%20and%20Embedded%20Interop%20Types.md).  
+ For more information, see [Type Equivalence and Embedded Interop Types](~/docs/framework/interop/type-equivalence-and-embedded-interop-types.md).  
   
  ]]></format>
         </remarks>
@@ -9844,7 +9844,7 @@ GetType(Array).IsAssignableFrom(type)
 > [!IMPORTANT]
 >  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
   
- For more information about reflection and transparency, see [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md). For information about transparency, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -9888,7 +9888,7 @@ GetType(Array).IsAssignableFrom(type)
 > [!IMPORTANT]
 >  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
   
- For more information about reflection and transparency, see [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md). For information about transparency, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -9926,7 +9926,7 @@ GetType(Array).IsAssignableFrom(type)
 > [!IMPORTANT]
 >  For partial-trust assemblies, the value of this property depends on the current trust level of the assembly. If the assembly is loaded into a partially trusted application domain (for example, into a sandboxed application domain), then the runtime ignores the security annotations of the assembly. The assembly and all its types are treated as transparent. The runtime pays attention to the security annotations of a partial-trust assembly only when that assembly is loaded into a fully trusted application domain (for example, into the default application domain of a desktop application). By contrast, a trusted assembly (that is, a strong-named assembly that is installed in the global assembly cache) is always loaded with full trust regardless of the trust level of the application domain, so its current trust level is always fully trusted. You can determine the current trust levels of assemblies and application domains by using the <xref:System.Reflection.Assembly.IsFullyTrusted%2A?displayProperty=fullName> and <xref:System.AppDomain.IsFullyTrusted%2A?displayProperty=fullName> properties.  
   
- For more information about reflection and transparency, see [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md). For information about transparency, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ For more information about reflection and transparency, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -10481,7 +10481,7 @@ GetType(Array).IsAssignableFrom(type)
   
  To construct a generic type from the generic type definition for a nested type, call the <xref:System.Type.MakeGenericType%2A> method with the array formed by concatenating the type argument arrays of all the enclosing types, beginning with the outermost generic type, and ending with the type argument array of the nested type itself, if it has type parameters of its own. To create an instance of `Innermost1`, call the <xref:System.Type.MakeGenericType%2A> method with an array containing three types, to be assigned to T, U, and V. To create an instance of `Innermost2`, call the <xref:System.Type.MakeGenericType%2A> method with an array containing two types, to be assigned to T and U.  
   
- The languages propagate the type parameters of enclosing types in this fashion so you can use the type parameters of an enclosing type to define fields of nested types. Otherwise, the type parameters would not be in scope within the bodies of the nested types. It is possible to define nested types without propagating the type parameters of enclosing types, by emitting code in dynamic assemblies or by using the [Ilasm.exe (IL Assembler)](../Topic/Ilasm.exe%20\(IL%20Assembler\).md). Consider the following code for the MSIL assembler:  
+ The languages propagate the type parameters of enclosing types in this fashion so you can use the type parameters of an enclosing type to define fields of nested types. Otherwise, the type parameters would not be in scope within the bodies of the nested types. It is possible to define nested types without propagating the type parameters of enclosing types, by emitting code in dynamic assemblies or by using the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md). Consider the following code for the MSIL assembler:  
   
 ```  
 .class public Outer<T> {  
@@ -10503,7 +10503,7 @@ GetType(Array).IsAssignableFrom(type)
 }  
 ```  
   
- You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine nested classes defined in the high-level languages and observe this naming scheme.  
+ You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine nested classes defined in the high-level languages and observe this naming scheme.  
   
    
   
@@ -10937,7 +10937,7 @@ GetType(Array).IsAssignableFrom(type)
   
  The `throwIfNotFound` parameter specifies what happens when the type is not found, and also suppresses certain other exception conditions, as described in the Exceptions section. Some exceptions are thrown regardless of the value of `throwIfNotFound`. For example, if the assembly is not valid, a <xref:System.BadImageFormatException> is thrown even if `throwIfNotFound` is `false`.  
   
- For more information about using the reflection-only context, see [How to: Load Assemblies into the Reflection-Only Context](../Topic/How%20to:%20Load%20Assemblies%20into%20the%20Reflection-Only%20Context.md).  
+ For more information about using the reflection-only context, see [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   
  ]]></format>
         </remarks>

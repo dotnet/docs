@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To learn more about format strings in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ To learn more about format strings in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  You can use the <xref:System.Web.UI.XPathBinder.Eval%28System.Object%2CSystem.String%29> method declaratively if you want to simplify the casting of an XML node to a text string to be displayed in a browser. To do so, you must place the \<%# and %> tags, which are also used in standard ASP.NET data binding, around the data-binding expression.  
   

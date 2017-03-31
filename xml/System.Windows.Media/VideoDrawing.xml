@@ -20,9 +20,9 @@
   
  Despite its name, a <xref:System.Windows.Media.VideoDrawing> can be used to play audio.  
   
- **Performance Note:** A <xref:System.Windows.Media.VideoDrawing> provides fewer features then an <xref:System.Windows.Controls.MediaElement>: <xref:System.Windows.Media.VideoDrawing> does not support layout, input, or focus. However, because it does not support these features, <xref:System.Windows.Media.VideoDrawing> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](../Topic/Drawing%20Objects%20Overview.md) for more information.  
+ **Performance Note:** A <xref:System.Windows.Media.VideoDrawing> provides fewer features then an <xref:System.Windows.Controls.MediaElement>: <xref:System.Windows.Media.VideoDrawing> does not support layout, input, or focus. However, because it does not support these features, <xref:System.Windows.Media.VideoDrawing> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](~/docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information.  
   
- An <xref:System.Windows.Media.VideoDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ An <xref:System.Windows.Media.VideoDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

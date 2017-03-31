@@ -23,7 +23,7 @@
 ## Remarks  
  <xref:System.Windows.Markup.ValueSerializer> is used rather than <xref:System.ComponentModel.TypeConverter> for cases where type conversion requires additional state. <xref:System.Windows.Markup.DateTimeValueSerializer> is not attributed to a type with <xref:System.Windows.Markup.ValueSerializerAttribute>. This is because <xref:System.DateTime> is in mscorlib, and mscorlib cannot take dependencies on attribute classes that it does not define itself. Instead, usage of <xref:System.Windows.Markup.DateTimeValueSerializer> is special-cased into XAML processor behavior in .NET Framework XAML Services behavior.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.DateTimeValueSerializer> is in the System.Xaml assembly. See [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.DateTimeValueSerializer> is in the System.Xaml assembly. See [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 <a name="xamlTextUsage_DateTimeValueSerializer"></a>   
 ## XAML Text Usage  
@@ -172,7 +172,7 @@
 ## Remarks  
  `context` is not used by this implementation.  
   
- String representations for dates as found in XAML value processing are based on the `en-US` culture. This is because XAML processing for culture-sensitive information is split conceptually between compile-time and run-time phases and must use a known string representation throughout. For more information, see [WPF Globalization and Localization Overview](../Topic/WPF%20Globalization%20and%20Localization%20Overview.md).  
+ String representations for dates as found in XAML value processing are based on the `en-US` culture. This is because XAML processing for culture-sensitive information is split conceptually between compile-time and run-time phases and must use a known string representation throughout. For more information, see [WPF Globalization and Localization Overview](~/docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
  The current implementation uses a format string that is adjusted depending on whether aspects of the supplied <xref:System.DateTime> have values. For example, if there is no value in <xref:System.TimeSpan.TotalSeconds%2A>, the format string is in the form `yyyy-MM-dd` rather than writing out full-verbosity zero values for the time component.  
   

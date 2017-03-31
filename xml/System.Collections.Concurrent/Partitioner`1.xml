@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
+ For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
   
    
   
@@ -102,7 +102,7 @@
 ## Remarks  
  The returned object implements the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>interface. Calling <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> on the object creates another partition over the sequence.  
   
- The <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
+ The <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A> method is only supported if the <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> property returns true. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
   
  ]]></format>
         </remarks>
@@ -142,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A class that implements this method is expected to return exactly the number of partitions that are specified in `partitionCount`. If a partition contains no elements, then return an empty enumerator rather than null (Nothing in Visual Basic). For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
+ A class that implements this method is expected to return exactly the number of partitions that are specified in `partitionCount`. If a partition contains no elements, then return an empty enumerator rather than null (Nothing in Visual Basic). For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
   
  ]]></format>
         </remarks>
@@ -177,7 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a derived class does not override and implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should return false. The value of <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should not vary over the lifetime of this instance. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
+ If a derived class does not override and implement <xref:System.Collections.Concurrent.Partitioner%601.GetDynamicPartitions%2A>, <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should return false. The value of <xref:System.Collections.Concurrent.Partitioner%601.SupportsDynamicPartitions%2A> should not vary over the lifetime of this instance. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
   
  ]]></format>
         </remarks>

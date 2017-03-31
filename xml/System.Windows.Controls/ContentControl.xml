@@ -46,7 +46,7 @@
  ![Four buttons](~/add/media/controlcontentmodelbuttons.PNG "Four buttons")  
 Four buttons with different types of content  
   
- A<xref:System.Windows.Controls.ContentControl> has a limited default style. If you want to enhance the appearance of the control, you can create a new <xref:System.Windows.DataTemplate>. For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md). Another typical scenario is to use the <xref:System.Windows.Controls.ContentControl> to show more information about an item selected in an <xref:System.Windows.Controls.ItemsControl> control. For more information, see [How to: Bind to a Collection and Display Information Based on Selection](../Topic/How%20to:%20Bind%20to%20a%20Collection%20and%20Display%20Information%20Based%20on%20Selection.md).  
+ A<xref:System.Windows.Controls.ContentControl> has a limited default style. If you want to enhance the appearance of the control, you can create a new <xref:System.Windows.DataTemplate>. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md). Another typical scenario is to use the <xref:System.Windows.Controls.ContentControl> to show more information about an item selected in an <xref:System.Windows.Controls.ItemsControl> control. For more information, see [How to: Bind to a Collection and Display Information Based on Selection](~/docs/framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
@@ -56,7 +56,7 @@ Four buttons with different types of content
  The following example demonstrates how to create the four buttons shown in the Remarks section.  
   
 > [!NOTE]
->  Although the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Button.Content>` tags around the content of each button, it is not necessary. For more information, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+>  Although the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Button.Content>` tags around the content of each button, it is not necessary. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
   
  [!code-xml[ControlContentOverviewSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#1)]  
   
@@ -196,7 +196,7 @@ Four buttons with different types of content
 -   A <xref:System.Windows.Controls.Panel> control that contains other <xref:System.Windows.UIElement> objects.  
   
 > [!NOTE]
->  Although the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Button.Content>` tags around the content of each button, it is not necessary. For more information, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+>  Although the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Button.Content>` tags around the content of each button, it is not necessary. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
   
  [!code-xml[ControlContentOverviewSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#1)]  
   
@@ -252,7 +252,7 @@ Four buttons with different types of content
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.ContentControl.ContentStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  If you set the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> or <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentControl.ContentStringFormat%2A> property is ignored.  
+ <xref:System.Windows.Controls.ContentControl.ContentStringFormat%2A> can be a predefined, composite, or custom string format. For more information about string formats, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  If you set the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> or <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentControl.ContentStringFormat%2A> property is ignored.  
   
    
   
@@ -306,7 +306,7 @@ Four buttons with different types of content
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set this property to a <xref:System.Windows.DataTemplate> to specify the appearance of the <xref:System.Windows.Controls.ContentControl>. For more information on data templates, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ Set this property to a <xref:System.Windows.DataTemplate> to specify the appearance of the <xref:System.Windows.Controls.ContentControl>. For more information on data templates, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
 <a name="xamlAttributeUsage_ContentTemplate"></a>   
 ## XAML Attribute Usage  
@@ -318,13 +318,13 @@ Four buttons with different types of content
 <a name="xamlValues_ContentTemplate"></a>   
 ## XAML Values  
  *resourceExtension*  
- A markup extension that identifies how to reference the template resource, either `StaticResource` or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ A markup extension that identifies how to reference the template resource, either `StaticResource` or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *styleResourceKey*  
  The key that identifies the requested template selector. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. For more information, see [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md).  
+>  Property element syntax is technically possible, but not recommended. For more information, see [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md).  
   
 <a name="dependencyPropertyInfo_ContentTemplate"></a>   
 ## Dependency Property Information  
@@ -391,7 +391,7 @@ Four buttons with different types of content
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, you create a <xref:System.Windows.Controls.DataTemplateSelector> when you have more than one <xref:System.Windows.DataTemplate> for the same type of objects and you want to supply your own logic to choose a <xref:System.Windows.DataTemplate> to apply based on the properties of each data object. Note that if you have objects of different types you can set the <xref:System.Windows.DataTemplate.DataType%2A> property on the <xref:System.Windows.DataTemplate>. If you do that, then there is no need to create a <xref:System.Windows.Controls.DataTemplateSelector>. Furthermore, if you have objects of the same type but with different properties, you can also consider using a <xref:System.Windows.DataTrigger> or a data converter. For more information, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ Typically, you create a <xref:System.Windows.Controls.DataTemplateSelector> when you have more than one <xref:System.Windows.DataTemplate> for the same type of objects and you want to supply your own logic to choose a <xref:System.Windows.DataTemplate> to apply based on the properties of each data object. Note that if you have objects of different types you can set the <xref:System.Windows.DataTemplate.DataType%2A> property on the <xref:System.Windows.DataTemplate>. If you do that, then there is no need to create a <xref:System.Windows.Controls.DataTemplateSelector>. Furthermore, if you have objects of the same type but with different properties, you can also consider using a <xref:System.Windows.DataTrigger> or a data converter. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
  To create a template selector, create a class that inherits from <xref:System.Windows.Controls.DataTemplateSelector> and override the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. After your class is defined, you can assign an instance of the class to the template selector property of your element.  
   
@@ -407,7 +407,7 @@ Four buttons with different types of content
 <a name="xamlValues_ContentTemplateSelector"></a>   
 ## XAML Values  
  *ResourceExtension*  
- A markup extension that identifies how to reference the template resource, either `StaticResource` or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ A markup extension that identifies how to reference the template resource, either `StaticResource` or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *TemplateSelectorKey*  
  The key that identifies the requested template selector. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  

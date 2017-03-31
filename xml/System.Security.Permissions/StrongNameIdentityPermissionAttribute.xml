@@ -31,7 +31,7 @@
 >   
 >  In the .NET Framework versions 1.0 and 1.1, demands on the identity permissions are effective, even when the calling assembly is fully trusted. That is, although the calling assembly has full trust, a demand for an identity permission fails if the assembly does not meet the demanded criteria. In the .NET Framework version 2.0 and later, demands for identity permissions are ineffective if the calling assembly has full trust. This assures consistency for all permissions, eliminating the treatment of identity permissions as a special case.  
   
- The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used. You can obtain the key string for this attribute by running the Strong Name tool (Sn.exe) with the token and public key options (**Sn** **-tp** *keyfile*`)` against a file that has an Authenticode signature. For more information, see [Sn.exe (Strong Name Tool)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).  
+ The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used. You can obtain the key string for this attribute by running the Strong Name tool (Sn.exe) with the token and public key options (**Sn** **-tp** *keyfile*`)` against a file that has an Authenticode signature. For more information, see [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md).  
   
  The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
   

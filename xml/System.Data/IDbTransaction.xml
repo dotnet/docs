@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDbTransaction> interface allows an inheriting class to implement a Transaction class, which represents the transaction to be performed at a data source. For more information about Transaction classes, see [Transactions and Concurrency](../Topic/Transactions%20and%20Concurrency.md).  
+ The <xref:System.Data.IDbTransaction> interface allows an inheriting class to implement a Transaction class, which represents the transaction to be performed at a data source. For more information about Transaction classes, see [Transactions and Concurrency](~/docs/framework/data/adonet/transactions-and-concurrency.md).  
   
  An application does not create an instance of the <xref:System.Data.IDbTransaction> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbTransaction>.  
   

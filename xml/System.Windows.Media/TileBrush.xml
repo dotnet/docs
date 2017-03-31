@@ -53,12 +53,12 @@ Components of a TileBrush with a TileMode of Tile
  For more information about the <xref:System.Windows.Media.TileBrush> class, see [Painting with Images, Drawings, and Visuals](../Topic/Painting%20with%20Images,%20Drawings,%20and%20Visuals.md) .  
   
 ## Freezable Features  
- A <xref:System.Windows.Media.TileBrush> is a <xref:System.Windows.Freezable> type. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A <xref:System.Windows.Media.TileBrush> is a <xref:System.Windows.Freezable> type. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>When you inherit from the <see cref="T:System.Windows.Media.TileBrush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).</para>
+      <para>When you inherit from the <see cref="T:System.Windows.Media.TileBrush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</para>
     </block>
   </Docs>
   <Members>

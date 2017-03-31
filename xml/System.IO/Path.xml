@@ -65,7 +65,7 @@
   
  Because all these operations are performed on strings, it is impossible to verify that the results are valid in all scenarios. For example, the <xref:System.IO.Path.GetExtension%2A> method parses a string that you pass to it and returns the extension from that string. However, this does not mean that a file with that extension exists on the disk.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -177,7 +177,7 @@
   
  It is not possible to verify that the returned results are valid in all scenarios. For example, if `path` is empty, `extension` is appended.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -299,7 +299,7 @@
   
  Not all invalid characters for directory and file names are interpreted as unacceptable by the `Combine` method, because you can use these characters for search wildcard characters. For example, while `Path.Combine("c:\\", "*.txt")` might be invalid if you were to create a file from it, it is valid as a search string. It is therefore successfully interpreted by the `Combine` method.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -524,7 +524,7 @@
 ## Remarks  
  In most cases, the string returned by this method consists of all characters in the path up to but not including the last <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>. If the path consists of a root directory, such as "c:\\", null is returned. Note that this method does not support paths using "file:". Because the returned path does not include the <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar>, passing the returned path back into the <xref:System.IO.Path.GetDirectoryName%2A> method will result in the truncation of one folder level per subsequent call on the result string. For example, passing the path "C:\Directory\SubDirectory\test.txt" into the <xref:System.IO.Path.GetDirectoryName%2A> method will return "C:\Directory\SubDirectory". Passing that string, "C:\Directory\SubDirectory", into <xref:System.IO.Path.GetDirectoryName%2A> will result in "C:\Directory".  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -541,7 +541,7 @@
         <exception cref="T:System.IO.PathTooLongException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -585,7 +585,7 @@
 ## Remarks  
  The extension of `path` is obtained by searching `path` for a period (.), starting with the last character in path and continuing toward the start of path. If a period is found before a <xref:System.IO.Path.DirectorySeparatorChar> or <xref:System.IO.Path.AltDirectorySeparatorChar> character, the returned string contains the period and the characters after it; otherwise, <xref:System.String.Empty> is returned.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -640,7 +640,7 @@
   
  The separator characters used to determine the start of the file name are <xref:System.IO.Path.DirectorySeparatorChar> and <xref:System.IO.Path.AltDirectorySeparatorChar>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -693,7 +693,7 @@
 ## Remarks  
  This method does not verify that the path or file name exists.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -757,7 +757,7 @@
   
  If a path contains no significant characters it is invalid unless it contains one or more "." characters followed by any number of spaces, then it will be parsed as either "." or "..".  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -927,7 +927,7 @@
   
  The .NET Framework does not support direct access to physical disks through paths that are device names, such as "\\\\.\PHYSICALDRIVE0 ".  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1029,7 +1029,7 @@
   
  The <xref:System.IO.Path.GetTempFileName%2A> method will raise an <xref:System.IO.IOException> if no unique temporary file name is available. To resolve this error, delete all unneeded temporary files.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1145,7 +1145,7 @@ C:\Users\UserName\AppData\Local\Temp\
 ## Remarks  
  Starting from the end of `path`, this method searches for a period (.) followed by at least one character. If this pattern is found before a <xref:System.IO.Path.DirectorySeparatorChar>, <xref:System.IO.Path.AltDirectorySeparatorChar>, or <xref:System.IO.Path.VolumeSeparatorChar> character is encountered, this method returns `true`.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1247,7 +1247,7 @@ C:\Users\UserName\AppData\Local\Temp\
   
  This method does not verify that the path or file name exists.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   

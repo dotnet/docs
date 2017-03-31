@@ -37,7 +37,7 @@
   
  The <xref:System.Windows.Media.Geometry> class, on the other hand, simply defines the geometry of a shape, and cannot render itself. Because of its simplicity, it has a wider range of uses.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class provides several special features: <xref:System.Windows.Media.Geometry> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class provides several special features: <xref:System.Windows.Media.Geometry> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
@@ -821,7 +821,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [Path Markup Syntax](../Topic/Path%20Markup%20Syntax.md) for information about how this string is formatted  
+ See [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) for information about how this string is formatted  
   
  ]]></format>
         </remarks>

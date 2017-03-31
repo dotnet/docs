@@ -26,7 +26,7 @@
   
  <xref:System.Security.Policy.UnionCodeGroup> is the most common type of code group; the policy statement of all matching child code groups (and by extension their child code groups) are combined with the permission set of the matching parent code group. Thus, if its membership condition matches, this code group forms the union of its policy statement and those of all its child code groups that also match the evidence.  
   
- <xref:System.Security.Policy.UnionCodeGroup> code groups are the code groups created by the CASPOL utility (see [Caspol.exe (Code Access Security Policy Tool)](../Topic/Caspol.exe%20\(Code%20Access%20Security%20Policy%20Tool\).md)).  
+ <xref:System.Security.Policy.UnionCodeGroup> code groups are the code groups created by the CASPOL utility (see [Caspol.exe (Code Access Security Policy Tool)](~/docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)).  
   
  ]]></format>
     </remarks>

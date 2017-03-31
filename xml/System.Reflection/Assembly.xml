@@ -57,7 +57,7 @@
   
  To load assemblies dynamically, the <xref:System.Reflection.Assembly> class provides the following static methods (`Shared` methods in Visual Basic). Assemblies are loaded into the application domain where the load operation occurs.  
   
--   The recommended way to load assemblies is to use the <xref:System.AppDomain.Load%2A> method, which identifies the assembly to be loaded by its display name (for example, "System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"). The search for the assembly follows the rules described in [How the Runtime Locates Assemblies](../Topic/How%20the%20Runtime%20Locates%20Assemblies.md).  
+-   The recommended way to load assemblies is to use the <xref:System.AppDomain.Load%2A> method, which identifies the assembly to be loaded by its display name (for example, "System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"). The search for the assembly follows the rules described in [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 -   The <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods enable you to load an assembly for reflection, but not for execution. For example, an assembly that targets a 64-bit platform can be examined by code that is running on a 32-bit platform.  
   
@@ -77,7 +77,7 @@
   
  The <xref:System.Reflection.Assembly.GetTypes%2A> method lists all the types in the assembly. The <xref:System.Reflection.Assembly.GetExportedTypes%2A> method lists the types that are visible to callers outside the assembly. The <xref:System.Reflection.Assembly.GetType%2A> method can be used to search for a particular type in the assembly. The <xref:System.Reflection.Assembly.CreateInstance%2A> method can be used to search for and create instances of types in the assembly.  
   
- For more information on assemblies, see the "Application Domains and Assemblies" section in the [Application Domains](../Topic/Application%20Domains.md) topic.  
+ For more information on assemblies, see the "Application Domains and Assemblies" section in the [Application Domains](~/docs/framework/app-domains/application-domains.md) topic.  
   
    
   
@@ -1411,7 +1411,7 @@
         <exception cref="T:System.IO.FileLoadException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -1866,7 +1866,7 @@
  This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload, which can optionally include an assembly display name as part of the type name.  
   
 > [!NOTE]
->  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
    
   
@@ -1887,7 +1887,7 @@
         <exception cref="T:System.IO.FileLoadException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -1943,7 +1943,7 @@
  This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload, which can optionally include an assembly display name as part of the type name.  
   
 > [!NOTE]
->  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  The `throwOnError` parameter only affects what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
   
@@ -2017,7 +2017,7 @@
  This method only searches the current assembly instance. The `name` parameter includes the namespace but not the assembly. To search other assemblies for a type, use the <xref:System.Type.GetType%28System.String%29?displayProperty=fullName> method overload, which can optionally include an assembly display name as part of the type name.  
   
 > [!NOTE]
->  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  The `throwOnError` parameter only affects what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
   
@@ -2083,7 +2083,7 @@
  If the <xref:System.Reflection.Assembly.GetTypes%2A> method is called on an assembly and a type in that assembly is dependent on a type in an assembly that has not been loaded (for example, if it derives from a type in the second assembly), a <xref:System.Reflection.ReflectionTypeLoadException> is thrown. For example, this can happen if the first assembly was loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> or <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods, and the second assembly was not loaded. It can also happen with assemblies loaded using the <xref:System.Reflection.Assembly.Load%2A> and <xref:System.Reflection.Assembly.LoadFile%2A> methods if the second assembly cannot be located when the <xref:System.Reflection.Assembly.GetTypes%2A> method is called.  
   
 > [!NOTE]
->  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  To retrieve a collection of <xref:System.Reflection.TypeInfo> objects instead of an array of <xref:System.Type> objects, use the <xref:System.Reflection.Assembly.DefinedTypes%2A?displayProperty=fullName> property.  
   
@@ -2384,7 +2384,7 @@
  <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](../Topic/Best%20Practices%20for%20Assembly%20Loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
  Whether certain permissions are granted or not granted to an assembly is based on evidence. The rules for assembly and security evidence merging are as follows:  
   
@@ -2421,7 +2421,7 @@
         <exception cref="T:System.IO.FileLoadException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -2491,7 +2491,7 @@
    
   
 ## Examples  
- The following example loads an assembly given its fully qualified name, and lists all the types contained in the specified assembly. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ The following example loads an assembly given its fully qualified name, and lists all the types contained in the specified assembly. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[assembly.load1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Assembly.Load1/CPP/load1.cpp#1)]
  [!code-csharp[assembly.load1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Assembly.Load1/CS/load1.cs#1)]
@@ -2597,7 +2597,7 @@
  <xref:System.IO.FileLoadException> is thrown if `assemblyRef` specifies the full assembly name, and the first assembly that matches the simple name has a different version, culture, or public key token. The loader does not continue probing for other assemblies that match the simple name.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](../Topic/Best%20Practices%20for%20Assembly%20Loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
  Whether certain permissions are granted or not granted to an assembly is based on evidence. The rules for assembly and security evidence merging are as follows:  
   
@@ -3927,7 +3927,7 @@
 ## Remarks  
  By default, assemblies that you compile with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] have  transparency, although you can explicitly make them  instead. Assemblies that were compiled with earlier versions of the .NET Framework have level 1 transparency.  
   
- See [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ See [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -4082,7 +4082,7 @@
 ## Remarks  
  Use this method to load a local assembly that the operating system has flagged as having been loaded from the Web (for example, a temporary file that was downloaded from the Internet or intranet). Before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], such assemblies were automatically loaded into a sandboxed application domain. Starting with the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], they are loaded with full trust.  
   
- As an alternative to using this method, you can apply the [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](../Topic/%3CNetFx40_LegacySecurityPolicy%3E%20Element.md) in your application configuration file. This causes the common language runtime to revert to the security policy of the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
+ As an alternative to using this method, you can apply the [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) in your application configuration file. This causes the common language runtime to revert to the security policy of the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
   
 > [!CAUTION]
 >  If you use either of these solutions, you must be certain that it is safe to load `assemblyFile` with full trust.  

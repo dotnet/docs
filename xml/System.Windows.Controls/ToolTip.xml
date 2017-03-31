@@ -35,12 +35,12 @@
  The properties of the <xref:System.Windows.Controls.ToolTip> class are used to define the position and behavior of the tooltip. Many of these properties are also defined in the <xref:System.Windows.Controls.ToolTipService> class. If the value of one of these properties is specified by both the <xref:System.Windows.Controls.ToolTip> property and the <xref:System.Windows.Controls.ToolTipService>attached property, the value of the <xref:System.Windows.Controls.ToolTipService> property is used. In addition, the <xref:System.Windows.Controls.ToolTipService> class provides properties to set timing behavior. These attached properties are not included in the <xref:System.Windows.Controls.ToolTip> class but can be used by the control.  
   
 ## Customizing the ToolTip Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.ToolTip> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ToolTip>, see [ToolTip Styles and Templates](../Topic/ToolTip%20Styles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.ToolTip> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ToolTip>, see [ToolTip Styles and Templates](~/docs/framework/wpf/controls/tooltip-styles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ToolTip> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ToolTip> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
    
   
@@ -294,12 +294,12 @@
       </ReturnValue>
       <Docs>
         <summary>Get or sets the horizontal distance between the target origin and the popup alignment point.</summary>
-        <value>The horizontal distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). The default is 0.</value>
+        <value>The horizontal distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_HorizontalOffset"></a>   
 ## Dependency Property Information  
@@ -597,7 +597,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_Placement"></a>   
 ## Dependency Property Information  
@@ -665,7 +665,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_PlacementRectangle"></a>   
 ## Dependency Property Information  
@@ -736,7 +736,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_PlacementTarget"></a>   
 ## Dependency Property Information  
@@ -862,12 +862,12 @@
       </ReturnValue>
       <Docs>
         <summary>Get or sets the vertical distance between the target origin and the popup alignment point.</summary>
-        <value>The vertical distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). The default is 0.</value>
+        <value>The vertical distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a <xref:System.Windows.Controls.ToolTip> by setting the <xref:System.Windows.Controls.ToolTip.PlacementTarget%2A>, <xref:System.Windows.Controls.ToolTip.PlacementRectangle%2A>, <xref:System.Windows.Controls.ToolTip.Placement%2A>, <xref:System.Windows.Controls.ToolTip.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ToolTip.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_VerticalOffset"></a>   
 ## Dependency Property Information  

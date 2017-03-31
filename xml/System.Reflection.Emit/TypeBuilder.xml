@@ -88,7 +88,7 @@
   
  The following code example shows how to define a dynamic assembly with one module. The module in the example assembly contains one type, `MyDynamicType`, which has a private field, a property that gets and sets the private field, constructors that initialize the private field, and a method that multiplies a user-supplied number by the private field value and returns the result.  
   
- The <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> field is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) or used in another program.  
+ The <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> field is specified when the assembly is created. The assembly code is used immediately, and the assembly is also saved to disk so that it can be examined with [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) or used in another program.  
   
  [!code-cpp[AssemblyBuilderClass#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyBuilderClass/cpp/24895.cpp#1)]
  [!code-csharp[AssemblyBuilderClass#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyBuilderClass/cs/24895.cs#1)]
@@ -154,7 +154,7 @@
    
   
 ## Examples  
- The following example demonstrates the use of the `AddDeclarativeSecurity` method to add a security demand for <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag to a dynamic type named `MyDynamicClass`, in an assembly named EmittedExample.dll. The example produces no console output; after you run it, you can use [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine EmittedExample.dll. In `MyDynamicClass`, open the `.class public auto ansi` statement to see the declarative permission.  
+ The following example demonstrates the use of the `AddDeclarativeSecurity` method to add a security demand for <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> flag to a dynamic type named `MyDynamicClass`, in an assembly named EmittedExample.dll. The example produces no console output; after you run it, you can use [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine EmittedExample.dll. In `MyDynamicClass`, open the `.class public auto ansi` statement to see the declarative permission.  
   
  [!code-cpp[TypeBuilder_AddDeclarativeSecurity#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_AddDeclarativeSecurity/CPP/typebuilder_adddeclarativesecurity.cpp#1)]
  [!code-csharp[TypeBuilder_AddDeclarativeSecurity#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_AddDeclarativeSecurity/CS/typebuilder_adddeclarativesecurity.cs#1)]
@@ -823,7 +823,7 @@
    
   
 ## Examples  
- The following code example creates a generic type with two type parameters and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
+ The following code example creates a generic type with two type parameters and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  [!code-cpp[EmitGenericType#1](~/samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
  [!code-csharp[EmitGenericType#1](~/samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]
@@ -1736,7 +1736,7 @@
   
  The example creates a dynamic assembly with one dynamic module and a single type, `MyType`, that contains the `PInvoke` method. The `PInvoke` method represents the Win32 `GetTickCount` function.  
   
- When the example is run, it executes the `PInvoke` method. It also saves the dynamic assembly as PInvokeTest.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the `MyType` class and the `static` (`Shared` in Visual Basic) `PInvoke` method it contains. You can compile a Visual Basic or C# program that uses the static `MyType.GetTickCount` method by including a reference to the DLL when you run csc.exe or vbc.exe; for example, `/r:PInvokeTest.dll`.  
+ When the example is run, it executes the `PInvoke` method. It also saves the dynamic assembly as PInvokeTest.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the `MyType` class and the `static` (`Shared` in Visual Basic) `PInvoke` method it contains. You can compile a Visual Basic or C# program that uses the static `MyType.GetTickCount` method by including a reference to the DLL when you run csc.exe or vbc.exe; for example, `/r:PInvokeTest.dll`.  
   
  [!code-cpp[TypeBuilder_DefinePInvokeMethod_Fix#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_DefinePInvokeMethod_Fix/cpp/100656_fix.cpp#1)]
  [!code-csharp[TypeBuilder_DefinePInvokeMethod_Fix#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_DefinePInvokeMethod_Fix/CS/100656_fix.cs#1)]
@@ -1818,7 +1818,7 @@
   
  The example creates a dynamic assembly with one dynamic module and a single type, `MyType`, that contains the `PInvoke` method. The `PInvoke` method represents the Win32 `GetTickCount` function.  
   
- When the example is run, it executes the `PInvoke` method. It also saves the dynamic assembly as PInvokeTest.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the `MyType` class and the `static` (`Shared` in Visual Basic) `PInvoke` method it contains. You can compile a Visual Basic or C# program that uses the static `MyType.GetTickCount` method by including a reference to the DLL when you run csc.exe or vbc.exe; for example, `/r:PInvokeTest.dll`.  
+ When the example is run, it executes the `PInvoke` method. It also saves the dynamic assembly as PInvokeTest.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the `MyType` class and the `static` (`Shared` in Visual Basic) `PInvoke` method it contains. You can compile a Visual Basic or C# program that uses the static `MyType.GetTickCount` method by including a reference to the DLL when you run csc.exe or vbc.exe; for example, `/r:PInvokeTest.dll`.  
   
  [!code-cpp[TypeBuilder_DefinePInvokeMethod_Fix#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_DefinePInvokeMethod_Fix/cpp/100656_fix.cpp#1)]
  [!code-csharp[TypeBuilder_DefinePInvokeMethod_Fix#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_DefinePInvokeMethod_Fix/CS/100656_fix.cs#1)]
@@ -1914,7 +1914,7 @@
 > [!NOTE]
 >  The example uses an overload that does not specify custom modifiers. To specify custom modifiers, change the example code to use this method overload instead.  
   
- When the example is run, it executes the `PInvoke` method. It also saves the dynamic assembly as PInvokeTest.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the `MyType` class and the `static` (`Shared` in Visual Basic) `PInvoke` method it contains. You can compile a Visual Basic or C# program that uses the static `MyType.GetTickCount` method by including a reference to the DLL when you run csc.exe or vbc.exe; for example, `/r:PInvokeTest.dll`.  
+ When the example is run, it executes the `PInvoke` method. It also saves the dynamic assembly as PInvokeTest.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the `MyType` class and the `static` (`Shared` in Visual Basic) `PInvoke` method it contains. You can compile a Visual Basic or C# program that uses the static `MyType.GetTickCount` method by including a reference to the DLL when you run csc.exe or vbc.exe; for example, `/r:PInvokeTest.dll`.  
   
  [!code-cpp[TypeBuilder_DefinePInvokeMethod_Fix#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeBuilder_DefinePInvokeMethod_Fix/cpp/100656_fix.cpp#1)]
  [!code-csharp[TypeBuilder_DefinePInvokeMethod_Fix#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder_DefinePInvokeMethod_Fix/CS/100656_fix.cs#1)]
@@ -2460,13 +2460,13 @@
    
   
 ## Examples  
- The following code example contains source code for a generic class named `Sample` that has a type parameter named `T`. The class has a field named `Field`, of type `T`, and a generic method named `GM` with its own type parameter, named `U`. Method `GM` creates an instance of `Sample`, substituting its own type parameter `U` for the type parameter of `Sample`, and stores its input parameter in `Field`. This source code is compiled but not used; you can view it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) and compare it to the code emitted by class `Example`.  
+ The following code example contains source code for a generic class named `Sample` that has a type parameter named `T`. The class has a field named `Field`, of type `T`, and a generic method named `GM` with its own type parameter, named `U`. Method `GM` creates an instance of `Sample`, substituting its own type parameter `U` for the type parameter of `Sample`, and stores its input parameter in `Field`. This source code is compiled but not used; you can view it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) and compare it to the code emitted by class `Example`.  
   
  The code in class `Example` demonstrates the use of the <xref:System.Reflection.Emit.TypeBuilder.GetConstructor%2A> method to emit generic code. The `Main` method of class `Example` creates a dynamic assembly containing a class named `Sample` and uses the <xref:System.Reflection.Emit.TypeBuilder.DefineGenericParameters%2A> method to make it generic by adding a type parameter named `T`. A default constructor and a field named `Field`, of type `T`, are added to class `Sample`. A method `GM` is added and turned into a generic method by using the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=fullName> method. The type parameter of `GM` is named `U`. After the type parameter is defined, the signature of `GM` is added by using the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%2A?displayProperty=fullName> method. There is no return type and no required or custom modifiers, so all the parameters of this method are `null` except `parameterTypes`; `parameterTypes` sets the type of the method's only parameter to `U`, the method's generic type parameter. The body of the method creates an instance of the constructed type `Sample<U>` (`Sample(Of U)` in Visual Basic), assigns the method's parameter to `Field`, and then prints the value of `Field`. The <xref:System.Reflection.Emit.TypeBuilder.GetConstructor%2A> method is used to create a <xref:System.Reflection.ConstructorInfo> that represents the default constructor of the constructed generic type `Sample<U>` in the <xref:System.Reflection.Emit.OpCodes.Newobj?displayProperty=fullName> instruction that creates the instance.  
   
  A dummy type is defined to hold the entry-point method `Main`. In the body of `Main`, the static `GM` method is invoked on the constructed generic type `Sample<int>` (`Sample(Of Integer)` in Visual Basic), with type <xref:System.String> substituted for `U`.  
   
- When the code example is run, it saves the emitted assembly as TypeBuilderGetFieldExample.exe. You can run TypeBuilderGetFieldExample.exe, and you can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to compare the emitted code with the code for the `Sample` class that is compiled into the code example itself.  
+ When the code example is run, it saves the emitted assembly as TypeBuilderGetFieldExample.exe. You can run TypeBuilderGetFieldExample.exe, and you can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to compare the emitted code with the code for the `Sample` class that is compiled into the code example itself.  
   
  [!code-csharp[TypeBuilder.GetField_Generic#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder.GetField_Generic/cs/source.cs#1)]
  [!code-vb[TypeBuilder.GetField_Generic#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeBuilder.GetField_Generic/VB/source.vb#1)]  
@@ -2803,13 +2803,13 @@
    
   
 ## Examples  
- The following code example contains source code for a generic class named Sample that has a type parameter named `T`. The class has a field named `Field`, of type `T`, and a generic method named `GM` with its own type parameter, named `U`. Method `GM` creates an instance of `Sample`, substituting its own type parameter `U` for the type parameter of `Sample`, and stores its input parameter in `Field`. This source code is compiled but not used; you can view it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) and compare it to the code emitted by class `Example`.  
+ The following code example contains source code for a generic class named Sample that has a type parameter named `T`. The class has a field named `Field`, of type `T`, and a generic method named `GM` with its own type parameter, named `U`. Method `GM` creates an instance of `Sample`, substituting its own type parameter `U` for the type parameter of `Sample`, and stores its input parameter in `Field`. This source code is compiled but not used; you can view it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) and compare it to the code emitted by class `Example`.  
   
  The code in class `Example` demonstrates the use of the <xref:System.Reflection.Emit.TypeBuilder.GetField%2A> method to emit generic code. The `Main` method of class `Example` creates a dynamic assembly containing a class named `Sample`, and uses the <xref:System.Reflection.Emit.TypeBuilder.DefineGenericParameters%2A> method to make it generic by adding a type parameter named `T`. A default constructor and a field named `Field`, of type `T`, are added to class `Sample`. A method `GM` is added and turned into a generic method by using the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=fullName> method. The type parameter of `GM` is named `U`. After the type parameter is defined, the signature of `GM` is added by using the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%2A?displayProperty=fullName> method. There is no return type and no required or custom modifiers, so all the parameters of this method are `null` except `parameterTypes`; `parameterTypes` sets the type of the method's only parameter to `U`, the method's generic type parameter. The body of the method creates an instance of the constructed type `Sample<U>` (`Sample(Of U)` in Visual Basic), assigns the method's parameter to `Field`, and then prints the value of `Field`. The <xref:System.Reflection.Emit.TypeBuilder.GetField%2A> method is used to create a <xref:System.Reflection.FieldInfo> that represents the field of the constructed generic type `Sample<U>` in the <xref:System.Reflection.Emit.OpCodes.Stfld?displayProperty=fullName> and <xref:System.Reflection.Emit.OpCodes.Ldfld?displayProperty=fullName> instructions.  
   
  A dummy type is defined to hold the entry-point method `Main`. In the body of `Main`, the static `GM` method is invoked on the constructed generic type `Sample<int>` (`Sample(Of Integer)` in Visual Basic), with type <xref:System.String> substituted for `U`.  
   
- When the code example is run, it saves the emitted assembly as TypeBuilderGetFieldExample.exe. You can run TypeBuilderGetFieldExample.exe, and you can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to compare the emitted code with the code for the `Sample` class that is compiled into the code example itself.  
+ When the code example is run, it saves the emitted assembly as TypeBuilderGetFieldExample.exe. You can run TypeBuilderGetFieldExample.exe, and you can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to compare the emitted code with the code for the `Sample` class that is compiled into the code example itself.  
   
  [!code-csharp[TypeBuilder.GetField_Generic#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder.GetField_Generic/cs/source.cs#1)]
  [!code-vb[TypeBuilder.GetField_Generic#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeBuilder.GetField_Generic/VB/source.vb#1)]  
@@ -3141,11 +3141,11 @@
    
   
 ## Examples  
- The following code example contains source code for a generic class named `Sample` that has a type parameter named `T`. The class has a field named `Field`, of type `T`, and a generic method named `GM` with its own type parameter, named `U`. Method `GM` creates an instance of `Sample`, substituting its own type parameter `U` for the type parameter of `Sample`, and stores its input parameter in `Field`. This source code is compiled but not used; you can view it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) and compare it to the code emitted by class `Example`.  
+ The following code example contains source code for a generic class named `Sample` that has a type parameter named `T`. The class has a field named `Field`, of type `T`, and a generic method named `GM` with its own type parameter, named `U`. Method `GM` creates an instance of `Sample`, substituting its own type parameter `U` for the type parameter of `Sample`, and stores its input parameter in `Field`. This source code is compiled but not used; you can view it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) and compare it to the code emitted by class `Example`.  
   
  The code in class `Example` demonstrates the use of the <xref:System.Reflection.Emit.TypeBuilder.GetMethod%2A> method to emit generic code. The `Main` method of class `Example` creates a dynamic assembly containing a class named `Sample` and uses the <xref:System.Reflection.Emit.TypeBuilder.DefineGenericParameters%2A> method to make it generic by adding a type parameter named `T`. A default constructor and a field named `Field`, of type `T`, are added to class `Sample`. A method `GM` is added and turned into a generic method by using the <xref:System.Reflection.Emit.MethodBuilder.DefineGenericParameters%2A?displayProperty=fullName> method. The type parameter of `GM` is named `U`. After the type parameter is defined, the signature of `GM` is added by using the <xref:System.Reflection.Emit.MethodBuilder.SetSignature%2A?displayProperty=fullName> method. There is no return type and no required or custom modifiers, so all the parameters of this method are `null` except `parameterTypes`; `parameterTypes` sets the type of the method's only parameter to `U`, the method's generic type parameter. The body of the method creates an instance of the constructed type `Sample<U>` (`Sample(Of U)` in Visual Basic), assigns the method's parameter to `Field`, and then prints the value of `Field`. A dummy type is defined to hold the entry-point method `Main`. In the body of `Main`, the static `GM` method is invoked on the constructed generic type `Sample<int>` (`Sample(Of Integer)` in Visual Basic), with type <xref:System.String> substituted for `U`. The <xref:System.Reflection.Emit.TypeBuilder.GetMethod%2A> method is used to create a <xref:System.Reflection.MethodInfo> for the static `GM` method of the constructed generic type `Sample<U>`, and the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=fullName> method is then used to create a <xref:System.Reflection.MethodInfo> that can emitted in a method call.  
   
- When the code example is run, it saves the emitted assembly as TypeBuilderGetFieldExample.exe. You can run TypeBuilderGetFieldExample.exe, and you can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to compare the emitted code with the code for the `Sample` class that is compiled into the code example itself.  
+ When the code example is run, it saves the emitted assembly as TypeBuilderGetFieldExample.exe. You can run TypeBuilderGetFieldExample.exe, and you can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to compare the emitted code with the code for the `Sample` class that is compiled into the code example itself.  
   
  [!code-csharp[TypeBuilder.GetField_Generic#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeBuilder.GetField_Generic/cs/source.cs#1)]
  [!code-vb[TypeBuilder.GetField_Generic#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/TypeBuilder.GetField_Generic/VB/source.vb#1)]  
@@ -3875,7 +3875,7 @@
 > [!NOTE]
 >  Default inheritance is limited to the runtime's evaluation of transparency. No attributes are applied to the dynamic assembly. If you want to add security attributes, you must apply them yourself.  
   
- For more information about reflection emit and transparency, see [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md). For information about transparency, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ For more information about reflection emit and transparency, see [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -3919,7 +3919,7 @@
 > [!NOTE]
 >  Default inheritance is limited to the runtime's evaluation of transparency. No attributes are applied to the dynamic assembly. If you want to add security attributes, you must apply them yourself.  
   
- For more information about reflection emit and transparency, see [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md). For information about transparency, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ For more information about reflection emit and transparency, see [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -3963,7 +3963,7 @@
 > [!NOTE]
 >  Default inheritance is limited to the runtime's evaluation of transparency. No attributes are applied to the dynamic assembly. If you want to add security attributes, you must apply them yourself.  
   
- For more information about reflection emit and transparency, see [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md). For information about transparency, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+ For more information about reflection emit and transparency, see [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md). For information about transparency, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  ]]></format>
         </remarks>
@@ -4066,7 +4066,7 @@
    
   
 ## Examples  
- The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
  [!code-csharp[MakeXxxTypeBuilder#1](~/samples/snippets/csharp/VS_Snippets_CLR/MakeXxxTypeBuilder/CS/source.cs#1)]
  [!code-vb[MakeXxxTypeBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MakeXxxTypeBuilder/VB/source.vb#1)]  
@@ -4108,7 +4108,7 @@
    
   
 ## Examples  
- The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
  [!code-csharp[MakeXxxTypeBuilder#1](~/samples/snippets/csharp/VS_Snippets_CLR/MakeXxxTypeBuilder/CS/source.cs#1)]
  [!code-vb[MakeXxxTypeBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MakeXxxTypeBuilder/VB/source.vb#1)]  
@@ -4152,7 +4152,7 @@
    
   
 ## Examples  
- The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
  [!code-csharp[MakeXxxTypeBuilder#1](~/samples/snippets/csharp/VS_Snippets_CLR/MakeXxxTypeBuilder/CS/source.cs#1)]
  [!code-vb[MakeXxxTypeBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MakeXxxTypeBuilder/VB/source.vb#1)]  
@@ -4256,7 +4256,7 @@
    
   
 ## Examples  
- The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ The following code example creates a dynamic module, an abstract type named `Sample`, and an abstract method named `TestMethod`. `TestMethod` takes a `ref` parameter (`ByRef` in Visual Basic) of type `Sample`, a pointer to type `Sample`, and an array of type `Sample`. It returns a two-dimensional array of type `Sample`. The code example saves the dynamic module to disk, so you can examine it with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
  [!code-csharp[MakeXxxTypeBuilder#1](~/samples/snippets/csharp/VS_Snippets_CLR/MakeXxxTypeBuilder/CS/source.cs#1)]
  [!code-vb[MakeXxxTypeBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MakeXxxTypeBuilder/VB/source.vb#1)]  
@@ -4405,7 +4405,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>
@@ -4451,7 +4451,7 @@
  For more information on how to format `binaryAttribute`, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](../Topic/Security%20Issues%20in%20Reflection%20Emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this member no longer requires <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. (See [Security Issues in Reflection Emit](~/docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).) To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
  ]]></format>
         </remarks>

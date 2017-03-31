@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Channels.WrappedOptions> is used by the <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter> and the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md). The <xref:System.ServiceModel.Channels.WrappedOptions> class controls whether special-casing is used for document-literal styled documents with wrapped parameters. Use the **/wrapped** switch with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) tool to specify normal casing.  
+ The <xref:System.ServiceModel.Channels.WrappedOptions> is used by the <xref:System.ServiceModel.Description.XmlSerializerMessageContractImporter> and the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). The <xref:System.ServiceModel.Channels.WrappedOptions> class controls whether special-casing is used for document-literal styled documents with wrapped parameters. Use the **/wrapped** switch with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool to specify normal casing.  
   
  ]]></format>
     </remarks>

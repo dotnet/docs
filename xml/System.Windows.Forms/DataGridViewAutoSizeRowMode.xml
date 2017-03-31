@@ -21,12 +21,12 @@
   
  This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A> method.  
   
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example resizes the third row in the control to fit the contents of its nonheader cells. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example resizes the third row in the control to fit the contents of its nonheader cells. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#4)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#4)]

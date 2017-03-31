@@ -568,7 +568,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md). The result is a Boolean value indicating whether or not the string satisfies the pattern.  
+ This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](~/docs/visual-basic/language-reference/operators/like-operator.md). The result is a Boolean value indicating whether or not the string satisfies the pattern.  
   
  ]]></format>
         </remarks>
@@ -599,7 +599,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md). The result is a Boolean value indicating whether or not the string satisfies the pattern.  
+ This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](~/docs/visual-basic/language-reference/operators/like-operator.md). The result is a Boolean value indicating whether or not the string satisfies the pattern.  
   
  This method is similar to <xref:Microsoft.VisualBasic.CompilerServices.StringType.StrLike%2A> except that it always performs a case-sensitive binary comparison.  
   
@@ -632,7 +632,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](../Topic/Like%20Operator%20\(Visual%20Basic\).md). The result is a `Boolean` value indicating whether or not the string satisfies the pattern.  
+ This method compares the parameters `Source` and `Pattern` and returns the same results as the [Like Operator](~/docs/visual-basic/language-reference/operators/like-operator.md). The result is a `Boolean` value indicating whether or not the string satisfies the pattern.  
   
  This method is similar to <xref:Microsoft.VisualBasic.CompilerServices.StringType.StrLike%2A> except that it always performs a comparison based on a case-insensitive text sort order determined by your system's `LocaleID` value.  
   

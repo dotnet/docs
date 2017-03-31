@@ -31,7 +31,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to implement a custom <xref:System.Windows.Forms.ToolStripRenderer> class. The `GridStripRenderer` class customizes three aspects of the `GridStrip` control's appearance: `GridStrip` border, <xref:System.Windows.Forms.ToolStripButton> border, and <xref:System.Windows.Forms.ToolStripButton> image. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](../Topic/How%20to:%20Implement%20a%20Custom%20ToolStripRenderer.md).  
+ The following code example demonstrates how to implement a custom <xref:System.Windows.Forms.ToolStripRenderer> class. The `GridStripRenderer` class customizes three aspects of the `GridStrip` control's appearance: `GridStrip` border, <xref:System.Windows.Forms.ToolStripButton> border, and <xref:System.Windows.Forms.ToolStripButton> image. For a full code listing, see [How to: Implement a Custom ToolStripRenderer](~/docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md).  
   
  [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#10)]
  [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#10)]  

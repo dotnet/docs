@@ -19,14 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Indicates the CLR property of a class that provides the [x:Uid Directive](../Topic/x:Uid%20Directive.md) value.</summary>
+    <summary>Indicates the CLR property of a class that provides the [x:Uid Directive](~/docs/framework/xaml-services/x-uid-directive.md) value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The  is a XAML language attribute that identifies element nodes in markup so that they can be uniquely identified. Although the model for `x:Uid` is potentially more general, one usage of unique identifiers for XAML elements is for localization tools, so that XAML language components that need localization can generate a companion localization source and then re-integrated with the original XAML. For more information on how `x:Uid` is used in WPF localization. see [WPF Globalization and Localization Overview](../Topic/WPF%20Globalization%20and%20Localization%20Overview.md).  
+ The  is a XAML language attribute that identifies element nodes in markup so that they can be uniquely identified. Although the model for `x:Uid` is potentially more general, one usage of unique identifiers for XAML elements is for localization tools, so that XAML language components that need localization can generate a companion localization source and then re-integrated with the original XAML. For more information on how `x:Uid` is used in WPF localization. see [WPF Globalization and Localization Overview](~/docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.UidPropertyAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.UidPropertyAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
  ]]></format>
     </remarks>
@@ -63,8 +63,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the CLR property that represents the [x:Uid Directive](../Topic/x:Uid%20Directive.md) value.</summary>
-        <value>The name of the CLR property that represents [x:Uid Directive](../Topic/x:Uid%20Directive.md).</value>
+        <summary>Gets the name of the CLR property that represents the [x:Uid Directive](~/docs/framework/xaml-services/x-uid-directive.md) value.</summary>
+        <value>The name of the CLR property that represents [x:Uid Directive](~/docs/framework/xaml-services/x-uid-directive.md).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

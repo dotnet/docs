@@ -46,7 +46,7 @@
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using any type that derives from this type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IO.TextWriter.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see Dispose and the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -96,7 +96,7 @@
   
  Use this constructor for derived classes.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -134,7 +134,7 @@
 ## Remarks  
  Use this constructor overload to provide a value for the <xref:System.IO.TextWriter.FormatProvider%2A> property. The value of the <xref:System.IO.TextWriter.FormatProvider%2A> property specifies the culture-specific formatting that is used when you call the <xref:System.IO.TextWriter.Write%2A> and <xref:System.IO.TextWriter.WriteLine%2A> methods. If you do not want to provide a format provider, you create an instance by using the <xref:System.IO.TextWriter.%23ctor> constructor, which sets the <xref:System.IO.TextWriter.FormatProvider%2A> property to `null`. When the <xref:System.IO.TextWriter.FormatProvider%2A> property is `null`, the culture of the current thread is used for formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -204,7 +204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -242,7 +242,7 @@
 ## Remarks  
  Call <xref:System.IO.TextWriter.Dispose%2A> when you are finished using the <xref:System.IO.TextWriter>. The <xref:System.IO.TextWriter.Dispose%2A> method leaves the <xref:System.IO.TextWriter> in an unusable state. After calling <xref:System.IO.TextWriter.Dispose%2A>, you must release all references to the <xref:System.IO.TextWriter> so the garbage collector can reclaim the memory that the <xref:System.IO.TextWriter> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
  **Note** Always call <xref:System.IO.TextWriter.Dispose%2A> before you release your last reference to the <xref:System.IO.TextWriter>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.TextWriter> object's <xref:System.Object.Finalize%2A> method.  
   
@@ -292,9 +292,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see cref="M:System.IO.TextWriter.Dispose(System.Boolean)" /> can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement this method, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see cref="M:System.IO.TextWriter.Dispose(System.Boolean)" /> can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>
@@ -330,7 +330,7 @@
 ## Remarks  
  This property is necessary for some XML scenarios where a header must be written containing the encoding used by the `TextWriter`. This enables the XML code to consume an arbitrary `TextWriter` and generate the correct XML header.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -443,9 +443,9 @@
 ## Remarks  
  The value of the <xref:System.IO.TextWriter.FormatProvider%2A> property specifies the culture-specific formatting that is used when you call the <xref:System.IO.TextWriter.Write%2A> and <xref:System.IO.TextWriter.WriteLine%2A> methods. If you do not want to provide a format provider, you create an instance by using the <xref:System.IO.TextWriter.%23ctor> constructor, which sets the <xref:System.IO.TextWriter.FormatProvider%2A> property to `null`. When the <xref:System.IO.TextWriter.FormatProvider%2A> property contains `null`, the culture of the current thread is used for formatting.  
   
- For an example of creating a file and writing text to a file, see [How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md). For an example of reading text from a file, see [How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md).  
+ For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -485,7 +485,7 @@
   
  The line terminator string is written to the text stream whenever one of the `WriteLine` methods is called. In order for text written by the `TextWriter` to be readable by a <xref:System.IO.TextReader>, only "\n" or "\r\n" should be used as terminator strings. If `NewLine` is set to `null`, the default newline character is used instead.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -524,7 +524,7 @@
   
  When the <xref:System.IO.TextWriter.Write%2A?displayProperty=fullName> methods are invoked on `Null`, the call simply returns, and no data is actually written to any backing store.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -558,9 +558,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All write operations to the returned wrapper will be thread safe. You call this method to ensure that only one thread at a time can execute the methods on the <xref:System.IO.TextWriter> instance that is returned. For more information about synchronization and threading, see [Synchronizing Data for Multithreading](../Topic/Synchronizing%20Data%20for%20Multithreading.md).  
+ All write operations to the returned wrapper will be thread safe. You call this method to ensure that only one thread at a time can execute the methods on the <xref:System.IO.TextWriter> instance that is returned. For more information about synchronization and threading, see [Synchronizing Data for Multithreading](~/docs/standard/threading/synchronizing-data-for-multithreading.md).  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -605,7 +605,7 @@
   
  This method outputs either <xref:System.Boolean.TrueString?displayProperty=fullName> or <xref:System.Boolean.FalseString?displayProperty=fullName>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -648,7 +648,7 @@
 ## Remarks  
  This default method does nothing, but derived classes can override the method to provide the appropriate functionality.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -693,7 +693,7 @@
   
  This default method calls the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method and passes the entire character array. If the character array is `null`, nothing is written.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -777,7 +777,7 @@
 ## Remarks  
  The text representation of the specified value is produced by calling the <xref:System.Double.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -820,7 +820,7 @@
 ## Remarks  
  The text representation of the specified value is produced by calling the <xref:System.Int32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -863,9 +863,9 @@
 ## Remarks  
  The text representation of the specified value is produced by calling the <xref:System.Int64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
- [How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)  
+ [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)  
   
  ]]></format>
         </remarks>
@@ -910,7 +910,7 @@
   
  If the specified object is `null`, no action is taken and no exception is thrown. Otherwise, the object's `ToString` method is called to produce the string representation, and the resulting string is then written to the output stream. The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -953,7 +953,7 @@
 ## Remarks  
  The text representation of the specified value is produced by calling the <xref:System.Single.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1000,7 +1000,7 @@
   
  If `value` is `null`, nothing is written to the text stream.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1048,7 +1048,7 @@
 ## Remarks  
  The text representation of the specified value is produced by calling the <xref:System.UInt32.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1096,7 +1096,7 @@
 ## Remarks  
  The text representation of the specified value is produced by calling the <xref:System.UInt64.ToString%2A?displayProperty=fullName> method. The <xref:System.IO.TextWriter.FormatProvider%2A?displayProperty=fullName> property, if not `null`, specifies the culture-specific formatting.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1140,15 +1140,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -1156,7 +1156,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -1170,7 +1170,7 @@
   
  If a specified object is not referenced in the format string, it is ignored.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1229,15 +1229,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -1245,7 +1245,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -1259,7 +1259,7 @@
   
  If a specified object is not referenced in the format string, it is ignored.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1316,7 +1316,7 @@
   
  This overload is equivalent to the [Write(Char\<xref:System.IO.TextWriter.Write%28System.Char%5B%5D%29> overload for each character in `buffer` between `index` and (`index` + `count`).  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1366,15 +1366,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -1382,7 +1382,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -1396,7 +1396,7 @@
   
  If a specified object is not referenced in the format string, it is ignored.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1452,15 +1452,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -1468,7 +1468,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -1482,7 +1482,7 @@
   
  If a specified object is not referenced in the format string, it is ignored.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1720,7 +1720,7 @@
 ## Remarks  
  The line terminator is defined by the <xref:System.IO.TextWriter> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1767,7 +1767,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1812,7 +1812,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1859,7 +1859,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1900,7 +1900,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting. For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting. For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -1943,7 +1943,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting. For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting. For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -1990,7 +1990,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2035,7 +2035,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2080,7 +2080,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2121,7 +2121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting. For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ The <xref:System.IO.TextWriter.FormatProvider%2A> property, if not `null`, specifies the culture-specific formatting. For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
@@ -2170,7 +2170,7 @@
   
  This method does not search the specified string for individual newline characters (hexadecimal 0x000a) and replace them with <xref:System.IO.TextWriter.NewLine%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2220,7 +2220,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2270,7 +2270,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2314,15 +2314,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -2330,7 +2330,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -2346,7 +2346,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2405,15 +2405,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -2421,7 +2421,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -2437,7 +2437,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2495,7 +2495,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2545,15 +2545,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -2561,7 +2561,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -2577,7 +2577,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2633,15 +2633,15 @@
 ## Remarks  
  This method uses the  of the .NET Framework to convert the value of an object to its string representation and to embed that representation in a string. The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about the composite formatting feature, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+-   For more information about the composite formatting feature, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+-   For more information about date and time format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
--   For more information about enumeration format specifiers, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+-   For more information about enumeration format specifiers, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to an object in the parameter list of this method. The formatting process replaces each format item with the string representation of the value of the corresponding object.  
   
@@ -2649,7 +2649,7 @@
   
  {*index*[,*length*][:*formatString*]}  
   
- Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](../Topic/Composite%20Formatting.md).  
+ Elements in square brackets are optional. The following table describes each element. For more information about the composite formatting feature, including the syntax of a format item, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -2665,7 +2665,7 @@
   
  The line terminator is defined by the <xref:System.IO.TextWriter.CoreNewLine> field.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>

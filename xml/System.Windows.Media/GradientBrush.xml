@@ -21,12 +21,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Media.GradientBrush> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A <xref:System.Windows.Media.GradientBrush> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>When you inherit from the <see cref="T:System.Windows.Media.GradientBrush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. Depending on whether your class must perform additional initialization work or contains non-dependency property data members, you might need to override additional <see cref="T:System.Windows.Freezable" /> methods. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).</para>
+      <para>When you inherit from the <see cref="T:System.Windows.Media.GradientBrush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. Depending on whether your class must perform additional initialization work or contains non-dependency property data members, you might need to override additional <see cref="T:System.Windows.Freezable" /> methods. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</para>
     </block>
   </Docs>
   <Members>

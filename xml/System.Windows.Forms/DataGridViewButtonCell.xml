@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. You can use similar code when working with individual <xref:System.Windows.Forms.DataGridViewButtonCell> objects. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](../Topic/How%20to:%20Access%20Objects%20in%20a%20Windows%20Forms%20DataGridViewComboBoxCell%20Drop-Down%20List.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. You can use similar code when working with individual <xref:System.Windows.Forms.DataGridViewButtonCell> objects. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/CS/form1.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#100)]  
@@ -301,7 +301,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is useful to retrieve the text of a cell in a shared row, which cannot store cell values locally and remain shared. You must pass in the actual row index because shared rows have indexes of -1. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This method is useful to retrieve the text of a cell in a shared row, which cannot store cell values locally and remain shared. You must pass in the actual row index because shared rows have indexes of -1. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -335,7 +335,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell.KeyDownUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewButtonCell.OnKeyDown%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewButtonCell.OnKeyDown%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -369,7 +369,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell.KeyUpUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewButtonCell.OnKeyUp%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewButtonCell.OnKeyUp%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -401,7 +401,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell.MouseDownUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewButtonCell.OnMouseDown%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewButtonCell.OnMouseDown%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -433,7 +433,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell.MouseEnterUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -465,7 +465,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell.MouseLeaveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewButtonCell.OnMouseLeave%2A> method. <xref:System.Windows.Forms.DataGridViewButtonCell.MouseLeaveUnsharesRow%2A> must return `true` if the call to <xref:System.Windows.Forms.DataGridViewButtonCell.OnMouseLeave%2A> has the effect of unsharing the row specified by `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -497,7 +497,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewButtonCell.MouseUpUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewButtonCell.OnMouseUp%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewButtonCell.OnMouseUp%2A> has the effect of unsharing the row. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>

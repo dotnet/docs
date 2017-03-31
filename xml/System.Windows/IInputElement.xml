@@ -15,7 +15,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Although this interface is public, it is not intended to be implemented in application or framework-building scenarios. This interface is public because of the inheritance requirements for connecting the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] core to the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] framework. You can also use this interface as a casting mechanism to enforce that the input events and properties will come from either a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, which can be handled in the same input model. For more information, see [WPF Architecture](../Topic/WPF%20Architecture.md) and also see [Base Elements Overview](../Topic/Base%20Elements%20Overview.md).  
+>  Although this interface is public, it is not intended to be implemented in application or framework-building scenarios. This interface is public because of the inheritance requirements for connecting the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] core to the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] framework. You can also use this interface as a casting mechanism to enforce that the input events and properties will come from either a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, which can be handled in the same input model. For more information, see [WPF Architecture](~/docs/framework/wpf/advanced/wpf-architecture.md) and also see [Base Elements Overview](~/docs/framework/wpf/advanced/base-elements-overview.md).  
   
  ]]></format>
     </remarks>

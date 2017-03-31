@@ -22,7 +22,7 @@
 ## Remarks  
  Both <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> and <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> dictate the behavior of the runtime when an exception is not handled in the workflow; however, <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> has the option of leaving a suspended workflow in the persistence store, while <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> does not. The reason for this is that what happens to a suspended workflow is host-specific, and <xref:System.Activities.WorkflowApplication> is not. To implement this functionality using <xref:System.Activities.WorkflowApplication>, create a custom <xref:System.Activities.Persistence.PersistenceParticipant> that has this behavior.  
   
- For an example of how to use this behavior see [Workflow Service Host Extensibility](../Topic/Workflow%20Service%20Host%20Extensibility.md).  
+ For an example of how to use this behavior see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md).  
   
  ]]></format>
     </remarks>

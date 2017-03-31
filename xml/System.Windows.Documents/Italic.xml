@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Documents.Italic> enforces a strong content model for child content. See [TextElement Content Model Overview](../Topic/TextElement%20Content%20Model%20Overview.md) for more information about the <xref:System.Windows.Documents.Italic> content model.  
+ <xref:System.Windows.Documents.Italic> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.Italic> content model.  
   
  This is the equivalent of a <xref:System.Windows.Documents.Span> with a <xref:System.Windows.Documents.FlowDocument.FontStyle%2A> value of <xref:System.Windows.FontStyles.Italic%2A> and the two elements can be used interchangeably.  
   

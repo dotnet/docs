@@ -5058,9 +5058,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -5130,9 +5130,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.NumberFormatInfo> object or a <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the thread current culture is used.  
   
@@ -5198,13 +5198,13 @@
 |Default ("G") format|A specific culture|<xref:System.Decimal.ToString%28System.IFormatProvider%29>|  
 |A specific format|A specific culture|<xref:System.Decimal.ToString%28System.String%2CSystem.IFormatProvider%29>|  
   
- The <xref:System.Decimal.ToString%2A> method uses the standard or custom numeric format string specified by the `format` parameter to convert the value of the current instance into its string representation. The `format` parameter can be any valid [standard numeric format specifier](../Topic/Standard%20Numeric%20Format%20Strings.md) except for D, R, and X, as well as any combination of [custom numeric format specifiers](../Topic/Custom%20Numeric%20Format%20Strings.md). If `format` is `null` or an empty string, the return value of this instance is formatted with the general numeric format specifier (G).  
+ The <xref:System.Decimal.ToString%2A> method uses the standard or custom numeric format string specified by the `format` parameter to convert the value of the current instance into its string representation. The `format` parameter can be any valid [standard numeric format specifier](~/docs/standard/base-types/standard-numeric-format-strings.md) except for D, R, and X, as well as any combination of [custom numeric format specifiers](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is `null` or an empty string, the return value of this instance is formatted with the general numeric format specifier (G).  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The return value is formatted by using the <xref:System.Globalization.NumberFormatInfo> object for the current culture. To apply the formatting conventions of a specified culture, call the <xref:System.Decimal.ToString%28System.String%2CSystem.IFormatProvider%29> method.  
   
@@ -5276,9 +5276,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method returns a <xref:System.Globalization.NumberFormatInfo> object. Typically, `provider` is a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in formatting. If `provider` is `null`, the thread current culture is used.  
   

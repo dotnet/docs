@@ -20,7 +20,7 @@
   
  Strongly typed resource support is a compile-time feature that encapsulates access to resources by creating classes that contain a set of static, read-only (`get`) properties. This provides an alternative way to consume resources instead of calling the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> and <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName> methods.  
   
- The basic functionality for strongly typed resource support is provided by the <xref:System.Resources.Tools.StronglyTypedResourceBuilder> class (as well as the `/str` command-line option in the [Resgen.exe (Resource File Generator)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md)). The output of the <xref:System.Resources.Tools.StronglyTypedResourceBuilder.Create%2A> method is a class that contains strongly typed properties that match the resources that are referenced in the input parameter. This class provides read-only access to the resources that are available in the file processed.  
+ The basic functionality for strongly typed resource support is provided by the <xref:System.Resources.Tools.StronglyTypedResourceBuilder> class (as well as the `/str` command-line option in the [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md)). The output of the <xref:System.Resources.Tools.StronglyTypedResourceBuilder.Create%2A> method is a class that contains strongly typed properties that match the resources that are referenced in the input parameter. This class provides read-only access to the resources that are available in the file processed.  
   
    
   

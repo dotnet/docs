@@ -40,12 +40,12 @@
 >  The <xref:System.Windows.Controls.DatePicker> supports only the Gregorian calendar.  
   
 ## Customizing the DatePicker Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.DatePicker> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md). To see the parts and states that are specific to the <xref:System.Windows.Controls.DatePicker>, see [DatePicker Syles and Templates](../Topic/DatePicker%20Syles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.DatePicker> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md). To see the parts and states that are specific to the <xref:System.Windows.Controls.DatePicker>, see [DatePicker Syles and Templates](~/docs/framework/wpf/controls/datepicker-syles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style. If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
 <a name="xamlObjectElementUsage_DatePicker"></a>   
 ## XAML Object Element Usage  
@@ -276,7 +276,7 @@ DatePicker with dates that are not selectable
 <a name="xamlValues_CalendarStyle"></a>   
 ## XAML Values  
  *resourceExtension*  
- One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *styleResourceKey*  
  The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
@@ -400,7 +400,7 @@ DatePicker with dates that are not selectable
 <a name="xamlValues_DisplayDate"></a>   
 ## XAML Values  
  *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
   
    
   
@@ -453,7 +453,7 @@ DatePicker with dates that are not selectable
 <a name="xamlValues_DisplayDateEnd"></a>   
 ## XAML Values  
  *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
   
    
   
@@ -541,7 +541,7 @@ DatePicker with dates that are not selectable
 <a name="xamlValues_DisplayDateStart"></a>   
 ## XAML Values  
  *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
   
    
   
@@ -931,7 +931,7 @@ DatePicker with dates that are not selectable
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.DatePicker.SelectedDateChanged> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ The control raises the <xref:System.Windows.Controls.DatePicker.SelectedDateChanged> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -979,7 +979,7 @@ DatePicker with dates that are not selectable
 <a name="xamlValues_SelectedDate"></a>   
 ## XAML Values  
  *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
   
    
   
@@ -1161,7 +1161,7 @@ DatePicker with dates that are not selectable
 <a name="xamlValues_Text"></a>   
 ## XAML Values  
  *dateTimeString*  
- A date that is in one of the formats that are listed in the [DateTime XAML Syntax](../Topic/DateTime%20XAML%20Syntax.md) topic.  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
   
    
   

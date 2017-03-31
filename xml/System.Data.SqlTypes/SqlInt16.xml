@@ -549,7 +549,7 @@
       <Docs>
         <summary>Indicates whether this <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure is null.</summary>
         <value>
-          <see langword="true" /> if null. Otherwise, <see langword="false" />. For more information, see [Handling Null Values](../Topic/Handling%20Null%20Values.md).</value>
+          <see langword="true" /> if null. Otherwise, <see langword="false" />. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -851,7 +851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.SqlTypes.SqlInt16.Null> functions as a constant for the <xref:System.Data.SqlTypes.SqlInt16> structure. For more information, see [Handling Null Values](../Topic/Handling%20Null%20Values.md).  
+ <xref:System.Data.SqlTypes.SqlInt16.Null> functions as a constant for the <xref:System.Data.SqlTypes.SqlInt16> structure. For more information, see [Handling Null Values](~/docs/framework/data/adonet/sql/handling-null-values.md).  
   
  ]]></format>
         </remarks>

@@ -40,9 +40,9 @@
   
  ![Popup illustration](~/add/media/popuppicture.JPG "Popup illustration")  
   
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). When <xref:System.Windows.Controls.Primitives.Popup> is displayed on the screen, it does not reposition itself if its parent is repositioned.  
+ You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). When <xref:System.Windows.Controls.Primitives.Popup> is displayed on the screen, it does not reposition itself if its parent is repositioned.  
   
- A <xref:System.Windows.Controls.Primitives.Popup> displays its content in its own window on the screen. A <xref:System.Windows.Controls.Primitives.Popup> control supports animation when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` and the application is running with full trust. An application that is running with full trust has complete access to system resources and is typically installed on the user's system. For more information, see[Security (WPF)](../Topic/Security%20\(WPF\).md).  
+ A <xref:System.Windows.Controls.Primitives.Popup> displays its content in its own window on the screen. A <xref:System.Windows.Controls.Primitives.Popup> control supports animation when the <xref:System.Windows.Controls.Primitives.Popup.AllowsTransparency%2A> property is set to `true` and the application is running with full trust. An application that is running with full trust has complete access to system resources and is typically installed on the user's system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
   
  For bitmap and opacity effects to appear on the content of a <xref:System.Windows.Controls.Primitives.Popup>, you must set the effects directly on the <xref:System.Windows.Controls.Primitives.Popup> content. The content of a <xref:System.Windows.Controls.Primitives.Popup> does not inherit effects that are set on the <xref:System.Windows.Controls.Primitives.Popup> control or on any other element that is in the parent window.  
   
@@ -50,7 +50,7 @@
   
  The <xref:System.Windows.FrameworkElement.Parent%2A> property must be set on the <xref:System.Windows.Controls.Primitives.Popup> when used in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
   
- To create a tooltip, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](../Topic/ToolTip%20Overview.md).  
+ To create a tooltip, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](~/docs/framework/wpf/controls/tooltip-overview.md).  
   
    
   
@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Primitives.Popup> control can only contain transparent content when the application runs with full trust. An application that runs with full trust has complete access to system resources and is typically installed on the local system. For more information, see[Security (WPF)](../Topic/Security%20\(WPF\).md).  
+ A <xref:System.Windows.Controls.Primitives.Popup> control can only contain transparent content when the application runs with full trust. An application that runs with full trust has complete access to system resources and is typically installed on the local system. For more information, see[Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
   
  This property cannot be set to `true` when the <xref:System.Windows.Controls.Primitives.Popup> is hosted in a [!INCLUDE[TLA#tla_winfxwebapp](~/includes/tlasharptla-winfxwebapp-md.md)].  
   
@@ -152,7 +152,7 @@
    
   
 ## Examples  
- [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md)  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
   
  ]]></format>
         </remarks>
@@ -301,7 +301,7 @@
   
 -   <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A>  
   
- You should implement these as dependency properties in your control so it can be used the same way as a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Custom Dependency Properties](../Topic/Custom%20Dependency%20Properties.md).  
+ You should implement these as dependency properties in your control so it can be used the same way as a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Custom Dependency Properties](~/docs/framework/wpf/advanced/custom-dependency-properties.md).  
   
  When you call <xref:System.Windows.Controls.Primitives.Popup.CreateRootPopup%2A>, `child` cannot be a child of a <xref:System.Windows.UIElement>. Also, `PlacementTarget` should be set on your control before you call this method.  
   
@@ -461,7 +461,7 @@
    
   
 ## Examples  
- [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md)  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
   
  ]]></format>
         </remarks>
@@ -492,12 +492,12 @@
       </ReturnValue>
       <Docs>
         <summary>Get or sets the horizontal distance between the target origin and the popup alignment point.</summary>
-        <value>The horizontal distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). The default is 0.</value>
+        <value>The horizontal distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_HorizontalOffset"></a>   
 ## Dependency Property Information  
@@ -901,7 +901,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
  If the <xref:System.Windows.SystemParameters.MenuDropAlignment%2A> property is `true`, setting <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> to <xref:System.Windows.Controls.Primitives.PlacementMode> or <xref:System.Windows.Controls.Primitives.PlacementMode> reverses the position of the <xref:System.Windows.Controls.Primitives.Popup>; a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its left edge with the right edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> and a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its right edge with the left edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>.  
   
@@ -969,7 +969,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_PlacementRectangle"></a>   
 ## Dependency Property Information  
@@ -1038,7 +1038,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="dependencyPropertyInfo_PlacementTarget"></a>   
 ## Dependency Property Information  
@@ -1284,12 +1284,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the vertical distance between the target origin and the popup alignment point.</summary>
-        <value>The vertical distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md). The default is 0.</value>
+        <value>The vertical distance between the target origin and the popup alignment point. For information about the target origin and popup alignment point, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md). The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](../Topic/Popup%20Placement%20Behavior.md).  
+ You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
 <a name="xamlAttributeUsage_VerticalOffset"></a>   
 ## XAML Attribute Usage  

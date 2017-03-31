@@ -28,7 +28,7 @@
   
  The resources are not necessarily written in the same order they were added.  
   
- For more information on the format of a.resx file, see [Working with .resx Files Programmatically](../Topic/Working%20with%20.resx%20Files%20Programmatically.md).  
+ For more information on the format of a.resx file, see [Working with .resx Files Programmatically](~/docs/framework/resources/working-with-resx-files-programmatically.md).  
   
 > [!NOTE]
 >  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission.  
@@ -558,7 +558,7 @@
 ## Remarks  
  The <xref:System.Resources.ResXResourceWriter.Dispose%2A> method calls the <xref:System.Resources.ResXResourceWriter.Generate%2A> method, if necessary, before releasing managed and unmanaged system resources.  
   
- Calling <xref:System.Resources.ResXResourceWriter.Dispose%2A> allows the system resources used by the <xref:System.Resources.ResXResourceWriter> to be reallocated for other purposes. For more information about <xref:System.Resources.ResXResourceWriter.Dispose%2A>, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
+ Calling <xref:System.Resources.ResXResourceWriter.Dispose%2A> allows the system resources used by the <xref:System.Resources.ResXResourceWriter> to be reallocated for other purposes. For more information about <xref:System.Resources.ResXResourceWriter.Dispose%2A>, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).  
   
  ]]></format>
         </remarks>
@@ -597,7 +597,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see  and .</para>
         </block>

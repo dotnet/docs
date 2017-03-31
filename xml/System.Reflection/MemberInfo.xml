@@ -255,7 +255,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](../Topic/How%20to:%20Load%20Assemblies%20into%20the%20Reflection-Only%20Context.md).</exception>
+        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type could not be loaded.</exception>
       </Docs>
     </Member>
@@ -307,7 +307,7 @@
         </remarks>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
         <exception cref="T:System.ArgumentNullException">If <paramref name="attributeType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](../Topic/How%20to:%20Load%20Assemblies%20into%20the%20Reflection-Only%20Context.md).</exception>
+        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributesData">

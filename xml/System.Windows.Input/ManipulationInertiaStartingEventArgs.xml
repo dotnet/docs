@@ -26,12 +26,12 @@
   
  You typically specify either the desired position of the manipulation when inertia ends or the desired deceleration of the inertia, but not both.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
    
   
 ## Examples  
- The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
  [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
@@ -96,7 +96,7 @@
   
  You typically set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -121,7 +121,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -196,7 +196,7 @@
 ## Remarks  
  If more than one point of contact initiated the manipulation, the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationOrigin%2A> property is the point between all of the points of contact.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -249,7 +249,7 @@
   
  You typically set either the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> or the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A>, but not both.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -319,7 +319,7 @@
   
  You typically set either the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> or the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A>, but not both.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>

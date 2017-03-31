@@ -171,7 +171,7 @@
   
  The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property can be set with the `percentagePhysicalMemoryUsedLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. If the `percentagePhysicalMemoryUsedLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property is calculated.  
   
- <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

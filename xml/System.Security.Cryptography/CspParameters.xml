@@ -36,7 +36,7 @@
   
 -   Specify a particular CSP by passing the provider type to the <xref:System.Security.Cryptography.CspParameters.ProviderType> or <xref:System.Security.Cryptography.CspParameters.ProviderName> property.  You can also specify a CSP using an overload of the constructor.  
   
--   Create a key container where you can store cryptographic keys.  Key containers provide the most secure way to persist cryptographic keys and keep them secret from malicious third parties.  For more information about creating key containers, see [How to: Store Asymmetric Keys in a Key Container](../Topic/How%20to:%20Store%20Asymmetric%20Keys%20in%20a%20Key%20Container.md).  
+-   Create a key container where you can store cryptographic keys.  Key containers provide the most secure way to persist cryptographic keys and keep them secret from malicious third parties.  For more information about creating key containers, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
   
 -   Specify whether to create an asymmetric signature key or an asymmetric exchange key using the <xref:System.Security.Cryptography.CspParameters.KeyNumber> property.  
   
@@ -418,7 +418,7 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.CspParameters.KeyContainerName> field to specify a name for your key container.  You can use the container name to retrieve the persisted key within that container.  
   
- For more information about creating key containers, see [How to: Store Asymmetric Keys in a Key Container](../Topic/How%20to:%20Store%20Asymmetric%20Keys%20in%20a%20Key%20Container.md).  
+ For more information about creating key containers, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
   
    
   

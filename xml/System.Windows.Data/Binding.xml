@@ -30,7 +30,7 @@
   
 -   Although not specified in the figure, it should be noted that the binding source object is not restricted to being a custom [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding supports data in the form of [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] objects and [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)]. To provide some examples, your binding source may be a <xref:System.Windows.UIElement>, any list object, a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object that is associated with [!INCLUDE[TLA#tla_adonet](~/includes/tlasharptla-adonet-md.md)] data or Web Services, or an XmlNode that contains your [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data.  
   
- Use the <xref:System.Windows.Data.Binding.Mode%2A> property to specify the direction of the data flow. To detect source changes in one-way or two-way bindings, the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. For an example, see [How to: Implement Property Change Notification](../Topic/How%20to:%20Implement%20Property%20Change%20Notification.md). The <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property specifies the timing of source updates. For more information, see "Basic Data Binding Concepts" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Use the <xref:System.Windows.Data.Binding.Mode%2A> property to specify the direction of the data flow. To detect source changes in one-way or two-way bindings, the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. For an example, see [How to: Implement Property Change Notification](~/docs/framework/wpf/data/how-to-implement-property-change-notification.md). The <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property specifies the timing of source updates. For more information, see "Basic Data Binding Concepts" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
 <a name="xamlAttributeUsage_PriorityBinding"></a>   
 ## XAML Attribute Usage  
@@ -42,7 +42,7 @@
 <a name="xamlValues_PriorityBinding"></a>   
 ## XAML Values  
  *declaration*  
- Zero or more attribute-assignment clauses separated by commas (,). For more information, see [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) or [Binding Declarations Overview](../Topic/Binding%20Declarations%20Overview.md).  
+ Zero or more attribute-assignment clauses separated by commas (,). For more information, see [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) or [Binding Declarations Overview](~/docs/framework/wpf/data/binding-declarations-overview.md).  
   
  ]]></format>
     </remarks>
@@ -221,7 +221,7 @@
 ## Remarks  
  A binding implicitly uses a default converter that tries to do a type conversion between the source value and the target value. If a conversion cannot be made, the default converter returns `null`.  
   
- If you want to associate a custom value converter with a binding, you should create a class that implements the <xref:System.Windows.Data.IValueConverter> interface and supply implementations for the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. Value converters can change data from one type to another, translate between cultural details such as character sets, or modify other aspects of their presentation. For examples of typical conversion scenarios, see "Data Conversion" in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ If you want to associate a custom value converter with a binding, you should create a class that implements the <xref:System.Windows.Data.IValueConverter> interface and supply implementations for the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. Value converters can change data from one type to another, translate between cultural details such as character sets, or modify other aspects of their presentation. For examples of typical conversion scenarios, see "Data Conversion" in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
 <a name="xamlAttributeUsage_Converter"></a>   
 ## XAML Attribute Usage  
@@ -233,7 +233,7 @@
 <a name="xamlValues_Converter"></a>   
 ## XAML Values  
  *myConverter*  
- A resource reference to a class that implements the <xref:System.Windows.Data.IValueConverter> interface, which includes implementations of the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. To refer to a value converter, use the [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
+ A resource reference to a class that implements the <xref:System.Windows.Data.IValueConverter> interface, which includes implementations of the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. To refer to a value converter, use the [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
   
  ]]></format>
         </remarks>
@@ -268,7 +268,7 @@
 ## Remarks  
  If you do not set this property, the binding engine uses the `Language` property of the binding target object. In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] this defaults to "en-US" or inherits the value from the root element (or any element) of the page, if one has been explicitly set.  
   
- For information about data conversion, see the Data Conversion section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For information about data conversion, see the Data Conversion section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -300,7 +300,7 @@
 ## Remarks  
  You can use the <xref:System.Windows.Data.Binding.ConverterParameter%2A> property to specify how an object is converted.  This property passes additional information to a converter that you use on a binding.  When you specify a <xref:System.Windows.Data.Binding.ConverterParameter%2A>, the value is passed to the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods as the `parameter` parameter.  
   
- For an example, see [How to: Produce a Value Based on a List of Bound Items](../Topic/How%20to:%20Produce%20a%20Value%20Based%20on%20a%20List%20of%20Bound%20Items.md). That example shows an implementation of an <xref:System.Windows.Data.IMultiValueConverter> but the usage still applies.  
+ For an example, see [How to: Produce a Value Based on a List of Bound Items](~/docs/framework/wpf/data/how-to-produce-a-value-based-on-a-list-of-bound-items.md). That example shows an implementation of an <xref:System.Windows.Data.IMultiValueConverter> but the usage still applies.  
   
  ]]></format>
         </remarks>
@@ -349,7 +349,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the element to use as the binding source object.</summary>
-        <value>The value of the <see langword="Name" /> property or [x:Name Directive](../Topic/x:Name%20Directive.md) of the element of interest. You can refer to elements in code only if they are registered to the appropriate <see cref="T:System.Windows.NameScope" /> through <see langword="RegisterName" />. For more information, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+        <value>The value of the <see langword="Name" /> property or [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) of the element of interest. You can refer to elements in code only if they are registered to the appropriate <see cref="T:System.Windows.NameScope" /> through <see langword="RegisterName" />. For more information, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
  The default is <see langword="null" />.</value>
         <remarks>
@@ -358,7 +358,7 @@
 ## Remarks  
  This property is useful when you want to bind to the property of another element in your application. For example, if you want to use a <xref:System.Windows.Controls.Slider> to control the height of another control in your application, or if you want to bind the <xref:System.Windows.Controls.ContentControl.Content%2A> of your control to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property of your <xref:System.Windows.Controls.ListBox> control.  
   
- By default, bindings inherit the data context specified by the `DataContext` property, if one has been set. However, the <xref:System.Windows.Data.Binding.ElementName%2A> property is one of the ways you can explicitly set the source of a <xref:System.Windows.Data.Binding> and override the inherited data context. For more information, see [How to: Specify the Binding Source](../Topic/How%20to:%20Specify%20the%20Binding%20Source.md).  
+ By default, bindings inherit the data context specified by the `DataContext` property, if one has been set. However, the <xref:System.Windows.Data.Binding.ElementName%2A> property is one of the ways you can explicitly set the source of a <xref:System.Windows.Data.Binding> and override the inherited data context. For more information, see [How to: Specify the Binding Source](~/docs/framework/wpf/data/how-to-specify-the-binding-source.md).  
   
  The <xref:System.Windows.Data.Binding.Source%2A> and <xref:System.Windows.Data.Binding.RelativeSource%2A> properties of the <xref:System.Windows.Data.Binding> class also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict might occur. This property throws an exception if there is a binding source conflict.  
   
@@ -479,11 +479,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To support <xref:System.Windows.Data.BindingMode> and <xref:System.Windows.Data.BindingMode> bindings, the underlying data must implement <xref:System.ComponentModel.INotifyPropertyChanged>. For details, see [How to: Implement Property Change Notification](../Topic/How%20to:%20Implement%20Property%20Change%20Notification.md).  
+ To support <xref:System.Windows.Data.BindingMode> and <xref:System.Windows.Data.BindingMode> bindings, the underlying data must implement <xref:System.ComponentModel.INotifyPropertyChanged>. For details, see [How to: Implement Property Change Notification](~/docs/framework/wpf/data/how-to-implement-property-change-notification.md).  
   
  For <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode> bindings, you can control the target-to-source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>.  
   
- For more information on the different binding modes, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information on the different binding modes, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -564,7 +564,7 @@
 ## Remarks  
  If the binding has <xref:System.Windows.Data.Binding.ValidationRules%2A> associated with it, the binding engine checks each rule each time it transfers the target property value to the source property. If a rule invalidates a value, the binding engine creates a <xref:System.Windows.Controls.ValidationError> object and adds it to the <xref:System.Windows.Controls.Validation>.<xref:System.Windows.Controls.Validation.Errors%2A> collection of the bound object. When the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> property is not empty, the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property of the object is set to `true`. If the <xref:System.Windows.Data.Binding.NotifyOnValidationError%2A> property of the <xref:System.Windows.Data.Binding> is set to `true`, then the binding engine raises the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> attached event on the object.  
   
- For a detailed discussion of the validation process, see the Data Validation section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For a detailed discussion of the validation process, see the Data Validation section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
         </remarks>
@@ -589,7 +589,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each binding typically has these four components: a binding target object, a target property, a binding source, and a path to the value in the binding source to use. For more information about these data binding concepts, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ Each binding typically has these four components: a binding target object, a target property, a binding source, and a path to the value in the binding source to use. For more information about these data binding concepts, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  Use the <xref:System.Windows.Data.Binding.Path%2A> property to specify the source value you want to bind to:  
   
@@ -611,16 +611,16 @@
   
 -   Optionally, a period (.) path can be used to bind to the current source. For example, `Text="{Binding}"` is equivalent to `Text="{Binding Path=.}"`.  
   
- For information about path syntax, see [Binding Declarations Overview](../Topic/Binding%20Declarations%20Overview.md) or [PropertyPath XAML Syntax](../Topic/PropertyPath%20XAML%20Syntax.md).  
+ For information about path syntax, see [Binding Declarations Overview](~/docs/framework/wpf/data/binding-declarations-overview.md) or [PropertyPath XAML Syntax](~/docs/framework/wpf/advanced/propertypath-xaml-syntax.md).  
   
  For [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] bindings, see the <xref:System.Windows.Data.Binding.XPath%2A> property.  
   
- To bind to an entire object, you do not need to specify the <xref:System.Windows.Data.Binding.Path%2A> property. For more information, see "Specifying the Path to the Value" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ To bind to an entire object, you do not need to specify the <xref:System.Windows.Data.Binding.Path%2A> property. For more information, see "Specifying the Path to the Value" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
    
   
 ## Examples  
- The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](../Topic/How%20to:%20Implement%20Binding%20Validation.md).  
+ The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
  [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
@@ -654,18 +654,18 @@
 ## Remarks  
  This property is commonly used to bind one property of an object to another property of the same object, or to define a binding in a style or template.  
   
- By default, bindings inherit the data context specified by the `DataContext` property, if one has been set. However, the <xref:System.Windows.Data.Binding.RelativeSource%2A> property is one of the ways you can explicitly set the source of a <xref:System.Windows.Data.Binding> and override the inherited data context. For more information, see [How to: Specify the Binding Source](../Topic/How%20to:%20Specify%20the%20Binding%20Source.md).  
+ By default, bindings inherit the data context specified by the `DataContext` property, if one has been set. However, the <xref:System.Windows.Data.Binding.RelativeSource%2A> property is one of the ways you can explicitly set the source of a <xref:System.Windows.Data.Binding> and override the inherited data context. For more information, see [How to: Specify the Binding Source](~/docs/framework/wpf/data/how-to-specify-the-binding-source.md).  
   
  The <xref:System.Windows.Data.Binding.ElementName%2A?displayProperty=fullName> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=fullName> properties also enable you to set the source of the binding explicitly. However, only one of the three properties, <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, and <xref:System.Windows.Data.Binding.RelativeSource%2A>, should be set for each binding, or a conflict can occur. This property throws an exception if there is a binding source conflict.  
   
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
 <a name="xamlTextUsage_RelativeSource"></a>   
 ## XAML Text Usage  
    
   
 ## Examples  
- The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](../Topic/How%20to:%20Implement%20Binding%20Validation.md).  
+ The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
  [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
@@ -898,7 +898,7 @@
 <a name="xamlValues_Source"></a>   
 ## XAML Values  
  *object*  
- An existing object. To refer to an existing object, use the [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md)  
+ An existing object. To refer to an existing object, use the [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md)  
   
    
   
@@ -1071,7 +1071,7 @@
 ## Remarks  
  Setting this property provides an alternative to using the <xref:System.Windows.Controls.DataErrorValidationRule> element explicitly. The <xref:System.Windows.Controls.DataErrorValidationRule> is a built-in validation rule that checks for errors that are raised by the <xref:System.ComponentModel.IDataErrorInfo> implementation of the source object. If an error is raised, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the error and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
   
- <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1116,7 +1116,7 @@
 ## Remarks  
  Setting this property provides an alternative to using the <xref:System.Windows.Controls.ExceptionValidationRule> element explicitly. The <xref:System.Windows.Controls.ExceptionValidationRule> is a built-in validation rule that checks for exceptions that are thrown during the update of the source property. If an exception is thrown, the binding engine creates a <xref:System.Windows.Controls.ValidationError> with the exception and adds it to the <xref:System.Windows.Controls.Validation.Errors%2A?displayProperty=fullName> collection of the bound element. The lack of an error clears this validation feedback, unless another rule raises a validation issue.  
   
- <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1186,7 +1186,7 @@
 ## Remarks  
  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object. You can create custom rules by deriving from the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, or you can use the built-in <xref:System.Windows.Controls.ExceptionValidationRule>, which invalidates a value if there are exceptions during source updates.  
   
- The binding engine checks each <xref:System.Windows.Controls.ValidationRule> associated with a binding each time an input value (the binding target property value) is transferred to the binding source property. For a detailed discussion of the validation process, see the Data Validation section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ The binding engine checks each <xref:System.Windows.Controls.ValidationRule> associated with a binding each time an input value (the binding target property value) is transferred to the binding source property. For a detailed discussion of the validation process, see the Data Validation section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
 > [!NOTE]
 >  This property can be set in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] only by using the collection syntax shown, or by accessing the collection object and using its various methods, such as `Add`. The property to access the collection object is read-only, whereas the collection itself is read-write.  

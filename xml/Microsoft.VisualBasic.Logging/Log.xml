@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.Log` object provides a straightforward entry point from which to access the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]'s logging services. The `WriteEntry` and `WriteException` methods write messages to the application's log listeners. The listeners can be configured by the application's configuration file. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Changing%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md) and [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ The `My.Application.Log` object provides a straightforward entry point from which to access the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]'s logging services. The `WriteEntry` and `WriteException` methods write messages to the application's log listeners. The listeners can be configured by the application's configuration file. For more information, see [Walkthrough: Changing Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md) and [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  The `My.Application.Log` object is available only for client applications. For Web applications, use `My.Log`. For more information, see <xref:Microsoft.VisualBasic.Logging.AspLog>.  
   
@@ -24,14 +24,14 @@
   
 |To|See|  
 |--------|---------|  
-|Write event information to the application's log listeners|[How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md)|  
-|Write exception information to the application's log listeners|[How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md)|  
-|Determine where `My.Application.Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write event information to the application's log listeners|[How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
+|Write exception information to the application's log listeners|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
+|Determine where `My.Application.Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md).  
+ This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#11)]  
   
@@ -182,7 +182,7 @@
   
 |To|See|  
 |--------|---------|  
-|Get information for each of the `Log` object's log listeners.|[Troubleshooting: Log Listeners](../Topic/Troubleshooting:%20Log%20Listeners%20\(Visual%20Basic\).md)|  
+|Get information for each of the `Log` object's log listeners.|[Troubleshooting: Log Listeners](~/docs/visual-basic/developing-apps/programming/log-info/troubleshooting-log-listeners.md)|  
   
 ## Availability by Project Type  
   
@@ -226,7 +226,7 @@
   
  In client applications, the `Log` object is available through the `My.Application.Log` object. In Web applications, the `Log` object is available through the `My.Log` object.  
   
- To learn which log listeners receive the `WriteEntry` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md). You can change default log listeners. For more information, see [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ To learn which log listeners receive the `WriteEntry` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md). You can change default log listeners. For more information, see [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  For overloads that do not take the `id` argument, the `id` written to the log is defined by the following table.  
   
@@ -247,8 +247,8 @@
   
 |To|See|  
 |--------|---------|  
-|Write event information to the application's log listeners|[How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md)|  
-|Determine where `Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write event information to the application's log listeners|[How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
+|Determine where `Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
 ## Availability by Project Type  
   
@@ -265,7 +265,7 @@
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md).  
+ This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#11)]  
   
@@ -305,7 +305,7 @@
   
  In client applications, the `Log` object is available through the `My.Application.Log` object. In Web applications, the `Log` object is available through the `My.Log` object.  
   
- To learn which log listeners receive the `WriteEntry` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md). You can change default log listeners. For more information, see [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ To learn which log listeners receive the `WriteEntry` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md). You can change default log listeners. For more information, see [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  For overloads that do not take the `id` argument, the `id` written to the log is defined by the following table.  
   
@@ -326,8 +326,8 @@
   
 |To|See|  
 |--------|---------|  
-|Write event information to the application's log listeners|[How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md)|  
-|Determine where `Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write event information to the application's log listeners|[How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
+|Determine where `Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
 ## Availability by Project Type  
   
@@ -344,7 +344,7 @@
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md).  
+ This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#11)]  
   
@@ -387,7 +387,7 @@
   
  In client applications, the `Log` object is available through the `My.Application.Log` object. In Web applications, the `Log` object is available through the `My.Log` object.  
   
- To learn which log listeners receive the `WriteEntry` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md). You can change default log listeners. For more information, see [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ To learn which log listeners receive the `WriteEntry` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md). You can change default log listeners. For more information, see [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  For overloads that do not take the `id` argument, the `id` written to the log is defined by the following table.  
   
@@ -408,8 +408,8 @@
   
 |To|See|  
 |--------|---------|  
-|Write event information to the application's log listeners|[How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md)|  
-|Determine where `Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write event information to the application's log listeners|[How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)|  
+|Determine where `Log` writes information|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
 ## Availability by Project Type  
   
@@ -426,7 +426,7 @@
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](../Topic/How%20to:%20Write%20Log%20Messages%20\(Visual%20Basic\).md).  
+ This example shows how to use the `My.Application.Log.WriteEntry` method to log tracing information. For more information, see [How to: Write Log Messages](~/docs/visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#11)]  
   
@@ -465,7 +465,7 @@
   
  In client applications, the `Log` object is available through the `My.Application.Log` object. In Web applications, the `Log` object is available through the `My.Log` object.  
   
- To learn which log listeners receive the `WriteException` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md). You can change default log listeners. For more information, see [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ To learn which log listeners receive the `WriteException` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md). You can change default log listeners. For more information, see [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  For overloads that do not take the `id` argument, the identifier written to the log is defined by the following table.  
   
@@ -486,8 +486,8 @@
   
 |To|See|  
 |--------|---------|  
-|Write exception information to the application's event log listeners.|[How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md)|  
-|Determine where `Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write exception information to the application's event log listeners.|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
+|Determine where `Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
 ## Availability by Project Type  
   
@@ -504,7 +504,7 @@
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteException` method to log exceptions. Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception. For more information, see [How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md).  
+ This example shows how to use the `My.Application.Log.WriteException` method to log exceptions. Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception. For more information, see [How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#10)]  
   
@@ -548,7 +548,7 @@
   
  In client applications, the `Log` object is available through the `My.Application.Log` object. In Web applications, the `Log` object is available through the `My.Log` object.  
   
- To learn which log listeners receive the `WriteException` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md). You can change default log listeners. For more information, see [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ To learn which log listeners receive the `WriteException` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md). You can change default log listeners. For more information, see [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  For overloads that do not take the `id` argument, the identifier written to the log is defined by the following table.  
   
@@ -569,8 +569,8 @@
   
 |To|See|  
 |--------|---------|  
-|Write exception information to the application's event log listeners.|[How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md)|  
-|Determine where `Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write exception information to the application's event log listeners.|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
+|Determine where `Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
 ## Availability by Project Type  
   
@@ -587,7 +587,7 @@
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteException` method to log exceptions. Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception. For more information, see [How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md).  
+ This example shows how to use the `My.Application.Log.WriteException` method to log exceptions. Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception. For more information, see [How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#10)]  
   
@@ -634,7 +634,7 @@
   
  In client applications, the `Log` object is available through the `My.Application.Log` object. In Web applications, the `Log` object is available through the `My.Log` object.  
   
- To learn which log listeners receive the `WriteException` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md). You can change default log listeners. For more information, see [Working with Application Logs](../Topic/Working%20with%20Application%20Logs%20in%20Visual%20Basic.md).  
+ To learn which log listeners receive the `WriteException` method's messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md). You can change default log listeners. For more information, see [Working with Application Logs](~/docs/visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
  For overloads that do not take the `id` argument, the identifier written to the log is defined by the following table.  
   
@@ -655,8 +655,8 @@
   
 |To|See|  
 |--------|---------|  
-|Write exception information to the application's event log listeners.|[How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md)|  
-|Determine where `Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](../Topic/Walkthrough:%20Determining%20Where%20My.Application.Log%20Writes%20Information%20\(Visual%20Basic\).md)|  
+|Write exception information to the application's event log listeners.|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
+|Determine where `Log` writes information.|[Walkthrough: Determining Where My.Application.Log Writes Information](~/docs/visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)|  
   
 ## Availability by Project Type  
   
@@ -673,7 +673,7 @@
    
   
 ## Examples  
- This example shows how to use the `My.Application.Log.WriteException` method to log exceptions. Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception. For more information, see [How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md).  
+ This example shows how to use the `My.Application.Log.WriteException` method to log exceptions. Uncomment the `Dim` and `MsgBox` lines to cause a <xref:System.NullReferenceException> exception. For more information, see [How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).  
   
  [!code-vb[VbVbalrMyApplicationLog#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/Form1.vb#10)]  
   

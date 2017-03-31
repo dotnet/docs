@@ -31,9 +31,9 @@
 ## Remarks  
  When you bind to a data collection, you may want to sort, filter, or group the data. To do that, you use collection views. You can think of a <xref:System.Windows.Data.CollectionView> as the layer on top of the binding source collection that allows you to navigate and display the source collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes raised by the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
   
- All collections have a default <xref:System.Windows.Data.CollectionView>. For all collections implementing <xref:System.Collections.IList>, the <xref:System.Windows.Data.ListCollectionView> object is the default view object. The <xref:System.Windows.Data.BindingListCollectionView> is the collection view class used for collections that implement <xref:System.ComponentModel.IBindingList>. To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method. For an example, see [How to: Get the Default View of a Data Collection](../Topic/How%20to:%20Get%20the%20Default%20View%20of%20a%20Data%20Collection.md).  
+ All collections have a default <xref:System.Windows.Data.CollectionView>. For all collections implementing <xref:System.Collections.IList>, the <xref:System.Windows.Data.ListCollectionView> object is the default view object. The <xref:System.Windows.Data.BindingListCollectionView> is the collection view class used for collections that implement <xref:System.ComponentModel.IBindingList>. To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method. For an example, see [How to: Get the Default View of a Data Collection](~/docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md).  
   
- For more information about collection views, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information about collection views, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  ]]></format>
     </remarks>

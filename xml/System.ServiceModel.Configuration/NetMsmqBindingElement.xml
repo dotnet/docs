@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.NetMsmqBinding> binding provides support for queuing by leveraging Microsoft Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling and disconnected operations. For a discussion of these features, see [Queues Overview](../Topic/Queues%20Overview.md).  
+ The <xref:System.ServiceModel.NetMsmqBinding> binding provides support for queuing by leveraging Microsoft Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling and disconnected operations. For a discussion of these features, see [Queues Overview](~/docs/framework/wcf/feature-details/queues-overview.md).  
   
  This is one of the standard bindings provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios in which configuration values must be set when a service is initialized.  
   

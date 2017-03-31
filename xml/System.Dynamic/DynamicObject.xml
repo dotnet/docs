@@ -35,7 +35,7 @@
   
  You cannot directly create an instance of the `DynamicObject` class. To implement the dynamic behavior, you may want to inherit from the `DynamicObject` class and override necessary methods. For example, if you need only operations for setting and getting properties, you can override just the <xref:System.Dynamic.DynamicObject.TrySetMember%2A> and <xref:System.Dynamic.DynamicObject.TryGetMember%2A> methods.  
   
- In C#, to enable dynamic behavior for instances of classes derived from the `DynamicObject` class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](../Topic/Using%20Type%20dynamic%20\(C%23%20Programming%20Guide\).md).  
+ In C#, to enable dynamic behavior for instances of classes derived from the `DynamicObject` class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](~/docs/csharp/programming-guide/types/using-type-dynamic.md).  
   
  In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](../Topic/Early%20and%20Late%20Binding%20\(Visual%20Basic\).md).  
   
@@ -56,7 +56,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
   
  You can also add your own members to classes derived from the `DynamicObject` class. If your class defines properties and also overrides the <xref:System.Dynamic.DynamicObject.TrySetMember%2A> method, the dynamic language runtime (DLR) first uses the language binder to look for a static definition of a property in the class. If there is no such property, the DLR calls the <xref:System.Dynamic.DynamicObject.TrySetMember%2A> method.  
   
- The `DynamicObject` class implements the DLR interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `DynamicObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `DynamicObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](../Topic/Dynamic%20Language%20Runtime%20Overview.md) and documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
+ The `DynamicObject` class implements the DLR interface <xref:System.Dynamic.IDynamicMetaObjectProvider>, which enables you to share instances of the `DynamicObject` class between languages that support the DLR interoperability model. For example, you can create an instance of the `DynamicObject` class in C# and then pass it to an IronPython function. For more information, see [Dynamic Language Runtime Overview](~/docs/framework/reflection-and-codedom/dynamic-language-runtime-overview.md) and documentation on the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141028) Web site.  
   
 > [!NOTE]
 >  If you have a simple scenario in which you need an object that can only add and remove members at run time but that does not need to define specific operations and does not have static members, use the <xref:System.Dynamic.ExpandoObject> class.  
@@ -106,7 +106,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
 ## Remarks  
  You cannot directly create an instance of the <xref:System.Dynamic.DynamicObject> class. To implement dynamic behavior, you have to inherit from the <xref:System.Dynamic.DynamicObject> class and override necessary methods.  
   
- In C#, to enable dynamic behavior for instances of the classes derived from the <xref:System.Dynamic.DynamicObject> class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](../Topic/Using%20Type%20dynamic%20\(C%23%20Programming%20Guide\).md).  
+ In C#, to enable dynamic behavior for instances of the classes derived from the <xref:System.Dynamic.DynamicObject> class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](~/docs/csharp/programming-guide/types/using-type-dynamic.md).  
   
  In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](../Topic/Early%20and%20Late%20Binding%20\(Visual%20Basic\).md).  
   

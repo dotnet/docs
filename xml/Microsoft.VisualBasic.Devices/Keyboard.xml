@@ -24,7 +24,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Send keystrokes to an application|[How to: Start an Application and Send it Keystrokes (Visual Basic)](../Topic/How%20to:%20Start%20an%20Application%20and%20Send%20it%20Keystrokes%20\(Visual%20Basic\).md)|  
+|Send keystrokes to an application|[How to: Start an Application and Send it Keystrokes (Visual Basic)](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-start-an-application-and-send-it-keystrokes.md)|  
   
 ## Availability by Project Type  
   
@@ -332,7 +332,7 @@
  The `wait` argument is useful if the other application must finish before your application can continue.  
   
 > [!NOTE]
->  Because there is no managed method to activate another application, you can either use this class within the current application, manually select the window to send the keys to, or use Windows API methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications. For more information, see [Walkthrough: Calling Windows APIs](../Topic/Walkthrough:%20Calling%20Windows%20APIs%20\(Visual%20Basic\).md).  
+>  Because there is no managed method to activate another application, you can either use this class within the current application, manually select the window to send the keys to, or use Windows API methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications. For more information, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
   
  The `keys` argument can specify any single key or any key combined with ALT, CTRL, or SHIFT (or any combination of those keys). Each key is represented by one or more characters, such as `a` for the character "a", or `{ENTER}` for the ENTER key.  
   
@@ -427,7 +427,7 @@
  The `wait` argument is useful if the other application must finish before your application can continue.  
   
 > [!NOTE]
->  Because there is no managed method to activate another application, you can either use this class within the current application, manually select the window to send the keys to, or use Windows API methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications. For more information, see [Walkthrough: Calling Windows APIs](../Topic/Walkthrough:%20Calling%20Windows%20APIs%20\(Visual%20Basic\).md).  
+>  Because there is no managed method to activate another application, you can either use this class within the current application, manually select the window to send the keys to, or use Windows API methods, such as `FindWindow` and `SetForegroundWindow`, to force focus on other applications. For more information, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
   
  The `keys` argument can specify any single key or any key combined with ALT, CTRL, or SHIFT (or any combination of those keys). Each key is represented by one or more characters, such as `a` for the character "a", or `{ENTER}` for the ENTER key.  
   

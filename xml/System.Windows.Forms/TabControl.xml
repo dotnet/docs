@@ -65,7 +65,7 @@
   
  Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
   
- When visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment>, the tab contents might not render correctly. To work around this issue, you can paint the tab contents yourself using owner drawing. For more information, see [How to: Display Side-Aligned Tabs with TabControl](../Topic/How%20to:%20Display%20Side-Aligned%20Tabs%20with%20TabControl.md).  
+ When visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment>, the tab contents might not render correctly. To work around this issue, you can paint the tab contents yourself using owner drawing. For more information, see [How to: Display Side-Aligned Tabs with TabControl](~/docs/framework/winforms/controls/how-to-display-side-aligned-tabs-with-tabcontrol.md).  
   
  When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment> and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property is set to a value other than <xref:System.Windows.Forms.TabAppearance>, the tab page contents might not render correctly.  
   
@@ -1805,7 +1805,7 @@
   
  Changing the value of this property raises the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event.  
   
- For more information about globalization issues, see [Best Practices for Developing World-Ready Applications](../Topic/Best%20Practices%20for%20Developing%20World-Ready%20Applications.md).  
+ For more information about globalization issues, see [Best Practices for Developing World-Ready Applications](~/docs/standard/globalization-and-localization/best-practices-for-developing-world-ready-apps.md).  
   
  ]]></format>
         </remarks>

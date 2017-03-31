@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDbConnection> interface enables an inheriting class to implement a Connection class, which represents a unique session with a data source (for example, a network connection to a server). For more information about Connection classes, see [Connecting to a Data Source](../Topic/Connecting%20to%20a%20Data%20Source%20in%20ADO.NET.md).  
+ The <xref:System.Data.IDbConnection> interface enables an inheriting class to implement a Connection class, which represents a unique session with a data source (for example, a network connection to a server). For more information about Connection classes, see [Connecting to a Data Source](~/docs/framework/data/adonet/connecting-to-a-data-source.md).  
   
  An application does not create an instance of the <xref:System.Data.IDbConnection> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbConnection>.  
   

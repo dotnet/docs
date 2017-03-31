@@ -55,11 +55,11 @@
  The <xref:System.SByte> value type represents integers with values ranging from negative 128 to positive 127.  
   
 > [!IMPORTANT]
->  The <xref:System.SByte> type is not CLS-compliant. The CLS-compliant alternative type is <xref:System.Int16>. <xref:System.Byte> can be used instead to replace a positive <xref:System.SByte> value that ranges from zero to <xref:System.Byte.MaxValue>. For more information about CLS compliance, see [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+>  The <xref:System.SByte> type is not CLS-compliant. The CLS-compliant alternative type is <xref:System.Int16>. <xref:System.Byte> can be used instead to replace a positive <xref:System.SByte> value that ranges from zero to <xref:System.Byte.MaxValue>. For more information about CLS compliance, see [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md).  
   
  <xref:System.SByte> provides methods to compare instances of this type, convert the value of an instance to its string representation, and convert the string representation of a number to an instance of this type.  
   
- For information about how format specification codes control the string representation of value types, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ For information about how format specification codes control the string representation of value types, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  ]]></format>
     </remarks>
@@ -1670,9 +1670,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about support for formatting in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about support for formatting in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The format of the returned string is determined by the <xref:System.Globalization.NumberFormatInfo> object for the current culture. Depending on the `format` parameter, this object controls symbols such as the negative sign, the group separator, and the decimal point symbol in the output string. To provide formatting information for cultures other than the current culture, call the <xref:System.SByte.ToString%28System.String%2CSystem.IFormatProvider%29> overload.  
   
@@ -1739,9 +1739,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about support for formatting in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about support for formatting in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string returned by this method. When the <xref:System.SByte.ToString%28System.String%2CSystem.IFormatProvider%29> method is invoked, it calls the `provider` parameter's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. The <xref:System.IFormatProvider.GetFormat%2A> method then returns the <xref:System.Globalization.NumberFormatInfo> object that provides information for formatting the `value` parameter, such as the negative sign symbol, the group separator symbol, or the decimal point symbol. There are three ways to use the `provider` parameter to supply formatting information to the <xref:System.SByte.ToString%28System.String%2CSystem.IFormatProvider%29> method:  
   

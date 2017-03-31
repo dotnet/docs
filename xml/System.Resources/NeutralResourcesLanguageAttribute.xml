@@ -50,7 +50,7 @@
   
  The attribute performs two roles:  
   
--   If the default culture's resources are embedded in the app's main assembly and <xref:System.Resources.ResourceManager> has to retrieve resources that belong to the same culture as the default culture, the <xref:System.Resources.ResourceManager> automatically uses the resources located in the main assembly instead of searching for a satellite assembly. This bypasses the usual assembly probe, improves lookup performance for the first resource you load, and can reduce your working set. See [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md) for the process <xref:System.Resources.ResourceManager> uses to probe for resource files.  
+-   If the default culture's resources are embedded in the app's main assembly and <xref:System.Resources.ResourceManager> has to retrieve resources that belong to the same culture as the default culture, the <xref:System.Resources.ResourceManager> automatically uses the resources located in the main assembly instead of searching for a satellite assembly. This bypasses the usual assembly probe, improves lookup performance for the first resource you load, and can reduce your working set. See [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) for the process <xref:System.Resources.ResourceManager> uses to probe for resource files.  
   
 -   If the default culture's resources are located in a satellite assembly rather than in the main app assembly, the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute specifies the culture and the directory from which the runtime can load the resources.  
   
@@ -261,7 +261,7 @@ csc Example.cs /resource:ExampleResources.resources
         <ReturnType>System.Resources.UltimateResourceFallbackLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location for the <see cref="T:System.Resources.ResourceManager" /> class to use to retrieve neutral resources by using the [resource fallback process](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).</summary>
+        <summary>Gets the location for the <see cref="T:System.Resources.ResourceManager" /> class to use to retrieve neutral resources by using the [resource fallback process](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).</summary>
         <value>One of the enumeration values that indicates the location (main assembly or satellite) from which to retrieve neutral resources.</value>
         <remarks>To be added.</remarks>
       </Docs>

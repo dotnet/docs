@@ -501,7 +501,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.Form.AutoScale%2A> is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName>. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+>  The <xref:System.Windows.Forms.Form.AutoScale%2A> is obsolete and has been retained for backward compatibility. The non-obsolete alternative is <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A?displayProperty=fullName>. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  You can use this property to allow your form and its controls to automatically adjust based on changes in the font. This can be useful in applications where the font might increase or decrease based on the language specified for use by Windows.  
   
@@ -546,7 +546,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  This member has been retained for backward compatibility. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+>  This member has been retained for backward compatibility. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  The value of the <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> property is used at form-display time to compute the scaling factor for the form. The autoscaling base size is used by the form as a baseline for comparison to the system's font size to determine how much to scale the form when autoscaling is used. If you want to determine the size a form will auto scale to based on a specific font, use the <xref:System.Windows.Forms.Form.GetAutoScaleSize%2A> method.  
   
@@ -926,7 +926,7 @@
  The size of the client area of the form is the size of the form excluding the borders and the title bar. The client area of a form is the area within a form where controls can be placed. You can use this property to get the proper dimensions when performing graphics operations or when sizing and positioning controls on the form. To get the size of the entire form, use the <xref:System.Windows.Forms.Form.Size%2A> property or use the individual properties <xref:System.Windows.Forms.Control.Height%2A> and <xref:System.Windows.Forms.Control.Width%2A>.  
   
 > [!NOTE]
->  You cannot currently bind to this property using application settings. For more information on application settings, see [Application Settings Overview](../Topic/Application%20Settings%20Overview.md).  
+>  You cannot currently bind to this property using application settings. For more information on application settings, see [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md).  
   
    
   
@@ -1483,9 +1483,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -1668,7 +1668,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.Form.GetAutoScaleSize%2A> method is obsolete in.NET Framework version 2.0. This member has been retained for backward compatibility. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+>  The <xref:System.Windows.Forms.Form.GetAutoScaleSize%2A> method is obsolete in.NET Framework version 2.0. This member has been retained for backward compatibility. For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  You can use this method to determine the size a form would autoscale to for a specific font before applying the font to the form. If you want to determine the size a form is autoscaled to based on the font currently assigned to the form, use the <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A> property.  
   
@@ -4656,7 +4656,7 @@
   
  Changing the value of this property raises the <xref:System.Windows.Forms.Form.RightToLeftLayoutChanged> event.  
   
- For more information about globalization issues, see [Best Practices for Developing World-Ready Applications](../Topic/Best%20Practices%20for%20Developing%20World-Ready%20Applications.md).  
+ For more information about globalization issues, see [Best Practices for Developing World-Ready Applications](~/docs/standard/globalization-and-localization/best-practices-for-developing-world-ready-apps.md).  
   
  ]]></format>
         </remarks>
@@ -5211,7 +5211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Form.Shown> event is only raised the first time a form is displayed; subsequently minimizing, maximizing, restoring, hiding, showing, or invalidating and repainting will not raise this event. For more information about the order of events of a form, see [Order of Events in Windows Forms](../Topic/Order%20of%20Events%20in%20Windows%20Forms.md).  
+ The <xref:System.Windows.Forms.Form.Shown> event is only raised the first time a form is displayed; subsequently minimizing, maximizing, restoring, hiding, showing, or invalidating and repainting will not raise this event. For more information about the order of events of a form, see [Order of Events in Windows Forms](~/docs/framework/winforms/order-of-events-in-windows-forms.md).  
   
  For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
   

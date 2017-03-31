@@ -44,7 +44,7 @@
   
 -   The overloads of the <xref:System.Char.GetUnicodeCategory%2A?displayProperty=fullName> method, which determine the category to which a character or surrogate pair belongs.  
   
--   The [character classes](../Topic/Character%20Classes%20in%20Regular%20Expressions.md) recognized by <xref:System.Text.RegularExpressions.Regex>, the .NET Framework's regular expression engine.  
+-   The [character classes](~/docs/standard/base-types/character-classes-in-regular-expressions.md) recognized by <xref:System.Text.RegularExpressions.Regex>, the .NET Framework's regular expression engine.  
   
  When using this class in your applications, keep in mind the following programming considerations for using the <xref:System.Char> type. The type can be difficult to use, and strings are generally preferable for representing linguistic content.  
   

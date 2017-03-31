@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is implemented by client-side UI Automation providers for fragment roots in fragments that contain window-based child elements, when the HWNDs of those child elements are not logically positioned within the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree. For more information, see Non-WPF Provider Reparenting and Non-WPF Provider Repositioning in the [Server-Side UI Automation Provider Implementation](../Topic/Server-Side%20UI%20Automation%20Provider%20Implementation.md) topic.  
+ This method is implemented by client-side UI Automation providers for fragment roots in fragments that contain window-based child elements, when the HWNDs of those child elements are not logically positioned within the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree. For more information, see Non-WPF Provider Reparenting and Non-WPF Provider Repositioning in the [Server-Side UI Automation Provider Implementation](~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md) topic.  
   
  The returned provider must be part of the fragment tree. It can supply additional properties or override properties of the specified component.  
   

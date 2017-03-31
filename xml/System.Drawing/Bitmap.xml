@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A bitmap consists of the pixel data for a graphics image and its attributes. There are many standard formats for saving a bitmap to a file. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] supports the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](../Topic/Types%20of%20Bitmaps.md).  
+ A bitmap consists of the pixel data for a graphics image and its attributes. There are many standard formats for saving a bitmap to a file. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] supports the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](~/docs/framework/winforms/advanced/types-of-bitmaps.md).  
   
  You can create images from files, streams, and other sources by using one of the <xref:System.Drawing.Bitmap.%23ctor%2A> constructors and save them to a stream or to the file system with the <xref:System.Drawing.Image.Save%2A> method. Images are drawn to the screen or to memory by using the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. For a list of topics about working with image files, see [Working with Images, Bitmaps, Icons, and Metafiles](../Topic/Working%20with%20Images,%20Bitmaps,%20Icons,%20and%20Metafiles.md).  
   
@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The file name and path can be relative to the application or an absolute path. Use this constructor to open images with the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](../Topic/Types%20of%20Bitmaps.md). The file remains locked until the <xref:System.Drawing.Bitmap> is disposed.  
+ The file name and path can be relative to the application or an absolute path. Use this constructor to open images with the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](~/docs/framework/winforms/advanced/types-of-bitmaps.md). The file remains locked until the <xref:System.Drawing.Bitmap> is disposed.  
   
  ]]></format>
         </remarks>
@@ -243,7 +243,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to open images with the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](../Topic/Types%20of%20Bitmaps.md). The file remains locked until the <xref:System.Drawing.Bitmap> is disposed.  
+ Use this constructor to open images with the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](~/docs/framework/winforms/advanced/types-of-bitmaps.md). The file remains locked until the <xref:System.Drawing.Bitmap> is disposed.  
   
    
   

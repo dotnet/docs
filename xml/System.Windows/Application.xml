@@ -242,7 +242,7 @@
   
 3.  Rethrow them on the main [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread without handling them to allow <xref:System.Windows.Application.DispatcherUnhandledException> to be raised.  
   
- For more information, see the [Threading Model](../Topic/Threading%20Model.md) overview.  
+ For more information, see the [Threading Model](~/docs/framework/wpf/advanced/threading-model.md) overview.  
   
  The <xref:System.Windows.Application.DispatcherUnhandledException> event handler is passed a <xref:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs> argument that contains contextual information regarding the exception, including:  
   
@@ -351,7 +351,7 @@
       </Parameters>
       <Docs>
         <param name="resourceKey">The name of the resource to find.</param>
-        <summary>Searches for a [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] resource, such as a <see cref="T:System.Windows.Style" /> or <see cref="T:System.Windows.Media.Brush" />, with the specified key, and throws an exception if the requested resource is not found (see [XAML Resources](../Topic/XAML%20Resources.md)).</summary>
+        <summary>Searches for a [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] resource, such as a <see cref="T:System.Windows.Style" /> or <see cref="T:System.Windows.Media.Brush" />, with the specified key, and throws an exception if the requested resource is not found (see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md)).</summary>
         <returns>The requested resource object. If the requested resource is not found, a <see cref="T:System.Windows.ResourceReferenceKeyNotFoundException" /> is thrown.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -466,7 +466,7 @@
 ## Remarks  
  <xref:System.Windows.Application.GetCookie%2A> retrieves a cookie for the specified <xref:System.Uri>. If the cookie can't be retrieved, a <xref:System.ComponentModel.Win32Exception> is thrown. You need to write the code to parse the cookie string into a list of name/value pairs.  
   
- For an overview of cookies in [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)], see [Navigation Overview](../Topic/Navigation%20Overview.md).  
+ For an overview of cookies in [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)], see [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1311,7 +1311,7 @@
   
  This property is thread safe and is available from any thread.  
   
- <xref:System.Windows.Application.ResourceAssembly%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Application.ResourceAssembly%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -1564,7 +1564,7 @@
   
  Persistent cookies are stored in the current [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] installation's Temporary Internet Files folder until they expire, in which case they are deleted. You can delete a persistent cookie from your application by setting its expiry date to a date/time value that is in the past.  
   
- For an overview of cookies in [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)], see [Navigation Overview](../Topic/Navigation%20Overview.md).  
+ For an overview of cookies in [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)], see [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1750,7 +1750,7 @@
  [!code-csharp[ApplicationStartupSnippets#HandleStartupCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml.cs#handlestartupcodebehind)]
  [!code-vb[ApplicationStartupSnippets#HandleStartupCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationStartupSnippets/visualbasic/application.xaml.vb#handlestartupcodebehind)]  
   
- [!INCLUDE[TLA#tla_xbap#plural](~/includes/tlasharptla-xbapsharpplural-md.md)] cannot retrieve and process command-line arguments because they are launched with [!INCLUDE[TLA#tla_clickonce](~/includes/tlasharptla-clickonce-md.md)] deployment (see [Deploying a WPF Application (WPF)](../Topic/Deploying%20a%20WPF%20Application%20\(WPF\).md)). However, they can retrieve and process query string parameters from the URLs that are used to launch them.  
+ [!INCLUDE[TLA#tla_xbap#plural](~/includes/tlasharptla-xbapsharpplural-md.md)] cannot retrieve and process command-line arguments because they are launched with [!INCLUDE[TLA#tla_clickonce](~/includes/tlasharptla-clickonce-md.md)] deployment (see [Deploying a WPF Application (WPF)](~/docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)). However, they can retrieve and process query string parameters from the URLs that are used to launch them.  
   
  ]]></format>
         </remarks>

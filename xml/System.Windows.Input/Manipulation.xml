@@ -18,7 +18,7 @@
 ## Remarks  
  A manipulation occurs when touch is interpreted as a physical action that is applied to an object. In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], manipulation events interpret input as a translation, expansion, or rotation manipulation. You usually interact with manipulations through the manipulation events that are defined on the <xref:System.Windows.UIElement>. However, the <xref:System.Windows.Input.Manipulation> class defines static methods that you can use to interact with manipulations.  
   
- For more information about manipulations, see [Input Overview](../Topic/Input%20Overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
     </remarks>

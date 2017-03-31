@@ -1752,7 +1752,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items. The index of the format items must be 0, to correspond to `arg0`, the single object in the parameter list of this method. The formatting process replaces each format item with the string representation of `arg0`.  
   
@@ -1769,7 +1769,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  `arg0` represents the object to be formatted. Each format item in `format` is replaced with the string representation of `arg0`. If the format item includes `formatString` and `arg0` implements the <xref:System.IFormattable> interface, then `arg0.ToString(formatString, null)` defines the formatting. Otherwise, `arg0.ToString()` defines the formatting.  
   
@@ -1843,7 +1843,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to objects in the parameter list of this method. The formatting process replaces each format item with the string representation of the corresponding object.  
   
@@ -1860,7 +1860,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  `args` represents the objects to be formatted. Each format item in `format` is replaced with the string representation of the corresponding object in `args`. If the format item includes `formatString` and the corresponding object in `args` implements the <xref:System.IFormattable> interface, then `args[index].ToString(formatString, provider)` defines the formatting. Otherwise, `args[index].ToString()` defines the formatting.  
   
@@ -1928,7 +1928,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the  [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of `arg0` to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the  [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of `arg0` to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items. The index of each format item must be zero (0) since this method includes an argument list with a single argument. The formatting process replaces each format item with the string representation of `arg0`.  
   
@@ -1945,7 +1945,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  The `provider` parameter specifies an <xref:System.IFormatProvider> implementation that can provide formatting information for the objects in `args`. `provider` can be any of the following:  
   
@@ -2030,7 +2030,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to objects in the parameter list of this method. The formatting process replaces each format item with the string representation of the corresponding object.  
   
@@ -2047,7 +2047,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  The `provider` parameter specifies an <xref:System.IFormatProvider> implementation that can provide formatting information for the objects in `args`. `provider` can be any of the following:  
   
@@ -2130,7 +2130,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to `arg0` and `arg1`, the two objects in the parameter list of this method. The formatting process replaces each format item with the string representation of the corresponding object.  
   
@@ -2147,7 +2147,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  `arg0` and `arg1` represent the objects to be formatted. Each format item in `format` is replaced with the string representation of either `arg0` or `arg1`. If the format item includes `formatString` and the corresponding object implements the <xref:System.IFormattable> interface, then `arg`*x*`.ToString(formatString, provider)` defines the formatting, where *x* is the index of the argument. Otherwise, `arg`*x*`.ToString()` defines the formatting.  
   
@@ -2217,7 +2217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to objects in the parameter list of this method. The formatting process replaces each format item with the string representation of the corresponding object.  
   
@@ -2234,7 +2234,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  The `provider` parameter specifies an <xref:System.IFormatProvider> implementation that can provide formatting information for `arg0` and `arg1`. `provider` can be any of the following:  
   
@@ -2313,7 +2313,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to `arg0` through `arg2`, the objects in the parameter list of this method. The formatting process replaces each format item with the string representation of the corresponding object.  
   
@@ -2330,7 +2330,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  `arg0`, `arg1`, and `arg2` represent the objects to be formatted. Each format item in `format` is replaced with the string representation of either `arg0`, `arg1`, or `arg2`, depending on the index of the format item. If the format item includes `formatString` and the corresponding object in `args` implements the <xref:System.IFormattable> interface, then `arg`*x*`.ToString(formatString, null)` defines the formatting, where *x* is the index of the argument. Otherwise, `arg`*x*`.ToString()` defines the formatting.  
   
@@ -2402,7 +2402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses the [composite formatting feature](../Topic/Composite%20Formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
+ This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in the current <xref:System.Text.StringBuilder> object.  
   
  The `format` parameter consists of zero or more runs of text intermixed with zero or more indexed placeholders, called format items, that correspond to objects in the parameter list of this method. The formatting process replaces each format item with the string representation of the corresponding object.  
   
@@ -2419,7 +2419,7 @@
 |:*formatString*|A standard or custom format string that is supported by the parameter.|  
   
 > [!NOTE]
->  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md).  
+>  For the standard and custom format strings used with date and time values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). For the standard and custom format strings used with numeric values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). For the standard format strings used with enumerations, see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md).  
   
  The `provider` parameter specifies an <xref:System.IFormatProvider> implementation that can provide formatting information for `arg0` and `arg1`. `provider` can be any of the following:  
   

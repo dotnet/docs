@@ -37,7 +37,7 @@
 > [!NOTE]
 >  The <xref:System.Runtime.Remoting.Messaging.AsyncResult> class is the implementation of <xref:System.IAsyncResult> that is returned by the `BeginInvoke` method when you use a delegate to call a method asynchronously.  
   
- For a detailed description of how the <xref:System.IAsyncResult> interface is used, see the [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md) topic.  
+ For a detailed description of how the <xref:System.IAsyncResult> interface is used, see the [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md) topic.  
   
    
   
@@ -46,7 +46,7 @@
   
  The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
   
- For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
  [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
@@ -99,7 +99,7 @@
   
  The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
   
- For more information about how this callback example works, and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For more information about how this callback example works, and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
  [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
@@ -160,7 +160,7 @@
   
  The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
   
- For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
  [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
@@ -223,7 +223,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Most implementers of the <see cref="T:System.IAsyncResult" /> interface will not use this property and should return <see langword="false" />. Beginning with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], a task that is created with the <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.IAsyncResult,System.Action{System.IAsyncResult},System.Threading.Tasks.TaskCreationOptions)" /> method will not complete if this property is not implemented correctly. See [Application Compatibility in 4.5](../Topic/Application%20Compatibility%20in%20the%20.NET%20Framework%204.5.md).</para>
+          <para>Most implementers of the <see cref="T:System.IAsyncResult" /> interface will not use this property and should return <see langword="false" />. Beginning with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], a task that is created with the <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.IAsyncResult,System.Action{System.IAsyncResult},System.Threading.Tasks.TaskCreationOptions)" /> method will not complete if this property is not implemented correctly. See [Application Compatibility in 4.5](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md).</para>
         </block>
         <block subset="none" type="usage">
           <para>Use this property to determine if the asynchronous operation completed synchronously. For example, this property can return <see langword="true" /> for an asynchronous I/O operation if the I/O request was small.</para>
@@ -271,7 +271,7 @@
   
  The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
   
- For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
  [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]

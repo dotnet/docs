@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridView.SortCompare> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridView.SortCompare> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -82,7 +82,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue1%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -115,7 +115,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.CellValue2%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -148,7 +148,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column%2A> in a multiple column sort. In this example the ID column is used to determine the final order if there are identical values in the sorted column, so no additional sorting will be done if there are duplicate values in the ID column. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.Column%2A> in a multiple column sort. In this example the ID column is used to determine the final order if there are identical values in the sorted column, so no additional sorting will be done if there are duplicate values in the ID column. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -181,7 +181,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex1%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -214,7 +214,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.RowIndex2%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -247,7 +247,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.SortResult%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridViewSortCompareEventArgs.SortResult%2A> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  

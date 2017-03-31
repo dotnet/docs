@@ -50,7 +50,7 @@
   
 <a name="Static"></a>   
 ## Static constructors and the TypeInitializationException exception  
- A static constructor, if one exists, is called automatically by the runtime before creating a new instance of a type. Static constructors can be explicitly defined by a developer. If a static  constructor is not explicitly defined, compilers automatically create one to initialize any `static` (in C#) or `Shared` (in Visual Basic) members of the type.  For more information on static constructors, see [Static Constructors](../Topic/Static%20Constructors%20\(C%23%20Programming%20Guide\).md).  
+ A static constructor, if one exists, is called automatically by the runtime before creating a new instance of a type. Static constructors can be explicitly defined by a developer. If a static  constructor is not explicitly defined, compilers automatically create one to initialize any `static` (in C#) or `Shared` (in Visual Basic) members of the type.  For more information on static constructors, see [Static Constructors](~/docs/csharp/programming-guide/classes-and-structs/static-constructors.md).  
   
  Most commonly, a <xref:System.TypeInitializationException> exception is thrown when a static constructor is unable to instantiate a type.  The <xref:System.Exception.InnerException%2A> property indicates why the static constructor was unable to instantiate the type. Some of the more common causes of a <xref:System.TypeInitializationException> exception are:  
   
@@ -61,7 +61,7 @@
   
 -   It has been explicitly defined as a member of a type.  
   
--   The type has  `static` (in C#) or `Shared` (in Visual Basic) variables that are declared and initialized in a single statement. In this case, the language compiler generates a static constructor for the type. You can inspect it by using a utility such as [IL Disassembler](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md). For instance, when the C# and VB compilers compile the following example, they generate the IL for a static constructor that is similar to this:  
+-   The type has  `static` (in C#) or `Shared` (in Visual Basic) variables that are declared and initialized in a single statement. In this case, the language compiler generates a static constructor for the type. You can inspect it by using a utility such as [IL Disassembler](~/docs/framework/tools/ildasm-exe-il-disassembler.md). For instance, when the C# and VB compilers compile the following example, they generate the IL for a static constructor that is similar to this:  
   
     ```  
   

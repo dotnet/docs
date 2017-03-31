@@ -114,7 +114,7 @@
 -   Thread pool threads, which are a pool of worker threads maintained by the runtime.  You can configure the thread pool and schedule work on thread pool threads by using the <xref:System.Threading.ThreadPool> class.  
   
     > [!NOTE]
-    >  Task-based asynchronous operations automatically execute on thread pool threads. Task-based asynchronous operations use the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> classes to implement the [task-based asynchronous pattern](../Topic/Task-based%20Asynchronous%20Pattern%20\(TAP\).md).  
+    >  Task-based asynchronous operations automatically execute on thread pool threads. Task-based asynchronous operations use the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> classes to implement the [task-based asynchronous pattern](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).  
   
 -   All threads that enter the managed execution environment from unmanaged code.  
   
@@ -584,7 +584,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 ## Remarks  
   
 > [!IMPORTANT]
->  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+>  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  The slot is allocated on all threads.  
   
@@ -645,7 +645,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 ## Remarks  
   
 > [!IMPORTANT]
->  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+>  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  Threads use a local store memory mechanism to store thread-specific data. The common language runtime allocates a multi-slot data store array to each process when it is created. The thread can allocate a data slot in the data store, store and retrieve a data value in the slot, and free the slot for reuse after the thread expires. Data slots are unique per thread. No other thread (not even a child thread) can get that data.  
   
@@ -1283,7 +1283,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 ## Remarks  
   
 > [!IMPORTANT]
->  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+>  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  After any thread calls `FreeNamedDataSlot`, any other thread that calls <xref:System.Threading.Thread.GetNamedDataSlot%2A> with the same name will allocate a new slot associated with the name. Subsequent calls to `GetNamedDataSlot` by any thread will return the new slot. However, any thread that still has a <xref:System.LocalDataStoreSlot?displayProperty=fullName> returned by an earlier call to `GetNamedDataSlot` can continue to use the old slot.  
   
@@ -1429,7 +1429,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 ## Remarks  
   
 > [!IMPORTANT]
->  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+>  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  Threads use a local store memory mechanism to store thread-specific data. The common language runtime allocates a multi-slot data store array to each process when it is created. The thread can allocate a data slot in the data store, store and retrieve a data value in the slot, and free the slot for reuse after the thread expires. Data slots are unique per thread. No other thread (not even a child thread) can get that data.  
   
@@ -1597,7 +1597,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 ## Remarks  
   
 > [!IMPORTANT]
->  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+>  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  Threads use a local store memory mechanism to store thread-specific data. The common language runtime allocates a multi-slot data store array to each process when it is created. The thread can allocate a data slot in the data store, store and retrieve a data value in the slot, and free the slot for reuse after the thread expires. Data slots are unique per thread. No other thread (not even a child thread) can get that data.  
   
@@ -1789,7 +1789,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information see [The Managed Thread Pool](../Topic/The%20Managed%20Thread%20Pool.md).  
+ For more information see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
   
    
   
@@ -2362,7 +2362,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 ## Remarks  
   
 > [!IMPORTANT]
->  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../Topic/Thread%20Local%20Storage:%20Thread-Relative%20Static%20Fields%20and%20Data%20Slots.md).  
+>  The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields (that is, fields that are marked with the <xref:System.ThreadStaticAttribute> attribute) and data slots. Thread-relative static fields provide much better performance than data slots, and enable compile-time type checking. For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
   
  Threads use a local store memory mechanism to store thread-specific data. The common language runtime allocates a multi-slot data store array to each process when it is created. The thread can allocate a data slot in the data store, store and retrieve a data value in the slot, and free the slot for reuse after the thread procedure ends and the <xref:System.Threading.Thread> object has been reclaimed by garbage collection. Data slots are unique per thread. No other thread (not even a child thread) can get that data.  
   
@@ -2641,7 +2641,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  Once the thread terminates, it cannot be restarted with another call to `Start`.  
   
- This overload and the <xref:System.Threading.ParameterizedThreadStart> delegate make it easy to pass data to a thread procedure, but the technique is not type safe because any object can be passed to this overload. A more robust way to pass data to a thread procedure is to put both the thread procedure and the data fields into a worker object. For more information, see [Creating Threads and Passing Data at Start Time](../Topic/Creating%20Threads%20and%20Passing%20Data%20at%20Start%20Time.md).  
+ This overload and the <xref:System.Threading.ParameterizedThreadStart> delegate make it easy to pass data to a thread procedure, but the technique is not type safe because any object can be passed to this overload. A more robust way to pass data to a thread procedure is to put both the thread procedure and the data fields into a worker object. For more information, see [Creating Threads and Passing Data at Start Time](~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md).  
   
    
   

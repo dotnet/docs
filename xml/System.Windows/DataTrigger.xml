@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate>, and <xref:System.Windows.DataTemplate> all have a triggers collection. A <xref:System.Windows.DataTrigger> allows you to set property values when the property value of the data object matches a specified <xref:System.Windows.Condition.Value%2A>. For example, if you are displaying a list of `Employee` objects, you may want the foreground color to be different based on each `Employee's` current attendance. (For example, `Employees` who are currently on vacation are displayed with a purple foreground.) In some scenarios it may be more suitable to create a converter or to use a <xref:System.Windows.Controls.DataTemplateSelector>. For more information, see the [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate>, and <xref:System.Windows.DataTemplate> all have a triggers collection. A <xref:System.Windows.DataTrigger> allows you to set property values when the property value of the data object matches a specified <xref:System.Windows.Condition.Value%2A>. For example, if you are displaying a list of `Employee` objects, you may want the foreground color to be different based on each `Employee's` current attendance. (For example, `Employees` who are currently on vacation are displayed with a purple foreground.) In some scenarios it may be more suitable to create a converter or to use a <xref:System.Windows.Controls.DataTemplateSelector>. For more information, see the [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
  Note that you must specify both the <xref:System.Windows.DataTrigger.Binding%2A> and <xref:System.Windows.DataTrigger.Value%2A> properties on a <xref:System.Windows.DataTrigger> for the data trigger to be meaningful. If one or both of the properties are not specified, an exception is thrown.  
   
@@ -94,7 +94,7 @@
 ## Remarks  
  The property value produced by this binding is compared with the value specified by the <xref:System.Windows.DataTrigger.Value%2A> property. That value is first converted to the type of the value of the binding (if possible), and then the two values are compared using the `Object.Equals` method. If the two values are equal, then the associated actions or setters are applied.  
   
- You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  Note that you must specify both the <xref:System.Windows.DataTrigger.Binding%2A> and <xref:System.Windows.DataTrigger.Value%2A> properties on a <xref:System.Windows.DataTrigger> for the data trigger to be meaningful. If one or both of the properties are not set, an exception is thrown.  
   
@@ -119,7 +119,7 @@
 <a name="xamlValues_PriorityBinding"></a>   
 ## XAML Values  
  *declaration*  
- Zero or more attribute-assignment clauses separated by commas (,). See [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) for more information.  
+ Zero or more attribute-assignment clauses separated by commas (,). See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) for more information.  
   
    
   
@@ -130,7 +130,7 @@
 [!code-xml[DataTemplatingIntro#DataTrigger](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#datatrigger)]  
 [!code-xml[DataTemplatingIntro#AddingMore2](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
   
- For a detailed discussion of this example, see [Data Templating Overview](../Topic/Data%20Templating%20Overview.md).  
+ For a detailed discussion of this example, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
  ]]></format>
         </remarks>

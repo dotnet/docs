@@ -29,7 +29,7 @@
   
  Qualification data is only read by the host and is not consumed by the add-in system in any other way.  
   
- You can apply qualification data to a pipeline segment by placing a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute next to the segment attribute. For more information about pipeline segments and their attributes, see [Pipeline Development](../Topic/Pipeline%20Development.md).  
+ You can apply qualification data to a pipeline segment by placing a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute next to the segment attribute. For more information about pipeline segments and their attributes, see [Pipeline Development](~/docs/framework/add-ins/pipeline-development.md).  
   
    
   

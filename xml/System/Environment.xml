@@ -209,7 +209,7 @@
   
 -   If <xref:System.Environment.Exit%2A> is called from a `try` or `catch` block, the code in any `finally` block does not execute. If the `return` statement is used, the code in the `finally` block does execute.  
   
--   If <xref:System.Environment.Exit%2A> is called when code in a [constrained execution region](../Topic/Constrained%20Execution%20Regions.md) (CER) is running, the CER will not complete execution. If the `return` statement is used, the CER completes execution.  
+-   If <xref:System.Environment.Exit%2A> is called when code in a [constrained execution region](~/docs/framework/performance/constrained-execution-regions.md) (CER) is running, the CER will not complete execution. If the `return` statement is used, the CER completes execution.  
   
  ]]></format>
         </remarks>
@@ -1059,7 +1059,7 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property value of <xref:System.Environment.NewLine%2A> is a constant customized specifically for the current platform and implementation of the .NET Framework. For more information about the escape characters in the property value, see [Character Escapes](../Topic/Character%20Escapes%20in%20Regular%20Expressions.md).  
+ The property value of <xref:System.Environment.NewLine%2A> is a constant customized specifically for the current platform and implementation of the .NET Framework. For more information about the escape characters in the property value, see [Character Escapes](~/docs/standard/base-types/character-escapes-in-regular-expressions.md).  
   
  The functionality provided by <xref:System.Environment.NewLine%2A> is often what is meant by the terms newline, line feed, line break, carriage return, CRLF, and end of line.  
   
@@ -1707,9 +1707,9 @@ goto :EOF
  For the .NET Framework Versions 4, 4.5, 4.5.1, and 4.5.2, the <xref:System.Environment.Version%2A?displayProperty=fullName> property returns a <xref:System.Version> object whose string representation has the form `4.0.30319.xxxxx`. For the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], its point releases, and the .NET Framework 4.7, it has the form `4.0.30319.42000`.  
   
 > [!WARNING]
->  For the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later, we do not recommend using the <xref:System.Environment.Version%2A> property to detect the version of the runtime; instead, you can determine the version of the common language runtime by querying the registry. For more information, see [How to: Determine Which .NET Framework Versions Are Installed](../Topic/How%20to:%20Determine%20Which%20.NET%20Framework%20Versions%20Are%20Installed.md).  
+>  For the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later, we do not recommend using the <xref:System.Environment.Version%2A> property to detect the version of the runtime; instead, you can determine the version of the common language runtime by querying the registry. For more information, see [How to: Determine Which .NET Framework Versions Are Installed](~/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).  
   
- For more information about the version of the common language runtime that is installed with each version of the .NET Framework, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ For more information about the version of the common language runtime that is installed with each version of the .NET Framework, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   

@@ -35,7 +35,7 @@
  To use other interpolation methods or animate between more than two target values, use a <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> object.  
   
 ## Freezable Features  
- Because the <xref:System.Windows.Media.Animation.DoubleAnimation> class inherits from <xref:System.Windows.Freezable>, <xref:System.Windows.Media.Animation.DoubleAnimation> objects gain several special features, which include the following: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ Because the <xref:System.Windows.Media.Animation.DoubleAnimation> class inherits from <xref:System.Windows.Freezable>, <xref:System.Windows.Media.Animation.DoubleAnimation> objects gain several special features, which include the following: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
@@ -346,7 +346,7 @@
   
  \- or -  
   
- <*object* `From`="{[x:Null Markup Extension](../Topic/x:Null%20Markup%20Extension.md)}"/>  
+ <*object* `From`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
   
 <a name="dependencyPropertyInfo_From"></a>   
 ## Dependency Property Information  
@@ -525,7 +525,7 @@
   
  \- or -  
   
- <*object* `To`="{[x:Null Markup Extension](../Topic/x:Null%20Markup%20Extension.md)}"/>  
+ <*object* `To`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
   
 <a name="dependencyPropertyInfo_To"></a>   
 ## Dependency Property Information  

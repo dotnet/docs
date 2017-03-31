@@ -1325,7 +1325,7 @@
    
   
 ## Examples  
- The following example demonstrates how use <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](../Topic/How%20to:%20Drag%20and%20Drop%20Ink.md).  
+ The following example demonstrates how use <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](~/docs/framework/wpf/advanced/how-to-drag-and-drop-ink.md).  
   
  [!code-csharp[InkDragDrop#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml.cs#3)]
  [!code-vb[InkDragDrop#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkDragDrop/VisualBasic/Window1.xaml.vb#3)]  
@@ -2011,7 +2011,7 @@
 <a name="xamlValues_PreferredPasteFormats"></a>   
 ## XAML Values  
  *InkCanvasClipboardFormats*  
- An array of <xref:System.Windows.Controls.InkCanvasClipboardFormat> enumeration values. Specifying an array in XAML requires `x:Array` usage. Specifying an enumeration value as an element that declares an array member requires `x:Static` usage. For more information, see [x:Array Markup Extension](../Topic/x:Array%20Markup%20Extension.md) and [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md).  
+ An array of <xref:System.Windows.Controls.InkCanvasClipboardFormat> enumeration values. Specifying an array in XAML requires `x:Array` usage. Specifying an enumeration value as an element that declares an array member requires `x:Static` usage. For more information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md) and [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
   
    
   

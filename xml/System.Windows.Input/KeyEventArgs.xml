@@ -44,7 +44,7 @@
   
 -   <xref:System.Windows.ContentElement.PreviewKeyDown?displayProperty=fullName>  
   
- The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  A key can be in both the up and toggled states or the down and toggled states. For this reason, determining whether a key is up or down is not as simple as checking the <xref:System.Windows.Input.KeyEventArgs.KeyStates%2A> value as a numeric value. Instead, you should check the value by treating it as a flag enumeration. Use an `AND` comparison of the first bit. Alternatively, use the helper properties <xref:System.Windows.Input.KeyEventArgs.IsUp%2A>, <xref:System.Windows.Input.KeyEventArgs.IsDown%2A>, and <xref:System.Windows.Input.KeyEventArgs.IsToggled%2A> to determine whether a given key is up, down, or toggled.  
   
@@ -172,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.KeyEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.KeyEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>

@@ -34,7 +34,7 @@
   
  Regardless of the value of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property, the display properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property are used to render the cell.  
   
- For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Data%20Formatting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
   
  To avoid performance penalties when handling this event, access the cell through the parameters of the event handler rather than accessing the cell directly.  
   

@@ -19,7 +19,7 @@
  The                          <xref:System.Windows.Shell.WindowChrome> class enables you to extend Windows Presentation Foundation (WPF) content into the non-client area of a window that is typically reserved for the operating system’s window manager.  
   
 ## Standard Windows  
- Standard windows are composed of two overlapping rectangles. The outer rectangle is the                                  *non-client area*, which is often referred to as                                  *chrome*. It is drawn and managed by the operating system’s window manager. Its dimensions are determined by standard operating system settings. The non-client frame provides standard window features and behaviors. These include caption buttons (Minimize, Maximize, and Close), the window border, resize and move behaviors, the application icon and title, and the system menu. The inner rectangle is the                                  *client area*. It contains the contents of your application, and it is drawn and managed by the application. For more information about windows in WPF applications, see                                  [WPF Windows Overview](../Topic/WPF%20Windows%20Overview.md).  
+ Standard windows are composed of two overlapping rectangles. The outer rectangle is the                                  *non-client area*, which is often referred to as                                  *chrome*. It is drawn and managed by the operating system’s window manager. Its dimensions are determined by standard operating system settings. The non-client frame provides standard window features and behaviors. These include caption buttons (Minimize, Maximize, and Close), the window border, resize and move behaviors, the application icon and title, and the system menu. The inner rectangle is the                                  *client area*. It contains the contents of your application, and it is drawn and managed by the application. For more information about windows in WPF applications, see                                  [WPF Windows Overview](~/docs/framework/wpf/app-development/wpf-windows-overview.md).  
   
  The following illustration shows the parts of a standard window.  
   
@@ -461,7 +461,7 @@
         <summary>Gets or sets a value that indicates which edges of the window frame are not owned by the client.</summary>
         <value>A bitwise combination of the enumeration values that specify which edges of the frame are not owned by the client.  
   
- The registered default is <see cref="F:System.Windows.Shell.NonClientFrameEdges.None" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+ The registered default is <see cref="F:System.Windows.Shell.NonClientFrameEdges.None" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -662,7 +662,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether hit-testing is enabled on the Windows Aero caption buttons.</summary>
         <value>
-          <see langword="true" /> if hit-testing is enabled on the caption buttons; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if hit-testing is enabled on the caption buttons; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

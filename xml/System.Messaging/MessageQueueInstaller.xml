@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Messaging.MessageQueueInstaller> is used by the installation utility to write registry values that are associated with the queue. For more information about installation utilities, see [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md).  
+ The <xref:System.Messaging.MessageQueueInstaller> is used by the installation utility to write registry values that are associated with the queue. For more information about installation utilities, see [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md).  
   
  To install a queue, create a project installer class that inherits from the <xref:System.Configuration.Install.Installer>, and set the <xref:System.ComponentModel.RunInstallerAttribute> for the class to `true`. Within your project, create a <xref:System.Messaging.MessageQueueInstaller> instance for each queue in the installation and add the instance to your project installer class.  
   

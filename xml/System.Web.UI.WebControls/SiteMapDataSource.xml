@@ -107,8 +107,8 @@
 ## Examples  
  The following code example demonstrates how to declaratively bind a <xref:System.Web.UI.WebControls.TreeView> control to a site map using a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. The site map data is retrieved beginning at the root node level.  
   
- [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/CS/webform1smdscs.aspx#1)]
- [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/VB/webform1smdsvb.aspx#1)]  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/CS/webform1smdscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/VB/webform1smdsvb.aspx#1)]  -->  
   
  ]]></format>
     </remarks>
@@ -394,8 +394,8 @@
 > [!NOTE]
 >  The `AsciiTextProvider` is not the default provider for the site, which (in this case) remains the <xref:System.Web.XmlSiteMapProvider> object. The <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A> property of the <xref:System.Web.UI.WebControls.SiteMapDataSource> control is set to the name of a custom site map provider, and the <xref:System.Web.UI.WebControls.TreeView> binds to the corresponding site map data.  
   
- [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/CS/webform3smdscs.aspx#1)]
- [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/VB/webform3smdsvb.aspx#1)]  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/CS/webform3smdscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/VB/webform3smdsvb.aspx#1)]  -->  
   
  ]]></format>
         </remarks>
@@ -473,17 +473,17 @@
 ## Examples  
  The following code example demonstrates the effect of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> and <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> properties. The example consists of several ASP.NET pages, a master page, master page section, and a Web.sitemap file. The Web.sitemap file defines the hierarchical structure of the site. For this code example, it defines a number of pages identified by unique URLs, such as 1.aspx, 2.aspx, A.aspx, and B.aspx, as follows:  
   
- [!code[System.Web.UI.WebControls.SiteMapDataSource_2#1](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Web.sitemap#1)]  
+ <!-- TODO: review snippet reference [!code[System.Web.UI.WebControls.SiteMapDataSource_2#1](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Web.sitemap#1)]  -->  
   
  The Site.master page contains the <xref:System.Web.UI.WebControls.SiteMapDataSource> and a <xref:System.Web.UI.WebControls.TreeView> controls inside a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. It identifies the starting node of the exposed hierarchy as Default.aspx, using the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property. The Site.master file is used by the Default.aspx page only.  
   
- [!code[System.Web.UI.WebControls.SiteMapDataSource_2#2](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Site.master#2)]  
+ <!-- TODO: review snippet reference [!code[System.Web.UI.WebControls.SiteMapDataSource_2#2](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Site.master#2)]  -->  
   
  All other pages, such as 1.aspx, 2.aspx, A.aspx, and so on, use the Section.master master page. This master page is very similar to Site.master, however it contains several <xref:System.Web.UI.WebControls.SiteMapDataSource> controls that you can experiment with. The <xref:System.Web.UI.WebControls.TreeView> control that displays site map data is initially bound to `SiteMapDataSource1`, which specifies a <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> of 1. This indicates that the parent node of the currently requested page is displayed. If you view page 1.aspx, the hierarchy displayed by the <xref:System.Web.UI.WebControls.TreeView> is A, 1, 2. However, if you view page 4.aspx, the hierarchy is B, 3, 4.  
   
  If you change the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID%2A> for the <xref:System.Web.UI.WebControls.TreeView> to `SiteMapDataSource2`, the <xref:System.Web.UI.WebControls.TreeView> control displays site map data differently. When you use `SiteMapDataSource2`, the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> property is set to `true`, which means that the site map data is displayed relative to the currently requested page and the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to -1, indicating that one level of child nodes is displayed, when possible.  When you view the A.aspx page, the hierarchy that is displayed is the hierarchy of the current level, including all siblings, such as B and C. When you view 1.aspx, the parent nodes are no longer displayed.  
   
- [!code[System.Web.UI.WebControls.SiteMapDataSource_2#3](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Section.master#3)]  
+ <!-- TODO: review snippet reference [!code[System.Web.UI.WebControls.SiteMapDataSource_2#3](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Section.master#3)]  -->  
   
  The following code example demonstrates one of the ASP.NET pages you can use with the other components of this code example.  
   
@@ -538,8 +538,8 @@
 ## Examples  
  The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property and bind a <xref:System.Web.UI.WebControls.TreeView> control to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control.  
   
- [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/CS/webform2smdsnocustomcs.aspx#1)]
- [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/VB/webform2smdsnocustomvb.aspx#1)]  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/CS/webform2smdsnocustomcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/VB/webform2smdsnocustomvb.aspx#1)]  -->  
   
  ]]></format>
         </remarks>

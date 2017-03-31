@@ -54,4 +54,4 @@ To verify that you're running the latest version of Visual Studio 2017, do the f
  * On the **Help** menu, choose **About Microsoft Visual Studio**.
  * In the **About Microsoft Visual Studio** dialog, the version number should be 15.0.26228.4 or higher.
 
-You can read more about the changes in Visual Studio 2017 in the [release notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes).
+You can read more about the changes in Visual Studio 2017 in the [release notes](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).

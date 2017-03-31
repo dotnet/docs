@@ -16,8 +16,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents information about the route and virtual path that are the result of generating a URL with the ASP.NET routing framework.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you generate a URL by using the ASP.NET routing framework, an instance of the <xref:System.Web.Routing.VirtualPathData> class is returned by the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. The <xref:System.Web.Routing.VirtualPathData> class contains information about the route that matched the values that you provided when you called the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. The <xref:System.Web.Routing.VirtualPathData> object also contains the generated URL in the <xref:System.Web.Routing.VirtualPathData.VirtualPath%2A> property. The <xref:System.Web.Routing.VirtualPathData.DataTokens%2A> property contains custom values for the route. You retrieve the route object that is used for generating the URL by using the <xref:System.Web.Routing.VirtualPathData.Route%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows a control that creates a URL that is based on a route that has parameters that are named `action` and `categoryName`.  
+  
+ [!code-csharp[System.Web.Routing.RouteTable.Routes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/cs/Default.aspx.cs#2)]
+ [!code-vb[System.Web.Routing.RouteTable.Routes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/vb/Default.aspx.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +49,9 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="route">To be added.</param>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="route">The object that is used to generate the URL.</param>
+        <param name="virtualPath">The generated URL.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.VirtualPathData" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +68,16 @@
         <ReturnType>System.Web.Routing.RouteValueDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the collection of custom values for the route definition.</summary>
+        <value>A collection of custom values for a route.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.Routing.VirtualPathData.DataTokens%2A> property to retrieve values that are associated with the route, but that are not used to determine whether a route matches a URL pattern. These values can be used by the route handler to process the request.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -71,8 +93,8 @@
         <ReturnType>System.Web.Routing.RouteBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the route that is used to create the URL.</summary>
+        <value>An object that represents the route that matched the parameters that were used to generate a URL.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +111,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the URL that was created from the route definition.</summary>
+        <value>The URL that was generated from a route.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To generate a URL, you call the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. That method returns an instance of the <xref:System.Web.Routing.VirtualPathData> class, which contains information about the route. The <xref:System.Web.Routing.VirtualPathData.VirtualPath%2A> property contains the generated URL.  
+  
+   
+  
+## Examples  
+ The following example shows a control that creates a URL based on a route that has parameters that are named `action` and `categoryName`.  
+  
+ [!code-csharp[System.Web.Routing.RouteTable.Routes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/cs/Default.aspx.cs#2)]
+ [!code-vb[System.Web.Routing.RouteTable.Routes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/vb/Default.aspx.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

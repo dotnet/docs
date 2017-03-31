@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.UsableDuringInitializationAttribute.Usable
+uid: System.Windows.Markup.UsableDuringInitializationAttribute.#ctor(System.Boolean)
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.UsableDuringInitializationAttribute.#ctor(System.Boolean)
+uid: System.Windows.Markup.UsableDuringInitializationAttribute.Usable
 manager: "martinek"
 ---

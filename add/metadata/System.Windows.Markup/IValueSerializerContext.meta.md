@@ -4,7 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.ComponentModel.PropertyDescriptor)
+uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor
 manager: "martinek"
 ---
 
@@ -14,6 +14,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor
+uid: System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.ComponentModel.PropertyDescriptor)
 manager: "martinek"
 ---

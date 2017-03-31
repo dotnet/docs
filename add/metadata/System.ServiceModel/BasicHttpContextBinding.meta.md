@@ -6,7 +6,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled
+uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -14,13 +14,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.BasicHttpContextBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -34,6 +27,13 @@ manager: "erikre"
 ---
 
 ---
+uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.ServiceModel.BasicHttpContextBinding.#ctor
 author: "Erikre"
 ms.author: "erikre"
@@ -41,7 +41,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.BasicHttpContextBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)
+uid: System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

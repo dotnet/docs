@@ -25,9 +25,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The HttpFileCollectionBase class is an abstract class that contains the same members as the <xref:System.Web.HttpFileCollection> class. The HttpFileCollectionBase class lets you create derived classes that are like the <xref:System.Web.HttpFileCollection> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario that you are testing.  
+ The <xref:System.Web.HttpFileCollectionBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpFileCollection> class. The <xref:System.Web.HttpFileCollectionBase> class lets you create derived classes that are like the <xref:System.Web.HttpFileCollection> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members with customized behavior that fulfills the scenario that you are testing.  
   
- The <xref:System.Web.HttpFileCollectionWrapper> class derives from the HttpFileCollectionBase class. The <xref:System.Web.HttpFileCollectionWrapper> class serves as a wrapper for the <xref:System.Web.HttpFileCollection> class. At run time, you typically use an instance of the <xref:System.Web.HttpFileCollectionWrapper> class to call members of the <xref:System.Web.HttpFileCollection> object.  
+ The <xref:System.Web.HttpFileCollectionWrapper> class derives from the <xref:System.Web.HttpFileCollectionBase> class. The <xref:System.Web.HttpFileCollectionWrapper> class serves as a wrapper for the <xref:System.Web.HttpFileCollection> class. At run time, you typically use an instance of the <xref:System.Web.HttpFileCollectionWrapper> class to call members of the <xref:System.Web.HttpFileCollection> object.  
   
  ]]></format>
     </remarks>
@@ -215,9 +215,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
+        <param name="name">The name to match.</param>
         <summary>When implemented in a derived class, returns all files that match the specified name.</summary>
-        <returns>To be added.</returns>
+        <returns>The collection of files.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

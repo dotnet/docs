@@ -18,20 +18,20 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- IUriContext implemented as a service enables type converters to use an application-specific context that might be able to complete a URI-type property.  
+ <xref:System.Windows.Markup.IUriContext> implemented as a service enables type converters to use an application-specific context that might be able to complete a URI-type property.  
   
- Type converters and markup extensions can query for IUriContext as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md) and [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
+ Type converters and markup extensions can query for <xref:System.Windows.Markup.IUriContext> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md) and [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
   
- IUriContext is not just for value conversion and service context. Class logic for UI elements or other classes that support containment might also implement IUriContext services as a recognized pattern that child elements can call for base URI information, or store base URI information that is obtained from XAML parsing of the root element.  
+ <xref:System.Windows.Markup.IUriContext> is not just for value conversion and service context. Class logic for UI elements or other classes that support containment might also implement <xref:System.Windows.Markup.IUriContext> services as a recognized pattern that child elements can call for base URI information, or store base URI information that is obtained from XAML parsing of the root element.  
   
- In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly PresentationCore. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], IUriContext is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly PresentationCore. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IUriContext> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
   
 ## WPF Usage Notes  
- Example scenarios for IUriContext exist in WPF.  
+ Example scenarios for <xref:System.Windows.Markup.IUriContext> exist in WPF.  
   
- As an example of a value converter, the <xref:System.Windows.Media.FontFamilyConverter> class can use a relative URI that is provided for properties such as <xref:System.Windows.Controls.Page.FontFamily%2A?displayProperty=fullName>, if IUriContext is available as a service on the <xref:System.ComponentModel.ITypeDescriptorContext> input.  
+ As an example of a value converter, the <xref:System.Windows.Media.FontFamilyConverter> class can use a relative URI that is provided for properties such as <xref:System.Windows.Controls.Page.FontFamily%2A?displayProperty=fullName>, if <xref:System.Windows.Markup.IUriContext> is available as a service on the <xref:System.ComponentModel.ITypeDescriptorContext> input.  
   
- As an example of the element case, <xref:System.Windows.Documents.Hyperlink> implements IUriContext so that it can pass through base URI values when parsed, which then modifies <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A>.  
+ As an example of the element case, <xref:System.Windows.Documents.Hyperlink> implements <xref:System.Windows.Markup.IUriContext> so that it can pass through base URI values when parsed, which then modifies <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A>.  
   
  ]]></format>
     </remarks>

@@ -18,7 +18,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you include a constraint for a URL parameter in a route definition, you must represent the constraint as either string or as an object that implements the IRouteConstraint interface. If the constraint is a string, it is treated as a regular expression. You create a class that implements IRouteConstraint when you cannot represent the validation logic easily as a regular expression. You add the validation logic in the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method.  
+ When you include a constraint for a URL parameter in a route definition, you must represent the constraint as either string or as an object that implements the <xref:System.Web.Routing.IRouteConstraint> interface. If the constraint is a string, it is treated as a regular expression. You create a class that implements <xref:System.Web.Routing.IRouteConstraint> when you cannot represent the validation logic easily as a regular expression. You add the validation logic in the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method.  
   
  ]]></format>
     </remarks>
@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the Match method to add validation logic for the constraint. This method is called by the routing framework when an incoming request is processed and when a URL is constructed. You can determine the current scenario by examining the `routeDirection` parameter.  
+ You use the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method to add validation logic for the constraint. This method is called by the routing framework when an incoming request is processed and when a URL is constructed. You can determine the current scenario by examining the `routeDirection` parameter.  
   
  When a request is processed, the routing framework determines whether the pattern and values of the incoming request match the pattern and constraints of the route. When a URL is constructed, the routing framework determines whether the values supplied when the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method is called match the pattern and constraints of the route.  
   

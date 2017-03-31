@@ -6,14 +6,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteTable.#ctor
+uid: System.Web.Routing.RouteTable.Routes
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteTable.Routes
+uid: System.Web.Routing.RouteTable.#ctor
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

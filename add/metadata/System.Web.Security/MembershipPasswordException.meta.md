@@ -6,14 +6,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor
+uid: System.Web.Security.MembershipPasswordException.#ctor(System.String,System.Exception)
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Web.Security.MembershipPasswordException.#ctor
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -27,14 +27,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor
+uid: System.Web.Security.MembershipPasswordException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor(System.String,System.Exception)
+uid: System.Web.Security.MembershipPasswordException.#ctor
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

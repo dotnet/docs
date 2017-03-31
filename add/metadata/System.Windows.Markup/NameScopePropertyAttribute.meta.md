@@ -4,17 +4,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.NameScopePropertyAttribute.Type
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.NameScopePropertyAttribute.Name
+uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String,System.Type)
 manager: "martinek"
 ---
 
@@ -24,6 +14,16 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String,System.Type)
+uid: System.Windows.Markup.NameScopePropertyAttribute.Name
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.NameScopePropertyAttribute.#ctor
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.NameScopePropertyAttribute.Type
 manager: "martinek"
 ---

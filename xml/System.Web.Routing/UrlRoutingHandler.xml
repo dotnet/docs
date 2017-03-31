@@ -20,8 +20,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Serves as base class for classes that enable you to customize how ASP.NET routing processes a request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can customize how ASP.NET routing handles requests by mapping a file name extension to a particular routing handler instead of by using the <xref:System.Web.Routing.UrlRoutingModule> class as the routing handler for every request.  
+  
+ To customize how ASP.NET routing handles a request for a URL with a specific file name extension, you create a class that derives from the <xref:System.Web.Routing.UrlRoutingHandler> class. For example, you can create a customized routing handler that processes requests for a file that has the extension `.abc`.  
+  
+ To register a customized handler for a particular file name extension, you must add that handler in the Web.config file. The following example shows how to register a customized handler for an ASP.NET Web site that is running in IIS 6.0 or [!INCLUDE[iisver](~/includes/iisver-md.md)] in Classic mode.  
+  
+```  
+<system.web>  
+  <httpHandlers>  
+    <add verb="*" path="*.abc"   
+        type="Contoso.Routing.CustomRoutingHandler" />  
+  </httpHandlers>  
+</system.web>  
+```  
+  
+ The following example shows how to register the same handler for an ASP.NET Web site that is running in [!INCLUDE[iisver](~/includes/iisver-md.md)].  
+  
+```  
+<system.webServer>  
+  <handlers>  
+    <add verb="*" path="*.abc"  
+        type="Contoso.Routing.CustomRoutingHandler"   
+        resourceType="Unspecified" />  
+  </handlers>  
+</system.webServer>  
+```  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +67,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.UrlRoutingHandler" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,8 +84,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether another request can use the <see cref="T:System.Web.Routing.UrlRoutingHandler" /> instance.</summary>
+        <value>Always <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,9 +105,11 @@
         <Parameter Name="httpContext" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpContext">An object that provides references to the intrinsic server objects (for example, <see cref="P:System.Web.HttpContext.Request" />, <see cref="P:System.Web.HttpContext.Response" />, <see cref="P:System.Web.HttpContext.Session" />, and <see cref="P:System.Web.HttpContext.Server" />).</param>
+        <summary>Processes an HTTP request that matches a route.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The request does not match any route.</exception>
+        <exception cref="T:System.InvalidOperationException">No handler is defined for the route.</exception>
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -94,9 +128,11 @@
         <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpContext">An object that provides references to the intrinsic server objects (for example, <see cref="P:System.Web.HttpContext.Request" />, <see cref="P:System.Web.HttpContext.Response" />, <see cref="P:System.Web.HttpContext.Session" />, and <see cref="P:System.Web.HttpContext.Server" />).</param>
+        <summary>Processes an HTTP request that matches a route.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The request does not match any route.</exception>
+        <exception cref="T:System.InvalidOperationException">No handler is defined for the route.</exception>
       </Docs>
     </Member>
     <Member MemberName="RouteCollection">
@@ -112,8 +148,8 @@
         <ReturnType>System.Web.Routing.RouteCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the collection of defined routes for the ASP.NET application.</summary>
+        <value>An object that contains the routes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,9 +166,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether another request can use the <see cref="T:System.Web.Routing.UrlRoutingHandler" /> instance.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Web.IHttpHandler.ProcessRequest">
@@ -151,9 +194,16 @@
         <Parameter Name="context" Type="System.Web.HttpContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="context">An object that provides references to the intrinsic server objects (for example, <see cref="P:System.Web.HttpContext.Request" />, <see cref="P:System.Web.HttpContext.Response" />, <see cref="P:System.Web.HttpContext.Session" />, and <see cref="P:System.Web.HttpContext.Server" />).</param>
+        <summary>Processes an HTTP request that matches a route.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.UrlRoutingHandler> instance is cast to an <xref:System.Web.IHttpHandler> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerifyAndProcessRequest">
@@ -173,9 +223,9 @@
         <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
       </Parameters>
       <Docs>
-        <param name="httpHandler">To be added.</param>
-        <param name="httpContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpHandler">The object that is used to process an HTTP request.</param>
+        <param name="httpContext">An object that provides references to the intrinsic server objects (for example, <see cref="P:System.Web.HttpContext.Request" />, <see cref="P:System.Web.HttpContext.Response" />, <see cref="P:System.Web.HttpContext.Session" />, and <see cref="P:System.Web.HttpContext.Server" />).</param>
+        <summary>When overridden in a derived class, validates the HTTP handler and performs the steps that are required to process the request.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

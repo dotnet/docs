@@ -6,42 +6,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.UrlRoutingModule.System#Web#IHttpModule#Dispose
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(System.Web.HttpContextBase)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Routing.UrlRoutingModule.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Routing.UrlRoutingModule.Dispose
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Routing.UrlRoutingModule.Init(System.Web.HttpApplication)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Routing.UrlRoutingModule.PostMapRequestHandler(System.Web.HttpContextBase)
+uid: System.Web.Routing.UrlRoutingModule.System#Web#IHttpModule#Init(System.Web.HttpApplication)
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -55,7 +20,42 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.UrlRoutingModule.System#Web#IHttpModule#Init(System.Web.HttpApplication)
+uid: System.Web.Routing.UrlRoutingModule.PostMapRequestHandler(System.Web.HttpContextBase)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Routing.UrlRoutingModule.Init(System.Web.HttpApplication)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Routing.UrlRoutingModule.Dispose
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Routing.UrlRoutingModule.#ctor
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(System.Web.HttpContextBase)
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Routing.UrlRoutingModule.System#Web#IHttpModule#Dispose
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

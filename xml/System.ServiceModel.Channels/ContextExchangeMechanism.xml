@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property or the <xref:System.ServiceModel.Channels.ContextBindingElement.%23ctor%28System.Net.Security.ProtectionLevel%2CSystem.ServiceModel.Channels.ContextExchangeMechanism%29> constructor to specify the value of the ContextExchangeMechanism for a conversation between a client and service.  
+ Use the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property or the <xref:System.ServiceModel.Channels.ContextBindingElement.%23ctor%28System.Net.Security.ProtectionLevel%2CSystem.ServiceModel.Channels.ContextExchangeMechanism%29> constructor to specify the value of the <xref:System.ServiceModel.Channels.ContextExchangeMechanism> for a conversation between a client and service.  
   
  Service endpoints that require support for the context exchange protocol can make this requirement explicit in their published policy. Policy assertions that represent the requirement for the client to support the context exchange protocol at the SOAP level or that require the enabling of HTTP cookie support can be published by an endpoint. The generation of these assertions into the policy on the service is controlled by the value of the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property as follows:  
   

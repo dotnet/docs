@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.MarkupExtension.#ctor
+uid: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)
+uid: System.Windows.Markup.MarkupExtension.#ctor
 manager: "martinek"
 ---

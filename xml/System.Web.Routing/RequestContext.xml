@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates information about an HTTP request that matches a defined route.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.RequestContext> class contains information about the HTTP request in the <xref:System.Web.Routing.RequestContext.HttpContext%2A> property. It contains information about the route that matched the current request in the <xref:System.Web.Routing.RequestContext.RouteData%2A> property.  
+  
+ When you construct a URL from a route, you pass an instance of the <xref:System.Web.Routing.RequestContext> class to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,10 +58,12 @@
         <Parameter Name="routeData" Type="System.Web.Routing.RouteData" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <param name="routeData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpContext">An object that contains information about the HTTP request.</param>
+        <param name="routeData">An object that contains information about the route that matched the current request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpContext" /> or <paramref name="routeData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HttpContext">
@@ -68,9 +79,16 @@
         <ReturnType>System.Web.HttpContextBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets information about the HTTP request.</summary>
+        <value>An object that contains information about the HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the <xref:System.Web.Routing.RequestContext.HttpContext%2A> property, you must pass the value as a parameter when you call the <xref:System.Web.Routing.RequestContext.%23ctor%28System.Web.HttpContextBase%2CSystem.Web.Routing.RouteData%29> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RouteData">
@@ -86,9 +104,16 @@
         <ReturnType>System.Web.Routing.RouteData</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets information about the requested route.</summary>
+        <value>An object that contains information about the requested route.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the <xref:System.Web.Routing.RequestContext.RouteData%2A> property, you must pass the value as a parameter when you call the <xref:System.Web.Routing.RequestContext.%23ctor%28System.Web.HttpContextBase%2CSystem.Web.Routing.RouteData%29> constructor.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

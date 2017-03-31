@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates the HTTP intrinsic object that enables information to be shared across multiple requests and sessions within an ASP.NET application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpApplicationStateWrapper> class derives from the <xref:System.Web.HttpApplicationStateBase> class and serves as a wrapper for the <xref:System.Web.HttpApplicationState> class. This class exposes the functionality of the <xref:System.Web.HttpApplicationState> class while also exposing the <xref:System.Web.HttpApplicationStateBase> type. The <xref:System.Web.HttpApplicationStateBase> class enables you to replace the original implementation of the <xref:System.Web.HttpApplicationState> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +40,11 @@
         <Parameter Name="httpApplicationState" Type="System.Web.HttpApplicationState" />
       </Parameters>
       <Docs>
-        <param name="httpApplicationState">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="httpApplicationState">The object that this wrapper class provides access to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpApplicationStateWrapper" /> class.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpApplicationState" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -55,9 +64,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the object to add to the collection.</param>
+        <param name="value">The value of the object.</param>
+        <summary>Adds an object to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,8 +83,8 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the keys for the objects in the collection.</summary>
+        <value>An array of state object keys.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,9 +119,16 @@
         <ReturnType>System.Web.HttpApplicationStateBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the <see cref="T:System.Web.HttpApplicationStateBase" /> object.</summary>
+        <value>A reference to the <see cref="T:System.Web.HttpApplicationState" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides compatibility with earlier versions of ASP.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -132,10 +148,21 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination for the elements that are copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which to begin copying.</param>
+        <summary>Copies the elements of the collection to an array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Web.HttpApplicationStateWrapper" /> object is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Web.HttpApplicationStateWrapper" /> object cannot be cast to the type of the destination array.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -151,8 +178,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of objects in the collection.</summary>
+        <value>The number of objects in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,10 +199,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the application state object to get.</param>
+        <summary>Returns a state object by index.</summary>
+        <returns>The object referenced by <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -194,9 +223,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the object to get.</param>
+        <summary>Returns a state object by name.</summary>
+        <returns>The object referenced by <paramref name="name" />, if found; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +243,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that can be used to iterate through a collection.</summary>
+        <returns>An object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,10 +264,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The index of the application state object to get.</param>
+        <summary>Returns the name of a state object by index.</summary>
+        <returns>The name of the application state object.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -258,9 +289,9 @@
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
-        <param name="info">To be added.</param>
-        <param name="context">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that contains the information that is required to serialize the <see cref="T:System.Web.HttpApplicationStateWrapper" /> object.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object that contains the source and destination of the serialized stream that is associated with the <see cref="T:System.Web.HttpApplicationStateWrapper" /> object.</param>
+        <summary>Returns the data that is necessary to serialize the <see cref="T:System.Web.HttpApplicationStateWrapper" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,8 +308,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the collection is thread-safe.</summary>
+        <value>
+          <see langword="true" /> if access is synchronized (thread-safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,10 +330,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the object in the collection.</param>
+        <summary>Gets a state object by index.</summary>
+        <value>The object referenced by <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -320,9 +354,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="name">The name of the object in the collection.</param>
+        <summary>Gets a state object by name.</summary>
+        <value>The object referenced by <paramref name="name" />, if found; otherwise, <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,8 +373,8 @@
         <ReturnType>System.Collections.Specialized.NameObjectCollectionBase+KeysCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> instance that contains all the keys in the <see cref="T:System.Web.HttpApplicationStateWrapper" /> instance.</summary>
+        <value>A collection of all the keys in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,7 +392,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Locks access to objects in the collection in order to enable synchronized access.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,9 +412,10 @@
         <Parameter Name="sender" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sender">The source of the deserialization event.</param>
+        <summary>Raises the deserialization event when deserialization is finished.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object that is associated with the current <see cref="T:System.Web.HttpApplicationStateWrapper" /> instance is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -399,8 +434,8 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the object to remove from the collection.</param>
+        <summary>Removes the object specified by name from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,7 +453,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all objects from the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,9 +473,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The position in the collection of the item to remove.</param>
+        <summary>Removes the object specified by index from the collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -460,9 +497,9 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the object to update.</param>
+        <param name="value">The updated value of the object.</param>
+        <summary>Updates the value of an object in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,9 +516,18 @@
         <ReturnType>System.Web.HttpStaticObjectsCollectionBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets all objects that are declared by an <see langword="object" /> element where the scope is set to "Application" in the ASP.NET application.</summary>
+        <value>A collection of objects in the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application objects are defined in the Global.asax file inside an element that has syntax like the following:  
+  
+ `<object runat="server" scope="Application">Object information</object>`  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -497,8 +543,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,7 +562,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Unlocks access to objects in the collection to enable synchronized access.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

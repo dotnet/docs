@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.RuntimeNamePropertyAttribute.Name
+uid: System.Windows.Markup.RuntimeNamePropertyAttribute.#ctor(System.String)
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.RuntimeNamePropertyAttribute.#ctor(System.String)
+uid: System.Windows.Markup.RuntimeNamePropertyAttribute.Name
 manager: "martinek"
 ---

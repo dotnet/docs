@@ -19,8 +19,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies one or more types on the associated collection type that will be used to wrap foreign content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Foreign content refers to cases where the type system constraints on the type of the content property do not capture all of the possible content cases that XAML usage for the owning type would support. For example, XAML support for content of a particular type might support strings in a strongly typed generic <xref:System.Collections.ObjectModel.Collection%601>.  
+  
+ <xref:System.Windows.Documents.InlineCollection> is an example of a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] class that has the <xref:System.Windows.Markup.ContentWrapperAttribute> attribute applied. In this case there are two separate attributed wrapper classes.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ContentWrapperAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,8 +47,8 @@
         <Parameter Name="contentWrapper" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contentWrapper">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="contentWrapper">The <see cref="T:System.Type" /> that is declared as a content wrapper for the collection type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,8 +65,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type that is declared as a content wrapper for the collection type associated with this attribute.</summary>
+        <value>The type that is declared as a content wrapper for the collection type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +86,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> is equivalent this <see cref="T:System.Windows.Markup.ContentWrapperAttribute" /> by comparing the <see cref="P:System.Windows.Markup.ContentWrapperAttribute.ContentWrapper" /> properties.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Markup.ContentWrapperAttribute.ContentWrapper" /> properties are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,8 +107,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a hash code for this instance.</summary>
+        <returns>An integer hash code</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,8 +125,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a unique identifier for this attribute.</summary>
+        <value>A unique identifier for the attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -16,8 +16,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the base class for classes that provides HTTP-response information from an ASP.NET operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponseBase> class is an abstract class that contains the same members as the <xref:System.Web.HttpResponse> class. The <xref:System.Web.HttpResponseBase> class enables you to create derived classes that are like the <xref:System.Web.HttpResponse> class, but that you can customize and that work outside the ASP.NET pipeline. When you perform unit testing, you typically use a derived class to implement members that have customized behavior that fulfills the scenario you are testing.  
+  
+ The <xref:System.Web.HttpResponseWrapper> class derives from the <xref:System.Web.HttpResponseBase> class. The <xref:System.Web.HttpResponseWrapper> class serves as a wrapper for the <xref:System.Web.HttpResponse> class. At run time, you typically use an instance of the <xref:System.Web.HttpResponseWrapper> class to call members of the <xref:System.Web.HttpResponse> object.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +40,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpResponseBase" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +66,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="dependencies">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dependencies">A file, cache key, or <see cref="T:System.Web.Caching.CacheDependency" /> object to add to the list of application dependencies.</param>
+        <summary>Adds an associates cache dependencies with the response that enable the response to be invalidated if it is cached and if the specified dependencies change.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -78,9 +88,10 @@
         <Parameter Name="cacheKeys" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="cacheKeys">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cacheKeys">A collection that contains the keys of the items that the cached response is dependent on.</param>
+        <summary>Makes the validity of a cached response dependent on the specified items in the cache.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependencies">
@@ -99,9 +110,10 @@
         <Parameter Name="cacheKeys" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="cacheKeys">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cacheKeys">An array that contains the keys of the items that the cached response is dependent on.</param>
+        <summary>Makes the validity of a cached item dependent on the specified items in the cache.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddCacheItemDependency">
@@ -120,9 +132,10 @@
         <Parameter Name="cacheKey" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cacheKey">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cacheKey">The key of the item that the cached response is dependent on.</param>
+        <summary>Makes the validity of a cached response dependent on the specified item in the cache.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -141,9 +154,10 @@
         <Parameter Name="filenames" Type="System.Collections.ArrayList" />
       </Parameters>
       <Docs>
-        <param name="filenames">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filenames">The names of the files to add.</param>
+        <summary>Adds file names to the collection of file names on which the current response is dependent.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependencies">
@@ -162,9 +176,10 @@
         <Parameter Name="filenames" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="filenames">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filenames">An array of file names to add.</param>
+        <summary>Adds an array of file names to the collection of file names on which the current response is dependent.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddFileDependency">
@@ -183,9 +198,10 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to add.</param>
+        <summary>Adds a single file name to the collection of file names on which the current response is dependent.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddHeader">
@@ -205,10 +221,11 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the HTTP header to add <c>value</c> to.</param>
+        <param name="value">The string to add to the header.</param>
+        <summary>Adds an HTTP header to the current response. This method is provided for compatibility with earlier versions of ASP.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddOnSendingHeaders">
@@ -227,10 +244,29 @@
         <Parameter Name="callback" Type="System.Action&lt;System.Web.HttpContextBase&gt;" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="callback">The callback method.</param>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Registers a callback that the ASP.NET runtime will invoke immediately before response headers are sent for this request.</summary>
+        <returns>Returns  an<see cref="T:System.Web.ISubscriptionToken" /> object that represents the subscription to the OnSendingHeaders pseudo event..</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pseudo event OnSendingHeaders differs from the IHttpModule-level pipeline event in that it is a per-request subscription rather than a per-application subscription. The intent is that the callback may modify the response status code or may set a response cookie or header. Other usage notes and caveats:  
+  
+-   This method is effective only when IIS runs in integrated pipeline mode pipeline and only if response headers haven't yet been sent for the current request.  
+  
+-   The ASP.NET runtime does not guarantee anything about the thread that the callback is invoked on. For example, the callback may be invoked synchronously in a background thread if a background flush is being performed. <xref:System.Web.HttpContext.Current%2A> is not guaranteed to be available in such a thread.  
+  
+-   The callback must not call any method that manipulates the response entity body or that results in a flush. For example, the callback must not call <xref:System.Web.HttpResponseBase.Redirect%2A>, as that method may manipulate the response entity body.  
+  
+-   The callback must contain only short-running synchronous code. Attempting to invoke an asynchronous operation or wait on such an operation could result in a deadlock.  
+  
+-   The callback must not throw an exception; otherwise behavior is undefined.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendCookie">
@@ -249,9 +285,10 @@
         <Parameter Name="cookie" Type="System.Web.HttpCookie" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">The cookie to add to the response.</param>
+        <summary>Adds an HTTP cookie to the HTTP response cookie collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppendHeader">
@@ -271,10 +308,11 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The name of the HTTP header to add to the current response.</param>
+        <param name="value">The value of the header.</param>
+        <summary>Adds an HTTP header to the current response.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="AppendToLog">
@@ -293,9 +331,10 @@
         <Parameter Name="param" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="param">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="param">The text to add to the log file.</param>
+        <summary>Adds custom log information to the Internet Information Services (IIS) log file.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ApplyAppPathModifier">
@@ -314,10 +353,11 @@
         <Parameter Name="virtualPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="virtualPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="virtualPath">The virtual path of a resource.</param>
+        <summary>Adds a session ID to the virtual path if the session is using <see cref="P:System.Web.Configuration.SessionStateSection.Cookieless" /> session state, and returns the combined path.</summary>
+        <returns>The virtual path, with the session ID inserted.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginFlush">
@@ -337,10 +377,10 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <param name="state">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="callback">The callback object.</param>
+        <param name="state">The response state.</param>
+        <summary>Sends the currently buffered response to the client.</summary>
+        <returns>The asynchronous result object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,9 +400,10 @@
         <Parameter Name="buffer" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">The binary characters to write to the current response.</param>
+        <summary>Writes a string of binary characters to the HTTP output stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Buffer">
@@ -378,9 +419,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether to buffer output and send it after the complete response has finished processing.</summary>
+        <value>
+          <see langword="true" /> if the output is buffered; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponseBase.Buffer%2A> property of the <xref:System.Web.HttpResponseBase> class has been deprecated in favor of the <xref:System.Web.HttpResponseBase.BufferOutput%2A> property and is provided only for compatibility with earlier versions of ASP.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="BufferOutput">
@@ -396,9 +446,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to buffer output and send it after the complete page has finished processing.</summary>
+        <value>
+          <see langword="true" /> if the output is buffered; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cache">
@@ -414,9 +466,10 @@
         <ReturnType>System.Web.HttpCachePolicyBase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the caching policy (such as expiration time, privacy settings, and vary clauses) of the current Web page.</summary>
+        <value>The caching policy of the current response.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="CacheControl">
@@ -432,9 +485,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="Cache-Control" /> HTTP header that matches one of the <see cref="T:System.Web.HttpCacheability" /> enumeration values.</summary>
+        <value>The caching policy of the current response.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Charset">
@@ -450,9 +504,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP character set of the current response.</summary>
+        <value>The HTTP character set of the current response.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -469,8 +524,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all headers and content output from the current response.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClearContent">
@@ -487,8 +543,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all content from the current response.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClearHeaders">
@@ -505,8 +562,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all headers from the current response.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClientDisconnectedToken">
@@ -522,9 +580,16 @@
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Threading.CancellationToken" /> object that is tripped when the client disconnects.</summary>
+        <value>The <see cref="T:System.Threading.CancellationToken" /> object that is tripped when the client disconnects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.Web.HttpResponse.ClientDisconnectedToken%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -541,8 +606,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes the socket connection to a client.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentEncoding">
@@ -558,9 +624,10 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the content encoding of the current response.</summary>
+        <value>The content encoding of the current response.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContentType">
@@ -576,9 +643,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP MIME type of the current response.</summary>
+        <value>The HTTP MIME type of the current response.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Cookies">
@@ -594,9 +662,10 @@
         <ReturnType>System.Web.HttpCookieCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the response cookie collection.</summary>
+        <value>The response cookie collection.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisableKernelCache">
@@ -613,8 +682,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Disables kernel caching for the current response.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisableUserCache">
@@ -631,8 +701,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disables IIS user-mode caching for this response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.DisableUserCache%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -649,8 +726,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sends all currently buffered output to the client, stops execution of the requested process, and raises the <see cref="E:System.Web.HttpApplication.EndRequest" /> event.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndFlush">
@@ -669,8 +747,8 @@
         <Parameter Name="asyncResult" Type="System.IAsyncResult" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="asyncResult">The asynchronous result object.</param>
+        <summary>Completes an asynchronous flush operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -687,9 +765,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of minutes before a page that is cached on the client or proxy expires. If the user returns to the same page before it expires, the cached version is displayed. <see cref="P:System.Web.HttpResponseBase.Expires" /> is provided for compatibility with earlier versions of Active Server Pages (ASP).</summary>
+        <value>The number of minutes before the page expires.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExpiresAbsolute">
@@ -705,9 +784,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the absolute date and time at which cached information expires in the cache. <see cref="P:System.Web.HttpResponseBase.ExpiresAbsolute" /> is provided for compatibility with earlier versions of Active Server Pages (ASP).</summary>
+        <value>The date and time at which the page expires.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -723,9 +803,10 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a filter object that is used to modify the HTTP entity body before transmission.</summary>
+        <value>An object that acts as the output filter.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -742,8 +823,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sends all currently buffered output to the client.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -760,8 +842,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Asynchronously sends all currently buffered output to the client.</summary>
+        <returns>The task the represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -778,9 +860,10 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the encoding for the header of the current response.</summary>
+        <value>The encoding for the current header.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -796,9 +879,10 @@
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of response headers.</summary>
+        <value>The response headers.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="HeadersWritten">
@@ -814,8 +898,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Gets a value indicating whether the response headers have been written.</summary>
+        <value>
+          <see langword="true" /> if the response headers have been written; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,9 +919,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the client is connected to the server.</summary>
+        <value>
+          <see langword="true" /> if the client is currently connected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsRequestBeingRedirected">
@@ -850,9 +939,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the client is being redirected to a new location.</summary>
+        <value>
+          <see langword="true" /> if the value of the location response header differs from the current location; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -868,9 +959,10 @@
         <ReturnType>System.IO.TextWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object that enables text output to the HTTP response stream.</summary>
+        <value>An object that enables output to the client.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="OutputStream">
@@ -886,9 +978,10 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the object that enables binary output to the outgoing HTTP content body.</summary>
+        <value>An object that represents the raw contents of the outgoing HTTP content body.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pics">
@@ -907,9 +1000,10 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="value">The string to add to the <see langword="PICS-Label" /> header.</param>
+        <summary>Appends an HTTP <see langword="PICS-Label" /> header to the current response.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="PushPromise">
@@ -928,9 +1022,16 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
+        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PushPromise">
@@ -951,11 +1052,18 @@
         <Parameter Name="headers" Type="System.Collections.Specialized.NameValueCollection" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="method">To be added.</param>
-        <param name="headers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The URL of the push request. It should be the virtual path of the relative resource that the server wants to push to the client.</param>
+        <param name="method">Http request method that would be used by the push request.</param>
+        <param name="headers">Http request header that would be used by the push request.</param>
+        <summary>This API is to support applications sending push promises to HTTP 2.0 clients. You can find more details regarding to Http2 server push at [HTTP/2 Specification Section 8.2: Server Push](http://http2.github.io/http2-spec/#PushResources).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ PushPromise is non-deterministic and applications shouldn't have logic that depends on it. Its only purpose is performance advantage in some cases. There are many conditions (protocol and implementation) that may cause to ignore the push requests completely. The expectation is based on fire-and-forget.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Redirect">
@@ -974,9 +1082,10 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="url">The target location.</param>
+        <summary>Redirects a request to the specified URL.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Redirect">
@@ -996,10 +1105,12 @@
         <Parameter Name="endResponse" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="endResponse">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="url">The target location.</param>
+        <param name="endResponse">
+          <see langword="true" /> to terminate the current process.</param>
+        <summary>Redirects a request to the specified URL and specifies whether execution of the current process should terminate.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectLocation">
@@ -1015,9 +1126,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the value of the HTTP <see langword="Location" /> header.</summary>
+        <value>The absolute URL of the HTTP <see langword="Location" /> header.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectPermanent">
@@ -1036,9 +1148,19 @@
         <Parameter Name="url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The location to which the request is redirected.</param>
+        <summary>Performs a permanent redirect from the requested URL to the specified URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%29> method overload provides a 301 HTTP status code in the response and includes the URL to redirect the request to. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirect exists, and it provides the redirect location.  
+  
+ Calling the <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%29> method terminates the rest of the response.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectPermanent">
@@ -1058,10 +1180,19 @@
         <Parameter Name="endResponse" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="endResponse">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="url">The location to which the request is redirected.</param>
+        <param name="endResponse">
+          <see langword="true" /> to terminate the response; otherwise <see langword="false" />. The default is <see langword="false" />.</param>
+        <summary>Performs a permanent redirect from the requested URL to the specified URL, and provides the option to complete the response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponseBase.RedirectPermanent%28System.String%2CSystem.Boolean%29> overload method provides a 301 HTTP status code in the response and includes the URL to redirect the request to. This overload also provides the option to specify whether to terminate or to complete the response after the redirect has been performed. A 301 HTTP status code is a standard code in an HTTP response. It indicates that a permanent redirect exists, and it provides the redirect location.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1080,9 +1211,17 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects the request to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Object%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1101,9 +1240,17 @@
         <Parameter Name="routeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <summary>Redirects the request to a new URL by using a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1122,9 +1269,17 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects the request to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1144,10 +1299,18 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects the request to a new URL by using route parameter values and a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoute">
@@ -1167,10 +1330,18 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Redirects the request to a new URL by using route parameter values and a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoute%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1189,9 +1360,17 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Object%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1210,9 +1389,17 @@
         <Parameter Name="routeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <summary>Performs a permanent redirection from the requested URL to a new URL by using a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1231,9 +1418,17 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1253,10 +1448,18 @@
         <Parameter Name="routeValues" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from the requested URL to a new URL by using the route parameter values and the name of the route that correspond to the new URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Object%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RedirectToRoutePermanent">
@@ -1276,10 +1479,18 @@
         <Parameter Name="routeValues" Type="System.Web.Routing.RouteValueDictionary" />
       </Parameters>
       <Docs>
-        <param name="routeName">To be added.</param>
-        <param name="routeValues">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeValues">The route parameter values.</param>
+        <summary>Performs a permanent redirection from the requested URL to a new URL by using route parameter values and a route name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.RedirectToRoutePermanent%28System.String%2CSystem.Web.Routing.RouteValueDictionary%29?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveOutputCacheItem">
@@ -1298,9 +1509,10 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="path">The virtual absolute path to the items to be removed from the cache.</param>
+        <summary>Removes from the cache all cached items that are associated with the specified path.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveOutputCacheItem">
@@ -1320,10 +1532,18 @@
         <Parameter Name="providerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <param name="providerName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="path">The virtual absolute path of the items that are removed from the cache.</param>
+        <param name="providerName">The provider that is used to remove the output-cache artifacts that are associated with the specified path.</param>
+        <summary>Uses the specified output-cache provider to remove all output-cache artifacts that are associated with the specified path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to remove output-cache items that are associated with the custom output-cache providers that are specified in the Web site configuration file. To remove output-cache items that are associated with the default output-cache provider, call the <xref:System.Web.HttpResponseBase.RemoveOutputCacheItem%28System.String%29> method overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCookie">
@@ -1342,9 +1562,10 @@
         <Parameter Name="cookie" Type="System.Web.HttpCookie" />
       </Parameters>
       <Docs>
-        <param name="cookie">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="cookie">The cookie in the collection to be updated.</param>
+        <summary>Updates an existing cookie in the cookie collection.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -1360,9 +1581,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see langword="Status" /> value that is returned to the client.</summary>
+        <value>The status of the HTTP output. For information about valid status codes, see [HTTP Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -1378,9 +1600,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP status code of the output that is returned to the client.</summary>
+        <value>The status code of the HTTP output that is returned to the client. For information about valid status codes, see [HTTP Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="StatusDescription">
@@ -1396,9 +1619,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the HTTP status message of the output that is returned to the client.</summary>
+        <value>The status message of the HTTP output that is returned to the client. For information about valid status codes, see [HTTP Status Codes](http://go.microsoft.com/fwlink/?LinkId=73157) on the MSDN Web site.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SubStatusCode">
@@ -1414,9 +1638,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that qualifies the status code of the response.</summary>
+        <value>The [!INCLUDE[iisver](~/includes/iisver-md.md)] substatus code.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SupportsAsyncFlush">
@@ -1432,8 +1657,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the connection supports asynchronous flush operation.</summary>
+        <value>
+          <see langword="true" /> if the connection supports asynchronous flush operations; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1450,9 +1676,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to send HTTP content to the client.</summary>
+        <value>
+          <see langword="true" /> if output is suppressed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="SuppressDefaultCacheControlHeader">
@@ -1468,9 +1696,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>[Supported in the .NET Framework 4.5.2 and later versions]  
+  
+ Gets or sets a value indicating whether to suppress the default <c>Cache Control: private</c> header for the current HTTP response.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
+  
+ Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressFormsAuthenticationRedirect">
@@ -1486,9 +1725,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies whether forms authentication redirection to the login page should be suppressed.</summary>
+        <value>
+          <see langword="true" /> if forms authentication redirection should be suppressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about this member, see <xref:System.Web.HttpResponse.SuppressFormsAuthenticationRedirect%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransmitFile">
@@ -1507,9 +1754,10 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to write to the HTTP output stream.</param>
+        <summary>Writes the specified file to the HTTP response output stream, without buffering it in memory.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="TransmitFile">
@@ -1530,11 +1778,12 @@
         <Parameter Name="length" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to write to the HTTP output stream.</param>
+        <param name="offset">The position in the file where writing starts.</param>
+        <param name="length">The number of bytes to write, starting at <c>offset</c>.</param>
+        <summary>Writes the specified part of a file to the HTTP response output stream, without buffering it in memory.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="TrySkipIisCustomErrors">
@@ -1550,9 +1799,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that specifies whether [!INCLUDE[iisver](~/includes/iisver-md.md)] custom errors are disabled.</summary>
+        <value>
+          <see langword="true" /> if IIS custom errors are disabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1571,9 +1822,10 @@
         <Parameter Name="ch" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="ch">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ch">The character to write to the HTTP output stream.</param>
+        <summary>Writes a character to an HTTP response output stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1592,9 +1844,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The object to write to the HTTP output stream.</param>
+        <summary>Writes the specified object to the HTTP response stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1613,9 +1866,10 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="s">The string to write to the HTTP output stream.</param>
+        <summary>Writes the specified string to the HTTP response output stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1636,11 +1890,12 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">The character array to write.</param>
+        <param name="index">The position in the character array where writing starts.</param>
+        <param name="count">The number of characters to write, starting at <c>index</c>.</param>
+        <summary>Writes the specified array of characters to the HTTP response output stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1659,9 +1914,10 @@
         <Parameter Name="filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to write to the HTTP output stream.</param>
+        <summary>Writes the contents of the specified file to the HTTP response output stream as a file block.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1681,10 +1937,12 @@
         <Parameter Name="readIntoMemory" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="readIntoMemory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to write to the current response.</param>
+        <param name="readIntoMemory">
+          <see langword="true" /> to write the file into a memory block.</param>
+        <summary>Writes the contents of the specified file to the HTTP response output stream and specifies whether the content is written as a memory block.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1705,11 +1963,12 @@
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="fileHandle">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fileHandle">The file handle of the file to write to the HTTP output stream.</param>
+        <param name="offset">The position in the file where writing starts.</param>
+        <param name="size">The number of bytes to write, starting at <c>offset</c>.</param>
+        <summary>Writes the specified file to the HTTP response output stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFile">
@@ -1730,11 +1989,12 @@
         <Parameter Name="size" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="filename">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="size">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="filename">The name of the file to write to the HTTP output stream.</param>
+        <param name="offset">The position in the file where writing starts.</param>
+        <param name="size">The number of bytes to write, starting at <c>offset</c>.</param>
+        <summary>Writes the specified file to the HTTP response output stream.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteSubstitution">
@@ -1753,9 +2013,10 @@
         <Parameter Name="callback" Type="System.Web.HttpResponseSubstitutionCallback" />
       </Parameters>
       <Docs>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="callback">The method, user control, or object to substitute.</param>
+        <summary>Inserts substitution blocks into the response, which enables dynamic generation of regions for cached output responses.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
     </Member>
   </Members>

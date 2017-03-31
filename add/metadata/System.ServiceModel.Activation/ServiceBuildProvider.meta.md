@@ -6,28 +6,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activation.ServiceBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Activation.ServiceBuildProvider.VirtualPathDependencies
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Activation.ServiceBuildProvider.CodeCompilerType
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Activation.ServiceBuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)
+uid: System.ServiceModel.Activation.ServiceBuildProvider.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,7 +20,28 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activation.ServiceBuildProvider.#ctor
+uid: System.ServiceModel.Activation.ServiceBuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activation.ServiceBuildProvider.CodeCompilerType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activation.ServiceBuildProvider.VirtualPathDependencies
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Activation.ServiceBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

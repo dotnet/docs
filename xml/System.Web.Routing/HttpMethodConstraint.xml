@@ -20,8 +20,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables you to define which HTTP verbs are allowed when ASP.NET routing determines whether a URL matches a route.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.HttpMethodConstraint> class enables you to limit route matching to certain HTTP verbs. For example, you can specify that a route is considered a match for a URL only when the HTTP verb for the request is `POST`.  
+  
+ To set constraints for route matching, you set the <xref:System.Web.Routing.Route.Constraints%2A> property of the <xref:System.Web.Routing.Route> class to an instance of the <xref:System.Web.Routing.RouteValueDictionary> class. To set an HTTP verb constraint, you set the value of one dictionary element to an <xref:System.Web.Routing.HttpMethodConstraint> object and the key to any name.  
+  
+ In the <xref:System.Web.Routing.HttpMethodConstraint.%23ctor%2A> method, you include all the HTTP verbs that are allowed for the route when ASP.NET routing determines whether the route matches a URL.  
+  
+   
+  
+## Examples  
+ The following example shows a <xref:System.Web.Routing.Route> object whose <xref:System.Web.Routing.Route.Constraints%2A> property contains an item that has a key named `httpMethod` and that has a value that is an instance of the <xref:System.Web.Routing.HttpMethodConstraint> class.  
+  
+ [!code-csharp[System.Web.Routing.Route.Constraints#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.Route.Constraints#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/vb/Global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,9 +62,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="allowedMethods">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="allowedMethods">The HTTP verbs that are valid for the route.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.HttpMethodConstraint" /> class by using the HTTP verbs that are allowed for the route.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a <xref:System.Web.Routing.Route> object whose <xref:System.Web.Routing.Route.Constraints%2A> property contains an item that has a key named `httpMethod` and that has a value that is an instance of the <xref:System.Web.Routing.HttpMethodConstraint> class.  
+  
+ [!code-csharp[System.Web.Routing.Route.Constraints#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.Route.Constraints#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.Route.Constraints/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="allowedMethods" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowedMethods">
@@ -61,8 +91,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the collection of allowed HTTP verbs for the route.</summary>
+        <value>A collection of allowed HTTP verbs for the route.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,14 +116,15 @@
         <Parameter Name="routeDirection" Type="System.Web.Routing.RouteDirection" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <param name="route">To be added.</param>
-        <param name="parameterName">To be added.</param>
-        <param name="values">To be added.</param>
-        <param name="routeDirection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
+        <param name="route">The object that is being checked to determine whether it matches the URL.</param>
+        <param name="parameterName">The name of the parameter that is being checked.</param>
+        <param name="values">An object that contains the parameters for a route.</param>
+        <param name="routeDirection">An object that indicates whether the constraint check is being performed when an incoming request is processed or when a URL is generated.</param>
+        <summary>Determines whether the request was made with an HTTP verb that is one of the allowed verbs for the route.</summary>
+        <returns>When ASP.NET routing is processing a request, <see langword="true" /> if the request was made by using an allowed HTTP verb; otherwise, <see langword="false" />. When ASP.NET routing is constructing a URL, <see langword="true" /> if the supplied values contain an HTTP verb that matches one of the allowed HTTP verbs; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the following parameters is <see langword="null" />: <paramref name="httpContext" />, <paramref name="route" />, <paramref name="parameterName" />, or <paramref name="values" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Web.Routing.IRouteConstraint.Match">
@@ -116,14 +147,23 @@
         <Parameter Name="routeDirection" Type="System.Web.Routing.RouteDirection" />
       </Parameters>
       <Docs>
-        <param name="httpContext">To be added.</param>
-        <param name="route">To be added.</param>
-        <param name="parameterName">To be added.</param>
-        <param name="values">To be added.</param>
-        <param name="routeDirection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
+        <param name="route">The object that is being checked to determine whether it matches the URL.</param>
+        <param name="parameterName">The name of the parameter that is being checked.</param>
+        <param name="values">An object that contains the parameters for a route.</param>
+        <param name="routeDirection">An object that indicates whether the constraint check is being performed when an incoming request is handled or when a URL is generated.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.Routing.IRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)" />.</summary>
+        <returns>
+          <see langword="true" /> if the request was made by using an allowed HTTP verb; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.HttpMethodConstraint> instance is cast to an <xref:System.Web.Routing.IRouteConstraint> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the following parameters is <see langword="null" />: <paramref name="httpContext" />, <paramref name="route" />, <paramref name="parameterName" />, or <paramref name="values" />.</exception>
       </Docs>
     </Member>
   </Members>

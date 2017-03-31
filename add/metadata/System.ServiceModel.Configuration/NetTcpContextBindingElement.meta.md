@@ -6,49 +6,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextManagementEnabled
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.Properties
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor(System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.ClientCallbackAddress
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -62,14 +27,49 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.ClientCallbackAddress
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.Properties
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextManagementEnabled
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

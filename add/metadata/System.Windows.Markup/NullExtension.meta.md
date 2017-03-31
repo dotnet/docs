@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.NullExtension.ProvideValue(System.IServiceProvider)
+uid: System.Windows.Markup.NullExtension.#ctor
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.NullExtension.#ctor
+uid: System.Windows.Markup.NullExtension.ProvideValue(System.IServiceProvider)
 manager: "martinek"
 ---

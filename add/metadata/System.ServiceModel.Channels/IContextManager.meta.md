@@ -6,7 +6,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IContextManager.GetContext
+uid: System.ServiceModel.Channels.IContextManager.SetContext(System.Collections.Generic.IDictionary{System.String,System.String})
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,7 +20,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IContextManager.SetContext(System.Collections.Generic.IDictionary{System.String,System.String})
+uid: System.ServiceModel.Channels.IContextManager.GetContext
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

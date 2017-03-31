@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.IProvideValueTarget.TargetProperty
+uid: System.Windows.Markup.IProvideValueTarget.TargetObject
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.IProvideValueTarget.TargetObject
+uid: System.Windows.Markup.IProvideValueTarget.TargetProperty
 manager: "martinek"
 ---

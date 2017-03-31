@@ -4,11 +4,11 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.RootNamespaceAttribute.#ctor(System.String)
+uid: System.Windows.Markup.RootNamespaceAttribute.Namespace
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.RootNamespaceAttribute.Namespace
+uid: System.Windows.Markup.RootNamespaceAttribute.#ctor(System.String)
 manager: "martinek"
 ---

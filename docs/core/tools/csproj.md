@@ -19,10 +19,25 @@ see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/m
 
 ## Implicit package references
 Metapackages are now implicitly referenced based on the target framework specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. 
-If the target framework is `netcoreap1.x`, the proper version of the `Microsoft.NETCore.App` metapackage is referenced. 
+If the target framework is `netcoreapp1.x`, the proper version of the `Microsoft.NETCore.App` metapackage is referenced. 
 Otherwise, if the target framework is `netstandard1.x`, the proper version of the `NetStandard.Library` metapackage is referenced.
 
-As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, `dotnet restore`). 
+As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, `dotnet restore`).
+
+```xml
+<PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+</PropertyGroup>
+```
+
+```xml
+<PropertyGroup>
+    <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+</PropertyGroup>
+```
+
+> [!WARNING]
+> `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, indepenently from order. 
 
 ### Recommendations
 Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now implicitly referenced, the following are our recommended best practices:

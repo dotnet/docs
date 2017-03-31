@@ -1,5 +1,0 @@
-# [ITypeLibResolver Interface](itypelibresolver-interface.md)
-# [GetTypeLibInfo Function](gettypelibinfo-function.md)
-# [ResolveTypeLib Method](resolvetypelib-method.md)
-# [LoadTypeLibWithResolver Function](loadtypelibwithresolver-function.md)
-# [Tlbexp Helper Functions (Unmanaged API Reference)](tlbexp-helper-functions-unmanaged-api-reference.md)

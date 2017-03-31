@@ -1,5 +1,0 @@
-# [Common Data Types (Unmanaged API Reference)](common-data-types-unmanaged-api-reference.md)
-# [Unmanaged API Reference](unmanaged-api-reference.md)
-# [COR_PRF_ALLOWABLE_AFTER_ATTACH Bitmask](cor-prf-allowable-after-attach-bitmask.md)
-# [Constants (Unmanaged API Reference)](constants-unmanaged-api-reference.md)
-# [GUID_ManagedName Attribute](guid-managedname-attribute.md)

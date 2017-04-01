@@ -14,7 +14,7 @@ using System.Diagnostics;
 // IMPORTANT: To compile this example, you must add to the project 
 // a reference to the System.Configuration assembly.
 //
-  #region
+  #region RNAME1
   //*** Auxiliary Classes ***//
 
   // Define a custom configuration element to be 
@@ -97,7 +97,7 @@ using System.Diagnostics;
   }
   #endregion
 
-  #region
+  #region RNAME2
   //*** ConfigurationManager Interaction Class ***//
 
   // The following code uses the ConfigurationManager class to 
@@ -587,7 +587,7 @@ using System.Diagnostics;
   }
   #endregion
 
-  #region
+  #region RNAME3
   //*** User Interaction Class ***//
 
   // Obtain user's input and provide feedback.

@@ -97,7 +97,7 @@ Defines a queued binding suitable for cross-machine communication.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](../Topic/%3CreaderQuotas%3E.md)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
 |[\<security>](../../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>.|  
   
 ### Parent Elements  

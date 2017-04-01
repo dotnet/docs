@@ -38,9 +38,9 @@ COM interop projects that reference one or more assemblies containing imported C
   
  The differences between these two techniques are discussed in greater detail in [Using COM Types in Managed Code](http://msdn.microsoft.com/en-us/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66).  
   
- Embedding interop types with Visual Studio is demonstrated in [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](../Topic/Walkthrough:%20Embedding%20Type%20Information%20from%20Microsoft%20Office%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md) and [Walkthrough: Embedding Types from Managed Assemblies](../Topic/Walkthrough:%20Embedding%20Types%20from%20Managed%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
+ Embedding interop types with Visual Studio is demonstrated in [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](http://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3) and [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21).  
   
- To reference an interop assembly with a command-line compiler and embed type information in your executables, use the [/link (C# Compiler Options)](../Topic/-link%20\(C%23%20Compiler%20Options\).md) or the [/link (Visual Basic)](../Topic/-link%20\(Visual%20Basic\).md) compiler switch and specify the name of the interop assembly.  
+ To reference an interop assembly with a command-line compiler and embed type information in your executables, use the [/link (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/link-compiler-option.md) or the [/link (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/link.md) compiler switch and specify the name of the interop assembly.  
   
 > [!NOTE]
 >  Visual C++ applications cannot embed type information, but they can interoperate with applications or add-ins that do.  
@@ -51,6 +51,6 @@ COM interop projects that reference one or more assemblies containing imported C
  [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)   
  [Language Independence and Language-Independent Components](../../../docs/standard/language-independence-and-language-independent-components.md)   
  [Using COM Types in Managed Code](http://msdn.microsoft.com/en-us/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66)   
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](../Topic/Walkthrough:%20Embedding%20Type%20Information%20from%20Microsoft%20Office%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Walkthrough: Embedding Types from Managed Assemblies](../Topic/Walkthrough:%20Embedding%20Types%20from%20Managed%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](http://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3)   
+ [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
  [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)

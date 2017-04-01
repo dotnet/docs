@@ -39,7 +39,7 @@ The different types of [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md
   
 5.  Add a `using` directive or imported namespace for <xref:System.Linq> to your source code file or project.  
   
-     For more information, see [using Directive](../Topic/using%20Directive%20\(C%23%20Reference\).md) or [How to: Add or Remove Imported Namespaces (Visual Basic)](../Topic/How%20to:%20Add%20or%20Remove%20Imported%20Namespaces%20\(Visual%20Basic\).md).  
+     For more information, see [using Directive](~/docs/csharp/language-reference/keywords/using-directive.md) or [How to: Add or Remove Imported Namespaces (Visual Basic)](http://msdn.microsoft.com/library/44cebec3-0ea0-47c2-8406-4edeab6a997e).  
   
 ### To enable LINQ to DataSet functionality  
   
@@ -49,7 +49,7 @@ The different types of [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md
   
 3.  In the **Add Reference** dialog box, click the **.NET** tab if it is not on top. Scroll down to **System.Data** and **System.Data.DataSetExtensions** and click on them. Click the **OK** button.  
   
-4.  Add a `using` directive or imported namespace for <xref:System.Data> to your source code file or project. For more information, see [using Directive](../Topic/using%20Directive%20\(C%23%20Reference\).md) or [How to: Add or Remove Imported Namespaces (Visual Basic)](../Topic/How%20to:%20Add%20or%20Remove%20Imported%20Namespaces%20\(Visual%20Basic\).md).  
+4.  Add a `using` directive or imported namespace for <xref:System.Data> to your source code file or project. For more information, see [using Directive](~/docs/csharp/language-reference/keywords/using-directive.md) or [How to: Add or Remove Imported Namespaces (Visual Basic)](http://msdn.microsoft.com/library/44cebec3-0ea0-47c2-8406-4edeab6a997e).  
   
 5.  Add a reference to System.Data.DataSetExtensions.dll for LINQ to Dataset functionality. Add a reference to System.Data.dll if it does not already exist.  
   

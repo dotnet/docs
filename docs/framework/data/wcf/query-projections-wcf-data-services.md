@@ -26,7 +26,7 @@ Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includ
  This topic describes how to define a query projection, what the requirements are for entity and non-entity types, making updates to projected results, creating projected types, and lists some projection considerations.  
   
 ## Defining a Query Projection  
- You can add a projection clause to a query either by using the `$select` query option in a URI or by using the [select](../Topic/select%20clause%20\(C%23%20Reference\).md) clause ([Select](../Topic/Select%20Clause%20\(Visual%20Basic\).md) in Visual Basic) in a LINQ query. Returned entity data can be projected into either entity types or non-entity types on the client. Examples in this topic demonstrate how to use the `select` clause in a LINQ query.  
+ You can add a projection clause to a query either by using the `$select` query option in a URI or by using the [select](~/docs/csharp/language-reference/keywords/select-clause.md) clause ([Select](~/docs/visual-basic/language-reference/queries/select-clause.md) in Visual Basic) in a LINQ query. Returned entity data can be projected into either entity types or non-entity types on the client. Examples in this topic demonstrate how to use the `select` clause in a LINQ query.  
   
 > [!IMPORTANT]
 >  Data loss might occur in the data service when you save updates that were made to projected types. For more information, see [Projection Considerations](#considerations).  

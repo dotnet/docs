@@ -1,4 +1,4 @@
-﻿---
+---
 title: Building a complete .NET Core solution on Windows, using Visual Studio 2017 | Microsoft Docs
 description: Building a complete .NET Core solution on Windows, using Visual Studio 2017
 keywords: .NET, .NET Core

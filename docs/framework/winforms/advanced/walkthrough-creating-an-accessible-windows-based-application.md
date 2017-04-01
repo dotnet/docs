@@ -36,7 +36,7 @@ Creating an accessible application has important business implications. Many gov
   
 -   Avoid conveying important information by sound alone.  
   
- For more information, see [Resources for Designing Accessible Applications](../Topic/Resources%20for%20Designing%20Accessible%20Applications.md).  
+ For more information, see [Resources for Designing Accessible Applications](http://msdn.microsoft.com/library/426bf023-bb34-43c4-9edb-c307191c8170).  
   
  For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../../docs/standard/globalization-and-localization/best-practices-for-developing-world-ready-apps.md).  
   
@@ -49,7 +49,7 @@ Creating an accessible application has important business implications. Many gov
   
 #### To begin making the application  
   
--   Create a new Windows Application in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](../Topic/Creating%20Solutions%20and%20Projects.md).)  
+-   Create a new Windows Application in [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] or [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](http://msdn.microsoft.com/library/836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8).)  
   
 ## Adding the Controls to the Form  
  When adding the controls to a form, keep in mind the following guidelines to make an accessible application:  
@@ -295,7 +295,7 @@ Your form will look something like the following:
   
 #### To supply information by some other means than sound  
   
-1.  Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](../Topic/Walkthrough:%20Calling%20Windows%20APIs%20\(Visual%20Basic\).md).  
+1.  Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](~/docs/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).  
   
     > [!NOTE]
     >  The user may have the Windows SoundSentry service enabled, which will also cause the window to flash when the system sounds are played through the computer's built-in speaker.  

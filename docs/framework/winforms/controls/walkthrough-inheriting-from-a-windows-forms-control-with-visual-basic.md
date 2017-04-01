@@ -38,7 +38,7 @@ With [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], you can create power
   
 2.  Select the **Windows Forms Control Library** project template from the list of [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)] projects, and type `ValueButtonLib` in the **Name** box.  
   
-     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces in Visual Basic](../Topic/Namespaces%20in%20Visual%20Basic.md).  
+     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces in Visual Basic](~/docs/visual-basic/programming-guide/program-structure/namespaces.md).  
   
 3.  In **Solution Explorer**, right-click **UserControl1.vb**, then choose **Rename** from the shortcut menu. Change the file name to `ValueButton.vb`. Click the **Yes** button when you are asked if you want to rename all references to the code element 'UserControl1'.  
   
@@ -161,4 +161,4 @@ With [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], you can create power
  [How to: Display a Control in the Choose Toolbox Items Dialog Box](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)   
  [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)   
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [Component Authoring Walkthroughs](../Topic/Component%20Authoring%20Walkthroughs.md)
+ [Component Authoring Walkthroughs](http://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)

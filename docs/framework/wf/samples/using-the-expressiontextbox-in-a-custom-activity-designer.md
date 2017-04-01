@@ -52,4 +52,4 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
   
 ## See Also  
  <xref:System.Activities.Presentation.View.ExpressionTextBox>   
- [Developing Applications with the Workflow Designer](../Topic/Developing%20Applications%20with%20the%20Workflow%20Designer.md)
+ [Developing Applications with the Workflow Designer](http://msdn.microsoft.com/library/4cd062b1-b496-4668-bbc1-ee85545e066d)

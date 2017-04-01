@@ -60,5 +60,5 @@ There are a number of ways to expose asynchronous features to client code. The E
 ## See Also  
  [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md)   
  [Events](../../../docs/standard/events/index.md)   
- [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)   
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
  [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)

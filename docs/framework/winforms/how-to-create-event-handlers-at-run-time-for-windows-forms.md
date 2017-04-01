@@ -83,4 +83,4 @@ In addition to creating events using the Windows Forms Designer, you can also cr
 ## See Also  
  [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)   
  [Event Handlers Overview](../../../docs/framework/winforms/event-handlers-overview-windows-forms.md)   
- [Troubleshooting Inherited Event Handlers in Visual Basic](../Topic/Troubleshooting%20Inherited%20Event%20Handlers%20in%20Visual%20Basic.md)
+ [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)

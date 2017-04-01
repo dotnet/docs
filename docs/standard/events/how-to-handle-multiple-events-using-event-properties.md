@@ -53,4 +53,4 @@ To use event properties, you define the event properties in the class that raise
  <xref:System.ComponentModel.EventHandlerList?displayProperty=fullName>   
  [Events](../../../docs/standard/events/index.md)   
  <xref:System.Web.UI.Control.Events%2A>   
- [How to: Declare Custom Events To Conserve Memory](../Topic/How%20to:%20Declare%20Custom%20Events%20To%20Conserve%20Memory%20\(Visual%20Basic\).md)
+ [How to: Declare Custom Events To Conserve Memory](~/docs/visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

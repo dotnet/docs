@@ -65,7 +65,7 @@ This topic demonstrates how to validate application settings before they are per
   
          -or-  
   
-    -   If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](../Topic/My.Settings%20Object.md).  
+    -   If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](~/docs/visual-basic/language-reference/objects/my-settings-object.md).  
   
          -or-  
   

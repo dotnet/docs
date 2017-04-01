@@ -96,7 +96,7 @@ In data binding, the binding source object refers to the object you obtain data 
   
  The permission requirement for [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] binding is similar. In a partial-trust sandbox, <xref:System.Windows.Data.XmlDataProvider> fails when it does not have permissions to access the specified data.  
   
- Objects with an anonymous type are internal. You can bind to properties of anonymous types only when running in full trust. For more information about anonymous types, see [Anonymous Types (C# Programming Guide)](../Topic/Anonymous%20Types%20\(C%23%20Programming%20Guide\).md) or [Anonymous Types (Visual Basic)](../Topic/Anonymous%20Types%20\(Visual%20Basic\).md) (Visual Basic).  
+ Objects with an anonymous type are internal. You can bind to properties of anonymous types only when running in full trust. For more information about anonymous types, see [Anonymous Types (C# Programming Guide)](~/docs/csharp/programming-guide/classes-and-structs/anonymous-types.md) or [Anonymous Types (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) (Visual Basic).  
   
  For more information about partial-trust security, see [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
@@ -106,5 +106,5 @@ In data binding, the binding source object refers to the object you obtain data 
  [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)   
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)   
- [WPF Data Binding with LINQ to XML Overview](../Topic/WPF%20Data%20Binding%20with%20LINQ%20to%20XML%20Overview.md)   
+ [WPF Data Binding with LINQ to XML Overview](http://msdn.microsoft.com/library/3bf80845-891b-41de-a71b-4080b5bd3ea6)   
  [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)

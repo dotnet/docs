@@ -24,7 +24,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # Troubleshooting Control and Component Authoring
-This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](../Topic/Programming%20with%20Components.md).  
+This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  
   
 -   Cannot Add Control to Toolbox  
   
@@ -98,10 +98,10 @@ This topic lists the following common problems that arise when developing compon
   
      You can now debug your control or component as usual.  
   
- For more information about debugging, see [Debugging in Visual Studio](../Topic/Debugging%20in%20Visual%20Studio.md) and [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).  
+ For more information about debugging, see [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483) and [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).  
   
 ## Event Is Raised Twice in Inherited Control or Component  
- This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](../Topic/Troubleshooting%20Inherited%20Event%20Handlers%20in%20Visual%20Basic.md).  
+ This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md).  
   
 ## Design-Time Error: "Failed to Create Component 'Component Name'"  
  Your component or control must provide a default constructor with no parameters. When the design environment creates an instance of your component or control, it does not attempt to provide any parameters to constructor overloads that take parameters.  
@@ -117,6 +117,6 @@ This topic lists the following common problems that arise when developing compon
  [Walkthrough: Automatically Populating the Toolbox with Custom Components](../../../../docs/framework/winforms/controls/walkthrough-automatically-populating-the-toolbox-with-custom-components.md)   
  [How to: Test the Run-Time Behavior of a UserControl](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)   
  [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)   
- [Component Authoring](../Topic/Component%20Authoring.md)   
- [Troubleshooting Design-Time Development](../Topic/Troubleshooting%20Design-Time%20Development.md)   
- [Programming with Components](../Topic/Programming%20with%20Components.md)
+ [Component Authoring](http://msdn.microsoft.com/library/4a5a5e49-0378-4a31-83bc-24da0f1a727d)   
+ [Troubleshooting Design-Time Development](http://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)   
+ [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)

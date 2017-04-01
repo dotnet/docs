@@ -65,7 +65,7 @@ The design-time experience for a custom control can be enhanced by authoring an 
   
  ![A possible MarqueeControl arrangement](../../../../docs/framework/winforms/controls/media/demomarqueecontrol.gif "DemoMarqueeControl")  
   
- For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](../Topic/How%20to:%20Create%20a%20Windows%20Forms%20Control%20That%20Takes%20Advantage%20of%20Design-Time%20Features.md).  
+ For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -100,7 +100,7 @@ The design-time experience for a custom control can be enhanced by authoring an 
 6.  You will need to use types from the System.Design assembly, so add this reference to the `MarqueeControlLibrary` project.  
   
     > [!NOTE]
-    >  To use the System.Design assembly, your project must target the full version of the .NET Framework, not the .NET Framework Client Profile. To change the target framework, see [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+    >  To use the System.Design assembly, your project must target the full version of the .NET Framework, not the .NET Framework Client Profile. To change the target framework, see [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
   
 ## Referencing the Custom Control Project  
  You will use the `MarqueeControlTest` project to test the custom control. The test project will become aware of the custom control when you add a project reference to the `MarqueeControlLibrary` assembly.  
@@ -481,7 +481,7 @@ using MarqueeControlLibrary;
      [!code-vb[System.Windows.Forms.Design.DocumentDesigner#590](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.DocumentDesigner/VB/marqueecontrolrootdesigner.vb#590)]  
   
 ## Creating a Custom UITypeEditor  
- When you create a custom design-time experience for users, it is often desirable to create a custom interaction with the Properties window. You can accomplish this by creating a <xref:System.Drawing.Design.UITypeEditor>. For more information, see [How to: Create a UI Type Editor](../Topic/How%20to:%20Create%20a%20UI%20Type%20Editor.md).  
+ When you create a custom design-time experience for users, it is often desirable to create a custom interaction with the Properties window. You can accomplish this by creating a <xref:System.Drawing.Design.UITypeEditor>. For more information, see [How to: Create a UI Type Editor](http://msdn.microsoft.com/library/292c6e33-8d85-4012-9b51-05835a6f6dfd).  
   
  The `MarqueeBorder` control exposes several properties in the Properties window. Two of these properties, `MarqueeSpinDirection` and `MarqueeLightShape` are represented by enumerations. To illustrate the use of a UI type editor, the `MarqueeLightShape` property will have an associated <xref:System.Drawing.Design.UITypeEditor> class.  
   
@@ -633,7 +633,7 @@ private void stopButton_Click(object sender, System.EventArgs e)
   
 -   Further customize the design-time experience. You could try shadowing more properties than <xref:System.Windows.Forms.Control.Enabled%2A> and <xref:System.Windows.Forms.Control.Visible%2A>, and you could add new properties. Add new designer verbs to simplify common tasks like docking child controls.  
   
--   License the `MarqueeControl`. For more information, see [How to: License Components and Controls](../Topic/How%20to:%20License%20Components%20and%20Controls.md).  
+-   License the `MarqueeControl`. For more information, see [How to: License Components and Controls](http://msdn.microsoft.com/library/8e66c1ed-a445-4b26-8185-990b6e2bbd57).  
   
 -   Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](../../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).  
   
@@ -645,7 +645,7 @@ private void stopButton_Click(object sender, System.EventArgs e)
  <xref:System.ComponentModel.Design.DesignerVerb>   
  <xref:System.Drawing.Design.UITypeEditor>   
  <xref:System.ComponentModel.BackgroundWorker>   
- [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](../Topic/How%20to:%20Create%20a%20Windows%20Forms%20Control%20That%20Takes%20Advantage%20of%20Design-Time%20Features.md)   
- [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md)   
- [Custom Designers](../Topic/Custom%20Designers.md)   
+ [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](http://msdn.microsoft.com/library/8e0bad0e-56f3-43d2-bf63-a945c654d97c)   
+ [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)   
+ [Custom Designers](http://msdn.microsoft.com/library/ca11988e-d38e-44d8-a05d-71362ae7844d)   
  [.NET Shape Library: A Sample Designer](http://windowsforms.net/articles/shapedesigner.aspx)

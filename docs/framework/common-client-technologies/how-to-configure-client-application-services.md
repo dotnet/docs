@@ -18,7 +18,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # How to: Configure Client Application Services
-This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] **Project Designer** to enable and configure client application services. You can use client application services to validate users and retrieve user roles and settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application service. After configuration, you can access the enabled services in your application code as described in [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md). For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](../Topic/ASP.NET%20Application%20Services%20Overview.md).  
+This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] **Project Designer** to enable and configure client application services. You can use client application services to validate users and retrieve user roles and settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application service. After configuration, you can access the enabled services in your application code as described in [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md). For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
   
  You can enable and configure client application services on the **Services** page of the **Project Designer**. The **Services** page updates values in your project's App.config file. To access the **Project Designer**, use the **Properties** command on the **Project** menu. For more information about the **Services** page, see [Services Page, Project Designer](../Topic/Services%20Page,%20Project%20Designer.md).  
   
@@ -65,7 +65,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 1.  On the **Services** page of the **Project Designer**, click **Advanced**.  
   
-     The **Advanced Settings for Services** dialog box appears, as shown in the following illustration. For more information about this dialog box, see [Advanced Settings for Services Dialog Box](../Topic/Advanced%20Settings%20for%20Services%20Dialog%20Box.md).  
+     The **Advanced Settings for Services** dialog box appears, as shown in the following illustration. For more information about this dialog box, see [Advanced Settings for Services Dialog Box](http://msdn.microsoft.com/library/6dde4a2d-85e1-4275-aa55-24b84111be91).  
   
      ![Advanced Settings for Services dialog box](../../../docs/framework/common-client-technologies/media/casdialog.png "casdialog")  
   
@@ -120,7 +120,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
 ## Using Custom Providers  
  By default, the client application services feature uses the providers in the <xref:System.Web.ClientServices.Providers?displayProperty=fullName> namespace. When you configure your application by using the **Services** page of the **Project Designer**, references to these providers are added to your App.config file. These default providers access corresponding providers on the server. Web services are often configured to access user data through providers such as <xref:System.Web.Security.SqlMembershipProvider> and <xref:System.Web.Security.SqlRoleProvider>.  
   
- If you want to use custom service providers, you will typically change the providers on the server side so that they affect all client applications that access the server. However, you do have the option of using non-default providers on the client side. You can specify custom authentication or roles providers in your project's App.config file, as shown in the following procedure. For information about how to create custom authentication and role providers, see [Implementing a Membership Provider](../Topic/Implementing%20a%20Membership%20Provider.md) and [Implementing a Role Provider](../Topic/Implementing%20a%20Role%20Provider.md). You can also use a custom settings provider by modifying your project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]). For more information, see [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md).  
+ If you want to use custom service providers, you will typically change the providers on the server side so that they affect all client applications that access the server. However, you do have the option of using non-default providers on the client side. You can specify custom authentication or roles providers in your project's App.config file, as shown in the following procedure. For information about how to create custom authentication and role providers, see [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582) and [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d). You can also use a custom settings provider by modifying your project's `Settings` class (accessed as `Properties.Settings.Default` in C# and `My.Settings` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]). For more information, see [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md).  
   
 #### To configure client application services to use non-default providers  
   
@@ -150,10 +150,10 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
  [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
  [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
  [Services Page, Project Designer](../Topic/Services%20Page,%20Project%20Designer.md)   
- [Advanced Settings for Services Dialog Box](../Topic/Advanced%20Settings%20for%20Services%20Dialog%20Box.md)   
+ [Advanced Settings for Services Dialog Box](http://msdn.microsoft.com/library/6dde4a2d-85e1-4275-aa55-24b84111be91)   
  [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)   
  [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)   
- [Implementing a Membership Provider](../Topic/Implementing%20a%20Membership%20Provider.md)   
- [Implementing a Role Provider](../Topic/Implementing%20a%20Role%20Provider.md)   
+ [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)   
+ [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d)   
  [Application Settings Architecture](../../../docs/framework/winforms/advanced/application-settings-architecture.md)   
- [Creating and Configuring the Application Services Database for SQL Server](../Topic/Creating%20and%20Configuring%20the%20Application%20Services%20Database%20for%20SQL%20Server.md)
+ [Creating and Configuring the Application Services Database for SQL Server](http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2)

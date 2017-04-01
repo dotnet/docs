@@ -180,14 +180,14 @@ partial class Customer
   
  For more information about how to add business logic to your application by using partial methods, see the following topics:  
   
- [How to: Add validation to entity classes](../Topic/How%20to:%20Add%20validation%20to%20entity%20classes.md)  
+ [How to: Add validation to entity classes](http://msdn.microsoft.com/library/61107da9-7fa3-4dba-b101-ae46536f52c4)  
   
  [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../Topic/Walkthrough:%20Customizing%20the%20insert,%20update,%20and%20delete%20behavior%20of%20entity%20classes.md)  
   
- [Walkthrough: Adding Validation to Entity Classes](../Topic/Walkthrough:%20Adding%20Validation%20to%20Entity%20Classes.md)  
+ [Walkthrough: Adding Validation to Entity Classes](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   
 ## See Also  
- [Partial Classes and Methods](../Topic/Partial%20Classes%20and%20Methods%20\(C%23%20Programming%20Guide\).md)   
- [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md)   
- [LINQ to SQL Tools in Visual Studio](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio2.md)   
+ [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)   
+ [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)   
+ [LINQ to SQL Tools in Visual Studio](http://msdn.microsoft.com/library/45e477c0-5c6b-41f9-b2d0-2808fb4f6537)   
  [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

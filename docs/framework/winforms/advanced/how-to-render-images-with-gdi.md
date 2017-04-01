@@ -21,7 +21,7 @@ ms.author: "shoag"
 manager: "wpickett"
 ---
 # How to: Render Images with GDI+
-You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] to render images that exist as files in your applications. You do this by creating a new object of an <xref:System.Drawing.Image> class (such as <xref:System.Drawing.Bitmap>), creating a <xref:System.Drawing.Graphics> object that refers to the drawing surface you want to use, and calling the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. The image will be painted onto the drawing surface represented by the graphics class. You can use the Image Editor to create and edit image files at design time, and render them with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] at run time. For more information, see [Image Editor for Icons](../Topic/Image%20Editor%20for%20Icons.md).  
+You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] to render images that exist as files in your applications. You do this by creating a new object of an <xref:System.Drawing.Image> class (such as <xref:System.Drawing.Bitmap>), creating a <xref:System.Drawing.Graphics> object that refers to the drawing surface you want to use, and calling the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. The image will be painted onto the drawing surface represented by the graphics class. You can use the Image Editor to create and edit image files at design time, and render them with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] at run time. For more information, see [Image Editor for Icons](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ### To render an image with GDI+  
   
@@ -97,5 +97,5 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
  [Pens, Lines, and Rectangles in GDI+](../../../../docs/framework/winforms/advanced/pens-lines-and-rectangles-in-gdi.md)   
  [How to: Draw Text on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-text-on-a-windows-form.md)   
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)   
- [Drawing Lines or Closed Figures](../Topic/Drawing%20Lines%20or%20Closed%20Figures%20\(Image%20Editor%20for%20Icons\).md)   
- [Image Editor for Icons](../Topic/Image%20Editor%20for%20Icons.md)
+ [Drawing Lines or Closed Figures](http://msdn.microsoft.com/library/7edd86db-77b1-451f-8001-bbfed9c6304f)   
+ [Image Editor for Icons](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)

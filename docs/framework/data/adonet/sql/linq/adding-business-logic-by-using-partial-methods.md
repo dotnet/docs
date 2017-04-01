@@ -33,7 +33,7 @@ You can customize [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] an
   
  This approach is typically used in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] to override default methods for `Insert`, `Update`, `Delete`, and to validate properties during object life-cycle events.  
   
- For more information, see [Partial Methods](../Topic/Partial%20Methods%20\(Visual%20Basic\).md) ([!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) or [partial (Method) (C# Reference)](../Topic/partial%20\(Method\)%20\(C%23%20Reference\).md) (C#).  
+ For more information, see [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md) ([!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)]) or [partial (Method) (C# Reference)](~/docs/csharp/language-reference/keywords/partial-method.md) (C#).  
   
 ## Example  
   

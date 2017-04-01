@@ -27,10 +27,10 @@ LINQ to XML is the new model in the .NET Framework version 3.5 for processing XM
   
  LINQ to XML leverages the language-integrated query (LINQ) technology in the .NET Framework version 3.5. LINQ extends the language syntax of C# and Visual Basic to provide powerful query capabilities that can be extended to potentially any data store.  
   
- See [LINQ to XML](../Topic/LINQ%20to%20XML.md) for a detailed discussion of its use, and see [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md) for an overview of the LINQ framework.  
+ See [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) for a detailed discussion of its use, and see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) for an overview of the LINQ framework.  
   
 ## See Also  
  <xref:System.Xml.Linq>   
  <xref:System.Linq>   
- [LINQ to XML vs. DOM](../Topic/LINQ%20to%20XML%20vs.%20DOM.md)   
- [LINQ to XML vs. Other XML Technologies](../Topic/LINQ%20to%20XML%20vs.%20Other%20XML%20Technologies1.md)
+ [LINQ to XML vs. DOM](http://msdn.microsoft.com/library/19b5ed02-feb2-455a-8897-f7f0fd76aca3)   
+ [LINQ to XML vs. Other XML Technologies](http://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)

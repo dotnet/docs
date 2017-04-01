@@ -87,7 +87,7 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
  For more information, see [Binding Objects to Controls](http://msdn.microsoft.com/en-us/2fd34855-929b-4303-a91e-4bb69d958f2b).  
   
  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source controls.  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [Entity Framework Data Source Control](../Topic/EntityDataSource%20Web%20Server%20Control%20Overview.md).  
+ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [Entity Framework Data Source Control](http://msdn.microsoft.com/library/1f09af00-9578-4744-a029-765710a3c83f).  
   
 ## Other Considerations  
  The following are considerations that may apply when you migrate specific types of applications to the Entity Framework.  
@@ -100,7 +100,7 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
   
  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](http://msdn.microsoft.com/en-us/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
   
- If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML](../Topic/LINQ%20to%20XML.md).  
+ If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13).  
   
  Applications that maintain state.  
  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/en-us/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  

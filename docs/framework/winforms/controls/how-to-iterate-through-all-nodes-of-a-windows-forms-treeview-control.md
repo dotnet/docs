@@ -131,4 +131,4 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
   
 ## See Also  
  [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)   
- [Recursive Procedures](../Topic/Recursive%20Procedures%20\(Visual%20Basic\).md)
+ [Recursive Procedures](~/docs/visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)

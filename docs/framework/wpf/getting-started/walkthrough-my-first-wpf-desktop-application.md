@@ -45,7 +45,7 @@ manager: "wpickett"
   
 -   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)]  
   
- For more information about installing                  [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], see                  [Installing Visual Studio](../Topic/Install%20Visual%20Studio%202015.md).  
+ For more information about installing                  [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], see                  [Installing Visual Studio](http://msdn.microsoft.com/library/da049020-cfda-40d7-8ff4-7492772b620f).  
   
 <a name="Create_The_Application_Code_Files"></a>   
 ## Creating the Application Project  
@@ -54,7 +54,7 @@ manager: "wpickett"
 1.  Create a new WPF Application project in Visual Basic or Visual C# named                          `ExpenseIt`. For more information, see                          [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
     > [!NOTE]
-    >  This                              walkthrough uses the                              <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+    >  This                              walkthrough uses the                              <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
   
 2.  Open Application.xaml (Visual Basic) or App.xaml (C#).  
   
@@ -307,7 +307,7 @@ manager: "wpickett"
 3.  Build and run the application.  
   
     > [!NOTE]
-    >  If you get an error that the                              <xref:System.Windows.Controls.DataGrid> was not found or does not exist, make sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+    >  If you get an error that the                              <xref:System.Windows.Controls.DataGrid> was not found or does not exist, make sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
   
 4.  Click the                          **View** button.  
   

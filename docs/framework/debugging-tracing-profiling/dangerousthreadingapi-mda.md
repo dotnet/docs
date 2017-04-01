@@ -79,4 +79,4 @@ Thread t = new Thread(delegate() { Thread.Sleep(1000); });
 ## See Also  
  <xref:System.Threading.Thread>   
  [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debugging-tracing-profiling/diagnosing-errors-with-managed-debugging-assistants.md)   
- [lock Statement](../Topic/lock%20Statement%20\(C%23%20Reference\).md)
+ [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)

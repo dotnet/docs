@@ -34,7 +34,7 @@
 > [!NOTE]
 >  The root-level design mode view for a <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.Control> is typically provided by a built-in root designer. A custom <xref:System.ComponentModel.Design.IRootDesigner> implementation is required to provide a view for other types of root components in design mode.  
   
- You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
  ]]></format>
     </remarks>

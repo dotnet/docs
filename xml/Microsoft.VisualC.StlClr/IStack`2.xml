@@ -18,7 +18,7 @@
   <Docs>
     <typeparam name="TValue">The type of an element in the controlled sequence.</typeparam>
     <typeparam name="TCont">The type of the underlying container.</typeparam>
-    <summary>Defines the interface of an STL/CLR [stack](../Topic/stack%20\(STL-CLR\).md) object.</summary>
+    <summary>Defines the interface of an STL/CLR [stack](http://msdn.microsoft.com/library/6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb) object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,7 +44,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::assign (STL/CLR)](../Topic/stack::assign%20\(STL-CLR\).md).  
+ For more information, see [stack::assign (STL/CLR)](http://msdn.microsoft.com/library/18cc35ad-23cf-4a5a-adae-d967dc5d6980).  
   
  ]]></format>
         </remarks>
@@ -71,7 +71,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::empty (STL/CLR)](../Topic/stack::empty%20\(STL-CLR\).md).  
+ For more information, see [stack::empty (STL/CLR)](http://msdn.microsoft.com/library/30bb4ec6-e7a1-4137-99ba-0e0ebdf31baf).  
   
  ]]></format>
         </remarks>
@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::pop (STL/CLR)](../Topic/stack::pop%20\(STL-CLR\).md).  
+ For more information, see [stack::pop (STL/CLR)](http://msdn.microsoft.com/library/b7565385-9e6b-432d-8c71-c62c9c6ad90d).  
   
  ]]></format>
         </remarks>
@@ -124,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::push (STL/CLR)](../Topic/stack::push%20\(STL-CLR\).md).  
+ For more information, see [stack::push (STL/CLR)](http://msdn.microsoft.com/library/60e5b076-c80f-4af0-a018-62cda7e081db).  
   
  ]]></format>
         </remarks>
@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::size (STL/CLR)](../Topic/stack::size%20\(STL-CLR\).md).  
+ For more information, see [stack::size (STL/CLR)](http://msdn.microsoft.com/library/6113e649-a4f9-4021-8131-34cee4bc8ca0).  
   
  ]]></format>
         </remarks>
@@ -176,7 +176,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::top (STL/CLR)](../Topic/stack::top%20\(STL-CLR\).md).  
+ For more information, see [stack::top (STL/CLR)](http://msdn.microsoft.com/library/5d8b7b69-336e-4d01-8b91-413a17aa2533).  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [stack::top_item (STL/CLR)](../Topic/stack::top_item%20\(STL-CLR\).md).  
+ For more information, see [stack::top_item (STL/CLR)](http://msdn.microsoft.com/library/01571acf-4880-44c4-80c4-bd91408a032d).  
   
  ]]></format>
         </remarks>

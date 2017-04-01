@@ -664,7 +664,7 @@
  The following code example shows a Web.config entry that configures an <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance to enable password resets. It uses the explicit credentials of a user given the "reset password" access right.  
   
 > [!IMPORTANT]
->  When you place user credentials in your Web.config file, there are potential security threats. Users with access rights to the directory containing the Web.config file can read the file, and thus see the credentials. For details on how to protect against this threat, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+>  When you place user credentials in your Web.config file, there are potential security threats. Users with access rights to the directory containing the Web.config file can read the file, and thus see the credentials. For details on how to protect against this threat, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
 ```  
 <configuration>  
@@ -1818,7 +1818,7 @@
  The following code example shows a Web.config entry that configures an <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance to enable password resets. It uses the explicit credentials of a user given the "reset password" access right.  
   
 > [!IMPORTANT]
->  When you place user credentials in your Web.config file, there are potential security threats. Users with access rights to the directory containing the Web.config file can read the file, and thus see the credentials. For details on how to protect against this threat, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+>  When you place user credentials in your Web.config file, there are potential security threats. Users with access rights to the directory containing the Web.config file can read the file, and thus see the credentials. For details on how to protect against this threat, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
 ```  
 <configuration>  

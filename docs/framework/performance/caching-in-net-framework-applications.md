@@ -53,10 +53,10 @@ Caching enables you to store data in memory for rapid access. When the data is a
  The caching classes in the <xref:System.Runtime.Caching> namespace provide functionality for caching data in ASP.NET.  
   
 > [!NOTE]
->  If your application targets the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] or earlier, you must use the caching classes that are defined in the <xref:System.Web.Caching> namespace. For more information, see [ASP.NET Caching Overview](../Topic/ASP.NET%20Caching%20Overview.md).  
+>  If your application targets the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] or earlier, you must use the caching classes that are defined in the <xref:System.Web.Caching> namespace. For more information, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d).  
   
 > [!NOTE]
->  When you develop new applications, we recommend that you use the <xref:System.Runtime.Caching.MemoryCache> class. The API that is provided in the <xref:System.Runtime.Caching> namespace is like the API that is provided in the <xref:System.Web.Caching.Cache> namespace. Therefore, the API will be familiar if you used caching in earlier versions of ASP.NET. For an example of how to use caching in ASP.NET applications, see [Walkthrough: Caching Application Data in ASP.NET](../Topic/Walkthrough:%20Caching%20Application%20Data%20in%20ASP.NET.md).  
+>  When you develop new applications, we recommend that you use the <xref:System.Runtime.Caching.MemoryCache> class. The API that is provided in the <xref:System.Runtime.Caching> namespace is like the API that is provided in the <xref:System.Web.Caching.Cache> namespace. Therefore, the API will be familiar if you used caching in earlier versions of ASP.NET. For an example of how to use caching in ASP.NET applications, see [Walkthrough: Caching Application Data in ASP.NET](http://msdn.microsoft.com/library/942236f6-0138-4aaf-af71-a5ea451a1e23).  
   
 ### Output Caching  
  To manually cache application data, you can use the <xref:System.Runtime.Caching.MemoryCache> class in ASP.NET. ASP.NET also supports output caching, which stores the generated output of pages, controls, and HTTP responses in memory. You can configure output caching declaratively in an ASP.NET Web page or by using settings in the Web.config file. For more information, see [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
@@ -85,4 +85,4 @@ Caching enables you to store data in memory for rapid access. When the data is a
  <xref:System.Runtime.Caching.ObjectCache>   
  <xref:System.Runtime.Caching.MemoryCache>   
  [Walkthrough: Caching Application Data in a WPF Application](../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)   
- [Walkthrough: Caching Application Data in ASP.NET](../Topic/Walkthrough:%20Caching%20Application%20Data%20in%20ASP.NET.md)
+ [Walkthrough: Caching Application Data in ASP.NET](http://msdn.microsoft.com/library/942236f6-0138-4aaf-af71-a5ea451a1e23)

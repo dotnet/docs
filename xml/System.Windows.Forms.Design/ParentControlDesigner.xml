@@ -18,7 +18,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.Design.ParentControlDesigner> provides a base class for designers of controls that can contain child controls. In addition to the methods and functionality inherited from the <xref:System.Windows.Forms.Design.ControlDesigner> and <xref:System.ComponentModel.Design.ComponentDesigner> classes, <xref:System.Windows.Forms.Design.ParentControlDesigner> enables child controls to be added to, removed from, selected within, and arranged within the control whose behavior it extends at design time.  
   
- You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
    
   

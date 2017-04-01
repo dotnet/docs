@@ -27,7 +27,7 @@ Applications typically consist of many parts that must all be protected from vul
  [Security and User Input](../../../../docs/standard/security/security-and-user-input.md)  
  Describes how to handle subtle and potentially dangerous bugs involving user input.  
   
- [Validating User Input in ASP.NET Web Pages](../Topic/Validating%20User%20Input%20in%20ASP.NET%20Web%20Pages.md)  
+ [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)  
  Overview of validating user input using ASP.NET validation controls.  
   
  [User Input in Windows Forms](../../../../docs/framework/winforms/user-input-in-windows-forms.md)  
@@ -59,7 +59,7 @@ Applications typically consist of many parts that must all be protected from vul
 |--------------|-----------------|  
 |[NIB: ASP.NET Security](http://msdn.microsoft.com/en-us/04b37532-18d9-40b4-8e5f-ee09a70b311d)|Discusses how to secure ASP.NET applications.|  
 |[Securing XML Web Services Created Using ASP.NET](http://msdn.microsoft.com/en-us/354b2ab1-2782-4542-b32a-dc560178b90c)|Discusses how to implement security for an ASP.NET Web Service.|  
-|[Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md)|Discusses how to guard against a script exploit attack, which attempts to insert malicious characters into a Web page.|  
+|[Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|Discusses how to guard against a script exploit attack, which attempts to insert malicious characters into a Web page.|  
 |[NIB:Basic Security Practices for ASP.NET Web Applications](http://msdn.microsoft.com/en-us/94a52ab8-731d-417e-b997-721baf43df38)|General security information and links to further discussion,|  
   
 ## Remoting  
@@ -74,6 +74,6 @@ Applications typically consist of many parts that must all be protected from vul
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
  [Recommendations for Data Access Strategies](http://msdn.microsoft.com/en-us/72411f32-d12a-4de8-b961-e54fca7faaf5)   
- [Securing Applications](../Topic/Securing%20Applications.md)   
+ [Securing Applications](http://msdn.microsoft.com/library/7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb)   
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

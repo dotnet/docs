@@ -54,5 +54,5 @@ Use the following process to apply an attribute to an element of your code.
 ## See Also  
  [Attributes](../../../docs/standard/attributes/index.md)   
  [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)   
- [Concepts](../Topic/Attributed%20Programming%20Concepts.md)   
- [Attributes](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+ [Concepts](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e)   
+ [Attributes](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

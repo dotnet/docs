@@ -33,7 +33,7 @@ This section contains guidelines for using common types in publicly accessible A
 ## In This Section  
  [Arrays](../../../docs/standard/design-guidelines/arrays.md)  
  [Attributes](../../../docs/standard/design-guidelines/attributes.md)  
- [Collections](../Topic/Collections.md)  
+ [Collections](http://msdn.microsoft.com/library/02586e4c-851d-41d0-a722-feb11c17c74c)  
  [Serialization](../../../docs/standard/design-guidelines/serialization.md)  
  [System.Xml Usage](../../../docs/standard/design-guidelines/system-xml-usage.md)  
  [Equality Operators](../../../docs/standard/design-guidelines/equality-operators.md)  

@@ -22,12 +22,12 @@ Boolean operators work as expected in the common language runtime (CLR), except 
   
 |Visual Basic|C#|  
 |------------------|---------|  
-|[And Operator](../Topic/And%20Operator%20\(Visual%20Basic\).md)|[& Operator](../Topic/&%20Operator%20\(C%23%20Reference\).md)|  
-|[AndAlso Operator](../Topic/AndAlso%20Operator%20\(Visual%20Basic\).md)|[&& Operator](../Topic/&&%20Operator%20\(C%23%20Reference\).md)|  
-|[Or Operator](../Topic/Or%20Operator%20\(Visual%20Basic\).md)|[&#124; Operator](../Topic/%7C%20Operator%20\(C%23%20Reference\).md)|  
-|[OrElse Operator](../Topic/OrElse%20Operator%20\(Visual%20Basic\).md)|[&#124;&#124; Operator](../Topic/%7C%7C%20Operator%20\(C%23%20Reference\).md)|  
-|[Xor Operator](../Topic/Xor%20Operator%20\(Visual%20Basic\).md)|[^ Operator](../Topic/%5E%20Operator%20\(C%23%20Reference\).md)|  
-|[Not Operator](../Topic/Not%20Operator%20\(Visual%20Basic\).md)|[! Operator](../Topic/!%20Operator%20\(C%23%20Reference\).md)|  
+|[And Operator](~/docs/visual-basic/language-reference/operators/and-operator.md)|[& Operator](~/docs/csharp/language-reference/operators/and-operator.md)|  
+|[AndAlso Operator](~/docs/visual-basic/language-reference/operators/andalso-operator.md)|[&& Operator](~/docs/csharp/language-reference/operators/conditional-and-operator.md)|  
+|[Or Operator](~/docs/visual-basic/language-reference/operators/or-operator.md)|[&#124; Operator](~/docs/csharp/language-reference/operators/or-operator.md)|  
+|[OrElse Operator](~/docs/visual-basic/language-reference/operators/orelse-operator.md)|[&#124;&#124; Operator](~/docs/csharp/language-reference/operators/conditional-or-operator.md)|  
+|[Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md)|[^ Operator](~/docs/csharp/language-reference/operators/xor-operator.md)|  
+|[Not Operator](~/docs/visual-basic/language-reference/operators/not-operator.md)|[! Operator](~/docs/csharp/language-reference/operators/logical-negation-operator.md)|  
   
 ## See Also  
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

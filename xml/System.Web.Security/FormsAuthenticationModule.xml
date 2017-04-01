@@ -25,7 +25,7 @@
  The <xref:System.Web.Security.FormsAuthenticationModule> exposes an <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event that enables you to provide a custom <xref:System.Security.Principal.IPrincipal> object for the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext>. The <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event is accessed by specifying a subroutine named **FormsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application.  
   
 > [!NOTE]
->  In IIS 7.0, using the <xref:System.Web.Security.WindowsAuthenticationModule> with the <xref:System.Web.Security.FormsAuthenticationModule> is not supported. For more information about compatibility issues in Integrated modes, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](../Topic/Moving%20an%20ASP.NET%20Application%20from%20IIS%206.0%20to%20IIS%207.0.md).  
+>  In IIS 7.0, using the <xref:System.Web.Security.WindowsAuthenticationModule> with the <xref:System.Web.Security.FormsAuthenticationModule> is not supported. For more information about compatibility issues in Integrated modes, see [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](http://msdn.microsoft.com/library/76f9cc78-f978-4837-b1c8-51d642ec4847).  
   
    
   

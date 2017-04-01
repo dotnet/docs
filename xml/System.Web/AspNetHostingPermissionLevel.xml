@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [ASP.NET Code Access Security](../Topic/ASP.NET%20Code%20Access%20Security.md) for detailed information about the permissions that are granted to each trust level.  
+ See [ASP.NET Code Access Security](http://msdn.microsoft.com/library/0001d062-f5cd-44e5-bb07-35155569fdb8) for detailed information about the permissions that are granted to each trust level.  
   
  The members of this enumeration define application security levels ranging from full trust (the application is unconstrained by code access security) to minimal trust (the application has permission only to execute). You set the trust level for an ASP.NET resource with the [trust](http://msdn.microsoft.com/en-us/eeed0fd3-5aaa-4196-94af-e6baea70dded) configuration element in a Web.config or Machine.config file.  
   

@@ -146,7 +146,7 @@ manager: "wpickett"
   
  The common language runtime provides new opcodes and prefixes to support generic types in Microsoft intermediate language (MSIL), including <xref:System.Reflection.Emit.OpCodes.Stelem>, <xref:System.Reflection.Emit.OpCodes.Ldelem>, <xref:System.Reflection.Emit.OpCodes.Unbox_Any>, <xref:System.Reflection.Emit.OpCodes.Constrained>, and <xref:System.Reflection.Emit.OpCodes.Readonly>.  
   
- Visual C++, C#, and Visual Basic all provide full support for defining and using generics. For more information about language support, see [Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md), [Introduction to Generics](../Topic/Introduction%20to%20Generics%20\(C%23%20Programming%20Guide\).md), and [Overview of Generics in Visual C++](../Topic/Overview%20of%20Generics%20in%20Visual%20C++.md).  
+ Visual C++, C#, and Visual Basic all provide full support for defining and using generics. For more information about language support, see [Generic Types in Visual Basic](~/docs/visual-basic/programming-guide/language-features/data-types/generic-types.md), [Introduction to Generics](~/docs/csharp/programming-guide/generics/introduction-to-generics.md), and [Overview of Generics in Visual C++](http://msdn.microsoft.com/library/21f10637-0fce-4916-b925-6c86a126d3aa).  
   
  [Back to top](#top)  
   
@@ -168,9 +168,9 @@ manager: "wpickett"
 |[Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)|Provides summary information about the characteristics and usage scenarios of the collection types in the .NET Framework, including generic types.|  
 |[When to Use Generic Collections](../../../docs/standard/collections/when-to-use-generic-collections.md)|Describes general rules for determining when to use generic collection types.|  
 |[How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Explains how to generate dynamic assemblies that include generic types and methods.|  
-|[Generic Types in Visual Basic](../Topic/Generic%20Types%20in%20Visual%20Basic%20\(Visual%20Basic\).md)|Describes the generics feature for Visual Basic users, including how-to topics for using and defining generic types.|  
-|[Introduction to Generics](../Topic/Introduction%20to%20Generics%20\(C%23%20Programming%20Guide\).md)|Provides an overview of defining and using generic types for C# users.|  
-|[Overview of Generics in Visual C++](../Topic/Overview%20of%20Generics%20in%20Visual%20C++.md)|Describes the generics feature for C++ users, including the differences between generics and templates.|  
+|[Generic Types in Visual Basic](~/docs/visual-basic/programming-guide/language-features/data-types/generic-types.md)|Describes the generics feature for Visual Basic users, including how-to topics for using and defining generic types.|  
+|[Introduction to Generics](~/docs/csharp/programming-guide/generics/introduction-to-generics.md)|Provides an overview of defining and using generic types for C# users.|  
+|[Overview of Generics in Visual C++](http://msdn.microsoft.com/library/21f10637-0fce-4916-b925-6c86a126d3aa)|Describes the generics feature for C++ users, including the differences between generics and templates.|  
   
 <a name="reference"></a>   
 ## Reference  

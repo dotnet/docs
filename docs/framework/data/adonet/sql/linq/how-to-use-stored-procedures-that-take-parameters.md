@@ -45,5 +45,5 @@ where O.CUSTOMERID = @CustomerID AND O.ORDERID = OD.ORDERID
 ## See Also  
  [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)   
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)   
- [Using Nullable Types](../Topic/Using%20Nullable%20Types%20\(C%23%20Programming%20Guide\).md)   
- [Nullable Value Types](../Topic/Nullable%20Value%20Types%20\(Visual%20Basic\).md)
+ [Using Nullable Types](~/docs/csharp/programming-guide/nullable-types/using-nullable-types.md)   
+ [Nullable Value Types](~/docs/visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

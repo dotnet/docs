@@ -380,7 +380,7 @@ using Northwind;
 ## See Also  
  [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)   
  [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)   
- [Creating Data Applications](../Topic/Creating%20Data%20Applications.md)   
+ [Creating Data Applications](http://msdn.microsoft.com/library/ab334d5f-4f49-4346-bce0-3325d6130b3e)   
  [Querying an Entity Data Model (Entity Framework Tasks)](http://msdn.microsoft.com/en-us/187f1caa-e4d3-4e31-bd99-5d5c2b329c77)   
  [How to: Execute a Query that Returns Anonymous Type Objects](http://msdn.microsoft.com/en-us/3b264025-e911-4d73-90ce-992d2b9d189d)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

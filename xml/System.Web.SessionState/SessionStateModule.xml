@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.SessionState.SessionStateModule> is ASP.NET's default session-state handler. It writes session data to and retrieves it from the session-state store and raises the **Session_OnStart** and **Session_OnEnd** events. For details about how to use ASP.NET session state to store and retrieve values for a user session, see [ASP.NET Session State Overview](../Topic/ASP.NET%20Session%20State%20Overview.md).  
+ <xref:System.Web.SessionState.SessionStateModule> is ASP.NET's default session-state handler. It writes session data to and retrieves it from the session-state store and raises the **Session_OnStart** and **Session_OnEnd** events. For details about how to use ASP.NET session state to store and retrieve values for a user session, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
  You can replace the <xref:System.Web.SessionState.SessionStateModule> with a custom implementation of the <xref:System.Web.IHttpModule> interface that manages session state. For an example of a custom session-state module, see the <xref:System.Web.SessionState.SessionStateUtility> class overview.  
   

@@ -61,5 +61,5 @@ The common language runtime's garbage collector reclaims the memory used by unma
   
 ## See Also  
  [Cleaning Up Unmanaged Resources](../../../docs/standard/garbagecollection/unmanaged.md)   
- [using Statement](../Topic/using%20Statement%20\(C%23%20Reference\).md)   
- [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md)
+ [using Statement](~/docs/csharp/language-reference/keywords/using-statement.md)   
+ [Using Statement](~/docs/visual-basic/language-reference/statements/using-statement.md)

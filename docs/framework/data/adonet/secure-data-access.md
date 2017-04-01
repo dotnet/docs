@@ -52,7 +52,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md)|Describes how to guard against scripting and SQL statement exploits.|  
+|[Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|Describes how to guard against scripting and SQL statement exploits.|  
   
 ## Probing Attacks  
  Attackers often use information from an exception, such as the name of your server, database, or table, to mount an attack on your system. Because exceptions can contain specific information about your application or data source, you can help keep your application and data source better protected by only exposing essential information to the client.  

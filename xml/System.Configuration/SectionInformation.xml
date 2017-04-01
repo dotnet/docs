@@ -600,7 +600,7 @@
 ## Remarks  
  Protected configuration sections are encrypted and read-only.  
   
- For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
    
   
@@ -754,7 +754,7 @@
 ## Remarks  
  For unprotected sections, the <xref:System.Configuration.SectionInformation.ProtectionProvider%2A> property is `null`.  
   
- For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
    
   
@@ -801,7 +801,7 @@
 > [!NOTE]
 >  If you call the <xref:System.Configuration.SectionInformation.ProtectSection%2A> method with a `null` parameter or an empty string, the <xref:System.Configuration.RsaProtectedConfigurationProvider> class is used as the protection provider.  
   
- For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
    
   
@@ -1057,7 +1057,7 @@ Dim apSection As AppSettingsSection = _
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
    
   

@@ -24,7 +24,7 @@
   
  The <xref:System.CodeDom.Compiler.CompilerInfo> class provides read-only access to these settings in the machine configuration file. Use the <xref:System.CodeDom.Compiler.CompilerInfo.GetLanguages%2A>, <xref:System.CodeDom.Compiler.CompilerInfo.GetExtensions%2A>, and <xref:System.CodeDom.Compiler.CompilerInfo.CodeDomProviderType%2A> members to examine the corresponding configuration attributes for a language provider. Use the <xref:System.CodeDom.Compiler.CompilerInfo.CreateDefaultCompilerParameters%2A> method to obtain the compiler options and warning level attribute values for a language provider.  
   
- For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](../Topic/Compiler%20and%20Language%20Provider%20Settings%20Schema.md).  
+ For more details on language provider settings in the configuration file, see [Compiler and Language Provider Settings Schema](http://msdn.microsoft.com/library/c020b139-8699-4f0d-9ac9-70d0c5b2a8c8).  
   
 > [!NOTE]
 >  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about link demands, see [Link Demands](~/docs/framework/misc/link-demands.md).  

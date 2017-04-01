@@ -20,11 +20,11 @@ manager: "jhubbard"
   
 -   Aggregate queries are executed immediately.  
   
-     For more information, see [Introduction to LINQ Queries (C#)](../Topic/Introduction%20to%20LINQ%20Queries%20\(C%23\).md).  
+     For more information, see [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
 -   Aggregate queries typically return a number instead of a collection.  
   
-     For more information, see [Aggregation Operations](../Topic/Aggregation%20Operations.md).  
+     For more information, see [Aggregation Operations](http://msdn.microsoft.com/library/36d97c83-5de5-457d-971d-10a69365e7c4).  
   
 -   You cannot call aggregates against anonymous types.  
   
@@ -53,5 +53,5 @@ manager: "jhubbard"
  [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
  Provides links to topics that explain concepts for designing [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- [Introduction to LINQ Queries (C#)](../Topic/Introduction%20to%20LINQ%20Queries%20\(C%23\).md)  
+ [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
  Explains how queries work in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].

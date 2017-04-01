@@ -53,7 +53,7 @@ At any given time at medium and large companies there may be multiple printers t
  [!code-csharp[PrinterStatusSurvey#SurveyQueues](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PrinterStatusSurvey/CSharp/Program.cs#surveyqueues)]
  [!code-vb[PrinterStatusSurvey#SurveyQueues](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#surveyqueues)]  
   
- To check printer status using the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintQueueStatus>, the [& Operator (C# Reference)](../Topic/&%20Operator%20\(C%23%20Reference\).md), and <xref:System.FlagsAttribute>.  
+ To check printer status using the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintQueueStatus>, the [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md), and <xref:System.FlagsAttribute>.  
   
  For each attribute whose bit is set, the code adds a notice to the final report that will be presented to the user. (The **ReportAvailabilityAtThisTime** method that is called at the end of the code is discussed below.)  
   
@@ -86,6 +86,6 @@ At any given time at medium and large companies there may be multiple printers t
  <xref:System.Printing.LocalPrintServer>   
  <xref:System.Printing.EnumeratedPrintQueueTypes>   
  <xref:System.Printing.PrintQueue>   
- [& Operator (C# Reference)](../Topic/&%20Operator%20\(C%23%20Reference\).md)   
+ [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)   
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

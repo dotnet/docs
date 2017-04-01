@@ -23,4 +23,4 @@ manager: "jhubbard"
 ## See Also  
  [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)   
  [LINQ to SQL N-Tier with Web Services](../../../../../../docs/framework/data/adonet/sql/linq/linq-to-sql-n-tier-with-web-services.md)   
- [Work with datasets in n-tier applications](../Topic/Work%20with%20datasets%20in%20n-tier%20applications.md)
+ [Work with datasets in n-tier applications](http://msdn.microsoft.com/library/f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20)

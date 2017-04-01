@@ -32,9 +32,9 @@ A query is an expression that retrieves data from a data source. Queries are usu
  [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] queries can be formulated in two different syntaxes: query expression syntax and method-based query syntax.  
   
 ### Query Expression Syntax  
- Query expressions are a declarative query syntax. This syntax enables a developer to write queries in C# or Visual Basic in a format similar to SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, see [LINQ Query Expressions](../Topic/LINQ%20Query%20Expressions%20\(C%23%20Programming%20Guide\).md) and [Basic Query Operations (Visual Basic)](../Topic/Basic%20Query%20Operations%20\(Visual%20Basic\).md).  
+ Query expressions are a declarative query syntax. This syntax enables a developer to write queries in C# or Visual Basic in a format similar to SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, see [LINQ Query Expressions](http://msdn.microsoft.com/library/40638f19-fb46-4d26-a2d9-a383b48f5ed4) and [Basic Query Operations (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/linq/basic-query-operations.md).  
   
- Query expression syntax is new in C# 3.0 and [!INCLUDE[vb_orcas_long](../../../../includes/vb-orcas-long-md.md)]. However, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are referred to as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../Topic/Query%20Syntax%20and%20Method%20Syntax%20in%20LINQ%20\(C%23\).md). For more information about how to use the standard query operators, see [NOT IN BUILD: LINQ General Programming Guide](http://msdn.microsoft.com/en-us/609c7a6b-cbdd-429d-99f3-78d13d3bc049).  
+ Query expression syntax is new in C# 3.0 and [!INCLUDE[vb_orcas_long](../../../../includes/vb-orcas-long-md.md)]. However, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are referred to as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](~/docs/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md). For more information about how to use the standard query operators, see [NOT IN BUILD: LINQ General Programming Guide](http://msdn.microsoft.com/en-us/609c7a6b-cbdd-429d-99f3-78d13d3bc049).  
   
  The following example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` table and display the product names.  
   
@@ -42,7 +42,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
  [!code-vb[DP LINQ to DataSet Examples#SelectSimple1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#selectsimple1)]  
   
 ### Method-Based Query Syntax  
- The other way to formulate [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md).  
+ The other way to formulate [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
  This example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` and display the product names.  
   
@@ -65,5 +65,5 @@ A query is an expression that retrieves data from a data source. Queries are usu
 ## See Also  
  [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)   
  [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)   
- [Getting Started with LINQ in C#](../Topic/Getting%20Started%20with%20LINQ%20in%20C%23.md)   
- [Getting Started with LINQ in Visual Basic](../Topic/Getting%20Started%20with%20LINQ%20in%20Visual%20Basic.md)
+ [Getting Started with LINQ in C#](~/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md)   
+ [Getting Started with LINQ in Visual Basic](~/docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

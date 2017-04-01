@@ -95,7 +95,7 @@
   
 -   Multiple key fields.  
   
- To learn about other data-bound controls that are available in ASP.NET, see [Data-Bound Web Server Controls](../Topic/Data-Bound%20Web%20Server%20Controls.md).  
+ To learn about other data-bound controls that are available in ASP.NET, see [Data-Bound Web Server Controls](http://msdn.microsoft.com/library/f9cf026e-d8b8-49f8-a3c4-64de2edbbb96).  
   
 <a name="templates"></a>   
 ## Templates  
@@ -117,7 +117,7 @@
 |<xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A>|Defines the content to render when an item is being edited. The <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> template is rendered in place of the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template for the data item that is being edited.|  
 |<xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A>|Defines the content to render to insert an item. The <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template is rendered in place of an <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template at either the start or at the end of the items that are displayed by the <xref:System.Web.UI.WebControls.ListView> control. You can specify where the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template is rendered by using the <xref:System.Web.UI.WebControls.ListView.InsertItemPosition%2A> property of the <xref:System.Web.UI.WebControls.ListView> control.|  
   
- To display the value of a field in a template such as <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A>, you use a data-binding expression. For more information about data-binding expressions, see [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+ To display the value of a field in a template such as <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A>, you use a data-binding expression. For more information about data-binding expressions, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  To bind input controls in the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> and <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> templates to fields of a data source, you can use two-way binding expressions. This enables the <xref:System.Web.UI.WebControls.ListView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also enable input controls in an <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> to automatically display the original field values. For more information about two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
   
@@ -290,7 +290,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to insert, delete, and update records.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/CS/ListViewEditCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView_Edit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Edit/VB/ListViewEditVB.aspx#1)]  -->  
@@ -431,7 +431,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.AlternatingItemTemplate%2A> property to define a custom user interface (UI) for the alternating data item. The <xref:System.Web.UI.WebControls.ListView.AlternatingItemTemplate%2A> template usually contains the same controls and content as the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template, but with a different appearance to distinguish items.  
   
- To specify the custom template declaratively, add an `AlternatingItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. Then add controls and content between the opening and closing `<AlternatingItemTemplate>` tags. To display the field values from the data source, use a data-binding expression. For more information, see [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+ To specify the custom template declaratively, add an `AlternatingItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. Then add controls and content between the opening and closing `<AlternatingItemTemplate>` tags. To display the field values from the data source, use a data-binding expression. For more information, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  To create buttons that automatically select, delete, and edit operations, add a button control to the template. Set its <xref:System.Web.UI.WebControls.Button.CommandName%2A> property to one of the values listed in the following table.  
   
@@ -1460,7 +1460,7 @@
  The following example shows how to retrieve the item that is in edit mode by using the <xref:System.Web.UI.WebControls.ListView.EditItem%2A> property to access controls that are contained in the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> template.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]  -->  
@@ -1504,7 +1504,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> property to define a custom user interface (UI) for the item in edit mode. The <xref:System.Web.UI.WebControls.ListView.EditItemTemplate%2A> template usually contains the input controls for the user to update the values of an existing record. It also usually contains buttons to update the record and to cancel the update operation.  
   
- To specify the custom template declaratively, add an `EditItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. Then add the contents and controls for template to the `EditItemTemplate` element. You can associate a field with an input control by using a two-way binding expression. This enables the <xref:System.Web.UI.WebControls.ListView> control to automatically display the original field value in the associated input control for the item in edit mode. When a record is updated, the <xref:System.Web.UI.WebControls.ListView> control can automatically extract the updated field value from the associated input control. For more information, see [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+ To specify the custom template declaratively, add an `EditItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. Then add the contents and controls for template to the `EditItemTemplate` element. You can associate a field with an input control by using a two-way binding expression. This enables the <xref:System.Web.UI.WebControls.ListView> control to automatically display the original field value in the associated input control for the item in edit mode. When a record is updated, the <xref:System.Web.UI.WebControls.ListView> control can automatically extract the updated field value from the associated input control. For more information, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  To create buttons that perform the built-in cancel and update operations, add a button control to the template. Set its <xref:System.Web.UI.WebControls.Button.CommandName%2A> property to one of the values listed in the following table.  
   
@@ -1519,7 +1519,7 @@
  The following example shows how to define a custom template for the item in edit mode.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
@@ -2125,7 +2125,7 @@
  The following example shows how to get the insert item by using the <xref:System.Web.UI.WebControls.ListView.InsertItem%2A> property to access controls that are contained in the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.  
   
 > [!IMPORTANT]
->  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/CS/ListViewInsertItemCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.InsertItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertItem/VB/ListViewInsertItemVB.aspx#1)]  -->  
@@ -2175,7 +2175,7 @@
  The following example shows how to configure a <xref:System.Web.UI.WebControls.ListView> control to display the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
@@ -2221,7 +2221,7 @@
   
  The <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template usually contains the input controls for the user to enter the values for a new record. It also usually contains buttons or hyperlinks to insert the record and to cancel the insert operation.  
   
- To specify the custom template declaratively, add an `InsertItemTemplate` element inside the `ListView` element. You can then add the contents of the template to the `InsertItemTemplate` element. You can associate a field with an input control by using a two-way binding expression. When a record is inserted, the <xref:System.Web.UI.WebControls.ListView> control automatically extracts the field value from the associated input control. For more information, see [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+ To specify the custom template declaratively, add an `InsertItemTemplate` element inside the `ListView` element. You can then add the contents of the template to the `InsertItemTemplate` element. You can associate a field with an input control by using a two-way binding expression. When a record is inserted, the <xref:System.Web.UI.WebControls.ListView> control automatically extracts the field value from the associated input control. For more information, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  To create buttons that perform the built-in cancel and insert operations, add a button control to the template. Set its <xref:System.Web.UI.WebControls.Button.CommandName%2A> property to one of the values listed in the following table.  
   
@@ -2238,7 +2238,7 @@
  The following example shows how to define a custom template for the insert item of a <xref:System.Web.UI.WebControls.ListView> control. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
@@ -2323,7 +2323,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView.InsertNewItem%2A> method to programmatically insert the contents of the insert item of a <xref:System.Web.UI.WebControls.ListView> control into the data source.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/CS/ListViewInsertNewItemCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.InsertNewItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.InsertNewItem/VB/ListViewInsertNewItemVB.aspx#1)]  -->  
@@ -2607,7 +2607,7 @@
  The following example shows how to create an <xref:System.Web.UI.WebControls.ListView.ItemCanceling> event handler.  
   
 > [!IMPORTANT]
->  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example contains text boxes that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemCanceling#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#1)]  -->  
@@ -2862,7 +2862,7 @@
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemEditing> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/CS/ListViewItemEditingCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemEditing/VB/ListViewItemEditingVB.aspx#1)]  -->  
@@ -2908,7 +2908,7 @@
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]  -->  
@@ -2952,7 +2952,7 @@
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemInserting> event.  
   
 > [!IMPORTANT]
->  This example contains controls that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example contains controls that accept user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#1)]  -->  
@@ -3128,7 +3128,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> property to define a custom user interface (UI) to display the data items. The <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template is required by the <xref:System.Web.UI.WebControls.ListView> control. It usually contains controls to display the field values of a record. If you want to let users modify the data, you also usually add buttons to the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template that let the user select a record, switch to edit mode, or delete a record.  
   
- To specify the custom template declaratively, add an `ItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `ItemTemplate` element. To display the field values of the data source that is bound to the control, use a data-binding expression. For more information, see [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+ To specify the custom template declaratively, add an `ItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `ItemTemplate` element. To display the field values of the data source that is bound to the control, use a data-binding expression. For more information, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  To create buttons that perform the built-in select, delete, and edit operations, add a button control to the template. Set its <xref:System.Web.UI.WebControls.Button.CommandName%2A> property to one of the values listed in the following table.  
   
@@ -3144,7 +3144,7 @@
  The following example shows how to define a custom template for a data item in the <xref:System.Web.UI.WebControls.ListView> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
@@ -3188,7 +3188,7 @@
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemUpdated> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/CS/ListViewItemUpdatedCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdated/VB/ListViewItemUpdatedVB.aspx#1)]  -->  
@@ -3234,7 +3234,7 @@
  The following example shows how to add an event handler for the <xref:System.Web.UI.WebControls.ListView.ItemUpdating> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/CS/ListViewItemUpdatingCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemUpdating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemUpdating/VB/ListViewItemUpdatingVB.aspx#1)]  -->  
@@ -3321,7 +3321,7 @@
  The following example shows how to define a custom template for the root container in the <xref:System.Web.UI.WebControls.ListView> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/CS/ListViewEditItemTemplateCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.EditItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.EditItemTemplate/VB/ListViewEditItemTemplateVB.aspx#1)]  -->  
@@ -3390,7 +3390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
+ This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
   
  ]]></format>
         </remarks>
@@ -4632,7 +4632,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.ListView.SelectedItemTemplate%2A> property to define a custom user interface (UI) for the selected item in a <xref:System.Web.UI.WebControls.ListView> control. The <xref:System.Web.UI.WebControls.ListView.SelectedItemTemplate%2A> is usually used to differentiate the selected item from the other displayed items. <xref:System.Web.UI.WebControls.ListView.SelectedItemTemplate%2A> is rendered instead of the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template for the selected item.  
   
- To specify the custom template declaratively, add a `SelectedItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `SelectedItemTemplate` element. To display the field values of the data source that is bound to the control, use a data-binding expression. For more information, see [Data-Binding Expressions Overview](../Topic/Data-Binding%20Expressions%20Overview.md).  
+ To specify the custom template declaratively, add a `SelectedItemTemplate` element inside the <xref:System.Web.UI.WebControls.ListView> control. You can then add the contents of the template to the `SelectedItemTemplate` element. To display the field values of the data source that is bound to the control, use a data-binding expression. For more information, see [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   
  You can also add buttons to the <xref:System.Web.UI.WebControls.ListView.SelectedItemTemplate%2A>. To create buttons that perform the built-in delete or edit operations, add a button control to the template and set its <xref:System.Web.UI.WebControls.Button.CommandName%2A> property to one of the values listed in the following table.  
   

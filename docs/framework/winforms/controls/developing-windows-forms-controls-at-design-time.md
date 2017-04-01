@@ -30,7 +30,7 @@ For control authors, the .NET Framework provides a wealth of control authoring t
 > [!NOTE]
 >  It is not necessary to have a thorough understanding of inheritance, but you may find it useful to refer to [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c).  
   
- If you want to create custom controls to use on Web Forms, see [Developing Custom ASP.NET Server Controls](../Topic/Developing%20Custom%20ASP.NET%20Server%20Controls.md).  
+ If you want to create custom controls to use on Web Forms, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
   
 ## In This Section  
  [Walkthrough: Authoring a Composite Control with Visual Basic](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md)  

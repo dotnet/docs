@@ -49,7 +49,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
 ## Creating and Configuring Transitions  
  All states must have at least one transition, except for a final state which may not have any transitions. Transitions may be added after a state is added to a state machine workflow, or they can be created as the state is dropped.  
   
- To add a <xref:System.Activities.Statements.State> and create a transition in one step, drag a **State** activity from the **State Machine** section of the **Toolbox** and hover it over another state in the workflow designer. When the dragged <xref:System.Activities.Statements.State> is over another <xref:System.Activities.Statements.State>, four triangles will appear around the other <xref:System.Activities.Statements.State>. If the <xref:System.Activities.Statements.State> is dropped onto one of the four triangles, it is added to the state machine and a transition is created from the source <xref:System.Activities.Statements.State> to the dropped destination <xref:System.Activities.Statements.State>. For more information, see [Transition Activity Designer](../Topic/Transition%20Activity%20Designer.md).  
+ To add a <xref:System.Activities.Statements.State> and create a transition in one step, drag a **State** activity from the **State Machine** section of the **Toolbox** and hover it over another state in the workflow designer. When the dragged <xref:System.Activities.Statements.State> is over another <xref:System.Activities.Statements.State>, four triangles will appear around the other <xref:System.Activities.Statements.State>. If the <xref:System.Activities.Statements.State> is dropped onto one of the four triangles, it is added to the state machine and a transition is created from the source <xref:System.Activities.Statements.State> to the dropped destination <xref:System.Activities.Statements.State>. For more information, see [Transition Activity Designer](http://msdn.microsoft.com/library/f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316).  
   
  To create a transition after a state is added, there are two options. The first option is to drag the state from the workflow designer surface and hover it over an existing state and drop it on one of the drop points. This is very similar to the method described in the previous section. You can also hover the mouse over the desired source state, and drag a line to the desired destination state.  
   
@@ -63,7 +63,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
 > [!NOTE]
 >  Note that if the <xref:System.Activities.Statements.Transition.Condition%2A> of a transition evaluates to `False` (or all of the conditions of a shared trigger transition evaluate to `False`), the transition will not occur and all triggers for all the transitions from the state will be rescheduled.  
   
- For more information on creating state machine workflows, see [How to: Create a State Machine Workflow](../../../docs/framework/wf/how-to-create-a-state-machine-workflow.md), [StateMachine Activity Designer](../Topic/StateMachine%20Activity%20Designer.md), [State Activity Designer](../Topic/State%20Activity%20Designer.md), [FinalState Activity Designer](../Topic/FinalState%20Activity%20Designer.md), and [Transition Activity Designer](../Topic/Transition%20Activity%20Designer.md).  
+ For more information on creating state machine workflows, see [How to: Create a State Machine Workflow](../../../docs/framework/wf/how-to-create-a-state-machine-workflow.md), [StateMachine Activity Designer](http://msdn.microsoft.com/library/474d5fb3-1049-4b3f-bc6b-7524dbbe1672), [State Activity Designer](http://msdn.microsoft.com/library/9455ab37-93a0-4c46-9eb8-b6611ca23167), [FinalState Activity Designer](http://msdn.microsoft.com/library/aa186893-8775-40dd-981f-8593ead831d0), and [Transition Activity Designer](http://msdn.microsoft.com/library/f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316).  
   
 ## State Machine Terminology  
  This section defines the state machine vocabulary used throughout this topic.  
@@ -106,7 +106,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
   
 ## See Also  
  [How to: Create a State Machine Workflow](../../../docs/framework/wf/how-to-create-a-state-machine-workflow.md)   
- [StateMachine Activity Designer](../Topic/StateMachine%20Activity%20Designer.md)   
- [State Activity Designer](../Topic/State%20Activity%20Designer.md)   
- [FinalState Activity Designer](../Topic/FinalState%20Activity%20Designer.md)   
- [Transition Activity Designer](../Topic/Transition%20Activity%20Designer.md)
+ [StateMachine Activity Designer](http://msdn.microsoft.com/library/474d5fb3-1049-4b3f-bc6b-7524dbbe1672)   
+ [State Activity Designer](http://msdn.microsoft.com/library/9455ab37-93a0-4c46-9eb8-b6611ca23167)   
+ [FinalState Activity Designer](http://msdn.microsoft.com/library/aa186893-8775-40dd-981f-8593ead831d0)   
+ [Transition Activity Designer](http://msdn.microsoft.com/library/f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316)

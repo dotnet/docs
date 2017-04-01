@@ -28,7 +28,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # ICLRRuntimeHost::ExecuteApplication Method
-Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain. For more information about these scenarios, see [ClickOnce Security and Deployment](../Topic/ClickOnce%20Security%20and%20Deployment.md).  
+Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain. For more information about these scenarios, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a).  
   
 ## Syntax  
   
@@ -97,4 +97,4 @@ HRESULT ExecuteApplication(
  [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5)   
  [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)   
  [SetAppDomainManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-setappdomainmanager-method.md)   
- [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](../Topic/Walkthrough:%20Downloading%20Assemblies%20on%20Demand%20with%20the%20ClickOnce%20Deployment%20API%20Using%20the%20Designer.md)
+ [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5)

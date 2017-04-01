@@ -55,7 +55,7 @@ manager: "wpickett"
   
  For example, data binding requires an app to be able to map property names to functions. In .NET for Windows Store apps, the common language runtime automatically uses reflection to provide this capability for managed types and publicly available native types. In [!INCLUDE[net_native](../../../includes/net-native-md.md)], the compiler automatically includes metadata for types to which you bind data.  
   
- The [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiler can also handle commonly used generic types such as <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>, which work without requiring any hints or directives. The [dynamic](../Topic/dynamic%20\(C%23%20Reference\).md) keyword is also supported within certain limits.  
+ The [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiler can also handle commonly used generic types such as <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>, which work without requiring any hints or directives. The [dynamic](~/docs/csharp/language-reference/keywords/dynamic.md) keyword is also supported within certain limits.  
   
 > [!NOTE]
 >  You should test all dynamic code paths thoroughly when porting your app to [!INCLUDE[net_native](../../../includes/net-native-md.md)].  
@@ -123,7 +123,7 @@ manager: "wpickett"
   
 -   Dynamic creation of multidimensional arrays isn't supported. Such arrays are typically created by calling an overload of the <xref:System.Array.CreateInstance%2A?displayProperty=fullName> method that includes a `lengths` parameter, or by calling the <xref:System.Type.MakeArrayType%28System.Int32%29?displayProperty=fullName> method.  
   
--   Multidimensional arrays that have four or more dimensions aren't supported; that is, their <xref:System.Array.Rank%2A?displayProperty=fullName> property value is four or greater. Use [jagged arrays](../Topic/Jagged%20Arrays%20\(C%23%20Programming%20Guide\).md) (an array of arrays) instead. For example, `array[x,y,z]` is invalid, but `array[x][y][z]` isn't.  
+-   Multidimensional arrays that have four or more dimensions aren't supported; that is, their <xref:System.Array.Rank%2A?displayProperty=fullName> property value is four or greater. Use [jagged arrays](~/docs/csharp/programming-guide/arrays/jagged-arrays.md) (an array of arrays) instead. For example, `array[x,y,z]` is invalid, but `array[x][y][z]` isn't.  
   
 -   Variance for multidimensional arrays isn't supported and causes an <xref:System.InvalidCastException> exception at run time.  
   

@@ -76,7 +76,7 @@ While you are debugging an application during development, both your tracing and
     |`/d:`|Defines a conditional compilation symbol|  
   
     > [!NOTE]
-    >  You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](../Topic/How%20to:%20Set%20Environment%20Variables%20for%20the%20Visual%20Studio%20Command%20Line.md) (C#) or [Invoking the Command-Line Compiler](../Topic/How%20to:%20Invoke%20the%20Command-Line%20Compiler%20\(Visual%20Basic\).md) (Visual Basic).  
+    >  You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) or [Invoking the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
   
 ### To perform conditional compilation using #CONST or #define  
   
@@ -110,5 +110,5 @@ While you are debugging an application during development, both your tracing and
  [Trace Switches](../../../docs/framework/debugging-tracing-profiling/trace-switches.md)   
  [Trace Listeners](../../../docs/framework/debugging-tracing-profiling/trace-listeners.md)   
  [How to: Add Trace Statements to Application Code](../../../docs/framework/debugging-tracing-profiling/how-to-add-trace-statements-to-application-code.md)   
- [How to: Set Environment Variables for the Visual Studio Command Line](../Topic/How%20to:%20Set%20Environment%20Variables%20for%20the%20Visual%20Studio%20Command%20Line.md)   
- [How to: Invoke the Command-Line Compiler](../Topic/How%20to:%20Invoke%20the%20Command-Line%20Compiler%20\(Visual%20Basic\).md)
+ [How to: Set Environment Variables for the Visual Studio Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)   
+ [How to: Invoke the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

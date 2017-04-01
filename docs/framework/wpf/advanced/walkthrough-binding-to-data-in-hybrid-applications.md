@@ -127,7 +127,7 @@ Binding a data source to a control is essential for providing users with access 
   
 1.  From the                                  **Data** menu, select                                  **Add New Data Source**.  
   
-2.  In the                                  **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see                                  [How to: Connect to Data in a Database](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  In the                                  **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see                                  [How to: Connect to Data in a Database](http://msdn.microsoft.com/library/6c56e54e-8834-4297-85aa-cc1a443ba556).  
   
 3.  When you are prompted by the                                  **Data Source Configuration Wizard**, save the connection string as                                  `NorthwindConnectionString`.  
   

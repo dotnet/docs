@@ -48,7 +48,7 @@ This topic describes security considerations that are specific to developing, de
   
 -   Encrypt configuration file sections using protected configuration.  
   
-     ASP.NET provides a feature called protected configuration that enables you to encrypt sensitive information in a configuration file. Although primarily designed for ASP.NET, you can also use protected configuration to encrypt sections of configuration files in Windows applications. For a detailed description of the new protected configuration capabilities, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+     ASP.NET provides a feature called protected configuration that enables you to encrypt sensitive information in a configuration file. Although primarily designed for ASP.NET, you can also use protected configuration to encrypt sections of configuration files in Windows applications. For a detailed description of the new protected configuration capabilities, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
 -   Store connection strings in secured configuration files.  
   

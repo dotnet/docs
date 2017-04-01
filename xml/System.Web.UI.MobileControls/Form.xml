@@ -54,7 +54,7 @@
  The following code example shows how to create a page with two forms along with links between the two forms. One form has a check box list. When items are selected and the **Submit** button is clicked, the form presents a list of the selected items and their values. Notice that the <xref:System.Web.UI.MobileControls.Form.Activate> event methods prepare the respective forms for display  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileFormSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileFormSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#1)]  -->  
@@ -152,7 +152,7 @@
  The following code example shows how to set the `OnActivate` attribute in the <xref:System.Web.UI.MobileControls.Form> element to point to a method that executes when the <xref:System.Web.UI.MobileControls.Form.Activate> event occurs. The `Form2_Activate` method prepares the second form for display. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.Form> overview.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  [!code-csharp[MobileFormSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default.aspx#3)]
  [!code-vb[MobileFormSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default.aspx#3)]  
@@ -247,7 +247,7 @@
  The example creates a page with two forms. One form has a very long string that on some devices must be paginated to give the user access to the entire text. In order to see the pagination in action, you must view the example on a device that handles pagination. In [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you can use one of the device emulators available with the **Device Emulator Manager** on the **Tools** menu.  
   
 > [!NOTE]
->  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md).  
+>  The following code example uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileFormSample#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormSample/cs/Default2.aspx#4)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileFormSample#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormSample/vb/Default2.aspx#4)]  -->  

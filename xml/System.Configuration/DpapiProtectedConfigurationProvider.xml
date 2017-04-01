@@ -20,7 +20,7 @@
   
  You use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> by declaring the provider and appropriate settings in the configuration file rather than creating an instance of this class. Refer to the next example.  
   
- For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](../Topic/Encrypting%20Configuration%20Information%20Using%20Protected%20Configuration.md).  
+ For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
   
  The <xref:System.Configuration.DpapiProtectedConfigurationProvider> uses the Windows built-in cryptographic services and can be configured for either machine-specific or user-account-specific protection. Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
   

@@ -91,11 +91,11 @@
   
  You can override the value of the <xref:System.Web.UI.ScriptManager.EnablePartialRendering%2A> property at run time during or before the page's <xref:System.Web.UI.Control.Init> event. If you try to change this property after the page's <xref:System.Web.UI.Control.Init> event has occurred, an <xref:System.InvalidOperationException> exception is thrown.  
   
- When partial-page rendering is supported, the <xref:System.Web.UI.ScriptManager> control renders script to enable asynchronous postbacks and partial-page updates. The regions of the page to be updated are designated by using <xref:System.Web.UI.UpdatePanel> controls. The <xref:System.Web.UI.ScriptManager> control handles the asynchronous postbacks and refreshes only the regions of the page that have to be updated. For more information about partial-page rendering, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md). For more information about the conditions that cause an update, see [UpdatePanel Control Overview](../Topic/UpdatePanel%20Control%20Overview.md).  
+ When partial-page rendering is supported, the <xref:System.Web.UI.ScriptManager> control renders script to enable asynchronous postbacks and partial-page updates. The regions of the page to be updated are designated by using <xref:System.Web.UI.UpdatePanel> controls. The <xref:System.Web.UI.ScriptManager> control handles the asynchronous postbacks and refreshes only the regions of the page that have to be updated. For more information about partial-page rendering, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49). For more information about the conditions that cause an update, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a).  
   
 <a name="using_the_scriptmanager_control_with_master_pages__user_controls__and_other_child_components"></a>   
 ## Using the ScriptManager Control with Master Pages, User Controls, and Other Child Components  
- A page can contain only one <xref:System.Web.UI.ScriptManager> control in its hierarchy. To register services and scripts for nested pages, user controls, or components when the parent page already has a <xref:System.Web.UI.ScriptManager> control, use the <xref:System.Web.UI.ScriptManagerProxy> control. For more information, see [Using the UpdatePanel Control with Master Pages](../Topic/Using%20the%20ASP.NET%20UpdatePanel%20Control%20with%20Master%20Pages.md)  
+ A page can contain only one <xref:System.Web.UI.ScriptManager> control in its hierarchy. To register services and scripts for nested pages, user controls, or components when the parent page already has a <xref:System.Web.UI.ScriptManager> control, use the <xref:System.Web.UI.ScriptManagerProxy> control. For more information, see [Using the UpdatePanel Control with Master Pages](http://msdn.microsoft.com/library/b1c974d5-a6b2-4bb3-a3cc-61dd9dc0e1d6)  
   
 <a name="script_management_and_registration"></a>   
 ## Script Management and Registration  
@@ -107,7 +107,7 @@
   
 -   Registration methods that support working with <xref:System.Web.UI.UpdatePanel> controls.  
   
- For more information about how to create and use Ajax script in ASP.NET, see [Creating Custom Client Script by Using the Microsoft Ajax Library](../Topic/Creating%20Custom%20Client%20Script%20by%20Using%20the%20Microsoft%20Ajax%20Library.md).  
+ For more information about how to create and use Ajax script in ASP.NET, see [Creating Custom Client Script by Using the Microsoft Ajax Library](http://msdn.microsoft.com/library/285e3a65-b42e-42c5-952d-baf184057899).  
   
 ### Registering Script That Is Dependent on the Microsoft Ajax Library  
  You can use the following methods to register script files in a way that guarantees that any dependencies on the [!INCLUDE[atlaslib_current_ext](~/includes/atlaslib-current-ext-md.md)] are maintained.  
@@ -163,11 +163,11 @@
   
 -   **In debug mode**. The <xref:System.Web.UI.ScriptManager> control tries to render a culture-specific script file that contains debug information. For example, if the page is in debug mode and the current culture is set to en-MX, the control renders a script file that has a name such as `scriptname`.en-MX.debug.js, if the file exists. If the file does not exist, the debug file for the appropriate fallback culture is rendered  
   
- For more information about how to localize resources, see [Localizing Resources for Component Libraries Overview](../Topic/Localizing%20Resources%20for%20Component%20Libraries%20Overview.md).  
+ For more information about how to localize resources, see [Localizing Resources for Component Libraries Overview](http://msdn.microsoft.com/library/e6b15435-57c1-4dd1-9bd3-5d4c509685bb).  
   
 <a name="error_handling"></a>   
 ## Error Handling  
- When a page error occurs during asynchronous postbacks, the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event is raised. The way in which errors on the server are sent to the client depends on the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property, the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property, and the custom errors section of the Web.config file. For more information, see [Customizing Error Handling for UpdatePanel Controls](../Topic/Customizing%20Error%20Handling%20for%20ASP.NET%20UpdatePanel%20Controls.md).  
+ When a page error occurs during asynchronous postbacks, the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event is raised. The way in which errors on the server are sent to the client depends on the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property, the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property, and the custom errors section of the Web.config file. For more information, see [Customizing Error Handling for UpdatePanel Controls](http://msdn.microsoft.com/library/e15e7ffb-e4b2-4a89-b99e-16624a5861d0).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -257,7 +257,7 @@
   
  **Globalizing the Date and Time That Are Displayed in the Browser**  
   
- The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the  directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](../Topic/How%20to:%20Set%20the%20Culture%20and%20UI%20Culture%20for%20ASP.NET%20Web%20Page%20Globalization.md).  
+ The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the  directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  -->  
@@ -314,7 +314,7 @@
 ## Remarks  
  Use this method to create a history point when you want to save more than one key/value pair for the state data. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. If the `title` parameter is `null`, the title of the Web page is used as the title of the state entry in the history stack.  
   
- You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](../Topic/Managing%20Browser%20History%20Using%20ASP.NET%20Server%20Controls.md).  
+ You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
   
  ]]></format>
         </remarks>
@@ -346,7 +346,7 @@
 ## Remarks  
  Use this method to create a history point when you only want to save a value to identify the state. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. The title of the Web page is used as the title of the state entry in the history stack.  
   
- You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](../Topic/Managing%20Browser%20History%20Using%20ASP.NET%20Server%20Controls.md).  
+ You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
   
  ]]></format>
         </remarks>
@@ -380,7 +380,7 @@
 ## Remarks  
  Use this method to create a history point when you want to save a value to identify the state and a title for the state. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. If the `title` parameter is `null`, the title of the Web page is used as the title of the state entry in the history stack.  
   
- You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](../Topic/Managing%20Browser%20History%20Using%20ASP.NET%20Server%20Controls.md).  
+ You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
   
  ]]></format>
         </remarks>
@@ -705,8 +705,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the method that handles the [Sys.Application.navigate](../Topic/Sys.Application.navigate%20Event.md) event on the client.</summary>
-        <value>The name of the method that handles the [Sys.Application.navigate](../Topic/Sys.Application.navigate%20Event.md) event on the client.</value>
+        <summary>Gets or sets the name of the method that handles the [Sys.Application.navigate](http://msdn.microsoft.com/library/79ac04af-18b4-4106-9ab7-9cb10fbd0b93) event on the client.</summary>
+        <value>The name of the method that handles the [Sys.Application.navigate](http://msdn.microsoft.com/library/79ac04af-18b4-4106-9ab7-9cb10fbd0b93) event on the client.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1345,7 +1345,7 @@
     > [!NOTE]
     >  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
   
- For more information, see [Debugging and Tracing Ajax Applications Overview](../Topic/Debugging%20and%20Tracing%20Ajax%20Applications%20Overview.md).  
+ For more information, see [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
  ]]></format>
         </remarks>
@@ -3067,7 +3067,7 @@
 > [!NOTE]
 >  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
   
- For more information, see [Debugging and Tracing Ajax Applications Overview](../Topic/Debugging%20and%20Tracing%20Ajax%20Applications%20Overview.md).  
+ For more information, see [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
  ]]></format>
         </remarks>
@@ -3524,7 +3524,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- These method overloads enable you to define server state, and optionally the title of the history entry in the browser. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](../Topic/Managing%20Browser%20History%20Using%20ASP.NET%20Server%20Controls.md).  
+ These method overloads enable you to define server state, and optionally the title of the history entry in the browser. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
   
  ]]></format>
         </remarks>

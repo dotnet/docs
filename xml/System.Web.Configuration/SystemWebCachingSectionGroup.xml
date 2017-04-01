@@ -20,7 +20,7 @@
   
  The <xref:System.Web.Configuration.SystemWebCachingSectionGroup> class and the `caching` section provide centralized control of the caching mechanism for a site or application. This makes it possible for caching to be deployed, modified, and disabled without modifying individual pages in the application.  
   
- The ASP.NET caching mechanism is implemented by the <xref:System.Web.Caching.Cache> class. For more information, see [ASP.NET Caching Overview](../Topic/ASP.NET%20Caching%20Overview.md)  
+ The ASP.NET caching mechanism is implemented by the <xref:System.Web.Caching.Cache> class. For more information, see [ASP.NET Caching Overview](http://msdn.microsoft.com/library/5ec28012-4972-4dc3-b3e8-9d20401fe11d)  
   
  The following list describes the two types of caching ASP.NET provides.  
   

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements the <c>CreateItem</c> task. Use the <c>CreateItem</c> element in your project file to create and execute this task. For usage and parameter information, see [CreateItem Task](../Topic/CreateItem%20Task.md).</summary>
+    <summary>Implements the <c>CreateItem</c> task. Use the <c>CreateItem</c> element in your project file to create and execute this task. For usage and parameter information, see [CreateItem Task](http://msdn.microsoft.com/library/c4311f38-979e-4324-b524-9e8c1cbdc41a).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify the metadata name and value for the item with the following syntax: *MetadataName*`=`*MetadataValue*. Multiple metadata name/value pairs should be separated with a semicolon. If either the name or the value contains a semicolon or any other special characters, they must be escaped. For more information, see [How to: Escape Special Characters in MSBuild](../Topic/How%20to:%20Escape%20Special%20Characters%20in%20MSBuild.md).  
+ Specify the metadata name and value for the item with the following syntax: *MetadataName*`=`*MetadataValue*. Multiple metadata name/value pairs should be separated with a semicolon. If either the name or the value contains a semicolon or any other special characters, they must be escaped. For more information, see [How to: Escape Special Characters in MSBuild](http://msdn.microsoft.com/library/1aa3669c-1647-4960-b770-752e2532102f).  
   
  ]]></format>
         </remarks>
@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can contain wildcard specifications. For more information, see [MSBuild Items](../Topic/MSBuild%20Items.md) and [How to: Exclude Files from the Build](../Topic/How%20to:%20Exclude%20Files%20from%20the%20Build.md).  
+ This property can contain wildcard specifications. For more information, see [MSBuild Items](http://msdn.microsoft.com/library/d762eff4-c92a-4b5f-a944-1ca30aa22319) and [How to: Exclude Files from the Build](http://msdn.microsoft.com/library/1be36e45-01da-451c-972d-f9fc0e7d663c).  
   
  ]]></format>
         </remarks>

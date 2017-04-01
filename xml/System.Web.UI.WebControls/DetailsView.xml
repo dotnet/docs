@@ -130,7 +130,7 @@
   
 <a name="security"></a>   
 ## Security  
- This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md). Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+ This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07). Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -184,7 +184,7 @@
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -1037,7 +1037,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2140,7 +2140,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.EmptyDataText%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2581,7 +2581,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.FooterText%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -2867,7 +2867,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.HeaderText%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
   
    
   
@@ -3499,7 +3499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](../Topic/ASP.NET%20State%20Management%20Overview.md).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
   
  The <xref:System.Web.UI.WebControls.DetailsView.LoadViewState%2A> method is used to load the previously saved view state of the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
@@ -4778,7 +4778,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DetailsView.SelectedValue%2A> property to determine the data key value for the current record. To retrieve the actual <xref:System.Web.UI.WebControls.DataKey?displayProperty=fullName> object that represents the data key for the record, use the <xref:System.Web.UI.WebControls.DetailsView.DataKey%2A> property.  
   
- This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](../Topic/Using%20Parameters%20with%20Data%20Source%20Controls%20for%20Filtering.md).  
+ This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f).  
   
    
   

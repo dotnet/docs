@@ -559,7 +559,7 @@ public override void EnsureTemplatedUI()
  The following example demonstrates how to use the <xref:System.Web.UI.MobileControls.MobileControl.EnsureTemplatedUI%2A> method to access the contents of the `Label1` control within details view of the <xref:System.Web.UI.MobileControls.ObjectList>. This complete example also demonstrates several other features of the <xref:System.Web.UI.MobileControls.MobileControl> class.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the ASP.NET Web page code model, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the ASP.NET Web page code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
 <!-- TODO: review snippet reference  [!CODE [MobileMobileFormSample#1](MobileMobileFormSample#1)]  -->  
   

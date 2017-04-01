@@ -47,7 +47,7 @@
   
 -   [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] or [!INCLUDE[vwd_exp_dev10_long](~/includes/vwd-exp-dev10-long-md.md)].  
   
--   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](../Topic/Walkthrough:%20Creating%20a%20New%20Dynamic%20Data%20Web%20Site%20Using%20Scaffolding.md).  
+-   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
   
  See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel).  
   
@@ -821,8 +821,8 @@
   
  The example consists of a page and its code-behind file.  
   
- [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)]
- [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)]  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
   
  [!code-csharp[System.Web.DynamicData.MetaModel#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#4)]
  [!code-vb[System.Web.DynamicData.MetaModel#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#4)]  

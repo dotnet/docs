@@ -2675,7 +2675,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The delegate `d` is converted to a function pointer that can be passed to unmanaged code using the [__stdcall](../Topic/__stdcall.md) calling convention.  
+ The delegate `d` is converted to a function pointer that can be passed to unmanaged code using the [__stdcall](http://msdn.microsoft.com/library/e212594b-1827-4d07-9527-7d412b300df8) calling convention.  
   
  You must manually keep the delegate from being collected by the garbage collector from managed code. The garbage collector does not track references to unmanaged code.  
   
@@ -2727,7 +2727,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The delegate `d` is converted to a function pointer that can be passed to unmanaged code by using the [__stdcall](../Topic/__stdcall.md) calling convention.  
+ The delegate `d` is converted to a function pointer that can be passed to unmanaged code by using the [__stdcall](http://msdn.microsoft.com/library/e212594b-1827-4d07-9527-7d412b300df8) calling convention.  
   
  You must manually keep the delegate from being collected by the garbage collector from managed code. The garbage collector does not track references to unmanaged code.  
   

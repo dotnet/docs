@@ -92,7 +92,7 @@
    
   
 ## Examples  
- [ListView Web Server Control Overview](../Topic/ListView%20Web%20Server%20Control%20Overview.md)  
+ [ListView Web Server Control Overview](http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af)  
   
  <xref:System.Web.UI.WebControls.TemplatePagerField.CreateField%2A>  
   
@@ -226,7 +226,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event is raised when a button is clicked in the <xref:System.Web.UI.WebControls.TemplatePagerField> object. This enables you to perform a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](../Topic/Handling%20and%20Raising%20Events.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
  The <xref:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

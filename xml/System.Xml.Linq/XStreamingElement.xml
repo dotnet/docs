@@ -227,7 +227,7 @@ End Module
   
  Even if you use the technique described in , if you try to assemble an XML tree that contains the transformed document, memory usage may be too great.  
   
- The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information](../Topic/How%20to:%20Stream%20XML%20Fragments%20with%20Access%20to%20Header%20Information.md).  
+ The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
   
  This example uses the deferred execution capabilities of <xref:System.Xml.Linq.XStreamingElement> to stream the output.  
   
@@ -590,7 +590,7 @@ Console.WriteLine(dstTree)
   
  Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
   
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](../Topic/Valid%20Content%20of%20XElement%20and%20XDocument%20Objects1.md).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -660,7 +660,7 @@ Console.WriteLine(dstTree)
   
  Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](../Topic/Valid%20Content%20of%20XElement%20and%20XDocument%20Objects1.md).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -723,7 +723,7 @@ Console.WriteLine(dstTree)
   
  Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](../Topic/Valid%20Content%20of%20XElement%20and%20XDocument%20Objects1.md).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -843,7 +843,7 @@ Console.WriteLine(dstTree)
   
  Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](../Topic/Valid%20Content%20of%20XElement%20and%20XDocument%20Objects1.md).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
    
   
@@ -1078,7 +1078,7 @@ NewRoot
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
   
- If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](../Topic/Preserving%20White%20Space%20while%20Loading%20or%20Parsing%20XML3.md) and [Preserving White Space While Serializing](../Topic/Preserving%20White%20Space%20While%20Serializing1.md).  
+ If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -1173,7 +1173,7 @@ Console.WriteLine(sb.ToString())
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
   
- If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](../Topic/Preserving%20White%20Space%20while%20Loading%20or%20Parsing%20XML3.md) and [Preserving White Space While Serializing](../Topic/Preserving%20White%20Space%20While%20Serializing1.md).  
+ If you want to control white space, use one of the overloads of <xref:System.Xml.Linq.XStreamingElement.Save%2A> that take <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -1415,7 +1415,7 @@ Console.WriteLine(sb.ToString())
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](../Topic/Preserving%20White%20Space%20while%20Loading%20or%20Parsing%20XML3.md) and [Preserving White Space While Serializing](../Topic/Preserving%20White%20Space%20While%20Serializing1.md).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -1522,7 +1522,7 @@ Console.WriteLine(sb.ToString())
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](../Topic/Preserving%20White%20Space%20while%20Loading%20or%20Parsing%20XML3.md) and [Preserving White Space While Serializing](../Topic/Preserving%20White%20Space%20While%20Serializing1.md).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
   
    
   
@@ -1921,7 +1921,7 @@ Console.WriteLine(sb.ToString())
 ## Remarks  
  Queries are not iterated until the <xref:System.Xml.Linq.XStreamingElement> is serialized. This is in contrast to using queries for content for an <xref:System.Xml.Linq.XElement>, where queries are iterated at the time of construction of the new <xref:System.Xml.Linq.XElement>.  
   
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](../Topic/Valid%20Content%20of%20XElement%20and%20XDocument%20Objects1.md).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
   
  ]]></format>
         </remarks>

@@ -26,21 +26,19 @@ As far as the rest of the behavior is concerned, the tools will work as expected
 
 ```xml
 <PropertyGroup>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+  <TargetFramework>netcoreapp1.1</TargetFramework>
 </PropertyGroup>
 ```
 
 ```xml
 <PropertyGroup>
-    <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+  <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
 </PropertyGroup>
 ```
 
-> [!WARNING]
-> `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, indepenently from order. 
-
 ### Recommendations
-Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are now implicitly referenced, the following are our recommended best practices:
+Metapackages are implicitly referenced based on the target framework specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.  
+We recommended the following best practices:
 
 * Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
 * If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.

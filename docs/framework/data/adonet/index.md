@@ -53,7 +53,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [PAVE Security in Native and .NET Framework Code](http://msdn.microsoft.com/en-us/bd61be84-c143-409a-a75a-44253724f784)  
  Provides links to security topics for Visual Studio, the .NET Framework, and cryptography.  
   
- [LINQ (Language-Integrated Query)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)  
+ [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
  Provides links to LINQ topics and samples.  
   
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
@@ -69,5 +69,5 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Provides complete listings of all samples and QuickStart samples associated with the .NET Framework.  
   
 ## See Also  
- [Accessing data in Visual Studio](../Topic/Accessing%20data%20in%20Visual%20Studio.md)   
+ [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

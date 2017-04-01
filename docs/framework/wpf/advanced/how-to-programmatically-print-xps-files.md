@@ -59,7 +59,7 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
   
  This disguise will enable you to pass `true` as the final parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> without causing an exception, but since *\<PseudoXPSPrinter>* is not really an XPSDrv printer, only garbage will print.  
   
- **Note** For simplicity, the example above uses the presence of an *.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](../Topic/isXPS.exe%20\(isXPS%20Conformance%20Tool\).md) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
+ **Note** For simplicity, the example above uses the presence of an *.xps extension as its test that a file is [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]. However, [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3) is one way of testing a file for [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)] validity.  
   
 ## See Also  
  <xref:System.Printing.PrintQueue>   
@@ -69,6 +69,6 @@ You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> meth
  [XPS](http://www.microsoft.com/xps)   
  [Printing an XPS Document](http://msdn.microsoft.com/en-us/849555c8-0c4e-48c0-86bc-a5494c69b36c)   
  [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5)   
- [isXPS.exe (isXPS Conformance Tool)](../Topic/isXPS.exe%20\(isXPS%20Conformance%20Tool\).md)   
+ [isXPS.exe (isXPS Conformance Tool)](http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3)   
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)   
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

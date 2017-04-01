@@ -16,7 +16,7 @@ ms.author: "jhubbard"
 manager: "jhubbard"
 ---
 # How to: Call User-Defined Functions Inline
-Although you can call user-defined functions inline, functions that are included in a query whose execution is deferred are not executed until the query is executed. For more information, see [Introduction to LINQ Queries (C#)](../Topic/Introduction%20to%20LINQ%20Queries%20\(C%23\).md).  
+Although you can call user-defined functions inline, functions that are included in a query whose execution is deferred are not executed until the query is executed. For more information, see [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
  When you call the same function outside a query, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] creates a simple query from the method call expression. The following is the SQL syntax (the parameter `@p0` is bound to the constant passed in):  
   

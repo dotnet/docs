@@ -25,7 +25,7 @@ manager: "wpickett"
 ## Building a WPF Application  
  A WPF application can be compiled in the following ways:  
   
--   Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](../Topic/Command-line%20Building%20With%20csc.exe.md) or [Building from the Command Line (Visual Basic)](../Topic/Building%20from%20the%20Command%20Line%20\(Visual%20Basic\).md).  
+-   Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
 -   Microsoft Build Engine (MSBuild). In addition to the code and XAML files, the application must contain an MSBuild project file. For more information, see "MSBuild".  
   
@@ -171,6 +171,6 @@ End Sub
   
 ## See Also  
  [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)   
- [WPF MSBuild Reference](../Topic/WPF%20MSBuild%20Reference.md)   
+ [WPF MSBuild Reference](http://msdn.microsoft.com/library/94b12890-365d-479a-b239-71109fbcb462)   
  [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

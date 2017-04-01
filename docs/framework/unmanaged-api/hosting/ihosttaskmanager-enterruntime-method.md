@@ -65,7 +65,7 @@ HRESULT EnterRuntime ();
   
 ## See Also  
  [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)   
- [How to: Call Native DLLs from Managed Code Using PInvoke](../Topic/How%20to:%20Call%20Native%20DLLs%20from%20Managed%20Code%20Using%20PInvoke.md)   
+ [How to: Call Native DLLs from Managed Code Using PInvoke](http://msdn.microsoft.com/library/3273eb4b-38d1-4619-92a6-71bda542be72)   
  [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)   
  [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)   
  [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)   

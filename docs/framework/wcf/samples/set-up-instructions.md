@@ -43,7 +43,7 @@ This set of topics describes how to set up services that are required to run a [
  [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md)  
  Outlines the steps for running the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] samples on the same machine and across machines.  
   
- [Enabling Peer to Peer Services](../Topic/Enabling%20Peer%20to%20Peer%20Services.md)  
+ [Enabling Peer to Peer Services](http://msdn.microsoft.com/library/e7a0fcf4-b0e5-4b26-a7e3-f0f37b60a1f9)  
  Outlines the steps to install the Windows Peer-to-Peer component, the built-in resolver for peer-to-peer messaging services.  
   
  [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  

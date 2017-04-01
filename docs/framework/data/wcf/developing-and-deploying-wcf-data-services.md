@@ -103,11 +103,11 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
   
     -   **Deployment Technologies for ASP.NET Web Sites**  
   
-        -   [Copy Web Site Tool](../Topic/How%20to:%20Deploy%20a%20Web%20Site%20Project%20by%20using%20the%20Copy%20Web%20Site%20Tool.md)  
+        -   [Copy Web Site Tool](http://msdn.microsoft.com/library/b819aed4-014b-427e-be80-02317b1bb003)  
   
-        -   [Publish Web Site Tool](../Topic/How%20to:%20Deploy%20a%20Web%20Site%20Project%20by%20Using%20the%20Publish%20Web%20Site%20Tool.md)  
+        -   [Publish Web Site Tool](http://msdn.microsoft.com/library/d0a1a20f-15be-4940-9485-cb8e4aa8181b)  
   
-        -   [XCopy](../Topic/Walkthrough:%20Deploying%20a%20Web%20Site%20Project%20by%20Using%20XCOPY.md)  
+        -   [XCopy](http://msdn.microsoft.com/library/4312c651-2119-49be-bbeb-ee28bdbfe71e)  
   
      [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the deployment options for an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application, see [Web Deployment Overview for Visual Studio and ASP.NET](http://msdn.microsoft.com/en-us/99bd1927-b59f-4e02-87b4-55c6ba2adbc3).  
   
@@ -121,7 +121,7 @@ This topic provides information about developing and deploying [!INCLUDE[ssAstor
 ### Deployment Considerations  
  You should consider the following when deploying a data service:  
   
--   When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [NIB: How to: Deploy a Database With a Web Application Project](http://msdn.microsoft.com/en-us/683b33f1-8a3d-45cf-af6e-61ab50fc518b). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. For more information, see [Deploying a Database by Using the Database Publishing Wizard](../Topic/Deploying%20a%20Database%20by%20Using%20the%20Database%20Publishing%20Wizard.md).  
+-   When you deploy a data service that uses the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)] can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application. For more information, see [NIB: How to: Deploy a Database With a Web Application Project](http://msdn.microsoft.com/en-us/683b33f1-8a3d-45cf-af6e-61ab50fc518b). For an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web site, you can do this by using the **Database Publishing Wizard** in [!INCLUDE[vs_current_short](../../../../includes/vs-current-short-md.md)]. For more information, see [Deploying a Database by Using the Database Publishing Wizard](http://msdn.microsoft.com/library/1e3682e7-8b57-4da6-a393-af9640ccf8b7).  
   
 -   Because [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] includes a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](http://go.microsoft.com/fwlink/?LinkID=202005).  
   

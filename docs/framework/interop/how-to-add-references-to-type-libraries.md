@@ -51,12 +51,12 @@ Visual Studio generates an interop assembly containing metadata when you add a r
   
 1.  Generate an interop assembly as described in [How to: Generate Interop Assemblies from Type Libraries](../../../docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md).  
   
-2.  Use the [/link (C# Compiler Options)](../Topic/-link%20\(C%23%20Compiler%20Options\).md) or [/link (Visual Basic)](../Topic/-link%20\(Visual%20Basic\).md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
+2.  Use the [/link (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/link-compiler-option.md) or [/link (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
   
 ## See Also  
  [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)   
  [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)   
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](../Topic/Walkthrough:%20Embedding%20Type%20Information%20from%20Microsoft%20Office%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [Walkthrough: Embedding Types from Managed Assemblies](../Topic/Walkthrough:%20Embedding%20Types%20from%20Managed%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)   
- [/link (C# Compiler Options)](../Topic/-link%20\(C%23%20Compiler%20Options\).md)   
- [/link (Visual Basic)](../Topic/-link%20\(Visual%20Basic\).md)
+ [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](http://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3)   
+ [Walkthrough: Embedding Types from Managed Assemblies](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)   
+ [/link (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/link-compiler-option.md)   
+ [/link (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/link.md)

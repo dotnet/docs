@@ -46,4 +46,4 @@ The `BindingNavigator` control is the navigation and manipulation user interface
  Provides reference documentation for the <xref:System.Windows.Forms.BindingSource> control.  
   
 ## Related Sections  
- [Bind controls to data in Visual Studio](../Topic/Bind%20controls%20to%20data%20in%20Visual%20Studio.md)
+ [Bind controls to data in Visual Studio](http://msdn.microsoft.com/library/be8b6623-86a6-493e-ab7a-050de4661fd6)

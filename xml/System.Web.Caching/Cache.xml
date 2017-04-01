@@ -103,7 +103,7 @@
  The following example creates an `AddItemToCache` method. When this method is called, it sets an `itemRemoved` property to `false` and registers an `onRemove` method with a new instance of the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate. The delegate's signature is used in the `RemovedCallback` method. The `AddItemToCache` method then checks the value associated with the `Key1` key in the cache. If the value is `null`, the `Add` method places an item in the cache with a key of `Key1`, a value of `Value 1`, an absolute expiration of 60 seconds, and a high cache priority. It also uses the `onRemove` method as an argument. This allows the `RemovedCallback` method to be called when this item is removed from the cache.  
   
 > [!NOTE]
->  For examples of how to use the <xref:System.Web.Caching.CacheDependency> class and the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [Caching Application Data](../Topic/Caching%20Application%20Data.md).  
+>  For examples of how to use the <xref:System.Web.Caching.CacheDependency> class and the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [Caching Application Data](http://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d).  
   
  [!code-csharp[System.Web.Caching Examples#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#3)]
  [!code-vb[System.Web.Caching Examples#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#3)]  
@@ -509,7 +509,7 @@
  The following example demonstrates how to assign an item high priority when you insert it into your application's `Cache` object.  
   
 > [!NOTE]
->  For more information about how to use this method with the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [How to: Notify an Application When an Item Is Removed from the Cache](../Topic/How%20to:%20Notify%20an%20Application%20When%20an%20Item%20Is%20Removed%20from%20the%20Cache.md).  
+>  For more information about how to use this method with the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [How to: Notify an Application When an Item Is Removed from the Cache](http://msdn.microsoft.com/library/38c33aa0-afe9-40ba-a1a4-1ebab95286ef).  
   
  [!code-csharp[Classic Cache.Insert3 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Cache.Insert3 Example/CS/source.cs#1)]
  [!code-vb[Classic Cache.Insert3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Cache.Insert3 Example/VB/source.vb#1)]  

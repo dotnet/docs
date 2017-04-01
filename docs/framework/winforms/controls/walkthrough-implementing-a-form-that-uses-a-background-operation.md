@@ -160,7 +160,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 -   Use multiple <xref:System.ComponentModel.BackgroundWorker> objects for several simultaneous operations.  
   
--   To debug your multithreaded application, see [How to: Use the Threads Window](../Topic/How%20to:%20Use%20the%20Threads%20Window.md).  
+-   To debug your multithreaded application, see [How to: Use the Threads Window](http://msdn.microsoft.com/library/adfbe002-3d7b-42a9-b42a-5ac0903dfc25).  
   
 -   Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
@@ -170,7 +170,7 @@ If you have an operation that will take a long time to complete, and you do not 
 ## See Also  
  <xref:System.ComponentModel.BackgroundWorker>   
  [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)   
- [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)   
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
  [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/en-us/c731a50c-09c1-4468-9646-54c86b75d269)   
  [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)   
  [Walkthrough: Running an Operation in the Background](../../../../docs/framework/winforms/controls/walkthrough-running-an-operation-in-the-background.md)   

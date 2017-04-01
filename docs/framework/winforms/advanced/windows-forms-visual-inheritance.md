@@ -50,8 +50,8 @@ Occasionally, you may decide that a project calls for a form similar to one that
  [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)  
  Describes how to define Visual Basic classes that serve as the basis for other classes.  
   
- [class](../Topic/class%20\(C%23%20Reference\).md)  
+ [class](~/docs/csharp/language-reference/keywords/class.md)  
  Describes the C# approach of classes, in which single inheritance is allowed.  
   
- [Troubleshooting Inherited Event Handlers in Visual Basic](../Topic/Troubleshooting%20Inherited%20Event%20Handlers%20in%20Visual%20Basic.md)  
+ [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)  
  Lists common issues that arise with event handlers in inherited components

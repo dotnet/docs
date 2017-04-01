@@ -56,7 +56,7 @@
  The following code example demonstrates how to use <xref:System.Web.UI.MobileControls.DeviceSpecific> and <xref:System.Web.UI.MobileControls.DeviceSpecificChoice> objects to create interfaces specific to a variety of devices in a mobile form.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileTemplateContainerSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileTemplateContainerSample/cs/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileTemplateContainerSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileTemplateContainerSample/vb/Default.aspx#1)]  -->  
@@ -145,7 +145,7 @@
  The following code example demonstrates the use of the <xref:System.Web.UI.MobileControls.DeviceSpecific.Choices%2A> property to display the number of templates contained in the first filter defined in the ASP.NET mobile Web application. For a more complete code sample, see the example for the <xref:System.Web.UI.MobileControls.DeviceSpecific> overview.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](../Topic/ASP.NET%20Web%20Forms%20Page%20Code%20Model.md).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
  [!code-csharp[MobileDeviceSpecificSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificSample/cs/Default.aspx#1)]
  [!code-vb[MobileDeviceSpecificSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificSample/vb/Default.aspx#1)]  

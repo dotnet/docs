@@ -39,14 +39,14 @@ If your app serializes and deserializes objects, you may need to add entries to 
  Although the <xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, and <xref:System.Xml.Serialization.XmlSerializer> classes do not rely on reflection, they do require code to be generated based on the object to be serialized or deserialized. The overloaded constructors for each serializer include a <xref:System.Type> parameter that specifies the type to be serialized or deserialized. How you specify that type in your code defines the action you must take, as discussed in the next two sections.  
   
 ### typeof used in the constructor  
- If you call a constructor of these serialization classes and include the C# [typeof](../Topic/typeof%20\(C%23%20Reference\).md) keyword in the method call, **you do not have to do any additional work**. For example, in each of the following calls to a serialization class constructor, the `typeof` keyword is used as part of the expression passed to the constructor.  
+ If you call a constructor of these serialization classes and include the C# [typeof](~/docs/csharp/language-reference/keywords/typeof.md) keyword in the method call, **you do not have to do any additional work**. For example, in each of the following calls to a serialization class constructor, the `typeof` keyword is used as part of the expression passed to the constructor.  
   
  [!code-csharp[ProjectN#5](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#5)]  
   
  The [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiler will automatically handle this code.  
   
 ### typeof used outside the constructor  
- If you call a constructor of these serialization classes and use the C# [typeof](../Topic/typeof%20\(C%23%20Reference\).md) keyword outside the expression supplied to the constructor’s <xref:System.Type> parameter, as in the following code, the [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiler cannot resolve the type:  
+ If you call a constructor of these serialization classes and use the C# [typeof](~/docs/csharp/language-reference/keywords/typeof.md) keyword outside the expression supplied to the constructor’s <xref:System.Type> parameter, as in the following code, the [!INCLUDE[net_native](../../../includes/net-native-md.md)] compiler cannot resolve the type:  
   
  [!code-csharp[ProjectN#6](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/serialize1.cs#6)]  
   

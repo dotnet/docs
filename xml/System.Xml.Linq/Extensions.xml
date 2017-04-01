@@ -179,7 +179,7 @@ GrandChild2
 Child2  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -423,7 +423,7 @@ Ancestors
 Child1  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -660,7 +660,7 @@ GrandChild2
 Child2  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -899,7 +899,7 @@ Ancestors and Self
 GreatGrandChild1  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -1108,7 +1108,7 @@ Att1="content5"
 Att2="content6"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md). Note that the namespace attribute is included in the returned collection.  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430). Note that the namespace attribute is included in the returned collection.  
   
 ```csharp  
   
@@ -1409,7 +1409,7 @@ Text: Text
 Text: ddd  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -1652,7 +1652,7 @@ Next
 <t>This is a second sentence.</t>  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -1770,7 +1770,7 @@ End Module
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Visual Basic users can use the [Language-Integrated Axes in Visual Basic (LINQ to XML)](../Topic/Language-Integrated%20Axes%20in%20Visual%20Basic%20\(LINQ%20to%20XML\)2.md) instead of using this axis method explicitly.  
+ Visual Basic users can use the [Language-Integrated Axes in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/4143c385-eb50-4286-a7fd-a50f466c7af0) instead of using this axis method explicitly.  
   
  This method uses deferred execution.  
   
@@ -1839,7 +1839,7 @@ Console.WriteLine(str)
 This is some text where all of the text nodes must be concatenated. This is a second sentence.  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -2111,7 +2111,7 @@ Next
 <GrandChild6>6</GrandChild6>  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
   
@@ -2302,7 +2302,7 @@ Next
 <aaa>4</aaa>  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](../Topic/Working%20with%20XML%20Namespaces.md).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -2637,7 +2637,7 @@ Text: ddd
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses snapshot semantics—that is, it copies the attributes in the source collection to a <xref:System.Collections.Generic.List%601?displayProperty=fullName> before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](../Topic/Mixed%20Declarative%20Code-Imperative%20Code%20Bugs%20\(LINQ%20to%20XML\).md).  
+ This method uses snapshot semantics—that is, it copies the attributes in the source collection to a <xref:System.Collections.Generic.List%601?displayProperty=fullName> before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
   
    
   
@@ -2728,7 +2728,7 @@ Console.WriteLine(root)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method uses snapshot semantics—that is, it copies the attributes in the source collection to a `List<T>` before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](../Topic/Mixed%20Declarative%20Code-Imperative%20Code%20Bugs%20\(LINQ%20to%20XML\).md).  
+ This method uses snapshot semantics—that is, it copies the attributes in the source collection to a `List<T>` before disconnecting them from their parents. This is required to avoid issues with mixed imperative/declarative code. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
   
    
   

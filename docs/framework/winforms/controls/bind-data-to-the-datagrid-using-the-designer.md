@@ -26,7 +26,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
   
  After columns have been generated, you can modify them to meet your needs. For example, you can remove or hide columns you are not interested in displaying, you can rearrange the columns, or you can modify the column types. For more information about modifying columns, see the topics listed in the See Also section.  
   
- You can also bind multiple <xref:System.Windows.Forms.DataGridView> controls to related tables to create master/detail relationships. In this configuration, one control displays a parent table and another control displays only those rows from a child table that are related to the current row in the parent table. For more information, see [How to: Display Related Data in a Windows Forms Application](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md).  
+ You can also bind multiple <xref:System.Windows.Forms.DataGridView> controls to related tables to create master/detail relationships. In this configuration, one control displays a parent table and another control displays only those rows from a child table that are related to the current row in the parent table. For more information, see [How to: Display Related Data in a Windows Forms Application](http://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd).  
   
  The following procedure requires a **Windows Application** project with a form that contains a <xref:System.Windows.Forms.DataGridView> control or two controls for a master/detail relationship. For information about starting such a project, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa) and [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md).  
   
@@ -41,7 +41,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
   
 3.  If your project does not already have a data source, click **Add Project Data Source** and follow the steps indicated by the wizard.  
   
-     For more information, see [Data Source Configuration Wizard](../Topic/Data%20Source%20Configuration%20Wizard.md). Your new data source will appear in the **Choose Data Source** drop-down window. If your new data source contains only one member, such as a single database table, the control will automatically bind to that member. Otherwise, continue to the next step.  
+     For more information, see [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f). Your new data source will appear in the **Choose Data Source** drop-down window. If your new data source contains only one member, such as a single database table, the control will automatically bind to that member. Otherwise, continue to the next step.  
   
 4.  Expand the **Other Data Sources** and **Project Data Sources** nodes if they are not already expanded, and then select the data source to bind the control to.  
   
@@ -50,14 +50,14 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
 6.  To create a master/detail relationship, in the **Choose Data Source** drop-down window for a second <xref:System.Windows.Forms.DataGridView> control, expand the <xref:System.Windows.Forms.BindingSource> created for the parent table, and then select the related child table from the list shown.  
   
     > [!NOTE]
-    >  If your project already has a data source, you can also use the **Data Sources** window to create a data form. For more information, see [Data Sources Window](../Topic/Data%20Sources%20Window.md).  
+    >  If your project already has a data source, you can also use the **Data Sources** window to create a data form. For more information, see [Data Sources Window](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   
  <xref:System.Windows.Forms.BindingSource>   
  <xref:System.Windows.Forms.DataGridView.DataMember%2A?displayProperty=fullName>   
  <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=fullName>   
- [How to: Connect to Data in a Database](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md)   
+ [How to: Connect to Data in a Database](http://msdn.microsoft.com/library/6c56e54e-8834-4297-85aa-cc1a443ba556)   
  [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)   
  [How to: Change the Order of Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/change-the-order-of-columns-in-the-datagrid-using-the-designer.md)   
  [How to: Change the Type of a Windows Forms DataGridView Column Using the Designer](../../../../docs/framework/winforms/controls/change-the-type-of-a-wf-datagridview-column-using-the-designer.md)   
@@ -66,5 +66,5 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
  [How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/make-columns-read-only-in-the-datagrid-using-the-designer.md)   
  [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)   
  [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)   
- [Data Sources Window](../Topic/Data%20Sources%20Window.md)   
- [How to: Display Related Data in a Windows Forms Application](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md)
+ [Data Sources Window](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   
+ [How to: Display Related Data in a Windows Forms Application](http://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd)

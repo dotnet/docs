@@ -36,7 +36,7 @@
  To perform a set of custom instructions when the <xref:System.Web.UI.HtmlControls.HtmlButton> control is clicked, provide a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlButton.ServerClick> event.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlButton> control renders ECMAScript to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](../Topic/Client%20Script%20in%20ASP.NET%20Web%20Pages.md).  
+>  The <xref:System.Web.UI.HtmlControls.HtmlButton> control renders ECMAScript to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlButton>, see the <xref:System.Web.UI.HtmlControls.HtmlButton.%23ctor%2A> constructor.  
   

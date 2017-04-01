@@ -102,5 +102,5 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
  [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)   
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
  [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md)   
- [Managing Assembly and Manifest Signing](../Topic/Managing%20Assembly%20and%20Manifest%20Signing.md)   
+ [Managing Assembly and Manifest Signing](http://msdn.microsoft.com/library/6c1ef36b-25f7-4ad0-b29a-51801b7a5420)   
  [Signing Page, Project Designer](../Topic/Signing%20Page,%20Project%20Designer.md)

@@ -66,7 +66,7 @@ Defines a binding for peer channel specific TCP messaging.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](../Topic/%3CreaderQuotas%3E.md)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
 |[\<resolver>](../../../../../docs/framework/configuring-apps/file-schema/wcf/resolver.md)|Specifies a peer resolver used by this binding to resolve a peer mesh ID to the endpoint IP addresses of nodes within the peer mesh.|  
 |[\<security>](../../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-netpeerbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.PeerSecurityElement>.|  
   

@@ -31,13 +31,13 @@ A service must be run from within the context of the Services Control Manager ra
   
  After attaching to the process, you can set breakpoints and use these to debug your code. Once you exit the dialog box you use to attach to the process, you are effectively in debug mode. You can use the Services Control Manager to start, stop, pause and continue your service, thus hitting the breakpoints you've set. You can later remove this dummy service after debugging is successful.  
   
- This article covers debugging a service that's running on the local computer, but you can also debug Windows Services that are running on a remote computer. See [Remote Debugging](../Topic/Remote%20Debugging.md).  
+ This article covers debugging a service that's running on the local computer, but you can also debug Windows Services that are running on a remote computer. See [Remote Debugging](http://msdn.microsoft.com/library/5a94ad64-100d-43ca-9779-16cb5af86f97).  
   
 > [!NOTE]
 >  Debugging the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method can be difficult because the Services Control Manager imposes a 30-second limit on all attempts to start a service. For more information, see [Troubleshooting: Debugging Windows Services](../../../docs/framework/windows-services/troubleshooting-debugging-windows-services.md).  
   
 > [!WARNING]
->  To get meaningful information for debugging, the Visual Studio debugger needs to find symbol files for the binaries that are being debugged. If you are debugging a service that you built in Visual Studio, the symbol files (.pdb files) are in the same folder as the executable or library, and the debugger loads them automatically. If you are debugging a service that you didn't build, you should first find symbols for the service and make sure they can be found by the debugger. See [Specify Symbol (.pdb) and Source Files](../Topic/Specify%20Symbol%20\(.pdb\)%20and%20Source%20Files%20in%20the%20Visual%20Studio%20Debugger.md). If you're debugging a system process or want to have symbols for system calls in your services, you should add the Microsoft Symbol Servers. See [Debugging Symbols](http://msdn.microsoft.com/windows/desktop/ee416588.aspx).  
+>  To get meaningful information for debugging, the Visual Studio debugger needs to find symbol files for the binaries that are being debugged. If you are debugging a service that you built in Visual Studio, the symbol files (.pdb files) are in the same folder as the executable or library, and the debugger loads them automatically. If you are debugging a service that you didn't build, you should first find symbols for the service and make sure they can be found by the debugger. See [Specify Symbol (.pdb) and Source Files](http://msdn.microsoft.com/library/1105e169-5272-4e7c-b3e7-cda1b7798a6b). If you're debugging a system process or want to have symbols for system calls in your services, you should add the Microsoft Symbol Servers. See [Debugging Symbols](http://msdn.microsoft.com/windows/desktop/ee416588.aspx).  
   
 ### To debug a service  
   

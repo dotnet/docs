@@ -52,7 +52,7 @@
   
  Attributes that are applied to assemblies or modules must occur after the C# `using` (`Imports` in Visual Basic) clauses and before the code.  
   
- For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
   
 > [!NOTE]
 >  The current Microsoft Visual Basic compiler intentionally does not generate a CLS-compliance warning, however, a future release of the compiler will issue that warning.  

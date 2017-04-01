@@ -1214,7 +1214,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
 ### Web  
  ASP.NET 4.5 and 4.5.1 add model binding for Web Forms, WebSocket support, asynchronous handlers, performance enhancements, and many other features. For more information, see the following resources:  
   
--   [ASP.NET 4.5 and Visual Studio 2012](../Topic/ASP.NET%20Core%20and%20Visual%20Studio%202015.md) in the MSDN Library.  
+-   [ASP.NET 4.5 and Visual Studio 2012](http://msdn.microsoft.com/library/ac9bb7f6-f094-4af7-bad0-acf49a5dbc55) in the MSDN Library.  
   
 -   [ASP.NET 4.5.1 and Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.  
   
@@ -1362,7 +1362,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
  [The .NET Framework and Out-of-Band Releases](../../../docs/framework/getting-started/the-net-framework-and-out-of-band-releases.md)   
  [What's New in Visual Studio 2013](http://msdn.microsoft.com/library/bb386063\(v=vs.120\).aspx)   
  [ASP.NET 4.5.1 and Web Tools for Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094)   
- [ASP.NET and Visual Studio for Web](../Topic/ASP.NET%20and%20Visual%20Studio%20for%20Web.md)   
+ [ASP.NET and Visual Studio for Web](http://msdn.microsoft.com/library/c3e0fd2f-7a94-47c4-afc0-ecfb7233e15a)   
  [What's New in Windows Communication Foundation](http://go.microsoft.com/fwlink/?LinkId=228173)   
  [What's New in Windows Workflow Foundation](http://go.microsoft.com/fwlink/?LinkId=228176)   
  [What’s New in Visual C++](http://msdn.microsoft.com/library/hh409293\(v=vs.120\).aspx)

@@ -38,7 +38,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
   
 2.  Select the **Windows Forms Control Library** project template from the list of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] Projects, and type `ValueButtonLib` in the **Name** box.  
   
-     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](../Topic/Namespaces%20\(C%23%20Programming%20Guide\).md).  
+     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](http://msdn.microsoft.com/library/b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a).  
   
 3.  In **Solution Explorer**, right-click **UserControl1.cs**, then choose **Rename** from the shortcut menu. Change the file name to `ValueButton.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element '`UserControl1`'.  
   
@@ -154,7 +154,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
      The numeral '5' is displayed in `label1`, demonstrating that the `ButtonValue` property of your inherited control has been passed to `label1` through the `valueButton1_Click` method. Thus your `ValueButton` control inherits all the functionality of the standard Windows Forms button, but exposes an additional, custom property.  
   
 ## See Also  
- [Programming with Components](../Topic/Programming%20with%20Components.md)   
- [Component Authoring Walkthroughs](../Topic/Component%20Authoring%20Walkthroughs.md)   
+ [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
+ [Component Authoring Walkthroughs](http://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)   
  [How to: Display a Control in the Choose Toolbox Items Dialog Box](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)   
  [Walkthrough: Authoring a Composite Control with Visual C#](../../../../docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp.md)

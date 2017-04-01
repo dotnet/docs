@@ -35,7 +35,7 @@ You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged
  To help ensure that resources are always cleaned up appropriately, a <xref:System.IDisposable.Dispose%2A> method should be callable multiple times without throwing an exception.  
   
 > [!IMPORTANT]
->  If you're a C++ programmer, do not implement the <xref:System.IDisposable.Dispose%2A> method. Instead, follow the instructions in the "Destructors and finalizers" section of [How to: Define and Consume Classes and Structs (C++/CLI)](../Topic/How%20to:%20Define%20and%20Consume%20Classes%20and%20Structs%20\(C++-CLI\).md). Starting with the .NET Framework 2.0, the C++ compiler supports the deterministic disposal of resources and does not allow direct implementation of the <xref:System.IDisposable.Dispose%2A> method.  
+>  If you're a C++ programmer, do not implement the <xref:System.IDisposable.Dispose%2A> method. Instead, follow the instructions in the "Destructors and finalizers" section of [How to: Define and Consume Classes and Structs (C++/CLI)](http://msdn.microsoft.com/library/1c03cb0d-1459-4b5e-af65-97d6b3094fd7). Starting with the .NET Framework 2.0, the C++ compiler supports the deterministic disposal of resources and does not allow direct implementation of the <xref:System.IDisposable.Dispose%2A> method.  
   
  The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=fullName> method shows how aggressive garbage collection can cause a finalizer to run while a member of the reclaimed object is still executing. It is a good idea to call the <xref:System.GC.KeepAlive%2A> method at the end of a lengthy <xref:System.IDisposable.Dispose%2A> method.  
   
@@ -101,7 +101,7 @@ You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged
  [!code-vb[System.IDisposable#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base2.vb#5)]  
   
 > [!NOTE]
->  In C#, you override <xref:System.Object.Finalize%2A?displayProperty=fullName> by defining a [destructor](../Topic/Destructors%20\(C%23%20Programming%20Guide\).md).  
+>  In C#, you override <xref:System.Object.Finalize%2A?displayProperty=fullName> by defining a [destructor](~/docs/csharp/programming-guide/classes-and-structs/destructors.md).  
   
 ## Implementing the dispose pattern for a derived class  
  A class derived from a class that implements the <xref:System.IDisposable> interface shouldn't implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> is inherited by its derived classes. Instead, to implement the dispose pattern for a derived class, you provide the following:  
@@ -124,7 +124,7 @@ You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged
  [!code-vb[System.IDisposable#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived2.vb#6)]  
   
 > [!NOTE]
->  In C#, you override <xref:System.Object.Finalize%2A?displayProperty=fullName> by defining a [destructor](../Topic/Destructors%20\(C%23%20Programming%20Guide\).md).  
+>  In C#, you override <xref:System.Object.Finalize%2A?displayProperty=fullName> by defining a [destructor](~/docs/csharp/programming-guide/classes-and-structs/destructors.md).  
   
 <a name="SafeHandles"></a>   
 ## Using safe handles  
@@ -163,5 +163,5 @@ You implement a <xref:System.IDisposable.Dispose%2A> method to release unmanaged
  <xref:Microsoft.Win32.SafeHandles>   
  <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [How to: Define and Consume Classes and Structs (C++/CLI)](../Topic/How%20to:%20Define%20and%20Consume%20Classes%20and%20Structs%20\(C++-CLI\).md)   
+ [How to: Define and Consume Classes and Structs (C++/CLI)](http://msdn.microsoft.com/library/1c03cb0d-1459-4b5e-af65-97d6b3094fd7)   
  [Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md)

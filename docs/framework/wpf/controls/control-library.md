@@ -56,7 +56,7 @@ The [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] control 
  [PrintDialog](../../../../docs/framework/wpf/controls/printdialog.md)  
  [RadioButton](../../../../docs/framework/wpf/controls/radiobutton.md)  
  [RepeatButton](../../../../docs/framework/wpf/controls/repeatbutton.md)  
- [Ribbon (WPF)](../Topic/Ribbon%20\(WPF\).md)  
+ [Ribbon (WPF)](http://msdn.microsoft.com/library/d2b5749c-43ec-4e1f-9017-8f1d0bbd5d3f)  
  [RichTextBox](../../../../docs/framework/wpf/controls/richtextbox.md)  
  [ScrollBar](../../../../docs/framework/wpf/controls/scrollbar.md)  
  [ScrollViewer](../../../../docs/framework/wpf/controls/scrollviewer.md)  

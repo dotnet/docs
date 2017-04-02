@@ -44,7 +44,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      The `ProcessURLAsync` method consolidates the actions in the body of the `foreach` loop in `SumPageSizesAsync` in the original walkthrough. The method asynchronously downloads the contents of a specified website as a byte array, and then displays and returns the length of the byte array.  
   
-    ```cs  
+    ```csharp  
     private async Task<int> ProcessURLAsync(string url)  
     {  
         var byteArray = await GetURLContentsAsync(url);  
@@ -55,7 +55,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 2.  Comment out or delete the `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
   
-    ```cs  
+    ```csharp  
     //var total = 0;  
     //foreach (var url in urlList)  
     //{  
@@ -78,7 +78,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.  
   
-    ```cs  
+    ```csharp  
     // Create a query.   
     IEnumerable<Task<int>> downloadTasksQuery =   
         from url in urlList select ProcessURLAsync(url);  
@@ -91,7 +91,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. The expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.  
   
-    ```cs  
+    ```csharp  
     // Await the completion of all the running tasks.  
     int[] lengths = await Task.WhenAll(downloadTasks);  
   
@@ -102,7 +102,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
-    ```cs  
+    ```csharp  
     int total = lengths.Sum();  
     ```  
   
@@ -118,7 +118,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      The only difference from the `ProcessURLAsync` method in the previous procedure is the use of the <xref:System.Net.Http.HttpClient> instance, `client`.  
   
-    ```cs  
+    ```csharp  
     async Task<int> ProcessURL(string url, HttpClient client)  
     {  
         byte[] byteArray = await client.GetByteArrayAsync(url);  
@@ -129,7 +129,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 2.  Comment out or delete the `For Each` or `foreach` loop in `SumPageSizesAsync`, as the following code shows.  
   
-    ```cs  
+    ```csharp  
     //var total = 0;  
     //foreach (var url in urlList)  
     //{  
@@ -153,7 +153,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.  
   
-    ```cs  
+    ```csharp  
     // Create a query.  
     IEnumerable<Task<int>> downloadTasksQuery =   
         from url in urlList select ProcessURL(url, client);  
@@ -166,7 +166,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
      In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. When complete, the `await` expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.  
   
-    ```cs  
+    ```csharp  
     // Await the completion of all the running tasks.  
     int[] lengths = await Task.WhenAll(downloadTasks);  
   
@@ -177,7 +177,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
   
 5.  Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.  
   
-    ```cs  
+    ```csharp  
     int total = lengths.Sum();
     ```  
   
@@ -188,7 +188,7 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
 ## Example  
  The following code shows the extensions to the project that uses the `GetURLContentsAsync` method to download content from the web.  
   
-```cs  
+```csharp  
 // Add the following using directives, and add a reference for System.Net.Http.  
 using System.Net.Http;  
 using System.IO;  
@@ -330,7 +330,7 @@ namespace AsyncExampleWPF_WhenAll
 ## Example  
  The following code shows the extensions to the project that uses method `HttpClient.GetByteArrayAsync` to download content from the web.  
   
-```cs  
+```csharp  
 // Add the following using directives, and add a reference for System.Net.Http.  
 using System.Net.Http;  
 using System.IO;  

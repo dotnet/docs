@@ -61,7 +61,7 @@ You can use the <xref:Microsoft.VisualBasic.PowerPacks.LineShape> control to dra
 Imports Microsoft.VisualBasic.PowerPacks  
 ```  
   
-```cs  
+```csharp  
 using Microsoft.VisualBasic.PowerPacks;  
 ```  
   

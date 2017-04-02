@@ -88,10 +88,7 @@ DoWork();
   
 ## Remarks  
  Whenever a variable, object property, or object indexer access is identified from an expression, the value of that item is used as the value of the expression. An expression can be placed anywhere in C# where a value or object is required, as long as the expression ultimately evaluates to the required type.  
-  
-## Featured Book Chapter  
- [Variables and Expressions](http://go.microsoft.com/fwlink/?LinkId=221228) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   

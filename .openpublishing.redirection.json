@@ -18,6 +18,16 @@
             "redirect_url": "/dotnet/articles/core/tools/dotnet-test"
         },
         {
+            "source_path": "docs/csharp/csharp-6.md",
+            "redirect_url": "/dotnet/articles/csharp/whats-new/csharp-6",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/csharp-7.md",
+            "redirect_url": "/dotnet/articles/csharp/whats-new/csharp-7",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/csharp/features.md",
             "redirect_url": "/dotnet/articles/csharp/concepts"
         },
@@ -29,6 +39,15 @@
         {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio_2017.md",
             "redirect_url": "/dotnet/articles/csharp/getting-started/library-with-visual-studio-2017"
+        },
+        {
+            "source_path": "docs/csharp/whats-new.md",
+            "redirect_url": "/dotnet/articles/csharp/whats-new/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/getting-started/whats-new.md",
+            "redirect_url": "/dotnet/articles/csharp/whats-new/index"
         },
         {
             "source_path": "docs/core/preview3/windows-prerequisites.md",
@@ -120,7 +139,7 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/core/preview3/tools/dotnet-remove-referece.md",
+            "source_path": "docs/core/preview3/tools/dotnet-remove-reference.md",
             "redirect_url": "/dotnet/articles/core/tools/dotnet-remove-reference",
             "redirect_document_id": true
         },
@@ -133,6 +152,10 @@
             "redirect_url": "/dotnet/articles/core/tools/dotnet-run"
         },
         {
+            "source_path": "docs/core/preview3/tools/dotnet-sln.md",
+            "redirect_url": "/dotnet/articles/core/tools/dotnet-sln"
+        },
+        {
             "source_path": "docs/core/preview3/tools/dotnet-test.md",
             "redirect_url": "/dotnet/articles/core/tools/dotnet-test"
         },
@@ -141,12 +164,12 @@
             "redirect_url": "/dotnet/articles/core/tools/dotnet"
         },
         {
-            "source_path": "docs/core/preview3/tools/extensibilty.md",
-            "redirect_url": "/dotnet/articles/core/tools/extensibilty"
+            "source_path": "docs/core/preview3/tools/extensibility.md",
+            "redirect_url": "/dotnet/articles/core/tools/extensibility"
         },
         {
-            "source_path": "docs/core/preview3/tools/global.json.md",
-            "redirect_url": "/dotnet/articles/core/tools/global.json"
+            "source_path": "docs/core/preview3/tools/global-json.md",
+            "redirect_url": "/dotnet/articles/core/tools/global-json"
         },
         {
             "source_path": "docs/core/preview3/tools/index.md",
@@ -241,6 +264,38 @@
         {
             "source_path": "docs/tutorials/index.md",
             "redirect_url": "/dotnet/articles/samples-and-tutorials/"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/debugging.md",
+            "redirect_url": "/visualstudio/debugger/debugger-basics"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/help-for-event-handlers.md",
+            "redirect_url": "/visualstudio/ide/using-intellisense"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/how-to-compile-and-run-a-project.md",
+            "redirect_url": "/visualstudio/ide/compiling-and-building-in-visual-studio"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/intellisense-code-snippets.md",
+            "redirect_url": "/visualstudio/ide/code-snippets"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/refactoring-and-rename-dialog-box.md",
+            "redirect_url": "/visualstudio/vb-ide/refactoring-vb"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/settings.md",
+            "redirect_url": "/visualstudio/ide/reference/general-user-interface-elements-visual-studio"
+        },
+        {
+            "source_path": "docs/visual-basic/developing-apps/using-ide/using-the-visual-basic-development-environment.md",
+            "redirect_url": "/visualstudio/ide/visual-studio-ide"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/breaking-changes-in-visual-studio-2013.md",
+            "redirect_url": "https://msdn.microsoft.com/library/hh678682(v=vs.120)"
         },
         {
             "source_path": "core/api/Microsoft.CSharp.RuntimeBinder.Binder.md",

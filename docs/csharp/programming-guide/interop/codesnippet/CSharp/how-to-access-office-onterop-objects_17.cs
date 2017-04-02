@@ -65,7 +65,7 @@ namespace OfficeProgramminWalkthruComplete
             workSheet.Columns[1].AutoFit();
             workSheet.Columns[2].AutoFit();
 
-            // Call to AutoFormat in Visual C# 2010. This statement replaces the 
+            // Call to AutoFormat in Visual C#. This statement replaces the 
             // two calls to AutoFit.
             workSheet.Range["A1", "B3"].AutoFormat(
                 Excel.XlRangeAutoFormat.xlRangeAutoFormatClassic2);
@@ -82,7 +82,7 @@ namespace OfficeProgramminWalkthruComplete
             wordApp.Visible = true;
 
             // The Add method has four reference parameters, all of which are 
-            // optional. Visual C# 2010 allows you to omit arguments for them if
+            // optional. Visual C# allows you to omit arguments for them if
             // the default values are what you want.
             wordApp.Documents.Add();
 

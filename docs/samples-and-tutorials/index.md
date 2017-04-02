@@ -91,6 +91,14 @@ This tutorial demonstrates many of the features of LINQ and the language element
 
 This tutorial demonstrates building an ASP.NET Core microservice and hosting it in Docker. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice).
 
+**[Getting started with .NET Core on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs.md)**
+
+This tutorial shows you how to build a simple .NET Core console application using Visual Studio for Mac.
+
+**[Building a complete .NET Core solution on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
+
+This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
+
 ## Deploying to Containers
 
 **[Running ASP.NET MVC Applications in Windows Docker Containers](../framework/docker/aspnetmvc.md)**

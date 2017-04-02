@@ -20,7 +20,7 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 The following characteristics best define .NET Core:
 
 - **Flexible deployment:** Can be included in your app or installed side-by-side user- or machine-wide.
-- **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other OSes. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies, and individuals.
+- **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other operating systems. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies, and individuals.
 - **Command-line tools:**  All product scenarios can be exercised at the command-line. 
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via the [.NET Standard Library](../standard/library.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.

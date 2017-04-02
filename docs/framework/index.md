@@ -20,6 +20,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
+<<<<<<< HEAD
 # .NET Framework 4.7, 4.6, and 4.5
 > [!NOTE]
 >  This .NET Framework content set includes information for .NET Framework versions 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. To download the .NET Framework, see [Installing the .NET Framework](../../docs/framework/getting-started/install-the-net-framework.md). For a list of new features and changes in the NET Framework 4.5, the [!INCLUDE[net_v46](../../includes/net-v46-md.md)], their point releases, and the .NET Framework 4.7, see [What's New in the .NET Framework](../../docs/framework/whats-new/whats-new.md). For a list of supported platforms, see [.NET Framework System Requirements](../../docs/framework/getting-started/system-requirements.md).  
@@ -54,3 +55,19 @@ manager: "wpickett"
   
  [Additional Class Libraries and APIs](../../docs/framework/additional-apis/index.md)  
  Provides documentation for classes contained in out of band (OOB) releases, as well as for classes that target specific platforms or implementations of the .NET Framework.
+=======
+
+# .NET Framework Guide
+
+The .NET Framework is a development platform for building applications for Windows, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes a broad range of functionality and support for many industry standards. 
+
+The .NET Framework provides many services, including memory management, type and memory safety, security functionality, networking and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use a variety of programming languages with the .NET Framework, including C#, F# and Visual Basic.
+
+## Deployment
+
+The .NET Framework comes with Windows, enabling you to run .NET Framework applications. You may need a later version of the .NET Framework than comes with your Windows version. See [Deploying the .NET Framework on Windows](./deployment/windows/index.md) to learn how to deploy the .NET Framework on Windows.
+
+See [Repair the .NET Framework](./deployment/repair.md) to learn how to repair your .NET Framework installation if you are experiencing errors when installing the .NET Framework.
+
+The .NET Framework can be used with Docker, with [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview). See [Deploying .NET Framework applications with Docker](./docker/index.md) to learn how to run your applications in Docker containers.
+>>>>>>> master

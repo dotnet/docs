@@ -40,7 +40,7 @@ Signals the occurrence of an exception during program execution.
 
 The syntax of `throw` is:
 
-```cs
+```csharp
 throw [e]
 ```
 where `e` is an instance of a class derived from <xref:System.Exception?displayProperty=fullName>. The following example uses the `throw` statement to throw an @System.IndexOutOfRangeException if the argument passed to a method named `GetNumber` does not correspond to a valid index of an internal array.

@@ -35,7 +35,7 @@ definition.
 Let's continue to use the List.Sort() method as our example. The first
 step is to create a type for the comparison delegate:
 
-```cs
+```csharp
 // From the .NET Core library
 
 // Define the delegate type:
@@ -69,7 +69,7 @@ After defining the delegate, you can create an instance of that type.
 Like all variables in C#, you cannot declare delegate instances directly
 in a namespace, or in the global namespace.
 
-```cs
+```csharp
 // inside a class definition:
 
 // Declare an instance of that type:
@@ -88,7 +88,7 @@ You invoke the methods that are in the invocation list of a delegate by calling
 that delegate. Inside the `Sort()` method, the code will call the
 comparison method to determine which order to place objects:
 
-```cs
+```csharp
 int result = comparator(left, right);
 ```
 
@@ -115,7 +115,7 @@ adds the method to the invocation list of that delegate object.
 Suppose you wanted to sort a list of strings by their length. Your
 comparison function might be the following:
 
-```cs
+```csharp
 private static int CompareLength(string left, string right)
 {
     return left.Length.CompareTo(right.Length);
@@ -131,7 +131,7 @@ the delegate object, and can access it through that delegate.
 You create that relationship by passing that method to the
 `List.Sort()` method:
 
-```cs
+```csharp
 phrases.Sort(CompareLength);
 ```
 
@@ -143,7 +143,7 @@ an invocation target.
 You could also have been explicit by declaring a variable of type
 'Comparison<string>` and doing an assignment:
 
-```cs
+```csharp
 Comparison<string> comparer = CompareLength;
 phrases.Sort(comparer);
 ```
@@ -152,7 +152,7 @@ In uses where the method being used as a delegate target is a small method,
 it's common to use [Lambda Expression](lambda-expressions.md) syntax
 to perform the assignment:
 
-```cs
+```csharp
 Comparison<string> comparer = (left, right) => left.Length.CompareTo(right.Length);
 phrases.Sort(comparer);
 ```

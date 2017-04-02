@@ -52,7 +52,7 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
   
  As the following example shows, you must put `#define` directives at the top of the file.  
   
-```cs  
+```csharp  
 #define DEBUG  
 //#define TRACE  
 #undef TRACE  

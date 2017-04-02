@@ -73,7 +73,7 @@ Let's do a quick walkthrough:
     Hello World!
     ```
 
-    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may specify also specify arguments to the application as you'll see later on the topic.
+    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may also specify arguments to the application as you'll see later on the topic.
 
     ```
     $ dotnet bin\Debug\netcoreapp1.0\Hello.dll

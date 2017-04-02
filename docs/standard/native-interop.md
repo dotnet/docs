@@ -33,7 +33,7 @@ P/Invoke is a technology that allows you to access structs, callbacks and functi
 
 Let’s start from the most common example, and that is calling unmanaged functions in your managed code. Let’s show a message box from a command-line application:
 
-```cs
+```csharp
 using System.Runtime.InteropServices;
 
 public class Program {
@@ -61,7 +61,7 @@ The rest of the example is just invoking the method as you would any other manag
 
 The sample is similar for macOS. One thing that needs to change is, of course, the name of the library in the `DllImport` attribute, as macOS has a different scheme of naming dynamic libraries. The sample below uses the `getpid(2)` function to get the process ID of the application and print it out to the console.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -84,7 +84,7 @@ namespace PInvokeSamples {
 
 It is similar on Linux, of course. The function name is same, since `getpid(2)` is [POSIX](https://en.wikipedia.org/wiki/POSIX) system call.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -111,7 +111,7 @@ Of course, the runtime allows communication to flow both ways which enables you 
 
 The way to use this feature is similar to managed to native process described above. For a given callback, you define a delegate that matches the signature, and pass that into the external method. The runtime will take care of everything else.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -155,7 +155,7 @@ With this in mind, let’s walk through the example:
 
 The Linux and macOS examples are shown below. For them, we use the `ftw` function that can be found in `libc`, the C library. This function is used to traverse directory hierarchies and it takes a pointer to a function as one of its parameters. The said function has the following signature: `int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -208,7 +208,7 @@ namespace PInvokeSamples {
 
 macOS example uses the same function, and the only difference is the argument to the `DllImport` attribute, as macOS keeps `libc` in a different place.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -267,7 +267,7 @@ Both of the above examples depend on parameters, and in both cases, the paramete
 
 The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode (“wide”), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
 
-```cs
+```csharp
 [DllImport("somenativelibrary.dll"]
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
@@ -277,7 +277,7 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
 Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class is not enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. This is where the `StructLayout` attribute comes into play.
 
-```cs
+```csharp
 [DllImport("kernel32.dll")]
 static extern void GetSystemTime(SystemTime systemTime);
 
@@ -319,7 +319,7 @@ typedef struct _SYSTEMTIME {
 
 We already saw the Linux and macOS example for this in the previous example. It is shown again below.
 
-```cs
+```csharp
 [StructLayout(LayoutKind.Sequential)]
 public class StatClass {
         public uint DeviceID;

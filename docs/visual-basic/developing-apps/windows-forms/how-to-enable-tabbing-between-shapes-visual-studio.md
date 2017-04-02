@@ -50,7 +50,7 @@ Line and shape controls do not have `TabStop` or `TabIndex` properties, but you 
 Imports Microsoft.VisualBasic.PowerPacks  
 ```  
   
-```cs  
+```csharp  
 using Microsoft.VisualBasic.PowerPacks;  
 ```  
 

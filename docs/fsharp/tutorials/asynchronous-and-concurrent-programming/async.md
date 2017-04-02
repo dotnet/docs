@@ -25,7 +25,7 @@ The key concept to understand is that an async expression’s type is `Async<'T>
 
 For example, say you wanted to download the HTML from dotnetfoundation.org without blocking the main thread. You can accomplish it like this:
 
-```fs
+```fsharp
 let fetchHtmlAsync url = async {
     let uri = new System.Uri(url)
     let webClient = new System.Net.WebClient()
@@ -59,7 +59,7 @@ As mentioned earlier, async code is a specification of work to be done in anothe
 
 1.  `Async.RunSynchronously` will start an async workflow on another thread and await its result.
 
- ```fs
+ ```fsharp
  let fetchHtmlAsync url = async {
      let uri = new System.Uri(url)
      let webClient = new System.Net.WebClient()
@@ -77,7 +77,7 @@ As mentioned earlier, async code is a specification of work to be done in anothe
 
 2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
 
- ```fs
+ ```fsharp
  let uploadDataAsync url data = async {
      let uri = new System.Uri(url)
      let webClient = new System.Net.WebClient()
@@ -105,7 +105,7 @@ Sometimes you may need to perform multiple asynchronous jobs in parallel, collec
 
 The following example will use `Async.Parallel` to download the HTML from four popular sites in parallel, wait for those tasks to complete, and then print the HTML which was downloaded.
 
-```fs
+```fsharp
 let urlList = [
     "http://www.microsoft.com"
     "http://www.google.com"
@@ -180,7 +180,7 @@ In contrast, F# async workflows are more naturally cancellable. Cancellation is 
 
 Example:
 
-```fs
+```fsharp
 let uploadDataAsync url data = async {
     let uri = new System.Uri(url)
     let webClient = new System.Net.WebClient()

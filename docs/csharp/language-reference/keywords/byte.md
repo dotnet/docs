@@ -1,6 +1,6 @@
 ---
 title: "byte (C# Reference) | Microsoft Docs"
-ms.date: "2015-07-20"
+ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -32,21 +32,28 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # byte (C# Reference)
-The `byte` keyword denotes an integral type that stores values as indicated in the following table.  
+
+`byte` denotes an integral type that stores values as indicated in the following table.  
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
 |`byte`|0 to 255|Unsigned 8-bit integer|<xref:System.Byte?displayProperty=fullName>|  
   
 ## Literals  
- You can declare and initialize a `byte` variable like this example:  
+
+ You can declare and initialize a `byte` variable by assigning a decimal literal, a hexadecimal literal, or (starting with C# 7) a binary literal to it. If the integer literal is outside the range of `byte` (that is, if it is less than <xref:System.Byte.MinValue?displayProperty=fullName> or greater than <xref:System.Byte.MaxValue?displayProperty=fullName>, a compilation error occurs.
+
+In the following example, integers equal to 201 that are represented as decimal, hexadecimal, and binary literals are implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `byte` values.    
   
-```  
-byte myByte = 255;  
-```  
-  
- In the preceding declaration, the integer literal `255` is implicitly converted from [int](../../../csharp/language-reference/keywords/int.md) to `byte`. If the integer literal exceeds the range of `byte`, a compilation error will occur.  
-  
+[!code-cs[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Byte)]  
+
+> [!NOTE] 
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
+
+Starting with C# 7, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
+
+[!code-cs[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ByteS)]  
+ 
 ## Conversions  
  There is a predefined implicit conversion from `byte` to [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md), or [decimal](../../../csharp/language-reference/keywords/decimal.md).  
   

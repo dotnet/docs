@@ -23,7 +23,7 @@ The C# guide provides a wealth of information about the C# language. This site h
     - If you've done development before, but are new to C#, read the [tour of the C# language](tour-of-csharp/index.md). You will learn the basic syntax and structure for the language, and you can use the language tour to contrast C# with other languages you've used. You can also browse the [tutorials](tutorials/index.md) to try basic C# programs. Or, check out the [C# Concepts](concepts.md) to learn the features of the C# language in depth.
 
 * Experienced C# developers:
-    - If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C# 6](csharp-6.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.
+    - If you've used C# before, you should start by reading what's in the latest version of the language. Check out [What's new in C#](whats-new/index.md) for the new features in the current version. Then, explore the [C# Concepts](concepts.md) where you want more depth.
  
 ## How the C# guide is organized
 
@@ -38,7 +38,7 @@ There are seven sections in the C# Guide. You can read them in order, or jump di
 * [A Tour of C#](tour-of-csharp/index.md): 
     - This section provides an overview of the language. You'll learn the elements that make up C# programs and the capabilities of the language. You'll see small samples of all the syntax elements of C# and discussions of the major C# language topics. 
 
-* [Latest Features](whats-new.md):
+* [Latest Features](whats-new/index.md):
     - Learn about new features in the language. Learn about new tools like C# Interactive (C#'s REPL), and the .NET Compiler Platform SDK. You'll learn how the language is evolving. You'll see how the new tools can make you more productive in exploring the language, and automating tasks. 
 
 * [C# Interactive](interactive/index.md):

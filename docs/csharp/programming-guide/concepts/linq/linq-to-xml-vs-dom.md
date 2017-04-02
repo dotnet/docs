@@ -30,7 +30,7 @@ This section describes some key differences between [!INCLUDE[sqltecxlinq](../..
   
  For example, the following would be a typical way to create an XML tree using the Microsoft implementation of DOM, <xref:System.Xml.XmlDocument>:  
   
-```cs  
+```csharp  
 XmlDocument doc = new XmlDocument();  
 XmlElement name = doc.CreateElement("Name");  
 name.InnerText = "Patrick Hines";  
@@ -67,7 +67,7 @@ doc.AppendChild(contacts);
   
  Here is how you would construct the same XML tree by using [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] functional construction:  
   
-```cs  
+```csharp  
 XElement contacts =  
     new XElement("Contacts",  
         new XElement("Contact",  
@@ -101,7 +101,7 @@ XElement contacts =
   
  Compare this to the W3C DOM, in which the XML document is used as a logical container for the XML tree. In DOM, XML nodes, including elements and attributes, must be created in the context of an XML document. Here is a fragment of the code to create a name element in DOM:  
   
-```cs  
+```csharp  
 XmlDocument doc = new XmlDocument();  
 XmlElement name = doc.CreateElement("Name");  
 name.InnerText = "Patrick Hines";  

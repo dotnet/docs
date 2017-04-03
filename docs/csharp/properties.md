@@ -4,7 +4,7 @@ description: Properties
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
-ms.date: 06/20/2016
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -24,14 +24,15 @@ with accessors that define the statements executed
 when a property is accessed or assigned.
 
 ## Property Syntax
+
 The syntax for properties is a natural extension to
 fields. A field defines a storage location:
 
 ```csharp
 public class Person
 {
-	public string FirstName;
-	// remaining implementation removed from listing
+    public string FirstName;
+    // remaining implementation removed from listing
 }
 ```
 
@@ -42,33 +43,50 @@ property:
 ```csharp
 public class Person
 {
-	public string FirstName
-	{
-		get;
-		set;
-	}
-	// remaining implementation removed from listing
+    public string FirstName { get; set; }
+
+    // remaining implementation removed from listing
 }
 ```
 
 The syntax shown above is the *auto property* syntax. The compiler
-generates the storage location for the field that backs up the 
+generates the storage location for the field that backs up the
 property. The compiler also implements the body of the `get` and `set` accessors.
+
+Sometimes, you need to initialize a property to
+a value other than the default for its type.  C# enables
+that by setting a value after the closing brace for the
+property. You may prefer the initial value for the `FirstName`
+property to be the empty string rather than `null`. You would
+specify that as shown below:
+
+```csharp
+public class Person
+{
+    public string FirstName { get; set; } = string.Empty;
+
+    // remaining implementation removed from listing
+}
+```
+
+This is most useful for read-only properties, as you'll see later
+in this topic.
+
 You can also define the storage yourself, as shown below:
 
 ```csharp
 public class Person
 {
-	public string FirstName
-	{
-		get { return firstName; }
-		set { firstName = value; }
-	}
-	private string firstName;
-	// remaining implementation removed from listing
+    public string FirstName
+    {
+        get { return firstName; }
+        set { firstName = value; }
+    }
+    private string firstName;
+    // remaining implementation removed from listing
 }
 ```
- 
+
 The property definition shown above is a read-write property. Notice
 the keyword `value` in the set accessor. The `set` accessor always has
 a single parameter named `value`. The `get` accessor must return a value
@@ -76,13 +94,13 @@ that is convertible to the type of the property (`string` in this example).
  
 That's the basics of the syntax. There are many different variations that support
 a variety of different design idioms. Let's explore those, and learn the syntax
-options for each. 
+options for each.
 
 ## Scenarios
 
 The examples above showed one of the simplest cases of property definition:
 a read-write property with no validation. By writing the code you want in the
-`get` and `set` accessors, you can create many different scenarios.  
+`get` and `set` accessors, you can create many different scenarios.
 
 ### Validation
 
@@ -111,9 +129,11 @@ public class Person
 
 The example above enforces the rule that the first name must not be blank,
 or whitespace. If a developer writes
+
 ```csharp
 hero.FirstName = "";
 ```
+
 That assignment throws an `ArgumentException`. Because a property set accessor
 must have a void return type, you report errors in the set accessor by throwing an exception.
 
@@ -133,17 +153,15 @@ accessors. Suppose that your `Person` class should only enable changing the valu
 ```csharp
 public class Person
 {
-	public string FirstName
-	{
-		get;
-		private set;
-	}
-	// remaining implementation removed from listing
+    public string FirstName { get; private set; }
+
+    // remaining implementation removed from listing
 }
 ```
 
 Now, the `FirstName` property can be accessed from any code, but it can only be assigned
 from other code in the `Person` class.
+
 You can add any restrictive access modifier to either the set or get accessors. Any access modifier
 you place on the individual accessor must be more limited than the access modifier on the property
 definition. The above is legal because the `FirstName` property is `public`, but the set accessor is
@@ -153,7 +171,34 @@ can also be declared `protected`, `internal`, `protected internal` or even `priv
 It is also legal to place the more restrictive modifier on the `get` accessor. For example, you could
 have a `public` property, but restrict the `get` accessor to `private`. That scenario is rarely done
 in practice.
- 
+
+You can also restrict modifications to a property so that it can only be set in a constructor
+or a property initializer. You can modify the `Person` class so as follows:
+
+```csharp
+public class Person
+{
+    public Person(string firstName)
+    {
+        this.FirstName = firstName;
+    }
+
+    public string FirstName { get; }
+
+    // remaining implementation removed from listing
+}
+```
+
+This feature is most commonly used for initializing collections that are exposed as 
+read-only properties:
+
+```csharp
+public class Measurements
+{
+    public ICollection<DataPoint> points { get; } = new List<DataPoint>();
+}
+```
+
 ### Computed Properties
 
 A property does not need to simply return the value of a member field. You can create properties
@@ -163,25 +208,11 @@ by concatenating the first and last names:
 ```csharp
 public class Person
 {
-    public string FirstName
-    {
-        get;
-        set;
-    }
+    public string FirstName { get; set; }
 
-    public string LastName
-    {
-        get;
-        set;
-    }
+    public string LastName { get; set; }
 
-    public string FullName
-    {
-        get
-        {
-            return $"{FirstName} {LastName}";
-        }
-    }
+    public string FullName { get { return $"{FirstName} {LastName}"; } }
 }
 ```
 
@@ -194,17 +225,9 @@ succinct way to create the computed `FullName` property:
 ```csharp
 public class Person
 {
-    public string FirstName
-    {
-        get;
-        set;
-    }
+    public string FirstName { get; set; }
 
-    public string LastName
-    {
-        get;
-        set;
-    }
+    public string LastName { get; set; }
 
     public string FullName =>  $"{FirstName} {LastName}";
 }
@@ -224,17 +247,9 @@ was accessed:
 ```csharp
 public class Person
 {
-    public string FirstName
-    {
-        get;
-        set;
-    }
+    public string FirstName { get; set; }
 
-    public string LastName
-    {
-        get;
-        set;
-    }
+    public string LastName { get; set; }
 
     private string fullName;
     public string FullName
@@ -299,7 +314,7 @@ state change invalidates the previously calculated version, it will be
 recalculated. Developers that use this class do not need to know the
 details of the implementation. None of these internal changes affect the
 use of the Person object. That's the key reason for using Properties to
-expose data members of an object. 
+expose data members of an object.
  
 ### INotifyPropertyChanged
 
@@ -348,7 +363,7 @@ Using `nameof` can reduce errors where you have mistyped the name of the propert
 Again, this is an example of a case where you can write code in your accessors to
 support the scenarios you need.
 
-## Summing up 
+## Summing up
 
 Properties are a form of smart fields in a class or object. From
 outside the object, they appear like fields in the object. However,

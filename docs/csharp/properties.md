@@ -50,14 +50,14 @@ public class Person
 ```
 
 The syntax shown above is the *auto property* syntax. The compiler
-generates the storage location for the field that backs up the 
+generates the storage location for the field that backs up the
 property. The compiler also implements the body of the `get` and `set` accessors.
 
 Sometimes, you need to initialize a property to
 a value other than the default for its type.  C# enables
 that by setting a value after the closing brace for the
 property. You may prefer the initial value for the `FirstName`
-property to be the emtpy string rather than `null`. You would
+property to be the empty string rather than `null`. You would
 specify that as shown below:
 
 ```csharp

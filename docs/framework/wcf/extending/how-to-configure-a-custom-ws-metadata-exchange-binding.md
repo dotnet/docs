@@ -72,7 +72,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 ### Configuring by code  
   
-1.  Create a <xref:System.ServiceModel.WsHttpBinding> binding instance:  
+1.  Create a <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> binding instance:  
   
     ```  
     WSHttpBinding binding = new WSHttpBinding();  
@@ -93,7 +93,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     serviceHost.Description.Behaviors.Add(smb);  
     ```  
   
-4.  Add a metadata exchange endpoint, specifying the <xref:System.ServiceModel.WSHttpBinding> created earlier:  
+4.  Add a metadata exchange endpoint, specifying the <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> created earlier:  
   
     ```  
     serviceHost.AddServiceEndpoint(typeof(IMetadataExchange), binding, mexAddress);  

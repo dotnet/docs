@@ -50,7 +50,7 @@ This section contains samples that demonstrate [!INCLUDE[indigo1](../../../../in
  Demonstrates various aspects and features of endpoint addresses.  
   
  [Imperative](../../../../docs/framework/wcf/samples/imperative.md)  
- Demonstrates how to define a <xref:System.ServiceModel.WsHttpBinding> for a service using code, instead of defining the `wsHttpBinding` binding in configuration.  
+ Demonstrates how to define a <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> for a service using code, instead of defining the `wsHttpBinding` binding in configuration.  
   
  [Multiple Contracts](../../../../docs/framework/wcf/samples/multiple-contracts.md)  
  Demonstrates how to implement more than one contract on a service and how to configure endpoints for communicating with each of the implemented contracts.  

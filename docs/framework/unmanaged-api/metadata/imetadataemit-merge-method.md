@@ -48,7 +48,7 @@ HRESULT Merge (
  [in] A pointer to an [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) object that specifies the token re-map.  
   
  `pHandleer`  
- [in] A pointer to an <xref:IUnknown> object that specifies the errors.  
+ [in] A pointer to an <!--<<!--zzxref:IUnknown --> `IUnknown`>--> `IUnknown` object that specifies the errors.  
   
 ## Remarks  
  Call [IMetaDataEmit::MergeEnd](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-mergeend-method.md) to trigger the merger of metadata into a single scope.  

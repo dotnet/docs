@@ -773,9 +773,8 @@
 ## Default Duration Behavior  
  The behavior of a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> structure with a value of <xref:System.Windows.Duration.Automatic%2A> depends on the type of timeline:  
   
-|||  
-|-|-|  
 |**Timeline**|**Behavior**|  
+|-|-|  
 |<xref:System.Windows.Media.Animation.Timeline>|Undetermined (<xref:System.Windows.Media.Animation.Timeline> is abstract)|  
 |<xref:System.Windows.Media.Animation.ParallelTimeline>,<br /><br /> <xref:System.Windows.Media.Animation.Storyboard>,<br /><br /> <xref:System.Windows.Media.Animation.TimelineGroup>|Expands to fit child timelines|  
 |\<*Type*>Animation (Known as a "From/To/By" or "basic" animations)|1 second|  

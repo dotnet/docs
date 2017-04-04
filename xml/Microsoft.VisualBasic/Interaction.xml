@@ -964,7 +964,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
   
  The `MsgBoxStyle` enumeration values are listed in the following table.  
   
-||||  
+|Member|Value|Description|  
 |-|-|-|  
 |Member|Value|Description|  
 |`OKOnly`|0|Displays OK button only.|  
@@ -1038,9 +1038,8 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
   
  The following table shows some sample strings for ranges calculated using three sets of `Start`, `Stop`, and `Interval`. The "First range" and "Last range" columns show the lowest and highest ranges possible given the values of `Start` and `Stop`. The "Before first range" and "After last range" columns show the strings returned for values of `Number` less than `Start` and greater than `Stop`, respectively.  
   
-||||||||  
-|-|-|-|-|-|-|-|  
 |`Start`|`Stop`|`Interval`|Before first range|First range|Last range|After last range|  
+|-|-|-|-|-|-|-|  
 |0|99|5|"   : -1"|"  0:  4"|" 95: 99"|"100:   "|  
 |20|199|10|"   : 19"|" 20: 29"|"190:199"|"200:   "|  
 |100|1010|20|"    : 99"|" 100: 119"|"1000:1010"|"1011:    "|  

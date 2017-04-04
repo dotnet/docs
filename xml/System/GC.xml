@@ -422,9 +422,8 @@
 ## Remarks  
  The following table summarizes the interaction of the `mode` and `blocking` parameters:  
   
-||||  
-|-|-|-|  
 |`mode`|`blocking` is `true`|`blocking` is `false`|  
+|-|-|-|  
 |<xref:System.GCCollectionMode> or <xref:System.GCCollectionMode>|A blocking collection is performed as soon as possible. If a background collection is in progress and `generation` is 0 or 1, the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method immediately triggers a blocking collection and returns when the collection is finished. If a background collection is in progress and `generation` is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.|A collection is performed as soon as possible. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. If a background collection is already in progress, the method returns immediately.|  
 |<xref:System.GCCollectionMode>|A blocking collection may be performed, depending on the state of the garbage collector and the `generation` parameter. The garbage collector tries to provide optimal performance.|A collection may be performed, depending on the state of the garbage collector. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. The garbage collector tries to provide optimal performance. If a background collection is already in progress, the method returns immediately.|  
   

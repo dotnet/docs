@@ -337,7 +337,7 @@
   
  The `Compare` argument can have the following values.  
   
-|||  
+|Constant|Description|  
 |-|-|  
 |Constant|Description|  
 |`CompareMethod.Binary`|Performs a binary comparison|  
@@ -397,9 +397,8 @@
   
  The `Compare` argument can have the following values.  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`CompareMethod.Binary`|Performs a binary comparison|  
 |`CompareMethod.Text`|Performs a textual comparison|  
   
@@ -450,9 +449,8 @@
 ## Different Formats for Different Numeric Values  
  A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the `Style` argument of the `Format` function contains one of the predefined numeric formats, only one section is allowed.  
   
-|||  
-|-|-|  
 |If you use|This is the result|  
+|-|-|  
 |One section only|The format expression applies to all values.|  
 |Two sections|The first section applies to positive values and zeros; the second applies to negative values.|  
 |Three sections|The first section applies to positive values, the second applies to negative values, and the third applies to zeros.|  
@@ -468,9 +466,8 @@
 ## Predefined Numeric Formats  
  The following table identifies the predefined numeric format names. These may be used by name as the `Style` argument for the `Format` function:  
   
-|||  
-|-|-|  
 |Format name|Description|  
+|-|-|  
 |`General Number`, `G`, or `g`|Displays number with no thousand separator.<br /><br /> For example, `Format(&H3FA, "g")` returns `1018`.|  
 |`Currency`, `C`, or `c`|Displays number with thousand separator, if appropriate; displays two digits to the right of the decimal separator. Output is based on system locale settings.<br /><br /> For example, `Format(1234567, "c")` returns `$1,234,567.00`.|  
 |`Fixed`, `F`, or `f`|Displays at least one digit to the left and two digits to the right of the decimal separator.<br /><br /> For example, `Format(1234567, "f")` returns `1234567.00`.|  
@@ -491,9 +488,8 @@
 ## User-Defined Numeric Formats  
  The following table identifies characters you can use to create user-defined number formats. These may be used to build the `Style` argument for the `Format` function:  
   
-|||  
-|-|-|  
 |Character|Description|  
+|-|-|  
 |None|Displays the number with no formatting.|  
 |(`0`)|Digit placeholder. Displays a digit or a zero. If the expression has a digit in the position where the zero appears in the format string, display it; otherwise, displays a zero in that position.<br /><br /> If the number has fewer digits than there are zeros (on either side of the decimal) in the format expression, displays leading or trailing zeros. If the number has more digits to the right of the decimal separator than there are zeros to the right of the decimal separator in the format expression, rounds the number to as many decimal places as there are zeros. If the number has more digits to the left of the decimal separator than there are zeros to the left of the decimal separator in the format expression, displays the extra digits without modification.|  
 |(`#`)|Digit placeholder. Displays a digit or nothing. If the expression has a digit in the position where the `#` character appears in the format string, displays it; otherwise, displays nothing in that position.<br /><br /> This symbol works like the `0` digit placeholder, except that leading and trailing zeros aren't displayed if the number has fewer digits than there are `#` characters on either side of the decimal separator in the format expression.|  
@@ -510,9 +506,8 @@
 ### Legacy Code Example  
  The following table contains some sample format expressions for numbers. (These examples all assume that your system's locale setting is English-U.S.) The first column contains the format strings for the `Style` argument of the `Format` function; the other columns contain the resulting output if the formatted data has the value given in the column headings.  
   
-|||||  
-|-|-|-|-|  
 |Format (`Style`)|"5" formatted as|"-5" formatted as|"0.5" formatted as|  
+|-|-|-|-|  
 |`Zero-length string ("")`|`5`|`-5`|`0.5`|  
 |`0`|`5`|`-5`|`1`|  
 |`0.00`|`5.00`|`-5.00`|`0.50`|  
@@ -527,9 +522,8 @@
 ## Predefined Date/Time Formats  
  The following table identifies the predefined date and time format names. These may be used by name as the style argument for the `Format` function:  
   
-|||  
-|-|-|  
 |Format Name|Description|  
+|-|-|  
 |`General Date`, or `G`|Displays a date and/or time. For example, `3/12/2008 11:07:31 AM`. Date display is determined by your application's current culture value.|  
 |`Long Date`, `Medium Date`, or `D`|Displays a date according to your current culture's long date format. For example, `Wednesday, March 12, 2008`.|  
 |`Short Date`, or `d`|Displays a date using your current culture's short date format. For example, `3/12/2008`.<br /><br /> The `d` character displays the day in a user-defined date format.|  
@@ -550,9 +544,8 @@
 ## User-Defined Date/Time Formats  
  The following table shows characters you can use to create user-defined date/time formats. Unlike in earlier versions of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], these format characters are case-sensitive.  
   
-|||  
-|-|-|  
 |Character|Description|  
+|-|-|  
 |(`:`)|Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character that is used as the time separator in formatted output is determined by your application's current culture value.|  
 |(`/`)|Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character that is used as the date separator in formatted output is determined by your application's current culture.|  
 |(`%`)|Used to indicate that the following character should be read as a single-letter format without regard to any trailing letters. Also used to indicate that a single-letter format is read as a user-defined format. See what follows for additional details.|  
@@ -587,9 +580,8 @@
 ### Legacy Code Example  
  The following are examples of user-defined date and time formats for `December 7, 1958, 8:50 PM, 35 seconds`:  
   
-|||  
-|-|-|  
 |Format|Displays|  
+|-|-|  
 |`M/d/yy`|`12/7/58`|  
 |`d-MMM`|`7-Dec`|  
 |`d-MMMM-yy`|`7-December-58`|  
@@ -658,9 +650,8 @@
   
  The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments take the following TriState enumeration values.  
   
-|||  
-|-|-|  
 |Value|Description|  
+|-|-|  
 |`TriState.True`|True|  
 |`TriState.False`|False|  
 |`TriState.UseDefault`|The computer's regional settings|  
@@ -710,9 +701,8 @@
   
  The `NamedFormat` argument has the following settings.  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`DateFormat.GeneralDate`|Display a date and/or time. Display a date part as a short date. If there is a time part, display it as a long time. If present, both parts display.|  
 |`DateFormat.LongDate`|Display a date using the long date format specified in your computer's regional settings.|  
 |`DateFormat.ShortDate`|Display a date using the short date format specified in your computer's regional settings.|  
@@ -770,9 +760,8 @@
   
  The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`TriState.True`|True|  
 |`TriState.False`|False|  
 |`TriState.UseDefault`|The computer's regional settings|  
@@ -827,9 +816,8 @@
   
  The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`TriState.True`|True|  
 |`TriState.False`|False|  
 |`TriState.Default`|The computer's regional settings|  
@@ -974,9 +962,8 @@
   
  The `Compare` argument settings are:  
   
-||||  
-|-|-|-|  
 |Constant|Value|Description|  
+|-|-|-|  
 |`Binary`|0|Performs a binary comparison|  
 |`Text`|1|Performs a text comparison|  
   
@@ -1084,9 +1071,8 @@
   
  The `Compare` argument settings are:  
   
-||||  
-|-|-|-|  
 |Constant|Value|Description|  
+|-|-|-|  
 |`Binary`|0|Performs a binary comparison|  
 |`Text`|1|Performs a text comparison|  
   
@@ -1193,9 +1179,8 @@
   
  The `Compare` argument can have the following values.  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`Binary`|Performs a binary comparison.|  
 |`Text`|Performs a textual comparison.|  
   
@@ -2451,9 +2436,8 @@
   
  The `Compare` argument can have the following values.  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`Binary`|Performs a binary comparison|  
 |`Text`|Performs a textual comparison|  
   
@@ -2671,9 +2655,8 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  This table demonstrates how the optional `Delimiter`, `Limit`, and `Compare` parameters can change the behavior of the `Split` function.  
   
-|||  
-|-|-|  
 |Split Call|Return Value|  
+|-|-|  
 |`Split("42, 12, 19")`|{"42," , "12," , "19"}|  
 |`Split("42, 12, 19", ", ")`|{"42", "12", "19"}|  
 |`Split("42, 12, 19", ", ", 2)`|{"42", "12, 19"}|  
@@ -2685,9 +2668,8 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  The `Compare` argument can have the following values.  
   
-||||  
-|-|-|-|  
 |Constant|Description|Value|  
+|-|-|-|  
 |`CompareMethod.Binary`|Performs a binary comparison|0|  
 |`CompareMethod.Text`|Performs a textual comparison|1|  
   
@@ -2778,9 +2760,8 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  The `Compare` argument settings are:  
   
-|||  
-|-|-|  
 |Constant|Description|  
+|-|-|  
 |`Binary`|Performs a binary comparison, based on a sort order derived from the internal binary representations of the characters.|  
 |`Text`|Performs a text comparison, based on a case-insensitive text sort order determined by your system's `LocaleID` value.|  
   
@@ -2833,9 +2814,8 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  The `Conversion` argument settings are:  
   
-|||  
-|-|-|  
 |Enumeration member|Description|  
+|-|-|  
 |`VbStrConv.None`|Performs no conversion|  
 |`VbStrConv.LinguisticCasing`|Uses linguistic rules for casing, rather than File System (default). Valid with `VbStrConv.UpperCase` and `VbStrConv.LowerCase` only.|  
 |`VbStrConv.UpperCase`|Converts the string to uppercase characters.|  

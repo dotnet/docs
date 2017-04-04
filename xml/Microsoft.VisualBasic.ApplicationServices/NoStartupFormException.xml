@@ -50,9 +50,8 @@
   
  The following table shows the initial property values for an instance of <xref:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException>.  
   
-|||  
-|-|-|  
 |Property|Value|  
+|-|-|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
 |<xref:System.Exception.Message%2A>|The localized error-message string.|  
   
@@ -83,9 +82,8 @@
   
  <xref:Microsoft.VisualBasic.ApplicationServices.NoStartupFormException> inherits from <xref:System.Exception>. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
   
-|||  
-|-|-|  
 |Property|Value|  
+|-|-|  
 |<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.Exception.Message%2A>|The `message` string.|  
   
@@ -152,9 +150,8 @@
   
  The following table shows the initial property values for an instance of <xref:System.ApplicationException>.  
   
-|||  
-|-|-|  
 |Property|Value|  
+|-|-|  
 |<xref:System.Exception.InnerException%2A>|The `inner` reference.|  
 |<xref:System.Exception.Message%2A>|The `message` string.|  
   

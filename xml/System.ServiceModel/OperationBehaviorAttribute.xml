@@ -355,9 +355,8 @@
 ## Remarks  
  Set the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> to `true` to require your operation to execute within a transaction scope. If a flowed transaction is available, the operation executes within that transaction. If one is not available, a new transaction is created and used for the operation execution. The binding specified in the endpoint controls whether flowed transactions are supported. Therefore, to obtain the proper behavior you must understand the interaction between whether transaction flow is permitted by the binding and the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property. The following table shows the possible behavior.  
   
-|||||  
-|-|-|-|-|  
 |TransactionScopeRequired|Binding permits transaction flow|Caller flows transaction|Result|  
+|-|-|-|-|  
 |False|False|No|Method executes without a transaction.|  
 |True|False|No|Method creates and executes within a new transaction.|  
 |True or False|False|Yes|A SOAP fault is returned for the transaction header.|  

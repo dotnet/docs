@@ -33,9 +33,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ListView States  
  The following table lists the visual states for the <xref:System.Windows.Controls.ListView> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  
@@ -46,9 +45,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ListViewItem States  
  The following table lists the states for the <xref:System.Windows.Controls.ListViewItem> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The control is disabled.|  
 |MouseOver|CommonStates|The mouse pointer is over the <xref:System.Windows.Controls.ComboBox> control.|  

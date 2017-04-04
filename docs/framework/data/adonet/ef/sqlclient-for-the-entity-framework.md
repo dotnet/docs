@@ -34,9 +34,8 @@ This section describes the .NET Framework Data Provider for SQL Server (SqlClien
   
  SqlClient produces and accepts the following provider manifest tokens for different versions of SQL Server.  
   
-||||  
-|-|-|-|  
 |SQL Server 2000|SQL Server 2005|SQL Server 2008|  
+|-|-|-|  
 |2000|2005|2008|  
   
 > [!NOTE]

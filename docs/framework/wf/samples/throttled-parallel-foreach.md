@@ -18,9 +18,8 @@ The `ThrottleParallelForEach` activity is similar to the <xref:System.Activities
   
 ## Projects  
   
-||||  
-|-|-|-|  
 |**ProjectName**|**Description**|**Main Files**|  
+|-|-|-|  
 |ThrottledParallelForEach|Contains `ThrottledParallelForEach` activity and its designer.|ThrottledParallelForEach.cs<br /><br /> The `ThrottledParallelForEach` activity definition.|  
 |CodeTestClient|Sample client application that configures and runs a workflow with a `ThrottledParallelForEach` using imperative code.|Program.cs<br /><br /> Defines and runs an instance of the sample workflow.|  
   

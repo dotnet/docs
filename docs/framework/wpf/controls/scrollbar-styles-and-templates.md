@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ScrollBar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_Track|<xref:System.Windows.Controls.Primitives.Track>|The container for the element that indicates the position of the <xref:System.Windows.Controls.Primitives.ScrollBar>.|  
   
 ## ScrollBar States  

@@ -95,9 +95,8 @@ Add Portable Class Library dialog box for Visual Studio 2013 Update 2
 ## Target options  
  When you create a Portable Class Library project, you can choose the operating system and the .NET Framework version you want to target. If you're using Visual Studio 2013 and you've installed Update 2 or later, you can choose the **Class Library (Portable for Universal Apps)** template to create a Portable Class Library that targets Windows 8.1 and Windows Phone 8.1. The following table shows the available targets depending on the version of Visual Studio you're using.  
   
-|||||  
-|-|-|-|-|  
 |Target option|Visual Studio 2012|Visual Studio 2013|Visual Studio 2013 Update 2 or later|  
+|-|-|-|-|  
 |.NET Framework|- .NET Framework 4 and higher<br /><br /> - .NET Framework 4.0.3 and higher<br /><br /> - .NET Framework 4.5|- .NET Framework 4 and higher<br /><br /> - .NET Framework 4.0.3 and higher<br /><br /> - .NET Framework 4.5 and higher<br /><br /> - .NET Framework 4.5.1|- .NET Framework 4<br /><br /> - .NET Framework 4.0.3<br /><br /> - .NET Framework 4.5<br /><br /> - .NET Framework 4.5.1|  
 |Windows Phone|- Windows Phone 7 and higher<br /><br /> - Windows Phone 7.5 and higher<br /><br /> - Windows Phone 8|- Windows Phone 8|- Windows Phone Silverlight 8<br /><br /> - Windows Phone Silverlight 8.1<br /><br /> For Windows Runtime and XAML support, choose:<br /><br /> - Windows Phone 8.1|  
 |Windows Store|- .NET For Windows Store Apps|- Windows Store Apps (Windows 8) and higher<br /><br /> - Windows Store Apps (Windows 8.1)|- Windows 8<br /><br /> - Windows 8.1|  

@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ComboBox Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.ComboBox> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_EditableTextBox|<xref:System.Windows.Controls.TextBox>|Contains the text of the <xref:System.Windows.Controls.ComboBox>.|  
 |PART_Popup|<xref:System.Windows.Controls.Primitives.Popup>|The drop-down that contains the items in the combo box.|  
   
@@ -39,9 +38,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ComboBox States  
  The following table lists the states for the <xref:System.Windows.Controls.ComboBox> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The control is disabled.|  
 |MouseOver|CommonStates|The mouse pointer is over the <xref:System.Windows.Controls.ComboBox> control.|  
@@ -60,9 +58,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ComboBoxItem States  
  The following table lists the states for the <xref:System.Windows.Controls.ComboBoxItem> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The control is disabled.|  
 |MouseOver|CommonStates|The mouse pointer is over the <xref:System.Windows.Controls.ComboBox> control.|  

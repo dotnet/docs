@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGrid Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DataGrid> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_ColumnHeadersPresenter|<xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter>|The row that contains the column headers.|  
   
  When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.DataGrid>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.DataGrid>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
@@ -40,9 +39,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGrid States  
  The following table lists the visual states for the <xref:System.Windows.Controls.DataGrid> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The control is disabled.|  
 |InvalidFocused|ValidationStates|The control is not valid and has focus.|  
@@ -55,9 +53,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGridCell States  
  The following table lists the visual states for the <xref:System.Windows.Controls.DataGridCell> element.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the cell.|  
 |Focused|FocusStates|The cell has focus.|  
@@ -78,9 +75,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGridRow States  
  The following table lists the visual states for the <xref:System.Windows.Controls.DataGridRow> element.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the row.|  
 |MouseOver_Editing|CommonStates|The mouse pointer is positioned over the row and the row is in edit mode.|  
@@ -99,18 +95,16 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGridRowHeader Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_TopHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the row header from the top.|  
 |PART_BottomHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the row header from the bottom.|  
   
 ## DataGridRowHeader States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the row.|  
 |MouseOver_CurrentRow|CommonStates|The mouse pointer is positioned over the row and the row is the current row.|  
@@ -134,17 +128,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGridColumnHeadersPresenter Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_FillerColumnHeader|<xref:System.Windows.Controls.Primitives.DataGridColumnHeader>|The placeholder for column headers.|  
   
 ## DataGridColumnHeadersPresenter States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |InvalidFocused|ValidationStates|The cell is not valid and has focus.|  
 |InvalidUnfocused|ValidationStates|The cell is not valid and does not have focus.|  
 |Valid|ValidationStates|The cell is valid.|  
@@ -152,18 +144,16 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DataGridColumnHeader Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_LeftHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the column header from the left.|  
 |PART_RightHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the column header from the right.|  
   
 ## DataGridColumnHeader States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the control.|  
 |Pressed|CommonStates|The control is pressed.|  

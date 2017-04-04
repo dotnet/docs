@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## TextBox Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.TextBox> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_ContentHost|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.TextBox> is displayed in this element.|  
   
 ## TextBox States  

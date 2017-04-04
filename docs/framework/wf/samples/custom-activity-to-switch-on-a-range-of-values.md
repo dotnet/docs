@@ -36,9 +36,8 @@ public sealed class SwitchRange<T> : NativeActivity where T : IComparable
   
 ```  
   
-|||  
-|-|-|  
 |Property|Description|  
+|-|-|  
 |Expression|This is the expression to be evaluated and compared against the ranges in the Cases list. The result of the expression is of type T.|  
 |Cases|Each case consists of a range (From and To) and an activity (Body). The expression is evaluated and compared against the ranges. If the result of the expression is within the range of one of the cases, the corresponding activity is executed.|  
 |Default|The activity that is executed when no case is matched. When set to `null`, no action is taken.|  

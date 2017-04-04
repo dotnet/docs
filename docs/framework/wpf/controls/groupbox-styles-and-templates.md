@@ -33,9 +33,8 @@ manager: "wpickett"
 ## GroupBox States  
  The following table lists the visual states for the <xref:System.Windows.Controls.GroupBox> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  

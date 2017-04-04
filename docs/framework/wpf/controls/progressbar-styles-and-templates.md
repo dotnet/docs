@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ProgressBar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.ProgressBar> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_Indicator|<xref:System.Windows.FrameworkElement>|The object that indicates progress.|  
 |PART_Track|<xref:System.Windows.FrameworkElement>|The object that defines the path of the progress indicator.|  
 |PART_GlowRect|<xref:System.Windows.FrameworkElement>|An object that embellishes the progress bar.|  

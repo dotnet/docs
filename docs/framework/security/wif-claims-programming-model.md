@@ -57,9 +57,8 @@ ClaimsPrincipal claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
 ### Claims Extracted by Windows Identity Foundation from Different Token Types  
  WIF supports several combinations of authentication mechanisms out of the box. The following table lists the claims that WIF extracts from different token types.  
   
-||||  
-|-|-|-|  
 |Token Type|Claim Generated|Map To Windows Access Token|  
+|-|-|-|  
 |SAML 1.1|1.  All claims from System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope).<br />2.  The `http://schemas.microsoft.com/ws/2008/06/identity/claims/confirmationkey` claim that contains the XML serialization of the confirmation key, if the token contains a proof token.<br />3.  The `http://schemas.microsoft.com/ws/2008/06/identity/claims/samlissuername` claim from the Issuer element.<br />4.  AuthenticationMethod and AuthenticationInstant claims, if the token contains an authentication statement.|In addition to the claims listed in “SAML 1.1”, except claims of type  `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`, Windows authentication related claims will be added and the identity will be represented by WindowsClaimsIdentity.|  
 |SAML 2.0|Same as “SAML 1.1”.|Same as “SAML 1.1 Mapped to Windows Account”.|  
 |X509|1.  Claims with the X500 distinguished name, emailName, dnsName, SimpleName, UpnName, UrlName, thumbprint, RsaKey (this can be extracted using the RSACryptoServiceProvider.ExportParameters method from the X509Certificate2.PublicKey.Key property), DsaKey (this can be extracted using the DSACryptoServiceProvider.ExportParameters method from the X509Certificate2.PublicKey.Key property), SerialNumber properties from the X509 Certificate.<br />2.  AuthenticationMethod claim with value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509`. AuthenticationInstant claim with the value of the time when the certificate was validated in XmlSchema DateTime format.|1.  It uses the Windows account fully qualified domain name as the `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` claim value. .<br />2.  Claims from the X509 Certificate not mapped to Windows, and claims from the windows account obtained by mapping the certificate to Windows.|  
@@ -67,9 +66,8 @@ ClaimsPrincipal claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
 |Windows (Kerberos or NTLM)|1.  Claims generated from the access token such as: PrimarySID, DenyOnlyPrimarySID, PrimaryGroupSID, DenyOnlyPrimaryGroupSID, GroupSID, DenyOnlySID, and Name<br />2.  AuthenticationMethod with the value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows`. AuthenticationInstant with the value of the time when the Windows access token was created in the XMLSchema DateTime format.||  
 |RSA Key Pair|1.  The `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa` claim with the value of RSAKeyValue.<br />2.  AuthenticationMethod claim with the value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/signature`. AuthenticationInstant claim with the value of the time when the RSA key was authenticated (that is, the signature was verified) in the XMLSchema DateTime format.||  
   
-|||  
-|-|-|  
 |Authentication Type|URI emitted in “AuthenticationMethod” claim|  
+|-|-|  
 |Password|`urn:oasis:names:tc:SAML:1.0:am:password`|  
 |Kerberos|`urn:ietf:rfc:1510`|  
 |SecureRemotePassword|`urn:ietf:rfc:2945`|  

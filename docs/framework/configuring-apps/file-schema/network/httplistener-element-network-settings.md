@@ -142,7 +142,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
 ## Element Information  
   
-|||  
+|||
 |-|-|  
 |Namespace|System.Net|  
 |Schema Name||  

@@ -28,9 +28,8 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  This document uses the prefixes and namespaces in the following table.  
   
-|||  
-|-|-|  
 |Prefix|Namespace|  
+|-|-|  
 |wsrm|http://docs.oasis-open.org/ws-rx/wsrm/200702|  
 |netrm|http://schemas.microsoft.com/ws/2006/05/rm|  
 |s|http://www.w3.org/2003/05/soap-envelope|  

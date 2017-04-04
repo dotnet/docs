@@ -55,9 +55,8 @@ Metadata=res://<assemblyFullName>/<resourceName>.
   
  The following options are available for defining the location of an embedded resource:  
   
-|||  
-|-|-|  
 |Option|Description|  
+|-|-|  
 |`assemblyFullName`|The full name of an assembly with the embedded resource. The name includes the simple name, version name, supported culture, and public key, as follows:<br /><br /> `ResourceLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null`<br /><br /> Resources can be embedded in any assembly that is accessible by the application.<br /><br /> If you specify a wildcard (\*) for `assemblyFullName`, the Entity Framework runtime will search for resources in the following locations, in this order:<br /><br /> 1.  The calling assembly.<br />2.  The referenced assemblies.<br />3.  The assemblies in the bin directory of an application.<br /><br /> If the files are not in one of these locations, an exception will be thrown. **Note:**  When you use wildcard (*), the Entity Framework has to look through all the assemblies for resources with the correct name. To improve performance, specify the assembly name instead of the wildcard.|  
 |`resourceName`|The name of the included resource, such as AdvendtureWorksModel.csdl. The metadata services will only look for files or resources with one of the following extensions: .csdl, .ssdl, or .msl. If `resourceName` is not specified, all metadata resources will be loaded. The resources should have unique names within an assembly. If multiple files with the same name are defined in different directories in the assembly, the `resourceName` must include the folder structure before the name of the resource, for example FolderName.FileName.csdl.<br /><br /> `resourceName` is not required when you specify a wildcard (*) for `assemblyFullName`.|  
   

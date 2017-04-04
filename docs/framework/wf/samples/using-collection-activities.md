@@ -27,9 +27,8 @@ This sample demonstrates how to use the collection activities (<xref:System.Acti
   
  The sample consists of two solutions, one under the CodedWorkflow directory and the other under the DesignerWorkflow directory. They demonstrate two different ways of using the activities for the same purposes.  
   
-||||  
-|-|-|-|  
 |Solution|Description|Main Files|  
+|-|-|-|  
 |CodedWorkflow|Sample client application that demonstrates how to invoke the collection activities programmatically.|**PrintCollection.cs**: helper activity to print out to the console every item in a collection.<br /><br /> **Program.cs**: programmatically builds a sequence activity that contains a series of collection activities, and executes it.|  
 |DesignerWorkflow|Sample client application that demonstrates how to use the collection activities declaratively in the workflow designer.|**CollectionWorkflow.xaml**: a workflow created declaratively with the designer that uses the collection activities.<br /><br /> **PrintCollection.cs**: helper activity to print out to the console every item in a collection.<br /><br /> **Program.cs**: invokes the workflow described in CollectionWorkflow.xaml.|  
   

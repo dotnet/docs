@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ToolBar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.ToolBar> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_ToolBarPanel|<xref:System.Windows.Controls.Primitives.ToolBarPanel>|The object that contains the controls on the <xref:System.Windows.Controls.ToolBar>.|  
 |PART_ToolBarOverflowPanel|<xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>|The object that contains the controls that are in the overflow area of the <xref:System.Windows.Controls.ToolBar>.|  
   
@@ -39,9 +38,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ToolBar States  
  The following table lists the visual states for the <xref:System.Windows.Controls.ToolBar> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  

@@ -31,9 +31,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ToolTip States  
  The following table lists the visual states for the <xref:System.Windows.Controls.ToolTip> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Closed|OpenStates|The default state.|  
 |Open|OpenStates|The <xref:System.Windows.Controls.ToolTip> is visible.|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  

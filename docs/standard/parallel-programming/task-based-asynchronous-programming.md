@@ -252,9 +252,8 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
   
 ## Related topics  
   
-|||  
-|-|-|  
 |Title|Description|  
+|-|-|  
 |[Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md)|Describes how continuations work.|  
 |[Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)|Describes the difference between attached and detached child tasks.|  
 |[Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md)|Describes the cancellation support that is built into the <xref:System.Threading.Tasks.Task> object.|  

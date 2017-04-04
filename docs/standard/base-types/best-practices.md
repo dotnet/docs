@@ -181,9 +181,8 @@ manager: "wpickett"
   
  Often, applications pay a performance penalty for using backtracking despite the fact that backtracking is not essential for a match. For example, the regular expression `\b\p{Lu}\w*\b` matches all words that begin with an uppercase character, as the following table shows.  
   
-|||  
-|-|-|  
 |Pattern|Description|  
+|-|-|  
 |`\b`|Begin the match at a word boundary.|  
 |`\p{Lu}`|Match an uppercase character.|  
 |`\w*`|Match zero or more word characters.|  

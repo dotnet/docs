@@ -18,9 +18,8 @@ This sample demonstrates how to create named bookmarks in a workflow. [!INCLUDE[
   
 ## Projects in this sample  
   
-||||  
-|-|-|-|  
 |**Project Name**|**Description**|**Main Files**|  
+|-|-|-|  
 |WaitForInput|Contains `WaitForInput` activity and its designer|WaitForInput.cs<br /><br /> `WaitForInput` activity definition.|  
 |||WaitForInputDesigner.xaml<br /><br /> Custom designer for the `WaitForInput` activity.|  
 |||TypeToFirstGenericArgumentConverter.cs<br /><br /> WPF type converter used to update the generic type of the activity in the designer.|  
@@ -34,9 +33,8 @@ This sample demonstrates how to create named bookmarks in a workflow. [!INCLUDE[
   
  The activity has three attributes applied to it for binding a designer, adding the generic argument feature that can be updated, and setting the default generic type to string. The activity also has the arguments  listed in the following table.  
   
-||||  
-|-|-|-|  
 |**Name**|**Type**|**Description**|  
+|-|-|-|  
 |TResult|Generic argument (TResult)|Type of the bookmark. This is the type of the data to be passed to the bookmark when resumed.|  
 |BookmarkName|InArgument\<string>|Name of the bookmark.|  
 |Result|InArgument\<TResult>|Data passed to the activity when the bookmark is resumed.|  

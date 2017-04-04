@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## Calendar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Calendar> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_CalendarItem|<xref:System.Windows.Controls.Primitives.CalendarItem>|The currently displayed month or year on the <xref:System.Windows.Controls.Calendar>.|  
 |PART_Root|<xref:System.Windows.Controls.Panel>|The panel that contains the <xref:System.Windows.Controls.Primitives.CalendarItem>.|  
   
@@ -46,9 +45,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## CalendarItem Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_Root|<xref:System.Windows.FrameworkElement>|The root of the control.|  
 |PART_PreviousButton|<xref:System.Windows.Controls.Button>|The button that displays the previous page of the calendar when it is clicked.|  
 |PART_NextButton|<xref:System.Windows.Controls.Button>|The button that displays the next page of the calendar when it is clicked.|  
@@ -61,9 +59,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## CalendarItem States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal State|CommonStates|The default state.|  
 |Disabled State|CommonStates|The state of the calendar when the <xref:System.Windows.UIElement.IsEnabled%2A> property is `false`.|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
@@ -79,9 +76,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## CalendarDayButton States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarDayButton> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The <xref:System.Windows.Controls.Primitives.CalendarDayButton> is disabled.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the <xref:System.Windows.Controls.Primitives.CalendarDayButton>.|  
@@ -108,9 +104,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## CalendarButton States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarButton> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The <xref:System.Windows.Controls.Primitives.CalendarButton> is disabled.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the <xref:System.Windows.Controls.Primitives.CalendarButton>.|  

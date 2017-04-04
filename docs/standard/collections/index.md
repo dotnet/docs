@@ -64,9 +64,8 @@ Similar data can often be handled more efficiently when stored and manipulated a
 ## Choosing a collection  
  In general, you should use generic collections. The following table describes some common collection scenarios and the collection classes you can use for those scenarios. If you are new to generic collections, this table will help you choose the generic collection that works the best for your task.  
   
-|||||  
-|-|-|-|-|  
 |I want to…|Generic collection option(s)|Non-generic collection option(s)|Thread-safe or immutable collection option(s)|  
+|-|-|-|-|  
 |Store items as key/value pairs for quick look-up by key|<xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>|<xref:System.Collections.Hashtable><br /><br /> (A collection of key/value pairs that are organize based on the hash code of the key.)|<xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=fullName><br /><br /> <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602?displayProperty=fullName><br /><br /> [ImmutableDictionary(TKey, TValue) Class](../Topic/ImmutableDictionary\(TKey,%20TValue\)%20Class.md)|  
 |Access items by index|<xref:System.Collections.Generic.List%601?displayProperty=fullName>|<xref:System.Array?displayProperty=fullName><br /><br /> <xref:System.Collections.ArrayList?displayProperty=fullName>|[ImmutableList(T) Class](../Topic/ImmutableList\(T\)%20Class.md)<br /><br /> [ImmutableArray Class](../Topic/ImmutableArray%20Class.md)|  
 |Use items first-in-first-out (FIFO)|<xref:System.Collections.Generic.Queue%601?displayProperty=fullName>|<xref:System.Collections.Queue?displayProperty=fullName>|<xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=fullName><br /><br /> [ImmutableQueue(T) Class](../Topic/ImmutableQueue\(T\)%20Class.md)|  

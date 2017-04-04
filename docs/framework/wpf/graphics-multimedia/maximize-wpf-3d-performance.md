@@ -24,9 +24,8 @@ As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-win
   
 ## Performance Impact: High  
   
-|||  
-|-|-|  
 |Property|Recommendation|  
+|-|-|  
 |<xref:System.Windows.Media.Brush>|Brush speed (fastest to slowest):<br /><br /> <xref:System.Windows.Media.SolidColorBrush><br /><br /> <xref:System.Windows.Media.LinearGradientBrush><br /><br /> <xref:System.Windows.Media.ImageBrush><br /><br /> <xref:System.Windows.Media.DrawingBrush> (cached)<br /><br /> <xref:System.Windows.Media.VisualBrush> (cached)<br /><br /> <xref:System.Windows.Media.RadialGradientBrush><br /><br /> <xref:System.Windows.Media.DrawingBrush> (uncached)<br /><br /> <xref:System.Windows.Media.VisualBrush> (uncached)|  
 |<xref:System.Windows.UIElement.ClipToBoundsProperty>|Set `Viewport3D.ClipToBounds` to false whenever you do not need to have [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] explicitly clip the content of a <xref:System.Windows.Controls.Viewport3D> to the Viewport3D’s rectangle. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] antialiased clipping can be very slow, and `ClipToBounds` is enabled (slow) by default on <xref:System.Windows.Controls.Viewport3D>.|  
 |<xref:System.Windows.UIElement.IsHitTestVisible%2A>|Set `Viewport3D.IsHitTestVisible` to false whenever you do not need [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] to consider the content of a <xref:System.Windows.Controls.Viewport3D> when performing mouse hit testing.  Hit testing 3D content is done in software and can be slow with large meshes. <xref:System.Windows.UIElement.IsHitTestVisible%2A> is enabled (slow) by default on <xref:System.Windows.Controls.Viewport3D>.|  
@@ -39,9 +38,8 @@ As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-win
   
 ## Performance Impact: Medium  
   
-|||  
-|-|-|  
 |Property|Recommendation|  
+|-|-|  
 |<xref:System.Windows.Media.Media3D.MeshGeometry3D>|When a mesh is defined as abutting triangles with shared vertices and those vertices have the same position, normal, and texture coordinates, define each shared vertex only once and then define your triangles by index with <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A>.|  
 |<xref:System.Windows.Media.ImageBrush>|Try to minimize texture sizes when you have explicit control over the size (when you’re using a <xref:System.Windows.Media.Imaging.RenderTargetBitmap> and/or an <xref:System.Windows.Media.ImageBrush>).  Note that lower resolution textures can decrease visual quality, so try to find the right balance between quality and performance.|  
 |Opacity|When rendering translucent 3D content (such as reflections), use the opacity properties on brushes or materials (via <xref:System.Windows.Media.Brush.Opacity%2A> or <xref:System.Windows.Media.Media3D.DiffuseMaterial.Color%2A>) instead of creating a separate translucent <xref:System.Windows.Controls.Viewport3D> by setting `Viewport3D.Opacity` to a value less than 1.|  
@@ -58,9 +56,8 @@ As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-win
   
 ## Performance Impact: Low  
   
-|||  
-|-|-|  
 |Property|Recommendation|  
+|-|-|  
 |<xref:System.Windows.Media.Media3D.Transform3DGroup>|When you don’t need animation or data binding, instead of using a transform group containing multiple transforms, use a single <xref:System.Windows.Media.Media3D.MatrixTransform3D>, setting it to be the product of all the transforms that would otherwise exist independently in the transform group.|  
 |<xref:System.Windows.Media.Media3D.Light>|Minimize the number of lights in your scene. Too many lights in a scene will force [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] to fall back to software rendering.  The limits are roughly 110 <xref:System.Windows.Media.Media3D.DirectionalLight> objects, 70 <xref:System.Windows.Media.Media3D.PointLight> objects, or 40 <xref:System.Windows.Media.Media3D.SpotLight> objects.|  
 |<xref:System.Windows.Media.Media3D.ModelVisual3D>|Separate moving objects from static objects by putting them in separate <xref:System.Windows.Media.Media3D.ModelVisual3D> instances.  ModelVisual3D is "heavier" than <xref:System.Windows.Media.Media3D.GeometryModel3D> because it caches transformed bounds.  GeometryModel3D is optimized to be a model; ModelVisual3D is optimized to be a scene node.  Use ModelVisual3D to put shared instances of GeometryModel3D into the scene.|  

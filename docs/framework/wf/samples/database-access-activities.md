@@ -73,9 +73,8 @@ Public class DbUpdate: AsyncCodeActivity
 }  
 ```  
   
-|||  
-|-|-|  
 |Argument|Description|  
+|-|-|  
 |ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|  
 |ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|  
 |ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|  
@@ -127,9 +126,8 @@ public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
 }  
 ```  
   
-|||  
-|-|-|  
 |Argument|Description|  
+|-|-|  
 |ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|  
 |ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|  
 |ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|  
@@ -187,9 +185,8 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 }  
 ```  
   
-|||  
-|-|-|  
 |Argument|Description|  
+|-|-|  
 |ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|  
 |ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|  
 |ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|  
@@ -241,9 +238,8 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 }  
 ```  
   
-|||  
-|-|-|  
 |Argument|Description|  
+|-|-|  
 |ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|  
 |ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|  
 |ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|  

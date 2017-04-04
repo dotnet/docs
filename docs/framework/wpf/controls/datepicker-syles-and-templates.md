@@ -28,9 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DatePicker Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DatePicker> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_Root|<xref:System.Windows.Controls.Grid>|The root of the control.|  
 |PART_Button|<xref:System.Windows.Controls.Button>|The button that opens and closes the <xref:System.Windows.Controls.Calendar>.|  
 |PART_TextBox|<xref:System.Windows.Controls.Primitives.DatePickerTextBox>|The text box that allows you to input a date.|  
@@ -39,9 +38,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DatePicker States  
  The following table lists the visual states for the <xref:System.Windows.Controls.DatePicker> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The <xref:System.Windows.Controls.DatePicker> is disabled.|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
@@ -51,18 +49,16 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DatePickerTextBox Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DatePickerTextBox> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_Watermark|<xref:System.Windows.Controls.ContentControl>|The element that contains the initial text in the <xref:System.Windows.Controls.DatePicker>.|  
 |PART_ContentElement|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.TextBox> is displayed in this element.|  
   
 ## DatePickerTextBox States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DatePickerTextBox> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The <xref:System.Windows.Controls.Primitives.DatePickerTextBox> is disabled.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the <xref:System.Windows.Controls.Primitives.DatePickerTextBox>.|  

@@ -33,9 +33,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ListBox States  
  The following table lists the visual states for the <xref:System.Windows.Controls.ListBox> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Valid|ValidationStates|The control is valid.|  
 |InvalidFocused|ValidationStates|The control is not valid and has focus.|  
 |InvalidUnfocused|ValidationStates|The control is not valid and does not have focus.|  
@@ -46,9 +45,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## ListBoxItem States  
  The following table lists the visual states for the <xref:System.Windows.Controls.ListBox> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the control.|  
 |Disabled|CommonStates|The item is disabled.|  

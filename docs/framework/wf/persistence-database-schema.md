@@ -71,9 +71,8 @@ This topic describes the public views supported by the SQL Workflow Instance Sto
 ## InstancePromotedProperties view  
  The **InstancePromotedProperties** view contains information for all the promoted properties that are specified by the user. A promoted property functions as a first-class property, which a user can use in queries to retrieve instances.  For example, a user could add a PurchaseOrder promotion which always stores the cost of an order in the **Value1** column. This would enable a user to query for all purchase orders whose cost exceeds a certain value.  
   
-||||  
-|-|-|-|  
 |Column Type|Column Type|Description|  
+|-|-|-|  
 |InstanceId|UniqueIdentifier|The ID of the Workflow Instance|  
 |EncodingOption|TinyInt|Describes the encoding used to serialize the promoted binary properties.<br /><br /> -   0 – No encoding<br />-   1 – GZipStream|  
 |PromotionName|Nvarchar(400)|The name of the Promotion associated with this instance. The PromotionName is needed to add context to the generic columns in this row.<br /><br /> For example, a PromotionName of PurchaseOrder could indicate that Value1 contains the cost of the order, Value2 contains the name of the customer who placed the order, Value 3 contains the address of the customer, and so on.|  

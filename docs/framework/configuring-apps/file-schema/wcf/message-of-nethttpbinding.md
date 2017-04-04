@@ -133,10 +133,6 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.NetHttpMessageSecurity>   
- <xref:System.ServiceModel.Configuration.NetHttpSecurityElement.Message%2A>   
- <xref:System.ServiceModel.NetHttpSecurity.Message%2A>   
- <xref:System.ServiceModel.Configuration.NetHttpMessageSecurityElement>   
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   

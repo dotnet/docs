@@ -30,7 +30,7 @@ In LINQ to SQL, the following SQL functionality cannot be exposed through transl
   
 -   `ROUND`  
   
-     LINQ to SQL has limited support for `ROUND`. For more information, see [System.Math Methods](../Topic/System.Math%20Methods.md).  
+     LINQ to SQL has limited support for `ROUND`. For more information, see [System.Math Methods](system-math-methods.md).  
   
 ## See Also  
- [Data Types and Functions](../Topic/Data%20Types%20and%20Functions.md)
+ [Data Types and Functions](data-types-and-functions.md)

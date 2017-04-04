@@ -53,7 +53,7 @@ As forms are the base unit of your application, it is essential that you give so
  [Windows Forms Applications](http://msdn.microsoft.com/library/7092ee7f-8378-4def-aef8-1695bd97cf14)  
  Discusses the process of debugging applications created with the Windows Application project template, as well as how to change the Debug and Release configurations.  
   
- [Deploying Applications, Services, and Components](../Topic/Deploying%20Applications,%20Services,%20and%20Components.md)  
+ [Deploying Applications, Services, and Components](https://msdn.microsoft.com/library/wtzawcsz)  
  Describes the process by which you distribute a finished application or component to be installed on other computers.  
   
  [Building Console Applications](../../../docs/standard/building-console-apps.md)  

@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # &lt;etwTracking&gt;
-A service behavior that allows a service to utilize ETW tracking using an <xref:System.Activities.Tracking.ETWTrackingParticipant>.  
+A service behavior that allows a service to utilize ETW tracking using an <xref:System.Activities.Tracking.EtwTrackingParticipant>.  
   
  \<system.ServiceModel>  
 \<behaviors>  

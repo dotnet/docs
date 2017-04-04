@@ -91,7 +91,6 @@ This topic describes how to create a long-running workflow service. Long running
   
          ![Configuring the SendReply activity content data](../../../../docs/framework/wcf/feature-details/media/setreplycontent.png "SetReplyContent")  
   
-        > [!NOTE]
     5.  Drag and drop an Assign activity in between the **Receive** and **SendReply** activities and set the properties as shown in the following illustration:  
   
          ![Adding an assign activity](../../../../docs/framework/wcf/feature-details/media/addassign.png "AddAssign")  

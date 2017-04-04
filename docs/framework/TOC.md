@@ -1,5 +1,4 @@
-# [64-bit Applications](64-bit-apps.md)
-# [.NET Framework 4.7, 4.6, and 4.5](net-framework-4-7-4-6-and-4-5.md)
-# [Developing Web Applications with ASP.NET](developing-web-applications-with-asp-net.md)
-# [Developing Client Applications with the .NET Framework](developing-client-applications-with-the-net-framework.md)
 # [.NET Framework Development Guide](development-guide.md)
+# [Developing Web Applications with ASP.NET](developing-web-apps-with-asp-net.md)
+# [Developing Client Applications with the .NET Framework](developing-client-applications.md)
+# [64-bit Applications](64-bit-apps.md)

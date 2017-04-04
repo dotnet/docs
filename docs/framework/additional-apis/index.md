@@ -32,14 +32,17 @@ The .NET Framework is constantly evolving and in order to improve cross-platform
 |-------------|-----------------|  
 |[System.Collections.Immutable](System.Collections.Immutable.xml)|Provides collections that are thread safe and guaranteed to never change their contents.|  
 |[System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833)|Provides a message handler for [HttpClient Class](HttpClient%20Class.xml) based on the WinHTTP interface of Windows.|  
-|[System.Numerics.Vectors1](../Topic/System.Numerics.Vectors1.md)|Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.|  
+<!-- todo: fix link -->
+|`System.Numerics.Vectors1`|Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
+<!-- restore this when the doc is found 
 |[TPL Dataflow Library](../Topic/TPL%20Dataflow%20Library.md)|The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications.|  
-  
+-->
+
 ## Platform-specific libraries  
   
 |Project|Description|  
 |-------------|-----------------|  
-|[Code Pages Encoding Provider](../Topic/Code%20Pages%20Encoding%20Provider.md)|Extends the [EncodingProvider Class](EncodingProvider%20Class.xml) class to make code page encodings available to apps that target the Universal Windows Platform.|  
+|<xref:System.Text.CodePagesEncodingProvider>|Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform.|  
   
 ## Private APIs  
  These APIs support the product infrastructure and are not intended/supported to be used directly from your code.  

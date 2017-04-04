@@ -50,7 +50,7 @@ Provides properties that allow the host to configure an <xref:System.AppDomain?d
  `IAppDomainSetup` represents assembly binding information that can be added to an <xref:System.AppDomain> instance before its creation. For example, a host can set the <xref:System.AppDomainSetup.ApplicationBase%2A> property to establish a root directory, which the common language runtime (CLR) probes for managed assemblies.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -40,7 +40,7 @@ Manages a list of assemblies that are loaded by the common language runtime (CLR
  Call the [ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-getclrassemblyreferencelist-method.md) method to get a pointer to an instance of `ICLRAssemblyReferenceList`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

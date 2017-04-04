@@ -53,7 +53,7 @@ HRESULT SetJMCStatus (
  A Just My Code stepper will skip non-user code. User code must be a subset of debuggable code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

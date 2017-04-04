@@ -38,7 +38,7 @@ Creating an accessible application has important business implications. Many gov
   
  For more information, see [Resources for Designing Accessible Applications](http://msdn.microsoft.com/library/426bf023-bb34-43c4-9edb-c307191c8170).  
   
- For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../../docs/standard/globalization-and-localization/best-practices-for-developing-world-ready-apps.md).  
+ For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../../docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
   
 ## Creating the Project  
  This walkthrough creates the user interface for an application that takes pizza orders. It consists of a <xref:System.Windows.Forms.TextBox> for the customer's name, a <xref:System.Windows.Forms.RadioButton> group to select the pizza size, a <xref:System.Windows.Forms.CheckedListBox> for selecting the toppings, two Button controls labeled Order and Cancel, and a Menu with an Exit command.  

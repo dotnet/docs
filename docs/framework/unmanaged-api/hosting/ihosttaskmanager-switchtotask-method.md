@@ -60,7 +60,7 @@ HRESULT SwitchToTask (
 >  `SwitchToTask` does not specify which task the host should switch to; it specifies only the task that it should switch from.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

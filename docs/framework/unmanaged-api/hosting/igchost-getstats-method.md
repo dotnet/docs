@@ -46,7 +46,7 @@ HRESULT GetStats (
  The statistics can be used by a smart allocation system to help the garbage collection system operate. For example, the allocation system may determine, after reviewing the statistics, that it needs to add more memory or force a collection.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

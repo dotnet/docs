@@ -126,4 +126,4 @@ Level:Default MaxAge:36000 MinFresh:18000
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)   
  [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)   
  [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)   
- [\<requestCaching> Element (Network Settings)](../../../docs/framework/configuring-apps/file-schema/network/requestcaching-element-network-settings.md)
+ [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)

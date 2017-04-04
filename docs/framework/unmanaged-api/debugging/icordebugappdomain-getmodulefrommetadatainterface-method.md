@@ -47,7 +47,7 @@ HRESULT GetModuleFromMetaDataInterface (
  [out] A pointer to the address of an ICorDebugModule object that represents the module corresponding to the given metadata interface.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

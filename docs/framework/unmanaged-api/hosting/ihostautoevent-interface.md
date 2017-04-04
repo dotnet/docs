@@ -37,7 +37,7 @@ Provides a representation of the host's implementation of an auto-reset event.
 |[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-wait-method.md)|Causes the current `IHostAutoEvent` instance to wait until the event is owned or a specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

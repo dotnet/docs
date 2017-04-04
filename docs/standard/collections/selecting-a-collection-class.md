@@ -35,9 +35,9 @@ Be sure to choose your collection class carefully. Using the wrong type can rest
   
 -   Do you need to access the elements in a certain order, such as FIFO, LIFO, or random?  
   
-    -   The <xref:System.Collections.Queue> class and the <xref:System.Collections.Generic.Queue%601> or <xref:System.Collections.Concurrent.ConcurrentQueue%601> generic class offer FIFO access. For more information, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md).  
+    -   The <xref:System.Collections.Queue> class and the <xref:System.Collections.Generic.Queue%601> or <xref:System.Collections.Concurrent.ConcurrentQueue%601> generic class offer FIFO access. For more information, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).  
   
-    -   The <xref:System.Collections.Stack> class and the <xref:System.Collections.Generic.Stack%601> or <xref:System.Collections.Concurrent.ConcurrentStack%601> generic class offer LIFO access. For more information, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md).  
+    -   The <xref:System.Collections.Stack> class and the <xref:System.Collections.Generic.Stack%601> or <xref:System.Collections.Concurrent.ConcurrentStack%601> generic class offer LIFO access. For more information, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).  
   
     -   The <xref:System.Collections.Generic.LinkedList%601> generic class allows sequential access either from the head to the tail, or from the tail to the head.  
   
@@ -69,7 +69,7 @@ Be sure to choose your collection class carefully. Using the wrong type can rest
   
 -   Do you need fast searches and retrieval of information?  
   
-    -   <xref:System.Collections.Specialized.ListDictionary> is faster than <xref:System.Collections.Hashtable> for small collections (10 items or fewer). The <xref:System.Collections.Generic.Dictionary%602> generic class provides faster lookup than the <xref:System.Collections.Generic.SortedDictionary%602> generic class. The multi-threaded implementation is <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> provides fast multi-threaded insertion for unordered data. For more information about both multi-threaded types, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md).  
+    -   <xref:System.Collections.Specialized.ListDictionary> is faster than <xref:System.Collections.Hashtable> for small collections (10 items or fewer). The <xref:System.Collections.Generic.Dictionary%602> generic class provides faster lookup than the <xref:System.Collections.Generic.SortedDictionary%602> generic class. The multi-threaded implementation is <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> provides fast multi-threaded insertion for unordered data. For more information about both multi-threaded types, see [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).  
   
 -   Do you need collections that accept only strings?  
   
@@ -86,4 +86,4 @@ Be sure to choose your collection class carefully. Using the wrong type can rest
  <xref:System.Collections>   
  <xref:System.Collections.Specialized>   
  <xref:System.Collections.Generic>   
- [Thread-Safe Collections](../../../docs/standard/collections/threadsafe/index.md)
+ [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md)

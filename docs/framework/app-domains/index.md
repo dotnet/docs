@@ -29,7 +29,7 @@ Hosts such as Microsoft Internet Explorer, ASP.NET, and the Windows shell load t
  [Application Domains and Assemblies How-to Topics](../../../docs/framework/app-domains/application-domains-and-assemblies-how-to-topics.md)  
  Provides links to all How-to topics found in the conceptual documentation for programming with application domains and assemblies.  
   
- [Using Application Domains](../../../docs/framework/app-domains/using-application-domains.md)  
+ [Using Application Domains](../../../docs/framework/app-domains/use.md)  
  Provides examples of creating, configuring, and using application domains.  
   
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  

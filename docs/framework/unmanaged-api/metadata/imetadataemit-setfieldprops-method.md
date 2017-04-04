@@ -59,7 +59,7 @@ HRESULT SetFieldProps (
  [in] The size, in Unicode characters, of `pValue`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

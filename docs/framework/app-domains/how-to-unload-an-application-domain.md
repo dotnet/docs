@@ -34,4 +34,4 @@ When you have finished using an application domain, unload it using the <xref:Sy
 ## See Also  
  [Programming with Application Domains](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131)   
  [How to: Create an Application Domain](../../../docs/framework/app-domains/how-to-create-an-application-domain.md)   
- [Using Application Domains](../../../docs/framework/app-domains/using-application-domains.md)
+ [Using Application Domains](../../../docs/framework/app-domains/use.md)

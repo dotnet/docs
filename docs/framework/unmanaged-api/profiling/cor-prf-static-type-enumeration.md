@@ -52,7 +52,7 @@ typedef enum {
 |`COR_PRF_FIELD_RVA_STATIC`|The field is relative virtual address (RVA)-static.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

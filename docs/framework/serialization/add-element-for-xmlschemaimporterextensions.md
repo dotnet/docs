@@ -22,7 +22,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # &lt;add&gt; Element for &lt;xmlSchemaImporterExtensions&gt;
-Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configuring-apps/file-schema/index.md).  
+Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
 \<system.xml.serialization>  

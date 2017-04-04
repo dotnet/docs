@@ -54,7 +54,7 @@ HRESULT RemotingClientInvocationStarted();
 -   The profiler does not receive accurate notifications for asynchronous remoting events.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

@@ -38,7 +38,7 @@ void __stdcall SetFakeActiveWindow(
  A window handle.  
   
 ## Requirements  
- **Platforms:** See [.NET Framework System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [.NET Framework System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **DLL:** PresentationHost_v0400.dll  
   

@@ -54,7 +54,7 @@ HRESULT FindExportedTypeByName (
  The `FindExportedTypeByName` method uses the standard rules employed by the common language runtime for resolving references.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

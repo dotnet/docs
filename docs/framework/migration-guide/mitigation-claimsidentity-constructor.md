@@ -23,7 +23,7 @@ Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], there 
  Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], the <xref:System.Security.Claims.ClaimsIdentity.Actor%2A?displayProperty=fullName> property of the new <xref:System.Security.Claims.ClaimsIdentity> object is not equal to the <xref:System.Security.Claims.ClaimsIdentity.Actor%2A?displayProperty=fullName> property of the constructor's <xref:System.Security.Principal.IIdentity> argument. In the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier versions, it is equal.  
   
 ## Mitigation  
- If this behavior is undesirable, you can restore the previous behavior by setting the `Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity` switch in your application configuration file to `true`. This requires that you add the following to  the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your web.config file:  
+ If this behavior is undesirable, you can restore the previous behavior by setting the `Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity` switch in your application configuration file to `true`. This requires that you add the following to  the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your web.config file:  
   
 ```  
   

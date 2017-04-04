@@ -26,7 +26,7 @@ manager: "wpickett"
 Creating forms that are ready to be localized greatly speeds development for international markets. You can use the <xref:System.Windows.Forms.TableLayoutPanel> control to implement layouts that respond gracefully as controls resize due to changes in their <xref:System.Windows.Forms.Control.Text%2A> property values.  
   
 ## Example  
- This form demonstrates how to create a layout that proportionally adjusts when you translate displayed string values into other languages. This process of translation is called *localization*. For more information, see [Localization](../../../../docs/standard/globalization-and-localization/localization.md).  
+ This form demonstrates how to create a layout that proportionally adjusts when you translate displayed string values into other languages. This process of translation is called *localization*. For more information, see [Localization](../../../../docs/standard/globalization-localization/localization.md).  
   
  There is extensive support for this task in Visual Studio.  See also [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](http://msdn.microsoft.com/library/7k9fa71y\(v=vs.110\)).  
   
@@ -61,4 +61,4 @@ Creating forms that are ready to be localized greatly speeds development for int
 ## See Also  
  <xref:System.Windows.Forms.TableLayoutPanel>   
  <xref:System.Windows.Forms.FlowLayoutPanel>   
- [Localization](../../../../docs/standard/globalization-and-localization/localization.md)
+ [Localization](../../../../docs/standard/globalization-localization/localization.md)

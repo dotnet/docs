@@ -42,7 +42,7 @@ public class CalculatorService : ICalculator
 }  
 ```  
   
- The service exposes one endpoint for communicating with the service and one endpoint for exposing the service's WSDL document using the WS-MetadataExchange protocol, defined by using the configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) element, which defaults to using message security. This sample sets the `clientCredentialType` attribute to Certificate to require client authentication.  
+ The service exposes one endpoint for communicating with the service and one endpoint for exposing the service's WSDL document using the WS-MetadataExchange protocol, defined by using the configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element, which defaults to using message security. This sample sets the `clientCredentialType` attribute to Certificate to require client authentication.  
   
 ```  
 <system.serviceModel>  
@@ -94,7 +94,7 @@ public class CalculatorService : ICalculator
   
 ```  
   
- The behavior specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecredentials.md) element.  
+ The behavior specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) element.  
   
 ```  
 <!--For debugging purposes, set the includeExceptionDetailInFaults attribute to true.-->  
@@ -324,7 +324,7 @@ Press <ENTER> to terminate client.
   
 5.  On the server, run **setup.bat service** in a Visual Studio command prompt with administrator privileges. Running **setup.bat** with the **service** argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
-6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
+6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   

@@ -60,7 +60,7 @@ Applications created with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
  For an example of setting up an application to log audit events, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
   
 ### Configuration  
- You can also use configuration to specify auditing behavior by adding a [\<serviceSecurityAudit>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicesecurityaudit.md) under the [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md). You must add the element under a [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) as shown in the following code.  
+ You can also use configuration to specify auditing behavior by adding a [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) under the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md). You must add the element under a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) as shown in the following code.  
   
 ```  
 <configuration>  
@@ -110,6 +110,6 @@ Applications created with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)   
  [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)   
  [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)   
- [\<serviceSecurityAudit>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicesecurityaudit.md)   
- [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md)   
+ [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)   
+ [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)   
  [Security Model for Windows Server App Fabric](http://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

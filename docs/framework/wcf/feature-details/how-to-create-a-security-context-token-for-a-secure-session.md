@@ -31,13 +31,13 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
 -   Create a custom binding that specifies that SOAP messages are protected by a secure session that uses a stateful SCT.  
   
-    1.  Define a custom binding, by adding a [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md) to the configuration file for the service.  
+    1.  Define a custom binding, by adding a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) to the configuration file for the service.  
   
         ```  
         <customBinding>  
         ```  
   
-    2.  Add a [\<binding>](../../../../docs/framework/misc/binding.md) child element to the [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md).  
+    2.  Add a [\<binding>](../../../../docs/framework/misc/binding.md) child element to the [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
          Specify a binding name by setting the `name` attribute to a unique name within the configuration file.  
   
@@ -45,7 +45,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
         <binding name="StatefulSCTSecureSession">  
         ```  
   
-    3.  Specify the authentication mode for messages sent to and from this service by adding a [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-custombinding.md) child element to the [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md).  
+    3.  Specify the authentication mode for messages sent to and from this service by adding a [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) child element to the [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
          Specify that a secure session is used by setting the `authenticationMode` attribute to `SecureConversation`. Specify that stateful SCTs are used by setting the `requireSecurityContextCancellation` attribute to `false`.  
   
@@ -54,7 +54,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
                   requireSecurityContextCancellation="false">  
         ```  
   
-    4.  Specify how the client is authenticated while the secure session is established by adding a [\<secureConversationBootstrap>](../../../../docs/framework/configuring-apps/file-schema/wcf/secureconversationbootstrap.md) child element to the [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-custombinding.md).  
+    4.  Specify how the client is authenticated while the secure session is established by adding a [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) child element to the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md).  
   
          Specify how the client is authenticated by setting the `authenticationMode` attribute.  
   
@@ -62,13 +62,13 @@ By using a stateful security context token (SCT) in a secure session, the sessio
         <secureConversationBootstrap authenticationMode="UserNameForCertificate" />  
         ```  
   
-    5.  Specify the message encoding by adding an encoding element, such as [\<textMessageEncoding>](../../../../docs/framework/configuring-apps/file-schema/wcf/textmessageencoding.md).  
+    5.  Specify the message encoding by adding an encoding element, such as [\<textMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/textmessageencoding.md).  
   
         ```  
         <textMessageEncoding />  
         ```  
   
-    6.  Specify the transport by adding a transport element, such as the [\<httpTransport>](../../../../docs/framework/configuring-apps/file-schema/wcf/httptransport.md).  
+    6.  Specify the transport by adding a transport element, such as the [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md).  
   
         ```  
         <httpTransport />  
@@ -114,4 +114,4 @@ By using a stateful security context token (SCT) in a secure session, the sessio
 ```  
   
 ## See Also  
- [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md)
+ [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

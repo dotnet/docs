@@ -169,7 +169,7 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
     <%@Assembly Name="MyServiceAssembly" %>   
     ```  
   
-16. Add a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration for the service to its Web.config file. Configure the service to use the [\<basicHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md), to use the service file with the .asmx extension created in the preceding steps, and to not generate WSDL for itself, but to use the WSDL from step two. Also configure it to use ASP.NET compatibility mode if necessary.  
+16. Add a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration for the service to its Web.config file. Configure the service to use the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), to use the service file with the .asmx extension created in the preceding steps, and to not generate WSDL for itself, but to use the WSDL from step two. Also configure it to use ASP.NET compatibility mode if necessary.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  

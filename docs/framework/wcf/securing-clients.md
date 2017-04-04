@@ -44,7 +44,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 2.  Specify an actual client credential. The actual client credential is called a *client credential value* to distinguish it from the type. For example, if the client credential type specifies a certificate, you must supply an X.509 certificate that is issued by a certification authority the service trusts.  
   
 ### Determining the Client Credential Type  
- If you have the configuration file the Svcutil.exe tool generated, examine the [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) section to determine what client credential type is required. Within the section are binding elements that specify the security requirements. Specifically, examine the \<security> Element of each binding. That element includes the `mode` attribute, which you can set to one of three possible values (`Message`, `Transport`, or `TransportWithMessageCredential`). The value of the attribute determines the mode, and the mode determines which of the child elements is significant.  
+ If you have the configuration file the Svcutil.exe tool generated, examine the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section to determine what client credential type is required. Within the section are binding elements that specify the security requirements. Specifically, examine the \<security> Element of each binding. That element includes the `mode` attribute, which you can set to one of three possible values (`Message`, `Transport`, or `TransportWithMessageCredential`). The value of the attribute determines the mode, and the mode determines which of the child elements is significant.  
   
  The `<security>` element can contain either a `<transport>` or `<message>` element, or both. The significant element is the one that matches the security mode. For example, the following code specifies that the security mode is `"Message"`, and the client credential type for the `<message>` element is `"Certificate"`. In this case, the `<transport>` element can be ignored. However, the `<message>` element specifies that an X.509 certificate must be supplied.  
   
@@ -79,10 +79,10 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
   
 -   By programming it in your client code (using the `SetCertificate` method).  
   
- By adding a [\<behaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) section of the configuration file for the client and using the `clientCredentials` element (shown below).  
+ By adding a [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) section of the configuration file for the client and using the `clientCredentials` element (shown below).  
   
 #### Setting a \<clientCredentials> Value in Code  
- To set a [\<clientCredentials>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md) value in code, you must access the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class. The property returns a <xref:System.ServiceModel.Description.ClientCredentials> object that allows access to various credential types, as shown in the following table.  
+ To set a [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) value in code, you must access the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class. The property returns a <xref:System.ServiceModel.Description.ClientCredentials> object that allows access to various credential types, as shown in the following table.  
   
 |ClientCredential Property|Description|Notes|  
 |-------------------------------|-----------------|-----------|  
@@ -95,7 +95,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 |<xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>|Returns a <xref:System.ServiceModel.Security.WindowsClientCredential>|Represents a Windows client credential (a Kerberos credential). The properties of the class are read-only.|  
   
 #### Setting a \<clientCredentials> Value in Configuration  
- Credential values are specified by using an endpoint behavior as child elements of the [\<clientCredentials>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md) element. The element used depends on the client credential type. For example, the following example shows the configuration to set an X.509 certificate using the <[\<clientCertificate>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
+ Credential values are specified by using an endpoint behavior as child elements of the [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element. The element used depends on the client credential type. For example, the following example shows the configuration to set an X.509 certificate using the <[\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
   
 ```  
 <configuration>  
@@ -113,7 +113,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 </configuration>  
 ```  
   
- To set the client credential in configuration, add an [\<endpointBehaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/endpointbehaviors.md) element to the configuration file. Additionally, the added behavior element must be linked to the service's endpoint using the `behaviorConfiguration` attribute of the [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following example. The value of the `behaviorConfiguration` attribute must match the value of the behavior `name` attribute.  
+ To set the client credential in configuration, add an [\<endpointBehaviors>](../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element to the configuration file. Additionally, the added behavior element must be linked to the service's endpoint using the `behaviorConfiguration` attribute of the [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following example. The value of the `behaviorConfiguration` attribute must match the value of the behavior `name` attribute.  
   
  `<configuration>`  
   
@@ -164,7 +164,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
  <xref:System.ServiceModel.Description.ClientCredentials>   
  <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A>   
  <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>   
- [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md)   
+ [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)   
  [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)   
  [Securing Services](../../../docs/framework/wcf/securing-services.md)   
  [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)   

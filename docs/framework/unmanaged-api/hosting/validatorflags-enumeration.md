@@ -52,7 +52,7 @@ enum ValidatorFlags {
 |`VALIDATOR_SHOW_SOURCE_LINES`|Specifies that validation error messages should include the lines of source code that raise validation errors. This field value is not valid in the .NET Framework version 2.0.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   

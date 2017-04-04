@@ -27,10 +27,10 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Data and Modeling](../../docs/framework/data/index.md)  
  Provides information about how to access data using ADO.NET, Language Integrated Query (LINQ), WCF Data Services, and XML.  
   
- [Client Applications](../../docs/framework/developing-client-applications.md)  
+ [Client Applications](../../docs/framework/develop-client-apps.md)  
  Explains how to create Windows-based apps by using Windows Presentation Foundation (WPF) or Windows Forms.  
   
- [Web Applications with ASP.NET](../../docs/framework/developing-web-apps-with-aspnet.md)  
+ [Web Applications with ASP.NET](../../docs/framework/develop-web-apps-with-aspnet.md)  
  Provides links to information about using ASP.NET to build enterprise-class web apps with a minimum of coding.  
   
  [Service-Oriented Applications with WCF](../../docs/framework/wcf/developing-service-oriented-applications-with-wcf.md)  
@@ -54,7 +54,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Security](../../docs/standard/security/index.md)  
  Provides information about the classes and services in the .NET Framework that facilitate secure app development.  
   
- [Debugging, Tracing, and Profiling](../../docs/framework/debugging-tracing-profiling/index.md)  
+ [Debugging, Tracing, and Profiling](../../docs/framework/debug-trace-profile/index.md)  
  Explains how to test, optimize, and profile .NET Framework apps and the app environment. This section includes information for administrators as well as developers.  
   
  [Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
@@ -77,7 +77,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Supplies syntax, code examples, and usage information for each class that is contained in the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] namespaces.  
   
 ## Related Sections  
- [Getting Started](../../docs/framework/getting-started/index.md)  
+ [Getting Started](../../docs/framework/get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   
  [What's New](../../docs/framework/whats-new/whats-new.md)  

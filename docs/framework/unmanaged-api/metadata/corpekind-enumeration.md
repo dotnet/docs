@@ -59,7 +59,7 @@ typedef enum CorPEKind {
  These values can be used in bitwise combinations.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

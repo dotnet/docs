@@ -36,7 +36,7 @@ Provides methods for obtaining information about the state of the debugging serv
 |[IsDebuggerAttached Method](../../../../docs/framework/unmanaged-api/hosting/idebuggerinfo-isdebuggerattached-method.md)|Gets a value that indicates whether a managed debugger is attached to this process.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

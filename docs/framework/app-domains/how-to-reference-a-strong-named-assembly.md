@@ -71,4 +71,4 @@ csc /t:library myAssembly.cs /reference:myLibAssembly.dll
  **sn -tp \<** *assembly* **>**  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md)
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

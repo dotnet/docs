@@ -51,7 +51,7 @@ typedef struct _ModuleBindInfo {
  `ModuleBindInfo` is passed as a parameter to `IHostAssemblyStore::ProvideModule`. The host supplies the unique identifier `dwAppDomainId` to the common language runtime (CLR). After a call to the [IHostAssemblyStore::ProvideAssembly](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-provideassembly-method.md) method returns, the runtime uses the identifier to determine whether the contents of the `IStream` have been mapped. If so, the runtime loads the existing copy rather than remapping the stream. The runtime also uses this identifier as a lookup key for streams that are returned from calls to the `IHostAssemblyStore::ProvideAssembly` method. Therefore, the identifier must be unique for module requests as well as for assembly requests.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   

@@ -150,4 +150,4 @@ winres /?
  <xref:System.Resources.ResourceWriter>   
  [Tools](../../../docs/framework/tools/index.md)   
  [Resources in Desktop Apps](../../../docs/framework/resources/index.md)   
- [Globalization and Localization](../../../docs/standard/globalization-and-localization/index.md)
+ [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)

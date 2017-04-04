@@ -64,7 +64,7 @@ HRESULT GetStartupNotificationEvent
  The event is signaled before any managed code is executed by the CLR that signaled the event.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   

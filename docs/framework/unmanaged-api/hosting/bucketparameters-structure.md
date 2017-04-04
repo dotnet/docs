@@ -48,7 +48,7 @@ typedef struct _BucketParameters {
 |`pszParams`|An array of strings, each of which specifies a parameter for the current exception associated with the event.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   

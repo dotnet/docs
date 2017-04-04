@@ -51,7 +51,7 @@ HRESULT RudeAbort ();
  A host calls `RudeAbort` to abort a task immediately. Finalizers and exception handling routines are not guaranteed to be executed.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

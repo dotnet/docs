@@ -47,15 +47,15 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider (in 
   
 ### To configure the service to use the role provider  
   
-1.  In the Web.config file, add a [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element.  
+1.  In the Web.config file, add a [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element.  
   
-2.  Add a [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element to the <`system.ServiceModel`> element.  
+2.  Add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element to the <`system.ServiceModel`> element.  
   
-3.  Add a [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.  
+3.  Add a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.  
   
-4.  Add a [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element and set the `name` attribute to an appropriate value.  
+4.  Add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element and set the `name` attribute to an appropriate value.  
   
-5.  Add a [\<serviceAuthorization>](../../../../docs/framework/configuring-apps/file-schema/wcf/serviceauthorization-element.md) to the <`behavior`> element.  
+5.  Add a [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to the <`behavior`> element.  
   
 6.  Set the `principalPermissionMode` attribute to `UseAspNetRoles`.  
   

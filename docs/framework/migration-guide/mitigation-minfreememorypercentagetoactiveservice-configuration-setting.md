@@ -16,10 +16,10 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Mitigation: minFreeMemoryPercentageToActiveService Configuration Setting
-In the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], an exception is thrown if the available memory on the web server is less than the percentage specified by the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md) configuration setting. In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], this setting was ignored.  
+In the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], an exception is thrown if the available memory on the web server is less than the percentage specified by the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) configuration setting. In the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], this setting was ignored.  
   
 ## Impact  
- In most cases, the impact of observing the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md) setting is desirable: It improves system stability by preventing the <xref:System.OutOfMemoryException> exceptions that can occur when a Windows Communication Foundation (WCF) service is started on a system that has constrained memory.  
+ In most cases, the impact of observing the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) setting is desirable: It improves system stability by preventing the <xref:System.OutOfMemoryException> exceptions that can occur when a Windows Communication Foundation (WCF) service is started on a system that has constrained memory.  
   
  However, in some cases, a service that previously started successfully may be unable to start. In that case, a detailed error message appears:  
   
@@ -28,7 +28,7 @@ Memory gates checking failed because the free memory (nnnn bytes) is less than n
 ```  
   
 ## Mitigation  
- To revert to the previous behavior where the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md) setting was ignored, modify the web.config file as follows:  
+ To revert to the previous behavior where the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) setting was ignored, modify the web.config file as follows:  
   
 ```  
   

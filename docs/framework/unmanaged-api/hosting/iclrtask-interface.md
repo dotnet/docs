@@ -51,7 +51,7 @@ Provides methods that allow the host to make requests of the common language run
  A task typically terminates at the end of code execution. At that time, the host calls `ICLRTask::ExitTask` to destroy the associated `ICLRTask`. However, tasks can also be recycled by using a call to `ICLRTask::Reset`, which allows the `ICLRTask` instance to be used again. This approach prevents the overhead of repeatedly creating and destroying instances.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

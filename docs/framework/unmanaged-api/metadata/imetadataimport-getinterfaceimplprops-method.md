@@ -51,7 +51,7 @@ HRESULT GetInterfaceImplProps (
  [out] The metadata token representing the interface that defines the implemented method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

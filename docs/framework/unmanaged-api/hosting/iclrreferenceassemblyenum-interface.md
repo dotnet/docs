@@ -36,7 +36,7 @@ Provides methods that allow the host to manipulate the set of assemblies referen
 |[Get Method](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-get-method.md)|Gets the assembly identity at the supplied index.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

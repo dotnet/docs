@@ -39,7 +39,7 @@ Provides methods for obtaining information about the garbage collection system a
 |[SetGCStartupLimitsEx Method](../../../../docs/framework/unmanaged-api/hosting/igchost2-setgcstartuplimitsex-method.md)|Sets the segment size and the maximum size for generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

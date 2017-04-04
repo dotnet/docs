@@ -34,11 +34,11 @@ After setting a security mode (either transport or message), you have the option
   
 ### To set the client credential type in configuration  
   
-1.  Add a [\<system.serviceModel>](../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element to the configuration file.  
+1.  Add a [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element to the configuration file.  
   
-2.  As a child element, add a [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element.  
+2.  As a child element, add a [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
   
-3.  Add an appropriate binding. This example uses the [\<wsHttpBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) element.  
+3.  Add an appropriate binding. This example uses the [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element.  
   
 4.  Add a [\<binding>](../../../docs/framework/misc/binding.md) element and set the `name` attribute to an appropriate value. This example uses the name "SecureBinding".  
   

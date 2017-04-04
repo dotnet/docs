@@ -33,7 +33,7 @@ Provides support for unmanaged methods that require the common language runtime 
  `ICorDebugRuntimeUnwindableFrame` is a specialized version of the ICorDebugFrame interface. It is used by unmanaged methods that require the runtime to unwind a frame on the current stack. Existing unwinding conventions do not work, because they do not use JIT-compiled code. When the debugger sees an unwindable frame, it should use the [ICorDebugStackWalk::Next](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-next-method.md) method to unwind it, but it should perform inspection itself. When the debugger receives an `ICorDebugRuntimeUnwindableFrame`, it can call the [ICorDebugStackWalk::GetContext](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-getcontext-method.md) method to retrieve the context of the frame.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

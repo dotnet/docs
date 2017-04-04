@@ -66,7 +66,7 @@ HRESULT FindMethod (
  `FindMethod` finds only methods that were defined directly in the class or interface; it does not find inherited methods.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

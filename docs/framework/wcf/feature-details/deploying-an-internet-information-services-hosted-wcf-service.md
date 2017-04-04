@@ -49,13 +49,13 @@ Developing and deploying a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
  Note that [!INCLUDE[iis601](../../../../includes/iis601-md.md)] and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this property, see the [PeriodicRestartTime](http://go.microsoft.com/fwlink/?LinkId=109968).  
   
 ## Create an .svc File for the WCF Service  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-specific processing directive ([@ServiceHost](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md)) that allows the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-specific processing directive ([@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.  
   
 ```  
 <% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>  
 ```  
   
- It consists of the [@ServiceHost](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.  
+ It consists of the [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.  
   
 ```  
 new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );  
@@ -63,7 +63,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
  Additional hosting configuration, such as creating a list of base addresses for the service can also be done. You can also use a custom <xref:System.ServiceModel.Activation.ServiceHostFactory> to extend the directive for use with custom hosting solutions. The IIS applications that host [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services are not responsible for managing the creation and lifetime of <xref:System.ServiceModel.ServiceHost> instances. The managed [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] hosting infrastructure creates the necessary <xref:System.ServiceModel.ServiceHost> instance dynamically when the first request is received for the .svc file. The instance is not released until either it is closed explicitly by code or when the application is recycled.  
   
- [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the syntax for .svc files, see [@ServiceHost](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md).  
+ [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the syntax for .svc files, see [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md).  
   
 ## Deploy the Service Implementation to the IIS Application  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in IIS use the same dynamic compilation model as [!INCLUDE[vstecasplong](../../../../includes/vstecasplong-md.md)]. Just as with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)], you can deploy the implementation code for IIS-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services in several ways at various locations, as follows:  
@@ -81,7 +81,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
 -   Base addresses for IIS-hosted services.  
   
--   Applications hosting [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services outside of IIS can control the base address of the services they host by passing a set of base address URIs to the <xref:System.ServiceModel.ServiceHost> constructor or by providing a [\<host>](../../../../docs/framework/configuring-apps/file-schema/wcf/host.md) element in the service’s configuration. Services hosted in IIS do not have the ability to control their base address; the base address of an IIS-hosted service is the address of its .svc file.  
+-   Applications hosting [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services outside of IIS can control the base address of the services they host by passing a set of base address URIs to the <xref:System.ServiceModel.ServiceHost> constructor or by providing a [\<host>](../../../../docs/framework/configure-apps/file-schema/wcf/host.md) element in the service’s configuration. Services hosted in IIS do not have the ability to control their base address; the base address of an IIS-hosted service is the address of its .svc file.  
   
 ### Endpoint Addresses for IIS-Hosted Services  
  When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is http://localhost/Application1/MyService.svc with the following endpoint configuration.  

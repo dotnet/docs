@@ -58,7 +58,7 @@ HRESULT SetMaxThreads (
  A host is not required to allow the CLR to configure the size of the thread pool. Some hosts might want exclusive control over the thread pool, for reasons such as implementation, performance, or scalability. In this case, a host should return an HRESULT value of E_NOTIMPL.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

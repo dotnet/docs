@@ -18,7 +18,7 @@ manager: "erikre"
 # How to: Add an ASP.NET AJAX Endpoint Without Using Configuration
 [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] allows you to create a service that exposes an ASP.NET AJAX-enabled endpoint that can be called from JavaScript on a client Web site. To create such an endpoint, you can either use a configuration file, as with all other WCF endpoints, or use a method that does not require any configuration elements. This topic demonstrates the second approach.  
   
- To create services with ASP.NET AJAX endpoints without configuration, the services must be hosted by Internet Information Services (IIS). To activate an ASP.NET AJAX endpoint using this approach, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> as the Factory parameter in the [@ServiceHost](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file. This custom factory is the component that automatically configures an ASP.NET AJAX endpoint so that it can be called from JavaScript on a client Web site.  
+ To create services with ASP.NET AJAX endpoints without configuration, the services must be hosted by Internet Information Services (IIS). To activate an ASP.NET AJAX endpoint using this approach, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> as the Factory parameter in the [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file. This custom factory is the component that automatically configures an ASP.NET AJAX endpoint so that it can be called from JavaScript on a client Web site.  
   
  For a working example, see the [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md).  
   
@@ -65,7 +65,7 @@ manager: "erikre"
   
 ### To host the service in Internet Information Services without configuration  
   
-1.  Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [@ServiceHost](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [@ServiceHost](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
+1.  Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
   
     ```  
     <%@ServiceHost   
@@ -93,7 +93,7 @@ manager: "erikre"
   
  You cannot use configuration to modify settings on the automatically-configured endpoint. If any setting (such as a reader quota) must be modified, you must not use the configuration-free approach by removing the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> from the .svc file and creating a configuration entry for the endpoint.  
   
- If your service requires ASP.NET Compatibility Mode - for example, if it uses the <xref:System.Web.HttpContext> class or ASP.NET authorization mechanisms - a configuration file is still required to turn on this mode. The configuration element required is the [\<serviceHostingEnvironment>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md) element, which must be added as follows.  
+ If your service requires ASP.NET Compatibility Mode - for example, if it uses the <xref:System.Web.HttpContext> class or ASP.NET authorization mechanisms - a configuration file is still required to turn on this mode. The configuration element required is the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) element, which must be added as follows.  
   
  `<system.serviceModel>`  
   

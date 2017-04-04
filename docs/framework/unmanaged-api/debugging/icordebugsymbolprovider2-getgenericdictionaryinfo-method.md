@@ -80,7 +80,7 @@ Heap Size = Stream.Length – (Directory Size + 4)
  The inclusion of the length for each heap element enables simple sorting of the directory section without affecting the heap.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -58,7 +58,7 @@ HRESULT StepComplete (
  The stepper may be used to continue stepping if desired, unless the debugging is terminated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -79,7 +79,7 @@ HRESULT EvaluatePolicy (
  The `EvaluatePolicy` method allows the host to influence binding policy to maintain host-specific assembly versioning requirements. The policy engine itself remains inside the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -55,4 +55,4 @@ manager: "erikre"
  [!code-vb[ChannelFactoryBehaviors#10](../../../samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
   
 ## See Also  
- [\<behaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md)
+ [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)

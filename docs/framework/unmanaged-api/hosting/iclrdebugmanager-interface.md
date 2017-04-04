@@ -50,7 +50,7 @@ Provides methods that allow a host to associate a set of tasks with an identifie
  The grouping, and the identifiers and friendly names that the host assigns to the grouping, have no meaning for the common language runtime (CLR). The CLR merely passes the information along to the debugger.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

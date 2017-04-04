@@ -29,7 +29,7 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
  The legacy behavior for apps that target the[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier is that the runtime automatically throws a <xref:System.IO.PathTooLongException> whenever a path exceeds 260 characters.  
   
 ## Mitigation  
- For apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], you can opt out of long path support if it is not desirable by adding the following to    to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
+ For apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], you can opt out of long path support if it is not desirable by adding the following to    to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
 ```xml  
   
@@ -39,7 +39,7 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
   
 ```  
   
- For apps that target earlier versions of the .NET Framework but run on the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later., you can opt in to long path support by adding the following to    to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
+ For apps that target earlier versions of the .NET Framework but run on the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later., you can opt in to long path support by adding the following to    to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
 ```xml  
   

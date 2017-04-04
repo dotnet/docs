@@ -37,7 +37,7 @@ The Developer Command Prompt for Visual Studio automatically sets the environmen
   
  **In Windows 10**  
   
-1.  Open the **Start** menu, by pressing the Windows logo key ![Windows logo](../../../docs/framework/getting-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.  
+1.  Open the **Start** menu, by pressing the Windows logo key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.  
   
 2.  On the **Start** menu, enter `dev`. This will bring a list of installed apps that match your search pattern. If you're looking for a different command prompt, try entering a different search term such as `prompt`.  
   
@@ -45,7 +45,7 @@ The Developer Command Prompt for Visual Studio automatically sets the environmen
   
  **In Windows 8.1**  
   
-1.  Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../../../docs/framework/getting-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.  
+1.  Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.  
   
 2.  On the **Start** screen, press `CTRL + TAB` to open the **Apps** list and then enter `V`. This will bring a list that includes all installed Visual Studio command prompts.  
   
@@ -53,9 +53,9 @@ The Developer Command Prompt for Visual Studio automatically sets the environmen
   
  **In Windows 8**  
   
-1.  Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../../../docs/framework/getting-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.  
+1.  Go to the **Start** screen, by pressing the Windows logo key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard for example.  
   
-2.  On the **Start** screen, press the Windows logo key ![Windows logo](../../../docs/framework/getting-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") `+ Z`.  
+2.  On the **Start** screen, press the Windows logo key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") `+ Z`.  
   
 3.  Choose the **Apps view** icon at the bottom of the screen and then enter `V`. This will bring a list that includes all installed Visual Studio command prompts.  
   

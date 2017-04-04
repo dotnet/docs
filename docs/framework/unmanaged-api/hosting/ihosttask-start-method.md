@@ -47,7 +47,7 @@ HRESULT Start ();
  `Start` always returns an HRESULT value of S_OK, except in cases where a catastrophic failure has occurred.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

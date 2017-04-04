@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Create a Custom Reliable Session Binding with HTTPS
-This topic demonstrates the use of Secure Sockets Layer (SSL) transport security with reliable sessions. To use a reliable session over HTTPS, you must create a custom binding that uses a reliable session and the HTTPS transport. You can enable the reliable session either imperatively by using code or declaratively in the configuration file. This procedure uses the client and service configuration files to enable the reliable session and the [\<httpsTransport>](../../../../docs/framework/configuring-apps/file-schema/wcf/httpstransport.md) element.  
+This topic demonstrates the use of Secure Sockets Layer (SSL) transport security with reliable sessions. To use a reliable session over HTTPS, you must create a custom binding that uses a reliable session and the HTTPS transport. You can enable the reliable session either imperatively by using code or declaratively in the configuration file. This procedure uses the client and service configuration files to enable the reliable session and the [\<httpsTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httpstransport.md) element.  
   
  The key part of this procedure is that the `endpoint` configuration element contain a `bindingConfiguration` attribute that references a custom binding configuration named "reliableSessionOverHttps". The [\<binding>](../../../../docs/framework/misc/binding.md) configuration element can then reference this name to specify that a reliable session and the HTTPS transport are used by including `reliableSession` and `httpsTransport` elements.  
   

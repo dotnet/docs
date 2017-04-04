@@ -50,7 +50,7 @@ HRESULT FindManifestResourceByName (
  The `FindManifestResourceByName` method uses the standard rules employed by the common language runtime for resolving references.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

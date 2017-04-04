@@ -36,7 +36,7 @@ Provides a method that gets information about the mapping of metadata from an on
 |[GetFileMapping Method](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md)|Gets the memory region of the mapped file, and the kind of mapping.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

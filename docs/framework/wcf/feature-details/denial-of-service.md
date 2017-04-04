@@ -65,7 +65,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  The impact is that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services may fail to open on domains with autoenrollment. This occurs because the default service X.509 credential search criteria might be ambiguous because multiple certificates with the machine's fully qualified Domain Name System (DNS) name exist. One certificate originates from autoenrollment; the other might be a self-issued certificate.  
   
- To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType> option, and specify the certificate by its unique thumbprint (hash).  
+ To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType> option, and specify the certificate by its unique thumbprint (hash).  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=95166).  
   

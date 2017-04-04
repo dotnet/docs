@@ -27,7 +27,7 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
 >  Starting with the .NET Framework version 2.0, the runtime will not load an assembly that was compiled with a version of the .NET Framework that has a higher version number than the currently loaded runtime. This applies to the combination of the major and minor components of the version number.  
   
 ## In This Section  
- [Creating Assemblies](../../../docs/framework/app-domains/creating-assemblies.md)  
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
  Provides an overview of single-file and multifile assemblies.  
   
  [Assembly Names](../../../docs/framework/app-domains/assembly-names.md)  
@@ -51,13 +51,13 @@ Assemblies are the building blocks of the .NET Framework; they form the fundamen
  [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)  
  Describes how to create a multifile assembly.  
   
- [Setting Assembly Attributes](../../../docs/framework/app-domains/setting-assembly-attributes.md)  
+ [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md)  
  Describes assembly attributes and how to set them.  
   
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md)  
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
  Describes how and why you sign an assembly with a strong name, and includes how-to topics.  
   
- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md)  
+ [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
  Describes how to delay-sign an assembly.  
   
  [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)  

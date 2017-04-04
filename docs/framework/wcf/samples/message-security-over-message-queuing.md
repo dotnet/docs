@@ -63,7 +63,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
 4.  On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
-5.  Edit service's service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
+5.  Edit service's service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer.  
   
 6.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
@@ -173,7 +173,7 @@ public interface IOrderProcessor
   
  Note that the security mode is set to Message and the ClientCredentialType is set to Certificate.  
   
- The service configuration includes a service behavior that specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecredentials.md).  
+ The service configuration includes a service behavior that specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
 ```  
   

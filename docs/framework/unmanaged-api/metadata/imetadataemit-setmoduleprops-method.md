@@ -43,7 +43,7 @@ HRESULT SetModuleProps (
  [in] The module name in Unicode. This is the file name only and not the full path name.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

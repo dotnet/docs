@@ -29,7 +29,7 @@ manager: "wpickett"
 Another area of concern is the potential for security holes exploited by race conditions. There are several ways in which this might happen. The subtopics that follow outline some of the major pitfalls that the developer must avoid.  
   
 ## Race Conditions in the Dispose Method  
- If a class's **Dispose** method (for more information, see [Garbage Collection](../../../docs/standard/garbagecollection/index.md)) is not synchronized, it is possible that cleanup code inside **Dispose** can be run more than once, as shown in the following example.  
+ If a class's **Dispose** method (for more information, see [Garbage Collection](../../../docs/standard/garbage-collection/index.md)) is not synchronized, it is possible that cleanup code inside **Dispose** can be run more than once, as shown in the following example.  
   
 ```vb  
 Sub Dispose()  

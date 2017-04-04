@@ -49,7 +49,7 @@ HRESULT Start ();
  It is typically not necessary to call the `Start` method, because the CLR starts automatically upon the first request to run managed code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

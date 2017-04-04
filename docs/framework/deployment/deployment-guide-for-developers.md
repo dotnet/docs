@@ -56,7 +56,7 @@ This topic provides information for developers who want to install the [!INCLUDE
   
 -   You must have administrator privileges to install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its point releases.  
   
--   The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is preinstalled on Windows 10 Creators Update and is available only on that version of Windows. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/getting-started/system-requirements.md).  
+-   The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included in [!INCLUDE[win8](../../../includes/win8-md.md)] and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. The .NET Framework 4.5.2 isn't included in any operating systems. The [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included in Windows 10, the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] is included in Windows 10 November Update, and the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] is included in Windows 10 Anniversary Update.  The .NET Framework 4.7 is preinstalled on Windows 10 Creators Update and is available only on that version of Windows. For a full list of hardware and software requirements, see [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
 -   Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](../../../docs/framework/deployment/reducing-system-restarts.md).  
   
@@ -225,7 +225,7 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 ### Chaining by Using a Custom UI  
  If you have a custom setup package, you may want to silently launch and track the .NET Framework setup while showing your own view of the setup progress. If this is the case, make sure that your code covers the following:  
   
--   Check for [.NET Framework hardware and software requirements](../../../docs/framework/getting-started/system-requirements.md).  
+-   Check for [.NET Framework hardware and software requirements](../../../docs/framework/get-started/system-requirements.md).  
   
 -   [Detect](#detect_net) whether the correct version of the .NET Framework is already installed on the user’s computer.  
   
@@ -402,8 +402,8 @@ NDP451-KB2858728-x86-x64-AllOS-JPN.exe/q /norestart /ChainingPackage <ProductNam
   
 ## See Also  
  [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)   
- [System Requirements](../../../docs/framework/getting-started/system-requirements.md)   
- [Installation Guide](../../../docs/framework/getting-started/install-the-net-framework.md)   
- [Troubleshooting](../../../docs/framework/getting-started/troubleshooting-blocked-installations-and-uninstallations.md)   
+ [System Requirements](../../../docs/framework/get-started/system-requirements.md)   
+ [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
+ [Troubleshooting](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)   
  [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)   
  [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

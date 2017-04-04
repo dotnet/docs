@@ -97,7 +97,7 @@ The amount of time that is required for a WPF application to start can vary grea
 </configuration>  
 ```  
   
- For more information, see [\<generatePublisherEvidence> Element](../../../../docs/framework/configuring-apps/file-schema/runtime/generatepublisherevidence-element.md).  
+ For more information, see [\<generatePublisherEvidence> Element](../../../../docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md).  
   
 ## Compare Performance on Windows Vista  
  The memory manager in Windows Vista has a technology called SuperFetch. SuperFetch analyzes memory usage patterns over time to determine the optimal memory content for a specific user. It works continuously to maintain that content at all times.  
@@ -135,4 +135,4 @@ The amount of time that is required for a WPF application to start can vary grea
  <xref:System.Resources.ResourceManager>   
  [Add a Splash Screen to a WPF Application](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)   
  [Ngen.exe (Native Image Generator)](../../../../docs/framework/tools/ngen-exe-native-image-generator.md)   
- [\<generatePublisherEvidence> Element](../../../../docs/framework/configuring-apps/file-schema/runtime/generatepublisherevidence-element.md)
+ [\<generatePublisherEvidence> Element](../../../../docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md)

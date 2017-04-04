@@ -79,7 +79,7 @@ HRESULT GetMetaData(
  If `wszImagePath` contains a full path for a module from a dump, it specifies the path from the computer where the dump was collected. The file may not exist at this location, or an incorrect file with the same name may be stored on the path.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -38,7 +38,7 @@ Provides methods that notify the host of events in the garbage collection mechan
 |[ThreadIsBlockingForSuspension Method](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-threadisblockingforsuspension-method.md)|Notifies the host that the thread from which the method call was made is about to block for a garbage collection.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

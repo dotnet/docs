@@ -41,7 +41,7 @@ As with all Microsoft XNA projects, the Game1 class derives from the [Microsoft.
   
 ## See Also  
  [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md)   
- [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/using-manipulations-and-inertia-in-an-xna-application.md)   
+ [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)   
  [Creating the GamePiece Class](../../../docs/framework/common-client-technologies/creating-the-gamepiece-class.md)   
  [Creating the GamePieceCollection Class](../../../docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md)   
  [Full Code Listings](../../../docs/framework/common-client-technologies/full-code-listings.md)

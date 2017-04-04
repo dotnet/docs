@@ -110,7 +110,7 @@ protected override void OnApplyConfiguration(string configurationName)
 </configuration>  
 ```  
   
- It can then be referenced from the [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) configuration section.  
+ It can then be referenced from the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) configuration section.  
   
 ```  
 <configuration>  

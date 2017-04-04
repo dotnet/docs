@@ -46,7 +46,7 @@ typedef struct _COR_PRF_CODE_INFO {
 |`size`|The size of the block.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  
   

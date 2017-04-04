@@ -37,7 +37,7 @@ Provides methods to validate metadata signatures.
 |[ValidatorInit Method](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-validatorinit-method.md)|Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

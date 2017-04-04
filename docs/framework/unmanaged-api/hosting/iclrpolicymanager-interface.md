@@ -41,7 +41,7 @@ Provides methods that allow the host to specify policy actions to be taken in th
 |[SetUnhandledExceptionPolicy Method](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md)|Specifies the behavior of the CLR when an unhandled exception occurs.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

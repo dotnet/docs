@@ -63,7 +63,7 @@ HRESULT GetPinvokeMap (
  [out] A pointer to a ModuleRef token that represents the unmanaged target object library.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

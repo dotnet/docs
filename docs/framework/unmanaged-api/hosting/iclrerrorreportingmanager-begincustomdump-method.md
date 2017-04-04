@@ -72,7 +72,7 @@ HRESULT BeginCustomDump (
 >  Failure to call `EndCustomDump` causes memory to leak.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

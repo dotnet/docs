@@ -53,13 +53,13 @@ typedef enum {
 |`FAIL_OrphanedLock`|A thread has failed to release a lock upon returning from an <xref:System.AppDomain> object. The host cannot set this failure to cause a thread to abort.|  
 |`FAIL_StackOverflow`|A stack overflow has occurred.|  
 |`FAIL_AccessViolation`|An attempt was made to read or write protected memory. Not supported in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].|  
-|`FAIL_CodeContract`|A code contract failure occurred. See [Code Contracts](../../../../docs/framework/debugging-tracing-profiling/code-contracts.md).|  
+|`FAIL_CodeContract`|A code contract failure occurred. See [Code Contracts](../../../../docs/framework/debug-trace-profile/code-contracts.md).|  
   
 ## Remarks  
  See the [ICLRPolicyManager::SetActionOnFailure](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setactiononfailure-method.md) method for a list of [EPolicyAction](../../../../docs/framework/unmanaged-api/hosting/epolicyaction-enumeration.md) values the host can use to specify the policy actions for failure conditions. For more information about critical and non-critical regions of code, see [EClrOperation](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

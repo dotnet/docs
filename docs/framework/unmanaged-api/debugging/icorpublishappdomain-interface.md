@@ -37,7 +37,7 @@ Represents and provides information about an application domain.
 |[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-getname-method.md)|Gets the name of the application domain referenced by this `ICorPublishAppDomain`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   

@@ -66,7 +66,7 @@ typedef enum _tagAssemblyComparisonResult {
 |`ACR_Unknown`|Indicates that the reason for non-equivalency is not known.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

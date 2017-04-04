@@ -59,7 +59,7 @@ HRESULT Wait (
 |HOST_E_DEADLOCK|The host detected a deadlock during the wait interval, and chose the current `IHostSemaphore` instance as a deadlock victim.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

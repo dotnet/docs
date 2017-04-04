@@ -73,4 +73,4 @@ Follow these general guidelines to create managed applications or components des
   
 ## See Also  
  [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)   
- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configuring-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+ [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

@@ -75,7 +75,7 @@ HRESULT ProvideAssembly (
  The identity value returned for `pAssemblyId` is specified by the host. Identifiers must be unique within the lifetime of a process. The CLR uses this value as a unique identifier for the stream. It checks each value against the values for `pAssemblyId` returned by other calls to `ProvideAssembly`. If the host returns the same `pAssemblyId` value for another `IStream`, the CLR checks whether the contents of that stream have already been mapped. If so, the runtime loads the existing copy of the image instead of mapping a new one.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

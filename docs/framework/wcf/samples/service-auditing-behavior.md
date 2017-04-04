@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Service Auditing Behavior
-This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service and client have been configured using the [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md). The `mode` attribute of the [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-custombinding.md) has been set to `Message` and `clientCredentialType` has been set to `Windows`. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
+This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service and client have been configured using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) has been set to `Message` and `clientCredentialType` has been set to `Windows`. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  

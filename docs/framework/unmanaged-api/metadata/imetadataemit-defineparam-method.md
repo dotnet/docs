@@ -74,7 +74,7 @@ HRESULT DefineParam (
  The sequence values in `ulParamSeq` begin with 1 for parameters. A return value has a sequence number of 0.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

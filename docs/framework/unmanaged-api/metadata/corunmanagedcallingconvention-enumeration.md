@@ -64,7 +64,7 @@ typedef enum CorUnmanagedCallingConvention {
  The CLR does not support the "fast" calling convention in the .NET Framework version 1.0.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

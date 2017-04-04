@@ -44,7 +44,7 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
     </securityTokenHandlers>  
     ```  
   
--   Derive from <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> and implement distributed caching, that is, a cache that is accessible from all computers in the farm on which the RP might run. Configure the RP to use your distributed cache by specifying the [\<sessionSecurityTokenCache>](../../../docs/framework/configuring-apps/file-schema/wif/sessionsecuritytokencache.md) element in the configuration file. You can override the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache.LoadCustomConfiguration%2A?displayProperty=fullName> method in your derived class to implement child elements of the `<sessionSecurityTokenCache>` element if they are required.  
+-   Derive from <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> and implement distributed caching, that is, a cache that is accessible from all computers in the farm on which the RP might run. Configure the RP to use your distributed cache by specifying the [\<sessionSecurityTokenCache>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/sessionsecuritytokencache.md) element in the configuration file. You can override the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache.LoadCustomConfiguration%2A?displayProperty=fullName> method in your derived class to implement child elements of the `<sessionSecurityTokenCache>` element if they are required.  
   
     ```xml  
     <caches>  
@@ -56,7 +56,7 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
   
      One way to implement distributed caching is to provide a WCF front end for your custom cache. For more information about implementing a WCF caching service, see [The WCF Caching Service](#BKMK_TheWCFCachingService). For more information about implementing a WCF client that the RP application can use to call the caching service, see [The WCF Caching Client](#BKMK_TheWCFClient).  
   
--   If your application detects replayed tokens you must follow a similar distributed caching strategy for the token replay cache by deriving from <xref:System.IdentityModel.Tokens.TokenReplayCache> and pointing to your token replay caching service in the [\<tokenReplayCache>](../../../docs/framework/configuring-apps/file-schema/wif/tokenreplaycache.md) configuration element.  
+-   If your application detects replayed tokens you must follow a similar distributed caching strategy for the token replay cache by deriving from <xref:System.IdentityModel.Tokens.TokenReplayCache> and pointing to your token replay caching service in the [\<tokenReplayCache>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaycache.md) configuration element.  
   
 > [!IMPORTANT]
 >  All of the example XML and code in this topic is taken from the [ClaimsAwareWebFarm](http://go.microsoft.com/fwlink/?LinkID=248408) (http://go.microsoft.com/fwlink/?LinkID=248408) sample.  
@@ -141,7 +141,7 @@ namespace WcfSessionSecurityTokenCacheService
   
 <a name="BKMK_TheWCFClient"></a>   
 ## The WCF Caching Client  
- This section shows the implementation of a class that derives from <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> and that delegates calls to the caching service. You configure the RP application to use this class through the [\<sessionSecurityTokenCache>](../../../docs/framework/configuring-apps/file-schema/wif/sessionsecuritytokencache.md) element as in the following XML  
+ This section shows the implementation of a class that derives from <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> and that delegates calls to the caching service. You configure the RP application to use this class through the [\<sessionSecurityTokenCache>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/sessionsecuritytokencache.md) element as in the following XML  
   
 ```  
 <caches>  

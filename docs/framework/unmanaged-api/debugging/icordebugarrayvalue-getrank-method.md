@@ -43,7 +43,7 @@ HRESULT GetRank (
  [out] A pointer to the number of dimensions in this `ICorDebugArrayValue` object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

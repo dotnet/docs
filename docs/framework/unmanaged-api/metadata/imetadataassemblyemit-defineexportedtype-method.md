@@ -70,7 +70,7 @@ HRESULT DefineExportedType (
  An `ExportedType` metadata structure must be defined for each type that is exposed by this assembly and that is implemented in a module other than the one containing the manifest.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

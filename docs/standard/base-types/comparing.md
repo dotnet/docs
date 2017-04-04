@@ -60,7 +60,7 @@ The .NET Framework provides several methods to compare the values of strings. Th
   
  This example displays `-1` to the console.  
   
- The preceding example is culture-sensitive by default. To perform a culture-insensitive string comparison, use an overload of the <xref:System.String.Compare%2A?displayProperty=fullName> method that allows you to specify the culture to use by supplying a *culture* parameter. For an example that demonstrates how to use the <xref:System.String.Compare%2A?displayProperty=fullName> method to perform a culture-insensitive comparison, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-and-localization/performing-culture-insensitive-string-comparisons.md).  
+ The preceding example is culture-sensitive by default. To perform a culture-insensitive string comparison, use an overload of the <xref:System.String.Compare%2A?displayProperty=fullName> method that allows you to specify the culture to use by supplying a *culture* parameter. For an example that demonstrates how to use the <xref:System.String.Compare%2A?displayProperty=fullName> method to perform a culture-insensitive comparison, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
   
 ## CompareOrdinal  
  The <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> method compares two string objects without considering the local culture. The return values of this method are identical to the values returned by the **Compare** method in the previous table.  
@@ -90,7 +90,7 @@ The .NET Framework provides several methods to compare the values of strings. Th
   
  This example displays `-1` to the console.  
   
- All overloads of the <xref:System.String.CompareTo%2A?displayProperty=fullName> method perform culture-sensitive and case-sensitive comparisons by default. No overloads of this method are provided that allow you to perform a culture-insensitive comparison. For code clarity, we recommend that you use the **String.Compare** method instead, specifying <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> for culture-sensitive operations or <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> for culture-insensitive operations. For examples that demonstrate how to use the **String.Compare** method to perform both culture-sensitive and culture-insensitive comparisons, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-and-localization/performing-culture-insensitive-string-comparisons.md).  
+ All overloads of the <xref:System.String.CompareTo%2A?displayProperty=fullName> method perform culture-sensitive and case-sensitive comparisons by default. No overloads of this method are provided that allow you to perform a culture-insensitive comparison. For code clarity, we recommend that you use the **String.Compare** method instead, specifying <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> for culture-sensitive operations or <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> for culture-insensitive operations. For examples that demonstrate how to use the **String.Compare** method to perform both culture-sensitive and culture-insensitive comparisons, see [Performing Culture-Insensitive String Comparisons](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
   
 ## Equals  
  The **String.Equals** method can easily determine if two strings are the same. This case-sensitive method returns a **true** or **false** Boolean value. It can be used from an existing class, as illustrated in the next example. The following example uses the **Equals** method to determine whether a string object contains the phrase "Hello World".  
@@ -151,4 +151,4 @@ The .NET Framework provides several methods to compare the values of strings. Th
   
 ## See Also  
  [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)   
- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-and-localization/performing-culture-insensitive-string-operations.md)
+ [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

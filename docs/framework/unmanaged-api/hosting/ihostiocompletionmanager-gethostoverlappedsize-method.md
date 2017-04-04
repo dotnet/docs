@@ -67,7 +67,7 @@ HRESULT GetHostOverlappedSize (
  For more information about the `OVERLAPPED` structure, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

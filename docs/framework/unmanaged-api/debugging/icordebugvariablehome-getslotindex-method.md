@@ -56,7 +56,7 @@ HRESULT GetSlotIndex(
  The slot-index can be used to retrieve the metadata for this local variable.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

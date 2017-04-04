@@ -52,5 +52,5 @@ To use the IPv6 protocol, ensure that you are running a version of the operating
 ## See Also  
  [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)   
  [Sockets](../../../docs/framework/network-programming/sockets.md)   
- [Network Settings Schema](../../../docs/framework/configuring-apps/file-schema/network/index.md)   
- [\<ipv6> Element (Network Settings)](../../../docs/framework/configuring-apps/file-schema/network/ipv6-element-network-settings.md)
+ [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ [\<ipv6> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)

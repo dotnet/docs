@@ -44,7 +44,7 @@ STDAPI (VOID) _CorImageUnloading( 
  [in] A pointer to the starting location of the image to unload.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

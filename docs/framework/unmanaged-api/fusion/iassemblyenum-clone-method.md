@@ -43,7 +43,7 @@ HRESULT Clone (
  [out] A pointer to the copy.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

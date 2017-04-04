@@ -54,10 +54,10 @@ typedef struct _MDAInfo {
   
 -   If the host has registered a handler for this event, the runtime checks to see whether a debugger is attached to the process. If it is, the runtime breaks into the debugger. When the debugger continues, it calls into the host. If no debugger is attached, the runtime calls `IActionOnCLREvent::OnEvent` and passes a pointer to an `MDAInfo` instance as the `data` parameter.  
   
- The host can choose to activate MDAs and to be notified when an MDA is activated. This gives the host an opportunity to override default behavior and to abort the managed thread that raised the event, to prevent it from corrupting the process state. For more information about using MDAs, see [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debugging-tracing-profiling/diagnosing-errors-with-managed-debugging-assistants.md).  
+ The host can choose to activate MDAs and to be notified when an MDA is activated. This gives the host an opportunity to override default behavior and to abort the managed thread that raised the event, to prevent it from corrupting the process state. For more information about using MDAs, see [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -67,4 +67,4 @@ typedef struct _MDAInfo {
   
 ## See Also  
  [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)   
- [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debugging-tracing-profiling/diagnosing-errors-with-managed-debugging-assistants.md)
+ [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

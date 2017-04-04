@@ -71,7 +71,7 @@ HRESULT GetBindingIdentityFromFile(
  `GetBindingIdentityFromFile` is typically called twice. The first call supplies a null value for `pwzBuffer`, and the method returns the appropriate size in `pcchBufferSize`. The second call supplies an appropriately allocated buffer, and the method returns with the actual buffer data upon completion.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

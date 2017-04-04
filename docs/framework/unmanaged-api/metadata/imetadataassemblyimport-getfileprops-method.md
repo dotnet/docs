@@ -67,7 +67,7 @@ HRESULT GetFileProps (
  [out] A pointer to the flags that describe the metadata applied to a file. The flags value is a combination of one or more [CorFileFlags](../../../../docs/framework/unmanaged-api/metadata/corfileflags-enumeration.md) values.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

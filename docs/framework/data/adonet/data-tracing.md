@@ -59,5 +59,5 @@ add target ring_buffer with (track_causality=on)
   
 ## See Also  
  [Network Tracing in the .NET Framework](../../../../docs/framework/network-programming/network-tracing.md)   
- [Tracing and Instrumenting Applications](../../../../docs/framework/debugging-tracing-profiling/tracing-and-instrumenting-applications.md)   
+ [Tracing and Instrumenting Applications](../../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

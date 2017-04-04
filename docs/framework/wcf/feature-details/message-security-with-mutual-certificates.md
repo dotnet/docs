@@ -110,7 +110,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
  [!code-vb[C_SecurityScenarios#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#20)]  
   
 ### Configuration  
- The following configures the client. A client certificate must be specified using the [\<clientCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md). Also, the service certificate is specified using the [\<defaultCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/defaultcertificate-element.md).  
+ The following configures the client. A client certificate must be specified using the [\<clientCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md). Also, the service certificate is specified using the [\<defaultCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md).  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

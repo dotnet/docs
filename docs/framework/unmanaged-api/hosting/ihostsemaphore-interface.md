@@ -37,7 +37,7 @@ Represents the host's implementation of a semaphore for threading.
 |[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-wait-method.md)|Causes the current `IHostSemaphore` instance to wait until it is owned or the specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -40,10 +40,10 @@ manager: "erikre"
  [How to: Create a Workflow Service That Calls Another Workflow Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md)  
  Describes how to synchronously call a workflow service from within another workflow service.  
   
- [Contract First Workflow Service Development](../../../../docs/framework/wf/contract-first-workflow-service-development.md)  
+ [Contract First Workflow Service Development](../../../../docs/framework/windows-workflow-foundation/contract-first-workflow-service-development.md)  
  Describes creating a workflow service based on an existing service contract.  
   
- [How to: Create a workflow service that consumes an existing service contract](../../../../docs/framework/wf/how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md)  
+ [How to: Create a workflow service that consumes an existing service contract](../../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md)  
  Provides a step-by-step example of creating a workflow service using an existing service contract.  
   
  [Hosting Workflow Services Overview](../../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)  

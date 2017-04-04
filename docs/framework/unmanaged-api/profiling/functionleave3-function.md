@@ -55,7 +55,7 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
  The `FunctionLeave3` function must not call into managed code or cause a managed memory allocation in any way.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  
   

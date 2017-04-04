@@ -65,7 +65,7 @@ HRESULT QueueUserWorkItem (
  `QueueUserWorkItem` queues a work item to a worker thread in the thread pool. Its signature and parameter types are identical to those of the corresponding Win32 function, which has the same name. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

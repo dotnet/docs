@@ -39,7 +39,7 @@ Provides methods for configuring the common language runtime (CLR).
 |[SetGCThreadControl Method](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-setgcthreadcontrol-method.md)|Sets the callback interface for scheduling threads for non-runtime tasks that would otherwise be blocked for a garbage collection.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

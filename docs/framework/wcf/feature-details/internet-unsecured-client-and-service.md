@@ -24,7 +24,7 @@ The following illustration shows an example of a public, unsecured [!INCLUDE[ind
 |--------------------|-----------------|  
 |Security Mode|None|  
 |Transport|HTTP|  
-|Binding|<xref:System.ServiceModel.BasicHttpBinding> in code, or the [\<basicHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md) element in configuration.|  
+|Binding|<xref:System.ServiceModel.BasicHttpBinding> in code, or the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element in configuration.|  
 |Interoperability|With existing Web service clients and services|  
 |Authentication|None|  
 |Integrity|None|  

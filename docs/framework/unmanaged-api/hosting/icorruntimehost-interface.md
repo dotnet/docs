@@ -56,7 +56,7 @@ Provides methods that enable the host to start and stop the common language runt
 |[UnloadDomain Method](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-unloaddomain-method.md)|Unloads the specified application domain from the current process.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -77,7 +77,7 @@ manager: "mbaldwin"
   
 #### To set the Mode and ClientCredentialType property in configuration  
   
-1.  Add an appropriate binding element to the [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [\<wsHttpBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) element.  
+1.  Add an appropriate binding element to the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element.  
   
 2.  Add a `<binding>` element and set its `name` attribute to an appropriate value.  
   
@@ -123,6 +123,6 @@ manager: "mbaldwin"
  [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)   
  [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)   
  [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)   
- [\<security>](../../../docs/framework/configuring-apps/file-schema/wcf/security-of-wshttpbinding.md)   
- [\<security>](../../../docs/framework/configuring-apps/file-schema/wcf/security-of-basichttpbinding.md)   
- [\<security>](../../../docs/framework/configuring-apps/file-schema/wcf/security-of-nettcpbinding.md)
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)   
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)   
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)

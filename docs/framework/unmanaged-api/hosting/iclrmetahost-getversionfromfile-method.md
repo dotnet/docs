@@ -65,7 +65,7 @@ HRESULT GetVersionFromFile (
 |HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)|The buffer is too small.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

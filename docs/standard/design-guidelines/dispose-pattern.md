@@ -292,4 +292,4 @@ public class ComplexResourceHolder : IDisposable {
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
  [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)   
  [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)   
- [Garbage Collection](../../../docs/standard/garbagecollection/index.md)
+ [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

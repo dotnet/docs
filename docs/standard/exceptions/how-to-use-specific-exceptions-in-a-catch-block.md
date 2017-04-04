@@ -29,7 +29,7 @@ When an exception occurs, it is passed up the stack and each catch block is give
  [!code-csharp[CatchException#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception1.cs#2)]
  [!code-vb[CatchException#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception1.vb#2)]  
   
- The common language runtime catches exceptions that are not caught by a catch block. Depending on how the runtime is configured, either a debug dialog box appears, or the program stops executing and a dialog box with exception information appears. For information about debugging, see [Debugging and Profiling Applications](../../../docs/framework/debugging-tracing-profiling/index.md).  
+ The common language runtime catches exceptions that are not caught by a catch block. Depending on how the runtime is configured, either a debug dialog box appears, or the program stops executing and a dialog box with exception information appears. For information about debugging, see [Debugging and Profiling Applications](../../../docs/framework/debug-trace-profile/index.md).  
   
 ## See Also  
     

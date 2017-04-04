@@ -45,9 +45,9 @@ manager: "erikre"
   
 4.  Add a `<security>` child element and set the `requireSignatureConfirmation` attribute to `true`.  
   
-5.  Optional. To enable signature confirmation during the bootstrap, add a [\<secureConversationBootstrap>](../../../../docs/framework/configuring-apps/file-schema/wcf/secureconversationbootstrap.md) child element and set the `equireSignatureConfirmation` attribute to `true`.  
+5.  Optional. To enable signature confirmation during the bootstrap, add a [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) child element and set the `equireSignatureConfirmation` attribute to `true`.  
   
-6.  Add an appropriate transport element. The following example adds an [\<httpTransport>](../../../../docs/framework/configuring-apps/file-schema/wcf/httptransport.md):  
+6.  Add an appropriate transport element. The following example adds an [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md):  
   
     ```  
     <bindings>  

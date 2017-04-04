@@ -46,7 +46,7 @@ HRESULT EnumerateArguments (
  `EnumerateArguments` gets an enumerator that can list the arguments available in the call frame that is represented by this ICorDebugILFrame object. The list will include arguments that are [vararg](http://msdn.microsoft.com/library/20fc3244-18e9-411c-990e-d5b4fa29a570) (that is, a variable number of arguments) as well as arguments that are not `vararg`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

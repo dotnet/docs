@@ -53,7 +53,7 @@ typedef enum {
 |`CANOF_PARSE_FRIEND_DISPLAY_NAME`|A combination of the `CANOF_PARSE_DISPLAY_NAME` and `CANOF_VERIFY_FRIEND_ASSEMBLYNAME` flags. This member is for internal use only.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

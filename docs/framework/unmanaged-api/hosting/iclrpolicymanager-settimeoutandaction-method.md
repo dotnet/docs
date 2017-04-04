@@ -77,7 +77,7 @@ HRESULT SetTimeoutAndAction (
 >  Not all policy action values can be specified as the timeout behavior for CLR operations. See the Remarks sections of the topics for these two methods for valid values.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

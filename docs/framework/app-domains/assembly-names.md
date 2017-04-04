@@ -65,7 +65,7 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
   
 ## See Also  
  [How to: Determine an Assembly's Fully Qualified Name](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)   
- [Creating Assemblies](../../../docs/framework/app-domains/creating-assemblies.md)   
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)   
  [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)   
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)   
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   

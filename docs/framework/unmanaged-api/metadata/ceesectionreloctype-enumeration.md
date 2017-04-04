@@ -74,7 +74,7 @@ typedef enum  {
 |`srRelocPtr`|A value indicating that the pre-fixup contents of memory are a pointer rather than a section offset.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

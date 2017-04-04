@@ -67,4 +67,4 @@ sn -p keypair.snk public.snk
  [!code-vb[AssemblyName_KeyPair#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyName_KeyPair/VB/keyfileattrib.vb#21)]  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md)
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

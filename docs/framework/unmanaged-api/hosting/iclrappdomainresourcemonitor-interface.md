@@ -51,7 +51,7 @@ Provides methods that inspect an application domain's memory and CPU usage.
 -   <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=fullName>  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -60,7 +60,7 @@ Provides methods that inspect an application domain's memory and CPU usage.
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See Also  
- [\<appDomainResourceMonitoring> Element](../../../../docs/framework/configuring-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)   
- [Application Domain Resource Monitoring](../../../../docs/standard/garbagecollection/app-domain-resource-monitoring.md)   
+ [\<appDomainResourceMonitoring> Element](../../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)   
+ [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)   
  [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)   
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

@@ -48,7 +48,7 @@ HRESULT CreateAssemblyCache (
  [in] Reserved for future extensibility. `dwReserved` must be 0 (zero).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

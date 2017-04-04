@@ -49,7 +49,7 @@ If you want to create apps with great performance, you should design and plan fo
   
 |App type|See|  
 |--------------|---------|  
-|.NET Framework apps for all platforms|[Garbage Collection and Performance](../../../docs/standard/garbagecollection/performance.md)<br /><br /> [Performance Tips](../../../docs/framework/performance/performance-tips.md)|  
+|.NET Framework apps for all platforms|[Garbage Collection and Performance](../../../docs/standard/garbage-collection/performance.md)<br /><br /> [Performance Tips](../../../docs/framework/performance/performance-tips.md)|  
 |[!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps written in C++, C#, and Visual Basic|[Performance best practices for Windows Store apps using C++, C#, and Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)|  
 |Windows Phone|[App performance considerations for Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/ff967560\(v=vs.105\).aspx)<br /><br /> [Windows Phone Application Analysis](http://msdn.microsoft.com/library/windowsphone/develop/hh202934\(v=vs.105\).aspx)<br /><br /> [Get Your Windows Phone Applications in the Marketplace Faster](http://msdn.microsoft.com/magazine/hh781024.aspx)|  
 |Windows Presentation Foundation (WPF)|[WPF Performance Suite](http://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)|  

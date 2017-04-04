@@ -82,7 +82,7 @@ HRESULT GetAssemblyRefProps (
  This method returns S_OK if it succeeds; otherwise, it returns one of the error codes defined in the Winerror.h header file.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

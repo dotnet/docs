@@ -44,7 +44,7 @@ HRESULT GetHandle([out] HPROCESS *phProcessHandle);
  The retrieved handle is owned by the debugging interface. The debugger should duplicate the handle before using it.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -24,7 +24,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # .NET Framework Deployment Guide for Administrators
-This step-by-step article describes how a system administrator can deploy the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its system dependencies across a network by using Microsoft System Center Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see [System Requirements](../../../docs/framework/getting-started/system-requirements.md).  
+This step-by-step article describes how a system administrator can deploy the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and its system dependencies across a network by using Microsoft System Center Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
 > [!NOTE]
 >  The software referenced in this document, including, without limitation, the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], System Center Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.  
@@ -267,4 +267,4 @@ This step-by-step article describes how a system administrator can deploy the [!
   
 ## See Also  
  [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)   
- [System Requirements](../../../docs/framework/getting-started/system-requirements.md)
+ [System Requirements](../../../docs/framework/get-started/system-requirements.md)

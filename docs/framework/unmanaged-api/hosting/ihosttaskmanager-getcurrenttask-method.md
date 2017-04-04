@@ -58,7 +58,7 @@ HRESULT GetCurrentTask (
  The host can also set the `pTask` parameter to null to prevent a task that it did not initiate from entering the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

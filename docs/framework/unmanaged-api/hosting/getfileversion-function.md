@@ -56,7 +56,7 @@ HRESULT GetFileVersion (
  [out] The size, in bytes, of the returned `szBuffer`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

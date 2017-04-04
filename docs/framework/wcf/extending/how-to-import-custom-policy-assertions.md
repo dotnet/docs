@@ -47,7 +47,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 ### To insert the custom policy importer into the metadata System using a configuration file  
   
-1.  Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configuring-apps/file-schema/wcf/policyimporters.md) element in the client configuration file.  
+1.  Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) element in the client configuration file.  
   
      <!-- TODO: review snippet reference [!code[CustomPolicySample#7](../../../../samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/client.exe.config#7)]  -->
      <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]  -->
@@ -60,7 +60,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 ### To insert the custom policy importer into the metadata system using Svcutil.exe  
   
-1.  Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configuring-apps/file-schema/wcf/policyimporters.md) element in the Svcutil.exe.config configuration file. You can also point Svcutil.exe to load policy importer types registered in a different configuration file by using the `/svcutilConfig` option.  
+1.  Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) element in the Svcutil.exe.config configuration file. You can also point Svcutil.exe to load policy importer types registered in a different configuration file by using the `/svcutilConfig` option.  
   
 2.  Use [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to import the metadata and the importer is invoked automatically.  
   

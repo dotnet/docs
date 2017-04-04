@@ -93,7 +93,7 @@ This topic describes how the Application Settings architecture works, and explor
 </configuration>  
 ```  
   
- For a definition of the elements within the application settings section of a configuration file, see [Application Settings Schema](../../../../docs/framework/configuring-apps/file-schema/application-settings-schema.md).  
+ For a definition of the elements within the application settings section of a configuration file, see [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md).  
   
 ### Settings Bindings  
  Application settings uses the Windows Forms data binding architecture to provide two-way communication of settings updates between the settings object and components. If you use Visual Studio to create application settings and assign them to component properties, these bindings are generated automatically.  
@@ -158,4 +158,4 @@ This topic describes how the Application Settings architecture works, and explor
  [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)   
  [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)   
  [ClickOnce and Application Settings](http://msdn.microsoft.com/library/891caba6-faef-4a3c-8f71-60e6fadb60eb)   
- [Application Settings Schema](../../../../docs/framework/configuring-apps/file-schema/application-settings-schema.md)
+ [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md)

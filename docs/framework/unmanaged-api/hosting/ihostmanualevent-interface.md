@@ -38,7 +38,7 @@ Provides the host's implementation of a representation of a manual reset event.
 |[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-wait-method.md)|Causes the current `IHostManualEvent` instance to wait until it is owned, or a specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -26,7 +26,7 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
   
  The membership feature requires using a SQL Server database to store the user information. The feature also includes methods for prompting with a question any users who have forgotten their password.  
   
- [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] developers can take advantage of these features for security purposes. When integrated into an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, users must supply a user name/password combination to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application. To transfer the data to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, use a binding that supports user name/password credentials, such as the <xref:System.ServiceModel.WSHttpBinding> (in configuration, the [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md)) and set the client credential type to `UserName`. On the service, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security authenticates the user based on the user name and password, and also assigns the role specified by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role.  
+ [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] developers can take advantage of these features for security purposes. When integrated into an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, users must supply a user name/password combination to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] client application. To transfer the data to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, use a binding that supports user name/password credentials, such as the <xref:System.ServiceModel.WSHttpBinding> (in configuration, the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)) and set the client credential type to `UserName`. On the service, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] security authenticates the user based on the user name and password, and also assigns the role specified by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role.  
   
 > [!NOTE]
 >  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not provide methods to populate the database with user name/password combinations or other user information.  
@@ -64,9 +64,9 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
   
 ### To configure service security to accept the user name/password combination  
   
-1.  In the configuration file, under the [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<bindings>](../../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element.  
+1.  In the configuration file, under the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, add a [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
   
-2.  Add a [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) to the bindings section. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] binding element, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
+2.  Add a [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) to the bindings section. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating an [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] binding element, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
   
 3.  Set the `mode` attribute of the `<security>` element to `Message`.  
   
@@ -91,15 +91,15 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
   
 ### To configure a service to use the membership provider  
   
-1.  As a child to the `<system.serviceModel>` element, add a [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element  
+1.  As a child to the `<system.serviceModel>` element, add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element  
   
-2.  Add a [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.  
+2.  Add a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) to the <`behaviors`> element.  
   
-3.  Add a [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.  
+3.  Add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.  
   
-4.  Add a [\<serviceCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecredentials.md) to the <`behavior`> element.  
+4.  Add a [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) to the <`behavior`> element.  
   
-5.  Add a [\<userNameAuthentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/usernameauthentication.md) to the `<serviceCredentials>` element.  
+5.  Add a [\<userNameAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md) to the `<serviceCredentials>` element.  
   
 6.  Set the `userNamePasswordValidationMode` attribute to `MembershipProvider`.  
   

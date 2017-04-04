@@ -58,4 +58,4 @@ Receive approveExpense = new Receive
   
 ```  
   
- To see a complete code example showing how to configure serialization for a workflow service see [Formatting messages in Workflow Services](../../../../docs/framework/wf/samples/formatting-messages-in-workflow-services.md).
+ To see a complete code example showing how to configure serialization for a workflow service see [Formatting messages in Workflow Services](../../../../docs/framework/windows-workflow-foundation/samples/formatting-messages-in-workflow-services.md).

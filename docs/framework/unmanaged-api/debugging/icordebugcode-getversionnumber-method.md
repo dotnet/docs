@@ -46,7 +46,7 @@ HRESULT GetVersionNumber (
  The version number is incremented each time an edit-and-continue (EnC) operation is performed on the code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

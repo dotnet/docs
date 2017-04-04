@@ -63,7 +63,7 @@ HRESULT InitializeHostOverlapped (
  A return value of E_OUTOFMEMORY indicates that the host has failed to initialize its custom data. In this case, the CLR reports an error and fails the call.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

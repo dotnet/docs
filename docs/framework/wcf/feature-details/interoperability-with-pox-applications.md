@@ -22,7 +22,7 @@ manager: "erikre"
 >  This document was originally written for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.0.  [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.5 has built-in support for working with POX applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] see [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
   
 ## POX Programming with WCF  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that communicate over HTTP using POX messages use a [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that communicate over HTTP using POX messages use a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
 ```  
 <customBinding>  
@@ -36,9 +36,9 @@ manager: "erikre"
   
  This custom binding contains two elements:  
   
--   The [\<httpTransport>](../../../../docs/framework/configuring-apps/file-schema/wcf/httptransport.md) and  
+-   The [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md) and  
   
--   The [\<textMessageEncoding>](../../../../docs/framework/configuring-apps/file-schema/wcf/textmessageencoding.md).  
+-   The [\<textMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/textmessageencoding.md).  
   
  The standard [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Text Message Encoder is specially configured to use the <xref:System.ServiceModel.Channels.MessageVersion.None%2A> value, which allows it to process XML message payloads that do not arrive wrapped in a SOAP envelope.  
   

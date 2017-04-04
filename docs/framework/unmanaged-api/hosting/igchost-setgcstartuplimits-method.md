@@ -53,7 +53,7 @@ HRESULT SetGCStartupLimits (
  The `SetGCStartupLimits` method may be called only once. These values cannot be changed later.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

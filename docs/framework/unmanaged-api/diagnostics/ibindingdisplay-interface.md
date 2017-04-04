@@ -37,7 +37,7 @@ Provides methods that display current binding information about the running appl
 |[InitializeForProcess Method](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)|Initializes the `IBindingDisplay` object.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** BindingDisplay.h  
   

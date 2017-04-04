@@ -38,7 +38,7 @@ Provides methods for notifying the host about the blocking and unblocking of thr
 |[StartBlockingForDebugger Method](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-startblockingfordebugger-method.md)|Notifies the host that the debugging services are about to start blocking all threads.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

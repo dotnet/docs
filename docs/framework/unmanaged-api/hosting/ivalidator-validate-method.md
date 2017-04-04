@@ -71,7 +71,7 @@ HRESULT Validate (
  [in] The size, in bytes, of the file to be validated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   

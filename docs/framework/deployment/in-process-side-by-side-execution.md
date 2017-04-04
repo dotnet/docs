@@ -69,7 +69,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
      .NET Framework versions installed: An earlier version of the .NET Framework and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   
-     What to do: In the [application configuration file](../../../docs/framework/configuring-apps/index.md) in the application directory, use the [\<startup> element](../../../docs/framework/configuring-apps/file-schema/startup/startup-element.md) and the [\<supportedRuntime> element](../../../docs/framework/configuring-apps/file-schema/startup/supportedruntime-element.md) set as follows:  
+     What to do: In the [application configuration file](../../../docs/framework/configure-apps/index.md) in the application directory, use the [\<startup> element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md) and the [\<supportedRuntime> element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) set as follows:  
   
     ```  
     <configuration>  
@@ -184,5 +184,5 @@ int _tmain(int argc, _TCHAR* argv[])
 ```  
   
 ## See Also  
- [\<startup> Element](../../../docs/framework/configuring-apps/file-schema/startup/startup-element.md)   
- [\<supportedRuntime> Element](../../../docs/framework/configuring-apps/file-schema/startup/supportedruntime-element.md)
+ [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)   
+ [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

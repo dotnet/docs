@@ -99,4 +99,4 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
  <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>   
  [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)   
  [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)   
- [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md)
+ [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

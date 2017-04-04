@@ -55,7 +55,7 @@ HRESULT GetModuleRefProps (
  [out] The returned size of `szName` in wide characters.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

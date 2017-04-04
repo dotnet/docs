@@ -65,7 +65,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
  Provides reference documentation for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
 ## Related Sections  
- [Localization](../../../../docs/standard/globalization-and-localization/localization.md)  
+ [Localization](../../../../docs/standard/globalization-localization/localization.md)  
  Provides an overview of topics relating to localization.  
   
  Also see [Localizing Applications](http://msdn.microsoft.com/library/z68135h5\(v=vs.110\)) or [Localizing Applications](http://msdn.microsoft.com/library/z68135h5\(v=vs.120\))

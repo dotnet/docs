@@ -62,7 +62,7 @@ HRESULT EnumModuleRefs (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcModuleRefs` is zero.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

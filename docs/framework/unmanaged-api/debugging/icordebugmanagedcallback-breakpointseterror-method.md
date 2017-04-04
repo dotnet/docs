@@ -58,7 +58,7 @@ HRESULT BreakpointSetError (
  The given breakpoint will never be hit. The debugger should deactivate and rebind it.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

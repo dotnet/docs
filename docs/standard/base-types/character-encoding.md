@@ -266,4 +266,4 @@ Characters are abstract entities that can be represented in many different ways.
  <xref:System.Text.DecoderFallback>   
  <xref:System.Text.Encoding>   
  <xref:System.Text.EncoderFallback>   
- [Globalization and Localization](../../../docs/standard/globalization-and-localization/index.md)
+ [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)

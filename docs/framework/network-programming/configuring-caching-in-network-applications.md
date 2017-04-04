@@ -31,7 +31,7 @@ To configure caching, you must specify a cache policy at the application or <xre
   
 -   [How to: Set Cache Policy for a Request](../../../docs/framework/network-programming/how-to-set-cache-policy-for-a-request.md)  
   
- You can also configure cache policy using application or machine configuration files. For more information, see &#124; [\<requestCaching> Element (Network Settings)](../../../docs/framework/configuring-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ You can also configure cache policy using application or machine configuration files. For more information, see &#124; [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
 ## See Also  
  [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)   

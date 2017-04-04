@@ -52,7 +52,7 @@ HRESULT GetSectionDataLen (
  Call `GetSectionDataLen` only if you have special section requirements that are not handled by other methods.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

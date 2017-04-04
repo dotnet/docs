@@ -47,7 +47,7 @@ HRESULT IsGlobal (
  [out] 1 if the object has global scope; otherwise, 0 (zero).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

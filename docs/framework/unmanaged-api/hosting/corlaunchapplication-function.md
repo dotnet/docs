@@ -69,7 +69,7 @@ HRESULT CorLaunchApplication (
  [out] A pointer to information about the process in which the application has been loaded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -49,11 +49,11 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
 ### To control replay detection in configuration for the client or service  
   
-1.  Create a [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md).  
+1.  Create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
 2.  Create a `<security>` element.  
   
-3.  Create a [\<localClientSettings>](../../../../docs/framework/configuring-apps/file-schema/wcf/localclientsettings-element.md) or [\<localServiceSettings>](../../../../docs/framework/configuring-apps/file-schema/wcf/localservicesettings-element.md).  
+3.  Create a [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md) or [\<localServiceSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md).  
   
 4.  Set the following attribute values, as appropriate: `detectReplays`, `maxClockSkew`, `replayWindow`, and `replayCacheSize`. The following example sets the attributes of both a `<localServiceSettings>` and a `<localClientSettings>` element:  
   
@@ -109,5 +109,5 @@ A replay attack occurs when an attacker copies a stream of messages between two 
  <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>   
  <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>   
  [Secure Conversations and Secure Sessions](../../../../docs/framework/wcf/feature-details/secure-conversations-and-secure-sessions.md)   
- [\<localClientSettings>](../../../../docs/framework/configuring-apps/file-schema/wcf/localclientsettings-element.md)   
+ [\<localClientSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)   
  [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

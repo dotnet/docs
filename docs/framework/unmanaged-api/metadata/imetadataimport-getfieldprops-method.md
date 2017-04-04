@@ -83,7 +83,7 @@ HRESULT GetFieldProps (
  [out] The size in chars of `ppValue`, or zero if no string exists.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

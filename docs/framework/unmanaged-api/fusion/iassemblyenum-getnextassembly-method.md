@@ -51,7 +51,7 @@ HRESULT GetNextAssembly (
  [in] Reserved for future extensibility. `dwFlags` must be 0 (zero).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

@@ -64,10 +64,10 @@ HRESULT CorBindToRuntimeByCfg (
  [out] A pointer to the address of the returned interface.  
   
 ## Remarks  
- The format of the XML file is modeled after the standard application configuration file. For more information about XML files, see [Configuration File Schema](../../../../docs/framework/configuring-apps/file-schema/index.md).  
+ The format of the XML file is modeled after the standard application configuration file. For more information about XML files, see [Configuration File Schema](../../../../docs/framework/configure-apps/file-schema/index.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

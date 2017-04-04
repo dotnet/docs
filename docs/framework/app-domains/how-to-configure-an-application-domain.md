@@ -34,6 +34,5 @@ You can provide the common language runtime with configuration information for a
  [!code-vb[ADApplicationBase#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADApplicationBase/VB/source2.vb#2)]  
   
 ## See Also  
- [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5)   
  [Programming with Application Domains](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131)   
- [Using Application Domains](../../../docs/framework/app-domains/using-application-domains.md)
+ [Using Application Domains](../../../docs/framework/app-domains/use.md)

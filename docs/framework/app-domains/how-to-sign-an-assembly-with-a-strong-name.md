@@ -83,13 +83,13 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
  [!code-csharp[AssemblyName_KeyPair#21](../../../samples/snippets/csharp/VS_Snippets_CLR/AssemblyName_KeyPair/CS/keyfileattrib.cs#21)]
  [!code-vb[AssemblyName_KeyPair#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyName_KeyPair/VB/keyfileattrib.vb#21)]  
   
- You can also delay sign an assembly when compiling your source file. For more information, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md).  
+ You can also delay sign an assembly when compiling your source file. For more information, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
   
 ### To sign an assembly with a strong name by using the compiler  
   
 -   Compile your source code file or files with the `/keyfile` or `/delaysign` compiler option in C# and Visual Basic, or the `/KEYFILE` or `/DELAYSIGN` linker option in C++. After the option name, add a colon and the name of the key file. When using command-line compilers, you can copy the key file to the directory that contains your source code files.  
   
-     For information on delay signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md).  
+     For information on delay signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
   
      The following example uses the C# compiler and signs the assembly `UtilityLibrary.dll` with a strong name by using the key file `sgKey.snk`.  
   
@@ -98,9 +98,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
     ```  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md)   
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)   
  [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)   
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md)   
+ [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)   
  [Managing Assembly and Manifest Signing](http://msdn.microsoft.com/library/6c1ef36b-25f7-4ad0-b29a-51801b7a5420)   
  [Signing Page, Project Designer](https://msdn.microsoft.com/library/0k50fs3b)

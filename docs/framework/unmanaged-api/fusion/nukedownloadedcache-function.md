@@ -44,7 +44,7 @@ HRESULT NukeDownloadedCache();
  The CLR download cache is the area where strong-named assemblies that are downloaded from a URL are stored for possible reuse.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

@@ -33,7 +33,7 @@ To discover the fully qualified name of an assembly in the global assembly cache
   
 -   You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly's metadata, which contains the fully qualified name.  
   
- For more information about setting assembly attributes such as version, culture, and assembly name, see [Setting Assembly Attributes](../../../docs/framework/app-domains/setting-assembly-attributes.md). For more information about giving an assembly a strong name, see [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md).  
+ For more information about setting assembly attributes such as version, culture, and assembly name, see [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md). For more information about giving an assembly a strong name, see [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
   
 ## Example  
  The following code example shows how to display the fully qualified name of an assembly containing a specified class to the console. Because it retrieves the name of an assembly that the app has already loaded, it does not matter whether the assembly is in the GAC.  
@@ -44,8 +44,8 @@ To discover the fully qualified name of an assembly in the global assembly cache
   
 ## See Also  
  [Assembly Names](../../../docs/framework/app-domains/assembly-names.md)   
- [Creating Assemblies](../../../docs/framework/app-domains/creating-assemblies.md)   
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md)   
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)   
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)   
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)   
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

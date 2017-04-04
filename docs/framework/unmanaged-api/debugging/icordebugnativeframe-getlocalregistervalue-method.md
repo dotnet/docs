@@ -58,7 +58,7 @@ HRESULT GetLocalRegisterValue (
  The `GetLocalRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

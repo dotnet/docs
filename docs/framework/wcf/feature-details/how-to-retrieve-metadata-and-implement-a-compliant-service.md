@@ -32,9 +32,9 @@ Often, the same person does not design and implement services. In environments w
   
 4.  Implement the interface on a class and host the service. For an example, see [How to: Implement a Service Contract](../../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md), or see a simple implementation below in the Example section.  
   
-5.  In the client configuration file that the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) generates, change the [\<client>](../../../../docs/framework/configuring-apps/file-schema/wcf/client.md) configuration section to a [\<services>](../../../../docs/framework/configuring-apps/file-schema/wcf/services.md) configuration section. (For an example of a generated client application configuration file, see the following "Example" section.)  
+5.  In the client configuration file that the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) generates, change the [\<client>](../../../../docs/framework/configure-apps/file-schema/wcf/client.md) configuration section to a [\<services>](../../../../docs/framework/configure-apps/file-schema/wcf/services.md) configuration section. (For an example of a generated client application configuration file, see the following "Example" section.)  
   
-6.  Within the [\<services>](../../../../docs/framework/configuring-apps/file-schema/wcf/services.md) configuration section, create a `name` attribute in the [\<services>](../../../../docs/framework/configuring-apps/file-schema/wcf/services.md) configuration section for your service implementation.  
+6.  Within the [\<services>](../../../../docs/framework/configure-apps/file-schema/wcf/services.md) configuration section, create a `name` attribute in the [\<services>](../../../../docs/framework/configure-apps/file-schema/wcf/services.md) configuration section for your service implementation.  
   
 7.  Set the service `name` attribute to the configuration name for your service implementation.  
   

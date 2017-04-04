@@ -68,7 +68,7 @@ HRESULT VirtualFree (
  The semantics are identical to those of the Win32 implementation of `VirtualFree`. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

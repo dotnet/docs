@@ -62,7 +62,7 @@ HRESULT CloseCLREnumeration (
  The function is unable to free the memory for `pHandleArray` and `pStringArray`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   

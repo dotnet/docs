@@ -54,7 +54,7 @@ HRESULT GetTypeSpecFromToken (
  An HRESULT that indicates success or failure. Failures can be tested with the FAILED macro.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

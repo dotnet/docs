@@ -39,7 +39,7 @@ Provides mapping capabilities between assemblies.
 |[Map Method](../../../../docs/framework/unmanaged-api/metadata/imaptoken-map-method.md)|Maps a relationship between two assemblies using metadata signatures.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

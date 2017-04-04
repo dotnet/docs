@@ -52,7 +52,7 @@ coclass CorRuntimeHost {
 |"IValidator"|Provides methods for validation of portable executable images and detailed reporting of validation errors.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   

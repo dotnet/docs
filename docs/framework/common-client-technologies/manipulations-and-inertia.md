@@ -23,7 +23,7 @@ The *manipulations* and *inertia* processor classes assist your application in m
 ## In This Section  
  [Manipulations and Inertia Overview](../../../docs/framework/common-client-technologies/manipulations-and-inertia-overview.md)  
   
- [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/using-manipulations-and-inertia-in-an-xna-application.md)  
+ [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)  
   
 ## Reference  
  <xref:System.Windows.Input.Manipulations>

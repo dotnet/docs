@@ -37,7 +37,7 @@ Every endpoint has an address associated with it, which is used to locate and id
  The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. Generally, it is more practical to define service endpoints using configuration rather than code. Keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  
   
 ### Defining an Address in Configuration  
- To define an endpoint in a configuration file, use the [\<endpoint>](../../../../docs/framework/configuring-apps/file-schema/wcf/endpoint-element.md) element. For details and an example, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
+ To define an endpoint in a configuration file, use the [\<endpoint>](../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element. For details and an example, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
   
 ### Defining an Address in Code  
  An endpoint address can be created in code with the <xref:System.ServiceModel.EndpointAddress> class. For details and an example, see [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md).  
@@ -66,7 +66,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 -   http://shipping.myorg.com/Service.svc  
   
- With [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../../../docs/framework/configuring-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
+ With [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
   
  The following is an example of configuration code that uses the prefix filters.  
   
@@ -90,7 +90,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 ## Multiple IIS Binding Support in .NET Framework 4 and later  
  Starting in .NET 4, you can enable support for multiple bindings in IIS without having to pick a single base address, by setting <xref:System.ServiceModel.ServiceHostingEnvironment>’s <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A> setting to true. This support is limited to HTTP protocol schemes.  
   
- The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md).  
+ The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
 ```  
   
@@ -126,7 +126,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 -   In code, create custom address headers by using the <xref:System.ServiceModel.Channels.AddressHeader> class, and then used in the construction of an <xref:System.ServiceModel.EndpointAddress>.  
   
--   In configuration, custom [\<headers>](../../../../docs/framework/configuring-apps/file-schema/wcf/headers.md) are specified as children of the [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+-   In configuration, custom [\<headers>](../../../../docs/framework/configure-apps/file-schema/wcf/headers.md) are specified as children of the [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
   
  Configuration is generally preferable to code, as it allows you to change the headers after deployment.  
   

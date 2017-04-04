@@ -52,7 +52,7 @@ typedef struct  _COR_ACTIVE_FUNCTION {
 |`flags`|Reserved for future extensibility.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   

@@ -48,7 +48,7 @@ HRESULT EnumerateThreadIDs(
 >  This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  
   

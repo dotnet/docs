@@ -49,7 +49,7 @@ Provides methods that allow the common language runtime (CLR) to interact with I
  `IHostIoCompletionManager` corresponds to the `ICLRIoCompletionManager` interface implemented by the CLR. The CLR calls the methods of `IHostIoCompletionManager` to bind handles to the ports that the host provides, and the host calls the methods of `ICLRIoCompletionManager` to report the completion of I/O requests.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

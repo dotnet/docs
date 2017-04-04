@@ -63,7 +63,7 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
  The `GetCurrentSurvived` method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=fullName> property.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -73,6 +73,6 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
   
 ## See Also  
  [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)   
- [Application Domain Resource Monitoring](../../../../docs/standard/garbagecollection/app-domain-resource-monitoring.md)   
+ [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)   
  [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)   
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

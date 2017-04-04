@@ -68,7 +68,7 @@ HRESULT OpenScopeOnMemory (
  If the target area of memory does not contain common language runtime (CLR) metadata, the `OpenScopeOnMemory` method will fail.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

@@ -85,7 +85,7 @@ typedef struct _COR_IL_MAP {
 -   A new offset of 20 or higher will be mapped to old offset 9.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorProf.idl  
   

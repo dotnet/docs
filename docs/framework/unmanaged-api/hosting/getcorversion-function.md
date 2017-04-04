@@ -53,7 +53,7 @@ HRESULT GetCORVersion (
  A pointer to the number of characters actually returned in `pbuffer`. If `pbuffer` is a null pointer, the runtime returns E_POINTER. If the number of characters is greater then the length of `pbuffer` , the runtime returns ERROR_INSUFFICIENT_BUFFER.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

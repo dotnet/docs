@@ -82,7 +82,7 @@ HRESULT ExecuteApplication(
 >  Do not call the [Start Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method before calling the `ExecuteApplication` method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -94,7 +94,6 @@ HRESULT ExecuteApplication(
  <xref:System.ActivationContext>   
  <xref:System.AppDomainManager>   
  <xref:System.ApplicationIdentity>   
- [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5)   
  [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)   
  [SetAppDomainManager Method](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-setappdomainmanager-method.md)   
  [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5)

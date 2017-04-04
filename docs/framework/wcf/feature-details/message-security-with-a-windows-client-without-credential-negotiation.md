@@ -117,7 +117,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
  [!code-vb[C_SecurityScenarios#19](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#19)]  
   
 ### Configuration  
- The following code configures the client. Note that the [\<servicePrincipalName>](../../../../docs/framework/configuring-apps/file-schema/wcf/serviceprincipalname.md) element must be set to match the service's SPN as registered for the service's account in the Active Directory domain.  
+ The following code configures the client. Note that the [\<servicePrincipalName>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceprincipalname.md) element must be set to match the service's SPN as registered for the service's account in the Active Directory domain.  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

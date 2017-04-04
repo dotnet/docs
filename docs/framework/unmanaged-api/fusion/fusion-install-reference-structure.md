@@ -52,7 +52,7 @@ typedef struct _FUSION_INSTALL_REFERENCE_ {
 |`szNonCanonicalData`|A string that is understood only by the entity that adds the reference. The global assembly cache stores this string, but does not use it.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

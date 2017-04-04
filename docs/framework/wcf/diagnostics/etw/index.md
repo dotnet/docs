@@ -37,4 +37,4 @@ manager: "erikre"
   
 ## See Also  
  [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)   
- [Tracking Events into Event Tracing in Windows](../../../../../docs/framework/wf/samples/tracking-events-into-event-tracing-in-windows.md)
+ [Tracking Events into Event Tracing in Windows](../../../../../docs/framework/windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows.md)

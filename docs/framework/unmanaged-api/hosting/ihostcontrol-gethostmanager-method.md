@@ -85,7 +85,7 @@ HRESULT GetHostManager (
  The CLR does not call `Release` on host managers, even when you shut it down.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

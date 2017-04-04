@@ -58,7 +58,7 @@ HRESULT CreateCrst (
  Critical section objects provide synchronization similar to that provided by a mutex object, except that critical sections can be used only by the threads of a single process. `CreateCrst` mirrors the Win32 `InitializeCriticalSection` function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

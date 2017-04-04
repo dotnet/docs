@@ -36,7 +36,7 @@ Provides the [IActionOnCLREvent::OnEvent](../../../../docs/framework/unmanaged-a
 |[OnEvent Method](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-onevent-method.md)|Performs a callback for a registered event.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -41,7 +41,7 @@ Represents a unique identifier for the code that defines the application in the 
 |`IDefinitionAppId::put_SubscriptionId`|Sets the token identifier for a subscription to this `IDefinitionAppId` object to the specified string value.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   

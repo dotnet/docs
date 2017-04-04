@@ -57,7 +57,7 @@ HRESULT Collect (
  The `Collect` method forces the CLR's garbage collector to perform a collection regardless of its current state.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -67,7 +67,7 @@ HRESULT Collect (
   
 ## See Also  
  [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)   
- [Garbage Collection](../../../../docs/standard/garbagecollection/index.md)   
+ [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)   
  [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)   
  [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)   
  [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)   

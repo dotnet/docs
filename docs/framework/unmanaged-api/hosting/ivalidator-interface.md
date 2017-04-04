@@ -37,7 +37,7 @@ Provides methods for validating portable executable (PE) images and reporting va
 |FormatEventInfo|Gets the error message corresponding to the specified validation error.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   

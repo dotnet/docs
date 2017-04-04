@@ -75,4 +75,4 @@ A time-based cache policy defines the freshness of cached entries using the time
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)   
  [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)   
  [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)   
- [\<requestCaching> Element (Network Settings)](../../../docs/framework/configuring-apps/file-schema/network/requestcaching-element-network-settings.md)
+ [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)

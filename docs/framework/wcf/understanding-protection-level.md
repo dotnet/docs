@@ -83,7 +83,7 @@ The `ProtectionLevel` property is found on many different classes, such as the <
   
  This may cause a problem that is hard to debug at first glance. It is possible to create a client contract (an interface) that includes methods for more than one service. That is, the same interface is used to create a client that communicates with many services, and the single interface contains methods for all services. The developer must take care in this rare scenario to invoke only those methods that are applicable for each particular service. If the binding is the <xref:System.ServiceModel.BasicHttpBinding> class, multiple protection levels cannot be supported. However, a service replying to the client might respond to a client with a lower protection level than required. In this case, the client will throw an exception because it expects a higher protection level.  
   
- An example of the code illustrates this problem. The following example shows a service and a client contract. Assume that the binding is the [\<basicHttpBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md) element. Therefore, all operations on a contract have the same protection level. This uniform protection level is determined as the maximum protection level across all operations.  
+ An example of the code illustrates this problem. The following example shows a service and a client contract. Assume that the binding is the [\<basicHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element. Therefore, all operations on a contract have the same protection level. This uniform protection level is determined as the maximum protection level across all operations.  
   
  The service contract is:  
   

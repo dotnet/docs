@@ -47,7 +47,7 @@ This topic outlines the steps required to enable message-level security for mess
   
 ### To set the mode and ClientCredentialType in configuration  
   
-1.  Add an appropriate binding element to the [\<bindings>](../../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) element.  
+1.  Add an appropriate binding element to the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element.  
   
 2.  Add a <`binding`> element and set its `name` attribute to an appropriate value.  
   

@@ -55,7 +55,7 @@ HRESULT IsLoadable(
  If no runtimes are loaded into the process, this method always returns `true`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

@@ -36,7 +36,7 @@ Represents an item installed in the global assembly cache.
 |[GetReference Method](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-getreference-method.md)|Gets a pointer to the `FUSION_INSTALL_REFERENCE` structure represented by this `IInstallReferenceItem`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

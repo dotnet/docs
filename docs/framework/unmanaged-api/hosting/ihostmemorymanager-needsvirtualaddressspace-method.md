@@ -52,7 +52,7 @@ HRESULT NeedsVirtualAddressSpace (
  If the host does not want the CLR to use the specified memory, it may return an E_OUTOFMEMORY HRESULT.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

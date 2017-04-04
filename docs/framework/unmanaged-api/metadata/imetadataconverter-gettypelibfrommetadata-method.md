@@ -51,7 +51,7 @@ HRESULT GetTypeLibFromMetaData (
  [out] A pointer to a location that receives the address of the `ITypeLib` instance that represents the type library.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

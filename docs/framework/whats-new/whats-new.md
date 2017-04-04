@@ -27,10 +27,10 @@ manager: "wpickett"
  [.NET Framework 4.5.1](#v451)   
  [.NET Framework 4.5](#core)  
   
- This article does not provide comprehensive information about each new feature and is subject to change. For general information about the .NET Framework, see [Getting Started](../../../docs/framework/getting-started/index.md). For supported platforms, see [System Requirements](../../../docs/framework/getting-started/system-requirements.md). For download links and installation instructions, see [Installation Guide](../../../docs/framework/getting-started/install-the-net-framework.md).  
+ This article does not provide comprehensive information about each new feature and is subject to change. For general information about the .NET Framework, see [Getting Started](../../../docs/framework/get-started/index.md). For supported platforms, see [System Requirements](../../../docs/framework/get-started/system-requirements.md). For download links and installation instructions, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md).  
   
 > [!NOTE]
->  The .NET Framework team also releases features out of band with NuGet to expand platform support and to introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../../../docs/framework/additional-apis/index.md) and [The .NET Framework and Out-of-Band Releases](../../../docs/framework/getting-started/the-net-framework-and-out-of-band-releases.md). See a [complete list of NuGet packages](http://blogs.msdn.com/b/dotnet/p/nugetpackages.aspx) for the .NET Framework, or subscribe to [our feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).  
+>  The .NET Framework team also releases features out of band with NuGet to expand platform support and to introduce new functionality, such as immutable collections and SIMD-enabled vector types. For more information, see [Additional Class Libraries and APIs](../../../docs/framework/additional-apis/index.md) and [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md). See a [complete list of NuGet packages](http://blogs.msdn.com/b/dotnet/p/nugetpackages.aspx) for the .NET Framework, or subscribe to [our feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).  
   
 <a name="v462"></a>   
 ## Introducing the .NET Framework 4.6.2  
@@ -333,7 +333,7 @@ End Function
  **WCF transport security support for certificates stored using CNG**  
  WCF transport security supports certificates stored using the Windows cryptography library (CNG). In the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], this support is limited to using certificates with a public key that has an exponent no more than 32 bits in length. When an application targets the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], this feature is on by default.  
   
- For applications that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier but are running on the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], this feature can be enabled by adding the following line to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of the app.config or web.config file.  
+ For applications that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier but are running on the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], this feature can be enabled by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app.config or web.config file.  
   
 ```xml  
   
@@ -429,9 +429,9 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
 -   The <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> property  
   
--   The [\<transport>](../../../docs/framework/configuring-apps/file-schema/wcf/transport-of-nettcpbinding.md) section of the [\<netTcpBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/nettcpbinding.md) section  
+-   The [\<transport>](../../../docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md) section of the [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md) section  
   
--   The [\<sslStreamSecurity>](../../../docs/framework/configuring-apps/file-schema/wcf/sslstreamsecurity.md) section of the [\<customBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md) section  
+-   The [\<sslStreamSecurity>](../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md) section of the [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) section  
   
 <a name="WPF462"></a>   
 ### Windows Presentation Foundation (WPF)  
@@ -472,7 +472,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
  In previous versions of the .NET Framework, WPF apps are system-DPI aware. In other words, the application's UI is scaled by the OS as appropriate, depending on the DPI of the monitor on which the app is rendered. ,  
   
- For apps running under the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], you can disable per-monitor DPI changes in WPF apps by adding a configuration statement to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your application configuration file, as follows:  
+ For apps running under the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], you can disable per-monitor DPI changes in WPF apps by adding a configuration statement to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your application configuration file, as follows:  
   
 ```xml  
   
@@ -865,7 +865,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
     -   **HDPI improvements**  
   
-         HDPI support in WPF is now better in the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]. Changes have been made to layout rounding to reduce instances of clipping in controls with borders. By default, this feature is enabled only if your <xref:System.Runtime.Versioning.TargetFrameworkAttribute> is set to .NET 4.6.  Applications that target earlier versions of the framework but are running on the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] can opt in to the new behavior by adding the following line to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of the app.config file:  
+         HDPI support in WPF is now better in the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]. Changes have been made to layout rounding to reduce instances of clipping in controls with borders. By default, this feature is enabled only if your <xref:System.Runtime.Versioning.TargetFrameworkAttribute> is set to .NET 4.6.  Applications that target earlier versions of the framework but are running on the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] can opt in to the new behavior by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app.config file:  
   
         ```  
   
@@ -1009,7 +1009,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
 -   **Open-source .NET Framework packages**  
   
-     [!INCLUDE[net_core](../../../includes/net-core-md.md)] packages such as the immutable collections, [SIMD APIs](http://go.microsoft.com/fwlink/?LinkID=518639), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open source packages on [GitHub](https://github.com/). To access the code, see [NetFx on GitHub](http://go.microsoft.com/fwlink/?LinkID=518634). For more information and how to contribute to these packages, see [.NET Core and Open-Source](../../../docs/framework/getting-started/net-core-and-open-source.md), [.NET Home Page on GitHub](http://go.microsoft.com/fwlink/?LinkID=518635).  
+     [!INCLUDE[net_core](../../../includes/net-core-md.md)] packages such as the immutable collections, [SIMD APIs](http://go.microsoft.com/fwlink/?LinkID=518639), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open source packages on [GitHub](https://github.com/). To access the code, see [NetFx on GitHub](http://go.microsoft.com/fwlink/?LinkID=518634). For more information and how to contribute to these packages, see [.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md), [.NET Home Page on GitHub](http://go.microsoft.com/fwlink/?LinkID=518635).  
   
  [Back to top](#introduction)  
   
@@ -1073,15 +1073,14 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
      <xref:System.Transactions.Transaction.PromoteAndEnlistDurable%2A?displayProperty=fullName> is a new API added to the .NET Framework 4.5.2 and 4.6:  
   
-    ```  
-  
+    ```csharp
     [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name = "FullTrust")]  
     public Enlistment PromoteAndEnlistDurable(Guid resourceManagerIdentifier,  
                                               IPromotableSinglePhaseNotification promotableNotification,  
                                               ISinglePhaseNotification enlistmentNotification,  
                                               EnlistmentOptions enlistmentOptions)  
   
-    ```  
+    ```
   
      The method may be used by an enlistment that was previously created by <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A?displayProperty=fullName> in response to the <xref:System.Transactions.ITransactionPromoter.Promote%2A?displayProperty=fullName> method. It asks `System.Transactions` to promote the transaction to an MSDTC transaction and to “convert” the promotable enlistment to a durable enlistment. After this method completes successfully, the <xref:System.Transactions.IPromotableSinglePhaseNotification> interface will no longer be referenced by `System.Transactions`, and any future notifications will arrive on the provided <xref:System.Transactions.ISinglePhaseNotification> interface. The enlistment in question must act as a durable enlistment, supporting transaction logging and recovery. Refer to <xref:System.Transactions.Transaction.EnlistDurable%2A?displayProperty=fullName> for details. In addition, the enlistment must support <xref:System.Transactions.ISinglePhaseNotification>.  This method can *only* be called while processing an <xref:System.Transactions.ITransactionPromoter.Promote%2A?displayProperty=fullName> call. If that is not the case, a <xref:System.Transactions.TransactionException> exception is thrown.  
   
@@ -1109,7 +1108,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
  Core new features and enhancements in the .NET Framework 4.5.1 include:  
   
--   Automatic binding redirection for assemblies. Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you compile an app that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configuring-apps/how-to-enable-and-disable-automatic-binding-redirection.md).  
+-   Automatic binding redirection for assemblies. Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you compile an app that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)], binding redirects may be added to the app configuration file if your app or its components reference multiple versions of the same assembly. You can also enable this feature for projects that target older versions of the .NET Framework. For more information, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).  
   
 -   Ability to collect diagnostics information to help developers improve the performance of server and cloud applications. For more information, see the <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> and <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> methods in the <xref:System.Diagnostics.Tracing.EventSource> class.  
   
@@ -1156,9 +1155,9 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
 -   Ability to reduce system restarts by detecting and closing .NET Framework 4 applications during deployment. See [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md).  
   
--   Support for arrays that are larger than 2 gigabytes (GB) on 64-bit platforms. This feature can be enabled in the application configuration file. See the [\<gcAllowVeryLargeObjects> element](../../../docs/framework/configuring-apps/file-schema/runtime/gcallowverylargeobjects-element.md), which also lists other restrictions on object size and array size.  
+-   Support for arrays that are larger than 2 gigabytes (GB) on 64-bit platforms. This feature can be enabled in the application configuration file. See the [\<gcAllowVeryLargeObjects> element](../../../docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md), which also lists other restrictions on object size and array size.  
   
--   Better performance through background garbage collection for servers. When you use server garbage collection in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], background garbage collection is automatically enabled. See the Background Server Garbage Collection section of the [Fundamentals of Garbage Collection](../../../docs/standard/garbagecollection/fundamentals.md) topic.  
+-   Better performance through background garbage collection for servers. When you use server garbage collection in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], background garbage collection is automatically enabled. See the Background Server Garbage Collection section of the [Fundamentals of Garbage Collection](../../../docs/standard/garbage-collection/fundamentals.md) topic.  
   
 -   Background just-in-time (JIT) compilation, which is optionally available on multi-core processors to improve application performance. See <xref:System.Runtime.ProfileOptimization>.  
   
@@ -1180,7 +1179,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
   
 -   Delegation of string comparison to the operating system, which implements Unicode 6.0, when the .NET Framework is used on [!INCLUDE[win8](../../../includes/win8-md.md)]. When running on other platforms, the .NET Framework includes its own string comparison data, which implements Unicode 5.x. See the <xref:System.String> class and the Remarks section of the <xref:System.Globalization.SortVersion> class.  
   
--   Ability to compute the hash codes for strings on a per application domain basis. See [\<UseRandomizedStringHashAlgorithm> Element](../../../docs/framework/configuring-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).  
+-   Ability to compute the hash codes for strings on a per application domain basis. See [\<UseRandomizedStringHashAlgorithm> Element](../../../docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).  
   
 -   Type reflection support split between <xref:System.Type> and <xref:System.Reflection.TypeInfo> classes. See [Reflection in the .NET Framework for Windows Store Apps](../../../docs/framework/reflection-and-codedom/reflection-for-windows-store-apps.md).  
   
@@ -1359,7 +1358,7 @@ Dim utc As New Date(2016, 11, 07, 3, 0, 0, DateTimeKind.Utc)
  The Portable Class Library project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)] (and later versions) enables you to write and build managed assemblies that work on multiple .NET Framework platforms. Using a Portable Class Library project, you choose the platforms (such as Windows Phone and [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]) to target. The available types and members in your project are automatically restricted to the common types and members across these platforms. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).  
   
 ## See Also  
- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/getting-started/the-net-framework-and-out-of-band-releases.md)   
+ [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)   
  [What's New in Visual Studio 2013](http://msdn.microsoft.com/library/bb386063\(v=vs.120\).aspx)   
  [ASP.NET 4.5.1 and Web Tools for Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094)   
  [ASP.NET and Visual Studio for Web](http://msdn.microsoft.com/library/c3e0fd2f-7a94-47c4-afc0-ecfb7233e15a)   

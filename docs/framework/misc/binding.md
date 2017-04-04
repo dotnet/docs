@@ -49,4 +49,4 @@ You can use the `binding` element to configure different types of predefined bin
  <xref:System.ServiceModel.Channels.BindingElement>   
  [Bindings](../../../docs/framework/wcf/bindings.md)   
  [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)   
- [\<customBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md)
+ [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

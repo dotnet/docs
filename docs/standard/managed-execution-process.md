@@ -111,7 +111,7 @@ manager: "wpickett"
  [Back to top](#introduction)  
   
 ## See Also  
- [Overview](../../docs/framework/getting-started/overview.md)   
+ [Overview](../../docs/framework/get-started/overview.md)   
  [Language Independence and Language-Independent Components](../../docs/standard/language-independence-and-language-independent-components.md)   
  [Metadata and Self-Describing Components](../../docs/standard/metadata-and-self-describing-components.md)   
  [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)   

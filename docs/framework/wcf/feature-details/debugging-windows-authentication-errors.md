@@ -96,7 +96,7 @@ When using Windows authentication as a security mechanism, the Security Support 
   
     1.  Do this in code, with the following statement: `ChannelFactory.Credentials.Windows.AllowNtlm = false`  
   
-    2.  Or you can do this in the configuration file by setting the `allowNtlm` attribute to `false`. This attribute is contained in the [\<windows>](../../../../docs/framework/configuring-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
+    2.  Or you can do this in the configuration file by setting the `allowNtlm` attribute to `false`. This attribute is contained in the [\<windows>](../../../../docs/framework/configure-apps/file-schema/wcf/windows-of-clientcredentials-element.md).  
   
 ### NTLM Protocol  
   

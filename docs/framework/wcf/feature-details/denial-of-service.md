@@ -21,7 +21,7 @@ manager: "erikre"
 Denial of service occurs when a system is overwhelmed in such a way that messages cannot be processed, or they are processed extremely slowly.  
   
 ## Excess Memory Consumption  
- A problem can occur when reading an XML document with a large number of unique local names, namespaces, or prefixes. If you are using a class that derives from <xref:System.Xml.XmlReader>, and you call either the <xref:System.Xml.XmlReader.LocalName%2A>, <xref:System.Xml.XmlReader.Prefix%2A> or <xref:System.Xml.XmlReader.NamespaceUri%2A> property for each item, the returned string is added to a <xref:System.Xml.NameTable>. The collection held by the <xref:System.Xml.NameTable> never decreases in size, creating a virtual "memory leak" of the string handles.  
+ A problem can occur when reading an XML document with a large number of unique local names, namespaces, or prefixes. If you are using a class that derives from <xref:System.Xml.XmlReader>, and you call either the <xref:System.Xml.XmlReader.LocalName%2A>, <xref:System.Xml.XmlReader.Prefix%2A> or <xref:System.Xml.XmlReader.NamespaceURI%2A> property for each item, the returned string is added to a <xref:System.Xml.NameTable>. The collection held by the <xref:System.Xml.NameTable> never decreases in size, creating a virtual "memory leak" of the string handles.  
   
  Mitigations include:  
   

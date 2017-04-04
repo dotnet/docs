@@ -53,7 +53,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"tab item"|Localized string corresponding to this control type.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The tab item control must always be content.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The tab item control must always be a control.|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.ControllerForProperty>|See notes.|This property can be used as pointer to the associated tab pane. This is useful when it cannot host a pane as child of the tab item object.|  
   
 <a name="Required_UI_Automation_Control_Patterns"></a>   
 ## Required UI Automation Control Patterns  

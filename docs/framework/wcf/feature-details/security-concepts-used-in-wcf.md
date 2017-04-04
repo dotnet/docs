@@ -40,7 +40,7 @@ manager: "mbaldwin"
 ## Access Control Mechanisms  
  WCF provides a number of ways to control access to a service or operation. Among them are  
   
-1.  <xref:System.Security.Permissions.PrinciplePermissionAttribute>  
+1.  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
   
 2.  ASP.NET Membership Provider  
   

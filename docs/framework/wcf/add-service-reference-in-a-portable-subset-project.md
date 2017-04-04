@@ -25,13 +25,13 @@ Portable subset projects enable .NET assembly programmers to maintain a single s
   
 2.  For services that use <xref:System.Runtime.Serialization.DataContractSerializer> scenarios, a data contract surrogate is provided to ensure that reused types come only from the portable subset.  
   
-3.  Endpoints which rely on bindings not supported in portable libraries (all bindings except <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WsHttpBinding> without transaction flow, reliable sessions, or MTOM encoding, and equivalent custom bindings) are ignored.  
+3.  Endpoints which rely on bindings not supported in portable libraries (all bindings except <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSHttpBinding> without transaction flow, reliable sessions, or MTOM encoding, and equivalent custom bindings) are ignored.  
   
 4.  Message headers are deleted from all message descriptions in all operations before import.  
   
-5.  Non-portable attributes <xref:System.ComponentModel.DesignerCategoryAttribute>, <xref:System.Serializable>, and <xref:System.ServiceModel.TransactionFlow> are removed from generated client proxy code.  
+5.  Non-portable attributes <xref:System.ComponentModel.DesignerCategoryAttribute>, <xref:System.SerializableAttribute>, and <xref:System.ServiceModel.TransactionFlowAttribute> are removed from generated client proxy code.  
   
-6.  Non-portable properties ProtectionLevel, SessionMode, IsInitiating, IsTerminating are removed from <xref:System.ServiceModel.ServiceContractAttribute>, <xref:System.ServiceModel.OperationContract>, and <xref:System.ServiceModel.FaultContract>.  
+6.  Non-portable properties ProtectionLevel, SessionMode, IsInitiating, IsTerminating are removed from <xref:System.ServiceModel.ServiceContractAttribute>, <xref:System.ServiceModel.OperationContractAttribute>, and <xref:System.ServiceModel.FaultContractAttribute>.  
   
 7.  All service operations are generated as asynchronous operations on the client proxy.  
   

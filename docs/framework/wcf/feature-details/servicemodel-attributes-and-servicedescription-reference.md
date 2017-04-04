@@ -115,7 +115,7 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
   
 |MessageParameterAttribute Value|Description Tree Value Affected|  
 |-------------------------------------|-------------------------------------|  
-|Name|<xref:System.ServiceModel.Description.MessagePartDescription.name%2A> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|Name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> for the corresponding part in <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how the description tree values are converted into metadata, see [ServiceDescription and WSDL Reference](../../../../docs/framework/wcf/feature-details/servicedescription-and-wsdl-reference.md).  
   

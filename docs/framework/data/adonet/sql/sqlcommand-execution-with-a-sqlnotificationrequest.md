@@ -31,7 +31,7 @@ A <xref:System.Data.SqlClient.SqlCommand> can be configured to generate a notifi
  There are no new client-side security elements for <xref:System.Data.Sql.SqlNotificationRequest>. This is primarily a server feature, and the server has created special privileges that users must have to request a notification.  
   
 ### Example  
- The following code fragment demonstrates how to create a <xref:System.Data.Sql.SqlNotificationRequest> and associate it with a <xref:System.Data.Sql.SqlCommand>.  
+ The following code fragment demonstrates how to create a <xref:System.Data.Sql.SqlNotificationRequest> and associate it with a <xref:System.Data.SqlClient.SqlCommand>.  
   
 ```vb  
 ' Assume connection is an open SqlConnection.  

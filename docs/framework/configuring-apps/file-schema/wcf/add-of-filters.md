@@ -81,7 +81,7 @@ A XPath filter that specifies the kind of message to be logged.
  <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>   
  <xref:System.ServiceModel.Configuration.MessageLoggingElement>   
  <xref:System.ServiceModel.Configuration.MessageLoggingElement.Filters%2A>   
- <xref:System.ServiceModel.Configuration.XpathMessageFilterElement>   
+ <xref:System.ServiceModel.Configuration.XPathMessageFilterElement>   
  <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>   
  [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)   
  [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)   

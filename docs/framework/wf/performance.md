@@ -114,7 +114,7 @@ Dustin Metzgar
  The sequence workflow contains one <xref:System.Activities.Statements.While> activity with one child activity in the loop that does not perform any work.  
   
 ### Replicator compared to ParallelForEach  
- <xref:System.Workflow.Activities.ReplicatorActivity> in WF3 has sequential and parallel execution modes.  In sequential mode, the activity’s performance is similar to the <xref:System.Workflow.Activities.WhileActivity>.  The <xref:System.Workflow.Activities.ReplicatorActivity> is most useful for parallel execution.  The WF4 analog for this is the <xref:System.Activities.Statements.ParallelForEach> activity.  
+ <xref:System.Workflow.Activities.ReplicatorActivity> in WF3 has sequential and parallel execution modes.  In sequential mode, the activity’s performance is similar to the <xref:System.Workflow.Activities.WhileActivity>.  The <xref:System.Workflow.Activities.ReplicatorActivity> is most useful for parallel execution.  The WF4 analog for this is the <xref:System.Activities.Statements.ParallelForEach%601> activity.  
   
  The following diagram shows the workflows used for this test. The WF3 workflow is on the left and the WF4 workflow is on the right.  
   

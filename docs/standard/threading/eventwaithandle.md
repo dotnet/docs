@@ -26,7 +26,7 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
 > [!NOTE]
 >  Event wait handles are not events in the sense usually meant by that word in the .NET Framework. There are no delegates or event handlers involved. The word "event" is used to describe them because they have traditionally been referred to as operating-system events, and because the act of signaling the wait handle indicates to waiting threads that an event has occurred.  
   
- Both local and named event wait handles use system synchronization objects, which are protected by <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> wrappers to ensure that the resources are released. You can use the <xref:System.Threading.WaitHandle.System%23IDisposable%23Dispose%2A> method to free the resources immediately when you have finished using the object,  
+ Both local and named event wait handles use system synchronization objects, which are protected by <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> wrappers to ensure that the resources are released. You can use the <xref:System.Threading.WaitHandle.Dispose%2A> method to free the resources immediately when you have finished using the object.  
   
 ## Event Wait Handles That Reset Automatically  
  You create an automatic reset event by specifying <xref:System.Threading.EventResetMode?displayProperty=fullName> when you create the <xref:System.Threading.EventWaitHandle> object. As its name implies, this synchronization event resets automatically when signaled, after releasing a single waiting thread. Signal the event by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method.  

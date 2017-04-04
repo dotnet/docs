@@ -141,7 +141,7 @@ serviceHost.Open()
 >  Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) with the `/config:`*filename*`[,`*filename*`]` switch to quickly create configuration files.  
   
 ## Using Default Endpoints  
- If no endpoints are specified in code or in configuration then the runtime provides default endpoints by adding one default endpoint for each base address for each service contract implemented by the service. The base address can be specified in code or in configuration, and the default endpoints are added when <xref:System.ServiceModel.ServiceHost.Open%2A> is called on the <xref:System.ServiceModel.ServiceHost>. This example is the same example from the previous section, but since no endpoints are specified, the default endpoints are added.  
+ If no endpoints are specified in code or in configuration then the runtime provides default endpoints by adding one default endpoint for each base address for each service contract implemented by the service. The base address can be specified in code or in configuration, and the default endpoints are added when <xref:System.ServiceModel.ICommunicationObject.Open> is called on the <xref:System.ServiceModel.ServiceHost>. This example is the same example from the previous section, but since no endpoints are specified, the default endpoints are added.  
   
 ```csharp  
 Namespace Echo  

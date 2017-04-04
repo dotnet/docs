@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Standard Endpoints
-Endpoints are defined by specifying an address, a binding, and a contract. Other parameters that may be set on an endpoint include behavior configuration, headers, and listen URIs.  For certain types of endpoints these values do not change. For example, metadata exchange endpoints always use the <xref:System.ServiceModel.Description.IMetadataExchange> contract. Other endpoints, such as <xref:System.ServiceModel.Web.WebHttpEndpoint> always require a specified endpoint behavior. The usability of an endpoint can be improved by having endpoints with default values for commonly used endpoint properties. Standard endpoints enable a developer to define an endpoint that has default values or where one or more endpoint’s properties does not change.  These endpoints allow you to use such an endpoint without having to specify information of a static nature. Standard endpoints can be used for infrastructure and application endpoints.  
+Endpoints are defined by specifying an address, a binding, and a contract. Other parameters that may be set on an endpoint include behavior configuration, headers, and listen URIs.  For certain types of endpoints these values do not change. For example, metadata exchange endpoints always use the <xref:System.ServiceModel.Description.IMetadataExchange> contract. Other endpoints, such as <xref:System.ServiceModel.Description.WebHttpEndpoint> always require a specified endpoint behavior. The usability of an endpoint can be improved by having endpoints with default values for commonly used endpoint properties. Standard endpoints enable a developer to define an endpoint that has default values or where one or more endpoint’s properties does not change.  These endpoints allow you to use such an endpoint without having to specify information of a static nature. Standard endpoints can be used for infrastructure and application endpoints.  
   
 ## Infrastructure Endpoints  
  A service may expose endpoints with some of the properties not explicitly implemented by the service author. For example, the metadata exchange endpoint exposes the <xref:System.ServiceModel.Description.IMetadataExchange> contract but as a service author you do not implement that interface, it is implemented by WCF. Such infrastructure endpoints have default values for one or more endpoint properties, some of which may be unalterable. The <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property of the metadata exchange endpoint must be <xref:System.ServiceModel.Description.IMetadataExchange>, while other properties like binding can be supplied by the developer. Infrastructure endpoints are identified by setting the <xref:System.ServiceModel.Description.ServiceEndpoint.IsSystemEndpoint%2A> property to `true`.  
@@ -54,7 +54,7 @@ public class CustomEndpoint : ServiceEndpoint
     }  
 ```  
   
- To use a user-defined custom endpoint in a configuration file you must derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointElement>, derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement>, and register the new standard endpoint in the extensions section in app.config or machine.config.  The <xref:System.ServiceModel.Configuration.StandardEndpointElement> provides configuration support for the standard endpoint, as shown in the following example.  
+ To use a user-defined custom endpoint in a configuration file you must derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointElement>, derive a class from <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602>, and register the new standard endpoint in the extensions section in app.config or machine.config.  The <xref:System.ServiceModel.Configuration.StandardEndpointElement> provides configuration support for the standard endpoint, as shown in the following example.  
   
 ```  
 public class CustomEndpointElement : StandardEndpointElement  
@@ -116,7 +116,7 @@ public class CustomEndpointElement : StandardEndpointElement
   
 ```  
   
- The <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement> provides the backing type for the collection that appears under the <`standardEndpoints`> section in the configuration for the standard endpoint.  The following example shows how to implement this class.  
+ The <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602> provides the backing type for the collection that appears under the <`standardEndpoints`> section in the configuration for the standard endpoint.  The following example shows how to implement this class.  
   
 ```  
 public class CustomEndpointCollectionElement : StandardEndpointCollectionElement<CustomEndpoint, CustomEndpointElement>  

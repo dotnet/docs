@@ -54,7 +54,6 @@ manager: "markl"
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.ControlTypeProperty>|Table|This value is the same for all UI frameworks.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.LocalizedControlTypeProperty>|"table"|Localized string corresponding to the Table control type.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.HelpTextProperty>|See notes.|More details about the purpose of the table should be exposed through this property if it is not sufficiently explained by accessing the NameProperty.|  
-|<xref:System.Windows.Automation.AutomationElementIdentifiers.DescribedByProperty>|See notes.|If the table is annotated by other UI element (for example, a text element that holds the description for the table), the DescribedBy property should expose a reference to the automation element of the text control.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The table control must always be content.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The table control must always be a control.|  
   

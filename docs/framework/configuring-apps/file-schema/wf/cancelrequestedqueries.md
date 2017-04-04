@@ -49,7 +49,5 @@ Represents a collection of queries that are used to track requests to cancel a c
 |[\<workflow>](../../../../../docs/framework/configuring-apps/file-schema/wf/workflow.md)|A configuration element that contains all queries for a specific workflow identified by the **activityDefinitionId** property.|  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestQueryElementCollection>   
- <xref:System.Activities.Tracking.CancelRequestQuery>   
  [Workflow Tracking and Tracing](../../../../../docs/framework/wf/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/wf/tracking-profiles.md)

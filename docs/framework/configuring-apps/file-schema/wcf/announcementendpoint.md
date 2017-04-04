@@ -37,7 +37,7 @@ This configuration element defines a standard endpoint with a fixed announcement
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|discoveryVersion|A string that specifies one of the two versions of WS-Discovery protocol. Valid values are WSDiscovery11 and WSDiscoveryApril2005. This value is of type <xref:System.ServiceModel.Discovery.Configuration.DiscoveryVersion>.|  
+|discoveryVersion|A string that specifies one of the two versions of WS-Discovery protocol. Valid values are WSDiscovery11 and WSDiscoveryApril2005. This value is of type <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion>.|  
 |maxAnnouncementDelay|A Timespan value that specifies the maximum value for the delay the Discovery protocol will wait before sending a Hello message. The messages will wait for a random time value between 0 and the value of this attribute before being sent. This attribute is used to set a small, random delay to prevent network storms when a network goes out and all services come back online at the same time.|  
 |name|A String that specifies the name of the configuration of the standard endpoint. The name is used in the `endpointConfiguration` attribute of the service endpoint to link a standard endpoint to its configuration.|  
   

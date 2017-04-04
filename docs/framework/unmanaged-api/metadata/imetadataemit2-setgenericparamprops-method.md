@@ -50,13 +50,13 @@ HRESULT SetGenericParamProps (
  [in] A value of the [CorGenericParamAttr](../../../../docs/framework/unmanaged-api/metadata/corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.  
   
  `szName`  
- [in] (optional) The name of the parameter for which to set values.  
+ [in] Optional. The name of the parameter for which to set values.  
   
  `reserved`  
  [in] Reserved for future extensibility.  
   
  `rtkConstraints`  
- [in] (optional) A zero-terminated array of type constraints. Array members must be an `mdTypeDef`, `mdTypeRef`, or `mdTypeSpec` metadata token.  
+ [in] Optional. A zero-terminated array of type constraints. Array members must be an `mdTypeDef`, `mdTypeRef`, or `mdTypeSpec` metadata token.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  

@@ -33,11 +33,11 @@ JSON (JavaScript Object Notation) is a data format that is specifically designed
 |<xref:System.Enum>|Number|See "Enumerations and JSON" later in this topic.|  
 |<xref:System.Boolean>|Boolean|--|  
 |<xref:System.String>, <xref:System.Char>|String|--|  
-|<xref:System.Timespan>, <xref:System.Guid>, <xref:System.Uri>|String|The format of these types in JSON is the same as in XML (essentially, TimeSpan in the ISO 8601 Duration format, GUID in the "12345678-ABCD-ABCD-ABCD-1234567890AB" format and URI in its natural string form like "http://www.example.com"). For precise information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).|  
+|<xref:System.TimeSpan>, <xref:System.Guid>, <xref:System.Uri>|String|The format of these types in JSON is the same as in XML (essentially, TimeSpan in the ISO 8601 Duration format, GUID in the "12345678-ABCD-ABCD-ABCD-1234567890AB" format and URI in its natural string form like "http://www.example.com"). For precise information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).|  
 |<xref:System.Xml.XmlQualifiedName>|String|The format is "name:namespace" (anything before the first colon is the name). Either the name or the namespace can be missing. If there is no namespace the colon can be omitted as well.|  
 |<xref:System.Array> of type <xref:System.Byte>|Array of numbers|Each number represents the value of one byte.|  
-|<xref:System.Datetime>|DateTime or String|See Dates/Times and JSON later in this topic.|  
-|<xref:System.DatetimeOffset>|Complex type|See Dates/Times and JSON later in this topic.|  
+|<xref:System.DateTime>|DateTime or String|See Dates/Times and JSON later in this topic.|  
+|<xref:System.DateTime.Offset>|Complex type|See Dates/Times and JSON later in this topic.|  
 |XML and ADO.NET types (<xref:System.Xml.XmlElement>,<br /><br /> <xref:System.Xml.Linq.XElement>. Arrays of <xref:System.Xml.XmlNode>,<br /><br /> <xref:System.Runtime.Serialization.ISerializable>,<br /><br /> <xref:System.Data.DataSet>).|String|See the XML Types and JSON section of this topic.|  
 |<xref:System.DBNull>|Empty complex type|--|  
 |Collections, dictionaries, and arrays|Array|See the Collections, Dictionaries, and Arrays section of this topic.|  

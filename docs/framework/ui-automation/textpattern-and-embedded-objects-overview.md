@@ -85,7 +85,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  **Example 2 - A text range that partially spans an embedded text hyperlink**  
   
- The URL http://{[www](www)} is embedded in text.  
+ The URL http://{[www]} is embedded in text.  
   
 |Method called|Result|  
 |-------------------|------------|  
@@ -101,7 +101,7 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 |-------------------|------------|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetText%2A>|Returns the string "The URL".|  
 |<xref:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement%2A>|Returns the innermost <xref:System.Windows.Automation.AutomationElement> that encloses the text range; in this case, the <xref:System.Windows.Automation.AutomationElement> that represents the text provider itself.|  
-|<xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> with parameters of (TextUnit.Word, 1).|Moves the text range span to "http" since the text of the hyperlink is comprised of individual words. In this case, the hyperlink is not treated as a single object.<br /><br /> The URL {[http](http)} is embedded in text.|  
+|<xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> with parameters of (TextUnit.Word, 1).|Moves the text range span to "http" since the text of the hyperlink is comprised of individual words. In this case, the hyperlink is not treated as a single object.<br /><br /> The URL {[http]} is embedded in text.|  
   
 <a name="Image"></a>   
 ### Image  

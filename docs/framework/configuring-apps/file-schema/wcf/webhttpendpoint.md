@@ -38,7 +38,7 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 |Attribute|Description|  
 |---------------|-----------------|  
 |automaticFormatSelectionEnabled|A Boolean value that indicates whether automatic format selection is enabled.<br /><br /> When automatic format selection is enabled, the infrastructure parses the `Accept` header of the request message and determines the most appropriate response format. If the `Accept` header does not specify a suitable response format, the infrastructure uses the `Content-Type` of the request message or the default response format of the operation.|  
-|defaultOutgoingResponseFormat|An attribute that specifies the default outgoing response format. This attribute is of the <xref:System.Servicemodel.Web.Webmessageformat> type|  
+|defaultOutgoingResponseFormat|An attribute that specifies the default outgoing response format. This attribute is of the <xref:System.ServiceModel.Web.WebMessageFormat> type|  
 |helpEnabled|A Boolean value that indicates whether the HTTP help page is enabled for the endpoint.|  
 |webEndpointType|A string that specifies the type of the endpoint.|  
   

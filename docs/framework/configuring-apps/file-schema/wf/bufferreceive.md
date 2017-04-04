@@ -47,5 +47,5 @@ A service behavior that enables a service to use buffered receive processing, wh
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configuring-apps/file-schema/wf/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## See Also  
- <xref:System.ServiceModel.Activities.Description.BufferReceiveServiceBehavior>   
+<!-- <xref:System.ServiceModel.Activities.Description.BufferReceiveServiceBehavior>  -->
  <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>

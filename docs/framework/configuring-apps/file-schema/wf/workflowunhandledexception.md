@@ -35,7 +35,7 @@ A service behavior that enables you to specify the action to take when an unhand
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|action|A string that specifies the action to take when an unhandled exception occurs. This attribute is of type <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionaction>|  
+|action|A string that specifies the action to take when an unhandled exception occurs. This attribute is of type <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction>|  
   
 ### Child Elements  
  None.  

@@ -76,7 +76,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|In .NET 4.5, when a WPF text box control is inactive (it doesn't have focus), the selected text inside the box will appear a different color than when the control is active.|  
-|Suggestion|Previous (.NET 4.0) behavior may be restored by setting the [FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported](https://msdn.microsoft.com/en-us/library/system.windows.frameworkcompatibilitypreferences.areinactiveselectionhighlightbrushkeyssupported\(v=vs.110\).aspx) property to false.|  
+|Suggestion|Previous (.NET 4.0) behavior may be restored by setting the [FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported](https://msdn.microsoft.com/library/system.windows.frameworkcompatibilitypreferences.areinactiveselectionhighlightbrushkeyssupported\(v=vs.110\).aspx) property to false.|  
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -152,8 +152,8 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
   
 |||  
 |-|-|  
-|Details|Applications without a [TargetFrameworkAttribute](https://msdn.microsoft.com/en-us/library/system.runtime.versioning.targetframeworkattribute\(v=vs.110\).aspx) applied at the assembly level will automatically run using the semantics (quirks) of the .NET Framework 4.0. To ensure high quality, it is recommended that all binaries be explicitly attributed with a TargetFrameworkAttribute indicating the version of the .NET Framework they were built with. Note that using a target framework moniker in a project file will caues MSBuild to automatically apply a TargetFrameworkAttribute.|  
-|Suggestion|A [target framework attribute](https://msdn.microsoft.com/en-us/library/system.runtime.versioning.targetframeworkattribute\(v=vs.110\).aspx) should be supplied, either through adding the attribute directly to the assembly or by specifying a target framework in the [project file or through Visual Studio's project properties GUI](http://blogs.msdn.com/b/visualstudio/archive/2010/05/19/visual-studio-managed-multi-targeting-part-1-concepts-target-framework-moniker-target-framework.aspx).|  
+|Details|Applications without a [TargetFrameworkAttribute](https://msdn.microsoft.com/library/system.runtime.versioning.targetframeworkattribute\(v=vs.110\).aspx) applied at the assembly level will automatically run using the semantics (quirks) of the .NET Framework 4.0. To ensure high quality, it is recommended that all binaries be explicitly attributed with a TargetFrameworkAttribute indicating the version of the .NET Framework they were built with. Note that using a target framework moniker in a project file will caues MSBuild to automatically apply a TargetFrameworkAttribute.|  
+|Suggestion|A [target framework attribute](https://msdn.microsoft.com/library/system.runtime.versioning.targetframeworkattribute\(v=vs.110\).aspx) should be supplied, either through adding the attribute directly to the assembly or by specifying a target framework in the [project file or through Visual Studio's project properties GUI](http://blogs.msdn.com/b/visualstudio/archive/2010/05/19/visual-studio-managed-multi-targeting-part-1-concepts-target-framework-moniker-target-framework.aspx).|  
 |Scope|Major|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -165,7 +165,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|ASP.NET no longer allows developers to specify `<pages enableViewStateMac="false"/>` or `<@Page EnableViewStateMac="false" %>`. The view state message authentication code (MAC) is now enforced for all requests with embedded view state. Only apps that explicitly set the EnableViewStateMac property to false are affected.|  
-|Suggestion|EnableViewStateMac must be assumed to be true, and any resulting MAC errors must be resolved (as explained in [this](https://support.microsoft.com/en-us/kb/2915218) guidance, which contains multiple resolutions depending on the specifics of what is causing MAC errors).|  
+|Suggestion|EnableViewStateMac must be assumed to be true, and any resulting MAC errors must be resolved (as explained in [this](https://support.microsoft.com/kb/2915218) guidance, which contains multiple resolutions depending on the specifics of what is causing MAC errors).|  
 |Scope|Major|  
 |Version|4.5.2|  
 |Type|Runtime|  
@@ -215,7 +215,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Windows Workflow Foundation (WWF) 3.0 APIs (those from the System.Workflow namespace) are now obsolete.|  
-|Suggestion|New WWF 4.0 APIs (in System.Activities) should be used instead. An example of using the new APIs can be found [here](https://msdn.microsoft.com/en-us/library/jj205427.aspx) and further guidance is available [here](http://blogs.msdn.com/b/workflowteam/archive/2012/02/08/deprecatingwf3.aspx). Alternatively, since the WWF 3.0 APIs are still supported, they may be used and the build-time warning avoided either by suppressing it or by using an older compiler.|  
+|Suggestion|New WWF 4.0 APIs (in System.Activities) should be used instead. An example of using the new APIs can be found [here](https://msdn.microsoft.com/library/jj205427.aspx) and further guidance is available [here](http://blogs.msdn.com/b/workflowteam/archive/2012/02/08/deprecatingwf3.aspx). Alternatively, since the WWF 3.0 APIs are still supported, they may be used and the build-time warning avoided either by suppressing it or by using an older compiler.|  
 |Scope|Major|  
 |Version|4.5|  
 |Type|Retargeting|  
@@ -227,7 +227,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|This WorkFlow Drag/Drop API is obsolete and will cause compiler warnings if the app is rebuilt against 4.5.|  
-|Suggestion|New [DragDropHelper](https://msdn.microsoft.com/en-us/library/system.activities.presentation.dragdrophelper\(v=vs.110\).aspx) APIs that support operations with multiple objects should be used instead. Alternatively, the build warnings can be suppressed or they can be avoided by using an older compiler. The APIs are still supported.|  
+|Suggestion|New [DragDropHelper](https://msdn.microsoft.com/library/system.activities.presentation.dragdrophelper\(v=vs.110\).aspx) APIs that support operations with multiple objects should be used instead. Alternatively, the build warnings can be suppressed or they can be avoided by using an older compiler. The APIs are still supported.|  
 |Scope|Minor|  
 |Version|4.5|  
 |Type|Retargeting|  
@@ -253,7 +253,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|The `EncoderParameter.EncoderParameter(Encoder, Int32, Int32, Int32)` constructor is obsolete now and will introduce build warnings if used.|  
-|Suggestion|Although the `EncoderParameter.EncoderParameter(Encoder, Int32, Int32, Int32)` constructor will continue to work, the following constructor should be used instead to avoid the obsolete build warning when re-compiling code with .NET 4.5 tools: [EncoderParameter.EncoderParameter(Encoder, Int32, EncoderParameterValueType, IntPtr)](https://msdn.microsoft.com/en-us/library/hh875096\(v=vs.110\).aspx).|  
+|Suggestion|Although the `EncoderParameter.EncoderParameter(Encoder, Int32, Int32, Int32)` constructor will continue to work, the following constructor should be used instead to avoid the obsolete build warning when re-compiling code with .NET 4.5 tools: [EncoderParameter.EncoderParameter(Encoder, Int32, EncoderParameterValueType, IntPtr)](https://msdn.microsoft.com/library/hh875096\(v=vs.110\).aspx).|  
 |Scope|Minor|  
 |Version|4.5|  
 |Type|Retargeting|  
@@ -291,7 +291,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|These methods are now obsolete. Compilation of code that calls these methods produces a compiler warning.|  
-|Suggestion|The recommended alternatives are [MachineKey.Protect](https://msdn.microsoft.com/en-us/library/system.web.security.machinekey.protect\(v=vs.110\).aspx) and [MachineKey.Unprotect](https://msdn.microsoft.com/en-us/library/system.web.security.machinekey.unprotect\(v=vs.110\).aspx). Alternatively, the build warnings can be suppressed or they can be avoided by using an older compiler. The APIs are still supported.|  
+|Suggestion|The recommended alternatives are [MachineKey.Protect](https://msdn.microsoft.com/library/system.web.security.machinekey.protect\(v=vs.110\).aspx) and [MachineKey.Unprotect](https://msdn.microsoft.com/library/system.web.security.machinekey.unprotect\(v=vs.110\).aspx). Alternatively, the build warnings can be suppressed or they can be avoided by using an older compiler. The APIs are still supported.|  
 |Scope|Minor|  
 |Version|4.5|  
 |Type|Retargeting|  
@@ -304,7 +304,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Beginning in the .NET Framework 4.5, the Replace method in OData URLs is disabled by default. When OData Replace is disabled (now by default), any user requests including replace functions (which are uncommon) will fail.|  
-|Suggestion|If the replace method is required (which is uncommon), it can be re-enabled through a [config settings](https://msdn.microsoft.com/en-us/library/system.data.services.configuration.dataservicesfeaturessection.replacefunction.aspx). However, an enabled replace method can open security vulnerabilities and should only be used after careful review.|  
+|Suggestion|If the replace method is required (which is uncommon), it can be re-enabled through a [config settings](https://msdn.microsoft.com/library/system.data.services.configuration.dataservicesfeaturessection.replacefunction.aspx). However, an enabled replace method can open security vulnerabilities and should only be used after careful review.|  
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -354,7 +354,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|DTD entity expansion is now limited to 10,000,000 characters. Loading XML files without DTD entity expansion or with limited DTD entity expansion is unaffected. Files with DTD entities that expand to more than 10,000,000 characters fail to load, and now throw an exception.|  
-|Suggestion|If the limit of DTD entity expansion is too low 10,000,000, the value can be overridden with the [XmlReaderSettings.MaxCharactersFromEntities](https://msdn.microsoft.com/en-us/library/system.xml.xmlreadersettings.maxcharactersfromentities%28v=vs.110%29.aspx) property. An XmlReaderSettings with the proper MaxCharactersFromEntity value can be passed to [XmlReader.Create](https://msdn.microsoft.com/en-us/library/System.Xml.XmlReader.Create\(v=vs.110\).aspx)|  
+|Suggestion|If the limit of DTD entity expansion is too low 10,000,000, the value can be overridden with the [XmlReaderSettings.MaxCharactersFromEntities](https://msdn.microsoft.com/library/system.xml.xmlreadersettings.maxcharactersfromentities%28v=vs.110%29.aspx) property. An XmlReaderSettings with the proper MaxCharactersFromEntity value can be passed to [XmlReader.Create](https://msdn.microsoft.com/library/System.Xml.XmlReader.Create\(v=vs.110\).aspx)|  
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -367,7 +367,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|In the .NET Framework 4.5, the text of the error message when an XSLT file is too complex is "The style sheet is too complex." In previous versions, the error message was "XSLT compile error." Application code that depends on the text of the error message will no longer work. However, the exception types remain the same, so this change should have no real impact.|  
-|Suggestion|Update any app code depending on the excepton message from this error condition to expect the new message, or (even better) update the code to depend only on the exception type ([XsltException](https://msdn.microsoft.com/en-us/library/system.xml.xsl.xsltexception\(v=vs.110\).aspx)), which has not changed.|  
+|Suggestion|Update any app code depending on the excepton message from this error condition to expect the new message, or (even better) update the code to depend only on the exception type ([XsltException](https://msdn.microsoft.com/library/system.xml.xsl.xsltexception\(v=vs.110\).aspx)), which has not changed.|  
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -379,7 +379,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
   
 |||  
 |-|-|  
-|Details|The associated [ValueSerializer](https://msdn.microsoft.com/en-us/library/system.windows.markup.valueserializer\(v=vs.110\).aspx) object will convert a DateTime or DateTimeOffset object whose Second and Millisecond components are non-zero and (for a DateTime value) whose DateTime.Kind property is not Unspecified to property element syntax instead of a string. This change allows DateTime and DateTimeOffset values to be round-tripped. Custom XAML parsers that assume that input XAML is in the attribute syntax will not function correctly.|  
+|Details|The associated [ValueSerializer](https://msdn.microsoft.com/library/system.windows.markup.valueserializer\(v=vs.110\).aspx) object will convert a DateTime or DateTimeOffset object whose Second and Millisecond components are non-zero and (for a DateTime value) whose DateTime.Kind property is not Unspecified to property element syntax instead of a string. This change allows DateTime and DateTimeOffset values to be round-tripped. Custom XAML parsers that assume that input XAML is in the attribute syntax will not function correctly.|  
 |Suggestion|This change allows DateTime and DateTimeOffset values to be round-tripped. Custom XAML parsers that assume that input XAML is in the attribute syntax will not function correctly.|  
 |Scope|Edge|  
 |Version|4.5|  
@@ -391,7 +391,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
   
 |||  
 |-|-|  
-|Details|Two new members (CurrentPage and SelectedPage) have been added to the [PageRangeSelection](https://msdn.microsoft.com/en-us/library/system.windows.controls.pagerangeselection\(v=vs.110\).aspx) enum.|  
+|Details|Two new members (CurrentPage and SelectedPage) have been added to the [PageRangeSelection](https://msdn.microsoft.com/library/system.windows.controls.pagerangeselection\(v=vs.110\).aspx) enum.|  
 |Suggestion|In most cases, these changes won't impact user code. Code that depends on a particular number of elements existing in Enum.GetNames or Enum.GetValues calls on the PageRangeSelection type should be modified, though.|  
 |Scope|Edge|  
 |Version|4.5|  
@@ -418,7 +418,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Except for Task.IAsyncResult.AsyncWaitHandle, System.Threading.Tasks.Task methods no longer throw an ObjectDisposedException exception after the object is disposed.<br />This change supports the use of cached tasks. For example, a method can return a cached task to represent an already completed operation instead of allocating a new task. This was impossible in previous .NET Framework versions, because any consumer of the task could dispose of it, which rendered it unusable.|  
-|Suggestion|Be aware that Task methods may no longer throw ObjectDisposedExceptions in cases when the object is disposed. If an app was depending on this exception to know that a task was disposed, it should be updated to explicitly check the task's status using [Task.Status](https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.status\(v=vs.110\).aspx).|  
+|Suggestion|Be aware that Task methods may no longer throw ObjectDisposedExceptions in cases when the object is disposed. If an app was depending on this exception to know that a task was disposed, it should be updated to explicitly check the task's status using [Task.Status](https://msdn.microsoft.com/library/system.threading.tasks.task.status\(v=vs.110\).aspx).|  
 |Scope|Minor|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -469,7 +469,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Beginning in .NET Framework 4.5, UTF-7 encoding is prohibited in HttpRequests' bodies. Data for applications that depend on incoming UTF-7 data will not decode properly in some cases.|  
-|Suggestion|Ideally, applications should be updated to not use UTF-7 encoding in HttpRequests. Alternatively, legacy behavior can be restored by using the `aspnet:AllowUtf7RequestContentEncoding` attribute of the [appSettings](https://msdn.microsoft.com/en-us/library/hh975440\(v=vs.110\).aspx) element.|  
+|Suggestion|Ideally, applications should be updated to not use UTF-7 encoding in HttpRequests. Alternatively, legacy behavior can be restored by using the `aspnet:AllowUtf7RequestContentEncoding` attribute of the [appSettings](https://msdn.microsoft.com/library/hh975440\(v=vs.110\).aspx) element.|  
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -482,7 +482,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Starting with the .NET Framework 4.5, JavaScriptStringEncode escapes the ampersand (&) character.|  
-|Suggestion|If your app depends on the previous behavior of this method, you can add an aspnet:JavaScriptDoNotEncodeAmpersand setting to the [ASP.NET appSettings element](https://msdn.microsoft.com/en-us/library/hh975440\(v=vs.110\).aspx) in your configuration file.|  
+|Suggestion|If your app depends on the previous behavior of this method, you can add an aspnet:JavaScriptDoNotEncodeAmpersand setting to the [ASP.NET appSettings element](https://msdn.microsoft.com/library/hh975440\(v=vs.110\).aspx) in your configuration file.|  
 |Scope|Minor|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -545,7 +545,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Because the System.Threading.Tasks.Task class represents an asynchronous operation, it catches all non-severe exceptions that occur during asynchronous processing. In the .NET Framework 4.5, if an exception is not observed and your code never waits on the task, the exception will no longer propagate on the finalizer thread and crash the process during garbage collection. This change enhances the reliability of applications that use the Task class to perform unobserved asynchronous processing.|  
-|Suggestion|If an app depends on unobserved asynchronous exceptions propagating to the finalizer thread, the previous behavior can be restored by providing an appropriate handler for the [TaskScheduler.UnobservedTaskException](https://msdn.microsoft.com/en-us/library/system.threading.tasks.taskscheduler.unobservedtaskexception\(v=vs.110\).aspx) event, or by setting a [runtime configuration element](https://msdn.microsoft.com/en-us/library/jj160346%28v=vs.110%29.aspx).|  
+|Suggestion|If an app depends on unobserved asynchronous exceptions propagating to the finalizer thread, the previous behavior can be restored by providing an appropriate handler for the [TaskScheduler.UnobservedTaskException](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler.unobservedtaskexception\(v=vs.110\).aspx) event, or by setting a [runtime configuration element](https://msdn.microsoft.com/library/jj160346%28v=vs.110%29.aspx).|  
 |Scope|Edge|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -596,7 +596,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|By default, decoding methods no longer decode an invalid input sequence into an invalid UTF-16 string. Instead, they return the original input.|  
-|Suggestion|The change in decoder output should matter only if you store binary data instead of UTF-16 data in strings. To explicitly control this behavior, set the `aspnet:AllowRelaxedUnicodeDecoding` attribute of the [appSettings](https://msdn.microsoft.com/en-us/library/ms228154\(v=vs.110\).aspx) element to true to enable legacy behavior or to false to enable the current behavior.|  
+|Suggestion|The change in decoder output should matter only if you store binary data instead of UTF-16 data in strings. To explicitly control this behavior, set the `aspnet:AllowRelaxedUnicodeDecoding` attribute of the [appSettings](https://msdn.microsoft.com/library/ms228154\(v=vs.110\).aspx) element to true to enable legacy behavior or to false to enable the current behavior.|  
 |Scope|Minor|  
 |Version|4.5|  
 |Type|Runtime|  
@@ -698,7 +698,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|When targeting the .NET Framework 4.5 in the workflow designer, and loading a re-hosted 3.5 workflow with the WorkflowDesigner.Load() method, a XamlDuplicateMemberException is thrown while saving the workflow.|  
-|Suggestion|This bug only manifests when targeting .NET Framework 4.5 in the workflow designer, so it can be worked around by setting the `WorkflowDesigner.Context.Services.GetService<DesignerConfigurationService>().TargetFrameworkName` to the 4.0 .NET Framework.<br /><br /> Alternatively, the issue may be avoided by using the [WorkflowContext.Load(string)](https://msdn.microsoft.com/en-us/library/ee425926\(v=vs.110\).aspx) method to load the workflow, instead of [WorkflowDesigner.Load()](https://msdn.microsoft.com/en-us/library/ee403482\(v=vs.110\).aspx).|  
+|Suggestion|This bug only manifests when targeting .NET Framework 4.5 in the workflow designer, so it can be worked around by setting the `WorkflowDesigner.Context.Services.GetService<DesignerConfigurationService>().TargetFrameworkName` to the 4.0 .NET Framework.<br /><br /> Alternatively, the issue may be avoided by using the [WorkflowContext.Load(string)](https://msdn.microsoft.com/library/ee425926\(v=vs.110\).aspx) method to load the workflow, instead of [WorkflowDesigner.Load()](https://msdn.microsoft.com/library/ee403482\(v=vs.110\).aspx).|  
 |Scope|Major|  
 |Version|4.5-4.5.2|  
 |Type|Retargeting|  
@@ -754,7 +754,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |Scope|Major|  
 |Version|4.5-4.5.1|  
 |Type|Runtime|  
-|Affected APIs|<xref:System.Windows.Controls.VirtualizingStackPanel.SetIsVirtualizing%28System.Windows.DependencyObject%2CSystem.Boolean%29?displayProperty=fullName>|  
+|Affected APIs|<xref:System.Windows.Controls.VirtualizingPanel.SetIsVirtualizing%28System.Windows.DependencyObject%2CSystem.Boolean%29?displayProperty=fullName>|  
 |Analyzers|CD0086<br /><br /> CD0086|  
   
 <a name="diagnostic89"></a>   
@@ -956,7 +956,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |Scope|Minor|  
 |Version|4.5.2|  
 |Type|Runtime|  
-|Affected APIs|<xref:System.Web.Http.RouteAttribute.%23ctor%28System.String%29?displayProperty=fullName>|  
+|Affected APIs|[System.Web.Http.RouteAttribute](https://msdn.microsoft.com/library/system.web.http.routeattribute(v=vs.118).aspx)|  
 |Analyzers|CD0125|  
   
 <a name="diagnostic127"></a>   
@@ -990,7 +990,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Beginning in the .NET Framework 4.5.1, dynamically binding to the methods `Marshal.SizeOf` or `Marshal.PtrToStructure` (via Windows PowerShell, IronPython, or the C# dynamic keyword, for example) can result in `MethodInvocationExceptions` because new overloads of these methods have been added that may be ambiguous to the scripting engines.|  
-|Suggestion|Update scripts to clearly indicate which overload shouldbe used. This can typically done by explicitly casting the methods' type parameters as `System.Type`. See [this link](https://support.microsoft.com/en-us/kb/2909958/) for more detail and examples of how to workaround the issue.|  
+|Suggestion|Update scripts to clearly indicate which overload shouldbe used. This can typically done by explicitly casting the methods' type parameters as `System.Type`. See [this link](https://support.microsoft.com/kb/2909958/) for more detail and examples of how to workaround the issue.|  
 |Scope|Minor|  
 |Version|4.5.1|  
 |Type|Runtime|  
@@ -1065,7 +1065,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|In apps that target the .NET Framework 4.6.1, if an X509 claim set is initialized from a certificate that has multiple DNS entries in its SAN field, the FindClaims method attempts to match the claimType argument with all the DNS entries.<br /><br /> For apps that target previous versions of the .NET Framework, the FindClaims method attempts to match the claimType argument only with the last DNS entry.|  
-|Suggestion|This change only affects applications targeting the .NET Framework 4.6.1. This change may be disabled (or enabled if targetting pre-4.6.1) with the [DisableMultipleDNSEntries](https://msdn.microsoft.com/en-us/library/mt620030%28v=vs.110%29.aspx) compatibility switch.|  
+|Suggestion|This change only affects applications targeting the .NET Framework 4.6.1. This change may be disabled (or enabled if targetting pre-4.6.1) with the [DisableMultipleDNSEntries](https://msdn.microsoft.com/library/mt620030%28v=vs.110%29.aspx) compatibility switch.|  
 |Scope|Minor|  
 |Version|4.6.1|  
 |Type|Retargeting|  
@@ -1078,7 +1078,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
 |||  
 |-|-|  
 |Details|Prior to the .NET Framework 4.6.1, calling Application.FilterMessage with an IMessageFilter.PreFilterMessage which called AddMessageFilter or RemoveMessageFilter (while also calling Application.DoEvents) would cause an IndexOutOfRangeException.<br /><br /> Beginning with applications targeting the .NET Framework 4.6.1, this exception is no longer thrown, and re-entrant filters as described above may be used.|  
-|Suggestion|Be aware that Application.FilterMessage will no longer throw for the re-entrant IMessageFilter.PreFilterMessage behavior described above. This only affects applications targeting the .NET Framework 4.6.1.<br /><br /> Apps targeting the .NET Framework 4.6.1 can opt out of this change (or apps targeting older Frameworks may opt in) by using the [DontSupportReentrantFilterMessage](https://msdn.microsoft.com/en-us/library/mt620032%28v=vs.110%29.aspx) compatibility switch.|  
+|Suggestion|Be aware that Application.FilterMessage will no longer throw for the re-entrant IMessageFilter.PreFilterMessage behavior described above. This only affects applications targeting the .NET Framework 4.6.1.<br /><br /> Apps targeting the .NET Framework 4.6.1 can opt out of this change (or apps targeting older Frameworks may opt in) by using the [DontSupportReentrantFilterMessage](https://msdn.microsoft.com/library/mt620032%28v=vs.110%29.aspx) compatibility switch.|  
 |Scope|Edge|  
 |Version|4.6.1|  
 |Type|Retargeting|  
@@ -1090,7 +1090,7 @@ The .NET Compatibility Diagnostics are Roslyn-powered analyzers that help identi
   
 |||  
 |-|-|  
-|Details|Beginning in the .NET Framework 4.6, changes to CurrentCulture or CurrentUICulture made within a [Dispatcher](https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcher%28v=vs.110%29.aspx) will be lost at the end of that dispatcher operation. Similarly, changes to CurrentCulture or CurrentUICulture made outside of a Dispatcher operation may not be reflected when that operation executes.<br /><br /> Practically speaking, this means that CurrentCulture and CurrentUICulture changes may not flow between WPF UI callbacks and other code in a WPF application.<br /><br /> This is due to a change in [ExecutionContext](https://msdn.microsoft.com/en-us/library/system.threading.executioncontext%28v=vs.110%29.aspx) that causes CurrentCulture and CurrentUICulture to be stored in the execution context beginning with apps targeting the .NET Framework 4.6. WPF dispatcher operations store the execution context used to begin the operation and restore the previous context when the operation is completed. Because CurrentCulture and CurrentUICulture are now part of that context, changes to them within a dispatcher operation are not persisted outside of the operation.|  
+|Details|Beginning in the .NET Framework 4.6, changes to CurrentCulture or CurrentUICulture made within a [Dispatcher](https://msdn.microsoft.com/library/system.windows.threading.dispatcher%28v=vs.110%29.aspx) will be lost at the end of that dispatcher operation. Similarly, changes to CurrentCulture or CurrentUICulture made outside of a Dispatcher operation may not be reflected when that operation executes.<br /><br /> Practically speaking, this means that CurrentCulture and CurrentUICulture changes may not flow between WPF UI callbacks and other code in a WPF application.<br /><br /> This is due to a change in [ExecutionContext](https://msdn.microsoft.com/library/system.threading.executioncontext%28v=vs.110%29.aspx) that causes CurrentCulture and CurrentUICulture to be stored in the execution context beginning with apps targeting the .NET Framework 4.6. WPF dispatcher operations store the execution context used to begin the operation and restore the previous context when the operation is completed. Because CurrentCulture and CurrentUICulture are now part of that context, changes to them within a dispatcher operation are not persisted outside of the operation.|  
 |Suggestion|Apps affected by this change may work around it by storing the desired CurrentCulture or CurrentUICulture in a field and checking in all Dispatcher operation bodies (including UI event callback handlers) that the correct CurrentCulture and CurrentUICulture are set. Alternatively, because the ExecutionContext change underlying this WPF change only affects apps targeting the .NET Framework 4.6 or newer, this break can be avoided by targeting the .NET Framework 4.5.2.|  
 |Scope|Minor|  
 |Version|4.6|  

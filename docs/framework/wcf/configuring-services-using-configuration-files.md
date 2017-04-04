@@ -94,7 +94,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
 -   `address`. Specifies the service's Uniform Resource Identifier (URI), which can be an absolute address or one that is given relative to the base address of the service. If set to an empty string, it indicates that the endpoint is available at the base address that is specified when creating the <xref:System.ServiceModel.ServiceHost> for the service.  
   
--   `binding`. Typically specifies a system-provided binding like <xref:System.ServiceModel.WsHttpBinding>, but can also specify a user-defined binding. The binding specified determines the type of transport, security and encoding used, and whether reliable sessions, transactions, or streaming is supported or enabled.  
+-   `binding`. Typically specifies a system-provided binding like <xref:System.ServiceModel.WSHttpBinding>, but can also specify a user-defined binding. The binding specified determines the type of transport, security and encoding used, and whether reliable sessions, transactions, or streaming is supported or enabled.  
   
 -   `bindingConfiguration`. If the default values of a binding must be modified, this can be done by configuring the appropriate `binding` element in the `bindings` element. This attribute should be given the same value as the `name` attribute of the `binding` element that is used to change the defaults. If no name is given, or no `bindingConfiguration` is specified in the binding, then the default binding of the binding type is used in the endpoint.  
   

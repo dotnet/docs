@@ -371,7 +371,7 @@ This article demonstrates how to create a simple Windows Service application in 
   
      If the service installs successfully, installutil.exe will report success. If the system could not find InstallUtil.exe, make sure that it exists on your computer. This tool is installed with the .NET Framework to the folder `%WINDIR%\Microsoft.NET\Framework[64]\`*framework_version*. For example, the default path for the 32-bit version of the .NET Framework 4, 4.5, 4.5.1, and 4.5.2 is `C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe`.  
   
-     If the installutil.exe process reports failure, check the install log to find out why. By default the log is in the same folder as the service executable. The installation can fail if  the [RunInstallerAttribute Class](../Topic/RunInstallerAttribute%20Class.md) is not present on the `ProjectInstaller` class, or else the attribute is not set to `true`, or else the `ProjectInstaller` class is not `public`.  
+     If the installutil.exe process reports failure, check the install log to find out why. By default the log is in the same folder as the service executable. The installation can fail if  the <xref:System.ComponentModel.RunInstallerAttribute> Class is not present on the `ProjectInstaller` class, or else the attribute is not set to `true`, or else the `ProjectInstaller` class is not `public`.  
   
      For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   

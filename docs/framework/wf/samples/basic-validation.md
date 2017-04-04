@@ -29,9 +29,9 @@ This sample consists of an activity, `CreateProduct`, which validates that its `
   
 -   Create a workflow with an instance of the activity to validate (`CreateProduct`).  
   
--   Call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>, which returns a <xref:System.Activities.Validation.ValidationResults> collection of <xref:System.Activities.Validation.ConstraintViolation>.  
+-   Call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>, which returns a <xref:System.Activities.Validation.ValidationResults> collection of <xref:System.Activities.Validation.ValidationError>.  
   
--   (Optional) Print the <xref:System.Activities.Validation.ConstraintViolation> objects.  
+-   (Optional) Print the <xref:System.Activities.Validation.ValidationError> objects.  
   
 #### To set up, build, and run the sample  
   

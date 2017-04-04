@@ -40,9 +40,8 @@ manager: "wpickett"
   
  The following table shows the event information.  
   
-||||  
-|-|-|-|  
 |Event|Event ID|Raised when|  
+|-|-|-|  
 |`ThreadPoolWorkerThreadStart`|50|A worker thread is created.|  
 |`ThreadPoolWorkerThreadStop`|51|A worker thread is stopped.|  
 |`ThreadPoolWorkerThreadRetirementStart`|52|A worker thread retires.|  
@@ -145,9 +144,8 @@ manager: "wpickett"
   
  The following table shows the event information.  
   
-||||  
-|-|-|-|  
 |Event|Event ID|Raised when|  
+|-|-|-|  
 |`IOThreadCreate_V1`|44|An I/O thread is created in the thread pool.|  
   
  The following table shows the event data.  

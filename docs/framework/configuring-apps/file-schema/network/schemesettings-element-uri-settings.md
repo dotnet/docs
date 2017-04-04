@@ -88,7 +88,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
   
 ## Element Information  
   
-|||  
+|||
 |-|-|  
 |Namespace|System|  
 |Schema Name||  

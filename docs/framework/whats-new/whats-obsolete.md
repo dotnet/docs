@@ -59,9 +59,8 @@ The .NET Framework changes over time. Each new version adds new types and type m
   
  The following table lists the string values that you can assign to the `version` attribute to target a specific version of the .NET Framework.  
   
-|||  
-|-|-|  
 |.NET Framework version|`version` string|
+|-|-|  
 |4.7|v4.0|  
 |4.6 (including 4.6.1 and 4.6.2)|v4.0|  
 |4.5 (including 4.5.1 and 4.5.2)|v4.0|  

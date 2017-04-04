@@ -76,9 +76,8 @@ All apps that host the common language runtime (CLR) need to start, or *activate
   
  The following table demonstrates how application configuration file settings and the .NET Framework versions installed on a computer determine the version that a .NET Framework 3.5 app runs on. The examples are specific to a .NET Framework 3.5 application, but you can use similar logic to target applications built with earlier .NET Framework versions. Note that the .NET Framework 2.0 version number (v2.0.50727) is used to specify the .NET Framework 3.5 in the application configuration file.  
   
-|||||  
-|-|-|-|-|  
 |App.config file setting|On computer with version 3.5 installed|On computer with versions 3.5 and 4 or 4.5 installed|On computer with version 4 or 4.5 installed|  
+|-|-|-|-|  
 |None|Runs on 3.5|Runs on 3.5|Displays error message that prompts user to install the correct version*|  
 |`<supportedRuntime version="v2.0.50727"/>`|Runs on 3.5|Runs on 3.5|Displays error message that prompts user to install the correct version*|  
 |`<supportedRuntime version="v2.0.50727"/>` <br /> `<supportedRuntime version="v4.0"/>`|Runs on 3.5|Runs on 3.5|Runs on 4 or 4.5|  

@@ -48,9 +48,8 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   
 ### Attributes  
   
-|||  
-|-|-|  
 |Attribute|Description|  
+|-|-|  
 |`CacheMemoryLimitMegabytes`|An integer value that specifies the maximum allowed size (in megabytes) that an instance of a <xref:System.Runtime.Caching.MemoryCache> can grow to. The default value is 0, which means that the <xref:System.Runtime.Caching.MemoryCache> class's autosizing heuristics are used by default.|  
 |`Name`|The name of the cache.|  
 |`PhysicalMemoryLimitPercentage`|An integer value between 0 and 100 that specifies the maximum percentage of physically installed computer memory that can be consumed by the cache. The default value is 0, which means that the <xref:System.Runtime.Caching.MemoryCache> class's autosizing heuristics are used by default.|  

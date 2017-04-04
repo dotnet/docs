@@ -18,9 +18,8 @@ This sample demonstrates how to create a custom activity that derives from <xref
   
  The following table details the arguments for the `SendMail` activity.  
   
-||||  
-|-|-|-|  
 |Name|Type|Description|  
+|-|-|-|  
 |Host|String|Address of the SMTP server host.|  
 |Port|String|Port of the SMTP service in the host.|  
 |EnableSsl|bool|Specifies whether the <xref:System.Net.Mail.SmtpClient> uses Secure Sockets Layer (SSL) to encrypt the connection.|  

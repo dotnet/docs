@@ -28,17 +28,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## PasswordBox Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.PasswordBox> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_ContentHost|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.PasswordBox> is displayed in this element.|  
   
 ## PasswordBox States  
  The following table lists the visual states for the <xref:System.Windows.Controls.PasswordBox> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the control.|  
 |Disabled|CommonStates|The control is disabled.|  

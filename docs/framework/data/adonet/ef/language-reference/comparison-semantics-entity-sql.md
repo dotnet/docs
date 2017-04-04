@@ -76,9 +76,8 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
 ## Supported Combinations  
  The following table shows all the supported combinations of comparison operators for each kind of type:  
   
-|||||||||  
-|-|-|-|-|-|-|-|-|  
 |**Type**|**=**<br /><br /> **!=**|**GROUP BY**<br /><br /> **DISTINCT**|**UNION**<br /><br /> **INTERSECT**<br /><br /> **EXCEPT**<br /><br /> **SET**<br /><br /> **OVERLAPS**|**IN**|**<   <=**<br /><br /> **>   >=**|**ORDER BY**|**IS NULL**<br /><br /> **IS NOT NULL**|  
+|-|-|-|-|-|-|-|-|  
 |Entity type|Ref<sup>1</sup>|All properties<sup>2</sup>|All properties<sup>2</sup>|All properties<sup>2</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|Ref<sup>1</sup>|  
 |Complex type|Throw<sup>3</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|  
 |Row|All properties<sup>4</sup>|All properties<sup>4</sup>|All properties<sup>4</sup>|Throw<sup>3</sup>|Throw<sup>3</sup>|All properties<sup>4</sup>|Throw<sup>3</sup>|  

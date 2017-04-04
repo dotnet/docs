@@ -28,18 +28,16 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## DocumentViewer Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DocumentViewer> control.  
   
-||||  
-|-|-|-|  
 |Part|Type|Description|  
+|-|-|-|  
 |PART_ContentHost|<xref:System.Windows.Controls.ScrollViewer>|The content and scrolling area.|  
 |PART_FindToolBarHost|<xref:System.Windows.Controls.ContentControl>|The search box, at the bottom by default.|  
   
 ## DocumentViewer States  
  The following table lists the visual states for the <xref:System.Windows.Controls.DocumentViewer> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `false`.|  
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control has focus.|  
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=fullName> attached property is `true` has the control does not have focus.|  

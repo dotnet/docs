@@ -18,9 +18,8 @@ This sample demonstrates how the ExternalizedPolicy4 activity allows executing e
   
 ## Projects in this Sample  
   
-||||  
-|-|-|-|  
 |Project Name|Description|Main Files|  
+|-|-|-|  
 |ExternalizedPolicy4|Contains the ExternalizedPolicy4 activity and its WF 4.5 designer.|**ExternalizedPolicy4.cs**: activity definition.<br /><br /> **ExternalizedPolicy4Designer.xaml**: Custom designer for ExternalizedPolicy4 activity. It uses the Rules editor (<xref:System.Workflow.Activities.Rules.Design.RuleSetDialog>) from WF 3.5 Rules Engine.|  
 |ImperativeCodeClientSample|Sample client application that configures and runs a workflow using an ExternalizedPolicy4 application using imperative C# code (no designer used).|**ApplyDiscount.rules**: File with [!INCLUDE[wf1](../../../../includes/wf1-md.md)] rule definitions.<br /><br /> **Order.cs**: Type that represents a customer order. Rules are applied to objects of this type.<br /><br /> **Program.cs**: Configures and runs a workflow that has a Policy4 activity to apply rules defined in ApplyDiscount.rules to instances of Order objects.<br /><br /> App.config: The configuration file with the path of the rules file.|  
 |DesignerClientSample|Sample client application that configures and runs a workflow using an ExternalPolicy4 application in the [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Designer.|**Sequence1.xaml**: Sequential workflow that uses a Policy4 activity to perform rule evaluations.<br /><br /> **Program.cs**: Runs an instance of the workflow defined in Sequence1.xaml.|  
@@ -45,9 +44,8 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 }  
 ```  
   
-|||  
-|-|-|  
 |Property|Description|  
+|-|-|  
 |RuleSetFilePath|Path to the .NET Framework 3.5 <xref:System.Workflow.Activities.Rules.RuleSet> file to be evaluated when the activity is executed.|  
 |RuleSetName|Name of the <xref:System.Workflow.Activities.Rules.RuleSet> to be used within the .rules file.|  
 |TargetObject|The object on which the <xref:System.Workflow.Activities.Rules.Rule> objects in the <xref:System.Workflow.Activities.Rules.RuleSet> is evaluated against.|  

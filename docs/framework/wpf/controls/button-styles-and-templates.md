@@ -31,9 +31,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## Button States  
  The following table lists the visual states for the <xref:System.Windows.Controls.Button> control.  
   
-||||  
-|-|-|-|  
 |VisualState Name|VisualStateGroup Name|Description|  
+|-|-|-|  
 |Normal|CommonStates|The default state.|  
 |MouseOver|CommonStates|The mouse pointer is positioned over the control.|  
 |Pressed|CommonStates|The control is pressed.|  

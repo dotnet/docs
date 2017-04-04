@@ -162,9 +162,8 @@ Contract.Invariant ( this.x > this.y );
 ### Contract Ordering  
  The following table shows the order of elements you should use when you write method contracts.  
   
-|||  
-|-|-|  
 |`If-then-throw statements`|Backward-compatible public preconditions|  
+|-|-|  
 |<xref:System.Diagnostics.Contracts.Contract.Requires%2A>|All public preconditions.|  
 |<xref:System.Diagnostics.Contracts.Contract.Ensures%2A>|All public (normal) postconditions.|  
 |<xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow%2A>|All public exceptional postconditions.|  

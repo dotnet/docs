@@ -43,13 +43,13 @@ Attribute  | Description  |
 ---------|---------|---------|
 "AnchorLayout.DisableSinglePassControlScaling"  | "true"&#124;"false" | Indicates whether anchored controls are scaled in a single pass. "true" to disable single pass scaling; otherwise, false. "false" is the default. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
 "DpiAwareness" | "PerMonitorV2"&#124;"false"  |Indicates whether an application is DPI-aware. Set the key to "PerMonitorV2" (the default) to support Dpi awareness; otherwise, set it to "false". See the [Remarks](#remarks) section for more information. |
-"CheckedListBox.DisableHighDpiImprovements"  | "true"&#124;"false" | Indicates whether the [CheckedListBox](xref:System.Windows.Forms.CheckListBox) control is DPI-aware. "true" to opt out of DPI awareness; "false" otherwise. "false" is the default value. |
+"CheckedListBox.DisableHighDpiImprovements"  | "true"&#124;"false" | Indicates whether the `CheckedListBox` control is DPI-aware. "true" to opt out of DPI awareness; "false" otherwise. "false" is the default value. |
 "DataGridView.DisableHighDpiImprovements"  | "true"&#124;"false" | Indicates whether the [DataGridView](xref:System.Windows.Forms.DataGridView) control is DPI-aware. "true" to opt out of DPI awareness; "false" otherwise. "false" is the default value. |
 "DisableDpiChangedMessageHandling"  | "true"&#124;"false" | "true" to opt out of receiving messages related to DPI scaling changes; "false" otherwise. "false" is the default value." See the [Remarks](#remarks) section for more information. |
 "EnableWindowsFormsHighDpiAutoResizing" | "true"&#124;"false" | Indicates whether a Windows Forms application is automatically resized due to DPI scaling changes. "true" to enable automatic resizing; otherwise, false. "true" is the default. |
 "Form.DisableSinglePassControlScaling"  | "true"&#124;"false" | Indicates whether the [Form](xref:System.Windows.Forms.Form) is scaled in a single pass. "true" to disable single pass scaling; otherwise, false. "false" is the default. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
 "MonthCalendar.DisableSinglePassControlScaling"  | "true"&#124;"false" | Indicates whether the [MonthCalendar](xref:System.Windows.Forms.MonthCalendar) control is scaled in a single pass. "true" to disable single pass scaling; otherwise, false. "false" is the default. See the "Single pass scaling" section in the [Remarks](#Remarks) for more information. |
-"Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the [Toolstrip](xref:System.Windows.Forms.Toolstrip) control is DPI-aware. "true" to opt out of DPI awareness; "false" otherwise. "false" is the default value. |
+"Toolstrip.DisableHighDpiImprovements" | "true"&#124;"false" | Indicates whether the `Toolstrip` control is DPI-aware. "true" to opt out of DPI awareness; "false" otherwise. "false" is the default value. |
 
 ### Child elements
 

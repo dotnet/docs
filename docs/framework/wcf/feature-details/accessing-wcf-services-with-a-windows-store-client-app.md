@@ -36,7 +36,7 @@ Windows 8 introduces a new type of application called Windows Store applications
   
 3.  <xref:System.ServiceModel.NetHttpBinding>  
   
-4.  <xref:System.ServiceModel.CustomBinding>  
+4.  !<-- zz<xref:System.ServiceModel.CustomBinding>--> `System.ServiceModel.CustomBinding`
   
  The following binding elements are supported in Windows Store Applications  
   
@@ -121,9 +121,9 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
   
 2.  <xref:System.ServiceModel.SecurityMode>  
   
-3.  <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredentials>  
+3.  <!--zz <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredentials> --> `System.ServiceModel.SecurityMode.TransportWithMessageCredentials`
   
-4.  <xref:System.ServiceModel.SecurityMode.TransportCredentialOnly>  
+4.  <!--zz <xref:System.ServiceModel.SecurityMode.TransportCredentialOnly>  --> `System.ServiceModel.SecurityMode.TransportCredentialOnly`
   
  The following client credential types are supported in Windows Store applications  
   
@@ -153,7 +153,7 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
   
 1.  <xref:System.ServiceModel.ChannelFactory>  
   
-2.  <xref:System.ServiceModel.DuplexChannelFactory>  
+2.  <!--zz <xref:System.ServiceModel.DuplexChannelFactory> --> `System.ServiceModel.DuplexChannelFactory`
   
 3.  <xref:System.ServiceModel.CallbackBehaviorAttribute>  
   

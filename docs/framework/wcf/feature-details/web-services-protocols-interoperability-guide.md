@@ -80,7 +80,7 @@ manager: "erikre"
 |WS-Coordination|[Web Services Coordination](http://go.microsoft.com/fwlink/?LinkId=95324)|  
 |WS-AtomicTransaction|[Web Services Atomic Transaction](http://go.microsoft.com/fwlink/?LinkId=95323)|  
   
- The <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>, <xref:System.ServiceModel.Description.WSDLExporter>, <xref:System.ServiceModel.Description.WSDLImporter>, and <xref:System.ServiceModel.Description.MetadataResolver> classes provide support for the following metadata specifications:  
+ The <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>, <!--zz <xref:System.ServiceModel.Description.WSDLExporter>, <xref:System.ServiceModel.Description.WSDLImporter>, --> `System.ServiceModel.Description.MetadataImporter`, `System.ServiceModel.Description.WSDLImporter`, and <xref:System.ServiceModel.Description.MetadataResolver> classes provide support for the following metadata specifications:  
   
 -   [XML Schema Part 1: Structures Second Edition](http://go.microsoft.com/fwlink/?LinkId=3536)  
   

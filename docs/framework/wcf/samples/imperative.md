@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Imperative
-This sample demonstrates how to define a <xref:System.ServiceModel.WsHttpBinding> for a service using code, instead of defining the `wsHttpBinding` binding in configuration. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
+This sample demonstrates how to define a <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> for a service using code, instead of defining the `wsHttpBinding` binding in configuration. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  

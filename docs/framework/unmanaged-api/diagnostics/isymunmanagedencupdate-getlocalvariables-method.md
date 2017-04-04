@@ -49,7 +49,7 @@ HRESULT GetLocalVariables(
  [in] A `ULONG` that indicates the size of the `rgLocals` parameter.  
   
  `rgLocals`  
- [out] The returned array of <xref:ISymUnmanagedVariable> instances.  
+ [out] The returned array of <!--zz<xref:ISymUnmanagedVariable>--> `ISymUnmanagedVariable`  instances.  
   
  `pceltFetched`  
  [out] A pointer to a `ULONG` that receives the size of the `rgLocals` buffer required to contain the locals.  

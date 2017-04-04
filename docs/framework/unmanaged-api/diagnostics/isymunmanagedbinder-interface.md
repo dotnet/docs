@@ -36,8 +36,8 @@ Represents a symbol binder for unmanaged code.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetReaderForFile Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderforfile-method.md)|Given a metadata interface and a file name, returns the correct <xref:ISymUnmanagedReader> structure that will read the debugging symbols associated with the module.|  
-|[GetReaderFromStream Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderfromstream-method.md)|Given a metadata interface and a stream that contains the symbol store, returns the correct <xref:ISymUnmanagedReader> structure that will read the debugging symbols from the given symbol store.|  
+|[GetReaderForFile Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderforfile-method.md)|Given a metadata interface and a file name, returns the correct <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> structure that will read the debugging symbols associated with the module.|  
+|[GetReaderFromStream Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderfromstream-method.md)|Given a metadata interface and a stream that contains the symbol store, returns the correct <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> structure that will read the debugging symbols from the given symbol store.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  

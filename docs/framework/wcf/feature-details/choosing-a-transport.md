@@ -69,9 +69,9 @@ This topic discusses criteria for choosing among the three main transports that 
   
 ## See Also  
  <xref:System.ServiceModel.BasicHttpBinding>   
- <xref:System.ServiceModel.WsHttpBinding>   
- <xref:System.ServiceModel.WsDualHttpBinding>   
- <xref:System.ServiceModel.WsFederationHttpBinding>   
+ <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`>   
+  <<!--zz <xref:System.ServiceModel.WsDualHttpBinding> --> `System.ServiceModel.WsDualHttpBinding`
+ <<!--zz <xref:System.ServiceModel.WsFederationHttpBinding>  --> `System.ServiceModel.WsFederationHttpBinding`
  <xref:System.ServiceModel.Channels.HttpTransportBindingElement>   
  <xref:System.ServiceModel.NetTcpBinding>   
  <xref:System.ServiceModel.Channels.TcpTransportBindingElement>   

@@ -40,7 +40,7 @@ HRESULT ApplyEditAndContinue (
   
 #### Parameters  
  `pImport`  
- [in] Pointer to an <xref:IUnknown> object that represents the delta metadata from the portable executable (PE) file.  
+ [in] Pointer to an <<!--zzxref:IUnknown --> `IUnknown`> object that represents the delta metadata from the portable executable (PE) file.  
   
  The delta metadata is the block of metadata that includes the changes that were made to the copy of the module's actual metadata.  
   

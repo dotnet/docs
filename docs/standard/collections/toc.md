@@ -5,4 +5,4 @@
 # [Comparisons and Sorts Within Collections](comparisons-and-sorts-within-collections.md)
 # [Sorted Collection Types](sorted-collection-types.md)
 # [Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)
-# [Thread-Safe Collections](threadsafe/)
+# [Thread-Safe Collections](thread-safe/)

@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
 ---
 
-# A Tour of the C# Language  
+# A Tour of the C# Language # 
 
 C# (pronounced “See Sharp”) is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
 

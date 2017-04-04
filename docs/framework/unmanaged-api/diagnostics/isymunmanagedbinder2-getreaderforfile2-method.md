@@ -28,7 +28,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # ISymUnmanagedBinder2::GetReaderForFile2 Method
-Given a metadata interface and a file name, returns the correct <xref:ISymUnmanagedReader> interface that will read the debugging symbols associated with the module.  
+Given a metadata interface and a file name, returns the correct <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> interface that will read the debugging symbols associated with the module.  
   
  This method provides a more extensive search for the program database (PDB) file than the [ISymUnmanagedBinder::GetReaderForFile](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-getreaderforfile-method.md) method.  
   
@@ -57,7 +57,7 @@ HRESULT GetReaderForFile2(
  [in] A value of the [CorSymSearchPolicyAttributes](../../../../docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md) enumeration that specifies the policy to be used when doing a search for a symbol reader.  
   
  `pRetVal`  
- [out] A pointer that is set to the returned <xref:ISymUnmanagedReader> interface.  
+ [out] A pointer that is set to the returned <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  

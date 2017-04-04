@@ -28,7 +28,7 @@ There may be situations when a user or workflow administrator may want to manual
   
  Read/write properties refer to properties that are returned back to the Workflow Runtime when an instance is loaded. WriteOnly properties are written to the database and then never read again.  
   
- This example provides code that enables a user to deserialize primitive data properties. Given a byte array read from either the ReadWritePrimitiveDataProperties or WriteOnlyPrimitiveDataProperties column, this code will convert the binary large object (BLOB) into a <xref:System.Collections.Generic.Dictionary%601> of type \<XName, object> where each key value pair represents a property name and its corresponding value.  
+ This example provides code that enables a user to deserialize primitive data properties. Given a byte array read from either the ReadWritePrimitiveDataProperties or WriteOnlyPrimitiveDataProperties column, this code will convert the binary large object (BLOB) into a <xref:System.Collections.Generic.Dictionary%602> of type \<XName, object> where each key value pair represents a property name and its corresponding value.  
   
  This example does not demonstrate how to deserialize complex data properties because this is currently not a supported operation.  
   

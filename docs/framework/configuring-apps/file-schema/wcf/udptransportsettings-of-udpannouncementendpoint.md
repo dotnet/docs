@@ -58,4 +58,4 @@ This configuration element exposes UDP transport settings for [\<udpAnnoucementE
 |[\<udpAnnoucementEndpoint>](../../../../../docs/framework/configuring-apps/file-schema/wcf/udpannoucementendpoint.md)|A standard endpoint that has fixed announcement contract and UDP transport binding.|  
   
 ## See Also  
- <xref:System.Servicemodel.Discovery.UdpTransportSettings>
+ <xref:System.ServiceModel.Discovery.UdpTransportSettings>

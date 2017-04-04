@@ -55,7 +55,7 @@ Defines the type of message-level security requirements for an endpoint configur
 |clientCredentialType|Optional. Specifies the type of credential to be used when performing client authentication using Transport security.<br /><br /> -   The default value is `Windows`.<br />-   This attribute is of type <xref:System.ServiceModel.TcpClientCredentialType>.|  
 |protectionLevel|Optional. Defines security at the level of the TCP transport. Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport.<br /><br /> The default value is `EncryptAndSign`.|  
 |sslProtocols|A SslProtocols enum flag value that specifies which SslProtocols are supported. The default is Tls&#124;Tls11&#124;Tls12.|  
-|policyEnforcement|This enumeration specifies when the <xref:System.Security.Authentication.ExtendedProtectionPolicy> should be enforced.<br /><br /> 1.  Never – The policy is never enforced (Extended Protection is disabled).<br />2.  WhenSupported – The policy is enforced only if the client supports Extended Protection.<br />3.  Always – The policy is always enforced. Clients which don’t support Extended Protection will fail to authenticate.|  
+|policyEnforcement|This enumeration specifies when the <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> should be enforced.<br /><br /> 1.  Never – The policy is never enforced (Extended Protection is disabled).<br />2.  WhenSupported – The policy is enforced only if the client supports Extended Protection.<br />3.  Always – The policy is always enforced. Clients which don’t support Extended Protection will fail to authenticate.|  
   
 ## clientCredentialType Attribute  
   
@@ -89,7 +89,7 @@ Defines the type of message-level security requirements for an endpoint configur
  <xref:System.ServiceModel.TcpTransportSecurity>   
  <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Transport%2A>   
  <xref:System.ServiceModel.NetTcpSecurity.Transport%2A>   
- <xref:System.ServiceModel.Configuration.NetTcpTransportSecurityElement>   
+ <xref:System.ServiceModel.Configuration.NetTcpSecurityElement>   
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   

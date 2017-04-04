@@ -55,7 +55,7 @@ Defines properties that control authentication parameters for the HTTP transport
 |clientCredentialType|-   Specifies the type of credential to be used when performing client authentication using HTTP authentication.  The default is `None`. This attribute is of type <xref:System.ServiceModel.HttpClientCredentialType>.|  
 |proxyCredentialType|-   Specifies the type of credential to be used when performing client authentication from within a domain using a proxy over HTTP. This attribute is applicable only when the `mode` attribute of the parent `security` element is `Transport` or `TransportCredentialsOnly`. This attribute is of type <xref:System.ServiceModel.HttpProxyCredentialType>.|  
 |realm|A string that specifies the realm that is used by the HTTP authentication scheme for digest or basic authentication. The default is an empty string.|  
-|policyEnforcement|This enumeration specifies when the <xref:System.Security.Authentication.ExtendedProtectionPolicy> should be enforced.<br /><br /> 1.  Never – The policy is never enforced (Extended Protection is disabled).<br />2.  WhenSupported – The policy is enforced only if the client supports Extended Protection.<br />3.  Always – The policy is always enforced. Clients which don’t support Extended Protection will fail to authenticate.|  
+|policyEnforcement|This enumeration specifies when the <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> should be enforced.<br /><br /> 1.  Never – The policy is never enforced (Extended Protection is disabled).<br />2.  WhenSupported – The policy is enforced only if the client supports Extended Protection.<br />3.  Always – The policy is always enforced. Clients which don’t support Extended Protection will fail to authenticate.|  
 |protectionScenario|This enumeration specifies the protection scenario enforced by the policy.|  
   
 ## clientCredentialType Attribute  
@@ -124,8 +124,7 @@ Defines properties that control authentication parameters for the HTTP transport
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.Configuration.NetHttpSecurityElement.Transport%2A>   
- <xref:System.ServiceModel.NetHttpSecurity.Transport%2A>   
+ <xref:System.ServiceModel.BasicHttpSecurityMode.Transport%2A>     
  <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>   
  <xref:System.ServiceModel.HttpTransportSecurity>   
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   

@@ -111,7 +111,7 @@ There are four major groups of configuration settings used in discovery. This to
   
 ```  
   
- The <xref:System.ServiceModel.Discovery.EndpointBehavior> behavior can also be used to add custom metadata to the endpoint metadata returned by the service. The following example shows how to do this.  
+ The <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> behavior can also be used to add custom metadata to the endpoint metadata returned by the service. The following example shows how to do this.  
   
 ```  
 <behavior name="ep4Behavior">  
@@ -147,7 +147,7 @@ There are four major groups of configuration settings used in discovery. This to
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> see [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md).  
   
 ## Binding Element Configuration  
- Binding element configuration is most interesting on the client side. You can use configuration to specify the find criteria used to discover services from a WCF client application.  The following example creates a custom binding with the <xref:System.ServiceModel.Discovery.DiscoveryClient> channel and specifies find criteria that includes a type and scope. In addition it specifies values for the <xref:System.ServiceModel.Discovery.FindCritera.Duration%2A> and <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> properties.  
+ Binding element configuration is most interesting on the client side. You can use configuration to specify the find criteria used to discover services from a WCF client application.  The following example creates a custom binding with the <xref:System.ServiceModel.Discovery.DiscoveryClient> channel and specifies find criteria that includes a type and scope. In addition it specifies values for the <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> and <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> properties.  
   
 ```  
 <bindings>  
@@ -187,7 +187,7 @@ There are four major groups of configuration settings used in discovery. This to
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] find criteria see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] discovery and binding elements see, [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
   
 ## Standard Endpoint Configuration  
- Standard endpoints are predefined endpoints that have default values for one or more properties (address, binding, or contract) or one or more property values that cannot change. .NET 4 ships with 3 discovery related standard endpoints: <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, <xref:System.ServiceModel.Discovery.UpdAnnouncementEndpoint>, and <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> is a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> is a standard endpoint that is pre-configured to send announcement messages over a UDP binding. The <xref:System.ServiceModel.Discovery.DynamicEnpoint> is a standard endpoint that uses discovery to find the endpoint address of a discovered service dynamically at runtime.  Standard bindings are specified with an <`endpoint`> element that contains kind attribute that specified the type of standard endpoint to add. The following example shows how to add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and a <xref:System.ServiceModel.Discovery.UpdAnnouncementEndpoint>.  
+ Standard endpoints are predefined endpoints that have default values for one or more properties (address, binding, or contract) or one or more property values that cannot change. .NET 4 ships with 3 discovery related standard endpoints: <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>, and <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> is a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> is a standard endpoint that is pre-configured to send announcement messages over a UDP binding. The <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint that uses discovery to find the endpoint address of a discovered service dynamically at runtime.  Standard bindings are specified with an <`endpoint`> element that contains kind attribute that specified the type of standard endpoint to add. The following example shows how to add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and a <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>.  
   
 ```  
 <services>  

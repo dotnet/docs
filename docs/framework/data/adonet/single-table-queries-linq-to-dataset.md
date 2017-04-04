@@ -16,7 +16,7 @@ ms.author: "jhubbard"
 manager: "jhubbard"
 ---
 # Single-Table Queries (LINQ to DataSet)
-[!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] queries work on data sources that implement the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Query.IQueryable%601> interface. The <xref:System.Data.DataTable> class does not implement either interface, so you must call the <xref:System.Data.DataTableExtensions.AsEnumerable%2A> method if you want to use the <xref:System.Data.DataTable> as a source in the `From` clause of a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query.  
+[!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] queries work on data sources that implement the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The <xref:System.Data.DataTable> class does not implement either interface, so you must call the <xref:System.Data.DataTableExtensions.AsEnumerable%2A> method if you want to use the <xref:System.Data.DataTable> as a source in the `From` clause of a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query.  
   
  The following example gets all the online orders from the SalesOrderHeader table and outputs the order ID, order date, and order number to the console.  
   

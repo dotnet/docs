@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Absolute Delay
-The main scenario for this sample is to delay until a specified <xref:System.DateTime> using durable timers in a workflow application. This is different from using the built-in <xref:System.Activities.Statements.Delay> activity as this will only allow you to delay for a given <xref:Sysem.TimeSpan> (or number of minutes/seconds).  
+The main scenario for this sample is to delay until a specified <xref:System.DateTime> using durable timers in a workflow application. This is different from using the built-in <xref:System.Activities.Statements.Delay> activity as this will only allow you to delay for a given <xref:System.TimeSpan> (or number of minutes/seconds).  
   
  Some real-life scenarios in which you may want to make this distinction include the following:  
   

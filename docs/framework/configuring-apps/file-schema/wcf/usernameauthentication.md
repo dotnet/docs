@@ -46,7 +46,7 @@ Specifies a service's credentials based on user name and password.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`cacheLogonTokenLifetime`|A <xref:System.Timespan> that specifies the maximum length of time a token is cached. The default is 00:15:00.|  
+|`cacheLogonTokenLifetime`|A <xref:System.TimeSpan> that specifies the maximum length of time a token is cached. The default is 00:15:00.|  
 |`cacheLogonTokens`|A Boolean value that specifies whether logon tokens are cached. The default is `false`.|  
 |`customUserNamePasswordValidatorType`|A string that specifies the type of custom username password validator to be used. The default is an empty string.|  
 |`includeWindowsGroups`|A Boolean value that specifies whether Windows groups are included in the security context. The default is `true`.<br /><br /> Setting this attribute to `true` has a performance impact as it results in a full-group expansion. Set this property to `false` if you do not need to establish the list of groups a user belongs to.|  

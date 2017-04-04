@@ -194,7 +194,7 @@ manager: "wpickett"
   
  The <xref:System.Windows.Controls.VirtualizingStackPanel> element is automatically set as the items host for controls such as the <xref:System.Windows.Controls.ListBox>. When hosting a data bound collection, content is automatically virtualized, as long as the content is within the bounds of a <xref:System.Windows.Controls.ScrollViewer>. This greatly improves performance when hosting many child items.  
   
- The following markup demonstrates how to use a <xref:System.Windows.Controls.VirtualizingStackPanel> as an items host. The <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A?displayProperty=fullName> attached property must be set to `true` (default) for virtualization to occur.  
+ The following markup demonstrates how to use a <xref:System.Windows.Controls.VirtualizingStackPanel> as an items host. The <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty%2A?displayProperty=fullName> attached property must be set to `true` (default) for virtualization to occur.  
   
  [!code-xml[VirtualizingStackPanel_Intro#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#1)]  
   

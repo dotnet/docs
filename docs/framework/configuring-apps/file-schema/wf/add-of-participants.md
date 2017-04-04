@@ -90,6 +90,6 @@ Configure a tracking participant that listens to the tracking records being emit
 ## See Also  
  <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>   
  <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>   
- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehavior>   
+ <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>   
  [Workflow Tracking and Tracing](../../../../../docs/framework/wf/workflow-tracking-and-tracing.md)   
  [Tracking Participants](../../../../../docs/framework/wf/tracking-participants.md)

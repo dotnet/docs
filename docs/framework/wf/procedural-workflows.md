@@ -23,15 +23,15 @@ Procedural workflows use flow-control methods similar to those found in procedur
   
 -   <xref:System.Activities.Statements.DoWhile>  
   
--   <xref:System.Activities.Statements.ForEach>  
+-   <xref:System.Activities.Statements.ForEach%601>  
   
 -   <xref:System.Activities.Statements.Parallel>  
   
--   <xref:System.Activities.Statements.ParallelForEach>  
+-   <xref:System.Activities.Statements.ParallelForEach%601>  
   
 -   <xref:System.Activities.Statements.If>  
   
--   <xref:System.Activities.Statements.Switch>  
+-   <xref:System.Activities.Statements.Switch%601>  
   
 -   <xref:System.Activities.Statements.Pick>  
   

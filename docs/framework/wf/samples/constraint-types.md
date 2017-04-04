@@ -32,11 +32,11 @@ This sample shows two different ways to apply constraints to a workflow, one is 
   
 -   Create a constraint (`MaxPrice`).  
   
--   Create a <xref:System.Activities.Validation.ValidatorSettings> instance (`validatorSettings`) and add the constraint (`MaxPrice`) to the collection `AdditionalConstraints`. Here the workflow author can add policy constraints to any activity, such as a sequence or parallel.  
+-   Create a <xref:System.Activities.Validation.ValidationSettings> instance (`validationSettings`) and add the constraint (`MaxPrice`) to the collection `AdditionalConstraints`. Here the workflow author can add policy constraints to any activity, such as a sequence or parallel.  
   
--   Call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>, which returns a <xref:System.Activities.Validation.ValidationResults> collection of <xref:System.Activities.Validation.ConstraintViolation> objects.  
+-   Call <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>, which returns a <xref:System.Activities.Validation.ValidationResults> collection of <xref:System.Activities.Validation.ValidationError> objects.  
   
--   (Optional) Print the <xref:System.Activities.Validation.ConstraintViolation> objects.  
+-   (Optional) Print the <xref:System.Activities.Validation.ValidationError> objects.  
   
 ### To set up, build, and run the sample  
   

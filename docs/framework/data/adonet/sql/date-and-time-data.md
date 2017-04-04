@@ -206,7 +206,7 @@ command.Parameters.AddWithValue( _
 |<xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A>|Retrieves column data as its default `SqlDbType`. Returns the same types as `GetValue` for the new date and time types.|  
 |<xref:System.Data.SqlClient.SqlDataReader.GetSqlValues%2A>|Retrieves the values in the specified array.|  
 |<xref:System.Data.SqlClient.SqlDataReader.GetString%2A>|Retrieves the column value as a string if the Type System Version is set to SQL Server 2005. An <xref:System.InvalidCastException> occurs if the data cannot be expressed as a string.|  
-|<xref:System.Data.SqlClient.SqlDataReader.GetTimeSpan%2A>|Retrieves the specified column value as a <xref:System.Timespan> structure.|  
+|<xref:System.Data.SqlClient.SqlDataReader.GetTimeSpan%2A>|Retrieves the specified column value as a <xref:System.TimeSpan> structure.|  
 |<xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>|Retrieves the specified column value as its underlying CLR type.|  
 |<xref:System.Data.SqlClient.SqlDataReader.GetValues%2A>|Retrieves column values in an array.|  
 |<xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A>|Returns a <xref:System.Data.DataTable> that describes the metadata of the result set.|  

@@ -89,7 +89,7 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
 ```  
   
 ## Other Configuration Settings  
- When using <xref:System.ServiceModel.WsDualHttpBinding>, the client connection uses defaults that are compatible with namespace reservations and the Windows firewall. If you choose to customize the client base address of a dual connection, then you also must configure these HTTP settings on the client to match the new address.  
+ When using <xref:System.ServiceModel.WSDualHttpBinding>, the client connection uses defaults that are compatible with namespace reservations and the Windows firewall. If you choose to customize the client base address of a dual connection, then you also must configure these HTTP settings on the client to match the new address.  
   
  The HTTP Server API has some advanced configuration settings that are not available through HttpCfg. These settings are maintained in the registry and apply to all applications running on the systems that use the HTTP Server APIs. For information about these settings, see [Http.sys registry settings for IIS](http://go.microsoft.com/fwlink/?LinkId=94843). Most users should not need to change these settings.  
   
@@ -97,5 +97,5 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
  IIS does not support port sharing on [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. If IIS is running and a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service attempts to use a namespace with the same port, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service fails to start. IIS and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] both default to using port 80. Either change the port assignment for one of the services or use the IP Listen List to assign the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service to a network adapter not used by IIS. IIS 6.0 and later have been redesigned to use the HTTP Server APIs.  
   
 ## See Also  
- <xref:System.ServiceModel.WsDualHttpBinding>   
+ <xref:System.ServiceModel.WSDualHttpBinding>   
  [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)

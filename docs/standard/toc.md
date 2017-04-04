@@ -13,9 +13,9 @@
 # [Collections and Data Structures](collections/)
 # [Generics](generics/)
 # [Exceptions](exceptions/)
-# [File and Stream I/O](io/file-and-stream-i-o.md) --> should be index.md
+# [File and Stream I/O](io/index.md)
 # [Dates, Times, and Time Zones](datetime/)
-# [Globalization and Localization](globalization-and-localization/)
+# [Globalization and Localization](globalization-localization/)
 # [Attributes](attributes/)
 # [Framework Design Guidelines](design-guidelines/)
 # [XML Documents and Data](data/xml/)
@@ -26,7 +26,7 @@
 # [Parallel Programming](parallel-programming/)
 # [Security](security/)
 # [Developing for Multiple Platforms](cross-platform/)
-# [Garbage Collection](garbagecollection/)
+# [Garbage Collection](garbage-collection/)
 
 <!-- These files located in standard folder didn't have anything in structuredTOC.md for them
 

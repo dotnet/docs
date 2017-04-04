@@ -28,17 +28,18 @@ Workflow services are [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]-ba
   
 -   <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>  
   
--   <xref:System.ServiceModel.Activities.Receive.OperationContractName%2A>  
+-   <!--zz <xref:System.ServiceModel.Activities.Receive.OperationContractName%2A>  --> `System.ServiceModel.Activities.Receive.OperationContractName`
   
 -   <xref:System.ServiceModel.Activities.Receive.Action%2A>  
   
--   <xref:System.ServiceModel.Activities.Receive.ValueType%2A>  
+-   <!--zz <xref:System.ServiceModel.Activities.Receive.ValueType%2A>  --> `System.ServiceModel.Activities.Receive.ValueType`
   
  <xref:System.ServiceModel.Activities.SendReply> Activity  
   
 -   <xref:System.ServiceModel.Activities.SendReply.Action%2A>  
   
--   <xref:System.ServiceModel.Activities.SendReply.ValueType%2A>  
+-   <!--zz <xref:System.ServiceModel.Activities.SendReply.ValueType%2A> -->
+`xref:System.ServiceModel.Activities.SendReply.ValueType`
   
  <xref:System.ServiceModel.Activities.TransactedReceiveScope> Activity  
   

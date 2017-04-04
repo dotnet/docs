@@ -32,7 +32,7 @@ This [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] scenario uses trans
 |Integrity|Yes|  
 |Confidentiality|Yes|  
 |Transport|HTTPS|  
-|Binding|<xref:System.ServiceModel.WsHttpBinding>|  
+|Binding|<<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`>|  
   
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  

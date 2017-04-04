@@ -1,6 +1,6 @@
 <Namespace Name="System.Data.SqlTypes">
   <Docs>
-    <summary>The <see cref="N:System.Data.SqlTypes" /> namespace provides classes for native data types in [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)]. These classes provide a safer, faster alternative to the data types provided by the .NET Framework common language runtime (CLR). Using the classes in this namespace helps prevent type conversion errors caused by loss of precision. Because other data types are converted to and from **SqlTypes** behind the scenes, explicitly creating and using objects within this namespace also yields faster code.</summary>
+    <summary>The <see cref="N:System.Data.SqlTypes" /> namespace provides classes for native data types in SQL Server. These classes provide a safer, faster alternative to the data types provided by the .NET Framework common language runtime (CLR). Using the classes in this namespace helps prevent type conversion errors caused by loss of precision. Because other data types are converted to and from **SqlTypes** behind the scenes, explicitly creating and using objects within this namespace also yields faster code.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

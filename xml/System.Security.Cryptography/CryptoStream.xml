@@ -206,7 +206,7 @@
 ## Remarks  
  This method wraps a call to the type's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation.  
   
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoStream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md)  
+ Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoStream> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md)  
   
  ]]></format>
         </remarks>
@@ -252,9 +252,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>

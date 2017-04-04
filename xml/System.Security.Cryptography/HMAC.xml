@@ -114,7 +114,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an instance of the default implementation of a Hash-based Message Authentication Code (HMAC).</summary>
-        <returns>A new SHA-1 instance, unless the default settings have been changed by using the [&lt;cryptoClass&gt; element](~/docs/framework/configuring-apps/file-schema/cryptography/cryptoclass-element.md).</returns>
+        <returns>A new SHA-1 instance, unless the default settings have been changed by using the [&lt;cryptoClass&gt; element](~/docs/framework/configure-apps/file-schema/cryptography/cryptoclass-element.md).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -338,9 +338,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>

@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A> when you are finished using the <xref:System.Web.UI.Design.WebControls.XmlDesigner> class. The <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A> method leaves the <xref:System.Web.UI.Design.WebControls.XmlDesigner> in an unusable state. After calling <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A>, you must release all references to the <xref:System.Web.UI.Design.WebControls.XmlDesigner> so the garbage collector can reclaim the memory that the <xref:System.Web.UI.Design.WebControls.XmlDesigner> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+ Call <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A> when you are finished using the <xref:System.Web.UI.Design.WebControls.XmlDesigner> class. The <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A> method leaves the <xref:System.Web.UI.Design.WebControls.XmlDesigner> in an unusable state. After calling <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A>, you must release all references to the <xref:System.Web.UI.Design.WebControls.XmlDesigner> so the garbage collector can reclaim the memory that the <xref:System.Web.UI.Design.WebControls.XmlDesigner> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Web.UI.Design.WebControls.XmlDesigner.Dispose%2A> before you release your last reference to the <xref:System.Web.UI.Design.WebControls.XmlDesigner>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Web.UI.Design.WebControls.XmlDesigner> object's `Finalize` method.  
@@ -65,7 +65,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see langword="Dispose(Boolean)" />, because the<see langword=" Dispose" /> method can be called multiple times by other objects, be careful not to reference objects that have been previously disposed of in an earlier call to the <see langword="Dispose" /> method. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md)  
+          <para>When overriding <see langword="Dispose(Boolean)" />, because the<see langword=" Dispose" /> method can be called multiple times by other objects, be careful not to reference objects that have been previously disposed of in an earlier call to the <see langword="Dispose" /> method. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md)  
   
  [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3)</para>
         </block>

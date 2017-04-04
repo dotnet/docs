@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/wf/samples/custom-composite-using-native-activity.md) sample.  
+ The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
   
 ```  
 public sealed class MySequence : NativeActivity  
@@ -106,7 +106,7 @@ public sealed class MySequence : NativeActivity
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/wf/samples/custom-composite-using-native-activity.md) sample.  
+ The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
   
  [!code-csharp[wfs_CustomCompositeNativeActivity#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#1)]  
   
@@ -190,7 +190,7 @@ public sealed class MySequence : NativeActivity
    
   
 ## Examples  
- The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/wf/samples/custom-composite-using-native-activity.md) sample.  
+ The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
   
  [!code-csharp[wfs_CustomCompositeNativeActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#2)]  
   
@@ -220,7 +220,7 @@ public sealed class MySequence : NativeActivity
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/wf/samples/non-generic-parallelforeach.md) sample.  
+ The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
   
  [!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
   
@@ -269,7 +269,7 @@ public sealed class MySequence : NativeActivity
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/wf/samples/non-generic-parallelforeach.md) sample.  
+ The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
   
  [!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
   

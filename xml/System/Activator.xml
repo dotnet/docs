@@ -419,7 +419,7 @@
   
 -   The full name of a signed assembly, which consists of its simple name, version, culture, and public key token; for example, "TypeExtensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=181869f2f7435b51".  
   
- For more information on how the common language runtime identifies and loads assemblies, see [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md). For information on using the application configuration file to define assembly locations, see [Specifying an Assembly's Location](~/docs/framework/configuring-apps/specifying-assembly-location.md). If `assemblyName` is found, it is loaded in the default context.  
+ For more information on how the common language runtime identifies and loads assemblies, see [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md). For information on using the application configuration file to define assembly locations, see [Specifying an Assembly's Location](~/docs/framework/configure-apps/specify-assembly-location.md). If `assemblyName` is found, it is loaded in the default context.  
   
 > [!NOTE]
 >  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  

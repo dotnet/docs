@@ -111,7 +111,7 @@
         <Parameter Name="configurationName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="configurationName">The binding configuration name for the [netNamedPipeBinding Element](~/docs/framework/configuring-apps/file-schema/wcf/netnamedpipebinding.md).</param>
+        <param name="configurationName">The binding configuration name for the [netNamedPipeBinding Element](~/docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md).</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetNamedPipeBinding" /> class with a specified configuration name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

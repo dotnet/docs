@@ -68,7 +68,7 @@
 > [!NOTE]
 >  These debug and trace compiler switches are not required when using the <xref:System.Diagnostics.TraceSwitch> class in isolation. They are only required in conjunction with <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> methods that are conditionally compiled.  
   
- For more information on instrumenting your application, see <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace>. For more information about configuring and using trace switches, see [Trace Switches](~/docs/framework/debugging-tracing-profiling/trace-switches.md).  
+ For more information on instrumenting your application, see <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace>. For more information about configuring and using trace switches, see [Trace Switches](~/docs/framework/debug-trace-profile/trace-switches.md).  
   
 > [!NOTE]
 >  To improve performance, you can make <xref:System.Diagnostics.TraceSwitch> members `static` in your class.  

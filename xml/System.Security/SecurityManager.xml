@@ -272,7 +272,7 @@
  -or-  
   
  The code that calls this method does not have <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</exception>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to view and modify policy. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
       </Docs>
@@ -343,7 +343,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
         <exception cref="T:System.Security.SecurityException">The code that calls this method does not have <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to view and modify policy. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
       </Docs>
@@ -381,7 +381,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolvePolicy">
@@ -417,7 +417,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolvePolicy">
@@ -461,7 +461,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
         <exception cref="T:System.Security.Policy.PolicyException">Policy fails to grant the minimum required permissions specified by the <paramref name="reqdPset" /> parameter.</exception>
       </Docs>
     </Member>
@@ -500,7 +500,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveSystemPolicy">
@@ -536,7 +536,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
       </Docs>
     </Member>
     <Member MemberName="SavePolicy">
@@ -568,7 +568,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
         <exception cref="T:System.Security.SecurityException">The code that calls this method does not have <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to modify policy. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
       </Docs>
@@ -606,7 +606,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The code that calls this method does not have <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />.</exception>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to modify policy. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
       </Docs>
     </Member>

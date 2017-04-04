@@ -350,7 +350,7 @@
    
   
 ## Examples  
- The following example registers a custom <xref:System.Activities.Tracking.TrackingParticipant> with the <xref:System.Activities.WorkflowInvoker.Extensions%2A> collection of a <xref:System.Activities.WorkflowInvoker> instance. This code example is part of the [Custom Tracking](~/docs/framework/wf/samples/custom-tracking.md) sample.  
+ The following example registers a custom <xref:System.Activities.Tracking.TrackingParticipant> with the <xref:System.Activities.WorkflowInvoker.Extensions%2A> collection of a <xref:System.Activities.WorkflowInvoker> instance. This code example is part of the [Custom Tracking](~/docs/framework/windows-workflow-foundation/samples/custom-tracking.md) sample.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#40](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#40)]  
   
@@ -743,7 +743,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
    
   
 ## Examples  
- The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/wf/samples/using-the-workflowinvoker-class.md) sample.  
+ The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md) sample.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#110](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#110)]  
   
@@ -790,7 +790,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
    
   
 ## Examples  
- The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/wf/samples/using-the-workflowinvoker-class.md) sample.  
+ The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md) sample.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#110](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#110)]  
   
@@ -839,7 +839,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
    
   
 ## Examples  
- The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/wf/samples/using-the-workflowinvoker-class.md) sample.  
+ The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md) sample.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#110](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#110)]  
   
@@ -890,7 +890,7 @@ The time allotted to this operation may have been a portion of a longer timeout.
    
   
 ## Examples  
- The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/wf/samples/using-the-workflowinvoker-class.md) sample.  
+ The following example invokes a workflow consisting of a single `Add` activity that has two input arguments and since it derives from `CodeActivity<int>` it has one well-defined <xref:System.Activities.Activity%601.Result%2A> output argument. When the workflow is invoked, the `arguments` dictionary is passed which contains the values for each input argument, keyed by argument name. When the call to `Invoke` returns, the value of the <xref:System.Activities.Activity%601.Result%2A> output argument is returned. This code example is based off of the [Using the WorkflowInvoker Class](~/docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md) sample.  
   
  [!code-csharp[CFX_WorkflowInvokerExample#110](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowinvokerexample/cs/program.cs#110)]  
   

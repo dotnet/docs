@@ -274,7 +274,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
   
      For the `Culture` attribute, specify the keyword `neutral` to designate the main assembly and cause the <xref:System.Resources.ResourceManager> class to probe only for the cultures listed in the `<culture>` nodes.  
   
-     For more information about fully qualified assembly names, see the article [Assembly Names](~/docs/framework/app-domains/assembly-names.md). For more information about strong-named assemblies, see the article [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/creating-and-using-strong-named-assemblies.md).  
+     For more information about fully qualified assembly names, see the article [Assembly Names](~/docs/framework/app-domains/assembly-names.md). For more information about strong-named assemblies, see the article [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
   
 -   Specify one or more `<culture>` nodes with a specific culture name, such as "fr-FR", or a neutral culture name, such as "fr".  
   

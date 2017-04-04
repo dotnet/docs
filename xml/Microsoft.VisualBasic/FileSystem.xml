@@ -246,9 +246,8 @@
   
  The `Attributes` argument enumeration values are as follows:  
   
-||||  
-|-|-|-|  
 |Value|Constant|Description|  
+|-|-|-|  
 |`Normal`|`vbnormal`|Default. Specifies files without attributes.|  
 |`ReadOnly`|`vbReadOnly`|Specifies read-only files, and also files without attributes.|  
 |`Hidden`|`vbHidden`|Specifies hidden files, and also files without attributes.|  
@@ -308,9 +307,8 @@
   
  The `Attributes` argument enumeration values are as follows:  
   
-||||  
-|-|-|-|  
 |Value|Constant|Description|  
+|-|-|-|  
 |`Normal`|`vbnormal`|Default. Specifies files that have no attributes.|  
 |`ReadOnly`|`vbReadOnly`|Specifies read-only files, in addition to files that have no attributes.|  
 |`Hidden`|`vbHidden`|Specifies hidden files, in addition to files that have no attributes.|  
@@ -3270,9 +3268,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3332,9 +3329,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3394,9 +3390,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3456,9 +3451,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3518,9 +3512,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3580,9 +3573,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3642,9 +3634,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3704,9 +3695,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3766,9 +3756,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3828,9 +3817,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3890,9 +3878,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -3952,9 +3939,8 @@ Result = GetAttr(FName) And vbArchive
   
  When read, standard string or numeric data is assigned to variables without modification. The following table illustrates how other input data is treated.  
   
-|||  
-|-|-|  
 |Data|Value assigned to variable|  
+|-|-|  
 |Delimiting comma or blank line|Empty|  
 |#NULL#|`DBNull`|  
 |#TRUE# or #FALSE#|`True` or `False`|  
@@ -4150,9 +4136,8 @@ Result = GetAttr(FName) And vbArchive
   
  The following describes the return value for each file access mode:  
   
-|||  
-|-|-|  
 |Mode|Return value|  
+|-|-|  
 |`Random`|Number of the last record read from or written to the file.|  
 |`Sequential`|Current byte position in the file divided by 128. However, information returned by `Loc` for sequential files is neither used nor required.|  
 |`Binary`|Position of the last byte read or written.|  
@@ -4655,9 +4640,8 @@ Result = GetAttr(FName) And vbArchive
   
  The following describes the return values for each file access mode:  
   
-|||  
-|-|-|  
 |Mode|Return Value|  
+|-|-|  
 |`Random`|Number of the next record read or written|  
 |`Binary`, `Input`, `Output`, `Append`|Byte position at which the next operation occurs. The first byte in a file is at position 1, the second byte is at position 2, and so on.|  
   
@@ -4715,9 +4699,8 @@ Result = GetAttr(FName) And vbArchive
   
  The following describes the return values for each file access mode:  
   
-|||  
-|-|-|  
 |Mode|Return Value|  
+|-|-|  
 |`Random`|Number of the next record read or written|  
 |`Binary`, `Input`, `Output`, `Append`|Byte position at which the next operation occurs. The first byte in a file is at position 1, the second byte is at position 2, and so on.|  
   
@@ -4775,9 +4758,8 @@ Result = GetAttr(FName) And vbArchive
   
  The `Attributes` argument enumeration values are as follows:  
   
-||||  
-|-|-|-|  
 |Value|Constant|Description|  
+|-|-|-|  
 |`Normal`|`vbNormal`|Normal (default).|  
 |`ReadOnly`|`vbReadOnly`|Read-only.|  
 |`Hidden`|`vbHidden`|Hidden.|  

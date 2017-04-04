@@ -41,9 +41,8 @@
   
  The following table shows which types and members are accessible to an anonymously hosted dynamic method, with and without JIT visibility checks, depending on whether <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag> flag is granted.  
   
-||||  
-|-|-|-|  
 ||Without <xref:System.Security.Permissions.ReflectionPermissionFlag>|With <xref:System.Security.Permissions.ReflectionPermissionFlag>|  
+|-|-|-|  
 |Without skipping JIT visibility checks|Public members of public types in any assembly.|Public members of public types in any assembly.|  
 |Skipping JIT visibility checks, with restrictions|Public members of public types in any assembly.|All members of all types, only in assemblies whose trust levels are equal to or less than the trust level of the assembly that emitted the dynamic method.|  
   
@@ -52,9 +51,8 @@
   
  The following table shows which types and members are accessible to a dynamic method that is associated with a module or with a type in a module.  
   
-||||  
-|-|-|-|  
 ||Associated with module|Associated with type|  
+|-|-|-|  
 |Without skipping JIT visibility checks|Public and internal members of public, internal, and private types in the module.<br /><br /> Public members of public types in any assembly.|All members of the associated type. Public and internal members of all the other types in the module.<br /><br /> Public members of public types in any assembly.|  
 |Skipping JIT visibility checks|All members of all types in any assembly.|All members of all types in any assembly.|  
   

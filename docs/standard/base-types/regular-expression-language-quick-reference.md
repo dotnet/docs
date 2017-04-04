@@ -109,15 +109,15 @@ manager: "wpickett"
   
 <a name="grouping_constructs"></a>   
 ## Grouping Constructs  
- Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs](../Topic/Grouping%20Constructs%20in%20Regular%20Expressions.md).  
+ Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).  
   
 |Grouping construct|Description|Pattern|Matches|  
 |------------------------|-----------------|-------------|-------------|  
 |`(` *subexpression* `)`|Captures the matched subexpression and assigns it a one-based ordinal number.|`(\w)\1`|"ee" in "deep"|  
 |`(?<` *name* `>` *subexpression* `)`|Captures the matched subexpression into a named group.|`(?<double>\w)\k<double>`|"ee" in "deep"|  
-|`(?<` *name1* `-` *name2* `>` *subexpression* `)`|Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs](../Topic/Grouping%20Constructs%20in%20Regular%20Expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"((1-3)*(3-1))" in "3+2^((1-3)\*(3-1))"|  
+|`(?<` *name1* `-` *name2* `>` *subexpression* `)`|Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs](grouping-constructs-in-regular-expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|"((1-3)*(3-1))" in "3+2^((1-3)\*(3-1))"|  
 |`(?:` *subexpression* `)`|Defines a noncapturing group.|`Write(?:Line)?`|"WriteLine" in "Console.WriteLine()"<br /><br /> "Write" in "Console.Write(value)"|  
-|`(?imnsx-imnsx:` *subexpression* `)`|Applies or disables the specified options within *subexpression*. For more information, see [Regular Expression Options](../Topic/Regular%20Expression%20Options.md).|`A\d{2}(?i:\w+)\b`|"A12xl", "A12XL" in "A12xl A12XL a12xl"|  
+|`(?imnsx-imnsx:` *subexpression* `)`|Applies or disables the specified options within *subexpression*. For more information, see [Regular Expression Options](regular-expression-options.md).|`A\d{2}(?i:\w+)\b`|"A12xl", "A12XL" in "A12xl A12XL a12xl"|  
 |`(?=` *subexpression* `)`|Zero-width positive lookahead assertion.|`\w+(?=\.)`|"is", "ran", and "out" in "He is. The dog ran. The sun is out."|  
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b(?!un)\w+\b`|"sure", "used" in "unsure sure unity used"|  
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`(?<=19)\d{2}\b`|"99", "50", "05" in "1851 1999 1950 1905 2003"|  
@@ -128,7 +128,7 @@ manager: "wpickett"
   
 <a name="quantifiers"></a>   
 ## Quantifiers  
- A quantifier specifies how many instances of the previous element (which can be a character, a group, or a character class) must be present in the input string for a match to occur. Quantifiers include the language elements listed in the following table. For more information, see [Quantifiers](../Topic/Quantifiers%20in%20Regular%20Expressions.md).  
+ A quantifier specifies how many instances of the previous element (which can be a character, a group, or a character class) must be present in the input string for a match to occur. Quantifiers include the language elements listed in the following table. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
 |Quantifier|Description|Pattern|Matches|  
 |----------------|-----------------|-------------|-------------|  
@@ -149,7 +149,7 @@ manager: "wpickett"
   
 <a name="backreference_constructs"></a>   
 ## Backreference Constructs  
- A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in the .NET Framework. For more information, see [Backreference Constructs](../Topic/Backreference%20Constructs%20in%20Regular%20Expressions.md).  
+ A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in the .NET Framework. For more information, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).  
   
 |Backreference construct|Description|Pattern|Matches|  
 |-----------------------------|-----------------|-------------|-------------|  
@@ -160,7 +160,7 @@ manager: "wpickett"
   
 <a name="alternation_constructs"></a>   
 ## Alternation Constructs  
- Alternation constructs modify a regular expression to enable either/or matching. These constructs include the language elements listed in the following table. For more information, see [Alternation Constructs](../Topic/Alternation%20Constructs%20in%20Regular%20Expressions.md).  
+ Alternation constructs modify a regular expression to enable either/or matching. These constructs include the language elements listed in the following table. For more information, see [Alternation Constructs](alternation-constructs-in-regular-expressions.md).  
   
 |Alternation construct|Description|Pattern|Matches|  
 |---------------------------|-----------------|-------------|-------------|  
@@ -172,7 +172,7 @@ manager: "wpickett"
   
 <a name="substitutions"></a>   
 ## Substitutions  
- Substitutions are regular expression language elements that are supported in replacement patterns. For more information, see [Substitutions](../Topic/Substitutions%20in%20Regular%20Expressions.md). The metacharacters listed in the following table are atomic zero-width assertions.  
+ Substitutions are regular expression language elements that are supported in replacement patterns. For more information, see [Substitutions](substitutions-in-regular-expressions.md). The metacharacters listed in the following table are atomic zero-width assertions.  
   
 |Character|Description|Pattern|Replacement pattern|Input string|Result string|  
 |---------------|-----------------|-------------|-------------------------|------------------|-------------------|  
@@ -189,41 +189,41 @@ manager: "wpickett"
   
 <a name="options"></a>   
 ## Regular Expression Options  
- You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more [RegexOptions](assetId:///T:System.Text.RegularExpressions.RegexOptions?qualifyHint=False&autoUpgrade=True) constants. This quick reference lists only inline options. For more information about inline and [RegexOptions](assetId:///T:System.Text.RegularExpressions.RegexOptions?qualifyHint=False&autoUpgrade=True) options, see the article [Regular Expression Options](../Topic/Regular%20Expression%20Options.md).  
+ You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more [RegexOptions](assetId:///T:System.Text.RegularExpressions.RegexOptions?qualifyHint=False&autoUpgrade=True) constants. This quick reference lists only inline options. For more information about inline and [RegexOptions](assetId:///T:System.Text.RegularExpressions.RegexOptions?qualifyHint=False&autoUpgrade=True) options, see the article [Regular Expression Options](regular-expression-options.md).  
   
  You can specify an inline option in two ways:  
   
--   By using the [miscellaneous construct](../Topic/Miscellaneous%20Constructs%20in%20Regular%20Expressions.md)`(?imnsx-imnsx)`, where a minus sign (-) before an option or set of options turns those options off. For example, `(?i-mn)` turns case-insensitive matching (`i`) on, turns multiline mode (`m`) off, and turns unnamed group captures (`n`) off. The option applies to the regular expression pattern from the point at which the option is defined, and is effective either to the end of the pattern or to the point where another construct reverses the option.  
+-   By using the [miscellaneous construct](miscellaneous-constructs-in-regular-expressions)`(?imnsx-imnsx)`, where a minus sign (-) before an option or set of options turns those options off. For example, `(?i-mn)` turns case-insensitive matching (`i`) on, turns multiline mode (`m`) off, and turns unnamed group captures (`n`) off. The option applies to the regular expression pattern from the point at which the option is defined, and is effective either to the end of the pattern or to the point where another construct reverses the option.  
   
--   By using the [grouping construct](../Topic/Grouping%20Constructs%20in%20Regular%20Expressions.md)`(?imnsx-imnsx:`*subexpression*`)`, which defines options for the specified group only.  
+-   By using the [grouping construct](grouping-constructs-in-regular-expressions.md)`(?imnsx-imnsx:`*subexpression*`)`, which defines options for the specified group only.  
   
  The .NET Framework regular expression engine supports the following inline options.  
   
 |Option|Description|Pattern|Matches|  
 |------------|-----------------|-------------|-------------|  
 |`i`|Use case-insensitive matching.|`\b(?i)a(?-i)a\w+\b`|"aardvark", "aaaAuto" in "aardvark AAAuto aaaAuto Adam breakfast"|  
-|`m`|Use multiline mode. `^` and `$` match the beginning and end of a line, instead of the beginning and end of a string.|For an example, see the "Multiline Mode" section in [Regular Expression Options](../Topic/Regular%20Expression%20Options.md).||  
-|`n`|Do not capture unnamed groups.|For an example, see the "Explicit Captures Only" section in [Regular Expression Options](../Topic/Regular%20Expression%20Options.md).||  
-|`s`|Use single-line mode.|For an example, see the "Single-line Mode" section in [Regular Expression Options](../Topic/Regular%20Expression%20Options.md).||  
+|`m`|Use multiline mode. `^` and `$` match the beginning and end of a line, instead of the beginning and end of a string.|For an example, see the "Multiline Mode" section in [Regular Expression Options](regular-expression-options.md).||  
+|`n`|Do not capture unnamed groups.|For an example, see the "Explicit Captures Only" section in [Regular Expression Options](regular-expression-options.md).||  
+|`s`|Use single-line mode.|For an example, see the "Single-line Mode" section in [Regular Expression Options](regular-expression-options.md).||  
 |`x`|Ignore unescaped white space in the regular expression pattern.|`\b(?x) \d+ \s \w+`|"1 aardvark", "2 cats" in "1 aardvark 2 cats IV centurions"|  
   
  [Back to top](#top)  
   
 <a name="miscellaneous_constructs"></a>   
 ## Miscellaneous Constructs  
- Miscellaneous constructs either modify a regular expression pattern or provide information about it. The following table lists the miscellaneous constructs supported by the .NET Framework. For more information, see [Miscellaneous Constructs](../Topic/Miscellaneous%20Constructs%20in%20Regular%20Expressions.md).  
+ Miscellaneous constructs either modify a regular expression pattern or provide information about it. The following table lists the miscellaneous constructs supported by the .NET Framework. For more information, see [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md).  
   
 |Construct|Definition|Example|  
 |---------------|----------------|-------------|  
-|`(?imnsx-imnsx)`|Sets or disables options such as case insensitivity in the middle of a pattern.For more information, see [Regular Expression Options](../Topic/Regular%20Expression%20Options.md).|`\bA(?i)b\w+\b` matches "ABA", "Able" in "ABA Able Act"|  
+|`(?imnsx-imnsx)`|Sets or disables options such as case insensitivity in the middle of a pattern.For more information, see [Regular Expression Options](regular-expression-options.md).|`\bA(?i)b\w+\b` matches "ABA", "Able" in "ABA Able Act"|  
 |`(?#` *comment* `)`|Inline comment. The comment ends at the first closing parenthesis.|`\bA(?#Matches words starting with A)\w+\b`|  
 |`#` [to end of line]|X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.|`(?x)\bA\w+\b#Matches words starting with A`|  
   
 ## See Also  
  [System.Text.RegularExpressions](assetId:///N:System.Text.RegularExpressions?qualifyHint=True&autoUpgrade=True)   
  [Regex](assetId:///T:System.Text.RegularExpressions.Regex?qualifyHint=False&autoUpgrade=True)   
- [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md)   
- [Regular Expression Classes](../Topic/The%20Regular%20Expression%20Object%20Model.md)   
- [Regular Expression Examples](../Topic/Regular%20Expression%20Examples.md)   
+ [Regular Expressions](regular-expressions.md)   
+ [Regular Expression Classes](the-regular-expression-object-model.md)   
+ [Regular Expression Examples](regular-expression-examples.md)   
  [Regular Expressions - Quick Reference (download in Word format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)   
  [Regular Expressions - Quick Reference (download in PDF format)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

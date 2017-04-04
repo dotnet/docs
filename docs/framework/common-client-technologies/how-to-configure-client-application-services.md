@@ -20,7 +20,7 @@ manager: "wpickett"
 # How to: Configure Client Application Services
 This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] **Project Designer** to enable and configure client application services. You can use client application services to validate users and retrieve user roles and settings from an existing [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application service. After configuration, you can access the enabled services in your application code as described in [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md). For more information about the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] application services, see [ASP.NET Application Services Overview](http://msdn.microsoft.com/library/1162e529-0d70-44b2-b3ab-83e60c695013).  
   
- You can enable and configure client application services on the **Services** page of the **Project Designer**. The **Services** page updates values in your project's App.config file. To access the **Project Designer**, use the **Properties** command on the **Project** menu. For more information about the **Services** page, see [Services Page, Project Designer](../Topic/Services%20Page,%20Project%20Designer.md).  
+ You can enable and configure client application services on the **Services** page of the **Project Designer**. The **Services** page updates values in your project's App.config file. To access the **Project Designer**, use the **Properties** command on the **Project** menu. For more information about the **Services** page, see [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109).  
   
  The following procedure describes how to perform basic configuration for client application services. Advanced configuration options are described in later sections.  
   
@@ -149,7 +149,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
 ## See Also  
  [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
  [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
- [Services Page, Project Designer](../Topic/Services%20Page,%20Project%20Designer.md)   
+ [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109)   
  [Advanced Settings for Services Dialog Box](http://msdn.microsoft.com/library/6dde4a2d-85e1-4275-aa55-24b84111be91)   
  [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)   
  [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)   

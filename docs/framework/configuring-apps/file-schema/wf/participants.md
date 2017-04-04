@@ -87,6 +87,5 @@ Configure a list of tracking participants that listen to the tracking records be
 ## See Also  
  <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>   
  <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>   
- <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehavior>   
  [Workflow Tracking and Tracing](../../../../../docs/framework/wf/workflow-tracking-and-tracing.md)   
  [Tracking Participants](../../../../../docs/framework/wf/tracking-participants.md)

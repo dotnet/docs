@@ -101,7 +101,7 @@ manager: "erikre"
     store.Promote("DocumentStatus", variantProperties, null);  
     ```  
   
-     Based on this promotion information, **SqlWorkflowInstanceStore** places the data properties in the columns of the [[System.Activities.DurableInstancing.InstancePromotedProperties] view](../Topic/Store%20Extensibility.md#InstancePromotedProperties).  
+     Based on this promotion information, **SqlWorkflowInstanceStore** places the data properties in the columns of the [InstancePromotedProperties](#InstancePromotedProperties) view.
   
 6.  To query a subset of the data from the promotion table, the DP application adds a customized view on top of the promotion view.  
   

@@ -85,7 +85,7 @@ Configuration files are standard XML files that you can use to change settings a
  [Web Settings Schema](../../../../docs/framework/configuring-apps/file-schema/web/index.md)  
  All elements in the Web settings schema, which includes elements for configuring how ASP.NET works with a host application such as IIS. Used in aspnet.config files.  
   
-[Windows Forms Configuration Schema](../Topic/Windows%20Forms%20Configuration%20Schema.md)   
+[Windows Forms Configuration Schema](winforms/index.md)   
 All elements in the Windows Forms application configuration section, which includes customizations such as multi-monitor and high DPI support.
  
 [WCF Configuration Schema](../../../../docs/framework/configuring-apps/file-schema/wcf/index.md)   
@@ -94,8 +94,8 @@ All elements that enable you to configure WCF service and client applications.
 [WCF Directive Syntax](../../../../docs/framework/configuring-apps/file-schema/wcf-directive/index.md)   
 Describes the `@ServiceHost` directive, which defines page-specific attributes used by the .svc compiler. 
 
-\<!-- [WIF Configuration Schema](../Topic/WIF%20Configuration%20Schema.md)   
-All elements of the Windows Identity Foundation (WIF) configuration schema. -->
+[WIF Configuration Schema](wif.index.md)   
+All elements of the Windows Identity Foundation (WIF) configuration schema.
 
 ## Related Sections  
  [Remoting Settings Schema](http://msdn.microsoft.com/en-us/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e)  

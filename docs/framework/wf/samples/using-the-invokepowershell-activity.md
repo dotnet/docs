@@ -178,7 +178,7 @@ new ForEach<PSObject>
   
 ```  
   
- The designer customization does not stop with the .xaml files that define the appearance of the activity on the design canvas. The dialog boxes used to display the parameters of the activity can also be customized. These parameters and PowerShell variables affect the behavior of PowerShell commands. The activity exposes them as <xref:System.Collections.Generic.Dictionary%601> types. ArgumentDictionaryEditor.cs, PropertyEditorResources.xaml and PropertyEditorResources.cs define the dialog box that allows you to edit these types.  
+ The designer customization does not stop with the .xaml files that define the appearance of the activity on the design canvas. The dialog boxes used to display the parameters of the activity can also be customized. These parameters and PowerShell variables affect the behavior of PowerShell commands. The activity exposes them as <!--zz <xref:System.Collections.Generic.Dictionary%601>--> `System.Collections.Generic.Dictionary` types. ArgumentDictionaryEditor.cs, PropertyEditorResources.xaml and PropertyEditorResources.cs define the dialog box that allows you to edit these types.  
   
 ## To set up, build, and run the sample  
  You must install Windows PowerShell to run this sample. Windows PowerShell can be installed from this location: [Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=150383).  

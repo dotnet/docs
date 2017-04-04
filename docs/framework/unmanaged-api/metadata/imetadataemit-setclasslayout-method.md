@@ -64,7 +64,7 @@ HRESULT SetClassLayout (
 -   Explicit layout: Either specify the offset of each field or specify the class size and the packing size.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

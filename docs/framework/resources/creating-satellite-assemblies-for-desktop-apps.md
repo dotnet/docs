@@ -154,7 +154,7 @@ al /target:lib /embed:strings.de.resources /culture:de /out:Example.resources.dl
   
  Installing assemblies in the global assembly cache requires that they have strong names. Strong-named assemblies are signed with a valid public/private key pair. They contain version information that the runtime uses to determine which assembly to use to satisfy a binding request. For more information about strong names and versioning, see [Assembly Versioning](../../../docs/framework/app-domains/assembly-versioning.md). For more information about strong names, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md).  
   
- When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md).  
+ When you are developing an application, it is unlikely that you will have access to the final public/private key pair. In order to install a satellite assembly in the global assembly cache and ensure that it works as expected, you can use a technique called delayed signing. When you delay sign an assembly, at build time you reserve space in the file for the strong name signature. The actual signing is delayed until later, when the final public/private key pair is available. For more information about delayed signing, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).  
   
 ### Obtaining the Public Key  
  To delay sign an assembly, you must have access to the public key. You can either obtain the real public key from the organization in your company that will do the eventual signing, or create a public key by using the [Strong Name Tool (Sn.exe)](../../../docs/framework/tools/sn-exe-strong-name-tool.md).  
@@ -313,7 +313,7 @@ gacutil /i:StringLibrary.resources.dll
   
 ## See Also  
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)   
- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md)   
+ [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)   
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)   
  [Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)   
  [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)   

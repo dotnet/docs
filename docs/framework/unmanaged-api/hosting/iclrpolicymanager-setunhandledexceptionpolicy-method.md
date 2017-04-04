@@ -57,7 +57,7 @@ HRESULT SetUnhandledExceptionPolicy (
  By default, the CLR is the final handler for all unhandled exceptions, and its default behavior is to tear down the process. The host can change this behavior by setting the `policy` value to eHostDeterminedPolicy. This value allows the host to implement its own default behavior, as with earlier versions of the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

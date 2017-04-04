@@ -43,7 +43,7 @@ HRESULT Collect (
  [in] The generation on which to perform the garbage collection. A value of -1 indicates that all generations will undergo a garbage collection.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

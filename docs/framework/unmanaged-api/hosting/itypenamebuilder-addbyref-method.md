@@ -37,7 +37,7 @@ HRESULT AddByRef ( );
 ```  
   
 ## Requirements  
- **Platforms:** WindoSee [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** WindoSee [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

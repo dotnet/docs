@@ -60,7 +60,7 @@ HRESULT LoadLibrary(
  This method only loads DLLs included in the .NET Framework redistributable package. It can not load user-generated assemblies.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

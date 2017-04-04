@@ -36,6 +36,4 @@ This section describes the unmanaged hosting functions used by the .NET Framewor
   
  [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
   
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
-  
- [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5)
+ [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)

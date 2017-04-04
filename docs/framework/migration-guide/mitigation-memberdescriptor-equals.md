@@ -27,7 +27,7 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 ## Mitigation  
  Two workarounds are available if your app targets the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or a later version of the .NET Framework and it depends on the  <xref:System.ComponentModel.MemberDescriptor.Equals%2A?displayProperty=fullName> method sometimes returning `false` when member descriptors are equivalent:  
   
--   You can opt out of this change without modifying your source code by adding the following to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
+-   You can opt out of this change without modifying your source code by adding the following to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
     ```xml  
   

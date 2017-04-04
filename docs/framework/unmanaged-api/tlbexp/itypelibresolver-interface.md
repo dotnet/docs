@@ -36,7 +36,7 @@ Provides the [ResolveTypeLib method](../../../../docs/framework/unmanaged-api/tl
 |[ResolveTypeLib Method](../../../../docs/framework/unmanaged-api/tlbexp/resolvetypelib-method.md)|Resolves the simple name of a type library by returning its fully qualified path.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** TlbRef.idl, TlbRef.h  
   

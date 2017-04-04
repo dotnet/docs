@@ -32,12 +32,12 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
 ## Security Functions of Bindings  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] includes a number of system-provided bindings that meet most needs. If a particular binding does not suffice, you can also create a custom binding. For a list of system-provided bindings, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
- Every binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] has two forms: as an API and as an XML element used in a configuration file. For example, the `WSHttpBinding` (API) has a counterpart in the [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md).  
+ Every binding in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] has two forms: as an API and as an XML element used in a configuration file. For example, the `WSHttpBinding` (API) has a counterpart in the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  The following section lists both forms for each binding and summarizes the security features.  
   
 ### BasicHttp  
- In code, use the <xref:System.ServiceModel.BasicHttpBinding> class; in configuration, use the [\<basicHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md).  
+ In code, use the <xref:System.ServiceModel.BasicHttpBinding> class; in configuration, use the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
  This binding is designed for use with a range of existing technologies, including the following:  
   
@@ -60,7 +60,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.BasicHttpSecurity>, <xref:System.ServiceModel.BasicHttpMessageSecurity>, <xref:System.ServiceModel.BasicHttpMessageCredentialType>, and <xref:System.ServiceModel.BasicHttpSecurityMode>.  
   
 ### WSHttpBinding  
- In code, use the <xref:System.ServiceModel.WSHttpBinding> class; in configuration, use the [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md).  
+ In code, use the <xref:System.ServiceModel.WSHttpBinding> class; in configuration, use the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  By default, this binding implements the WS-Security specification and provides interoperability with services that implement the WS-* specifications. It supports the following:  
   
@@ -73,7 +73,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.WSHttpSecurity>, <xref:System.ServiceModel.MessageSecurityOverHttp>, <xref:System.ServiceModel.MessageCredentialType>, <xref:System.ServiceModel.SecurityMode>, <xref:System.ServiceModel.HttpTransportSecurity>, <xref:System.ServiceModel.HttpClientCredentialType>, and <xref:System.ServiceModel.HttpProxyCredentialType>.  
   
 ### WSDualHttpBinding  
- In code, use the <xref:System.ServiceModel.WSDualHttpBinding> class; in configuration, use the [\<wsDualHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsdualhttpbinding.md).  
+ In code, use the <xref:System.ServiceModel.WSDualHttpBinding> class; in configuration, use the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  
   
  This binding is designed to enable duplex service applications. This binding implements the WS-Security specification for message-based transfer security. Transport security is not available. By default, it provides the following features:  
   
@@ -98,7 +98,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.WSDualHttpSecurity> and <xref:System.ServiceModel.WSDualHttpSecurityMode>.  
   
 ### NetTcpBinding  
- In code, use the <xref:System.ServiceModel.NetTcpBinding> class; in configuration, use the [\<netTcpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/nettcpbinding.md).  
+ In code, use the <xref:System.ServiceModel.NetTcpBinding> class; in configuration, use the [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).  
   
  This binding is optimized for cross-machine communication. By default, it has the following characteristics:  
   
@@ -121,7 +121,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.NetTcpSecurity>, <xref:System.ServiceModel.TcpTransportSecurity>, <xref:System.ServiceModel.TcpClientCredentialType>, <xref:System.ServiceModel.MessageSecurityOverTcp>, and <xref:System.ServiceModel.MessageCredentialType>.  
   
 ### NetNamedPipeBinding  
- In code, use the <xref:System.ServiceModel.NetNamedPipeBinding> class; in configuration, use the [\<netNamedPipeBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/netnamedpipebinding.md).  
+ In code, use the <xref:System.ServiceModel.NetNamedPipeBinding> class; in configuration, use the [\<netNamedPipeBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netnamedpipebinding.md).  
   
  This binding is optimized for cross-process communication (usually on the same machine). By default, this binding has the following characteristics:  
   
@@ -140,7 +140,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.NetNamedPipeSecurity>, <xref:System.ServiceModel.NetNamedPipeSecurityMode>, and <xref:System.ServiceModel.NamedPipeTransportSecurity>.  
   
 ### MsmqIntegrationBinding  
- In code, use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class; in configuration, use the [\<msmqIntegrationBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/msmqintegrationbinding.md).  
+ In code, use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class; in configuration, use the [\<msmqIntegrationBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md).  
   
  This binding is optimized for creating [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services that interoperate with non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Microsoft Message Queuing (MSMQ) endpoints.  
   
@@ -153,7 +153,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.NetMsmqSecurity> and <xref:System.ServiceModel.NetMsmqSecurityMode>.  
   
 ### NetMsmqBinding  
- In code, use the <xref:System.ServiceModel.NetMsmqBinding> class; in configuration, use the [\<netMsmqBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/netmsmqbinding.md).  
+ In code, use the <xref:System.ServiceModel.NetMsmqBinding> class; in configuration, use the [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md).  
   
  This binding is intended for use when creating [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that require MSMQ queued message support.  
   
@@ -174,7 +174,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.MessageSecurityOverMsmq> and <xref:System.ServiceModel.MsmqTransportSecurity>.  
   
 ### WSFederationHttpBinding  
- In code, use the <xref:System.ServiceModel.WSFederationHttpBinding> class; in configuration, use the [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+ In code, use the <xref:System.ServiceModel.WSFederationHttpBinding> class; in configuration, use the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
  By default, this binding uses WS-Security (message-layer security).  
   

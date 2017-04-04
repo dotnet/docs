@@ -37,7 +37,7 @@ Provides methods for validating portable executable (PE) images and reporting va
 |[Validate Method](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-validate-method.md)|Validates the portable executable or Microsoft intermediate language (MSIL) in the specified file.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   

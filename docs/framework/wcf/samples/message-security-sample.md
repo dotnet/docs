@@ -39,7 +39,7 @@ This sample demonstrates how to implement an application that uses the `basicHtt
 </system.serviceModel>  
 ```  
   
- The binding configuration sets the `mode` attribute of the [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-basichttpbinding.md) to `Message` and sets the `clientCredentialType` attribute of the [\<message>](../../../../docs/framework/configuring-apps/file-schema/wcf/message-of-basichttpbinding.md) to `Certificate` as shown in the following sample configuration:  
+ The binding configuration sets the `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md) to `Message` and sets the `clientCredentialType` attribute of the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-basichttpbinding.md) to `Certificate` as shown in the following sample configuration:  
   
 ```  
 <bindings>  
@@ -148,13 +148,13 @@ Press <ENTER> to terminate client.
   
 5.  On the server, run `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
-6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) element) which is the same as the fully-qualified domain name of the machine. Also change the value of the base address to specify a fully-qualified machine name instead of localhost`.`  
+6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) element) which is the same as the fully-qualified domain name of the machine. Also change the value of the base address to specify a fully-qualified machine name instead of localhost`.`  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client machine.  
   
 8.  On the client, run `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
-9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Also change the `findValue` attribute of the [\<defaultCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/defaultcertificate-element.md) to the new service certificate name which is the fully-qualified domain name of the server.  
+9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Also change the `findValue` attribute of the [\<defaultCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md) to the new service certificate name which is the fully-qualified domain name of the server.  
   
 10. Copy the Client.cer file from the client directory to the service directory on the server.  
   

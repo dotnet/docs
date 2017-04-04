@@ -51,7 +51,7 @@ HRESULT Abort ();
  The CLR raises a <xref:System.Threading.ThreadAbortException> when the host calls `Abort`. It returns immediately after the exception information is initialized, without waiting for user code, such as finalizers or exception handling mechanisms, to execute. Calls to `Abort` thus return quickly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

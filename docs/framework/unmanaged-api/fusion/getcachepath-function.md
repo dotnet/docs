@@ -52,7 +52,7 @@ HRESULT GetCachePath (
  [in, out] The requested maximum length of `pwzCachePath`, and upon return, the actual length of `pwzCachePath`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

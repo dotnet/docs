@@ -54,19 +54,19 @@ Time-critical functions can be derailed if the clock settings on two computers a
   
 ### To set the MaxClockSkew in configuration  
   
-1.  Create a [\<customBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/custombinding.md) in the [\<bindings>](../../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element section.  
+1.  Create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) in the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element section.  
   
 2.  Create a [\<binding>](../../../../docs/framework/misc/binding.md) element and set the `name` attribute to an appropriate value. The following example sets it to `MaxClockSkewBinding`.  
   
-3.  Add an encoding element. The example below adds a [\<textMessageEncoding>](../../../../docs/framework/configuring-apps/file-schema/wcf/textmessageencoding.md).  
+3.  Add an encoding element. The example below adds a [\<textMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/textmessageencoding.md).  
   
-4.  Add a [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-custombinding.md) element and set the `authenticationMode` attribute to an appropriate setting. The following example set the attribute to `Kerberos` to specify that the service use Windows authentication.  
+4.  Add a [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) element and set the `authenticationMode` attribute to an appropriate setting. The following example set the attribute to `Kerberos` to specify that the service use Windows authentication.  
   
-5.  Add a [\<localServiceSettings>](../../../../docs/framework/configuring-apps/file-schema/wcf/localservicesettings-element.md) and set the `maxClockSkew` attribute to a value in the form of `"##:##:##"`. The following example sets it to 7 minutes. Optionally, add a [\<localServiceSettings>](../../../../docs/framework/configuring-apps/file-schema/wcf/localservicesettings-element.md) and set the `maxClockSkew` attribute to an appropriate setting.  
+5.  Add a [\<localServiceSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md) and set the `maxClockSkew` attribute to a value in the form of `"##:##:##"`. The following example sets it to 7 minutes. Optionally, add a [\<localServiceSettings>](../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md) and set the `maxClockSkew` attribute to an appropriate setting.  
   
-6.  Add a transport element. The following example uses an [\<httpTransport>](../../../../docs/framework/configuring-apps/file-schema/wcf/httptransport.md).  
+6.  Add a transport element. The following example uses an [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md).  
   
-7.  For a secure conversation, the security settings must occur at the bootstrap in the [\<secureConversationBootstrap>](../../../../docs/framework/configuring-apps/file-schema/wcf/secureconversationbootstrap.md) element.  
+7.  For a secure conversation, the security settings must occur at the bootstrap in the [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) element.  
   
     ```  
   

@@ -87,7 +87,7 @@ Simple.Add(int a, int b)
  However because `Fancy.AddTwice` has already inlined `Simple.Add`, it continues to have the same behavior as before. To work around that limitation, the caller has to search for all methods in all modules that inline `Simple.Add` and use `ICorProfilerInfo5::RequestRejit` on each of those methods. When the methods are re-compiled, they will have the new behavior of `Simple.Add` instead of the old behavior.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

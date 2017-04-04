@@ -18,14 +18,14 @@
 ## Remarks  
  This factory provides a way to add an ASP.NET AJAX endpoint to a service without requiring configuration. The endpoint is added to any other endpoints that are defined in configuration, if any. The managed hosting environments that support this type of dynamic host activation are Internet Information Services (IIS) and Windows Process Activation Services (WAS).  
   
- To use this factory, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> in the `Factory` attribute of the [@ServiceHost](~/docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md) directive.  
+ To use this factory, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> in the `Factory` attribute of the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  
   
  The ASP.NET AJAX endpoint created by this factory is configured with the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, with all the default settings. The endpoint is created at an empty address relative to the .svc file. If service configuration already defines an endpoint at this address, an <xref:System.InvalidOperationException> is thrown and the service fails to start.  
   
    
   
 ## Examples  
- Specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> for the value of the `Factory` attribute in the [@ServiceHost](~/docs/framework/configuring-apps/file-schema/wcf-directive/servicehost.md) directive to activate an ASP.NET AJAX endpoint for the `MyService` service as shown in the following example.  
+ Specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> for the value of the `Factory` attribute in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to activate an ASP.NET AJAX endpoint for the `MyService` service as shown in the following example.  
   
 ```  
 <% @ServiceHost   

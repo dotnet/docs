@@ -26,7 +26,7 @@ Backward compatibility means that an app that was developed for a particular ver
 ## Version compatibility for apps  
  By default, an app runs on the version of the .NET Framework that it was built for. If that version is not present and the app configuration file does not define supported versions, a .NET Framework initialization error may occur. In this case, the attempt to run the app will fail.  
   
- To define the specific versions on which your app runs, add one or more [\<supportedRuntime>](../../../docs/framework/configuring-apps/file-schema/startup/supportedruntime-element.md) elements to your app's configuration file. Each `<supportedRuntime>` element lists a supported version of the runtime, with the first specifying the most preferred version and the last specifying the least preferred version.  
+ To define the specific versions on which your app runs, add one or more [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) elements to your app's configuration file. Each `<supportedRuntime>` element lists a supported version of the runtime, with the first specifying the most preferred version and the last specifying the least preferred version.  
   
 ```xml  
   
@@ -79,7 +79,7 @@ Backward compatibility means that an app that was developed for a particular ver
   
 -   If you are recompiling existing source code to run on the .NET Framework 4.5 or its point releases, or if you are developing a new version of an app or component that targets the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] from an existing source code base, check [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md) for obsolete types and members, and apply the workaround described. (Previously compiled code will continue to run against types and members that have been marked as obsolete.)  
   
--   If you determine that a change in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] has broken your app, check the [Runtime Settings Schema](../../../docs/framework/configuring-apps/file-schema/runtime/index.md) to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.  
+-   If you determine that a change in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] has broken your app, check the [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md) to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.  
   
 -   If you encounter an issue that is not documented, file a [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=154815) bug and contact [netfxcf@microsoft.com](mailto:netfxcf@microsoft.com) with the bug number.  
   

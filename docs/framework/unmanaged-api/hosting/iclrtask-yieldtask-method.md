@@ -51,7 +51,7 @@ HRESULT YieldTask ();
  A host calls `YieldTask` to request processor resources for other tasks or processes. This method is primarily intended to allow long-running code to give up CPU time. The runtime attempts to put the task that the current `ICLRTask` instance represents in a state where it can yield processing time, but makes no guarantee of success.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -53,7 +53,7 @@ typedef struct CorDebugExceptionObjectStackFrame {
  The caller must release the pointer to the ICorDebugModule object once it is no longer in use.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

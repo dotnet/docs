@@ -48,7 +48,7 @@ VOID StrongNameFreeBuffer ( 
  [in] A pointer to the memory to free.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   

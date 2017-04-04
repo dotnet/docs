@@ -48,7 +48,7 @@ interface IInstallReferenceEnum : IUnknown {
 |[GetNextInstallReferenceItem Method](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Gets a pointer to the next `IInstallReferenceItem` contained in this `IInstallReferenceEnum`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

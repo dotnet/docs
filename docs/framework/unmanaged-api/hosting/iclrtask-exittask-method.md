@@ -51,7 +51,7 @@ HRESULT ExitTask ();
  `ExitTask` attempts a clean shutdown of a task, in a manner analogous to detaching a thread from an unmanaged type library.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

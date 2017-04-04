@@ -56,7 +56,7 @@ HRESULT CallFunction (
  If the function is virtual, `CallFunction` will perform virtual dispatch. If the function is in a different application domain, a transition will occur as long as all arguments are also in that application domain.  
   
 ## Requirements  
- **Platforms:** WindowSee [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** WindowSee [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

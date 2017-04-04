@@ -44,7 +44,7 @@ As you design and modify the user interface of your Windows Forms applications, 
  Describes techniques for creating custom controls through design and inheritance.  
   
 ## Related Sections  
- [Client Applications](../../../../docs/framework/developing-client-applications.md)  
+ [Client Applications](../../../../docs/framework/develop-client-apps.md)  
  Provides an overview of developing Windows-based applications.  
   
  [Windows Forms Walkthroughs](http://msdn.microsoft.com/en-us/fd44d13d-4733-416f-aefc-32592e59e5d9)  

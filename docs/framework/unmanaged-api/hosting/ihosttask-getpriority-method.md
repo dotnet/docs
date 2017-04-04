@@ -57,7 +57,7 @@ HRESULT GetPriority (
  Thread priority level values are defined by the Win32 `SetThreadPriority` function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

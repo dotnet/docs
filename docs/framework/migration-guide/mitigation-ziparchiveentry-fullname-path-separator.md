@@ -33,7 +33,7 @@ Starting with apps that target the [!INCLUDE[net_v461](../../../includes/net-v46
  The impact of this change on .ZIP files that are decompressed on the Windows operating system by APIs in the .NET Framework <xref:System.IO> namespace should be minimal, since these APIs can seamlessly handle either a slash ("/") or a backslash ("\\") as the path separator character.  
   
 ## Mitigation  
- If this behavior is undesirable, you can opt out of by adding a configuration setting to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of your application configuration file. The following shows both the `<runtime>` section and the opt-out switch.  
+ If this behavior is undesirable, you can opt out of by adding a configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your application configuration file. The following shows both the `<runtime>` section and the opt-out switch.  
   
 ```  
   
@@ -43,7 +43,7 @@ Starting with apps that target the [!INCLUDE[net_v461](../../../includes/net-v46
   
 ```  
   
- In addition, apps that target previous versions of the .NET Framework but are running on the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and later versions can opt in to this behavior by adding a configuration setting to the [\<runtime>](../../../docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of the application configuration file. The following shows both the `<runtime>` section and the opt-in switch.  
+ In addition, apps that target previous versions of the .NET Framework but are running on the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and later versions can opt in to this behavior by adding a configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file. The following shows both the `<runtime>` section and the opt-in switch.  
   
 ```  
   

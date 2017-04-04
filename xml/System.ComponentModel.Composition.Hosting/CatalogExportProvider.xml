@@ -139,7 +139,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.ComponentModel.Composition.Hosting.CatalogExportProvider>. The `Dispose` method leaves the <xref:System.ComponentModel.Composition.Hosting.CatalogExportProvider> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.ComponentModel.Composition.Hosting.CatalogExportProvider> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Composition.Hosting.CatalogExportProvider> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.ComponentModel.Composition.Hosting.CatalogExportProvider>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Composition.Hosting.CatalogExportProvider> object's `Finalize` method.  

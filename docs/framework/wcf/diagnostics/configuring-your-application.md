@@ -22,7 +22,7 @@ manager: "erikre"
   
 -   [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
   
--   [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md)  
+-   [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)  
   
  Application-defined configurations settings are defined in the `<appSettings>` section group. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] application settings in .NET configuration files, see [\<appSettings>](http://go.microsoft.com/fwlink/?LinkId=95159).  
   
@@ -38,4 +38,4 @@ manager: "erikre"
 ## See Also  
  [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md)   
  [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)   
- [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md)
+ [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)

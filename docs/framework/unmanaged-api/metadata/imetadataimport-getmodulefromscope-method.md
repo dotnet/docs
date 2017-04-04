@@ -43,7 +43,7 @@ HRESULT GetModuleFromScope (
  [out] A pointer to the token representing the module referenced in the current metadata scope.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

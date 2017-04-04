@@ -58,7 +58,7 @@ HRESULT NewParameterizedArray(
  The elements of the array may be instances of a generic type. The array is always created in the application domain in which the thread is currently running. In the .NET Framework 2.0, the value of `rank` must be 1.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

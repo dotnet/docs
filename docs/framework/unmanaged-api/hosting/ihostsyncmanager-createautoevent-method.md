@@ -58,7 +58,7 @@ HRESULT CreateAutoEvent (
  `CreateAutoEvent` creates an auto-event object whose state is automatically changed to non-signaled after the waiting thread has been released. This method mirrors the Win32 `CreateEvent` function with a value of `false` specified for the `bManualReset` parameter  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

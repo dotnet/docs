@@ -64,7 +64,7 @@ Determines the serialization mode of <xref:System.DateTime> objects.
  <xref:System.DateTime>   
  <xref:System.Xml.Serialization.XmlSchemaImporter>   
  <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>   
- [Configuration File Schema](../../../docs/framework/configuring-apps/file-schema/index.md)   
+ [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)   
  [\<schemaImporterExtensions> Element](../../../docs/framework/serialization/schemaimporterextensions-element.md)   
  [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)   
  [\<system.xml.serialization> Element](../../../docs/framework/serialization/system-xml-serialization-element.md)

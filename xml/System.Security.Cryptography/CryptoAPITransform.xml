@@ -119,7 +119,7 @@
 ## Remarks  
  This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
   
- Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoAPITransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).  
+ Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.CryptoAPITransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
   
    
   
@@ -156,7 +156,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.CryptoAPITransform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.CryptoAPITransform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.CryptoAPITransform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.CryptoAPITransform> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.CryptoAPITransform>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.CryptoAPITransform> object's `Finalize` method.  

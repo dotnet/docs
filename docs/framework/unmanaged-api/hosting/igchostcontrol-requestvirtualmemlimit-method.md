@@ -47,7 +47,7 @@ HRESULT RequestVirtualMemLimit (
  [in, out] A pointer to the actual size of memory allocated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

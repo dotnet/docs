@@ -33,7 +33,7 @@ The .NET Framework version 4 introduces several new types that are useful in par
 |<xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=fullName>|A concurrent and scalable FIFO queue.|  
 |<xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=fullName>|A concurrent and scalable LIFO stack.|  
   
- For more information, see [Thread-Safe Collections](../../../docs/standard/collections/threadsafe/index.md).  
+ For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
   
 ## Synchronization Primitives  
  The new synchronization primitives in the <xref:System.Threading?displayProperty=fullName> namespace enable fine-grained concurrency and faster performance by avoiding expensive locking mechanisms found in legacy multithreading code. Some of the new types, such as <xref:System.Threading.Barrier?displayProperty=fullName> and <xref:System.Threading.CountdownEvent?displayProperty=fullName> have no counterparts in earlier releases of the .NET Framework.  

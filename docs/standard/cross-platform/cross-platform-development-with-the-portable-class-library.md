@@ -125,7 +125,7 @@ Change Targets dialog box in Visual Studio 2012
   
 <a name="features"></a>   
 ## Supported features  
- The following table shows which features are supported on the available platforms and versions. In some cases, Microsoft has added support with the release of a NuGet package, and this has been noted. For more information about NuGet packages for the .NET Framework, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/getting-started/the-net-framework-and-out-of-band-releases.md).  
+ The following table shows which features are supported on the available platforms and versions. In some cases, Microsoft has added support with the release of a NuGet package, and this has been noted. For more information about NuGet packages for the .NET Framework, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).  
   
 |Feature|.NET Framework|.NET Framework|.NET Framework|Windows Store|Windows Store|Windows Phone Store|Windows Phone Silverlight|Windows Phone Silverlight|Windows Phone Silverlight|Silverlight|Silverlight|Xbox 360|  
 |-------------|--------------------|--------------------|--------------------|-------------------|-------------------|-------------------------|-------------------------------|-------------------------------|-------------------------------|-----------------|-----------------|--------------|  
@@ -167,7 +167,7 @@ Change Targets dialog box in Visual Studio 2012
   
 -   They must make sense in a portable environment, especially when supporting members are not portable.  
   
- For example, the Portable Class Library contains UI-related types only when you target Windows 8.1 and Windows Phone 8.1. Also, you may encounter limitations if you target platforms (such as Xbox, the .NET Framework 4, and Windows Phone 7) that were released before the introduction of the Portable Class Library. The .NET Framework releases packages through NuGet that improves the Portable Class Library support for some of these older platforms. For more information and a list of NuGet packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/getting-started/the-net-framework-and-out-of-band-releases.md).  
+ For example, the Portable Class Library contains UI-related types only when you target Windows 8.1 and Windows Phone 8.1. Also, you may encounter limitations if you target platforms (such as Xbox, the .NET Framework 4, and Windows Phone 7) that were released before the introduction of the Portable Class Library. The .NET Framework releases packages through NuGet that improves the Portable Class Library support for some of these older platforms. For more information and a list of NuGet packages, see [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md).  
   
  If a member is supported in the Portable Class Library and for your selected targets, it will appear in your project in IntelliSense. In addition, the Portable Class Library icon ![Supported by Portable Library](../../../docs/standard/cross-platform/media/portablelibrary-referenceicon.png "PortableLibrary_ReferenceIcon") appears in the members tables, in the [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkId=211358) next to supported members. For example, the following members table shows that the <xref:System.String.Chars%2A> property in the <xref:System.String> class is supported in the Portable Class Library:  
   

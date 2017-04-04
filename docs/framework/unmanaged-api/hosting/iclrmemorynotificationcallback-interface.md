@@ -39,7 +39,7 @@ Allows the host to report memory pressure conditions using an approach similar t
  The host uses the `ICLRMemoryNotificationCallback` interface to request that the CLR free memory resources.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

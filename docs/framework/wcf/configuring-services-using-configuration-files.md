@@ -78,7 +78,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ### The \<services> Element  
  The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this section is optional.  
   
- [\<services>](../../../docs/framework/configuring-apps/file-schema/wcf/services.md)  
+ [\<services>](../../../docs/framework/configure-apps/file-schema/wcf/services.md)  
   
 ### The \<service> Element  
  Each service has these attributes:  
@@ -87,7 +87,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
 -   `behaviorConfiguration`. Specifies the name of one of the `behavior` elements found in the `behaviors` element. The specified behavior governs actions such as whether the service allows impersonation. If its value is the empty name or no `behaviorConfiguration` is provided then the default set of service behaviors is added to the service.  
   
--   [\<service>](../../../docs/framework/configuring-apps/file-schema/wcf/service.md)  
+-   [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
   
 ### The \<endpoint> Element  
  Each endpoint requires an address, a binding, and a contract, which are represented by the following attributes:  
@@ -105,7 +105,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  
   
- [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md)  
+ [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
   
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
@@ -117,12 +117,12 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ### The \<behaviors> Element  
  This is a container element for the `behavior` elements that define the behaviors for a service.  
   
- [\<behaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md)  
+ [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
   
 ### The \<behavior> Element  
  Each `behavior` element is identified by a `name` attribute and provides either a system-provided behavior, such as <`throttling`>, or a custom behavior. If no name is given then that behavior element corresponds to the default service or endpoint behavior.  
   
- [\<behavior>](../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
+ [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
   
 ## How to Use Binding and Behavior Configurations  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] makes it easy to share configurations between endpoints using a reference system in configuration. Rather than directly assigning configuration values to an endpoint, binding-related configuration values are grouped in `bindingConfiguration` elements in the `<binding>` section. A binding configuration is a named group of settings on a binding. Endpoints can then reference the `bindingConfiguration` by name.  
@@ -157,7 +157,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 </configuration>  
 ```  
   
- The `name` of the `bindingConfiguration` is set in the `<binding>` element. The `name` must be a unique string within the scope of the binding type—in this case the [<basicHttpBinding\>](../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md), or an empty value to refer to the default binding. The endpoint links to the configuration by setting the `bindingConfiguration` attribute to this string.  
+ The `name` of the `bindingConfiguration` is set in the `<binding>` element. The `name` must be a unique string within the scope of the binding type—in this case the [<basicHttpBinding\>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), or an empty value to refer to the default binding. The endpoint links to the configuration by setting the `bindingConfiguration` attribute to this string.  
   
  A `behaviorConfiguration` is implemented the same way, as illustrated in the following sample.  
   
@@ -278,5 +278,5 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ## See Also  
  [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)   
  [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/en-us/13cb368e-88d4-4c61-8eed-2af0361c6d7a)   
- [\<service>](../../../docs/framework/configuring-apps/file-schema/wcf/service.md)   
+ [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)   
  [\<binding>](../../../docs/framework/misc/binding.md)

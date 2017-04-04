@@ -52,7 +52,7 @@ HRESULT GetDisplayName (
  [out] An array to store the name, including the full path, of the executable. The name is null-terminated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   

@@ -50,7 +50,7 @@
  **Apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier versions**  
  Long paths are disabled by default, and the legacy behavior is maintained. The runtime throws a <xref:System.IO.PathTooLongException> whenever a path exceeds 260 characters.  
   
- If this is undesirable, apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier but run under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] can enable long path support by including the following setting in the [\<runtime>](~/docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) element of the application configuration file:  
+ If this is undesirable, apps that target the [!INCLUDE[net_v461](~/includes/net-v461-md.md)] and earlier but run under the [!INCLUDE[net_v462](~/includes/net-v462-md.md)] can enable long path support by including the following setting in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) element of the application configuration file:  
   
 ```xml  
   

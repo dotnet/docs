@@ -42,7 +42,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 > [!NOTE]
 >  The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
- This sample exposes the ICalculator contract using the [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding on the client is shown in the following code.  
+ This sample exposes the ICalculator contract using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding on the client is shown in the following code.  
   
 ```  
 <bindings>  <wsFederationHttpBinding>    <binding name="ServiceFed" >      <security mode ="Message">        <message issuedKeyType ="SymmetricKey" issuedTokenType ="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1" >          <issuer address ="http://localhost:8000/sts/windows" binding ="wsHttpBinding" />        </message>      </security>    </binding>  </wsFederationHttpBinding></bindings>  

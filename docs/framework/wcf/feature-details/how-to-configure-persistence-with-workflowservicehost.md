@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Configure Persistence with WorkflowServiceHost
-This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for workflows hosted in <xref:System.ServiceHost.Activities.WorkflowServiceHost> by using a configuration file. Before using the SQL Workflow Instance Store feature you must create a SQL database that is used to persist workflow instances. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/wf/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md).  
+This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for workflows hosted in <xref:System.ServiceHost.Activities.WorkflowServiceHost> by using a configuration file. Before using the SQL Workflow Instance Store feature you must create a SQL database that is used to persist workflow instances. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md).  
   
 ### To Configure the SQL Workflow Instance Store in Configuration  
   
@@ -38,7 +38,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
   
     ```  
   
-     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/wf/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the individual settings for the <`sqlWorkflowInstanceStore`> behavior element, see [SQL Workflow Instance Store](../../../../docs/framework/wf/sql-workflow-instance-store.md). Windows Server App Fabric provides its own persistence store. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121).  
+     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the individual settings for the <`sqlWorkflowInstanceStore`> behavior element, see [SQL Workflow Instance Store](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md). Windows Server App Fabric provides its own persistence store. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121).  
   
     > [!NOTE]
     >  The preceding configuration example uses simplified configuration. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)  
@@ -59,14 +59,14 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
     });  
     ```  
   
-     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/wf/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the individual settings for the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior element, see [SQL Workflow Instance Store](../../../../docs/framework/wf/sql-workflow-instance-store.md). Windows Server App Fabric provides its own persistence store. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121).  
+     [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the individual settings for the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior element, see [SQL Workflow Instance Store](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md). Windows Server App Fabric provides its own persistence store. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121).  
   
     > [!NOTE]
     >  The preceding configuration example uses simplified configuration. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)  
   
-     For an example of how to configure persistence programmatically see [How to: Enable Persistence for Workflows and Workflow Services](../../../../docs/framework/wf/how-to-enable-persistence-for-workflows-and-workflow-services.md).  
+     For an example of how to configure persistence programmatically see [How to: Enable Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md).  
   
 ## See Also  
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   
- [Workflow Persistence](../../../../docs/framework/wf/workflow-persistence.md)   
+ [Workflow Persistence](../../../../docs/framework/windows-workflow-foundation/workflow-persistence.md)   
  [Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121)

@@ -83,7 +83,7 @@ HRESULT CorBindToRuntimeHost (
  [out] An interface pointer to the version of the runtime that was loaded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   

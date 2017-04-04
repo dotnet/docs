@@ -283,7 +283,7 @@
 ## Remarks  
  It is the responsibility of the <xref:System.ResolveEventHandler> for this event to return the assembly that is specified by the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property, or to return null if the assembly is not recognized. The assembly must be loaded into an execution context; if it is loaded into the reflection-only context, the load that caused this event to be raised fails.  
   
- For guidance on the use of this event, see [Resolving Assembly Loads](~/docs/framework/app-domains/resolving-assembly-loads.md).  
+ For guidance on the use of this event, see [Resolving Assembly Loads](~/docs/framework/app-domains/resolve-assembly-loads.md).  
   
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName> property returns the assembly that requested the assembly load that could not be resolved. For example, the loader might be unable to load a dependency of the requesting assembly because the requesting assembly and its dependency are not in the probing path. Knowing the identity of the requesting assembly might be useful in locating the dependency or in identifying the correct version, if more than one version of the dependency is available. For more information, see <xref:System.ResolveEventArgs.RequestingAssembly%2A?displayProperty=fullName>.  
   
@@ -435,7 +435,7 @@
 ## Remarks  
  The shadow copy path is a list of directories where shadow copied assemblies are stored.  
   
- For more information, see <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=fullName>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information, see <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=fullName>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -807,7 +807,7 @@
 ## Remarks  
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
- For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
 > [!IMPORTANT]
 >  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
@@ -869,7 +869,7 @@
   
  If `securityInfo` is not supplied, the evidence from the current application domain is used.  
   
- For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information about shadow copying, see <xref:System.AppDomain.ShadowCopyFiles%2A>and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
 > [!IMPORTANT]
 >  Do not use this method overload to create sandboxed application domains. Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the evidence that is supplied for `securityInfo` no longer affects the grant set of the application domain. Use the [CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload to create sandboxed application domains.  
@@ -4254,11 +4254,11 @@
   
 |Switch|Meaning|  
 |------------|-------------|  
-|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
-|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Its success requires sort00001000.dll to be installed. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
+|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
+|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Its success requires sort00001000.dll to be installed. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
 |"NetFx40_Legacy40SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]and Unicode 5.0 are enabled in this application domain. Its success requires sort00060101.dll to be installed.|  
-|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain.  See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
-|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
+|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain.  See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
+|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
   
  ]]></format>
         </remarks>
@@ -5303,7 +5303,7 @@
 ## Remarks  
  The cache path is ignored if the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set. See the <xref:System.AppDomainSetup.CachePath%2A?displayProperty=fullName> property.  
   
- For more information on shadow copying see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information on shadow copying see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -5525,7 +5525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
    
   
@@ -5580,7 +5580,7 @@
   
  This method sets the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property of the internal <xref:System.AppDomainSetup> associated with this instance.  
   
- For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
    
   
@@ -5684,7 +5684,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=fullName> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information, see <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=fullName> and [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>

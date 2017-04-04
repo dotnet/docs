@@ -30,7 +30,7 @@ When multiple threads can make calls to the properties and methods of a single o
   
 -   Synchronized contexts. You can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
   
--   Collection classes in the <xref:System.Collections.Concurrent?displayProperty=fullName> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/threadsafe/index.md).  
+-   Collection classes in the <xref:System.Collections.Concurrent?displayProperty=fullName> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
   
  The common language runtime provides a thread model in which classes fall into a number of categories that can be synchronized in a variety of different ways depending on the requirements. The following table shows what synchronization support is provided for fields and methods with a given synchronization category.  
   

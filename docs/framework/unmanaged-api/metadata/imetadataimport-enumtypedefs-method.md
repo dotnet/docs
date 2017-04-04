@@ -65,7 +65,7 @@ HRESULT EnumTypeDefs (
  The TypeDef token represents a type such as a class or an interface, as well as any type added via an extensibility mechanism.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

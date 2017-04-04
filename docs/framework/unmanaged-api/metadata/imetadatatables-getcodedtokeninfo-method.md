@@ -55,7 +55,7 @@ HRESULT GetCodedTokenInfo (
  [out] A pointer to a pointer to the name of the token at `ixCdTkn`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

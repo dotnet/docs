@@ -58,7 +58,7 @@ HRESULT GetCORSystemDirectory ( 
 >  Do not use this function in processes that are running version 4 of the CLR. If an earlier version of the CLR is installed on the computer, this function returns the installation directory for that version.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

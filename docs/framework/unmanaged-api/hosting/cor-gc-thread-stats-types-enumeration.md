@@ -44,7 +44,7 @@ typedef enum {
 |`COR_GC_THREAD_HAS_PROMOTED_BYTES`|The thread has bytes that were promoted in the most recent garbage collection.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

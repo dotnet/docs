@@ -45,4 +45,4 @@ When implementing a service, you define a number of contracts that describe the 
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   
  [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md)   
  [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)   
- [How to: Create a workflow service that consumes an existing service contract](../../../../docs/framework/wf/how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md)
+ [How to: Create a workflow service that consumes an existing service contract](../../../../docs/framework/windows-workflow-foundation/how-to-create-a-workflow-service-that-consumes-an-existing-service-contract.md)

@@ -111,4 +111,4 @@ ass objects|<xref:System.Object>|The root of the object hierarchy.|**Object**|**
 ## See Also  
  [Common Type System](../../docs/standard/base-types/common-type-system.md)   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)   
- [Overview](../../docs/framework/getting-started/overview.md)
+ [Overview](../../docs/framework/get-started/overview.md)

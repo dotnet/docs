@@ -103,7 +103,7 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 #### To enable transfer security on a service in a Windows domain using configuration  
   
-1.  Add a [\<wsHttpBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element section of the configuration file.  
+1.  Add a [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element to the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element section of the configuration file.  
   
 2.  Add a <`binding`> element to the <`WSHttpBinding`> element and set the `configurationName` attribute to a value appropriate to your application.  
   
@@ -132,7 +132,7 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 1.  Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).  
   
-2.  Replace the [\<bindings>](../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
+2.  Replace the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) section of the generated configuration file with the configuration code from the preceding section.  
   
 3.  Procedural code is inserted at the beginning of the `Main` method of the client program.  
   

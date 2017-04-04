@@ -81,7 +81,7 @@ pCLRGCManager->GetStats(&GCStats);
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl  
   
@@ -92,5 +92,4 @@ pCLRGCManager->GetStats(&GCStats);
 ## See Also  
  [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)   
  [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)   
- [Garbage Collection](../../../../docs/standard/garbagecollection/index.md)   
- [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5)
+ [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)

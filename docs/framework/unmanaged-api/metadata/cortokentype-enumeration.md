@@ -99,7 +99,7 @@ typedef enum CorTokenType {
  Each value is equal to the value of the top byte in the corresponding metadata token.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

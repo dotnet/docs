@@ -46,7 +46,7 @@ struct  CoreClrDebugRuntimeInfo {
 |`m_dwInternalID`|Runtime identifier that is assigned by the remote debugging proxy running on the target machine.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CoreClrRemoteDebuggingInterfaces.h  
   

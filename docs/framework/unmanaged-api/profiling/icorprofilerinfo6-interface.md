@@ -34,7 +34,7 @@ manager: "wpickett"
 |[ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo6-enumngenmodulemethodsinliningthismethod-method.md)|Returns an enumerator for all methods that belong to a given NGen module and that are inlined in the body of a given method.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

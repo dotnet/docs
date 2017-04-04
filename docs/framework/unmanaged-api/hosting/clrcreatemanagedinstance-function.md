@@ -58,7 +58,7 @@ STDAPI ClrCreateManagedInstance (
  The common language runtime should already be loaded into a process. For example, it can be loaded by using a call to the [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) function before the `ClrCreateManagedInstance` function is called. If the runtime is not loaded, `ClrCreateManagedInstance` first tries to load v1.0.3705 of the runtime. If that fails, it attempts to load the latest version of the runtime.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -450,7 +450,7 @@
       <Docs>
         <summary>When overridden in a derived class, executes the code required to free the handle.</summary>
         <returns>
-          <see langword="true" /> if the handle is released successfully; otherwise, in the event of a catastrophic failure,<see langword=" false" />. In this case, it generates a [releaseHandleFailed](~/docs/framework/debugging-tracing-profiling/releasehandlefailed-mda.md) Managed Debugging Assistant.</returns>
+          <see langword="true" /> if the handle is released successfully; otherwise, in the event of a catastrophic failure,<see langword=" false" />. In this case, it generates a [releaseHandleFailed](~/docs/framework/debug-trace-profile/releasehandlefailed-mda.md) Managed Debugging Assistant.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -461,7 +461,7 @@
   
  Additionally, for simple cleanup (for example, calling the Win32 API `CloseHandle` on a file handle) you can check the return value for the single platform invoke call. For complex cleanup, you may have a lot of program logic and many method calls, some of which might fail. You must ensure that your program logic has fallback code for each of those cases.  
   
- If the <xref:System.Runtime.InteropServices.CriticalHandle.ReleaseHandle%2A> method returns `false` for any reason, it generates a [releaseHandleFailed](~/docs/framework/debugging-tracing-profiling/releasehandlefailed-mda.md) Managed Debugging Assistant.  
+ If the <xref:System.Runtime.InteropServices.CriticalHandle.ReleaseHandle%2A> method returns `false` for any reason, it generates a [releaseHandleFailed](~/docs/framework/debug-trace-profile/releasehandlefailed-mda.md) Managed Debugging Assistant.  
   
  ]]></format>
         </remarks>

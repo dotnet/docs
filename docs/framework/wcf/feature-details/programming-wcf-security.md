@@ -28,7 +28,7 @@ This topic describes the fundamental programming tasks used to create a secure [
 ## Setting the Security Mode  
  The following explains the general steps for programming with the security mode in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]:  
   
-1.  Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md)).  
+1.  Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)).  
   
      The binding you select determines the transport. For example, <xref:System.ServiceModel.WSHttpBinding> uses HTTP as the transport; <xref:System.ServiceModel.NetTcpBinding> uses TCP.  
   

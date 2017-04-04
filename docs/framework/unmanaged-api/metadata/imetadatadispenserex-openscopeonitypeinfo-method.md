@@ -55,7 +55,7 @@ HRESULT OpenScopeOnITypeInfo (
  [out] Pointer to a pointer to the returned interface.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

@@ -53,7 +53,7 @@ HRESULT NewObject (
  [in] An array of ICorDebugValue objects, each of which represents an argument to be passed to the constructor.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

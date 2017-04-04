@@ -62,7 +62,7 @@ HRESULT CreateMalloc (
  `CreateMAlloc` returns an object that allows the CLR to make allocation requests through the host instead of using the standard Win32 functions.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

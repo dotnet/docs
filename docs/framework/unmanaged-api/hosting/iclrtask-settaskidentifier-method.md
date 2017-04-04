@@ -57,7 +57,7 @@ HRESULT SetTaskIdentifier (
  The host can associate an identifier with a task to help integrate the CLR and the host in a debugging environment. The identifier has no meaning for the CLR. The CLR passes it along to a debugger application. The debugger can use this identifier to associate a CLR call stack with a host call stack, and enable their respective trace information to be unified when viewed in the debugger's user interface.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

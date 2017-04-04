@@ -47,7 +47,7 @@ typedef enum tagCOUNINITEE
 |`COUNINITEE_DLL`|Indicates uninitialization mode for unloading an assembly.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

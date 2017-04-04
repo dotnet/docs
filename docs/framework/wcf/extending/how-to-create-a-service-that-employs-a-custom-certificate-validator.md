@@ -38,15 +38,15 @@ This topic shows how to implement a custom certificate validator and how to conf
   
 #### To specify a custom certificate validator in service configuration  
   
-1.  Add a [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element and a [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md) to the [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element.  
+1.  Add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element and a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) to the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element.  
   
-2.  Add a [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.  
+2.  Add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) and set the `name` attribute to an appropriate value.  
   
-3.  Add a [\<serviceCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecredentials.md) to the `<behavior>` element.  
+3.  Add a [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) to the `<behavior>` element.  
   
 4.  Add a `<clientCertificate>` element to the `<serviceCredentials>` element.  
   
-5.  Add an [\<authentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) to the `<clientCertificate>` element.  
+5.  Add an [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) to the `<clientCertificate>` element.  
   
 6.  Set the `customCertificateValidatorType` attribute to the validator type. The following example sets the attribute to the namespace and name of the type.  
   
@@ -72,17 +72,17 @@ This topic shows how to implement a custom certificate validator and how to conf
   
 #### To specify a custom certificate validator using configuration on the client  
   
-1.  Add a [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element and a [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md) to the [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element.  
+1.  Add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element and a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) to the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element.  
   
-2.  Add an [\<endpointBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/endpointbehaviors.md) element.  
+2.  Add an [\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md) element.  
   
 3.  Add a `<behavior>` element and set the `name` attribute to an appropriate value.  
   
-4.  Add a [\<clientCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md) element.  
+4.  Add a [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element.  
   
-5.  Add a [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md).  
+5.  Add a [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md).  
   
-6.  Add an [\<authentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) as shown on the following example.  
+6.  Add an [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) as shown on the following example.  
   
 7.  Set the `customCertificateValidatorType` attribute to the validator type.  
   

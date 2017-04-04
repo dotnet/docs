@@ -118,7 +118,7 @@ Securing a service with both transport and message credentials uses the best of 
     </behaviors>  
     ```  
   
-2.  Add a [\<netTcpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/nettcpbinding.md) to the bindings section  
+2.  Add a [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md) to the bindings section  
   
 3.  Add a binding element, and set the `name` attribute to an appropriate value.  
   
@@ -140,7 +140,7 @@ Securing a service with both transport and message credentials uses the best of 
   
 #### To use the NetTcpBinding with Windows for transport security  
   
-1.  Add a [\<netTcpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/nettcpbinding.md) to the bindings section,  
+1.  Add a [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md) to the bindings section,  
   
 2.  Add a <`binding`> element and set the `name` attribute to an appropriate value.  
   

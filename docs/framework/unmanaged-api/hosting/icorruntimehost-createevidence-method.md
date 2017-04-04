@@ -55,7 +55,7 @@ HRESULT CreateEvidence (
  This method returns an empty collection that cannot be populated from native code. You should use the <xref:System.Security.Policy.Evidence> method instead.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

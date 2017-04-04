@@ -42,7 +42,7 @@ HRESULT ThreadIsBlockingForDebugger ( );
  The `ThreadIsBlockingForDebugger` method gives the host an opportunity to perform another action while the thread blocks.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -23,7 +23,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # &lt;system.xml.serialization&gt; Element
-The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configuring-apps/file-schema/index.md).  
+The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
 \<system.xml.serialization>  
@@ -53,7 +53,7 @@ The top-level element for controlling XML serialization. For more information ab
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<configuration> Element](../../../docs/framework/configuring-apps/file-schema/configuration-element.md)|The root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
+|[\<configuration> Element](../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
   
 ## Example  
  The following code example illustrates how to specify the serialization mode of a <xref:System.DateTime> object, and the addition of types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET Framework types.  
@@ -75,7 +75,7 @@ The top-level element for controlling XML serialization. For more information ab
 ## See Also  
  <xref:System.Xml.Serialization.XmlSchemaImporter>   
  <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>   
- [Configuration File Schema](../../../docs/framework/configuring-apps/file-schema/index.md)   
+ [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)   
  [\<dateTimeSerialization> Element](../../../docs/framework/serialization/datetimeserialization-element.md)   
  [\<schemaImporterExtensions> Element](../../../docs/framework/serialization/schemaimporterextensions-element.md)   
  [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)

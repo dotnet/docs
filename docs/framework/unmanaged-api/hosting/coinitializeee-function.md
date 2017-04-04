@@ -54,7 +54,7 @@ HRESULT CoInitializeEE (
  This method loads the execution engine if it has not been previously loaded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

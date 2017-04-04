@@ -93,7 +93,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
 >  If you have created a custom `UsernameToken` security token manager, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides an easier mechanism to specify the authentication logic than creating a custom security token manager. For more details, see [How to: Use a Custom User Name and Password Validator](../../../../docs/framework/wcf/feature-details/how-to-use-a-custom-user-name-and-password-validator.md).  
   
 ### WSE 3.0 Web services that use MTOM encoded SOAP messages  
- Like a WSE 3 application, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application can specify the MTOM message encoding in configuration. To migrate this setting, add the [\<mtomMessageEncoding>](../../../../docs/framework/configuring-apps/file-schema/wcf/mtommessageencoding.md) to the binding for the service. The following code example demonstrates how MTOM encoding is specified in WSE 3.0 for a service that is equivalent in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+ Like a WSE 3 application, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application can specify the MTOM message encoding in configuration. To migrate this setting, add the [\<mtomMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/mtommessageencoding.md) to the binding for the service. The following code example demonstrates how MTOM encoding is specified in WSE 3.0 for a service that is equivalent in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
  **WSE 3.0**  
   
@@ -123,7 +123,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
 ### TCP  
  By default, WSE 3.0 clients and Web services that send SOAP messages using the TCP transport do not interoperate with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and Web services. This incompatibility is due to differences in the framing used in the TCP protocol and for performance reasons. However, a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] sample details how to implement a custom TCP session that interoperates with WSE 3.0. For details about this sample, see [Transport: WSE 3.0 TCP Interoperability](../../../../docs/framework/wcf/samples/transport-wse-3-0-tcp-interoperability.md).  
   
- To specify that a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application uses the TCP transport, use the [\<netTcpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/nettcpbinding.md).  
+ To specify that a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application uses the TCP transport, use the [\<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).  
   
 ### Custom Transport  
  The equivalent of a WSE 3.0 custom transport in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is a channel extension. For details about creating a channel extension, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  

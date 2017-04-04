@@ -53,7 +53,7 @@ HRESULT GetRegister(
 |`E_FAIL`|The variable is not in a register or a register-relative location.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

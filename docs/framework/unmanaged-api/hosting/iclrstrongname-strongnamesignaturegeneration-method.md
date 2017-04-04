@@ -79,7 +79,7 @@ HRESULT StrongNameSignatureGeneration ( 
  The signature can be stored either directly in the file, or returned to the caller.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

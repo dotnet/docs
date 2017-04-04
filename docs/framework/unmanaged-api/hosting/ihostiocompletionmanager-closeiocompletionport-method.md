@@ -58,7 +58,7 @@ HRESULT CloseIoCompletionPort (
  `hPort` must be a handle to a port that was created by an earlier call to `CreateIoCompletionPort`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

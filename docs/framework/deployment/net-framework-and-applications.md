@@ -28,7 +28,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Deploying the .NET Framework and Applications
-This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework 4.5](../../../docs/framework/getting-started/install-the-net-framework.md).  
+This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework 4.5](../../../docs/framework/install/guide-for-developers.md).  
   
 ## Key Deployment Resources  
  Use the following links to other MSDN topics for specific information about deploying and servicing the .NET Framework.  
@@ -39,9 +39,9 @@ This article helps you get started deploying the .NET Framework with your applic
   
     -   Installer options:  
   
-        -   [Web installer](../../../docs/framework/getting-started/install-the-net-framework.md#choices)  
+        -   [Web installer](../../../docs/framework/install/guide-for-developers.md#choices)  
   
-        -   [Offline installer](../../../docs/framework/getting-started/install-the-net-framework.md#choices)  
+        -   [Offline installer](../../../docs/framework/install/guide-for-developers.md#choices)  
   
     -   Installation modes:  
   
@@ -51,7 +51,7 @@ This article helps you get started deploying the .NET Framework with your applic
   
     -   [Reducing system restarts during .NET Framework 4.5 installations](../../../docs/framework/deployment/reducing-system-restarts.md)  
   
-    -   [Troubleshooting blocked .NET Framework  installations](../../../docs/framework/getting-started/troubleshooting-blocked-installations-and-uninstallations.md)  
+    -   [Troubleshooting blocked .NET Framework  installations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
   
 -   Deploying the .NET Framework with a client application (for developers):  
   

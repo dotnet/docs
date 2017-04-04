@@ -47,5 +47,5 @@ Normally when hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] 
  <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations%2A>   
  [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)   
  [Hosting Workflow Services Overview](../../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)   
- [\<serviceHostingEnvironment>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md)   
+ [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)   
  [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)

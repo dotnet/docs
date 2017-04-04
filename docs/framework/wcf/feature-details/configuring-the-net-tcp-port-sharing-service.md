@@ -70,4 +70,4 @@ Self-hosted services that use the Net.TCP transport can control several advanced
 >  The default SMSvcHost.exe.config file specifies a custom `etwProviderId` to prevent SMSvcHost.exe tracing from interfering with service traces.  
   
 ## See Also  
- [\<net.tcp>](../../../../docs/framework/configuring-apps/file-schema/wcf/net-tcp.md)
+ [\<net.tcp>](../../../../docs/framework/configure-apps/file-schema/wcf/net-tcp.md)

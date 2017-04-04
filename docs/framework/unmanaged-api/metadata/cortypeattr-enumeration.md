@@ -117,7 +117,7 @@ typedef enum CorTypeAttr {
 |`tdHasSecurity`|Specifies that the type has security associated with it.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

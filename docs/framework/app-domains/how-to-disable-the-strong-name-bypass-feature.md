@@ -40,7 +40,7 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
   
 1.  Open or create the application configuration file.  
   
-     For more information about this file, see the Application Configuration Files section in [Configuring Apps](../../../docs/framework/configuring-apps/index.md).  
+     For more information about this file, see the Application Configuration Files section in [Configuring Apps](../../../docs/framework/configure-apps/index.md).  
   
 2.  Add the following entry:  
   
@@ -59,5 +59,5 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
   
 ## See Also  
  [Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)   
- [\<bypassTrustedAppStrongNames> Element](../../../docs/framework/configuring-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md)   
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/creating-and-using-strong-named-assemblies.md)
+ [\<bypassTrustedAppStrongNames> Element](../../../docs/framework/configure-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md)   
+ [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

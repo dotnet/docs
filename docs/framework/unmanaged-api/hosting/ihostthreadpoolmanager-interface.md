@@ -44,7 +44,7 @@ Provides methods that enable the common language runtime (CLR) to configure the 
  The host is not required to configure the thread pool by using the values specified in calls to the `SetMaxThreads` and `SetMinThreads` methods. In this case, the host should return an HRESULT value of E_NOTIMPL from these methods.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

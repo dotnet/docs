@@ -240,7 +240,7 @@
   
  When the application domain is loaded, <xref:System.TypeLoadException> is thrown if the assembly does not exist, or if the assembly does not contain the type specified by the <xref:System.AppDomainSetup.AppDomainManagerType%2A> property. <xref:System.IO.FileLoadException> is thrown if the assembly is found but the version information does not match.  
   
- To set the application domain manager for the default application domain, use the [\<appDomainManagerAssembly>](~/docs/framework/configuring-apps/file-schema/runtime/appdomainmanagerassembly-element.md) and [\<appDomainManagerType>](~/docs/framework/configuring-apps/file-schema/runtime/appdomainmanagertype-element.md) elements in the [\<runtime>](~/docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of the application configuration file, or use the environment variables described in <xref:System.AppDomainManager>.  
+ To set the application domain manager for the default application domain, use the [\<appDomainManagerAssembly>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) and [\<appDomainManagerType>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md) elements in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file, or use the environment variables described in <xref:System.AppDomainManager>.  
   
  This feature requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
   
@@ -275,7 +275,7 @@
   
  When the application domain is loaded, <xref:System.TypeLoadException> is thrown if the assembly specified by the <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A> property does not contain the type specified by this property.  
   
- To set the application domain manager for the default application domain, use the [\<appDomainManagerAssembly>](~/docs/framework/configuring-apps/file-schema/runtime/appdomainmanagerassembly-element.md) and [\<appDomainManagerType>](~/docs/framework/configuring-apps/file-schema/runtime/appdomainmanagertype-element.md) elements in the [\<runtime>](~/docs/framework/configuring-apps/file-schema/runtime/runtime-element.md) section of the application configuration file, or use the environment variables described in <xref:System.AppDomainManager>.  
+ To set the application domain manager for the default application domain, use the [\<appDomainManagerAssembly>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) and [\<appDomainManagerType>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md) elements in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file, or use the environment variables described in <xref:System.AppDomainManager>.  
   
  This feature requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
   
@@ -412,7 +412,7 @@
 ## Remarks  
  In order for this property to have an effect, the <xref:System.AppDomainSetup.ApplicationName%2A> property must also be set. If the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set, the <xref:System.AppDomainSetup.CachePath%2A> property is ignored and the shadow copy cache location defaults to the download cache.  
   
- For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -548,7 +548,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the [&lt;publisherPolicy&gt;](~/docs/framework/configuring-apps/file-schema/runtime/publisherpolicy-element.md) section of the configuration file is applied to an application domain.</summary>
+        <summary>Gets or sets a value that indicates whether the [&lt;publisherPolicy&gt;](~/docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) section of the configuration file is applied to an application domain.</summary>
         <value>
           <see langword="true" /> if the <see langword="&lt;publisherPolicy&gt;" /> section of the configuration file for an application domain is ignored; <see langword="false" /> if the declared publisher policy is honored.</value>
         <remarks>
@@ -557,7 +557,7 @@
 ## Remarks  
  The <xref:System.AppDomainSetup.DisallowPublisherPolicy%2A> property specifically applies to a Web application that is loaded locally. Use this property to help prevent a malicious attempt to execute an unsafe Web application in safe mode.  
   
- For more information about bypassing publisher policy, see the [Redirecting Assembly Versions](~/docs/framework/configuring-apps/redirecting-assembly-versions.md) topic. For more information about safe mode, see the "Examining the Configuration Files" section of the [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md) topic.  
+ For more information about bypassing publisher policy, see the [Redirecting Assembly Versions](~/docs/framework/configure-apps/redirect-assembly-versions.md) topic. For more information about safe mode, see the "Examining the Configuration Files" section of the [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md) topic.  
   
  ]]></format>
         </remarks>
@@ -857,11 +857,11 @@
   
 |Switch|Meaning|  
 |------------|-------------|  
-|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
-|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00001000.dll dynamic link library to be available on the local system. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
+|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
+|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00001000.dll dynamic link library to be available on the local system. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
 |"NetFx40_Legacy40SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and Unicode 5.0 are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00060101.dll dynamic link library to be available on the local system.|  
-|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
-|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configuring-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
+|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
+|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
   
  ]]></format>
         </remarks>
@@ -988,7 +988,7 @@
 > [!IMPORTANT]
 >  Directory paths must not contain semicolons, because the semicolon is the delimiter character. There is no escape character for semicolons.  
   
- When shadow copying is in effect, assembly files are copied to another location before the assemblies are loaded. The original assembly file is not locked, so it can be updated. For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ When shadow copying is in effect, assembly files are copied to another location before the assemblies are loaded. The original assembly file is not locked, so it can be updated. For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>
@@ -1015,7 +1015,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copying-assemblies.md).  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
   
  ]]></format>
         </remarks>

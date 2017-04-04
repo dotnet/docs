@@ -49,7 +49,7 @@ You can perform most common security tasks by using one of the system-provided b
 ## Reference  
  <xref:System.ServiceModel.Channels.SecurityBindingElement>  
   
- [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-custombinding.md)  
+ [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)  
   
 ## Related Sections  
  [Understanding Protection Level](../../../../docs/framework/wcf/understanding-protection-level.md)  

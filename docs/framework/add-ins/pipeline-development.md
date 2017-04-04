@@ -80,7 +80,7 @@ Activation path from the add-in to the host
 ## Walkthroughs  
  There are three walkthrough topics that describe how to create pipelines using Visual Studio:  
   
--   [Walkthrough: Creating an Extensible Application](../../../docs/framework/add-ins/walkthrough-creating-an-extensible-application.md)  
+-   [Walkthrough: Creating an Extensible Application](../../../docs/framework/add-ins/walkthrough-create-extensible-app.md)  
   
      Describes a calculator add-in that performs addition, subtraction, multiplication, and divsion calculations for the host.  
   

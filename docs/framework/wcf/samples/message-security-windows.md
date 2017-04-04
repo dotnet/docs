@@ -26,7 +26,7 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The default security for the [\<wsHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wshttpbinding.md) is message security using Windows authentication. The configuration files in this sample explicitly set the `mode` attribute of the [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-wshttpbinding.md) to `Message` and the `clientCredentialType` attribute to `Windows`. These values are the default values for this binding, but they have been explicitly configured, as shown in the following sample configuration to demonstrate their use.  
+ The default security for the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) is message security using Windows authentication. The configuration files in this sample explicitly set the `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) to `Message` and the `clientCredentialType` attribute to `Windows`. These values are the default values for this binding, but they have been explicitly configured, as shown in the following sample configuration to demonstrate their use.  
   
 ```  
 <bindings>  

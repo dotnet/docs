@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.Diagnostics.PerformanceCounter> component can be used for both reading existing predefined or custom counters and publishing (writing) performance data to custom counters.  
   
- There are numerous predefined counters listed in the Windows Performance Monitor's [Add Counters dialog box](http://go.microsoft.com/fwlink/p/?LinkId=257854). To learn about the .NET Framework performance counters, see [Performance Counters](~/docs/framework/debugging-tracing-profiling/performance-counters.md).  
+ There are numerous predefined counters listed in the Windows Performance Monitor's [Add Counters dialog box](http://go.microsoft.com/fwlink/p/?LinkId=257854). To learn about the .NET Framework performance counters, see [Performance Counters](~/docs/framework/debug-trace-profile/performance-counters.md).  
   
  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
   
@@ -54,7 +54,7 @@
  To obtain performance data for counters that required an initial or previous value for performing the necessary calculation, call the <xref:System.Diagnostics.PerformanceCounter.NextValue%2A> method twice and use the information returned as your application requires.  
   
 > [!NOTE]
->  Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry. For more information about the file mapping size, see [\&lt;performanceCounters\&gt;](~/docs/framework/configuring-apps/file-schema/trace-debug/performancecounters-element.md).  
+>  Performance counter categories installed with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] use separate shared memory, with each performance counter category having its own memory. You can specify the size of separate shared memory by creating a DWORD named FileMappingSize in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance. The FileMappingSize value is set to the shared memory size of the category. The default size is 131072 decimal. If the FileMappingSize value is not present, the `fileMappingSize` attribute value for the `performanceCounters` element specified in the Machine.config file is used, causing additional overhead for configuration file processing. You can realize a performance improvement for application startup by setting the file mapping size in the registry. For more information about the file mapping size, see [\&lt;performanceCounters\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/performancecounters-element.md).  
   
    
   
@@ -1095,7 +1095,7 @@
  To create a performance category instance, specify an `instanceName` on the <xref:System.Diagnostics.PerformanceCounter.%23ctor%2A> constructor. If the category instance specified by `instanceName` already exists the new object will reference the existing category instance.  
   
 > [!NOTE]
->  Do not use the characters "(", ")", "#", "\\", or "/" in the instance name. If any of these characters are used, the Performance Console (see [Runtime Profiling](~/docs/framework/debugging-tracing-profiling/runtime-profiling.md)) may not correctly display the instance values.  
+>  Do not use the characters "(", ")", "#", "\\", or "/" in the instance name. If any of these characters are used, the Performance Console (see [Runtime Profiling](~/docs/framework/debug-trace-profile/runtime-profiling.md)) may not correctly display the instance values.  
   
  If the instance name is automatically generated and might contain the characters "(", ")", "#", "\\", or "/", use the character mapping in the following table.  
   

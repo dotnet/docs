@@ -42,21 +42,21 @@ Metadata for a service can contain sensitive information about your application 
   
 ### To create a secure HTTPS GET metadata endpoint in configuration  
   
-1.  Add a [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element to the [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element of the configuration file for your service.  
+1.  Add a [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element to the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element of the configuration file for your service.  
   
-2.  Add a [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md) element to the [\<behaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element.  
+2.  Add a [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) element to the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element.  
   
-3.  Add a [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element to the `<serviceBehaviors>` element.  
+3.  Add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element to the `<serviceBehaviors>` element.  
   
 4.  Set the `name` attribute of the `<behavior>` element to an appropriate value. The `name` attribute is required. The example below uses the value `mySvcBehavior`.  
   
-5.  Add a [\<serviceMetadata>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicemetadata.md) to the `<behavior>` element.  
+5.  Add a [\<serviceMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) to the `<behavior>` element.  
   
 6.  Set the `httpsGetEnabled` attribute of the `<serviceMetadata>` element to `true`.  
   
 7.  Set the `httpsGetUrl` attribute of the `<serviceMetadata>` element to an appropriate value. Note that if you specify an absolute address, the URL must begin with the scheme "https://". If you specify a relative address, you must supply an HTTPS base address for your service host. If this property is not set, the default address is "", or directly at the HTTPS base address for the service.  
   
-8.  To use the behavior with a service, set the `behaviorConfiguration` attribute of the [\<service>](../../../../docs/framework/configuring-apps/file-schema/wcf/service.md) element to the value of the name attribute of the behavior element. The following configuration code shows a complete example.  
+8.  To use the behavior with a service, set the `behaviorConfiguration` attribute of the [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) element to the value of the name attribute of the behavior element. The following configuration code shows a complete example.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  

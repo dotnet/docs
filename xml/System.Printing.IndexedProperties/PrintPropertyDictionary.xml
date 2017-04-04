@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> when you are finished using the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>. The <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> method leaves the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> in an unusable state. After calling <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose>, you must release all references to the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> so that the garbage collector can reclaim the memory that the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+ Call <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> when you are finished using the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>. The <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> method leaves the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> in an unusable state. After calling <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose>, you must release all references to the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> so that the garbage collector can reclaim the memory that the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose> before you release your last reference to the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>. Otherwise, the resources that it is using will not be freed until the garbage collector calls the <xref:System.Object.Finalize%2A> method of the <xref:System.Printing.IndexedProperties.PrintPropertyDictionary> object.  
@@ -170,9 +170,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When you override <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When you override <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>

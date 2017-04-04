@@ -85,7 +85,7 @@ This topic provides recommended practices for queued communication in [!INCLUDE[
   
 -   `MsmqIntegrationBinding` supports popular serialization types. Based on the serialization type, the body type of the generic message, <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, takes different type parameters. For example, <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat> requires `MsmqMessage\<byte[]>` and <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat> requires `MsmqMessage<Stream>`.  
   
--   With XML serialization, you can specify the known type using the `KnownTypes` attribute on the [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element that is then used to determine how to deserialize the XML message.  
+-   With XML serialization, you can specify the known type using the `KnownTypes` attribute on the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element that is then used to determine how to deserialize the XML message.  
   
 ## See Also  
  [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)   

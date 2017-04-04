@@ -58,7 +58,7 @@ Similar data can often be handled more efficiently when stored and manipulated a
   
 -   **Synchronization for access from multiple threads** (<xref:System.Collections> classes only).  
   
-     Non-generic collection types in the <xref:System.Collections> namespace provide some thread safety with synchronization; typically exposed through the <xref:System.Collections.ICollection.SyncRoot%2A> and  <xref:System.Collections.ICollection.IsSynchronized%2A> members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the <xref:System.Collections.Concurrent> namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/threadsafe/index.md).  
+     Non-generic collection types in the <xref:System.Collections> namespace provide some thread safety with synchronization; typically exposed through the <xref:System.Collections.ICollection.SyncRoot%2A> and  <xref:System.Collections.ICollection.IsSynchronized%2A> members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the <xref:System.Collections.Concurrent> namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
   
 <a name="BKMK_Choosingacollection"></a>   
 ## Choosing a collection  
@@ -86,7 +86,7 @@ Similar data can often be handled more efficiently when stored and manipulated a
 |[Comparisons and Sorts Within Collections](../../../docs/standard/collections/comparisons-and-sorts-within-collections.md)|Discusses the use of equality comparisons and sorting comparisons in collections.|  
 |[Sorted Collection Types](../../../docs/standard/collections/sorted-collection-types.md)|Describes sorted collections performance and characteristics|  
 |[Hashtable and Dictionary Collection Types](../../../docs/standard/collections/hashtable-and-dictionary-collection-types.md)|Describes the features of generic and non-generic hash-based dictionary types.|  
-|[Thread-Safe Collections](../../../docs/standard/collections/threadsafe/index.md)|Describes collection types such as <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=fullName> and <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=fullName> that support safe and efficient concurrent access from multiple threads.|  
+|[Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md)|Describes collection types such as <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=fullName> and <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=fullName> that support safe and efficient concurrent access from multiple threads.|  
 |System.Collections.Immutable|Introduces the immutable collections and provides links to the collection types.|  
   
 <a name="BKMK_Reference"></a>   

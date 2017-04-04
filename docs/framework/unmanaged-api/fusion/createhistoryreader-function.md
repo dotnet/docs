@@ -54,7 +54,7 @@ HRESULT CreateHistoryReader (
 |E_INVALIDARG|Indicates that `wzFilePath` or `ppHistoryReader` are set to a null reference.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Library:** Fusion.dll  
   

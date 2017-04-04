@@ -376,7 +376,7 @@ using namespace System::Runtime::CompilerServices;
   
 <a name="MDA"></a>   
 ### The JITCompilationStart managed debugging assistant  
- You can use the [jitCompilationStart](../../../docs/framework/debugging-tracing-profiling/jitcompilationstart-mda.md) managed debugging assistant (MDA) to determine when the JIT compiler starts to compile a function.  
+ You can use the [jitCompilationStart](../../../docs/framework/debug-trace-profile/jitcompilationstart-mda.md) managed debugging assistant (MDA) to determine when the JIT compiler starts to compile a function.  
   
 <a name="OptOut"></a>   
 ### Opting out of native image generation  

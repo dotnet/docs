@@ -60,10 +60,10 @@ HRESULT OnEvent (
 ## Remarks  
  The `data` parameter is a pointer to an object of unspecified type. If the `event` parameter is `Event_DomainUnload`, `data` is the numeric identifier for the <xref:System.AppDomain> that was unloaded. The host can take appropriate action using this identifier as a key.  
   
- If `event` is `Event_MDAFired`, `data` is a pointer to an [MDAInfo](../../../../docs/framework/unmanaged-api/hosting/mdainfo-structure.md) instance that contains the message output from a Managed Debugging Assistant (MDA). MDAs are a feature of the CLR that help developers with debugging, by generating XML messages about events that are otherwise difficult to trap. Such messages can be especially useful in debugging transitions between managed and unmanaged code. For more information, see [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debugging-tracing-profiling/diagnosing-errors-with-managed-debugging-assistants.md).  
+ If `event` is `Event_MDAFired`, `data` is a pointer to an [MDAInfo](../../../../docs/framework/unmanaged-api/hosting/mdainfo-structure.md) instance that contains the message output from a Managed Debugging Assistant (MDA). MDAs are a feature of the CLR that help developers with debugging, by generating XML messages about events that are otherwise difficult to trap. Such messages can be especially useful in debugging transitions between managed and unmanaged code. For more information, see [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -72,7 +72,7 @@ HRESULT OnEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See Also  
- [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debugging-tracing-profiling/diagnosing-errors-with-managed-debugging-assistants.md)   
+ [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)   
  [EClrEvent Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md)   
  [IActionOnCLREvent Interface](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md)   
  [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)   

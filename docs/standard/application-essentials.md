@@ -54,7 +54,7 @@ This section of the .NET Framework documentation provides information about basi
  [Resources in Desktop Apps](../../docs/framework/resources/index.md)  
  Describes the .NET Framework support for creating and storing resources. This section also describes support for localized resources and the satellite assembly resource model for packaging and deploying those localized resources.  
   
- [Globalization and Localization](../../docs/standard/globalization-and-localization/index.md)  
+ [Globalization and Localization](../../docs/standard/globalization-localization/index.md)  
  Provides information to help you design and develop world-ready applications.  
   
  Accessibility  

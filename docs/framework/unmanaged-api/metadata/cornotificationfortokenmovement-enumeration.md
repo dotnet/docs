@@ -96,7 +96,7 @@ typedef enum CorNotificationForTokenMovement {
  A token may be re-mapped (that is, moved) during a metadata merge.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

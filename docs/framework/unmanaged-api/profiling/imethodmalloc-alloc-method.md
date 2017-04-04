@@ -48,7 +48,7 @@ PVOID Alloc (
  The `Alloc` method should be used in conjunction with the [ICorProfilerInfo::SetILFunctionBody](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setilfunctionbody-method.md) method.  
   
 ## Requirements  
- **Platforms:** WindSee [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** WindSee [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

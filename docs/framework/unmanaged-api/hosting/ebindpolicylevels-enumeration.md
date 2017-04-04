@@ -54,14 +54,14 @@ typedef enum {
 |`ePolicyLevelNone`|Specifies no policy-level flags.|  
 |`ePolicyLevelPublisher`|Specifies that policy should be applied at the publisher level.|  
 |`ePolicyLevelRetargetable`|Specifies that policy should be applicable at variable levels.|  
-|`ePolicyPortability`|Specifies that policy should support portability between implementations of a .NET Framework assembly. See the [\<supportPortability>](../../../../docs/framework/configuring-apps/file-schema/runtime/supportportability-element.md) configuration file element.|  
+|`ePolicyPortability`|Specifies that policy should support portability between implementations of a .NET Framework assembly. See the [\<supportPortability>](../../../../docs/framework/configure-apps/file-schema/runtime/supportportability-element.md) configuration file element.|  
 |`ePolicyUnifiedToCLR`|Specifies that policy should be unified to that of the common language runtime (CLR).|  
   
 ## Remarks  
  This enumeration is passed to methods of the [ICLRHostBindingPolicyManager](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md) interface to specify changes in application policy.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

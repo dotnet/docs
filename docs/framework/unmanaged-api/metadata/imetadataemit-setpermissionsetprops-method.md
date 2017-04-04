@@ -59,7 +59,7 @@ HRESULT SetPermissionSetProps (
  [out] An `mdPermission` metadata token that represents the updated permissions.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

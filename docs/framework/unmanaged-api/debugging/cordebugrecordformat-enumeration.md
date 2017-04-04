@@ -50,7 +50,7 @@ typedef enum CorDebugRecordFormat {
 >  This enumeration is intended for use in .NET Native debugging scenarios only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

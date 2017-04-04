@@ -23,7 +23,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # &lt;schemaImporterExtensions&gt; Element
-Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configuring-apps/file-schema/index.md).  
+Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
 ## Syntax  
   
@@ -63,7 +63,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 ## See Also  
  <xref:System.Xml.Serialization.XmlSchemaImporter>   
  <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>   
- [Configuration File Schema](../../../docs/framework/configuring-apps/file-schema/index.md)   
+ [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)   
  [\<dateTimeSerialization> Element](../../../docs/framework/serialization/datetimeserialization-element.md)   
  [\<add> Element for \<xmlSchemaImporterExtensions>](../../../docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)   
  [\<system.xml.serialization> Element](../../../docs/framework/serialization/system-xml-serialization-element.md)

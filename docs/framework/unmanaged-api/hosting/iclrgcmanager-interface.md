@@ -41,10 +41,10 @@ Provides methods that allow a host to interact with the common language runtime'
 |[SetGCStartupLimits Method](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-setgcstartuplimits-method.md)|Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.|  
   
 ## Remarks  
- The common language runtime (CLR) implements its garbage collection mechanism with the managed <xref:System.GC> type. For more information about the garbage collection system, see [Garbage Collection](../../../../docs/standard/garbagecollection/index.md).  
+ The common language runtime (CLR) implements its garbage collection mechanism with the managed <xref:System.GC> type. For more information about the garbage collection system, see [Garbage Collection](../../../../docs/standard/garbage-collection/index.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

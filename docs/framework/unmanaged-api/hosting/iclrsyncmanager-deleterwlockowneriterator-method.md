@@ -57,7 +57,7 @@ HRESULT DeleteRWLockOwnerIterator (
  The host can call this method and `CreateRWLockOwnerIterator` to ensure that its threading implementation remains synchronized.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -60,7 +60,7 @@ BOOLEAN StrongNameKeyInstall (
  If the `StrongNameKeyInstall` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** WindSee [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** WindSee [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   

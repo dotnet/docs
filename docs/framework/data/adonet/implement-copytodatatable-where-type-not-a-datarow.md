@@ -36,41 +36,39 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
   
 3.  Add the `ObjectShredder<T>` class and `CopyToDataTable<T>` extension methods to your application.  
   
-    ```vb  
-    Module Module1  
-        Sub Main()  
+```vb  
+Module Module1  
+    Sub Main()  
         ' Your application code using CopyToDataTable<T>.  
-        End Sub  
-    End Module  
+    End Sub  
+End Module  
   
-    Public Module CustomLINQtoDataSetMethods  
-    …  
-    End Module  
+Public Module CustomLINQtoDataSetMethods  
+…  
+End Module  
   
-    Public Class ObjectShredder(Of T)  
-    …  
-    End Class  
-    ```  
+Public Class ObjectShredder(Of T)  
+…  
+End Class
+```
   
-4.  ```c#  
-    class Program  
+```csharp
+class Program  
+{  
+    static void Main(string[] args)  
     {  
-            static void Main(string[] args)  
-            {  
-               // Your application code using CopyToDataTable<T>.  
-            }  
+        // Your application code using CopyToDataTable<T>.  
     }  
-    public static class CustomLINQtoDataSetMethods  
-    {  
-    …  
-    }  
-    public class ObjectShredder<T>  
-    {  
-    …  
-    }  
-    ```  
-  
-5.  
+}  
+public static class CustomLINQtoDataSetMethods  
+{  
+…  
+}  
+public class ObjectShredder<T>  
+{  
+…  
+}  
+```
   
 ## See Also  
  [Creating a DataTable From a Query](../../../../docs/framework/data/adonet/creating-a-datatable-from-a-query-linq-to-dataset.md)   

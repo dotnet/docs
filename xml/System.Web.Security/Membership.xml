@@ -1217,7 +1217,7 @@
 ## Remarks  
  The <xref:System.Web.Security.Membership.HashAlgorithmType%2A> property identifies the custom hash algorithm used by the <xref:System.Web.Security.Membership> class. You set the <xref:System.Web.Security.Membership.HashAlgorithmType%2A> property using the `hashAlgorithmType` attribute of the  element.  
   
- The .NET Framework enables you to configure custom cryptography classes using the  element configuration section. The <xref:System.Web.Security.Membership.HashAlgorithmType%2A> property must match the `name` attribute of the  element in a  element. For more information, see [Mapping Algorithm Names to Cryptography Classes](~/docs/framework/configuring-apps/mapping-algorithm-names-to-cryptography-classes.md).  
+ The .NET Framework enables you to configure custom cryptography classes using the  element configuration section. The <xref:System.Web.Security.Membership.HashAlgorithmType%2A> property must match the `name` attribute of the  element in a  element. For more information, see [Mapping Algorithm Names to Cryptography Classes](~/docs/framework/configure-apps/map-algorithm-names-to-cryptography-classes.md).  
   
  If the <xref:System.Web.Security.Membership.HashAlgorithmType%2A> property is not set, the <xref:System.Web.Security.Membership> class uses the hash algorithm set in the `validation` attribute of the  element.  
   

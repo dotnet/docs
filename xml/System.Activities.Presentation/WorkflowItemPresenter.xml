@@ -27,7 +27,7 @@
 ## Examples  
  The primary use of this control will be in an activity designer, as seen in the sample code below. The XAML below shows the declarative usage of the control to build a simple designer for the If activity. The If activity has two properties of type Activity, Then and Else, and the Item for each WorkflowItemPresenter is linked to that respective property.  
   
- For an example of the <xref:System.Activities.Presentation.WorkflowItemPresenter> in use, see the [Custom Composite Designers - Workflow Item Presenter](~/docs/framework/wf/samples/custom-composite-designers-workflow-item-presenter.md) sample.  
+ For an example of the <xref:System.Activities.Presentation.WorkflowItemPresenter> in use, see the [Custom Composite Designers - Workflow Item Presenter](~/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter.md) sample.  
   
 ```xaml  
 <sap:ActivityDesigner x:Class="Microsoft.Documentation.SimpleIfDesigner"  

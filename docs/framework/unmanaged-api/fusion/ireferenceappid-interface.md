@@ -40,7 +40,7 @@ Represents a reference to the unique identifier for the application in the curre
 |`IReferenceAppId::put_SubscriptionId`|Sets the token identifier for a subscription to this `IReferenceAppId` to the specified string value.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   

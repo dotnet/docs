@@ -66,7 +66,7 @@ HRESULT CreateSemaphore (
  `CreateSemaphore` mirrors the Win32 function that has the same name. The `dwInitial` and `dwMax` parameters use the same semantics for the semaphore count as the Win32 `lInitialCount` and `lMaximumCount` parameters, respectively. `dwInitial` must be between zero and `dwMax`, inclusive. `dwMax` must be greater than zero.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

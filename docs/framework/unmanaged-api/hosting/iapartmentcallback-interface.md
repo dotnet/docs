@@ -36,7 +36,7 @@ Provides methods for making callbacks within an apartment. An *apartment* is a l
 |[DoCallback Method](../../../../docs/framework/unmanaged-api/hosting/iapartmentcallback-docallback-method.md)|Executes the specified function within an apartment.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

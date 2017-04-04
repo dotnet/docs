@@ -48,7 +48,7 @@ typedef enum CorThreadSafetyOptions {
 |`MDThreadSatetyOn`|Indicates that a reader/writer lock can be set.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

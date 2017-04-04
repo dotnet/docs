@@ -66,7 +66,7 @@ HRESULT EnumParams (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

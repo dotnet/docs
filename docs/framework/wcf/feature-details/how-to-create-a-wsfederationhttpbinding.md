@@ -19,7 +19,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Create a WSFederationHttpBinding
-In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.ServiceModel.WSFederationHttpBinding> class ([\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md) in configuration) provides a mechanism for exposing a federated service. That is, a service that requires clients to authenticate using a security token issued by a security token service. This topic shows how to set up a <xref:System.ServiceModel.WSFederationHttpBinding> in both code and configuration. Once the binding is created, you can set up an endpoint to use that binding.  
+In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.ServiceModel.WSFederationHttpBinding> class ([\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) in configuration) provides a mechanism for exposing a federated service. That is, a service that requires clients to authenticate using a security token issued by a security token service. This topic shows how to set up a <xref:System.ServiceModel.WSFederationHttpBinding> in both code and configuration. Once the binding is created, you can set up an endpoint to use that binding.  
   
  The basic steps are outlined as follows:  
   
@@ -69,9 +69,9 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
   
 ### To create a federated endpoint in configuration  
   
-1.  Create a [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md) as a child of the [\<bindings>](../../../../docs/framework/configuring-apps/file-schema/wcf/bindings.md) element in the application configuration file.  
+1.  Create a [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) as a child of the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element in the application configuration file.  
   
-2.  Create a [\<binding>](../../../../docs/framework/misc/binding.md) element as a child of [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md) and set the `name` attribute to an appropriate value.  
+2.  Create a [\<binding>](../../../../docs/framework/misc/binding.md) element as a child of [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and set the `name` attribute to an appropriate value.  
   
 3.  Create a `<security>` element as a child of the [\<binding>](../../../../docs/framework/misc/binding.md) element.  
   
@@ -99,7 +99,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
   
 15. Not used on the client; optional on the service. Create an `<issuerMetadata>` element as a child of the <`message`> element. Then, in an `address` attribute on the `<issuerMetadata>` element, specify the address at which the security token service is to publish its metadata. Optionally, add an `<identity>` child element and specify the identity of the security token service.  
   
-16. Optional on both the client and the service. Add a `<claimTypeRequirements>` element as a child of the `<message>` element. Specify required and optional claims that the service relies on by adding [\<add>](../../../../docs/framework/configuring-apps/file-schema/wcf/add-of-claimtyperequirements.md) elements to the `<claimTypeRequirements>` element and specifying the claim type with the `claimType` attribute. Specify whether a given claim is required or optional by setting the `isOptional` attribute.  
+16. Optional on both the client and the service. Add a `<claimTypeRequirements>` element as a child of the `<message>` element. Specify required and optional claims that the service relies on by adding [\<add>](../../../../docs/framework/configure-apps/file-schema/wcf/add-of-claimtyperequirements.md) elements to the `<claimTypeRequirements>` element and specifying the claim type with the `claimType` attribute. Specify whether a given claim is required or optional by setting the `isOptional` attribute.  
   
 ## Example  
  The following code sample shows code for setting up a `WSFederationHttpBinding` imperatively.  

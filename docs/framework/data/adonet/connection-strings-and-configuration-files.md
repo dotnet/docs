@@ -176,6 +176,6 @@ Embedding connection strings in your application's code can lead to security vul
  [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)   
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)   
  [Using the Configuration Classes](http://msdn.microsoft.com/library/98d2b386-baf6-4a17-974b-76e3b4c87acc)   
- [Configuring Apps](../../../../docs/framework/configuring-apps/index.md)   
+ [Configuring Apps](../../../../docs/framework/configure-apps/index.md)   
  [ASP.NET Web Site Administration](http://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

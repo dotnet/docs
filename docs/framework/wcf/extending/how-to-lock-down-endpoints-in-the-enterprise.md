@@ -18,10 +18,10 @@ manager: "erikre"
 # How to: Lock Down Endpoints in the Enterprise
 Large enterprises often require that applications are developed in compliance with enterprise security policies. The following topic discusses how to develop and install a client endpoint validator that can be used to validate all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] client applications installed on computers.  
   
- In this case, the validator is a client validator because this endpoint behavior is added to the client [\<commonBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/commonbehaviors.md) section in the machine.config file. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] loads common endpoint behaviors only for client applications and loads common service behaviors only for service applications. To install this same validator for service applications, the validator must be a service behavior. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [\<commonBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/commonbehaviors.md) section.  
+ In this case, the validator is a client validator because this endpoint behavior is added to the client [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section in the machine.config file. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] loads common endpoint behaviors only for client applications and loads common service behaviors only for service applications. To install this same validator for service applications, the validator must be a service behavior. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section.  
   
 > [!IMPORTANT]
->  Service or endpoint behaviors not marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (APTCA) that are added to the [\<commonBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/commonbehaviors.md) section of a configuration file are not run when the application runs in a partial trust environment, and no exception is thrown when this occurs. To enforce the running of common behaviors such as validators, you must either:  
+>  Service or endpoint behaviors not marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (APTCA) that are added to the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section of a configuration file are not run when the application runs in a partial trust environment, and no exception is thrown when this occurs. To enforce the running of common behaviors such as validators, you must either:  
 >   
 >  -- Mark your common behavior with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute so that it can run when deployed as a Partial Trust application. Note that a registry entry can be set on the computer to prevent APTCA-marked assemblies from running..  
 >   
@@ -49,11 +49,11 @@ Large enterprises often require that applications are developed in compliance wi
   
 3.  Use the <xref:System.Configuration?displayProperty=fullName> namespace types to:  
   
-    1.  Add the extension to the [\<behaviorExtensions>](../../../../docs/framework/configuring-apps/file-schema/wcf/behaviorextensions.md) section using a fully-qualified type name and lock the element.  
+    1.  Add the extension to the [\<behaviorExtensions>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md) section using a fully-qualified type name and lock the element.  
   
          [!code-csharp[LockdownValidation#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/hostapplication.cs#5)]  
   
-    2.  Add the behavior element to the `EndpointBehaviors` property of the [\<commonBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/commonbehaviors.md) section and lock the element. (To install the validator on the service, the validator must be an <xref:System.ServiceModel.Description.IServiceBehavior> and added to the `ServiceBehaviors` property.) The following code example shows the proper configuration after steps a. and b., with the sole exception that there is no strong name.  
+    2.  Add the behavior element to the `EndpointBehaviors` property of the [\<commonBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md) section and lock the element. (To install the validator on the service, the validator must be an <xref:System.ServiceModel.Description.IServiceBehavior> and added to the `ServiceBehaviors` property.) The following code example shows the proper configuration after steps a. and b., with the sole exception that there is no strong name.  
   
          [!code-csharp[LockdownValidation#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/hostapplication.cs#6)]  
   

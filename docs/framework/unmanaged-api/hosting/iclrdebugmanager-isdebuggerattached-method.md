@@ -57,7 +57,7 @@ HRESULT IsDebuggerAttached (
  `IsDebuggerAttached` allows the host to query the CLR to determine whether a debugger is attached to the process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

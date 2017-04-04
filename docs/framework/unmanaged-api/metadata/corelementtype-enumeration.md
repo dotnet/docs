@@ -142,7 +142,7 @@ typedef enum CorElementType {
 |`ELEMENT_TYPE_CMOD_OPT`|E_T_CMOD_OPT <a `mdTypeRef` or `mdTypeDef` metadata token>|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   

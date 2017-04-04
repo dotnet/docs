@@ -54,4 +54,4 @@ The .NET Framework is constantly evolving and in order to improve cross-platform
 |[DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md)|  
   
 ## See Also  
- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/getting-started/the-net-framework-and-out-of-band-releases.md)
+ [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)

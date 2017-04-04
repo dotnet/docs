@@ -60,4 +60,4 @@ A location-based cache policy defines the freshness of valid cached entries base
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)   
  [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)   
  [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)   
- [\<requestCaching> Element (Network Settings)](../../../docs/framework/configuring-apps/file-schema/network/requestcaching-element-network-settings.md)
+ [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)

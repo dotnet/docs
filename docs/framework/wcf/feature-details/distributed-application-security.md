@@ -49,11 +49,11 @@ manager: "mbaldwin"
   
 |Mode|Description|  
 |----------|-----------------|  
-|None|No security is provided at the transport layer or at the message layer. None of the predefined bindings use this mode by default except the [\<basicHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/basichttpbinding.md) element or, when using code, the <xref:System.ServiceModel.BasicHttpBinding> class.|  
+|None|No security is provided at the transport layer or at the message layer. None of the predefined bindings use this mode by default except the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element or, when using code, the <xref:System.ServiceModel.BasicHttpBinding> class.|  
 |Transport|Uses a secure transport such as HTTPS for integrity, confidentiality, and mutual authentication.|  
 |Message|Uses SOAP-message security for integrity, confidentiality, and mutual authentication. SOAP messages are secured according to the WS-Security standards.|  
 |Mixed Mode|Uses transport security for integrity, confidentiality, and server authentication. Uses message security (WS-Security and other standards) for client authentication.<br /><br /> (This enumeration for this mode is `TransportWithMessageCredential`.)|  
-|Both|Performs protection and authentication at both levels. This mode is available only in the [\<netMsmqBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/netmsmqbinding.md) element.|  
+|Both|Performs protection and authentication at both levels. This mode is available only in the [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) element.|  
   
 ## Credentials and Transfer Security  
  A *credential* is data that is presented to establish either a claimed identity or capabilities. Presenting a credential involves presenting both the data and proof of possession of the data. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports a variety of credential types at both the transport and message security levels. You can specify a type of credential for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] binding.  

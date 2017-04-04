@@ -48,7 +48,7 @@ HRESULT GetCaller (
  The calling chain may be on a different thread, if the call was marshaled across threads.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -46,7 +46,7 @@ BOOL IsValidToken (
  `true` if `tk` is a valid metadata token within the current scope. Otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

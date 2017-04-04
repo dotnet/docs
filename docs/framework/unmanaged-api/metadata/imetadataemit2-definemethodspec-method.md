@@ -55,7 +55,7 @@ HRESULT DefineMethodSpec (
  [out] A token to the metadata signature definition of the method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

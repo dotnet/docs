@@ -53,7 +53,7 @@ Manages identity keys for code objects.
 |`IIdentityAuthority::TextToReference`|Gets an interface pointer to an `IReferenceIdentity` instance generated from the specified formatted string.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   

@@ -83,7 +83,7 @@ HRESULT  ModifyApplicationPolicy (
  The `ModifyApplicationPolicy` method can be called twice. The first call should supply a null value for the `pbNewApplicationPolicy` parameter. This call will return with the necessary value for `pcbNewAppPolicySize`. The second call should supply this value for `pcbNewAppPolicySize`, and point to a buffer of that size for `pbNewApplicationPolicy`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

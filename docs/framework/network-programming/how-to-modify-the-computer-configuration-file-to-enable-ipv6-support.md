@@ -46,5 +46,5 @@ The following code example shows how to modify the computer configuration file, 
   
 ## See Also  
  [IPv6 Addressing](../../../docs/framework/network-programming/ipv6-addressing.md)   
- [Network Settings Schema](../../../docs/framework/configuring-apps/file-schema/network/index.md)   
- [\<ipv6> Element (Network Settings)](../../../docs/framework/configuring-apps/file-schema/network/ipv6-element-network-settings.md)
+ [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ [\<ipv6> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)

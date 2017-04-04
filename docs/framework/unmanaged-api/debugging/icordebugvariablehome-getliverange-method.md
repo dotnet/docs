@@ -49,7 +49,7 @@ HRESULT GetLiveRange(
  [out] The logical offset immediately after the point at which the variable is last live.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

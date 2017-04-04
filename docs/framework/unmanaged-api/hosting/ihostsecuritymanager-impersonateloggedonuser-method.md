@@ -59,7 +59,7 @@ HRESULT ImpersonateLoggedOnUser (
  The `HANDLE` type is not COM-compliant, that is, its size is specific to an operating system, and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [How to: Create an Activity](~/docs/framework/wf/how-to-create-an-activity.md) step of the  [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/wf/getting-started-tutorial.md).  
+ The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [How to: Create an Activity](~/docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) step of the  [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md).  
   
  [!code-csharp[CFX_WF_GettingStarted#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
  [!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]  
@@ -123,7 +123,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/wf/samples/custom-composite-using-native-activity.md) sample.  
+ The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
   
  [!code-csharp[wfs_CustomCompositeNativeActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#2)]  
   
@@ -153,7 +153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/wf/samples/non-generic-parallelforeach.md) sample.  
+ The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
   
  [!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
   
@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using CanInduceIdle in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Wait For Input Activity &#91;WF Samples&#93;](~/docs/framework/wf/samples/wait-for-input-activity.md) sample.  
+ The following code sample demonstrates using CanInduceIdle in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Wait For Input Activity &#91;WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md) sample.  
   
  [!code-csharp[wfs_WaitForInput#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_waitforinput/cs/waitforinput/waitforinput.cs#1)]  
   
@@ -211,7 +211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using Execute in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/wf/samples/non-generic-parallelforeach.md) sample.  
+ The following code sample demonstrates using Execute in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
   
  [!code-csharp[wfs_NonGenericParallelForEach#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#1)]  
   

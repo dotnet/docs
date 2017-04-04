@@ -53,7 +53,7 @@ tlbimp tlbFile [options]
 |**/asmversion:** *versionnumber*|Specifies the version number of the assembly to produce. Specify *versionnumber* in the format *major.minor.build.revision*.|  
 |**/company:** `companyinformation`|Adds company information to the output assembly.|  
 |**/copyright:** `copyrightinformation`|Adds copyright information to the output assembly. This information can be viewed in the **File Properties** dialog box for the assembly.|  
-|**/delaysign**|Specifies to Tlbimp.exe to sign the resulting assembly with a strong name using delayed signing. You must specify this option with either the **/keycontainer:**, **/keyfile:**, or **/publickey:** option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-signing-an-assembly.md).|  
+|**/delaysign**|Specifies to Tlbimp.exe to sign the resulting assembly with a strong name using delayed signing. You must specify this option with either the **/keycontainer:**, **/keyfile:**, or **/publickey:** option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md).|  
 |**/help**|Displays command syntax and options for the tool.|  
 |**/keycontainer:** *containername*|Signs the resulting assembly with a strong name using the public/private key pair found in the key container specified by *containername*.|  
 |**/keyfile:** *filename*|Signs the resulting assembly with a strong name using the publisher's official public/private key pair found in *filename*.|  

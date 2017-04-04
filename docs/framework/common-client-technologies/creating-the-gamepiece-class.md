@@ -105,6 +105,6 @@ The **GamePiece** class encapsulates all the functionality required to load a Mi
   
 ## See Also  
  [Manipulations and Inertia](../../../docs/framework/common-client-technologies/manipulations-and-inertia.md)   
- [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/using-manipulations-and-inertia-in-an-xna-application.md)   
+ [Using Manipulations and Inertia in an XNA Application](../../../docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md)   
  [Creating the GamePieceCollection Class](../../../docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md)   
  [Creating the Game1 Class](../../../docs/framework/common-client-technologies/creating-the-game1-class.md)

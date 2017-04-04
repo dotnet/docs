@@ -51,7 +51,7 @@ HRESULT Start();
  In many scenarios it is not necessary to call `Start`, because the runtime will initialize itself automatically upon the first request to run managed code. You can, however, use `Start` to specify exactly when the runtime should be initialized.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -61,5 +61,4 @@ HRESULT Start();
   
 ## See Also  
  <xref:System.AppDomain>   
- [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5)   
  [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

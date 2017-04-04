@@ -66,7 +66,7 @@ HRESULT GetMonitorOwner (
  `GetMonitorOwner` always returns immediately and can be called any time after a call to `CreateMonitorEvent`. The host does not need to wait until a task is waiting on the event.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

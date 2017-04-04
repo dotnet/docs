@@ -45,7 +45,7 @@ HRESULT ApplyEditAndContinue (
  The delta metadata is the block of metadata that includes the changes that were made to the copy of the module's actual metadata.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

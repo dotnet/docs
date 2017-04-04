@@ -38,7 +38,7 @@ Represents a single assembly in the global assembly cache.
 |[CreateStream Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-createstream-method.md)|Creates a stream with the specified name and format.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

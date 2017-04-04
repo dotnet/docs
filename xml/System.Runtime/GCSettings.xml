@@ -66,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about server garbage collection, see the "Workstation and Server Garbage Collection" section in [Fundamentals of Garbage Collection](~/docs/standard/garbagecollection/fundamentals.md).  
+ For information about server garbage collection, see the "Workstation and Server Garbage Collection" section in [Fundamentals of Garbage Collection](~/docs/standard/garbage-collection/fundamentals.md).  
   
  If server garbage collection is not enabled, workstation garbage collection is in effect (with or without concurrent collection). Server garbage collection is available only on multiprocessor computers.  
   
@@ -191,7 +191,7 @@
   
  Ordinarily, you set the value of the <xref:System.Runtime.GCSettings.LatencyMode%2A> property to define the garbage collector's latency mode. However, you cannot set the no GC region latency mode by assigning the <xref:System.Runtime.GCLatencyMode?displayProperty=fullName> enumeration value to the <xref:System.Runtime.GCSettings.LatencyMode%2A> property. Instead, you call the <xref:System.GC.TryStartNoGCRegion%2A?displayProperty=fullName> method to begin the no GC region latency mode, and you call the <xref:System.GC.EndNoGCRegion%2A?displayProperty=fullName> to end it.  
   
- See [Latency Modes](~/docs/standard/garbagecollection/latency.md) for a discussion of how the runtime configuration settings for garbage collection affect the default value of the <xref:System.Runtime.GCLatencyMode> enumeration.  
+ See [Latency Modes](~/docs/standard/garbage-collection/latency.md) for a discussion of how the runtime configuration settings for garbage collection affect the default value of the <xref:System.Runtime.GCLatencyMode> enumeration.  
   
  ]]></format>
         </remarks>

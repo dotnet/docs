@@ -55,7 +55,7 @@ HRESULT GetXML (
  The `GetXML` method can potentially affect performance, depending on the size of the associated XML stream.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -65,4 +65,4 @@ HRESULT GetXML (
   
 ## See Also  
  [ICorDebugMDA Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmda-interface.md)   
- [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debugging-tracing-profiling/diagnosing-errors-with-managed-debugging-assistants.md)
+ [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

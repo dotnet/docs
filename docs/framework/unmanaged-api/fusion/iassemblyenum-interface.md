@@ -38,7 +38,7 @@ Represents an enumerator for an array of `IAssemblyName` objects.
 |[Reset Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-reset-method.md)|Resets this `IAssemblyEnum` object to its starting position.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

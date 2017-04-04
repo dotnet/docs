@@ -46,7 +46,7 @@ Provided here is guidance about the [!INCLUDE[indigo1](../../../includes/indigo1
   
 -   For information about the tools that help to create and debug [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] applications, see [Windows Communication Foundation Tools](../../../docs/framework/wcf/tools.md).  
   
--   Configuration using XML files is a primary way of programming [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services and clients. For reference documentation for the XML elements used in configuration files, see [WCF Configuration Schema](../../../docs/framework/configuring-apps/file-schema/wcf/index.md).  
+-   Configuration using XML files is a primary way of programming [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] services and clients. For reference documentation for the XML elements used in configuration files, see [WCF Configuration Schema](../../../docs/framework/configure-apps/file-schema/wcf/index.md).  
   
 ## Troubleshooting  
  For information about troubleshooting common [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] problems, see [WCF Troubleshooting Quickstart](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md).  

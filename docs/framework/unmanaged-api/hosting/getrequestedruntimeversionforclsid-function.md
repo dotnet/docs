@@ -74,7 +74,7 @@ HRESULT GetRequestedRuntimeVersionForCLSID (
 |E_POINTER|`dwLength` is null, or `cchBuffer` is large enough to hold the version string, but `pVersion` is null.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

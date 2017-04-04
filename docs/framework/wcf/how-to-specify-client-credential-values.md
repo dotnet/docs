@@ -59,11 +59,11 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
   
 #### To specify the client credential value on the client in configuration  
   
-1.  Add a [\<behavior>](../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to the [\<behaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element.  
+1.  Add a [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to the [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element.  
   
-2.  Add a [\<clientCredentials>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md) element to the [\<behaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md) element. Be sure to set the required `name` attribute to an appropriate value.  
+2.  Add a [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element to the [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element. Be sure to set the required `name` attribute to an appropriate value.  
   
-3.  Add a [\<clientCertificate>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md) element to the [\<clientCredentials>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md) element.  
+3.  Add a [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md) element to the [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element.  
   
 4.  Set the following attributes to appropriate values: `storeLocation`, `storeName`, `x509FindType`, and `findValue`, as shown in the following code. [!INCLUDE[crabout](../../../includes/crabout-md.md)] certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
@@ -82,7 +82,7 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
     </behaviors>  
     ```  
   
-5.  When configuring the client, specify the behavior by setting the `behaviorConfiguration` attribute of the `<endpoint>` element, as shown in the following code. The endpoint element is a child of the [\<client>](../../../docs/framework/configuring-apps/file-schema/wcf/client.md) element. Also, specify the name of the binding configuration by setting the `bindingConfiguration` attribute to the binding for the client. If you are using a generated configuration file, the binding's name is automatically generated. In this example, the name is `"tcpBindingWithCredential"`.  
+5.  When configuring the client, specify the behavior by setting the `behaviorConfiguration` attribute of the `<endpoint>` element, as shown in the following code. The endpoint element is a child of the [\<client>](../../../docs/framework/configure-apps/file-schema/wcf/client.md) element. Also, specify the name of the binding configuration by setting the `bindingConfiguration` attribute to the binding for the client. If you are using a generated configuration file, the binding's name is automatically generated. In this example, the name is `"tcpBindingWithCredential"`.  
   
     ```  
     <client>  
@@ -105,10 +105,10 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
  [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)   
  [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md)   
  [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)   
- [\<netTcpBinding>](../../../docs/framework/configuring-apps/file-schema/wcf/nettcpbinding.md)   
- [\<security>](../../../docs/framework/configuring-apps/file-schema/wcf/security-of-nettcpbinding.md)   
- [\<message>](../../../docs/framework/configuring-apps/file-schema/wcf/message-element-of-nettcpbinding.md)   
- [\<behavior>](../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)   
- [\<behaviors>](../../../docs/framework/configuring-apps/file-schema/wcf/behaviors.md)   
- [\<clientCertificate>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)   
- [\<clientCredentials>](../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md)
+ [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)   
+ [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)   
+ [\<message>](../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)   
+ [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)   
+ [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)   
+ [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)   
+ [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)

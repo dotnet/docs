@@ -61,7 +61,7 @@ HRESULT DefineTypeRefByName (
  [out] A pointer to the `mdTypeRef` token that is assigned to the type.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

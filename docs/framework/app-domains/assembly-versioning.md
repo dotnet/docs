@@ -42,7 +42,7 @@ All versioning of assemblies that use the common language runtime is done at the
  ![.assembly extern myAssembly](../../../docs/framework/app-domains/media/versioningover.gif "versioningover")  
 Resolving an assembly binding request  
   
- For more information about configuring applications, see [Configuring Apps](../../../docs/framework/configuring-apps/index.md). For more information about binding policy, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
+ For more information about configuring applications, see [Configuring Apps](../../../docs/framework/configure-apps/index.md). For more information about binding policy, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 ## Version Information  
  Each assembly has two distinct ways of expressing version information:  
@@ -64,7 +64,7 @@ Resolving an assembly binding request
   
  The runtime distinguishes between regular and strong-named assemblies for the purposes of versioning. Version checking only occurs with strong-named assemblies.  
   
- For information about specifying version binding policies, see [Configuring Apps](../../../docs/framework/configuring-apps/index.md). For information about how the runtime uses version information to find a particular assembly, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
+ For information about specifying version binding policies, see [Configuring Apps](../../../docs/framework/configure-apps/index.md). For information about how the runtime uses version information to find a particular assembly, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
   
 ### Assembly Informational Version  
  The informational version is a string that attaches additional version information to an assembly for informational purposes only; this information is not used at run time. The text-based informational version corresponds to the product's marketing literature, packaging, or product name and is not used by the runtime. For example, an informational version could be "Common Language Runtime version 1.0" or "NET Control SP 2". On the Version tab of the file properties dialog in Microsoft Windows, this information appears in the item "Product Version".  
@@ -72,10 +72,10 @@ Resolving an assembly binding request
 > [!NOTE]
 >  Although you can specify any text, a warning message appears on compilation if the string is not in the format used by the assembly version number, or if it is in that format but contains wildcards. This warning is harmless.  
   
- The informational version is represented using the custom attribute <xref:System.Reflection.AssemblyInformationalVersionAttribute?displayProperty=fullName>. For more information about the informational version attribute, see [Setting Assembly Attributes](../../../docs/framework/app-domains/setting-assembly-attributes.md).  
+ The informational version is represented using the custom attribute <xref:System.Reflection.AssemblyInformationalVersionAttribute?displayProperty=fullName>. For more information about the informational version attribute, see [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md).  
   
 ## See Also  
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
- [Configuring Apps](../../../docs/framework/configuring-apps/index.md)   
- [Setting Assembly Attributes](../../../docs/framework/app-domains/setting-assembly-attributes.md)   
+ [Configuring Apps](../../../docs/framework/configure-apps/index.md)   
+ [Setting Assembly Attributes](../../../docs/framework/app-domains/set-assembly-attributes.md)   
  [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

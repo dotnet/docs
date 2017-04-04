@@ -52,7 +52,7 @@ HRESULT GetCORRequiredVersion (
  [out] The number of bytes returned in the buffer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

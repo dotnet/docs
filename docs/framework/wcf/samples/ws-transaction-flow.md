@@ -57,7 +57,7 @@ public interface ICalculator
   
 -   A `Divide` operation request must not include a flowed transaction through the omission of a `TransactionFlow` attribute.  
   
- To enable transaction flow, bindings with the [\<transactionFlow>](../../../../docs/framework/configuring-apps/file-schema/wcf/transactionflow.md) property enabled must be used in addition to the appropriate operation attributes. In this sample, the service's configuration exposes a TCP endpoint and an HTTP endpoint in addition to a Metadata Exchange endpoint. The TCP endpoint and the HTTP endpoint use the following bindings, both of which have the [\<transactionFlow>](../../../../docs/framework/configuring-apps/file-schema/wcf/transactionflow.md) property enabled.  
+ To enable transaction flow, bindings with the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled must be used in addition to the appropriate operation attributes. In this sample, the service's configuration exposes a TCP endpoint and an HTTP endpoint in addition to a Metadata Exchange endpoint. The TCP endpoint and the HTTP endpoint use the following bindings, both of which have the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled.  
   
 ```  
 <bindings>  

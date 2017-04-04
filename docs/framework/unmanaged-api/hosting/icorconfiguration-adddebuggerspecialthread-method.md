@@ -46,7 +46,7 @@ HRESULT AddDebuggerSpecialThread (
  The specified thread will not be allowed to run managed code or enter the runtime in any way. An example of such a thread would be an in-process thread to support legacy script debuggers.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

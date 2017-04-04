@@ -120,7 +120,7 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Configuration E
 4.  Click **OK**.  
   
 > [!NOTE]
->  You cannot edit the value of [\<baseAddressPrefixFilters>](../../../docs/framework/configuring-apps/file-schema/wcf/baseaddressprefixfilters.md) inside this tool. To add or modify this element, you should use a text editor or [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
+>  You cannot edit the value of [\<baseAddressPrefixFilters>](../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) inside this tool. To add or modify this element, you should use a text editor or [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)].  
   
 ### Client  
  The **Client** node displays all of the client endpoints in the configuration file. Every sub-node in the tree corresponds to a sub-element of the <`client`> element in the configuration file.  

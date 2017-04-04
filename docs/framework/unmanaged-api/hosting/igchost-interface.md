@@ -46,7 +46,7 @@ Provides methods for obtaining information about the garbage collection system a
 |[SetVirtualMemLimit Method](../../../../docs/framework/unmanaged-api/hosting/igchost-setvirtualmemlimit-method.md)|Sets the maximum size of the runtime's virtual memory.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

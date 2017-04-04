@@ -40,7 +40,7 @@ Represents the global assembly cache for use by the fusion technology.
 |[UninstallAssembly Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-uninstallassembly-method.md)|Uninstalls the specified assembly from the global assembly cache.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

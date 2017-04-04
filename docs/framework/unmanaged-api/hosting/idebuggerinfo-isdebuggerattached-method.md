@@ -43,7 +43,7 @@ HRESULT IsDebuggerAttached (
  [out] A pointer to a value that is `true` if a managed debugger is attached to the process; otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

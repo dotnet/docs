@@ -44,7 +44,7 @@ Provides methods that allow the common language runtime (CLR) to communicate wit
  The CLR calls methods defined by `IHostTask` to start a task, set its thread priority level, and so on.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -49,7 +49,7 @@ typedef struct _CodeChunkInfo {
  The single chunk of code is a region of native code that is part of a code object such as a function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   

@@ -52,7 +52,7 @@ typedef enum  {
 |`sdExecute`|Section contains executable code that is allowed to be read and executed.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

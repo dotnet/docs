@@ -24,7 +24,7 @@ Windows Identity Foundation (WIF) classes are split across the following assembl
  Contains classes that represent cookie transforms, security token services, and specialized XML dictionary readers.  
   
  <xref:System.IdentityModel.Configuration?displayProperty=fullName>  
- Contains classes that provide configuration for applications and services built using the Windows Identity Foundation (WIF). The classes in this namespace represent settings under the [\<identityConfiguration>](../../../docs/framework/configuring-apps/file-schema/wif/identityconfiguration.md) element.  
+ Contains classes that provide configuration for applications and services built using the Windows Identity Foundation (WIF). The classes in this namespace represent settings under the [\<identityConfiguration>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element.  
   
  <xref:System.IdentityModel.Metadata?displayProperty=fullName>  
  Contains classes that represent elements in a Federation Metadata document.  
@@ -33,10 +33,10 @@ Windows Identity Foundation (WIF) classes are split across the following assembl
  Contains classes that represent WS-Trust artifacts.  
   
  <xref:System.IdentityModel.Services?displayProperty=fullName>  
- Contains classes that are used in passive (WS-Federation) scenarios. Also contains some classes that represent settings under the [\<system.identityModel.services>](../../../docs/framework/configuring-apps/file-schema/wif/system-identitymodel-services.md) element. Settings under this element configure WS-Federation for applications. The `System.IdentityModel.Services.Configuration` namespace contains most of the classes that are used to configure WS-Federation.  
+ Contains classes that are used in passive (WS-Federation) scenarios. Also contains some classes that represent settings under the [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) element. Settings under this element configure WS-Federation for applications. The `System.IdentityModel.Services.Configuration` namespace contains most of the classes that are used to configure WS-Federation.  
   
  <xref:System.IdentityModel.Services.Configuration?displayProperty=fullName>  
- Contains classes that provide configuration for WIF applications that use the WS-Federation protocol. The classes in this namespace represent settings under the [\<system.identityModel.services>](../../../docs/framework/configuring-apps/file-schema/wif/system-identitymodel-services.md) element. The `System.IdentityModel.Services` namespace also contains some classes that are used to configure WS-Federation.  
+ Contains classes that provide configuration for WIF applications that use the WS-Federation protocol. The classes in this namespace represent settings under the [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) element. The `System.IdentityModel.Services` namespace also contains some classes that are used to configure WS-Federation.  
   
  <xref:System.IdentityModel.Services.Tokens?displayProperty=fullName>  
  Contains specialized security token handlers for Web farm scenarios.  

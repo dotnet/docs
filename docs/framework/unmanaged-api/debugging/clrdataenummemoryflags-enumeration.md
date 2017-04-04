@@ -47,7 +47,7 @@ typedef enum CLRDataEnumMemoryFlags {
 |`CLRDATA_ENUM_MEM_HEAP`|A full heap dump.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

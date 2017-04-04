@@ -28,7 +28,7 @@ This sample demonstrates how to implement a custom X.509 Certificate Validator. 
   
 -   The server is authenticated using the server's X.509 certificate.  
   
- The service exposes a single endpoint for communicating with the service, defined using the configuration file App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using `WSSecurity` and client certificate authentication. The service behavior specifies the Custom mode for validating client X.509 certificates along with the type of the validator class. The behavior also specifies the server certificate using the serviceCertificate element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
+ The service exposes a single endpoint for communicating with the service, defined using the configuration file App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using `WSSecurity` and client certificate authentication. The service behavior specifies the Custom mode for validating client X.509 certificates along with the type of the validator class. The behavior also specifies the server certificate using the serviceCertificate element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
   
 ```  
   <system.serviceModel>  
@@ -343,7 +343,7 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   
 5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computerand exports the service certificate to a file named Service.cer.  
   
-6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer. Also change the computer name in the \<service>/\<baseAddresses> element from localhost to fully qualified name of your service computer.  
+6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer. Also change the computer name in the \<service>/\<baseAddresses> element from localhost to fully qualified name of your service computer.  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   

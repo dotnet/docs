@@ -70,11 +70,11 @@ This topic provides a brief overview of the concept of federated security. It al
  Once the users obtain a security token from the STS A, they present the token to the STS B. Organization B proceeds to perform authorization of the users' requests and issues a security token to the users from its own set of security tokens. The users can then present their token to the resource at organization B and access the service.  
   
 ## Support for Federated Security in WCF  
- [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides turnkey support for deploying federated security architectures through the [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md).  
+ [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides turnkey support for deploying federated security architectures through the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
- The [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md) element provides for a secure, reliable, interoperable binding that entails the use of HTTP as the underlying transport mechanism for request-reply communication style, employing text and XML as the wire format for encoding.  
+ The [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) element provides for a secure, reliable, interoperable binding that entails the use of HTTP as the underlying transport mechanism for request-reply communication style, employing text and XML as the wire format for encoding.  
   
- The use of [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md) in a federated security scenario can be decoupled into two logically independent phases, as described in the following sections.  
+ The use of [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) in a federated security scenario can be decoupled into two logically independent phases, as described in the following sections.  
   
 ### Phase 1: Design Phase  
  During the design phase, the client uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to read the policy the service endpoint exposes and to collect the service's authentication and authorization requirements. The appropriate proxies are constructed to create the following federated security communication pattern at the client:  
@@ -100,7 +100,7 @@ This topic provides a brief overview of the concept of federated security. It al
   
  ![Federation](../../../../docs/framework/wcf/feature-details/media/myservice.gif "MyService")  
   
- The service endpoint `MyServiceEndpoint` uses the [\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md) and requires a valid Security Assertions Markup Language (SAML) token with an `accessAuthorized` claim issued by STS B. This is declaratively specified in the service configuration.  
+ The service endpoint `MyServiceEndpoint` uses the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and requires a valid Security Assertions Markup Language (SAML) token with an `accessAuthorized` claim issued by STS B. This is declaratively specified in the service configuration.  
   
 ```  
 <system.serviceModel>  

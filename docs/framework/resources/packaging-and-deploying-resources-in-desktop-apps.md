@@ -66,7 +66,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
  To improve lookup performance, apply the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to your main assembly, and pass it the name of the neutral language that will work with your main assembly.  
   
 > [!TIP]
->  You may be able to use the [\<relativeBindForResources>](../../../docs/framework/configuring-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see the [Optimizing the Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#Optimizing) section.  
+>  You may be able to use the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) configuration element to optimize the resource fallback process and the process by which the runtime probes for resource assemblies. For more information, see the [Optimizing the Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#Optimizing) section.  
   
  The resource fallback process is involves the following steps:  
   
@@ -111,7 +111,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 -   Application code does not handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event.  
   
- You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../../docs/framework/configuring-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.  
+ You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.  
   
 ```  
   
@@ -123,7 +123,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 ```  
   
- The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in the [The Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../../docs/framework/configuring-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:  
+ The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in the [The Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:  
   
 -   The runtime uses the location of the parent code assembly to probe for the satellite assembly. If the parent assembly is installed in the global assembly cache, the runtime probes in the cache but not in the application's directory. If the parent assembly is installed in an application directory, the runtime probes in the application directory but not in the global assembly cache.  
   

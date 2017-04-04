@@ -32,8 +32,6 @@ Enables unmanaged hosts to load the common language runtime (CLR) into a process
   
  This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
   
- See [Hosting Overview](http://msdn.microsoft.com/en-us/ea527626-99e3-4995-81c4-c8f3e60eb6d5) for a complete description of the scenarios in which `CorBindToRuntimeEx` is used.  
-  
  This function takes a set of parameters that allow a host to do the following:  
   
 -   Specify the version of the runtime that will be loaded.  
@@ -129,14 +127,14 @@ HRESULT CorBindToRuntimeEx (
   
 2.  By changing the process default mode to the version 1 compatibility mode, where the <xref:System.Security.Principal.WindowsIdentity> object does not flow across any asynchronous point, regardless of the <xref:System.Threading.ExecutionContext> settings on the current thread. How you change the default mode depends on whether you use a managed executable or an unmanaged hosting interface to load the CLR:  
   
-    1.  For managed executables, you must set the `enabled` attribute of the [\<legacyImpersonationPolicy>](../../../../docs/framework/configuring-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) element to `true`.  
+    1.  For managed executables, you must set the `enabled` attribute of the [\<legacyImpersonationPolicy>](../../../../docs/framework/configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md) element to `true`.  
   
     2.  For unmanaged hosting interfaces, set the `STARTUP_LEGACY_IMPERSONATION` flag in the `startupFlags` parameter when calling the `CorBindToRuntimeEx` function.  
   
      The version 1 compatibility mode applies to the entire process and to all the application domains in the process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

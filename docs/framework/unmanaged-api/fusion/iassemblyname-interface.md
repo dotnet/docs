@@ -43,7 +43,7 @@ Provides methods for describing and working with an assembly's unique identity.
 |[SetProperty Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-setproperty-method.md)|Sets the value of the property referenced by the specified `PropertyId`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   

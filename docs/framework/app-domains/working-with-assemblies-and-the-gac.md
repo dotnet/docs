@@ -59,11 +59,11 @@ If you intend to share an assembly among several applications, you can install i
  [How to: Remove an Assembly from the Global Assembly Cache](../../../docs/framework/app-domains/how-to-remove-an-assembly-from-the-gac.md)  
  Explains how to use the [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) to remove an assembly from the global assembly cache.  
   
- [Using Serviced Components with the Global Assembly Cache](../../../docs/framework/app-domains/using-serviced-components-with-the-gac.md)  
+ [Using Serviced Components with the Global Assembly Cache](../../../docs/framework/app-domains/use-serviced-components-with-the-gac.md)  
  Explains why serviced components (managed COM+ components) should be placed in the global assembly cache.  
   
 ## Related Sections  
- [Creating Assemblies](../../../docs/framework/app-domains/creating-assemblies.md)  
+ [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
  Provides an overview of creating assemblies.  
   
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  

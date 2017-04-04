@@ -46,7 +46,7 @@ typedef enum {
 |`CLSID_RESOLUTION_REGISTERED`|Indicates that the runtime searches the registry and applies shim policy.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

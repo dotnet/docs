@@ -42,5 +42,5 @@ When workflow service applications communicate with other services, it is import
  <xref:System.ServiceModel.Activities.Send>   
  <xref:System.ServiceModel.Activities.Receive>   
  <xref:System.ServiceModel.CorrelationQuery>   
- [Content-Based Correlation](../../../../docs/framework/wf/samples/content-based-correlation.md)   
- [Correlated Calculator](../../../../docs/framework/wf/samples/correlated-calculator.md)
+ [Content-Based Correlation](../../../../docs/framework/windows-workflow-foundation/samples/content-based-correlation.md)   
+ [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md)

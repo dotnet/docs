@@ -37,7 +37,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 1.  Implement <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=fullName> for your custom policy assertion binding element.  
   
-2.  Add the binding element extension to the configuration file using the [\<bindingElementExtensions>](../../../../docs/framework/configuring-apps/file-schema/wcf/bindingelementextensions.md) element.  
+2.  Add the binding element extension to the configuration file using the [\<bindingElementExtensions>](../../../../docs/framework/configure-apps/file-schema/wcf/bindingelementextensions.md) element.  
   
 3.  Build a custom binding using the <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=fullName>.  
   

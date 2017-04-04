@@ -70,7 +70,7 @@ HRESULT CreateTask (
  The CLR calls `CreateTask` to request that the host create a new task. The host returns an interface pointer to an `IHostTask` instance. The returned task must remain suspended until it is explicitly started by a call to `IHostTask::Start`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

@@ -36,7 +36,7 @@ Provides a method for unwrapping marshal-by-value objects from indirection.
 |[Unwrap Method](../../../../docs/framework/unmanaged-api/hosting/iobjecthandle-unwrap-method.md)|Unwraps a marshal-by-value object from indirection.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/getting-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

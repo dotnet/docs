@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Interop with 3.5 Rule Set
-This sample demonstrates the use of the <xref:System.Activities.Statements.Interop> activity to integrate with a custom activity in [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] using <xref:System.Workflow.Activities.Policy> and rules. It passes data to the custom activity by binding [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] variables to the dependency properties exposed by the custom activity.  
+This sample demonstrates the use of the <xref:System.Activities.Statements.Interop> activity to integrate with a custom activity in [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] using <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` and rules. It passes data to the custom activity by binding [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] variables to the dependency properties exposed by the custom activity.  
   
 ## Requirements  
   
@@ -25,10 +25,10 @@ This sample demonstrates the use of the <xref:System.Activities.Statements.Inter
 3.  [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)]  
   
 ## Demonstrates  
- <xref:System.Activities.Statements.Interop> activity, <xref:System.Workflow.Activities.Policy> activity in [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] with dependency properties  
+ <xref:System.Activities.Statements.Interop> activity, <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` activity in [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] with dependency properties  
   
 ## Discussion  
- The sample demonstrates one of the integration scenarios for integrating with a [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] activity. This sample includes a [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] custom activity that invokes a <xref:System.Workflow.Activities.Policy> activity.  
+ The sample demonstrates one of the integration scenarios for integrating with a [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] activity. This sample includes a [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] custom activity that invokes a <!--zz <xref:System.Workflow.Activities.Policy> --> `System.Workflow.Activities.Policy` activity.  
   
 ## TravelRuleLibrary  
  Opening TravelRuleSet.cs in the designer shows a custom sequential activity that contains a Policy activity as follows  

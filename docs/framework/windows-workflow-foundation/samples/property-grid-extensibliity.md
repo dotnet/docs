@@ -95,7 +95,7 @@ A developer can customize the property grid that is displayed when a given activ
     this.InlineEditorTemplate.VisualTree = stack;  
     ```  
   
-4.  Overrides the <xref:Microsoft.Windows.Design.PropertyEditing.ShowDialog%2A> method in the designer type to handle the display of the dialog. In this sample, a basic <xref:System.Windows.Forms.FileDialog> is shown.  
+4.  Overrides the <!--zz <xref:Microsoft.Windows.Design.PropertyEditing.ShowDialog%2A>--> `Microsoft.Windows.Design.PropertyEditing.ShowDialog` method in the designer type to handle the display of the dialog. In this sample, a basic <xref:System.Windows.Forms.FileDialog> is shown.  
   
     ```  
     public override void ShowDialog(PropertyValue propertyValue, IInputElement commandSource)  

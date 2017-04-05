@@ -17,7 +17,7 @@ manager: "erikre"
 A flowchart is a well-known paradigm for designing programs. The Flowchart activity is typically used to implement non-sequential workflows, but can be used for sequential workflows if no `FlowDecision` nodes are used.  
   
 ## Flowchart Workflow Structure  
- A Flowchart activity is an activity that contains a collection of activities to be executed.  Flowcharts also contain flow control elements such as <xref:System.Activities.Statements.FlowDecision> and <xref:System.Activities.Statements.FlowSwitch> that direct execution between contained activities based on the values of variables.  
+ A Flowchart activity is an activity that contains a collection of activities to be executed.  Flowcharts also contain flow control elements such as <xref:System.Activities.Statements.FlowDecision> and <xref:System.Activities.Statements.FlowSwitch%601> that direct execution between contained activities based on the values of variables.  
   
 ## Types of Flow Nodes  
  Different types of elements are used depending on the type of flow control required when the element executes. Types of flowchart elements include:  

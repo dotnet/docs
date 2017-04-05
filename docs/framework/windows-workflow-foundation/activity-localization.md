@@ -17,7 +17,7 @@ manager: "erikre"
 When workflow applications and components have the potential to be localized into other cultures and languages, resource strings should be used so that they can be localized without recompiling.  
   
 ## Activity Localization  
- As with all applications that must be localized (released in different versions for different languages and cultures), any strings that are displayed to the user should not be put directly in code, but rather stored in a resource file. The strings can then be accessed through <xref:System.Environment.GetResourceString>. If you are developing a component that is distributed in several languages, you also want to use resource strings for activity validation messages, user-defined tracking data, tracing messages, and error messages as well.  
+ As with all applications that must be localized (released in different versions for different languages and cultures), any strings that are displayed to the user should not be put directly in code, but rather stored in a resource file. The strings can then be accessed through <!--zz <xref:System.Environment.GetResourceString> --> `GetResourceString`. If you are developing a component that is distributed in several languages, you also want to use resource strings for activity validation messages, user-defined tracking data, tracing messages, and error messages as well.  
   
  The following exercise demonstrates how to use a resource file.  
   

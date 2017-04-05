@@ -84,7 +84,7 @@ manager: "erikre"
   
 ### To call service operations in code  
   
-1.  Create an instance of <xref:System.ServiceModel.Web.WebChannelFactory> within a `using` block.  
+1.  Create an instance of <!--zz <xref:System.ServiceModel.Web.WebChannelFactory>--> `System.ServiceModel.Web.WebChannelFactory` within a `using` block.  
   
      [!code-csharp[htBasicService#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/htbasicservice/cs/service.cs#6)]
      [!code-vb[htBasicService#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htbasicservice/vb/service.vb#6)]  
@@ -118,6 +118,5 @@ manager: "erikre"
  <xref:System.ServiceModel.Web.WebGetAttribute>   
  <xref:System.ServiceModel.Web.WebInvokeAttribute>   
  <xref:System.ServiceModel.Web.WebServiceHost>   
- <xref:System.ServiceModel.Web.WebChannelFactory>   
  <xref:System.ServiceModel.Description.WebHttpBehavior>   
  [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

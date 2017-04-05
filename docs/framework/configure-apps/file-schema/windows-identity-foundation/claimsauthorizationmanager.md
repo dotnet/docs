@@ -40,7 +40,7 @@ Registers a claims authorization manager for the incoming claims.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|A custom type that derives from the <xref:System.Security.Claims.ClaimsAuthorizationManager> class. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md#BKMK_CustomTypeReferences).|  
+|type|A custom type that derives from the <xref:System.Security.Claims.ClaimsAuthorizationManager> class. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md).|  
   
 ### Child Elements  
  If there is no `type` attribute, or if the `type` attribute references the <xref:System.Security.Claims.ClaimsAuthenticationManager> class, the `<claimsAuthorizationManager>` element does not take child elements; however, classes derived from <xref:System.Security.Claims.ClaimsAuthorizationManager> can define child configuration elements.  

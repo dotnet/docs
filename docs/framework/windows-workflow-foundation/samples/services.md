@@ -27,7 +27,7 @@ This section contains links to samples that demonstrate [!INCLUDE[wf](../../../.
  Demonstrates how to use the <xref:System.ServiceModel.Activities.SendReply> and <xref:System.ServiceModel.Activities.ReceiveReply> messaging activities to send and receive expected and unexpected faults.  
   
  [Basic Usage of SendParameters and ReceiveParameters Activities](../../../../docs/framework/windows-workflow-foundation/samples/basic-usage-of-sendparameters-and-receiveparameters-activities.md)  
- Demonstrates the use of <xref:System.ServiceModel.Activities.SendParameters> and <xref:System.ServiceModel.Activities.ReceiveParameters> activities.  
+ Demonstrates the use of <!--zz <xref:System.ServiceModel.Activities.SendParameters> --> `System.ServiceModel.Activities.SendParameters` and <!--zz <xref:System.ServiceModel.Activities.ReceiveParameters> -->  `System.ServiceModel.Activities.ReceiveParameters` activities.
   
  [Basic XAML only Service](../../../../docs/framework/windows-workflow-foundation/samples/basic-xaml-only-service.md)  
  Demonstrates how to create a XAML only service.  

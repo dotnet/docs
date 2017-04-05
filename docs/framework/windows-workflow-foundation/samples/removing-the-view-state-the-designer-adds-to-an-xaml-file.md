@@ -43,7 +43,7 @@ Stack<XamlMember> MemberStack {get; set; }
   
 ```  
   
- This also creates a stack of XAML members that are used while traversing the node stream. The remaining work of this sample is largely contained in the <xref:System.Windows.Markup.XamlWriter.WriteStartMember%2A> method.  
+ This also creates a stack of XAML members that are used while traversing the node stream. The remaining work of this sample is largely contained in the <!--zz  <xref:System.Windows.Markup.XamlWriter.WriteStartMember%2A>--> `System.Windows.Markup.XamlWriter.WriteStartMember` method.  
   
 ```  
 public override void WriteStartMember(XamlMember xamlMember)  

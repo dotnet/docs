@@ -54,6 +54,4 @@ Represents a configuration element that specifies the interval of time allowed f
 ## See Also  
  <xref:System.ServiceModel.Configuration.HostElement>   
  <xref:System.ServiceModel.ServiceHost>   
- <xref:System.ServiceModel.ServiceHost.CloseTimeout%2A>   
- <xref:System.ServiceModel.ServiceHost.OpenTimeout%2A>   
  [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

@@ -108,8 +108,8 @@ names to each of the members of the tuple:
 [!code-csharp[NamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
 > [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
-> you must add the NuGet package [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/), available on the NuGet Gallery.
+> The new tuples features require the `System.ValueTuple` type.
+> You must add the NuGet package `System.ValueTuple` in order to use it.
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. In a tuple assignment, you can also specify the names of the fields
@@ -519,8 +519,8 @@ feature:
 [!code-csharp[UsingValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
-> You need to add the pre-release NuGet package `System.Threading.Tasks.Extensions`
-> in order to use `ValueTask` in Visual Studio 15 Preview 5.
+> You need to add the NuGet package `System.Threading.Tasks.Extensions`
+> in order to use `ValueTask`.
 
 A simple optimization would be to use `ValueTask` in places where
 `Task` would be used before. However, if you want to perform extra

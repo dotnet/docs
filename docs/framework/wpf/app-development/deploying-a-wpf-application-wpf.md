@@ -127,7 +127,7 @@ After [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] applic
   
  [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] auto-detection is available on [!INCLUDE[TLA#tla_longhorn](../../../../includes/tlasharptla-longhorn-md.md)], [!INCLUDE[TLA#tla_winxpsp2](../../../../includes/tlasharptla-winxpsp2-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfamsp1](../../../../includes/tlasharptla-winnetsvrfamsp1-md.md)] clients that have [!INCLUDE[TLA2#tla_ie7](../../../../includes/tla2sharptla-ie7-md.md)] or later installed.  
   
- For more information, see [Deploying the .NET Framework and Applications](../../../../docs/framework/deployment/net-framework-and-applications.md).  
+ For more information, see [Deploying the .NET Framework and Applications](../../../../docs/framework/deployment/index.md).  
   
 ## See Also  
  [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   

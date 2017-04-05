@@ -258,4 +258,4 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
 ## See Also  
  [Best Practices for Assembly Loading](../../../docs/framework/deployment/best-practices-for-assembly-loading.md)   
- [Deployment](../../../docs/framework/deployment/net-framework-and-applications.md)
+ [Deployment](../../../docs/framework/deployment/index.md)

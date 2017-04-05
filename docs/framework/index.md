@@ -24,7 +24,7 @@ manager: "wpickett"
 # .NET Framework Guide
 
 > [!NOTE]
->  This .NET Framework content set includes information for .NET Framework versions 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. To download the .NET Framework, see [Installing the .NET Framework](../../docs/framework/install/guide-for-developers.md). For a list of new features and changes in the NET Framework 4.5, the [!INCLUDE[net_v46](../../includes/net-v46-md.md)], their point releases, and the .NET Framework 4.7, see [What's New in the .NET Framework](../../docs/framework/whats-new/whats-new.md). For a list of supported platforms, see [.NET Framework System Requirements](../../docs/framework/get-started/system-requirements.md).  
+>  This .NET Framework content set includes information for .NET Framework versions 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. To download the .NET Framework, see [Installing the .NET Framework](../../docs/framework/install/guide-for-developers.md). For a list of new features and changes in the NET Framework 4.5, the [!INCLUDE[net_v46](../../includes/net-v46-md.md)], their point releases, and the .NET Framework 4.7, see [What's New in the .NET Framework](../../docs/framework/whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](../../docs/framework/get-started/system-requirements.md).  
 
 The .NET Framework provides many services, including memory management, type and memory safety, security functionality, networking and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use a variety of programming languages with the .NET Framework, including C#, F# and Visual Basic.
 
@@ -45,7 +45,7 @@ See [Repair the .NET Framework](./install/repair.md) to learn how to repair your
 For more detailed information on downloading the .NET Framework, see [Installing the .NET Framework](../../docs/framework/install/guide-for-developers.md).  
   
 ## In This Section  
-[What's New](../../docs/framework/whats-new/whats-new.md)  
+[What's New](../../docs/framework/whats-new/index.md)  
 Describes key new features and changes in the latest versions of the .NET Framework. Includes lists of obsolete types and members, and provides a guide for migrating your applications from the previous version of the .NET Framework.  
   
 [Getting Started](../../docs/framework/get-started/index.md)  

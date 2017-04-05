@@ -20,4 +20,4 @@ manager: "mbaldwin"
 -   [Building My First Claims-Aware WCF Service](../../../docs/framework/security/building-my-first-claims-aware-wcf-service.md)  
   
 ## See Also  
- [Windows Identity Foundation](../../../docs/framework/security/windows-identity-foundation.md)
+ [Windows Identity Foundation](../../../docs/framework/security/index.md)

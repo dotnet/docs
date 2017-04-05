@@ -328,4 +328,4 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
   
 ## See Also  
  [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)   
- [Deployment](../../../docs/framework/deployment/net-framework-and-applications.md)
+ [Deployment](../../../docs/framework/deployment/index.md)

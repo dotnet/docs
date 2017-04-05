@@ -33,7 +33,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Web Applications with ASP.NET](../../docs/framework/develop-web-apps-with-aspnet.md)  
  Provides links to information about using ASP.NET to build enterprise-class web apps with a minimum of coding.  
   
- [Service-Oriented Applications with WCF](../../docs/framework/wcf/developing-service-oriented-applications-with-wcf.md)  
+ [Service-Oriented Applications with WCF](../../docs/framework/wcf/index.md)  
  Describes how to use Windows Communication Foundation (WCF) to build service-oriented apps that are secure and reliable.  
   
  [Windows Service Applications](../../docs/framework/windows-services/index.md)  
@@ -60,7 +60,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
  Provides information about how you can use the .NET Framework to build assemblies that can be shared across multiple platforms and multiple devices such as phones, desktop, and web.  
   
- [Deployment](../../docs/framework/deployment/net-framework-and-applications.md)  
+ [Deployment](../../docs/framework/deployment/index.md)  
  Explains how to package and distribute your .NET Framework app, and includes deployment guides for both developers and administrators.  
   
  [Performance](../../docs/framework/performance/index.md)  
@@ -80,7 +80,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Getting Started](../../docs/framework/get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   
- [What's New](../../docs/framework/whats-new/whats-new.md)  
+ [What's New](../../docs/framework/whats-new/index.md)  
  Describes key new features and changes in the latest version of the .NET Framework. Includes lists of new and obsolete types and members, and provides a guide for migrating your apps from the previous version of the .NET Framework.  
   
  [Tools](../../docs/framework/tools/index.md)  

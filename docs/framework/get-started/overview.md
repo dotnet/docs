@@ -89,7 +89,7 @@ The .NET Framework is a technology that supports building and running the next g
   
 -   Windows services. See [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md).  
   
--   Service-oriented applications using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../../../docs/framework/wcf/developing-service-oriented-applications-with-wcf.md).  
+-   Service-oriented applications using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../../../docs/framework/wcf/index.md).  
   
 -   Workflow-enabled applications using Windows Workflow Foundation (WF). See [Building Workflows in the .NET Framework](http://msdn.microsoft.com/en-us/cbf3880f-dc7b-466d-b808-1109b1223f4a).  
   

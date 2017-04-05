@@ -24,14 +24,14 @@ manager: "wpickett"
 The .NET Framework is constantly evolving and in order to improve cross-platform development or to introduce new functionality early to our customers, we release new features out of band (OOB). This topic lists the OOB projects that we provide documentation for.  
   
  In addition, some libraries target specific platforms or implementations of the .NET Framework. For example, the
- [CodePagesEncodingProvider Class](CodePagesEncodingProvider%20Class.xml) class  makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
+ [CodePagesEncodingProvider Class](CodePagesEncodingProvider.xml) class  makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
   
 ## OOB projects  
   
 |Project|Description|  
 |-------------|-----------------|  
 |[System.Collections.Immutable](System.Collections.Immutable.xml)|Provides collections that are thread safe and guaranteed to never change their contents.|  
-|[System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833)|Provides a message handler for [HttpClient Class](HttpClient%20Class.xml) based on the WinHTTP interface of Windows.|  
+|[System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833)|Provides a message handler for [HttpClient Class](HttpClient.xml) based on the WinHTTP interface of Windows.|  
 <!-- todo: fix link -->
 |`System.Numerics.Vectors1`|Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
 <!-- restore this when the doc is found 

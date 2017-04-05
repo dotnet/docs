@@ -26,4 +26,4 @@ manager: "mbaldwin"
 -   [WSTrustChannelFactory and WSTrustChannel](../../../docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md)  
   
 ## See Also  
- [Windows Identity Foundation](../../../docs/framework/security/windows-identity-foundation.md)
+ [Windows Identity Foundation](../../../docs/framework/security/index.md)

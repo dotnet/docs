@@ -84,6 +84,6 @@ The .NET Framework is a runtime execution environment that manages applications 
   
 ## See Also  
  [.NET Framework 4.6 and 4.5](../../../docs/framework/index.md)   
- [What's New](../../../docs/framework/whats-new/whats-new.md)   
+ [What's New](../../../docs/framework/whats-new/index.md)   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkId=227195)   
  [Development Guide](../../../docs/framework/development-guide.md)

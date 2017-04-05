@@ -35,7 +35,7 @@ This sample demonstrates how to implement a custom claim authorization policy an
   
 -   How to implement <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
   
- The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. One binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client username authentication. The other binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client certificate authentication. The [\<behavior>](../../../../docs/framework/configuring-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the `SubjectName` property as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
+ The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. One binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client username authentication. The other binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client certificate authentication. The [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the `SubjectName` property as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
   
 ```  
 <system.serviceModel>  
@@ -123,7 +123,7 @@ This sample demonstrates how to implement a custom claim authorization policy an
   
 ```  
   
- Each client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode as specified in this case in the [\<security>](../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-wshttpbinding.md) and `clientCredentialType` as specified in the [\<message>](../../../../docs/framework/configuring-apps/file-schema/wcf/message-of-wshttpbinding.md).  
+ Each client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode as specified in this case in the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) and `clientCredentialType` as specified in the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md).  
   
 ```  
 <system.serviceModel>  
@@ -490,7 +490,7 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
   
 5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computerand exports the service certificate to a file named Service.cer.  
   
-6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer. Also change the computername in the \<service>/\<baseAddresses> element from localhost to the fully-qualified name of your service computer.  
+6.  Edit Service.exe.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the computer. Also change the computername in the \<service>/\<baseAddresses> element from localhost to the fully-qualified name of your service computer.  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   

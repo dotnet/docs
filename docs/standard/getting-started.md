@@ -32,4 +32,4 @@ There are a number of ways to get started with .NET.  Because .NET is a massive 
 
 ## Getting started using Docker on .NET Framework
 
-The [Docker on .NET Framework](../docker/index.md) shows how you can use .NET Framework on Windows Docker containers.
+The [Docker on .NET Framework](../framework/docker/index.md) shows how you can use .NET Framework on Windows Docker containers.

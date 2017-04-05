@@ -66,4 +66,4 @@ The .NET Framework is an integral part of many applications running on Windows a
  ![Installing the .NET Framework on Windows 8 or 8.1](../../../docs/framework/get-started/media/clr-net35-win8.png "CLR_NET35_Win8")  
   
 ## See Also  
- [Installation Guide](../../../docs/framework/get-started/install-the-net-framework.md)
+ [Installation Guide](../../../docs/framework/get-started/guide-for-developers.md.md)

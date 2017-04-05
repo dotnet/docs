@@ -304,7 +304,7 @@ public class GZipMessageEncodingElement : BindingElementExtensionElement
   
 ```  
   
- To use this configuration handler, it must be registered within the [\<system.serviceModel>](../../../../docs/framework/configuring-apps/file-schema/wcf/system-servicemodel.md) element, as shown in the following sample configuration.  
+ To use this configuration handler, it must be registered within the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, as shown in the following sample configuration.  
   
 ```  
 <extensions>  

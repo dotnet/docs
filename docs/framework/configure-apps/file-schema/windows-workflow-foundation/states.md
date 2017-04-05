@@ -42,13 +42,13 @@ Represents a collection of subscribed states from the tracked workflow instance 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<state>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/states.md)|A subscribed state from the tracked workflow instance when the tracking record is created.|  
+|[\<state>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md)|A subscribed state from the tracked workflow instance when the tracking record is created.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<workflowInstanceQuery>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/workflowinstancequery.md)|A query that tracks workflow instance life cycle changes such as a started or completed event.|  
+|[\<workflowInstanceQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflowinstancequery.md)|A query that tracks workflow instance life cycle changes such as a started or completed event.|  
   
 ## Remarks  
  The returned records are filtered by the states in this collection.  

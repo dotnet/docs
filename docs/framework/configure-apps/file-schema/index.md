@@ -94,7 +94,7 @@ All elements that enable you to configure WCF service and client applications.
 [WCF Directive Syntax](../../../../docs/framework/configure-apps/file-schema/wcf-directive/index.md)   
 Describes the `@ServiceHost` directive, which defines page-specific attributes used by the .svc compiler. 
 
-[WIF Configuration Schema](wif.index.md)   
+[WIF Configuration Schema](windows-identity-foundation/index.md)   
 All elements of the Windows Identity Foundation (WIF) configuration schema.
 
 ## Related Sections  

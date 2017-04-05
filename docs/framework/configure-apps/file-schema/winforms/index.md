@@ -37,21 +37,21 @@ None.
 
 Element  |Description |
 ---------|---------|
-[`<add>`](../../../../../docs/framework/configuring-apps/file-schema/winforms/windows-forms-add-configuration-element.md) | Adds a configuration setting key with a specified value |
+[`<add>`](../../../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md) | Adds a configuration setting key with a specified value |
 
 ### Parent elements
 
 Element  |Description |
 ---------|---------|
-[`<configuration>`](../../../../../docs/framework/configuring-apps/file-schema/index.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
+[`<configuration>`](../../../../../docs/framework/configure-apps/file-schema/index.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
 
 ## Remarks
 
 Starting with the .NET Framework 4.7, the `<System.Windows.Forms.ConfigurationSection>` element allows you to configure Windows Forms applications to take advantage of features added in recent releases of the .NET Framework. 
 
-The `<System.Windows.Forms.ConfigurationSection>` element can include one or more child [`<add>`](../../../../../docs/framework/configuring-apps/file-schema/winforms/windows-forms-add-configuration-element.md) elements, each of which defines a specific configuration setting.
+The `<System.Windows.Forms.ConfigurationSection>` element can include one or more child [`<add>`](../../../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md) elements, each of which defines a specific configuration setting.
 
 ## See also
 
-[Configuration File Schema](../../../../../docs/framework/configuring-apps/file-schema/index.md)   
+[Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
 [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

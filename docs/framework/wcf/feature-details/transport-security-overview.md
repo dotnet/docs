@@ -96,7 +96,7 @@ Transport security mechanisms in [!INCLUDE[indigo1](../../../../includes/indigo1
  [!code-csharp[c_ProgrammingSecurity#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#13)]
  [!code-vb[c_ProgrammingSecurity#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#13)]  
   
- Alternatively, specify the certificate in the client's configuration using a [\<clientCredentials>](../../../../docs/framework/configuring-apps/file-schema/wcf/clientcredentials.md) element in the behaviors section.  
+ Alternatively, specify the certificate in the client's configuration using a [\<clientCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element in the behaviors section.  
   
 ```xml  
 <behaviors>  

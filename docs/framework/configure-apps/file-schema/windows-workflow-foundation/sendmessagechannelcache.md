@@ -41,14 +41,14 @@ A service behavior that enables the customization of the cache sharing levels, t
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<channelSettings>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/channelsettings.md)|Specifies the settings of the channel cache.|  
-|[\<factorySettings>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/factorysettings.md)|Specifies the settings of the channel factory cache.|  
+|[\<channelSettings>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/channelsettings.md)|Specifies the settings of the channel cache.|  
+|[\<factorySettings>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/factorysettings.md)|Specifies the settings of the channel factory cache.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
+|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## Remarks  
  This service behavior is intended for workflows that send messages to service endpoints. These workflows are typically client workflows but could also be workflow services that are hosted in a <xref:System.ServiceModel.WorkflowServiceHost>.  

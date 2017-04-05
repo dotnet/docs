@@ -83,7 +83,7 @@ For various reasons, [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] doe
   
 -   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Impersonation is enabled. This is done in the Web.config file by setting the `impersonate` attribute of the <`identity`> element to `true`.  
   
--   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
+-   [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] compatibility mode is enabled by setting the `aspNetCompatibilityEnabled` attribute of the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) to `true`.  
   
 -   Message mode security is used.  
   

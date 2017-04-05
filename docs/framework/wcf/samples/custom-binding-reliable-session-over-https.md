@@ -30,7 +30,7 @@ This sample demonstrates the use of SSL transport security with Reliable Session
 ## Sample Details  
  SSL ensures that the packets themselves are secured. It is important to note that this is different from securing the reliable session using WS-Secure Conversation.  
   
- To use reliable session over HTTPS, you must create a custom binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. A custom binding is created using the reliable session binding element and the [\<httpsTransport>](../../../../docs/framework/configuring-apps/file-schema/wcf/httpstransport.md). The following configuration is of the custom binding.  
+ To use reliable session over HTTPS, you must create a custom binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. A custom binding is created using the reliable session binding element and the [\<httpsTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httpstransport.md). The following configuration is of the custom binding.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  

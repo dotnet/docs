@@ -59,7 +59,7 @@ None.
 
 Element  |Description |
 ---------|---------|
-| [`<System.Windows.Forms.ConfigurationSection>`](../../../../../docs/framework/configuring-apps/file-schema/winforms/index.md) | Configures support for new Windows Forms application features. |
+| [`<System.Windows.Forms.ConfigurationSection>`](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md) | Configures support for new Windows Forms application features. |
 
 ## <a name="remarks" /> Remarks
 
@@ -87,6 +87,6 @@ Single or multi-pass scaling influences the perceived responsiveness of the user
 
 ## See also
 
-[Configuration File Schema](../../../../../docs/framework/configuring-apps/file-schema/index.md)    
-[Windows Forms Configuration Section](../../../../../docs/framework/configuring-apps/file-schema/winforms/index.md)   
+[Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)    
+[Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)   
 [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

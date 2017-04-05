@@ -16,7 +16,7 @@ ms.assetid: 96102f96-d403-4385-8ef6-5d80e406eb0c
 
 The *global.json* file allows selection of the .NET Core tools version being used through the `sdk` property.
 
-.NET Core CLI tools look for this file in the current working directory (which is not necessarily the same as the project directory) or one of its parent directories.
+.NET Core CLI tools look for this file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
 
 ## sdk
 Type: Object

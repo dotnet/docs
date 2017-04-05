@@ -138,5 +138,5 @@ If you are migrating from the .NET Framework 4.6.2, review [Application Compatib
 
 ## See Also  
  [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)   
- [What's New](../../../docs/framework/whats-new/whats-new.md)   
+ [What's New](../../../docs/framework/whats-new/index.md)   
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)

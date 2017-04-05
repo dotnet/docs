@@ -195,7 +195,7 @@ The fact that later .NET Framework 4.x versions are in-place updates to earlier 
   
 -   If you're new to the .NET Framework, see the [overview](../../../docs/framework/get-started/overview.md) for an introduction to key concepts and components.  
   
--   For new features and improvements in the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)],  [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.5.2, 4.5.1, and 4.5, see [What's New](../../../docs/framework/whats-new/whats-new.md).  
+-   For new features and improvements in the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)],  [!INCLUDE[net_v461](../../../includes/net-v461-md.md)], [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], 4.5.2, 4.5.1, and 4.5, see [What's New](../../../docs/framework/whats-new/index.md).  
   
 -   For detailed information about deploying the .NET Framework with your app, see [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md).  
   

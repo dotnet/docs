@@ -32,7 +32,7 @@ If you created your app using an earlier version of the .NET Framework, you can 
   
 -   Review [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md) to determine any types or members in your code that have been made obsolete, and the recommended alternatives.  
   
--   See [What's New](../../../docs/framework/whats-new/whats-new.md) for descriptions of new features that you may want to add to your app.  
+-   See [What's New](../../../docs/framework/whats-new/index.md) for descriptions of new features that you may want to add to your app.  
   
 ## See Also  
  [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)   
@@ -40,7 +40,7 @@ If you created your app using an earlier version of the .NET Framework, you can 
  [Version Compatibility](../../../docs/framework/migration-guide/version-compatibility.md)   
  [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)   
  [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)   
- [What's New](../../../docs/framework/whats-new/whats-new.md)   
+ [What's New](../../../docs/framework/whats-new/index.md)   
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
  [.NET Framework Version and Assembly Information](http://go.microsoft.com/fwlink/?LinkId=201701)   
  [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/?LinkId=196607)

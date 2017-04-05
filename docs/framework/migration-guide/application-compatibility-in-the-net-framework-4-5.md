@@ -58,7 +58,7 @@ This topic describes application compatibility issues between the .NET Framework
   
 -   [XML, XSLT](#xml)  
   
- This topic does not discuss types and members that have been declared obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. For a list of these, see [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md). For information about new features, see [What's New](../../../docs/framework/whats-new/whats-new.md).  
+ This topic does not discuss types and members that have been declared obsolete in the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. For a list of these, see [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md). For information about new features, see [What's New](../../../docs/framework/whats-new/index.md).  
   
 <a name="core"></a>   
 ## Core  
@@ -234,7 +234,7 @@ This topic describes application compatibility issues between the .NET Framework
   
 ## See Also  
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
- [What's New](../../../docs/framework/whats-new/whats-new.md)   
+ [What's New](../../../docs/framework/whats-new/index.md)   
  [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)   
  [Application Compatibility in 4.5.1](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md)   
  [Application Compatibility in 4.5.2](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-2.md)

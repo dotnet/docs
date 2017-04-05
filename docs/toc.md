@@ -134,7 +134,7 @@
 <!-- End .NET Core Content -->
 
 <!-- .NET Framework Content -->
-# [.NET Framework on Docker Guide](framework/index.md)
+# [.NET Framework Guide](framework/index.md)
 ## [Docker](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework/docker/console.md)
 <!-- End .NET Framework Content -->

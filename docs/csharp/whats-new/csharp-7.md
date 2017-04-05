@@ -200,7 +200,7 @@ rules to the pattern.
 
 ### `is` expression
 
-The `is` expression extends the familiar `is` operator to query an object beyond its type.
+The `is` pattern expression extends the familiar `is` operator to query an object beyond its type.
 
 Let's start with a simple scenario. We'll add capabilities to this scenario
 that demonstrate how pattern matching expressions make algorithms that work

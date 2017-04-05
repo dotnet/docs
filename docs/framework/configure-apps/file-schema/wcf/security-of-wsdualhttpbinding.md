@@ -69,9 +69,6 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../d
   
 ## See Also  
  <xref:System.ServiceModel.WSDualHttpSecurity>   
- <xref:System.ServiceModel.WsDualHttpBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.WsDualHttpBindingElement.Security%2A>   
- <xref:System.ServiceModel.Configuration.WsDualHttpSecurityElement>   
  <xref:System.ServiceModel.BasicHttpSecurity>   
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   

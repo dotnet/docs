@@ -46,7 +46,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <xref:System.ServiceModel.NetHttpSecurityMode>.|  
+|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <!--zz <xref:System.ServiceModel.NetHttpSecurityMode> -->`System.ServiceModel.NetHttpSecurityMode`.|
   
 ## mode Attribute  
   
@@ -63,7 +63,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 |Element|Description|  
 |-------------|-----------------|  
 |[\<transport>](../../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-nethttpbinding.md)|Defines the transport security settings for a basic HTTP service. This element corresponds to <xref:System.ServiceModel.HttpTransportSecurity>.|  
-|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-nethttpbinding.md)|Defines the message security settings for a basic HTTP service. This element corresponds to <xref:System.ServiceModel.NetHttpMessageSecurity>.|  
+|[\<message>](../../../../../docs/framework/configure-apps/file-schema/wcf/message-of-nethttpbinding.md)|Defines the message security settings for a basic HTTP service. This element corresponds to <!--zz <xref:System.ServiceModel.NetHttpMessageSecurity> --> `System.ServiceModel.NetHttpMessageSecurity`.|  
   
 ### Parent Elements  
   
@@ -76,9 +76,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
   
 ## See Also  
  <xref:System.ServiceModel.NetHttpBinding.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>   
- <xref:System.ServiceModel.Configuration.NetHttpSecurityElement>   
- <xref:System.ServiceModel.NetHttpSecurity>   
+ <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>    
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
  [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   

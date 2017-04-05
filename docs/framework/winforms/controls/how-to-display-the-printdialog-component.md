@@ -28,7 +28,7 @@ The <xref:System.Windows.Forms.PrintDialog> component is the standard Windows pr
   
 -   Call the <xref:System.Windows.Forms.Form.ShowDialog%2A> method from within the code of your application.  
   
-     Once the component is shown, users will interact with it, setting the properties of the print job. These are saved in the <xref:System.Drawing.Printing.PrinterSetting> class (and the <xref:System.Drawing.Printing.PageSettings> class, if the user accesses the [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md) through the <xref:System.Windows.Forms.PrintDialog> component) associated with that print job. You can then make calls to the properties they set to determine the specifics of the print job.  
+     Once the component is shown, users will interact with it, setting the properties of the print job. These are saved in the <!--zz <xref:System.Drawing.Printing.PrinterSetting>--> `PrinterSetting` class (and the <xref:System.Drawing.Printing.PageSettings> class, if the user accesses the [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md) through the <xref:System.Windows.Forms.PrintDialog> component) associated with that print job. You can then make calls to the properties they set to determine the specifics of the print job.  
   
 ## See Also  
  [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)   

@@ -186,7 +186,7 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
 |/reference:\<file path>|Adds the specified assembly to the set of assemblies used for resolving type references.<br /><br /> Short Form: `/r`|  
 |/excludeType:\<type>|Specifies the fully-qualified or assembly-qualified name of a type to be excluded from export or validation.<br /><br /> Short Form: `/et`|  
 |/out:\<file>|Specifies the filename for the generated code. This option is ignored when multiple assemblies are passed as input to the tool.<br /><br /> Default: Derived from the assembly name.<br /><br /> Short Form: `/o`|  
-|/UseSerializerForFaults|Specifies that the <xref:System.Xml.XmlSerializer> should be used for reading and writing faults, instead of the default <xref:System.Runtime.Serialization.DataContractSerializer>.|  
+|/UseSerializerForFaults|Specifies that the <!--zz <xref:System.Xml.XmlSerializer> --> `xref:System.Xml.XmlSerializer ` should be used for reading and writing faults, instead of the default <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Examples  
  The following command generates client code from a running service or online metadata documents.  

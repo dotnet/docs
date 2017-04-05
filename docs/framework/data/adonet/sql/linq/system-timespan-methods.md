@@ -33,7 +33,7 @@ Member support for <xref:System.TimeSpan?displayProperty=fullName> greatly depen
 |<xref:System.TimeSpan.Duration%2A>|<xref:System.TimeSpan.op_GreaterThanOrEqual%2A>|<xref:System.TimeSpan.MaxValue>|  
 |<xref:System.TimeSpan.Equals%28System.TimeSpan%2CSystem.TimeSpan%29>|<xref:System.TimeSpan.op_Inequality%2A>|<xref:System.TimeSpan.Milliseconds%2A>|  
 |<xref:System.TimeSpan.Equals%28System.TimeSpan%29>|<xref:System.TimeSpan.op_LessThan%2A>|<xref:System.TimeSpan.Minutes%2A>|  
-||<xref:System.TimeSpan.op_LessThanOrEqual%2A>|<xref:System.TimeSpan.MinValue%2A>|  
+||<xref:System.TimeSpan.op_LessThanOrEqual%2A>|<!--zz <xref:System.TimeSpan.MinValue%2A>-->|  
   
 > [!NOTE]
 >  The ability to map <xref:System.TimeSpan?displayProperty=fullName> to a SQL `TIME` column with LINQ to SQL requires the .NET Framework 3.5 SP1 and beyond. The SQL `TIME` data type is only available in Microsoft SQL Server 2008 and beyond.  

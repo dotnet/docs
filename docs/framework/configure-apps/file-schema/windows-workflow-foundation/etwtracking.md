@@ -44,7 +44,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
+|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## Remarks  
  When added to the service’s behavior configuration, this configuration element configures a tracking participant on a workflow service.  

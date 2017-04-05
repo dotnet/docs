@@ -42,7 +42,7 @@ Specifies a custom type for certificate validation. This type is used only if th
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. Set the `certificateValidationMode` attribute of the [\<certificateValidation>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) element to "Custom" to use this type. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/file-schema/windows-workflow-foundation/index.md). Optional.|  
+|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. Set the `certificateValidationMode` attribute of the [\<certificateValidation>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/certificatevalidation.md) element to "Custom" to use this type. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md). Optional.|  
   
 ### Child Elements  
  None  

@@ -54,7 +54,7 @@ This sample demonstrates how to use [!INCLUDE[indigo1](../../../../includes/indi
 MathResult DoMathXml(double n1, double n2);  
 ```  
   
- The response format for the operation is specified as XML, which is the default setting for the [\<webHttp>](../../../../docs/framework/configuring-apps/file-schema/wcf/webhttp.md) behavior. However, it is good practice explicitly specify the response format.  
+ The response format for the operation is specified as XML, which is the default setting for the [\<webHttp>](../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md) behavior. However, it is good practice explicitly specify the response format.  
   
  The other operation uses the `WebInvokeAttribute` attribute and explicitly specifies JSON instead of XML for the response.  
   

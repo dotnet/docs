@@ -41,7 +41,7 @@ A client accesses one or more Web services that are distributed across a network
 |Integrity|Yes|  
 |Confidentiality|Yes|  
 |Transport|HTTP between client and the trusted subsystem service.<br /><br /> NET.TCP between trusted subsystem service and the resource (back-end service).|  
-|Binding|<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../../../docs/framework/configuring-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
+|Binding|<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
   
 ## Resource (Back-End Service)  
   

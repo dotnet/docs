@@ -101,11 +101,11 @@ This tutorial shows you how to build a complete .NET Core solution that includes
 
 ## Deploying to Containers
 
-**[Running ASP.NET MVC Applications in Windows Docker Containers](../docker/aspnetmvc.md)**
+**[Running ASP.NET MVC Applications in Windows Docker Containers](../framework/docker/aspnetmvc.md)**
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC application in a Windows Docker Container.
 A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator).
 
-**[Running .NET Framework Console Applications in Windows Containers](../docker/console.md)**
+**[Running .NET Framework Console Applications in Windows Containers](../framework/docker/console.md)**
 
 This tutorial demonstrates how to deploy and existing console application in a Windows container. A finished version of the code you'll build is located [in the core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).

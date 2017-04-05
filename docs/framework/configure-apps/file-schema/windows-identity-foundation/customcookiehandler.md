@@ -42,7 +42,7 @@ Sets the custom cookie handler type. This element may only be present if the `mo
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Services.CookieHandler> class. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/file-schema/windows-workflow-foundation/index.md#BKMK_CustomTypeReferences).|  
+|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Services.CookieHandler> class. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md#BKMK_CustomTypeReferences).|  
   
 ### Child Elements  
  None  

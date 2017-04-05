@@ -47,7 +47,7 @@ Specifies the settings of the channel factory cache.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<sendMessageChannelCache>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/sendmessagechannelcache.md)|A service behavior that enables the customization of the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using Send messaging activities.|  
+|[\<sendMessageChannelCache>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/sendmessagechannelcache.md)|A service behavior that enables the customization of the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using Send messaging activities.|  
   
 ## Remarks  
  This service behavior is intended for workflows that send messages to service endpoints. These workflows are typically client workflows but could also be workflow services that are hosted in a <xref:System.ServiceModel.WorkflowServiceHost>.  

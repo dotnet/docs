@@ -77,11 +77,11 @@ To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.5
   
  You can also set the property using configuration. The following elements are used to specify the validation mode:  
   
--   [\<authentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)  
+-   [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md)  
   
--   [\<peerAuthentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/peerauthentication-element.md)  
+-   [\<peerAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/peerauthentication-element.md)  
   
--   [\<messageSenderAuthentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/messagesenderauthentication-element.md)  
+-   [\<messageSenderAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/messagesenderauthentication-element.md)  
   
 ## Custom Authentication  
  The `CertificateValidationMode` property also enables you to customize how certificates are authenticated. By default, the level is set to `ChainTrust`. To use the <xref:System.ServiceModel.Security.X509CertificateValidationMode> value, you must also set the `CustomCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create a custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
@@ -124,7 +124,7 @@ To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.5
   
  When this occurs, any chains that descend from the revoked certificate are also invalid, and are not trusted during authentication procedures. To find out which certificates are revoked, each issuer publishes a time- and date-stamped *certificate revocation list* (CRL). The list can be checked using either online revocation or offline revocation by setting the `RevocationMode` or `DefaultRevocationMode` property of the following classes to one of the <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> enumeration values: <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>, <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>, <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication>, and the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> classes. The default value for all properties is `Online`.  
   
- You can also set the mode in configuration using the `revocationMode` attribute of both the [\<authentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md)) and the [\<authentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<endpointBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/endpointbehaviors.md)).  
+ You can also set the mode in configuration using the `revocationMode` attribute of both the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md)) and the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-clientcertificate-element.md) (of the [\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md)).  
   
 ## The SetCertificate Method  
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you must often specify a certificate or set of certificates a service or client is to use to authenticate, encrypt, or digitally sign a message. You can do this programmatically by using the `SetCertificate` method of various classes that represent X.509 certificates. The following classes use the `SetCertificate` method to specify a certificate.  
@@ -146,14 +146,14 @@ To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.5
  A store may contain multiple certificates with the same subject name. This means that if you specify that the `x509FindType` is <xref:System.Security.Cryptography.X509Certificates.X509FindType> or <xref:System.Security.Cryptography.X509Certificates.X509FindType>, and more than one certificate has the same value, an exception is thrown becausethereisno way to distinguish which certificate is required. You can mitigate this by setting the `x509FindType` to <xref:System.Security.Cryptography.X509Certificates.X509FindType>. The thumbprint field contains a unique value that can be used to find a specific certificate in a store. However, this has its own disadvantage: if the certificate is revoked or renewed, the `SetCertificate` method fails because the thumbprint is also gone. Or, if the certificate is no longer valid, authentication fails. The way to mitigate this is to set the `x590FindType` parameter to <xref:System.Security.Cryptography.X509Certificates.X509FindType> and specify the issuer's name. If no particular issuer is required, you can also set one of the other <xref:System.Security.Cryptography.X509Certificates.X509FindType> enumeration values, such as <xref:System.Security.Cryptography.X509Certificates.X509FindType>.  
   
 ## Certificates in Configuration  
- You can also set certificates by using configuration. If you are creating a service, credentials, including certificates, are specified under the [\<serviceBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md). When you are programming a client, certificates are specified under the [\<endpointBehaviors>](../../../../docs/framework/configuring-apps/file-schema/wcf/endpointbehaviors.md).  
+ You can also set certificates by using configuration. If you are creating a service, credentials, including certificates, are specified under the [\<serviceBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md). When you are programming a client, certificates are specified under the [\<endpointBehaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/endpointbehaviors.md).  
   
 ## Mapping a Certificate to a User Account  
  A feature of IIS and Active Directory is the ability to map a certificate to a Windows user account. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the feature, see [Map certificates to user accounts](http://go.microsoft.com/fwlink/?LinkId=88917).  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using Active Directory mapping, see [Mapping Client Certificates with Directory Service Mapping](http://go.microsoft.com/fwlink/?LinkId=88918).  
   
- With this capability enabled, you can set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> property of the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> class to `true`. In configuration, you can set the `mapClientCertificateToWindowsAccount` attribute of the [\<authentication>](../../../../docs/framework/configuring-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element to `true`, as shown in the following code.  
+ With this capability enabled, you can set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> property of the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> class to `true`. In configuration, you can set the `mapClientCertificateToWindowsAccount` attribute of the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element to `true`, as shown in the following code.  
   
 ```  
 <serviceBehaviors>  

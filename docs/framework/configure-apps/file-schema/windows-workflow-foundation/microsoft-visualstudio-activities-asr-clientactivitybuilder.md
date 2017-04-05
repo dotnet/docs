@@ -28,5 +28,5 @@ public class ClientActivityBuilder
 ```  
   
 ## See Also  
- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder-build.md)   
- [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder-ctor.md)
+ [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder.Build](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder-build.md)   
+ [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder-ctor.md)

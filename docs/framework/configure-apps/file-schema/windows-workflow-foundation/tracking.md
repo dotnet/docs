@@ -37,8 +37,8 @@ Represents a configuration section for defining tracking settings for a workflow
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<participants>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/participants.md)|A collection of configuration elements defining participants that subscribe to tracking records. The tracking participants contain the logic to process the payload from the tracking records (for example, they could choose to write to a file).|  
-|[\<trackingProfile>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/trackingprofile.md)|A tracking profile to filter tracking records emitted from a workflow instance.|  
+|[\<participants>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/participants.md)|A collection of configuration elements defining participants that subscribe to tracking records. The tracking participants contain the logic to process the payload from the tracking records (for example, they could choose to write to a file).|  
+|[\<trackingProfile>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/trackingprofile.md)|A tracking profile to filter tracking records emitted from a workflow instance.|  
   
 ### Parent Elements  
   

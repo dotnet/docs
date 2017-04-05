@@ -98,8 +98,8 @@ Next Element
   
 |Element|Description|  
 |-------------|-----------------|  
-<<<<<<< HEAD:docs/framework/configuring-apps/file-schema/wcf/nethttpsbinding.md
-|[\<security>](../../../../../docs/framework/configuring-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type `System.ServiceModel.Configuration.NetHttpSecurityElement`.|  
+<<<<<<< HEAD:docs/framework/configure-apps/file-schema/wcf/nethttpsbinding.md
+|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type `System.ServiceModel.Configuration.NetHttpSecurityElement`.|  
 =======
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetHttpSecurityElement>.|  
 >>>>>>> seo changes:docs/framework/configure-apps/file-schema/wcf/nethttpsbinding.md

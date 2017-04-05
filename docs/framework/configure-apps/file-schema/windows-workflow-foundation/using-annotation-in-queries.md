@@ -37,6 +37,6 @@ Annotations allow you to arbitrarily tag tracking records with a value that can 
 ## See Also  
  <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement>   
  <xref:System.Activities.Tracking.TrackingProfile>   
- [\<participants>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/participants.md)   
+ [\<participants>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/participants.md)   
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)   
  [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

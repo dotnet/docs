@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Additional Managed Reference
-This topic documents the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
+This topic documents the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
   
 ## In This Section  
  This class is used by the wfd1 infrastructure and is not intended to be called by users.

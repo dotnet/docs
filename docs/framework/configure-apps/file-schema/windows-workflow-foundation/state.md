@@ -49,7 +49,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<states>](../../../../../docs/framework/configuring-apps/file-schema/file-schema/windows-workflow-foundation/states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
+|[\<states>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
   
 ## Remarks  
  The returned records are filtered by the states in this collection.  

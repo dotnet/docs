@@ -26,7 +26,7 @@ The .NET Framework 4.6.2 can be used to run applications built for .NET Framewor
 
 ## .NET Framework 3.5
 
-Follow the instructions to install the [.NET Framework 3.5 on Windows 10](installing-dotnet-35-windows-10.md).
+Follow the instructions to install the [.NET Framework 3.5 on Windows 10](dotnet-35-windows-10.md).
 
 The .NET Framework 3.5 can be used to run applications built for .NET Framework 1.0 through 3.5.
 

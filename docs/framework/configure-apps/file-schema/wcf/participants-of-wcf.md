@@ -40,13 +40,13 @@ Configure a list of tracking participants that listen to the tracking records be
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/file-schema/windows-workflow-foundation/add-of-participants.md)|Contains settings for a tracking participant.|  
+|[\<add>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/add-of-participants.md)|Contains settings for a tracking participant.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<tracking>](../../../../../docs/framework/configure-apps/file-schema/file-schema/windows-workflow-foundation/tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.|  
+|[\<tracking>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.|  
   
 ## Remarks  
  Tracking participants are used to get the tracking data emitted from the workflow and store it into different mediums. Likewise, any post processing on the tracking Records can also be done within the tracking participant.  

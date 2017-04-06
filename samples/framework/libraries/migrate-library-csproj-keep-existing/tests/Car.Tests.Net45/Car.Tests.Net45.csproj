@@ -64,9 +64,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\src\Car.Net45\Car.Net45.csproj">
       <Project>{23be49e4-6308-4bf0-bd3b-852b5a25ea19}</Project>
       <Name>Car.Net45</Name>

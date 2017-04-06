@@ -2,12 +2,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>net45;net451;netstandard1.6</TargetFrameworks>
-    <AssemblyName>Car</AssemblyName>
-    <PackageId>Car</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">

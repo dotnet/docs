@@ -36,9 +36,7 @@ Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to d
 ## Example  
  The following code example shows how to use <xref:System.ServiceModel.Description.MetadataExchangeClient> to download and enumerate metadata files.  
 
-<!-- TODO: resolve snippet 
  [!code-csharp[MetadataResolver#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
--->
 
 ## Compiling the Code  
  To compile this code example, you must reference the System.ServiceModel.dll assembly and import the <xref:System.ServiceModel.Description> namespace.  

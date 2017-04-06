@@ -4,7 +4,7 @@ description: Help for project owners who want to compile their solution against 
 keywords: .NET, .NET Core, .NET Framework, project layout, multiple frameworks
 author: conniey
 ms.author: mairaw
-ms.date: 03/21/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet

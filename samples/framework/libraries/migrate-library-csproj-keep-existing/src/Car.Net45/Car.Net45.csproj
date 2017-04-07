@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Wheel.cs" />
+    <Compile Include="..\Car\Wheel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

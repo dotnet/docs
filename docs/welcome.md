@@ -13,17 +13,17 @@ ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 
 # Welcome to .NET
 
-See [Getting Started with .NET Core](core/getting-started.md) to learn how you can create .NET Core apps.
+See [Getting Started with .NET Core](core/getting-started.md) to learn how to create .NET Core apps.
 
-Build many types of apps with .NET, such as cloud, IoT, and games using free cross-platform tools. Your apps can run on Android, iOS, Linux, macOS, and Windows. Deploy apps to servers or desktops and publish to app stores for deployment on mobile devices. .NET is entirely accessible to students and hobbyists, and all are welcome to participate in a lively international developer community and make direct contributions to many of the .NET technologies.
+Build many types of apps with .NET, such as cloud, IoT, and games using free cross-platform tools. Your apps can run on Android, iOS, Linux, macOS, and Windows. Deploy apps to servers or desktops and publish to app stores for deployment on mobile devices. .NET is accessible to students and hobbyists, and all are welcome to participate in a lively international developer community and make direct contributions to many of the .NET technologies.
 
 ## News
 
 - [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
-- [Announcing the .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/)
 - [Announcing .NET Core Tools 1.0 (.NET Core 1.0.4, .NET Core 1.1.1, .NET Core SDK 1.0.1)](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)
 - [Announcing Visual Studio 2017 General Availability](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/)
 - [What's new for .NET Core and Visual Studio 2017 (video)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T108)
+- [Announcing the .NET Framework 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/)
 - [New Features in C# 7.0](https://blogs.msdn.microsoft.com/dotnet/2017/03/09/new-features-in-c-7-0/)
 - [Announcing F# 4.1 and the Visual F# Tools for Visual Studio 2017](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-f-4-1-and-the-visual-f-tools-for-visual-studio-2017-2/)
 - [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)

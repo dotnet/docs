@@ -1,7 +1,7 @@
 ---
 title: "How to: Determine Which .NET Framework Versions Are Installed | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/07/2017"
 ms.prod: ".net-framework-4.6"
 ms.reviewer: ""
 ms.suite: ""
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "versions, determining for .NET Framework"
   - ".NET Framework, determining version"
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-caps.latest.revision: 61
+caps.latest.revision: 62
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -23,7 +23,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
   
 -   A set of assemblies, which are collections of types and resources that provide the functionality for your apps. The .NET Framework and assemblies share the same version number.  
   
--   The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)).  
+-   The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)).  
   
  To get an accurate list of the .NET Framework versions installed on a computer, you can view the registry or query the registry in code:  
   
@@ -37,7 +37,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
  [Using the Clrver tool](#clr_a)  
  [Using code to query the System.Environment class](#clr_b)  
   
- For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see the [installation guide](../../../docs/framework/install/guide-for-developers.md).  
+ For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see the [installation guide](../../../docs/framework/install/guide-for-developers.md).  
   
 <a name="net_a"></a>   
 #### To find .NET Framework versions by viewing the registry (.NET Framework 1-4)  
@@ -165,14 +165,14 @@ Users can install and run multiple versions of the .NET Framework on their compu
     v4.0.30319  
     ```  
   
-     For more information about using this tool, see [Clrver.exe (CLR Version Tool)](../../../docs/framework/tools/clrver-exe-clr-version-tool.md).  
+     For more information about using this tool, see [Clrver.exe (CLR Version Tool)](~/docs/framework/tools/clrver-exe-clr-version-tool.md).  
   
 <a name="clr_b"></a>   
 #### To find the current runtime version by querying the Environment class in code  
   
 -   Query the <xref:System.Environment.Version%2A?displayProperty=fullName> property to retrieve a <xref:System.Version> object that identifies the version of the runtime that is currently executing the code. You can use the <xref:System.Version.Major%2A?displayProperty=fullName> property to get the major release identifier (for example, "4" for version 4.0), the <xref:System.Version.Minor%2A?displayProperty=fullName> property to get the minor release identifier (for example, "0" for version 4.0), or the <xref:System.Object.ToString%2A?displayProperty=fullName> method to get the entire version string (for example, "4.0.30319.18010", as shown in the following code). This property returns a single value that reflects the version of the runtime that is currently executing the code; it does not return assembly versions or other versions of the runtime that may have been installed on the computer.  
   
-     For the .NET Framework Versions 4, 4.5, 4.5.1, and 4.5.2, the <xref:System.Environment.Version%2A?displayProperty=fullName> property returns a <xref:System.Version> object whose string representation has the form `4.0.30319.xxxxx`. For the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and 4.7, it has the form `4.0.30319.42000`.  
+     For the .NET Framework Versions 4, 4.5, 4.5.1, and 4.5.2, the <xref:System.Environment.Version%2A?displayProperty=fullName> property returns a <xref:System.Version> object whose string representation has the form `4.0.30319.xxxxx`. For the .NET Framework 4.6 and later, it has the form `4.0.30319.42000`.  
   
     > [!IMPORTANT]
     >  For the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] and later, we do not recommend using the  <xref:System.Environment.Version%2A?displayProperty=fullName> property to detect the version of the runtime. Instead, we recommend that you query the registry, as described in the [To find .NET Framework versions by querying the registry in code (.NET Framework 4.5 and later)](#net_d) section earlier in this article.  
@@ -191,6 +191,6 @@ Users can install and run multiple versions of the .NET Framework on their compu
     ```  
   
 ## See Also  
- [How to: Determine Which .NET Framework Updates Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)   
+ [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)   
  [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+ [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)

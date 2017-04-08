@@ -12,6 +12,62 @@
     - name: .NET Platform Guide
       tocHref: /dotnet/articles/standard/
       topicHref: /dotnet/articles/standard/index
+      items:
+      - name: Asynchronous Programming Patterns
+        tocHref: /dotnet/articles/standard/asynchronous-programming-patterns/
+        topicHref: /dotnet/articles/standard/asynchronous-programming-patterns/index
+      - name: Extending Metadata Using Attributes
+        tocHref: /dotnet/articles/standard/attributes/
+        topicHref: /dotnet/articles/standard/attributes/index
+      - name: Working with Base Types in the .NET Framework
+        tocHref: /dotnet/articles/standard/base-types/
+        topicHref: /dotnet/articles/standard/base-types/index
+      - name: Collections and Data Structures
+        tocHref: /dotnet/articles/standard/collections/
+        topicHref: /dotnet/articles/standard/collections/index
+        items:
+        - name: Thread-Safe Collections
+          tocHref: /dotnet/articles/standard/collections/thread-safe/
+          topicHref: /dotnet/articles/standard/collections/thread-safe/index
+      - name: Developing for Multiple Platforms with the .NET Framework
+        tocHref: /dotnet/articles/standard/cross-platform/
+        topicHref: /dotnet/articles/standard/cross-platform/index
+      - name: XML Documents and Data
+        tocHref: /dotnet/articles/standard/data/xml/
+        topicHref: /dotnet/articles/standard/data/xml/index
+      - name: Dates, Times, and Time Zones
+        tocHref: /dotnet/articles/standard/datetime/
+        topicHref: /dotnet/articles/standard/datetime/index
+      - name: Framework Design Guidelines
+        tocHref: /dotnet/articles/standard/design-guidelines/
+        topicHref: /dotnet/articles/standard/design-guidelines/index
+      - name: Handling and Raising Events
+        tocHref: /dotnet/articles/standard/events/
+        topicHref: /dotnet/articles/standard/events/index
+      - name: Handling and Throwing Exceptions
+        tocHref: /dotnet/articles/standard/exceptions/
+        topicHref: /dotnet/articles/standard/exceptions/index
+      - name: Garbage Collection
+        tocHref: /dotnet/articles/standard/garbage-collection/
+        topicHref: /dotnet/articles/standard/garbage-collection/index
+      - name: Generics in the .NET Framework
+        tocHref: /dotnet/articles/standard/generics/
+        topicHref: /dotnet/articles/standard/generics/index
+      - name: Globalization and LocalizationGlobalizing and Localizing .NET Framework Applications
+        tocHref: /dotnet/articles/standard/globalization-localization/
+        topicHref: /dotnet/articles/standard/globalization-localization/index
+      - name: File and Stream I/O
+        tocHref: /dotnet/articles/standard/io/
+        topicHref: /dotnet/articles/standard/io/index
+      - name: Parallel Programming in the .NET Framework
+        tocHref: /dotnet/articles/standard/parallel-programming/
+        topicHref: /dotnet/articles/standard/parallel-programming/index
+      - name: Security in the .NET Framework
+        tocHref: /dotnet/articles/standard/security/
+        topicHref: /dotnet/articles/standard/security/index
+      - name: Managed Threading
+        tocHref: /dotnet/articles/standard/threading/
+        topicHref: /dotnet/articles/standard/threading/index
     - name: .NET Core Guide
       tocHref: /dotnet/articles/core/
       topicHref: /dotnet/articles/core/index
@@ -22,6 +78,266 @@
     - name: .NET Framework
       tocHref: /dotnet/articles/framework/
       topicHref: /dotnet/articles/framework/index
+      items:
+      - name: Add-ins and Extensibility
+        tocHref: /dotnet/articles/framework/add-ins/
+        topicHref: /dotnet/articles/framework/add-ins/index
+      - name: Additional Class Libraries and APIs
+        tocHref: /dotnet/articles/framework/additional-steps/
+        topicHref: /dotnet/articles/framework/additional-steps/index
+      - name: Programming with Application Domains and Assemblies
+        tocHref: /dotnet/articles/framework/app-domains/
+        topicHref: /dotnet/articles/framework/app-domains/index
+      - name: Common Client Technologies in the .NET Framework
+        tocHref: /dotnet/articles/framework/common-client-technologies/
+        topicHref: /dotnet/articles/framework/common-client-technologies/index
+      - name: Configuring Apps by using Configuration Files
+        tocHref: /dotnet/articles/framework/configure-apps/
+        topicHref: /dotnet/articles/framework/configure-apps/index
+        items:
+        - name: Configuration File Schema
+          tocHref: /dotnet/articles/framework/configure-apps/file-schema/
+          topicHref: /dotnet/articles/framework/configure-apps/file-schema/index
+          items:
+          - name: Compiler and Language Provider Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/compiler/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/compiler/index
+          - name: Cryptography Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/cryptography/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/cryptography/index
+          - name: Network Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/network/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/network/index
+          - name: Runtime Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/runtime/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/runtime/index
+          - name: Startup Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/startup/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/startup/index
+          - name: Trace and Debug Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/trace-debug/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/trace-debug/index
+          - name: WCF Configuration Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/wcf/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/wcf/index
+          - name: WCF Directive Syntax
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/wcf-directive/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/wcf-directive/index
+          - name: Web Settings Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/web/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/web/index
+          - name: Windows Identity Foundation Configuration Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/windows-identity-foundation/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/windows-identity-foundation/index
+          - name: Windows Workflow Foundation Configuration Schema
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/windows-workflow-foundation
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/windows-workflow-foundation/index
+          - name: Windows Forms Configuration Section
+            tocHref: /dotnet/articles/framework/configure-apps/file-schema/winforms/
+            topicHref: /dotnet/articles/framework/configure-apps/file-schema/winforms/index
+      - name: Data and Modeling in the .NET Framework
+        tocHref: /dotnet/articles/framework/data/
+        topicHref: /dotnet/articles/framework/data/index
+        items:
+        - name: ADO.NET
+          tocHref: /dotnet/articles/framework/data/adonet/
+          topicHref: /dotnet/articles/framework/data/adonet/index
+          items:
+          - name: DataSets, DataTables, and DataViews
+            tocHref: /dotnet/articles/framework/data/adonet/dataset-datatable-dataview/
+            topicHref: /dotnet/articles/framework/data/adonet/dataset-datatable-dataview/index
+          - name: ADO.NET Entity Framework
+            tocHref: /dotnet/articles/framework/data/adonet/ef/
+            topicHref: /dotnet/articles/framework/data/adonet/ef/index
+            items:
+            - name: Entity SQL Language Reference
+              tocHref: /dotnet/articles/framework/data/adonet/ef/language-reference/
+              topicHref: /dotnet/articles/framework/data/adonet/ef/language-reference/index
+          - name: SQL Server and ADO.NET
+            tocHref: /dotnet/articles/framework/data/adonet/sql/
+            topicHref: /dotnet/articles/framework/data/adonet/sql/index
+            items:
+            - name: LINQ to SQL
+              tocHref: /dotnet/articles/framework/data/adonet/sql/linq/
+              topicHref: /dotnet/articles/framework/data/adonet/sql/linq/index
+        - name: Transaction Processing
+          tocHref: /dotnet/articles/framework/data/transactions/
+          topicHref: /dotnet/articles/framework/data/transactions/index
+        - name: WCF Data Services 4.5
+          tocHref: /dotnet/articles/framework/data/wcf/
+          topicHref: /dotnet/articles/framework/data/wcf/index
+      - name: Debugging, Tracing, and Profiling
+        tocHref: /dotnet/articles/framework/debug-trace-profile/
+        topicHref: /dotnet/articles/framework/debug-trace-profile/index
+      - name: Deploying the .NET Framework
+        tocHref: /dotnet/articles/framework/deployment/
+        topicHref: /dotnet/articles/framework/deployment/index
+        items:
+        - name: Installing the .NET Framework on Windows
+          tocHref: /dotnet/articles/framework/deployment/windows/
+          topicHref: /dotnet/articles/framework/deployment/windows/index
+      - name: Deploying .NET Framework applications with Docker
+        tocHref: /dotnet/articles/framework/docker/
+        topicHref: /dotnet/articles/framework/docker/index
+      - name: Get Started
+        tocHref: /dotnet/articles/framework/get-started/
+        topicHref: /dotnet/articles/framework/get-started/index
+      - name: Installing the .NET Framework on Windows
+        tocHref: /dotnet/articles/framework/install/
+        topicHref: /dotnet/articles/framework/install/index
+      - name: Interoperating with Unmanaged Code
+        tocHref: /dotnet/articles/framework/interop/
+        topicHref: /dotnet/articles/framework/interop/index
+      - name: Managed Extensibility Framework (MEF)
+        tocHref: /dotnet/articles/framework/mef/
+        topicHref: /dotnet/articles/framework/mef/index
+      - name: Migration Guide to the .NET Framework 4.6 and 4.5
+        tocHref: /dotnet/articles/framework/migration-guide/
+        topicHref: /dotnet/articles/framework/migration-guide/index
+      - name: Compiling Apps with .NET Native
+        tocHref: /dotnet/articles/framework/net-native/
+        topicHref: /dotnet/articles/framework/net-native/index
+      - name: Network Programming in the .NET Framework
+        tocHref: /dotnet/articles/framework/network-programming/
+        topicHref: /dotnet/articles/framework/network-programming/index
+      - name: .NET Framework Performance
+        tocHref: /dotnet/articles/framework/performance/
+        topicHref: /dotnet/articles/framework/performance/index
+      - name: Dynamic Programming in the .NET Framework
+        tocHref: /dotnet/articles/framework/reflection-and-codedom/
+        topicHref: /dotnet/articles/framework/framework/reflection-and-codedom/index
+      - name: Resources in Desktop Apps
+        tocHref: /dotnet/articles/framework/resources/
+        topicHref: /dotnet/articles/framework/resources/index
+      - name: Security in the .NET Framework
+        tocHref: /dotnet/articles/framework/security/
+        topicHref: /dotnet/articles/framework/security/index
+      - name: Serialization in the .NET Framework
+        tocHref: /dotnet/articles/framework/serialization/
+        topicHref: /dotnet/articles/framework/serialization/index
+      - name: .NET Framework Tools
+        tocHref: /dotnet/articles/framework/tools/
+        topicHref: /dotnet/articles/framework/tools/index
+      - name: UI Automation Fundamentals
+        tocHref: /dotnet/articles/framework/ui-automation/
+        topicHref: /dotnet/articles/framework/ui-automation/index
+      - name: Unmanaged API Reference
+        tocHref: /dotnet/articles/framework/unmanaged-api/
+        topicHref: /dotnet/articles/framework/unmanaged-api/index
+        items:
+        - name: ALink API (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/alink/
+          topicHref: /dotnet/articles/framework/unmanaged-api/alink/index
+        - name: Authenticode (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/authenticode/
+          topicHref: /dotnet/articles/framework/unmanaged-api/authenticode/index
+        - name: Debugging (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/debugging/
+          topicHref: /dotnet/articles/framework/unmanaged-api/debuggin/index
+        - name: Diagnostics Symbol Store (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/diagnostics/
+          topicHref: /dotnet/articles/framework/unmanaged-api/diagnostics/index
+        - name: Fusion (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/fusion/
+          topicHref: /dotnet/articles/framework/unmanaged-api/fusion/index
+        - name: Hosting (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/hosting/
+          topicHref: /dotnet/articles/framework/unmanaged-api/hosting/index
+        - name: Metadata (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/metadata/
+          topicHref: /dotnet/articles/framework/unmanaged-api/metadata/index
+        - name: Profiling (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/profiling/
+          topicHref: /dotnet/articles/framework/unmanaged-api/profiling/index
+        - name: Strong Naming (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/strong-naming/
+          topicHref: /dotnet/articles/framework/unmanaged-api/strong-naming/index
+        - name: Tlbexp Helper Functions (Unmanaged API Reference)
+          tocHref: /dotnet/articles/framework/unmanaged-api/tlbexp/
+          topicHref: /dotnet/articles/framework/unmanaged-api/tlbexp/index
+      - name: Windows Communication Foundation
+        tocHref: /dotnet/articles/framework/wcf/
+        topicHref: /dotnet/articles/framework/wcf/index
+        items:
+        - name: Administration and Diagnostics
+          tocHref: /dotnet/articles/framework/wcf/diagnostics/
+          topicHref: /dotnet/articles/framework/wcf/diagnostics/index
+          items:
+          - name: Analytic Tracing with ETW
+            tocHref: /dotnet/articles/framework/wcf/diagnostics/etw/
+            topicHref: /dotnet/articles/framework/wcf/diagnostics/etw/index
+          - name: Event Logging in WCF
+            tocHref: /dotnet/articles/framework/wcf/diagnostics/event-logging/
+            topicHref: /dotnet/articles/framework/wcf/diagnostics/event-logging/index
+          - name: Exceptions Reference
+            tocHref: /dotnet/articles/framework/wcf/diagnostics/exceptions-reference/
+            topicHref: /dotnet/articles/framework/wcf/diagnostics/exceptions-reference/index
+          - name: WCF Performance Counters
+            tocHref: /dotnet/articles/framework/wcf/diagnostics/performance-counters/
+            topicHref: /dotnet/articles/framework/wcf/diagnostics/performance-counters/index
+          - name: Tracing
+            tocHref: /dotnet/articles/framework/wcf/diagnostics/tracing/
+            topicHref: /dotnet/articles/framework/wcf/diagnostics/tracing/index
+          - name: Using Windows Management Instrumentation for Diagnostics
+            tocHref: /dotnet/articles/framework/wcf/diagnostics/wmi/
+            topicHref: /dotnet/articles/framework/wcf/diagnostics/wmi/index
+        - name: Extending WCF
+          tocHref: /dotnet/articles/framework/wcf/extending/
+          topicHref: /dotnet/articles/framework/wcf/extending/index
+        - name: WCF Feature Details
+          tocHref: /dotnet/articles/framework/wcf/feature-details/
+          topicHref: /dotnet/articles/framework/wcf/feature-details/index
+        - name: Windows Communication Foundation (WCF) Samples
+          tocHref: /dotnet/articles/framework/wcf/samples/
+          topicHref: /dotnet/articles/framework/wcf/samples/index
+      - name: What&#39;s New in the .NET Framework
+        tocHref: /dotnet/articles/framework/whats-new/
+        topicHref: /dotnet/articles/framework/whats-new/index
+      - name: Developing Windows Service Applications
+        tocHref: /dotnet/articles/framework/windows-services/
+        topicHref: /dotnet/articles/framework/windows-services/index
+      - name: Windows Workflow Foundation
+        tocHref: /dotnet/articles/framework/windows-workflow-foundation/
+        topicHref: /dotnet/articles/framework/windows-workflow-foundation/index
+        items:
+        - name: Windows Workflow (WF) Samples
+          tocHref: /dotnet/articles/framework/windows-workflow-foundation/samples/
+          topicHref: /dotnet/articles/framework/windows-workflow-foundation/samples/index
+      - name: Windows Forms
+        tocHref: /dotnet/articles/framework/winforms/
+        topicHref: /dotnet/articles/framework/winforms/index
+        items:
+        - name: Enhancing Windows Forms Applications
+          tocHref: /dotnet/articles/framework/winforms/advanced/
+          topicHref: /dotnet/articles/framework/winforms/advanced/index
+        - name: Windows Forms Controls
+          tocHref: /dotnet/articles/framework/winforms/controls/
+          topicHref: /dotnet/articles/framework/winforms/controls/index
+      - name: Windows Presentation Foundation
+        tocHref: /dotnet/articles/framework/wpf/
+        topicHref: /dotnet/articles/framework/wpf/index
+        items:
+        - name: Advanced (Windows Presentation Foundation)
+          tocHref: /dotnet/articles/framework/wpf/advanced/
+          topicHref: /dotnet/articles/framework/wpf/advanced/index
+        - name: Application Development
+          tocHref: /dotnet/articles/framework/wpf/app-development/
+          topicHref: /dotnet/articles/framework/wpf/app-development/index
+        - name: Controls
+          tocHref: /dotnet/articles/framework/wpf/controls/
+          topicHref: /dotnet/articles/framework/wpf/controls/index
+        - name: Data
+          tocHref: /dotnet/articles/framework/wpf/data/
+          topicHref: /dotnet/articles/framework/wpf/data/index
+        - name: Getting Started (WPF)
+          tocHref: /dotnet/articles/framework/wpf/getting-started/
+          topicHref: /dotnet/articles/framework/wpf/getting-started/index
+        - name: Graphics and Multimedia
+          tocHref: /dotnet/articles/framework/wpf/graphics-multimedia/
+          topicHref: /dotnet/articles/framework/wpf/graphics-multimedia/index
+      - name: XAML Services
+        tocHref: /dotnet/articles/framework/xaml-services/
+        topicHref: /dotnet/articles/framework/xaml-services/index
     - name: C# Guide
       tocHref: /dotnet/articles/csharp/
       topicHref: /dotnet/articles/csharp/index

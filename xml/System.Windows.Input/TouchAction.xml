@@ -1,0 +1,66 @@
+<Type Name="TouchAction" FullName="System.Windows.Input.TouchAction">
+  <TypeSignature Language="C#" Value="public enum TouchAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TouchAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the action of a specific touch point.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TouchAction Down = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TouchAction.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The act of putting a finger onto the screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="Move" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TouchAction Move = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TouchAction.Move" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The act of dragging a finger across the screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Up">
+      <MemberSignature Language="C#" Value="Up" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TouchAction Up = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TouchAction.Up" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The act of lifting a finger off of the screen.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

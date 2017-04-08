@@ -1,0 +1,132 @@
+<Type Name="CalendarButton" FullName="System.Windows.Controls.Primitives.CalendarButton">
+  <TypeSignature Language="C#" Value="public sealed class CalendarButton : System.Windows.Controls.Button" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CalendarButton extends System.Windows.Controls.Button" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.CalendarButton" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Button</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a month or year on a <see cref="T:System.Windows.Controls.Calendar" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CalendarButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarButton.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.CalendarButton" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSelectedDays">
+      <MemberSignature Language="C#" Value="public bool HasSelectedDays { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasSelectedDays" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CalendarButton.HasSelectedDays" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this button represents a year or month that contains selected dates.</summary>
+        <value>
+          <see langword="true" /> if this button represents a year or month that contains selected dates; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSelectedDaysProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasSelectedDaysProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasSelectedDaysProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.CalendarButton.HasSelectedDaysProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.CalendarButton.HasSelectedDays" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInactive">
+      <MemberSignature Language="C#" Value="public bool IsInactive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInactive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.CalendarButton.IsInactive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this button represents a year that is not in the currently displayed decade.</summary>
+        <value>
+          <see langword="true" /> if this button represents a day that is not in the currently displayed month, or a year that is not in the currently displayed decade; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.Calendar.DisplayMode%2A> of a calendar is <xref:System.Windows.Controls.CalendarMode>, it displays the year before and after the current decade. For example, a calendar that shows the decade for 2000 through 2009 also displays buttons for the years 1999 and 2010. However, the <xref:System.Windows.Controls.Primitives.CalendarButton.IsInactive%2A> property is set to `true` for the buttons that represent those years.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInactiveProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInactiveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInactiveProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.CalendarButton.IsInactiveProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.CalendarButton.IsInactive" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.CalendarButton.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

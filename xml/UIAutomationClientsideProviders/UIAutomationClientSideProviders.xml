@@ -1,0 +1,36 @@
+<Type Name="UIAutomationClientSideProviders" FullName="UIAutomationClientsideProviders.UIAutomationClientSideProviders">
+  <TypeSignature Language="C#" Value="public static class UIAutomationClientSideProviders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UIAutomationClientSideProviders extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:UIAutomationClientsideProviders.UIAutomationClientSideProviders" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClientsideProviders</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables applications to discover client-side [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] providers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientSideProviderDescriptionTable">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.ClientSideProviderDescription[] ClientSideProviderDescriptionTable;" />
+      <MemberSignature Language="ILAsm" Value=".field public static valuetype System.Windows.Automation.ClientSideProviderDescription[] ClientSideProviderDescriptionTable" />
+      <MemberSignature Language="DocId" Value="F:UIAutomationClientsideProviders.UIAutomationClientSideProviders.ClientSideProviderDescriptionTable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClientsideProviders</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ClientSideProviderDescription[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides information about client-side [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] providers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

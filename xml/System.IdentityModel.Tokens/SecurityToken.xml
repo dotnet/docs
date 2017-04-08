@@ -1,0 +1,377 @@
+<Type Name="SecurityToken" FullName="System.IdentityModel.Tokens.SecurityToken">
+  <TypeSignature Language="C#" Value="public abstract class SecurityToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityToken extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityToken" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a base class used to implement all security tokens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a security token to provide authentication credentials or to protect a message.  
+  
+ A security token can be used to provide authentication credentials, cryptographic key material, or, in the case of a security token issued by a security token service (STS), a collection of claims about a subject. All security tokens derive from the <xref:System.IdentityModel.Tokens.SecurityToken> class.  
+  
+ Beginning with .NET 4.5, Windows Identity Foundation (WIF) has been fully integrated into the .NET Framework and the classes exposed by WIF are the preferred method of handling security tokens in your code. In WIF, security tokens are serialized and deserialized to and from their XML representation and are validated by using classes derived from the <xref:System.IdentityModel.Tokens.SecurityTokenHandler> base class. Validating a token involves not just ensuring that the token is valid, but also returning a <xref:System.Security.Claims.ClaimsIdentity> instance from the token that can be used in making authentication and authorization decisions. The <xref:System.Security.Claims.ClaimsIdentity> is constructed by the token handler’s implementation of the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method from the claims contained in the token as well as from claims that are intrinsic to the token type itself.  
+  
+ WIF ships with support for the following types of security tokens:  
+  
+-   <xref:System.IdentityModel.Tokens.Saml2SecurityToken>: Represents a security token that is based upon a SAML 2.0 Assertion. This token type is typically issued by a security token service in response to a WS-Trust or WS-Federation security token request (RST).  
+  
+-   <xref:System.IdentityModel.Tokens.SamlSecurityToken>:  Represents a security token that is based upon a SAML 1.1 Assertion. This token type is typically issued by a security token service in response to a WS-Trust or WS-Federation security token request (RST).  
+  
+-   <xref:System.IdentityModel.Tokens.KerberosRequestorSecurityToken> and <xref:System.IdentityModel.Tokens.KerberosReceiverSecurityToken>: Represents a security token that is based upon a Kerberos ticket that is received or sent in a SOAP message  
+  
+-   <xref:System.IdentityModel.Tokens.RsaSecurityToken>: Represents a security token that is based upon key that is created using the RSA algorithm.  
+  
+-   <xref:System.IdentityModel.Tokens.SessionSecurityToken>: Represents a security token that contains information about a session.  
+  
+-   <xref:System.IdentityModel.Tokens.UserNameSecurityToken>: Represents a security token that is based on a username and password.  
+  
+-   <xref:System.IdentityModel.Tokens.WindowsSecurityToken>: Represents a security token that is based on the identity of a Windows domain or user account.  
+  
+-   <xref:System.IdentityModel.Tokens.X509SecurityToken>: Represents a security token that is based on an X.509 certificate.  
+  
+-   <xref:System.IdentityModel.Tokens.X509WindowsSecurityToken>: Represents a security token that is based upon an X.509 certificate that is mapped to a Windows domain user or local computer user account.  
+  
+ Two other security token classes, <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> and <xref:System.IdentityModel.Tokens.EncryptedSecurityToken>, can be used to help handle general cases.  
+  
+ Broadly speaking security tokens fall into three major categories:  
+  
+-   Tokens that carry or reference cryptographic key material. For example the <xref:System.IdentityModel.Tokens.RsaSecurityToken> and <xref:System.IdentityModel.Tokens.X509SecurityToken> types are often used for this purpose.  
+  
+-   Tokens that represent credentials for users that have already been authenticated. For example, the <xref:System.IdentityModel.Tokens.UserNameSecurityToken>, <xref:System.IdentityModel.Tokens.WindowsSecurityToken>, and, in the case of a user authenticated using a certificate, the <xref:System.IdentityModel.Tokens.X509SecurityToken> types.  
+  
+-   Tokens that are issued by a security token service (STS) in response to a security token request using either the WS-Trust or WS-Federation protocol. These are typically returned in a `wst:RequestSecurityTokenResponse` XML fragment. The <xref:System.IdentityModel.Tokens.Saml2SecurityToken> and <xref:System.IdentityModel.Tokens.SamlSecurityToken> types are most often used to represent these tokens.  
+  
+ A special token type, the <xref:System.IdentityModel.Tokens.SessionSecurityToken>, contains information necessary to recreate a principal when using sessions in active or passive scenarios.  
+  
+ To add functionality to existing token types you can derive from the specific type and its associated token handler to support any new elements that you add to the token. To add support for new token types, you can derive directly from the <xref:System.IdentityModel.Tokens.SecurityToken> class. When you do this, you will also need to create a token handler class by deriving from the <xref:System.IdentityModel.Tokens.SecurityTokenHandler> class. Depending on how your token is to be used, you may also need to create a custom token resolver by deriving from the <xref:System.IdentityModel.Tokens.IssuerTokenResolver> class as well as one or more custom key identifier clause types by deriving from the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause> class.  
+  
+   
+  
+## Examples  
+ The code examples that are used in the <xref:System.IdentityModel.Tokens.SecurityToken> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). It includes an implementation of a `SimpleWebToken` class and a `SimpleWebTokenHandler` class, as well as other classes that support SWT tokens. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows the implementation of the `SimpleWebToken` class. This class extends <xref:System.IdentityModel.Tokens.SecurityToken>.  
+  
+ [!code-csharp[WifCustomTokenST#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtokenconstants.cs#1)]  
+[!code-csharp[WifCustomTokenST#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#2)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>You must override the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" />, <see cref="P:System.IdentityModel.Tokens.SecurityToken.SecurityKeys" />, <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidFrom" />, and <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidTo" /> properties. The <see cref="M:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause``1" />, <see cref="M:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause``1" />, <see cref="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />, and <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> methods all support key identifiers of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />. You must override these methods to support other key identifier types in your derived class.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SecurityToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Called by constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCreateKeyIdentifierClause&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual bool CanCreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
+        <summary>Gets a value that indicates whether this security token is capable of creating the specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> when <paramref name="T" /> is of type <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause%2A> method to determine whether a security token can create a specific key identifier. To create the key identifier call the <xref:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause%2A> method.  
+  
+ The default implementation supports key identifier clauses of type <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateKeyIdentifierClause&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual T CreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that specifies the key identifier to create.</typeparam>
+        <summary>Creates the specified key identifier clause.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that is a key identifier clause for the security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause%2A> method to determine whether a security token can create a specific key identifier. To create the key identifier call the <xref:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause%2A> method.  
+  
+ The default implementation supports key identifier clauses of type <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause>. If a key identifier clause of type <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> cannot be created, a <xref:System.NotSupportedException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public abstract string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a unique identifier of the security token.</summary>
+        <value>The unique identifier of the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, when a security token is serialized into XML, the `Id` attribute for the security token is set to the value of the <xref:System.IdentityModel.Tokens.SecurityToken.Id%2A> property.  
+  
+   
+  
+## Examples  
+ The code examples that are used in the <xref:System.IdentityModel.Tokens.SecurityToken> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). It includes an implementation of a `SimpleWebToken` class and a `SimpleWebTokenHandler` class, as well as other classes that support SWT tokens. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows the override of the <xref:System.IdentityModel.Tokens.SecurityToken.Id%2A> property.  
+  
+ [!code-csharp[WifCustomTokenST#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtokenconstants.cs#1)]  
+[!code-csharp[WifCustomTokenST#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#3)]  
+[!code-csharp[WifCustomTokenST#4](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You must override the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchesKeyIdentifierClause">
+      <MemberSignature Language="C#" Value="public virtual bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="skiClause">To be added.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance can be resolved to the specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> and it has the same unique identifier as the <see cref="P:System.IdentityModel.Tokens.SecurityToken.Id" /> property; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation supports key identifier clauses of type <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveKeyIdentifierClause">
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="skiClause">To be added.</param>
+        <summary>Gets the key for the specified key identifier clause.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that represents the key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause%2A> method calls the <xref:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause%2A> to first determine whether the specified key identifier clause is the same as this instance.  
+  
+ The default implementation returns the first element of the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> collection if the collection is not empty and if <xref:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause%2A> returns `true`; otherwise, it returns `null`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from <see cref="T:System.IdentityModel.Tokens.SecurityToken" />, and implement the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method and <paramref name="keyIdentifierClause" /> cannot be resolved, return <see langword="null" />. An exception should not be thrown from the <see cref="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityKeys">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.SecurityKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cryptographic keys associated with the security token.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlSecurityToken.SecurityKeys%2A> property to set the cryptographic keys for this security token to protect tokens or a SOAP message. The keys can be used, among other things, to digitally sign or encrypt either tokens or SOAP messages.  
+  
+   
+  
+## Examples  
+ The code examples that are used in the <xref:System.IdentityModel.Tokens.SecurityToken> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). It includes an implementation of a `SimpleWebToken` class and a `SimpleWebTokenHandler` class, as well as other classes that support SWT tokens. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows the override of the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> property.  
+  
+ [!code-csharp[WifCustomTokenST#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtokenconstants.cs#1)]  
+[!code-csharp[WifCustomTokenST#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#3)]  
+[!code-csharp[WifCustomTokenST#5](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You must override the <see cref="P:System.IdentityModel.Tokens.SecurityToken.SecurityKeys" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidFrom">
+      <MemberSignature Language="C#" Value="public abstract DateTime ValidFrom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.ValidFrom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.SecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+  
+   
+  
+## Examples  
+ The code examples that are used in the <xref:System.IdentityModel.Tokens.SecurityToken> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). It includes an implementation of a `SimpleWebToken` class and a `SimpleWebTokenHandler` class, as well as other classes that support SWT tokens. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows the override of the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> property.  
+  
+ [!code-csharp[WifCustomTokenST#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtokenconstants.cs#1)]  
+[!code-csharp[WifCustomTokenST#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#3)]  
+[!code-csharp[WifCustomTokenST#6](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#6)]  
+[!code-csharp[WifCustomTokenST#8](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#8)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You must override the <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidFrom" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidTo">
+      <MemberSignature Language="C#" Value="public abstract DateTime ValidTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.ValidTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties to determine the time period in which a <xref:System.IdentityModel.Tokens.SecurityToken> token is valid. The <xref:System.IdentityModel.Tokens.SecurityToken.ValidFrom%2A> and <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> properties represent the first and last instants in time in which the security token is valid, respectively.  
+  
+   
+  
+## Examples  
+ The code examples that are used in the <xref:System.IdentityModel.Tokens.SecurityToken> topics are taken from the `Custom Token` sample. This sample provides custom classes that enable processing of Simple Web Tokens (SWT). It includes an implementation of a `SimpleWebToken` class and a `SimpleWebTokenHandler` class, as well as other classes that support SWT tokens. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md). The following code shows the override of the <xref:System.IdentityModel.Tokens.SecurityToken.ValidTo%2A> property.  
+  
+ [!code-csharp[WifCustomTokenST#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtokenconstants.cs#1)]  
+[!code-csharp[WifCustomTokenST#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#3)]  
+[!code-csharp[WifCustomTokenST#7](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#7)]  
+[!code-csharp[WifCustomTokenST#8](~/samples/snippets/csharp/VS_Snippets_Misc/wifcustomtokenst/cs/simplewebtoken/simplewebtoken.cs#8)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You must override the <see cref="P:System.IdentityModel.Tokens.SecurityToken.ValidTo" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

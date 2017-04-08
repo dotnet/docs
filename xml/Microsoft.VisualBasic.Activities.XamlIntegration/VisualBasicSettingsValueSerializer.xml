@@ -1,0 +1,97 @@
+<Type Name="VisualBasicSettingsValueSerializer" FullName="Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer">
+  <TypeSignature Language="C#" Value="public sealed class VisualBasicSettingsValueSerializer : System.Windows.Markup.ValueSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VisualBasicSettingsValueSerializer extends System.Windows.Markup.ValueSerializer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.ValueSerializer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serializes <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instances to XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer> facilitates the serialization of Visual Basic expressions to XAML.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualBasicSettingsValueSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertToString">
+      <MemberSignature Language="C#" Value="public override bool CanConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Determines whether the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance can be converted into a <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance can be converted into a <see cref="T:System.String" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When called, this method promotes the specified <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> instance to namespace declarations and adds them to the serialization context.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToString">
+      <MemberSignature Language="C#" Value="public override string ConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to convert.</param>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Converts the specified <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance into a <see cref="T:System.String" />.</summary>
+        <returns>A string representation of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

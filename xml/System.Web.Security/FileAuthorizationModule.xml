@@ -1,0 +1,160 @@
+<Type Name="FileAuthorizationModule" FullName="System.Web.Security.FileAuthorizationModule">
+  <TypeSignature Language="C#" Value="public sealed class FileAuthorizationModule : System.Web.IHttpModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileAuthorizationModule extends System.Object implements class System.Web.IHttpModule" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.FileAuthorizationModule" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpModule</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Verifies that the user has permission to access the file requested. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module provides authorization services against file-system access-control lists (ACLs). When the `mode` attribute of the [authentication Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/27bc0ba9-f23a-45f3-ae42-dbe7916e3ee2) configuration element is set to `Windows` so that the <xref:System.Web.Security.WindowsAuthenticationModule> is being used for the application, the <xref:System.Web.Security.FileAuthorizationModule> module ensures that the requesting user is allowed read or write access to the resource, depending on the request verb, before executing the request. For more information, see the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileAuthorizationModule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Web.Security.FileAuthorizationModule" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be called from application code.  
+  
+ ASP.NET calls this constructor to create an instance of the <xref:System.Web.Security.FileAuthorizationModule> class. After calling the constructor, it calls the <xref:System.Web.Security.FileAuthorizationModule.Init%2A> method to initialize the new <xref:System.Web.Security.FileAuthorizationModule> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckFileAccessForUser">
+      <MemberSignature Language="C#" Value="public static bool CheckFileAccessForUser (string virtualPath, IntPtr token, string verb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckFileAccessForUser(string virtualPath, native int token, string verb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser(System.String,System.IntPtr,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="token" Type="System.IntPtr" />
+        <Parameter Name="verb" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to the file.</param>
+        <param name="token">A Windows access token representing the user.</param>
+        <param name="verb">The HTTP verb used to make the request.</param>
+        <summary>Determines whether the user has access to the requested file.</summary>
+        <returns>
+          <see langword="true" /> if the current Windows user represented by <paramref name="token" /> has access to the file using the specified HTTP verb or if the <see cref="T:System.Web.Security.FileAuthorizationModule" /> module is not defined in the application's configuration file; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks to see whether the current user, represented by a Windows access token, is granted access to the requested file in the file-system access-control lists (ACLs). The virtual path is mapped to the physical file-system path before the check is made.  
+  
+ If the HTTP verb used to make the request is `GET`, `POST`, or `HEAD`, the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks for read access to the file. If any other verb is used, the <xref:System.Web.Security.FileAuthorizationModule.CheckFileAccessForUser%2A> method checks for read/write permission to the file.  
+  
+ **Security Note** If the <xref:System.Web.Security.FileAuthorizationModule> module is not defined in the `httpModules` configuration section for the application, the <xref:System.Web.Security.FileAuthorizationModule> module always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="token" /> is <see cref="F:System.IntPtr.Zero" />.  
+  
+ -or-  
+  
+ <paramref name="verb" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualPath" /> is not in the application directory structure of the Web application.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="virtualPath" /> does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources, other than memory, used by the <see cref="T:System.Web.Security.FileAuthorizationModule" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called from application code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public void Init (System.Web.HttpApplication app);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.HttpApplication app) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FileAuthorizationModule.Init(System.Web.HttpApplication)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="app" Type="System.Web.HttpApplication" />
+      </Parameters>
+      <Docs>
+        <param name="app">The current <see cref="T:System.Web.HttpApplication" /> instance.</param>
+        <summary>Initializes the <see cref="T:System.Web.Security.FileAuthorizationModule" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called from application code.  
+  
+ The <xref:System.Web.Security.FileAuthorizationModule.Init%2A> method ensures that the <xref:System.Web.Security.FileAuthorizationModule> is included in the processing of the <xref:System.Web.HttpApplication.AuthorizeRequest> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

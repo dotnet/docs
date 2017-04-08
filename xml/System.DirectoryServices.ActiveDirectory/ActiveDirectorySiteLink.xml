@@ -1,0 +1,523 @@
+<Type Name="ActiveDirectorySiteLink" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink">
+  <TypeSignature Language="C#" Value="public class ActiveDirectorySiteLink : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySiteLink extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class represents a set of two or more sites that can be scheduled, for replication, to communicate at uniform cost and through a particular transport.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectorySiteLink (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="siteLinkName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object for creating this site link.</param>
+        <param name="siteLinkName">The name for the site link.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object and name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default transport type is RPC.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest,  configuration set, domain controller, or an AD LDS server.  
+  
+-   <paramref name="siteLinkName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectorySiteLink (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="siteLinkName" Type="System.String" />
+        <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object for creating this site link.</param>
+        <param name="siteLinkName">The name for the site link.</param>
+        <param name="transport">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> object that specifies the transport type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object, name, and transport type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
+  
+-   <paramref name="siteLinkName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> parameter or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectorySiteLink (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport, System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType,System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="siteLinkName" Type="System.String" />
+        <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+        <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object for creating this site link.</param>
+        <param name="siteLinkName">The name for the site link.</param>
+        <param name="transport">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> object that specifies the transport type.</param>
+        <param name="schedule">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object that specifies the replication schedule for this site link.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> class using the specified <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object, name, transport type, and replication schedule.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any of the following reasons.  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
+  
+-   <paramref name="siteLinkName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or the <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="transport" /> is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cost">
+      <MemberSignature Language="C#" Value="public int Cost { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Cost" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Cost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the site link cost.</summary>
+        <value>A cost that is associated with this site link. The default value is 100.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
+        <exception cref="T:System.ArgumentException">The cost is less than zero. (applies to set only)</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataCompressionEnabled">
+      <MemberSignature Language="C#" Value="public bool DataCompressionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DataCompressionEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.DataCompressionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data compression mode of the site link.</summary>
+        <value>
+          <see langword="true" /> if data compression mode is enabled; <see langword="false" /> if data compression is disabled.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Delete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deletes the current site link.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> if the managed resources should be released; <see langword="false" /> if only the unmanaged resources should be released.</param>
+        <summary>Releases the unmanaged resources used by the object and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByName">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink FindByName (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink FindByName(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="siteLinkName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that is valid for this site link.</param>
+        <param name="siteLinkName">The name of the site link to find.</param>
+        <summary>Returns a site link based on a site link name.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object for the requested site link.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">The site could not be found for the given <paramref name="siteLinkName" /> in the <paramref name="context" /> specified.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest,  configuration set, domain controller, or an AD LDS server.  
+  
+-   <paramref name="siteLinkName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByName">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink FindByName (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName, System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink FindByName(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string siteLinkName, valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType transport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+        <Parameter Name="siteLinkName" Type="System.String" />
+        <Parameter Name="transport" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object that is valid for this site link.</param>
+        <param name="siteLinkName">The name of the site link to find.</param>
+        <param name="transport">An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> object that specifies the transport type.</param>
+        <summary>Returns a site link based on a site link name and transport.</summary>
+        <returns>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object for the requested site link.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">The site could not be found for the given <paramref name="siteLinkName" /> in the <paramref name="context" /> specified.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ArgumentException">This exception will occur for any one of the following reasons:  
+  
+-   The target in the <paramref name="context" /> parameter is not a forest, configuration set, domain controller, or an AD LDS server.  
+  
+-   <paramref name="siteLinkName" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> or <paramref name="siteLinkName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="transport" /> parameter is not a valid <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="transport" /> type is not supported.</exception>
+        <exception cref="T:System.Security.Authentication.AuthenticationException">The credentials that were supplied are not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryEntry">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry GetDirectoryEntry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry GetDirectoryEntry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.GetDirectoryEntry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.DirectoryServices.DirectoryEntry" /> for this object.</summary>
+        <returns>The <see cref="T:System.DirectoryServices.DirectoryEntry" /> object for this site link.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink" /> object has not yet been saved in the Active Directory Domain Services store.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InterSiteReplicationSchedule">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule InterSiteReplicationSchedule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule InterSiteReplicationSchedule" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.InterSiteReplicationSchedule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object for the current site link object.</summary>
+        <value>Gets or sets the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> object for the current site link object. Setting this property changes the replication schedule for the site link.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the site link.</summary>
+        <value>The name of the site link.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationEnabled">
+      <MemberSignature Language="C#" Value="public bool NotificationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NotificationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.NotificationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether notifications are enabled.</summary>
+        <value>
+          <see langword="true" /> if notifications are enabled; <see langword="false" /> if notifications are disabled.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReciprocalReplicationEnabled">
+      <MemberSignature Language="C#" Value="public bool ReciprocalReplicationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReciprocalReplicationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.ReciprocalReplicationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the mode for reciprocal replication between sites.</summary>
+        <value>
+          <see langword="true" /> if reciprocal replication is enabled; <see langword="false" /> if reciprocal replication is disabled.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan ReplicationInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ReplicationInterval" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.ReplicationInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the replication interval between sites.</summary>
+        <value>The replication interval between sites.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Invalid <paramref name="ReplicationInterval" /> specified.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes any changes to the object to the Active Directory Domain Services store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object must contain at least one site or the operation will fail.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectExistsException">The site object already exists.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Sites">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection Sites { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection Sites" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Sites" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read/write collection of sites that this site link contains.</summary>
+        <value>A writable <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection" /> collection of sites that this site link contains. Sites can be added and deleted from this collection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">An Active Directory Domain Services operation failed. See the exception for details.</exception>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the site link name.</summary>
+        <returns>A string that contains the name of the site link.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransportType">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType TransportType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType TransportType" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.TransportType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transport type of the site link.</summary>
+        <value>An <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType" /> value indicating the transport type of this site link.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

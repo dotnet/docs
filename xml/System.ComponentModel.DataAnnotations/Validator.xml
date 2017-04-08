@@ -1,0 +1,352 @@
+<Type Name="Validator" FullName="System.ComponentModel.DataAnnotations.Validator">
+  <TypeSignature Language="C#" Value="public static class Validator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Validator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Validator" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a helper class that can be used to validate objects, properties, and methods when it is included in their associated <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" /> attributes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryValidateObject">
+      <MemberSignature Language="C#" Value="public static bool TryValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+        <Parameter Name="validationResults" Type="System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object to validate.</param>
+        <param name="validationContext">The context that describes the object to validate.</param>
+        <param name="validationResults">A collection to hold each failed validation.</param>
+        <summary>Determines whether the specified object is valid using the validation context and validation results collection.</summary>
+        <returns>
+          <see langword="true" /> if the object validates; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method evaluates each <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> instance that is attached to the object type. It also checks whether each property that is marked with <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> is provided. It does not recursively validate the property values of the object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="instance" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryValidateObject">
+      <MemberSignature Language="C#" Value="public static bool TryValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, bool validateAllProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, bool validateAllProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+        <Parameter Name="validationResults" Type="System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" />
+        <Parameter Name="validateAllProperties" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object to validate.</param>
+        <param name="validationContext">The context that describes the object to validate.</param>
+        <param name="validationResults">A collection to hold each failed validation.</param>
+        <param name="validateAllProperties">
+          <see langword="true" /> to validate all properties; if <see langword="false" />, only required attributes are validated..</param>
+        <summary>Determines whether the specified object is valid using the validation context, validation results collection, and a value that specifies whether to validate all properties.</summary>
+        <returns>
+          <see langword="true" /> if the object validates; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method evaluates each <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> instance that is attached to the object type. It also checks whether each property that is marked with <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> is provided. It does not recursively validate the property values of the object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="instance" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryValidateProperty">
+      <MemberSignature Language="C#" Value="public static bool TryValidateProperty (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateProperty(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+        <Parameter Name="validationResults" Type="System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to validate.</param>
+        <param name="validationContext">The context that describes the property to validate.</param>
+        <param name="validationResults">A collection to hold each failed validation.</param>
+        <summary>Validates the property.</summary>
+        <returns>
+          <see langword="true" /> if the property validates; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method tests each <xref:System.ComponentModel.DataAnnotations.ValidationException.ValidationAttribute%2A> instance that is associated with the property that is identified by the `validationContext` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> cannot be assigned to the property.  
+  
+ -or-  
+  
+ <paramref name="value " />is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryValidateValue">
+      <MemberSignature Language="C#" Value="public static bool TryValidateValue (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateValue(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+        <Parameter Name="validationResults" Type="System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" />
+        <Parameter Name="validationAttributes" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to validate.</param>
+        <param name="validationContext">The context that describes the object to validate.</param>
+        <param name="validationResults">A collection to hold failed validations.</param>
+        <param name="validationAttributes">The validation attributes.</param>
+        <summary>Returns a value that indicates whether the specified value is valid with the specified attributes.</summary>
+        <returns>
+          <see langword="true" /> if the object validates; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method tests each validation attribute in the `validationAttributes` parameter against the `value` parameter. If the `validationResults` parameter is not `null`, this method adds a <xref:System.ComponentModel.DataAnnotations.ValidationResult> object for each validation failure to the validation results collection. If the `validationResults` parameter is `null`, this method does not add a <xref:System.ComponentModel.DataAnnotations.ValidationResult> object to the collection. If a <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute is included in the `validationAttributes` parameter, the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute is evaluated first.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateObject">
+      <MemberSignature Language="C#" Value="public static void ValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object to validate.</param>
+        <param name="validationContext">The context that describes the object to validate.</param>
+        <summary>Determines whether the specified object is valid using the validation context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method evaluates each <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> instance that is attached to the object type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The object is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="instance" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateObject">
+      <MemberSignature Language="C#" Value="public static void ValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext, bool validateAllProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, bool validateAllProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+        <Parameter Name="validateAllProperties" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object to validate.</param>
+        <param name="validationContext">The context that describes the object to validate.</param>
+        <param name="validateAllProperties">
+          <see langword="true" /> to validate all properties; otherwise, <see langword="false" />.</param>
+        <summary>Determines whether the specified object is valid using the validation context, and a value that specifies whether to validate all properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method evaluates each <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> instance that is attached to the object type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">
+          <paramref name="instance" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="instance" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateProperty">
+      <MemberSignature Language="C#" Value="public static void ValidateProperty (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateProperty(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to validate.</param>
+        <param name="validationContext">The context that describes the property to validate.</param>
+        <summary>Validates the property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method tests each <xref:System.ComponentModel.DataAnnotations.ValidationException.ValidationAttribute%2A> instance that is associated with the property identified by the `validationContext` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> cannot be assigned to the property.</exception>
+        <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The <paramref name="value" /> parameter is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateValue">
+      <MemberSignature Language="C#" Value="public static void ValidateValue (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateValue(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+        <Parameter Name="validationAttributes" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to validate.</param>
+        <param name="validationContext">The context that describes the object to validate.</param>
+        <param name="validationAttributes">The validation attributes.</param>
+        <summary>Validates the specified attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method tests each validation attribute in the `validationAttributes` parameter against the `value` parameter.  If a <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute is included, the <xref:System.ComponentModel.DataAnnotations.RequiredAttribute> attribute is evaluated first.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="validationContext" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The <paramref name="value" /> parameter does not validate with the <paramref name="validationAttributes" /> parameter.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

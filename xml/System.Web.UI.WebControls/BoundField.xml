@@ -1,0 +1,974 @@
+<Type Name="BoundField" FullName="System.Web.UI.WebControls.BoundField">
+  <TypeSignature Language="C#" Value="public class BoundField : System.Web.UI.WebControls.DataControlField" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BoundField extends System.Web.UI.WebControls.DataControlField" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BoundField" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataControlField</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a field that is displayed as text in a data-bound control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField> class is used by data-bound controls (such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>) to display the value of a field as text. The <xref:System.Web.UI.WebControls.BoundField> object is displayed differently depending on the data-bound control in which it is used. For example, the <xref:System.Web.UI.WebControls.GridView> control displays a <xref:System.Web.UI.WebControls.BoundField> object as a column, while the <xref:System.Web.UI.WebControls.DetailsView> control displays it as a row.  
+  
+ To specify the field to display in a <xref:System.Web.UI.WebControls.BoundField> object, set the <xref:System.Web.UI.WebControls.BoundField.DataField%2A> property to the field's name. The field's value can be HTML-encoded before it is displayed by setting the <xref:System.Web.UI.WebControls.BoundField.HtmlEncode%2A> property to `true`. You can apply a custom formatting string to the field's value by setting the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property. When the <xref:System.Web.UI.WebControls.BoundField.HtmlEncode%2A> property is `true`, the encoded string value of the field is used in the custom format string. By default, the formatting string is applied to field values only when the data-bound control is in read-only mode. To apply the formatting string to values displayed while the data-bound control is in edit mode, set the <xref:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode%2A> property to `true`. If a field's value is null, you can display a custom caption by setting the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property. The <xref:System.Web.UI.WebControls.BoundField> object can also automatically convert empty string ("") field values to null values by setting the <xref:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull%2A> property to `true`.  
+  
+ You can hide a <xref:System.Web.UI.WebControls.BoundField> object in a data-bound control by setting the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property to `false`. To prevent the value of a field from being modified in edit mode, set the <xref:System.Web.UI.WebControls.BoundField.ReadOnly%2A> property to `true`. In data-bound controls that support inserting records (such as the <xref:System.Web.UI.WebControls.DetailsView> control), you can hide a <xref:System.Web.UI.WebControls.BoundField> object by setting the <xref:System.Web.UI.WebControls.DataControlField.InsertVisible%2A> property to `false`. This is commonly done when you want to hide an automatically generated key field in insert mode.  
+  
+ You can customize the header and footer sections of a <xref:System.Web.UI.WebControls.BoundField> object. To display a caption in the header or footer sections, set the <xref:System.Web.UI.WebControls.DataControlField.HeaderText%2A> or <xref:System.Web.UI.WebControls.DataControlField.FooterText%2A> properties, respectively. Instead of displaying text in the header section, you can display an image by setting the <xref:System.Web.UI.WebControls.DataControlField.HeaderImageUrl%2A> property. The header section can be hidden in the <xref:System.Web.UI.WebControls.BoundField> object by setting the <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A> property to `false`.  
+  
+> [!NOTE]
+>  Some data-bound controls (such as the <xref:System.Web.UI.WebControls.GridView> control) can show or hide only the entire header section of the control. These data-bound controls do not support the <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A> property for an individual bound field. To show or hide the entire header section of a data-bound control (if available), use the control's `ShowHeader` property.  
+  
+ You also can customize the appearance of the <xref:System.Web.UI.WebControls.BoundField> object (font color, background color, and so on) by setting the style properties for the different parts of the field. The following table lists the different style properties.  
+  
+|Style property|Description|  
+|--------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataControlField.ControlStyle%2A>|The style settings for the child Web server controls of the <xref:System.Web.UI.WebControls.BoundField> object.|  
+|<xref:System.Web.UI.WebControls.DataControlField.FooterStyle%2A>|The style settings for the footer section of the <xref:System.Web.UI.WebControls.BoundField> object.|  
+|<xref:System.Web.UI.WebControls.DataControlField.HeaderStyle%2A>|The style settings for the header section of the <xref:System.Web.UI.WebControls.BoundField> object.|  
+|<xref:System.Web.UI.WebControls.DataControlField.ItemStyle%2A>|The style settings for the data items in the <xref:System.Web.UI.WebControls.BoundField> object.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.BoundField> object to display the values of a field in a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BoundField ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.BoundField" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.BoundField> class. This constructor is commonly used when adding fields to a dynamically created data-bound control.  
+  
+ To dynamically add a <xref:System.Web.UI.WebControls.BoundField> object to a data-bound control, create a new <xref:System.Web.UI.WebControls.BoundField> object, set its properties, and then add it to the data-bound control's field collection. For example, if you are using the <xref:System.Web.UI.WebControls.GridView> control, add the <xref:System.Web.UI.WebControls.BoundField> object to the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection.  
+  
+> [!NOTE]
+>  Although you can dynamically add fields to a data-bound control, it is strongly recommended that fields be statically declared and then shown or hidden, as appropriate. Statically declaring all of your fields reduces the size of the view state for the parent data-bound control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.BoundField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldCtor/CS/boundfieldctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldCtor/VB/boundfieldctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyFormatInEditMode">
+      <MemberSignature Language="C#" Value="public virtual bool ApplyFormatInEditMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ApplyFormatInEditMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the formatting string specified by the <see cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" /> property is applied to field values when the data-bound control that contains the <see cref="T:System.Web.UI.WebControls.BoundField" /> object is in edit mode.</summary>
+        <value>
+          <see langword="true" /> to apply the formatting string to field values in edit mode; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data-bound controls (such as <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.FormView>, and <xref:System.Web.UI.WebControls.GridView>) have different display modes that allow the user to read, edit, or insert records. By default, the formatting string specified by the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property is applied to field values only when the data-bound control is in read-only mode. To apply the formatting string to values displayed while the data-bound control is in edit mode, set the <xref:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode%2A> property to `true`.  
+  
+> [!NOTE]
+>  A <xref:System.Web.UI.WebControls.BoundField> object does not automatically remove the formatting when the field is updated in the data source. If you do not want the formatting as part of the value stored, you will need to remove the formatting programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode%2A> property to apply the formatting string to field values while a <xref:System.Web.UI.WebControls.GridView> control is in edit mode. The formatting is then programmatically removed before the value is updated in the data source.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundFieldApplyFormatInEditMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/boundfieldapplyformatineditmode/CS/boundfieldapplyformatineditmodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundFieldApplyFormatInEditMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/boundfieldapplyformatineditmode/VB/boundfieldapplyformatineditmodevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertEmptyStringToNull">
+      <MemberSignature Language="C#" Value="public virtual bool ConvertEmptyStringToNull { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether empty string values ("") are automatically converted to null values when the data field is updated in the data source.</summary>
+        <value>
+          <see langword="true" /> to automatically convert empty string values to null values; otherwise, the <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sometimes the user might enter an empty string for a field value when updating or inserting records. Use the <xref:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull%2A> property to specify whether an empty string value is automatically converted to null when the data field is updated in the data source.  
+  
+> [!NOTE]
+>  By default, a <xref:System.Web.UI.WebControls.BoundField> object displays null values as empty strings. To display a different value, set the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull%2A> property to specify that an empty string ("") field value should automatically be converted to null.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundFieldConvertEmptyStringToNull#1](~/samples/snippets/csharp/VS_Snippets_WebNet/boundfieldconvertemptystringtonull/CS/boundfieldconvertemptystingtonullcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundFieldConvertEmptyStringToNull#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/boundfieldconvertemptystringtonull/VB/boundfieldconvertemptystingtonullvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyProperties">
+      <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newField" Type="System.Web.UI.WebControls.DataControlField" />
+      </Parameters>
+      <Docs>
+        <param name="newField">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> to copy the properties of the current <see cref="T:System.Web.UI.WebControls.BoundField" /> to.</param>
+        <summary>Copies the properties of the current <see cref="T:System.Web.UI.WebControls.BoundField" /> object to the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.CopyProperties%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.BoundField> object to the <xref:System.Web.UI.WebControls.DataControlField> object created by the method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataControlField CreateField ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.CreateField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlField</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an empty <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <returns>An empty <see cref="T:System.Web.UI.WebControls.BoundField" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.CreateField%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create an empty <xref:System.Web.UI.WebControls.BoundField> object to copy the properties of the current <xref:System.Web.UI.WebControls.BoundField> object to.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public virtual string DataField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.DataField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Web.UI.Design.DataSourceViewSchemaConverter, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the data field to bind to the <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <value>The name of the data field to bind to the <see cref="T:System.Web.UI.WebControls.BoundField" />. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundField.DataField%2A> property to specify the name of the data field to bind to the <xref:System.Web.UI.WebControls.BoundField> object. The values of the specified field are displayed in the <xref:System.Web.UI.WebControls.BoundField> object as text. You can optionally format the displayed text by setting the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property.  
+  
+> [!NOTE]
+>  If a field's value is null, an empty string ("") is displayed for the value by default. To specify an alternate caption, set the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.DataField%2A> property to specify which field to display in a <xref:System.Web.UI.WebControls.BoundField> field column of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFormatString">
+      <MemberSignature Language="C#" Value="public virtual string DataFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.DataFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that specifies the display format for the value of the field.</summary>
+        <value>A formatting string that specifies the display format for the value of the field. The default is an empty string (""), which indicates that no special formatting is applied to the field value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property to specify a custom display format for the values that are displayed in the <xref:System.Web.UI.WebControls.BoundField> object. If the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property is not set, the field's value is displayed without any special formatting.  
+  
+> [!NOTE]
+>  In versions of ASP.NET earlier than 3.5, you must set the <xref:System.Web.UI.WebControls.BoundField.HtmlEncode%2A> property to `false` in order to format fields that are not string data types. Otherwise, the field value is converted to a string by the default conversion method before the format string that is stored in the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property is applied.  
+  
+ By default, the formatting string is applied to the field value only when the data-bound control that contains the <xref:System.Web.UI.WebControls.BoundField> object is in read-only mode. To apply the formatting string to field values while in edit mode, set the <xref:System.Web.UI.WebControls.BoundField.ApplyFormatInEditMode%2A> property to `true`.  
+  
+ The formatting string can be any literal string and usually includes a placeholder for the field's value. For example, in the formatting string `Item Value: {0}`, the field's value is substituted for the {0} placeholder when the string is displayed in the <xref:System.Web.UI.WebControls.BoundField> object. The rest of the formatting string is displayed as literal text.  
+  
+ If the formatting string does not include a placeholder, only the formatting string itself is included in the final display text (the field's value from the data source is not included). If the placeholder is a 0 (zero) enclosed in curly braces as shown in the preceding example, the field value is converted to a string by the default method. You can append to the zero a string that specifies how the field value should be formatted. For example, the placeholder `{0:C}` for a numeric field specifies that value of the field should be converted to a currency format.  
+  
+ Formatting is applied by using the <xref:System.String.Format%2A> method. The number that follows the left curly brace is part of the syntax used by that method and indicates which one of a series of values the placeholder should use. Because there is only one field value in each cell, the number that follows the left curly brace can only be set to 0.  
+  
+ The following table lists the standard format characters for numeric fields. These format characters are not case-sensitive, except for `X`, which displays hexadecimal characters in the case that is specified. You can append a number to most format characters in order to specify how many significant digits or decimal places you want to display.  
+  
+> [!NOTE]
+>  In most cases, formatting depends on the server's culture setting. The examples are for a culture setting of `en-US`.  
+  
+|Format character|Description|Example|  
+|----------------------|-----------------|-------------|  
+|`C` or `c`|Displays numeric values in currency format. You can specify the number of decimal places.|Format: `{0:C}`<br /><br /> 123.456 -> $123.46<br /><br /> Format: `{0:C3}`<br /><br /> 123.456  -> $123.456|  
+|`D` or `d`|Displays integer values in decimal format. You can specify the number of digits. (Although the type is referred to as "decimal", the numbers are formatted as integers.)|Format: `{0:D}`<br /><br /> 1234 -> 1234<br /><br /> Format: `{0:D6}`<br /><br /> 1234  -> 001234|  
+|`E` or `e`|Displays numeric values in scientific (exponential) format. You can specify the number of decimal places.|Format: `{0:E}`<br /><br /> 1052.0329112756 -> 1.052033E+003<br /><br /> Format: `{0:E2}`<br /><br /> -1052.0329112756 -> -1.05e+003|  
+|`F` or `f`|Displays numeric values in fixed format. You can specify the number of decimal places.|Format: `{0:F}`<br /><br /> 1234.567 -> 1234.57<br /><br /> Format: `{0:F3}`<br /><br /> 1234.567 -> 1234.567|  
+|`G` or `g`|Displays numeric values in general format (the most compact of either fixed-point or scientific notation). You can specify the number of significant digits.|Format: `{0:G}`<br /><br /> -123.456 -> -123.456<br /><br /> Format: `{0:G2}`<br /><br /> -123.456 -> -120|  
+|`N` or `n`|Displays numeric values in number format (including group separators and optional negative sign). You can specify the number of decimal places.|Format: `{0:N}`<br /><br /> 1234.567 -> 1,234.57<br /><br /> Format: `{0:N4}`<br /><br /> 1234.567 -> 1,234.5670|  
+|`P` or `p`|Displays numeric values in percent format. You can specify the number of decimal places.|Format: `{0:P}`<br /><br /> 1 -> 100.00%<br /><br /> Format: `{0:P1}`<br /><br /> .5 -> 50.0%|  
+|`R` or `r`|Displays <xref:System.Single>, <xref:System.Double>, or `BigInteger` values in round-trip format.|Format: `{0:R}`<br /><br /> 123456789.12345678 -> 123456789.12345678|  
+|`X` or `x`|Displays integer values in hexadecimal format. You can specify the number of digits.|Format: `{0:X}`<br /><br /> 255 -> FF<br /><br /> Format: `{0:x4}`<br /><br /> 255  -> 00ff|  
+  
+ For more information and for examples that show formatting for other culture values, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). You can also create custom numeric format strings. For more information, see [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+ The following table lists format characters for <xref:System.DateTime> fields. Most of these formatting specifications result in a different output depending on culture settings. The examples are for a <xref:System.DateTime> value of 6/15/2009 1:45:30 PM with a culture setting of `en-US`.  
+  
+|Format character|Description|Example|  
+|----------------------|-----------------|-------------|  
+|`d`|Short date pattern.|Format: `{0:d}`<br /><br /> 6/15/2009 1:45:30 PM -> 6/15/2009|  
+|`D`|Long date pattern.|Format: `{0:D}`<br /><br /> 6/15/2009 1:45:30 PM ->Monday, June 15, 2009|  
+|`f`|Full date/time pattern (short time).|Format: `{0:f}`<br /><br /> 6/15/2009 1:45:30 PM -> Monday, June 15, 2009 1:45 PM|  
+|`F`|Full date/time pattern (long time).|Format: `{0:F}`<br /><br /> 6/15/2009 1:45:30 PM -> Monday, June 15, 2009 1:45:30 PM|  
+|`g`|General date/time pattern (short time).|Format: `{0:g}`<br /><br /> 6/15/2009 1:45:30 PM -> 6/15/2009 1:45 PM|  
+|`G`|General date/time pattern (long time).|Format: `{0:G}`<br /><br /> 6/15/2009 1:45:30 PM -> 6/15/2009 1:45:30 PM|  
+|`M` or `m`|Month/day pattern.|Format: `{0:M}`<br /><br /> 6/15/2009 1:45:30 PM -> June 15|  
+|`O` or `o`|Round-trip date/time pattern.|Format: `{0:o}`<br /><br /> 6/15/2009 1:45:30 PM -> 2009-06-15T13:45:30.0900000|  
+|`R` or `r`|RFC1123 pattern (for information, see <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=fullName>).|Format: `{0:R}`<br /><br /> 6/15/2009 1:45:30 PM -> Mon, 15 Jun 2009 20:45:30 GMT|  
+|`s`|Sortable date/time pattern.|Format: `{0:s}`<br /><br /> 6/15/2009 1:45:30 PM -> 2009-06-15T13:45:30|  
+|`t`|Short time pattern.|Format: `{0:t}`<br /><br /> 6/15/2009 1:45:30 PM -> 1:45 PM|  
+|`T`|Long time pattern.|Format: `{0:T}`<br /><br /> 6/15/2009 1:45:30 PM -> 1:45:30 PM|  
+|`u`|Universal sortable date/time pattern.|Format: `{0:u}`<br /><br /> 6/15/2009 1:45:30 PM -> 2009-06-15 20:45:30Z|  
+|`U`|Universal full date/time pattern.|Format: `{0:U}`<br /><br /> 6/15/2009 1:45:30 PM -> Monday, June 15, 2009 8:45:30 PM|  
+|`Y` or `y`|Year month pattern.|Format: `{0:Y}`<br /><br /> 6/15/2009 1:45:30 PM -> June, 2009|  
+  
+ For more information and for examples that show formatting for other culture values, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md). You can also create custom date and time format strings. For more information, see [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191889).  
+  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property to specify a custom display format for the values of a field.  
+  
+  
+  
+ The following example shows one row of the output that is produced by this example.  
+  
+|ProductID|Name|ProductNumber|ListPrice|Weight|ModifiedDate|  
+|---------------|----------|-------------------|---------------|------------|------------------|  
+|`000680`|`HL Road Frame - Black, 58`|`#FR-R92B-58`|`$1,431.50`|`1016.040`|`3/11/2004`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractValuesFromCell">
+      <MemberSignature Language="C#" Value="public override void ExtractValuesFromCell (System.Collections.Specialized.IOrderedDictionary dictionary, System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlRowState rowState, bool includeReadOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExtractValuesFromCell(class System.Collections.Specialized.IOrderedDictionary dictionary, class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlRowState rowState, bool includeReadOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Collections.Specialized.IOrderedDictionary" />
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.DataControlFieldCell" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+        <Parameter Name="includeReadOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">A <see cref="T:System.Collections.IDictionary" /> used to store the values of the specified cell.</param>
+        <param name="cell">The <see cref="T:System.Web.UI.WebControls.TableCell" /> that contains the values to retrieve.</param>
+        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</param>
+        <param name="includeReadOnly">
+          <see langword="true" /> to include the values of read-only fields; otherwise, <see langword="false" />.</param>
+        <summary>Fills the specified <see cref="T:System.Collections.IDictionary" /> object with the values from the specified <see cref="T:System.Web.UI.WebControls.TableCell" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.ExtractValuesFromCell%2A> method is provided as a convenient way to retrieve the values of the fields from the specified <xref:System.Web.UI.WebControls.TableCell> object in a <xref:System.Web.UI.WebControls.BoundField> object.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ This method does not have a return value. Instead, the field values are returned by reference through the <xref:System.Collections.IDictionary?displayProperty=fullName> object passed in for the `dictionary` parameter. After the method has been called, iterate through the <xref:System.Collections.IDictionary?displayProperty=fullName> object to access the field values.  
+  
+> [!NOTE]
+>  If the <xref:System.Web.UI.WebControls.TableCell> object contains read-only field values, you must pass in `true` for the `includeReadOnly` parameter to include those values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDataValue">
+      <MemberSignature Language="C#" Value="protected virtual string FormatDataValue (object dataValue, bool encode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataValue(object dataValue, bool encode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.FormatDataValue(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataValue" Type="System.Object" />
+        <Parameter Name="encode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dataValue">The field value to format.</param>
+        <param name="encode">
+          <see langword="true" /> to encode the value; otherwise, <see langword="false" />.</param>
+        <summary>Formats the specified field value for a cell in the <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <returns>The field value converted to the format specified by <see cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.FormatDataValue%2A> method is a helper method used to transform a field value to the format specified by the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property. If a field value is null, the value of the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property is returned.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom formatting routine.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeValue">
+      <MemberSignature Language="C#" Value="protected virtual object GetDesignTimeValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetDesignTimeValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.GetDesignTimeValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the value used for a field's value when rendering the <see cref="T:System.Web.UI.WebControls.BoundField" /> object in a designer.</summary>
+        <returns>The value to display in the designer as the field's value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.GetDesignTimeValue%2A> method is a helper method used to determine what value to display for a field when rendering the <xref:System.Web.UI.WebControls.BoundField> object in a designer. If real data cannot be retrieved from the data source at design time, the value returned by this method is displayed instead.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to return a different value to display for the field in a designer.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="protected virtual object GetValue (System.Web.UI.Control controlContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetValue(class System.Web.UI.Control controlContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.GetValue(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlContainer" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="controlContainer">The container for the field value.</param>
+        <summary>Retrieves the value of the field bound to the <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <returns>The value of the field bound to the <see cref="T:System.Web.UI.WebControls.BoundField" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.GetValue%2A> method is a helper method used to determine the value of a field. If the <xref:System.Web.UI.WebControls.BoundField> object is being displayed in a designer and the field value cannot be determined at design time, the value returned from the <xref:System.Web.UI.WebControls.BoundField.GetDesignTimeValue%2A> method is returned instead of the actual field value.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The container specified by the <paramref name="controlContainer" /> parameter is <see langword="null" />.  
+  
+ \- or -  
+  
+ The container specified by the <paramref name="controlContainer" /> parameter does not have a data item.  
+  
+ \- or -  
+  
+ The data field was not found.</exception>
+        <block subset="none" type="overrides">
+          <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to provide a custom routine to determine a field's value.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderText">
+      <MemberSignature Language="C#" Value="public override string HeaderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.HeaderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is displayed in the header of a data control.</summary>
+        <value>The text displayed in the header of a data control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundField.HeaderText%2A> property to identify a field in a data control with a friendly name. The most common application of the <xref:System.Web.UI.WebControls.BoundField.HeaderText%2A> property is to provide meaningful column names to data-bound fields in a <xref:System.Web.UI.WebControls.GridView> or <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlEncode">
+      <MemberSignature Language="C#" Value="public virtual bool HtmlEncode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.HtmlEncode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether field values are HTML-encoded before they are displayed in a <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <value>
+          <see langword="true" /> if field values are HTML-encoded before they are displayed in a <see cref="T:System.Web.UI.WebControls.BoundField" /> object; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundField.HtmlEncode%2A> property to specify whether field values are HTML-encoded to their respective string representations before they are displayed in a <xref:System.Web.UI.WebControls.BoundField> object. For example, if this property is `true`, a string value of "\<script>" would be rendered as "&lt;script&gt;". If this property is `false`, the string would be rendered unchanged.  
+  
+> [!NOTE]
+>  HTML-encoding field values helps to prevent cross-site scripting attacks and malicious content from being displayed. This property should be enabled whenever possible.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.HtmlEncode%2A> property to prevent field values from being HTML-encoded before being displayed in a <xref:System.Web.UI.WebControls.BoundField> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundFieldHtmlEncode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldHtmlEncode/CS/BoundFieldHtmlEncodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundFieldHtmlEncode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldHtmlEncode/VB/BoundFieldHtmlEncodevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlEncodeFormatString">
+      <MemberSignature Language="C#" Value="public virtual bool HtmlEncodeFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncodeFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.HtmlEncodeFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether text that is created by applying the <see cref="P:System.Web.UI.WebControls.BoundField.DataFormatString" /> property to the <see cref="T:System.Web.UI.WebControls.BoundField" /> value should be HTML encoded when it is displayed.</summary>
+        <value>
+          <see langword="true" /> if the text should be HTML-encoded; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ HTML-encoding values can help prevent cross-site scripting attacks and malicious content from being displayed. HTML encoding is also useful when you want to display HTML code in the browser, such as displaying the string "\<br/>" instead of inserting a line break (`<br/>` element) in the page.  
+  
+> [!NOTE]
+>  This property is new in ASP.NET 3.5. Setting this property to `false` restores the default behavior of the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property in versions of ASP.NET earlier than 3.5. For more information, see the <xref:System.Web.UI.WebControls.BoundField.DataFormatString%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override bool Initialize (bool enableSorting, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Initialize(bool enableSorting, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.Initialize(System.Boolean,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enableSorting" Type="System.Boolean" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="enableSorting">
+          <see langword="true" /> if sorting is supported; otherwise, <see langword="false" />.</param>
+        <param name="control">The data control that owns the <see cref="T:System.Web.UI.WebControls.BoundField" />.</param>
+        <summary>Initializes the <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.Initialize%2A> method is called by the data control with which the <xref:System.Web.UI.WebControls.BoundField> object is associated to perform basic object initialization for instances of the field, before the field is ever added to a rows collection. Data controls such as <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView> call the <xref:System.Web.UI.WebControls.DataControlField.Initialize%2A> method in their `CreateChildControls` methods before other methods such as `CreateRow` are called to create specific rows with data.  
+  
+ Call this method when you are writing a custom data-bound control that uses <xref:System.Web.UI.WebControls.TableCell> objects to perform basic initialization for a <xref:System.Web.UI.WebControls.BoundField> object. Implement this method if your <xref:System.Web.UI.WebControls.BoundField>-derived type requires any object initialization before it populates <xref:System.Web.UI.WebControls.TableCell> objects with data or controls in the <xref:System.Web.UI.WebControls.BoundField.InitializeCell%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCell">
+      <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlCellType cellType, System.Web.UI.WebControls.DataControlRowState rowState, int rowIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlCellType cellType, valuetype System.Web.UI.WebControls.DataControlRowState rowState, int32 rowIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.DataControlFieldCell" />
+        <Parameter Name="cellType" Type="System.Web.UI.WebControls.DataControlCellType" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cell">The <see cref="T:System.Web.UI.WebControls.TableCell" /> to initialize.</param>
+        <param name="cellType">One of the <see cref="T:System.Web.UI.WebControls.DataControlCellType" /> values.</param>
+        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</param>
+        <param name="rowIndex">The zero-based index of the row.</param>
+        <summary>Initializes the specified <see cref="T:System.Web.UI.WebControls.TableCell" /> object to the specified row state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.InitializeCell%2A> method is implemented by <xref:System.Web.UI.WebControls.BoundField>-derived types to add text and controls to a <xref:System.Web.UI.WebControls.TableCell> object of a data control that uses tables to display a user interface (UI). These data controls create the complete table structure row-by-row when the control's `CreateChildControls` method is called. The <xref:System.Web.UI.WebControls.BoundField.InitializeCell%2A> method is called by the `InitializeRow` method of data controls such as <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView>.  
+  
+ Call this method when you are writing a custom data-bound control that uses <xref:System.Web.UI.WebControls.TableCell> objects to initialize the cells of the table structure with data or controls. Implement this method when you are writing a <xref:System.Web.UI.WebControls.BoundField>-derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeDataCell">
+      <MemberSignature Language="C#" Value="protected virtual void InitializeDataCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlRowState rowState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeDataCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlRowState rowState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.InitializeDataCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.DataControlFieldCell" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+      </Parameters>
+      <Docs>
+        <param name="cell">The <see cref="T:System.Web.UI.WebControls.TableCell" /> to initialize.</param>
+        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</param>
+        <summary>Initializes the specified <see cref="T:System.Web.UI.WebControls.TableCell" /> object to the specified row state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.InitializeDataCell%2A> method is a helper method used to initialize a cell in the <xref:System.Web.UI.WebControls.BoundField> object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom initialization routine.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">Represents the control state to be restored.</param>
+        <summary>Restores the previously stored view-state information for this field.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullDisplayText">
+      <MemberSignature Language="C#" Value="public virtual string NullDisplayText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.NullDisplayText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the caption displayed for a field when the field's value is null.</summary>
+        <value>The caption displayed for a field when the field's value is null. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sometimes a field's value is stored as null in the data source. You can specify a custom caption to display for fields that have a null value by setting the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property. If this property is not set, null field values are displayed as empty strings (""). When a record is being updated or inserted in a data-bound control, if the user enters the value specified by this property (other than an empty string) for a field in a data-bound control, that value is automatically converted to null in the data source.  
+  
+> [!NOTE]
+>  To convert an empty string field value to a null value, set the <xref:System.Web.UI.WebControls.BoundField.ConvertEmptyStringToNull%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.NullDisplayText%2A> property to specify a custom caption to display for null field values.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundFieldNullDisplayText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundFieldNullDisplayText/CS/boundfieldnulldisplaytextcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundFieldNullDisplayText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundFieldNullDisplayText/VB/boundfieldnulldisplaytextvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataBindField">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataBindField (object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataBindField(object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.OnDataBindField(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Binds the value of a field to the <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CheckBoxField.OnDataBindField%2A> method is a helper method used to bind the value of a field in the data source to a corresponding cell in the <xref:System.Web.UI.WebControls.BoundField> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The control to which the field value is bound is not a <see cref="T:System.Web.UI.WebControls.TextBox" /> or a <see cref="T:System.Web.UI.WebControls.TableCell" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When extending the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this method to perform a custom binding routine.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the value of the field can be modified in edit mode.</summary>
+        <value>
+          <see langword="true" /> to prevent the value of the field from being modified in edit mode; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BoundField.ReadOnly%2A> property to prevent the values displayed in a <xref:System.Web.UI.WebControls.BoundField> object from being modified. When a data-bound control is in edit mode, fields that are read-only are displayed as plain text, without any editing controls.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.BoundField.ReadOnly%2A> property applies only to edit mode. To prevent fields from showing up in insert mode, use the <xref:System.Web.UI.WebControls.DataControlField.InsertVisible%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BoundField.ReadOnly%2A> property to prevent the values of the key field displayed in a <xref:System.Web.UI.WebControls.BoundField> object from being modified in edit mode.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BoundField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BoundField/CS/boundfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BoundField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BoundField/VB/boundfieldvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsHtmlEncode">
+      <MemberSignature Language="C#" Value="protected virtual bool SupportsHtmlEncode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsHtmlEncode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.SupportsHtmlEncode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether HTML encoding is supported by a <see cref="T:System.Web.UI.WebControls.BoundField" /> object.</summary>
+        <value>Always returns <see langword="true" /> to indicate that HTML encoding is supported by a <see cref="T:System.Web.UI.WebControls.BoundField" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.SupportsHtmlEncode%2A> property is a helper property used by the <xref:System.Web.UI.WebControls.BoundField> class and derived classes to determine whether HTML encoding is supported by the class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When deriving from the <see cref="T:System.Web.UI.WebControls.BoundField" /> class, you can override this property to indicate whether HTML encoding is supported by the class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ThisExpression">
+      <MemberSignature Language="C#" Value="public static readonly string ThisExpression;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ThisExpression" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BoundField.ThisExpression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the "this" expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is used to indicate that the <xref:System.Web.UI.WebControls.BoundField> object should bind against the data source itself, rather than a field of the data source. In this case, the object's `ToString` value will be displayed in the field.  
+  
+ This field is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateRequestMode">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ValidateRequestMode ValidateRequestMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ValidateRequestMode ValidateRequestMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundField.ValidateRequestMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ValidateRequestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether the control validates client input or not.</summary>
+        <value>A value that determines whether the control validates client input or not. The default is <see cref="F:System.Web.UI.ValidateRequestMode.Inherit" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSupportsCallback">
+      <MemberSignature Language="C#" Value="public override void ValidateSupportsCallback ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ValidateSupportsCallback() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundField.ValidateSupportsCallback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the controls contained in a <see cref="T:System.Web.UI.WebControls.BoundField" /> object support callbacks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BoundField.ValidateSupportsCallback%2A> method is a helper method used to determine whether the controls contained in a <xref:System.Web.UI.WebControls.BoundField> object support callbacks. This method has been implemented as an empty method (a method that does not contain any code) to indicate that callbacks are supported.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Classes that derive from the <see cref="T:System.Web.UI.WebControls.BoundField" /> class can override this method to indicate whether the controls contained by the field support callbacks. To indicate that callbacks are supported, implement this method as an empty method that does not throw an exception; otherwise, throw an exception with a useful message describing why callbacks are not supported.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

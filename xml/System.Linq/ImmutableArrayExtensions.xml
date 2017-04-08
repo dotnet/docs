@@ -1,0 +1,1102 @@
+<Type Name="ImmutableArrayExtensions" FullName="System.Linq.ImmutableArrayExtensions">
+  <TypeSignature Language="C#" Value="public static class ImmutableArrayExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ImmutableArrayExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Linq.ImmutableArrayExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aggregate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Aggregate&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,T,T&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Aggregate&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`3&lt;!!T, !!T, !!T&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Aggregate``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,``0,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="func" Type="System.Func&lt;T,T,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aggregate&lt;TAccumulate,T&gt;">
+      <MemberSignature Language="C#" Value="public static TAccumulate Aggregate&lt;TAccumulate,T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, TAccumulate seed, Func&lt;TAccumulate,T,TAccumulate&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TAccumulate Aggregate&lt;TAccumulate, T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, !!TAccumulate seed, class System.Func`3&lt;!!TAccumulate, !!T, !!TAccumulate&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Aggregate``2(System.Collections.Immutable.ImmutableArray{``1},``0,System.Func{``0,``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TAccumulate</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TAccumulate" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="seed" Type="TAccumulate" />
+        <Parameter Name="func" Type="System.Func&lt;TAccumulate,T,TAccumulate&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TAccumulate">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="seed">To be added.</param>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aggregate&lt;TAccumulate,TResult,T&gt;">
+      <MemberSignature Language="C#" Value="public static TResult Aggregate&lt;TAccumulate,TResult,T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, TAccumulate seed, Func&lt;TAccumulate,T,TAccumulate&gt; func, Func&lt;TAccumulate,TResult&gt; resultSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TResult Aggregate&lt;TAccumulate, TResult, T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, !!TAccumulate seed, class System.Func`3&lt;!!TAccumulate, !!T, !!TAccumulate&gt; func, class System.Func`2&lt;!!TAccumulate, !!TResult&gt; resultSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Aggregate``3(System.Collections.Immutable.ImmutableArray{``2},``0,System.Func{``0,``2,``0},System.Func{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TAccumulate" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="seed" Type="TAccumulate" />
+        <Parameter Name="func" Type="System.Func&lt;TAccumulate,T,TAccumulate&gt;" />
+        <Parameter Name="resultSelector" Type="System.Func&lt;TAccumulate,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TAccumulate">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="seed">To be added.</param>
+        <param name="func">To be added.</param>
+        <param name="resultSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool All&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool All&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.All``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Any&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Any&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Any&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Any``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Any&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Any&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt;.Builder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Any&lt;T&gt;(class System.Collections.Immutable.ImmutableArray`1/Builder&lt;!!T&gt; builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Any``1(System.Collections.Immutable.ImmutableArray`1.Builder{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Any&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Any&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Any&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Any``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAt&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ElementAt&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ElementAt&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ElementAt``1(System.Collections.Immutable.ImmutableArray{``0},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAtOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ElementAtOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ElementAtOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ElementAtOrDefault``1(System.Collections.Immutable.ImmutableArray{``0},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="First&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T First&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T First&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.First``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="First&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T First&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt;.Builder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T First&lt;T&gt;(class System.Collections.Immutable.ImmutableArray`1/Builder&lt;!!T&gt; builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.First``1(System.Collections.Immutable.ImmutableArray`1.Builder{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="First&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T First&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T First&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.First``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T FirstOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FirstOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.FirstOrDefault``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T FirstOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt;.Builder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FirstOrDefault&lt;T&gt;(class System.Collections.Immutable.ImmutableArray`1/Builder&lt;!!T&gt; builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.FirstOrDefault``1(System.Collections.Immutable.ImmutableArray`1.Builder{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T FirstOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FirstOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.FirstOrDefault``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Last&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Last&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Last``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Last&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt;.Builder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Last&lt;T&gt;(class System.Collections.Immutable.ImmutableArray`1/Builder&lt;!!T&gt; builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Last``1(System.Collections.Immutable.ImmutableArray`1.Builder{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Last&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Last&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Last``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T LastOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T LastOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.LastOrDefault``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T LastOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt;.Builder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T LastOrDefault&lt;T&gt;(class System.Collections.Immutable.ImmutableArray`1/Builder&lt;!!T&gt; builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.LastOrDefault``1(System.Collections.Immutable.ImmutableArray`1.Builder{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T LastOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T LastOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.LastOrDefault``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;TResult&gt; Select&lt;T,TResult&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,TResult&gt; selector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; Select&lt;T, TResult&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, !!TResult&gt; selector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Select``2(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="selector" Type="System.Func&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="selector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectMany&lt;TSource,TCollection,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;TResult&gt; SelectMany&lt;TSource,TCollection,TResult&gt; (this System.Collections.Immutable.ImmutableArray&lt;TSource&gt; immutableArray, Func&lt;TSource,System.Collections.Generic.IEnumerable&lt;TCollection&gt;&gt; collectionSelector, Func&lt;TSource,TCollection,TResult&gt; resultSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; SelectMany&lt;TSource, TCollection, TResult&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TSource&gt; immutableArray, class System.Func`2&lt;!!TSource, class System.Collections.Generic.IEnumerable`1&lt;!!TCollection&gt;&gt; collectionSelector, class System.Func`3&lt;!!TSource, !!TCollection, !!TResult&gt; resultSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.SelectMany``3(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``1}},System.Func{``0,``1,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+        <TypeParameter Name="TCollection" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="collectionSelector" Type="System.Func&lt;TSource,System.Collections.Generic.IEnumerable&lt;TCollection&gt;&gt;" />
+        <Parameter Name="resultSelector" Type="System.Func&lt;TSource,TCollection,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <typeparam name="TCollection">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="collectionSelector">To be added.</param>
+        <param name="resultSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SequenceEqual&lt;TDerived,TBase&gt;">
+      <MemberSignature Language="C#" Value="public static bool SequenceEqual&lt;TDerived,TBase&gt; (this System.Collections.Immutable.ImmutableArray&lt;TBase&gt; immutableArray, System.Collections.Generic.IEnumerable&lt;TDerived&gt; items, System.Collections.Generic.IEqualityComparer&lt;TBase&gt; comparer = null) where TDerived : TBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SequenceEqual&lt;(!!TBase) TDerived, TBase&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TBase&gt; immutableArray, class System.Collections.Generic.IEnumerable`1&lt;!!TDerived&gt; items, class System.Collections.Generic.IEqualityComparer`1&lt;!!TBase&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.SequenceEqual``2(System.Collections.Immutable.ImmutableArray{``1},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDerived">
+          <Constraints>
+            <BaseTypeName>TBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TBase" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;TBase&gt;" RefType="this" />
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;TDerived&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TBase&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDerived">To be added.</typeparam>
+        <typeparam name="TBase">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="items">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SequenceEqual&lt;TDerived,TBase&gt;">
+      <MemberSignature Language="C#" Value="public static bool SequenceEqual&lt;TDerived,TBase&gt; (this System.Collections.Immutable.ImmutableArray&lt;TBase&gt; immutableArray, System.Collections.Immutable.ImmutableArray&lt;TDerived&gt; items, System.Collections.Generic.IEqualityComparer&lt;TBase&gt; comparer = null) where TDerived : TBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SequenceEqual&lt;(!!TBase) TDerived, TBase&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TBase&gt; immutableArray, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TDerived&gt; items, class System.Collections.Generic.IEqualityComparer`1&lt;!!TBase&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.SequenceEqual``2(System.Collections.Immutable.ImmutableArray{``1},System.Collections.Immutable.ImmutableArray{``0},System.Collections.Generic.IEqualityComparer{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDerived">
+          <Constraints>
+            <BaseTypeName>TBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TBase" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;TBase&gt;" RefType="this" />
+        <Parameter Name="items" Type="System.Collections.Immutable.ImmutableArray&lt;TDerived&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TBase&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDerived">To be added.</typeparam>
+        <typeparam name="TBase">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="items">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SequenceEqual&lt;TDerived,TBase&gt;">
+      <MemberSignature Language="C#" Value="public static bool SequenceEqual&lt;TDerived,TBase&gt; (this System.Collections.Immutable.ImmutableArray&lt;TBase&gt; immutableArray, System.Collections.Immutable.ImmutableArray&lt;TDerived&gt; items, Func&lt;TBase,TBase,bool&gt; predicate) where TDerived : TBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SequenceEqual&lt;(!!TBase) TDerived, TBase&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TBase&gt; immutableArray, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TDerived&gt; items, class System.Func`3&lt;!!TBase, !!TBase, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.SequenceEqual``2(System.Collections.Immutable.ImmutableArray{``1},System.Collections.Immutable.ImmutableArray{``0},System.Func{``1,``1,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDerived">
+          <Constraints>
+            <BaseTypeName>TBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TBase" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;TBase&gt;" RefType="this" />
+        <Parameter Name="items" Type="System.Collections.Immutable.ImmutableArray&lt;TDerived&gt;" />
+        <Parameter Name="predicate" Type="System.Func&lt;TBase,TBase,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDerived">To be added.</typeparam>
+        <typeparam name="TBase">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="items">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Single&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Single&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Single&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Single``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Single&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Single&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Single&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Single``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T SingleOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T SingleOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.SingleOrDefault``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T SingleOrDefault&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T SingleOrDefault&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.SingleOrDefault``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] ToArray&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T[] ToArray&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ToArray``1(System.Collections.Immutable.ImmutableArray{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDictionary&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;TKey,T&gt; ToDictionary&lt;TKey,T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!T&gt; ToDictionary&lt;TKey, T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ToDictionary``2(System.Collections.Immutable.ImmutableArray{``1},System.Func{``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;T,TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDictionary&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;TKey,T&gt; ToDictionary&lt;TKey,T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,TKey&gt; keySelector, System.Collections.Generic.IEqualityComparer&lt;TKey&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!T&gt; ToDictionary&lt;TKey, T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, !!TKey&gt; keySelector, class System.Collections.Generic.IEqualityComparer`1&lt;!!TKey&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ToDictionary``2(System.Collections.Immutable.ImmutableArray{``1},System.Func{``1,``0},System.Collections.Generic.IEqualityComparer{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;T,TKey&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDictionary&lt;TKey,TElement,T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;TKey,TElement&gt; ToDictionary&lt;TKey,TElement,T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,TKey&gt; keySelector, Func&lt;T,TElement&gt; elementSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!TElement&gt; ToDictionary&lt;TKey, TElement, T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, !!TKey&gt; keySelector, class System.Func`2&lt;!!T, !!TElement&gt; elementSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ToDictionary``3(System.Collections.Immutable.ImmutableArray{``2},System.Func{``2,``0},System.Func{``2,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,TElement&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TElement" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;T,TKey&gt;" />
+        <Parameter Name="elementSelector" Type="System.Func&lt;T,TElement&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TElement">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <param name="elementSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDictionary&lt;TKey,TElement,T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;TKey,TElement&gt; ToDictionary&lt;TKey,TElement,T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,TKey&gt; keySelector, Func&lt;T,TElement&gt; elementSelector, System.Collections.Generic.IEqualityComparer&lt;TKey&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;!!TKey, !!TElement&gt; ToDictionary&lt;TKey, TElement, T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, !!TKey&gt; keySelector, class System.Func`2&lt;!!T, !!TElement&gt; elementSelector, class System.Collections.Generic.IEqualityComparer`1&lt;!!TKey&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.ToDictionary``3(System.Collections.Immutable.ImmutableArray{``2},System.Func{``2,``0},System.Func{``2,``1},System.Collections.Generic.IEqualityComparer{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,TElement&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TElement" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="keySelector" Type="System.Func&lt;T,TKey&gt;" />
+        <Parameter Name="elementSelector" Type="System.Func&lt;T,TElement&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TElement">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <param name="elementSelector">To be added.</param>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Where&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; Where&lt;T&gt; (this System.Collections.Immutable.ImmutableArray&lt;T&gt; immutableArray, Func&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; Where&lt;T&gt;(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!T&gt; immutableArray, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.ImmutableArrayExtensions.Where``1(System.Collections.Immutable.ImmutableArray{``0},System.Func{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="immutableArray">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

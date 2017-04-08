@@ -1,0 +1,69 @@
+<Type Name="IDispatchOperationSelector" FullName="System.ServiceModel.Dispatcher.IDispatchOperationSelector">
+  <TypeSignature Language="C#" Value="public interface IDispatchOperationSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDispatchOperationSelector" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IDispatchOperationSelector" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract that associates incoming messages with a local operation to customize service execution behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement and insert a custom operation selector to customize the selection of the operation to which an incoming message is dispatched in a service application. Assign the <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> object to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector%2A> property to insert the custom selector.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+public class QueryStringDispatcherBehavior : IDispatchOperationSelector  
+{  
+//Define the mapping from the Actions of the message to the operations.  
+NameValueCollection actionMap; { … }  
+  
+//Implement the SelectOperation method.  
+public string SelectOperation( ref Message message )  
+        {  
+            Uri uri = new Uri(message.Headers.Action);  
+            string query = uri.Query;  
+  
+            string methodName = actionMap[message.Headers.Action.ToString()];  
+  
+            return methodName;  
+        }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SelectOperation">
+      <MemberSignature Language="C#" Value="public string SelectOperation (ref System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectOperation(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming <see cref="T:System.ServiceModel.Channels.Message" /> to be associated with an operation.</param>
+        <summary>Associates a local operation with the incoming method.</summary>
+        <returns>The name of the operation to be associated with the <paramref name="message" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,136 @@
+<Type Name="DependencyAccessor" FullName="System.Composition.Hosting.Core.DependencyAccessor">
+  <TypeSignature Language="C#" Value="public abstract class DependencyAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DependencyAccessor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.DependencyAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Hosting</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DependencyAccessor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPromises">
+      <MemberSignature Language="C#" Value="protected abstract System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetPromises (System.Composition.Hosting.Core.CompositionContract exportKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetPromises(class System.Composition.Hosting.Core.CompositionContract exportKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.GetPromises(System.Composition.Hosting.Core.CompositionContract)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportKey" Type="System.Composition.Hosting.Core.CompositionContract" />
+      </Parameters>
+      <Docs>
+        <param name="exportKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveDependencies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt; ResolveDependencies (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt; ResolveDependencies(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.ResolveDependencies(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="System.Object" />
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="isPrerequisite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <param name="contract">To be added.</param>
+        <param name="isPrerequisite">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveRequiredDependency">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.CompositionDependency ResolveRequiredDependency (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.Core.CompositionDependency ResolveRequiredDependency(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.ResolveRequiredDependency(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.CompositionDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="System.Object" />
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="isPrerequisite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <param name="contract">To be added.</param>
+        <param name="isPrerequisite">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveOptionalDependency">
+      <MemberSignature Language="C#" Value="public bool TryResolveOptionalDependency (object site, System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, out System.Composition.Hosting.Core.CompositionDependency dependency);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryResolveOptionalDependency(object site, class System.Composition.Hosting.Core.CompositionContract contract, bool isPrerequisite, class System.Composition.Hosting.Core.CompositionDependency dependency) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.DependencyAccessor.TryResolveOptionalDependency(System.Object,System.Composition.Hosting.Core.CompositionContract,System.Boolean,System.Composition.Hosting.Core.CompositionDependency@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="System.Object" />
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="isPrerequisite" Type="System.Boolean" />
+        <Parameter Name="dependency" Type="System.Composition.Hosting.Core.CompositionDependency&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <param name="contract">To be added.</param>
+        <param name="isPrerequisite">To be added.</param>
+        <param name="dependency">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

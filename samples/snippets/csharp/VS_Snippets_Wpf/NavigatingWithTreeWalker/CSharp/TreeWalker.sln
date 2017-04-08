@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeWalkerClient", "TreeWalkerClient.csproj", "{63C95CD3-520A-4E24-9FA7-4B84D57A6243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeWalkerTarget", "TreeWalkerTarget.csproj", "{049B6DD5-E1D0-4DEB-A572-BA998CEDEA98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C95CD3-520A-4E24-9FA7-4B84D57A6243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C95CD3-520A-4E24-9FA7-4B84D57A6243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C95CD3-520A-4E24-9FA7-4B84D57A6243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C95CD3-520A-4E24-9FA7-4B84D57A6243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049B6DD5-E1D0-4DEB-A572-BA998CEDEA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049B6DD5-E1D0-4DEB-A572-BA998CEDEA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049B6DD5-E1D0-4DEB-A572-BA998CEDEA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049B6DD5-E1D0-4DEB-A572-BA998CEDEA98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

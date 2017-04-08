@@ -1,0 +1,1071 @@
+<Type Name="ClientFormsAuthenticationMembershipProvider" FullName="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider">
+  <TypeSignature Language="C#" Value="public class ClientFormsAuthenticationMembershipProvider : System.Web.Security.MembershipProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientFormsAuthenticationMembershipProvider extends System.Web.Security.MembershipProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Security.MembershipProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables forms authentication with client application services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use client application services to validate users by using forms authentication. To enable forms authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ After configuration, you can validate users by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which internally calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%28System.String%2CSystem.String%29?displayProperty=fullName> method.  
+  
+ Forms authentication requires that the user specify their credentials through login controls provided by your application. You can retrieve the credentials and pass them to the <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. You can also pass in empty strings or `null` to use a credentials provider. A credentials provider is an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation specified in your application configuration file. You will typically implement the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A?displayProperty=fullName> method to display a login dialog box and return a populated <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials> object. Using a credentials provider enables you to share a single login dialog box among multiple applications.  
+  
+ The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method authenticates users through the login service indicated by the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ If the user is successfully authenticated, the service provider sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a new <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains a new <xref:System.Web.ClientServices.ClientFormsIdentity> object that contains the user information. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
+  
+ You can retrieve a reference to the current <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> instance through the `static` <xref:System.Web.Security.Membership.Provider%2A?displayProperty=fullName> property. You can use the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method directly. Additionally, you will need the membership provider reference to call the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout%2A> method, which is not available in the <xref:System.Web.Security.MembershipProvider> base class.  
+  
+ You cannot use the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class to create, delete, or modify membership information. To create, delete, or modify users, you must change the configuration of the login service on the server.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to validate the user by using an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation.  
+  
+ [!code-csharp[ClientApplicationServices#306](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#306)]
+ [!code-vb[ClientApplicationServices#306](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#306)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientFormsAuthenticationMembershipProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public override string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>The name of the application using the custom membership provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property has no effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePassword">
+      <MemberSignature Language="C#" Value="public override bool ChangePassword (string username, string oldPassword, string newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ChangePassword(string username, string oldPassword, string newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ChangePassword(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="oldPassword" Type="System.String" />
+        <Parameter Name="newPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="oldPassword">Not used.</param>
+        <param name="newPassword">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePasswordQuestionAndAnswer">
+      <MemberSignature Language="C#" Value="public override bool ChangePasswordQuestionAndAnswer (string username, string password, string newPasswordQuestion, string newPasswordAnswer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ChangePasswordQuestionAndAnswer(string username, string password, string newPasswordQuestion, string newPasswordAnswer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="newPasswordQuestion" Type="System.String" />
+        <Parameter Name="newPasswordAnswer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="password">Not used.</param>
+        <param name="newPasswordQuestion">Not used.</param>
+        <param name="newPasswordAnswer">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUser">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser CreateUser (string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, out System.Web.Security.MembershipCreateStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, valuetype System.Web.Security.MembershipCreateStatus status) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="email" Type="System.String" />
+        <Parameter Name="passwordQuestion" Type="System.String" />
+        <Parameter Name="passwordAnswer" Type="System.String" />
+        <Parameter Name="isApproved" Type="System.Boolean" />
+        <Parameter Name="providerUserKey" Type="System.Object" />
+        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="password">Not used.</param>
+        <param name="email">Not used.</param>
+        <param name="passwordQuestion">Not used.</param>
+        <param name="passwordAnswer">Not used.</param>
+        <param name="isApproved">Not used.</param>
+        <param name="providerUserKey">Not used.</param>
+        <param name="status">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteUser">
+      <MemberSignature Language="C#" Value="public override bool DeleteUser (string username, bool deleteAllRelatedData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool DeleteUser(string username, bool deleteAllRelatedData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.DeleteUser(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="deleteAllRelatedData" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="deleteAllRelatedData">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnablePasswordReset">
+      <MemberSignature Language="C#" Value="public override bool EnablePasswordReset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnablePasswordReset" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.EnablePasswordReset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnablePasswordRetrieval">
+      <MemberSignature Language="C#" Value="public override bool EnablePasswordRetrieval { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnablePasswordRetrieval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.EnablePasswordRetrieval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUsersByEmail">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection FindUsersByEmail (string emailToMatch, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="emailToMatch" Type="System.String" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="emailToMatch">Not used.</param>
+        <param name="pageIndex">Not used.</param>
+        <param name="pageSize">Not used.</param>
+        <param name="totalRecords">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUsersByName">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection FindUsersByName (string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usernameToMatch" Type="System.String" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="usernameToMatch">Not used.</param>
+        <param name="pageIndex">Not used.</param>
+        <param name="pageSize">Not used.</param>
+        <param name="totalRecords">Not used. This parameter is passed uninitialized.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllUsers">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection GetAllUsers (int pageIndex, int pageSize, out int totalRecords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, int32 totalRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUserCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pageIndex">Not used.</param>
+        <param name="pageSize">Not used.</param>
+        <param name="totalRecords">Not used. This parameter is passed uninitialized.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNumberOfUsersOnline">
+      <MemberSignature Language="C#" Value="public override int GetNumberOfUsersOnline ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetNumberOfUsersOnline() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetNumberOfUsersOnline" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPassword">
+      <MemberSignature Language="C#" Value="public override string GetPassword (string username, string answer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPassword(string username, string answer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetPassword(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="answer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="answer">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUser">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser GetUser (object providerUserKey, bool userIsOnline);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser GetUser(object providerUserKey, bool userIsOnline) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUser(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerUserKey" Type="System.Object" />
+        <Parameter Name="userIsOnline" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="providerUserKey">Not used.</param>
+        <param name="userIsOnline">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUser">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser GetUser (string username, bool userIsOnline);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser GetUser(string username, bool userIsOnline) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUser(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="userIsOnline" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="userIsOnline">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserNameByEmail">
+      <MemberSignature Language="C#" Value="public override string GetUserNameByEmail (string email);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetUserNameByEmail(string email) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.GetUserNameByEmail(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="email" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="email">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="config" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The friendly name of the provider.</param>
+        <param name="config">A collection of name/value pairs representing the provider-specific attributes specified in the configuration for this provider.</param>
+        <summary>Initializes the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] extensibility model calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Initialize%2A> method to initialize the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> using information in your application configuration file. This method recognizes the following authentication service configuration attributes:  
+  
+-   `name`  
+  
+-   `description`  
+  
+-   `savePasswordHashLocally`  
+  
+-   `credentialsProvider`  
+  
+-   `connectionStringName`  
+  
+-   `serviceUri`  
+  
+ For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="config" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is empty.  
+  
+ -or-  
+  
+ <paramref name="config" /> contains an unrecognized value. For more information, see the Remarks section.</exception>
+        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider" /> has already been initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Logout">
+      <MemberSignature Language="C#" Value="public void Logout ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Logout() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Logs out the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.Logout%2A> method clears all authentication cookies from the cookie cache and resets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a <xref:System.Security.Principal.WindowsPrincipal> object that contains the current <xref:System.Security.Principal.WindowsIdentity>.  
+  
+ After you call this method, the current user is no longer authenticated for client application services. This means that you cannot retrieve roles through the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class and settings through the <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> class. However, because the user might have a valid Windows identity, you might still receive a `true` value from code such as the following: `Thread.CurrentPrincipal.Identity.IsAuthenticated`. To determine whether the user is authenticated for client application services, confirm that the <xref:System.Security.Principal.IPrincipal.Identity%2A> property value of the <xref:System.Security.Principal.IPrincipal> retrieved through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A> property is a <xref:System.Web.ClientServices.ClientFormsIdentity> reference. Then, check the <xref:System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated%2A?displayProperty=fullName> property.  
+  
+ To reauthenticate the current user, call the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method or the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to log out the user.  
+  
+ [!code-csharp[ClientApplicationServices#070](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Form1.cs#070)]
+ [!code-vb[ClientApplicationServices#070](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Form1.vb#070)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxInvalidPasswordAttempts">
+      <MemberSignature Language="C#" Value="public override int MaxInvalidPasswordAttempts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxInvalidPasswordAttempts" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.MaxInvalidPasswordAttempts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>The number of invalid password attempts allowed before the membership user is locked out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class always provides three password attempts. You cannot modify the provider to change the number of password attempts.  
+  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinRequiredNonAlphanumericCharacters">
+      <MemberSignature Language="C#" Value="public override int MinRequiredNonAlphanumericCharacters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinRequiredNonAlphanumericCharacters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.MinRequiredNonAlphanumericCharacters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinRequiredPasswordLength">
+      <MemberSignature Language="C#" Value="public override int MinRequiredPasswordLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinRequiredPasswordLength" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.MinRequiredPasswordLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always one.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordAttemptWindow">
+      <MemberSignature Language="C#" Value="public override int PasswordAttemptWindow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PasswordAttemptWindow" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.PasswordAttemptWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>The number of minutes in which a maximum number of invalid password or password-answer attempts are allowed before the membership user is locked out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordFormat">
+      <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipPasswordFormat PasswordFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Security.MembershipPasswordFormat PasswordFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.PasswordFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipPasswordFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>The format for storing passwords in the store data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordStrengthRegularExpression">
+      <MemberSignature Language="C#" Value="public override string PasswordStrengthRegularExpression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PasswordStrengthRegularExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.PasswordStrengthRegularExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always "*".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresQuestionAndAnswer">
+      <MemberSignature Language="C#" Value="public override bool RequiresQuestionAndAnswer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequiresQuestionAndAnswer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.RequiresQuestionAndAnswer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresUniqueEmail">
+      <MemberSignature Language="C#" Value="public override bool RequiresUniqueEmail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUniqueEmail" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.RequiresUniqueEmail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetPassword">
+      <MemberSignature Language="C#" Value="public override string ResetPassword (string username, string answer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ResetPassword(string username, string answer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ResetPassword(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="answer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <param name="answer">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceUri">
+      <MemberSignature Language="C#" Value="public string ServiceUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceUri" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI of the authentication service.</summary>
+        <value>The authentication service URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property in your application code, but you will typically set the value in your application configuration file. This enables you to change the service location without recompiling your code.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this property to programmatically set the authentication service location. When you set the service location programmatically, you must specify the complete service URI, which will always end with "Authentication_JSON_AppService.axd".  
+  
+ [!code-csharp[ClientApplicationServices#301](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#301)]
+ [!code-vb[ClientApplicationServices#301](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#301)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">When getting this property, no service URI was found in the application configuration file, and this property has not been previously set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockUser">
+      <MemberSignature Language="C#" Value="public override bool UnlockUser (string username);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool UnlockUser(string username) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UnlockUser(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateUser">
+      <MemberSignature Language="C#" Value="public override void UpdateUser (System.Web.Security.MembershipUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateUser(class System.Web.Security.MembershipUser user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.Web.Security.MembershipUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create, delete, or modify user information by using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UserValidated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.ClientServices.Providers.UserValidatedEventArgs&gt; UserValidated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ClientServices.Providers.UserValidatedEventArgs&gt; UserValidated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UserValidated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.ClientServices.Providers.UserValidatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user is validated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs only after the user is successfully validated. You can use this event to update your application to reflect the current user. For example, you can use the <xref:System.Web.ClientServices.Providers.UserValidatedEventArgs.UserName%2A?displayProperty=fullName> property to display the user name in your application user interface (UI).  
+  
+ You can silently revalidate users by calling the <xref:System.Web.ClientServices.ClientFormsIdentity.RevalidateUser%2A?displayProperty=fullName> method. Therefore, you should avoid using the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UserValidated> event to display intrusive UI. For example, you should not use the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.UserValidated> event to display a welcome dialog box.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this event to display the user name in the title bar of a form.  
+  
+ [!code-csharp[ClientApplicationServices#305](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#305)]
+ [!code-vb[ClientApplicationServices#305](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#305)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateUser">
+      <MemberSignature Language="C#" Value="public override bool ValidateUser (string username, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateUser(string username, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">The name of the user to authenticate, or <see cref="F:System.String.Empty" /> or <see langword="null" /> to retrieve credentials from the <see cref="T:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider" /> implementation that this application is configured to use.</param>
+        <param name="password">The password of the user to authenticate.</param>
+        <summary>Authenticates a user by using the specified user name and password.</summary>
+        <returns>
+          <see langword="true" /> if the user was authenticated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use client application services to validate users by using forms authentication. To validate users, you will typically call the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which internally calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method. Alternatively, you can call this method directly, as shown in the Example section.  
+  
+ Forms authentication requires that the user specify their credentials through login controls provided by your application. You can retrieve the credentials and pass them to the <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. You can also pass in empty strings or `null` to use a credentials provider. For more information, see [How to: Implement User Login with Client Application Services](~/docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md).  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to validate the user by using an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation. This example requires that you to configure your application to use a credentials provider. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ [!code-csharp[ClientApplicationServices#306](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#306)]
+ [!code-vb[ClientApplicationServices#306](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#306)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateUser">
+      <MemberSignature Language="C#" Value="public bool ValidateUser (string username, string password, bool rememberMe);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateUser(string username, string password, bool rememberMe) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="rememberMe" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="username">The name of the user to authenticate.</param>
+        <param name="password">The password of the user to authenticate.</param>
+        <param name="rememberMe">
+          <see langword="true" /> to store a hash of the password in the local data cache for offline use and for automatic reauthentication when the user authentication cookie expires; <see langword="false" /> to disable offline login or to require users to reauthenticate when the cookie expires.</param>
+        <summary>Authenticates a user by using the specified user name and password, optionally storing a hash of the password in the local data cache.</summary>
+        <returns>
+          <see langword="true" /> if the user was authenticated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use client application services to validate users by using forms authentication. To validate users, you will typically call the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which internally calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%28System.String%2CSystem.String%29?displayProperty=fullName> method. Alternatively, you can call the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method directly. You can call this overload to pass in a `rememberMe` value in addition to the `username` and `password` values.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to validate the user by using login controls in your application code. This example requires a <xref:System.Windows.Forms.TextBox> control named `usernameTextBox`, a <xref:System.Windows.Forms.TextBox> control named `passwordTextBox`, and a <xref:System.Windows.Forms.CheckBox> control named `rememberMeCheckBox`.  
+  
+ [!code-csharp[ClientApplicationServices#307](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#307)]
+ [!code-vb[ClientApplicationServices#307](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#307)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateUser">
+      <MemberSignature Language="C#" Value="public static bool ValidateUser (string username, string password, string serviceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ValidateUser(string username, string password, string serviceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="serviceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">The name of the user to authenticate.</param>
+        <param name="password">The password of the user to authenticate.</param>
+        <param name="serviceUri">The URI of the authentication service to use.</param>
+        <summary>Authenticates a user at the specified service URI by using the specified user name and password.</summary>
+        <returns>
+          <see langword="true" /> if the user was authenticated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use client application services to validate users by using forms authentication. To validate users, you will typically call the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which internally calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method. Alternatively, you can call the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method directly. You can call this overload to access an authentication service at the location specified by the `serviceUri` parameter. Using this overload is an alternative to setting the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property and calling the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%28System.String%2CSystem.String%29> overload.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to validate the user through an authentication service at a specified location. The user credentials are retrieved from login controls in your application code. This example requires a <xref:System.Windows.Forms.TextBox> control named `usernameTextBox` and a <xref:System.Windows.Forms.TextBox> control named `passwordTextBox`.  
+  
+ [!code-csharp[ClientApplicationServices#308](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#308)]
+ [!code-vb[ClientApplicationServices#308](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#308)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" /> property value is <see langword="false" /> and the membership provider is unable to access the authentication service.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

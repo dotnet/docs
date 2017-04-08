@@ -1,0 +1,175 @@
+<Type Name="UserTrackPoint" FullName="System.Workflow.Runtime.Tracking.UserTrackPoint">
+  <TypeSignature Language="C#" Value="public sealed class UserTrackPoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UserTrackPoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.UserTrackPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a point, associated with a user event, to be tracked in the potential execution path of a root workflow instance. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ An activity designer or a workflow designer may use the overloaded <xref:System.Workflow.ComponentModel.Activity.TrackData%2A?displayProperty=fullName> and <xref:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData%2A?displayProperty=fullName> methods to instrument the workflow to emit data to the runtime tracking infrastructure as a user event. The data emitted is referred to as user data. Unlike activity status events, and workflow status events, which occur only on status changes, user events can occur at any location that is instrumented in a workflow. There are many reasons to instrument a workflow to emit user events. For example, a workflow designer may want to communicate logical state information about the progress of a workflow, or an activity designer might want to provide an opportunity to activity members at times other than an activity status change.  
+  
+ A <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> defines a point of interest in the potential execution path of a root workflow instance associated with a user event. A <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> contains locations that are included in matching, locations that are excluded from matching, and any additional data that should be extracted from the workflow instance when the track point is matched. You can add a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> to <xref:System.Workflow.Runtime.Tracking.TrackingProfile.UserTrackPoints%2A?displayProperty=fullName> to instruct the runtime tracking infrastructure to send a <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> to the tracking service when the track point is matched. The user data is returned in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A?displayProperty=fullName>. A single <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> may be matched at multiple points in the workflow instance.  
+  
+ A <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> contains match conditions for a location associated with a user event in the potential execution path of a workflow instance. You can add <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> objects to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A> to define locations that should be included in matching for the track point. Similarly, you can add <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> objects to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A> to define locations that should be excluded from matching for the track point.  
+  
+ You can add <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects and <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A> to specify data that should be extracted from the workflow instance when the track point is matched. The extracted data will be returned in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A?displayProperty=fullName>.  
+  
+ You can add to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A> to specify additional information associated with the track point. These annotations will be returned in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=fullName>.  
+  
+ For an example of how to use this class, see the [Tracking Using User Track Points Sample](http://msdn.microsoft.com/en-us/d894a18a-a4c6-467e-9a42-8be025ecd4d5).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserTrackPoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.UserTrackPoint.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackPoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes an empty track point. No matching locations, excluded locations, data extracts or annotations are specified. You must configure the track point by adding at least one <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A>. You may optionally add the appropriate objects to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A>, <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A>, and <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of annotations associated with the track point.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" />. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A> to specify annotations to be returned in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=fullName> when the track point is matched. If <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A> is empty, no annotations are associated with the track point.  
+  
+ Annotations are `strings` that you define that contain information associated with the track point. For example, an annotation could contain information about the possible execution path the workflow can take from this track point, or it could contain information to be displayed in a user interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludedLocations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.UserTrackingLocationCollection ExcludedLocations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.UserTrackingLocationCollection ExcludedLocations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.UserTrackingLocationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locations that should be excluded from the track point by the runtime tracking infrastructure.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" /> that specifies locations to be excluded from the track point. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any of the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> objects in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A> is matched for a particular user event, the track point will not be matched and no <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> will be sent to the tracking service. If <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A> is empty, there are no excluded locations.  
+  
+ You can use <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A> to exclude specific locations from being tracked by the runtime tracking infrastructure. For example, you can exclude a subset of locations that are specified in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A> in order to more precisely refine the locations that should be tracked by the track point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extracts">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.ExtractCollection Extracts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.ExtractCollection Extracts" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.ExtractCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that specifies data to be extracted from the workflow instance and sent to the tracking service.</summary>
+        <value>An <see cref="T:System.Workflow.Runtime.Tracking.ExtractCollection" /> that specifies data to be extracted and sent to the tracking service. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the track point is matched, the runtime tracking infrastructure sends a <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> to the tracking service. The user data is returned in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.UserData%2A?displayProperty=fullName>. The runtime tracking infrastructure can also extract data specified in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A> from the workflow instance and send this in the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord>. The extracted data is encapsulated in <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> records and returned in <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A?displayProperty=fullName>.  
+  
+ You can add <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A> to specify member data that should be extracted from the activity associated with the user event and you can add <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A> to specify member data that should be extracted from the root activity of the workflow.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchingLocations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.UserTrackingLocationCollection MatchingLocations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.UserTrackingLocationCollection MatchingLocations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.UserTrackingLocationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locations that should be included in matching for the track point by the runtime tracking infrastructure.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocationCollection" /> that specifies the locations to be matched for the track point. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A> is empty, the track point cannot be matched by the runtime tracking infrastructure. You must add at least one <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A> for the <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> to participate in matching.  
+  
+ The track point will be matched if any of the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> objects in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.MatchingLocations%2A> is matched and none of the <xref:System.Workflow.Runtime.Tracking.UserTrackingLocation> objects in <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.ExcludedLocations%2A> is matched.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

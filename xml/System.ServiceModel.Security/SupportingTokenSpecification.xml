@@ -1,0 +1,107 @@
+<Type Name="SupportingTokenSpecification" FullName="System.ServiceModel.Security.SupportingTokenSpecification">
+  <TypeSignature Language="C#" Value="public class SupportingTokenSpecification : System.ServiceModel.Security.SecurityTokenSpecification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SupportingTokenSpecification extends System.ServiceModel.Security.SecurityTokenSpecification" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SupportingTokenSpecification" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Security.SecurityTokenSpecification</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a supporting security token and its authorization policies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Supporting tokens augment the claims provided by the token associated with the message signature. There are 4 different kinds of supporting tokens, and the <xref:System.ServiceModel.Security.SupportingTokenSpecification.SecurityTokenAttachmentMode%2A> enumeration specifies which kind this instance is.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SupportingTokenSpecification (System.IdentityModel.Tokens.SecurityToken token, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, valuetype System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SupportingTokenSpecification.#ctor(System.IdentityModel.Tokens.SecurityToken,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.ServiceModel.Security.SecurityTokenAttachmentMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="tokenPolicies" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" />
+        <Parameter Name="attachmentMode" Type="System.ServiceModel.Security.SecurityTokenAttachmentMode" />
+      </Parameters>
+      <Docs>
+        <param name="token">The security token.</param>
+        <param name="tokenPolicies">The collection of security token policies.</param>
+        <param name="attachmentMode">The security token attachment mode.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="attachmentMode" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SupportingTokenSpecification (System.IdentityModel.Tokens.SecurityToken token, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode, System.ServiceModel.Security.Tokens.SecurityTokenParameters tokenParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, valuetype System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode, class System.ServiceModel.Security.Tokens.SecurityTokenParameters tokenParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SupportingTokenSpecification.#ctor(System.IdentityModel.Tokens.SecurityToken,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.ServiceModel.Security.SecurityTokenAttachmentMode,System.ServiceModel.Security.Tokens.SecurityTokenParameters)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="tokenPolicies" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" />
+        <Parameter Name="attachmentMode" Type="System.ServiceModel.Security.SecurityTokenAttachmentMode" />
+        <Parameter Name="tokenParameters" Type="System.ServiceModel.Security.Tokens.SecurityTokenParameters" />
+      </Parameters>
+      <Docs>
+        <param name="token">The security token.</param>
+        <param name="tokenPolicies">The collection of security token policies.</param>
+        <param name="attachmentMode">The security token attachment mode.</param>
+        <param name="tokenParameters">The parameters to binding elements that control security tokens.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenAttachmentMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityTokenAttachmentMode SecurityTokenAttachmentMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.SecurityTokenAttachmentMode SecurityTokenAttachmentMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SupportingTokenSpecification.SecurityTokenAttachmentMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityTokenAttachmentMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the security token attachment mode.</summary>
+        <value>The security token attachment mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode> is an enumeration of the ways in which security tokens can be attached to messages. It includes the following members:  
+  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

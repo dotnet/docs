@@ -1,0 +1,739 @@
+<Type Name="TreeNodeCollection" FullName="System.Web.UI.WebControls.TreeNodeCollection">
+  <TypeSignature Language="C#" Value="public sealed class TreeNodeCollection : System.Collections.ICollection, System.Web.UI.IStateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TreeNodeCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Web.UI.IStateManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IStateManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection> class is used to store and manage a collection of <xref:System.Web.UI.WebControls.TreeNode> objects in the <xref:System.Web.UI.WebControls.TreeView> control. The <xref:System.Web.UI.WebControls.TreeView> control uses the <xref:System.Web.UI.WebControls.TreeNodeCollection> class in two of its properties. It stores its root nodes in the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property and its selected nodes in the <xref:System.Web.UI.WebControls.TreeView.CheckedNodes%2A> property. The <xref:System.Web.UI.WebControls.TreeNodeCollection> collection is also used for the <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> property to store child nodes (if any).  
+  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection> class supports several ways to access the items in the collection:  
+  
+-   Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Item%2A> indexer to retrieve a <xref:System.Web.UI.WebControls.TreeNode> object directly at a specific zero-based index.  
+  
+-   Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to iterate through the collection.  
+  
+-   Use `foreach` (C#) or `For Each` (Visual Basic) to iterate through the collection.  
+  
+-   Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the collection into an <xref:System.Array> object.  
+  
+ You can programmatically manage the <xref:System.Web.UI.WebControls.TreeNodeCollection> by adding and removing <xref:System.Web.UI.WebControls.TreeNode> objects. To add nodes to the collection, use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Add%2A> or <xref:System.Web.UI.WebControls.TreeNodeCollection.AddAt%2A> method. To remove nodes from the collection, use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Remove%2A>, <xref:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt%2A>, or <xref:System.Web.UI.WebControls.TreeNodeCollection.Clear%2A> method.  
+  
+> [!NOTE]
+>  When the <xref:System.Web.UI.WebControls.TreeView> control is bound to a data source, the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> collections are automatically populated each time binding occurs. Any changes to the collections between bindings will be lost. To retain these changes, either update the data source or manually rebuild the collection each time you bind.  
+  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection> contains properties and methods that allow you to retrieve information about the collection itself. To find out how many items are in the collection, use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Count%2A> property. If you want to determine whether the collection contains a certain <xref:System.Web.UI.WebControls.TreeNode> object, use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Contains%2A> method. To get the index of a <xref:System.Web.UI.WebControls.TreeNode> object in the collection, use the <xref:System.Web.UI.WebControls.TreeNodeCollection.IndexOf%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add nodes to and remove them from a <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNodeCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> class using the default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.TreeNodeCollection> class using the default values. This constructor is commonly used when creating a collection of root nodes where a parent node (or owner) is not required.  
+  
+> [!NOTE]
+>  When creating a collection of non-root nodes, you should use the overloaded constructor that takes the `owner` parameter, instead of this constructor, to specify the parent node.  
+  
+ This constructor is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNodeCollection (System.Web.UI.WebControls.TreeNode owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.TreeNode owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.#ctor(System.Web.UI.WebControls.TreeNode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.WebControls.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object that represents the parent node of the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> class using the specified parent node (or owner).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.TreeNodeCollection> class using the specified parent node (or owner). This constructor is commonly used when creating a collection of non-root nodes where you need to specify the parent node.  
+  
+> [!NOTE]
+>  When creating a collection of root nodes, consider using the default constructor because root nodes do not have a parent node.  
+  
+ This constructor is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.UI.WebControls.TreeNode child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.WebControls.TreeNode child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.Add(System.Web.UI.WebControls.TreeNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Web.UI.WebControls.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="child">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to append.</param>
+        <summary>Appends the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to the end of the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Add%2A> method to append the specified <xref:System.Web.UI.WebControls.TreeNode> object to the end of the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TreeNodeCollection> allows you to add null references (Nothing in Visual Basic), as well as duplicate <xref:System.Web.UI.WebControls.TreeNode> objects.  
+  
+ As an alternative, you can insert a <xref:System.Web.UI.WebControls.TreeNode> object in the <xref:System.Web.UI.WebControls.TreeNodeCollection> at a specific index by using the <xref:System.Web.UI.WebControls.TreeNodeCollection.AddAt%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Add%2A> method to programmatically add a node to the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public void AddAt (int index, System.Web.UI.WebControls.TreeNode child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAt(int32 index, class System.Web.UI.WebControls.TreeNode child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.AddAt(System.Int32,System.Web.UI.WebControls.TreeNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="child" Type="System.Web.UI.WebControls.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location at which to insert the <see cref="T:System.Web.UI.WebControls.TreeNode" /> object.</param>
+        <param name="child">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to add.</param>
+        <summary>Inserts the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object in a <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.AddAt%2A> method to insert the specified <xref:System.Web.UI.WebControls.TreeNode> object in the <xref:System.Web.UI.WebControls.TreeNodeCollection> at the specified zero-based index.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TreeNodeCollection> allows you to insert null references (Nothing in Visual Basic), as well as duplicate <xref:System.Web.UI.WebControls.TreeNode> objects.  
+  
+ As an alternative, you can append a <xref:System.Web.UI.WebControls.TreeNode> object to the end of the <xref:System.Web.UI.WebControls.TreeNodeCollection> by using the <xref:System.Web.UI.WebControls.TreeNodeCollection.Add%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.AddAt%2A> method to programmatically add a node to the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="child" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Empties the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Clear%2A> method to remove every <xref:System.Web.UI.WebControls.TreeNode> object from the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+  
+> [!NOTE]
+>  To remove an individual node from the collection, use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Remove%2A> or <xref:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Clear%2A> method to programmatically empty a <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.TreeNode c);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.TreeNode c) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.Contains(System.Web.UI.WebControls.TreeNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="c" Type="System.Web.UI.WebControls.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="c">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to find.</param>
+        <summary>Determines whether the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object is in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Contains%2A> method to determine whether a <xref:System.Web.UI.WebControls.TreeNode> object is contained in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. This method is commonly used to test for the existence of a <xref:System.Web.UI.WebControls.TreeNode> object before performing a task, such as adding or removing the node from the collection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Contains%2A> method to determine whether the selected node is in the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> collection. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/CS/treenodecollectionindexofcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/VB/treenodecollectionindexofvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.TreeNode[] nodeArray, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.TreeNode[] nodeArray, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.CopyTo(System.Web.UI.WebControls.TreeNode[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeArray" Type="System.Web.UI.WebControls.TreeNode[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nodeArray">A zero-based array of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects that receives the copied items from the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />.</param>
+        <param name="index">The position in the target array at which to start receiving the copied content.</param>
+        <summary>Copies all the items from the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object to a compatible one-dimensional array of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects, starting at the specified index in the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=fullName> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+  
+ As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the values of a <xref:System.Web.UI.WebControls.TreeNodeCollection> into an array. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/CS/treenodecollectioncopytocs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/VB/treenodecollectioncopytovb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of items in the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <value>The number of items in the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Count%2A> property to determine the number of items in a <xref:System.Web.UI.WebControls.TreeNodeCollection>. This property is commonly used when iterating through a collection to determine the upper bound of the collection. The <xref:System.Web.UI.WebControls.TreeNodeCollection.Count%2A> property is also commonly used to determine whether a collection is empty.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Count%2A> property to determine the number of items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. It then performs a preorder traversal of the <xref:System.Web.UI.WebControls.TreeView> control to display the text of each node.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCount/CS/treenodecollectioncountcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCount/VB/treenodecollectioncountvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that can be used to iterate through a <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <returns>An enumerator that can be used to iterate through the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be easily iterated through to get each item in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. To get the item currently pointed to in the enumerator, use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item. If you need to move the enumerator back to the beginning of the collection, use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method.  
+  
+> [!NOTE]
+>  After you create an enumerator or use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+  
+ As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to create an <xref:System.Array?displayProperty=fullName> object that can be used to access the items in the collection. Another alternative is to use a `foreach` or `For Each` structure to iterate through the collection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that contains root nodes of the <xref:System.Web.UI.WebControls.TreeView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionGetEnumerator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionGetEnumerator/CS/treenodecollectiongetenumeratorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionGetEnumerator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionGetEnumerator/VB/treenodecollectiongetenumeratorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.TreeNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.TreeNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.IndexOf(System.Web.UI.WebControls.TreeNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.UI.WebControls.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to locate.</param>
+        <summary>Determines the index of the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object.</summary>
+        <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.IndexOf%2A> method to determine the zero-based index of the specified <xref:System.Web.UI.WebControls.TreeNode> object in the <xref:System.Web.UI.WebControls.TreeNodeCollection> object. If the node is not in the collection, the method returns -1.  
+  
+> [!NOTE]
+>  If the specified node appears multiple times in the collection, the index of the first occurrence is returned.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.IndexOf%2A> method to determine the index of a root node. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionIndexOf#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/CS/treenodecollectionindexofcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionIndexOf#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionIndexOf/VB/treenodecollectionindexofvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property is used to indicate whether access to the <xref:System.Web.UI.WebControls.TreeNodeCollection> is synchronized (thread safe). This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+  
+ For more information on the <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TreeNode this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TreeNode Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to retrieve.</param>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.TreeNode" /> object at the specified index in the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object at the specified index in the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this indexer to access a <xref:System.Web.UI.WebControls.TreeNode> object from the <xref:System.Web.UI.WebControls.TreeNodeCollection> at the specified index using array notation. The indexer allows you to modify or replace a <xref:System.Web.UI.WebControls.TreeNode> object in the collection directly. The collection is zero-based.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the indexer to access an element in the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.TreeNode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.TreeNode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.Remove(System.Web.UI.WebControls.TreeNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.UI.WebControls.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.UI.WebControls.TreeNode" /> object to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.TreeNode" /> object from the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Remove%2A> method to remove the specified node from the collection. All items that follow that node are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TreeNodeCollection> can contain null references (Nothing in Visual Basic), as well as duplicate <xref:System.Web.UI.WebControls.TreeNode> objects.  
+  
+ As an alternative, you can remove a node at a specific index by using the <xref:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt%2A> method. You can also remove every node in the collection by using the <xref:System.Web.UI.WebControls.TreeNodeCollection.Clear%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.Remove%2A> method to programmatically remove a node from the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location of the node to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.UI.WebControls.TreeNode" /> object at the specified index location from the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt%2A> method to remove the <xref:System.Web.UI.WebControls.TreeNode> object at the specified zero-based index location from a <xref:System.Web.UI.WebControls.TreeNodeCollection>. All items that follow that node are then moved up to fill in the vacant position. The indexes of the moved items are also updated.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TreeNodeCollection> can contain null references (Nothing in Visual Basic), as well as duplicate <xref:System.Web.UI.WebControls.TreeNode> objects.  
+  
+ As an alternative, you can remove a specific <xref:System.Web.UI.WebControls.TreeNode> object by using the <xref:System.Web.UI.WebControls.TreeNodeCollection.Remove%2A> method. You can also remove every node in the collection by using the <xref:System.Web.UI.WebControls.TreeNodeCollection.Clear%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.RemoveAt%2A> method to programmatically remove a node from the <xref:System.Web.UI.WebControls.TreeNodeCollection>. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> and <xref:System.Web.UI.WebControls.TreeNode.ChildNodes%2A> properties each return a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionAdd#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionAdd/CS/treenodecollectionaddcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionAdd#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionAdd/VB/treenodecollectionaddvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object.</summary>
+        <value>A <see cref="T:System.Object" /> that can be used to synchronize access to the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TreeNodeCollection.SyncRoot%2A> property provides a synchronized version of the <xref:System.Web.UI.WebControls.TreeNodeCollection> that can be used with synchronizing (threading) code.  
+  
+> [!CAUTION]
+>  The <xref:System.Web.UI.WebControls.TreeNodeCollection.IsSynchronized%2A> property of this class always returns `false`, which indicates that the <xref:System.Web.UI.WebControls.TreeNodeCollection> class is not synchronized (not thread safe).  
+  
+ Synchronizing code must perform operations on the <xref:System.Web.UI.WebControls.TreeNodeCollection.SyncRoot%2A> object of the <xref:System.Web.UI.WebControls.TreeNodeCollection>, not directly on the <xref:System.Web.UI.WebControls.TreeNodeCollection> itself. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+> [!NOTE]
+>  The object returned in this implementation is the <xref:System.Collections.ArrayList?displayProperty=fullName> object used to store the <xref:System.Web.UI.WebControls.TreeNode> objects in the collection.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads could still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A zero-based <see cref="T:System.Array" /> object that receives the copied items from the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" />.</param>
+        <param name="index">The position in the target array at which to start receiving the copied content.</param>
+        <summary>Copies all the items from the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index in the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.TreeNodeCollection> into the specified zero-based <xref:System.Array?displayProperty=fullName> object. Items are copied starting at the specified index of the target array. With the <xref:System.Array?displayProperty=fullName> object, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.TreeNodeCollection>.  
+  
+ As an alternative, you can also use the <xref:System.Web.UI.WebControls.TreeNodeCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeCollection.CopyTo%2A> method to copy the values of a <xref:System.Web.UI.WebControls.TreeNodeCollection> into an array. Notice that the <xref:System.Web.UI.WebControls.TreeView.Nodes%2A> property returns a <xref:System.Web.UI.WebControls.TreeNodeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeNodeCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/CS/treenodecollectioncopytocs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeNodeCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeNodeCollectionCopyTo/VB/treenodecollectioncopytovb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is not an array of <see cref="T:System.Web.UI.WebControls.TreeNode" /> objects.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object is saving changes to its view state.</summary>
+        <value>
+          <see langword="true" /> if the control is marked to save its state; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">A <see cref="T:System.Object" /> that contains the saved view state values.</param>
+        <summary>Loads the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> object's previously saved view state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
+      <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes to view state to a <see cref="T:System.Object" />.</summary>
+        <returns>The <see cref="T:System.Object" /> that contains the view state changes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeCollection.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Instructs the <see cref="T:System.Web.UI.WebControls.TreeNodeCollection" /> to track changes to its view state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After this method has been called on a server control, the <xref:System.Web.UI.Control.IsTrackingViewState%2A> property will return `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

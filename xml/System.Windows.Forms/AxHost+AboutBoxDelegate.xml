@@ -1,0 +1,36 @@
+<Type Name="AxHost+AboutBoxDelegate" FullName="System.Windows.Forms.AxHost+AboutBoxDelegate">
+  <TypeSignature Language="C#" Value="protected delegate void AxHost.AboutBoxDelegate();" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed AxHost/AboutBoxDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.AboutBoxDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Represents the method that will display an ActiveX control's About dialog box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.AxHost.AboutBoxDelegate> provides you the ability to be notified when the ActiveX control's About box is going to be displayed. Code added to the delegate method is executed before the About box is displayed.  
+  
+ When you create an <xref:System.Windows.Forms.AxHost.AboutBoxDelegate> delegate, you identify the method that will handle the display of an ActiveX control's About dialog box if it has one. To associate the method with your handler, add an instance of the delegate to the method. The handler is called whenever the method is called, unless you remove the delegate. For more information about delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example overrides the constructor, and the <xref:System.Windows.Forms.AxHost.SetAboutBoxDelegate%2A> and <xref:System.Windows.Forms.AxHost.AttachInterfaces%2A> methods of an <xref:System.Windows.Forms.AxHost> derived class that wraps the Microsoft Masked Edit ActiveX Control. This code assumes you have created the generated source code by running the AxImp.exe on the MSMask32.ocx file with the `/source` switch to generate the wrapper class to be edited. This code is only shown in C# syntax as that is the the only language output by the AxImp.exe.  
+  
+ [!code-csharp[AxHost_Wrap_MaskEdit#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AxHost_Wrap_MaskEdit/CS/axmsmask.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,68 @@
+<Type Name="ToolBarTextAlign" FullName="System.Windows.Forms.ToolBarTextAlign">
+  <TypeSignature Language="C#" Value="public enum ToolBarTextAlign" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolBarTextAlign extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarTextAlign" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the alignment of text on the toolbar button control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ToolBar.TextAlign%2A?displayProperty=fullName>.  
+  
+ Room is reserved for an image to be displayed on toolbar buttons. The alignment of text is in relation to the image displayed on the toolbar button. If no image is assigned to the button, the reserved space will appear to the left, or above the text displayed.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.ToolBar> control, sets some of its common properties, and adds it to a <xref:System.Windows.Forms.Form>. Delegates are also added to the <xref:System.Windows.Forms.ToolBar.ButtonClick> and <xref:System.Windows.Forms.ToolBar.ButtonDropDown> events. This example assumes a <xref:System.Windows.Forms.ToolBar> named `toolBar1` and an <xref:System.Windows.Forms.ImageList> named `imageList1` have been declared.  
+  
+ [!code-cpp[ToolBar#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolBar/CPP/mytoolbar.cpp#1)]
+ [!code-csharp[ToolBar#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolBar/CS/mytoolbar.cs#1)]
+ [!code-vb[ToolBar#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolBar/VB/mytoolbar.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarTextAlign Right = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarTextAlign.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolBarTextAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The text is aligned to the right of the toolbar button image.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Underneath">
+      <MemberSignature Language="C#" Value="Underneath" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarTextAlign Underneath = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarTextAlign.Underneath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolBarTextAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The text is aligned underneath the toolbar button image.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,6 @@
+<Namespace Name="System.Management">
+  <Docs>
+    <summary>Provides access to a rich set of management information and management events about the system, devices, and applications instrumented to the Windows Management Instrumentation (WMI) infrastructure. Applications and services can query for interesting management information (such as how much free space is left on the disk, what is the current CPU utilization, which database a certain application is connected to, and much more), using classes derived from <see cref="T:System.Management.ManagementObjectSearcher" /> and <see cref="T:System.Management.ManagementQuery" />, or subscribe to a variety of management events using the <see cref="T:System.Management.ManagementEventWatcher" /> class. The accessible data can be from both managed and unmanaged components in the distributed environment.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

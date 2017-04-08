@@ -1,0 +1,218 @@
+<Type Name="RawStylusInput" FullName="System.Windows.Input.StylusPlugIns.RawStylusInput">
+  <TypeSignature Language="C#" Value="public class RawStylusInput" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RawStylusInput extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPlugIns.RawStylusInput" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about input from a <see cref="T:System.Windows.Input.StylusDevice" /> to a <see cref="T:System.Windows.Input.StylusPlugIns.StylusPlugIn" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput> to get information about the input the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> receives when the user moves the stylus.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application thread.  
+  
+ [!code-csharp[StylusPluginSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/RecognizerPlugin.cs#12)]
+ [!code-vb[StylusPluginSamples#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/RecognizerPlugin.vb#12)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStylusPoints">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection GetStylusPoints ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection GetStylusPoints() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.GetStylusPoints" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the stylus points that are collected from the stylus.</summary>
+        <returns>The stylus points that are collected from the stylus.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to change the stylus points in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A> method. To create a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that restricts ink to a certain area, see the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> overview.  
+  
+ [!code-csharp[StylusPluginSamples#8](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/FilterPlugin.cs#8)]
+ [!code-vb[StylusPluginSamples#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/FilterPlugin.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyWhenProcessed">
+      <MemberSignature Language="C#" Value="public void NotifyWhenProcessed (object callbackData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NotifyWhenProcessed(object callbackData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callbackData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callbackData">The data to pass to the application thread.</param>
+        <summary>Subscribes to the application thread's corresponding stylus methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pen's input is routed to an element's <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> on the pen thread. Because accurate hit-testing cannot be performed on the pen thread, some elements might occasionally receive stylus input intended for other elements. If you need to be sure the input was routed correctly before performing an operation, call the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> method in the method that occurs on the pen thread. The following table lists where to call <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> to subscribe to the application thread's method.  
+  
+|Call <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in this method|To subscribe to this method|  
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|  
+|<xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A>|<xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDownProcessed%2A>|  
+|<xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMove%2A>|<xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMoveProcessed%2A>|  
+|<xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A>|<xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A>|  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that checks for the <xref:System.Windows.Ink.ApplicationGesture> gesture. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> calls <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> in <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUp%2A> to subscribe to the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method, which is called from the application thread.  
+  
+ [!code-csharp[StylusPluginSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/RecognizerPlugin.cs#12)]
+ [!code-vb[StylusPluginSamples#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/RecognizerPlugin.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStylusPoints">
+      <MemberSignature Language="C#" Value="public void SetStylusPoints (System.Windows.Input.StylusPointCollection stylusPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStylusPoints(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPlugIns.RawStylusInput.SetStylusPoints(System.Windows.Input.StylusPointCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stylusPoints" Type="System.Windows.Input.StylusPointCollection" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPoints">The stylus points to pass to the application thread.</param>
+        <summary>Sets the stylus points that are passed to the application thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Events such as <xref:System.Windows.UIElement.StylusDown> and <xref:System.Windows.UIElement.StylusMove>, can get the <xref:System.Windows.Input.StylusPointCollection> set by <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.SetStylusPoints%2A> by calling the <xref:System.Windows.Input.StylusEventArgs.GetStylusPoints%2A> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to change the stylus points in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDown%2A> method. To create a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> that restricts ink to a certain area, see the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> overview.  
+  
+ [!code-csharp[StylusPluginSamples#8](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/FilterPlugin.cs#8)]
+ [!code-vb[StylusPluginSamples#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/FilterPlugin.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for setting the stylus points. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StylusDeviceId">
+      <MemberSignature Language="C#" Value="public int StylusDeviceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StylusDeviceId" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.StylusDeviceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier of the current stylus device.</summary>
+        <value>The identifier of the current <see cref="T:System.Windows.Input.StylusDevice" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example ensures that the stylus points collected are from the same <xref:System.Windows.Input.StylusDevice>. This example is part of the bigger example in the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput> class overview.  
+  
+ [!code-csharp[StylusPluginSamples#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/RecognizerPlugin.cs#15)]
+ [!code-vb[StylusPluginSamples#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/RecognizerPlugin.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabletDeviceId">
+      <MemberSignature Language="C#" Value="public int TabletDeviceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TabletDeviceId" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.TabletDeviceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier of the current tablet device.</summary>
+        <value>The identifier of the current <see cref="T:System.Windows.Input.TabletDevice" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public int Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timestamp" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time at which the input occurred.</summary>
+        <value>The time at which the input occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.Timestamp%2A> property is the value of the <xref:System.Environment.TickCount%2A?displayProperty=fullName> property at which the stylus event occurred.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

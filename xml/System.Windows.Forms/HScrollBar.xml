@@ -1,0 +1,96 @@
+<Type Name="HScrollBar" FullName="System.Windows.Forms.HScrollBar">
+  <TypeSignature Language="C#" Value="public class HScrollBar : System.Windows.Forms.ScrollBar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HScrollBar extends System.Windows.Forms.ScrollBar" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HScrollBar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ScrollBar</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a standard Windows horizontal scroll bar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most controls that need scroll bars already provide them and do not require this control. This is true of a multiline <xref:System.Windows.Forms.TextBox> control, a <xref:System.Windows.Forms.ListBox>, and a <xref:System.Windows.Forms.ComboBox>, for example.  
+  
+ You can use this control to implement scrolling in containers that do not provide their own scroll bars such as a <xref:System.Windows.Forms.PictureBox> or for user input of numeric data. The numeric data can be displayed in a control or used in code. The <xref:System.Windows.Forms.ScrollBar.Minimum%2A> and <xref:System.Windows.Forms.ScrollBar.Maximum%2A> properties determine the range of values the user can select. The <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property determines the effect of clicking within the scroll bar but outside the scroll box. The <xref:System.Windows.Forms.ScrollBar.SmallChange%2A> property determines the effect of clicking the scroll arrows at each end of the control.  
+  
+   
+  
+## Examples  
+ The following example creates and initializes a <xref:System.Windows.Forms.HScrollBar> and adds it to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic HScrollBar Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic HScrollBar Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic HScrollBar Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic HScrollBar Example/CS/source.cs#1)]
+ [!code-vb[Classic HScrollBar Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic HScrollBar Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HScrollBar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HScrollBar.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.HScrollBar" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HScrollBar.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HScrollBar.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,149 @@
+<Type Name="FigureVerticalAnchor" FullName="System.Windows.FigureVerticalAnchor">
+  <TypeSignature Language="C#" Value="public enum FigureVerticalAnchor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FigureVerticalAnchor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FigureVerticalAnchor" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the point of reference of a figure in the vertical direction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The term **content**, as it pertains to the members below, refers to the page minus the page padding or in other words the content is everything inside of the page padding.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Documents.Figure.VerticalAnchor%2A> attribute of a <xref:System.Windows.Documents.Figure> element.  
+  
+ [!code-xml[FloaterFigureSnippets#_FigurePropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_figurepropsxaml)]  
+  
+ The following example shows how to set the <xref:System.Windows.Documents.Figure.VerticalAnchor%2A> property programmatically.  
+  
+ [!code-csharp[FloaterFigureSnippets#_FigureProps](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml.cs#_figureprops)]
+ [!code-vb[FloaterFigureSnippets#_FigureProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FloaterFigureSnippets/visualbasic/window1.xaml.vb#_figureprops)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContentBottom">
+      <MemberSignature Language="C#" Value="ContentBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor ContentBottom = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.ContentBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the bottom of the page content area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentCenter">
+      <MemberSignature Language="C#" Value="ContentCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor ContentCenter = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.ContentCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the center of the page content area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTop">
+      <MemberSignature Language="C#" Value="ContentTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor ContentTop = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.ContentTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the top of the page content area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PageBottom">
+      <MemberSignature Language="C#" Value="PageBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor PageBottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.PageBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the bottom of the page area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PageCenter">
+      <MemberSignature Language="C#" Value="PageCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor PageCenter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.PageCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the center of the page area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PageTop">
+      <MemberSignature Language="C#" Value="PageTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor PageTop = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.PageTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the top of the page area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphTop">
+      <MemberSignature Language="C#" Value="ParagraphTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureVerticalAnchor ParagraphTop = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FigureVerticalAnchor.ParagraphTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FigureVerticalAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Anchor the figure to the top of the current paragraph.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

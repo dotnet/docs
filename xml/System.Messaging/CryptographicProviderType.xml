@@ -1,0 +1,233 @@
+<Type Name="CryptographicProviderType" FullName="System.Messaging.CryptographicProviderType">
+  <TypeSignature Language="C#" Value="public enum CryptographicProviderType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CryptographicProviderType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.CryptographicProviderType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the cryptographic service providers available for validating digital signatures.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A cryptographic service provider contains implementations of cryptographic standards and algorithms. Applications can require the authentication provider name or authentication provider type of a cryptographic service provider to validate the digital signatures.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dss">
+      <MemberSignature Language="C#" Value="Dss" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType Dss = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.Dss" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A provider type that, like <see langword="RsqSig" />, only supports hashes and digital signatures. <see langword="Dss" /> specifies the Digital Signature Algorithm (DSA) signature algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fortezza">
+      <MemberSignature Language="C#" Value="Fortezza" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType Fortezza = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.Fortezza" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A provider type that contains a set of cryptographic protocols and algorithms owned by the National Institute of Standards and Technology.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MicrosoftExchange">
+      <MemberSignature Language="C#" Value="MicrosoftExchange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType MicrosoftExchange = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.MicrosoftExchange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A provider type designed for the cryptographic needs of the Microsoft Exchange mail application and other applications compatible with Microsoft Mail.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This provider type is preliminary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No cryptographic provider type specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RsaFull">
+      <MemberSignature Language="C#" Value="RsaFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType RsaFull = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.RsaFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The full RSA provider type, which supports both digital signatures and data encryption. Considered a general purpose cryptographic services provider. The RSA public-key algorithm is used for all public-key operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ RSA Data Security, Inc., is a major developer and publisher of public-key cryptography standards. The "RSA" in the name stands for the names of the company's three developers and the owners: Rivest, Shamir, and Adelman.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RsqSig">
+      <MemberSignature Language="C#" Value="RsqSig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType RsqSig = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.RsqSig" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A subset of the <see langword="RsaFull" /> provider type, which supports only those functions and algorithms required for hashes and digital signatures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ssl">
+      <MemberSignature Language="C#" Value="Ssl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType Ssl = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.Ssl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A provider type that supports the Secure Sockets Layer (SSL) protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SttAcq">
+      <MemberSignature Language="C#" Value="SttAcq" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType SttAcq = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttAcq" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Secure transaction technology provider acquirer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SttBrnd">
+      <MemberSignature Language="C#" Value="SttBrnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType SttBrnd = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttBrnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Secure transaction technology provider brand.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SttIss">
+      <MemberSignature Language="C#" Value="SttIss" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType SttIss = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttIss" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Secure transaction technology provider issuer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SttMer">
+      <MemberSignature Language="C#" Value="SttMer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType SttMer = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttMer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Secure transaction technology provider enterprise.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SttRoot">
+      <MemberSignature Language="C#" Value="SttRoot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.CryptographicProviderType SttRoot = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.CryptographicProviderType.SttRoot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Secure transaction technology provider root.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

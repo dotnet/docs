@@ -1,0 +1,528 @@
+<Type Name="WsFederationConfiguration" FullName="System.IdentityModel.Services.Configuration.WsFederationConfiguration">
+  <TypeSignature Language="C#" Value="public class WsFederationConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WsFederationConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.WsFederationConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains all of the configuration settings needed by the WS-Federation Authentication Module (<see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration> class that is set on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object accessed through the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property contains the settings that are used to initialize the properties of the WS-Federation Authentication Module (WSFAM) and control its behavior. These settings are typically loaded from the `<wsFederation>` element in the configuration file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WsFederationConfiguration (System.IdentityModel.Services.Configuration.WSFederationElement federationElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Services.Configuration.WSFederationElement federationElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.WsFederationConfiguration.#ctor(System.IdentityModel.Services.Configuration.WSFederationElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="federationElement" Type="System.IdentityModel.Services.Configuration.WSFederationElement" />
+      </Parameters>
+      <Docs>
+        <param name="federationElement">The <see langword="&lt;wsFederation&gt;" /> element from which to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.WsFederationConfiguration" /> class from the specified <see langword="&lt;wsFederation&gt;" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of the new instance are initialized according to the settings of the specified `<wsFederation>` element.  
+  
+ Some validation is performed on the <xref:System.IdentityModel.Services.Configuration.WSFederationElement> object specified by `federationElement`. Both the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=fullName> property and the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Realm%2A?displayProperty=fullName> property must specify non-null, non-empty values. If the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.RequireHttps%2A?displayProperty=fullName> property is set `true`, the <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer%2A?displayProperty=fullName> property must specify a URI that has an HTTPS scheme. The <xref:System.IdentityModel.Services.Configuration.WSFederationElement.Freshness%2A?displayProperty=fullName> property cannot be negative. If any of these conditions are not met, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WsFederationConfiguration (string issuer, string realm);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string issuer, string realm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.WsFederationConfiguration.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="issuer" Type="System.String" />
+        <Parameter Name="realm" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="issuer">A string that contains the URI of the issuer to be used by the WS-Federation Authentication Module (WSFAM).</param>
+        <param name="realm">A string that contains the URI of the requesting realm to be used by the WSFAM.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.WsFederationConfiguration" /> class by using the specified issuer and realm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Issuer%2A> and <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Realm%2A> properties are initialized according to the `issuer` and `realm` parameters. All other properties are initialized to their default values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="issuer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="realm" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationType">
+      <MemberSignature Language="C#" Value="public string AuthenticationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.AuthenticationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URI that specifies the authentication type. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; CustomAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; CustomAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.CustomAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains any extra attributes specified in the <see langword="&lt;wsFederation&gt;" /> element in the configuration file.</summary>
+        <value>The dictionary that contains the extra attributes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFreshness">
+      <MemberSignature Language="C#" Value="public const string DefaultFreshness = null;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultFreshness = null" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultFreshness" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <MemberValue>null</MemberValue>
+      <Docs>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Freshness" /> property; zero.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMaxArrayLength">
+      <MemberSignature Language="C#" Value="public const int DefaultMaxArrayLength = 2097152;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultMaxArrayLength = (2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxArrayLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2097152</MemberValue>
+      <Docs>
+        <summary>A constant that sets the default <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength" /> property of the XML dictionary reader quotas object referenced by the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.XmlDictionaryReaderQuotas" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMaxStringContentLength">
+      <MemberSignature Language="C#" Value="public const int DefaultMaxStringContentLength = 2097152;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultMaxStringContentLength = (2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxStringContentLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2097152</MemberValue>
+      <Docs>
+        <summary>A constant that sets the default <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength" /> property of the XML dictionary reader quotas object referenced by the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.XmlDictionaryReaderQuotas" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPassiveRedirectEnabled">
+      <MemberSignature Language="C#" Value="public const bool DefaultPassiveRedirectEnabled;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal bool DefaultPassiveRedirectEnabled" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPassiveRedirectEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.PassiveRedirectEnabled" /> property; <see langword="true" />, passive redirects are enabled.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPersistentCookiesOnPassiveRedirects">
+      <MemberSignature Language="C#" Value="public const bool DefaultPersistentCookiesOnPassiveRedirects;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal bool DefaultPersistentCookiesOnPassiveRedirects" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPersistentCookiesOnPassiveRedirects" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.PersistentCookiesOnPassiveRedirects" /> property; <see langword="false" />, cookies are not enabled.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRequireHttps">
+      <MemberSignature Language="C#" Value="public const bool DefaultRequireHttps;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal bool DefaultRequireHttps" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultRequireHttps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant that contains the default value for the <see cref="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.RequireHttps" /> property; <see langword="true" />, HTTPS is required on redirects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Freshness">
+      <MemberSignature Language="C#" Value="public string Freshness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Freshness" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Freshness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>The desired maximum age of authentication requests, in minutes. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultFreshness" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeRealm">
+      <MemberSignature Language="C#" Value="public string HomeRealm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HomeRealm" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.HomeRealm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>The address of the home realm identity provider. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Issuer">
+      <MemberSignature Language="C#" Value="public string Issuer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Issuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Issuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URI that identifies the intended issuer of the security token.</summary>
+        <value>The URI that identifies the security token service (STS). Cannot be <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PassiveRedirectEnabled">
+      <MemberSignature Language="C#" Value="public bool PassiveRedirectEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PassiveRedirectEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.PassiveRedirectEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the module is enabled to initiate WS-Federation protocol redirects.</summary>
+        <value>
+          <see langword="true" /> to enable redirects; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPassiveRedirectEnabled" />, redirects are enabled.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistentCookiesOnPassiveRedirects">
+      <MemberSignature Language="C#" Value="public bool PersistentCookiesOnPassiveRedirects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PersistentCookiesOnPassiveRedirects" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.PersistentCookiesOnPassiveRedirects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether a persistent session cookie is issued on successful authentication.</summary>
+        <value>
+          <see langword="true" /> to issue a persistent session cookie; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultPersistentCookiesOnPassiveRedirects" />, cookies are not enabled.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Policy">
+      <MemberSignature Language="C#" Value="public string Policy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Policy" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Policy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL that identifies the policy to use. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Realm">
+      <MemberSignature Language="C#" Value="public string Realm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Realm" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Realm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wtrealm parameter to be used for WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URI that identifies the relying party (RP) to the security token service (STS). Cannot be <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reply">
+      <MemberSignature Language="C#" Value="public string Reply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Reply" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Reply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS). The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public string Request { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Request" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>The token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPtr">
+      <MemberSignature Language="C#" Value="public string RequestPtr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestPtr" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.RequestPtr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL that specifies the location of the token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireHttps">
+      <MemberSignature Language="C#" Value="public bool RequireHttps { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequireHttps" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.RequireHttps" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether communication with the security token service (STS) must use HTTPS protocol.</summary>
+        <value>
+          <see langword="true" /> if communication with the STS must be secured using HTTPS; otherwise, <see langword="false" />. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultRequireHttps" />, HTTPS is required.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resource">
+      <MemberSignature Language="C#" Value="public string Resource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Resource" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Resource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS). The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wtrealm parameter, which is set by the <xref:System.IdentityModel.Services.Configuration.WsFederationConfiguration.Realm%2A> property, should be used instead of this parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInQueryString">
+      <MemberSignature Language="C#" Value="public string SignInQueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignInQueryString" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.SignInQueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <value>A URL fragment that contains the additional message parameters in the following format: <c>“?param1=value1&amp;param2=value2&amp;paramN=valueN”</c>. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutQueryString">
+      <MemberSignature Language="C#" Value="public string SignOutQueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignOutQueryString" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.SignOutQueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests (“wsignout1.0”) during passive sign-out.</summary>
+        <value>A URL fragment that contains the additional message parameters in the following format: <c>“?param1=value1&amp;param2=value2&amp;paramN=valueN”</c>. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutReply">
+      <MemberSignature Language="C#" Value="public string SignOutReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignOutReply" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.SignOutReply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests (“wsignout1.0”).</summary>
+        <value>The URL to which the client should be redirected by the security token service (STS) during passive sign-out through the WS-Federation protocol. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlDictionaryReaderQuotas">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas XmlDictionaryReaderQuotas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas XmlDictionaryReaderQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WsFederationConfiguration.XmlDictionaryReaderQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the configurable quota values for XML dictionary readers used by this instance.</summary>
+        <value>The object that contains the configurable quota values. The default object has the <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength" /> property set to <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxArrayLength" /> and the <see cref="P:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength" /> property set to <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultMaxStringContentLength" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

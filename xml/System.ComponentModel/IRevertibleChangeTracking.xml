@@ -1,0 +1,63 @@
+<Type Name="IRevertibleChangeTracking" FullName="System.ComponentModel.IRevertibleChangeTracking">
+  <TypeSignature Language="C#" Value="public interface IRevertibleChangeTracking : System.ComponentModel.IChangeTracking" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRevertibleChangeTracking implements class System.ComponentModel.IChangeTracking" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.IRevertibleChangeTracking" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IChangeTracking</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides support for rolling back the changes</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.IRevertibleChangeTracking> extends <xref:System.ComponentModel.IChangeTracking> by adding support for rolling back the changes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RejectChanges">
+      <MemberSignature Language="C#" Value="public void RejectChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RejectChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IRevertibleChangeTracking.RejectChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the object’s state to unchanged by rejecting the modifications.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

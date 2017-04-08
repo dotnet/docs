@@ -1,0 +1,405 @@
+<Type Name="WebProcessStatistics" FullName="System.Web.Management.WebProcessStatistics">
+  <TypeSignature Language="C#" Value="public class WebProcessStatistics" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi WebProcessStatistics extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebProcessStatistics" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information for assessing the health of a running process.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ Instances of the <xref:System.Web.Management.WebProcessStatistics> class contain information that is obtained using the <xref:System.Web.Management.WebHeartbeatEvent> type.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom event class, see the example provided in this topic.  
+  
+ The following is an excerpt of a configuration file you could use to enable ASP.NET to log heartbeat events that contain process statistics.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartBeatInterval="100">  
+  
+    <rules>  
+      <add   
+        name="Process Statistics"  
+        eventName="Heartbeats"   
+        provider="EventLogProvider"    
+        profile="Default"/>  
+    </rules>  
+  
+</healthMonitoring>  
+```  
+  
+   
+  
+## Examples  
+ The following code example has two parts. The first is an excerpt of the configuration file that enables ASP.NET to use a custom event that uses the <xref:System.Web.Management.WebProcessStatistics> type. The second shows how to implement this custom event..  
+  
+ Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartBeatInterval="0">  
+  
+    <eventMappings>  
+      <add  name="SampleProcessStatistics" type="SamplesAspNet.SampleWebProcessStatistics, webprocessstatistics, Version=1.0.1585.27289, Culture=neutral, PublicKeyToken=3648e5c763a8239f, processorArchitecture=MSIL"/>  
+    </eventMappings>  
+  
+    <rules>  
+      <add   
+        name="Custom Process Statistics"  
+        eventName="SampleProcessStatistics"   
+        provider="EventLogProvider"    
+        profile="Default"/>  
+    </rules>  
+  
+</healthMonitoring>  
+```  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#1)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebProcessStatistics ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebProcessStatistics.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebProcessStatistics" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainCount">
+      <MemberSignature Language="C#" Value="public int AppDomainCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AppDomainCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.AppDomainCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of application domains in the process.</summary>
+        <value>The number of application domains.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property usually refers to the number of ASP.NET applications in the process, including the default domain.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.AppDomainCount%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#5)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatToString">
+      <MemberSignature Language="C#" Value="public virtual void FormatToString (System.Web.Management.WebEventFormatter formatter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FormatToString(class System.Web.Management.WebEventFormatter formatter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebProcessStatistics.FormatToString(System.Web.Management.WebEventFormatter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatter" Type="System.Web.Management.WebEventFormatter" />
+      </Parameters>
+      <Docs>
+        <param name="formatter">The <see cref="T:System.Web.Management.WebEventFormatter" /> that contains the tab and indentation settings used to format the Web health event information.</param>
+        <summary>Formats the process statistics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebProcessStatistics.FormatToString%2A> method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example shows how to format custom information.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#14)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedHeapSize">
+      <MemberSignature Language="C#" Value="public long ManagedHeapSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ManagedHeapSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.ManagedHeapSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the managed heap.</summary>
+        <value>The size of the managed heap.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.ManagedHeapSize%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#6)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeakWorkingSet">
+      <MemberSignature Language="C#" Value="public long PeakWorkingSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 PeakWorkingSet" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.PeakWorkingSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the peak working set for the lifetime of the process to date.</summary>
+        <value>The peak working set of the process.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.PeakWorkingSet%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#7)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessStartTime">
+      <MemberSignature Language="C#" Value="public DateTime ProcessStartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ProcessStartTime" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.ProcessStartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time when the process started.</summary>
+        <value>The <see cref="T:System.DateTime" /> when the process started.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.ProcessStartTime%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#8)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestsExecuting">
+      <MemberSignature Language="C#" Value="public int RequestsExecuting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RequestsExecuting" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.RequestsExecuting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of requests currently executing.</summary>
+        <value>The number of requests that the process is currently executing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebProcessStatistics.RequestsExecuting%2A> value is a useful load indicator.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.RequestsExecuting%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#9)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestsQueued">
+      <MemberSignature Language="C#" Value="public int RequestsQueued { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RequestsQueued" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.RequestsQueued" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of requests waiting to be processed.</summary>
+        <value>The number of requests waiting to be processed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebProcessStatistics.RequestsQueued%2A> value is a useful load indicator.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.RequestsQueued%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#10)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestsRejected">
+      <MemberSignature Language="C#" Value="public int RequestsRejected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RequestsRejected" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.RequestsRejected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rejected requests.</summary>
+        <value>The number of rejected requests.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Web.Management.WebProcessStatistics.RequestsRejected%2A> value is a useful indicator of an overloaded or malfunctioning system.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.RequestsRejected%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#11)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadCount">
+      <MemberSignature Language="C#" Value="public int ThreadCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ThreadCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.ThreadCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total count of the process threads.</summary>
+        <value>The total count of the process threads.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The count refers to the managed and unmanaged threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.ThreadCount%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#12)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingSet">
+      <MemberSignature Language="C#" Value="public long WorkingSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 WorkingSet" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebProcessStatistics.WorkingSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the working set for the process.</summary>
+        <value>The working set for the process.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Management.WebProcessStatistics.WorkingSet%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebProcessStatistics#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/CS/webprocessstatisticsevent.cs#13)]
+ [!code-vb[System.Web.Management.WebProcessStatistics#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebProcessStatistics/VB/webprocessstatisticsevent.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

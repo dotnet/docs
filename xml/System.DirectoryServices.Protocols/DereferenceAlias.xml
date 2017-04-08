@@ -1,0 +1,82 @@
+<Type Name="DereferenceAlias" FullName="System.DirectoryServices.Protocols.DereferenceAlias">
+  <TypeSignature Language="C#" Value="public enum DereferenceAlias" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DereferenceAlias extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DereferenceAlias" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DereferenceAlias" /> enumeration specifies the process by which aliases are dereferenced.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DereferenceAlias Always = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereferences aliases when both searching subordinates and locating the base object of the search. The value is equal to 3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FindingBaseObject">
+      <MemberSignature Language="C#" Value="FindingBaseObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DereferenceAlias FindingBaseObject = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.FindingBaseObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereferences aliases when locating the base object, but not when searching its subordinates. The value is equal to 2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InSearching">
+      <MemberSignature Language="C#" Value="InSearching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DereferenceAlias InSearching = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.InSearching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereferences aliases when searching subordinates of the base object, but not when locating the base itself. The value is equal to 1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DereferenceAlias Never = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DereferenceAlias.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Does not dereference aliases. The value is equal to 0.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

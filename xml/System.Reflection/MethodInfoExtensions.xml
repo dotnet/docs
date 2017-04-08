@@ -1,0 +1,41 @@
+<Type Name="MethodInfoExtensions" FullName="System.Reflection.MethodInfoExtensions">
+  <TypeSignature Language="C#" Value="public static class MethodInfoExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MethodInfoExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.MethodInfoExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetBaseDefinition">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetBaseDefinition (this System.Reflection.MethodInfo method);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetBaseDefinition(class System.Reflection.MethodInfo method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfoExtensions.GetBaseDefinition(System.Reflection.MethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.MethodInfo" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

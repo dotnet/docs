@@ -1,0 +1,102 @@
+<Type Name="WindowsUserNameSecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator">
+  <TypeSignature Language="C#" Value="public class WindowsUserNameSecurityTokenAuthenticator : System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowsUserNameSecurityTokenAuthenticator extends System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Selectors.UserNameSecurityTokenAuthenticator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Uses Windows authentication to authenticate the user name and password in a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore%2A> method uses Windows authentication to authenticate a user name and password.  
+  
+ To provide a custom authentication scheme, see the <xref:System.IdentityModel.Selectors.CustomUserNameSecurityTokenAuthenticator> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsUserNameSecurityTokenAuthenticator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the user is authenticated, claims that identify the Windows groups that a user belongs to are initially added to the <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A> property and eventually to the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsUserNameSecurityTokenAuthenticator (bool includeWindowsGroups);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool includeWindowsGroups) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="includeWindowsGroups" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includeWindowsGroups">
+          <see langword="true" /> to get the groups the Windows user belongs to; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator" /> class by specifying whether the claims that identify the Windows groups that a user belongs to are initially added to the <see cref="P:System.IdentityModel.Policy.AuthorizationContext.ClaimSets" /> property when the user is authenticated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateUserNamePasswordCore">
+      <MemberSignature Language="C#" Value="protected override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateUserNamePasswordCore (string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateUserNamePasswordCore(string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.ValidateUserNamePasswordCore(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The user name associated with the security token.</param>
+        <param name="password">The password associated with the security token.</param>
+        <summary>Authenticates the specified user name and password and returns the set of authorization policies for <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> security tokens.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that contains the set of authorization policies in effect for this application.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `userName` parameter must be in one of the following formats: `domain\username` or `username`. If the `userName` parameter is in the `domain\username` format, then there must be only one backslash (\\) character separating the user name and domain.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="userName" /> contains more than one backslash (\\) character.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

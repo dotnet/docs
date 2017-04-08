@@ -1,0 +1,37 @@
+<Type Name="ModelBinders" FullName="System.Web.ModelBinding.ModelBinders">
+  <TypeSignature Language="C#" Value="public static class ModelBinders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelBinders extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinders" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides global access to the model binders for the application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Binders">
+      <MemberSignature Language="C#" Value="public static System.Web.ModelBinding.ModelBinderDictionary Binders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.ModelBinding.ModelBinderDictionary Binders" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinders.Binders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelBinderDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model binders for the application.</summary>
+        <value>The model binders for the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

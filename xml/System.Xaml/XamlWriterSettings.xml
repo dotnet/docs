@@ -1,0 +1,66 @@
+<Type Name="XamlWriterSettings" FullName="System.Xaml.XamlWriterSettings">
+  <TypeSignature Language="C#" Value="public class XamlWriterSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlWriterSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlWriterSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides initialization settings for a <see cref="T:System.Xaml.XamlWriter" /> implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.XamlWriterSettings> is a class for settings that are used by a <xref:System.Xaml.XamlWriter>; however, <xref:System.Xaml.XamlWriterSettings> does not hold any specific settings. The <xref:System.Xaml.XamlWriter> constructor does not use this settings class as an argument, nor does any other <xref:System.Xaml.XamlWriter> member use it. Instead, the <xref:System.Xaml.XamlXmlWriter> and <xref:System.Xaml.XamlObjectWriter> classes include their own settings classes as construction arguments; both classes add actual settings and are based on <xref:System.Xaml.XamlWriterSettings>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlWriterSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriterSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlWriterSettings" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlWriterSettings (System.Xaml.XamlWriterSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlWriterSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriterSettings.#ctor(System.Xaml.XamlWriterSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Xaml.XamlWriterSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">An existing <see cref="T:System.Xaml.XamlWriterSettings" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlWriterSettings" /> class using another existing settings instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor supports the merging of settings, where additional settings can come from other participants in the writer process or from settings classes for specialized writers that override <xref:System.Xaml.XamlWriterSettings>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

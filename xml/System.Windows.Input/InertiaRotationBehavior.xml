@@ -1,0 +1,143 @@
+<Type Name="InertiaRotationBehavior" FullName="System.Windows.Input.InertiaRotationBehavior">
+  <TypeSignature Language="C#" Value="public class InertiaRotationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InertiaRotationBehavior extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaRotationBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Controls the deceleration of a rotation manipulation during inertia.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.InertiaRotationBehavior> class specifies how a rotation manipulation behaves when it is inertia.  Use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.RotationBehavior%2A> property in the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event to do the following:  
+  
+-   Specify the initial velocity of the inertia when it begins by setting the <xref:System.Windows.Input.InertiaRotationBehavior.InitialVelocity%2A> property.  
+  
+-   Specify the desired rotation of the manipulation when inertia ends by setting the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> property.  
+  
+-   Specify the desired deceleration of the inertia by setting the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A> property.  
+  
+ Set either the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> or the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
+ [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InertiaRotationBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InertiaRotationBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InertiaRotationBehavior" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredDeceleration">
+      <MemberSignature Language="C#" Value="public double DesiredDeceleration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDeceleration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rate the rotation slows in degrees per squared millisecond.</summary>
+        <value>The rate the rotation slows in degrees per squared millisecond. The default is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A> property to specify the desired deceleration of the inertia. Set either the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> or the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to infinity.  
+  
+ -or-  
+  
+ The property is set to <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredRotation">
+      <MemberSignature Language="C#" Value="public double DesiredRotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredRotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.DesiredRotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rotation, in degrees, at the end of the inertial movement.</summary>
+        <value>The rotation, in degrees, at the end of the inertial movement. The default is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> property to specify the desired rotation of the manipulation when inertia ends. Set either the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> or the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialVelocity">
+      <MemberSignature Language="C#" Value="public double InitialVelocity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 InitialVelocity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaRotationBehavior.InitialVelocity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initial rate of the rotation at the start of the inertia phase.</summary>
+        <value>The initial rate of the rotation at the start of the inertia phase.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

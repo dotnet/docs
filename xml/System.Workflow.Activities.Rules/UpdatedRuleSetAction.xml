@@ -1,0 +1,165 @@
+<Type Name="UpdatedRuleSetAction" FullName="System.Workflow.Activities.Rules.UpdatedRuleSetAction">
+  <TypeSignature Language="C#" Value="public sealed class UpdatedRuleSetAction : System.Workflow.Activities.Rules.RuleSetChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UpdatedRuleSetAction extends System.Workflow.Activities.Rules.RuleSetChangeAction" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.UpdatedRuleSetAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.Rules.RuleSetChangeAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the change to a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> for dynamic updates. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used by a tracking service to determine which RuleSets have been changed during a dynamic update. An instance of this object will be generated for every RuleSet that existed before the dynamic update and remains afterwards, and has changes applied to one or more rules.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpdatedRuleSetAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.UpdatedRuleSetAction" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpdatedRuleSetAction (System.Workflow.Activities.Rules.RuleSet originalRuleSetDefinition, System.Workflow.Activities.Rules.RuleSet updatedRuleSetDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleSet originalRuleSetDefinition, class System.Workflow.Activities.Rules.RuleSet updatedRuleSetDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet,System.Workflow.Activities.Rules.RuleSet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalRuleSetDefinition" Type="System.Workflow.Activities.Rules.RuleSet" />
+        <Parameter Name="updatedRuleSetDefinition" Type="System.Workflow.Activities.Rules.RuleSet" />
+      </Parameters>
+      <Docs>
+        <param name="originalRuleSetDefinition">The original <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <param name="updatedRuleSetDefinition">The updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.UpdatedRuleSetAction" /> class by using the original and the updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> classes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The RuleSetDefinition or updatedRuleSetDefinition is null</exception>
+        <exception cref="T:System.ArgumentException">The names of the two RuleSets are not the same</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyTo">
+      <MemberSignature Language="C#" Value="protected override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedRuleSetAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalRuleSetDefinition">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleSet OriginalRuleSetDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleSet OriginalRuleSetDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedRuleSetAction.OriginalRuleSetDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the original <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The original <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is settable so that the <xref:System.Workflow.Activities.Rules.UpdatedRuleSetAction> class can be deserialized. There should be no need to set this property. Changing it during a dynamic update might lead to unexpected results.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The original <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSetName">
+      <MemberSignature Language="C#" Value="public override string RuleSetName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RuleSetName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedRuleSetAction.RuleSetName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedRuleSetDefinition">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleSet UpdatedRuleSetDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleSet UpdatedRuleSetDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedRuleSetAction.UpdatedRuleSetDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <value>The updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is settable so that the <xref:System.Workflow.Activities.Rules.UpdatedRuleSetAction> class can be deserialized. There should be no need to set this property. Changing it during a dynamic update might lead to unexpected results.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The updated <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

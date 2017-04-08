@@ -1,0 +1,32 @@
+<Type Name="LoadedEventHandler" FullName="System.ComponentModel.Design.LoadedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void LoadedEventHandler(object sender, LoadedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoadedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.LoadedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.Design.LoadedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.ComponentModel.Design.LoadedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.ComponentModel.Design.DesignSurface.Loaded" /> event of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.ComponentModel.Design.LoadedEventHandler> delegate, you identify a method to handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

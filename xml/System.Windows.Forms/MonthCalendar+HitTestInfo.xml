@@ -1,0 +1,90 @@
+<Type Name="MonthCalendar+HitTestInfo" FullName="System.Windows.Forms.MonthCalendar+HitTestInfo">
+  <TypeSignature Language="C#" Value="public sealed class MonthCalendar.HitTestInfo" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit MonthCalendar/HitTestInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitTestInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.MonthCalendar" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> objects are returned by <xref:System.Windows.Forms.MonthCalendar> controls in response to the <xref:System.Windows.Forms.MonthCalendar.HitTest%2A> method.  
+  
+> [!CAUTION]
+>  <xref:System.Windows.Forms.MonthCalendar.HitTestInfo> is for informational purposes only; you should not construct these objects and cannot modify any of the members.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HitArea">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.MonthCalendar.HitArea HitArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MonthCalendar/HitArea HitArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.HitArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> that represents the area of the calendar evaluated by the hit-test operation.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> values. The default is <see cref="F:System.Windows.Forms.MonthCalendar.HitArea.Nowhere" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Point">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point Point { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Point" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Point" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the point that was hit-tested.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> containing the <see cref="P:System.Drawing.Point.X" /> and <see cref="P:System.Drawing.Point.Y" /> values tested.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="public DateTime Time { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Time" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time information specific to the location that was hit-tested.</summary>
+        <value>The time information specific to the location that was hit-tested.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MonthCalendar.HitTestInfo.Time%2A> property contains a valid date when the <xref:System.Windows.Forms.MonthCalendar.HitArea> property is set to <xref:System.Windows.Forms.MonthCalendar.HitArea> or <xref:System.Windows.Forms.MonthCalendar.HitArea>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

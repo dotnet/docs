@@ -1,0 +1,898 @@
+<Type Name="HtmlTextWriterAttribute" FullName="System.Web.UI.HtmlTextWriterAttribute">
+  <TypeSignature Language="C#" Value="public enum HtmlTextWriterAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HtmlTextWriterAttribute extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriterAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the HTML attributes that an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object writes to the opening tag of an HTML element when a Web request is processed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is commonly used with the following methods of the <xref:System.Web.UI.HtmlTextWriter> class: <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A>, <xref:System.Web.UI.HtmlTextWriter.GetAttributeName%2A>, <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A>, <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.HtmlTextWriterAttribute> enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method to add an `Onclick` attribute to an HTML element and sets its value to ECMAScript code.  
+  
+ [!code-cpp[System.Web.UI.HtmlTextWriter#1](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#1)]
+ [!code-csharp[System.Web.UI.HtmlTextWriter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#1)]
+ [!code-vb[System.Web.UI.HtmlTextWriter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abbr">
+      <MemberSignature Language="C#" Value="Abbr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Abbr = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Abbr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="abbr" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Accesskey">
+      <MemberSignature Language="C#" Value="Accesskey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Accesskey = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Accesskey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="accesskey" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="Align" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Align = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Align" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="align" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="Alt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Alt = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Alt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="alt" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoComplete">
+      <MemberSignature Language="C#" Value="AutoComplete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute AutoComplete = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.AutoComplete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="autocomplete" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Axis">
+      <MemberSignature Language="C#" Value="Axis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Axis = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Axis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="axis" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="Background" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Background = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Background" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="background" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgcolor">
+      <MemberSignature Language="C#" Value="Bgcolor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Bgcolor = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Bgcolor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="bgcolor" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="Border" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Border = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Border" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="border" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bordercolor">
+      <MemberSignature Language="C#" Value="Bordercolor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Bordercolor = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Bordercolor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="bordercolor" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cellpadding">
+      <MemberSignature Language="C#" Value="Cellpadding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Cellpadding = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Cellpadding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="cellpadding" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cellspacing">
+      <MemberSignature Language="C#" Value="Cellspacing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Cellspacing = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Cellspacing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="cellspacing" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Checked">
+      <MemberSignature Language="C#" Value="Checked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Checked = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Checked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="checked" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="Class" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Class = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Class" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="class" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cols">
+      <MemberSignature Language="C#" Value="Cols" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Cols = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Cols" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="cols" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Colspan">
+      <MemberSignature Language="C#" Value="Colspan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Colspan = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Colspan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="colspan" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="Content" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Content = int32(43)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Content" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="content" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Coords">
+      <MemberSignature Language="C#" Value="Coords" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Coords = int32(44)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Coords" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="coords" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerRegion">
+      <MemberSignature Language="C#" Value="DesignerRegion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute DesignerRegion = int32(45)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.DesignerRegion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="designerregion" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dir">
+      <MemberSignature Language="C#" Value="Dir" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Dir = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Dir" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="dir" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Disabled = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="disabled" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="For">
+      <MemberSignature Language="C#" Value="For" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute For = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.For" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="for" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="Headers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Headers = int32(47)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Headers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="headers" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="Height" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Height = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Height" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="height" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Href">
+      <MemberSignature Language="C#" Value="Href" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Href = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Href" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="href" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="Id" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Id = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Id" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="id" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Longdesc">
+      <MemberSignature Language="C#" Value="Longdesc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Longdesc = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Longdesc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="longdesc" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Maxlength">
+      <MemberSignature Language="C#" Value="Maxlength" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Maxlength = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Maxlength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="maxlength" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiple">
+      <MemberSignature Language="C#" Value="Multiple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Multiple = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Multiple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="multiple" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Name = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="name" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nowrap">
+      <MemberSignature Language="C#" Value="Nowrap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Nowrap = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Nowrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="nowrap" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Onchange">
+      <MemberSignature Language="C#" Value="Onchange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Onchange = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Onchange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="onchange" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Onclick">
+      <MemberSignature Language="C#" Value="Onclick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Onclick = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Onclick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="onclick" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute ReadOnly = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.ReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="readonly" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rel">
+      <MemberSignature Language="C#" Value="Rel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Rel = int32(49)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Rel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="rel" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="Rows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Rows = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Rows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="rows" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rowspan">
+      <MemberSignature Language="C#" Value="Rowspan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Rowspan = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Rowspan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="rowspan" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rules">
+      <MemberSignature Language="C#" Value="Rules" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Rules = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Rules" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="rules" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="Scope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Scope = int32(50)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Scope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="scope" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="Selected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Selected = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Selected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="selected" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shape">
+      <MemberSignature Language="C#" Value="Shape" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Shape = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Shape" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="shape" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="Size" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Size = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Size" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="size" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Src">
+      <MemberSignature Language="C#" Value="Src" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Src = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Src" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="src" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="Style" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Style = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Style" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="style" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tabindex">
+      <MemberSignature Language="C#" Value="Tabindex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Tabindex = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Tabindex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="tabindex" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="Target" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Target = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Target" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="target" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="Title" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Title = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Title" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="title" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="Type" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Type = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Type" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="type" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Usemap">
+      <MemberSignature Language="C#" Value="Usemap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Usemap = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Usemap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="usemap" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Valign">
+      <MemberSignature Language="C#" Value="Valign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Valign = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Valign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="valign" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="Value" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Value = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="value" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VCardName">
+      <MemberSignature Language="C#" Value="VCardName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute VCardName = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.VCardName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="vcardname" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="Width" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Width = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Width" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="width" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrap">
+      <MemberSignature Language="C#" Value="Wrap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterAttribute Wrap = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterAttribute.Wrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the HTML <see langword="wrap" /> attribute be written to the tag.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,66 @@
+<Type Name="LegendTableStyle" FullName="System.Windows.Forms.DataVisualization.Charting.LegendTableStyle">
+  <TypeSignature Language="C#" Value="public enum LegendTableStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendTableStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the legend table style.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendTableStyle Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendTableStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The legend table style is automatically determined by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tall">
+      <MemberSignature Language="C#" Value="Tall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendTableStyle Tall = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Tall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendTableStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend items will be fit vertically within the legend. This style is preferred when <see cref="T:System.Windows.Forms.DataVisualization.Charting.Docking" /> is set to <see cref="F:System.Windows.Forms.DataVisualization.Charting.Docking.Left" /> or <see cref="F:System.Windows.Forms.DataVisualization.Charting.Docking.Right" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wide">
+      <MemberSignature Language="C#" Value="Wide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendTableStyle Wide = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendTableStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend items will be fit horizontally within the legend. This style is preferred when <see cref="T:System.Windows.Forms.DataVisualization.Charting.Docking" /> is set to <see cref="F:System.Windows.Forms.DataVisualization.Charting.Docking.Top" /> or <see cref="F:System.Windows.Forms.DataVisualization.Charting.Docking.Bottom" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

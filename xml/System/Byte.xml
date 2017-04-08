@@ -1,0 +1,1980 @@
+<Type Name="Byte" FullName="System.Byte">
+  <TypeSignature Language="C#" Value="public struct Byte : IComparable, IComparable&lt;byte&gt;, IConvertible, IEquatable&lt;byte&gt;, IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit unsigned int8 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;unsigned int8&gt;, class System.IConvertible, class System.IEquatable`1&lt;unsigned int8&gt;, class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Byte" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable&lt;System.Byte&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IConvertible</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Byte&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an 8-bit unsigned integer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Byte> is an immutable value type that represents unsigned integers with values that range from 0 (which is represented by the <xref:System.Byte.MinValue?displayProperty=fullName> constant) to 255 (which is represented by the <xref:System.Byte.MaxValue?displayProperty=fullName> constant). The .NET Framework also includes a signed 8-bit integer value type, <xref:System.SByte>, which represents values that range from -128 to 127.  
+  
+## Instantiating a Byte Value  
+ You can instantiate a <xref:System.Byte> value in several ways:  
+  
+-   You can declare a <xref:System.Byte> variable and assign it a literal integer value that is within the range of the <xref:System.Byte> data type. The following example declares two <xref:System.Byte> variables and assigns them values in this way.  
+  
+     [!code-csharp[System.Byte.Instantiation#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.instantiation/cs/byteinstantiation1.cs#1)]
+     [!code-vb[System.Byte.Instantiation#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.instantiation/vb/byteinstantiate1.vb#1)]  
+  
+-   You can assign a non-byte numeric value to a byte. This is a narrowing conversion, so it requires a cast operator in C# and a conversion method in Visual Basic if `Option``Strict` is on. If the non-byte value is a <xref:System.Single>, <xref:System.Double>, or <xref:System.Decimal> value that includes a fractional component, the handling of its fractional part depends on the compiler performing the conversion. The following example assigns several numeric values to <xref:System.Byte> variables.  
+  
+     [!code-csharp[System.Byte.Instantiation#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.instantiation/cs/byteinstantiation1.cs#2)]
+     [!code-vb[System.Byte.Instantiation#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.instantiation/vb/byteinstantiate1.vb#2)]  
+  
+-   You can call a method of the <xref:System.Convert> class to convert any supported type to a <xref:System.Byte> value. This is possible because <xref:System.Byte> supports the <xref:System.IConvertible> interface. The following example illustrates the conversion of an array of <xref:System.Int32> values to <xref:System.Byte> values.  
+  
+     [!code-csharp[System.Convert.ToByte#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tobyte/cs/tobyte1.cs#4)]
+     [!code-vb[System.Convert.ToByte#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tobyte/vb/tobyte1.vb#4)]  
+  
+-   You can call the <xref:System.Byte.Parse%2A> or <xref:System.Byte.TryParse%2A> method to convert the string representation of a <xref:System.Byte> value to a <xref:System.Byte>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.  
+  
+     [!code-csharp[System.Byte.Instantiation#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.instantiation/cs/byteinstantiation1.cs#3)]
+     [!code-vb[System.Byte.Instantiation#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.instantiation/vb/byteinstantiate1.vb#3)]  
+  
+## Performing Operations on Byte Values  
+ The <xref:System.Byte> type supports standard mathematical operations such as addition, subtraction, division, multiplication, subtraction, negation, and unary negation. Like the other integral types, the <xref:System.Byte> type also supports the bitwise `AND`, `OR`, `XOR`, left shift, and right shift operators.  
+  
+ You can use the standard numeric operators to compare two <xref:System.Byte> values, or you can call the <xref:System.Byte.CompareTo%2A> or <xref:System.Byte.Equals%2A> method.  
+  
+ You can also call the members of the <xref:System.Math> class to perform a wide range of numeric operations, including getting the absolute value of a number, calculating the quotient and remainder from integral division, determining the maximum or minimum value of two integers, getting the sign of a number, and rounding a number.  
+  
+## Representing a Byte as a String  
+ The <xref:System.Byte> type provides full support for standard and custom numeric format strings. (For more information, see [Formatting Types](~/docs/standard/base-types/formatting-types.md), [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).) However, most commonly, byte values are represented as one-digit to three-digit values without any additional formatting, or as two-digit hexadecimal values.  
+  
+ To format a <xref:System.Byte> value as an integral string with no leading zeros, you can call the parameterless <xref:System.Byte.ToString> method. By using the "D" format specifier, you can also include a specified number of leading zeros in the string representation. By using the "X" format specifier, you can represent a <xref:System.Byte> value as a hexadecimal string. The following example formats the elements in an array of <xref:System.Byte> values in these three ways.  
+  
+ [!code-csharp[System.Byte.Formatting#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.formatting/cs/formatting1.cs#1)]
+ [!code-vb[System.Byte.Formatting#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.formatting/vb/formatting1.vb#1)]  
+  
+ You can also format a <xref:System.Byte> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString%28System.Byte%2CSystem.Int32%29> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of byte values.  
+  
+ [!code-csharp[System.Byte.Formatting#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.formatting/cs/formatting1.cs#2)]
+ [!code-vb[System.Byte.Formatting#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.formatting/vb/formatting1.vb#2)]  
+  
+## Working with Non-Decimal Byte Values  
+ In addition to working with individual bytes as decimal values, you may want to perform bitwise operations with byte values, or work with byte arrays or with the binary or hexadecimal representations of byte values. For example, overloads of the <xref:System.BitConverter.GetBytes%2A?displayProperty=fullName> method can convert each of the primitive data types to a byte array, and the <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=fullName> method converts a <xref:System.Numerics.BigInteger> value to a byte array.  
+  
+ <xref:System.Byte> values are represented in 8 bits by their magnitude only, without a sign bit. This is important to keep in mind when you perform bitwise operations on <xref:System.Byte> values or when you work with individual bits. In order to perform a numeric, Boolean, or comparison operation on any two non-decimal values, both values must use the same representation.  
+  
+ When an operation is performed on two <xref:System.Byte> values, the values share the same representation, so the result is accurate. This is illustrated in the following example, which masks the lowest-order bit of a <xref:System.Byte> value to ensure that it is even.  
+  
+ [!code-csharp[System.Byte.Bitwise#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.bitwise/cs/bitwise1.cs#1)]
+ [!code-vb[System.Byte.Bitwise#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.bitwise/vb/bitwise1.vb#1)]  
+  
+ On the other hand, when you work with both unsigned and signed bits, bitwise operations are complicated by the fact that the <xref:System.SByte> values use sign-and-magnitude representation for positive values, and two's complement representation for negative values. In order to perform a meaningful bitwise operation, the values must be converted to two equivalent representations, and information about the sign bit must be preserved. The following example does this to mask out bits 2 and 4 of an array of 8-bit signed and unsigned values.  
+  
+ [!code-csharp[System.Byte.Bitwise#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.bitwise/cs/bitwise2.cs#2)]
+ [!code-vb[System.Byte.Bitwise#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.bitwise/vb/bitwise2.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.CompareTo(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">An 8-bit unsigned integer to compare.</param>
+        <summary>Compares this instance to a specified 8-bit unsigned integer and returns an indication of their relative values.</summary>
+        <returns>A signed integer that indicates the relative order of this instance and <paramref name="value" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.Byte.CompareTo%28System.Object%29?displayProperty=fullName> method because it does not have to convert the `value` parameter to an object.  
+  
+ Depending on your programming language, it might be possible to code a <xref:System.Byte.CompareTo%2A> method where the parameter type has fewer bits (is narrower) than the instance type. This is possible because some programming languages perform an implicit widening conversion that represents the parameter as a type with as many bits as the instance.  
+  
+ For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the value of the parameter as an <xref:System.Int32>, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method that compares the values of the <xref:System.Int32> instance and the <xref:System.Int32> parameter representation.  
+  
+ Consult your programming language's documentation to determine whether its compiler performs implicit widening conversions on numeric types.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates generic and non-generic versions of the `CompareTo` method for several value and reference types.  
+  
+ [!code-cpp[T.CompareTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/T.CompareTo/CPP/cat.cpp#1)]
+ [!code-csharp[T.CompareTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/T.CompareTo/CS/cat.cs#1)]
+ [!code-vb[T.CompareTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/T.CompareTo/VB/cat.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object to compare, or <see langword="null" />.</param>
+        <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
+        <returns>A signed integer that indicates the relative order of this instance and <paramref name="value" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than <paramref name="value" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is <see langword="null" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `value` must be `null` or an instance of <xref:System.Byte>; otherwise, an exception is thrown.  
+  
+ Any instance of <xref:System.Byte>, regardless of its value, is considered greater than `null`.  
+  
+ This method is implemented to support the <xref:System.IComparable> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Byte.CompareTo%2A> method.  
+  
+ [!code-cpp[System.Byte Examples#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte Examples/CPP/systembyte.cpp#3)]
+ [!code-csharp[System.Byte Examples#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte Examples/CS/systembyte.cs#3)]
+ [!code-vb[System.Byte Examples#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte Examples/VB/systembyte.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Byte" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (byte obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(unsigned int8 obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.Equals(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare to this instance.</param>
+        <summary>Returns a value indicating whether this instance and a specified <see cref="T:System.Byte" /> object represent the same value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is equal to this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.IEquatable%601?displayProperty=fullName> interface, and performs slightly better than <xref:System.Byte.Equals%28System.Object%29> because it does not have to convert the `obj` parameter to an object.  
+  
+   
+  
+## Examples  
+ The following code example determines whether the first <xref:System.Byte> value is equal to the second <xref:System.Byte> value, and whether the first <xref:System.Byte> value is equal to the boxed version of the second <xref:System.Byte> value.  
+  
+ [!code-cpp[system.byte.equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.byte.equals/cpp/eq.cpp#1)]
+ [!code-csharp[system.byte.equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.equals/cs/eq.cs#1)]
+ [!code-vb[system.byte.equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.equals/vb/eq.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare with this instance, or <see langword="null" />.</param>
+        <summary>Returns a value indicating whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is an instance of <see cref="T:System.Byte" /> and equals the value of this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example determines whether the first <xref:System.Byte> value is equal to the second <xref:System.Byte> value, and whether the first <xref:System.Byte> value is equal to the boxed version of the second <xref:System.Byte> value.  
+  
+ [!code-cpp[system.byte.equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.byte.equals/cpp/eq.cpp#1)]
+ [!code-csharp[system.byte.equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.byte.equals/cs/eq.cs#1)]
+ [!code-vb[system.byte.equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.byte.equals/vb/eq.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A hash code for the current <see cref="T:System.Byte" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeCode">
+      <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.GetTypeCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.Byte" />.</summary>
+        <returns>The enumerated constant, <see cref="F:System.TypeCode.Byte" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValue">
+      <MemberSignature Language="C#" Value="public const byte MaxValue = 255;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 MaxValue = unsigned int8(255)" />
+      <MemberSignature Language="DocId" Value="F:System.Byte.MaxValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>255</MemberValue>
+      <Docs>
+        <summary>Represents the largest possible value of a <see cref="T:System.Byte" />. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is 255 (hexadecimal 0xFF).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Byte.MaxValue> field to screen variable inputs for values that are outside the range of possible byte values.  
+  
+ [!code-cpp[System.Byte Examples#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte Examples/CPP/systembyte.cpp#1)]
+ [!code-csharp[System.Byte Examples#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte Examples/CS/systembyte.cs#1)]
+ [!code-vb[System.Byte Examples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte Examples/VB/systembyte.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinValue">
+      <MemberSignature Language="C#" Value="public const byte MinValue = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 MinValue = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Byte.MinValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Represents the smallest possible value of a <see cref="T:System.Byte" />. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is 0.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Byte.MinValue> field to screen variable inputs for values that are outside the range of possible byte values.  
+  
+ [!code-cpp[System.Byte Examples#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte Examples/CPP/systembyte.cpp#1)]
+ [!code-csharp[System.Byte Examples#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte Examples/CS/systembyte.cs#1)]
+ [!code-vb[System.Byte Examples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte Examples/VB/systembyte.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static byte Parse (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string that contains a number to convert. The string is interpreted using the <see cref="F:System.Globalization.NumberStyles.Integer" /> style.</param>
+        <summary>Converts the string representation of a number to its <see cref="T:System.Byte" /> equivalent.</summary>
+        <returns>A byte value that is equivalent to the number contained in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `s` parameter contains a number of the form:  
+  
+ [ws][sign]digits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space.|  
+|*sign*|An optional positive or negative sign.|  
+|*digits*|A sequence of digits ranging from 0 to 9.|  
+  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to the byte value's decimal digits, only leading and trailing spaces together with a leading sign are allowed. (If the sign is present, it must be a positive sign or the method throws an <xref:System.OverflowException>.) To explicitly define the style elements that can be present in `s`, use either the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName> or the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>. To parse a string using the formatting information of some other culture, use the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to convert a string value into a byte value using the <xref:System.Byte.Parse%28System.String%29?displayProperty=fullName> method. The resulting byte value is then displayed to the console.  
+  
+ [!code-cpp[System.Byte.Parse#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.Parse/cpp/parse.cpp#1)]
+ [!code-csharp[System.Byte.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.Parse/CS/parse.cs#1)]
+ [!code-vb[System.Byte.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.Parse/VB/parse.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not of the correct format.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static byte Parse (string s, System.Globalization.NumberStyles style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s, valuetype System.Globalization.NumberStyles style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String,System.Globalization.NumberStyles)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="style" Type="System.Globalization.NumberStyles" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string that contains a number to convert. The string is interpreted using the style specified by <c>style</c>.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <summary>Converts the string representation of a number in a specified style to its <see cref="T:System.Byte" /> equivalent.</summary>
+        <returns>A byte value that is equivalent to the number contained in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `style` parameter defines the style elements (such as white space or the positive sign) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`, the `s` parameter may include the following elements:  
+  
+ [ws][$][sign]digits[.fractional_digits][e[sign]digits][ws]  
+  
+ Or, if `style` includes <xref:System.Globalization.NumberStyles>:  
+  
+ [ws]hexdigits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of s if style includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> property of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*sign*|An optional positive sign. (The method throws an <xref:System.OverflowException> if a negative sign is present in `s`.) The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*digits*|A sequence of digits from 0 through 9.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*e*|The e or E character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
+  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+  
+|Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
+|----------------------------------------|---------------------------------------------------|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A positive sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A positive sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Although this flag is supported, the use of parentheses in `s` results in an <xref:System.OverflowException>.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Although the group separator symbol can appear in `s`, it can be preceded by only one or more 0 digits.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *$* element.|  
+  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value without a prefix. For example, "F3" parses successfully, but "0xF3" does not. The only other flags that can be combined with it are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white space flags.)  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. To use the formatting information of some other culture, call the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> overload.  
+  
+   
+  
+## Examples  
+ The following example parses string representations of `Byte` values with the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName> method. The current culture for the example is en-US.  
+  
+ [!code-cpp[System.Byte.Parse#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.Parse/cpp/parse.cpp#3)]
+ [!code-csharp[System.Byte.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.Parse/CS/parse.cs#3)]
+ [!code-vb[System.Byte.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.Parse/VB/parse.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not of the correct format.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.  
+  
+ -or-  
+  
+ <paramref name="s" /> includes non-zero, fractional digits.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="style" /> is not a <see cref="T:System.Globalization.NumberStyles" /> value.  
+  
+ -or-  
+  
+ <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static byte Parse (string s, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string that contains a number to convert. The string is interpreted using the <see cref="F:System.Globalization.NumberStyles.Integer" /> style.</param>
+        <param name="provider">An object that supplies culture-specific parsing information about <c>s</c>. If <c>provider</c> is <see langword="null" />, the thread current culture is used.</param>
+        <summary>Converts the string representation of a number in a specified culture-specific format to its <see cref="T:System.Byte" /> equivalent.</summary>
+        <returns>A byte value that is equivalent to the number contained in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `s` parameter contains a number of the form:  
+  
+ [ws][sign]digits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space.|  
+|*sign*|An optional positive sign.|  
+|*digits*|A sequence of digits ranging from 0 to 9.|  
+  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles> style. In addition to the byte value's decimal digits, only leading and trailing spaces together with a leading sign are allowed. (If the sign is present, it must be a positive sign or the method throws an <xref:System.OverflowException>.) To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object supplied by `provider`. The `provider` parameter is an <xref:System.IFormatProvider> implementation such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the thread current culture is used.  
+  
+   
+  
+## Examples  
+ The following example parses string representations of `Byte` values with the <xref:System.Byte.Parse%2A> method.  
+  
+ [!code-cpp[System.Byte.Parse#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.Parse/cpp/parse.cpp#2)]
+ [!code-csharp[System.Byte.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.Parse/CS/parse.cs#2)]
+ [!code-vb[System.Byte.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.Parse/VB/parse.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not of the correct format.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static byte Parse (string s, System.Globalization.NumberStyles style, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Parse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="style" Type="System.Globalization.NumberStyles" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string that contains a number to convert. The string is interpreted using the style specified by <c>style</c>.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <param name="provider">An object that supplies culture-specific information about the format of <c>s</c>. If <c>provider</c> is <see langword="null" />, the thread current culture is used.</param>
+        <summary>Converts the string representation of a number in a specified style and culture-specific format to its <see cref="T:System.Byte" /> equivalent.</summary>
+        <returns>A byte value that is equivalent to the number contained in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `style` parameter defines the style elements (such as white space or the positive sign) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`, the `s` parameter may include the following elements:  
+  
+ [ws][$][sign]digits[.fractional_digits][e[sign]digits][ws]  
+  
+ Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles>:  
+  
+ [ws]hexdigits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*sign*|An optional positive sign. (The method throws an <xref:System.OverflowException> if a negative sign is present in `s`.) The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*digits*|A sequence of digits from 0 through 9.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*e*|The e or E character, which indicates that the value is represented in exponential notation. The s parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
+  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+  
+|Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
+|----------------------------------------|---------------------------------------------------|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A positive sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A positive sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Although this flag is supported, the use of parentheses in `s` results in an <xref:System.OverflowException>.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Although the group separator symbol can appear in `s`, it can be preceded by only one or more 0 digits.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *$* element.|  
+  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value without a prefix. For example, "F3" parses successfully, but "0xF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white space flags.)  
+  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the thread current culture is used.  
+  
+   
+  
+## Examples  
+ The following code example parses string representations of `Byte` values with this overload of the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ [!code-cpp[System.Byte.Parse#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.Parse/cpp/parse.cpp#4)]
+ [!code-csharp[System.Byte.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.Parse/CS/parse.cs#4)]
+ [!code-vb[System.Byte.Parse#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.Parse/VB/parse.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not of the correct format.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.  
+  
+ -or-  
+  
+ <paramref name="s" /> includes non-zero, fractional digits.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="style" /> is not a <see cref="T:System.Globalization.NumberStyles" /> value.  
+  
+ -or-  
+  
+ <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IComparable.CompareTo (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IComparable#CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.GetTypeCode">
+      <MemberSignature Language="C#" Value="TypeCode IConvertible.GetTypeCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#GetTypeCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToBoolean">
+      <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToBoolean(System.IFormatProvider)" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the current instance is not zero; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToByte">
+      <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToByte(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToChar">
+      <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToChar(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Char" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToChar%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToDateTime">
+      <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>This conversion is not supported. Attempting to use this method throws an <see cref="T:System.InvalidCastException" />.</summary>
+        <returns>This conversion is not supported. No value is returned.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">In all cases.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToDecimal">
+      <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToDecimal(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Decimal" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDecimal%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToDouble">
+      <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToDouble(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Double" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDouble%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToInt16">
+      <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToInt16(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.Int16" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt16%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToInt32">
+      <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToInt32(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.Int32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt32%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToInt64">
+      <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToInt64(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.Int64" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt64%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToSByte">
+      <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToSByte(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.SByte" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSByte%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToSingle">
+      <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToSingle(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Single" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSingle%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToType">
+      <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type to which to convert this <see cref="T:System.Byte" /> value.</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> implementation that supplies information about the format of the returned value.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToType(System.Type,System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to <paramref name="type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidCastException">The requested type conversion is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToUInt16">
+      <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt16(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.UInt16" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt16%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToUInt32">
+      <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt32(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.UInt32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt32%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToUInt64">
+      <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt64(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.UInt64" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Byte> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt64%28System.Byte%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the value of the current <see cref="T:System.Byte" /> object to its equivalent string representation.</summary>
+        <returns>The string representation of the value of this object, which consists of a sequence of digits that range from 0 to 9 with no leading zeroes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is formatted with the general numeric format specifier ("G") and the <xref:System.Globalization.NumberFormatInfo> object for the thread current culture. To define the formatting of the <xref:System.Byte> value's string representation, call the <xref:System.Byte.ToString%2A> method. To define both the format specifiers and culture used to create the string representation of a <xref:System.Byte> value, call the <xref:System.Byte.ToString%2A> method.  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+ For information about the thread current culture, see <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example displays an array of byte values. Note that the <xref:System.Byte.ToString> method is not called explicitly in the example. Instead, it is called implicitly, because of the use of the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature.  
+  
+ [!code-cpp[System.Byte.ToString#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.ToString/CPP/newbytemembers2.cpp#2)]
+ [!code-csharp[System.Byte.ToString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.ToString/CS/NewByteMembers.cs#2)]
+ [!code-vb[System.Byte.ToString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.ToString/VB/NewByteMembers.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">An object that supplies culture-specific formatting information.</param>
+        <summary>Converts the numeric value of the current <see cref="T:System.Byte" /> object to its equivalent string representation using the specified culture-specific formatting information.</summary>
+        <returns>The string representation of the value of this object in the format specified by the <paramref name="provider" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is formatted with the general numeric format specifier ("G").  
+  
+ The `provider` parameter is an object that implements the <xref:System.IFormatProvider> interface. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string that is returned by this method. The object that implements <xref:System.IFormatProvider> can be any of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting rules are to be used.  
+  
+-   A <xref:System.Globalization.NumberFormatInfo> object that contains specific numeric formatting information for this value.  
+  
+-   A custom object that implements <xref:System.IFormatProvider>.  
+  
+ If `provider` is `null` or a <xref:System.Globalization.NumberFormatInfo> object cannot be obtained from `provider`, the return value is formatted using the <xref:System.Globalization.NumberFormatInfo> object for the thread current culture. For information about the thread current culture, see <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName>.  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following example iterates an array of byte values and displays each of them to the console by calling the <xref:System.Byte.ToString%28System.IFormatProvider%29> method with different format providers.  
+  
+ [!code-cpp[System.Byte.ToString#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.ToString/CPP/newbytemembers.cpp#3)]
+ [!code-csharp[System.Byte.ToString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.ToString/CS/NewByteMembers.cs#3)]
+ [!code-vb[System.Byte.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.ToString/VB/NewByteMembers.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.ToString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">A numeric format string.</param>
+        <summary>Converts the value of the current <see cref="T:System.Byte" /> object to its equivalent string representation using the specified format.</summary>
+        <returns>The string representation of the current <see cref="T:System.Byte" /> object, formatted as specified by the <paramref name="format" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `format` parameter can be either a standard or a custom numeric format string. All standard numeric format strings other than "R" (or "r") are supported, as are all custom numeric format characters. If `format` is `null` or an empty string (""), the return value is formatted with the general numeric format specifier ("G").  
+  
+ The return value of this function is formatted using the <xref:System.Globalization.NumberFormatInfo> object for the thread current culture. For information about the thread current culture, see <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName>. To provide formatting information for cultures other than the current culture, call the <xref:System.Byte.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Byte> value and displays it to the console using each of the supported standard format strings and a custom format string. The example is run with en-US as the current culture.  
+  
+ [!code-cpp[System.Byte.ToString#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.ToString/CPP/newbytemembers2.cpp#4)]
+ [!code-csharp[System.Byte.ToString#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.ToString/CS/NewByteMembers.cs#4)]
+ [!code-vb[System.Byte.ToString#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.ToString/VB/NewByteMembers.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="format" /> includes an unsupported specifier. Supported format specifiers are listed in the Remarks section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">A standard or custom numeric format string.</param>
+        <param name="provider">An object that supplies culture-specific formatting information.</param>
+        <summary>Converts the value of the current <see cref="T:System.Byte" /> object to its equivalent string representation using the specified format and culture-specific formatting information.</summary>
+        <returns>The string representation of the current <see cref="T:System.Byte" /> object, formatted as specified by the <paramref name="format" /> and <paramref name="provider" /> parameters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Byte.ToString%28System.String%2CSystem.IFormatProvider%29> method formats a <xref:System.Byte> value in a specified format of a specified culture. To format a number by using the default ("G") format of the current culture, call the <xref:System.Byte.ToString> method. To format a number by using a specified format of the current culture, call the <xref:System.Byte.ToString%28System.String%29> method.  
+  
+ The `format` parameter can be either a standard or a custom numeric format string. All standard numeric format strings other than "R" (or "r") are supported, as are all custom numeric format characters. If `format` is `null` or an empty string (""), the return value of this method is formatted with the general numeric format specifier ("G").  
+  
+ The `provider` parameter is an object that implements the <xref:System.IFormatProvider> interface. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string that is returned by this method. The object that implements <xref:System.IFormatProvider> can be any of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting rules are to be used.  
+  
+-   A <xref:System.Globalization.NumberFormatInfo> object that contains specific numeric formatting information for this value.  
+  
+-   A custom object that implements <xref:System.IFormatProvider>.  
+  
+ If `provider` is `null` or a <xref:System.Globalization.NumberFormatInfo> object cannot be obtained from `provider`, the return value is formatted using the <xref:System.Globalization.NumberFormatInfo> object for the thread current culture. For information about the thread current culture, see <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName>.  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following example uses the standard "N" format string and four different <xref:System.Globalization.CultureInfo> objects to display the string representation of a byte value to the console.  
+  
+ [!code-cpp[System.Byte.ToString#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.ToString/CPP/newbytemembers2.cpp#5)]
+ [!code-csharp[System.Byte.ToString#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.ToString/CS/NewByteMembers.cs#5)]
+ [!code-vb[System.Byte.ToString#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.ToString/VB/NewByteMembers.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="format" /> includes an unsupported specifier. Supported format specifiers are listed in the Remarks section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, out byte result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, unsigned int8 result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.TryParse(System.String,System.Byte@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="result" Type="System.Byte&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string that contains a number to convert. The string is interpreted using the <see cref="F:System.Globalization.NumberStyles.Integer" /> style.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.Byte" /> value equivalent to the number contained in <c>s</c> if the conversion succeeded, or zero if the conversion failed. This parameter is passed uninitialized; any value originally supplied in <c>result</c> will be overwritten.</param>
+        <summary>Tries to convert the string representation of a number to its <see cref="T:System.Byte" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The conversion fails and the method returns `false` if the `s` parameter is not in the correct format, if it is `null` or <xref:System.String?displayProperty=fullName>, or if it represents a number less than <xref:System.Byte> or greater than <xref:System.Byte>.  
+  
+ The <xref:System.Byte.TryParse%28System.String%2CSystem.Byte%40%29?displayProperty=fullName> method is similar to the <xref:System.Byte.Parse%28System.String%29?displayProperty=fullName> method, except that <xref:System.Byte.TryParse%28System.String%2CSystem.Byte%40%29> does not throw an exception if the conversion fails.  
+  
+ The `s` parameter should be the string representation of a number in the following form:  
+  
+```  
+[ws][sign]digits[ws]  
+```  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space.|  
+|*sign*|An optional positive sign, as specified by the <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A?displayProperty=fullName> property of the current culture.|  
+|*digits*|A sequence of decimal digits that range from 0 to 9.|  
+  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles> style. In addition to the byte value's decimal digits, only leading and trailing spaces together with a leading sign are allowed. (If the sign is present, it must be a positive sign or the method throws an <xref:System.OverflowException>.) To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Byte.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object for the current culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName>.  
+  
+ This overload of the <xref:System.Byte.TryParse%28System.String%2CSystem.Byte%40%29?displayProperty=fullName> method interprets all digits in the `s` parameter as decimal digits. To parse the string representation of a hexadecimal number, call the <xref:System.Byte.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Byte%40%29?displayProperty=fullName> overload.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Byte.TryParse%28System.String%2CSystem.Byte%40%29> method with a number of different string values.  
+  
+ [!code-cpp[System.Byte.TryParse#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.TryParse/cpp/tryparse.cpp#1)]
+ [!code-csharp[System.Byte.TryParse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.TryParse/cs/TryParse.cs#1)]
+ [!code-vb[System.Byte.TryParse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.TryParse/vb/TryParse.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out byte result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, unsigned int8 result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Byte.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Byte@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="style" Type="System.Globalization.NumberStyles" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+        <Parameter Name="result" Type="System.Byte&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert. The string is interpreted using the style specified by <c>style</c>.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>. If <c>provider</c> is <see langword="null" />, the thread current culture is used.</param>
+        <param name="result">When this method returns, contains the 8-bit unsigned integer value equivalent to the number contained in <c>s</c> if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not of the correct format, or represents a number less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />. This parameter is passed uninitialized; any value originally supplied in <c>result</c> will be overwritten.</param>
+        <summary>Converts the string representation of a number in a specified style and culture-specific format to its <see cref="T:System.Byte" /> equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Byte.TryParse%2A> method is like the <xref:System.Byte.Parse%2A> method, except the <xref:System.Byte.TryParse%2A> method does not throw an exception if the conversion fails.  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object supplied by the `provider` parameter.  
+  
+ The style parameter defines the style elements (such as white space or the positive sign) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`, the `s` parameter may include the following elements:  
+  
+ [ws][$][sign]digits[.fractional_digits][e[sign]digits][ws]  
+  
+ Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles>:  
+  
+ [ws]hexdigits[ws]  
+  
+ Elements in square brackets ( [ and ] ) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of s if style includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*sign*|An optional positive sign. (The parse operation fails if a negative sign is present in `s`.) The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*digits*|A sequence of digits from 0 through 9.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*fractional_digits*|One or more occurrences of the digit 0. Fractional digits can appear in `s` only if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*e*|The e or E character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
+  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+  
+|Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
+|----------------------------------------|---------------------------------------------------|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *.* and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or the method returns `false`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The `s` parameter can also use exponential notation. If `s` represents a number in exponential notation, it must represent an integer within the range of the <xref:System.Byte> data type without a non-zero, fractional component.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A positive sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A positive sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Although this flag is supported, the method returns `false` if parentheses are present in `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Although the group separator symbol can appear in `s`, it can be preceded by only one or more 0 digits.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *$* element.|  
+  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value without a prefix. For example, "F3" parses successfully, but "0xF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white space flags.)  
+  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.NumberFormatInfo> object, whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `s`.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Byte.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Byte%40%29> method with a number of different string values.  
+  
+ [!code-cpp[System.Byte.TryParse#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Byte.TryParse/cpp/tryparse2.cpp#2)]
+ [!code-csharp[System.Byte.TryParse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Byte.TryParse/cs/TryParse2.cs#2)]
+ [!code-vb[System.Byte.TryParse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Byte.TryParse/vb/TryParse2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="style" /> is not a <see cref="T:System.Globalization.NumberStyles" /> value.  
+  
+ -or-  
+  
+ <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

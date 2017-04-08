@@ -1,0 +1,257 @@
+<Type Name="InstanceDataCollection" FullName="System.Diagnostics.InstanceDataCollection">
+  <TypeSignature Language="C#" Value="public class InstanceDataCollection : System.Collections.DictionaryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstanceDataCollection extends System.Collections.DictionaryBase" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.InstanceDataCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.DictionaryBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.InstanceData" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.InstanceDataCollection> class represents a collection containing all the instance data for a counter. This collection is contained in the <xref:System.Diagnostics.InstanceDataCollectionCollection> when using the <xref:System.Diagnostics.PerformanceCounterCategory.ReadCategory%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example displays the instance data for a particular <xref:System.Diagnostics.PerformanceCounterCategory> on the local computer. It first displays a numbered list of <xref:System.Diagnostics.PerformanceCounterCategory> names. After the user enters the number of one of the categories, the example gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for that <xref:System.Diagnostics.PerformanceCounterCategory>. It then converts the collection returned by <xref:System.Diagnostics.InstanceDataCollectionCollection.Values%2A> to an array of <xref:System.Diagnostics.InstanceDataCollection> objects. The example also displays the instance data associated with each <xref:System.Diagnostics.InstanceData> of each <xref:System.Diagnostics.InstanceDataCollection>.  
+  
+ [!code-csharp[System.Diagnostics.InstanceData.KeysValues#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#1)]
+ [!code-vb[System.Diagnostics.InstanceData.KeysValues#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceDataCollection (string counterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string counterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use InstanceDataCollectionCollection indexer instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="counterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="counterName">The name of the counter, which often describes the quantity that is being counted.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.InstanceDataCollection" /> class, using the specified performance counter (which defines a performance instance).</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="counterName" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string instanceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string instanceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceName">The name of the instance to find in this collection.</param>
+        <summary>Determines whether a performance instance with a specified name (identified by one of the indexed <see cref="T:System.Diagnostics.InstanceData" /> objects) exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the instance exists in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `instanceName` parameter is case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name, counter name, and instance name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the category, which is a collection of <xref:System.Diagnostics.InstanceDataCollection> objects. From that it gets the particular <xref:System.Diagnostics.InstanceDataCollection> for the specified counter. It then uses the <xref:System.Diagnostics.InstanceDataCollection.Contains%2A> method to determine if the specified instance exists, using the default single-instance name if none is entered.  
+  
+ [!code-csharp[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/CS/instdatacolitemcontains.cs#2)]
+ [!code-vb[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/VB/instdatacolitemcontains.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Diagnostics.InstanceData[] instances, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Diagnostics.InstanceData[] instances, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.CopyTo(System.Diagnostics.InstanceData[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instances" Type="System.Diagnostics.InstanceData[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instances">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
+        <param name="index">The zero-based index value at which to add the new instances.</param>
+        <summary>Copies the items in the collection to the specified one-dimensional array at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the [CopyTo Method (InstanceData\<xref:System.Diagnostics.InstanceDataCollection.CopyTo%2A> method to convert an <xref:System.Diagnostics.InstanceDataCollection> into an array of <xref:System.Diagnostics.InstanceData> objects. The values of the <xref:System.Diagnostics.InstanceData.InstanceName%2A> and <xref:System.Diagnostics.InstanceData.Sample%2A> properties of each element of the array are passed to a function for further processing.  
+  
+ [!code-csharp[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#4)]
+ [!code-vb[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterName">
+      <MemberSignature Language="C#" Value="public string CounterName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CounterName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.CounterName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the performance counter whose instance data you want to get.</summary>
+        <value>The performance counter name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the <xref:System.Diagnostics.InstanceDataCollection.CounterName%2A> property of an <xref:System.Diagnostics.InstanceDataCollection>.  
+  
+ [!code-csharp[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#4)]
+ [!code-vb[System.Diagnostics.InstanceData.CopyTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.InstanceData this[string instanceName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.InstanceData Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.InstanceData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceName">The name of the performance counter category instance, or an empty string ("") if the category contains a single instance.</param>
+        <summary>Gets the instance data associated with this counter. This is typically a set of raw counter values.</summary>
+        <value>An <see cref="T:System.Diagnostics.InstanceData" /> item, by which the <see cref="T:System.Diagnostics.InstanceDataCollection" /> object is indexed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `instanceName` parameter is case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example accepts a <xref:System.Diagnostics.PerformanceCounter> category name, counter name, and instance name from the command line. It gets the <xref:System.Diagnostics.InstanceDataCollectionCollection> for the category, which is a collection of <xref:System.Diagnostics.InstanceDataCollection> objects. From that it gets the particular <xref:System.Diagnostics.InstanceDataCollection> for the specified counter. Then, if the instance exists, the example uses the <xref:System.Diagnostics.InstanceDataCollection.Item%2A> property (referenced as an indexer) to obtain the associated <xref:System.Diagnostics.InstanceData> object.  
+  
+ [!code-csharp[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/CS/instdatacolitemcontains.cs#2)]
+ [!code-vb[System.Diagnostics.InstanceDataCollection.ItemContains#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceDataCollection.ItemContains/VB/instdatacolitemcontains.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instanceName" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object and counter registry keys for the objects associated with this instance data.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> that represents a set of object-specific registry keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each software component creates keys for its objects and counters when it is installed and writes counter data while it is executing. You can access this data as you would access any other registry data. However, although you use the registry to collect performance data, the data is not stored in the registry database. Instead, the system collects the data from the appropriate system object managers.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.Keys%2A> property of an <xref:System.Diagnostics.InstanceDataCollection> to return a collection of instance names, which it converts to an array of <xref:System.String>. It generates an array of <xref:System.Diagnostics.InstanceData> objects using the <xref:System.Diagnostics.InstanceDataCollection.Values%2A> property. For each element in the array of instance names, it displays the name and calls a function to process the associated <xref:System.Diagnostics.InstanceData> object.  
+  
+ [!code-csharp[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#3)]
+ [!code-vb[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the raw counter values that comprise the instance data for the counter.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> that represents the counter's raw data values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Diagnostics.InstanceDataCollection.Values%2A> property of an <xref:System.Diagnostics.InstanceDataCollection> to return a collection of <xref:System.Diagnostics.InstanceData> objects, which it converts to an array. It generates an array of instance names using the <xref:System.Diagnostics.InstanceDataCollection.Keys%2A> property. For each element in the array of <xref:System.Diagnostics.InstanceData> objects, it displays the associated instance name and calls a function to process the <xref:System.Diagnostics.InstanceData> object.  
+  
+ [!code-csharp[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/CS/instdatakeysvalues.cs#3)]
+ [!code-vb[System.Diagnostics.InstanceData.KeysValues#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.KeysValues/VB/instdatakeysvalues.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

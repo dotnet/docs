@@ -1,0 +1,112 @@
+<Type Name="PeerContactCollection" FullName="System.Net.PeerToPeer.Collaboration.PeerContactCollection">
+  <TypeSignature Language="C#" Value="public class PeerContactCollection : System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Collaboration.PeerContact&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PeerContactCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.PeerToPeer.Collaboration.PeerContact&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Collaboration.PeerContact&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Net.PeerToPeer.Collaboration.PeerContact</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a container for <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> elements. An instance of this type is returned by the <see cref="M:System.Net.PeerToPeer.Collaboration.ContactManager.GetContacts" /> static method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection holds instances of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> element, which specifies information about a peer within a <xref:System.Net.PeerToPeer.Collaboration.ContactManager>.  
+  
+ No public constructors are defined for this class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.PeerToPeer.Collaboration.PeerContact item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.PeerToPeer.Collaboration.PeerContact item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerContact)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerContact" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace</param>
+        <param name="item">The new value for the element at the specified index</param>
+        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContactCollection" /> at the specified index or key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.PeerToPeer.Collaboration.PeerContact item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.PeerToPeer.Collaboration.PeerContact item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerContact)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerContact" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="item">The new value for the element at the specified index.</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` items are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> provided is <see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerContactCollection.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a Unicode <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />, separated by commas.</summary>
+        <returns>Unicode <see cref="T:System.String" /> representing the current value of each <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />, separated by commas.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

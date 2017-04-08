@@ -1,0 +1,186 @@
+<Type Name="AssociationProvider" FullName="System.Web.DynamicData.ModelProviders.AssociationProvider">
+  <TypeSignature Language="C#" Value="public abstract class AssociationProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AssociationProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.AssociationProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class for column-association providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Association providers must extend this class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AssociationProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.AssociationProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.ModelProviders.AssociationProvider" /> class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.AssociationDirection Direction { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.DynamicData.ModelProviders.AssociationDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the association.</summary>
+        <value>The type of the association.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Associations include one-to-one, one-to-many, and many-to-many.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeignKeyNames">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; ForeignKeyNames { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; ForeignKeyNames" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.ForeignKeyNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the names of the foreign keys that make up this association.</summary>
+        <value>The names of the foreign keys that make up this association.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromColumn">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.ColumnProvider FromColumn { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.ModelProviders.ColumnProvider FromColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.FromColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.ColumnProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the source column of the association.</summary>
+        <value>The source column of the association.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSortExpression">
+      <MemberSignature Language="C#" Value="public virtual string GetSortExpression (System.Web.DynamicData.ModelProviders.ColumnProvider sortColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSortExpression(class System.Web.DynamicData.ModelProviders.ColumnProvider sortColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ModelProviders.AssociationProvider.GetSortExpression(System.Web.DynamicData.ModelProviders.ColumnProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sortColumn" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
+      </Parameters>
+      <Docs>
+        <param name="sortColumn">The column to sort the entity by.</param>
+        <summary>Returns the sort expression for the column that is represented by the association.</summary>
+        <returns>If <see cref="P:System.Web.DynamicData.ModelProviders.ColumnProvider.IsSortable" /> returns <see langword="true" />, the sort expression for the column that is represented by the association; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrimaryKeyInThisTable">
+      <MemberSignature Language="C#" Value="public virtual bool IsPrimaryKeyInThisTable { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimaryKeyInThisTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.IsPrimaryKeyInThisTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the From column part of the primary key is in the table.</summary>
+        <value>
+          <see langword="true" /> if the From column part of the primary key is in the table; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToColumn">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.ColumnProvider ToColumn { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.ModelProviders.ColumnProvider ToColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.ToColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.ColumnProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the destination column of the association.</summary>
+        <value>The destination column of the association.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is optional and is generally required only for one-to-many and one-to-one relationships  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToTable">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ModelProviders.TableProvider ToTable { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.ModelProviders.TableProvider ToTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ModelProviders.AssociationProvider.ToTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.TableProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the destination table of the association.</summary>
+        <value>The destination table of the association.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

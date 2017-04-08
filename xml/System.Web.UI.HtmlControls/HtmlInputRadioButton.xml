@@ -1,0 +1,504 @@
+<Type Name="HtmlInputRadioButton" FullName="System.Web.UI.HtmlControls.HtmlInputRadioButton">
+  <TypeSignature Language="C#" Value="public class HtmlInputRadioButton : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputRadioButton extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlInputControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("ServerChange")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows programmatic access to the HTML <see langword="&lt;input type= radio&gt;" /> element on the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control to create a radio button on a Web page. The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control does not provide built-in functionality to display a caption for the radio button. To create a caption, use literal text in the Web page at the desired location. This allows you to determine where the caption is displayed relative to the radio button. For example, if you want to display the caption on the right side of the radio button, declare an <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control, followed by the caption text, as shown in the following code.  
+  
+```  
+<input type="radio"   
+ id="Radio1"   
+ name="Mode"   
+ runat="server"/>  
+Caption Text<br>  
+```  
+  
+ You can optionally associate a quantity with the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control by setting the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value%2A> property. This is useful when you have multiple radio buttons and need to perform a calculation, based on the selection.  
+  
+ <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls can be grouped together by specifying a common value for the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property of each radio button you want to include in the group.  
+  
+> [!NOTE]
+>  When you group <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls together, only one radio button in the group can be selected at a time.  
+  
+ To determine whether the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control is selected, test the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property. If you have a group of <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls, you must iterate through the controls and test the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of each control individually.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control provides a <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event that is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property changes values between posts to the server. This allows you to create a custom event handler that performs a specific set of instructions when the event is raised, such as data validation.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, see the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control to create a group of radio buttons.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputRadioButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputRadioButton Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputRadioButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputRadioButton Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlInputRadioButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "radio" literal string.|  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputRadioButtonCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputRadioButtonCtor/CS/htmlinputradiobuttonctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputRadioButtonCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputRadioButtonCtor/VB/htmlinputradiobuttonctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checked">
+      <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control is selected.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control is selected; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property to determine whether the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control is selected. If you have a group of <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls, you must iterate through the controls and test the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of each control individually. You can also use this property to programmatically specify whether the control is selected.  
+  
+ You can group <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls together by specifying a common value for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Name%2A> property of each radio button control you want to include in the group.  
+  
+> [!NOTE]
+>  When you group <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls, only one radio button in the group can be selected at a time. The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of the selected control is set to `true`, while the same property is set to `false` for all other radio buttons in the group.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property to determine which radio button in the group is selected.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputRadioButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputRadioButton Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputRadioButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputRadioButton Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming name values.</param>
+        <summary>Processes the postback data for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.LoadPostData%2A> method checks to see whether the postback value of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control is different from its previous value, and if so, returns `true`.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.LoadPostData%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the group that the instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> class is associated with.</summary>
+        <value>The group of check box controls that the instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> class is a member of.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Group multiple <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls by specifying a common value for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Name%2A> property of each radio button you want to include in the group. When you group <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls, only one radio button in the group can be selected at a time. The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of the selected control is set to `true`, while the same property is set to `false` for all other radio buttons in the group.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Name%2A> property to group multiple <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> controls.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputRadioButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputRadioButton Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputRadioButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputRadioButton Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event and registers the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control as one that requires postback handling.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnPreRender%2A> method is called just prior to rendering the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnPreRender%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnPreRender%2A> method so that it adds a `Title` attribute in a custom <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> server control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputRadioButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputRadioButtonOnPreRender/CS/custom_htmlinputradiobutton_onprerendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputRadioButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputRadioButtonOnPreRender/VB/custom_htmlinputradiobutton_onprerendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlInputRadioButtonOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputRadioButtonOnPreRender/CS/custom_htmlinputradiobutton_onprerender.cs#2)]
+ [!code-vb[CustomHtmlInputRadioButtonOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputRadioButtonOnPreRender/VB/custom_htmlinputradiobutton_onprerender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnServerChange">
+      <MemberSignature Language="C#" Value="protected virtual void OnServerChange (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerChange(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" /> event. This allows you to create a custom event handler when the event is raised.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control changes values between posts to the server. This allows you to create a custom event handler that performs a specific set of instructions (such as data validation) when the event is raised.  
+  
+> [!NOTE]
+>  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=fullName> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property to `true`.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event. The custom event handler updates a label on the Web page to display the value of the selected radio button.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputRadioButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputRadioButton/CS/htmlinputradiobuttoncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputRadioButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputRadioButton/VB/htmlinputradiobuttonvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputRadioButtonServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputRadioButtonServerChange/CS/htmlinputradiobuttonserverclickcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputRadioButtonServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputRadioButtonServerChange/VB/htmlinputradiobuttonserverclickvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calls the <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.OnServerChange(System.EventArgs)" /> method to signal the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control that the state of the control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" /> method so that the <see cref="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" /> event is correctly raised.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered output.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.RenderAttributes%2A> method writes the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value%2A> property as an attribute of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control and then calls the base class's <xref:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes%2A> method  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.RenderAttributes%2A> method in a custom server control so that specific title text is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputRadioButtonRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputRadioButtonRenderAttributes/CS/custom_htmlinputradiobutton_renderattributescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputRadioButtonRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputRadioButtonRenderAttributes/VB/custom_htmlinputradiobutton_renderattributesvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlInputRadioButtonRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputRadioButtonRenderAttributes/CS/custom_htmlinputradiobutton_renderattributes.cs#2)]
+ [!code-vb[CustomHtmlInputRadioButtonRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputRadioButtonRenderAttributes/VB/custom_htmlinputradiobutton_renderattributes.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerChange">
+      <MemberSignature Language="C#" Value="public event EventHandler ServerChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ServerChange" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked" /> property of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control changes between posts to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event is raised when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Checked%2A> property of the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control changes value between posts to the server. This allows you to create a custom event handler that performs a specific set of instructions (such as data validation) when the event is raised.  
+  
+> [!NOTE]
+>  The control must have view state enabled for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event to work correctly. To enable view state for all controls on the Web Forms page, set the <xref:System.Web.UI.Page.EnableViewState%2A?displayProperty=fullName> property to `true`. You can also enable view state for an individual control by setting the <xref:System.Web.UI.Control.EnableViewState%2A?displayProperty=fullName> property to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.ServerChange> event. The custom event handler updates a label on the Web page to display the value of the selected radio button.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputRadioButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputRadioButton/CS/htmlinputradiobuttoncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputRadioButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputRadioButton/VB/htmlinputradiobuttonvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputRadioButtonServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputRadioButtonServerChange/CS/htmlinputradiobuttonserverclickcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputRadioButtonServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputRadioButtonServerChange/VB/htmlinputradiobuttonserverclickvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming name values</param>
+        <summary>Implements the <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method by calling the <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Implements the <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" /> method by calling the <see cref="M:System.Web.UI.HtmlControls.HtmlInputRadioButton.RaisePostDataChangedEvent" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value associated with the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control.</summary>
+        <value>The value associated with the <see cref="T:System.Web.UI.HtmlControls.HtmlInputRadioButton" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value%2A> property to specify or determine the value associated with the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control. The value can be any valid string that you want to associate with the control. This is useful when you have multiple radio buttons and need to perform a calculation based on the selection. For example, you can have radio buttons that represent different shipping methods. You can store the shipping cost in the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value%2A> property. When the user selects the shipping method, the appropriate shipping amount can be determined from this property and added to the sales total.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton.Value%2A> property to associate a description with the <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputRadioButton#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputRadioButton/CS/htmlinputradiobuttoncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputRadioButton#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputRadioButton/VB/htmlinputradiobuttonvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

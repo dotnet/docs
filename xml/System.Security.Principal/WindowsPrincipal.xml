@@ -1,0 +1,438 @@
+<Type Name="WindowsPrincipal" FullName="System.Security.Principal.WindowsPrincipal">
+  <TypeSignature Language="C#" Value="public class WindowsPrincipal : System.Security.Claims.ClaimsPrincipal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WindowsPrincipal extends System.Security.Claims.ClaimsPrincipal" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsPrincipal" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Claims.ClaimsPrincipal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables code to check the Windows group membership of a Windows user.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Principal.WindowsPrincipal> class is primarily used to check the role of a Windows user. The <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A?displayProperty=fullName> method overloads let you check the user role by using different role contexts.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method overloads. The <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used as the source for the relative identifiers (RIDs) that identify the built-in roles. The RIDs are used to determine the roles of the current principal.  
+  
+ [!code-cpp[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#1)]
+ [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsPrincipal (System.Security.Principal.WindowsIdentity ntIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity ntIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.#ctor(System.Security.Principal.WindowsIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ntIdentity" Type="System.Security.Principal.WindowsIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="ntIdentity">The object from which to construct the new instance of <see cref="T:System.Security.Principal.WindowsPrincipal" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsPrincipal" /> class by using the specified <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Security.Principal.WindowsPrincipal> object from the current <xref:System.Security.Principal.WindowsIdentity> object.  
+  
+ [!code-cpp[Classic WindowsPrincipal.WindowsPrincipal Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic WindowsPrincipal.WindowsPrincipal Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WindowsPrincipal.WindowsPrincipal Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic WindowsPrincipal.WindowsPrincipal Example/CS/source.cs#1)]
+ [!code-vb[Classic WindowsPrincipal.WindowsPrincipal Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic WindowsPrincipal.WindowsPrincipal Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ntIdentity" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClaims">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; DeviceClaims { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; DeviceClaims" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsPrincipal.DeviceClaims" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsPrincipal/&lt;get_DeviceClaims&gt;d__13))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all Windows device claims from this principal.</summary>
+        <value>A collection of all Windows device claims from this principal.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public override System.Security.Principal.IIdentity Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IIdentity Identity" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsPrincipal.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.IIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identity of the current principal.</summary>
+        <value>The <see cref="T:System.Security.Principal.WindowsIdentity" /> object of the current principal.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example retrieves the name of the user by using the <xref:System.Security.Principal.WindowsPrincipal.Identity%2A> property of the <xref:System.Security.Principal.WindowsPrincipal> object.  
+  
+ [!code-cpp[Classic WindowsPrincipal.Identity Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic WindowsPrincipal.Identity Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WindowsPrincipal.Identity Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic WindowsPrincipal.Identity Example/CS/source.cs#1)]
+ [!code-vb[Classic WindowsPrincipal.Identity Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic WindowsPrincipal.Identity Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInRole">
+      <MemberSignature Language="C#" Value="public virtual bool IsInRole (int rid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInRole(int32 rid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rid" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rid">The RID of the Windows user group in which to check for the principal’s membership status.</param>
+        <summary>Determines whether the current principal belongs to the Windows user group with the specified relative identifier (RID).</summary>
+        <returns>
+          <see langword="true" /> if the current principal is a member of the specified Windows user group, that is, in a particular role; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When testing for newly created role information, such as a new user or a new group, it is important to log out and log in to force the propagation of role information within the domain. Not doing so can cause the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> test to return `false`. This method is not supported on Windows 98 or Windows Millennium Edition.  
+  
+ For performance reasons, the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29> overload is recommended as the preferable overload for determining the user's role.  
+  
+> [!NOTE]
+>  In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. When you attempt to perform a task that requires administrative privileges, you can dynamically elevate your role by using the Consent dialog box. The code that executes the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method does not display the Consent dialog box. The code returns false if you are in the standard user role, even if you are in the Built-in Administrators group. You can elevate your privileges before you execute the code by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+ Relative identifiers (RIDs) are components of a Windows user group's security identifier (SID) and are supported to help prevent cross-platform localization issues. Many user accounts, local groups, and global groups have a default RID value that is constant across all versions of Windows.  
+  
+ For example, the RID for the BUILTIN\Administrators role is 0x220. Using 0x220 as the input parameter for the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method results in `true` being returned if the current principal is an administrator.  
+  
+ The following tables list the default RID values.  
+  
+|Built-in users|RID|  
+|---------------------|---------|  
+|DOMAINNAME\Administrator|0x1F4|  
+|DOMAINNAME\Guest|0x1F5|  
+  
+|Built-in global groups|RID|  
+|-----------------------------|---------|  
+|DOMAINNAME\Domain Admins|0x200|  
+|DOMAINNAME\Domain Users|0x201|  
+|DOMAINNAME\Domain Guests|0x202|  
+  
+|Built-in local groups|RID|  
+|----------------------------|---------|  
+|BUILTIN\Administrators|0x220|  
+|BUILTIN\Users|0x221|  
+|BUILTIN\Guests|0x222|  
+|BUILTIN\Account Operators|0x224|  
+|BUILTIN\Server Operators|0x225|  
+|BUILTIN\Print Operators|0x226|  
+|BUILTIN\Backup Operators|0x227|  
+|BUILTIN\Replicator|0x228|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of  the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> methods. The <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used as the source for the RIDs that identify the built-in roles. The RIDs are used to determine the roles of the current principal.  
+  
+ [!code-cpp[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#1)]
+ [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInRole">
+      <MemberSignature Language="C#" Value="public virtual bool IsInRole (System.Security.Principal.SecurityIdentifier sid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInRole(class System.Security.Principal.SecurityIdentifier sid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.SecurityIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sid" Type="System.Security.Principal.SecurityIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="sid">A <see cref="T:System.Security.Principal.SecurityIdentifier" /> that uniquely identifies a Windows user group.</param>
+        <summary>Determines whether the current principal belongs to the Windows user group with the specified security identifier (SID).</summary>
+        <returns>
+          <see langword="true" /> if the current principal is a member of the specified Windows user group; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Principal.SecurityIdentifier> uniquely identifies a user or group on Windows 2000, Windows Server, and Windows XP implementations. When testing for newly created role information, such as a new user or a new group, it is important to log out and log in to force the propagation of role information within the domain. Not doing so can cause the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> test to return `false`. This method is not supported on Windows 98 or Windows Millennium Edition.  
+  
+> [!NOTE]
+>  In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. When you attempt to perform a task that requires administrative privileges, you can dynamically elevate your role by using the Consent dialog box. The code that executes the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method does not display the Consent dialog box. The code returns false if you are in the standard user role, even if you are in the Built-in Administrators group. You can elevate your privileges before you execute the code by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+ For performance reasons, this is the preferable overload to determine a user's role.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29?displayProperty=fullName> method. The <xref:System.Security.Principal.WellKnownSidType> enumeration value is used to determine whether the current principal is an administrator. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#5)]
+ [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sid" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">Windows returned a Win32 error.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInRole">
+      <MemberSignature Language="C#" Value="public virtual bool IsInRole (System.Security.Principal.WindowsBuiltInRole role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInRole(valuetype System.Security.Principal.WindowsBuiltInRole role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.Security.Principal.WindowsBuiltInRole)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="System.Security.Principal.WindowsBuiltInRole" />
+      </Parameters>
+      <Docs>
+        <param name="role">One of the <see cref="T:System.Security.Principal.WindowsBuiltInRole" /> values.</param>
+        <summary>Determines whether the current principal belongs to the Windows user group with the specified <see cref="T:System.Security.Principal.WindowsBuiltInRole" />.</summary>
+        <returns>
+          <see langword="true" /> if the current principal is a member of the specified Windows user group; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When testing for newly created role information, such as a new user or a new group, it is important to log out and log in to force the propagation of role information within the domain. Not doing so can cause the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> test to return `false`. This method is not supported on Windows 98 or Windows Millennium Edition.  
+  
+ For performance reasons, the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29> overload is recommended as the preferable overload for determining the user's role.  
+  
+> [!NOTE]
+>  In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. When you attempt to perform a task that requires administrative privileges, you can dynamically elevate your role by using the Consent dialog box. The code that executes the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method does not display the Consent dialog box. The code returns false if you are in the standard user role, even if you are in the Built-in Administrators group. You can elevate your privileges before you execute the code by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used to determine whether the current principal is an <xref:System.Security.Principal.WindowsBuiltInRole>. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#4)]
+ [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="role" /> is not a valid <see cref="T:System.Security.Principal.WindowsBuiltInRole" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInRole">
+      <MemberSignature Language="C#" Value="public override bool IsInRole (string role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsInRole(string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsPrincipal.IsInRole(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="role">The name of the Windows user group for which to check membership.</param>
+        <summary>Determines whether the current principal belongs to the Windows user group with the specified name.</summary>
+        <returns>
+          <see langword="true" /> if the current principal is a member of the specified Windows user group; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When testing for newly created role information, such as a new user or a new group, it is important to log out and log in to force the propagation of role information within the domain. Not doing so can cause the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> test to return `false`. This method is not supported on Windows 98 or Windows Millennium Edition.  
+  
+ For performance reasons, the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29> overload is recommended as the preferable overload for determining the user's role.  
+  
+> [!NOTE]
+>  In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. When you attempt to perform a task that requires administrative privileges, you can dynamically elevate your role by using the Consent dialog box. The code that executes the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method does not display the Consent dialog box. The code returns false if you are in the standard user role, even if you are in the Built-in Administrators group. You can elevate your privileges before you execute the code by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+ For built-in roles, the `role` string should be in the form "BUILTIN\\*RoleNameHere*". For example, to test for membership in the Windows administrator role, the string representing the role should be "BUILTIN\Administrators". Note that the backslash might need to be escaped. The following table lists the built-in roles.  
+  
+> [!NOTE]
+>  The spelling for the BUILTIN roles in string format differs from the spelling used in the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration. For example, the spelling for an administrator in the enumeration is "Administrator", not "Administrators". When using this overload, use the spelling for the role from the following table.  
+  
+|Built-in local groups|  
+|----------------------------|  
+|BUILTIN\Administrators|  
+|BUILTIN\Users|  
+|BUILTIN\Guests|  
+|BUILTIN\Account Operators|  
+|BUILTIN\Server Operators|  
+|BUILTIN\Print Operators|  
+|BUILTIN\Backup Operators|  
+|BUILTIN\Replicator|  
+  
+ For machine-specific roles, the `role` string should be in the form "MachineName\\*RoleNameHere*".  
+  
+ For domain-specific roles, the `role` string should be in the form "DomainName\\*RoleNameHere*"; for example, `"SomeDomain\Domain Users`".  
+  
+> [!NOTE]
+>  In the .NET Framework version 1.0, the `role` parameter is case-sensitive. In the .NET Framework version 1.1 and later, the `role` parameter is case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.String%29?displayProperty=fullName> method.  
+  
+ The strings `BUILTIN\Administrators` and `BUILTIN\Users` are used to determine whether the current principal is an administrator or a user. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#3)]
+ [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to manipulate the principal object. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UserClaims">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; UserClaims { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; UserClaims" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsPrincipal.UserClaims" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsPrincipal/&lt;get_UserClaims&gt;d__11))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all Windows user claims from this principal.</summary>
+        <value>A collection of all Windows user claims from this principal.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="IsInRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current principal belongs to a specified Windows user group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are four overloads for this method. For performance reasons, the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29> overload is strongly recommended.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method is not supported on Windows 98 or Windows Millennium Edition.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

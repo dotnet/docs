@@ -1,0 +1,39 @@
+<Type Name="HitTestResultCallback" FullName="System.Windows.Media.HitTestResultCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Windows.Media.HitTestResultBehavior HitTestResultCallback(HitTestResult result);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestResultCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResultCallback" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="result" Type="System.Windows.Media.HitTestResult" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Windows.Media.HitTestResultBehavior</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="result">The <see cref="T:System.Windows.Media.HitTestResult" /> value that represents a visual object that is returned from a hit test.</param>
+    <summary>Represents a callback that is used to customize hit testing. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] invokes the <see cref="T:System.Windows.Media.HitTestResultCallback" /> to report hit test intersections to the user.</summary>
+    <returns>A <see cref="T:System.Windows.Media.HitTestFilterBehavior" /> that represents the action resulting from the hit test.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hit test callback method defines the actions that you perform when a hit test is identified on a particular visual object in the visual tree. After you perform the actions, your callback is expected to return a <xref:System.Windows.Media.HitTestResultBehavior> value that determines whether to continue iterating through the visual tree for any other visual objects.  
+  
+   
+  
+## Examples  
+ The following example shows how to invoke <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> by using a <xref:System.Windows.Media.HitTestResultCallback> value. The corresponding hit test callback method is also defined.  
+  
+ [!code-csharp[DrawingVisualSample#103](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#103)]
+ [!code-vb[DrawingVisualSample#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#103)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

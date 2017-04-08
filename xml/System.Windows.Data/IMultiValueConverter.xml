@@ -1,0 +1,109 @@
+<Type Name="IMultiValueConverter" FullName="System.Windows.Data.IMultiValueConverter">
+  <TypeSignature Language="C#" Value="public interface IMultiValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMultiValueConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.IMultiValueConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to apply custom logic in a <see cref="T:System.Windows.Data.MultiBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To associate a converter with a <xref:System.Windows.Data.MultiBinding>, create a class that implements the <xref:System.Windows.Data.IMultiValueConverter> interface, and then implement the [Convert(Object\<xref:System.Windows.Data.IMultiValueConverter.Convert%2A> and [ConvertBack(Object, Type\<xref:System.Windows.Data.IMultiValueConverter.ConvertBack%2A> methods.  
+  
+ Individual bindings in the collection can have their own value converters. For more information, see <xref:System.Windows.Data.IValueConverter>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object[] values, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.IMultiValueConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="values">The array of values that the source bindings in the <see cref="T:System.Windows.Data.MultiBinding" /> produces. The value <see cref="F:System.Windows.DependencyProperty.UnsetValue" /> indicates that the source binding has no value to provide for conversion.</param>
+        <param name="targetType">The type of the binding target property.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">The culture to use in the converter.</param>
+        <summary>Converts source values to a value for the binding target. The data binding engine calls this method when it propagates the values from source bindings to the binding target.</summary>
+        <returns>A converted value.  
+  
+ If the method returns <see langword="null" />, the valid <see langword="null" /> value is used.  
+  
+ A return value of <see cref="T:System.Windows.DependencyProperty" />.<see cref="F:System.Windows.DependencyProperty.UnsetValue" /> indicates that the converter did not produce a value, and that the binding will use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue" /> if it is available, or else will use the default value.  
+  
+ A return value of <see cref="T:System.Windows.Data.Binding" />.<see cref="F:System.Windows.Data.Binding.DoNothing" /> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue" /> or the default value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IMultiValueConverter.Convert%2A> method, or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IMultiValueConverter.Convert%2A> method calls, are treated as run-time errors. Handle anticipated problems by returning <xref:System.Windows.DependencyProperty>.<xref:System.Windows.DependencyProperty.UnsetValue>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object[] ConvertBack (object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ConvertBack(object value, class System.Type[] targetTypes, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.IMultiValueConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetTypes" Type="System.Type[]" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value that the binding target produces.</param>
+        <param name="targetTypes">The array of types to convert to. The array length indicates the number and types of values that are suggested for the method to return.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">The culture to use in the converter.</param>
+        <summary>Converts a binding target value to the source binding values.</summary>
+        <returns>An array of values that have been converted from the target value back to the source values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are more return values than there are bindings in the <xref:System.Windows.Data.MultiBinding>, the excess return values are ignored. If there are more source bindings than there are return values, the remaining source bindings do not have any values set on them. Types of return values are not verified against `targetTypes`; the values are set on the source bindings directly.  
+  
+ Return <xref:System.Windows.Data.Binding.DoNothing> at position `i` to indicate that no value is to be set on the source binding at index `i`.  
+  
+ Return <xref:System.Windows.DependencyProperty>.<xref:System.Windows.DependencyProperty.UnsetValue> at position `i` to indicate that the converter is unable to provide a value for the source binding at index `i`, and that no value is to be set on it.  
+  
+ Return `null` to indicate that the converter cannot perform the conversion or that it does not support conversion in this direction.  
+  
+ The data binding engine does not catch exceptions that are thrown by a user-supplied converter. Any exception that is thrown by the <xref:System.Windows.Data.IMultiValueConverter.ConvertBack%2A> method or any uncaught exceptions that are thrown by methods that the <xref:System.Windows.Data.IMultiValueConverter.ConvertBack%2A> method calls are treated as run-time errors. Handle anticipated problems by returning `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

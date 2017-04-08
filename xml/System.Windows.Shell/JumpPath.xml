@@ -1,0 +1,66 @@
+<Type Name="JumpPath" FullName="System.Windows.Shell.JumpPath">
+  <TypeSignature Language="C#" Value="public class JumpPath : System.Windows.Shell.JumpItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JumpPath extends System.Windows.Shell.JumpItem" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpPath" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Shell.JumpItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a link to a file that is displayed in a [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Shell.JumpPath> is a reference to a file that can be opened from a [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List. If your application is not registered to handle the file type of the item, the file will not appear in the Jump List. For example, if you add a <xref:System.Windows.Shell.JumpPath> to a .txt file, your application must be registered to handle .txt files.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpPath.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpPath" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpPath.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to the file to be included in the Jump List.</summary>
+        <value>The path to the file to be included in the Jump List.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application must be registered to handle the file name extension of the specified file; otherwise, the item is rejected. For example, if you add a <xref:System.Windows.Shell.JumpPath> to a .txt file, your application must be registered to handle .txt files.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

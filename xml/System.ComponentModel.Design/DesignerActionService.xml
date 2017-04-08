@@ -1,0 +1,566 @@
+<Type Name="DesignerActionService" FullName="System.ComponentModel.Design.DesignerActionService">
+  <TypeSignature Language="C#" Value="public class DesignerActionService : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionService extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Establishes a design-time service that manages the collection of <see cref="T:System.ComponentModel.Design.DesignerActionItem" /> objects for components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService> class is responsible for managing the collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects for each instance of a component that exists on a form at design time. This class enables a direct push model of item creation, and is primarily intended for use by design-time tool developers, although it can also be used by component and custom control developers.  
+  
+ Design-time tool developers will need to determine the list of items to display for a component and determine when this list changes. They may also create add-ins that operate in conjunction with smart tag panel objects.  
+  
+ Advanced component developers may need to dynamically control the items associated with a component, thus replacing or supplementing the standard pull model. For example, panel commands can be altered depending on the context of their use and the design-time state of the component.  
+  
+> [!NOTE]
+>  The <xref:System.ComponentModel.Design.DesignerActionService> is actually the driving service behind both the push and pull models; however, in the latter case it operates implicitly.  
+  
+ <xref:System.ComponentModel.Design.DesignerActionService> provides a straightforward interface for accessing and manipulating the items for each component, including the following methods and events:  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionService.Contains%2A> method determines whether the <xref:System.ComponentModel.Design.DesignerActionService> is currently managing a particular component.  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method supports the enumeration of the lists of items.  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method allows adding a <xref:System.ComponentModel.Design.DesignerActionList> or <xref:System.ComponentModel.Design.DesignerActionListCollection> to the set of existing items for a component instance. In contrast, the <xref:System.ComponentModel.Design.DesignerActionService.Remove%2A> method removes one or all of the item lists associated with a component.  
+  
+    > [!NOTE]
+    >  The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method represents the direct push model of associating panel items with a component. In contrast, the pull model relies on overriding the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property of the designer class for that component. The design environment is responsible for adding these items into the current <xref:System.ComponentModel.Design.DesignerActionService> when a component is created on the design surface.  
+  
+    > [!IMPORTANT]
+    >  The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A>, <xref:System.ComponentModel.Design.DesignerActionService.Remove%2A>, <xref:System.ComponentModel.Design.DesignerActionService.Contains%2A>, and <xref:System.ComponentModel.Design.DesignerActionService.Clear%2A> methods only consider or affect push-model items.  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event indicates when the collection of items changes for a component.  
+  
+ Because it is often desirable to use some of the same panel items in both the component's design-time shortcut menu and its panel, a large degree of interoperability exists between <xref:System.ComponentModel.Design.DesignerActionItem> objects and designer verbs.  
+  
+ If a component designer does not explicitly specify a <xref:System.ComponentModel.Design.DesignerActionList> (that is, it does not contain an overridden <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property), then a list will be created from existing designer verbs. These verbs are specified by the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property. In this case, an internal verb list class is used to contain the collection of verb item panel entries.  
+  
+ If you want a <xref:System.ComponentModel.Design.DesignerActionMethodItem> to be used both as a panel entry and a design-time shortcut menu entry, then you can set the `includeAsDesignerVerb` parameter in the item's constructor.  
+  
+ Use the <xref:System.ComponentModel.Design.DesignerActionUIService> to control the display of your designer's <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionService (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The service provider for the current design-time environment.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A service provider is necessary for monitoring selection and component changes. It is expected to support the <xref:System.ComponentModel.Design.IDesignerHost> and <xref:System.ComponentModel.Design.IComponentChangeService> types. The <xref:System.ComponentModel.Design.DesignerActionService> class uses an internal table to manage components and their associated <xref:System.ComponentModel.Design.DesignerActionList> smart tags.  
+  
+ Typically, component developers will not need to create an instance of this class; instead, they can acquire an existing instance through a call to the <xref:System.ComponentModel.Component.GetService%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.ComponentModel.IComponent comp, System.ComponentModel.Design.DesignerActionList actionList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.ComponentModel.IComponent comp, class System.ComponentModel.Design.DesignerActionList actionList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Add(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+      </Parameters>
+      <Docs>
+        <param name="comp">The <see cref="T:System.ComponentModel.IComponent" /> to associate the smart tags with.</param>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the new smart tag items to be added.</param>
+        <summary>Adds a <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to the current collection of managed smart tags.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method represents the push model of adding smart tag items. The alternate pull model relies on overriding the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property in the designer for the corresponding component.  
+  
+ When this method is called, the lists to be added are scanned for any <xref:System.ComponentModel.Design.DesignerActionMethodItem> with the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property set to `true`. These items are added to the list of designer verbs for this component, through a call to the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A?displayProperty=fullName> method.  
+  
+ Smart tags are managed on a component instance basis. The managed collection may contain duplicate entries.  
+  
+ This method raises the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.ComponentModel.IComponent comp, System.ComponentModel.Design.DesignerActionListCollection designerActionListCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.ComponentModel.IComponent comp, class System.ComponentModel.Design.DesignerActionListCollection designerActionListCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Add(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="designerActionListCollection" Type="System.ComponentModel.Design.DesignerActionListCollection" />
+      </Parameters>
+      <Docs>
+        <param name="comp">The <see cref="T:System.ComponentModel.IComponent" /> to associate the smart tags with.</param>
+        <param name="designerActionListCollection">The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> that contains the new smart tag items to be added.</param>
+        <summary>Adds a <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> to the current collection of managed smart tags.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method represents the push model of adding smart tag items. The alternate pull model relies on overriding the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property in the designer for the corresponding component.  
+  
+ When this method is called, the lists to be added are scanned for any <xref:System.ComponentModel.Design.DesignerActionMethodItem> with the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property set to `true`. These items are added to the list of designer verbs for this component, through a call to the <xref:System.ComponentModel.Design.MenuCommandService.AddVerb%2A?displayProperty=fullName> method.  
+  
+ Smart tags are managed on a component instance basis. The managed collection may contain duplicate entries.  
+  
+ This method raises the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all components from management and clears all push-model smart tag lists.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.Clear%2A> method empties the internal table used to store information about components and their push-model smart tag lists.  
+  
+> [!CAUTION]
+>  Because this method affects all components managed by the current service, and not just the current component, this method should be used judiciously. Typically, the design-time tool developer uses it when resetting a design surface. Component developers should use one of the <xref:System.ComponentModel.Design.DesignerActionService.Remove%2A> methods instead to remove individual smart tag items or lists.  
+  
+ A <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event is raised for each component that was previously managed by the current service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.ComponentModel.IComponent comp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ComponentModel.IComponent comp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Contains(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="comp">The <see cref="T:System.ComponentModel.IComponent" /> to search for.</param>
+        <summary>Determines whether the current smart tag service manages the action lists for the specified component.</summary>
+        <returns>
+          <see langword="true" /> if the component is managed by the current service; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.Contains%2A> method only recognizes push-model smart tags, which are associated to a component with the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> method.  
+  
+ Although there is no structural limitation on the number of concurrent <xref:System.ComponentModel.Design.DesignerActionService> instances created by a design-time tool, typically only a single instance of the service is created per design surface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comp" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerActionListsChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.DesignerActionListsChangedEventHandler DesignerActionListsChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.DesignerActionListsChangedEventHandler DesignerActionListsChanged" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListsChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a <see cref="T:System.ComponentModel.Design.DesignerActionList" /> is removed or added for any component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the set of specialized classes associated with the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+|Specialized type|Description|  
+|----------------------|-----------------|  
+|<xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs>|Adds information specific to smart tag list management. This class is specialized from <xref:System.EventArgs>.|  
+|<xref:System.ComponentModel.Design.DesignerActionListsChangedEventHandler>|Connects the <xref:System.ComponentModel.Design.DesignerActionListsChangedEventArgs> with its handler.|  
+|<xref:System.ComponentModel.Design.DesignerActionListsChangedType>|Denotes whether a list has been added or removed.|  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.DesignerActionService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.Dispose%2A> method is the implementation of the only method mandated by the <xref:System.IDisposable> interface. Call this method when you are finished using the <xref:System.ComponentModel.Design.DesignerActionService>. It performs two main actions:  
+  
+-   Removes the current service from the list of available services in the design environment through a call to the <xref:System.ComponentModel.Design.IServiceContainer.RemoveService%2A> method.  
+  
+-   Unsubscribes to component change events from the associated <xref:System.ComponentModel.Design.IComponentChangeService> interface.  
+  
+ Call <xref:System.ComponentModel.Design.DesignerActionService.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.DesignerActionService>. The <xref:System.ComponentModel.Design.DesignerActionService.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.DesignerActionService> in an unusable state. After calling <xref:System.ComponentModel.Design.DesignerActionService.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.DesignerActionService> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.DesignerActionService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.ComponentModel.Design.DesignerActionService.Dispose%2A> before you release your last reference to the <xref:System.ComponentModel.Design.DesignerActionService>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.DesignerActionService> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Design.DesignerActionService" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.Dispose%2A> method is the implementation of the only method mandated by the <xref:System.IDisposable> interface. Call this method when you are finished using the <xref:System.ComponentModel.Design.DesignerActionService>. It performs two main actions:  
+  
+-   Removes the current service from the list of available services in the design environment through a call to the <xref:System.ComponentModel.Design.IServiceContainer.RemoveService%2A> method.  
+  
+-   Unsubscribes to component change events from the associated <xref:System.ComponentModel.Design.IComponentChangeService> interface.  
+  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.DesignerActionService> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentActions">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerActionListCollection GetComponentActions (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Design.DesignerActionListCollection GetComponentActions(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.GetComponentActions(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component that the smart tags are associated with.</param>
+        <summary>Returns the collection of smart tag item lists associated with a component.</summary>
+        <returns>The collection of smart tags for the specified component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method is equivalent to a call to the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%28System.ComponentModel.IComponent%2CSystem.ComponentModel.Design.ComponentActionsType%29> method using a `type` parameter of <xref:System.ComponentModel.Design.ComponentActionsType>. Therefore, the collection returned will contain both the push and pull lists of smart tags.  
+  
+ The returned <xref:System.ComponentModel.Design.DesignerActionListCollection> is the union of item lists added through the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> methods and also the lists obtained from the <xref:System.ComponentModel.Design.DesignerCommandSet> instance obtained from the component’s site.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comp" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentActions">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Design.DesignerActionListCollection GetComponentActions (System.ComponentModel.IComponent component, System.ComponentModel.Design.ComponentActionsType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.DesignerActionListCollection GetComponentActions(class System.ComponentModel.IComponent component, valuetype System.ComponentModel.Design.ComponentActionsType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.GetComponentActions(System.ComponentModel.IComponent,System.ComponentModel.Design.ComponentActionsType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="type" Type="System.ComponentModel.Design.ComponentActionsType" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component that the smart tags are associated with.</param>
+        <param name="type">The <see cref="T:System.ComponentModel.Design.ComponentActionsType" /> to filter the associated smart tags with.</param>
+        <summary>Returns the collection of smart tag item lists of the specified type associated with a component.</summary>
+        <returns>The collection of smart tags of the specified type for the specified component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the overloaded <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method filters on the `type` parameter, which can have one of the following values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|<xref:System.ComponentModel.Design.ComponentActionsType>|All associated smart tags.|  
+|<xref:System.ComponentModel.Design.ComponentActionsType>|Pull-model smart tags only.|  
+|<xref:System.ComponentModel.Design.ComponentActionsType>|Push-model smart tags only.|  
+  
+ If the associated designer for a component does not supply a pull-model smart tag list, then the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method will instead use the designer's design-time shortcut menu items from the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comp" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentDesignerActions">
+      <MemberSignature Language="C#" Value="protected virtual void GetComponentDesignerActions (System.ComponentModel.IComponent component, System.ComponentModel.Design.DesignerActionListCollection actionLists);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetComponentDesignerActions(class System.ComponentModel.IComponent component, class System.ComponentModel.Design.DesignerActionListCollection actionLists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="actionLists" Type="System.ComponentModel.Design.DesignerActionListCollection" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component that the smart tags are associated with.</param>
+        <param name="actionLists">The collection to add the associated smart tags to.</param>
+        <summary>Retrieves the pull-model smart tags associated with a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions%2A> method is a helper method for the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> methods. <xref:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions%2A> searches for pull-model smart tags of type <xref:System.ComponentModel.Design.ComponentActionsType>, and then adds these to the supplied `actionLists` collection.  
+  
+ If the component's developer does not explicitly supply a collection of smart tags through the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property of its designer, this method will reuse the design-time shortcut menu entries, which are obtained through the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property of the designer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentServiceActions">
+      <MemberSignature Language="C#" Value="protected virtual void GetComponentServiceActions (System.ComponentModel.IComponent component, System.ComponentModel.Design.DesignerActionListCollection actionLists);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetComponentServiceActions(class System.ComponentModel.IComponent component, class System.ComponentModel.Design.DesignerActionListCollection actionLists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="actionLists" Type="System.ComponentModel.Design.DesignerActionListCollection" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component that the smart tags are associated with.</param>
+        <param name="actionLists">The collection to add the associated smart tags to.</param>
+        <summary>Retrieves the push-model smart tags associated with a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions%2A> method is a helper method for the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> methods. It searches for push-model smart tags of type <xref:System.ComponentModel.Design.ComponentActionsType>, and then adds these to the supplied `actionLists` collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.ComponentModel.Design.DesignerActionList actionList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ComponentModel.Design.DesignerActionList actionList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Remove(System.ComponentModel.Design.DesignerActionList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The list of smart tags to be removed.</param>
+        <summary>Removes the specified smart tag list from all components managed by the current service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.ComponentModel.Design.DesignerActionService.Remove%2A> method is typically used by design tool developers, because component developers typically do not know what other components exist in the current design space.  
+  
+ If successful, this method raises the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="actionList" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.ComponentModel.IComponent comp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ComponentModel.IComponent comp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Remove(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="comp">The component to disassociate the smart tags from.</param>
+        <summary>Removes all the smart tag lists associated with the specified component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If successful, the <xref:System.ComponentModel.Design.DesignerActionService.Remove%2A> method raises the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comp" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.ComponentModel.IComponent comp, System.ComponentModel.Design.DesignerActionList actionList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ComponentModel.IComponent comp, class System.ComponentModel.Design.DesignerActionList actionList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.Remove(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+      </Parameters>
+      <Docs>
+        <param name="comp">The component to disassociate the smart tags from.</param>
+        <param name="actionList">The smart tag list to remove.</param>
+        <summary>Removes the specified smart tag list from the specified component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If successful, the <xref:System.ComponentModel.Design.DesignerActionService.Remove%2A> method raises the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the parameters are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

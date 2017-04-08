@@ -1,0 +1,41 @@
+<Type Name="IXamlBuildTypeGenerationExtension" FullName="Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension">
+  <TypeSignature Language="C#" Value="public interface IXamlBuildTypeGenerationExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlBuildTypeGenerationExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension" />
+  <AssemblyInfo>
+    <AssemblyName>XamlBuildTask</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies information about the XAML build type generation extension.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public bool Execute (Microsoft.Build.Tasks.Xaml.ClassData classData, Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext buildContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute(class Microsoft.Build.Tasks.Xaml.ClassData classData, class Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext buildContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension.Execute(Microsoft.Build.Tasks.Xaml.ClassData,Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classData" Type="Microsoft.Build.Tasks.Xaml.ClassData" />
+        <Parameter Name="buildContext" Type="Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext" />
+      </Parameters>
+      <Docs>
+        <param name="classData">The class data.</param>
+        <param name="buildContext">The build context.</param>
+        <summary>Indicates whether the XAML build type generation extension executes.</summary>
+        <returns>
+          <see langword="True" /> if the XAML build type generation extension executes; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

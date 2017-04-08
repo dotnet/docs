@@ -1,0 +1,172 @@
+<Type Name="DataGridViewImageCell+DataGridViewImageCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewImageCell+DataGridViewImageCellAccessibleObject">
+  <TypeSignature Language="C#" Value="protected class DataGridViewImageCell.DataGridViewImageCellAccessibleObject : System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridViewImageCell/DataGridViewImageCellAccessibleObject extends System.Windows.Forms.DataGridViewCell/DataGridViewCellAccessibleObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataGridViewCell+DataGridViewCellAccessibleObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about a <see cref="T:System.Windows.Forms.DataGridViewImageCell" /> to accessibility client applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Windows Forms includes built-in accessibility support that allows your application to work with accessibility client applications. Examples of accessibility client applications include screen enlarger and reviewer utilities, voice input utilities, on-screen keyboards, alternative input devices, and keyboard enhancement utilities.  
+  
+ The <xref:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject> class inherits from the <xref:System.Windows.Forms.AccessibleObject> class to provide information about a <xref:System.Windows.Forms.DataGridViewImageCell> to accessibility client applications. Each class that represents a visual part of the <xref:System.Windows.Forms.DataGridView>—such as <xref:System.Windows.Forms.DataGridViewColumnHeaderCell>, <xref:System.Windows.Forms.DataGridViewRowHeaderCell>, <xref:System.Windows.Forms.DataGridViewRow> and <xref:System.Windows.Forms.DataGridViewCell>—also contains a class that inherits from <xref:System.Windows.Forms.AccessibleObject> to provide information about the containing class and perform actions on behalf of accessibility client applications.  
+  
+ There are instances when you will want to provide additional information, such as the name or description of the <xref:System.Windows.Forms.DataGridView> control, to accessibility client applications. There are two ways of providing this additional information. To provide limited accessibility information for existing controls, set the control's <xref:System.Windows.Forms.Control.AccessibleName%2A> and <xref:System.Windows.Forms.Control.AccessibleDescription%2A> property values, which will be reported to accessibility client applications.  
+  
+> [!NOTE]
+>  You should change the <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleRole%2A> property values only in rare situations, such as if you make a <xref:System.Windows.Forms.DataGridView> look like a list.  
+  
+ Occasionally, you might require more accessibility information or different accessibility actions to be included with your custom <xref:System.Windows.Forms.DataGridView> or <xref:System.Windows.Forms.DataGridViewCell>. To customize accessibility, you can write your own class that derives from the <xref:System.Windows.Forms.DataGridView.DataGridViewAccessibleObject> or <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject> classes and override the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method. For example, if you are writing a custom row header cell that implements unique custom actions, such as special hit testing within your cell, you should create a class that inherits from the <xref:System.Windows.Forms.DataGridViewRowHeaderCell.DataGridViewRowHeaderCellAccessibleObject> class and override the <xref:System.Windows.Forms.DataGridViewRowHeaderCell.CreateAccessibilityInstance%2A> method.  
+  
+ The <xref:System.Windows.Forms.DataGridView> exposes its data structure by using <xref:System.Windows.Forms.AccessibleRole> values to define the data table hierarchy. For more information on exposing data tables to Microsoft Active Accessibility, see "Exposing Data Tables through Microsoft Active Accessibility" in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewImageCellAccessibleObject (System.Windows.Forms.DataGridViewCell owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCell owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewCell" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Forms.DataGridViewCell" /> that owns the <see cref="T:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultAction">
+      <MemberSignature Language="C#" Value="public override string DefaultAction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultAction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.DefaultAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents the default action of the <see cref="T:System.Windows.Forms.DataGridViewImageCell" />.</summary>
+        <value>An empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewImageCell> has no default action.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public override string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text associated with the image in the image cell.</summary>
+        <value>The text associated with the image in the image cell.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoDefaultAction">
+      <MemberSignature Language="C#" Value="public override void DoDefaultAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DoDefaultAction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.DoDefaultAction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs the default action of the <see cref="T:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewImageCell> has no default action.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCount">
+      <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.GetChildCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the number of child accessible objects that belong to the <see cref="T:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject" />.</summary>
+        <returns>The value –1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string representing the formatted value of the owning cell.</summary>
+        <value>A <see cref="T:System.String" /> representation of the cell value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Value%2A> property contains a string that represents the value of the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> property. For the <xref:System.Windows.Forms.DataGridViewImageCell.DataGridViewImageCellAccessibleObject> type, this is typically a string representation of the <xref:System.Windows.Forms.DataGridViewImageCell.FormattedValueType%2A> value.  
+  
+ Setting this property has no effect.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The value of the <see cref="P:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner" /> property is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

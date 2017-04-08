@@ -1,0 +1,1206 @@
+<Type Name="Page" FullName="System.Windows.Controls.Page">
+  <TypeSignature Language="C#" Value="public class Page : System.Windows.FrameworkElement, System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Page extends System.Windows.FrameworkElement implements class System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Page" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.FrameworkElement</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IAddChild</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Content")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates a page of content that can be navigated to and hosted by [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], <see cref="T:System.Windows.Navigation.NavigationWindow" />, and <see cref="T:System.Windows.Controls.Frame" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Page> encapsulates a page of content that can be navigated, and has the following key members:  
+  
+-   **Lifetime Management**: <xref:System.Windows.Controls.Page.KeepAlive%2A>.  
+  
+-   **Navigation**: <xref:System.Windows.Controls.Page.NavigationService%2A>.  
+  
+-   **Appearance**: <xref:System.Windows.Controls.Page.Background%2A>, <xref:System.Windows.Controls.Page.Content%2A>, <xref:System.Windows.Controls.Page.FontFamily%2A>, <xref:System.Windows.Controls.Page.FontSize%2A>, <xref:System.Windows.Controls.Page.Foreground%2A>, <xref:System.Windows.Controls.Page.ShowsNavigationUI%2A>, <xref:System.Windows.Controls.Page.Template%2A>, <xref:System.Windows.Controls.Page.Title%2A>.  
+  
+-   **Host Window Appearance**: <xref:System.Windows.Controls.Page.WindowHeight%2A>, <xref:System.Windows.Controls.Page.WindowWidth%2A>, <xref:System.Windows.Controls.Page.WindowTitle%2A>.  
+  
+ A page can be defined by using markup, markup and code-behind, or code. A page is the preferred way to package content for navigation, for the following reasons:  
+  
+-   It is easy to define, reuse, and manage.  
+  
+-   It can access and use the <xref:System.Windows.Navigation.NavigationService> that navigated to it.  
+  
+-   It can alter the title, width, height, and navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of its host window (<xref:System.Windows.Controls.Page.WindowTitle%2A>, <xref:System.Windows.Controls.Page.WindowWidth%2A>, <xref:System.Windows.Controls.Page.WindowHeight%2A>, <xref:System.Windows.Controls.Page.ShowsNavigationUI%2A>).  
+  
+-   It has designer support in [!INCLUDE[TLA#tla_visualstu](~/includes/tlasharptla-visualstu-md.md)].  
+  
+ A page can be hosted from <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or from a browser. To be hosted, a page can be:  
+  
+-   The direct child of a <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, or <xref:System.Windows.Controls.Frame> element in [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)].  
+  
+-   Instantiated and set as the value of the `Content` property of <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>.  
+  
+-   Set as the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] source of the `Source` property of either <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame>.  
+  
+-   Set as the <xref:System.Windows.Application.StartupUri%2A> in a standalone application.  
+  
+-   Set as the <xref:System.Windows.Application.StartupUri%2A> in an [!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)].  
+  
+ An application typically has two or more pages, which can be navigated between using the following mechanisms:  
+  
+-   Declaratively by using <xref:System.Windows.Documents.Hyperlink>.  
+  
+-   Programmatically by using <xref:System.Windows.Navigation.NavigationService>.  
+  
+-   Visually by using the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of the host, including [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>.  
+  
+ For structured navigation using page functions (<xref:System.Windows.Navigation.PageFunction%601>), see [Structured Navigation Overview](~/docs/framework/wpf/app-development/structured-navigation-overview.md) and [Navigation Topologies Overview](~/docs/framework/wpf/app-development/navigation-topologies-overview.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+   
+  
+## Examples  
+ The following example shows how a standard page is defined using only markup:  
+  
+ [!code-xml[PageSnippets#MarkupPageMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupPage.xaml#markuppagemarkup)]  
+  
+ The following example shows how a standard page is defined using only code:  
+  
+ [!code-csharp[PageSnippets#CodePageCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/CodePage.cs#codepagecodebehind)]
+ [!code-vb[PageSnippets#CodePageCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageSnippets/visualbasic/codepage.vb#codepagecodebehind)]  
+  
+ The following example shows how a standard page is defined using a combination of markup and code-behind.  
+  
+ [!code-xml[PageSnippets#MarkupAndCodeBehindPageMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupAndCodeBehindPage.xaml#markupandcodebehindpagemarkup)]  
+  
+ [!code-csharp[PageSnippets#MarkupAndCodeBehindPageCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupAndCodeBehindPage.xaml.cs#markupandcodebehindpagecodebehind)]
+ [!code-vb[PageSnippets#MarkupAndCodeBehindPageCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageSnippets/visualbasic/markupandcodebehindpage.xaml.vb#markupandcodebehindpagecodebehind)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Page ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Page" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Windows.Controls.Page> is not being kept alive (see <xref:System.Windows.Controls.Page.KeepAlive%2A>), it needs to implement a default constructor to allow [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to create a new instance of it when navigated to in back or forward navigation history.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeBounds);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeBounds" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeBounds">The size to use to arrange the child elements.</param>
+        <summary>Arranges the content (child elements) of the <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <returns>A <see cref="T:System.Windows.Size" /> that represents the arranged size of the page.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Background" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background for a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Brush" /> that <see cref="T:System.Windows.Controls.Page" /> uses to paint its background.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PageBackground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.BackgroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.Background" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public object Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Content" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content of a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>An object that contains the content of a <see cref="T:System.Windows.Controls.Page" />. The default is <see cref="P:System.Windows.SystemFonts.MessageFontFamily" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Page> can have only a single child element. All other elements on a <xref:System.Windows.Controls.Page> must be descendents of that element. Typically, the content of a <xref:System.Windows.Controls.Page> hosts a layout element—such as <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, and <xref:System.Windows.Controls.DockPanel>—that hosts the content of the <xref:System.Windows.Controls.Page>.  
+  
+<a name="dependencyPropertyInfo_PageContent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page.ContentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.ContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.Content" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.FontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Font, Modifiability=System.Windows.Modifiability.Unmodifiable)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the specified font family.</summary>
+        <value>A <see cref="T:System.Windows.Media.FontFamily" /> that is the font family for the content of a <see cref="T:System.Windows.Controls.Page" />. The default is <see cref="P:System.Windows.SystemFonts.MessageFontFamily" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PageFontFamily"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamilyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontFamilyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontFamilyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.FontFamilyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.FontFamily" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.Page.FontFamily%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.FontSizeConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font size.</summary>
+        <value>The font size for the content of a <see cref="T:System.Windows.Controls.Page" />. The default is <see cref="P:System.Windows.SystemFonts.MessageFontSize" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The font size must be a positive number and in the range of the <xref:System.Windows.SystemFonts.MessageFontSize%2A>.  
+  
+<a name="dependencyPropertyInfo_PageFontSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page.FontSizeProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FontSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FontSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.FontSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.FontSize" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.Page.FontSize%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreground">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Foreground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground for a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Brush" /> that <see cref="T:System.Windows.Controls.Page" /> uses to paint its foreground. The default is <see cref="P:System.Windows.Media.Brushes.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_PageForeground"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.ForegroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.Foreground" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.Page.Foreground%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAlive">
+      <MemberSignature Language="C#" Value="public bool KeepAlive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepAlive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.KeepAlive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Controls.Page" /> instance is retained in navigation history.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Page" /> instance is retained in navigation history; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a page is first navigated to, a new instance of the <xref:System.Windows.Controls.Page> class is created. When a page is navigated away from (either back or forward), an entry for the page is added to navigation history. By default, the entry does not reference the page object. Instead, the entry contains a pack [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the page. When the entry for the page is navigated to using navigation history, the pack [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] is used to create a new instance of the page. This behavior is the default, to avoid excessive memory use: retaining page instances can quickly consume memory, particularly those with a nontrivial amount of content. This problem is augmented by the fact that there is no limit to the number of entries that can be stored in the back and forward stacks of navigation history. In contrast, storing pack [!INCLUDE[TLA#tla_uri#plural](~/includes/tlasharptla-urisharpplural-md.md)] for pages has virtually no impact on memory consumption.  
+  
+ The main side effect of creating new instances of a page is that page state is not remembered from one instance of a page to another. In these cases, [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] offers several techniques for remembering state.  
+  
+ To keep a page alive, you set the <xref:System.Windows.Controls.Page.KeepAlive%2A> property to `true` (the default is `false`).  
+  
+> [!NOTE]
+>  Pages that are instantiated and navigated to using only code (for example, calling <xref:System.Windows.Navigation.NavigationService.Navigate%2A>), are automatically kept alive.  
+  
+ You should avoid setting <xref:System.Windows.Controls.Page.KeepAlive%2A> to `true` unless you need to:  
+  
+-   When a page has a lot of content, it may take a long time to instantiate. If the page is not kept alive, and the page is frequently navigated to, the cost of constantly instantiating the page may have a negative impact on the user experience. However, from a performance perspective, you should rely on the default settings and profile your application's performance; if testing identifies pages with load times that fall below the range required for your application, configuring the pages to be kept alive may be one way to solve the problem.  
+  
+> [!NOTE]
+>  Entries for pages that are kept alive are not retained in navigation history of an [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)] if a user navigates away from and back to the [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)]. Only journal entries for pages that are not kept alive are retained in navigation history.  
+  
+<a name="dependencyPropertyInfo_PageKeepAlive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page.KeepAliveProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  The metadata type on this dependency property is <xref:System.Windows.PropertyMetadata>, not <xref:System.Windows.FrameworkPropertyMetadata>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] to retain an instance of the <xref:System.Windows.Controls.Page> class across multiple navigations.  
+  
+ [!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAML1](~/samples/snippets/xaml/VS_Snippets_Wpf/PageKeepAliveSnippets/XAML/HomePage.xaml#setpagekeepalivexaml1)]  
+[!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAML2](~/samples/snippets/xaml/VS_Snippets_Wpf/PageKeepAliveSnippets/XAML/HomePage.xaml#setpagekeepalivexaml2)]  
+  
+ [!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAMLForLang1](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml#setpagekeepalivexamlforlang1)]  
+[!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAMLForLang2](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml#setpagekeepalivexamlforlang2)]  
+  
+ [!code-csharp[PageKeepAliveSnippets#SetPageKeepAliveCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml.cs#setpagekeepalivecodebehind)]
+ [!code-vb[PageKeepAliveSnippets#SetPageKeepAliveCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageKeepAliveSnippets/visualbasic/homepage.xaml.vb#setpagekeepalivecodebehind)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAliveProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeepAliveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepAliveProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.KeepAliveProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.KeepAlive" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.Page.KeepAlive%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalChildren">
+      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.LogicalChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an enumerator for the logical child elements of a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The <see cref="T:System.Collections.IEnumerator" /> for the logical child elements of a <see cref="T:System.Windows.Controls.Page" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">The available area that the window can give to its children.</param>
+        <summary>Measures the child elements of the <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <returns>A <see cref="T:System.Windows.Size" /> that is the actual size of the window. The method may return a larger value, in which case the parent may need to add scroll bars.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationService">
+      <MemberSignature Language="C#" Value="public System.Windows.Navigation.NavigationService NavigationService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Navigation.NavigationService NavigationService" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.NavigationService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the navigation service that the host of the page is using to manage navigation.</summary>
+        <value>The <see cref="T:System.Windows.Navigation.NavigationService" /> object that the host of the page is using to manage navigation, or <see langword="null" /> if the host does not support navigation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pages can be hosted by multiple types of hosts, including <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, and a browser.  
+  
+ Pages often need to integrate with their host's navigation to provide in-page navigation support. However, because a page may not know what its host will be at run time, it cannot integrate directly with its host's navigation members to do so.  
+  
+ Instead, it can attempt to use a navigation service, which is a service that supports browser-style navigation and is encapsulated by the <xref:System.Windows.Navigation.NavigationService> class. You cannot create your own <xref:System.Windows.Navigation.NavigationService> instance, though. Instead, host types such as <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or a browser create their own <xref:System.Windows.Navigation.NavigationService> instance that you can access from the <xref:System.Windows.Controls.Page.NavigationService%2A> property.  
+  
+ The navigation service that is returned from the <xref:System.Windows.Controls.Page.NavigationService%2A> property is the instance of the <xref:System.Windows.Navigation.NavigationService> class that is managed by the first navigator up the visual tree. If one is not found, `null` is returned, indicating a page's host does not support navigation.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Window> class does not support navigation and does not provide a navigation service.  
+  
+   
+  
+## Examples  
+ The following example shows how a page can check if a navigation service is available and, if so, use it to navigate back to the previous page.  
+  
+ [!code-csharp[PageNavigationServiceSnippets#GetPageNavigationServiceCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageNavigationServiceSnippets/CSharp/HomePage.xaml.cs#getpagenavigationservicecodebehind)]
+ [!code-vb[PageNavigationServiceSnippets#GetPageNavigationServiceCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageNavigationServiceSnippets/visualbasic/homepage.xaml.vb#getpagenavigationservicecodebehind)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTemplateChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTemplateChanged (System.Windows.Controls.ControlTemplate oldTemplate, System.Windows.Controls.ControlTemplate newTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTemplateChanged(class System.Windows.Controls.ControlTemplate oldTemplate, class System.Windows.Controls.ControlTemplate newTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldTemplate" Type="System.Windows.Controls.ControlTemplate" />
+        <Parameter Name="newTemplate" Type="System.Windows.Controls.ControlTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="oldTemplate">The old template.</param>
+        <param name="newTemplate">The new template.</param>
+        <summary>Called when the template for a <see cref="T:System.Windows.Controls.Page" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Controls.Control.OnTemplateChanged%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVisualParentChanged">
+      <MemberSignature Language="C#" Value="protected override sealed void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnVisualParentChanged(class System.Windows.DependencyObject oldParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.OnVisualParentChanged(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldParent" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="oldParent">The previous parent. Set to <see langword="null" /> if the <see cref="T:System.Windows.DependencyObject" /> did not have a previous parent.</param>
+        <summary>Called when the parent of the <see cref="T:System.Windows.Controls.Page" /> is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ <xref:System.Windows.UIElement.OnVisualParentChanged%2A>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The new parent is neither a <see cref="T:System.Windows.Window" /> nor a <see cref="T:System.Windows.Controls.Frame" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeShowsNavigationUI">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeShowsNavigationUI ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeShowsNavigationUI() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeShowsNavigationUI" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows derived classes to determine the serialization behavior of the <see cref="P:System.Windows.Controls.Page.ShowsNavigationUI" /> property.</summary>
+        <returns>
+          <see langword="true" /> if the content should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeTitle">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeTitle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTitle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeTitle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows derived classes to determine the serialization behavior of the <see cref="P:System.Windows.Controls.Page.Title" /> property.</summary>
+        <returns>
+          <see langword="true" /> if the content should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeWindowHeight">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeWindowHeight ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeWindowHeight() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeWindowHeight" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows derived classes to determine the serialization behavior of the <see cref="P:System.Windows.Controls.Page.WindowHeight" /> property.</summary>
+        <returns>
+          <see langword="true" /> if the content should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeWindowTitle">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeWindowTitle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeWindowTitle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeWindowTitle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows derived classes to determine the serialization behavior of the <see cref="P:System.Windows.Controls.Page.WindowTitle" /> property.</summary>
+        <returns>
+          <see langword="true" /> if the content should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeWindowWidth">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeWindowWidth ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeWindowWidth() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.ShouldSerializeWindowWidth" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows derived classes to determine the serialization behavior of the <see cref="P:System.Windows.Controls.Page.WindowWidth" /> property.</summary>
+        <returns>
+          <see langword="true" /> if the content should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowsNavigationUI">
+      <MemberSignature Language="C#" Value="public bool ShowsNavigationUI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowsNavigationUI" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.ShowsNavigationUI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of a <see cref="T:System.Windows.Navigation.NavigationWindow" /> on [!INCLUDE[TLA#tla_ie6](~/includes/tlasharptla-ie6-md.md)] is visible.</summary>
+        <value>
+          <see langword="true" /> if the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of a host <see cref="T:System.Windows.Navigation.NavigationWindow" /> is visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Navigation.NavigationWindow> displays navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] by default to enable browser-style forwards and backwards navigation. If a page is set as the <xref:System.Windows.Application.StartupUri%2A>, <xref:System.Windows.Application> automatically opens a <xref:System.Windows.Navigation.NavigationWindow> to host the page in. If the page does not want to use the default <xref:System.Windows.Navigation.NavigationWindow> navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], it can set <xref:System.Windows.Controls.Page.ShowsNavigationUI%2A> to `false`.  
+  
+> [!NOTE]
+>  Because [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] does not integrate with the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] for [!INCLUDE[TLA#tla_ie6](~/includes/tlasharptla-ie6-md.md)], it provides its own navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], which can be shown or hidden by setting <xref:System.Windows.Controls.Page.ShowsNavigationUI%2A>. [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] does integrate with the [!INCLUDE[TLA#tla_ie7](~/includes/tlasharptla-ie7-md.md)] navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], so setting <xref:System.Windows.Controls.Page.ShowsNavigationUI%2A> on pages in [!INCLUDE[TLA#tla_ie7](~/includes/tlasharptla-ie7-md.md)] has no effect.  
+  
+   
+  
+## Examples  
+ The following example shows how to use [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] to hide the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of a <xref:System.Windows.Navigation.NavigationWindow>.  
+  
+ [!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAML1](~/samples/snippets/xaml/VS_Snippets_Wpf/PageShowsNavigationUISnippets/XAML/HomePage.xaml#setpageshowsnavigationuixaml1)]  
+[!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAML2](~/samples/snippets/xaml/VS_Snippets_Wpf/PageShowsNavigationUISnippets/XAML/HomePage.xaml#setpageshowsnavigationuixaml2)]  
+  
+ [!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAMLLang1](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml#setpageshowsnavigationuixamllang1)]  
+[!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAMLLang2](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml#setpageshowsnavigationuixamllang2)]  
+  
+ [!code-csharp[PageShowsNavigationUISnippets#SetPageShowsNavigationUICODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml.cs#setpageshowsnavigationuicodebehind)]
+ [!code-vb[PageShowsNavigationUISnippets#SetPageShowsNavigationUICODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageShowsNavigationUISnippets/visualbasic/homepage.xaml.vb#setpageshowsnavigationuicodebehind)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Controls.Page.ShowsNavigationUI" /> property is inspected on a <see cref="T:System.Windows.Controls.Page" /> instance that is not hosted by a <see cref="T:System.Windows.Window" />, <see cref="T:System.Windows.Navigation.NavigationWindow" />, or a browser.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
+      <MemberSignature Language="C#" Value="void IAddChild.AddChild (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The child object to add.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddChild(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.Page> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddText">
+      <MemberSignature Language="C#" Value="void IAddChild.AddText (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Page.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The text to add to the object.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.Markup.IAddChild.AddText(System.String)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.Page> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Template">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ControlTemplate Template { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ControlTemplate Template" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Template" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ControlTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control template for a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The <see cref="T:System.Windows.Controls.ControlTemplate" /> for a <see cref="T:System.Windows.Controls.Page" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_ContentTemplate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Template="{resourceExtension styleResourceKey}"/>  
+```  
+  
+<a name="xamlValues_ContentTemplate"></a>   
+## XAML Values  
+ *resourceExtension*  
+ A markup extension that identifies how to reference the template resource, either `StaticResource` or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *styleResourceKey*  
+ The key that identifies the requested template selector. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+> [!NOTE]
+>  Property element syntax is technically possible, but not recommended. For more information, see [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md).  
+  
+<a name="dependencyPropertyInfo_PageTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page.TemplateProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.TemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.Template" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of the <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The title of the <see cref="T:System.Windows.Controls.Page" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Controls.Page.Title%2A> property is not displayed by <xref:System.Windows.Controls.Page>, nor is it displayed from the title bar of the window that is hosting a <xref:System.Windows.Controls.Page>. Instead, you set <xref:System.Windows.Controls.Page.WindowTitle%2A> to change the title of a host window.  
+  
+ <xref:System.Windows.Controls.Page.Title%2A> can also be used to generate the name of the navigation history entry for a piece of navigated content. The following pieces of data are used to automatically construct a navigation history entry name, in order of precedence:  
+  
+-   The attached <xref:System.Windows.Navigation.JournalEntry.Name%2A> attribute.  
+  
+-   The <xref:System.Windows.Controls.Page.Title%2A> property.  
+  
+-   The <xref:System.Windows.Controls.Page.WindowTitle%2A> property and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page  
+  
+-   The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page.  
+  
+ If you have associated a <xref:System.Windows.Navigation.CustomContentState> object with a piece of content in navigation history, you can specify the name that appears in the navigation history entry by overriding <xref:System.Windows.Navigation.CustomContentState.JournalEntryName%2A?displayProperty=fullName>.  
+  
+<a name="dependencyPropertyInfo_PageTitle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Page.TitleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TitleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TitleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Page.TitleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Page.Title" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.Page.Title%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowHeight">
+      <MemberSignature Language="C#" Value="public double WindowHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 WindowHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.WindowHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the host <see cref="T:System.Windows.Window" /> or <see cref="T:System.Windows.Navigation.NavigationWindow" /> of a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The height of a window that directly hosts a <see cref="T:System.Windows.Controls.Page" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Page.WindowHeight%2A> is only applied when a <xref:System.Windows.Controls.Page> is hosted directly by a window, which includes:  
+  
+-   <xref:System.Windows.Window>  
+  
+-   <xref:System.Windows.Navigation.NavigationWindow>  
+  
+-   [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)]  
+  
+ If a <xref:System.Windows.Controls.Page> is hosted by a <xref:System.Windows.Controls.Frame>, setting <xref:System.Windows.Controls.Page.WindowHeight%2A> has no effect, but you can still get the value of <xref:System.Windows.Controls.Page.WindowHeight%2A>.  
+  
+ A <xref:System.Windows.Controls.Page> in an [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)] can only use <xref:System.Windows.Controls.Page.WindowHeight%2A> to change the height of [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)]; the height cannot be changed by setting <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.MinHeight%2A>, or <xref:System.Windows.FrameworkElement.MaxHeight%2A>.  
+  
+ The minimum height of the [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)] window is 150 pixels. For browser-hosted pages, this means that the value of <xref:System.Windows.Controls.Page.WindowHeight%2A> may not be applied if it would cause the total height of the [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)] window to be less than 150 pixels.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the height of a window from a page.  
+  
+ [!code-xml[HOWTONavigationSnippets#SetPageWindowHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowHeightPage.xaml#setpagewindowheightxaml)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowTitle">
+      <MemberSignature Language="C#" Value="public string WindowTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WindowTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.WindowTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Title)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of the host <see cref="T:System.Windows.Window" /> or <see cref="T:System.Windows.Navigation.NavigationWindow" /> of a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The title of a window that directly hosts the <see cref="T:System.Windows.Controls.Page" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the title of a window that hosts a page, including <xref:System.Windows.Navigation.NavigationWindow> and [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], is the name of the file that is currently being hosted (with an .xaml extension if the page is loose [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], or an .xbap extension if the page is part of an [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)]).  
+  
+ A page can change the default by setting its <xref:System.Windows.Controls.Page.WindowTitle%2A> property.  
+  
+ Once a page sets the title of a window in this way, the window's title does not change until another page sets <xref:System.Windows.Controls.Page.WindowTitle%2A> with a different value.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Controls.Page> must be the topmost piece of content in a window for <xref:System.Windows.Controls.Page.WindowTitle%2A> to have an effect; if a <xref:System.Windows.Controls.Page> is hosted within a <xref:System.Windows.Controls.Frame>, for example, setting <xref:System.Windows.Controls.Page.WindowTitle%2A> does not change the title of the host window.  
+  
+ <xref:System.Windows.Controls.Page.WindowTitle%2A> can also be used to generate the name of the navigation history entry for a piece of navigated content. The following pieces of data are used to automatically construct a navigation history entry name, in order of precedence:  
+  
+-   The attached <xref:System.Windows.Navigation.JournalEntry.Name%2A> attribute.  
+  
+-   The <xref:System.Windows.Controls.Page.Title%2A> property.  
+  
+-   The <xref:System.Windows.Controls.Page.WindowTitle%2A> property and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page  
+  
+-   The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page.  
+  
+ If you have associated a <xref:System.Windows.Navigation.CustomContentState> object with a piece of content in navigation history, you can specify the name value of a navigation history element by overriding <xref:System.Windows.Navigation.CustomContentState.JournalEntryName%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the title of a window from a page.  
+  
+ [!code-xml[HOWTONavigationSnippets#SetPageWindowTitleXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowWidth">
+      <MemberSignature Language="C#" Value="public double WindowWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 WindowWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Page.WindowWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the host <see cref="T:System.Windows.Window" /> or <see cref="T:System.Windows.Navigation.NavigationWindow" /> of a <see cref="T:System.Windows.Controls.Page" />.</summary>
+        <value>The width of a window that directly hosts a <see cref="T:System.Windows.Controls.Page" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Page.WindowWidth%2A> is only applied when a <xref:System.Windows.Controls.Page> is hosted directly by a window, which includes:  
+  
+-   <xref:System.Windows.Window>  
+  
+-   <xref:System.Windows.Navigation.NavigationWindow>  
+  
+-   [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)]  
+  
+ If a <xref:System.Windows.Controls.Page> is hosted by a <xref:System.Windows.Controls.Frame>, setting <xref:System.Windows.Controls.Page.WindowWidth%2A> has no effect, but you can still get the value of <xref:System.Windows.Controls.Page.WindowWidth%2A>.  
+  
+ A <xref:System.Windows.Controls.Page> in an [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)] can only use <xref:System.Windows.Controls.Page.WindowWidth%2A> to change the width of [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)]; the width cannot be changed by setting <xref:System.Windows.FrameworkElement.Width%2A>, <xref:System.Windows.FrameworkElement.MinWidth%2A>, or <xref:System.Windows.FrameworkElement.MaxWidth%2A>.  
+  
+ The minimum width of the [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)] window is 250 pixels. For browser-hosted pages, this means that the value of <xref:System.Windows.Controls.Page.WindowWidth%2A> may not be applied if it would cause the total width of the [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)] window to be less than 250 pixels.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the width of a window from a page.  
+  
+ [!code-xml[HOWTONavigationSnippets#SetPageWindowWidthXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowWidthPage.xaml#setpagewindowwidthxaml)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,55 @@
+<Type Name="PropertyTypes" FullName="System.DirectoryServices.ActiveDirectory.PropertyTypes">
+  <TypeSignature Language="C#" Value="public enum PropertyTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.PropertyTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the property types to select when calling the <see cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties(System.DirectoryServices.ActiveDirectory.PropertyTypes)" /> method.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Indexed">
+      <MemberSignature Language="C#" Value="Indexed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.PropertyTypes Indexed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.PropertyTypes.Indexed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.PropertyTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A property that is indexed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InGlobalCatalog">
+      <MemberSignature Language="C#" Value="InGlobalCatalog" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.PropertyTypes InGlobalCatalog = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.PropertyTypes.InGlobalCatalog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.PropertyTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A property that is replicated in the global catalog.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

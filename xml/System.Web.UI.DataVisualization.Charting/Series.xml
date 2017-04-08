@@ -1,0 +1,1136 @@
+<Type Name="Series" FullName="System.Web.UI.DataVisualization.Charting.Series">
+  <TypeSignature Language="C#" Value="public class Series : System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Series extends System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Series" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataVisualization.Charting.DataPointCustomProperties</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Points")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stores data points and series attributes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.DataVisualization.Charting.Series> object represents a data series and is stored in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> class.  
+  
+ A <xref:System.Web.UI.DataVisualization.Charting.Series> stores <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects using the <xref:System.Web.UI.DataVisualization.Charting.DataPointCollection> class. It also stores attributes of the data series. For example, a data series has a color attribute, background image attribute, background gradient attribute, and so forth.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects that belong to a series also have their own attributes. Normally, if the same attribute is set for a data point and the series to which it belongs, the data point attribute has precedence.  
+  
+ A series is not necessarily plotted on a chart; it can store data point values that are used to perform a calculation from which another series is created and then plotted. For example, Series A, which is plotted, may be the result of adding Series B and Series C data points together, though neither of these series is plotted. In order to draw a <xref:System.Web.UI.DataVisualization.Charting.Series> object, the <xref:System.Web.UI.DataVisualization.Charting.Series.ChartArea%2A> property must be set to the name of the <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object used to plot the series.  
+  
+ When a series is created, it is automatically assigned to the <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object named "Default", or to the first available chart area in the chart area collection if the "Default" object does not exist.  
+  
+ To disable the display of a series, set its <xref:System.Web.UI.DataVisualization.Charting.Series.ChartArea%2A> property to a zero-length string.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.ChartType%2A> property determines the type of chart that will be used to plot this series, if it is drawn.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Series ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Series (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object that will be created. This must be a unique name, otherwise an exception will be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> class with the specified series name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to create a new instance of the <xref:System.Web.UI.DataVisualization.Charting.Series> class.  
+  
+> [!NOTE]
+>  This series is only capable of storing <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects that have one Y-value. If a data point that has multiple Y-values is added to this series, an exception will be thrown.  
+  
+ To create a series at run time, use the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection.Add%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Series (string name, int yValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 yValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="yValues" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object that will be created.</param>
+        <param name="yValues">The maximum number of Y-values allowed for the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> objects that belong to this series.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> class with the specified name and maximum number of Y values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.DataVisualization.Charting.Series> class.  
+  
+> [!IMPORTANT]
+>  This series will only be able to store <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects that do not have more Y-values than the maximum set by the `yValues` parameter. If you add a data point that has more Y-values than the set maximum, an exception will be thrown.  
+  
+ To create a <xref:System.Web.UI.DataVisualization.Charting.Series> object at run time, the `Add` and `Insert` methods of the Series collection property can also be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisLabel">
+      <MemberSignature Language="C#" Value="public override string AxisLabel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AxisLabel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.AxisLabel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the axis label text for the series.</summary>
+        <value>A <see langword="string" /> value. The default value is a zero-length string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartArea">
+      <MemberSignature Language="C#" Value="public string ChartArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.SeriesAreaNameConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object used to plot the data series, if any.</summary>
+        <value>A <see langword="string" /> value that represents a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object, which is used to plot the series.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a series is added at both design time and run time, it is automatically assigned to the "Default" <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object, or the first available chart area in the <xref:System.Web.UI.DataVisualization.Charting.ChartAreaCollection> if "Default" does not exist.  
+  
+ Set this property to a zero-length string if you do not want the series to be plotted.  
+  
+   
+  
+## Examples  
+  
+```vb  
+' Create a new legend and associate three series with the legend.  
+Public Sub CreateSecondLegend()  
+    ' Attach the first series to a chart area.  
+    Chart1.Series["Series1"].ChartArea = "Chart Area 1";  
+  
+    ' Attach the second series to a chart area.  
+    Chart1.Series["Series2"].ChartArea = "Chart Area 2";  
+  
+End Sub 'CreateSecondLegend  
+```  
+  
+```csharp  
+// Create a new legend and associate three series with the legend.  
+public void CreateSecondLegend()  
+{  
+     // Attach the first series to a chart area.  
+     Chart1.Series["Series1"].ChartArea = "Chart Area 1";  
+  
+     // Attach the second series to a chart area.  
+     Chart1.Series["Series2"].ChartArea = "Chart Area 2";  
+  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.SeriesChartType ChartType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.SeriesChartType ChartType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ChartType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.ChartTypeEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.SeriesChartType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the chart type of a series.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.SeriesChartType" /> enumeration value that indicates the chart type that will be used to represent the series. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.SeriesChartType.Column" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the chart type of the <xref:System.Web.UI.DataVisualization.Charting.Series> object; the value is case-sensitive. See the <xref:System.Web.UI.DataVisualization.Charting.SeriesChartType> enumeration for a list of all possible chart types for a series.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartTypeName">
+      <MemberSignature Language="C#" Value="public string ChartTypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChartTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ChartTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("Column")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.ChartTypeEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.ChartTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the chart type used to draw the series.</summary>
+        <value>A <see langword="string" /> value that represents the name of the chart type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyPointStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPointCustomProperties EmptyPointStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.DataPointCustomProperties EmptyPointStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.DataPointCustomProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the drawing style of points marked as empty.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property determines the drawing style of points marked as empty, for example, in the border color, in the marker images, background color or images, and so forth.  
+  
+ Certain properties are only applicable for specific chart types. For example, the <xref:System.Web.UI.DataVisualization.Charting.Series.BackImage%2A> property does not apply to line charts, but does apply to an area chart.  
+  
+ To display an image that indicates an empty point, use the <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerImage%2A> and <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerStyle%2A> properties, and not the <xref:System.Web.UI.DataVisualization.Charting.Series.BackImage%2A> property.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.AxisLabel%2A> property determines the axis label for empty points. Note that for stacked chart types, the axis label is determined by the <xref:System.Web.UI.DataVisualization.Charting.Series.AxisLabel%2A> property of the first plotted series that has this property set.  
+  
+ Data points can be manually marked as an empty by setting the <xref:System.Web.UI.DataVisualization.Charting.DataPoint.IsEmpty%2A> property to `true`. Alternatively, one of the `InsertEmptyPoints` methods in the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator> class can be used to check for missing data and insert empty points if a data point is missing.  
+  
+> [!NOTE]
+>  In the case of line-type charts, the line color for lines that connect to an empty point is determined by the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Color%2A> property setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether the series will be visible on the rendered chart.</summary>
+        <value>
+          <see langword="true" /> if the series will be visible on the rendered chart; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets a value that determines if the series will be visible on the rendered <xref:System.Web.UI.DataVisualization.Charting.ChartArea>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsXValueIndexed">
+      <MemberSignature Language="C#" Value="public bool IsXValueIndexed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsXValueIndexed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.IsXValueIndexed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether data point indices will be used for the X-values.</summary>
+        <value>
+          <see langword="true" /> if the indices of data points that belong to the series will be used for X-values; <see langword="false " /> if they will not. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All data points in a series use sequential indices, and if this property is `true` then data points will be plotted sequentially, regardless of their associated X-values. This means that there will be no "missing" data points.  
+  
+ For example, assume there are three (3) data points in a series having X-values of 1, 2 and 4. If this property was `false`, there would be a data point missing at the X-axis location labeled "3". However, if you set this property to `true`, the three data points will be plotted at points 1, 2, and 4, sequentially, and there will be no missing data point. The X-axis location labeled "3" will not appear on the chart.  
+  
+ This is useful when you do not want to have missing data points for intervals that you know you will not have data for, such as weekends.  
+  
+> [!IMPORTANT]
+>  If you are displaying multiple series and at least one series uses indexed X-values, then all series must be aligned—that is, have the same number of data points—and the corresponding points must have the same X-values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Legend">
+      <MemberSignature Language="C#" Value="public string Legend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Legend" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Legend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.SeriesLegendNameConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the series associated with the <see cref="T:System.Web.UI.DataVisualization.Charting.Legend" /> object.</summary>
+        <value>A <see langword="string" /> value that represents the name of a <see cref="T:System.Web.UI.DataVisualization.Charting.Legend" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a series is added at both design time and run time, it is automatically assigned to the default <xref:System.Web.UI.DataVisualization.Charting.Legend> object.  
+  
+ If you do not want the series shown in a legend, set this property to a zero-length string, or set the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.IsVisibleInLegend%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerStep">
+      <MemberSignature Language="C#" Value="public int MarkerStep { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MarkerStep" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.MarkerStep" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines how often to display data point markers.</summary>
+        <value>An <see langword="integer" /> value that determines how often to display data point markers. The default value is one (1).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerStep%2A> property specifies the frequency with which markers are displayed. For example, if you set this property to two (2), every other data point will use a marker.  
+  
+ This property is only used if markers are enabled using the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unique name of a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object.</summary>
+        <value>A <see langword="string" /> value that represents the unique name of the data series.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a data series must be unique; otherwise an exception will be thrown.  
+  
+ This property can be used as the indexer when you retrieve a <xref:System.Web.UI.DataVisualization.Charting.Series> object from the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> object.  
+  
+ If this property is set to a zero-length string, an exception will be thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Palette">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartColorPalette Palette { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartColorPalette Palette" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Palette" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.ColorPaletteEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color palette of a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object.</summary>
+        <value>An <see cref="T:System.Web.UI.DataVisualization.Charting.ChartColorPalette" /> enumeration value that determines the palette for the data series.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A palette is used to automatically assign colors to data elements if the data points themselves do not have colors assigned to them and if the data <xref:System.Web.UI.DataVisualization.Charting.Series> object that the data points belong to also does not have an assigned color.  
+  
+ If no series or data point colors are explicitly specified, the colors used depend on the chart type and the Chart control palette or Series palette, if one is specified. See the table below for further details:  
+  
+|Chart Type|Series Palette Used?|Colors Displayed by Data Points|  
+|----------------|--------------------------|-------------------------------------|  
+|Any shape chart (for example, Pie and Doughnut charts)|No|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Chart> control palette. One color per data point.|  
+|All charts except shape charts|No|First available colors from <xref:System.Web.UI.DataVisualization.Charting.Chart> control palette. One color per data series.|  
+|Any shape chart (for example, Pie and Doughnut charts)|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series> palette. One color per data point.|  
+|All charts except shape charts|Yes|First available colors used from <xref:System.Web.UI.DataVisualization.Charting.Series>palette. One color per data series.|  
+  
+ This <xref:System.Web.UI.DataVisualization.Charting.Series.Palette%2A> property has precedence over the <xref:System.Web.UI.DataVisualization.Charting.Chart.Palette%2A> property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object, with respect to the display of data.  
+  
+ NOTE: If the `Palette` property for both the <xref:System.Web.UI.DataVisualization.Charting.Chart> and <xref:System.Web.UI.DataVisualization.Charting.Series> objects is set to None, and no color is assigned to the relevant data series/data points, the default palette "BrightPastel" or <xref:System.Web.UI.DataVisualization.Charting.Chart.PaletteCustomColors%2A> is used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Points">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPointCollection Points { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.DataPointCollection Points" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.Points" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.DataPointCollectionEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.DataPointCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCollection" /> object.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCollection" /> object that represents a collection of <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.Points%2A> collection property allows you to add and remove data points to a series. This property also provides methods and properties that can be used to manipulate this collection, such as finding data points, performing data-binding, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ShadowColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ShadowColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "128,0,0,0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shadow color of a series.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value. The default color is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the shadow color of a series, which can be to any valid ARGB (alpha, red, green, blue) value.  
+  
+ The alpha value can be used to achieve a realistic shadow effect; try using a color value of "128,0,0,0" for shadows.  
+  
+ To implement a shadow, set the <xref:System.Web.UI.DataVisualization.Charting.Series.ShadowOffset%2A> property to a value other than zero (0).  
+  
+   
+  
+## Examples  
+  
+```  
+' Set series shadow color and offset  
+Public Sub SetSeriesShadow()  
+     Chart1.Series("Default"}.ShadowColor = Color.Blue  
+     Chart1.Series("Default"}.ShadowOffset = 2  
+End Sub 'SetSeriesShadow  
+```  
+  
+```csharp  
+// Set series shadow color and offset   
+public void SetSeriesShadow()  
+{      
+    Chart1.Series("Default"}.ShadowColor = Color.Blue;  
+    Chart1.Series["Default"].ShadowOffset = 2;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowOffset">
+      <MemberSignature Language="C#" Value="public int ShadowOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.ShadowOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shadow offset, in pixels, of a series.</summary>
+        <value>An <see langword="integer" /> value that represents the shadow offset of the series, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To implement shadowing, use a value other than zero (0). A positive value will result in a shadow that shifts down and to the right. A negative value will result in a shadow that shifts up and to the left.  
+  
+   
+  
+## Examples  
+ The following code example sets the visual attributes of a series.  
+  
+```vb  
+' Set series shadow offset  
+Public Sub SetSeriesShadowOffset()  
+    Chart1.Series("Default"}.ShadowOffset = 2  
+End Sub 'SetSeriesVisualAttributes  
+```  
+  
+```csharp  
+// Set series shadow offset   
+public void SetSeriesShadowOffset ()  
+{      
+    Chart1.Series["Default"].ShadowOffset = 2;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmartLabelStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.SmartLabelStyle SmartLabelStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.SmartLabelStyle SmartLabelStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.SmartLabelStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.SmartLabelStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style of the smart labels.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(class System.Collections.Generic.IComparer`1&lt;class System.Web.UI.DataVisualization.Charting.DataPoint&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Sort(System.Collections.Generic.IComparer{System.Web.UI.DataVisualization.Charting.DataPoint})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Web.UI.DataVisualization.Charting.DataPoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> interface.</param>
+        <summary>Sorts the points in the series using <see cref="T:System.Collections.IComparer" /> interface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Web.UI.DataVisualization.Charting.PointSortOrder" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">The sort order.</param>
+        <summary>Sorts the data points in the series, given the specified sort order.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Web.UI.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Series.Sort(System.Web.UI.DataVisualization.Charting.PointSortOrder,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Web.UI.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="sortBy" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">The sort order.</param>
+        <param name="sortBy">The value used for the sort (X, Y, Y2 ...).</param>
+        <summary>Sorts the points in the series, given the specified sort order and value to use for the sort.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XAxisType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.AxisType XAxisType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.AxisType XAxisType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.XAxisType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.AxisType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the X-axis type of the series.</summary>
+        <value>A <see cref="P:System.Web.UI.DataVisualization.Charting.Series.XAxisType" /> enumeration value that determines if the series uses the primary or secondary X-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For all chart types except horizontally oriented charts such as bar and stacked bar charts, and shape charts such as pie, doughnut, funnel and pyramid charts, the primary X-axis is always the lower axis and the secondary axis is the upper axis. For bar and stacked bar charts, the primary X-axis is the left axis, and the secondary X-axis is the right axis.  
+  
+ When data is plotted using the secondary X-axis, you must use the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX2%2A> property to set axis properties, and not the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisX%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XValueMember">
+      <MemberSignature Language="C#" Value="public string XValueMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XValueMember" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.XValueMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Web.UI.Design.DataVisualization.Charting.SeriesDataFieldXConvertor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the member column of the chart data source used to data bind to the X-value of the series.</summary>
+        <value>A <see langword="string" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property accepts either the name of the member column or the ordinal value of the member column.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XValueType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartValueType XValueType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartValueType XValueType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.XValueType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value types plotted along the X-axis.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartValueType" /> enumeration value that determines the type of X-value data stored by the series. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.XValueType%2A> property determines the type of data stored by the series.  
+  
+ Set this property to <xref:System.Web.UI.DataVisualization.Charting.ChartValueType> to allow the X-value to be entered as a <xref:System.DateTime> value, and not as a <xref:System.Double>. Date and time values are internally stored by .NET Framework as <xref:System.Double> values. The same holds true for the <xref:System.Web.UI.DataVisualization.Charting.CustomLabel.ToPosition%2A> and <xref:System.Web.UI.DataVisualization.Charting.CustomLabel.FromPosition%2A> properties of <xref:System.Web.UI.DataVisualization.Charting.CustomLabel> objects.  
+  
+ The `IntervalType` property found in axis label, tick mark, and grid classes determines the interval type.  
+  
+> [!NOTE]
+>  To correctly apply a <xref:System.DateTime> format to axis labels that are generated from data point X-values, using the <xref:System.Web.UI.DataVisualization.Charting.LabelStyle.Format%2A> property, this property must be set to <xref:System.Web.UI.DataVisualization.Charting.ChartValueType>.  
+  
+ This property can also be used to determine the data type to which the X-values are bound.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YAxisType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.AxisType YAxisType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.AxisType YAxisType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YAxisType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.AxisType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Y-axis type of a series.</summary>
+        <value>An <see cref="T:System.Web.UI.DataVisualization.Charting.AxisType" /> enumeration value that determines if a series uses the primary or secondary Y-axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.YAxisType%2A> property determines if a series is plotted using the primary or secondary Y-axis.  
+  
+ For all chart types except pie, doughnut, range bar, bar and stacked bar charts, the primary Y-axis is the left vertical axis, and the secondary axis is the right vertical axis. For bar and stacked bar charts, the primary axis is the lower horizontal axis, and the secondary Y-axis is the upper horizontal axis.  
+  
+ When data is plotted using the secondary Y-axis, you must use the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisY2%2A> property to set axis properties, and not the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.AxisY%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YValueMembers">
+      <MemberSignature Language="C#" Value="public string YValueMembers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string YValueMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YValueMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.SeriesDataFieldValueAxisUITypeEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Web.UI.Design.DataVisualization.Charting.SeriesDataFieldYConvertor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets member columns of the chart data source used to bind data to the Y-values of the series.</summary>
+        <value>A <see langword="string" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property accepts a comma separated string that contains the names or ordinal values of the columns.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YValuesPerPoint">
+      <MemberSignature Language="C#" Value="public int YValuesPerPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 YValuesPerPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YValuesPerPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of Y-values that <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> objects in a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> are allowed to have.</summary>
+        <value>An <see langword="integer" /> value that represents the maximum number of Y-values that the data points in a series are allowed to have. The default value to one (1).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you add a <xref:System.Web.UI.DataVisualization.Charting.DataPoint> object that has more Y-values than this property specifies, the excess Y-values will be ignored.  
+  
+ The number of Y-values that are required to properly display a chart depends on the chart type selected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YValueType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartValueType YValueType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartValueType YValueType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Series.YValueType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.SeriesYValueTypeConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of Y-value data in the data points stored by a series.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartValueType" /> enumeration value that determines the type of Y-value data stored by the series. The default value is <see cref="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.YValueType%2A> property determines the type of data stored by the series. The value of this property is normally set to either <xref:System.Web.UI.DataVisualization.Charting.ChartValueType> or <xref:System.Web.UI.DataVisualization.Charting.ChartValueType>.  
+  
+ The `IntervalType` property found in axis label, tick mark, and grid classes determines the interval type.  
+  
+ This property can also be used to determine the data type to which the Y-values are bound.  
+  
+ It is possible to plot date expressions as the values of data points, though this is rarely done. If you set this property to <xref:System.Web.UI.DataVisualization.Charting.ChartValueType>, the Y-value can then entered as a <xref:System.DateTime> value, and not as a <xref:System.Double>. Date and time values are internally stored by .NET Framework as <xref:System.Double> values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

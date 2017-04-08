@@ -1,0 +1,1087 @@
+<Type Name="ExpressionTextBox" FullName="System.Activities.Presentation.View.ExpressionTextBox">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionTextBox : System.Windows.Controls.UserControl, System.Windows.Markup.IComponentConnector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionTextBox extends System.Windows.Controls.UserControl implements class System.Windows.Markup.IComponentConnector" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ExpressionTextBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.UserControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IComponentConnector</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Describes a control that enables the user to edit an expression in an activity designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the <xref:System.Activities.Presentation.View.ExpressionTextBox> provides features such as IntelliSense when editing an expression. Such features are provided by a component called the hostable editor. The expression editing interface is extensible and the editor used for editing expressions can be replaced.  
+  
+> [!NOTE]
+>  This component is not available for use in applications that are being re-hosted outside [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+  
+ **ExpressionTextBlock** works in the following manner when you edit an expression.  
+  
+1.  When you click on an **ExpressionTextBox**, an <xref:System.Activities.Presentation.View.IExpressionEditorInstance> object is created and a hostable editor session is instantiated in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+  
+2.  When you type inside a hostable editor, note that the features have two sorts of availability.  
+  
+    1.  IntelliSense, completion and colorization support is available immediately.  
+  
+    2.  Validation is called in the background and is available only after a short interval of time elapses. Then, if your expression is invalid, the hosted compiler reports the error and the red error icon displays to the right of your expression.  
+  
+3.  Press the **Enter** key when the **ExpressionTextBox** has the focus to insert new lines in the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> object. This causes a line commit to occur inside the hostable editor, which triggers a pretty listing and the display of squiggles.  
+  
+4.  The editor instance is destroyed when the **ExpressionTextBox** loses the focus, and the display reverts to a **TextBlock**. If you are on the designer surface or in the property grid, the change to the model item is committed and all <xref:System.Activities.Presentation.View.ExpressionTextBox> controls displaying that same expression are synchronized. However, if you are in a dialog box, the change to the model item is not committed until you click OK. When the model item is committed, <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> is invoked and the entire workflow is validated.  
+  
+5.  When you click on the **ExpressionTextBox** again, a new editor instance is created. In the hostable editor, pretty listing, colorization, and squiggling occurs before you begin editing.  
+  
+ To bind the expression text box to **OwnerActivity**, use <xref:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter> to set the data context correctly. The following code sample demonstrates setting the data context correctly for binding to **OwnerActivity**.  
+  
+```  
+<sapc:ModelPropertyEntryToModelItemConverter x:Key="ModelPropertyEntryToContainerConverter"/>  
+  
+    <DataTemplate x:Key="StringInArgumentPropertyValueEditorTemplate" >  
+        <Grid Margin="5" Background="LightGreen" DataContext="{Binding Converter={StaticResource ModelPropertyEntryToContainerConverter}}">  
+            <sapv:ExpressionTextBox   
+            Expression="{Binding Path=ModelItem.MyVal, Mode=TwoWay,   Converter={StaticResource ArgumentToExpressionConverter},  ConverterParameter=In }"  
+            ExpressionType="sys:String"  
+            OwnerActivity="{Binding Path=ModelItem}"   
+                 />  
+        </Grid>  
+    </DataTemplate>  
+```  
+  
+ For more information, see <xref:System.Activities.Presentation.View.IExpressionEditorInstance> and <xref:System.Activities.Presentation.View.IExpressionEditorService>. Also see the [Using the ExpressionTextBox in a Custom Activity Designer](~/docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md) sample topic.  
+  
+   
+  
+## Examples  
+ The <xref:System.Activities.Presentation.View.ExpressionTextBox> is usually used declaratively when creating custom activity designers. For sample code, see the [ExpressionTextBox101](http://go.microsoft.com/fwlink/?LinkId=193145) blog.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#0](WFD_ExpressionTextBox#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionTextBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.View.ExpressionTextBox" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsReturn">
+      <MemberSignature Language="C#" Value="public bool AcceptsReturn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsReturn" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.AcceptsReturn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the expression text box accepts returns.</summary>
+        <value>
+          <see langword="true" /> if returns are accepted; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsReturnProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AcceptsReturnProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AcceptsReturnProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.AcceptsReturnProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.AcceptsReturn" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsTab">
+      <MemberSignature Language="C#" Value="public bool AcceptsTab { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsTab" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.AcceptsTab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the expression text box accepts tabs.</summary>
+        <value>
+          <see langword="true" /> if tabs are accepted; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsTabProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AcceptsTabProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AcceptsTabProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.AcceptsTabProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.AcceptsTab" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginEdit">
+      <MemberSignature Language="C#" Value="public void BeginEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.BeginEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins an edit.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteWordCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.ICommand CompleteWordCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.ICommand CompleteWordCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.CompleteWordCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The command used to complete words in the expression text box.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseFilterLevelCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.ICommand DecreaseFilterLevelCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.ICommand DecreaseFilterLevelCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.DecreaseFilterLevelCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The command used to change the filter level from the **Common** tab to the **All** tab when you are using IntelliSense filtering. This is available only when you edit an expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public string DefaultValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default value.</summary>
+        <value>The default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DefaultValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DefaultValueProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.DefaultValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.DefaultValue" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditorLostLogicalFocus">
+      <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler EditorLostLogicalFocus;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler EditorLostLogicalFocus" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.ExpressionTextBox.EditorLostLogicalFocus" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the expression editor loses logical focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Logical focus differs from keyboard focus if focus is deliberately forced away by using a method call but the previous keyboard focus exists in a different scope.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditorLostLogicalFocusEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent EditorLostLogicalFocusEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent EditorLostLogicalFocusEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.EditorLostLogicalFocusEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Activities.Presentation.View.ExpressionTextBox.EditorLostLogicalFocus" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExplicitCommit">
+      <MemberSignature Language="C#" Value="public bool ExplicitCommit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExplicitCommit" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.ExplicitCommit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether a commit is explicit.</summary>
+        <value>Returns <see langword="true" /> if the commit is explicit; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExplicitCommitProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ExplicitCommitProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ExplicitCommitProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.ExplicitCommitProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.ExplicitCommit" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem Expression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression.</summary>
+        <value>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that contains the expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.View.ExpressionTextBox.Expression%2A> is always required. When using the [ExpressionTextBox](assetId:///ExpressionTextBox?qualifyHint=False&amp;autoUpgrade=True) declaratively to bind to arguments, you must always use the <xref:System.Activities.Presentation.Converters.ArgumentToExpressionConverter> to bind the expression to the argument, setting the `ConverterParameter` to `In` or `Out` depending on the direction of the argument.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#10](WFD_ExpressionTextBox#10)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionActivityEditor">
+      <MemberSignature Language="C#" Value="public string ExpressionActivityEditor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExpressionActivityEditor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.ExpressionActivityEditor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression activity editor.</summary>
+        <value>The expression activity editor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionActivityEditorOptionName">
+      <MemberSignature Language="C#" Value="public const string ExpressionActivityEditorOptionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ExpressionActivityEditorOptionName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.ExpressionActivityEditorOptionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a name of the expression activity editor option.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionActivityEditorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ExpressionActivityEditorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ExpressionActivityEditorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.ExpressionActivityEditorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.ExpressionActivityEditor" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionEditorService">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.IExpressionEditorService ExpressionEditorService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.View.IExpressionEditorService ExpressionEditorService" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.ExpressionEditorService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.IExpressionEditorService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the expression editor service.</summary>
+        <value>Returns a <see cref="T:System.Activities.Presentation.View.IExpressionEditorService" /> that contains the expression editor service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ExpressionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ExpressionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.ExpressionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.Expression" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionType">
+      <MemberSignature Language="C#" Value="public Type ExpressionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExpressionType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.ExpressionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression type.</summary>
+        <value>Returns a <see cref="T:System.Type" /> that contains the expression type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the type is strongly recommended. If you do not set <xref:System.Activities.Presentation.View.ExpressionTextBox.ExpressionType%2A>, you can’t use the <xref:System.Activities.Presentation.View.ExpressionTextBox> to bind to delegate types and you do not get validation from the hosted compiler. This compiler validation checks to see if the type of the entered expression matches the expected type, and displays a red box around the **ExpressionTextBox** when invalid data is entered into it on an activity designer.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#11](WFD_ExpressionTextBox#11)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ExpressionTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ExpressionTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.ExpressionTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.ExpressionType" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalIntellisenseCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.ICommand GlobalIntellisenseCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.ICommand GlobalIntellisenseCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.GlobalIntellisenseCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The command used for global IntelliSense in the expression text box.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HintText">
+      <MemberSignature Language="C#" Value="public string HintText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HintText" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.HintText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hint text.</summary>
+        <value>Returns a <see cref="T:System.String" /> that contains the hint text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HintTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HintTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HintTextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.HintTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.HintText" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScrollBarVisibility">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollBarVisibility HorizontalScrollBarVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ScrollBarVisibility HorizontalScrollBarVisibility" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.HorizontalScrollBarVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal scroll bar visibility.</summary>
+        <value>Returns a <see cref="T:System.Windows.Controls.ScrollBarVisibility" /> that contains the horizontal scroll bar visibility.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScrollBarVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HorizontalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HorizontalScrollBarVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.HorizontalScrollBarVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.HorizontalScrollBarVisibility" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseFilterLevelCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.ICommand IncreaseFilterLevelCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.ICommand IncreaseFilterLevelCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.IncreaseFilterLevelCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The command used to change the filter level from the **All** tab to the **Common** tab when you are using IntelliSense filtering. This is available only when you edit an expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeComponent">
+      <MemberSignature Language="C#" Value="public void InitializeComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.InitializeComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CodeDom.Compiler.GeneratedCode("PresentationBuildTasks", "4.0.0.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes this form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is intended for use only by the markup compiler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the expression textbox is read-only.</summary>
+        <value>A value that indicates whether the expression textbox is read-only.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnlyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsReadOnlyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsReadOnlyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.IsReadOnlyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.IsReadOnly" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedExpression">
+      <MemberSignature Language="C#" Value="public bool IsSupportedExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSupportedExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.IsSupportedExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether the expression is supported.</summary>
+        <value>
+          <see langword="true" /> if the expression is supported; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedExpressionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSupportedExpressionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSupportedExpressionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.IsSupportedExpressionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.IsSupportedExpression" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLines">
+      <MemberSignature Language="C#" Value="public int MaxLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLines" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.MaxLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of lines.</summary>
+        <value>Returns an <see cref="T:System.Int32" /> that contains the maximum number of lines.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLinesProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MaxLinesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MaxLinesProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.MaxLinesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.MaxLines" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinLines">
+      <MemberSignature Language="C#" Value="public int MinLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinLines" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.MinLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum number of lines.</summary>
+        <value>Returns an <see cref="T:System.Int32" /> that contains the minimum number of lines.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinLinesProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinLinesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinLinesProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.MinLinesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.MinLines" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialized">
+      <MemberSignature Language="C#" Value="protected override void OnInitialized (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialized(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnInitialized(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerActivity">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem OwnerActivity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem OwnerActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.OwnerActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the owner activity.</summary>
+        <value>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that contains the owner activity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#15](WFD_ExpressionTextBox#15)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerActivityProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OwnerActivityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OwnerActivityProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.OwnerActivityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.OwnerActivity" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterInfoCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.ICommand ParameterInfoCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.ICommand ParameterInfoCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.ParameterInfoCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The command used for parameter information in the expression text box.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathToArgument">
+      <MemberSignature Language="C#" Value="public string PathToArgument { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PathToArgument" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.PathToArgument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to the argument.</summary>
+        <value>Returns a <see cref="T:System.String" /> that contains the path to the argument.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathToArgumentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathToArgumentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathToArgumentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.PathToArgumentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.PathToArgument" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuickInfoCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.ICommand QuickInfoCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.ICommand QuickInfoCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.QuickInfoCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The command used for quick information in the expression text box.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterExpressionActivityEditor">
+      <MemberSignature Language="C#" Value="public static void RegisterExpressionActivityEditor (string name, Type expressionActivityEditorType, System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback convertFromString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterExpressionActivityEditor(string name, class System.Type expressionActivityEditorType, class System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback convertFromString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.RegisterExpressionActivityEditor(System.String,System.Type,System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="expressionActivityEditorType" Type="System.Type" />
+        <Parameter Name="convertFromString" Type="System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the epression editor.</param>
+        <param name="expressionActivityEditorType">The type of the expression activity editor.</param>
+        <param name="convertFromString">The string format of the expression.</param>
+        <summary>Registers an expression activity editor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IComponentConnector.Connect">
+      <MemberSignature Language="C#" Value="void IComponentConnector.Connect (int connectionId, object target);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IComponentConnector.Connect(int32 connectionId, object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.ExpressionTextBox.System#Windows#Markup#IComponentConnector#Connect(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CodeDom.Compiler.GeneratedCode("PresentationBuildTasks", "4.0.0.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionId" Type="System.Int32" />
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connectionId">The connection ID.</param>
+        <param name="target">The target.</param>
+        <summary>Attaches events and names to compiled content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is intended for use only by the markup compiler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLocationExpression">
+      <MemberSignature Language="C#" Value="public bool UseLocationExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLocationExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.UseLocationExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether this instance uses the location expression.</summary>
+        <value>
+          <see langword="true" /> if this instance uses the location expression; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A *location expression* (or L-value expression) is a type of expression that evaluates to an identifier and can be placed on the left hand side of an assignment statement. When you are binding the <xref:System.Activities.Presentation.View.ExpressionTextBox> to an `Out` argument, you would set this property to `True`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLocationExpressionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UseLocationExpressionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UseLocationExpressionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.UseLocationExpressionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.UseLocationExpression" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScrollBarVisibility">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollBarVisibility VerticalScrollBarVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ScrollBarVisibility VerticalScrollBarVisibility" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.ExpressionTextBox.VerticalScrollBarVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the vertical scrollbar visibility.</summary>
+        <value>Returns a <see cref="T:System.Windows.Controls.ScrollBarVisibility" /> that contains the scrollbar visibility.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScrollBarVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VerticalScrollBarVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VerticalScrollBarVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ExpressionTextBox.VerticalScrollBarVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers the <see cref="P:System.Activities.Presentation.View.ExpressionTextBox.VerticalScrollBarVisibility" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

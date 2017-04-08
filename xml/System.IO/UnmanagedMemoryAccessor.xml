@@ -1,0 +1,1744 @@
+<Type Name="UnmanagedMemoryAccessor" FullName="System.IO.UnmanagedMemoryAccessor">
+  <TypeSignature Language="C#" Value="public class UnmanagedMemoryAccessor : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnmanagedMemoryAccessor extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.IO.UnmanagedMemoryAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides random access to unmanaged blocks of memory from managed code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor%2A> method of a <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> object returns the unmanaged blocks of memory for working with views of memory-mapped files.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected UnmanagedMemoryAccessor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.UnmanagedMemoryAccessor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnmanagedMemoryAccessor (System.Runtime.InteropServices.SafeBuffer buffer, long offset, long capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.InteropServices.SafeBuffer buffer, int64 offset, int64 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Runtime.InteropServices.SafeBuffer" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="capacity" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to contain the accessor.</param>
+        <param name="offset">The byte at which to start the accessor.</param>
+        <param name="capacity">The size, in bytes, of memory to allocate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.UnmanagedMemoryAccessor" /> class with a specified buffer, offset, and capacity.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="offset" /> plus <paramref name="capacity" /> is greater than <paramref name="buffer" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="capacity" /> is less than zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="offset" /> plus <paramref name="capacity" /> would wrap around the high end of the address space.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnmanagedMemoryAccessor (System.Runtime.InteropServices.SafeBuffer buffer, long offset, long capacity, System.IO.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.InteropServices.SafeBuffer buffer, int64 offset, int64 capacity, valuetype System.IO.FileAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Runtime.InteropServices.SafeBuffer" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="capacity" Type="System.Int64" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to contain the accessor.</param>
+        <param name="offset">The byte at which to start the accessor.</param>
+        <param name="capacity">The size, in bytes, of memory to allocate.</param>
+        <param name="access">The type of access allowed to the memory. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.UnmanagedMemoryAccessor" /> class with a specified buffer, offset, capacity, and access right.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="offset" /> plus <paramref name="capacity" /> is greater than <paramref name="buffer" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="capacity" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="access" /> is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" /> enumeration value.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="offset" /> plus <paramref name="capacity" /> would wrap around the high end of the address space.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public bool CanRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
+      <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryAccessor.CanRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether the accessor is readable.</summary>
+        <value>
+          <see langword="true" /> if the accessor is readable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanWrite">
+      <MemberSignature Language="C#" Value="public bool CanWrite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
+      <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryAccessor.CanWrite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether the accessory is writable.</summary>
+        <value>
+          <see langword="true" /> if the accessor is writable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public long Capacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Capacity" />
+      <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryAccessor.Capacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the capacity of the accessor.</summary>
+        <value>The capacity of the accessor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.UnmanagedMemoryAccessor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.UnmanagedMemoryAccessor" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.IO.UnmanagedMemoryAccessor> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected void Initialize (System.Runtime.InteropServices.SafeBuffer buffer, long offset, long capacity, System.IO.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.Runtime.InteropServices.SafeBuffer buffer, int64 offset, int64 capacity, valuetype System.IO.FileAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Runtime.InteropServices.SafeBuffer" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="capacity" Type="System.Int64" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to contain the accessor.</param>
+        <param name="offset">The byte at which to start the accessor.</param>
+        <param name="capacity">The size, in bytes, of memory to allocate.</param>
+        <param name="access">The type of access allowed to the memory. The default is <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite" />.</param>
+        <summary>Sets the initial values for the accessor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the constructors for this class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="offset" /> plus <paramref name="capacity" /> is greater than <paramref name="buffer" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="capacity" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="access" /> is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" /> enumeration value.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="offset" /> plus <paramref name="capacity" /> would wrap around the high end of the address space.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="protected bool IsOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:System.IO.UnmanagedMemoryAccessor.IsOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether the accessor is currently open by a process.</summary>
+        <value>
+          <see langword="true" /> if the accessor is open; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Read&lt;T&gt; (long position, out T structure) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Read&lt;struct .ctor (class System.ValueType) T&gt;(int64 position, !!T structure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Read``1(System.Int64,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="structure" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of structure.</typeparam>
+        <param name="position">The position in the accessor at which to begin reading.</param>
+        <param name="structure">The structure to contain the read data.</param>
+        <summary>Reads a structure of type <paramref name="T" /> from the accessor into a provided reference.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to read medium to large structures that are not easily accommodated by the other read methods in this class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read in a structure of type <paramref name="T" />.  
+  
+ -or-  
+  
+ <see langword="T" /> is a value type that contains one or more reference types.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public int ReadArray&lt;T&gt; (long position, T[] array, int offset, int count) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadArray&lt;struct .ctor (class System.ValueType) T&gt;(int64 position, !!T[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadArray``1(System.Int64,``0[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of structure.</typeparam>
+        <param name="position">The number of bytes in the accessor at which to begin reading.</param>
+        <param name="array">The array to contain the structures read from the accessor.</param>
+        <param name="offset">The index in <c>array</c> in which to place the first copied structure.</param>
+        <param name="count">The number of structures of type <c>T</c> to read from the accessor.</param>
+        <summary>Reads structures of type <paramref name="T" /> from the accessor into an array of type <paramref name="T" />.</summary>
+        <returns>The number of structures read into <paramref name="array" />. This value can be less than <paramref name="count" /> if there are fewer structures available, or zero if the end of the accessor is reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not safe.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is not large enough to contain <paramref name="count" /> of structures (starting from <paramref name="position" />).</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBoolean">
+      <MemberSignature Language="C#" Value="public bool ReadBoolean (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ReadBoolean(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a Boolean value from the accessor.</summary>
+        <returns>
+          <see langword="true" /> or <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadByte">
+      <MemberSignature Language="C#" Value="public byte ReadByte (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8 ReadByte(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a byte value from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadChar">
+      <MemberSignature Language="C#" Value="public char ReadChar (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance char ReadChar(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a character from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDecimal">
+      <MemberSignature Language="C#" Value="public decimal ReadDecimal (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal ReadDecimal(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a decimal value from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.  
+  
+ -or-  
+  
+ The decimal to read is invalid.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDouble">
+      <MemberSignature Language="C#" Value="public double ReadDouble (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 ReadDouble(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a double-precision floating-point value from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadInt16">
+      <MemberSignature Language="C#" Value="public short ReadInt16 (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int16 ReadInt16(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a 16-bit integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadInt32">
+      <MemberSignature Language="C#" Value="public int ReadInt32 (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ReadInt32(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a 32-bit integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadInt64">
+      <MemberSignature Language="C#" Value="public long ReadInt64 (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 ReadInt64(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a 64-bit integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSByte">
+      <MemberSignature Language="C#" Value="public sbyte ReadSByte (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int8 ReadSByte(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads an 8-bit signed integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Int16" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSingle">
+      <MemberSignature Language="C#" Value="public float ReadSingle (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 ReadSingle(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads a single-precision floating-point value from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUInt16">
+      <MemberSignature Language="C#" Value="public ushort ReadUInt16 (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int16 ReadUInt16(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads an unsigned 16-bit integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Int32" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUInt32">
+      <MemberSignature Language="C#" Value="public uint ReadUInt32 (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int32 ReadUInt32(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads an unsigned 32-bit integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Int64" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUInt64">
+      <MemberSignature Language="C#" Value="public ulong ReadUInt64 (long position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 ReadUInt64(int64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin reading.</param>
+        <summary>Reads an unsigned 64-bit integer from the accessor.</summary>
+        <returns>The value that was read.</returns>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Decimal" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to read a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support reading.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a Boolean value into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a byte value into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, char value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, char value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a character into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a decimal value into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.  
+  
+ -or-  
+  
+ The decimal is invalid.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a <see langword="Double" /> value into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a 16-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a 32-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a 64-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after position to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes an 8-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Int16" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes a <see langword="Single" /> into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes an unsigned 16-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Int32" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes an unsigned 32-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Int64" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (long position, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(int64 position, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.UnmanagedMemoryStream</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="value">The value to write.</param>
+        <summary>Writes an unsigned 64-bit integer into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <altCompliant cref="T:System.Decimal" />
+        <exception cref="T:System.ArgumentException">There are not enough bytes after <paramref name="position" /> to write a value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (long position, ref T structure) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;struct .ctor (class System.ValueType) T&gt;(int64 position, !!T structure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.Write``1(System.Int64,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="structure" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of structure.</typeparam>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="structure">The structure to write.</param>
+        <summary>Writes a structure into the accessor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to write medium to large structures that are not easily accommodated by the other <xref:System.IO.UnmanagedMemoryAccessor.Write%2A> methods in this class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes in the accessor after <paramref name="position" /> to write a structure of type <paramref name="T" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void WriteArray&lt;T&gt; (long position, T[] array, int offset, int count) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteArray&lt;struct .ctor (class System.ValueType) T&gt;(int64 position, !!T[] array, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.UnmanagedMemoryAccessor.WriteArray``1(System.Int64,``0[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int64" />
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of structure.</typeparam>
+        <param name="position">The number of bytes into the accessor at which to begin writing.</param>
+        <param name="array">The array to write into the accessor.</param>
+        <param name="offset">The index in <c>array</c> to start writing from.</param>
+        <param name="count">The number of structures in <c>array</c> to write.</param>
+        <summary>Writes structures from an array of type <paramref name="T" /> into the accessor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">There are not enough bytes in the accessor after <paramref name="position" /> to write the number of structures specified by <paramref name="count" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="position" /> is less than zero or greater than the capacity of the accessor.  
+  
+ -or-  
+  
+ <paramref name="offset" /> or <paramref name="count" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The accessor does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The accessor has been disposed.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

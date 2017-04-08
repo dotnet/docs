@@ -1,0 +1,53 @@
+<Type Name="DataServiceProtocolVersion" FullName="System.Data.Services.Common.DataServiceProtocolVersion">
+  <TypeSignature Language="C#" Value="public enum DataServiceProtocolVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataServiceProtocolVersion extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.DataServiceProtocolVersion" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the versions of the [!INCLUDE[ssODataFull](~/includes/ssodatafull-md.md)] that the data service may support.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="V1">
+      <MemberSignature Language="C#" Value="V1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.DataServiceProtocolVersion V1 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.DataServiceProtocolVersion.V1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.DataServiceProtocolVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Version 1 of the [!INCLUDE[ssODataShort](~/includes/ssodatashort-md.md)] protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="V2">
+      <MemberSignature Language="C#" Value="V2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.DataServiceProtocolVersion V2 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.DataServiceProtocolVersion.V2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.DataServiceProtocolVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Version 2 of the [!INCLUDE[ssODataShort](~/includes/ssodatashort-md.md)] protocol.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

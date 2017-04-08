@@ -1,0 +1,131 @@
+<Type Name="NodeRangeIterator" FullName="System.Xml.Xsl.Runtime.NodeRangeIterator">
+  <TypeSignature Language="C#" Value="public struct NodeRangeIterator" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NodeRangeIterator extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.NodeRangeIterator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Iterates over the singleton node if the starting node is the same node as the ending node. Iterates to the end of the document if the starting node is after the ending node or is in a different document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Iterate over the nodes in document order, beginning with the start node through all content-typed nodes that follow the starting node, until the ending node is reached. Nodes that do not match the predicate test are filtered out.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create (System.Xml.XPath.XPathNavigator start, System.Xml.Xsl.Runtime.XmlNavigatorFilter filter, System.Xml.XPath.XPathNavigator end);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Create(class System.Xml.XPath.XPathNavigator start, class System.Xml.Xsl.Runtime.XmlNavigatorFilter filter, class System.Xml.XPath.XPathNavigator end) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.NodeRangeIterator.Create(System.Xml.XPath.XPathNavigator,System.Xml.Xsl.Runtime.XmlNavigatorFilter,System.Xml.XPath.XPathNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Xml.XPath.XPathNavigator" />
+        <Parameter Name="filter" Type="System.Xml.Xsl.Runtime.XmlNavigatorFilter" />
+        <Parameter Name="end" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="start">Node at which iteration begins.</param>
+        <param name="filter">Test expression that determines whether a node is to be filtered out.</param>
+        <param name="end">Node at which iteration ends.</param>
+        <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.NodeRangeIterator" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method iterates over the nodes in document order, beginning with the start node through all content-typed nodes that follow the starting node, until the ending node is reached. Nodes that do not match the predicate test are filtered out.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XPath.XPathNavigator Current" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.NodeRangeIterator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the current result navigator.</summary>
+        <value>The current result navigator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The state of the navigator changes only if the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.MoveNext%2A> method has returned `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.NodeRangeIterator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Positions the iterator on the next node.</summary>
+        <returns>
+          <see langword="true" /> if the next node exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the next node exists, the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.Current%2A> property to the current result navigator; otherwise, the <xref:System.Xml.Xsl.Runtime.NodeRangeIterator.Current%2A> property remains unchanged.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

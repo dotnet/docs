@@ -1,0 +1,108 @@
+<Type Name="XpsDigSigPartAlteringRestrictions" FullName="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions">
+  <TypeSignature Language="C#" Value="public enum XpsDigSigPartAlteringRestrictions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsDigSigPartAlteringRestrictions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the parts of the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <see cref="T:System.IO.Packaging.Package" /> that are excluded from the range of a digital signature.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has a FlagsAttribute that allows a bitwise combination of its member values.  
+  
+ Parts that are specified as excluded from the digital signature can be modified without invalidating the signature.  For example, if a document is to be signed by more than one person, the SignatureOrigin part needs to be excluded from the signature when the document is first signed.  (Exclusions are specified in the `restrictions` parameter of the call to <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A>.)  If the SignatureOrigin part is not excluded, any additional signatures invalidate the signature of the first signer.  
+  
+ For more information about digital signatures, see the MSDN article *Digital Signing Framework of the Open Packaging Conventions* available at [http://go.microsoft.com/fwlink/?LinkId=74494](http://go.microsoft.com/fwlink/?LinkId=74494).  
+  
+ For more information on the Core Properties and Signature Origin parts, see Chapter 3 of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to digitally sign an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="Annotations" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions Annotations = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.Annotations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Annotations part is excluded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CoreMetadata">
+      <MemberSignature Language="C#" Value="CoreMetadata" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions CoreMetadata = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.CoreMetadata" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Core Properties part is excluded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No parts are excluded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureOrigin">
+      <MemberSignature Language="C#" Value="SignatureOrigin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions SignatureOrigin = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions.SignatureOrigin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Signature Origin part is excluded.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,204 @@
+<Type Name="EncoderFallback" FullName="System.Text.EncoderFallback">
+  <TypeSignature Language="C#" Value="public abstract class EncoderFallback" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EncoderFallback extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.EncoderFallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Encoding</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a failure-handling mechanism, called a fallback, for an input character that cannot be converted to an encoded output byte sequence.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An encoding maps a Unicode character to an encoded sequence of bytes. A particular encoding is represented by a type that is derived from the <xref:System.Text.Encoding> class. Specifically, a character is encoded to a byte sequence by calling the encoding type's <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> method, and the byte sequence is decoded to a character array or a string by calling the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> or <xref:System.Text.Encoding.GetString%2A?displayProperty=fullName> method.  
+  
+ An encoding operation can fail if the input character cannot be represented by the encoding. For example, an <xref:System.Text.ASCIIEncoding> object cannot encode a character whose Unicode code point value is outside the range U+0000 to U+007F.  
+  
+ When an encoding conversion cannot be performed, the .NET Framework provides a failure-handling mechanism called a fallback. Your application can use predefined .NET Framework encoder fallbacks, or it can create a custom encoder fallback derived from the <xref:System.Text.EncoderFallback> and <xref:System.Text.EncoderFallbackBuffer> classes.  
+  
+ <xref:System.Text.EncoderFallback> and <xref:System.Text.EncoderFallbackBuffer> are the base classes for all encoding fallback handlers in the .NET Framework. They support the following three kinds of fallback handling mechanisms:  
+  
+-   Best-fit fallback, which maps valid Unicode characters that cannot be encoded to an approximate equivalent. For example, a best-fit fallback handler for the <xref:System.Text.ASCIIEncoding> class might map Æ (U+00C6) to AE (U+0041 + U+0045). A best-fit fallback handler might also be implemented to transliterate one alphabet (such as Cyrillic) to another (such as Latin or Roman). The .NET Framework does not provide any public best-fit fallback implementations.  
+  
+-   Replacement fallback, which replaces each character that cannot be encoded with a predefined string. The .NET Framework provides a predefined replacement fallback handler. The <xref:System.Text.EncoderReplacementFallback> class replaces each byte sequence that cannot be decoded with a question mark character ("?", or U+003F) or a REPLACEMENT CHARACTER (U+FFFD). You can customize the replacement string by specifying a substitute in the call to the <xref:System.Text.EncoderReplacementFallback.%23ctor%28System.String%29?displayProperty=fullName> constructor. After the substitute string is emitted, the encoding operation continues converting the remainder of the input.  
+  
+-   Exception fallback, which throws an exception when a character cannot be encoded. The .NET Framework provides a predefined exception fallback handler. The <xref:System.Text.EncoderExceptionFallback> class throws an <xref:System.Text.EncoderFallbackException> when an invalid character is encountered, and the encoding operation terminates.  
+  
+ If you choose to implement a custom solution, you must override the following abstract members of the <xref:System.Text.EncoderFallback> class:  
+  
+-   The <xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A> method, which returns a class instance derived from <xref:System.Text.EncoderFallbackBuffer>. Depending on the type of fallback handler that you are developing, the <xref:System.Text.EncoderFallbackBuffer> implementation is responsible for performing the mapping or replacement, or for throwing the exception.  
+  
+-   The <xref:System.Text.EncoderFallback.MaxCharCount%2A> property, which returns the maximum number of characters that the fallback implementation can return. For an exception fallback handler, its value should be zero.  
+  
+ For more information about encoding, decoding, and fallback strategies, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EncoderFallback ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallback.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.EncoderFallback" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFallbackBuffer">
+      <MemberSignature Language="C#" Value="public abstract System.Text.EncoderFallbackBuffer CreateFallbackBuffer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.EncoderFallbackBuffer CreateFallbackBuffer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.EncoderFallback.CreateFallbackBuffer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.EncoderFallbackBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, initializes a new instance of the <see cref="T:System.Text.EncoderFallbackBuffer" /> class.</summary>
+        <returns>An object that provides a fallback buffer for an encoder.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an object derived from <xref:System.Text.EncoderFallbackBuffer> that is responsible for performing the fallback operation. For example, of the predefined <xref:System.Text.EncoderFallback> implementations in the .NET Framework, the <xref:System.Text.EncoderReplacementFallback.CreateFallbackBuffer%2A?displayProperty=fullName> method returns an <xref:System.Text.EncoderReplacementFallbackBuffer> object, and the <xref:System.Text.EncoderExceptionFallback.CreateFallbackBuffer%2A?displayProperty=fullName> method returns an <xref:System.Text.EncoderExceptionFallbackBuffer> object.  
+  
+ The<xref:System.Text.EncoderFallback.CreateFallbackBuffer%2A> method is called by an encoder when it encounters the first character that it is unable to encode. The <xref:System.Text.EncoderFallbackBuffer> object returned by this method provides the fallback implementation and is responsible for returning the byte array that replaces the character or characters that could not be encoded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionFallback">
+      <MemberSignature Language="C#" Value="public static System.Text.EncoderFallback ExceptionFallback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.EncoderFallback ExceptionFallback" />
+      <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallback.ExceptionFallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.EncoderFallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that throws an exception when an input character cannot be encoded.</summary>
+        <value>A type derived from the <see cref="T:System.Text.EncoderFallback" /> class. The default value is a <see cref="T:System.Text.EncoderExceptionFallback" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxCharCount">
+      <MemberSignature Language="C#" Value="public abstract int MaxCharCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCharCount" />
+      <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallback.MaxCharCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the maximum number of characters the current <see cref="T:System.Text.EncoderFallback" /> object can return.</summary>
+        <value>The maximum number of characters the current <see cref="T:System.Text.EncoderFallback" /> object can return.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an exception fallback handler, this property should return zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplacementFallback">
+      <MemberSignature Language="C#" Value="public static System.Text.EncoderFallback ReplacementFallback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.EncoderFallback ReplacementFallback" />
+      <MemberSignature Language="DocId" Value="P:System.Text.EncoderFallback.ReplacementFallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.EncoderFallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that outputs a substitute string in place of an input character that cannot be encoded.</summary>
+        <value>A type derived from the <see cref="T:System.Text.EncoderFallback" /> class. The default value is a <see cref="T:System.Text.EncoderReplacementFallback" /> object that replaces unknown input characters with the QUESTION MARK character ("?", U+003F).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

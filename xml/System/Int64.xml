@@ -1,0 +1,1979 @@
+<Type Name="Int64" FullName="System.Int64">
+  <TypeSignature Language="C#" Value="public struct Int64 : IComparable, IComparable&lt;long&gt;, IConvertible, IEquatable&lt;long&gt;, IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit int64 extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;int64&gt;, class System.IConvertible, class System.IEquatable`1&lt;int64&gt;, class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Int64" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable&lt;System.Int64&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IConvertible</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Int64&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a 64-bit signed integer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/int64.cs). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ <xref:System.Int64> is an immutable value type that represents signed integers with values that range from negative 9,223,372,036,854,775,808 (which is represented by the <xref:System.Int64.MinValue?displayProperty=fullName> constant) through positive 9,223,372,036,854,775,807 (which is represented by the <xref:System.Int64.MaxValue?displayProperty=fullName> constant. The .NET Framework also includes an unsigned 64-bit integer value type, <xref:System.UInt64>, which represents values that range from 0 to 18,446,744,073,709,551,615.  
+  
+## Instantiating an Int64 Value  
+ You can instantiate an <xref:System.Int64> value in several ways:  
+  
+-   You can declare an <xref:System.Int64> variable and assign it a literal integer value that is within the range of the <xref:System.Int64> data type. The following example declares two <xref:System.Int64> variables and assigns them values in this way.  
+  
+     [!code-csharp[System.Int64.Instantiation#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.instantiation/cs/instantiate1.cs#1)]
+     [!code-vb[System.Int64.Instantiation#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.instantiation/vb/instantiate1.vb#1)]  
+  
+-   You can assign the value of an integral type whose range is a subset of the <xref:System.Int64> type. This is a widening conversion that does not require a cast operator in C# or a conversion method in Visual Basic.  
+  
+     [!code-csharp[System.Int64.Instantiation#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.instantiation/cs/instantiate1.cs#4)]
+     [!code-vb[System.Int64.Instantiation#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.instantiation/vb/instantiate1.vb#4)]  
+  
+-   You can assign the value of a numeric type whose range exceeds that of the <xref:System.Int64> type. This is a narrowing conversion, so it requires a cast operator in C# and a conversion method in Visual Basic if `Option``Strict` is on. If the numeric value is a <xref:System.Single>, <xref:System.Double>, or <xref:System.Decimal> value that includes a fractional component, the handling of its fractional part depends on the compiler performing the conversion. The following example performs narrowing conversions to assign several numeric values to <xref:System.Int64> variables.  
+  
+     [!code-csharp[System.Int64.Instantiation#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.instantiation/cs/instantiate1.cs#2)]
+     [!code-vb[System.Int64.Instantiation#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.instantiation/vb/instantiate1.vb#2)]  
+  
+-   You can call a method of the <xref:System.Convert> class to convert any supported type to an <xref:System.Int64> value. This is possible because <xref:System.Int64> supports the <xref:System.IConvertible> interface. The following example illustrates the conversion of an array of <xref:System.Decimal> values to <xref:System.Int64> values.  
+  
+     [!code-csharp[System.Convert.ToInt64#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.toint64/cs/toint64_1.cs#4)]
+     [!code-vb[System.Convert.ToInt64#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.toint64/vb/toint64_1.vb#4)]  
+  
+-   You can call the <xref:System.Int64.Parse%2A> or <xref:System.Int64.TryParse%2A> method to convert the string representation of an <xref:System.Int64> value to an <xref:System.Int64>. The string can contain either decimal or hexadecimal digits. The following example illustrates the parse operation by using both a decimal and a hexadecimal string.  
+  
+     [!code-csharp[System.Int64.Instantiation#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.instantiation/cs/instantiate1.cs#3)]
+     [!code-vb[System.Int64.Instantiation#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.instantiation/vb/instantiate1.vb#3)]  
+  
+## Performing Operations on Int64 Values  
+ The <xref:System.Int64> type supports standard mathematical operations such as addition, subtraction, division, multiplication, negation, and unary negation. Like the other integral types, the <xref:System.Int64> type also supports the bitwise `AND`, `OR`, `XOR`, left shift, and right shift operators.  
+  
+ You can use the standard numeric operators to compare two <xref:System.Int64> values, or you can call the <xref:System.Int64.CompareTo%2A> or <xref:System.Int64.Equals%2A> method.  
+  
+ You can also call the members of the <xref:System.Math> class to perform a wide range of numeric operations, including getting the absolute value of a number, calculating the quotient and remainder from integral division, determining the maximum or minimum value of two long integers, getting the sign of a number, and rounding a number.  
+  
+## Representing an Int64 as a String  
+ The <xref:System.Int64> type provides full support for standard and custom numeric format strings. (For more information, see [Formatting Types](~/docs/standard/base-types/formatting-types.md), [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
+  
+ To format an <xref:System.Int64> value as an integral string with no leading zeros, you can call the parameterless <xref:System.Int64.ToString> method. By using the "D" format specifier, you can also include a specified number of leading zeros in the string representation. By using the "N" format specifier, you can include group separators and specify the number of decimal digits to appear in the string representation of the number. By using the "X" format specifier, you can represent an <xref:System.Int64> value as a hexadecimal string. The following example formats the elements in an array of <xref:System.Int64> values in these four ways.  
+  
+ [!code-csharp[System.Int64.Formatting#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.formatting/cs/formatting1.cs#1)]
+ [!code-vb[System.Int64.Formatting#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.formatting/vb/formatting1.vb#1)]  
+  
+ You can also format an <xref:System.Int64> value as a binary, octal, decimal, or hexadecimal string by calling the <xref:System.Convert.ToString%28System.Int64%2CSystem.Int32%29> method and supplying the base as the method's second parameter. The following example calls this method to display the binary, octal, and hexadecimal representations of an array of integer values.  
+  
+ [!code-csharp[System.Int64.Formatting#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.formatting/cs/formatting1.cs#2)]
+ [!code-vb[System.Int64.Formatting#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.formatting/vb/formatting1.vb#2)]  
+  
+## Working with Non-Decimal 32-Bit Integer Values  
+ In addition to working with individual long integers as decimal values, you may want to perform bitwise operations with long integer values, or work with the binary or hexadecimal representations of long integer values. <xref:System.Int64> values are represented in 63 bits, with the sixty-fourth bit used as a sign bit. Positive values are represented by using sign-and-magnitude representation. Negative values are in two's complement representation. This is important to keep in mind when you perform bitwise operations on <xref:System.Int64> values or when you work with individual bits. In order to perform a numeric, Boolean, or comparison operation on any two non-decimal values, both values must use the same representation.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>All members of this type are thread safe. Members that appear to modify instance state actually return a new instance initialized with the new value. As with any other type, reading and writing to a shared variable that contains an instance of this type must be protected by a lock to guarantee thread safety.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.CompareTo(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">An integer to compare.</param>
+        <summary>Compares this instance to a specified 64-bit signed integer and returns an indication of their relative values.</summary>
+        <returns>A signed number indicating the relative values of this instance and <paramref name="value" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.IComparable%601?displayProperty=fullName> interface and performs slightly better than the <xref:System.Int64.CompareTo%2A?displayProperty=fullName> method because it does not have to convert the `value` parameter to an object.  
+  
+ Depending on your programming language, it might be possible to code a <xref:System.Int64.CompareTo%2A> method where the parameter type has fewer bits (is narrower) than the instance type. This is possible because some programming languages perform an implicit widening conversion that represents the parameter as a type with as many bits as the instance.  
+  
+ For example, suppose the instance type is <xref:System.Int32> and the parameter type is <xref:System.Byte>. The Microsoft C# compiler generates instructions to represent the value of the parameter as an <xref:System.Int32> object, then generates a <xref:System.Int32.CompareTo%2A?displayProperty=fullName> method that compares the values of the <xref:System.Int32> instance and the <xref:System.Int32> parameter representation.  
+  
+ Consult your programming language's documentation to determine whether its compiler performs implicit widening conversions on numeric types.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates generic and nongeneric versions of the <xref:System.Int64.CompareTo%2A> method for several value and reference types.  
+  
+ [!code-cpp[T.CompareTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/T.CompareTo/CPP/cat.cpp#1)]
+ [!code-csharp[T.CompareTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/T.CompareTo/CS/cat.cs#1)]
+ [!code-vb[T.CompareTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/T.CompareTo/VB/cat.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object to compare, or <see langword="null" />.</param>
+        <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
+        <returns>A signed number indicating the relative values of this instance and <paramref name="value" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is equal to <paramref name="value" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than <paramref name="value" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is <see langword="null" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Int64>, regardless of its value, is considered greater than a null reference.  
+  
+ The `value` parameter must be `null` or an instance of <xref:System.Int64>; otherwise, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not an <see cref="T:System.Int64" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (long obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(int64 obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.Equals(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Int64" /> value to compare to this instance.</param>
+        <summary>Returns a value indicating whether this instance is equal to a specified <see cref="T:System.Int64" /> value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> has the same value as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.IEquatable%601?displayProperty=fullName> interface, and performs slightly better than <xref:System.Int64.Equals%2A> because it does not have to convert the `obj` parameter to an object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Compiler overload resolution may account for an apparent difference in the behavior of the two <see cref="M:System.Int64.Equals(System.Int64)" /> method overloads. If an implicit conversion between the <paramref name="obj" /> argument and an <see cref="T:System.Int64" /> is defined and the argument is not typed as an <see cref="T:System.Object" />, compilers perform an implicit conversion and call the <see cref="M:System.Int64.Equals(System.Int64)" /> method. Otherwise, they call the <see cref="M:System.Int64.Equals(System.Object)" /> method, which always returns <see langword="false" /> if its <paramref name="obj" /> argument is not an <see cref="T:System.Int64" /> value. The following example illustrates the difference in behavior between the two method overloads. In the case of the <see cref="T:System.Byte" />, <see cref="T:System.SByte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, and <see cref="T:System.UInt32" /> values, the first comparison returns <see langword="true" /> because the compiler automatically performs a widening conversion and calls the <see cref="M:System.Int64.Equals(System.Int64)" /> method, whereas the second comparison returns <see langword="false" /> because the compiler calls the <see cref="M:System.Int64.Equals(System.Object)" /> method.  
+  
+ [!code-csharp[System.Int64.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.equals/cs/equalsoverl.cs#1)]
+ [!code-vb[System.Int64.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.equals/vb/equalsoverl.vb#1)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare with this instance.</param>
+        <summary>Returns a value indicating whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is an instance of an <see cref="T:System.Int64" /> and equals the value of this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of `Equals` in the context of `Int64`, comparing two long values and returning `true` if they represent the same number, or `false` if they do not.  
+  
+ [!code-cpp[Int64_Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR/Int64_Equals/CPP/int64_equals.cpp#1)]
+ [!code-csharp[Int64_Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR/Int64_Equals/CS/int64_equals.cs#1)]
+ [!code-vb[Int64_Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Int64_Equals/VB/int64_equals.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Compiler overload resolution may account for an apparent difference in the behavior of the two <see cref="M:System.Int64.Equals(System.Int64)" /> method overloads. If an implicit conversion between the <paramref name="obj" /> argument and an <see cref="T:System.Int64" /> is defined and the argument is not typed as an <see cref="T:System.Object" />, compilers perform an implicit conversion and call the <see cref="M:System.Int64.Equals(System.Int64)" /> method. Otherwise, they call the <see cref="M:System.Int64.Equals(System.Object)" /> method, which always returns <see langword="false" /> if its <paramref name="obj" /> argument is not an <see cref="T:System.Int64" /> value. The following example illustrates the difference in behavior between the two method overloads. In the case of the <see cref="T:System.Byte" />, <see cref="T:System.SByte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, and <see cref="T:System.UInt32" /> values, the first comparison returns <see langword="true" /> because the compiler automatically performs a widening conversion and calls the <see cref="M:System.Int64.Equals(System.Int64)" /> method, whereas the second comparison returns <see langword="false" /> because the compiler calls the <see cref="M:System.Int64.Equals(System.Object)" /> method.  
+  
+ [!code-csharp[System.Int64.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.equals/cs/equalsoverl.cs#1)]
+ [!code-vb[System.Int64.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.equals/vb/equalsoverl.vb#1)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeCode">
+      <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.GetTypeCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.TypeCode" /> for value type <see cref="T:System.Int64" />.</summary>
+        <returns>The enumerated constant, <see cref="F:System.TypeCode.Int64" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValue">
+      <MemberSignature Language="C#" Value="public const long MaxValue = 9223372036854775807;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int64 MaxValue = int64(9223372036854775807)" />
+      <MemberSignature Language="DocId" Value="F:System.Int64.MaxValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <MemberValue>9223372036854775807</MemberValue>
+      <Docs>
+        <summary>Represents the largest possible value of an <see langword="Int64" />. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is 9,223,372,036,854,775,807; that is, hexadecimal 0x7FFFFFFFFFFFFFFF.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinValue">
+      <MemberSignature Language="C#" Value="public const long MinValue = -9223372036854775808;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int64 MinValue = int64(-9223372036854775808)" />
+      <MemberSignature Language="DocId" Value="F:System.Int64.MinValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <MemberValue>-9223372036854775808</MemberValue>
+      <Docs>
+        <summary>Represents the smallest possible value of an <see langword="Int64" />. This field is constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is negative 9,223,372,036,854,775,808; that is, hexadecimal 0x8000000000000000.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static long Parse (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Parse(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert.</param>
+        <summary>Converts the string representation of a number to its 64-bit signed integer equivalent.</summary>
+        <returns>A 64-bit signed integer equivalent to the number contained in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `s` parameter contains a number of the form:  
+  
+ [ws][sign]digits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|ws|Optional white space.|  
+|sign|An optional sign.|  
+|digits|A sequence of digits ranging from 0 to 9.|  
+  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements that can be present in `s`, use either the <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName> or the <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. To parse a string using the formatting information of some other culture, use the <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to convert a string value into a 64-bit signed integer value using the <xref:System.Int64.Parse%28System.String%29?displayProperty=fullName> method. It then displays the resulting long integer value.  
+  
+ [!code-csharp[System.Int64.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.parse/cs/Parse1.cs#1)]
+ [!code-vb[System.Int64.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.parse/vb/Parse1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not in the correct format.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static long Parse (string s, System.Globalization.NumberStyles style);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Parse(string s, valuetype System.Globalization.NumberStyles style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.Parse(System.String,System.Globalization.NumberStyles)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="style" Type="System.Globalization.NumberStyles" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert.</param>
+        <param name="style">A bitwise combination of <see cref="T:System.Globalization.NumberStyles" /> values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <summary>Converts the string representation of a number in a specified style to its 64-bit signed integer equivalent.</summary>
+        <returns>A 64-bit signed integer equivalent to the number specified in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `style` parameter defines the style elements (such as white space, the positive or negative sign symbol, or the thousands separator symbol) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`, the `s` parameter may contain the following elements:  
+  
+ [ws][$][sign][digits,]digits[.fractional_digits][e[sign]exponential_digits][ws]  
+  
+ Or, if `style` includes <xref:System.Globalization.NumberStyles>:  
+  
+ [ws]hexdigits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> properties of the current culture. The current culture's currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
+|*,*|A culture-specific thousands separator symbol. The current culture's thousands separator can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*.*|A culture-specific decimal point symbol. The current culture's decimal point symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, an <xref:System.OverflowException> is thrown.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
+  
+ A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully if it is in the range of the <xref:System.Int64> type. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+  
+|NumberStyles value|Elements permitted in s in addition to digits|  
+|------------------------|---------------------------------------------------|  
+|<xref:System.Globalization.NumberStyles>|The *digits* element only.|  
+|<xref:System.Globalization.NumberStyles>|The decimal point ( *.* ) and *fractional-digits* elements.|  
+|<xref:System.Globalization.NumberStyles>|The `s` parameter can also use exponential notation. If `s` represents a number in exponential notation, the resulting numeric value cannot include any non-zero fractional digits.|  
+|<xref:System.Globalization.NumberStyles>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles>|The *sign* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles>|The *sign* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles>|The thousands separator ( *,* ) element.|  
+|<xref:System.Globalization.NumberStyles>|The *$* element.|  
+|<xref:System.Globalization.NumberStyles>|All. The `s` parameter cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles>|The *ws* element at the beginning or end of `s`, *sign* at the beginning of `s`, and the decimal point ( *.* ) symbol. The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles>|The *ws*, *sign*, thousands separator ( *,* ), and decimal point ( *.* ) elements.|  
+|<xref:System.Globalization.NumberStyles>|All styles, except `s` cannot represent a hexadecimal number.|  
+  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value without a prefix. For example, "C9AF3" parses successfully, but "0xC9AF3" does not. The only other flags that can be combined with the `s` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white space flags.)  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object that is initialized for the current system culture. To specify the culture whose formatting information is used for the parse operation, call the <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> overload.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName> method to parse the string representations of several <xref:System.Int64> values. The current culture for the example is en-US.  
+  
+ [!code-csharp[System.Int64.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.parse/cs/Parse2.cs#2)]
+ [!code-vb[System.Int64.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.parse/vb/Parse2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="style" /> is not a <see cref="T:System.Globalization.NumberStyles" /> value.  
+  
+ -or-  
+  
+ <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not in a format compliant with <paramref name="style" />.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.  
+  
+ -or-  
+  
+ <paramref name="style" /> supports fractional digits but <paramref name="s" /> includes non-zero fractional digits.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static long Parse (string s, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Parse(string s, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.Parse(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
+        <summary>Converts the string representation of a number in a specified culture-specific format to its 64-bit signed integer equivalent.</summary>
+        <returns>A 64-bit signed integer equivalent to the number specified in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.Int64.Parse%28System.String%2CSystem.IFormatProvider%29> method is typically used to convert text that can be formatted in a variety of ways to an <xref:System.Int64> value. For example, it can be used to convert the text entered by a user into an HTML text box to a numeric value.  
+  
+ The `s` parameter contains a number of the form:  
+  
+ [ws][sign]digits[ws]  
+  
+ Items in square brackets ([ and ]) are optional, and other items are as follows.  
+  
+ ws  
+ An optional white space.  
+  
+ sign  
+ An optional sign.  
+  
+ digits  
+ A sequence of digits ranging from 0 to 9.  
+  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements that can be present in `s`, use the <xref:System.Int64.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName> method.  
+  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information about the format of `s`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
+  
+   
+  
+## Examples  
+ The following example is the button click event handler of a Web form. It uses the array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=fullName> property to determine the user's locale. It then instantiates a <xref:System.Globalization.CultureInfo> object that corresponds to that locale. The <xref:System.Globalization.NumberFormatInfo> object that belongs to that <xref:System.Globalization.CultureInfo> object is then passed to the <xref:System.Int64.Parse%28System.String%2CSystem.IFormatProvider%29> method to convert the user's input to an <xref:System.Int64> value.  
+  
+ [!code-csharp[ParseMethod#5](~/samples/snippets/csharp/VS_Snippets_CLR/ParseMethod/cs/Default.aspx.cs#5)]
+ [!code-vb[ParseMethod#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/ParseMethod/vb/Default.aspx.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not in the correct format.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static long Parse (string s, System.Globalization.NumberStyles style, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Parse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="style" Type="System.Globalization.NumberStyles" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> that supplies culture-specific formatting information about <c>s</c>.</param>
+        <summary>Converts the string representation of a number in a specified style and culture-specific format to its 64-bit signed integer equivalent.</summary>
+        <returns>A 64-bit signed integer equivalent to the number specified in <paramref name="s" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `style` parameter defines the style elements (such as white space or the positive sign) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`, the `s` parameter may include the following elements:  
+  
+ [ws][$][sign][digits,]digits[.fractional_digits][e[sign]exponential_digits][ws]  
+  
+ Or, if `style` includes <xref:System.Globalization.NumberStyles>:  
+  
+ [ws]hexdigits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, and it can appear at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A?displayProperty=fullName> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*sign*|An optional sign. The sign can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag. Parentheses can be used in `s` to indicate a negative value if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9.|  
+|*,*|A culture-specific thousands separator symbol. The thousands separator of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.<br /><br /> Only the digit 0 can appear as a fractional digit for the parse operation to succeed; if *fractional_digits* includes any other digit, an <xref:System.OverflowException> is thrown.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
+  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style) always parses successfully if it is in the range of the <xref:System.Int64> type. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+  
+|Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
+|----------------------------------------|---------------------------------------------------|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The decimal point ( *.* ) and *fractional-digits* elements. However, *fractional-digits* must consist of only one or more 0 digits or an <xref:System.OverflowException> is thrown.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The thousands separator ( *,* ) element.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *$* element.|  
+  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value without a prefix. For example, "C9AF3" parses successfully, but "0xC9AF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white space flags.)  
+  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.CultureInfo> object. The `provider` parameter supplies culture-specific information used in parsing. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> for the current culture is used.  
+  
+   
+  
+## Examples  
+ The following example uses a variety of `style` and `provider` parameters to parse the string representations of <xref:System.Int64> values. It also illustrates some of the different ways the same string can be interpreted depending on the culture whose formatting information is used for the parsing operation.  
+  
+ [!code-csharp[System.Int64.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.int64.parse/cs/Parse3.cs#3)]
+ [!code-vb[System.Int64.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.int64.parse/vb/Parse3.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="style" /> is not a <see cref="T:System.Globalization.NumberStyles" /> value.  
+  
+ -or-  
+  
+ <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not in a format compliant with <paramref name="style" />.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="s" /> represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.  
+  
+ -or-  
+  
+ <paramref name="style" /> supports fractional digits, but <paramref name="s" /> includes non-zero fractional digits.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IComparable.CompareTo (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IComparable#CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.GetTypeCode">
+      <MemberSignature Language="C#" Value="TypeCode IConvertible.GetTypeCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#GetTypeCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TypeCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToBoolean">
+      <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToBoolean(System.IFormatProvider)" />.</summary>
+        <returns>
+          <see langword="true" /> if the value of the current instance is not zero; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToBoolean%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToByte">
+      <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToByte(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Byte" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToByte%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToChar">
+      <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToChar(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Char" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToChar%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToDateTime">
+      <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>This conversion is not supported. Attempting to use this method throws an <see cref="T:System.InvalidCastException" />.</summary>
+        <returns>This conversion is not supported. No value is returned.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">In all cases.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToDecimal">
+      <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToDecimal(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Decimal" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDecimal%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToDouble">
+      <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToDouble(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Double" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToDouble%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToInt16">
+      <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToInt16(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.Int16" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt16%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToInt32">
+      <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToInt32(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.Int32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToInt32%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToInt64">
+      <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToInt64(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToSByte">
+      <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToSByte(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to an <see cref="T:System.SByte" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSByte%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToSingle">
+      <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToSingle(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.Single" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToSingle%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToType">
+      <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type to which to convert this <see cref="T:System.Int64" /> value.</param>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> implementation that provides information about the format of the returned value.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToType(System.Type,System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to <paramref name="type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the `static` (`Shared` in Visual Basic) <xref:System.Convert.ChangeType%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToUInt16">
+      <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt16(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.UInt16" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt16%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToUInt32">
+      <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt32(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.UInt32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt32%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IConvertible.ToUInt64">
+      <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">This parameter is ignored.</param>
+        <summary>For a description of this member, see <see cref="M:System.IConvertible.ToUInt64(System.IFormatProvider)" />.</summary>
+        <returns>The value of the current instance, converted to a <see cref="T:System.UInt64" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Int64> instance is cast to an <xref:System.IConvertible> interface. The recommended alternative is to call the <xref:System.Convert.ToUInt64%28System.Int64%29?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
+        <returns>The string representation of the value of this instance, consisting of a minus sign if the value is negative, and a sequence of digits ranging from 0 to 9 with no leading zeroes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Int64.ToString> method formats an <xref:System.Int64> value in the default ("G", or general) format by using the <xref:System.Globalization.NumberFormatInfo> object of the current culture. If you want to specify a different format or culture, use the other overloads of the <xref:System.Int64.ToString%2A> method, as follows:  
+  
+|To use format|For culture|Use the overload|  
+|-------------------|-----------------|----------------------|  
+|Default ("G") format|A specific culture|<xref:System.Int64.ToString%28System.IFormatProvider%29>|  
+|A specific format|Default (current) culture|<xref:System.Int64.ToString%28System.String%29>|  
+|A specific format|A specific culture|<xref:System.Int64.ToString%28System.String%2CSystem.IFormatProvider%29>|  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following example displays an <xref:System.Int64> value using the default <xref:System.Int64.ToString> method. It also displays the string representations of the <xref:System.Int64> value that results from using a number of standard format specifiers. The examples are displayed using the formatting conventions of the en-US culture.  
+  
+ [!code-csharp[System.Int64.ToString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Int64.ToString/cs/ToString.cs#1)]
+ [!code-vb[System.Int64.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Int64.ToString/vb/ToString.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">An <see cref="T:System.IFormatProvider" /> that supplies culture-specific formatting information.</param>
+        <summary>Converts the numeric value of this instance to its equivalent string representation using the specified culture-specific format information.</summary>
+        <returns>The string representation of the value of this instance as specified by <paramref name="provider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Int64.ToString%28System.IFormatProvider%29> method formats an <xref:System.Int64> value in the default ("G", or general) format by using the <xref:System.Globalization.NumberFormatInfo> object of a specified culture. If you want to specify a different format or the current culture, use the other overloads of the <xref:System.Int64.ToString%2A> method, as follows:  
+  
+|To use format|For culture|Use the overload|  
+|-------------------|-----------------|----------------------|  
+|Default ("G") format|Default (current) culture|<xref:System.Int64.ToString>|  
+|A specific format|Default (current) culture|<xref:System.Int64.ToString%28System.String%29>|  
+|A specific format|A specific culture|<xref:System.Int64.ToString%28System.String%2CSystem.IFormatProvider%29>|  
+  
+ The `provider` parameter is an object that implements the <xref:System.IFormatProvider> interface. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string that is returned by this method. The object that implements <xref:System.IFormatProvider> can be any of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting rules are to be used.  
+  
+-   A <xref:System.Globalization.NumberFormatInfo> object that contains specific numeric formatting information for this value.  
+  
+-   A custom object that implements <xref:System.IFormatProvider> and whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides formatting information.  
+  
+ If `provider` is `null` or a <xref:System.Globalization.NumberFormatInfo> object cannot be obtained from `provider`, the return value is formatted with the <xref:System.Globalization.NumberFormatInfo> object for the current culture.  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following example displays the string representation of an <xref:System.Int64> value using <xref:System.Globalization.CultureInfo> objects that represent several different cultures.  
+  
+ [!code-csharp[System.Int64.ToString#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Int64.ToString/cs/ToString.cs#2)]
+ [!code-vb[System.Int64.ToString#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Int64.ToString/vb/ToString.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.ToString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">A numeric format string.</param>
+        <summary>Converts the numeric value of this instance to its equivalent string representation, using the specified format.</summary>
+        <returns>The string representation of the value of this instance as specified by <paramref name="format" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Int64.ToString%28System.String%29> method formats an <xref:System.Int64> value in a specified format by using a <xref:System.Globalization.NumberFormatInfo> object that represents the conventions of the current culture. If you want to use the default ("G", or general) format or specify a different culture, use the other overloads of the <xref:System.Int64.ToString%2A> method, as follows:  
+  
+|To use format|For culture|Use the overload|  
+|-------------------|-----------------|----------------------|  
+|Default ("G") format|Default (current) culture|<xref:System.Int64.ToString>|  
+|Default ("G") format|A specific culture|<xref:System.Int64.ToString%28System.IFormatProvider%29>|  
+|A specific format|A specific culture|<xref:System.Int64.ToString%28System.String%2CSystem.IFormatProvider%29>|  
+  
+ The `format` parameter can be any valid standard numeric format specifier except for "R", as well as any combination of custom numeric format specifiers. If `format` is `null` or an empty string (""), the return value of this instance is formatted with the general numeric format specifier ("G").  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+ The return value of this instance is formatted with the <xref:System.Globalization.NumberFormatInfo> for the current culture.  
+  
+   
+  
+## Examples  
+ The following example displays an <xref:System.Int64> value using each of the supported standard numeric format specifiers together with two custom numeric format strings. In converting the numeric values to strings, the example uses the formatting conventions of the en-US culture.  
+  
+ [!code-csharp[System.Int64.ToString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Int64.ToString/cs/ToString.cs#3)]
+ [!code-vb[System.Int64.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Int64.ToString/vb/ToString.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="format" /> is invalid or not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">A numeric format string.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about this instance.</param>
+        <summary>Converts the numeric value of this instance to its equivalent string representation using the specified format and culture-specific format information.</summary>
+        <returns>The string representation of the value of this instance as specified by <paramref name="format" /> and <paramref name="provider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Int64.ToString%28System.String%2CSystem.IFormatProvider%29> method formats an <xref:System.Int64> value in a specified format by using the <xref:System.Globalization.NumberFormatInfo> object of a specified culture. If you want to use default format or culture settings, use the other overloads of the <xref:System.Int64.ToString%2A> method, as follows:  
+  
+|To use format|For culture|Use the overload|  
+|-------------------|-----------------|----------------------|  
+|Default ("G") format|Default (current) culture|<xref:System.Int64.ToString>|  
+|Default ("G") format|A specific culture|<xref:System.Int64.ToString%28System.IFormatProvider%29>|  
+|A specific format|Default (current) culture|<xref:System.Int64.ToString%28System.String%29>|  
+  
+ The `format` parameter can be either a standard or a custom numeric format string. All standard numeric format strings other than "R" (or "r") are supported, as are all custom numeric format characters. If `format` is `null` or an empty string (""), the return value for this instance is formatted with the general numeric format specifier ("G").  
+  
+ The `provider` parameter is an object that implements the <xref:System.IFormatProvider> interface. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string that is returned by this method. The object that implements <xref:System.IFormatProvider> can be any of the following:  
+  
+-   A <xref:System.Globalization.CultureInfo> object that represents the culture whose formatting rules are to be used.  
+  
+-   A <xref:System.Globalization.NumberFormatInfo> object that contains specific numeric formatting information for this value.  
+  
+-   A custom object that implements <xref:System.IFormatProvider> and whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides formatting information.  
+  
+ If `provider` is `null` or a <xref:System.Globalization.NumberFormatInfo> object cannot be obtained from `provider`, the return value for this instance is formatted with the <xref:System.Globalization.NumberFormatInfo> for the current culture.  
+  
+ The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
+  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following example displays a positive and a negative value using each of the supported standard numeric format specifiers for three different cultures.  
+  
+ [!code-csharp[System.Int64.ToString#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Int64.ToString/cs/ToString.cs#4)]
+ [!code-vb[System.Int64.ToString#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Int64.ToString/vb/ToString.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="format" /> is invalid or not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, out long result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, int64 result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.TryParse(System.String,System.Int64@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="result" Type="System.Int64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert.</param>
+        <param name="result">When this method returns, contains the 64-bit signed integer value equivalent of the number contained in <c>s</c>, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not of the correct format, or represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />. This parameter is passed uninitialized; any value originally supplied in <c>result</c> will be overwritten.</param>
+        <summary>Converts the string representation of a number to its 64-bit signed integer equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Int64.TryParse%2A> method is like the <xref:System.Int64.Parse%2A> method, except the <xref:System.Int64.TryParse%2A> method does not throw an exception if the conversion fails. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be successfully parsed.  
+  
+ The `s` parameter contains a number of the form:  
+  
+ [ws][sign]digits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|An optional white space.|  
+|*sign*|An optional sign.|  
+|*digits*|A sequence of digits ranging from 0 to 9.|  
+  
+ The `s` parameter is interpreted using the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style. In addition to the decimal digits, only leading and trailing spaces together with a leading sign are allowed. To explicitly define the style elements together with the culture-specific formatting information that can be present in `s`, use the <xref:System.Int64.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Int64%40%29> method.  
+  
+ The `s` parameter is parsed using the formatting information in a <xref:System.Globalization.NumberFormatInfo> object initialized for the current system culture. For more information, see <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>.  
+  
+ This overload of the <xref:System.Int64.TryParse%2A> method interprets all digits in the `s` parameter as decimal digits. To parse the string representation of a hexadecimal number, call the <xref:System.Int64.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Int64%40%29> overload.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Int64.TryParse%28System.String%2CSystem.Int64%40%29?displayProperty=fullName> method with a number of different string values.  
+  
+ [!code-csharp[System.Int64.TryParse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Int64.TryParse/cs/TryParse1.cs#1)]
+ [!code-vb[System.Int64.TryParse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Int64.TryParse/vb/TryParse1.vb#1)]  
+  
+ Some of the strings that the <xref:System.Int64.TryParse%28System.String%2CSystem.Int64%40%29> method is unable to convert in this example are:  
+  
+-   "9432.0". The conversion fails because the string cannot contain a decimal separator; it must contain integral digits only.  
+  
+-   "16,667". The conversion fails because the string cannot contain group separators; it must contain integral digits only.  
+  
+-   "(100)". The conversion fails because the string cannot contain a negative sign other than the one defined by the current culture's <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A?displayProperty=fullName> and <xref:System.Globalization.NumberFormatInfo.NumberNegativePattern%2A?displayProperty=fullName> properties.  
+  
+-   "01FA". The conversion fails because the string cannot contain hexadecimal digits; it must contain decimal digits only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, System.Globalization.NumberStyles style, IFormatProvider provider, out long result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider, int64 result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Int64.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int64@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="style" Type="System.Globalization.NumberStyles" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+        <Parameter Name="result" Type="System.Int64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string containing a number to convert. The string is interpreted using the style specified by <c>style</c>.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the style elements that can be present in <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.NumberStyles.Integer" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
+        <param name="result">When this method returns, contains the 64-bit signed integer value equivalent of the number contained in <c>s</c>, if the conversion succeeded, or zero if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" /> or <see cref="F:System.String.Empty" />, is not in a format compliant with <c>style</c>, or represents a number less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />. This parameter is passed uninitialized; any value originally supplied in <c>result</c> will be overwritten.</param>
+        <summary>Converts the string representation of a number in a specified style and culture-specific format to its 64-bit signed integer equivalent. A return value indicates whether the conversion succeeded or failed.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Int64.TryParse%2A> method is like the <xref:System.Int64.Parse%2A> method, except the <xref:System.Int64.TryParse%2A> method does not throw an exception if the conversion fails. It eliminates the need to use exception handling to test for a <xref:System.FormatException> in the event that `s` is invalid and cannot be parsed successfully.  
+  
+ The `style` parameter defines the style elements (such as white space or a positive or negative sign) that are allowed in the `s` parameter for the parse operation to succeed. It must be a combination of bit flags from the <xref:System.Globalization.NumberStyles> enumeration. Depending on the value of `style`,the `s` parameter may include the following elements:  
+  
+ [ws][$][sign][digits,]digits[.fractional_digits][e[sign]exponential_digits][ws]  
+  
+ Or, if the `style` parameter includes <xref:System.Globalization.NumberStyles?displayProperty=fullName>:  
+  
+ [ws]hexdigits[ws]  
+  
+ Elements in square brackets ([ and ]) are optional. The following table describes each element.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|*ws*|Optional white space. White space can appear at the beginning of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag, or at the end of `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*$*|A culture-specific currency symbol. Its position in the string is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.IFormatProvider.GetFormat%2A> method of the `provider` parameter. The currency symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*sign*|An optional sign. A sign symbol can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> or <xref:System.Globalization.NumberStyles?displayProperty=fullName> flags.|  
+|*digits*<br /><br /> *fractional_digits*<br /><br /> *exponential_digits*|A sequence of digits from 0 through 9. For *fractional_digits*, only the digit 0 is valid.|  
+|*,*|A culture-specific thousands separator. The thousands separator of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*.*|A culture-specific decimal point symbol. The decimal point symbol of the culture specified by `provider` can appear in `s` if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*e*|The 'e' or 'E' character, which indicates that the value is represented in exponential notation. The `s` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag.|  
+|*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
+  
+ A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be but are not required to be present in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `s`.  
+  
+|Non-composite NumberStyles values|Elements permitted in s in addition to digits|  
+|----------------------------------------|---------------------------------------------------|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The decimal point ( *.* ) and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits or the method returns `false`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The `s` parameter can also use exponential notation. The `s` parameter must represent an integer within the range of the <xref:System.Int64> data type without a non-zero fractional component.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A sign can appear before *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|A sign can appear after *digits*.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The thousands separator ( *,* ) element.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *$* element.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|All elements. The `s` parameter cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws* element at the beginning or end of `s`, *sign* at the beginning of `s`, and the decimal point ( *.* ) symbol. The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|The *ws*, *sign*, thousands separator (*,*), and decimal point (*.*) elements.|  
+|<xref:System.Globalization.NumberStyles?displayProperty=fullName>|All styles, except `s` cannot represent a hexadecimal number.|  
+  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value without a prefix. For example, "C9AF3" parses successfully, but "0xC9AF3" does not. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white space flags.)  
+  
+ The `provider` parameter is an <xref:System.IFormatProvider> implementation, such as a <xref:System.Globalization.CultureInfo> object or a <xref:System.Globalization.NumberFormatInfo> object, whose <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object. The <xref:System.Globalization.NumberFormatInfo> object provides culture-specific information about the format of `s`. If `provider` is `null`, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Int64.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Int64%40%29> method with a number of different string and <xref:System.Globalization.NumberStyles> values.  
+  
+ [!code-csharp[System.Int64.TryParse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Int64.TryParse/cs/TryParse2.cs#2)]
+ [!code-vb[System.Int64.TryParse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Int64.TryParse/vb/TryParse2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="style" /> is not a <see cref="T:System.Globalization.NumberStyles" /> value.  
+  
+ -or-  
+  
+ <paramref name="style" /> is not a combination of <see cref="F:System.Globalization.NumberStyles.AllowHexSpecifier" /> and <see cref="F:System.Globalization.NumberStyles.HexNumber" /> values.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

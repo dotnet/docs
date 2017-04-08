@@ -1,0 +1,28 @@
+<Type Name="BuildMethod" FullName="System.Web.UI.BuildMethod">
+  <TypeSignature Language="C#" Value="public delegate System.Web.UI.Control BuildMethod();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildMethod extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.BuildMethod" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Web.UI.Control</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Represents the method that is used to build a control.</summary>
+    <returns>The built control.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.BuildMethod> delegate passes the information that is required to build ASP.NET server controls. The information is defined by the <xref:System.Web.UI.TemplateControl> class or a class that is derived from the <xref:System.Web.UI.TemplateControl> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

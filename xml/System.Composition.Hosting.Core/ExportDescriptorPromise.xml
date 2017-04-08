@@ -1,0 +1,155 @@
+<Type Name="ExportDescriptorPromise" FullName="System.Composition.Hosting.Core.ExportDescriptorPromise">
+  <TypeSignature Language="C#" Value="public class ExportDescriptorPromise" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportDescriptorPromise extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptorPromise" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Hosting</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExportDescriptorPromise (System.Composition.Hosting.Core.CompositionContract contract, string origin, bool isShared, Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt; dependencies, Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;,System.Composition.Hosting.Core.ExportDescriptor&gt; getDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Composition.Hosting.Core.CompositionContract contract, string origin, bool isShared, class System.Func`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt;&gt; dependencies, class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt;, class System.Composition.Hosting.Core.ExportDescriptor&gt; getDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorPromise.#ctor(System.Composition.Hosting.Core.CompositionContract,System.String,System.Boolean,System.Func{System.Collections.Generic.IEnumerable{System.Composition.Hosting.Core.CompositionDependency}},System.Func{System.Collections.Generic.IEnumerable{System.Composition.Hosting.Core.CompositionDependency},System.Composition.Hosting.Core.ExportDescriptor})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="origin" Type="System.String" />
+        <Parameter Name="isShared" Type="System.Boolean" />
+        <Parameter Name="dependencies" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt;" />
+        <Parameter Name="getDescriptor" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;,System.Composition.Hosting.Core.ExportDescriptor&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <param name="origin">To be added.</param>
+        <param name="isShared">To be added.</param>
+        <param name="dependencies">To be added.</param>
+        <param name="getDescriptor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.CompositionContract Contract { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Composition.Hosting.Core.CompositionContract Contract" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.Contract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.CompositionContract</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dependencies">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Composition.Hosting.Core.CompositionDependency&gt; Dependencies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt; Dependencies" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.Dependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Composition.Hosting.Core.CompositionDependency&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptor">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.ExportDescriptor GetDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.Core.ExportDescriptor GetDescriptor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorPromise.GetDescriptor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.ExportDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShared">
+      <MemberSignature Language="C#" Value="public bool IsShared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsShared" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.IsShared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Origin">
+      <MemberSignature Language="C#" Value="public string Origin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Origin" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.Origin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorPromise.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

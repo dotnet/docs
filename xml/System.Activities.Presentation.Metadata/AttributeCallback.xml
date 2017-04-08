@@ -1,0 +1,37 @@
+<Type Name="AttributeCallback" FullName="System.Activities.Presentation.Metadata.AttributeCallback">
+  <TypeSignature Language="C#" Value="public delegate void AttributeCallback(AttributeCallbackBuilder builder);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AttributeCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="builder" Type="System.Activities.Presentation.Metadata.AttributeCallbackBuilder" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="builder">An <see cref="T:System.Activities.Presentation.Metadata.AttributeCallbackBuilder" /> that can be used to add attributes.</param>
+    <summary>Called when attributes are needed for a type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This callback enables delayed registration of metadata attributes as well as the ability to provide code that dynamically determines which attributes should be applied. This callback is provided to the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> method of the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> class.  
+  
+ <xref:System.Activities.Presentation.Metadata.AttributeCallbackBuilder> objects can build attributes only for the type that is requesting metadata.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_AttributeCallback#0](WFD_AttributeCallback#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

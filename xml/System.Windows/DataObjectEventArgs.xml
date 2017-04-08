@@ -1,0 +1,98 @@
+<Type Name="DataObjectEventArgs" FullName="System.Windows.DataObjectEventArgs">
+  <TypeSignature Language="C#" Value="public abstract class DataObjectEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataObjectEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an abstract base class for events associated with the <see cref="T:System.Windows.DataObject" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CancelCommand">
+      <MemberSignature Language="C#" Value="public void CancelCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectEventArgs.CancelCommand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the associated command or operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the <xref:System.Windows.DataObjectEventArgs.CommandCancelled%2A> property to `true`. After an event has been canceled, it cannot be reactivated.  
+  
+ If this method is called on a drag-and-drop operation (as indicated by the <xref:System.Windows.DataObjectEventArgs.IsDragDrop%2A> property), the entire drag-and-drop operation is canceled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandCancelled">
+      <MemberSignature Language="C#" Value="public bool CommandCancelled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CommandCancelled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectEventArgs.CommandCancelled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the associated command or operation has been canceled.</summary>
+        <value>
+          <see langword="true" /> if the command has been canceled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A> method to set this property to `true` and cancel the associated command or operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDragDrop">
+      <MemberSignature Language="C#" Value="public bool IsDragDrop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDragDrop" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectEventArgs.IsDragDrop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the associated event is part of a drag-and-drop operation.</summary>
+        <value>
+          <see langword="true" /> if the associated event is part of a drag-and-drop operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `true`, the <xref:System.Windows.DataObject.Copying> event is raised when dragging is initiated and the <xref:System.Windows.DataObject.Pasting> event is raised when the selection is dropped.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

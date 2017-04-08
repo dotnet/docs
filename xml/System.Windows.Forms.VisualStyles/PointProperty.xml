@@ -1,0 +1,153 @@
+<Type Name="PointProperty" FullName="System.Windows.Forms.VisualStyles.PointProperty">
+  <TypeSignature Language="C#" Value="public enum PointProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PointProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.PointProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the point properties of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.PointProperty> enumeration represents a set of point properties that describe visual style elements. The <xref:System.Windows.Forms.VisualStyles.PointProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetPoint%2A?displayProperty=fullName> method to specify which property value to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MinSize">
+      <MemberSignature Language="C#" Value="MinSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty MinSize = int32(3403)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.MinSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The smallest bounds that the image specified by the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile" /> value was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSize1">
+      <MemberSignature Language="C#" Value="MinSize1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty MinSize1 = int32(3404)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.MinSize1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The smallest bounds that the image specified by the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile1" /> value was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSize2">
+      <MemberSignature Language="C#" Value="MinSize2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty MinSize2 = int32(3405)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.MinSize2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The smallest bounds that the image specified by the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile2" /> value was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSize3">
+      <MemberSignature Language="C#" Value="MinSize3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty MinSize3 = int32(3406)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.MinSize3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The smallest bounds that the image specified by the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile3" /> value was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSize4">
+      <MemberSignature Language="C#" Value="MinSize4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty MinSize4 = int32(3407)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.MinSize4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The smallest bounds that the image specified by the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile4" /> value was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSize5">
+      <MemberSignature Language="C#" Value="MinSize5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty MinSize5 = int32(3408)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.MinSize5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The smallest bounds that the image specified by the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile5" /> value was designed for.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="Offset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty Offset = int32(3401)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.Offset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The offset for window element layouts.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextShadowOffset">
+      <MemberSignature Language="C#" Value="TextShadowOffset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PointProperty TextShadowOffset = int32(3402)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PointProperty.TextShadowOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.PointProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The location of character shadows, relative to origin characters.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

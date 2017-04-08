@@ -1,0 +1,2786 @@
+<Type Name="EditingCommands" FullName="System.Windows.Documents.EditingCommands">
+  <TypeSignature Language="C#" Value="public static class EditingCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EditingCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.EditingCommands" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a standard set of editing related commands.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the editing commands and the associated default key gestures (with key names from the <xref:System.Windows.Input.Key> and <xref:System.Windows.Input.ModifierKeys> enumerations).  
+  
+|Editing command|Default key gesture|  
+|---------------------|-------------------------|  
+|<xref:System.Windows.Documents.EditingCommands.AlignCenter%2A>|`Ctrl`+`E`|  
+|<xref:System.Windows.Documents.EditingCommands.AlignJustify%2A>|`Ctrl`+`J`|  
+|<xref:System.Windows.Documents.EditingCommands.AlignLeft%2A>|`Ctrl`+`L`|  
+|<xref:System.Windows.Documents.EditingCommands.AlignRight%2A>|`Ctrl`+`R`|  
+|<xref:System.Windows.Documents.EditingCommands.Backspace%2A>|`Backspace`|  
+|<xref:System.Windows.Documents.EditingCommands.CorrectSpellingError%2A>|no default key gesture|  
+|<xref:System.Windows.Documents.EditingCommands.DecreaseFontSize%2A>|`Ctrl`+`OemOpenBrackets`|  
+|<xref:System.Windows.Documents.EditingCommands.DecreaseIndentation%2A>|`Ctrl`+`Shift`+`T`|  
+|<xref:System.Windows.Documents.EditingCommands.Delete%2A>|`Delete`|  
+|<xref:System.Windows.Documents.EditingCommands.DeleteNextWord%2A>|`Ctrl`+`Delete`|  
+|<xref:System.Windows.Documents.EditingCommands.DeletePreviousWord%2A>|`Ctrl`+`Backspace`|  
+|<xref:System.Windows.Documents.EditingCommands.EnterLineBreak%2A>|`Shift`+`Enter`|  
+|<xref:System.Windows.Documents.EditingCommands.EnterParagraphBreak%2A>|`Enter`|  
+|<xref:System.Windows.Documents.EditingCommands.IgnoreSpellingError%2A>|no default key gesture|  
+|<xref:System.Windows.Documents.EditingCommands.IncreaseFontSize%2A>|`Ctrl`+`OemCloseBrackets`|  
+|<xref:System.Windows.Documents.EditingCommands.IncreaseIndentation%2A>|`Ctrl`+`T`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveDownByLine%2A>|`Down`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveDownByPage%2A>|`PageDown`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveDownByParagraph%2A>|`Ctrl`+`Down`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveLeftByCharacter%2A>|`Left`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveLeftByWord%2A>|`Ctrl`+`Left`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveRightByCharacter%2A>|`Right`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveRightByWord%2A>|`Ctrl`+`Right`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveToDocumentEnd%2A>|`Ctrl`+`End`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveToDocumentStart%2A>|`Ctrl`+`Home`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveToLineEnd%2A>|`End`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveToLineStart%2A>|`Home`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveUpByLine%2A>|`Up`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveUpByPage%2A>|`PageUp`|  
+|<xref:System.Windows.Documents.EditingCommands.MoveUpByParagraph%2A>|`Ctrl`+`Up`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectDownByLine%2A>|`Shift`+`Down`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectDownByPage%2A>|`Shift`+`PageDown`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectDownByParagraph%2A>|`Ctrl`+`Shift`+`Down`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectLeftByCharacter%2A>|`Shift`+`Left`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectLeftByWord%2A>|`Ctrl`+`Shift`+`Left`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectRightByCharacter%2A>|`Shift`+`Right`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectRightByWord%2A>|`Ctrl`+`Shift`+`Right`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectToDocumentEnd%2A>|`Ctrl`+`Shift`+`End`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectToDocumentStart%2A>|`Ctrl`+`Shift`+`Home`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectToLineEnd%2A>|`Shift`+`End`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectToLineStart%2A>|`Shift`+`Home`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectUpByLine%2A>|`Shift`+`Up`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectUpByPage%2A>|`Shift`+`PageUp`|  
+|<xref:System.Windows.Documents.EditingCommands.SelectUpByParagraph%2A>|`Ctrl`+`Shift`+`Up`|  
+|<xref:System.Windows.Documents.EditingCommands.TabBackward%2A>|`Shift`+`Tab`|  
+|<xref:System.Windows.Documents.EditingCommands.TabForward%2A>|`Tab`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleBold%2A>|`Ctrl`+`B`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleBullets%2A>|`Ctrl`+`Shift`+`L`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleInsert%2A>|`Insert`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleItalic%2A>|`Ctrl`+`I`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleNumbering%2A>|`Ctrl`+`Shift`+`N`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleSubscript%2A>|`Ctrl`+`OemPlus`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleSuperscript%2A>|`Ctrl`+`Shift+OemPlus`|  
+|<xref:System.Windows.Documents.EditingCommands.ToggleUnderline%2A>|`Ctrl`+`U`|  
+  
+ Caret movement commands and selection expanding commands share a common set of default key gestures, the general difference being the addition of the <xref:System.Windows.Input.ModifierKeys> key to differentiate selection commands from caret movement commands.  For example, the <xref:System.Windows.Documents.EditingCommands.MoveLeftByCharacter%2A> command has a default key gesture of <xref:System.Windows.Input.Key>, and the corresponding <xref:System.Windows.Documents.EditingCommands.SelectLeftByCharacter%2A> command has a default key gesture of <xref:System.Windows.Input.ModifierKeys>+<xref:System.Windows.Input.Key>.  
+  
+ In general, the command definitions provided by the <xref:System.Windows.Documents.EditingCommands> class do not make use of command parameters (the `parameter` parameter expected by the <xref:System.Windows.Input.ICommand.Execute%2A> method).  
+  
+ For more information on commands and commanding, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlignCenter">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand AlignCenter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand AlignCenter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignCenter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.AlignCenter" /> command, which requests that the current paragraph or a selection of paragraphs be centered.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="E" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command operates at the <xref:System.Windows.Documents.Paragraph> level.  If this command is invoked on a partial selection of content within a paragraph (including an empty selection where the caret is within a paragraph), the requested effect is applied to the entire paragraph.  If this command is invoked on a selection that spans multiple paragraphs, the effect is applied to the entire contents of each paragraph that participates in the selection.  
+  
+ The following figure shows an example of centered content.  
+  
+ ![Screenshot: TextAlign property value of Center](~/add/media/flowdoc-textalign-center.png "Screenshot: TextAlign property value of Center")  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_AlignCenter"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="AlignCenter"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignJustify">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand AlignJustify { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand AlignJustify" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignJustify" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.AlignJustify" /> command, which requests that the current paragraph or a selection of paragraphs be justified.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="J" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command operates at the <xref:System.Windows.Documents.Paragraph> level.  If this command is invoked on a partial selection of content within a paragraph (including an empty selection where the caret is within a paragraph), the requested effect is applied to the entire paragraph.  If this command is invoked on a selection that spans multiple paragraphs, the effect is applied to all the paragraphs in the selection.  
+  
+ When content is justified, the horizontal spacing within each line of content is adjusted so that the justified lines are of equal or near-equal width.  Content is typically justified to create smooth edges on the sides of the content.  
+  
+ Because it is often shorter than the rest, the last line in a paragraph may remain unjustified after this command is invoked.  
+  
+ The following figure shows unjustified (left-aligned) content.  
+  
+ ![Screenshot: Content is unjustified](~/add/media/content-unjustified.png "Screenshot: Content is unjustified")  
+  
+ The following figure shows the same content after it has been justified.  
+  
+ ![Screenshot of content justified text](~/add/media/content-justified.png "Screenshot of content justified text")  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_AlignJustify"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="AlignJustify"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignLeft">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand AlignLeft { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand AlignLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.AlignLeft" /> command, which requests that a selection of content be aligned left.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="L" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command operates at the <xref:System.Windows.Documents.Paragraph> level.  If this command is invoked on a partial selection of content within a paragraph (including an empty selection where the caret is within a paragraph), the requested effect is applied to the entire paragraph.  If this command is invoked on a selection that spans multiple paragraphs, the effect is applied to the entire contents of each paragraph that participates in the selection.  
+  
+ The following figure shows an example of left-aligned content.  
+  
+ ![Screenshot: TextAlign property value of Left](~/add/media/flowdoc-textalign-left.png "Screenshot: TextAlign property value of Left")  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_AlignLeft"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="AlignLeft"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlignRight">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand AlignRight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand AlignRight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.AlignRight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.AlignRight" /> command, which requests that a selection of content be aligned right.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="R" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command operates at the <xref:System.Windows.Documents.Paragraph> level.  If this command is invoked on a partial selection of content within a paragraph (including an empty selection where the caret is within a paragraph), the requested effect is applied to the entire paragraph.  If this command is invoked on a selection that spans multiple paragraphs, the effect is applied to the entire contents of each paragraph that participates in the selection.  
+  
+ The following figure shows an example of right-aligned content.  
+  
+ ![Screenshot: TextAlign value of Right](~/add/media/flowdoc-textalign-right.png "Screenshot: TextAlign value of Right")  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_AlignRight"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="AlignRight"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Backspace">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Backspace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Backspace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.Backspace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.Backspace" /> command, which requests that a backspace be entered at the current position or over the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Backspace" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When invoked on an empty selection, this command deletes the character or paragraph separator just before the caret. When invoked on a non-empty selection, this command deletes the selection.  
+  
+ This command retains any formatting from the deleted selection for content immediately inserted at the same location after this command is invoked.  Contrast with the <xref:System.Windows.Documents.EditingCommands.Delete%2A> command, which does not retain previous formatting.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_Backspace"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Backspace"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrectSpellingError">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand CorrectSpellingError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand CorrectSpellingError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.CorrectSpellingError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.CorrectSpellingError" /> command, which requests that any misspelled word at the current position be corrected.</summary>
+        <value>The requested command.  This command has no default key gesture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_CorrectSpellingError"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="CorrectSpellingError"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseFontSize">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseFontSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DecreaseFontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.DecreaseFontSize" /> command, which requests that the font size for the current selection be decreased by 1 point.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="OemOpenBrackets" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this command is invoked on an empty selection where the caret is within a word, the selection is automatically expanded to apply the command to the entire word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_DecreaseFontSize"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DecreaseFontSize"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseIndentation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseIndentation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseIndentation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DecreaseIndentation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.DecreaseIndentation" /> command, which requests that indentation for the current paragraph be decreased by one tab stop.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="T" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+> [!IMPORTANT]
+>  This command has no effect on a text element unless the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTab%2A> property of the text element is set to `true`.  
+  
+<a name="xamlAttributeUsage_DecreaseIndentation"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DecreaseIndentation"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Delete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Delete" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.Delete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.Delete" /> command, which requests that the current selection be deleted.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Delete" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command discards any formatting from the deleted selection.  Contrast with the <xref:System.Windows.Documents.EditingCommands.Backspace%2A> command, which retains any formatting from the deleted selection for content immediately inserted at the same location after this command is invoked.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_Delete"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Delete"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteNextWord">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DeleteNextWord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DeleteNextWord" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DeleteNextWord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.DeleteNextWord" /> command, which requests that the next word (relative to a current position) be deleted.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Delete" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is within a word, the remainder of the word between the current position and the end of the word is deleted.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_DeleteNextWord"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DeleteNextWord"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletePreviousWord">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DeletePreviousWord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DeletePreviousWord" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.DeletePreviousWord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.DeletePreviousWord" /> command, which requests that the previous word (relative to a current position) be deleted.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Backspace" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is within a word, the remainder of the word between the current position and the beginning of the word is deleted.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_DeletePreviousWord"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DeletePreviousWord"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLineBreak">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand EnterLineBreak { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand EnterLineBreak" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.EnterLineBreak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.EnterLineBreak" /> command, which requests that a line break be inserted at the current position or over the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Enter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For editors that support flow content, such as <xref:System.Windows.Controls.RichTextBox>, this command causes a <xref:System.Windows.Documents.LineBreak> element to be inserted at the current position.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_EnterLineBreak"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="EnterLineBreak"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterParagraphBreak">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand EnterParagraphBreak { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand EnterParagraphBreak" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.EnterParagraphBreak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.EnterParagraphBreak" /> command, which requests that a paragraph break be inserted at the current position or over the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Enter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command is equivalent to the user pressing the ENTER key.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox> (when the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn%2A> property is `true`).  
+  
+> [!IMPORTANT]
+>  This command has no effect on a text element unless the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn%2A> property of the text element is set to `true`.  
+  
+<a name="xamlAttributeUsage_EnterParagraphBreak"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="EnterParagraphBreak"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreSpellingError">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IgnoreSpellingError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IgnoreSpellingError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.IgnoreSpellingError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.IgnoreSpellingError" /> command, which requests that any instances of misspelled words at the current position or in the current selection be ignored.</summary>
+        <value>The requested command.  This command has no default key gesture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_IgnoreSpellingError"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IgnoreSpellingError"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseFontSize">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseFontSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.IncreaseFontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.IncreaseFontSize" /> command, which requests that the font size for the current selection be increased by 1 point.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="OemCloseBrackets" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this command is invoked on an empty selection where the caret is within a word, the selection is expanded to apply the command to the entire word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_IncreaseFontSize"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IncreaseFontSize"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseIndentation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseIndentation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseIndentation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.IncreaseIndentation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.IncreaseIndentation" /> command, which requests that indentation for the current paragraph be increased by one tab stop.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="T" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+> [!IMPORTANT]
+>  This command has no effect on a text element unless the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTab%2A> property of the text element is set to `true`.  
+  
+<a name="xamlAttributeUsage_IncreaseIndentation"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IncreaseIndentation"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDownByLine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveDownByLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveDownByLine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveDownByLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveDownByLine" /> command, which requests that the caret move down by one line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Down" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_MoveDownByLine"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveDownByLine"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDownByPage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveDownByPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveDownByPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveDownByPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveDownByPage" /> command, which requests that the caret move down by one page.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="PageDown" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_MoveDownByPage"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveDownByPage"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDownByParagraph">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveDownByParagraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveDownByParagraph" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveDownByParagraph" /> command, which requests that the caret move down by one paragraph.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Down" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command positions the caret at the beginning of the next paragraph.  
+  
+ This command behaves like <xref:System.Windows.Documents.EditingCommands.MoveToDocumentEnd%2A> when invoked on a <xref:System.Windows.Controls.TextBox>.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_MoveDownByParagraph"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveDownByParagraph"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveLeftByCharacter">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveLeftByCharacter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveLeftByCharacter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveLeftByCharacter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveLeftByCharacter" /> command, which requests that the caret move one character left.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveLeftByCharacter"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveLeftByCharacter"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveLeftByWord">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveLeftByWord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveLeftByWord" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveLeftByWord" /> command, which requests that the caret move one word left.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is within a word, this command moves the caret to the beginning of that word.  Otherwise, this command moves the caret to the beginning of the previous word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveLeftByWord"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveLeftByWord"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveRightByCharacter">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveRightByCharacter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveRightByCharacter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveRightByCharacter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveRightByCharacter" /> command, which requests that the caret move one character right.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Right" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveRightByCharacter"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveRightByCharacter"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveRightByWord">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveRightByWord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveRightByWord" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveRightByWord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveRightByWord" /> command, which requests that the caret move right by one word.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Right" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is within a word, this command moves the caret to the end of that word.  Otherwise, this command moves the caret to the beginning of the next word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveRightByWord"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveRightByWord"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToDocumentEnd">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveToDocumentEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveToDocumentEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToDocumentEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveToDocumentEnd" /> command, which requests that the caret move to the very end of content.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="End" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A *text container* is the element that forms the ultimate border for the content at hand.  <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> are examples of text containers.  The content collectively contained within a text container is referred to as a *document*.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveToDocumentEnd"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveToDocumentEnd"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToDocumentStart">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveToDocumentStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveToDocumentStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToDocumentStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveToDocumentStart" /> command, which requests that the caret move to the very beginning of content.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Home" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A *text container* is the element that forms the ultimate border for the content at hand.  <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> are examples of text containers.  The content collectively contained within a text container is referred to as a *document*.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveToDocumentStart"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveToDocumentStart"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToLineEnd">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveToLineEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveToLineEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToLineEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveToLineEnd" /> command, which requests that the caret move to the end of the current line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="End" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveToLineEnd"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveToLineEnd"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveToLineStart">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveToLineStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveToLineStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveToLineStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveToLineStart" /> command, which requests that the caret move to the beginning of the current line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Home" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_MoveToLineStart"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveToLineStart"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveUpByLine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveUpByLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveUpByLine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveUpByLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveUpByLine" /> command, which requests that the caret move up by one line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Up" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_MoveUpByLine"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveUpByLine"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveUpByPage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveUpByPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveUpByPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveUpByPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveUpByPage" /> command, which requests that the caret move up by one page.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="PageUp" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_MoveUpByPage"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveUpByPage"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveUpByParagraph">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MoveUpByParagraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MoveUpByParagraph" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.MoveUpByParagraph" /> command, which requests that the caret move up by one paragraph.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Up" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command positions the caret at the beginning of the next paragraph.  
+  
+ This command behaves like <xref:System.Windows.Documents.EditingCommands.MoveToDocumentStart%2A> when invoked on a <xref:System.Windows.Controls.TextBox>.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox>.  
+  
+<a name="xamlAttributeUsage_MoveUpByParagraph"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MoveUpByParagraph"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectDownByLine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectDownByLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectDownByLine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectDownByLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectDownByLine" /> command, which requests that the current selection be expanded down by one line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Down" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectDownByLine"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectDownByLine"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectDownByPage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectDownByPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectDownByPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectDownByPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectDownByPage" /> command, which requests that the current selection be expanded down by one page.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="PageDown" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectDownByPage"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectDownByPage"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectDownByParagraph">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectDownByParagraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectDownByParagraph" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectDownByParagraph" /> command, which requests that the current selection be expanded down by one paragraph.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="Down" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command expands the selection to the beginning of the next paragraph.  Otherwise, this command expands the selection to the end of the current paragraph.  The expanded selection includes the paragraph break that marks the end of the paragraph.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectDownByParagraph"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectDownByParagraph"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectLeftByCharacter">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectLeftByCharacter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectLeftByCharacter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectLeftByCharacter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectLeftByCharacter" /> command, which requests that the current selection be expanded left by one character.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectLeftByCharacter"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectLeftByCharacter"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectLeftByWord">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectLeftByWord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectLeftByWord" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectLeftByWord" /> command, which requests that the current selection be expanded left by one word.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is within a word, this command expands the selection to the beginning of that word.  Otherwise, this command expands the selection to the beginning of the previous word.  
+  
+ The expanded selection does not include the word delimiter.  Contrast with <xref:System.Windows.Documents.EditingCommands.SelectRightByWord%2A>, which does include the word delimiter in the expanded selection.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectLeftByWord"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectLeftByWord"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectRightByCharacter">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectRightByCharacter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectRightByCharacter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectRightByCharacter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectRightByCharacter" /> command, which requests that the current selection be expanded right by one character.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Right" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectRightByCharacter"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectRightByCharacter"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectRightByWord">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectRightByWord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectRightByWord" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectRightByWord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectRightByWord" /> command, which requests that the current selection be expanded right by one word.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="Right" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is within a word, this command expands the selection to the end of that word.  Otherwise, this command expands the selection to the end of the next word.  
+  
+ The expanded selection includes the word delimiter.  Contrast with <xref:System.Windows.Documents.EditingCommands.SelectLeftByWord%2A> which does not include the word delimiter in the expanded selection.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectRightByWord"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectRightByWord"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectToDocumentEnd">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectToDocumentEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectToDocumentEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToDocumentEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentEnd" /> command, which requests that the current selection be expanded to the very end of content.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="End" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A *text container* is the element that forms the ultimate border for the content at hand.  <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> are examples of text containers.  The content collectively contained within a text container is referred to as a *document*.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectToDocumentEnd"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectToDocumentEnd"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectToDocumentStart">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectToDocumentStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectToDocumentStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToDocumentStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectToDocumentStart" /> command, which requests that the current selection be expanded to the very beginning of content.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="Home" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A *text container* is the element that forms the ultimate border for the content at hand.  <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> are examples of text containers.  The content collectively contained within a text container is referred to as a *document*.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectToDocumentStart"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectToDocumentStart"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectToLineEnd">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectToLineEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectToLineEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToLineEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectToLineEnd" /> command, which requests that the current selection be expanded to the end of the current line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="End" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectToLineEnd"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectToLineEnd"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectToLineStart">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectToLineStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectToLineStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectToLineStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectToLineStart" /> command, which requests that the current selection be expanded to the beginning of the current line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Home" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectToLineStart"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectToLineStart"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectUpByLine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectUpByLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectUpByLine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectUpByLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectUpByLine" /> command, which requests that the current selection be expanded up by one line.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Up" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectUpByLine"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectUpByLine"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectUpByPage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectUpByPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectUpByPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectUpByPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectUpByPage" /> command, which requests that the current selection be expanded  up by one page.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="PageUp" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectUpByPage"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectUpByPage"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectUpByParagraph">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand SelectUpByParagraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand SelectUpByParagraph" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.SelectUpByParagraph" /> command, which requests that the current selection be expanded up by one paragraph.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="Up" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the caret is at the beginning of a paragraph, this command expands the selection to the beginning of the previous paragraph.  Otherwise, this command expands the selection to the beginning of the current paragraph.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_SelectUpByParagraph"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SelectUpByParagraph"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabBackward">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand TabBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand TabBackward" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.TabBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.TabBackward" /> command.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Shift" />+<see langword="Tab" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior for this command depends on the current selection. If the selection is non-empty, this command is equivalent to <xref:System.Windows.Documents.EditingCommands.DecreaseIndentation%2A>. If the caret is in a table cell (represented by the <xref:System.Windows.Documents.TableCell> element), this command moves the caret to the previous cell. Otherwise, a tab character is inserted in current position.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox> (when the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTab%2A> property is `true`).  
+  
+<a name="xamlAttributeUsage_TabBackward"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="TabBackward"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+```csharp  
+RichTextBox rTB = new RichTextBox();  
+  
+EditingCommands.ToggleInsert.Execute(null, rTB);  
+  
+```  
+  
+```vb  
+			Dim rTB As New RichTextBox()  
+  
+			EditingCommands.ToggleInsert.Execute(Nothing, rTB)  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabForward">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand TabForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand TabForward" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.TabForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.TabForward" /> command.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Tab" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior for this command depends on the current selection. If the selection is non-empty, or if the selection is empty and the current caret position is at the beginning of a  paragraph, this command is equivalent to <xref:System.Windows.Documents.EditingCommands.IncreaseIndentation%2A>. If the caret is in a table cell (represented by the <xref:System.Windows.Documents.TableCell> element), this command moves the caret to the next cell. If the caret is in the last cell of a table, this command causes a new row to be appended to the table, with the caret positioned in the first cell of the new row.  Otherwise, a tab character is inserted in current position.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox> (when the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTab%2A> property is `true`).  
+  
+<a name="xamlAttributeUsage_TabForward"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="TabForward"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+```csharp  
+RichTextBox rTB = new RichTextBox();  
+  
+EditingCommands.ToggleInsert.Execute(null, rTB);  
+  
+```  
+  
+```vb  
+			Dim rTB As New RichTextBox()  
+  
+			EditingCommands.ToggleInsert.Execute(Nothing, rTB)  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleBold">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleBold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleBold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleBold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleBold" /> command, which requests that <see cref="T:System.Windows.Documents.Bold" /> formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="B" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.FontWeight> for the current selection is in the range from <xref:System.Windows.FontWeights.Thin%2A> to <xref:System.Windows.FontWeights.SemiBold%2A>, <xref:System.Windows.FontWeights.Bold%2A> is applied to the current selection.  Otherwise, <xref:System.Windows.FontWeights.Normal%2A> is applied.  For a comparative list of <xref:System.Windows.FontWeight> values, see <xref:System.Windows.FontWeights>.  
+  
+ When the selection is empty and the caret is within a word, the selection is expanded to include the entire word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_ToggleBold"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleBold"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleBullets">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleBullets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleBullets" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleBullets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleBullets" /> command, which requests that unordered list (also referred to as bulleted list) formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="L" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command operates at the <xref:System.Windows.Documents.Paragraph> level.  If this command is invoked on a partial selection of content within a paragraph (including an empty selection where the caret is within a paragraph), the requested effect is applied to the entire paragraph.  If this command is invoked on a selection that spans multiple paragraphs, the effect is applied to the entire contents of each paragraph that participates in the selection.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_ToggleBullets"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleBullets"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleInsert">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleInsert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleInsert" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleInsert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleInsert" /> command, which toggles the typing mode between Insert and Overtype.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Insert" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>, <xref:System.Windows.Controls.TextBox>, and <xref:System.Windows.Controls.PasswordBox>.  
+  
+<a name="xamlAttributeUsage_ToggleInsert"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleInsert"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleItalic">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleItalic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleItalic" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleItalic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleItalic" /> command, which requests that <see cref="T:System.Windows.Documents.Italic" /> formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="I" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.FontStyle> for the current selection is <xref:System.Windows.FontStyles.Normal%2A>, <xref:System.Windows.FontStyles.Italic%2A> is applied to the current selection.  Otherwise, <xref:System.Windows.FontStyles.Normal%2A> is applied.  
+  
+ When the selection is empty and the caret is within a word, the selection is expanded to include the entire word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_ToggleItalic"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleItalic"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleNumbering">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleNumbering { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleNumbering" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleNumbering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleNumbering" /> command, which requests that ordered list (also referred to as numbered list) formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="N" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command operates at the <xref:System.Windows.Documents.Paragraph> level.  If this command is invoked on a partial selection of content within a paragraph (including an empty selection where the caret is within a paragraph), the requested effect is applied to the entire paragraph.  If this command is invoked on a selection that spans multiple paragraphs, the effect is applied to the entire contents of each paragraph that participates in the selection.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_ToggleNumbering"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleNumbering"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleSubscript">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleSubscript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleSubscript" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleSubscript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleSubscript" /> command, which requests that subscript formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="OemPlus" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_ToggleSubscript"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleSubscript"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleSuperscript">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleSuperscript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleSuperscript" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleSuperscript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleSuperscript" /> command, which requests that superscript formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="Shift" />+<see langword="OemPlus" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_ToggleSuperscript"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleSuperscript"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleUnderline">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleUnderline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleUnderline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.EditingCommands.ToggleUnderline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="P:System.Windows.Documents.EditingCommands.ToggleUnderline" /> command, which requests that <see cref="T:System.Windows.Documents.Underline" /> formatting be toggled on the current selection.</summary>
+        <value>The requested command.  The default key gesture for this command is <see langword="Ctrl" />+<see langword="U" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the selection is empty and the caret is within a word, the selection is expanded to include the entire word.  
+  
+ There is not necessarily an actual implementation that responds to this command on any given object; in many cases the implementation that responds to a command is the responsibility of the application writer.  
+  
+ This command is natively supported by <xref:System.Windows.Controls.RichTextBox>.  
+  
+<a name="xamlAttributeUsage_ToggleUnderline"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleUnderline"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to invoke an editing command on an object that supports the command.  
+  
+ For this example, a <xref:System.Windows.Controls.RichTextBox> serves as the command target.  Note that <xref:System.Windows.Controls.RichTextBox> implements the <xref:System.Windows.IInputElement> interface (inherited from <xref:System.Windows.FrameworkElement>), and that it includes native support for many editing commands.  
+  
+ The first argument for the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is a command parameter.  Most editing commands ignore the command parameter; in general, this parameter should be `null` for editing commands.  
+  
+ The second argument specifies the object to which the command will be routed.  This object must implement the <xref:System.Windows.IInputElement> interface, and should include a handler for the specified command.  Generally, a command is ignored when invoked on an object that does not handle the command.  
+  
+ [!code-csharp[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_editingcommands_invoke)]
+ [!code-vb[RichTextBoxSnippets#_EditingCommands_Invoke](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_editingcommands_invoke)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

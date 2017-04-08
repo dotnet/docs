@@ -1,0 +1,13 @@
+<Namespace Name="System.Net.Sockets">
+  <Docs>
+    <summary>The <see cref="N:System.Net.Sockets" /> namespace provides a managed implementation of the Windows Sockets (Winsock) interface for developers who need to tightly control access to the network.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.TcpClient>, <xref:System.Net.Sockets.TcpListener>, and <xref:System.Net.Sockets.UdpClient> classes encapsulate the details of creating TCP and UDP connections to the Internet.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

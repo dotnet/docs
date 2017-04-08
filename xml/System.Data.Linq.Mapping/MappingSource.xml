@@ -1,0 +1,85 @@
+<Type Name="MappingSource" FullName="System.Data.Linq.Mapping.MappingSource">
+  <TypeSignature Language="C#" Value="public abstract class MappingSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MappingSource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MappingSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a source for mapping information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Linq.Mapping.MappingSource> class is used to map CLR objects to entities in the underlying data source.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MappingSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.MappingSource" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateModel">
+      <MemberSignature Language="C#" Value="protected abstract System.Data.Linq.Mapping.MetaModel CreateModel (Type dataContextType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaModel CreateModel(class System.Type dataContextType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.CreateModel(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataContextType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="dataContextType">The type of <see cref="T:System.Data.Linq.DataContext" /> on which to base the mapping.</param>
+        <summary>Creates a new mapping model.</summary>
+        <returns>The meta-model created to match the current mapping scheme.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModel">
+      <MemberSignature Language="C#" Value="public System.Data.Linq.Mapping.MetaModel GetModel (Type dataContextType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Linq.Mapping.MetaModel GetModel(class System.Type dataContextType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.GetModel(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataContextType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="dataContextType">The type of <see cref="T:System.Data.Linq.DataContext" /> of the model to be returned.</param>
+        <summary>Returns the mapping model.</summary>
+        <returns>The mapping model associated with this mapping source.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

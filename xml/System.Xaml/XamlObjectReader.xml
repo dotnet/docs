@@ -1,0 +1,344 @@
+<Type Name="XamlObjectReader" FullName="System.Xaml.XamlObjectReader">
+  <TypeSignature Language="C#" Value="public class XamlObjectReader : System.Xaml.XamlReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlObjectReader extends System.Xaml.XamlReader" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlReader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Xaml.XamlReader" /> implementation that reads object graphs and generates a XAML node stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Xaml.XamlObjectReader> in scenarios where you want to process an object graph, which is typically the object graph of an application that is originally generated from a XAML source. You might use the <xref:System.Xaml.XamlObjectReader>where a round trip is made from a XAML start point to a XAML end point. Or you might run a <xref:System.Xaml.XamlObjectReader> over the object graph; process the intermediate XAML node stream, if it is required, by using APIs on <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>; and then use <xref:System.Xaml.XamlXmlWriter> to serialize XAML nodes to XML.  
+  
+ More advanced scenarios might supply a <xref:System.Xaml.XamlXmlWriter> override and a specific XAML schema context that the <xref:System.Xaml.XamlObjectReader> uses and then passes to the writer override.  
+  
+ Typical scenarios for using <xref:System.Xaml.XamlObjectReader> call the members that <xref:System.Xaml.XamlObjectReader> implements; they also call <xref:System.Xaml.XamlReader.Close%2A>, <xref:System.Xaml.XamlReader.ReadSubtree%2A>, and <xref:System.Xaml.XamlReader.Skip%2A> from the <xref:System.Xaml.XamlReader> base class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectReader (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReader.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The root of the object tree / object graph to read.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial settings of a default <xref:System.Xaml.XamlObjectReaderSettings>object and the initial context of a default <xref:System.Xaml.XamlSchemaContext>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectReader (object instance, System.Xaml.XamlObjectReaderSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance, class System.Xaml.XamlObjectReaderSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReader.#ctor(System.Object,System.Xaml.XamlObjectReaderSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="settings" Type="System.Xaml.XamlObjectReaderSettings" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The root of the object tree to read.</param>
+        <param name="settings">A settings object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class with the specified reader settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The settings object specifies rules for reader operations, such as line number processing, error handling behavior, and so on. For more information, see <xref:System.Xaml.XamlObjectReaderSettings>.  
+  
+ If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial context of a default <xref:System.Xaml.XamlSchemaContext>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectReader (object instance, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReader.#ctor(System.Object,System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The root of the object tree to read.</param>
+        <param name="schemaContext">The schema context for the reader to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class with the specified schema context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If initialized with this constructor, the <xref:System.Xaml.XamlObjectReader> object has the initial settings of a default <xref:System.Xaml.XamlObjectReaderSettings> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectReader (object instance, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.XamlObjectReaderSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlObjectReaderSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReader.#ctor(System.Object,System.Xaml.XamlSchemaContext,System.Xaml.XamlObjectReaderSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+        <Parameter Name="settings" Type="System.Xaml.XamlObjectReaderSettings" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The root of the object tree to read.</param>
+        <param name="schemaContext">The schema context for the reader to use.</param>
+        <param name="settings">A settings object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReader" /> class with the specified schema context and reader settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The settings object specifies rules for reader operations, such as line number processing and error handling behavior. For more information, see <xref:System.Xaml.XamlObjectReaderSettings>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public virtual object Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Instance" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object instance that is available at the current reader position.</summary>
+        <value>The object instance at the current reader position; or <see langword="null" /> if the reader position is not on an object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEof">
+      <MemberSignature Language="C#" Value="public override bool IsEof { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEof" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.IsEof" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that reports whether the reader position is at the end of the file.</summary>
+        <value>
+          <see langword="true" /> if the reader position is at the end of the file; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlMember Member { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember Member" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.Xaml.XamlMember" /> at the reader position, if the reader position is on a <see cref="F:System.Xaml.XamlNodeType.StartMember" />.</summary>
+        <value>The current member; or <see langword="null" /> if the reader position is not on a member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public override System.Xaml.NamespaceDeclaration Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.NamespaceDeclaration Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XAML namespace declaration from the current reader position.</summary>
+        <value>The XAML namespace declaration if the reader is positioned on a <see cref="F:System.Xaml.XamlNodeType.NamespaceDeclaration" />; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType>. It does not infer a namespace that is based on the context of other node types, such as an object in that namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xaml.XamlNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.NodeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the current node.</summary>
+        <value>The type of the current node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using the <xref:System.Xaml.XamlObjectReader> APIs, you typically check the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property after every operation that potentially advances the reader position, such as the <xref:System.Xaml.XamlObjectReader.Read%2A>, <xref:System.Xaml.XamlReader.ReadSubtree%2A>, or <xref:System.Xaml.XamlReader.Skip%2A> methods. <xref:System.Xaml.XamlObjectReader.NodeType%2A> indicates the information that you can obtain from the current reader position and the methods that you call next. For example, you might access the <xref:System.Xaml.XamlObjectReader.Member%2A>, <xref:System.Xaml.XamlObjectReader.Type%2A>, <xref:System.Xaml.XamlObjectReader.Value%2A>, or <xref:System.Xaml.XamlObjectReader.Instance%2A> properties; or you might call the <xref:System.Xaml.XamlReader.Skip%2A> method if you are not interested in the contents of the current node type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override bool Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides the next XAML node from the source object graph, if a node is available.</summary>
+        <returns>
+          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After you call the <xref:System.Xaml.XamlObjectReader.Read%2A> method and obtain a `true` result, you typically access the node properties. Depending on the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property, you can access the <xref:System.Xaml.XamlObjectReader.Member%2A>, <xref:System.Xaml.XamlObjectReader.Type%2A>, <xref:System.Xaml.XamlObjectReader.Value%2A>, or <xref:System.Xaml.XamlObjectReader.Instance%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaContext">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlSchemaContext SchemaContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.SchemaContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that provides schema information for the information set.</summary>
+        <value>An object that provides schema information for the information set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The schema context is a conceptual intermediary between a schema in the conventional sense, and the handling of XAML schema concepts by particular XAML processors (parsing, reading, and writing operations).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the object at the current reader position.</summary>
+        <value>The <see cref="T:System.Xaml.XamlType" /> of the object at the current reader position; or <see langword="null" /> if the position is not on an object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns a non-null result only if the <xref:System.Xaml.XamlObjectReader.NodeType%2A> property of the current reader position is <xref:System.Xaml.XamlNodeType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReader.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the node at the current reader position.</summary>
+        <value>The value of the current node; or <see langword="null" />, if the reader position is not on a <see cref="F:System.Xaml.XamlNodeType.Value" /> node type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,321 @@
+<Type Name="IRequestChannel" FullName="System.ServiceModel.Channels.IRequestChannel">
+  <TypeSignature Language="C#" Value="public interface IRequestChannel : System.ServiceModel.Channels.IChannel" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRequestChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IRequestChannel" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the contract that a channel must implement to be on the requesting side of a request-reply communication between messaging endpoints.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.IRequestChannel> defines synchronous and asynchronous variants of a <xref:System.ServiceModel.ClientBase%601.ChannelBase%601.System%23ServiceModel%23Channels%23IRequestChannel%23Request%2A> method that returns a response message. It also provides a <xref:System.ServiceModel.Channels.IRequestChannel.RemoteAddress%2A> and <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> properties to retrieve the endpoint address and URI to which the request message is sent.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginRequest">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginRequest (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRequest(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IRequestChannel.BeginRequest(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="message">The request <see cref="T:System.ServiceModel.Channels.Message" /> to be transmitted.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the completion of the asynchronous operation transmitting a request message.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation transmitting a request message.</param>
+        <summary>Begins an asynchronous operation to transmit a request message to the reply side of a request-reply message exchange.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this method.  
+  
+ [!code-csharp[S_UE_HttpCookieSession#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRequest">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginRequest (System.ServiceModel.Channels.Message message, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRequest(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IRequestChannel.BeginRequest(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="message">The request <see cref="T:System.ServiceModel.Channels.Message" /> to be transmitted.</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time within which a response must be received. (For defaults, see the Remarks section.)</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the completion of the asynchronous operation transmitting a request message.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation transmitting a request message.</param>
+        <summary>Begins an asynchronous operation to transmit a request message to the reply side of a request-reply message exchange within a specified interval of time.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message transmission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> should be thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+  
+ If a `timeout` is passed while calling the function then that value is used. If the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A> is set on the binding, then the value on the binding is used if no `timeout` is specified while calling the function.  
+  
+ The <xref:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout%2A> is used if no timeout is specified on either the binding or while calling the function. This default value is 1 minute.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this method:  
+  
+ [!code-csharp[S_UE_HttpCookieSession#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The operation should throw a <see cref="T:System.TimeoutException" /> if the specified <paramref name="timeout" /> is exceeded before the operation is completed.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRequest">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndRequest (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndRequest(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IRequestChannel.EndRequest(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="Overload:System.ServiceModel.Channels.IInputChannel.BeginReceive" /> method.</param>
+        <summary>Completes an asynchronous operation to return a message-based response to a transmitted request.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received in response to the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this method.  
+  
+ [!code-csharp[S_UE_HttpCookieSession#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress RemoteAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress RemoteAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IRequestChannel.RemoteAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the remote address to which the request channel sends messages.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> to which the request channel sends messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.EndpointAddress> serves as both the ultimate destination and the physical address if a <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is not specified. If the <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is specified, then that is the actual physical address to which the message is sent and through which the message must go to arrive at its destination.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this property.  
+  
+ [!code-csharp[S_UE_HttpCookieSession#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Request (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Request(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IRequestChannel.Request(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The request <see cref="T:System.ServiceModel.Channels.Message" /> to be transmitted.</param>
+        <summary>Sends a message-based request and returns the correlated message-based response.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received in response to the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations of <xref:System.ServiceModel.Channels.IRequestChannel> ensure that the response message is correlated with the request message.  
+  
+ Generally, if an implementation of <xref:System.ServiceModel.Channels.IRequestChannel> receives a message that is not correlated to an outstanding request, it is dropped.  
+  
+ The <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A> method can be called concurrently across multiple threads.  
+  
+ Passing the message into the request channel causes the message to be accessed. After you call <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A>, you can no longer inspect the message or call <xref:System.ServiceModel.Channels.Message.Close%2A> on the message.  
+  
+ If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this method:  
+  
+ [!code-csharp[S_UE_HttpCookieSession#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Request (System.ServiceModel.Channels.Message message, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Request(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IRequestChannel.Request(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="message">The request <see cref="T:System.ServiceModel.Channels.Message" /> to be transmitted.</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time within which a response must be received.</param>
+        <summary>Sends a message-based request and returns the correlated message-based response within a specified interval of time.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received in response to the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations of <xref:System.ServiceModel.Channels.IRequestChannel> ensure that the response message is correlated with the request message.  
+  
+ Generally, if an implementation of <xref:System.ServiceModel.Channels.IRequestChannel> receives a message that is not correlated to an outstanding request, it is dropped.  
+  
+ The <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A> method can be called concurrently across multiple threads.  
+  
+ Passing the message into the request channel causes the message to be accessed. After you call <xref:System.ServiceModel.Channels.IRequestChannel.Request%2A>, you can no longer inspect the message or call <xref:System.ServiceModel.Channels.Message.Close%2A> on the message.  
+  
+ If the request message is larger that the maximum message size allowed by the binding being used, a <xref:System.ServiceModel.QuotaExceededException> is thrown. The maximum message size is set by the <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A> property. The default value is 65536 bytes.  
+  
+ If a `timeout` is passed while calling the function then that value is used. If the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A> is set on the binding, then the value on the binding is used if no `timeout` is specified while calling the function.  
+  
+ The <xref:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout%2A> is used if no timeout is specified on either the binding or while calling the function. This default value is 1 minute.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this method.  
+  
+ [!code-csharp[S_UE_HttpCookieSession#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The operation should throw a <see cref="T:System.TimeoutException" /> if the specified <paramref name="timeout" /> is exceeded before the operation is completed.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Via">
+      <MemberSignature Language="C#" Value="public Uri Via { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Via" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IRequestChannel.Via" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transport address to which the request is send.</summary>
+        <value>The <see cref="T:System.Uri" /> that contains the transport address to which the message is sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.EndpointAddress> serves as both the ultimate destination and the physical address if a <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is not specified. If the <xref:System.ServiceModel.Channels.IRequestChannel.Via%2A> is specified, then that is the actual physical address to which the message is sent and through which the message must go to arrive at its destination.  
+  
+   
+  
+## Examples  
+ The following code shows how to implement this property.  
+  
+ [!code-csharp[S_UE_HttpCookieSession#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_httpcookiesession/cs/httpcookierequestsessionchannel.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,105 @@
+<Type Name="DesignTimeResourceProviderFactory" FullName="System.Web.UI.Design.DesignTimeResourceProviderFactory">
+  <TypeSignature Language="C#" Value="public abstract class DesignTimeResourceProviderFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignTimeResourceProviderFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used by control localization to read and write resources at design time.</summary>
+    <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class, you must override the following members: the <see cref="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />, <see cref="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />, and <see cref="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter(System.IServiceProvider)" /> methods.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DesignTimeResourceProviderFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDesignTimeGlobalResourceProvider">
+      <MemberSignature Language="C#" Value="public abstract System.Web.Compilation.IResourceProvider CreateDesignTimeGlobalResourceProvider (IServiceProvider serviceProvider, string classKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Compilation.IResourceProvider CreateDesignTimeGlobalResourceProvider(class System.IServiceProvider serviceProvider, string classKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeGlobalResourceProvider(System.IServiceProvider,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.IResourceProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="classKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">A reference to the design host.</param>
+        <param name="classKey">The name of the resource class.</param>
+        <summary>When overridden in a derived class, creates a global resource provider using the provided <see cref="T:System.IServiceProvider" /> interface and resource class name.</summary>
+        <returns>Either an <see cref="T:System.Web.Compilation.IResourceProvider" /> or an <see cref="T:System.Web.UI.Design.IDesignTimeResourceWriter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDesignTimeLocalResourceProvider">
+      <MemberSignature Language="C#" Value="public abstract System.Web.Compilation.IResourceProvider CreateDesignTimeLocalResourceProvider (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Compilation.IResourceProvider CreateDesignTimeLocalResourceProvider(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.IResourceProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">A reference to the design host.</param>
+        <summary>When overridden in a derived class, creates a local resource provider using the provided reference to the design host.</summary>
+        <returns>An <see cref="T:System.Web.Compilation.IResourceProvider" /> or a class derived from <see cref="T:System.Web.Compilation.IResourceProvider" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDesignTimeLocalResourceWriter">
+      <MemberSignature Language="C#" Value="public abstract System.Web.UI.Design.IDesignTimeResourceWriter CreateDesignTimeLocalResourceWriter (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDesignTimeResourceWriter CreateDesignTimeLocalResourceWriter(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IDesignTimeResourceWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">A reference to the design host.</param>
+        <summary>When overridden in a derived class, creates a local resource writer for using the provided reference to the design host.</summary>
+        <returns>A local resource writer for using the provided reference to the design host.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

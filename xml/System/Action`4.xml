@@ -1,0 +1,101 @@
+<Type Name="Action&lt;T1,T2,T3,T4&gt;" FullName="System.Action&lt;T1,T2,T3,T4&gt;">
+  <TypeSignature Language="C#" Value="public delegate void Action&lt;in T1,in T2,in T3,in T4&gt;(T1 arg1, T2 arg2, T3 arg3, T4 arg4);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action`4&lt;- T1, - T2, - T3, - T4&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Action`4" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T2">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T3">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T4">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="arg1" Type="T1" />
+    <Parameter Name="arg2" Type="T2" />
+    <Parameter Name="arg3" Type="T3" />
+    <Parameter Name="arg4" Type="T4" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T1">The type of the first parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T2">The type of the second parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T3">The type of the third parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T4">The type of the fourth parameter of the method that this delegate encapsulates.</typeparam>
+    <param name="arg1">The first parameter of the method that this delegate encapsulates.</param>
+    <param name="arg2">The second parameter of the method that this delegate encapsulates.</param>
+    <param name="arg3">The third parameter of the method that this delegate encapsulates.</param>
+    <param name="arg4">The fourth parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has four parameters and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Action%604> delegate to pass a method as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have four parameters that are all passed to it by value, and it must not return a value. (In C#, the method must return `void`. In Visual Basic, it must be defined by the `Sub`…`End Sub` construct. It can also be a method that returns a value that is ignored.) Typically, such a method is used to perform an operation.  
+  
+> [!NOTE]
+>  To reference a method that has four parameters and returns a value, use the generic <xref:System.Func%605> delegate instead.  
+  
+ When you use the <xref:System.Action%604> delegate, you do not have to explicitly define a delegate that encapsulates a method with four parameters. For example, the following code explicitly declares a delegate named `StringCopy` and assigns a reference to the `CopyStrings` method to its delegate instance.  
+  
+ [!code-csharp[System.Action~4#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~4/cs/Delegate.cs#1)]
+ [!code-vb[System.Action~4#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action~4/vb/Delegate.vb#1)]  
+  
+ The following example simplifies this code by instantiating the <xref:System.Action%604> delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-csharp[System.Action~4#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~4/cs/Action4.cs#2)]
+ [!code-vb[System.Action~4#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action~4/vb/Action4.vb#2)]  
+  
+ You can also use the <xref:System.Action%604> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).)  
+  
+ [!code-csharp[System.Action~4#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~4/cs/Anon.cs#3)]  
+  
+ You can also assign a lambda expression to an <xref:System.Action%604> delegate instance, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).)  
+  
+ [!code-csharp[System.Action~4#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~4/cs/Lambda.cs#4)]
+ [!code-vb[System.Action~4#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action~4/vb/lambda.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

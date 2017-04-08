@@ -1,0 +1,74 @@
+<Type Name="ComponentsLocation" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation">
+  <TypeSignature Language="C#" Value="public enum ComponentsLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComponentsLocation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("12F49949-7B60-49CD-B6A0-2B5E4A638AAF")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the way that required components will be published.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Absolute">
+      <MemberSignature Language="C#" Value="Absolute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation Absolute = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that products be located at a specific location.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeSite">
+      <MemberSignature Language="C#" Value="HomeSite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation HomeSite = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.HomeSite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that products be found according to the redistributable vendor's designated URL.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Relative">
+      <MemberSignature Language="C#" Value="Relative" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation Relative = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Relative" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that products be located relative to the generated bootstrapper.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,88 @@
+<Type Name="SpotLocation" FullName="System.Windows.Xps.Packaging.SpotLocation">
+  <TypeSignature Language="C#" Value="public class SpotLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SpotLocation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.SpotLocation" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the location to display a digital signature on an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SpotLocation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.SpotLocation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.SpotLocation" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageUri">
+      <MemberSignature Language="C#" Value="public Uri PageUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri PageUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.SpotLocation.PageUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the page on which to display the digital signature.</summary>
+        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the page on which to display the signature.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartX">
+      <MemberSignature Language="C#" Value="public double StartX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StartX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.SpotLocation.StartX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the X page coordinate for the digital signature.</summary>
+        <value>The X page coordinate for the digital signature.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartY">
+      <MemberSignature Language="C#" Value="public double StartY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StartY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.SpotLocation.StartY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Y page coordinate for the digital signature.</summary>
+        <value>The Y page coordinate for the digital signature.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

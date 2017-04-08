@@ -1,0 +1,109 @@
+<Type Name="NamedArgumentsEncoder" FullName="System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder">
+  <TypeSignature Language="C#" Value="public struct NamedArgumentsEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NamedArgumentsEncoder extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedArgumentsEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public void AddArgument (bool isField, Action&lt;System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&gt; type, Action&lt;System.Reflection.Metadata.Ecma335.NameEncoder&gt; name, Action&lt;System.Reflection.Metadata.Ecma335.LiteralEncoder&gt; literal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(bool isField, class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&gt; type, class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.NameEncoder&gt; name, class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.LiteralEncoder&gt; literal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder.AddArgument(System.Boolean,System.Action{System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder},System.Action{System.Reflection.Metadata.Ecma335.NameEncoder},System.Action{System.Reflection.Metadata.Ecma335.LiteralEncoder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isField" Type="System.Boolean" />
+        <Parameter Name="type" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&gt;" />
+        <Parameter Name="name" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.NameEncoder&gt;" />
+        <Parameter Name="literal" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.LiteralEncoder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="isField">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="literal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public void AddArgument (bool isField, out System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder type, out System.Reflection.Metadata.Ecma335.NameEncoder name, out System.Reflection.Metadata.Ecma335.LiteralEncoder literal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(bool isField, valuetype System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder type, valuetype System.Reflection.Metadata.Ecma335.NameEncoder name, valuetype System.Reflection.Metadata.Ecma335.LiteralEncoder literal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder.AddArgument(System.Boolean,System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder@,System.Reflection.Metadata.Ecma335.NameEncoder@,System.Reflection.Metadata.Ecma335.LiteralEncoder@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isField" Type="System.Boolean" />
+        <Parameter Name="type" Type="System.Reflection.Metadata.Ecma335.NamedArgumentTypeEncoder&amp;" RefType="out" />
+        <Parameter Name="name" Type="System.Reflection.Metadata.Ecma335.NameEncoder&amp;" RefType="out" />
+        <Parameter Name="literal" Type="System.Reflection.Metadata.Ecma335.LiteralEncoder&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="isField">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="literal">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Builder">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder.Builder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

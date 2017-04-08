@@ -1,0 +1,1170 @@
+<Type Name="Pen" FullName="System.Drawing.Pen">
+  <TypeSignature Language="C#" Value="public sealed class Pen : MarshalByRefObject, ICloneable, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pen extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Pen" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines an object used to draw lines and curves. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Drawing.Pen> draws a line of specified width and style. Use the <xref:System.Drawing.Drawing2D.DashStyle> property to draw several varieties of dashed lines. The line drawn by a <xref:System.Drawing.Pen> can be filled in a variety of fill styles, including solid colors and textures. The fill style depends on brush or texture that is used as the fill object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing a <xref:System.Drawing.Pen> with a <xref:System.Drawing.Pen.Brush%2A> and the effects of setting the <xref:System.Drawing.Pen.LineJoin%2A> property on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineJoin` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.PensExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.PensExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Pen (System.Drawing.Brush brush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Brush brush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Brush)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="brush" Type="System.Drawing.Brush" />
+      </Parameters>
+      <Docs>
+        <param name="brush">A <see cref="T:System.Drawing.Brush" /> that determines the fill properties of this <see cref="T:System.Drawing.Pen" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Pen" /> class with the specified <see cref="T:System.Drawing.Brush" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Pen.Brush%2A> property determines how the <xref:System.Drawing.Pen> draws lines. Lines are drawn as if they are filled rectangles, with the characteristics of the specified <xref:System.Drawing.Brush>.  
+  
+ The <xref:System.Drawing.Pen.Width%2A> property of the new <xref:System.Drawing.Pen> is set to 1 (the default).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing a <xref:System.Drawing.Pen> with a <xref:System.Drawing.Pen.Brush%2A> and the effects of setting the <xref:System.Drawing.Pen.LineJoin%2A> property on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineJoin` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.PensExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.PensExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="brush" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Pen (System.Drawing.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Color color) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Color)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="color" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color">A <see cref="T:System.Drawing.Color" /> structure that indicates the color of this <see cref="T:System.Drawing.Pen" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Pen" /> class with the specified color.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Color> property is set to the color specified by the `color` parameter. The <xref:System.Drawing.Pen.Width%2A> property is set to 1 (the default).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Pen (System.Drawing.Brush brush, float width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Brush brush, float32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Brush,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="brush" Type="System.Drawing.Brush" />
+        <Parameter Name="width" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="brush">A <see cref="T:System.Drawing.Brush" /> that determines the characteristics of this <see cref="T:System.Drawing.Pen" />.</param>
+        <param name="width">The width of the new <see cref="T:System.Drawing.Pen" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Pen" /> class with the specified <see cref="T:System.Drawing.Brush" /> and <see cref="P:System.Drawing.Pen.Width" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Brush> is set to the color specified in the `brush` parameter, the <xref:System.Drawing.Pen.Width%2A> property is set to the value specified in the `width` parameter, and the units are set to <xref:System.Drawing.GraphicsUnit>.  
+  
+ Note that the `brush` parameter also specifies the <xref:System.Drawing.Color> property of this <xref:System.Drawing.Pen>.  
+  
+ A `width` of 0 will result in the <xref:System.Drawing.Pen> drawing as if the width were 1.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Drawing.Pen> and demonstrates the effects of setting the <xref:System.Drawing.Pen.StartCap%2A> and <xref:System.Drawing.Pen.EndCap%2A> properties on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowStartAndEndCaps` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.ImageExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ImageExample/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.ImageExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImageExample/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.ImageExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ImageExample/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="brush" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Pen (System.Drawing.Color color, float width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Color color, float32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.#ctor(System.Drawing.Color,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="color" Type="System.Drawing.Color" />
+        <Parameter Name="width" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="color">A <see cref="T:System.Drawing.Color" /> structure that indicates the color of this <see cref="T:System.Drawing.Pen" />.</param>
+        <param name="width">A value indicating the width of this <see cref="T:System.Drawing.Pen" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Pen" /> class with the specified <see cref="T:System.Drawing.Color" /> and <see cref="P:System.Drawing.Pen.Width" /> properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Color> property is set to the color specified by the `color` parameter. The <xref:System.Drawing.Pen.Width%2A> property is set to the value specified in the `width` parameter. A `width` of 0 will result in the <xref:System.Drawing.Pen> drawing as if the width were 1.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.Drawing.Pen> and the effects of setting the <xref:System.Drawing.Pen.DashCap%2A>, <xref:System.Drawing.Pen.DashPattern%2A>, and <xref:System.Drawing.Graphics.SmoothingMode%2A> properties.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowPensAndSmoothingMode` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.PensExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.PensExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.PenAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.PenAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Alignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment for this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.PenAlignment" /> that represents the alignment for this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines how the <xref:System.Drawing.Pen> draws closed curves and polygons. The <xref:System.Drawing.Drawing2D.PenAlignment> enumeration specifies five values; however, only two values—<xref:System.Drawing.Drawing2D.PenAlignment> and <xref:System.Drawing.Drawing2D.PenAlignment>—will change the appearance of a drawn line. <xref:System.Drawing.Drawing2D.PenAlignment> is the default value for this property and specifies that the width of the pen is centered on the outline of the curve or polygon. A value of <xref:System.Drawing.Drawing2D.PenAlignment> for this property specifies that the width of the pen is inside the outline of the curve or polygon. The other three values, <xref:System.Drawing.Drawing2D.PenAlignment>, <xref:System.Drawing.Drawing2D.PenAlignment>, and <xref:System.Drawing.Drawing2D.PenAlignment>, will result in a pen that is centered.  
+  
+ A <xref:System.Drawing.Pen> that has its alignment set to <xref:System.Drawing.Drawing2D.PenAlignment> will yield unreliable results, sometimes drawing in the inset position and sometimes in the centered position. Also, an inset pen cannot be used to draw compound lines and cannot draw dashed lines with <xref:System.Drawing.Drawing2D.DashCap> dash caps.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not a member of <see cref="T:System.Drawing.Drawing2D.PenAlignment" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Alignment" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Brush">
+      <MemberSignature Language="C#" Value="public System.Drawing.Brush Brush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush Brush" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Brush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Drawing.Brush" /> that determines attributes of this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Brush" /> that determines attributes of this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Assigning this property causes the pen to draw filled lines and curves. It overrides the <xref:System.Drawing.Color> property of the <xref:System.Drawing.Pen>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Brush" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an exact copy of this <see cref="T:System.Drawing.Pen" />.</summary>
+        <returns>An <see cref="T:System.Object" /> that can be cast to a <see cref="T:System.Drawing.Pen" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Creates a copy of that pen.  
+  
+-   Draws a line to the screen, using the copy of the pen.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ClassicPenExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color Color" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Color" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure that represents the color of this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Color" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompoundArray">
+      <MemberSignature Language="C#" Value="public float[] CompoundArray { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] CompoundArray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.CompoundArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of values that specifies a compound pen. A compound pen draws a compound line made up of parallel lines and spaces.</summary>
+        <value>An array of real numbers that specifies the compound array. The elements in the array must be in increasing order, not less than 0, and not greater than 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A compound line is made up of alternating parallel lines and spaces of varying widths. The values in the array specify the starting points of each component of the compound line relative to the pen's width. The first value in the array specifies where the first component (a line) begins as a fraction of the distance across the width of the pen. The second value in the array specifies the beginning of the next component (a space) as a fraction of the distance across the width of the pen. The final value in the array specifies where the last component ends.  
+  
+ Suppose you want a pen to draw two parallel lines where the width of the first line is 20 percent of the pen's width, the width of the space that separates the two lines is 50 percent of the pen' s width, and the width of the second line is 30 percent of the pen's width. Start by creating a <xref:System.Drawing.Pen> and an array of real numbers. Set the compound array by passing the array with the values 0.0, 0.2, 0.7, and 1.0 to this property.  
+  
+ Do not set this property if the <xref:System.Drawing.Pen> has its <xref:System.Drawing.Pen.Alignment%2A> property set to <xref:System.Drawing.Drawing2D.PenAlignment>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.CompoundArray" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomEndCap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.CustomLineCap CustomEndCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.CustomLineCap CustomEndCap" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.CustomEndCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.CustomLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom cap to use at the end of lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> that represents the cap used at the end of lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.CustomEndCap" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomStartCap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.CustomLineCap CustomStartCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.CustomLineCap CustomStartCap" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.CustomStartCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.CustomLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom cap to use at the beginning of lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> that represents the cap used at the beginning of lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.CustomStartCap" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DashCap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.DashCap DashCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.DashCap DashCap" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cap style used at the end of the dashes that make up dashed lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>One of the <see cref="T:System.Drawing.Drawing2D.DashCap" /> values that represents the cap style used at the beginning and end of the dashes that make up dashed lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not set this property to <xref:System.Drawing.Drawing2D.DashCap> if the <xref:System.Drawing.Pen> has its <xref:System.Drawing.Pen.Alignment%2A> property set to <xref:System.Drawing.Drawing2D.PenAlignment>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.Drawing.Pen> and the effects of setting the <xref:System.Drawing.Pen.DashCap%2A>, <xref:System.Drawing.Pen.DashPattern%2A>, and <xref:System.Drawing.Graphics.SmoothingMode%2A> properties.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowPensAndSmoothingMode` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.PensExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.PensExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not a member of <see cref="T:System.Drawing.Drawing2D.DashCap" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.DashCap" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DashOffset">
+      <MemberSignature Language="C#" Value="public float DashOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DashOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the distance from the start of a line to the beginning of a dash pattern.</summary>
+        <value>The distance from the start of a line to the beginning of a dash pattern.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.DashOffset" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DashPattern">
+      <MemberSignature Language="C#" Value="public float[] DashPattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] DashPattern" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashPattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of custom dashes and spaces.</summary>
+        <value>An array of real numbers that specifies the lengths of alternating dashes and spaces in dashed lines.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Assigning a value other than `null` to this property will set the <xref:System.Drawing.Drawing2D.DashStyle> property for this <xref:System.Drawing.Pen> to <xref:System.Drawing.Drawing2D.DashStyle>.  
+  
+ The elements in the `dashArray` array set the length of each dash and space in the dash pattern. The first element sets the length of a dash, the second element sets the length of a space, the third element sets the length of a dash, and so on. Consequently, each element should be a non-zero positive number.  
+  
+ The length of each dash and space in the dash pattern is the product of the element value in the array and the width of the <xref:System.Drawing.Pen>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the effects of setting the <xref:System.Drawing.Pen.DashCap%2A>, <xref:System.Drawing.Pen.DashPattern%2A>, and <xref:System.Drawing.Graphics.SmoothingMode%2A> properties.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowPensAndSmoothingMode` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.PensExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.PensExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.DashPattern" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DashStyle">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.DashStyle DashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.DashStyle DashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.DashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.DashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style used for dashed lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.DashStyle" /> that represents the style used for dashed lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of <xref:System.Drawing.Drawing2D.DashStyle> for this property specifies that a custom pattern of dashes and spaces, defined by the <xref:System.Drawing.Pen.DashPattern%2A> property, makes up lines drawn with this <xref:System.Drawing.Pen>. If the value of this property is <xref:System.Drawing.Drawing2D.DashStyle> and the value of the <xref:System.Drawing.Pen.DashPattern%2A> property is `null`, the pen draws solid lines.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.DashStyle" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Pen" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Drawing.Pen.Dispose%2A> allows the resources used by this <xref:System.Drawing.Brush> to be reallocated for other purposes.  
+  
+ Call <xref:System.Drawing.Pen.Dispose%2A> when you are finished using the <xref:System.Drawing.Pen>. The <xref:System.Drawing.Pen.Dispose%2A> method leaves the <xref:System.Drawing.Pen> in an unusable state. After calling <xref:System.Drawing.Pen.Dispose%2A>, you must release all references to the <xref:System.Drawing.Pen> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Pen> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Pen.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Pen>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Pen> object's `Finalize` method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the effects of setting the <xref:System.Drawing.Pen.Width%2A> and <xref:System.Drawing.Pen.LineJoin%2A> properties, and shows how to call the <xref:System.Drawing.Pen.Dispose%2A> method for a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineJoin` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.PensExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.PensExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineCap EndCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineCap EndCap" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.EndCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cap style used at the end of lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>One of the <see cref="T:System.Drawing.Drawing2D.LineCap" /> values that represents the cap style used at the end of lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the effects of setting the <xref:System.Drawing.Pen.StartCap%2A> and <xref:System.Drawing.Pen.EndCap%2A> properties on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowStartAndEndCaps` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.PensExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.PensExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not a member of <see cref="T:System.Drawing.Drawing2D.LineCap" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.EndCap" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~Pen ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineJoin">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineJoin LineJoin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineJoin LineJoin" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.LineJoin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the join style for the ends of two consecutive lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.LineJoin" /> that represents the join style for the ends of two consecutive lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A line join is the common area that is formed by two lines whose ends meet or overlap. There are three line join styles: miter, bevel, and round.  When you specify a line join style for a <xref:System.Drawing.Pen> object, that join style will be applied to all the connected lines in any <xref:System.Drawing.Drawing2D.GraphicsPath> object drawn using that pen.The following illustration shows the results of the beveled line join example.  
+  
+ ![Pens](~/add/media/pens5.gif "Pens")  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the effects of setting the <xref:System.Drawing.Pen.Width%2A> and <xref:System.Drawing.Pen.LineJoin%2A> properties on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineJoin` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs> .  
+  
+ [!code-cpp[System.Drawing.PensExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.PensExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.PensExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.LineJoin" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MiterLimit">
+      <MemberSignature Language="C#" Value="public float MiterLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MiterLimit" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.MiterLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the limit of the thickness of the join on a mitered corner.</summary>
+        <value>The limit of the thickness of the join on a mitered corner.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The miter length is the distance from the intersection of the line walls on the inside of the join to the intersection of the line walls outside of the join. The miter length can be large when the angle between two lines is small. The miter limit is the maximum allowed ratio of miter length to stroke width. The default value is 10.0f.  
+  
+ If the miter length of the join of the intersection exceeds the limit of the join, then the join will be beveled to keep it within the limit of the join of the intersection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.MiterLimit" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyTransform">
+      <MemberSignature Language="C#" Value="public void MultiplyTransform (System.Drawing.Drawing2D.Matrix matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.MultiplyTransform(System.Drawing.Drawing2D.Matrix)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Drawing.Drawing2D.Matrix" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The <see cref="T:System.Drawing.Drawing2D.Matrix" /> object by which to multiply the transformation matrix.</param>
+        <summary>Multiplies the transformation matrix for this <see cref="T:System.Drawing.Pen" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method prepends the multiplication matrix specified in the `matrix` parameter to the transformation matrix for the multiplication operation.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Draws a line to the screen.  
+  
+-   Multiplies the transformation matrix of the pen by the specified matrix.  
+  
+-   Draws a line with the transformed pen.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.ClassicPenExamples#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyTransform">
+      <MemberSignature Language="C#" Value="public void MultiplyTransform (System.Drawing.Drawing2D.Matrix matrix, System.Drawing.Drawing2D.MatrixOrder order);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.MultiplyTransform(System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Drawing.Drawing2D.Matrix" />
+        <Parameter Name="order" Type="System.Drawing.Drawing2D.MatrixOrder" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The <see cref="T:System.Drawing.Drawing2D.Matrix" /> by which to multiply the transformation matrix.</param>
+        <param name="order">The order in which to perform the multiplication operation.</param>
+        <summary>Multiplies the transformation matrix for this <see cref="T:System.Drawing.Pen" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> in the specified order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the <xref:System.Drawing.Drawing2D.MatrixOrder> enumeration element (either prepend or append) specified by the `order` parameter to carry out the multiplication operation.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Draws a line to the screen.  
+  
+-   Multiplies the transformation matrix of the pen by the specified matrix.  
+  
+-   Draws a line with the transformed pen.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.ClassicPenExamples#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenType">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.PenType PenType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.PenType PenType" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.PenType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style of lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.PenType" /> enumeration that specifies the style of lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Drawing.Pen> can draw solid lines, filled lines, or textured lines, depending on the style specified by a member of the <xref:System.Drawing.Drawing2D.PenType> enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetTransform">
+      <MemberSignature Language="C#" Value="public void ResetTransform ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetTransform() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.ResetTransform" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the geometric transformation matrix for this <see cref="T:System.Drawing.Pen" /> to identity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Sets the transformation matrix of the pen to scale 2 times in the x-axis direction.  
+  
+-   Draws a line to the screen.  
+  
+-   Resets the transformation matrix to identity.  
+  
+-   Draws a second line to the screen.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.ClassicPenExamples#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateTransform">
+      <MemberSignature Language="C#" Value="public void RotateTransform (float angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateTransform(float32 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.RotateTransform(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="angle">The angle of rotation.</param>
+        <summary>Rotates the local geometric transformation by the specified angle. This method prepends the rotation to the transformation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the shape of a pen is circular, a rotation does not have any visible effect unless the pen is scaled in the x- or y-axis direction.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Draws a rectangle using the pen.  
+  
+-   Scales the pen by 2 times in the x-axis direction.  
+  
+-   Rotates the pen 90 degrees clockwise.  
+  
+-   Draws a second rectangle to demonstrate the difference.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.ClassicPenExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateTransform">
+      <MemberSignature Language="C#" Value="public void RotateTransform (float angle, System.Drawing.Drawing2D.MatrixOrder order);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateTransform(float32 angle, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="angle" Type="System.Single" />
+        <Parameter Name="order" Type="System.Drawing.Drawing2D.MatrixOrder" />
+      </Parameters>
+      <Docs>
+        <param name="angle">The angle of rotation.</param>
+        <param name="order">A <see cref="T:System.Drawing.Drawing2D.MatrixOrder" /> that specifies whether to append or prepend the rotation matrix.</param>
+        <summary>Rotates the local geometric transformation by the specified angle in the specified order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the shape of a pen is circular, a rotation does not have any visible effect unless the pen is scaled in the x- or y-axis direction.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Scales the pen by 2 times in the x-axis direction.  
+  
+-   Draws a rectangle using the pen.  
+  
+-   Rotates the pen 90 degrees clockwise.  
+  
+-   Draws a second rectangle to demonstrate the difference.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.ClassicPenExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleTransform">
+      <MemberSignature Language="C#" Value="public void ScaleTransform (float sx, float sy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleTransform(float32 sx, float32 sy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.ScaleTransform(System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sx" Type="System.Single" />
+        <Parameter Name="sy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="sx">The factor by which to scale the transformation in the x-axis direction.</param>
+        <param name="sy">The factor by which to scale the transformation in the y-axis direction.</param>
+        <summary>Scales the local geometric transformation by the specified factors. This method prepends the scaling matrix to the transformation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+ Creates a <xref:System.Drawing.Pen>.  
+  
+ Draws a rectangle using the pen.  
+  
+ Scales the pen by 2 times in the x-axis direction.  
+  
+ Draws a second rectangle to demonstrate the difference.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.ClassicPenExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleTransform">
+      <MemberSignature Language="C#" Value="public void ScaleTransform (float sx, float sy, System.Drawing.Drawing2D.MatrixOrder order);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleTransform(float32 sx, float32 sy, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sx" Type="System.Single" />
+        <Parameter Name="sy" Type="System.Single" />
+        <Parameter Name="order" Type="System.Drawing.Drawing2D.MatrixOrder" />
+      </Parameters>
+      <Docs>
+        <param name="sx">The factor by which to scale the transformation in the x-axis direction.</param>
+        <param name="sy">The factor by which to scale the transformation in the y-axis direction.</param>
+        <param name="order">A <see cref="T:System.Drawing.Drawing2D.MatrixOrder" /> that specifies whether to append or prepend the scaling matrix.</param>
+        <summary>Scales the local geometric transformation by the specified factors in the specified order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Pen>.  
+  
+-   Draws a rectangle using the pen.  
+  
+-   Scales the pen by 2 times in the x-axis direction.  
+  
+-   Draws a second rectangle to demonstrate the difference.  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#8)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#8)]
+ [!code-vb[System.Drawing.ClassicPenExamples#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLineCap">
+      <MemberSignature Language="C#" Value="public void SetLineCap (System.Drawing.Drawing2D.LineCap startCap, System.Drawing.Drawing2D.LineCap endCap, System.Drawing.Drawing2D.DashCap dashCap);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLineCap(valuetype System.Drawing.Drawing2D.LineCap startCap, valuetype System.Drawing.Drawing2D.LineCap endCap, valuetype System.Drawing.Drawing2D.DashCap dashCap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.SetLineCap(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.DashCap)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startCap" Type="System.Drawing.Drawing2D.LineCap" />
+        <Parameter Name="endCap" Type="System.Drawing.Drawing2D.LineCap" />
+        <Parameter Name="dashCap" Type="System.Drawing.Drawing2D.DashCap" />
+      </Parameters>
+      <Docs>
+        <param name="startCap">A <see cref="T:System.Drawing.Drawing2D.LineCap" /> that represents the cap style to use at the beginning of lines drawn with this <see cref="T:System.Drawing.Pen" />.</param>
+        <param name="endCap">A <see cref="T:System.Drawing.Drawing2D.LineCap" /> that represents the cap style to use at the end of lines drawn with this <see cref="T:System.Drawing.Pen" />.</param>
+        <param name="dashCap">A <see cref="T:System.Drawing.Drawing2D.LineCap" /> that represents the cap style to use at the beginning or end of dashed lines drawn with this <see cref="T:System.Drawing.Pen" />.</param>
+        <summary>Sets the values that determine the style of cap used to end lines drawn by this <see cref="T:System.Drawing.Pen" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code creates a <xref:System.Drawing.Pen> and sets it to draw arrow anchor caps at the beginning of lines:  
+  
+ [!code-cpp[System.Drawing.ClassicPenExamples#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CPP/form1.cpp#9)]
+ [!code-csharp[System.Drawing.ClassicPenExamples#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/CS/form1.cs#9)]
+ [!code-vb[System.Drawing.ClassicPenExamples#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicPenExamples/VB/form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartCap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineCap StartCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineCap StartCap" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.StartCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cap style used at the beginning of lines drawn with this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>One of the <see cref="T:System.Drawing.Drawing2D.LineCap" /> values that represents the cap style used at the beginning of lines drawn with this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the effects of setting the <xref:System.Drawing.Pen.StartCap%2A> and <xref:System.Drawing.Pen.EndCap%2A> properties on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowStartAndEndCaps` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.PensExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.PensExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not a member of <see cref="T:System.Drawing.Drawing2D.LineCap" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.StartCap" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.Matrix Transform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.Matrix Transform" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Transform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.Matrix</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a copy of the geometric transformation for this <see cref="T:System.Drawing.Pen" />.</summary>
+        <value>A copy of the <see cref="T:System.Drawing.Drawing2D.Matrix" /> that represents the geometric transformation for this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defines an elliptical shape for the pen tip. This ellipse is obtained from the default circular shape by applying the transformation matrix. Note that the translation portion of the matrix is ignored. Because the matrix returned and by the <xref:System.Drawing.Pen.Transform%2A> property is a copy of the pen's geometric transform, you should dispose of the matrix when you no longer need it.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Transform" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateTransform">
+      <MemberSignature Language="C#" Value="public void TranslateTransform (float dx, float dy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslateTransform(float32 dx, float32 dy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.TranslateTransform(System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Single" />
+        <Parameter Name="dy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="dx">The value of the translation in x.</param>
+        <param name="dy">The value of the translation in y.</param>
+        <summary>Translates the local geometric transformation by the specified dimensions. This method prepends the translation to the transformation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateTransform">
+      <MemberSignature Language="C#" Value="public void TranslateTransform (float dx, float dy, System.Drawing.Drawing2D.MatrixOrder order);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslateTransform(float32 dx, float32 dy, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Pen.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Single" />
+        <Parameter Name="dy" Type="System.Single" />
+        <Parameter Name="order" Type="System.Drawing.Drawing2D.MatrixOrder" />
+      </Parameters>
+      <Docs>
+        <param name="dx">The value of the translation in x.</param>
+        <param name="dy">The value of the translation in y.</param>
+        <param name="order">The order (prepend or append) in which to apply the translation.</param>
+        <summary>Translates the local geometric transformation by the specified dimensions in the specified order.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pen.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of this <see cref="T:System.Drawing.Pen" />, in units of the <see cref="T:System.Drawing.Graphics" /> object used for drawing.</summary>
+        <value>The width of this <see cref="T:System.Drawing.Pen" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can access the unit of measure of the <xref:System.Drawing.Graphics> object using its <xref:System.Drawing.Graphics.PageUnit%2A> property. The unit of measure is typically pixels. A <xref:System.Drawing.Pen.Width%2A> of 0 will result in the <xref:System.Drawing.Pen> drawing as if the <xref:System.Drawing.Pen.Width%2A> were 1.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the effects of setting the <xref:System.Drawing.Pen.Width%2A> and <xref:System.Drawing.Pen.LineJoin%2A> properties on a <xref:System.Drawing.Pen>.  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineJoin` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.PensExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.PensExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Drawing.Pen.Width" /> property is set on an immutable <see cref="T:System.Drawing.Pen" />, such as those returned by the <see cref="T:System.Drawing.Pens" /> class.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

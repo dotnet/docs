@@ -1,0 +1,2459 @@
+<Type Name="DateTimeFormatInfo" FullName="System.Globalization.DateTimeFormatInfo">
+  <TypeSignature Language="C#" Value="public sealed class DateTimeFormatInfo : ICloneable, IFormatProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DateTimeFormatInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.DateTimeFormatInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormatProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides culture-specific information about the format of date and time values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of the <xref:System.Globalization.DateTimeFormatInfo> class contain culture-specific information for formatting or parsing date and time values such as the following:  
+  
+-   The patterns used to format date values.  
+  
+-   The patterns used to format time values.  
+  
+-   The names of the days of the week.  
+  
+-   The names of the months of the year.  
+  
+-   The A.M. and P.M. designators used in time values.  
+  
+-   The calendar in which dates are expressed.  
+  
+ In this section:  
+  
+-   [Instantiating a DateTimeFormatInfo object](#instantiating)  
+  
+    -   [For the Invariant Culture](#instantiating_Invariant)  
+  
+    -   [For a Specific Culture](#instantiating_Specific)  
+  
+    -   [For a neutral culture](#instantiating_neutral)  
+  
+    -   [For the current culture](#instantiating_Current)  
+  
+-   [DateTimeFormatInfo and dynamic data](#dynamic)  
+  
+-   [Formatting dates and times](#Formatting_dates_times)  
+  
+-   [Format strings and DateTimeFormatInfo properties](#properties)  
+  
+-   [Modifying DateTimeFormatInfo properties](#Modifying)  
+  
+<a name="instantiating"></a>   
+## Instantiating a DateTimeFormatInfo object  
+ A <xref:System.Globalization.DateTimeFormatInfo> object can represent the formatting conventions of the invariant culture, a specific culture, a neutral culture, or the current culture. This section discusses how to instantiate each type of <xref:System.Globalization.DateTimeFormatInfo> object.  
+  
+<a name="instantiating_Invariant"></a>   
+### Instantiating a DateTimeFormatInfo object for the invariant culture  
+ The invariant culture represents a culture that is culture-insensitive. It is based on the English language, but not on any specific English-speaking country/region. Although the data of specific cultures can be dynamic and can change to reflect new cultural conventions or user preferences, the data of the invariant culture does not change. You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the invariant culture in the following ways:  
+  
+-   By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo%2A> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.  
+  
+-   By calling the parameterless <xref:System.Globalization.DateTimeFormatInfo.%23ctor%2A> constructor. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write.  
+  
+-   By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.  
+  
+ The following example uses each of these methods to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the invariant culture. It then indicates whether the object is read-only.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/create1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create1.vb#1)]  
+  
+<a name="instantiating_Specific"></a>   
+### Instantiating a DateTimeFormatInfo object for a specific culture  
+ A specific culture represents a language that is spoken in a particular country/region. For example, en-US is a specific culture that represents the English language spoken in the United States, and en-CA is a specific culture that represents the English language spoken in Canada. You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of a specific culture in the following ways:  
+  
+-   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29?displayProperty=fullName> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.  
+  
+-   By passing the static <xref:System.Globalization.DateTimeFormatInfo.GetInstance%2A> method a <xref:System.Globalization.CultureInfo> object that represents the culture whose <xref:System.Globalization.DateTimeFormatInfo> object you want to retrieve. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write.  
+  
+-   By calling the static <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write.  
+  
+-   By calling the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=fullName> class constructor and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write.  
+  
+ The following example illustrates each of these ways to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object and indicates whether the resulting object is read-only.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/create1.cs#3)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create1.vb#3)]  
+  
+<a name="instantiating_neutral"></a>   
+### Instantiating a DateTimeFormatInfo object for a neutral culture  
+ A neutral culture represents a culture or language that is independent of a country/region; it is typically the parent of one or more specific cultures. For example, Fr is a neutral culture for the French language and the parent of the fr-FR culture. You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of a neutral culture in the same ways that you create a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of a specific culture. In addition, you can retrieve a neutral culture's <xref:System.Globalization.DateTimeFormatInfo> object by retrieving a neutral culture from a specific culture's <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=fullName> property and retrieving the <xref:System.Globalization.DateTimeFormatInfo> object returned by its <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property. Unless the parent culture represents the invariant culture, the returned <xref:System.Globalization.DateTimeFormatInfo> object is read/write. The following example illustrates these ways of instantiating a <xref:System.Globalization.DateTimeFormatInfo> object that represents a neutral culture.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/create1.cs#2)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create1.vb#2)]  
+  
+> [!NOTE]
+>  In the .NET Framework versions 1.0 through [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)], trying to retrieve a <xref:System.Globalization.DateTimeFormatInfo> object that  reflects the formatting conventions of a neutral culture throws a <xref:System.NotSupportedException> exception.  
+  
+ However, a neutral culture lacks culture-specific formatting information, because it is independent of a specific country/region. Instead of populating the <xref:System.Globalization.DateTimeFormatInfo> object with generic values, the .NET Framework returns a <xref:System.Globalization.DateTimeFormatInfo> object that reflects the formatting conventions of a specific culture that is a child of the neutral culture. For example, the <xref:System.Globalization.DateTimeFormatInfo> object for the neutral en culture reflects the formatting conventions of the en-US culture, and the <xref:System.Globalization.DateTimeFormatInfo> object for the fr culture reflects the formatting conventions of the fr-FR culture.  
+  
+ You can use code like the following to determine which specific culture's formatting conventions a neutral culture represents. The example uses reflection to compare the <xref:System.Globalization.DateTimeFormatInfo> properties of a neutral culture with the properties of a specific child culture. It considers two calendars to be equivalent if they are the same calendar type and, for Gregorian calendars, if their <xref:System.Globalization.GregorianCalendar.CalendarType%2A?displayProperty=fullName> properties have identical values.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/instantiate6c.cs#6)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/instantiate6c.vb#6)]  
+  
+<a name="instantiating_Current"></a>   
+### Instantiating a DateTimeFormatInfo object for the current culture  
+ You can instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the current culture in the following ways:  
+  
+-   By retrieving the value of the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.  
+  
+-   By retrieving the value of the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.  
+  
+-   By calling the <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method with a <xref:System.Globalization.CultureInfo> object that represents the current culture. The returned <xref:System.Globalization.DateTimeFormatInfo> object is read-only.  
+  
+ The following example uses each of these methods to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the current culture. It then indicates whether the object is read-only.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/create2.cs#4)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/create2.vb#4)]  
+  
+ You can create a writable <xref:System.Globalization.DateTimeFormatInfo> object that represents the conventions of the current thread culture in one of these ways:  
+  
+-   By retrieving a <xref:System.Globalization.DateTimeFormatInfo> object in any of the three previous ways and calling the <xref:System.Globalization.DateTimeFormatInfo.Clone%2A> method on the returned <xref:System.Globalization.DateTimeFormatInfo> object. This creates a copy of the original <xref:System.Globalization.DateTimeFormatInfo> object, except that its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly%2A> property is `false`.  
+  
+-   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method to create a <xref:System.Globalization.CultureInfo> object that represents the current culture, and then using its <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property to retrieve the <xref:System.Globalization.DateTimeFormatInfo> object.  
+  
+ The following example illustrates each way of instantiating a read/write <xref:System.Globalization.DateTimeFormatInfo> object and displays the value of its <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly%2A> property.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/instantiate2.cs#7)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/instantiate2.vb#7)]  
+  
+ In Windows, the user can override some of the <xref:System.Globalization.DateTimeFormatInfo> property values used in formatting and parsing operations through the **Region and Language** application in Control Panel. For example, a user whose culture is English (United States) might choose to display long time values using a 24-hour clock (in the format HH:mm:ss) instead of the default 12-hour clock (in the format h:mm:ss tt). The <xref:System.Globalization.DateTimeFormatInfo> objects retrieved in the ways discussed previously all reflect these user overrides. If this is undesirable, you can create a <xref:System.Globalization.NumberFormatInfo> object that does not reflect user overrides (and is also read/write instead of read-only) by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor and supplying a value of `false` for the `useUserOverride` argument. The following example illustrates this for a system whose current culture is English (United States) and whose long time pattern has been changed from the default of h:mm:ss tt to HH:mm:ss.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/instantiate3.cs#8)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/instantiate3.vb#8)]  
+  
+<a name="dynamic"></a>   
+## DateTimeFormatInfo and dynamic data  
+ The culture-specific data for formatting date and time values provided by the <xref:System.Globalization.DateTimeFormatInfo> class is dynamic, just like cultural data provided by the <xref:System.Globalization.CultureInfo> class. You should not make any assumptions about the stability of values for <xref:System.Globalization.DateTimeFormatInfo> objects that are associated with particular <xref:System.Globalization.CultureInfo> objects. Only the data provided by the invariant culture and its associated <xref:System.Globalization.DateTimeFormatInfo> object is stable. Other data can change between application sessions or even while your application is running. There are four major sources of change:  
+  
+-   System updates. Cultural preferences such as the preferred calendar or customary date and time formats change over time. When this happens, Windows Update includes changes to the <xref:System.Globalization.DateTimeFormatInfo> property value for a particular culture.  
+  
+-   Replacement cultures. The <xref:System.Globalization.CultureAndRegionInfoBuilder> class can be used to replace the data of an existing culture.  
+  
+-   Cascading changes to property values. A number of culture-related properties can change at run time, which, in turn, causes <xref:System.Globalization.DateTimeFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A> property changes to an object associated with the current culture. Similarly, a culture's calendar can change, which can result in changes to numerous <xref:System.Globalization.DateTimeFormatInfo> property values.  
+  
+-   User preferences. Users of your application might choose to override some of the values associated with the current system culture through the regional and language options in Control Panel. For example, users might choose to display the date in a different format. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true`, the properties of the <xref:System.Globalization.DateTimeFormatInfo> object is also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars indicated by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property), the results of the methods and the values of the properties are undefined.  
+  
+ To minimize the possibility of inconsistent data, all user-overridable properties of a <xref:System.Globalization.DateTimeFormatInfo> object are initialized when the object is created. There is still a possibility of inconsistency, because neither object creation nor the user override process is atomic and the relevant values can change during object creation. However, this situation should be extremely rare.  
+  
+ You can control whether user overrides are reflected in <xref:System.Globalization.DateTimeFormatInfo> objects that represent the same culture as the system culture. The following table lists the ways in which a <xref:System.Globalization.DateTimeFormatInfo> object can be retrieved and indicates whether the resulting object reflects user overrides.  
+  
+|Source of CultureInfo and DateTimeFormatInfo object|Reflects user overrides|  
+|---------------------------------------------------------|-----------------------------|  
+|`CultureInfo.CurrentCulture.DateTimeFormat` property|Yes|  
+|<xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A?displayProperty=fullName> property|Yes|  
+|<xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method|Yes|  
+|<xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName> method|No|  
+|<xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=fullName> constructor|Yes|  
+|<xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor|Depends on value of `useUserOverride` parameter|  
+  
+ Unless there is a compelling reason to do otherwise, you should respect user overrides when you use the <xref:System.Globalization.DateTimeFormatInfo> object in client applications to format and parse user input or to display data. For server applications or unattended applications, you should not. However, if you are using the <xref:System.Globalization.DateTimeFormatInfo> object either explicitly or implicitly to persist date and time data in string form, you should either use a <xref:System.Globalization.DateTimeFormatInfo> object that reflects the formatting conventions of the invariant culture, or you should specify a custom date and time format string that you use regardless of culture.  
+  
+<a name="Formatting_dates_times"></a>   
+## Formatting dates and times  
+ A <xref:System.Globalization.DateTimeFormatInfo> object is used implicitly or explicitly in all date and time formatting operations. These include calls to the following methods:  
+  
+-   All date and time formatting methods, such as <xref:System.DateTime.ToString?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=fullName>.  
+  
+-   The major composite formatting method, which is <xref:System.String.Format%2A?displayProperty=fullName>.  
+  
+-   Other composite formatting methods, such as [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and [StringBuilder.AppendFormat(String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+  
+ All date and time formatting operations make use of an <xref:System.IFormatProvider> implementation. The <xref:System.IFormatProvider> interface includes a single method, <xref:System.IFormatProvider.GetFormat%28System.Type%29?displayProperty=fullName>. This callback method is passed a <xref:System.Type> object that represents the type needed to provide formatting information. The method returns either an instance of that type or `null` if it cannot provide an instance of the type. The .NET Framework includes two <xref:System.IFormatProvider> implementations for formatting dates and times:  
+  
+-   The <xref:System.Globalization.CultureInfo> class,  which represents a specific culture (or a specific language in a specific country/region). In a date and time formatting operation, the <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=fullName> method returns the <xref:System.Globalization.DateTimeFormatInfo> object associated with its <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property.  
+  
+-   The <xref:System.Globalization.DateTimeFormatInfo> class, which provides information about the formatting conventions of its associated culture. The <xref:System.Globalization.DateTimeFormatInfo.GetFormat%2A?displayProperty=fullName> method returns an instance of itself.  
+  
+ If an <xref:System.IFormatProvider> implementation is not provided to a formatting method explicitly, the <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property that represents the current thread culture is used.  
+  
+ The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.DateTimeFormatInfo> class in formatting operations. It defines a custom <xref:System.IFormatProvider> implementation whose <xref:System.IFormatProvider.GetFormat%2A> method displays the type of the object requested by the formatting operation. If it is requesting a <xref:System.Globalization.DateTimeFormatInfo> object, the method provides the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method requests a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information, whereas the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/formatprovider1.cs#9)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/formatprovider1.vb#9)]  
+  
+<a name="properties"></a>   
+## Format strings and DateTimeFormatInfo properties  
+ The <xref:System.Globalization.DateTimeFormatInfo> object includes three kinds of properties that are used in formatting operations with date and time values:  
+  
+-   Calendar-related properties. Properties such as <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A>, and <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>, are associated with the calendar used by the culture, which is defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property. These properties are used for long date and time formats.  
+  
+-   Properties that produce a standards-defined result string. The <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A>, and <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A> properties contain custom format strings that produce result strings defined by international standards. These properties are  read-only and cannot be modified.  
+  
+-   Properties that define culture-sensitive result strings. Some properties, such as <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> and <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, contain  [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that specify the format of the result string. Others, such as <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>, <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A>, <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>, and <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>, define culture-sensitive symbols or substrings that can be included in a result string.  
+  
+ The [standard date and time format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md), such as "d", "D", "f", and "F", are aliases that correspond to particular <xref:System.Globalization.DateTimeFormatInfo> format pattern properties. Most of the  [custom date and time format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) are related to strings or substrings that a formatting operation inserts into the result stream. The following table lists the standard and custom date and time format specifiers and their associated <xref:System.Globalization.DateTimeFormatInfo> properties. For details about how to use these format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md). Note that each standard format string corresponds to a <xref:System.Globalization.DateTimeFormatInfo> property whose value is a custom date and time format string. The individual specifiers in this custom format string in turn correspond to other <xref:System.Globalization.DateTimeFormatInfo> properties. The table lists only the <xref:System.Globalization.DateTimeFormatInfo> properties for which the standard format strings are aliases, and does not list properties that may be accessed by custom format strings assigned to those aliased properties. In addition, the table lists only custom format specifiers that correspond to <xref:System.Globalization.DateTimeFormatInfo> properties.  
+  
+|Format specifier|Associated properties|  
+|----------------------|---------------------------|  
+|"d" (short date; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, to define the overall format of the result string.|  
+|"D" (long date; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A>, to define the overall format of the result string.|  
+|"f" (full date / short time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A>, to define the format of the date component of the result string.<br /><br /> <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>, to define the format of the time component of the result string.|  
+|"F" (full date / long time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A>, to define the format of the date component of the result string.<br /><br /> <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>, to define the format of the time component of the result string.|  
+|"g" (general date / short time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, to define the format of the date component of the result string.<br /><br /> <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>, to define the format of the time component of the result string.|  
+|"G" (general date / long time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, to define the format of the date component of the result string.<br /><br /> <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>, to define the format of the time component of the result string.|  
+|"M", "m" (month/day; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>, to define the overall format of the result string.|  
+|"O", "o" (round-trip date/time; standard format string)|None.|  
+|"R", "r" (RFC1123; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A>, to define a result string that conforms to the RFC 1123 standard. The property is read-only.|  
+|"s" (sortable date/time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A>, to define a result string that conforms to the ISO 8601 standard. The property is read-only.|  
+|"t" (short time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>, to define the overall format of the result string.|  
+|"T" (long time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>, to define the overall format of the result string.|  
+|"u" (universal sortable date/time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A>, to define a result string that conforms to the ISO 8601 standard for coordinated universal time. The property is read-only.|  
+|"U" (universal full date/time; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A>, to define the overall format of the result string.|  
+|"Y", "y" (year month; standard format string)|<xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A>, to define the overall format of the result string.|  
+|"ddd" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>, to include the abbreviated name of the day of the week in the result string.|  
+|"g", "gg" (custom format specifier)|Calls the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> method to insert the era name in the result string.|  
+|"MMM" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>, to include the abbreviated month name in the result string.|  
+|"MMMM" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> or <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A>, to include the full month name in the result string.|  
+|"t" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>, to include the first character of the AM/PM designator in the result string.|  
+|"tt" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>, to include the full AM/PM designator in the result string.|  
+|":" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>, to include the time separator in the result string.|  
+|"/" (custom format specifier)|<xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A>, to include the date separator in the result string.|  
+  
+<a name="Modifying"></a>   
+## Modifying DateTimeFormatInfo properties  
+ You can change the result string produced by date and time format strings by modifying the associated properties of a writable <xref:System.Globalization.DateTimeFormatInfo> object. To determine if a <xref:System.Globalization.DateTimeFormatInfo> object is writable, use the <xref:System.Globalization.DateTimeFormatInfo.IsReadOnly%2A> property. To customize a <xref:System.Globalization.DateTimeFormatInfo> object in this way:  
+  
+1.  Create a read/write copy of a <xref:System.Globalization.DateTimeFormatInfo> object whose formatting conventions you want to modify. (See the [Instantiating a DateTimeFormatInfo object](#instantiating) section.)  
+  
+2.  Modify the property or properties that are used to produce the desired result string. (For information about how formatting methods use <xref:System.Globalization.DateTimeFormatInfo> properties to define result strings, see the previous section, [Format strings and DateTimeFormatInfo properties](#properties).)  
+  
+3.  Use the custom <xref:System.Globalization.DateTimeFormatInfo> object you created as the <xref:System.IFormatProvider> argument in calls to formatting methods.  
+  
+ There are two other ways to change the format of a result string:  
+  
+-   You can use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to define either a custom culture (a culture that has a unique name and that supplements existing cultures) or a replacement culture (one that is used instead of a specific culture). You can save and access this culture programmatically as you would any <xref:System.Globalization.CultureInfo> object supported by the .NET Framework.  
+  
+-   If the result string is not culture-sensitive and doesn't follow a predefined format, you can use a custom date and time format string. For example, if you are serializing date and time data in the format YYYYMMDDHHmmss, you can generate the result string by passing the custom format string to the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method, and you can  convert the result string back to a <xref:System.DateTime> value by calling the <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> method.  
+  
+### Changing the short date pattern  
+ The following example changes the format of a result string produced by the "d" (short date) standard format string. It changes the associated <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property for the en-US or English (United States) culture from its default of "M/d/yyyy" to "yyyy'-"MM"-"dd" and uses the "d" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property is changed.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/example1.cs#10)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example1.vb#10)]  
+  
+### Changing the date separator character  
+ The following example changes the date separator character in a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the fr-FR culture. The example uses the "g" standard format string to display the date both before and after the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A> property is changed.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/example3.cs#12)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example3.vb#12)]  
+  
+### Changing day name abbreviations and the long date pattern  
+ In some cases, the long date pattern, which typically displays the full day and month name along with the number of the day of the month and the year, may be too long. The following example shortens the long date pattern for the en-US culture to return a one-character or two-character day name abbreviation followed by the day number, the month name abbreviation, and the year. It does this by assigning shorter day name abbreviations to the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> array, and by modifying the custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property. This affects the result strings returned by the "D" and "f" standard format strings.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/example2.cs#13)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example2.vb#13)]  
+  
+ Ordinarily, the change to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property also affects the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property, which in turn defines the result string returned by the "F" standard format string. To preserve the original full date and time pattern, the example reassigns the original custom format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property after the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property is modified.  
+  
+### Changing from a 12-hour clock to a 24-hour clock  
+ For many cultures in the .NET Framework, the time is expressed by using a 12-hour clock and an AM/PM designator. The following example defines a `ReplaceWith24HourClock` method that replaces any time format that uses a 12-hour clock with a format that uses a 24-hour clock.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/example5.cs#14)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example5.vb#14)]  
+  
+ The example uses a regular expression to modify the format string. The regular expression pattern `@"^(?<openAMPM>\s*t+\s*)? (?(openAMPM) h+(?<nonHours>[^ht]+)$ | \s*h+(?<nonHours>[^ht]+)\s*t+)` is defined as follows:  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`^`|Begin the match at the beginning of the string.|  
+|`(?<openAMPM>\s*t+\s*)?`|Match zero or one occurrence of zero or more white-space characters, followed by the letter "t" one or more times, followed by zero or more white-space characters. This capturing group is named `openAMPM`.|  
+|`(?(openAMPM) h+(?<nonHours>[^ht]+)$`|If the `openAMPM` group has a match, match the letter "h" one or more times, followed by one or more characters that are neither "h" nor "t". The match ends at the end of the string. All characters captured after "h" are included in a capturing group named `nonHours`.|  
+|`&#124; \s*h+(?<nonHours>[^ht]+)\s*t+)`|If the `openAMPM` group does not have a match, match the letter "h" one or more times, followed by one or more characters that are neither "h" nor "t", followed by zero or more white-space characters. Finally, match one or more occurrences of the letter "t". All characters captured after "h" and before the white-spaces and "t" are included in a capturing group named `nonHours`.|  
+  
+ The `nonHours` capturing group contains the minute and possibly the second component of a custom date and time format string, along with any time separator symbols. The replacement pattern `HH${nonHours}` prepends the substring "HH" to these elements.  
+  
+### Displaying and changing the era in a date  
+ The following example adds the "g" custom format specifier to the  <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property of an object that represents the formatting conventions of the en-US culture. This addition affects the following three standard format strings:  
+  
+-   The "D" (long date) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property.  
+  
+-   The "f" (full date / short time) standard format string, which produces a result string that concatenates the substrings produced by the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> and <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A> properties.  
+  
+-   The "F" (full date / long time) standard format string, which maps directly to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property. Because we have not explicitly set this property value, it is generated dynamically by concatenating the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> and <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> properties.  
+  
+ The example also shows how to change the era name for a culture whose calendar has a single era. In this case, the en-US culture uses the Gregorian calendar, which is represented by a <xref:System.Globalization.GregorianCalendar> object. The <xref:System.Globalization.GregorianCalendar> class supports a single era, which it names A.D. (Anno Domini). The example changes the era name to C.E. (Common Era) by replacing the "g" custom format specifier in the format string assigned to the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A>property with a literal string. The use of a literal string is necessary, because the era name is typically returned by the <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> method from private data in the culture tables supplied by either the .NET Framework or the Windows operating system.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/example4.cs#11)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/example4.vb#11)]  
+  
+## Parsing date and time strings  
+ Parsing involves converting the string representation of a date and time to a <xref:System.DateTime> or <xref:System.DateTimeOffset> value. Both of these types include the `Parse`, `TryParse`, `ParseExact`, and `TryParseExact` methods to support parsing operations. The `Parse` and `TryParse` methods convert a string that can have a variety of formats, whereas `ParseExact` and `TryParseExact` require that the string have a defined format or formats. If the parsing operation fails, `Parse` and `ParseExact` throw an exception, whereas `TryParse` and `TryParseExact` return `false`.  
+  
+ The parsing methods implicitly or explicitly use a <xref:System.Globalization.DateTimeStyles> enumeration value to determine which style elements (such as leading, trailing, or inner white space) can be present in the string to be parsed, and how to interpret the parsed string or any missing elements. If you don't provide a <xref:System.Globalization.DateTimeStyles> value when you call the `Parse` or `TryParse` method, the default is <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>, which is a composite style that includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>, <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>, and <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flags. For the `ParseExact` and `TryParseExact` methods, the default is <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>; the input string must correspond precisely to a particular custom date and time format string.  
+  
+ The parsing methods also implicitly or explicitly use a <xref:System.Globalization.DateTimeFormatInfo> object that defines the specific symbols and patterns that can occur in the string to be parsed. If you don't provide a <xref:System.Globalization.DateTimeFormatInfo> object, the <xref:System.Globalization.DateTimeFormatInfo> object for the current thread culture is used by default. For more information about parsing date and time strings, see the individual parsing methods, such as <xref:System.DateTime.Parse%2A?displayProperty=fullName>, <xref:System.DateTime.TryParse%2A?displayProperty=fullName>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=fullName>, and <xref:System.DateTimeOffset.TryParseExact%2A?displayProperty=fullName>.  
+  
+ The following example illustrates the culture-sensitive nature of parsing date and time strings. It tries to parse two date strings by using the conventions of the en-US, en-GB, fr-FR, and fi-FI cultures. The date that is interpreted as 8/18/2014 in the en-US culture throws a <xref:System.FormatException> exception in the other three cultures because 18 is interpreted as the month number. 1/2/2015 is parsed as the second day of the first month in the en-US culture, but as the first day of the second month in the remaining cultures.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/parsing1.cs#15)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/parsing1.vb#15)]  
+  
+ Date and time strings are typically parsed for two reasons:  
+  
+-   To convert user input into a date and time value.  
+  
+-   To round-trip a date and time value; that is, to deserialize a date and time value that was previously serialized as a string.  
+  
+ The following sections discuss these two operations in greater detail.  
+  
+### Parsing user strings  
+ When you parse date and time strings input by the user, you should always instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that reflects the user's cultural settings, including any customizations the user may have made. Otherwise, the  date and time object may have incorrect values. For information about how to instantiate a <xref:System.Globalization.DateTimeFormatInfo> object that reflects user cultural customizations, see the [DateTimeFormatInfo and dynamic data](#dynamic) section.  
+  
+ The following example illustrates the difference between a parsing operation that reflects user cultural settings and one that does not. In this case, the default system culture is en-US, but the user has used Control Panel, **Region and Language** to change the short date pattern from its default of "M/d/yyyy" to "yy/MM/dd". When the user enters a string that reflects user settings, and the string is parsed by a <xref:System.Globalization.DateTimeFormatInfo> object that also reflects user settings (overrides), the parsing operation returns a correct result. However, when the string is parsed by a <xref:System.Globalization.DateTimeFormatInfo> object that reflects standard en-US cultural settings, the parsing method throws a <xref:System.FormatException> exception because it interprets 14 as the number of the month, not the last two digits of the year.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/parse2.cs#16)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/parse2.vb#16)]  
+  
+### Serializing and deserializing date and time data  
+ Serialized date and time data are expected to round-trip; that is, all serialized and deserialized values should be identical. If a date and time value represents a single moment in time, the deserialized value should represent the same moment in time regardless of the culture or time zone of the system on which it was restored. To round-trip date and time data successfully, you must use the conventions of the invariant culture, which is returned by the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo%2A> property, to generate and parse the data. The formatting and parsing operations should never reflect the conventions of the default culture. If you use default cultural settings, the portability of the data is strictly limited; it can be successfully deserialized only on a thread whose cultural-specific settings are identical to those of the thread on which it was serialized. In some cases, this means that the data cannot even be successfully serialized and deserialized on the same system.  
+  
+ If the time component of a date and time value is significant, it should also be converted to UTC and serialized by using the "o" or "r" [standard format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md). The time data can then be restored by calling a parsing method and passing it the appropriate format string along with the invariant culture as the `provider` argument.  
+  
+ The following example illustrates the process of round-tripping a date and time value. It serializes a date and time on a system that observes U.S. Pacific time and whose current culture is en-US.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/serialize1.cs#17)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/serialize1.vb#17)]  
+  
+ It deserializes the data on a system in the Brussels, Copenhagen, Madrid and Paris time zone and whose current culture is fr-FR. The restored date is nine hours later than the original date, which reflects the time zone adjustment from eight hours behind UTC to one hour ahead of UTC. Both the original date and the restored date represent the same moment in time.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/serialize2.cs#18)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/serialize2.vb#18)]  
+  
+   
+  
+## Examples  
+ The following example uses reflection to get the properties of the <xref:System.Globalization.DateTimeFormatInfo> object for the English (United States) culture. It displays the value of those properties that contain custom format strings and uses those strings to display formatted dates.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/cs/format1.cs#5)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.class/vb/format1.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DateTimeFormatInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new writable instance of the <see cref="T:System.Globalization.DateTimeFormatInfo" /> class that is culture-independent (invariant).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a <xref:System.Globalization.DateTimeFormatInfo> object that represents the date and time information of the invariant culture. To create a <xref:System.Globalization.DateTimeFormatInfo> object for a specific culture, create a <xref:System.Globalization.CultureInfo> object for that culture and retrieve the <xref:System.Globalization.DateTimeFormatInfo> object returned by its <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property.  
+  
+ The properties of the <xref:System.Globalization.DateTimeFormatInfo> object created by this constructor can be modified. However, you cannot modify the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property, because the invariant culture supports only a localized version of the Gregorian calendar. To create a <xref:System.Globalization.DateTimeFormatInfo> object that uses a specific calendar, you must instantiate a <xref:System.Globalization.CultureInfo> object that supports that calendar and assign the calendar to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbbreviatedDayNames">
+      <MemberSignature Language="C#" Value="public string[] AbbreviatedDayNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AbbreviatedDayNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a one-dimensional array of type <see cref="T:System.String" /> containing the culture-specific abbreviated names of the days of the week.</summary>
+        <value>A one-dimensional array of type <see cref="T:System.String" /> containing the culture-specific abbreviated names of the days of the week. The array for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> contains "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", and "Sat".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If setting this property, the array must be one-dimensional and must have exactly seven elements. The first element (the element at index zero) represents the first day of the week in the calendar defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property.  
+  
+ If a custom format string includes the "ddd" format specifier, the <xref:System.DateTime.ToString%2A?displayProperty=fullName> or <xref:System.DateTimeOffset.ToString%2A> method includes the appropriate member of the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> array in place of the "ddd" in the result string.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes. If the selected <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> does not support abbreviated day names, the array contains the full day names.  
+  
+   
+  
+## Examples  
+ The following example creates a read/write <xref:System.Globalization.CultureInfo> object that represents the English (United States) culture and assigns abbreviated day names to its <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A> property. It then uses the "ddd" format specifier in a  to display the string representation of dates for one week beginning May 28, 2014.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviateddaynames/cs/abbreviateddaynames1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviateddaynames/vb/abbreviateddaynames1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an array that is multidimensional or that has a length that is not exactly 7.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AbbreviatedMonthGenitiveNames">
+      <MemberSignature Language="C#" Value="public string[] AbbreviatedMonthGenitiveNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AbbreviatedMonthGenitiveNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string array of abbreviated month names associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <value>An array of abbreviated month names.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In some languages, a month name that is part of a date appears in the genitive case. For example, a date in the ru-RU or Russian (Russia) culture consists of the day number and the genitive month name, such as 1 Января (1 January). For these cultures, if a custom format string includes the "MMM" format specifier, the <xref:System.DateTime.ToString%2A?displayProperty=fullName> or <xref:System.DateTimeOffset.ToString%2A> method includes the appropriate member of the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A> array in place of the "MMM" in the result string.  
+  
+ In a set operation, the array must be one-dimensional with exactly 13 elements, because <xref:System.Globalization.Calendar> objects accommodate calendars that have 13 months. For calendars that have 12 months, the thirteenth element should be <xref:System.String.Empty?displayProperty=fullName>. The first element (the element at index zero) represents the first month of the year defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property.  
+  
+ If you set the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A> property, you must also set the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A> property.  
+  
+   
+  
+## Examples  
+ The following example creates a read/write <xref:System.Globalization.CultureInfo> object that represents the English (United States) culture and assigns abbreviated genitive month names to its <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A> and <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A> properties. It then displays the string representation of dates that include the abbreviated month name of each month in the culture's supported calendar.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviatedmonthgenitivenames/cs/abbreviatedmonthnames1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviatedmonthgenitivenames/vb/abbreviatedmonthnames1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">In a set operation, the array is multidimensional or has a length that is not exactly 13.</exception>
+        <exception cref="T:System.ArgumentNullException">In a set operation, the array or one of the elements of the array is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">In a set operation, the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AbbreviatedMonthNames">
+      <MemberSignature Language="C#" Value="public string[] AbbreviatedMonthNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AbbreviatedMonthNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a one-dimensional string array that contains the culture-specific abbreviated names of the months.</summary>
+        <value>A one-dimensional string array with 13 elements that contains the culture-specific abbreviated names of the months. For 12-month calendars, the 13th element of the array is an empty string. The array for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> contains "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", and "".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set this property, the array must be one-dimensional with exactly 13 elements. <xref:System.Globalization.Calendar> objects accommodate calendars with 13 months. The first element (the element at index zero) represents the first month of the year defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property.  
+  
+ If you set the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A> property, you must also set the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A> property. The <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A> and <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A> properties are used to format dates using the following format strings:  
+  
+-   A standard date and time format string that aliases a custom format string that includes the "MMM" format specifier.  
+  
+-   A custom date and time format string that includes the "MMM" format specifier.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes. If the selected <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> does not support abbreviated month names, the array contains the full month names.  
+  
+   
+  
+## Examples  
+ The following example creates a read/write <xref:System.Globalization.CultureInfo> object that represents the English (United States) culture and assigns abbreviated genitive month names to its <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A> and <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A> properties. It then displays the string representation of dates that include the abbreviated name of each month in the culture's supported calendar.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviatedmonthgenitivenames/cs/abbreviatedmonthnames1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.abbreviatedmonthgenitivenames/vb/abbreviatedmonthnames1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an array that is multidimensional or that has a length that is not exactly 13.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AMDesignator">
+      <MemberSignature Language="C#" Value="public string AMDesignator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AMDesignator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.AMDesignator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string designator for hours that are "ante meridiem" (before noon).</summary>
+        <value>The string designator for hours that are ante meridiem. The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is "AM".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property is used for all times from 0:00:00 (midnight) to 11:59:59.999.  
+  
+ If a custom format string includes the "tt" format specifier and the time is before noon, the <xref:System.DateTime.ToString%2A?displayProperty=fullName> or <xref:System.DateTimeOffset.ToString%2A> method includes the value of the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property in place of "tt" in the result string. If the custom format string includes the "t" custom format specifier, only the first character of the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A> property value is included. You should use "tt" for languages for which it is necessary to maintain the distinction between A.M. and P.M. An example is Japanese, in which the A.M. and P.M. designators differ in the second character instead of the first character.  
+  
+ For cultures that do not use an A.M. designator, this property returns an empty string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Calendar">
+      <MemberSignature Language="C#" Value="public System.Globalization.Calendar Calendar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar Calendar" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.Calendar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.Calendar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the calendar to use for the current culture.</summary>
+        <value>The calendar to use for the current culture. The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is a <see cref="T:System.Globalization.GregorianCalendar" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property accepts only calendars that are valid for the culture that is associated with the <xref:System.Globalization.DateTimeFormatInfo> object. The <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=fullName> property specifies the calendars that can be used by a particular culture, and the <xref:System.Globalization.CultureInfo.Calendar%2A?displayProperty=fullName> property specifies the default calendar for the culture.  
+  
+ Changing the value of this property affects the following properties as well: <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A>, <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A>, <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A>, <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A>, <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A>, and <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>.  
+  
+ For example, if the culture of the current thread is Japanese, this property accepts <xref:System.Globalization.JapaneseCalendar>, <xref:System.Globalization.GregorianCalendarTypes><xref:System.Globalization.GregorianCalendar>, or <xref:System.Globalization.GregorianCalendarTypes><xref:System.Globalization.GregorianCalendar>. When the <xref:System.Globalization.JapaneseCalendar> is used, the default long date specifier is "gg y'\x5e74'M'\x6708'd'\x65e5'". When the <xref:System.Globalization.GregorianCalendarTypes><xref:System.Globalization.GregorianCalendar>, is used, the default long date specifier is "yyyy'\x5e74'M'\x6708'd'\x65e5'".  
+  
+   
+  
+## Examples  
+ The following example defines a `ChangeCalendar` method that changes a culture's current calendar to a specified calendar unless it is already the current calendar or if it is not supported by the culture. The code that calls the method instantiates a <xref:System.Globalization.CultureInfo> object that represents the Arabic (Egypt) culture and first attempts to change its calendar to the Japanese calendar. Because the Japanese calendar is not supported, the method makes not change the culture's calendar. However, because the Umm al-Qura calendar is a member of the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A?displayProperty=fullName> collection, the method does succeed in making it the current calendar for the ar-EG culture.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Globalization.DateTimeFormatInfo.Calendar/cs/CalendarTest1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.DateTimeFormatInfo.Calendar/vb/CalendarTest1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a <see cref="T:System.Globalization.Calendar" /> object that is not valid for the current culture.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarWeekRule">
+      <MemberSignature Language="C#" Value="public System.Globalization.CalendarWeekRule CalendarWeekRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarWeekRule CalendarWeekRule" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.CalendarWeekRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CalendarWeekRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies which rule is used to determine the first calendar week of the year.</summary>
+        <value>A value that determines the first calendar week of the year. The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is <see cref="F:System.Globalization.CalendarWeekRule.FirstDay" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is not a valid <see cref="T:System.Globalization.CalendarWeekRule" /> value.</exception>
+        <exception cref="T:System.InvalidOperationException">In a set operation, the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a shallow copy of the <see cref="T:System.Globalization.DateTimeFormatInfo" />.</summary>
+        <returns>A new <see cref="T:System.Globalization.DateTimeFormatInfo" /> object copied from the original <see cref="T:System.Globalization.DateTimeFormatInfo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The clone is writable even if the original <xref:System.Globalization.DateTimeFormatInfo> object is read-only. Therefore, the properties of the clone can be modified with user-defined patterns.  
+  
+ A shallow copy of an object is a copy of the object only. If the object contains references to other objects, the shallow copy does not create copies of the referred objects. It refers to the original objects instead. In contrast, a deep copy of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentInfo">
+      <MemberSignature Language="C#" Value="public static System.Globalization.DateTimeFormatInfo CurrentInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Globalization.DateTimeFormatInfo CurrentInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.CurrentInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.DateTimeFormatInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only <see cref="T:System.Globalization.DateTimeFormatInfo" /> object that formats values based on the current culture.</summary>
+        <value>A read-only <see cref="T:System.Globalization.DateTimeFormatInfo" /> object based on the <see cref="T:System.Globalization.CultureInfo" /> object for the current thread.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A> property reflects user overrides.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A> property to retrieve a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the current culture, which in this case is the en-US culture. It then displays the format string and the result string for six formatting properties.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.CurrentInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Globalization.DateTimeFormatInfo.CurrentInfo/cs/CurrentInfo1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.CurrentInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Globalization.DateTimeFormatInfo.CurrentInfo/vb/CurrentInfo1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateSeparator">
+      <MemberSignature Language="C#" Value="public string DateSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DateSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.DateSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that separates the components of a date, that is, the year, month, and day.</summary>
+        <value>The string that separates the components of a date, that is, the year, month, and day. The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is "/".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a custom format string includes the "/" format specifier, the <xref:System.DateTime.ToString%2A?displayProperty=fullName> method displays the value of <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A> in place of the "/" in the result string.  
+  
+ The <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A> property defines the string that replaces the date separator ("/" custom date and time format specifier) in a result string in a formatting operation. It also defines the date separator string in a parsing operation.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Globalization.CultureInfo> object for the en-US culture, changes its date separator to "-", and displays a date by using the "d", "G", and "g" standard format strings.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.DateSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.dateseparator/cs/dateseparatorex.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.DateSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.dateseparator/vb/dateseparatorex.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DayNames">
+      <MemberSignature Language="C#" Value="public string[] DayNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] DayNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.DayNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a one-dimensional string array that contains the culture-specific full names of the days of the week.</summary>
+        <value>A one-dimensional string array that contains the culture-specific full names of the days of the week. The array for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> contains "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", and "Saturday".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If setting this property, the array must be one-dimensional and must have exactly seven elements. The first element (the element at index zero) represents the first day of the week in the calendar defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property.  
+  
+ If a custom format string includes the "dddd" format specifier, the <xref:System.DateTime.ToString%2A?displayProperty=fullName> method includes the value of the appropriate <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A> member in place of "dddd" in the result string.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an array that is multidimensional or that has a length that is not exactly 7.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstDayOfWeek">
+      <MemberSignature Language="C#" Value="public DayOfWeek FirstDayOfWeek { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DayOfWeek FirstDayOfWeek" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first day of the week.</summary>
+        <value>An enumeration value that represents the first day of the week. The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is <see cref="F:System.DayOfWeek.Sunday" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is not a valid <see cref="T:System.DayOfWeek" /> value.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FullDateTimePattern">
+      <MemberSignature Language="C#" Value="public string FullDateTimePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FullDateTimePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.FullDateTimePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a long date and long time value.</summary>
+        <value>The custom format string for a long date and long time value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The "F" standard format string is an alias for the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property. In other words, the custom format string assigned to this property defines the format of the result string for the "F" standard format string. For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
+  
+ The value of the <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> property is generated dynamically by concatenating the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> and <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> properties separated by a space. This dynamic assignment occurs under the following conditions:  
+  
+-   If the property value is retrieved before it has been explicitly set.  
+  
+-   When the value of the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property changes.  
+  
+-   When the value of the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> property changes.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.FullDateTimePattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.FullDateTimePattern/CPP/dtfi_fulldatetimepattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.FullDateTimePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.FullDateTimePattern/CS/dtfi_fulldatetimepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.FullDateTimePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.FullDateTimePattern/VB/dtfi_fulldatetimepattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbbreviatedDayName">
+      <MemberSignature Language="C#" Value="public string GetAbbreviatedDayName (DayOfWeek dayofweek);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAbbreviatedDayName(valuetype System.DayOfWeek dayofweek) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedDayName(System.DayOfWeek)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dayofweek" Type="System.DayOfWeek" />
+      </Parameters>
+      <Docs>
+        <param name="dayofweek">A <see cref="T:System.DayOfWeek" /> value.</param>
+        <summary>Returns the culture-specific abbreviated name of the specified day of the week based on the culture associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <returns>The culture-specific abbreviated name of the day of the week represented by <paramref name="dayofweek" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default invariant <xref:System.Globalization.DateTimeFormatInfo> object, this method returns a string from the <xref:System.Globalization.GregorianCalendar>:  
+  
+|`dayofweek`|Return Value|  
+|-----------------|------------------|  
+|Sunday|"Sun"|  
+|Monday|"Mon"|  
+|Tuesday|"Tue"|  
+|Wednesday|"Wed"|  
+|Thursday|"Thu"|  
+|Friday|"Fri"|  
+|Saturday|"Sat"|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dayofweek" /> is not a valid <see cref="T:System.DayOfWeek" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbbreviatedEraName">
+      <MemberSignature Language="C#" Value="public string GetAbbreviatedEraName (int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAbbreviatedEraName(int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="era">The integer representing the era.</param>
+        <summary>Returns the string containing the abbreviated name of the specified era, if an abbreviation exists.</summary>
+        <returns>A string containing the abbreviated name of the specified era, if an abbreviation exists.  
+  
+ -or-  
+  
+ A string containing the full name of the era, if an abbreviation does not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The era name is the name a calendar uses to refer to a period of time reckoned from a fixed point or event. For example, "A.D." or "C.E." is the current era in the Gregorian calendar.  
+  
+ The valid values for `era` are listed in the <xref:System.Globalization.Calendar.Eras%2A> property of the appropriate class derived from <xref:System.Globalization.Calendar>. For example: <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=fullName> displays a list of eras that are supported by this implementation.  
+  
+ In the <xref:System.Globalization.JapaneseCalendar> class, the abbreviated era name is the first character of the full era name. This character is either the single-character case-insensitive Latin alphabet abbreviation or the single-character Kanji abbreviation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="era" /> does not represent a valid era in the calendar specified in the <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar" /> property.</exception>
+        <block subset="none" type="usage">
+          <para>If <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar" /> is the <see cref="T:System.Globalization.TaiwanCalendar" /> but the <see cref="P:System.Threading.Thread.CurrentCulture" /> is not "zh-TW", then <see cref="P:System.Globalization.DateTimeFormatInfo.NativeCalendarName" />, <see cref="M:System.Globalization.DateTimeFormatInfo.GetEraName(System.Int32)" />, and <see cref="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName(System.Int32)" /> return an empty string ("").</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbbreviatedMonthName">
+      <MemberSignature Language="C#" Value="public string GetAbbreviatedMonthName (int month);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAbbreviatedMonthName(int32 month) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedMonthName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="month" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="month">An integer from 1 through 13 representing the name of the month to retrieve.</param>
+        <summary>Returns the culture-specific abbreviated name of the specified month based on the culture associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <returns>The culture-specific abbreviated name of the month represented by <paramref name="month" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default invariant <xref:System.Globalization.DateTimeFormatInfo> object, this method returns a string from the <xref:System.Globalization.GregorianCalendar> object.  
+  
+|`month`|Return Value|  
+|-------------|------------------|  
+|1|"Jan"|  
+|2|"Feb"|  
+|3|"Mar"|  
+|4|"Apr"|  
+|5|"May"|  
+|6|"Jun"|  
+|7|"Jul"|  
+|8|"Aug"|  
+|9|"Sep"|  
+|10|"Oct"|  
+|11|"Nov"|  
+|12|"Dec"|  
+|13|""|  
+  
+ <xref:System.Globalization.Calendar> objects can accommodate calendars with 13 months. For 12-month calendars, the empty string is always returned as the name of the 13th month.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="month" /> is less than 1 or greater than 13.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllDateTimePatterns">
+      <MemberSignature Language="C#" Value="public string[] GetAllDateTimePatterns ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetAllDateTimePatterns() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns all the standard patterns in which date and time values can be formatted.</summary>
+        <returns>An array that contains the standard patterns in which date and time values can be formatted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an array that contains all custom format strings that correspond to standard format strings. See [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) for a list of the standard format strings.  
+  
+ You can use the custom format strings in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method in formatting operations. However, if you do, the string representation of a date and time value returned in that formatting operation cannot always be parsed successfully by the `Parse` and `TryParse` methods. Therefore, you cannot assume that the custom format strings returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method can be used to round-trip date and time values. The following example illustrates this problem. It retrieves a <xref:System.Globalization.DateTimeFormatInfo> object that contains formatting information for the Italy (Italian) culture. It passes each custom format string in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns> method to the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method to create the string representation of a date and time. This example then attempts to parse this value by calling the <xref:System.DateTime.TryParse%28System.String%2CSystem.DateTime%40%29?displayProperty=fullName> method. As the output from the example shows, some of the custom format strings do not produce a date and time value that successfully round-trips.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.getalldatetimepatterns/cs/getalldatetimepatternsex1.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.getalldatetimepatterns/vb/getalldatetimepatternsex1.vb#1)]  
+  
+ To parse the string representation of a date and time that can be expressed in a number of predefined custom formats, call one of the following methods:  
+  
+-   [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+  
+-   [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+  
+-   [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>  
+  
+-   [DateTimeOffset.TryParseExact(String, String\<xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName>  
+  
+ The custom format strings in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method depends on the current calendar of the culture for which the <xref:System.Globalization.DateTimeFormatInfo> object supplies formatting information. If the calendar changes, the array returned by this method also changes.  
+  
+   
+  
+## Examples  
+ The following example displays the date and time format strings for the invariant culture, as well as the result string that is produced when that format string is used to format a particular date.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.getalldatetimepatterns/cs/getalldatetimepatternsinv.cs#3)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.getalldatetimepatterns/vb/getalldatetimepatternsinv.vb#3)]  
+  
+ The example instantiates a <xref:System.Globalization.DateTimeFormatInfo> object that represents the invariant culture by calling the <xref:System.Globalization.DateTimeFormatInfo.%23ctor%2A> constructor. It could also retrieve a <xref:System.Globalization.DateTimeFormatInfo> that represents the invariant culture from the <xref:System.Globalization.DateTimeFormatInfo.InvariantInfo%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllDateTimePatterns">
+      <MemberSignature Language="C#" Value="public string[] GetAllDateTimePatterns (char format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetAllDateTimePatterns(char format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="format">A standard format string.</param>
+        <summary>Returns all the patterns in which date and time values can be formatted using the specified standard format string.</summary>
+        <returns>An array containing the standard patterns in which date and time values can be formatted using the specified format string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an array containing the custom format strings that correspond to a particular standard format string. See [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) for a list of the standard format strings.  
+  
+ You can use the custom format strings in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method in formatting operations. However, if you do, the string representation of a date and time value returned in that formatting operation cannot always be parsed successfully by the `Parse` and `TryParse` methods. Therefore, you cannot assume that the custom format strings returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method can be used to round-trip date and time values. The following example illustrates this problem. It retrieves a <xref:System.Globalization.DateTimeFormatInfo> object that contains formatting information for the Russia (Russian) culture. It calls the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%28System.Char%29> method for each standard format string, and then passes each custom format string in the returned array to the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method to create the string representation of a date and time. This example then attempts to parse this value by calling the <xref:System.DateTime.TryParse%28System.String%2CSystem.DateTime%40%29?displayProperty=fullName> method. As the output from the example shows, some of the custom format strings do not produce a date and time value that successfully round-trips.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.getalldatetimepatterns/cs/getalldatetimepatternsex2.cs#2)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.getalldatetimepatterns/vb/getalldatetimepatternsex2.vb#2)]  
+  
+ To parse the string representation of a date and time that can be expressed in a number of predefined custom formats, call one of the following methods:  
+  
+-   [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+  
+-   [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>  
+  
+-   [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>  
+  
+-   [DateTimeOffset.TryParseExact(String, String\<xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName>  
+  
+ The custom format strings in the array returned by the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%2A> method depends on the current calendar of the culture for which the <xref:System.Globalization.DateTimeFormatInfo> object supplies formatting information. If the calendar changes, the array returned by this method also changes.  
+  
+   
+  
+## Examples  
+ The following example displays the date and time patterns for the current calendar.  
+  
+ [!code-cpp[Classic DateTimeFormatInfo.GetAllDateTimePatterns Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic DateTimeFormatInfo.GetAllDateTimePatterns Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DateTimeFormatInfo.GetAllDateTimePatterns Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic DateTimeFormatInfo.GetAllDateTimePatterns Example/CS/source.cs#1)]
+ [!code-vb[Classic DateTimeFormatInfo.GetAllDateTimePatterns Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic DateTimeFormatInfo.GetAllDateTimePatterns Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="format" /> is not a valid standard format string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDayName">
+      <MemberSignature Language="C#" Value="public string GetDayName (DayOfWeek dayofweek);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDayName(valuetype System.DayOfWeek dayofweek) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetDayName(System.DayOfWeek)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dayofweek" Type="System.DayOfWeek" />
+      </Parameters>
+      <Docs>
+        <param name="dayofweek">A <see cref="T:System.DayOfWeek" /> value.</param>
+        <summary>Returns the culture-specific full name of the specified day of the week based on the culture associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <returns>The culture-specific full name of the day of the week represented by <paramref name="dayofweek" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default invariant <xref:System.Globalization.DateTimeFormatInfo> object, this method returns a string from the <xref:System.Globalization.GregorianCalendar> object.  
+  
+|`dayofweek`|Return Value|  
+|-----------------|------------------|  
+|Sunday|"Sunday"|  
+|Monday|"Monday"|  
+|Tuesday|"Tuesday"|  
+|Wednesday|"Wednesday"|  
+|Thursday|"Thursday"|  
+|Friday|"Friday"|  
+|Saturday|"Saturday"|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dayofweek" /> is not a valid <see cref="T:System.DayOfWeek" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEra">
+      <MemberSignature Language="C#" Value="public int GetEra (string eraName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetEra(string eraName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetEra(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eraName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eraName">The string containing the name of the era.</param>
+        <summary>Returns the integer representing the specified era.</summary>
+        <returns>The integer representing the era, if <paramref name="eraName" /> is valid; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The era name is the name a calendar uses to refer to a period of time reckoned from a fixed point or event. For example, "A.D." or "C.E." is the current era in the Gregorian calendar.  
+  
+ The comparison with `eraName` is case-insensitive, for example, "A.D." is equivalent to "a.d.".  
+  
+ <xref:System.Globalization.DateTimeFormatInfo.GetEra%2A> ignores punctuation in abbreviated era names, only if the <xref:System.Globalization.GregorianCalendar> is selected in <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> and the culture uses "A.D." as the era name, that is, "A.D." is equivalent to "AD".  
+  
+ <xref:System.Globalization.DateTimeFormatInfo.GetEra%2A> compares `eraName` with the full era name returned by <xref:System.Globalization.DateTimeFormatInfo.GetEraName%2A> and with the abbreviated era name returned by <xref:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows that <xref:System.Globalization.DateTimeFormatInfo> ignores the punctuation in the era name, only if the calendar is Gregorian and the culture uses the era name "A.D.".  
+  
+ [!code-cpp[System.Globalization.GregorianCalendar.GetEra#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.GregorianCalendar.GetEra/CPP/gregorian_getera.cpp#1)]
+ [!code-csharp[System.Globalization.GregorianCalendar.GetEra#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.GregorianCalendar.GetEra/CS/gregorian_getera.cs#1)]
+ [!code-vb[System.Globalization.GregorianCalendar.GetEra#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.GregorianCalendar.GetEra/VB/gregorian_getera.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eraName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEraName">
+      <MemberSignature Language="C#" Value="public string GetEraName (int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetEraName(int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetEraName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="era">The integer representing the era.</param>
+        <summary>Returns the string containing the name of the specified era.</summary>
+        <returns>A string containing the name of the era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The era name is the name a calendar uses to refer to a period of time reckoned from a fixed point or event. For example, "A.D." or "C.E." is the current era in the Gregorian calendar.  
+  
+ The valid values for `era` are listed in the <xref:System.Globalization.Calendar.Eras%2A> property of the appropriate class derived from <xref:System.Globalization.Calendar>. For example: <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=fullName> displays a list of eras that are supported by this implementation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="era" /> does not represent a valid era in the calendar specified in the <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar" /> property.</exception>
+        <block subset="none" type="usage">
+          <para>If the calendar is represented by <see cref="T:System.Globalization.TaiwanCalendar" /> but the <see cref="P:System.Threading.Thread.CurrentCulture" /> is not "zh-TW", then <see cref="P:System.Globalization.DateTimeFormatInfo.NativeCalendarName" />, <see cref="M:System.Globalization.DateTimeFormatInfo.GetEraName(System.Int32)" />, and <see cref="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName(System.Int32)" /> return an empty string ("").</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFormat">
+      <MemberSignature Language="C#" Value="public object GetFormat (Type formatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFormat(class System.Type formatType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetFormat(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="formatType">The type of the required formatting service.</param>
+        <summary>Returns an object of the specified type that provides a date and time  formatting service.</summary>
+        <returns>The current  object, if <paramref name="formatType" /> is the same as the type of the current <see cref="T:System.Globalization.DateTimeFormatInfo" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Format(String, IFormatProvider)` method supported by the base data types invoke this method when the current <xref:System.Globalization.DateTimeFormatInfo> object is passed as the <xref:System.IFormatProvider> parameter. This method implements <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstance">
+      <MemberSignature Language="C#" Value="public static System.Globalization.DateTimeFormatInfo GetInstance (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.DateTimeFormatInfo GetInstance(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetInstance(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.DateTimeFormatInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The <see cref="T:System.IFormatProvider" /> that gets the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.  
+  
+ -or-  
+  
+ <see langword="null" /> to get <see cref="P:System.Globalization.DateTimeFormatInfo.CurrentInfo" />.</param>
+        <summary>Returns the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object associated with the specified <see cref="T:System.IFormatProvider" />.</summary>
+        <returns>A <see cref="T:System.Globalization.DateTimeFormatInfo" /> object associated with <see cref="T:System.IFormatProvider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method of `formatProvider` using an <xref:System.Globalization.DateTimeFormatInfo> object as the `Type` parameter. If `formatProvider` is `null` or if <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> returns `null`, this method returns <xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A>.  
+  
+ Your application can get a <xref:System.Globalization.DateTimeFormatInfo> object for a specific culture using one of the following methods:  
+  
+-   The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property.  
+  
+-   The <xref:System.Globalization.DateTimeFormatInfo.GetInstance%2A> method, where `provider` is a <xref:System.Globalization.CultureInfo> object.  
+  
+ A <xref:System.Globalization.DateTimeFormatInfo> object can be created only for the invariant culture or for specific cultures, not for neutral cultures.  
+  
+ For more information about the invariant culture, specific cultures, and neutral cultures, see the <xref:System.Globalization.CultureInfo> class description.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonthName">
+      <MemberSignature Language="C#" Value="public string GetMonthName (int month);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetMonthName(int32 month) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetMonthName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="month" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="month">An integer from 1 through 13 representing the name of the month to retrieve.</param>
+        <summary>Returns the culture-specific full name of the specified month based on the culture associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <returns>The culture-specific full name of the month represented by <paramref name="month" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the default invariant <xref:System.Globalization.DateTimeFormatInfo> object, this method returns a string from the <xref:System.Globalization.GregorianCalendar> object.  
+  
+|`month`|Return Value|  
+|-------------|------------------|  
+|1|"January"|  
+|2|"February"|  
+|3|"March"|  
+|4|"April"|  
+|5|"May"|  
+|6|"June"|  
+|7|"July"|  
+|8|"August"|  
+|9|"September"|  
+|10|"October"|  
+|11|"November"|  
+|12|"December"|  
+|13|""|  
+  
+ <xref:System.Globalization.Calendar> objects can accommodate calendars with 13 months. For 12-month calendars, the empty string is always returned as the name of the 13th month.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="month" /> is less than 1 or greater than 13.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShortestDayName">
+      <MemberSignature Language="C#" Value="public string GetShortestDayName (DayOfWeek dayOfWeek);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetShortestDayName(valuetype System.DayOfWeek dayOfWeek) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.GetShortestDayName(System.DayOfWeek)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dayOfWeek" Type="System.DayOfWeek" />
+      </Parameters>
+      <Docs>
+        <param name="dayOfWeek">One of the <see cref="T:System.DayOfWeek" /> values.</param>
+        <summary>Obtains the shortest abbreviated day name for a specified day of the week associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <returns>The abbreviated name of the week that corresponds to the <paramref name="dayOfWeek" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates several methods and properties that specify date and time format patterns, native calendar name, and full and abbreviated month and day names.  
+  
+ [!code-csharp[sys.glob.DTFI1#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.DTFI1/cs/dtfi1.cs#1)]
+ [!code-vb[sys.glob.DTFI1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.DTFI1/vb/dtfi1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dayOfWeek" /> is not a value in the <see cref="T:System.DayOfWeek" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InvariantInfo">
+      <MemberSignature Language="C#" Value="public static System.Globalization.DateTimeFormatInfo InvariantInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Globalization.DateTimeFormatInfo InvariantInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.DateTimeFormatInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default read-only <see cref="T:System.Globalization.DateTimeFormatInfo" /> object that is culture-independent (invariant).</summary>
+        <value>A read-only object that is culture-independent (invariant).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not change, regardless of the current culture. Because of this, the invariant culture's <xref:System.Globalization.DateTimeFormatInfo> object can be used to produce consistent, culture-independent results in parsing and formatting operations on data that is multi-cultural. For example, if date and time data from multiple cultures is to be persisted in string form, it can be formatted by using the <xref:System.Globalization.DateTimeFormatInfo> object of the invariant culture and saved. It can then be parsed by using the invariant culture's <xref:System.Globalization.DateTimeFormatInfo> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongDatePattern">
+      <MemberSignature Language="C#" Value="public string LongDatePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LongDatePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.LongDatePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a long date value.</summary>
+        <value>The custom format string for a long date value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "D" standard format string. The following example illustrates the relationships among the following: the "D" standard format string, the custom format string returned by the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property, and  the culture-specific representation of a date.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.LongDatePattern#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/CS/longdatepattern1.cs#2)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.LongDatePattern#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/VB/longdatepattern1.vb#2)]  
+  
+ See [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) for individual custom format specifiers that can be combined to construct custom format strings such as "dddd, dd MMMM yyyy".  
+  
+ You should set the date separator in the long date pattern to an exact string instead of using the date separator placeholder. For example, to obtain the pattern MM-DD-yyyy, set the long date pattern to "MM-DD-yyyy".  
+  
+ The value of this property may change if the calendar used by a culture changes. For instance, the following example shows how the<xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property of a <xref:System.Globalization.CultureInfo> object that represents the Arabic (Syria) culture changes when the <xref:System.Globalization.Calendar> object used by the culture changes.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.LongDatePattern#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/CS/longdatepattern2.cs#3)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.LongDatePattern#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/VB/longdatepattern2.vb#3)]  
+  
+   
+  
+## Examples  
+ The following example displays the value of the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.LongDatePattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/CPP/dtfi_longdatepattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.LongDatePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/CS/dtfi_longdatepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.LongDatePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongDatePattern/VB/dtfi_longdatepattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LongTimePattern">
+      <MemberSignature Language="C#" Value="public string LongTimePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LongTimePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.LongTimePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a long time value.</summary>
+        <value>The format pattern for a long time value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "T" standard format string.  
+  
+ We recommend that you set the time separator in the long time pattern to an exact string instead of using the time separator placeholder. For example, to obtain the pattern h-mm-ss, set the long date pattern to "h-mm-ss".  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.LongTimePattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongTimePattern/CPP/dtfi_longtimepattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.LongTimePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongTimePattern/CS/dtfi_longtimepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.LongTimePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.LongTimePattern/VB/dtfi_longtimepattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MonthDayPattern">
+      <MemberSignature Language="C#" Value="public string MonthDayPattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MonthDayPattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.MonthDayPattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a month and day value.</summary>
+        <value>The custom format string for a month and day value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "m" and "M" standard format strings.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+ We recommend that you set the date separator in the month and day pattern to an exact string instead of using the date separator placeholder. For example, to obtain the pattern MM-DD, set the month and day pattern to "MM-DD".  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.MonthDayPattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.MonthDayPattern/CPP/dtfi_monthdaypattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.MonthDayPattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.MonthDayPattern/CS/dtfi_monthdaypattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.MonthDayPattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.MonthDayPattern/VB/dtfi_monthdaypattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MonthGenitiveNames">
+      <MemberSignature Language="C#" Value="public string[] MonthGenitiveNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] MonthGenitiveNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string array of month names associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <value>A string array of month names.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In some languages, a month name that is part of a date appears in the genitive case. For example, a date in the Russian (Russia) or "ru-RU", culture consists of the day number and the genitive month name, such as 1 Января.  
+  
+ When this property is set, the array must be one-dimensional and must have exactly 13 elements. <xref:System.Globalization.Calendar> objects accommodate calendars with 13 months. The first element (the element at index zero) represents the first month of the year defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property.If you set the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A> property, you must also set the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates several methods and properties that specify date and time format patterns, native calendar name, and full and abbreviated month and day names.  
+  
+ [!code-csharp[sys.glob.DTFI1#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.DTFI1/cs/dtfi1.cs#1)]
+ [!code-vb[sys.glob.DTFI1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.DTFI1/vb/dtfi1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">In a set operation, the array is multidimensional or has a length that is not exactly 13.</exception>
+        <exception cref="T:System.ArgumentNullException">In a set operation, the array or one of its elements is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">In a set operation, the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MonthNames">
+      <MemberSignature Language="C#" Value="public string[] MonthNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] MonthNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.MonthNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a one-dimensional array of type <see cref="T:System.String" /> containing the culture-specific full names of the months.</summary>
+        <value>A one-dimensional array of type <see cref="T:System.String" /> containing the culture-specific full names of the months. In a 12-month calendar, the 13th element of the array is an empty string. The array for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> contains "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", and "".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set, the array must be one-dimensional and must have exactly 13 elements. <xref:System.Globalization.Calendar> objects accommodate calendars with 13 months. The first element (the element at index zero) represents the first month of the year defined by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property.  
+  
+ If you set the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> property, you must also set the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A> property.  
+  
+ If the custom pattern includes the format pattern "MMMM", <xref:System.DateTime.ToString%2A?displayProperty=fullName> displays the value of <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A> in place of the "MMMM" in the format pattern.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an array that is multidimensional or that has a length that is not exactly 13.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeCalendarName">
+      <MemberSignature Language="C#" Value="public string NativeCalendarName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NativeCalendarName" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.NativeCalendarName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the native name of the calendar associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <value>The native name of the calendar used in the culture associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object if that name is available, or the empty string ("") if the native calendar name is not available.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates several methods and properties that specify date and time format patterns, native calendar name, and full and abbreviated month and day names.  
+  
+ [!code-csharp[sys.glob.DTFI1#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.DTFI1/cs/dtfi1.cs#1)]
+ [!code-vb[sys.glob.DTFI1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.DTFI1/vb/dtfi1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>If <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar" /> is the <see cref="T:System.Globalization.TaiwanCalendar" /> but the <see cref="P:System.Threading.Thread.CurrentCulture" /> is not "zh-TW", then <see cref="P:System.Globalization.DateTimeFormatInfo.NativeCalendarName" />, <see cref="M:System.Globalization.DateTimeFormatInfo.GetEraName(System.Int32)" />, and <see cref="M:System.Globalization.DateTimeFormatInfo.GetAbbreviatedEraName(System.Int32)" /> return an empty string ("").</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PMDesignator">
+      <MemberSignature Language="C#" Value="public string PMDesignator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PMDesignator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.PMDesignator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string designator for hours that are "post meridiem" (after noon).</summary>
+        <value>The string designator for hours that are "post meridiem" (after noon). The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is "PM".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> property is used for all times from 12:00:00 (noon) to 23:59:59.999.  
+  
+ If the custom pattern includes the format pattern "tt" and the time is after noon, <xref:System.DateTime.ToString%2A?displayProperty=fullName> displays the value of <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> in place of the "tt" in the format pattern. If the custom pattern includes the format pattern "t", only the first character of <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A> is displayed. Your application should use "tt" for languages for which it is necessary to maintain the distinction between AM and PM. An example is Japanese, for which the AM and PM designators differ in the second character instead of the first character.  
+  
+ For cultures that do not use a PM designator, this property returns an empty string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Globalization.DateTimeFormatInfo ReadOnly (System.Globalization.DateTimeFormatInfo dtfi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.DateTimeFormatInfo ReadOnly(class System.Globalization.DateTimeFormatInfo dtfi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.ReadOnly(System.Globalization.DateTimeFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.DateTimeFormatInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dtfi" Type="System.Globalization.DateTimeFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dtfi">The <see cref="T:System.Globalization.DateTimeFormatInfo" /> object to wrap.</param>
+        <summary>Returns a read-only <see cref="T:System.Globalization.DateTimeFormatInfo" /> wrapper.</summary>
+        <returns>A read-only <see cref="T:System.Globalization.DateTimeFormatInfo" /> wrapper.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This wrapper prevents any modifications to `dtfi`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dtfi" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RFC1123Pattern">
+      <MemberSignature Language="C#" Value="public string RFC1123Pattern { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RFC1123Pattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.RFC1123Pattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the custom format string for a time value that is based on the Internet Engineering Task Force (IETF) Request for Comments (RFC) 1123 specification.</summary>
+        <value>The custom format string for a time value that is based on the IETF RFC 1123 specification.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "r" and "R" standard format strings.  
+  
+ The RFC1123 pattern reflects a defined standard, and the property is read-only. Therefore, it is always the same, regardless of the culture. The custom format string is "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'".  
+  
+   
+  
+## Examples  
+ The following example displays the value of RFC1123Pattern for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.RFC1123Pattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.RFC1123Pattern/CPP/dtfi_rfc1123pattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.RFC1123Pattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.RFC1123Pattern/CS/dtfi_rfc1123pattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.RFC1123Pattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.RFC1123Pattern/VB/dtfi_rfc1123pattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAllDateTimePatterns">
+      <MemberSignature Language="C#" Value="public void SetAllDateTimePatterns (string[] patterns, char format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAllDateTimePatterns(string[] patterns, char format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns(System.String[],System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patterns" Type="System.String[]" />
+        <Parameter Name="format" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="patterns">An array of custom format strings.</param>
+        <param name="format">The standard format string associated with the custom format strings specified in the <c>patterns</c> parameter.</param>
+        <summary>Sets the custom date and time format strings that correspond to a specified standard format string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns%2A> method defines the custom format strings that correspond to a particular standard date and time format string. If a call to a date and time formatting method includes the standard date and time format string specified by `format`, the method uses the first element in the `patterns` array to define the format of the resulting string.  
+  
+> [!WARNING]
+>  The `Parse` and `TryParse` methods do not fully iterate all strings in `patterns` when parsing the string representation of a date and time. If you require a date and time string to have particular formats in a parsing operation, you should pass the array of valid formats to the [DateTime.ParseExact(String, String\<xref:System.DateTime.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>, [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName>, [DateTime.TryParseExact(String, String\<xref:System.DateTime.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName>, or [DateTimeOffset.TryParseExact(String, String\<xref:System.DateTimeOffset.TryParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTimeOffset%40%29?displayProperty=fullName> method.  
+  
+ You can define custom format strings that correspond to the "d", "D", "t", "T", and "y" or "Y" standard date and time format strings. If the value of `format` is any other standard format string, the <xref:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns%2A> method throws an <xref:System.ArgumentException>.  
+  
+ If your custom date and time format strings include date separators, you should explicitly specify a date separator instead of relying on the parsing or formatting method that replaces the "/" custom format specifier with a particular date separator. For example, to obtain the pattern MM-DD-yyyy, use the pattern "MM-DD-yyyy".  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Globalization.CultureInfo> object that represents the "en-US" (English - United States) culture and uses it to parse an array of date and time strings using the "Y" standard format string. It then uses the <xref:System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns%2A> method to associate a new custom format string with the "Y" standard format string, and then attempts to parse the array of date and time strings. Output from the example demonstrates that the new custom format string is used in both the parsing and formatting operations.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.setalldatetimepatterns/cs/setalldatetimepatterns.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.SetAllDateTimePatterns#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.setalldatetimepatterns/vb/setalldatetimepatterns.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="patterns" /> is <see langword="null" /> or a zero-length array.  
+  
+ -or-  
+  
+ <paramref name="format" /> is not a valid standard format string or is a standard format string whose patterns cannot be set.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="patterns" /> has an array element whose value is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortDatePattern">
+      <MemberSignature Language="C#" Value="public string ShortDatePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortDatePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.ShortDatePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a short date value.</summary>
+        <value>The custom format string for a short date value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "d" standard format string.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+   
+  
+## Examples  
+ The following example displays the value of the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property and the value of a date formatted using the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property for a few cultures.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.ShortDatePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortDatePattern/CS/dtfi_shortdatepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.ShortDatePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortDatePattern/VB/dtfi_shortdatepattern.vb#1)]  
+  
+ The following example modifies the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property of a <xref:System.Globalization.DateTimeFormatInfo> object that represents the formatting conventions of the English (United States) culture. It also displays a date value twice, first to reflect the original <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property and then to reflect the new property value.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.ShortDatePattern#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortDatePattern/CS/shortdatepattern1.cs#2)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.ShortDatePattern#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortDatePattern/VB/shortdatepattern1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortestDayNames">
+      <MemberSignature Language="C#" Value="public string[] ShortestDayNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ShortestDayNames" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.ShortestDayNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string array of the shortest unique abbreviated day names associated with the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object.</summary>
+        <value>A string array of day names.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates several methods and properties that specify date and time format patterns, native calendar name, and full and abbreviated month and day names.  
+  
+ [!code-csharp[sys.glob.DTFI1#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.DTFI1/cs/dtfi1.cs#1)]
+ [!code-vb[sys.glob.DTFI1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.DTFI1/vb/dtfi1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">In a set operation, the array does not have exactly seven elements.</exception>
+        <exception cref="T:System.ArgumentNullException">In a set operation, the value array or one of the elements of the value array is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">In a set operation, the current <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortTimePattern">
+      <MemberSignature Language="C#" Value="public string ShortTimePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortTimePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.ShortTimePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a short time value.</summary>
+        <value>The custom format string for a short time value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "t" standard format string.  
+  
+ We recommend that you set the time separator in the short time pattern to an exact string instead of using the time separator placeholder. For example, to obtain the pattern h-mm-ss, set the short time pattern to "h-mm-ss".  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.ShortTimePattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortTimePattern/CPP/dtfi_shorttimepattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.ShortTimePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortTimePattern/CS/dtfi_shorttimepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.ShortTimePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.ShortTimePattern/VB/dtfi_shorttimepattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SortableDateTimePattern">
+      <MemberSignature Language="C#" Value="public string SortableDateTimePattern { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SortableDateTimePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the custom format string for a sortable date and time value.</summary>
+        <value>The custom format string for a sortable date and time value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "s" standard format string.  
+  
+ The format string returned by the <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A> property reflects a defined standard (ISO 8601), and the property is read-only. Therefore, it is always the same, regardless of the culture. The custom format string is "yyyy'-'MM'-'dd'T'HH':'mm':'ss".  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.SortableDateTimePattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.SortableDateTimePattern/CPP/dtfi_sortabledatetimepattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.SortableDateTimePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.SortableDateTimePattern/CS/dtfi_sortabledatetimepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.SortableDateTimePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.SortableDateTimePattern/VB/dtfi_sortabledatetimepattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeSeparator">
+      <MemberSignature Language="C#" Value="public string TimeSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TimeSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.TimeSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that separates the components of time, that is, the hour, minutes, and seconds.</summary>
+        <value>The string that separates the components of time. The default for <see cref="P:System.Globalization.DateTimeFormatInfo.InvariantInfo" /> is ":".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the custom pattern includes the format pattern ":", <xref:System.DateTime.ToString%2A?displayProperty=fullName> displays the value of <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A> in place of the ":" in the format pattern.  
+  
+ The time separator is derived from the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A> property. We recommend that you set the time separator in short or long time patterns to an exact string instead of using the time separator placeholder. For example, to obtain the pattern h-mm-ss, set the pattern to "h-mm-ss". This practice also enables you to set patterns such as "h'h 'mm'm 'ss's'" (3h 36m 12s) that include multiple types of separators. The <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A> property defines the string that replaces the time separator (":" custom date and time format specifier) in a result string in a formatting operation. It also defines the time separator string in a parsing operation.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Globalization.CultureInfo> object for the en-US culture, changes its date separator to ".", and displays a date by using the "t", "T", "F", "f", "G", and "g" standard format strings.  
+  
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.TimeSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.timeseparator/cs/timeseparatorex.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.TimeSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.datetimeformatinfo.timeseparator/vb/timeseparatorex.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UniversalSortableDateTimePattern">
+      <MemberSignature Language="C#" Value="public string UniversalSortableDateTimePattern { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UniversalSortableDateTimePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the custom format string for a universal, sortable date and time string.</summary>
+        <value>The custom format string for a universal, sortable date and time string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A> property defines the format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "u" standard format string. It can be used to display dates and times in a sortable order with the universal time designator "Z" at the end. The format is sortable because it uses leading zeros for year, month, day, hour, minute, and second. The custom format string ("yyyy'-'MM'-'dd HH':'mm':'ss'Z'") is the same regardless of culture or format provider.  
+  
+ The format string returned by the <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A> property reflects a defined standard, and the property is read-only. Therefore, it is always the same, regardless of the culture. The custom format string is "yyyy'-'MM'-'dd HH':'mm':'ss'Z'".  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern/CPP/dtfi_universalsortabledatetimepattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern/CS/dtfi_universalsortabledatetimepattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern/VB/dtfi_universalsortabledatetimepattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YearMonthPattern">
+      <MemberSignature Language="C#" Value="public string YearMonthPattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string YearMonthPattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.DateTimeFormatInfo.YearMonthPattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the custom format string for a year and month value.</summary>
+        <value>The custom format string for a year and month value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A> property defines the culture-specific format of date strings that are returned by calls to the <xref:System.DateTime.ToString%2A?displayProperty=fullName> and <xref:System.DateTimeOffset.ToString%2A?displayProperty=fullName> methods and by composite format strings that are supplied the "y" and "Y" standard format strings.  
+  
+ This property is affected if the value of the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property changes.  
+  
+ We recommend that you set the date separator in the year month pattern to an exact string instead of using the date separator placeholder. For example, to get the pattern MM-yyyy, set the year month pattern to "MM-yyyy".  
+  
+   
+  
+## Examples  
+ The following example displays the value of <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A> for a few cultures.  
+  
+ [!code-cpp[System.Globalization.DateTimeFormatInfo.YearMonthPattern#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.YearMonthPattern/CPP/dtfi_yearmonthpattern.cpp#1)]
+ [!code-csharp[System.Globalization.DateTimeFormatInfo.YearMonthPattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.YearMonthPattern/CS/dtfi_yearmonthpattern.cs#1)]
+ [!code-vb[System.Globalization.DateTimeFormatInfo.YearMonthPattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.DateTimeFormatInfo.YearMonthPattern/VB/dtfi_yearmonthpattern.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.DateTimeFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

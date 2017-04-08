@@ -1,0 +1,596 @@
+<Type Name="RelatedEnd" FullName="System.Data.Objects.DataClasses.RelatedEnd">
+  <TypeSignature Language="C#" Value="public abstract class RelatedEnd : System.Data.Objects.DataClasses.IRelatedEnd" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit RelatedEnd extends System.Object implements class System.Data.Objects.DataClasses.IRelatedEnd" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.RelatedEnd" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.Objects.DataClasses.IRelatedEnd</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a base class that implements common functionality for a related end.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Objects.DataClasses.RelatedEnd> is the base class for the <xref:System.Data.Objects.DataClasses.EntityCollection%601> class and the <xref:System.Data.Objects.DataClasses.EntityReference%601> class.  
+  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd> class implements functionality that is shared between the <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> classes.  
+  
+ This class is not intended to be used directly in your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssociationChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler AssociationChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler AssociationChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a change is made to a related end.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd.AssociationChanged> event is raised by the following methods:  
+  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Add%2A?displayProperty=fullName>  
+  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Remove%2A?displayProperty=fullName>  
+  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A?displayProperty=fullName>  
+  
+-   <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A?displayProperty=fullName>  
+  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A?displayProperty=fullName>  
+  
+-   <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A?displayProperty=fullName>  
+  
+ Events may be suppressed during bulk operations, such as `Load`, <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A>, and <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the collection of related objects.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that iterates through the collection of related objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLoaded">
+      <MemberSignature Language="C#" Value="public bool IsLoaded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLoaded" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether all related objects have been loaded.</summary>
+        <value>
+          <see langword="true" /> if the related end contains all the related objects from the database; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method sets the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag to `true`.  
+  
+ Calling the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Clear%2A> method on an <xref:System.Data.Objects.DataClasses.EntityCollection%601> sets <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> to `false`.  
+  
+ An <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> may also be loaded if the related end is included in the query path. For more information about span, see [Loading Related Objects](http://msdn.microsoft.com/en-us/452347d2-7b3b-44cd-9001-231299a28cb1).  
+  
+ The `Load` method on <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
+  
+ When an object is detached, the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag is changed from `false` to `true`.  
+  
+ To guarantee that a related end is fully loaded before doing processing, you should check whether <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `false`. If <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `false`, you should call the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.Load" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, loads the related object or objects into the related end with the default merge option.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default merge option is <xref:System.Data.Objects.MergeOption> for tracked objects or <xref:System.Data.Objects.MergeOption> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>. To specify a merge option other than <xref:System.Data.Objects.MergeOption>, call the `Load` method on the <xref:System.Data.Objects.DataClasses.EntityCollection%601> or the <xref:System.Data.Objects.DataClasses.EntityReference%601> that takes a specific <xref:System.Data.Objects.MergeOption> parameter.  
+  
+ Calling the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method sets the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag to `true`.  
+  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">When the source object was retrieved by using a <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> query and the <see cref="T:System.Data.Objects.MergeOption" /> is not <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> or the related objects are already loaded.  
+  
+ -or-  
+  
+ When the source object is not attached to the <see cref="T:System.Data.Objects.ObjectContext" />.  
+  
+ -or-  
+  
+ When the source object is being tracked but is in the <see cref="F:System.Data.EntityState.Added" /> or <see cref="F:System.Data.EntityState.Deleted" /> state or the <see cref="T:System.Data.Objects.MergeOption" /> used for <see cref="M:System.Data.Objects.DataClasses.RelatedEnd.Load" /> is <see cref="F:System.Data.Objects.MergeOption.NoTracking" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public abstract void Load (System.Data.Objects.MergeOption mergeOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.Load(System.Data.Objects.MergeOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+      </Parameters>
+      <Docs>
+        <param name="mergeOption">The <see cref="T:System.Data.Objects.MergeOption" /> to use when merging objects into an existing <see cref="T:System.Data.Objects.DataClasses.EntityCollection`1" />.</param>
+        <summary>When overridden in a derived class, loads an object or objects from the related end with the specified merge option.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> override this method to load related objects. `Load` is called to explicitly load related objects from a related end exposed by a navigation property. For more information, see [Loading Related Objects](http://msdn.microsoft.com/en-us/452347d2-7b3b-44cd-9001-231299a28cb1).  
+  
+ Calling the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method sets the <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> flag to `true`.  
+  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
+  
+ The default merge option is <xref:System.Data.Objects.MergeOption> for tracked objects or <xref:System.Data.Objects.MergeOption> when the object is not tracked in the <xref:System.Data.Objects.ObjectStateManager>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">When the source object was retrieved by using a <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> query and the <see cref="T:System.Data.Objects.MergeOption" /> is not <see cref="F:System.Data.Objects.MergeOption.NoTracking" /> or the related objects are already loaded.  
+  
+ -or-  
+  
+ When the source object is not attached to the <see cref="T:System.Data.Objects.ObjectContext" />.  
+  
+ -or-  
+  
+ When the source object is being tracked but is in the <see cref="F:System.Data.EntityState.Added" /> or <see cref="F:System.Data.EntityState.Deleted" /> state or the <see cref="T:System.Data.Objects.MergeOption" /> used for <see cref="M:System.Data.Objects.DataClasses.RelatedEnd.Load" /> is <see cref="F:System.Data.Objects.MergeOption.NoTracking" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeserialized">
+      <MemberSignature Language="C#" Value="public void OnDeserialized (System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnDeserialized(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.OnDeserialized(System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.OnDeserialized</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The serialized stream.</param>
+        <summary>Used internally to deserialize entity objects along with the <see cref="T:System.Data.Objects.DataClasses.RelationshipManager" /> instances.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipName">
+      <MemberSignature Language="C#" Value="public string RelationshipName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationshipName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.RelationshipName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the relationship in which this related end participates.</summary>
+        <value>The name of the relationship in which this <see cref="T:System.Data.Objects.DataClasses.RelatedEnd" /> participates. The relationship name is not namespace qualified.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipSet">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipSet RelationshipSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.RelationshipSet RelationshipSet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.RelationshipSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.RelationshipSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the metadata for the related end.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipSet" /> object that contains metadata for the end of a relationship.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceRoleName">
+      <MemberSignature Language="C#" Value="public string SourceRoleName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceRoleName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.SourceRoleName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the role name at the source end of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the role name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
+  
+   
+  
+## Examples  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832), which was generated by the [Entity Data Model Wizard](http://msdn.microsoft.com/en-us/423ec9a7-5464-43b7-a7ef-9f5f000848b5).  
+  
+ The following example adds new `SalesOrderHeader` entities to the `Contact` entity. Then it gets all related ends from the `Contact` entity and displays relationship name, source role name, and target role name for each related end.  
+  
+ [!code-csharp[DP ObjectServices Concepts#IRelatedEnd](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#irelatedend)]
+ [!code-vb[DP ObjectServices Concepts#IRelatedEnd](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#irelatedend)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Add">
+      <MemberSignature Language="C#" Value="void IRelatedEnd.Add (System.Data.Objects.DataClasses.IEntityWithRelationships entity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Data.Objects.DataClasses.IRelatedEnd.Add(class System.Data.Objects.DataClasses.IEntityWithRelationships entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Add(System.Data.Objects.DataClasses.IEntityWithRelationships)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
+      </Parameters>
+      <Docs>
+        <param name="entity">An object to add to the collection. This object must implement the <see cref="T:System.Data.Objects.DataClasses.IEntityWithRelationships" /> interface.</param>
+        <summary>Adds an object to the related end.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
+  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd.System%23Data%23Objects%23DataClasses%23IRelatedEnd%23Add%2A> method is only maintained for compatibility with previous versions of the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Add">
+      <MemberSignature Language="C#" Value="void IRelatedEnd.Add (object entity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Data.Objects.DataClasses.IRelatedEnd.Add(object entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="entity">An entity instance to add to the related end.</param>
+        <summary>Adds an object to the related end.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the source entity object is attached to a cache, then all the connected ends are added to the object cache and their corresponding relationships are also added to the <xref:System.Data.Objects.ObjectStateManager>. The <xref:System.Data.Objects.DataClasses.RelatedEnd> of the relationship is also fixed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Attach">
+      <MemberSignature Language="C#" Value="void IRelatedEnd.Attach (System.Data.Objects.DataClasses.IEntityWithRelationships entity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Data.Objects.DataClasses.IRelatedEnd.Attach(class System.Data.Objects.DataClasses.IEntityWithRelationships entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Attach(System.Data.Objects.DataClasses.IEntityWithRelationships)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The object being attached.</param>
+        <summary>Attaches an object at the related end.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
+  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd.System%23Data%23Objects%23DataClasses%23IRelatedEnd%23Attach%2A> method is only maintained for compatibility with previous versions of the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Attach">
+      <MemberSignature Language="C#" Value="void IRelatedEnd.Attach (object entity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Data.Objects.DataClasses.IRelatedEnd.Attach(object entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Attach(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="entity">An entity instance to attach to the related end.</param>
+        <summary>Attaches an object to the related end.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the related end already has some entities attached to it, the existing entities will be merged with the new entity. The new entity is not assumed to be the complete set of related entity objects.  
+  
+ The source entity object and all entity objects passed in must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state. Deleted elements are allowed only when the state manager is already tracking the relationship instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.CreateSourceQuery">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerable IRelatedEnd.CreateSourceQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerable System.Data.Objects.DataClasses.IRelatedEnd.CreateSourceQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#CreateSourceQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerable" /> that represents the objects that belong to the related end.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> that represents the objects that belong to the related end.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
+  
+ <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> both override <xref:System.Data.Objects.DataClasses.RelatedEnd.System%23Data%23Objects%23DataClasses%23IRelatedEnd%23CreateSourceQuery%2A> to return an <xref:System.Data.Objects.ObjectQuery%601>. This query, when it is executed, returns the same set of objects that belong to the related end.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Remove">
+      <MemberSignature Language="C#" Value="bool IRelatedEnd.Remove (System.Data.Objects.DataClasses.IEntityWithRelationships entity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Data.Objects.DataClasses.IRelatedEnd.Remove(class System.Data.Objects.DataClasses.IEntityWithRelationships entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Remove(System.Data.Objects.DataClasses.IEntityWithRelationships)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Data.Objects.DataClasses.IEntityWithRelationships" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The entity instance to remove from the collection.</param>
+        <summary>Removes an object from the collection at the related end.</summary>
+        <returns>A value that indicates whether the object was removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Objects.DataClasses.RelatedEnd> instance is cast to an <xref:System.Data.Objects.DataClasses.IRelatedEnd> interface.  
+  
+ The <xref:System.Data.Objects.DataClasses.RelatedEnd.System%23Data%23Objects%23DataClasses%23IRelatedEnd%23Remove%2A> method is only maintained for compatibility with previous versions of the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.Objects.DataClasses.IRelatedEnd.Remove">
+      <MemberSignature Language="C#" Value="bool IRelatedEnd.Remove (object entity);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Data.Objects.DataClasses.IRelatedEnd.Remove(object entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.RelatedEnd.System#Data#Objects#DataClasses#IRelatedEnd#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="entity">An entity instance to remove from the related end.</param>
+        <summary>Removes an object from the related end if the object is part of the related end.</summary>
+        <returns>
+          <see langword="true" /> if the entity was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the source entity object is attached to a cache, the relationship is marked for deletion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetRoleName">
+      <MemberSignature Language="C#" Value="public string TargetRoleName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetRoleName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.RelatedEnd.TargetRoleName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the role name at the target end of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the role name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [Association Element (CSDL)](http://msdn.microsoft.com/en-us/c305169a-8af7-432f-9ba7-800a163aed41).  
+  
+   
+  
+## Examples  
+ The example in this topic is based on the [AdventureWorks Sales Model](http://msdn.microsoft.com/en-us/f16cd988-673f-4376-b034-129ca93c7832). The example adds new `SalesOrderHeader` entities to the `Contact` entity. Then it gets all related ends from the `Contact` entity and displays relationship name, source role name, and target role name for each related end.  
+  
+ [!code-csharp[DP ObjectServices Concepts#IRelatedEnd](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#irelatedend)]
+ [!code-vb[DP ObjectServices Concepts#IRelatedEnd](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#irelatedend)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

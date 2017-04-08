@@ -1,0 +1,163 @@
+<Type Name="IStructuralComparable" FullName="System.Collections.IStructuralComparable">
+  <TypeSignature Language="C#" Value="public interface IStructuralComparable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStructuralComparable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.IStructuralComparable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Supports the structural comparison of collection objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.IStructuralComparable> interface enables you to implement customized comparisons for collection members. That is, you can define precisely what it means for one collection object to precede, follow, or occur in the same position in the sort order as a second collection object. You can then specify that this definition be used with a collection type that accepts the <xref:System.Collections.IStructuralComparable> interface.  
+  
+ The interface has a single member, <xref:System.Collections.IStructuralComparable.CompareTo%2A>, which determines whether the current collection object is less than, equal to, or greater than a second object in the sort order. The actual comparison of the members or elements in the current instance with those in a second object is performed by an <xref:System.Collections.IComparer> interface implementation, which contains the definition of your custom comparison.  
+  
+> [!NOTE]
+>  The <xref:System.Collections.IStructuralComparable> interface supports only structural comparisons for sorting or ordering. The <xref:System.Collections.IStructuralEquatable> interface supports custom comparisons for structural equality.  
+  
+ The .NET Framework provides two default comparers. One is returned by the <xref:System.Collections.StructuralComparisons.StructuralComparer%2A?displayProperty=fullName> property; the other is returned by the <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> property.  
+  
+ The generic tuple classes (<xref:System.Tuple%601>, <xref:System.Tuple%602>, <xref:System.Tuple%603>, and so on) and the <xref:System.Array> class provide explicit implementations of the <xref:System.Collections.IStructuralComparable> interface. By casting (in C#) or converting (in Visual Basic) the current instance of an array or tuple to an <xref:System.Collections.IStructuralComparable> interface value and providing your <xref:System.Collections.IComparer> implementation as an argument to the <xref:System.Collections.IStructuralComparable.CompareTo%2A> method, you can define a custom sort order for the array or collection. However, you do not call the <xref:System.Collections.IStructuralComparable.CompareTo%2A> method directly in most cases. Instead, the <xref:System.Collections.IStructuralComparable.CompareTo%2A> method is called by sorting methods such as <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29>. In this case, you define your <xref:System.Collections.IComparer> implementation and pass it as an argument to a sorting method or collection object's class constructor. The <xref:System.Collections.IStructuralComparable.CompareTo%2A> method with your custom comparer is then called automatically whenever the collection is sorted.  
+  
+   
+  
+## Examples  
+ The following example creates an array of <xref:System.Tuple%606> objects that contains population data for three U.S. cities from 1960 to 2000. The sextuple's first component is the city name. The remaining five components represent the population at ten-year intervals from 1960 to 2000.  
+  
+ The `PopulationComparer` class provides an <xref:System.Collections.IComparer> implementation that allows the array of sextuples to be sorted by any one of its components. Two values are provided to the `PopulationComparer` class in its constructor: the position of the component that defines the sort order, and a Boolean value that indicates whether the tuple objects should be sorted in ascending or descending order.  
+  
+ The example then displays the elements in the array in unsorted order, sorts them by the third component (the population in 1970) and displays them, and then sorts them by the sixth component (the population in 2000) and displays them. Note that the example does not directly call the <xref:System.Collections.IStructuralComparable.CompareTo%2A> method. The method is called implicitly by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29> method for each tuple object in the array.  
+  
+ [!code-csharp[System.Tuple\`6.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`6.compareto/cs/compareto2.cs#2)]
+ [!code-vb[System.Tuple\`6.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`6.compareto/vb/compareto2.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (object other, System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with the current instance.</param>
+        <param name="comparer">An object that compares members of the current collection object with the corresponding members of <c>other</c>.</param>
+        <summary>Determines whether the current collection object precedes, occurs in the same position as, or follows another object in the sort order.</summary>
+        <returns>An integer that indicates the relationship of the current collection object to <paramref name="other" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> The current instance precedes <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> The current instance and <paramref name="other" /> are equal.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> The current instance follows <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.IStructuralComparable.CompareTo%2A> method supports custom structural comparison and sorting of array and tuple objects. The <xref:System.Collections.IStructuralComparable.CompareTo%2A> method calls the `comparer` object's <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method to compare individual array elements or tuple components, starting with the first element or component. The individual calls to <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> end and the <xref:System.Collections.IStructuralComparable.CompareTo%2A> method returns a value when one of the following conditions becomes true:  
+  
+-   The <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method returns -1.  
+  
+-   The <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method returns 1.  
+  
+-   The <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method is called for the last element or component in the collection object.  
+  
+   
+  
+## Examples  
+ The following example creates an array of <xref:System.Tuple%606> objects that contains population data for three U.S. cities from 1960 to 2000. The sextuple's first component is the city name. The remaining five components represent the population at ten-year intervals from 1960 to 2000.  
+  
+ The `PopulationComparer` class provides an <xref:System.Collections.IComparer> implementation that allows the array of sextuples to be sorted by any one of its components. Two values are provided to the `PopulationComparer` class in its constructor: the position of the component that defines the sort order, and a <xref:System.Boolean> value that indicates whether the tuple objects should be sorted in ascending or descending order.  
+  
+ The example then displays the elements in the array in unsorted order, sorts them by the third component (the population in 1970) and displays them, and then sorts them by the sixth component (the population in 2000) and displays them. Note that the example does not directly call the <xref:System.Collections.IStructuralComparable.CompareTo%2A?displayProperty=fullName> implementation. The method is called implicitly by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29> method for each tuple object in the array.  
+  
+ [!code-csharp[System.Tuple\`6.CompareTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.tuple`6.compareto/cs/compareto2.cs#2)]
+ [!code-vb[System.Tuple\`6.CompareTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.tuple`6.compareto/vb/compareto2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">This instance and <paramref name="other" /> are not the same type.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

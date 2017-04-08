@@ -1,0 +1,798 @@
+<Type Name="NamedPipeClientStream" FullName="System.IO.Pipes.NamedPipeClientStream">
+  <TypeSignature Language="C#" Value="public sealed class NamedPipeClientStream : System.IO.Pipes.PipeStream" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeClientStream extends System.IO.Pipes.PipeStream" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipes.NamedPipeClientStream" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IO.Pipes.PipeStream</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes a <see cref="T:System.IO.Stream" /> around a named pipe, which supports both synchronous and asynchronous read and write operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Named pipes provide one-way or duplex pipes for communication between a pipe server and one or more pipe clients. Named pipes can be used for interprocess communication locally or over a network. A single pipe name can be shared by multiple <xref:System.IO.Pipes.NamedPipeClientStream> objects.  
+  
+ Any process can act as either a named pipe server or client, or both.  
+  
+> [!NOTE]
+>  For [!INCLUDE[winxppro](~/includes/winxppro-md.md)] and [!INCLUDE[win2kserver](~/includes/win2kserver-md.md)], a maximum of 10 pipes can simultaneously connect over the network.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
+  
+ This example is for the client process, which connects to the server process. For the entire code sample, including the code for both the pipe client and server, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
+  
+ [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+ [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string pipeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pipeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pipeName">The name of the pipe.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the following default values:  
+  
+-   A default server name of ".".  
+  
+-   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>.  
+  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string serverName, string pipeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, string pipeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pipeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serverName">The name of the remote computer to connect to, or "." to specify the local computer.</param>
+        <param name="pipeName">The name of the pipe.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the following default values:  
+  
+-   A default <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>.  
+  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string serverName, string pipeName, System.IO.Pipes.PipeDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, string pipeName, valuetype System.IO.Pipes.PipeDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
+      </Parameters>
+      <Docs>
+        <param name="serverName">The name of the remote computer to connect to, or "." to specify the local computer.</param>
+        <param name="pipeName">The name of the pipe.</param>
+        <param name="direction">One of the enumeration values that determines the direction of the pipe.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the following default values:  
+  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+  
+ [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+ [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".  
+  
+ -or-  
+  
+ <paramref name="direction" /> is not a valid <see cref="T:System.IO.Pipes.PipeDirection" /> value.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (System.IO.Pipes.PipeDirection direction, bool isAsync, bool isConnected, Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, bool isAsync, bool isConnected, class Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
+        <Parameter Name="isAsync" Type="System.Boolean" />
+        <Parameter Name="isConnected" Type="System.Boolean" />
+        <Parameter Name="safePipeHandle" Type="Microsoft.Win32.SafeHandles.SafePipeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="direction">One of the enumeration values that determines the direction of the pipe.</param>
+        <param name="isAsync">
+          <see langword="true" /> to indicate that the handle was opened asynchronously; otherwise, <see langword="false" />.</param>
+        <param name="isConnected">
+          <see langword="true" /> to indicate that the pipe is connected; otherwise, <see langword="false" />.</param>
+        <param name="safePipeHandle">A safe handle for the pipe that this <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> object will encapsulate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class for the specified pipe handle with the specified pipe direction.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IO.IOException">The stream has been closed.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="safePipeHandle" /> is not a valid handle.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="safePipeHandle" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="direction" /> is not a valid <see cref="T:System.IO.Pipes.PipeDirection" /> value.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string serverName, string pipeName, System.IO.Pipes.PipeDirection direction, System.IO.Pipes.PipeOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, string pipeName, valuetype System.IO.Pipes.PipeDirection direction, valuetype System.IO.Pipes.PipeOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeDirection,System.IO.Pipes.PipeOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
+        <Parameter Name="options" Type="System.IO.Pipes.PipeOptions" />
+      </Parameters>
+      <Docs>
+        <param name="serverName">The name of the remote computer to connect to, or "." to specify the local computer.</param>
+        <param name="pipeName">The name of the pipe.</param>
+        <param name="direction">One of the enumeration values that determines the direction of the pipe.</param>
+        <param name="options">One of the enumeration values that determines how to open or create the pipe.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction and pipe options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the following default values:  
+  
+-   A default <xref:System.Security.Principal.TokenImpersonationLevel> value of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".  
+  
+ -or-  
+  
+ <paramref name="direction" /> is not a valid <see cref="T:System.IO.Pipes.PipeDirection" /> value.  
+  
+ -or-  
+  
+ <paramref name="options" /> is not a valid <see cref="T:System.IO.Pipes.PipeOptions" /> value.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string serverName, string pipeName, System.IO.Pipes.PipeDirection direction, System.IO.Pipes.PipeOptions options, System.Security.Principal.TokenImpersonationLevel impersonationLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, string pipeName, valuetype System.IO.Pipes.PipeDirection direction, valuetype System.IO.Pipes.PipeOptions options, valuetype System.Security.Principal.TokenImpersonationLevel impersonationLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeDirection,System.IO.Pipes.PipeOptions,System.Security.Principal.TokenImpersonationLevel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
+        <Parameter Name="options" Type="System.IO.Pipes.PipeOptions" />
+        <Parameter Name="impersonationLevel" Type="System.Security.Principal.TokenImpersonationLevel" />
+      </Parameters>
+      <Docs>
+        <param name="serverName">The name of the remote computer to connect to, or "." to specify the local computer.</param>
+        <param name="pipeName">The name of the pipe.</param>
+        <param name="direction">One of the enumeration values that determines the direction of the pipe.</param>
+        <param name="options">One of the enumeration values that determines how to open or create the pipe.</param>
+        <param name="impersonationLevel">One of the enumeration values that determines the security impersonation level.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction, pipe options, and security impersonation level.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses a default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".  
+  
+ -or-  
+  
+ <paramref name="direction" /> is not a valid <see cref="T:System.IO.Pipes.PipeDirection" /> value.  
+  
+ -or-  
+  
+ <paramref name="options" /> is not a valid <see cref="T:System.IO.Pipes.PipeOptions" /> value.  
+  
+ -or-  
+  
+ <paramref name="impersonationLevel" /> is not a valid <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> value.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string serverName, string pipeName, System.IO.Pipes.PipeAccessRights desiredAccessRights, System.IO.Pipes.PipeOptions options, System.Security.Principal.TokenImpersonationLevel impersonationLevel, System.IO.HandleInheritability inheritability);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, string pipeName, valuetype System.IO.Pipes.PipeAccessRights desiredAccessRights, valuetype System.IO.Pipes.PipeOptions options, valuetype System.Security.Principal.TokenImpersonationLevel impersonationLevel, valuetype System.IO.HandleInheritability inheritability) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeAccessRights,System.IO.Pipes.PipeOptions,System.Security.Principal.TokenImpersonationLevel,System.IO.HandleInheritability)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="desiredAccessRights" Type="System.IO.Pipes.PipeAccessRights" />
+        <Parameter Name="options" Type="System.IO.Pipes.PipeOptions" />
+        <Parameter Name="impersonationLevel" Type="System.Security.Principal.TokenImpersonationLevel" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
+      </Parameters>
+      <Docs>
+        <param name="serverName">The name of the remote computer to connect to, or "." to specify the local computer.</param>
+        <param name="pipeName">The name of the pipe.</param>
+        <param name="desiredAccessRights">One of the enumeration values that specifies the desired access rights of the pipe.</param>
+        <param name="options">One of the enumeration values that determines how to open or create the pipe.</param>
+        <param name="impersonationLevel">One of the enumeration values that determines the security impersonation level.</param>
+        <param name="inheritability">One of the enumeration values that determines whether the underlying handle will be inheritable by child processes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe options, security impersonation level, and inheritability mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pipe direction for this constructor is determined by the `desiredAccessRights` parameter. If the `desiredAccessRights` value is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` is <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>. If the value of `desiredAccessRights` includes both <xref:System.IO.Pipes.PipeAccessRights> and <xref:System.IO.Pipes.PipeAccessRights>, the pipe direction will be <xref:System.IO.Pipes.PipeDirection>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".  
+  
+ -or-  
+  
+ <paramref name="options" /> is not a valid <see cref="T:System.IO.Pipes.PipeOptions" /> value.  
+  
+ -or-  
+  
+ <paramref name="impersonationLevel" /> is not a valid <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> value.  
+  
+ -or-  
+  
+ <paramref name="inheritability" /> is not a valid <see cref="T:System.IO.HandleInheritability" /> value.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedPipeClientStream (string serverName, string pipeName, System.IO.Pipes.PipeDirection direction, System.IO.Pipes.PipeOptions options, System.Security.Principal.TokenImpersonationLevel impersonationLevel, System.IO.HandleInheritability inheritability);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverName, string pipeName, valuetype System.IO.Pipes.PipeDirection direction, valuetype System.IO.Pipes.PipeOptions options, valuetype System.Security.Principal.TokenImpersonationLevel impersonationLevel, valuetype System.IO.HandleInheritability inheritability) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeDirection,System.IO.Pipes.PipeOptions,System.Security.Principal.TokenImpersonationLevel,System.IO.HandleInheritability)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverName" Type="System.String" />
+        <Parameter Name="pipeName" Type="System.String" />
+        <Parameter Name="direction" Type="System.IO.Pipes.PipeDirection" />
+        <Parameter Name="options" Type="System.IO.Pipes.PipeOptions" />
+        <Parameter Name="impersonationLevel" Type="System.Security.Principal.TokenImpersonationLevel" />
+        <Parameter Name="inheritability" Type="System.IO.HandleInheritability" />
+      </Parameters>
+      <Docs>
+        <param name="serverName">The name of the remote computer to connect to, or "." to specify the local computer.</param>
+        <param name="pipeName">The name of the pipe.</param>
+        <param name="direction">One of the enumeration values that determines the direction of the pipe.</param>
+        <param name="options">One of the enumeration values that determines how to open or create the pipe.</param>
+        <param name="impersonationLevel">One of the enumeration values that determines the security impersonation level.</param>
+        <param name="inheritability">One of the enumeration values that determines whether the underlying handle will be inheritable by child processes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> class with the specified pipe and server names, and the specified pipe direction, pipe options, security impersonation level, and inheritability mode.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="pipeName" /> or <paramref name="serverName" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="pipeName" /> is set to "anonymous".  
+  
+ -or-  
+  
+ <paramref name="direction" /> is not a valid <see cref="T:System.IO.Pipes.PipeDirection" /> value.  
+  
+ -or-  
+  
+ <paramref name="options" /> is not a valid <see cref="T:System.IO.Pipes.PipeOptions" /> value.  
+  
+ -or-  
+  
+ <paramref name="impersonationLevel" /> is not a valid <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> value.  
+  
+ -or-  
+  
+ <paramref name="inheritability" /> is not a valid <see cref="T:System.IO.HandleInheritability" /> value.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckPipePropertyOperations">
+      <MemberSignature Language="C#" Value="protected override void CheckPipePropertyOperations ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CheckPipePropertyOperations() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.CheckPipePropertyOperations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.Connect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Connects to a waiting server with an infinite time-out value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.IO.Pipes.NamedPipeClientStream.Connect%28System.Int32%29> method with an infinite time-out value.  
+  
+ This method waits for a pipe instance to become available. <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> might return before <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> is called from the <xref:System.IO.Pipes.NamedPipeServerStream> object, but <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> will not return until <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> has returned.  
+  
+ Any data written to the pipe after a <xref:System.IO.Pipes.NamedPipeClientStream> object has connected, but before the server has called <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>, will be available to the server following the call to <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+  
+ [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+ [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The client is already connected.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect (int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.Connect(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The number of milliseconds to wait for the server to respond before the connection times out.</param>
+        <summary>Connects to a waiting server within the specified time-out period.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method waits for a pipe instance to become available. <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> might return before <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> is called from the <xref:System.IO.Pipes.NamedPipeServerStream>, but <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A> will not return until <xref:System.IO.Pipes.NamedPipeClientStream.Connect%2A> has returned. You set the `timeout` parameter to <xref:System.Threading.Timeout.Infinite> to specify an infinite time-out value.  
+  
+ Any data written to the pipe after a <xref:System.IO.Pipes.NamedPipeClientStream> object has connected, but before the server has called <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>, will be available to the server following the call to <xref:System.IO.Pipes.NamedPipeServerStream.WaitForConnection%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">Could not connect to the server within the specified <paramref name="timeout" /> period.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is less than 0 and not set to <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The client is already connected.</exception>
+        <exception cref="T:System.IO.IOException">The server is connected to another client and the time-out period has expired.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.ConnectAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Asynchronously connects to a waiting server with an infinite timeout period.</summary>
+        <returns>A task that represents the asynchronous connect operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync (int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync(int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.ConnectAsync(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The number of milliseconds to wait for the server to respond before the connection times out.</param>
+        <summary>Asynchronously connects to a waiting server within the specified timeout period.</summary>
+        <returns>A task that represents the asynchronous connect operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.ConnectAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously connects to a waiting server and monitors cancellation requests.</summary>
+        <returns>A task that represents the asynchronous connect operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ConnectAsync (int timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ConnectAsync(int32 timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.ConnectAsync(System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The number of milliseconds to wait for the server to respond before the connection times out.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously connects to a waiting server within the specified timeout period and monitors cancellation requests.</summary>
+        <returns>A task that represents the asynchronous connect operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~NamedPipeClientStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeClientStream.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases unmanaged resources and performs other cleanup operations before the <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> instance is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfServerInstances">
+      <MemberSignature Language="C#" Value="public int NumberOfServerInstances { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfServerInstances" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Pipes.NamedPipeClientStream.NumberOfServerInstances" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of server instances that share the same pipe name.</summary>
+        <value>The number of server instances that share the same pipe name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the number of server instances for the <xref:System.IO.Pipes.NamedPipeServerStream> object that the current <xref:System.IO.Pipes.NamedPipeClientStream> object has a handle to or is connected to. If the current <xref:System.IO.Pipes.NamedPipeClientStream> object has not yet connected to a named pipe server, or if the current pipe handle has not yet been set, this property throws an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a method to send a string from a parent process to a child process using named pipes. In this example, a <xref:System.IO.Pipes.NamedPipeClientStream> object is created in a child process, which then connects to a pipe on the local computer. The server example can be seen in the <xref:System.IO.Pipes.NamedPipeServerStream> class. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+  
+ [!code-csharp[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/cs/Program.cs#01)]
+ [!code-vb[System.IO.Pipes.NamedPipeClientStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeClientStream_Sample1/vb/program.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The pipe handle has not been set.  
+  
+ -or-  
+  
+ The current <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> object has not yet connected to a <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> object.</exception>
+        <exception cref="T:System.IO.IOException">The pipe is broken or an I/O error occurred.</exception>
+        <exception cref="T:System.ObjectDisposedException">The underlying pipe handle is closed.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,294 @@
+<Type Name="IAsyncResult" FullName="System.IAsyncResult">
+  <TypeSignature Language="C#" Value="public interface IAsyncResult" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncResult" />
+  <TypeSignature Language="DocId" Value="T:System.IAsyncResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the status of an asynchronous operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IAsyncResult> interface is implemented by classes containing methods that can operate asynchronously. It is the return type of methods that initiate an asynchronous operation, such as <xref:System.IO.FileStream.BeginRead%2A?displayProperty=fullName>, and it is passed to methods that conclude an asynchronous operation, such as <xref:System.IO.FileStream.EndRead%2A?displayProperty=fullName>. <xref:System.IAsyncResult> objects are also passed to methods invoked by <xref:System.AsyncCallback> delegates when an asynchronous operation completes.  
+  
+ An object that supports the <xref:System.IAsyncResult> interface stores state information for an asynchronous operation and provides a synchronization object to allow threads to be signaled when the operation completes.  
+  
+> [!NOTE]
+>  The <xref:System.Runtime.Remoting.Messaging.AsyncResult> class is the implementation of <xref:System.IAsyncResult> that is returned by the `BeginInvoke` method when you use a delegate to call a method asynchronously.  
+  
+ For a detailed description of how the <xref:System.IAsyncResult> interface is used, see the [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md) topic.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle%2A> property to get a <xref:System.Threading.WaitHandle>, and how to wait for an asynchronous call on a delegate. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.  
+  
+ The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#3](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/waithandle.cpp#3)]
+[!code-csharp[AsyncDelegateExamples#3](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/waithandle.cs#3)]
+[!code-vb[AsyncDelegateExamples#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsyncState">
+      <MemberSignature Language="C#" Value="public object AsyncState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AsyncState" />
+      <MemberSignature Language="DocId" Value="P:System.IAsyncResult.AsyncState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a user-defined object that qualifies or contains information about an asynchronous operation.</summary>
+        <value>A user-defined object that qualifies or contains information about an asynchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the object that is the last parameter of the method that initiates an asynchronous operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncState%2A> property is used to pass information to a callback method. The last parameter of the `BeginInvoke` method call is a format string, which the callback method uses to format an output message.  
+  
+ The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information about how this callback example works, and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#5](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/callback.cpp#5)]
+[!code-csharp[AsyncDelegateExamples#5](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/callback.cs#5)]
+[!code-vb[AsyncDelegateExamples#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/callback.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Implement this property to allow the caller of an asynchronous operation to obtain an application-defined object specified at the start of the operation.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>This object can be used to pass state information for the asynchronous operation to an <see cref="T:System.AsyncCallback" /> that you provide.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncWaitHandle">
+      <MemberSignature Language="C#" Value="public System.Threading.WaitHandle AsyncWaitHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle AsyncWaitHandle" />
+      <MemberSignature Language="DocId" Value="P:System.IAsyncResult.AsyncWaitHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.WaitHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Threading.WaitHandle" /> that is used to wait for an asynchronous operation to complete.</summary>
+        <value>A <see cref="T:System.Threading.WaitHandle" /> that is used to wait for an asynchronous operation to complete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value allows the client to wait for an asynchronous operation to complete instead of polling <xref:System.IAsyncResult.IsCompleted%2A> until the operation concludes. The return value can be used to perform a <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A>, or <xref:System.Threading.WaitHandle.WaitAll%2A> operation.  
+  
+ The common language runtime supplies a number of waitable objects, such as <xref:System.Threading.ManualResetEvent>, <xref:System.Threading.AutoResetEvent>, and <xref:System.Threading.Mutex>, all of which mirror Win32 synchronization primitives.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property to get a <xref:System.Threading.WaitHandle>, and how to wait for an asynchronous call on a delegate. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.  
+  
+ The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#3](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/waithandle.cpp#3)]
+[!code-csharp[AsyncDelegateExamples#3](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/waithandle.cs#3)]
+[!code-vb[AsyncDelegateExamples#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The object that implements <see cref="T:System.IAsyncResult" /> does not need to create the <see cref="T:System.Threading.WaitHandle" /> until the <see cref="P:System.IAsyncResult.AsyncWaitHandle" /> property is read. It is the choice of the <see cref="T:System.IAsyncResult" /> implementer. However, if the implementer creates <see cref="P:System.IAsyncResult.AsyncWaitHandle" />, it is the responsibility of the implementer to signal the <see cref="T:System.Threading.WaitHandle" /> that will terminate the wait at the appropriate time. For example, <see cref="T:System.Runtime.Remoting.Messaging.AsyncResult" /> terminates the wait on behalf of the caller when an asynchronously invoked method returns. Once created, <see cref="P:System.IAsyncResult.AsyncWaitHandle" /> should be kept alive until the user calls the method that concludes the asynchronous operation. At that time the object behind <see cref="P:System.IAsyncResult.AsyncWaitHandle" /> can be discarded.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>Clients that wait for the operation to complete (as opposed to polling) use this property to obtain a synchronization object to wait on.  
+  
+ <block subset="none" type="note">  
+<para>  
+ When you use the <see langword="BeginInvoke" /> method of a delegate to call a method asynchronously and obtain a wait handle from the resulting <see cref="T:System.IAsyncResult" />, we recommend that you close the wait handle as soon as you are finished using it, by calling the <see cref="M:System.Threading.WaitHandle.Close" /> method. If you simply release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle, but garbage collection works more efficiently when disposable objects are explicitly closed or disposed. For more information, see the <see cref="P:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle" /> property.  
+  
+</para>  
+</block></para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedSynchronously">
+      <MemberSignature Language="C#" Value="public bool CompletedSynchronously { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CompletedSynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.IAsyncResult.CompletedSynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the asynchronous operation completed synchronously.</summary>
+        <value>
+          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the synchronous completion of the call is detected in the <xref:System.AsyncCallback> delegate, it is probable that the thread that initiated the asynchronous operation is the current thread.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Most implementers of the <see cref="T:System.IAsyncResult" /> interface will not use this property and should return <see langword="false" />. Beginning with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], a task that is created with the <see cref="M:System.Threading.Tasks.TaskFactory.FromAsync(System.IAsyncResult,System.Action{System.IAsyncResult},System.Threading.Tasks.TaskCreationOptions)" /> method will not complete if this property is not implemented correctly. See [Application Compatibility in 4.5](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md).</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>Use this property to determine if the asynchronous operation completed synchronously. For example, this property can return <see langword="true" /> for an asynchronous I/O operation if the I/O request was small.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompleted">
+      <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.IAsyncResult.IsCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the asynchronous operation has completed.</summary>
+        <value>
+          <see langword="true" /> if the operation is complete; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is `true`, you can assume it is safe to discard any resources you allocate for use by the asynchronous operation.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> to discover when an asynchronous call completes. In this case, the asynchronous call is made by using the `BeginInvoke` method of a delegate. You might use the <xref:System.IAsyncResult.IsCompleted%2A> property to poll for completion when making the asynchronous call from a thread that services the user interface. Polling for completion allows the calling thread to continue executing while the asynchronous call executes on a <xref:System.Threading.ThreadPool> thread.  
+  
+ The example consists of two classes: the class that contains the method that is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#4](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/polling.cpp#4)]
+[!code-csharp[AsyncDelegateExamples#4](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/polling.cs#4)]
+[!code-vb[AsyncDelegateExamples#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/polling.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Implementers will typically return the value of a private field or internal test as the value of this property.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>Clients that poll for operation status (as opposed to waiting on a synchronization object) use this property to determine the status of the operation.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

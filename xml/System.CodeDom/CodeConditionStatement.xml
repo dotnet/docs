@@ -1,0 +1,169 @@
+<Type Name="CodeConditionStatement" FullName="System.CodeDom.CodeConditionStatement">
+  <TypeSignature Language="C#" Value="public class CodeConditionStatement : System.CodeDom.CodeStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeConditionStatement extends System.CodeDom.CodeStatement" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeConditionStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a conditional branch statement, typically represented as an <see langword="if" /> statement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeConditionStatement> can be used to represent code that consists of a conditional expression, a collection of statements to execute if the conditional expression evaluates to `true`, and an optional collection of statements to execute if the conditional expression evaluates to `false`. A <xref:System.CodeDom.CodeConditionStatement> is generated in many languages as an `if` statement.  
+  
+ The <xref:System.CodeDom.CodeConditionStatement.Condition%2A> property indicates the expression to test. The <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> property contains the statements to execute if the expression to test evaluates to `true`. The <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> property contains the statements to execute if the expression to test evaluates to `false`.  
+  
+   
+  
+## Examples  
+ This example demonstrates using a <xref:System.CodeDom.CodeConditionStatement> to represent an `if` statement with an `else` block.  
+  
+ [!code-cpp[CodeConditionStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeConditionStatementExample/CPP/codeconditionstatementexample.cpp#2)]
+ [!code-csharp[CodeConditionStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeConditionStatementExample/CS/codeconditionstatementexample.cs#2)]
+ [!code-vb[CodeConditionStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeConditionStatementExample/VB/codeconditionstatementexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeConditionStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeConditionStatement (System.CodeDom.CodeExpression condition, System.CodeDom.CodeStatement[] trueStatements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression condition, class System.CodeDom.CodeStatement[] trueStatements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="condition" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="trueStatements" Type="System.CodeDom.CodeStatement[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="condition">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the expression to evaluate.</param>
+        <param name="trueStatements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements to execute if the condition is <see langword="true" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class using the specified condition and statements.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeConditionStatement (System.CodeDom.CodeExpression condition, System.CodeDom.CodeStatement[] trueStatements, System.CodeDom.CodeStatement[] falseStatements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression condition, class System.CodeDom.CodeStatement[] trueStatements, class System.CodeDom.CodeStatement[] falseStatements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[],System.CodeDom.CodeStatement[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="condition" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="trueStatements" Type="System.CodeDom.CodeStatement[]" />
+        <Parameter Name="falseStatements" Type="System.CodeDom.CodeStatement[]" />
+      </Parameters>
+      <Docs>
+        <param name="condition">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the condition to evaluate.</param>
+        <param name="trueStatements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements to execute if the condition is <see langword="true" />.</param>
+        <param name="falseStatements">An array of type <see cref="T:System.CodeDom.CodeStatement" /> containing the statements to execute if the condition is <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class using the specified condition and statements.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Condition" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression to evaluate <see langword="true" /> or <see langword="false" />.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> to evaluate <see langword="true" /> or <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this conditional expression evaluates to `true`, the code contained in the <xref:System.CodeDom.CodeConditionStatement.TrueStatements%2A> collection will be executed. If this conditional expression evaluates to `false` and the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection is not empty, the code contained in the <xref:System.CodeDom.CodeConditionStatement.FalseStatements%2A> collection will be executed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FalseStatements">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection FalseStatements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection FalseStatements" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.FalseStatements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeStatementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of statements to execute if the conditional expression evaluates to <see langword="false" />.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> containing the statements to execute if the conditional expression evaluates to <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueStatements">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection TrueStatements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection TrueStatements" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.TrueStatements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeStatementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of statements to execute if the conditional expression evaluates to <see langword="true" />.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeStatementCollection" /> containing the statements to execute if the conditional expression evaluates to <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

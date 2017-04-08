@@ -1,0 +1,116 @@
+<Type Name="ProfileOptimization" FullName="System.Runtime.ProfileOptimization">
+  <TypeSignature Language="C#" Value="public static class ProfileOptimization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProfileOptimization extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.ProfileOptimization" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Improves the startup performance of application domains in applications that require the just-in-time (JIT) compiler by performing background compilation of methods that are likely to be executed, based on profiles created during previous compilations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Profile optimization requires a multicore computer. The methods are ignored on other computers.  
+  
+ Each time you initiate profile optimization in an application domain, the profile that was created during the previous use is read. The information in the profile is used to guide background compilation by identifying the methods that are most likely to be executed during startup. On multicore computers, this increases the chances that a method is already compiled by the time it is needed so that the main application thread does not have to call the JIT compiler.  
+  
+ The profile file is overwritten on each use, so it always contains the most recent information about which methods are used during startup.  
+  
+ Optimization profiles are not restricted to application domain startup. They can be used for any activity that will require heavy use of the JIT compiler. You can maintain multiple profiles for an application domain so that each such activity has its own profile.  
+  
+ To use optimization profiles in an application domain, you must call the <xref:System.Runtime.ProfileOptimization.SetProfileRoot%2A> method and specify the folder where profiles are stored. The folder must already exist. To begin using a profile, call the <xref:System.Runtime.ProfileOptimization.StartProfile%2A> method and specify the file name of the profile. If the file was not recorded previously, it is created on first use. There is no performance benefit the first time a profile is created.  
+  
+ Profile optimization does not change the order in which methods are executed. Methods are not executed on the background thread; if a method is compiled but never called, it is simply not used. If a profile file is corrupt or cannot be written to the specified folder (for example, because the folder does not exist), program execution continues without optimization profiling.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetProfileRoot">
+      <MemberSignature Language="C#" Value="public static void SetProfileRoot (string directoryPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProfileRoot(string directoryPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.ProfileOptimization.SetProfileRoot(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="directoryPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="directoryPath">The full path to the folder where profile files are stored for the current application domain.</param>
+        <summary>Enables optimization profiling for the current application domain, and sets the folder where the optimization profile files are stored. On a single-core computer, the method is ignored.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must call this method before you call the <xref:System.Runtime.ProfileOptimization.StartProfile%2A> method for the first time in the current application domain. If you call <xref:System.Runtime.ProfileOptimization.SetProfileRoot%2A> more than once in the same application domain, all calls after the first are ignored.  
+  
+ The specified folder must already exist. If it does not exist, calling this method does not create it, and no profiling occurs.  
+  
+ On computers that do not have multiple cores, this method is ignored.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StartProfile">
+      <MemberSignature Language="C#" Value="public static void StartProfile (string profile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartProfile(string profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.ProfileOptimization.StartProfile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="profile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="profile">The file name of the profile to use.</param>
+        <summary>Starts just-in-time (JIT) compilation of the methods that were previously recorded in the specified profile file, on a background thread. Starts the process of recording current method use, which later overwrites the specified profile file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified profile exists in the folder specified by the <xref:System.Runtime.ProfileOptimization.SetProfileRoot%2A> method, the information it contains is used to determine the order in which methods are compiled on the background thread. The <xref:System.Runtime.ProfileOptimization.StartProfile%2A> method creates the profile if it does not already exist, and initiates the recording of method use.  
+  
+ Only methods that are actually called are recorded, regardless of whether they were compiled on the background thread or on the main application thread. A method is compiled on the main application thread if the application needs to call it before the background thread has compiled it.  
+  
+ The code that performs the recording tracks the rate at which methods are compiled, including methods that are compiled on both the background thread and on the main thread. When the rate falls below a predetermined level, recording stops. Recording also stops if the rate of JIT compilation exceeds a predetermined upper limit.  
+  
+ If the <xref:System.Runtime.ProfileOptimization.SetProfileRoot%2A> method has not been called for the current application domain, or if the computer does not have multiple cores, the <xref:System.Runtime.ProfileOptimization.StartProfile%2A> method has no effect.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

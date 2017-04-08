@@ -1,0 +1,53 @@
+<Type Name="ExceptionPersistenceExtension" FullName="System.Activities.ExceptionPersistenceExtension">
+  <TypeSignature Language="C#" Value="public class ExceptionPersistenceExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExceptionPersistenceExtension extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ExceptionPersistenceExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies exception persistence.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExceptionPersistenceExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ExceptionPersistenceExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.ExceptionPersistenceExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistExceptions">
+      <MemberSignature Language="C#" Value="public bool PersistExceptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PersistExceptions" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ExceptionPersistenceExtension.PersistExceptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the exceptions will persist.</summary>
+        <value>
+          <see langword="True" /> if the exceptions will persist; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

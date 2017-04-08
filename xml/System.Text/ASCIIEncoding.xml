@@ -1,0 +1,1192 @@
+<Type Name="ASCIIEncoding" FullName="System.Text.ASCIIEncoding">
+  <TypeSignature Language="C#" Value="public class ASCIIEncoding : System.Text.Encoding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ASCIIEncoding extends System.Text.Encoding" />
+  <TypeSignature Language="DocId" Value="T:System.Text.ASCIIEncoding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Text.Encoding</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an ASCII character encoding of Unicode characters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
+  
+ <xref:System.Text.ASCIIEncoding> corresponds to the Windows code page 20127. Because ASCII is a 7-bit encoding, ASCII characters are limited to the lowest 128 Unicode characters, from U+0000 to U+007F. If you use the default encoder returned by the <xref:System.Text.Encoding.ASCII%2A?displayProperty=fullName> property or the <xref:System.Text.ASCIIEncoding.%23ctor%2A> constructor, characters outside that range are replaced with a question mark (?) before the encoding operation is performed.  Because the <xref:System.Text.ASCIIEncoding> class supports only a limited character set, the <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, and <xref:System.Text.UTF32Encoding> classes are better suited for globalized applications. The following considerations can help you to decide whether to use <xref:System.Text.ASCIIEncoding>:  
+  
+-   Some protocols require ASCII or a subset of ASCII. In these cases ASCII encoding is appropriate.  
+  
+-   If an 8-bit encoding is expected, then ASCII probably isn't the correct choice. Instead, consider using UTF8 instead of ASCII. For the characters U+0000 through U+007F, the results are identical, but all Unicode characters are representable in UTF-8, which avoids data loss.  
+  
+> [!CAUTION]
+>  <xref:System.Text.ASCIIEncoding> does not provide error detection. For security reasons, you should use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+  
+ The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method determines how many bytes result in encoding a set of Unicode characters, and the <xref:System.Text.ASCIIEncoding.GetBytes%2A> method performs the actual encoding.  
+  
+ Likewise, the <xref:System.Text.ASCIIEncoding.GetCharCount%2A> method determines how many characters result in decoding a sequence of bytes, and the <xref:System.Text.ASCIIEncoding.GetChars%2A> and <xref:System.Text.ASCIIEncoding.GetString%2A> methods perform the actual decoding.  
+  
+ Note that the default <xref:System.Text.ASCIIEncoding> constructor by itself might not have the appropriate behavior for your application. You might want to consider setting the <xref:System.Text.Encoding.EncoderFallback%2A> or <xref:System.Text.Encoding.DecoderFallback%2A> property to <xref:System.Text.EncoderExceptionFallback> or <xref:System.Text.DecoderExceptionFallback> to prevent sequences with the 8th bit set. Custom behavior might also be appropriate for these cases.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to encode Unicode characters into ASCII. Notice the loss of data that occurs when your application uses <xref:System.Text.ASCIIEncoding> to encode Unicode characters outside of the ASCII range.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding Example/CPP/snippet.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding Example/CS/snippet.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding Example/VB/snippet.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ASCIIEncoding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.ASCIIEncoding" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  The <xref:System.Text.ASCIIEncoding> class does not provide error detection. For security reasons, you should use the <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> class and enable error detection.  
+  
+ If you choose to use ASCII encoding, this constructor may not provide the appropriate fallback behavior for your application. It uses the <xref:System.Text.EncoderReplacementFallback> and <xref:System.Text.DecoderReplacementFallback> classes to replace every character outside the range of U+0000 through U+007F with a question mark (?). Instead, you can call the <xref:System.Text.Encoding.GetEncoding%28System.Int32%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=fullName> or <xref:System.Text.Encoding.GetEncoding%28System.String%2CSystem.Text.EncoderFallback%2CSystem.Text.DecoderFallback%29?displayProperty=fullName> method and pass it <xref:System.Text.EncoderExceptionFallback> and <xref:System.Text.DecoderExceptionFallback> objects to use exception fallback.  
+  
+> [!NOTE]
+>  <xref:System.Text.ASCIIEncoding> supports only the Unicode character values between U+0000 and U+007F. Therefore, <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, and <xref:System.Text.UTF32Encoding> are better suited for globalized applications.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a new <xref:System.Text.ASCIIEncoding> instance and display the name of the encoding.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.ctor Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.ctor Example/CPP/ctor.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.ctor Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.ctor Example/CS/ctor.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.ctor Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.ctor Example/VB/ctor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByteCount">
+      <MemberSignature Language="C#" Value="public override int GetByteCount (string chars);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(string chars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetByteCount(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The <see cref="T:System.String" /> containing the set of characters to encode.</param>
+        <summary>Calculates the number of bytes produced by encoding the characters in the specified <see cref="T:System.String" />.</summary>
+        <returns>The number of bytes produced by encoding the specified characters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.ASCIIEncoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>. The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method to return the number of bytes required to encode a string using <xref:System.Text.ASCIIEncoding>.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetByteCount2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetByteCount2 Example/CPP/getbytecount-string.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetByteCount2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetByteCount2 Example/CS/getbytecount-string.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetByteCount2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetByteCount2 Example/VB/getbytecount-string.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chars" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByteCount">
+      <MemberSignature Language="C#" Value="public override int GetByteCount (char* chars, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(char* chars, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetByteCount(System.Char*,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.Char*" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="chars">A pointer to the first character to encode.</param>
+        <param name="count">The number of characters to encode.</param>
+        <summary>Calculates the number of bytes produced by encoding a set of characters starting at the specified character pointer.</summary>
+        <returns>The number of bytes produced by encoding the specified characters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.ASCIIEncoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>. The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:System.Text.ASCIIEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chars" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than zero.  
+  
+ -or-  
+  
+ The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByteCount">
+      <MemberSignature Language="C#" Value="public override int GetByteCount (char[] chars, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(char[] chars, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.Char[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The character array containing the set of characters to encode.</param>
+        <param name="index">The index of the first character to encode.</param>
+        <param name="count">The number of characters to encode.</param>
+        <summary>Calculates the number of bytes produced by encoding a set of characters from the specified character array.</summary>
+        <returns>The number of bytes produced by encoding the specified characters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetBytes%2A> to store the resulting bytes, the application uses [GetByteCount Method (Char\<xref:System.Text.ASCIIEncoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>. The [GetByteCount Method (Char\<xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the [GetByteCount Method (Char\<xref:System.Text.ASCIIEncoding.GetByteCount%2A> method to return the number of bytes required to encode an array of Unicode characters using <xref:System.Text.ASCIIEncoding>.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetByteCount1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetByteCount1 Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetByteCount1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetByteCount1 Example/CS/getbytecount-char[]-int32-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetByteCount1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetByteCount1 Example/VB/getbytecount-char[]-int32-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chars" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> or <paramref name="count" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="chars" />.  
+  
+ -or-  
+  
+ The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override int GetBytes (char* chars, int charCount, byte* bytes, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.Char*" />
+        <Parameter Name="charCount" Type="System.Int32" />
+        <Parameter Name="bytes" Type="System.Byte*" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="chars">A pointer to the first character to encode.</param>
+        <param name="charCount">The number of characters to encode.</param>
+        <param name="bytes">A pointer to the location at which to start writing the resulting sequence of bytes.</param>
+        <param name="byteCount">The maximum number of bytes to write.</param>
+        <summary>Encodes a set of characters starting at the specified character pointer into a sequence of bytes that are stored starting at the specified byte pointer.</summary>
+        <returns>The actual number of bytes written at the location indicated by <paramref name="bytes" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.ASCIIEncoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>. The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ Data to be converted, such as data read from a stream, can be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.ASCIIEncoding.GetDecoder%2A> method or the <xref:System.Text.ASCIIEncoding.GetEncoder%2A> method, respectively.  
+  
+ <xref:System.Text.ASCIIEncoding> does not provide error detection. Any Unicode character greater than U+007F is translated to an ASCII question mark ("?").  
+  
+> [!CAUTION]
+>  For security reasons, your application is recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:System.Text.ASCIIEncoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chars" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="bytes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="charCount" /> or <paramref name="byteCount" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="byteCount" /> is less than the resulting number of bytes.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override int GetBytes (char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(char[] chars, int32 charIndex, int32 charCount, unsigned int8[] bytes, int32 byteIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.Char[]" />
+        <Parameter Name="charIndex" Type="System.Int32" />
+        <Parameter Name="charCount" Type="System.Int32" />
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="byteIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The character array containing the set of characters to encode.</param>
+        <param name="charIndex">The index of the first character to encode.</param>
+        <param name="charCount">The number of characters to encode.</param>
+        <param name="bytes">The byte array to contain the resulting sequence of bytes.</param>
+        <param name="byteIndex">The index at which to start writing the resulting sequence of bytes.</param>
+        <summary>Encodes a set of characters from the specified character array into the specified byte array.</summary>
+        <returns>The actual number of bytes written into <paramref name="bytes" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.ASCIIEncoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>. The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ Data to be converted, such as data read from a stream, can be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.ASCIIEncoding.GetDecoder%2A> method or the <xref:System.Text.ASCIIEncoding.GetEncoder%2A> method, respectively.  
+  
+ <xref:System.Text.ASCIIEncoding> does not provide error detection. Any Unicode character greater than U+007F is encoded as the ASCII question mark ("?").  
+  
+> [!CAUTION]
+>  For security reasons, your application is recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Text.ASCIIEncoding.GetBytes%2A> method to encode a range of characters from a string and store the encoded characters in a range of elements in a byte array.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetBytes1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetBytes1 Example/CPP/getbytes-string-int32-int32-byte[]-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetBytes1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetBytes1 Example/CS/getbytes-string-int32-int32-byte[]-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetBytes1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetBytes1 Example/VB/getbytes-string-int32-int32-byte[]-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="chars" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="bytes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="charIndex" /> or <paramref name="charCount" /> or <paramref name="byteIndex" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="charIndex" /> and <paramref name="charCount" /> do not denote a valid range in <paramref name="chars" />.  
+  
+ -or-  
+  
+ <paramref name="byteIndex" /> is not a valid index in <paramref name="bytes" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override int GetBytes (string chars, int charIndex, int charCount, byte[] bytes, int byteIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(string chars, int32 charIndex, int32 charCount, unsigned int8[] bytes, int32 byteIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.String" />
+        <Parameter Name="charIndex" Type="System.Int32" />
+        <Parameter Name="charCount" Type="System.Int32" />
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="byteIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The <see cref="T:System.String" /> containing the set of characters to encode.</param>
+        <param name="charIndex">The index of the first character to encode.</param>
+        <param name="charCount">The number of characters to encode.</param>
+        <param name="bytes">The byte array to contain the resulting sequence of bytes.</param>
+        <param name="byteIndex">The index at which to start writing the resulting sequence of bytes.</param>
+        <summary>Encodes a set of characters from the specified <see cref="T:System.String" /> into the specified byte array.</summary>
+        <returns>The actual number of bytes written into <paramref name="bytes" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.ASCIIEncoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.ASCIIEncoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>. The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ Data to be converted, such as data read from a stream, can be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.ASCIIEncoding.GetDecoder%2A> method or the <xref:System.Text.ASCIIEncoding.GetEncoder%2A> method, respectively.  
+  
+ <xref:System.Text.ASCIIEncoding> does not provide error detection. Any Unicode character greater than U+007F is encoded as the ASCII question mark ("?").  
+  
+> [!CAUTION]
+>  For security reasons, your application is recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.ASCIIEncoding.GetBytes%2A> method to encode a range of elements from a Unicode character array and store the encoded bytes in a range of elements in a byte array.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetBytes2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetBytes2/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetBytes2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetBytes2/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetBytes2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetBytes2/VB/getbytes-char[]-int32-int32-byte[]-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="bytes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="charIndex" /> or <paramref name="charCount" /> or <paramref name="byteIndex" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="charIndex" /> and <paramref name="charCount" /> do not denote a valid range in <paramref name="chars" />.  
+  
+ -or-  
+  
+ <paramref name="byteIndex" /> is not a valid index in <paramref name="bytes" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCharCount">
+      <MemberSignature Language="C#" Value="public override int GetCharCount (byte* bytes, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharCount(unsigned int8* bytes, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetCharCount(System.Byte*,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte*" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">A pointer to the first byte to decode.</param>
+        <param name="count">The number of bytes to decode.</param>
+        <summary>Calculates the number of characters produced by decoding a sequence of bytes starting at the specified byte pointer.</summary>
+        <returns>The number of characters produced by decoding the specified sequence of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.ASCIIEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A>. The <xref:System.Text.ASCIIEncoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:System.Text.ASCIIEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bytes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> is less than zero.  
+  
+ -or-  
+  
+ The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCharCount">
+      <MemberSignature Language="C#" Value="public override int GetCharCount (byte[] bytes, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharCount(unsigned int8[] bytes, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">The byte array containing the sequence of bytes to decode.</param>
+        <param name="index">The index of the first byte to decode.</param>
+        <param name="count">The number of bytes to decode.</param>
+        <summary>Calculates the number of characters produced by decoding a sequence of bytes from the specified byte array.</summary>
+        <returns>The number of characters produced by decoding the specified sequence of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetChars%2A> to store the resulting characters, the application uses [GetCharCount Method (Byte\<xref:System.Text.ASCIIEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A>. The [GetCharCount Method (Byte\<xref:System.Text.ASCIIEncoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the [GetCharCount Method (Byte\<xref:System.Text.ASCIIEncoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetCharCount Example/VB/getcharcount-byte[]-int32-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bytes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> or <paramref name="count" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.  
+  
+ -or-  
+  
+ The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public override int GetChars (byte* bytes, int byteCount, char* chars, int charCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChars(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte*" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+        <Parameter Name="chars" Type="System.Char*" />
+        <Parameter Name="charCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">A pointer to the first byte to decode.</param>
+        <param name="byteCount">The number of bytes to decode.</param>
+        <param name="chars">A pointer to the location at which to start writing the resulting set of characters.</param>
+        <param name="charCount">The maximum number of characters to write.</param>
+        <summary>Decodes a sequence of bytes starting at the specified byte pointer into a set of characters that are stored starting at the specified character pointer.</summary>
+        <returns>The actual number of characters written at the location indicated by <paramref name="chars" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by <xref:System.Text.ASCIIEncoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.ASCIIEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A>. The <xref:System.Text.ASCIIEncoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+ Data to be converted, such as data read from a stream, can be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.ASCIIEncoding.GetDecoder%2A> method or the <xref:System.Text.ASCIIEncoding.GetEncoder%2A> method, respectively.  
+  
+ <xref:System.Text.ASCIIEncoding> does not provide error detection. Any byte greater than hexadecimal 0x7F is decoded as the Unicode question mark ("?").  
+  
+> [!CAUTION]
+>  For security reasons, your application is recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:System.Text.ASCIIEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bytes" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="chars" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteCount" /> or <paramref name="charCount" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="charCount" /> is less than the resulting number of characters.</exception>
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public override int GetChars (byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChars(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="byteIndex" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+        <Parameter Name="chars" Type="System.Char[]" />
+        <Parameter Name="charIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">The byte array containing the sequence of bytes to decode.</param>
+        <param name="byteIndex">The index of the first byte to decode.</param>
+        <param name="byteCount">The number of bytes to decode.</param>
+        <param name="chars">The character array to contain the resulting set of characters.</param>
+        <param name="charIndex">The index at which to start writing the resulting set of characters.</param>
+        <summary>Decodes a sequence of bytes from the specified byte array into the specified character array.</summary>
+        <returns>The actual number of characters written into <paramref name="chars" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact array size required by [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.ASCIIEncoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.ASCIIEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A>. The <xref:System.Text.ASCIIEncoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+ Data to be converted, such as data read from a stream, can be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.ASCIIEncoding.GetDecoder%2A> method or the <xref:System.Text.ASCIIEncoding.GetEncoder%2A> method, respectively.  
+  
+ <xref:System.Text.ASCIIEncoding> does not provide error detection. Any byte greater than hexadecimal 0x7F is decoded as the Unicode question mark ("?").  
+  
+> [!CAUTION]
+>  For security reasons, your application is recommended to use <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> and enable error detection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to decode a range of elements from a byte array and store the result in a set of elements in a Unicode character array.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetChars Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetChars Example/VB/getchars-byte[]-int32-int32-char[]-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bytes" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="chars" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteIndex" /> or <paramref name="byteCount" /> or <paramref name="charIndex" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="byteindex" /> and <paramref name="byteCount" /> do not denote a valid range in <paramref name="bytes" />.  
+  
+ -or-  
+  
+ <paramref name="charIndex" /> is not a valid index in <paramref name="chars" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="chars" /> does not have enough capacity from <paramref name="charIndex" /> to the end of the array to accommodate the resulting characters.</exception>
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecoder">
+      <MemberSignature Language="C#" Value="public override System.Text.Decoder GetDecoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.Decoder GetDecoder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetDecoder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Decoder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Obtains a decoder that converts an ASCII encoded sequence of bytes into a sequence of Unicode characters.</summary>
+        <returns>A <see cref="T:System.Text.Decoder" /> that converts an ASCII encoded sequence of bytes into a sequence of Unicode characters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.Decoder.GetChars%2A?displayProperty=fullName> method converts sequential blocks of bytes into sequential blocks of characters, in a manner similar to the <xref:System.Text.ASCIIEncoding.GetChars%2A> method of this class. However, a <xref:System.Text.Decoder> maintains state information between calls so it can correctly decode byte sequences that span blocks. The <xref:System.Text.Decoder> also preserves trailing bytes at the end of data blocks and uses the trailing bytes in the next decoding operation. Therefore, <xref:System.Text.ASCIIEncoding.GetDecoder%2A> and <xref:System.Text.ASCIIEncoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEncoder">
+      <MemberSignature Language="C#" Value="public override System.Text.Encoder GetEncoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.Encoder GetEncoder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetEncoder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Obtains an encoder that converts a sequence of Unicode characters into an ASCII encoded sequence of bytes.</summary>
+        <returns>An <see cref="T:System.Text.Encoder" /> that converts a sequence of Unicode characters into an ASCII encoded sequence of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.Encoder.GetBytes%2A?displayProperty=fullName> method converts sequential blocks of characters into sequential blocks of bytes, in a manner similar to the <xref:System.Text.ASCIIEncoding.GetBytes%2A> method of this class. However, an <xref:System.Text.Encoder> maintains state information between calls so it can correctly encode character sequences that span blocks. The <xref:System.Text.Encoder> also preserves trailing characters at the end of data blocks and uses the trailing characters in the next encoding operation. For example, a data block might end with an unmatched high surrogate, and the matching low surrogate might be in the next data block. Therefore, <xref:System.Text.ASCIIEncoding.GetDecoder%2A> and <xref:System.Text.ASCIIEncoding.GetEncoder%2A> are useful for network transmission and file operations, because those operations often deal with blocks of data instead of a complete data stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMaxByteCount">
+      <MemberSignature Language="C#" Value="public override int GetMaxByteCount (int charCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetMaxByteCount(int32 charCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetMaxByteCount(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="charCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="charCount">The number of characters to encode.</param>
+        <summary>Calculates the maximum number of bytes produced by encoding the specified number of characters.</summary>
+        <returns>The maximum number of bytes produced by encoding the specified number of characters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method calculates the exact array size required by the <xref:System.Text.ASCIIEncoding.GetBytes%2A> method to store the resulting bytes, whereas the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method calculates the maximum array size. The <xref:System.Text.ASCIIEncoding.GetByteCount%2A> method generally allocates less memory, but the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> is a worst-case number, including the worst case for the currently selected <xref:System.Text.EncoderFallback>.  If you choose a replacement fallback with a potentially large string, <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> can return large values.  
+  
+ The <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method considers potential leftover surrogates from a previous encoding operation. As a result, if the <xref:System.Text.ASCIIEncoding> object uses the default replacement fallback, or if a custom replacement fallback has been defined with a single possible fallback character, the method returns `charCount` + 1. If the <xref:System.Text.ASCIIEncoding> object uses a replacement fallback with more than one possible fallback character, the method returns *n* * (`charCount` + 1), where *n* is the maximum number of fallback characters.  
+  
+ <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> has no relation to <xref:System.Text.ASCIIEncoding.GetChars%2A>. If your application needs a similar function to use with <xref:System.Text.ASCIIEncoding.GetChars%2A>, it should use <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A>.  
+  
+> [!NOTE]
+>  `GetMaxByteCount(N)` is not necessarily the same value as `N* GetMaxByteCount(1)`.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method to calculate the bytes required to encode a specified number of characters.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetMaxByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetMaxByteCount Example/CPP/getmaxbytecount-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetMaxByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetMaxByteCount Example/CS/getmaxbytecount-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetMaxByteCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetMaxByteCount Example/VB/getmaxbytecount-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="charCount" /> is less than zero.  
+  
+ -or-  
+  
+ The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMaxCharCount">
+      <MemberSignature Language="C#" Value="public override int GetMaxCharCount (int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetMaxCharCount(int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetMaxCharCount(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="byteCount">The number of bytes to decode.</param>
+        <summary>Calculates the maximum number of characters produced by decoding the specified number of bytes.</summary>
+        <returns>The maximum number of characters produced by decoding the specified number of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.ASCIIEncoding.GetCharCount%2A> method calculates the exact array size required by the <xref:System.Text.ASCIIEncoding.GetChars%2A> method to store the resulting characters, whereas  the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method calculates the maximum array size. The <xref:System.Text.ASCIIEncoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+ <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> retrieves a worst-case number, including the worst case for the currently selected <xref:System.Text.DecoderFallback>. If a decoder fallback is present that has a maximum fallback length of *n*, the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method returns *n* * `byteCount`.  
+  
+ <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> has no relation to <xref:System.Text.ASCIIEncoding.GetBytes%2A>. If your application needs a similar function to use with <xref:System.Text.ASCIIEncoding.GetBytes%2A>, it should use <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A>.  
+  
+> [!NOTE]
+>  `GetMaxCharCount(N)` is not necessarily the same value as `N* GetMaxCharCount(1)`.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method to calculate the maximum number of characters needed to decode a specified number of bytes.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetMaxCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetMaxCharCount Example/CPP/getmaxcharcount-int32.cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetMaxCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetMaxCharCount Example/CS/getmaxcharcount-int32.cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetMaxCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetMaxCharCount Example/VB/getmaxcharcount-int32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="byteCount" /> is less than zero.  
+  
+ -or-  
+  
+ The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public override string GetString (byte[] bytes, int byteIndex, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(unsigned int8[] bytes, int32 byteIndex, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.ASCIIEncoding.GetString(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="byteIndex" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">The byte array containing the sequence of bytes to decode.</param>
+        <param name="byteIndex">The index of the first byte to decode.</param>
+        <param name="byteCount">The number of bytes to decode.</param>
+        <summary>Decodes a range of bytes from a byte array into a string.</summary>
+        <returns>A <see cref="T:System.String" /> containing the results of decoding the specified sequence of bytes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data to be converted, such as data read from a stream, can be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.ASCIIEncoding.GetDecoder%2A> method or the <xref:System.Text.ASCIIEncoding.GetEncoder%2A> method, respectively.  
+  
+ <xref:System.Text.ASCIIEncoding> does not provide error detection. Any byte greater than hexadecimal 0x7F is decoded as the Unicode question mark ("?").  
+  
+> [!CAUTION]
+>  For security reasons, you should use the <xref:System.Text.UTF8Encoding>, <xref:System.Text.UnicodeEncoding>, or <xref:System.Text.UTF32Encoding> classes and enable error detection instead of using the <xref:System.Text.ASCIIEncoding> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the [GetString Method (Byte\<xref:System.Text.ASCIIEncoding.GetString%2A> method to convert a byte array into a <xref:System.String>.  
+  
+ [!code-cpp[System.Text.ASCIIEncoding.GetString1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetString1 Example/CPP/getstring-byte[].cpp#1)]
+ [!code-csharp[System.Text.ASCIIEncoding.GetString1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetString1 Example/CS/getstring-byte[].cs#1)]
+ [!code-vb[System.Text.ASCIIEncoding.GetString1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.ASCIIEncoding.GetString1 Example/VB/getstring-byte[].vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bytes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> or <paramref name="count" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSingleByte">
+      <MemberSignature Language="C#" Value="public override bool IsSingleByte { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleByte" />
+      <MemberSignature Language="DocId" Value="P:System.Text.ASCIIEncoding.IsSingleByte" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current encoding uses single-byte code points.</summary>
+        <value>This property is always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instead of using the <xref:System.Text.ASCIIEncoding.IsSingleByte%2A> property to determine the size of a byte array for encoding operations  and the size of a character array for decoding operations (for example, so that the size of the byte array is <xref:System.Text.ASCIIEncoding.IsSingleByte%2A> * the number of characters to be encoded), you should call the <xref:System.Text.ASCIIEncoding.GetByteCount%2A> or <xref:System.Text.ASCIIEncoding.GetMaxByteCount%2A> method for encoding operations and the <xref:System.Text.ASCIIEncoding.GetCharCount%2A> or <xref:System.Text.ASCIIEncoding.GetMaxCharCount%2A> method for decoding operations. These methods takes the <xref:System.Text.ASCIIEncoding> object's replacement fallback strategy into account when calculating the required array size.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

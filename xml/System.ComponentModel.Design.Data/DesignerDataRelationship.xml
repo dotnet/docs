@@ -1,0 +1,115 @@
+<Type Name="DesignerDataRelationship" FullName="System.ComponentModel.Design.Data.DesignerDataRelationship">
+  <TypeSignature Language="C#" Value="public sealed class DesignerDataRelationship" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataRelationship extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataRelationship" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents to the designer a relationship between two tables in the data source accessed through a data connection. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerDataRelationship (string name, System.Collections.ICollection parentColumns, System.ComponentModel.Design.Data.DesignerDataTable childTable, System.Collections.ICollection childColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Collections.ICollection parentColumns, class System.ComponentModel.Design.Data.DesignerDataTable childTable, class System.Collections.ICollection childColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataRelationship.#ctor(System.String,System.Collections.ICollection,System.ComponentModel.Design.Data.DesignerDataTable,System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="parentColumns" Type="System.Collections.ICollection" />
+        <Parameter Name="childTable" Type="System.ComponentModel.Design.Data.DesignerDataTable" />
+        <Parameter Name="childColumns" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the relationship.</param>
+        <param name="parentColumns">The columns in the parent table that define the relationship.</param>
+        <param name="childTable">The child table in the relationship.</param>
+        <param name="childColumns">The columns in the child table that define the relationship.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataRelationship" /> class with the specified name, parent column, and child relationship.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildColumns">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection ChildColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection ChildColumns" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.ChildColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of columns from the child table that are part of the relationship.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> objects that define the relationship in the child table.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildTable">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Data.DesignerDataTable ChildTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Data.DesignerDataTable ChildTable" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.ChildTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.DesignerDataTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child table referenced in the relationship.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> object that represents the child table in the relationship.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the relationship.</summary>
+        <value>The name of the relationship.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentColumns">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection ParentColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection ParentColumns" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataRelationship.ParentColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of columns from the parent table that are part of the relationship between two tables.</summary>
+        <value>A collection of <see cref="T:System.ComponentModel.Design.Data.DesignerDataColumn" /> objects that define the relationship in the parent table.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

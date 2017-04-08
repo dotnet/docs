@@ -1,0 +1,50 @@
+<Type Name="AsyncCompletedEventHandler" FullName="System.ComponentModel.AsyncCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void AsyncCompletedEventHandler(object sender, AsyncCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AsyncCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.AsyncCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the *MethodName*<see langword="Completed" /> event of an asynchronous operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.ComponentModel.AsyncCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event-handler method is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ For an asynchronous method, called *MethodName*, in your component, you will have a corresponding *MethodName*`Completed` event, and an optional *MethodName*`CompletedEventArgs` class.  
+  
+ For a component that supports multiple concurrent invocations of its asynchronous methods, the client can supply a unique token, or task ID, to distinguish which asynchronous task is raising particular events. The client's <xref:System.ComponentModel.AsyncCompletedEventHandler> can read the <xref:System.ComponentModel.AsyncCompletedEventArgs.UserState%2A?displayProperty=fullName> property to determine which task is reporting completion. Your implementation should use the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> to create an <xref:System.ComponentModel.AsyncOperation?displayProperty=fullName> that associates the client's task IDs with pending asynchronous tasks.  
+  
+   
+  
+## Examples  
+ For a code example of the <xref:System.ComponentModel.AsyncCompletedEventHandler> delegate, see the example in the <xref:System.ComponentModel.AsyncCompletedEventArgs?displayProperty=fullName> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

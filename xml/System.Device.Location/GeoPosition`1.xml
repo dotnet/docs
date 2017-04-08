@@ -1,0 +1,94 @@
+<Type Name="GeoPosition&lt;T&gt;" FullName="System.Device.Location.GeoPosition&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class GeoPosition&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoPosition`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPosition`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Device</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the location data.</typeparam>
+    <summary>Contains location data of a type specified by the type parameter of the <see cref="T:System.Device.Location.GeoPosition`1" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeoPosition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPosition`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.GeoPosition`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeoPosition (DateTimeOffset timestamp, T position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTimeOffset timestamp, !T position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoPosition`1.#ctor(System.DateTimeOffset,`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="timestamp" Type="System.DateTimeOffset" />
+        <Parameter Name="position" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="timestamp">The time the location data was obtained.</param>
+        <param name="position">The location data to use to initialize the <see cref="T:System.Device.Location.GeoPosition`1" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.GeoPosition`1" /> class with a timestamp and position.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public T Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Location" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPosition`1.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location data for the <see cref="T:System.Device.Location.GeoPosition`1" /> object.</summary>
+        <value>An object of type T that contains the location data for the <see cref="T:System.Device.Location.GeoPosition`1" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public DateTimeOffset Timestamp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset Timestamp" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoPosition`1.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time when the location data was obtained.</summary>
+        <value>A <see cref="T:System.DateTimeOffset" /> that contains the time the location data was created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

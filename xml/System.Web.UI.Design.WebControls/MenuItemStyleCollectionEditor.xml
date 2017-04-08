@@ -1,0 +1,174 @@
+<Type Name="MenuItemStyleCollectionEditor" FullName="System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor">
+  <TypeSignature Language="C#" Value="public class MenuItemStyleCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuItemStyleCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.CollectionEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a component editor for <see cref="T:System.Web.UI.WebControls.MenuItemStyleCollection" /> objects in the associated <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.MenuItemStyle> elements of <xref:System.Web.UI.WebControls.MenuItemStyleCollection> objects in the associated <xref:System.Web.UI.WebControls.Menu> control at design time, under the control of the <xref:System.Web.UI.Design.WebControls.MenuDesigner> object.  
+  
+ There is a <xref:System.Web.UI.WebControls.MenuItemStyleCollection> associated with each of the <xref:System.Web.UI.WebControls.Menu.LevelMenuItemStyles%2A> and <xref:System.Web.UI.WebControls.Menu.LevelSelectedStyles%2A> properties of the <xref:System.Web.UI.WebControls.Menu> control. These <xref:System.Web.UI.WebControls.MenuItemStyleCollection> objects are used to apply styles to menu items that depend on their level (nesting depth) in the menu structure.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> is invoked, for example, by selecting the ellipsis button (**…**) on the **LevelMenuItemStyles** or **LevelSelectedStyles** row in the **Properties** grid of the visual designer.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false` to indicate that only one object can be selected at a time in the editor. The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateCollectionForm%2A> method creates a new form to display and edit the current <xref:System.Web.UI.WebControls.MenuItemStyleCollection>.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateInstance%2A> method creates a new instance of the specified collection item type. The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateNewItemTypes%2A> method returns an array of types that the editor can create.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> and <xref:System.Drawing.Design.UITypeEditor> classes (the collection editor base class) with a property in a custom control, derived from the <xref:System.Web.UI.WebControls.WebControl> class, that gets and sets a <xref:System.Web.UI.WebControls.MenuItemStyleCollection> collection.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.MenuEditors#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.MenuEditors/CS/MenuEditors.cs#4)]
+ [!code-vb[System.Web.UI.Design.WebControls.MenuEditors#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.MenuEditors/VB/MenuEditors.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuItemStyleCollectionEditor (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> of the collection to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> class when you select, for example, the ellipsis button (**…**) on the **LevelMenuItemStyles** or **LevelSelectedStyles** row in the **Properties** grid of the visual designer when designing a <xref:System.Web.UI.WebControls.Menu> control or a control that is derived from the <xref:System.Web.UI.WebControls.Menu> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSelectMultipleInstances">
+      <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CanSelectMultipleInstances" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether multiple <see cref="T:System.Web.UI.WebControls.MenuItemStyle" /> elements can be selected in the editor at one time.</summary>
+        <returns>Always <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false`; thus, only one <xref:System.Web.UI.WebControls.MenuItemStyle> object can be selected at a time in the <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCollectionForm">
+      <MemberSignature Language="C#" Value="protected override System.ComponentModel.Design.CollectionEditor.CollectionForm CreateCollectionForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ComponentModel.Design.CollectionEditor/CollectionForm CreateCollectionForm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateCollectionForm" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CollectionEditor+CollectionForm</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new form to display and edit the current <see cref="T:System.Web.UI.WebControls.MenuItemStyleCollection" /> object.</summary>
+        <returns>An instance of the <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> to use as the <see cref="T:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateCollectionForm%2A> method calls the <xref:System.ComponentModel.Design.CollectionEditor.CreateCollectionForm%2A> base method to create the <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> form, and then formats a caption for the form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="protected override object CreateInstance (Type itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Type itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateInstance(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">The <see cref="T:System.Type" /> of item to create.</param>
+        <summary>Creates a new instance of the specified collection item type.</summary>
+        <returns>A new instance of the specified type, <see cref="T:System.Web.UI.WebControls.MenuItemStyle" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateInstance%2A> method is used to create new <xref:System.Web.UI.WebControls.MenuItemStyle> objects. The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateInstance%2A> calls the <xref:System.Activator.CreateInstance%2A> method to access the activation methods for late-bound support.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewItemTypes">
+      <MemberSignature Language="C#" Value="protected override Type[] CreateNewItemTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] CreateNewItemTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateNewItemTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the data types that this collection editor can create.</summary>
+        <returns>A type array of the data types the <see cref="T:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" /> can create.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor> object can create <xref:System.Web.UI.WebControls.MenuItemStyle> type objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

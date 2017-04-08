@@ -1,0 +1,142 @@
+<Type Name="IDtcTransaction" FullName="System.Transactions.IDtcTransaction">
+  <TypeSignature Language="C#" Value="public interface IDtcTransaction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDtcTransaction" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.IDtcTransaction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes a DTC transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort (IntPtr manager, int whatever, int whatever2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort(native int manager, int32 whatever, int32 whatever2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.Abort(System.IntPtr,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reason" Type="System.IntPtr" />
+        <Parameter Name="retaining" Type="System.Int32" />
+        <Parameter Name="async" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="manager">To be added.</param>
+        <param name="whatever">To be added.</param>
+        <param name="whatever2">To be added.</param>
+        <summary>Aborts a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public void Commit (int whatever, int whatever2, int whatever3);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(int32 whatever, int32 whatever2, int32 whatever3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.Commit(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="retaining" Type="System.Int32" />
+        <Parameter Name="commitType" Type="System.Int32" />
+        <Parameter Name="reserved" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="whatever">To be added.</param>
+        <param name="whatever2">To be added.</param>
+        <param name="whatever3">To be added.</param>
+        <summary>Commits a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For values of `commitType`, see `ITransaction::Commit` in the OLE DB Programmers Reference.  
+  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransactionInfo">
+      <MemberSignature Language="C#" Value="public void GetTransactionInfo (IntPtr whatever);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTransactionInfo(native int whatever) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.IDtcTransaction.GetTransactionInfo(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transactionInformation" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="whatever">To be added.</param>
+        <summary>Retrieves information about a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement any method of this interface, as it is used only by the <xref:System.Transactions.TransactionInterop> class internally to represent the unmanaged version of the <xref:System.EnterpriseServices.ITransaction> interface of the <xref:System.EnterpriseServices> namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

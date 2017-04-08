@@ -1,0 +1,518 @@
+<Type Name="SmartLabelStyle" FullName="System.Web.UI.DataVisualization.Charting.SmartLabelStyle">
+  <TypeSignature Language="C#" Value="public class SmartLabelStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SmartLabelStyle extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Enabled")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods and properties used to perform intelligent, rule-based data point label positioning to resolve overlapping data point label issues.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When smart labels are enabled, the chart repositions overlapping data point labels, based on a set of user-defined rules.  
+  
+ Callout lines will be drawn to link the label with its data point. The visual attributes of the callout line can be controlled. These visual attributes include color, line style, and line width. The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> and <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> properties control the embellishments, such as arrowheads, that appear at the end of the callout line.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineColor%2A> property can be set to any <xref:System.Drawing.Color> object. If you set the color of the callout line, you will also automatically set the color of the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> and the embellishment defined by the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A>.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineWidth%2A> property controls the pixel width of the callout line. Use of this property will also scale the embellishments of the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle%2A> and the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A>.  
+  
+ The movement of smart labels can be controlled through the use of several motion-related properties. These define the rules of movement for the direction, distance and whether the data point label is allowed to leave the plotting area. The default movement rules will normally resolve most issues. The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance%2A> defines a value that specifies the maximum distance in pixels from the data point that data point labels are allowed to be moved in case of overlapping. The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance%2A> property defines a value that specifies the minimum distance in pixels from the data point that data point labels will be moved in case of overlapping. When a data point label needs to be repositioned, the label will be moved by at least the number of pixels specified.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden%2A> property indicates whether the labels are hidden when overlapping issues cannot be resolved. If the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden%2A> property is `true`, and the data point cannot be drawn within the area specified by <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance%2A> and <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance%2A> in the directions allowed by <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A>, the data point label will not be drawn.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A> property defines the direction(s) in which the data point label can be moved. This property accepts one <xref:System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles> value or a bitwise-OR of multiple <xref:System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles> values. The default is the bitwise-OR of all <xref:System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles> values, to allow repositioning in all possible directions except to the center of the data point.  
+  
+ Smart labels are not supported for the following chart types:  
+  
+-   Bar charts: bar and hundred-percent-stacked bar charts.  
+  
+-   Shape charts: pie, doughnut, polar and radar charts.  
+  
+-   Range charts: range, range column and range bar charts.  
+  
+-   Stacked area charts: stacked area and hundred-percent-stacked area charts.  
+  
+   
+  
+## Examples  
+  
+```vb  
+Imports System.Web.UI.DataVisualization.Charting  
+  
+Private Function SetSmartLabelsOptions()  
+  
+   ' Enabling the SmartLabels™ attribute.  
+   Chart1.Series("Series1").SmartLabels.Enabled = true  
+  
+   ' Set the callout style.  
+   Chart1.Series("Series1").SmartLabels.CalloutStyle = LabelCalloutStyle.Underlined  
+  
+   ' Set the callout line color.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineColor = Color.Goldenrod;  
+  
+   ' Set the callout line style.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineStyle = ChartDashStyle.Dash  
+  
+   ' Set the callout line width.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineWidth = 3   
+  
+   ' Set the callout line anchor cap.  
+   Chart1.Series("Series1").SmartLabels.CalloutLineAnchorCap = LineAnchorCap.Arrow  
+End Function  
+```  
+  
+```csharp  
+using System.Web.UI.DataVisualization.Charting  
+  
+private void SetSmartLabelsOptions()  
+{  
+   // Enabling the SmartLabels™ attribute.  
+   Chart1.Series["Series1"].SmartLabels.Enabled = true;  
+  
+   // Set the callout style.  
+   Chart1.Series["Series1"].SmartLabels.CalloutStyle = LabelCalloutStyle.Underlined;  
+  
+   // Set the callout line color.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineColor = Color.Goldenrod;  
+  
+   // Set the callout line style.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineStyle = ChartDashStyle.Dash;  
+  
+   // Set the callout line width.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineWidth = 3;  
+  
+   // Set the callout line anchor cap.  
+   Chart1.Series["Series1"].SmartLabels.CalloutLineAnchorCap = LineAnchorCap.Arrow;  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmartLabelStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowOutsidePlotArea">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle AllowOutsidePlotArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle AllowOutsidePlotArea" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.AllowOutsidePlotArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether a <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> object can be drawn outside the plotting area.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelOutsidePlotAreaStyle" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalloutBackColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color CalloutBackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalloutBackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutBackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Transparent")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.ChartColorEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the label callout.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is only applicable when the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> property is set to a value of <xref:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalloutLineAnchorCapStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle CalloutLineAnchorCapStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle CalloutLineAnchorCapStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineAnchorCapStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the anchor cap style of the label callout line.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LineAnchorCapStyle" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalloutLineColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color CalloutLineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CalloutLineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.ChartColorEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the label callout line.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalloutLineDashStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.ChartDashStyle CalloutLineDashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle CalloutLineDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineDashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style of the label callout line.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalloutLineWidth">
+      <MemberSignature Language="C#" Value="public virtual int CalloutLineWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CalloutLineWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutLineWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the label callout line.</summary>
+        <value>An <see langword="integer" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalloutStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LabelCalloutStyle CalloutStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LabelCalloutStyle CalloutStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.CalloutStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelCalloutStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the callout style of the repositioned <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> object.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelCalloutStyle" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public virtual bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether a <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> algorithm is enabled.</summary>
+        <value>
+          <see langword="True" /> if an algorithm will be applied to prevent data point labels from overlapping. <see langword="False" /> if overlapping of data point labels will not be prevented. The default value is <see langword="True" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMarkerOverlappingAllowed">
+      <MemberSignature Language="C#" Value="public virtual bool IsMarkerOverlappingAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMarkerOverlappingAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.IsMarkerOverlappingAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether the point labels are allowed to overlap a point marker.</summary>
+        <value>
+          <see langword="True" /> if data point labels are permitted to overlap point markers. <see langword="False" /> if data point labels will be prevented from overlapping the point markers. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOverlappedHidden">
+      <MemberSignature Language="C#" Value="public virtual bool IsOverlappedHidden { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOverlappedHidden" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.IsOverlappedHidden" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether overlapped labels that cannot be repositioned will be hidden.</summary>
+        <value>
+          <see langword="True" /> if labels will be hidden if they overlap. <see langword="False" /> if overlapped labels will not be hidden. The default value is <see langword="True" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the point cannot be drawn within the area specified by the properties <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance%2A> and <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance%2A>, in the directions allowed by the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MovingDirection%2A>, property, and this property is `true`, the data point label will not be drawn.  
+  
+> [!NOTE]
+>  Smart labels only work when the <xref:System.Web.UI.DataVisualization.Charting.LabelStyle.Angle%2A> property is set to zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxMovingDistance">
+      <MemberSignature Language="C#" Value="public virtual double MaxMovingDistance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MaxMovingDistance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MaxMovingDistance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(30)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum distance, in pixels, that the overlapped <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> object can be moved from the marker.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the maximum distance in pixels from the data point that data point labels are allowed to be moved in case of overlapping.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinMovingDistance">
+      <MemberSignature Language="C#" Value="public virtual double MinMovingDistance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinMovingDistance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MinMovingDistance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum distance, in pixels, that the overlapped <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> object can be moved from the marker.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the minimum distance in pixels from the data point that data point labels are allowed to be moved in case of overlapping.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MovingDirection">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles MovingDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles MovingDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.MovingDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles), "Top, Bottom, Right, Left, TopLeft, TopRight, BottomLeft, BottomRight")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.FlagsEnumUITypeEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the direction(s) in which the overlapped <see cref="T:System.Web.UI.DataVisualization.Charting.SmartLabelStyle" /> object is allowed to be moved.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles" /> enumeration value or multiple bitwise OR'd <see cref="T:System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles" /> values. The default is the bitwise OR of all <see cref="T:System.Web.UI.DataVisualization.Charting.LabelAlignmentStyles" /> values to allow repositioning in all directions except to the center of the data point.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

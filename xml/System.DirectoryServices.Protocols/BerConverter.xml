@@ -1,0 +1,182 @@
+<Type Name="BerConverter" FullName="System.DirectoryServices.Protocols.BerConverter">
+  <TypeSignature Language="C#" Value="public sealed class BerConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BerConverter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.BerConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.BerConverter" /> class encodes and decodes structured data using basic encoding rules (BER).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decode">
+      <MemberSignature Language="C#" Value="public static object[] Decode (string format, byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] Decode(string format, unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Decode(System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format string.</param>
+        <param name="value">An array of BER data.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.BerConverter.Decode(System.String,System.Byte[])" /> method decodes a binary representation of the data, using BER, to retrieve structured data.</summary>
+        <returns>The decoded data.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="format" /> parameter contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="format" /> parameter contains an undefined character.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.BerConversionException">The underlying decoding fails. The decoding rules include the following.  
+  
+ <list type="table">  
+<listheader>  
+<term> Code  
+  
+ </term>  
+<description> Corresponding Result  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> '{' '}' '[' ']' 'n' 'x'  
+  
+ </term>  
+<description> No corresponding result  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'i' 'e'  
+  
+ </term>  
+<description> int  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'b'  
+  
+ </term>  
+<description> bool  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'a'  
+  
+ </term>  
+<description> string  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'O'  
+  
+ </term>  
+<description> byte[]  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'B'  
+  
+ </term>  
+<description> byte[] containing bit strings  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'v'  
+  
+ </term>  
+<description> string[]  
+  
+ </description>  
+</item>  
+<item>  
+<term> 'V'  
+  
+ </term>  
+<description> byte[][]  
+  
+ </description>  
+</item>  
+</list></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Encode">
+      <MemberSignature Language="C#" Value="public static byte[] Encode (string format, object[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Encode(string format, object[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.BerConverter.Encode(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="value" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="format">The format string.</param>
+        <param name="value">An array of formatted data.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.BerConverter.Encode(System.String,System.Object[])" /> method encodes structured data, using BER, to retrieve a binary representation of the data.</summary>
+        <returns>An array of BER-encoded data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are valid format characters.  
+  
+ Encoding rules:  
+  
+|Code|Corresponding Argument|  
+|----------|----------------------------|  
+|'{' '}' '[' ']' 'n'|No corresponding argument|  
+|'t' 'i' 'e'|int|  
+|'a'|Octet string|  
+|'b'|bool|  
+|'s'|string|  
+|'o' 'X'|byte[]|  
+|'v'|string[]|  
+|'V'|byte[][]|  
+  
+> [!NOTE]
+>  'v' and 'V' are special in that a double {} is required. For example, use {{v}} and {{V}}.  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|ArgumentNullException|`format` is a null reference (`Nothing` in Visual Basic).|  
+|ArgumentException|This exception occurs in any one of the following conditions:<br /><br /> -   There are not enough arguments for the format string.<br />-   The format string argument is incorrect.<br />-   The format string contains an undefined character.|  
+|BerConversionException|Error processing return value.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

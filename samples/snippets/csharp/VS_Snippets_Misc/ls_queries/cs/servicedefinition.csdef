@@ -1,0 +1,14 @@
+<ServiceDefinition name="LS_Queries_CS" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+    <WebRole name="LightSwitchWebRole" 
+             vmsize="Small"
+             enableNativeCodeExecution="true">
+        <ConfigurationSettings>
+        </ConfigurationSettings>
+        <InputEndpoints>
+            <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="SSLCertificate" />
+        </InputEndpoints>
+        <Certificates>
+            <Certificate name="SSLCertificate" storeLocation="LocalMachine" storeName="My" />
+        </Certificates>
+    </WebRole>
+</ServiceDefinition>

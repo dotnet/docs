@@ -1,0 +1,115 @@
+<Type Name="SqlHelpers" FullName="System.Data.Linq.SqlClient.SqlHelpers">
+  <TypeSignature Language="C#" Value="public static class SqlHelpers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlHelpers extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.SqlClient.SqlHelpers" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides helper methods for operations that match string patterns.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStringContainsPattern">
+      <MemberSignature Language="C#" Value="public static string GetStringContainsPattern (string text, char escape);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStringContainsPattern(string text, char escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.GetStringContainsPattern(System.String,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="escape" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="text">The string to insert into the search pattern string.</param>
+        <param name="escape">The character to use to escape wildcard characters.</param>
+        <summary>Creates a search pattern string where the specified text can have other text before and following it.</summary>
+        <returns>A search pattern string that contains the specified string and the '%' character before and after it.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStringEndsWithPattern">
+      <MemberSignature Language="C#" Value="public static string GetStringEndsWithPattern (string text, char escape);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStringEndsWithPattern(string text, char escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.GetStringEndsWithPattern(System.String,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="escape" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="text">The string to insert into the search pattern string.</param>
+        <param name="escape">The character to use to escape wildcard characters.</param>
+        <summary>Creates a search pattern string where the specified text can have other text before it but not following it.</summary>
+        <returns>A search pattern string that contains the '%' character followed by the specified string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStringStartsWithPattern">
+      <MemberSignature Language="C#" Value="public static string GetStringStartsWithPattern (string text, char escape);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStringStartsWithPattern(string text, char escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.GetStringStartsWithPattern(System.String,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="escape" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="text">The string to insert into the search pattern string.</param>
+        <param name="escape">The character to use to escape wildcard characters.</param>
+        <summary>Creates a search pattern string where the specified text can have other text after it but not before it.</summary>
+        <returns>A search pattern string that contains the specified string followed by the '%' character.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateVBLikePattern">
+      <MemberSignature Language="C#" Value="public static string TranslateVBLikePattern (string pattern, char escape);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TranslateVBLikePattern(string pattern, char escape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlHelpers.TranslateVBLikePattern(System.String,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.String" />
+        <Parameter Name="escape" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern to translate to a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> search pattern.</param>
+        <param name="escape">The character to use to escape special SQL characters or the escape character itself.</param>
+        <summary>Translates a search pattern for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> operator to a search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator.</summary>
+        <returns>A search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator that corresponds to the specified [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

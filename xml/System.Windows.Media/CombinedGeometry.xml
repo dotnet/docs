@@ -1,0 +1,441 @@
+<Type Name="CombinedGeometry" FullName="System.Windows.Media.CombinedGeometry">
+  <TypeSignature Language="C#" Value="public sealed class CombinedGeometry : System.Windows.Media.Geometry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CombinedGeometry extends System.Windows.Media.Geometry" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.CombinedGeometry" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Geometry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a 2-D geometric shape defined by the combination of two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
+  
+ Geometries can be combined in several ways: using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or the <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class.  
+  
+-   A <xref:System.Windows.Media.GeometryGroup> creates a composite geometry from one or more <xref:System.Windows.Media.Geometry> objects.  
+  
+-   A <xref:System.Windows.Media.CombinedGeometry> uses a specified boolean operation to combine the area described by two <xref:System.Windows.Media.Geometry> objects.  
+  
+-   The static <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class behaves in exactly the same manner as the <xref:System.Windows.Media.CombinedGeometry> object.  
+  
+ Careful thought should be involved when using a <xref:System.Windows.Media.CombinedGeometry> to perform a union as it can be very CPU-expensive. In most cases, a <xref:System.Windows.Media.GeometryGroup> or <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> will work better.  
+  
+ Use a <xref:System.Windows.Media.CombinedGeometry> only when any of the following apply:  
+  
+-   The geometric operation is not a union.  
+  
+-   Either of the geometries have a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
+  
+-   Time is not a concern, but space is (for instance, if the geometry is created once and then cached). Typically, <xref:System.Windows.Media.CombinedGeometry> produces smaller output than <xref:System.Windows.Media.PathGeometry.AddGeometry%2A>.  
+  
+-   The resulting geometry will be stroked or used in a path animation and <xref:System.Windows.Media.PathGeometry.AddGeometry%2A> does not provide the desired outline.  
+  
+## Freezable Features  
+ A <xref:System.Windows.Media.CombinedGeometry> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CombinedGeometry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CombinedGeometry (System.Windows.Media.Geometry geometry1, System.Windows.Media.Geometry geometry2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Geometry geometry1, class System.Windows.Media.Geometry geometry2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.#ctor(System.Windows.Media.Geometry,System.Windows.Media.Geometry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="geometry1" Type="System.Windows.Media.Geometry" />
+        <Parameter Name="geometry2" Type="System.Windows.Media.Geometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
+        <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CombinedGeometry (System.Windows.Media.GeometryCombineMode geometryCombineMode, System.Windows.Media.Geometry geometry1, System.Windows.Media.Geometry geometry2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.GeometryCombineMode geometryCombineMode, class System.Windows.Media.Geometry geometry1, class System.Windows.Media.Geometry geometry2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.#ctor(System.Windows.Media.GeometryCombineMode,System.Windows.Media.Geometry,System.Windows.Media.Geometry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="geometryCombineMode" Type="System.Windows.Media.GeometryCombineMode" />
+        <Parameter Name="geometry1" Type="System.Windows.Media.Geometry" />
+        <Parameter Name="geometry2" Type="System.Windows.Media.Geometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometryCombineMode">The method by which <c>geometry1</c> and <c>geometry2</c> are combined.</param>
+        <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
+        <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects and <see cref="P:System.Windows.Media.CombinedGeometry.GeometryCombineMode" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CombinedGeometry (System.Windows.Media.GeometryCombineMode geometryCombineMode, System.Windows.Media.Geometry geometry1, System.Windows.Media.Geometry geometry2, System.Windows.Media.Transform transform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.GeometryCombineMode geometryCombineMode, class System.Windows.Media.Geometry geometry1, class System.Windows.Media.Geometry geometry2, class System.Windows.Media.Transform transform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.#ctor(System.Windows.Media.GeometryCombineMode,System.Windows.Media.Geometry,System.Windows.Media.Geometry,System.Windows.Media.Transform)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="geometryCombineMode" Type="System.Windows.Media.GeometryCombineMode" />
+        <Parameter Name="geometry1" Type="System.Windows.Media.Geometry" />
+        <Parameter Name="geometry2" Type="System.Windows.Media.Geometry" />
+        <Parameter Name="transform" Type="System.Windows.Media.Transform" />
+      </Parameters>
+      <Docs>
+        <param name="geometryCombineMode">The method by which <c>geometry1</c> and <c>geometry2</c> are combined.</param>
+        <param name="geometry1">The first <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
+        <param name="geometry2">The second <see cref="T:System.Windows.Media.Geometry" /> to combine.</param>
+        <param name="transform">The <see cref="P:System.Windows.Media.Geometry.Transform" /> applied to the <see cref="T:System.Windows.Media.CombinedGeometry" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.CombinedGeometry" /> class with the specified <see cref="T:System.Windows.Media.Geometry" /> objects, <see cref="P:System.Windows.Media.CombinedGeometry.GeometryCombineMode" />, and <see cref="P:System.Windows.Media.Geometry.Transform" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public override System.Windows.Rect Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.CombinedGeometry.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Rect" /> that specifies the bounding box of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object.   **Note:** This method does not take any pens into account.</summary>
+        <value>The bounding box of this <see cref="T:System.Windows.Media.CombinedGeometry" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If animations are present, the base values of the <xref:System.Windows.Media.Geometry> object are used to calculate the bounding box.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.CombinedGeometry Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.CombinedGeometry Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CombinedGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.CombinedGeometry" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.CombinedGeometry CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.CombinedGeometry CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CombinedGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry1">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Geometry1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Geometry1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.CombinedGeometry.Geometry1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first <see cref="T:System.Windows.Media.Geometry" /> object of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object.</summary>
+        <value>The first <see cref="T:System.Windows.Media.Geometry" /> object to combine.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
+  
+<a name="dependencyPropertyInfo_Geometry1"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.CombinedGeometry.Geometry1Property>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry1Property">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Geometry1Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Geometry1Property" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.CombinedGeometry.Geometry1Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.CombinedGeometry.Geometry1" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry2">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Geometry2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Geometry2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.CombinedGeometry.Geometry2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the second <see cref="T:System.Windows.Media.Geometry" /> object of this <see cref="T:System.Windows.Media.CombinedGeometry" /> object.</summary>
+        <value>The second <see cref="T:System.Windows.Media.Geometry" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property specifies how the two geometries will be combined. Note that <xref:System.Windows.Media.CombinedGeometry> combines the area specified by two geometries, so geometries that do not have area (such as <xref:System.Windows.Media.LineGeometry>) disappear when combined.  
+  
+<a name="dependencyPropertyInfo_Geometry2"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.CombinedGeometry.Geometry2Property>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry2Property">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty Geometry2Property;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty Geometry2Property" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.CombinedGeometry.Geometry2Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.CombinedGeometry.Geometry2" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCombineMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeometryCombineMode GeometryCombineMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.GeometryCombineMode GeometryCombineMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.CombinedGeometry.GeometryCombineMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryCombineMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the method by which the two geometries (specified by the <see cref="P:System.Windows.Media.CombinedGeometry.Geometry1" /> and <see cref="P:System.Windows.Media.CombinedGeometry.Geometry2" /> properties) are combined.</summary>
+        <value>The method by which <see cref="P:System.Windows.Media.CombinedGeometry.Geometry1" /> and <see cref="P:System.Windows.Media.CombinedGeometry.Geometry2" /> are combined. The default value is <see cref="F:System.Windows.Media.GeometryCombineMode.Union" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_GeometryCombineMode"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.CombinedGeometry.GeometryCombineModeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCombineModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GeometryCombineModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GeometryCombineModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.CombinedGeometry.GeometryCombineModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.CombinedGeometry.GeometryCombineMode" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArea">
+      <MemberSignature Language="C#" Value="public override double GetArea (double tolerance, System.Windows.Media.ToleranceType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64 GetArea(float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.GetArea(System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tolerance" Type="System.Double" />
+        <Parameter Name="type" Type="System.Windows.Media.ToleranceType" />
+      </Parameters>
+      <Docs>
+        <param name="tolerance">The computational tolerance of error.</param>
+        <param name="type">Specifies how the error tolerance will be interpreted.</param>
+        <summary>Gets the area of the filled region.</summary>
+        <returns>The area of the filled region of this combined geometry.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public override bool IsEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.IsEmpty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether this <see cref="T:System.Windows.Media.CombinedGeometry" /> object is empty.</summary>
+        <returns>**true** if this <see cref="T:System.Windows.Media.CombinedGeometry" /> is empty; otherwise, **false**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MayHaveCurves">
+      <MemberSignature Language="C#" Value="public override bool MayHaveCurves ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MayHaveCurves() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.CombinedGeometry.MayHaveCurves" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether this <see cref="T:System.Windows.Media.CombinedGeometry" /> object may have curved segments.</summary>
+        <returns>**true** if this <see cref="T:System.Windows.Media.CombinedGeometry" /> object may have curved segments; otherwise, **false**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

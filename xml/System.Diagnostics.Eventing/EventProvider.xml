@@ -1,0 +1,742 @@
+<Type Name="EventProvider" FullName="System.Diagnostics.Eventing.EventProvider">
+  <TypeSignature Language="C#" Value="public class EventProvider : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventProvider extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Use this class to write events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To consume events written using the <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A> and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A> methods, the events must be defined in a manifest; events written using the <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A> method do not require a manifest.  
+  
+ Events can contain the following managed data types:  
+  
+-   bool  
+  
+-   Boolean  
+  
+-   byte  
+  
+-   char  
+  
+-   decimal  
+  
+-   double  
+  
+-   float  
+  
+-   Guid  
+  
+-   int  
+  
+-   IntPtr  
+  
+-   long  
+  
+-   sbyte  
+  
+-   short  
+  
+-   string  
+  
+-   uint  
+  
+-   UInt64  
+  
+ If an event in your manifest uses the `Boolean` in-type, you cannot write the data element using a `Boolean` data type in your managed code. The `Boolean` in-type in your manifest expects a 4-byte value, and a `Boolean` data type in managed code is 1-byte. Instead, you must use an `int` data type to write the value. If you want to log a `Boolean` value, use the UInt8 in-type in your manifest.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventProvider (Guid providerGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid providerGuid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.#ctor(System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="providerGuid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="providerGuid">Guid that uniquely identifies the provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Registers the provider. To remove the registration when finished, call the <xref:System.Diagnostics.Eventing.EventProvider.Close%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InsufficientMemoryException">There is not enough memory to complete the operation.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The classes in the <see cref="N:System.Diagnostics.Eventing" /> namespace work only on Windows Vista.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="providerGuid" /> parameter cannot be null.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error returned by the ETW subsystem.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the provider's registration from the ETW subsystem and releases all unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should call this method when finished instead of waiting for the system to dispose of the resources.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.Win32Exception">An error returned by the ETW subsystem.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateActivityId">
+      <MemberSignature Language="C#" Value="public static Guid CreateActivityId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid CreateActivityId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.CreateActivityId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a unique activity identifier for the provider.</summary>
+        <returns>A unique Guid that you use when calling the <see cref="M:System.Diagnostics.Eventing.EventProvider.SetActivityId(System.Guid@)" /> method to set the activity identifier for the provider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a static method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the resources used by this <see cref="T:System.Diagnostics.Eventing.EventProvider" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">This parameter is ignored by this method since there are no unmanaged resources.</param>
+        <summary>Releases the resources used by this <see cref="T:System.Diagnostics.Eventing.EventProvider" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~EventProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Frees resources and performs internal cleanup before the instance is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLastWriteEventError">
+      <MemberSignature Language="C#" Value="public static System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode GetLastWriteEventError ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode GetLastWriteEventError() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the last error associated with an event write failure.</summary>
+        <returns>Use the value to determine the cause of an event write failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A> methods set this value if they fail to write the event.  
+  
+ This is a static method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.IsEnabled" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether any session enabled the provider, regardless of the level and keyword values used to enable the provider.</summary>
+        <returns>Is <see langword="true" /> if the provider is enabled to any session; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, a provider does not call this method to determine whether the provider has been enabled by a session; the provider simply writes the event, and ETW determines whether the event is logged to the session. A provider may want to call this function if the provider needs to perform extra work to generate the event. In this case, calling this function first may save resources and time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled (byte level, long keywords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled(unsigned int8 level, int64 keywords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.IsEnabled(System.Byte,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="System.Byte" />
+        <Parameter Name="keywords" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="level">Level of detail included in the event.</param>
+        <param name="keywords">Bit mask that specifies the event category. This mask should be the same keyword mask that is defined in the manifest for the event.</param>
+        <summary>Determines whether any session is requesting the specified event from the provider.</summary>
+        <returns>Is <see langword="true" /> if any session is requesting the specified event; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, a provider does not call this method to determine whether a session requested the specified event; the provider simply writes the event, and ETW determines whether the event is logged to a session. A provider may want to call this function if the provider needs to perform extra work to generate the event. In this case, calling this function first to determine if a session requested the event or not, may save resources and time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetActivityId">
+      <MemberSignature Language="C#" Value="public static void SetActivityId (ref Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetActivityId(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.SetActivityId(System.Guid@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="id">A unique activity identifier that the <see cref="M:System.Diagnostics.Eventing.EventProvider.CreateActivityId" /> method returns.</param>
+        <summary>Sets the current activity identifier used by the <see cref="Overload:System.Diagnostics.Eventing.EventProvider.WriteEvent" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier is stored in the thread context.  
+  
+ Note that in version 3.5 of the .NET framework, you had to set the `id` parameter of this method and the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property value to the same identifier value. However, in version 4.0 of the framework, the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method automatically sets the correlation activity identifier for you.  
+  
+ This is a static method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventDescriptor" Type="System.Diagnostics.Eventing.EventDescriptor&amp;" RefType="ref" />
+        <Parameter Name="eventPayload" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
+        <param name="eventPayload">An array of objects that contain the event data to write. The object must be in the order specified in the manifest. The array is limited to 32 objects, of which only eight may be strings. The maximum data size for the event is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+  
+ This parameter can be null.</param>
+        <summary>Writes an event. The event data is specified as an array of objects.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+  
+ If the object type is not supported, the method writes the value of the object's <xref:System.Object.ToString%2A?displayProperty=fullName> method in the payload. For a list of supported object types, see the Remarks for the <xref:System.Diagnostics.Eventing.EventProvider> class.  
+  
+   
+  
+## Examples  
+  
+```  
+private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
+  
+enum Keyword  
+{  
+    Read = 0x1,  
+    Write = 0x2,  
+    Local = 0x4,  
+    Remote = 0x8  
+}  
+  
+enum Level  
+{  
+    Critical = 1,  
+    Error,  
+    Warning,  
+    Information,  
+    Verbose  
+}  
+  
+    EventProvider provider = new EventProvider(providerId);  
+    EventDescriptor readEvent;  
+    string path = @"<PATHGOESHERE>";  
+    UInt64 bytesRead = <ASSIGNVALUE>;  
+  
+    if (provider.IsEnabled(Level.Information, (long)Keyword.Read))  
+    {  
+        unchecked  
+        {  
+            readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
+        }  
+  
+        if (!provider.WriteEvent(ref readEvent, new object[] { path, bytesRead }))  
+            Console.WriteLine(EventProvider.GetLastWriteEventError());  
+    }  
+  
+    provider.Close();  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="eventPayload" /> parameter contains too many objects or strings.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, string data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, string data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventDescriptor" Type="System.Diagnostics.Eventing.EventDescriptor&amp;" RefType="ref" />
+        <Parameter Name="data" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
+        <param name="data">The string to write as the event data.</param>
+        <summary>Writes an event. The event data is specified as a string.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+  
+ The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+  
+   
+  
+## Examples  
+  
+```  
+private static Guid providerId = new Guid("{FB33FDA8-45FB-4df0-8A55-EEB4BA88E7E7}");  
+  
+EventProvider provider = new EventProvider(providerId);  
+EventDescriptor writeEvent;  
+  
+if (provider.IsEnabled())  
+{  
+     unchecked  
+     {  
+          writeEvent = new EventDescriptor(0x2, 0x0, 0x10, 0x3, 0x0, 0x0, (long)0x8000000000000006);  
+     }  
+  
+     if (!provider.WriteEvent(ref writeEvent, "Write event."))  
+          Console.WriteLine(EventProvider.GetLastWriteEventError());  
+}  
+  
+provider.Close();  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="data" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, int dataCount, IntPtr data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, int32 dataCount, native int data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Int32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventDescriptor" Type="System.Diagnostics.Eventing.EventDescriptor&amp;" RefType="ref" />
+        <Parameter Name="dataCount" Type="System.Int32" />
+        <Parameter Name="data" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
+        <param name="dataCount">Size of the event data to which the <c>data</c> parameter points. The maximum event data size is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
+        <param name="data">Pointer to the event data to write.</param>
+        <summary>Writes an event. The event data is specified as a block of memory.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify an activity identifier for the event, this method retrieves the identifier from the thread context and includes it with the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMessageEvent">
+      <MemberSignature Language="C#" Value="public bool WriteMessageEvent (string eventMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteMessageEvent(string eventMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventMessage">String to write as the event data.</param>
+        <summary>Writes an event that contains a string as its data.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+  
+   
+  
+## Examples  
+  
+```  
+if (!provider.WriteMessageEvent("Event string."))  
+    Console.WriteLine(EventProvider.GetLastWriteEventError());  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="eventMessage" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMessageEvent">
+      <MemberSignature Language="C#" Value="public bool WriteMessageEvent (string eventMessage, byte eventLevel, long eventKeywords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteMessageEvent(string eventMessage, unsigned int8 eventLevel, int64 eventKeywords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent(System.String,System.Byte,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventMessage" Type="System.String" />
+        <Parameter Name="eventLevel" Type="System.Byte" />
+        <Parameter Name="eventKeywords" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="eventMessage">String to write as the event data.</param>
+        <param name="eventLevel">Level of detail included in the event. If the provider uses a manifest to define the event, set this value to the same level defined in the manifest.</param>
+        <param name="eventKeywords">Bit mask that specifies the event category. If the provider uses a manifest to define the event, set this value to the same keyword mask defined in the manifest.</param>
+        <summary>Writes an event that contains a string as its data if the level and keyword value match the events requested by the session.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum string length is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.  
+  
+   
+  
+## Examples  
+  
+```  
+// Calling this method with level and keyword set to zero is the same  
+// as calling WriteMessageEvent(string); the event is always written.  
+if (!provider.WriteMessageEvent("Event string.", 0, 0))  
+    Console.WriteLine(EventProvider.GetLastWriteEventError());  
+  
+// Event is written if the level value of the session is less than or equal to 3, and bit 1 of the session  
+// keyword bit-mask is set.  
+if (!provider.WriteMessageEvent("Event string.", 3, 2))  
+    Console.WriteLine(EventProvider.GetLastWriteEventError());  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="eventMessage" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTransferEvent">
+      <MemberSignature Language="C#" Value="public bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, object[] eventPayload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, valuetype System.Guid relatedActivityId, object[] eventPayload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventDescriptor" Type="System.Diagnostics.Eventing.EventDescriptor&amp;" RefType="ref" />
+        <Parameter Name="relatedActivityId" Type="System.Guid" />
+        <Parameter Name="eventPayload" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
+        <param name="relatedActivityId">Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events.</param>
+        <param name="eventPayload">An array of objects that contain the event data to write. The data must be in the order specified in the manifest. The array is limited to 32 objects, of which only eight may be strings. The maximum data size for the event is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
+        <summary>Links events together when tracing events in an end-to-end scenario. The event data is specified as an array of objects.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method uses the activity ID set in the thread context to identify this component. To set the activity ID, call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method.  
+  
+ If you use the <xref:System.Diagnostics.Trace> class, you do not use the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method to specify the activity ID. Instead, access the <xref:System.Diagnostics.Trace.CorrelationManager%2A> property to get the <xref:System.Diagnostics.CorrelationManager> object. Then, set the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property to the activity ID. You must also set the `relatedActivityId` to a <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">If <paramref name="eventPayload" /> contains too many objects or strings.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTransferEvent">
+      <MemberSignature Language="C#" Value="protected bool WriteTransferEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, Guid relatedActivityId, int dataCount, IntPtr data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool WriteTransferEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, valuetype System.Guid relatedActivityId, int32 dataCount, native int data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent(System.Diagnostics.Eventing.EventDescriptor@,System.Guid,System.Int32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventDescriptor" Type="System.Diagnostics.Eventing.EventDescriptor&amp;" RefType="ref" />
+        <Parameter Name="relatedActivityId" Type="System.Guid" />
+        <Parameter Name="dataCount" Type="System.Int32" />
+        <Parameter Name="data" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="eventDescriptor">An instance of <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> that identifies the event to write.</param>
+        <param name="relatedActivityId">Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events.</param>
+        <param name="dataCount">Size of the event data to which the <c>data</c> parameter points. The maximum event data size is limited to 64 KB minus the size of the event headers. The event size is less if the session's buffer size is less and the session includes extended data items with the event.</param>
+        <param name="data">Pointer to the event data to write.</param>
+        <summary>Links events together when tracing events in an end-to-end scenario. The event data is specified as a block of memory.</summary>
+        <returns>Is <see langword="true" /> if the event is written; otherwise, <see langword="false" />. If false, call the <see cref="M:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError" /> method to determine the cause of the failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method uses the activity ID set in the thread context to identify this component. To set the activity ID, call the <xref:System.Diagnostics.Eventing.EventProvider.SetActivityId%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="WriteMessageEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event that contains a string as its data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods do not require a manifest to consume the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use these methods if you use a manifest to define your events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

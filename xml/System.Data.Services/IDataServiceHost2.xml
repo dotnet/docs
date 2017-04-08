@@ -1,0 +1,56 @@
+<Type Name="IDataServiceHost2" FullName="System.Data.Services.IDataServiceHost2">
+  <TypeSignature Language="C#" Value="public interface IDataServiceHost2 : System.Data.Services.IDataServiceHost" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceHost2 implements class System.Data.Services.IDataServiceHost" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.IDataServiceHost2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.Services.IDataServiceHost</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines extensions to <see cref="T:System.Data.Services.IDataServiceHost" /> needed for request and response headers in HTTP.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RequestHeaders">
+      <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection RequestHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection RequestHeaders" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost2.RequestHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Request header for an HTTP request.</summary>
+        <value>String value of header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseHeaders">
+      <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection ResponseHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection ResponseHeaders" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost2.ResponseHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Response header for an HTTP response.</summary>
+        <value>String value of header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

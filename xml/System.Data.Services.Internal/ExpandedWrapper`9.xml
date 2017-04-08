@@ -1,0 +1,235 @@
+<Type Name="ExpandedWrapper&lt;TExpandedElement,TProperty0,TProperty1,TProperty2,TProperty3,TProperty4,TProperty5,TProperty6,TProperty7&gt;" FullName="System.Data.Services.Internal.ExpandedWrapper&lt;TExpandedElement,TProperty0,TProperty1,TProperty2,TProperty3,TProperty4,TProperty5,TProperty6,TProperty7&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ExpandedWrapper&lt;TExpandedElement,TProperty0,TProperty1,TProperty2,TProperty3,TProperty4,TProperty5,TProperty6,TProperty7&gt; : System.Data.Services.Internal.ExpandedWrapper&lt;TExpandedElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpandedWrapper`9&lt;TExpandedElement, TProperty0, TProperty1, TProperty2, TProperty3, TProperty4, TProperty5, TProperty6, TProperty7&gt; extends System.Data.Services.Internal.ExpandedWrapper`1&lt;!TExpandedElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ExpandedWrapper`9" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TExpandedElement" />
+    <TypeParameter Name="TProperty0" />
+    <TypeParameter Name="TProperty1" />
+    <TypeParameter Name="TProperty2" />
+    <TypeParameter Name="TProperty3" />
+    <TypeParameter Name="TProperty4" />
+    <TypeParameter Name="TProperty5" />
+    <TypeParameter Name="TProperty6" />
+    <TypeParameter Name="TProperty7" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.Services.Internal.ExpandedWrapper&lt;TExpandedElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TExpandedElement">TExpandedElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TExpandedElement">The type of the expanded element.</typeparam>
+    <typeparam name="TProperty0">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty1">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty2">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty3">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty4">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty5">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty6">The type of the property to expand.</typeparam>
+    <typeparam name="TProperty7">The type of the property to expand.</typeparam>
+    <summary>This class is used internally by the system to implement support for queries with eager loading of related entities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace includes a number of variations of the `ExpandedWrapper` class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpandedWrapper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`9.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`9" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalGetExpandedPropertyValue">
+      <MemberSignature Language="C#" Value="protected override object InternalGetExpandedPropertyValue (int nameIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object InternalGetExpandedPropertyValue(int32 nameIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ExpandedWrapper`9.InternalGetExpandedPropertyValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="nameIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty0">
+      <MemberSignature Language="C#" Value="public TProperty0 ProjectedProperty0 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty0 ProjectedProperty0" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty0" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty0</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty1">
+      <MemberSignature Language="C#" Value="public TProperty1 ProjectedProperty1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty1 ProjectedProperty1" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty1</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty2">
+      <MemberSignature Language="C#" Value="public TProperty2 ProjectedProperty2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty2 ProjectedProperty2" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty3">
+      <MemberSignature Language="C#" Value="public TProperty3 ProjectedProperty3 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty3 ProjectedProperty3" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty4">
+      <MemberSignature Language="C#" Value="public TProperty4 ProjectedProperty4 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty4 ProjectedProperty4" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty4</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty5">
+      <MemberSignature Language="C#" Value="public TProperty5 ProjectedProperty5 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty5 ProjectedProperty5" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty5</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty6">
+      <MemberSignature Language="C#" Value="public TProperty6 ProjectedProperty6 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty6 ProjectedProperty6" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty6</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty7">
+      <MemberSignature Language="C#" Value="public TProperty7 ProjectedProperty7 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TProperty7 ProjectedProperty7" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ExpandedWrapper`9.ProjectedProperty7" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TProperty7</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the property to expand.</summary>
+        <value>The property to expand.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

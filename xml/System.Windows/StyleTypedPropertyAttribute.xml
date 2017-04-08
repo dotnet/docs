@@ -1,0 +1,108 @@
+<Type Name="StyleTypedPropertyAttribute" FullName="System.Windows.StyleTypedPropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class StyleTypedPropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StyleTypedPropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.StyleTypedPropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an attribute that is applied to the class definition and determines the <see cref="P:System.Windows.Style.TargetType" />s of the properties that are of type <see cref="T:System.Windows.Style" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control authors apply this attribute to the class definition to specify the <xref:System.Windows.Style.TargetType%2A>s of the properties that are of type <xref:System.Windows.Style>. For example, if you look at the declaration of the <xref:System.Windows.Controls.ListBox> class, this attribute is used to specify that the <xref:System.Windows.Style.TargetType%2A> of the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property is <xref:System.Windows.Controls.ListBoxItem>.  
+  
+ Subclasses inherit this definition but can redefine the <xref:System.Windows.Style.TargetType%2A> of the property by using this attribute on its own class definition.  
+  
+<a name="xamlTextUsage_StyleTypedPropertyAttribute"></a>   
+## XAML Text Usage  
+ You cannot use this class or its properties in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StyleTypedPropertyAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.StyleTypedPropertyAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.StyleTypedPropertyAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public string Property { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Property" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.StyleTypedPropertyAttribute.Property" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the property that is of type <see cref="T:System.Windows.Style" />.</summary>
+        <value>The name of the property that is of type <see cref="T:System.Windows.Style" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Property"></a>   
+## XAML Text Usage  
+ You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleTargetType">
+      <MemberSignature Language="C#" Value="public Type StyleTargetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type StyleTargetType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.StyleTypedPropertyAttribute.StyleTargetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.Style.TargetType" /> of the <see cref="P:System.Windows.StyleTypedPropertyAttribute.Property" /> this attribute is specifying.</summary>
+        <value>The <see cref="P:System.Windows.Style.TargetType" /> of the <see cref="P:System.Windows.StyleTypedPropertyAttribute.Property" /> this attribute is specifying.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_StyleTargetType"></a>   
+## XAML Text Usage  
+ You cannot use this property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

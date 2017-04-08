@@ -1,0 +1,44 @@
+<Type Name="RenderingEventArgs" FullName="System.Windows.Media.RenderingEventArgs">
+  <TypeSignature Language="C#" Value="public class RenderingEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RenderingEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.RenderingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Required arguments for the <see cref="E:System.Windows.Media.CompositionTarget.Rendering" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RenderingTime">
+      <MemberSignature Language="C#" Value="public TimeSpan RenderingTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RenderingTime" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RenderingEventArgs.RenderingTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the estimated target time at which the next frame of an animation will be rendered.</summary>
+        <value>The estimated target time at which the next frame of an animation will be rendered.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.TimeSpan> that is returned reflects the same value as the animation system. This is the same time used by the time manager. For more information, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

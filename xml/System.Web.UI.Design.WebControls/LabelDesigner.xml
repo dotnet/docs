@@ -1,0 +1,99 @@
+<Type Name="LabelDesigner" FullName="System.Web.UI.Design.WebControls.LabelDesigner">
+  <TypeSignature Language="C#" Value="public class LabelDesigner : System.Web.UI.Design.TextControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelDesigner extends System.Web.UI.Design.TextControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LabelDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.TextControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Label" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Label> control allows text to be displayed programmatically on a Web page.  
+  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes a <xref:System.Web.UI.WebControls.Label> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.LabelDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.Label> control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.LabelDesigner.OnComponentChanged%2A> method is called when there is a change to the associated <xref:System.Web.UI.WebControls.Label> control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to derive the `SampleLabel` control from the <xref:System.Web.UI.WebControls.Label> control, and applies a <xref:System.ComponentModel.DesignerAttribute> attribute on the `SampleLabel` control to associate it with the `SampleLabelDesigner` class.  
+  
+ The code example also derives the `SampleLabelDesigner` from the <xref:System.Web.UI.Design.WebControls.LabelDesigner> class. It overrides the <xref:System.Web.UI.Design.TextControlDesigner.GetDesignTimeHtml%2A> method to set the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property to <xref:System.Web.UI.WebControls.BorderStyle>, if the original <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> was the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value. This improves the visibility of the associated control at design time.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls_LabelDesignerExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_LabelDesignerExample/CS/CustomLabelDesigner.cs#1)]
+ [!code-vb[System.Web.UI.Design.WebControls_LabelDesignerExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls_LabelDesignerExample/VB/customlabeldesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LabelDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LabelDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LabelDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.LabelDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.Label> control or a copy of the <xref:System.Web.UI.WebControls.Label> control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnComponentChanged">
+      <MemberSignature Language="C#" Value="public override void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LabelDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object that is the source of the event.</param>
+        <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> that contains the event data.</param>
+        <summary>Called when there is a change to the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LabelDesigner.OnComponentChanged%2A> method is called when the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event of the associated <xref:System.Web.UI.WebControls.Label> control is raised. Typically, this is in response to a property change on the control (for example, a **Properties** grid change).  
+  
+ The <xref:System.Web.UI.Design.WebControls.LabelDesigner.OnComponentChanged%2A> creates a <xref:System.ComponentModel.Design.ComponentChangedEventArgs> object and calls the <xref:System.Web.UI.Design.ControlDesigner.OnComponentChanged%2A> base method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

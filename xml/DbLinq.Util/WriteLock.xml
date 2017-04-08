@@ -1,0 +1,55 @@
+<Type Name="WriteLock" FullName="DbLinq.Util.WriteLock">
+  <TypeSignature Language="C#" Value="public class WriteLock : DbLinq.Util.BaseLock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WriteLock extends DbLinq.Util.BaseLock" />
+  <TypeSignature Language="DocId" Value="T:DbLinq.Util.WriteLock" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>DbLinq.Util.BaseLock</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WriteLock (System.Threading.ReaderWriterLockSlim locks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.WriteLock.#ctor(System.Threading.ReaderWriterLockSlim)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locks" Type="System.Threading.ReaderWriterLockSlim" />
+      </Parameters>
+      <Docs>
+        <param name="locks">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public override void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:DbLinq.Util.WriteLock.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

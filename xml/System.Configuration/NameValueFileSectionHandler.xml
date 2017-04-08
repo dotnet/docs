@@ -1,0 +1,83 @@
+<Type Name="NameValueFileSectionHandler" FullName="System.Configuration.NameValueFileSectionHandler">
+  <TypeSignature Language="C#" Value="public class NameValueFileSectionHandler : System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameValueFileSectionHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.NameValueFileSectionHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Configuration.IConfigurationSectionHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides access to a configuration file. This type supports the .NET Framework configuration infrastructure and is not intended to be used directly from your code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `file` attribute of the `<appSettings>` section specifies a relative path to an external file that contains custom application-configuration settings. The details provided in the file act as an `<appSettings>` section in the configuration file. The file is accessed using the <xref:System.Configuration.NameValueFileSectionHandler> class. The file's root element must match the section referring to it.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameValueFileSectionHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueFileSectionHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.NameValueFileSectionHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public object Create (object parent, object configContext, System.Xml.XmlNode section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object configContext, class System.Xml.XmlNode section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueFileSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Object" />
+        <Parameter Name="configContext" Type="System.Object" />
+        <Parameter Name="section" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent object.</param>
+        <param name="configContext">The configuration context object.</param>
+        <param name="section">The section XML node.</param>
+        <summary>Creates a new configuration handler and adds it to the section-handler collection based on the specified parameters.</summary>
+        <returns>A configuration object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `parent` object parameter acts as the configuration settings in the corresponding parent configuration section. The `configContext` object parameter is the virtual path for which the configuration section handler computes configuration values. Normally this parameter is reserved and is `null`. The `section` parameter is the <xref:System.Xml.XmlNode> that contains the configuration information to be handled. The `section` parameter provides direct access to the XML contents of the configuration section.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The file specified in the <see langword="file" /> attribute of <paramref name="section" /> exists but cannot be loaded.  
+  
+ \- or -  
+  
+ The <see langword="name" /> attribute of <paramref name="section" /> does not match the root element of the file specified in the <see langword="file" /> attribute.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

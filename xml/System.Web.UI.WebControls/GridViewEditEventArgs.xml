@@ -1,0 +1,107 @@
+<Type Name="GridViewEditEventArgs" FullName="System.Web.UI.WebControls.GridViewEditEventArgs">
+  <TypeSignature Language="C#" Value="public class GridViewEditEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewEditEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewEditEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.GridView.RowEditing" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.RowEditing> event when an Edit button (a button with its `CommandName` property set to "Edit") is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control enters edit mode. This allows you to provide an event-handling method that performs a custom routine, such as canceling the edit operation, whenever this event occurs.  
+  
+ A <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object is passed to the event-handling method, which allows you to determine the index of the row being edited and to indicate that the edit operation should be canceled. To cancel the edit operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewEditEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewEditEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> object passed to the event-handling method to cancel the editing operation if the user attempts to edit a row that contains an author with the last name White.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewEditEventArgs (int newEditIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 newEditIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewEditEventArgs.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newEditIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="newEditIndex">The index of the row to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewEditEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewEditEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.GridViewEditEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex%2A>|The value of the `newEditIndex` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewEditIndex">
+      <MemberSignature Language="C#" Value="public int NewEditIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NewEditIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the row being edited.</summary>
+        <value>The index of the row being edited.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex%2A> property to determine the index of the row being edited. The row index is often used to retrieve this row from the <xref:System.Web.UI.WebControls.GridView.Rows%2A> collection of the <xref:System.Web.UI.WebControls.GridView> control, which allows you to access the row's properties.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewEditEventArgs.NewEditIndex%2A> property to determine the index of the row being edited.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowEditing#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEditing/CS/gridviewroweditingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowEditing#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEditing/VB/gridviewroweditingvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

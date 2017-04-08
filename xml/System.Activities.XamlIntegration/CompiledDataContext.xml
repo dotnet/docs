@@ -1,0 +1,296 @@
+<Type Name="CompiledDataContext" FullName="System.Activities.XamlIntegration.CompiledDataContext">
+  <TypeSignature Language="C#" Value="public abstract class CompiledDataContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CompiledDataContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.CompiledDataContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the compiled data context.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CompiledDataContext (System.Collections.Generic.IList&lt;System.Activities.Location&gt; locations);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Activities.Location&gt; locations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.#ctor(System.Collections.Generic.IList{System.Activities.Location})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.Location&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="locations">The locations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.CompiledDataContext" /> class using the locations.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CompiledDataContext (System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locationReferences);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locationReferences) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.#ctor(System.Collections.Generic.IList{System.Activities.LocationReference})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locationReferences" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="locationReferences">The location references.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.CompiledDataContext" /> class using the location references.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CompiledDataContext (System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locationReferences, System.Activities.ActivityContext activityContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locationReferences, class System.Activities.ActivityContext activityContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.#ctor(System.Collections.Generic.IList{System.Activities.LocationReference},System.Activities.ActivityContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locationReferences" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+        <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="locationReferences">The location references.</param>
+        <param name="activityContext">The activity context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.CompiledDataContext" /> class using the location references and activity context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledDataContextCache">
+      <MemberSignature Language="C#" Value="protected static System.Activities.XamlIntegration.CompiledDataContext[] GetCompiledDataContextCache (object dataContextActivities, System.Activities.ActivityContext activityContext, System.Activities.Activity compiledRoot, bool forImplementation, int compiledDataContextCount);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Activities.XamlIntegration.CompiledDataContext[] GetCompiledDataContextCache(object dataContextActivities, class System.Activities.ActivityContext activityContext, class System.Activities.Activity compiledRoot, bool forImplementation, int32 compiledDataContextCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetCompiledDataContextCache(System.Object,System.Activities.ActivityContext,System.Activities.Activity,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.XamlIntegration.CompiledDataContext[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataContextActivities" Type="System.Object" />
+        <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
+        <Parameter Name="compiledRoot" Type="System.Activities.Activity" />
+        <Parameter Name="forImplementation" Type="System.Boolean" />
+        <Parameter Name="compiledDataContextCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dataContextActivities">The data context activities.</param>
+        <param name="activityContext">The activity context.</param>
+        <param name="compiledRoot">The compiled root.</param>
+        <param name="forImplementation">
+          <see langword="True" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
+        <param name="compiledDataContextCount">The number of compiled data context.</param>
+        <summary>Retrieves the cache used by the data context.</summary>
+        <returns>The data context.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataContextActivities">
+      <MemberSignature Language="C#" Value="protected static object GetDataContextActivities (System.Activities.Activity compiledRoot, bool forImplementation);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig object GetDataContextActivities(class System.Activities.Activity compiledRoot, bool forImplementation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetDataContextActivities(System.Activities.Activity,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compiledRoot" Type="System.Activities.Activity" />
+        <Parameter Name="forImplementation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="compiledRoot">The compiled root.</param>
+        <param name="forImplementation">
+          <see langword="True" /> if the compiled data context is for implementation; otherwise, <see langword="false" />.</param>
+        <summary>Gets the activities for the compiled data using the specified compiled root and implementation.</summary>
+        <returns>The activities for the compiled data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocation&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation&lt;T&gt; (Func&lt;T&gt; getMethod, Action&lt;T&gt; setMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!!T&gt; GetLocation&lt;T&gt;(class System.Func`1&lt;!!T&gt; getMethod, class System.Action`1&lt;!!T&gt; setMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetLocation``1(System.Func{``0},System.Action{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Location&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="getMethod" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="setMethod" Type="System.Action&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The function.</typeparam>
+        <param name="getMethod">The get method used.</param>
+        <param name="setMethod">The set method used.</param>
+        <summary>Retrieves the location of the compiled data context using the specified get and set methods.</summary>
+        <returns>The location of the compiled data context.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocation&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation&lt;T&gt; (Func&lt;T&gt; getMethod, Action&lt;T&gt; setMethod, int expressionId, System.Activities.Activity compiledRootActivity, System.Activities.ActivityContext activityContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!!T&gt; GetLocation&lt;T&gt;(class System.Func`1&lt;!!T&gt; getMethod, class System.Action`1&lt;!!T&gt; setMethod, int32 expressionId, class System.Activities.Activity compiledRootActivity, class System.Activities.ActivityContext activityContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetLocation``1(System.Func{``0},System.Action{``0},System.Int32,System.Activities.Activity,System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Location&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="getMethod" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="setMethod" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="compiledRootActivity" Type="System.Activities.Activity" />
+        <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The function.</typeparam>
+        <param name="getMethod">The get method used.</param>
+        <param name="setMethod">The set method used.</param>
+        <param name="expressionId">The expression identifier.</param>
+        <param name="compiledRootActivity">The compiled root activity.</param>
+        <param name="activityContext">The activity context.</param>
+        <summary>Retrieves the location of the compiled data context.</summary>
+        <returns>The location of the compiled data context.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueTypeValues">
+      <MemberSignature Language="C#" Value="protected virtual void GetValueTypeValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetValueTypeValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetValueTypeValues" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the value of the value type used by the data context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariableValue">
+      <MemberSignature Language="C#" Value="protected object GetVariableValue (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetVariableValue(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.GetVariableValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the variable</param>
+        <summary>Gets the value of the variable used by the data context.</summary>
+        <returns>The value of the variable used by the data context.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RewriteExpressionTree">
+      <MemberSignature Language="C#" Value="protected System.Linq.Expressions.Expression RewriteExpressionTree (System.Linq.Expressions.Expression originalExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Linq.Expressions.Expression RewriteExpressionTree(class System.Linq.Expressions.Expression originalExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.RewriteExpressionTree(System.Linq.Expressions.Expression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalExpression" Type="System.Linq.Expressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="originalExpression">The original expression to be rewritten.</param>
+        <summary>Rewrites the expression used by the data context.</summary>
+        <returns>The rewritten expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValueTypeValues">
+      <MemberSignature Language="C#" Value="protected virtual void SetValueTypeValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetValueTypeValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.SetValueTypeValues" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the value type used by the data context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVariableValue">
+      <MemberSignature Language="C#" Value="protected void SetVariableValue (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetVariableValue(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.CompiledDataContext.SetVariableValue(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the variable.</param>
+        <param name="value">The value of the variable.</param>
+        <summary>Returns the value of the variable used by the data context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

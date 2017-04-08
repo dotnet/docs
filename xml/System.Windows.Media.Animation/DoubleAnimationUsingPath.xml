@@ -1,0 +1,330 @@
+<Type Name="DoubleAnimationUsingPath" FullName="System.Windows.Media.Animation.DoubleAnimationUsingPath">
+  <TypeSignature Language="C#" Value="public class DoubleAnimationUsingPath : System.Windows.Media.Animation.DoubleAnimationBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DoubleAnimationUsingPath extends System.Windows.Media.Animation.DoubleAnimationBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.DoubleAnimationBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Animates the value of a <see cref="T:System.Double" /> property between two or more target values using a <see cref="T:System.Windows.Media.PathGeometry" /> to specify those values. This animation can be used to move a visual object along a path.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> uses      linear interpolation over a specified <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.  
+  
+ <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> is similar to <xref:System.Windows.Media.Animation.DoubleAnimation> except that it uses a <xref:System.Windows.Media.PathGeometry> to interpolate over two or more values rather then between only two values like <xref:System.Windows.Media.Animation.DoubleAnimation>. Although <xref:System.Windows.Media.Animation.DoubleAnimation> is used for most simple animations involving a Double value, <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> is particularly well suited for animating the position of an object on the screen.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DoubleAnimationUsingPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no default <xref:System.Windows.Media.PathGeometry> so the user must specify one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.DoubleAnimationUsingPath Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.DoubleAnimationUsingPath Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.DoubleAnimationUsingPath</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Implementation of <see cref="M:System.Windows.Freezable.CreateInstanceCore" />.</summary>
+        <returns>The new <see cref="T:System.Windows.Freezable" /> created.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected override double GetCurrentValueCore (double defaultOriginValue, double defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 GetCurrentValueCore(float64 defaultOriginValue, float64 defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.GetCurrentValueCore(System.Double,System.Double,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultOriginValue" Type="System.Double" />
+        <Parameter Name="defaultDestinationValue" Type="System.Double" />
+        <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="defaultOriginValue">The suggested origin value, used if the animation does not have its own explicitly set start value.</param>
+        <param name="defaultDestinationValue">The suggested destination value, used if the animation does not have its own explicitly set end value.</param>
+        <param name="animationClock">An <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that generates the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> used by the animation.</param>
+        <summary>Calculates a value that represents the current value of the property being animated, as determined by the <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" />.</summary>
+        <returns>The calculated value of the property, as determined by the current animation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAdditive">
+      <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.IsAdditive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the target property's current value should be added to this animation's starting value.</summary>
+        <value>
+          <see langword="true" /> if the target property's current value should be added to this animation's starting value; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Additive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsAdditiveProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCumulative">
+      <MemberSignature Language="C#" Value="public bool IsCumulative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCumulative" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.IsCumulative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the animation's value accumulates when it repeats.</summary>
+        <value>
+          <see langword="true" /> if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
+  
+<a name="dependencyPropertyInfo_Cumulative"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsCumulativeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChanged">
+      <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.OnChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when this <see cref="T:System.Windows.Media.Animation.DoubleAnimationUsingPath" /> is modified.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>See <see cref="M:System.Windows.Freezable.OnChanged" /> for information about overriding this method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PathGeometry">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry PathGeometry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.PathGeometry PathGeometry" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PathGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the geometry used to generate this animation's output values.</summary>
+        <value>The path used to generate this animation's output values. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], you can use a special abbreviated syntax to describe the path.  
+  
+ <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#DoubleAnimationUsingPathAttributeSyntaxExample](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snip/CS/doubleanimationusingpathattributesyntaxexample.xaml#doubleanimationusingpathattributesyntaxexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#DoubleAnimationUsingPathAttributeSyntaxExample](~/samples/snippets/xaml/VS_Snippets_Wpf/PathAnimationGallery_snip/xaml/doubleanimationusingpathattributesyntaxexample.xaml#doubleanimationusingpathattributesyntaxexample)]  -->  
+  
+ For more information about <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry%2A> markup syntax, see [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md). For more examples of creating a path using markup or code, see <xref:System.Windows.Media.PathGeometry>.  
+  
+<a name="dependencyPropertyInfo_PathGeometry"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier Field|<xref:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometryProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathGeometryProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathGeometryProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathGeometryProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometryProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.PathAnimationSource Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.PathAnimationSource Source" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.PathAnimationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the aspect of this animation's <see cref="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry" /> that determines its output value.</summary>
+        <value>The aspect of this animation's <see cref="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.PathGeometry" /> that determines its output value. The default value is <see cref="F:System.Windows.Media.Animation.PathAnimationSource.X" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Source"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.DoubleAnimationUsingPath.SourceProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SourceProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimationUsingPath.SourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.DoubleAnimationUsingPath.Source" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

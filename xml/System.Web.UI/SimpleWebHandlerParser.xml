@@ -1,0 +1,81 @@
+<Type Name="SimpleWebHandlerParser" FullName="System.Web.UI.SimpleWebHandlerParser">
+  <TypeSignature Language="C#" Value="public abstract class SimpleWebHandlerParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SimpleWebHandlerParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.SimpleWebHandlerParser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides base functionality for parsing Web handler files.</summary>
+    <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.UI.SimpleWebHandlerParser" />, you must override the <see cref="P:System.Web.UI.SimpleWebHandlerParser.DefaultDirectiveName" /> property.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SimpleWebHandlerParser (System.Web.HttpContext context, string virtualPath, string physicalPath);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context, string virtualPath, string physicalPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SimpleWebHandlerParser.#ctor(System.Web.HttpContext,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="physicalPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">Pass <see langword="null" />. Parameter is now obsolete.</param>
+        <param name="virtualPath">The path of the current virtual directory.</param>
+        <param name="physicalPath">Pass <see langword="null" />. Parameter is now obsolete.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SimpleWebHandlerParser" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDirectiveName">
+      <MemberSignature Language="C#" Value="protected abstract string DefaultDirectiveName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultDirectiveName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.SimpleWebHandlerParser.DefaultDirectiveName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the name of the main directive from a &lt;%@ %&gt; block.</summary>
+        <value>A <see cref="T:System.String" /> that contains the default directive name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledTypeFromCache">
+      <MemberSignature Language="C#" Value="protected Type GetCompiledTypeFromCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Type GetCompiledTypeFromCache() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SimpleWebHandlerParser.GetCompiledTypeFromCache" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the type for the compiled object from the virtual path.</summary>
+        <returns>The <see cref="T:System.Type" /> assigned to the virtual path.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

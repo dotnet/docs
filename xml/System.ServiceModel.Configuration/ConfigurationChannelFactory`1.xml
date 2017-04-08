@@ -1,0 +1,50 @@
+<Type Name="ConfigurationChannelFactory&lt;TChannel&gt;" FullName="System.ServiceModel.Configuration.ConfigurationChannelFactory&lt;TChannel&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ConfigurationChannelFactory&lt;TChannel&gt; : System.ServiceModel.ChannelFactory&lt;TChannel&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationChannelFactory`1&lt;TChannel&gt; extends System.ServiceModel.ChannelFactory`1&lt;!TChannel&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ConfigurationChannelFactory`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TChannel" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ChannelFactory&lt;TChannel&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TChannel">TChannel</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TChannel">The type of communications channel to specify for the endpoint element that is created.</typeparam>
+    <summary>Provides the generic functionality to create a channel configuration element for a specific type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationChannelFactory (string endpointConfigurationName, System.Configuration.Configuration configuration, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.Configuration.Configuration configuration, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConfigurationChannelFactory`1.#ctor(System.String,System.Configuration.Configuration,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="configuration" Type="System.Configuration.Configuration" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The name property in an endpoint configuration element.</param>
+        <param name="configuration">The settings that define the information in the endpoint element.</param>
+        <param name="remoteAddress">The IP address of a destination endpoint in a client or server session. This parameter may be set to <see langword="null" /> to indicate the endpoint address should be taken from the configuration element specified in the <c>configuration</c> parameter.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Configuration.ConfigurationChannelFactory`1" /> class with the specified endpoint configuration name, <see cref="T:System.Configuration.Configuration" /> object, and the <see cref="T:System.ServiceModel.EndpointAddress" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="configuration" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,88 @@
+<Type Name="SpellingError" FullName="System.Windows.Controls.SpellingError">
+  <TypeSignature Language="C#" Value="public class SpellingError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SpellingError extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SpellingError" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a misspelled word in an editing control (i.e. <see cref="T:System.Windows.Controls.TextBox" /> or <see cref="T:System.Windows.Controls.RichTextBox" />).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Correct">
+      <MemberSignature Language="C#" Value="public void Correct (string correctedText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Correct(string correctedText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellingError.Correct(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="correctedText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="correctedText">The text used to replace the misspelled text.</param>
+        <summary>Replaces the spelling error text with the specified correction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method repositions the caret to the position immediately following the corrected text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreAll">
+      <MemberSignature Language="C#" Value="public void IgnoreAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IgnoreAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SpellingError.IgnoreAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Instructs the control to ignore this error and any duplicates for the remainder of the lifetime of the control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Suggestions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; Suggestions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; Suggestions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SpellingError.Suggestions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Windows.Controls.SpellingError/&lt;get_Suggestions&gt;d__4))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of suggested spelling replacements for the misspelled word.</summary>
+        <value>The collection of spelling suggestions for the misspelled word.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

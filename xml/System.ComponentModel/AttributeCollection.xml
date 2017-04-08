@@ -1,0 +1,777 @@
+<Type Name="AttributeCollection" FullName="System.ComponentModel.AttributeCollection">
+  <TypeSignature Language="C#" Value="public class AttributeCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttributeCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.AttributeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of attributes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.AttributeCollection> class is read-only; it does not implement methods to add or remove attributes. You must inherit from this class to implement these methods.  
+  
+ Use the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to find the number of attributes that exist in the collection.  
+  
+ You can also use the methods of this class to query the collection about its contents. Call the <xref:System.ComponentModel.AttributeCollection.Contains%2A> method to verify that a specified attribute or attribute array exists in the collection. Call the <xref:System.ComponentModel.AttributeCollection.Matches%2A> method to verify that a specified attribute or array of attributes exists in the collection, and that the values of the specified attributes are the same as the values in the collection.  
+  
+ While most attributes have default values, default values are not required. If an attribute has no default value, `null` is returned from the indexed property that takes a type. When defining your own attributes, you can declare a default value by either providing a constructor that takes no arguments, or defining a public static field of your attribute type named "Default".  
+  
+   
+  
+## Examples  
+ The first code example checks to see whether the <xref:System.ComponentModel.BrowsableAttribute> has been set in this collection. The second code example gets the actual value of the <xref:System.ComponentModel.DescriptionAttribute> for a button. Both examples require that `button1` and `textBox1` have been created on a form. When using attributes, verify that an attribute has been set, or access its value.  
+  
+ [!code-cpp[Classic AttributeCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection Example/VB/source.vb#1)]  
+  
+ [!code-cpp[Classic AttributeCollection Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic AttributeCollection Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection Example/CS/source.cs#2)]
+ [!code-vb[Classic AttributeCollection Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AttributeCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AttributeCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeCollection (Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.#ctor(System.Attribute[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="attributes">An array of type <see cref="T:System.Attribute" /> that provides the attributes for this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AttributeCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.ComponentModel.AttributeCollection> using the attributes on `button1`. It assumes that `button1` has been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.AttributeCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.AttributeCollection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributes" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="protected virtual Attribute[] Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Attribute[] Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Attribute[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the attribute collection.</summary>
+        <value>The attribute collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Attribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Attribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Contains(System.Attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">An <see cref="T:System.Attribute" /> to find in the collection.</param>
+        <summary>Determines whether this collection of attributes has the specified attribute.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the attribute or is the default attribute for the type of attribute; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection has the specified attribute if the specified type of attribute exists in the collection, and if the value of the specified attribute is the same as the value of the instance of the attribute in the collection.  
+  
+ The difference between the <xref:System.ComponentModel.AttributeCollection.Matches%2A> and <xref:System.ComponentModel.AttributeCollection.Contains%2A> methods is that <xref:System.ComponentModel.AttributeCollection.Matches%2A> calls the <xref:System.Attribute.Match%2A> method on an attribute, and <xref:System.ComponentModel.AttributeCollection.Contains%2A> calls the <xref:System.Object.Equals%2A> method.  
+  
+ For most attributes, these methods do the same thing. For attributes that may have multiple flags, however, <xref:System.Attribute.Match%2A> is typically implemented so that it returns `true` if any of the flags are satisfied. For example, consider a data binding attribute with the Boolean flags "SupportsSql", "SupportsOleDb", and "SupportsXml". This attribute may be present on a property that supports all three data-binding approaches. It will often be the case that a programmer needs to know only if a particular approach is available, not all three. Therefore, a programmer could use <xref:System.Attribute.Match%2A> with an instance of the attribute containing only the flags the programmer needs.  
+  
+   
+  
+## Examples  
+ The following code example checks to see whether the collection has a <xref:System.ComponentModel.BrowsableAttribute> set to `true`. It assumes that `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.Contains Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Contains Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Contains(System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">An array of type <see cref="T:System.Attribute" /> to find in the collection.</param>
+        <summary>Determines whether this attribute collection contains all the specified attributes in the attribute array.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains all the attributes; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection has the specified array of attributes if all the specified attribute types exist in the collection and if each attribute in the specified array is the same as an attribute in the collection.  
+  
+   
+  
+## Examples  
+ The following code example compares the attributes in `button1` and `textBox1` to see whether the attributes for the button are contained in the attributes for the text box. It assumes that both `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.Contains1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Contains1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The <see cref="T:System.Array" /> to copy the collection to.</param>
+        <param name="index">The index to start from.</param>
+        <summary>Copies the collection to an array, starting at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of attributes.</summary>
+        <value>The number of attributes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to set the limits of a loop that iterates through a collection of objects. If the collection is zero-based, be sure to use `Count - 1` as the upper boundary of the loop.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ComponentModel.AttributeCollection.Count%2A> property to print the number of properties on `button1` in a text box. It assumes that `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Count Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.AttributeCollection Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.AttributeCollection Empty" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.AttributeCollection.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an empty collection that you can use, rather than creating a new one. This field is read-only.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromExisting">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.AttributeCollection FromExisting (System.ComponentModel.AttributeCollection existing, Attribute[] newAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.AttributeCollection FromExisting(class System.ComponentModel.AttributeCollection existing, class System.Attribute[] newAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.FromExisting(System.ComponentModel.AttributeCollection,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="existing" Type="System.ComponentModel.AttributeCollection" />
+        <Parameter Name="newAttributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="existing">An <see cref="T:System.ComponentModel.AttributeCollection" /> from which to create the copy.</param>
+        <param name="newAttributes">An array of type <see cref="T:System.Attribute" /> that provides the attributes for this collection. Can be <see langword="null" />.</param>
+        <summary>Creates a new <see cref="T:System.ComponentModel.AttributeCollection" /> from an existing <see cref="T:System.ComponentModel.AttributeCollection" />.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.AttributeCollection" /> that is a copy of <paramref name="existing" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `newAttributes` parameter is provided, its <xref:System.Attribute> entries are merged with those of the `existing` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="existing" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultAttribute">
+      <MemberSignature Language="C#" Value="protected Attribute GetDefaultAttribute (Type attributeType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Attribute GetDefaultAttribute(class System.Type attributeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.GetDefaultAttribute(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Attribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="attributeType">The <see cref="T:System.Type" /> of the attribute to retrieve.</param>
+        <summary>Returns the default <see cref="T:System.Attribute" /> of a given <see cref="T:System.Type" />.</summary>
+        <returns>The default <see cref="T:System.Attribute" /> of a given <paramref name="attributeType" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator for this collection.</summary>
+        <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets an enumerator for the attributes on `button1`. It uses the enumerator to print the names of the attributes in the collection. It assumes that `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/CPP/Source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.GetEnumerator Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual Attribute this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Attribute Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Attribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of <see cref="T:System.ComponentModel.AttributeCollection" />.</param>
+        <summary>Gets the attribute with the specified index number.</summary>
+        <value>The <see cref="T:System.Attribute" /> with the specified index number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index number is zero-based. Therefore, you must subtract 1 from the numerical position of a particular <xref:System.Attribute> to access that <xref:System.Attribute>. For example, to get the third <xref:System.Attribute>, you need to specify `myColl[2]`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ComponentModel.AttributeCollection.Item%2A> property to print the name of the <xref:System.Attribute> specified by the index number in a text box. Because the index number is zero-based, this code example prints the name of the second <xref:System.Attribute> in a text box. It assumes `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.this Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual Attribute this[Type attributeType] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Attribute Item(class System.Type)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.Item(System.Type)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Attribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="attributeType">The <see cref="T:System.Type" /> of the <see cref="T:System.Attribute" /> to get from the collection.</param>
+        <summary>Gets the attribute with the specified type.</summary>
+        <value>The <see cref="T:System.Attribute" /> with the specified type or, if the attribute does not exist, the default value for the attribute type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the attribute does not exist in the collection, this property returns the default value for the attribute type.  
+  
+   
+  
+## Examples  
+ The following code example gets the <xref:System.ComponentModel.DesignerAttribute> from the collection and prints its value. It assumes that `button1` and `textBox1` have been created on a form.  
+  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
+  
+ [!code-cpp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.this1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public bool Matches (Attribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Attribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Matches(System.Attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">An instance of <see cref="T:System.Attribute" /> to compare with the attributes in this collection.</param>
+        <summary>Determines whether a specified attribute is the same as an attribute in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is contained within the collection and has the same value as the attribute in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attribute can provide support for matching.  
+  
+ The difference between the <xref:System.ComponentModel.AttributeCollection.Matches%2A> and <xref:System.ComponentModel.AttributeCollection.Contains%2A> methods is that <xref:System.ComponentModel.AttributeCollection.Matches%2A> calls the <xref:System.Attribute.Match%2A> method on an attribute, and <xref:System.ComponentModel.AttributeCollection.Contains%2A> calls the <xref:System.Object.Equals%2A> method.  
+  
+ For most attributes, these methods do the same thing. For attributes that may have multiple flags, however, <xref:System.Attribute.Match%2A> is typically implemented so that it returns `true` if any of the flags are satisfied. For example, consider a data binding attribute with the Boolean flags "SupportsSql", "SupportsOleDb", and "SupportsXml". This attribute may be present on a property that supports all three data binding approaches. It will often be the case that a programmer needs to know only if a particular approach is available, not all three. Therefore, a programmer could use <xref:System.Attribute.Match%2A> with an instance of the attribute containing only the flags the programmer needs.  
+  
+   
+  
+## Examples  
+ The following code example verifies that the <xref:System.ComponentModel.BrowsableAttribute> is a member of the collection and that it has been set to `true`. It assumes that `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.Matches Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.Matches Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.Matches Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Matches Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public bool Matches (Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.Matches(System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">An array of <see cref="T:System.CodeDom.MemberAttributes" /> to compare with the attributes in this collection.</param>
+        <summary>Determines whether the attributes in the specified array are the same as the attributes in the collection.</summary>
+        <returns>
+          <see langword="true" /> if all the attributes in the array are contained in the collection and have the same values as the attributes in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attribute can provide support for matching.  
+  
+   
+  
+## Examples  
+ The following code example compares the attributes in a button and a text box to see whether they match. It assumes that `button1` and `textBox1` have been created on a form.  
+  
+ [!code-cpp[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeCollection.Matches1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic AttributeCollection.Matches1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>The number of elements contained in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.AttributeCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.AttributeCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.IDictionary" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.IDictionary" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

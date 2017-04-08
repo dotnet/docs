@@ -1,0 +1,126 @@
+<Type Name="DataReference" FullName="System.Security.Cryptography.Xml.DataReference">
+  <TypeSignature Language="C#" Value="public sealed class DataReference : System.Security.Cryptography.Xml.EncryptedReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataReference extends System.Security.Cryptography.Xml.EncryptedReference" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.DataReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.Xml.EncryptedReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="&lt;DataReference&gt;" /> element used in XML encryption. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.DataReference> class represents the `<DataReference>` element that contains the location of encrypted data used with XML encryption.  
+  
+ `<DataReference>` elements are used to refer to `<EncryptedData>` elements that were encrypted using the key defined in the enclosing `<EncryptedKey>` element. Multiple `<DataReference>` elements can occur if multiple `<EncryptedData>` elements exist that are encrypted using the same key.  
+  
+ For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.DataReference> class to encrypt and decrypt multiple XML elements using different session keys.  
+  
+ [!code-csharp[Cryptography.XML.DataReference#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.DataReference/cs/sample.cs#1)]
+ [!code-vb[Cryptography.XML.DataReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.DataReference/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataReference" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.DataReference> class that represents the `<DataReference>` element. `<DataReference>` is a child element of the `<ReferenceList>` element.  
+  
+ For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.DataReference> class to encrypt and decrypt multiple XML elements using different session keys.  
+  
+ [!code-csharp[Cryptography.XML.DataReference#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.DataReference/cs/sample.cs#1)]
+ [!code-vb[Cryptography.XML.DataReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.DataReference/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataReference (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">A Uniform Resource Identifier (URI) that points to the encrypted data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataReference" /> class using the specified Uniform Resource Identifier (URI).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the specified Uniform Resource Identifier (URI) to create a new instance of the <xref:System.Security.Cryptography.Xml.DataReference> class, which represents the `<DataReference>` element. The URI indicates the location of encrypted data. The `<DataReference>` element is a child element of the `<ReferenceList>` element.  
+  
+ For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataReference (string uri, System.Security.Cryptography.Xml.TransformChain tc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri, class System.Security.Cryptography.Xml.TransformChain tc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.DataReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="transformChain" Type="System.Security.Cryptography.Xml.TransformChain" />
+      </Parameters>
+      <Docs>
+        <param name="uri">A Uniform Resource Identifier (URI) that points to the encrypted data.</param>
+        <param name="tc">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.DataReference" /> class using the specified Uniform Resource Identifier (URI) and a <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the specified Uniform Resource Identifier (URI) and transform chain to create a new instance of the <xref:System.Security.Cryptography.Xml.DataReference> class, which represents the `<DataReference>` element. The URI indicates the location of encrypted data, and the transform chain can contain XPath transforms, decompression transforms, or information on how to retrieve the encrypted data from a document storage facility. `<DataReference>` is a child element of the `<ReferenceList>` element.  
+  
+ For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

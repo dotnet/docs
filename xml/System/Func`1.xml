@@ -1,0 +1,89 @@
+<Type Name="Func&lt;TResult&gt;" FullName="System.Func&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public delegate TResult Func&lt;out TResult&gt;();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`1&lt;+ TResult&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Func`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>TResult</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
+    <summary>Encapsulates a method that has no parameters and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <returns>The return value of the method that this delegate encapsulates.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have no parameters and must return a value.  
+  
+> [!NOTE]
+>  To reference a method that has no parameters and returns `void` (or in Visual Basic, that is declared as a `Sub` rather than as a `Function`), use the <xref:System.Action> delegate instead.  
+  
+ When you use the <xref:System.Func%601> delegate, you do not have to explicitly define a delegate that encapsulates a parameterless method. For example, the following code explicitly declares a delegate named `WriteMethod` and assigns a reference to the `OutputTarget.SendToFile` instance method to its delegate instance.  
+  
+ [!code-csharp[System.Func~1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~1/cs/Delegate.cs#1)]
+ [!code-vb[System.Func~1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~1/vb/Delegate.vb#1)]  
+  
+ The following example simplifies this code by instantiating the <xref:System.Func%601> delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-csharp[System.Func~1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~1/cs/Func1.cs#2)]
+ [!code-vb[System.Func~1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~1/vb/Func1.vb#2)]  
+  
+ You can use the <xref:System.Func%601> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).)  
+  
+ [!code-csharp[System.Func~1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~1/cs/Anon.cs#3)]  
+  
+ You can also assign a lambda expression to a <xref:System.Func%602> delegate, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](~/docs/visual-basic/programming-guide/language-features/procedures/lambda-expressions.md) and [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).)  
+  
+ [!code-csharp[System.Func~1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~1/cs/Lambda.cs#4)]
+ [!code-vb[System.Func~1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~1/vb/Lambda.vb#4)]  
+  
+ The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate. In particular, because many methods of types in the <xref:System.Linq> namespace have `Func` parameters, you can pass these methods a lambda expression without explicitly instantiating a `Func` delegate.  
+  
+ If you have an expensive computation that you want to execute only if the result is actually needed, you can assign the expensive function to a <xref:System.Func%601> delegate. The execution of the function can then be delayed until a property that accesses the value is used in an expression. The example in the next section demonstrates how to do this.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use a delegate that takes no parameters. This code creates a generic class named `LazyValue` that has a field of type <xref:System.Func%601>. This delegate field can store a reference to any function that returns a value of the type that corresponds to the type parameter of the `LazyValue` object. The `LazyValue` type also has a `Value` property that executes the function (if it has not already been executed) and returns the resulting value.  
+  
+ The example creates two methods and instantiates two `LazyValue` objects with lambda expressions that call these methods. The lambda expressions do not take parameters because they just need to call a method. As the output shows, the two methods are executed only when the value of each `LazyValue` object is retrieved.  
+  
+ [!code-csharp[System.Func~1#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~1/cs/Example.cs#5)]
+ [!code-vb[System.Func~1#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~1/vb/Example.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,134 @@
+<Type Name="FileDialogCustomPlace" FullName="System.Windows.Forms.FileDialogCustomPlace">
+  <TypeSignature Language="C#" Value="public class FileDialogCustomPlace" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileDialogCustomPlace extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialogCustomPlace" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an entry in a <see cref="T:System.Windows.Forms.FileDialog" /> custom place collection for [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default open and save dialog boxes on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] have an area on the left side of the dialog box titled **Favorite Links**. This area is called custom places. This class represents a custom place.  
+  
+ On [!INCLUDE[winxp](~/includes/winxp-md.md)] or [!INCLUDE[winxpsvr](~/includes/winxpsvr-md.md)], this class does not have any effect.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileDialogCustomPlace (Guid knownFolderGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid knownFolderGuid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.#ctor(System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="knownFolderGuid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="knownFolderGuid">A <see cref="T:System.Guid" /> that represents a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class with a custom place identified by a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](~/docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.FileDialogCustomPlace.%23ctor%2A> method. To run this example, paste the following code into a Windows Form and call `InitializeDialogAndButton` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileDialogCustomPlace (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">A folder path to the custom place.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class. with a specified folder path to a custom place.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnownFolderGuid">
+      <MemberSignature Language="C#" Value="public Guid KnownFolderGuid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid KnownFolderGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialogCustomPlace.KnownFolderGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID for the custom place.</summary>
+        <value>A <see cref="T:System.Guid" /> that indicates the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder for the custom place. If the custom place was specified with a folder path, then an empty GUID is returned. For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](~/docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialogCustomPlace.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the folder path to the custom place.</summary>
+        <value>A folder path to the custom place. If the custom place was specified with a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID, then an empty string is returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents this <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> instance.</summary>
+        <returns>A string that represents this <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

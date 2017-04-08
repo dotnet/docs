@@ -1,0 +1,153 @@
+<Type Name="PropertyConverter" FullName="System.Web.UI.PropertyConverter">
+  <TypeSignature Language="C#" Value="public static class PropertyConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PropertyConverter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.PropertyConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains helper functions to convert property values to and from strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.PropertyConverter> class is used by the ASP.NET page framework and is not intended to be accessed directly from your code. You can use the <xref:System.Enum> structure to convert string values to and from enumerators, or <xref:System.ComponentModel.TypeConverter> to convert objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnumFromString">
+      <MemberSignature Language="C#" Value="public static object EnumFromString (Type enumType, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object EnumFromString(class System.Type enumType, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.EnumFromString(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumType" Type="System.Type" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="enumType">A <see cref="T:System.Type" /> that represents the enumeration type to create from the <c>value</c> parameter.</param>
+        <param name="value">The <see cref="T:System.String" /> that represents a value in the enumerator.</param>
+        <summary>Converts the string representation to a value of the specified enumeration type.</summary>
+        <returns>An enumeration of type <paramref name="enumType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.PropertyConverter.EnumFromString%2A> method is used to convert a string value to its equivalent enumeration value.  
+  
+> [!NOTE]
+>  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert a string value to its equivalent enumeration value, use the <xref:System.Enum.Parse%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="enumType" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="enumType" /> is not an <see cref="T:System.Enum" />.  
+  
+ \- or -  
+  
+ <paramref name="value" /> is either an empty string ("") or contains only white spaces.  
+  
+ \- or -  
+  
+ <paramref name="value" /> is a name, but not one of the named constants defined for the enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumToString">
+      <MemberSignature Language="C#" Value="public static string EnumToString (Type enumType, object enumValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EnumToString(class System.Type enumType, object enumValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.EnumToString(System.Type,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumType" Type="System.Type" />
+        <Parameter Name="enumValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="enumType">A <see cref="T:System.Type" /> that represents the enumeration type of <c>enumValue</c>.</param>
+        <param name="enumValue">The value to convert.</param>
+        <summary>Converts the value of the specified enumeration type to its equivalent string representation.</summary>
+        <returns>The string representation of <paramref name="enumValue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.PropertyConverter.EnumToString%2A> method is used to convert an enumeration value to its equivalent string representation.  
+  
+> [!NOTE]
+>  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert an enumeration value to its equivalent string representation, use the <xref:System.Enum.Format%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="enumType" /> or <paramref name="enumValue" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="enumType" /> parameter is not an <see cref="T:System.Enum" /> type.  
+  
+ \- or -  
+  
+ The <paramref name="enumValue" /> parameter contains a value from an enumeration that differs in type from <paramref name="enumType" />.  
+  
+ \- or -  
+  
+ The type of <paramref name="enumValue" /> is not an underlying type of <paramref name="enumType" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectFromString">
+      <MemberSignature Language="C#" Value="public static object ObjectFromString (Type objType, System.Reflection.MemberInfo propertyInfo, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ObjectFromString(class System.Type objType, class System.Reflection.MemberInfo propertyInfo, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.ObjectFromString(System.Type,System.Reflection.MemberInfo,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="propertyInfo" Type="System.Reflection.MemberInfo" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="objType">The <see cref="T:System.Type" /> to create from <c>value</c>.</param>
+        <param name="propertyInfo">The properties to use during conversion.</param>
+        <param name="value">The <see cref="T:System.String" /> to convert into an object.</param>
+        <summary>Converts the string value to the specified object type.</summary>
+        <returns>An object of type <paramref name="objType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.PropertyConverter.ObjectFromString%2A> method is used to convert a string value to an object.  
+  
+> [!NOTE]
+>  This member supports the .NET Framework infrastructure and is not intended to be used directly from your code. To convert a string value to an object, use the `Parse` method for that object if the object provides a `Parse` method. For example, an <xref:System.Int32> object can be created from a string through the <xref:System.Int32.Parse%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">An object of the type specified by <paramref name="objType" /> cannot be created from the <paramref name="value" /> parameter.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

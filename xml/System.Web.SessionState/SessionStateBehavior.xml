@@ -1,0 +1,89 @@
+<Type Name="SessionStateBehavior" FullName="System.Web.SessionState.SessionStateBehavior">
+  <TypeSignature Language="C#" Value="public enum SessionStateBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of session support that is required in order to handle a request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SessionState.SessionStateBehavior> enumeration is used with the <xref:System.Web.HttpContext.SetSessionStateBehavior%2A> method. You can call this method to indicate that session state support is needed to handle a request, and pass a <xref:System.Web.SessionState.SessionStateBehavior> enumeration value to specify what type of session state behavior applies to the request.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SessionState.SessionStateBehavior Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateBehavior.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default ASP.NET logic is used to determine the session state behavior for the request. The default logic looks for the existence of marker session state interfaces on the <see cref="T:System.Web.IHttpHandler" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SessionState.SessionStateBehavior Disabled = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateBehavior.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session state is not enabled for processing the request. This setting overrides whatever session behavior would have been determined by inspecting the handler for the request.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SessionState.SessionStateBehavior ReadOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateBehavior.ReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read-only session state is enabled for the request. This means that session state cannot be updated. This setting overrides whatever session state behavior would have been determined by inspecting the handler for the request.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="Required" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SessionState.SessionStateBehavior Required = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateBehavior.Required" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.SessionStateBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Full read-write session state behavior is enabled for the request. This setting overrides whatever session behavior would have been determined by inspecting the handler for the request.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

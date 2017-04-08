@@ -1,0 +1,89 @@
+<Type Name="FontNumeralAlignment" FullName="System.Windows.FontNumeralAlignment">
+  <TypeSignature Language="C#" Value="public enum FontNumeralAlignment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontNumeralAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontNumeralAlignment" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the numeral alignment for a <see cref="T:System.Windows.Documents.Typography" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of financial type information.  
+  
+ The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
+  
+ ![Text using OpenType proportional & tabular figures](~/add/media/opentypefont22.gif "Text using OpenType proportional & tabular figures")  
+Example of proportional and tabbed figures  
+  
+> [!NOTE]
+>  Most OpenType fonts expose only a subset of the total OpenType features available. If a specified font does not support a particular feature, the default glyphs are used instead.  
+  
+   
+  
+## Examples  
+ The following code example shows how to define proportional and tabular figures for the Miramonte font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/Window1.xaml#opentypefontsnippet19)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet19](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/Window1.xaml#opentypefontsnippet19)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralAlignment Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralAlignment.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default numeral alignment is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Proportional">
+      <MemberSignature Language="C#" Value="Proportional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralAlignment Proportional = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralAlignment.Proportional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Proportional width alignment is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tabular">
+      <MemberSignature Language="C#" Value="Tabular" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralAlignment Tabular = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralAlignment.Tabular" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tabular alignment is used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,714 @@
+<Type Name="AsymmetricAlgorithm" FullName="System.Security.Cryptography.AsymmetricAlgorithm">
+  <TypeSignature Language="C#" Value="public abstract class AsymmetricAlgorithm : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AsymmetricAlgorithm extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.AsymmetricAlgorithm" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the abstract base class from which all implementations of asymmetric algorithms must inherit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Asymmetric cryptographic algorithms, also known as public-key algorithms, require that both sender and receiver maintain a pair of related keys: a private key and a public key. Both keys are unique to the entity. The public key can be made available to anyone; this key is used for encoding data that is sent to a receiver. The private key must be kept private by the receiver; this key is used for decoding messages encoded using the receiver's public key. The <xref:System.Security.Cryptography.RSACryptoServiceProvider> class is an implementation of a public-key algorithm. For an in-depth discussion of public-key encryption and algorithms, see the "Public-Key Encryption" section in [Cryptographic Services](~/docs/standard/security/cryptographic-services.md). For information about how to use the Strong Name tool (Sn.exe) to create key pairs, see [How to: Create a Public-Private Key Pair](~/docs/framework/app-domains/how-to-create-a-public-private-key-pair.md).  
+  
+ You can use public-key systems to form digital signatures. Digital signatures are used to help to protect the integrity of data. For example, to use a public-key system to digitally sign a message, the sender first applies a hash function to the message to create a message digest. The sender then encrypts the message digest with the sender's private key to create the sender's personal signature. Upon receiving the message and signature, the receiver decrypts the signature using the sender's public key to recover the message digest and hashes the message using the same hash algorithm that the sender used. If the message digest that the receiver computes matches the message digest received from the sender, the receiver can assume that the message was not altered while in transit. Note that anyone can verify a signature, because the sender's public key is common knowledge. This technique does not retain the secrecy of the message; for the message to be secret, it must also be encrypted.  
+  
+ The .NET Framework provides the following classes that implement digital signature algorithms: <xref:System.Security.Cryptography.DSACryptoServiceProvider>, <xref:System.Security.Cryptography.RSACryptoServiceProvider>, <xref:System.Security.Cryptography.ECDsa> (base class), and <xref:System.Security.Cryptography.ECDsaCng>.  
+  
+ The <xref:System.Security.Cryptography> namespace provides concrete classes for <xref:System.Security.Cryptography.RSA> and <xref:System.Security.Cryptography.DSA> only.  
+  
+ To learn how to use the RSA algorithm to encrypt and decrypt XML data, and create and verify XML digital signatures, see these articles:  
+  
+-   [How to: Encrypt XML Elements with Asymmetric Keys](~/docs/standard/security/how-to-encrypt-xml-elements-with-asymmetric-keys.md)  
+  
+-   [How to: Decrypt XML Elements with Asymmetric Keys](~/docs/standard/security/how-to-decrypt-xml-elements-with-asymmetric-keys.md)  
+  
+-   [How to: Sign XML Documents with Digital Signatures](~/docs/standard/security/how-to-sign-xml-documents-with-digital-signatures.md)  
+  
+-   [How to: Verify the Digital Signatures of XML Documents](~/docs/standard/security/how-to-verify-the-digital-signatures-of-xml-documents.md)  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement a custom asymmetric algorithm inherited from the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  An additional class is provided to demonstrate how to use the custom class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#2)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#2)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#2)]  
+  
+ Here's an additional class that demonstrates how to use the custom class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcryptoimpl.cpp#3)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#3)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AsymmetricAlgorithm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of an abstract class. Application code creates a new instance of a derived class. The <xref:System.Security.Cryptography.RSACryptoServiceProvider> and <xref:System.Security.Cryptography.DSACryptoServiceProvider> classes are the only currently supported implementations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The implementation of the derived class is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a simple call to the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method.  
+  
+ Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Clear%2A> method to release the resources of the current `customCrypto` object. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcryptoimpl.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#1)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.AsymmetricAlgorithm Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.AsymmetricAlgorithm Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a default cryptographic object used to perform the asymmetric algorithm.</summary>
+        <returns>A new <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider" /> instance, unless the default settings have been changed with the [&lt;cryptoClass&gt; element](~/docs/framework/configure-apps/file-schema/cryptography/cryptoclass-element.md).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method in an extended class. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#11)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#11)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.AsymmetricAlgorithm Create (string algName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.AsymmetricAlgorithm Create(string algName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="algName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="algName">The asymmetric algorithm implementation to use. The following table shows the valid values for the <c>algName</c> parameter and the algorithms they map to.  
+  
+ <list type="table">  
+<listheader>  
+<term> Parameter value  
+  
+ </term>  
+<description> Implements  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> System.Security.Cryptography.AsymmetricAlgorithm  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> RSA  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.RSA" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.RSA  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.RSA" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> DSA  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.DSA" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.DSA  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.DSA" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> ECDsa  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDsa" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> ECDsaCng  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDsaCng" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.ECDsaCng  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDsaCng" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> ECDH  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDiffieHellman" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> ECDiffieHellman  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDiffieHellman" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> ECDiffieHellmanCng  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.ECDiffieHellmanCng  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" />  
+  
+ </description>  
+</item>  
+</list></param>
+        <summary>Creates an instance of the specified implementation of an asymmetric algorithm.</summary>
+        <returns>A new instance of the specified asymmetric algorithm implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method in an extended class. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#12)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#12)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.AsymmetricAlgorithm>. The `Dispose` method leaves the <xref:System.Security.Cryptography.AsymmetricAlgorithm> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.AsymmetricAlgorithm> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.AsymmetricAlgorithm> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.AsymmetricAlgorithm>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.AsymmetricAlgorithm> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> class and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.AsymmetricAlgorithm> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlString">
+      <MemberSignature Language="C#" Value="public virtual void FromXmlString (string xmlString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXmlString(string xmlString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.FromXmlString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlString">The XML string to use to reconstruct the <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> object.</param>
+        <summary>When overridden in a derived class, reconstructs an <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> object from an XML string. Otherwise, throws a <see cref="T:System.NotImplementedException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Security.Cryptography.AsymmetricAlgorithm.FromXmlString%2A> method to parse the specified XML string to populate the current <xref:System.Security.Cryptography.CspParameters> object. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#4)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#4)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyExchangeAlgorithm">
+      <MemberSignature Language="C#" Value="public virtual string KeyExchangeAlgorithm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyExchangeAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the name of the key exchange algorithm. Otherwise, throws an <see cref="T:System.NotImplementedException" />.</summary>
+        <value>The name of the key exchange algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Security.Cryptography.AsymmetricAlgorithm.KeyExchangeAlgorithm%2A> property to return the name for the key exchange algorithm. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#6)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#6)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySize">
+      <MemberSignature Language="C#" Value="public virtual int KeySize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.KeySize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size, in bits, of the key modulus used by the asymmetric algorithm.</summary>
+        <value>The size, in bits, of the key modulus used by the asymmetric algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes are specified by the particular implementation of the asymmetric algorithm and are listed in the <xref:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Security.Cryptography.AsymmetricAlgorithm.KeySize%2A> property to verify that it falls within the range identified in the local `keySizes` member variable. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#9)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#9)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key modulus size is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeValue">
+      <MemberSignature Language="C#" Value="protected int KeySizeValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 KeySizeValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the size, in bits, of the key modulus used by the asymmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid key sizes are specified by the particular implementation of the asymmetric algorithm and are listed in the <xref:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.AsymmetricAlgorithm.KeySize%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalKeySizes">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key sizes that are supported by the asymmetric algorithm.</summary>
+        <value>An array that contains the key sizes supported by the asymmetric algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The asymmetric algorithm supports only key sizes that match an entry in this array.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes%2A> property to retrieve the <xref:System.Security.Cryptography.KeySizes.MinSize%2A>, <xref:System.Security.Cryptography.KeySizes.MaxSize%2A>, and <xref:System.Security.Cryptography.KeySizes.SkipSize%2A> properties. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcryptoimpl.cpp#10)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#10)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegalKeySizesValue">
+      <MemberSignature Language="C#" Value="protected System.Security.Cryptography.KeySizes[] LegalKeySizesValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Security.Cryptography.KeySizes[] LegalKeySizesValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the key sizes that are supported by the asymmetric algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The asymmetric algorithm supports only key sizes that match an entry in this array.  
+  
+ This field is accessed through the <xref:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureAlgorithm">
+      <MemberSignature Language="C#" Value="public virtual string SignatureAlgorithm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignatureAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.AsymmetricAlgorithm.SignatureAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets the name of the signature algorithm. Otherwise, always throws a <see cref="T:System.NotImplementedException" />.</summary>
+        <value>The name of the signature algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Security.Cryptography.AsymmetricAlgorithm.SignatureAlgorithm%2A> property to return the name of the signature algorithm. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#7)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#7)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXmlString">
+      <MemberSignature Language="C#" Value="public virtual string ToXmlString (bool includePrivateParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToXmlString(bool includePrivateParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AsymmetricAlgorithm.ToXmlString(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <summary>When overridden in a derived class, creates and returns an XML string representation of the current <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> object. Otherwise, throws a <see cref="T:System.NotImplementedException" />.</summary>
+        <returns>An XML string encoding of the current <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Security.Cryptography.AsymmetricAlgorithm.ToXmlString%2A> method to create an XML representation of the parameters in the current <xref:System.Security.Cryptography.AsymmetricAlgorithm> object. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.AsymmetricAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.AsymmetricAlgorithm#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/cpp/customcrypto.cpp#5)]
+ [!code-csharp[System.Security.Cryptography.AsymmetricAlgorithm#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/CS/customcrypto.cs#5)]
+ [!code-vb[System.Security.Cryptography.AsymmetricAlgorithm#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.AsymmetricAlgorithm/VB/customcrypto.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

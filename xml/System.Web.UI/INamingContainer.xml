@@ -1,0 +1,32 @@
+<Type Name="INamingContainer" FullName="System.Web.UI.INamingContainer">
+  <TypeSignature Language="C#" Value="public interface INamingContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INamingContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.INamingContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Identifies a container control that creates a new ID namespace within a <see cref="T:System.Web.UI.Page" /> object's control hierarchy. This is a marker interface only.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any control that implements this interface creates a new namespace in which all child control ID attributes are guaranteed to be unique within an entire application. The marker provided by this interface allows unique naming of the dynamically generated server control instances within the Web server controls that support data binding. These controls include the <xref:System.Web.UI.WebControls.Repeater>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DataList>, <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.ChangePassword>, <xref:System.Web.UI.WebControls.LoginView>, <xref:System.Web.UI.WebControls.Menu>, <xref:System.Web.UI.WebControls.SiteMapNodeItem>, and <xref:System.Web.UI.WebControls.RadioButtonList> controls.  
+  
+ When you develop templated controls, you should implement this interface to avoid naming conflicts on a page. For more information, see [ASP.NET Control Designers Overview](http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a templated custom server control that implements the <xref:System.Web.UI.INamingContainer> interface. When this custom server control is used in an .aspx file, it will provide a unique namespace for any server controls that it contains.  
+  
+ [!code-csharp[TemplatedDataBoundControl -- RepeaterItem to compile with#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplatedDataBoundControl -- RepeaterItem to compile with/CS/repeateritem.cs#1)]
+ [!code-vb[TemplatedDataBoundControl -- RepeaterItem to compile with#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplatedDataBoundControl -- RepeaterItem to compile with/VB/repeateritem.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

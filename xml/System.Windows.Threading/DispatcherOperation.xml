@@ -1,0 +1,303 @@
+<Type Name="DispatcherOperation" FullName="System.Windows.Threading.DispatcherOperation">
+  <TypeSignature Language="C#" Value="public class DispatcherOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi DispatcherOperation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherOperation" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an object that is used to interact with an operation that has been posted to the <see cref="T:System.Windows.Threading.Dispatcher" /> queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> returns a <xref:System.Windows.Threading.DispatcherOperation> object when it is called.  
+  
+ The <xref:System.Windows.Threading.DispatcherOperation> object can be used to interact with the delegate on the <xref:System.Windows.Threading.Dispatcher> queue, such as changing the priority of the operation or aborting the operation.  
+  
+ To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
+  
+ The <xref:System.Windows.Threading.DispatcherOperation> is not an exception handling boundary. This means that exceptions are handled by the <xref:System.Windows.Threading.Dispatcher> and are not preserved by the operation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public bool Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aborts the operation.</summary>
+        <returns>
+          <see langword="true" /> if the operation was aborted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an operation is already in progress, this method will return `false`.  
+  
+ When an operation is aborted, the <xref:System.Windows.Threading.DispatcherOperation.Status%2A> of the <xref:System.Windows.Threading.DispatcherOperation> is set to <xref:System.Windows.Threading.DispatcherOperationStatus> and the <xref:System.Windows.Threading.DispatcherOperation.Aborted> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="public event EventHandler Aborted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Aborted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherOperation.Aborted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the operation is aborted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public event EventHandler Completed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Completed" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherOperation.Completed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the operation has completed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispatcher">
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.Dispatcher Dispatcher { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Threading.Dispatcher Dispatcher" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation.Dispatcher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.Dispatcher</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Threading.Dispatcher" /> that the operation was posted to.</summary>
+        <value>The dispatcher.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAwaiter">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.TaskAwaiter GetAwaiter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.TaskAwaiter GetAwaiter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation.GetAwaiter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.TaskAwaiter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an object that is notified when the asynchronous operation is finished.</summary>
+        <returns>An object that is notified when the asynchronous operation is finished.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeDelegateCore">
+      <MemberSignature Language="C#" Value="protected virtual object InvokeDelegateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object InvokeDelegateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation.InvokeDelegateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins the operation that is associated with this <see cref="T:System.Windows.Threading.DispatcherOperation" />.</summary>
+        <returns>
+          <see langword="null" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherPriority Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Threading.DispatcherPriority Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.DispatcherPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the priority of the operation in the <see cref="T:System.Windows.Threading.Dispatcher" /> queue.</summary>
+        <value>The priority of the delegate on the queue.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public object Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Result" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the result of the operation after it has completed.</summary>
+        <value>The result of the operation -or- <see langword="null" /> if the operation has not completed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperationStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Threading.DispatcherOperationStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current status of the operation..</summary>
+        <value>The status of the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The stages of a <xref:System.Windows.Threading.DispatcherOperation> are <xref:System.Windows.Threading.DispatcherOperationStatus>, <xref:System.Windows.Threading.DispatcherOperationStatus>, and <xref:System.Windows.Threading.DispatcherOperationStatus>.  At any point before the operation has completed, the status can be set to <xref:System.Windows.Threading.DispatcherOperationStatus>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Task { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task Task" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation.Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Threading.Tasks.Task`1" /> that represents the current operation.</summary>
+        <value>An object that represents the current operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperationStatus Wait ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Threading.DispatcherOperationStatus Wait() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation.Wait" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Waits for the operation to complete</summary>
+        <returns>The status of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Threading.DispatcherOperation.Status" /> is equal to <see cref="F:System.Windows.Threading.DispatcherOperationStatus.Executing" />.  This can occur when waiting for an operation that is already executing on the same thread.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public System.Windows.Threading.DispatcherOperationStatus Wait (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Threading.DispatcherOperationStatus Wait(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation.Wait(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The maximum period of time to wait.</param>
+        <summary>Waits for the operation to complete in the specified period of time.</summary>
+        <returns>The status of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain the return value of the invoked delegate, use the <xref:System.Windows.Threading.DispatcherOperation.Result%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Threading.DispatcherOperation.Status" /> is equal to <see cref="F:System.Windows.Threading.DispatcherOperationStatus.Executing" />.  This can occur when waiting for an operation that is already executing on the same thread.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

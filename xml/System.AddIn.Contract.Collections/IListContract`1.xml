@@ -1,0 +1,203 @@
+<Type Name="IListContract&lt;C&gt;" FullName="System.AddIn.Contract.Collections.IListContract&lt;C&gt;">
+  <TypeSignature Language="C#" Value="public interface IListContract&lt;C&gt; : System.AddIn.Contract.Collections.ICollectionContract&lt;C&gt;, System.AddIn.Contract.Collections.IEnumerableContract&lt;C&gt; where C : IContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListContract`1&lt;(class System.AddIn.Contract.IContract) C&gt; implements class System.AddIn.Contract.Collections.ICollectionContract`1&lt;!C&gt;, class System.AddIn.Contract.Collections.IEnumerableContract`1&lt;!C&gt;, class System.AddIn.Contract.IContract" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IListContract`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="C">
+      <Constraints>
+        <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.Collections.ICollectionContract&lt;C&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.Collections.IEnumerableContract&lt;C&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="C">The type of objects in the list. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
+    <summary>Represents a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that can be individually accessed by index.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public C GetItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !C GetItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.GetItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>C</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get.</param>
+        <summary>Returns the element at the specified index.</summary>
+        <returns>The element at the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.Collections.IListContract%601.GetItem%2A> method does not remove the element at the specified index. To remove an element from the <xref:System.AddIn.Contract.Collections.IListContract%601>, use the <xref:System.AddIn.Contract.Collections.IListContract%601.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.ICollectionContract`1.GetCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (C item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(!C item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.IndexOf(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="C" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.AddIn.Contract.IContract" /> to locate in the <see cref="T:System.AddIn.Contract.Collections.IListContract`1" />.</param>
+        <summary>Returns the index of a specific element in the <see cref="T:System.AddIn.Contract.Collections.IListContract`1" />.</summary>
+        <returns>The index of <paramref name="item" /> if found in the list; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, C item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, !C item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.Insert(System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="C" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert <c>item</c>.</param>
+        <param name="item">The <see cref="T:System.AddIn.Contract.IContract" /> to insert in the <see cref="T:System.AddIn.Contract.Collections.IListContract`1" />.</param>
+        <summary>Inserts an element in the <see cref="T:System.AddIn.Contract.Collections.IListContract`1" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After you call <xref:System.AddIn.Contract.Collections.IListContract%601.Insert%2A>, the elements that follow the insertion point move to accommodate the new element. The indexes of the elements that are moved are also updated. To replace an element at a specified index, use the <xref:System.AddIn.Contract.Collections.IListContract%601.SetItem%2A> method.  
+  
+ To determine whether an <xref:System.AddIn.Contract.Collections.IListContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.ICollectionContract`1.GetCount" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.AddIn.Contract.Collections.IListContract`1" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the element to remove.</param>
+        <summary>Removes the element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After you call <xref:System.AddIn.Contract.Collections.IListContract%601.RemoveAt%2A>, the elements that follow the removed element move to occupy the vacated spot. The indexes of the elements that are moved are also updated.  
+  
+ To determine whether an <xref:System.AddIn.Contract.Collections.IListContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.ICollectionContract`1.GetCount" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.AddIn.Contract.Collections.IListContract`1" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="public void SetItem (int index, C value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem(int32 index, !C value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IListContract`1.SetItem(System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="C" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to set the element.</param>
+        <param name="value">The element to set at the specified index.</param>
+        <summary>Replaces the element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.Collections.IListContract%601.SetItem%2A> method replaces the element at the specified index. To add an element to the <xref:System.AddIn.Contract.Collections.IListContract%601>, use the <xref:System.AddIn.Contract.Collections.IListContract%601.Insert%2A> method.  
+  
+ To determine whether an <xref:System.AddIn.Contract.Collections.IListContract%601> is read-only, call the <xref:System.AddIn.Contract.Collections.ICollectionContract%601.GetIsReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.ICollectionContract`1.GetCount" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.AddIn.Contract.Collections.IListContract`1" /> is read-only.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

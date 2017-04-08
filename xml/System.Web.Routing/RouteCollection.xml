@@ -1,0 +1,862 @@
+<Type Name="RouteCollection" FullName="System.Web.Routing.RouteCollection">
+  <TypeSignature Language="C#" Value="public class RouteCollection : System.Collections.ObjectModel.Collection&lt;System.Web.Routing.RouteBase&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.Routing.RouteBase&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Web.Routing.RouteBase&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Web.Routing.RouteBase</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a collection of routes for ASP.NET routing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.RouteCollection> class provides methods that enable you to manage a collection of objects that derive from the <xref:System.Web.Routing.RouteBase> class.  
+  
+ Typically, you will use the `static`<xref:System.Web.Routing.RouteTable.Routes%2A> property of the <xref:System.Web.Routing.RouteTable> class to retrieve a <xref:System.Web.Routing.RouteCollection> object. The <xref:System.Web.Routing.RouteTable.Routes%2A> property stores all the routes for an ASP.NET application. ASP.NET routing iterates through the routes in the <xref:System.Web.Routing.RouteTable.Routes%2A> property to find the route that matches a URL.  
+  
+ To construct a URL, you call the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method and pass in a collection of values. The <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method finds the first route with parameters that match the values that you passed in, and returns a <xref:System.Web.Routing.VirtualPathData> object that contains information about the matching route. You retrieve the URL through the <xref:System.Web.Routing.VirtualPathData.VirtualPath%2A> property of the <xref:System.Web.Routing.VirtualPathData> object.  
+  
+ You can add a route either with a name or without a name. Including a name enables you to distinguish between similar routes when URLs are constructed. If you do not specify a name, ASP.NET routing uses the first matching route in the collection to construct a URL.  
+  
+ When you add an unnamed route to the <xref:System.Web.Routing.RouteCollection> object, you cannot add a route that already is in the collection. When you add a named route, you cannot use a name that already identifies a route in the collection.  
+  
+ You use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+ For more information about how to add a route to a route collection, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteCollection (System.Web.Hosting.VirtualPathProvider virtualPathProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Hosting.VirtualPathProvider virtualPathProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.#ctor(System.Web.Hosting.VirtualPathProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="virtualPathProvider" Type="System.Web.Hosting.VirtualPathProvider" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPathProvider">A provider for retrieving resources from a virtual file system.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteCollection" /> class by using the specified virtual path provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string name, System.Web.Routing.RouteBase item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, class System.Web.Routing.RouteBase item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Add(System.String,System.Web.Routing.RouteBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
+      </Parameters>
+      <Docs>
+        <param name="name">The value that identifies the route. The value can be <see langword="null" /> or an empty string.</param>
+        <param name="item">The route to add to the end of the collection.</param>
+        <summary>Adds a route to the end of the <see cref="T:System.Web.Routing.RouteCollection" /> object and assigns the specified name to the route.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.RouteCollection.Add%2A> method enables you to define a name for a route when you add it to the route collection. By defining a name for the route, you can specify a particular route to use when you use routing to construct a URL. Specifying a particular route is important when more than one route matches the values that you pass to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. If you do not specify a named route, ASP.NET routing will use the first route in the collection that matches the values. For more information, see [How to: Construct URLs from Routes](http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
+  
+ A name can be used only one time in the <xref:System.Web.Routing.RouteCollection> object.  
+  
+ If you do not have to specify a name for the route, you can add the route by calling the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> method.  
+  
+ Use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+   
+  
+## Examples  
+ The following example shows how to add a route to a <xref:System.Web.Routing.RouteCollection> object and assign a name to the route.  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#1)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is already used in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendTrailingSlash">
+      <MemberSignature Language="C#" Value="public bool AppendTrailingSlash { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppendTrailingSlash" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.AppendTrailingSlash" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether trailing slashes are added when virtual paths are normalized.</summary>
+        <value>
+          <see langword="true" /> if trailing slashes are added; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all the elements from the <see cref="T:System.Web.Routing.RouteCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReadLock">
+      <MemberSignature Language="C#" Value="public IDisposable GetReadLock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IDisposable GetReadLock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetReadLock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an object for managing thread safety when you retrieve an object from the collection.</summary>
+        <returns>An object that manages thread safety.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.RouteCollection> object is available to multiple processes in the application. Therefore, if you have to retrieve a route when the application is running, use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method in order to guarantee thread safety. By obtaining a read lock on the route collection, you make sure that the collection will not be modified while you are trying to retrieve it.  
+  
+ The <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method stops the thread from continuing until the lock can be acquired. If a write lock is in place, the thread waits until the update is completed and the write lock is released. The read lock on the route collection is released when the <xref:System.IDisposable> object that is returned by this method is disposed.  
+  
+ If you do not use <xref:System.Web.Routing.RouteCollection.GetReadLock%2A>, you might get an error while you are reading through the <xref:System.Web.Routing.RouteCollection> collection. For example, suppose you loop through the objects in the <xref:System.Web.Routing.RouteCollection> collection to read them, without calling <xref:System.Web.Routing.RouteCollection.GetReadLock%2A>. While you are doing that, another thread from another request might call <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> and add a route to the collection. The first thread will then fail with an error.  
+  
+ There are two scenarios in which you do not have to call <xref:System.Web.Routing.RouteCollection.GetReadLock%2A>:  
+  
+-   Public methods of the <xref:System.Web.Routing.RouteCollection> class such as <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> and <xref:System.Web.Routing.RouteCollection.GetRouteData%2A> call <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> internally. Therefore, you do not have to explicitly call <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> when you call a public method of the <xref:System.Web.Routing.RouteCollection> class to retrieve data from the collection.  
+  
+-   When the application is starting and is not yet processing requests, such as in the `Application_Start` event handler, only one thread is running. Because there are no other threads that might update the collection while you are reading it, you do not have to call <xref:System.Web.Routing.RouteCollection.GetReadLock%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method when you retrieve a route while the application is running. The `Using` statement ensures that no matter what happens at run time when you read from the collection (whether the code completes normally or an exception is thrown) the lock will be safely released at the end of the `Using` code block.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRouteData">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.RouteData GetRouteData (System.Web.HttpContextBase httpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.RouteData GetRouteData(class System.Web.HttpContextBase httpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetRouteData(System.Web.HttpContextBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RouteData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
+      </Parameters>
+      <Docs>
+        <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
+        <summary>Returns information about the route in the collection that matches the specified values.</summary>
+        <returns>An object that contains the values from the route definition.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.HttpContextBase.Request" /> property of the object in the <paramref name="context" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualPath">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.VirtualPathData GetVirtualPath (System.Web.Routing.RequestContext requestContext, System.Web.Routing.RouteValueDictionary values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
+        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="requestContext">An object that encapsulates information about the requested route.</param>
+        <param name="values">An object that contains the parameters for a route.</param>
+        <summary>Returns information about the URL path that is associated with the route, given the specified context and parameter values.</summary>
+        <returns>An object that contains information about the URL path that is associated with the route.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualPath">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.VirtualPathData GetVirtualPath (System.Web.Routing.RequestContext requestContext, string name, System.Web.Routing.RouteValueDictionary values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, string name, class System.Web.Routing.RouteValueDictionary values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="requestContext">An object that encapsulates information about the requested route.</param>
+        <param name="name">The name of the route to use when information about the URL path is retrieved.</param>
+        <param name="values">An object that contains the parameters for a route.</param>
+        <summary>Returns information about the URL path that is associated with the named route, given the specified context, route name, and parameter values.</summary>
+        <returns>An object that contains information about the URL path that is associated with the route.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">No route could be found that has the name specified in the <paramref name="name" /> parameter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWriteLock">
+      <MemberSignature Language="C#" Value="public IDisposable GetWriteLock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IDisposable GetWriteLock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.GetWriteLock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an object for managing thread safety when you add or remove elements in the collection.</summary>
+        <returns>An object that manages thread safety.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The recommended approach for defining routes in an ASP.NET application is to add the routes to the <xref:System.Web.Routing.RouteTable.Routes%2A> property in an event handler for the `Application_Start` event in the Global.asax file. For more information, see <xref:System.Web.Routing.RouteCollection>.  
+  
+ If you have to add a route when the application is running, you use the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to guarantee thread safety. The write lock on the route collection is released when the <xref:System.IDisposable> object that is returned by this method is disposed.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method when you add a route while the application is running.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ignore">
+      <MemberSignature Language="C#" Value="public void Ignore (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Ignore(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Ignore(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL pattern to be ignored.</param>
+        <summary>Defines a URL pattern that should not be checked for matches against routes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a route that is mapped to the <xref:System.Web.Routing.StopRoutingHandler> route handler. After you call this method, requests that match the specified URL pattern will not be processed as route requests.  
+  
+ ASP.NET routing automatically ignores requests when the URL matches a physical file, such as an image file. In some cases you might also want routing to ignore requests when there is no physical file. For example, the requests that ASP.NET automatically makes for .axd files should not be treated as route requests even though there is no physical file that corresponds to the .axd file-name extension.  
+  
+   
+  
+## Examples  
+ The default template for MVC projects uses this method to exclude .axd files from routing, as shown in the following example:  
+  
+ [!code-csharp[MvcDefaultApp#2](~/samples/snippets/csharp/VS_Snippets_WebNet/mvcdefaultapp/cs/global.asax.cs#2)]
+ [!code-vb[MvcDefaultApp#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/mvcdefaultapp/vb/global.asax.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ignore">
+      <MemberSignature Language="C#" Value="public void Ignore (string url, object constraints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Ignore(string url, object constraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.Ignore(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="constraints" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL pattern to be ignored.</param>
+        <param name="constraints">Additional criteria that determine whether a request that matches the URL pattern will be ignored.</param>
+        <summary>Defines a URL pattern that should not be checked for matches against routes if a request URL meets the specified constraints.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a route that is mapped to the <xref:System.Web.Routing.StopRoutingHandler> route handler. After you call this method, requests that match the specified URL pattern will not be processed as route requests.  
+  
+ ASP.NET routing automatically ignores requests when the URL matches a physical file, such as an image file. In some cases you might also want routing to ignore requests when there is no physical file. For example, the requests that ASP.NET automatically makes for .axd files should not be treated as route requests even though there is no physical file that corresponds to the .axd file-name extension.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to ignore all URLs that have an .aspx extension. You might want to do this if you register a custom HTTP handler to handle all URLs for files that have the extension ".aspx". A single URL pattern that would match all .aspx requests would require two catchall parameters such as `{*path}.aspx/{*pathinfo}`. (This pattern would match any URL that ends in .aspx, including those that have query-string parameters.) However, routing allows only one catchall parameter at the end. As an alternative, you can specify a URL pattern that has a single catchall parameter that matches all URLs and then specify constraints that exclude everything that does not have the .aspx extension, as shown in the following example:  
+  
+```vb  
+routes.Ignore("{*allaspx}", new With {.allaspx = ".*\.aspx(/.*)?"})  
+```  
+  
+```csharp  
+routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});  
+```  
+  
+ The previous line of code would typically be added to a method that is called from the `Application_Start` method in the Global.asax, as shown in the example for the <xref:System.Web.Routing.RouteCollection.Ignore%28System.String%29> overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="url" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Web.Routing.RouteBase item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Web.Routing.RouteBase item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.InsertItem(System.Int32,System.Web.Routing.RouteBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>item</c> is inserted.</param>
+        <param name="item">The route to insert.</param>
+        <summary>Inserts the specified route into the <see cref="T:System.Web.Routing.RouteCollection" /> object at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you add an unnamed route to the <xref:System.Web.Routing.RouteCollection> object, you cannot add a route that already is in the collection.  
+  
+ Use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="item" /> is already in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.RouteBase this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteBase Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RouteBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The value that identifies the route to get.</param>
+        <summary>Gets the route in the collection that has the specified name.</summary>
+        <value>An object that has the specified name, or <see langword="null" /> if <paramref name="name" /> is <see langword="null" />, is an empty string, or does not match any route in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LowercaseUrls">
+      <MemberSignature Language="C#" Value="public bool LowercaseUrls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LowercaseUrls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.LowercaseUrls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether URLs are converted to lower case when virtual paths are normalized.</summary>
+        <value>
+          <see langword="true" /> to convert URLs to lower case; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a query string is included in the URL, that part of the URL is not converted to lower case.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPageRoute">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.Route</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeUrl" Type="System.String" />
+        <Parameter Name="physicalFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeUrl">The URL pattern for the route.</param>
+        <param name="physicalFile">The physical URL for the route.</param>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <returns>The route that is added to the route collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a route by using this method. The first statement defines a route that does not have a name. The second statement defines a named route. This example is part of a larger example that is available in the <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> method overview.  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#140](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#140)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#140](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#140)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPageRoute">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.Route</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeUrl" Type="System.String" />
+        <Parameter Name="physicalFile" Type="System.String" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeUrl">The URL pattern for the route.</param>
+        <param name="physicalFile">The physical URL for the route.</param>
+        <param name="checkPhysicalUrlAccess">A value that indicates whether ASP.NET should validate that the user has authority to access the physical URL (the route URL is always checked). This parameter sets the <see cref="P:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess" /> property.</param>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <returns>The route that is added to the route collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a route by using this method. This example is part of a larger example that is available in the <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> method overview.  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#145](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#145)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#145](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPageRoute">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, System.Web.Routing.RouteValueDictionary defaults);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, class System.Web.Routing.RouteValueDictionary defaults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.Route</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeUrl" Type="System.String" />
+        <Parameter Name="physicalFile" Type="System.String" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
+        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeUrl">The URL pattern for the route.</param>
+        <param name="physicalFile">The physical URL for the route.</param>
+        <param name="checkPhysicalUrlAccess">A value that indicates whether ASP.NET should validate that the user has authority to access the physical URL (the route URL is always checked). This parameter sets the <see cref="P:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess" /> property.</param>
+        <param name="defaults">Default values for the route parameters.</param>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <returns>The route that is added to the route collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a route by using this method. This example is part of a larger example that is available in the <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> method overview.  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#150](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#150)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#150](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#150)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPageRoute">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.RouteValueDictionary constraints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.RouteValueDictionary constraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.Route</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeUrl" Type="System.String" />
+        <Parameter Name="physicalFile" Type="System.String" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
+        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="constraints" Type="System.Web.Routing.RouteValueDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeUrl">The URL pattern for the route.</param>
+        <param name="physicalFile">The physical URL for the route.</param>
+        <param name="checkPhysicalUrlAccess">A value that indicates whether ASP.NET should validate that the user has authority to access the physical URL (the route URL is always checked). This parameter sets the <see cref="P:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess" /> property.</param>
+        <param name="defaults">Default values for the route.</param>
+        <param name="constraints">Constraints that a URL request must meet in order to be processed as this route.</param>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <returns>The route that is added to the route collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a route by using this method. This example is part of a larger example that is available in the <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> method overview.  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#155](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#155)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#155](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#155)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPageRoute">
+      <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, System.Web.Routing.RouteValueDictionary defaults, System.Web.Routing.RouteValueDictionary constraints, System.Web.Routing.RouteValueDictionary dataTokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile, bool checkPhysicalUrlAccess, class System.Web.Routing.RouteValueDictionary defaults, class System.Web.Routing.RouteValueDictionary constraints, class System.Web.Routing.RouteValueDictionary dataTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.MapPageRoute(System.String,System.String,System.String,System.Boolean,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteValueDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.Route</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="routeName" Type="System.String" />
+        <Parameter Name="routeUrl" Type="System.String" />
+        <Parameter Name="physicalFile" Type="System.String" />
+        <Parameter Name="checkPhysicalUrlAccess" Type="System.Boolean" />
+        <Parameter Name="defaults" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="constraints" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="dataTokens" Type="System.Web.Routing.RouteValueDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="routeName">The name of the route.</param>
+        <param name="routeUrl">The URL pattern for the route.</param>
+        <param name="physicalFile">The physical URL for the route.</param>
+        <param name="checkPhysicalUrlAccess">A value that indicates whether ASP.NET should validate that the user has authority to access the physical URL (the route URL is always checked). This parameter sets the <see cref="P:System.Web.Routing.PageRouteHandler.CheckPhysicalUrlAccess" /> property.</param>
+        <param name="defaults">Default values for the route parameters.</param>
+        <param name="constraints">Constraints that a URL request must meet in order to be processed as this route.</param>
+        <param name="dataTokens">Values that are associated with the route that are not used to determine whether a route matches a URL pattern.</param>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <returns>The route that is added to the route collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a route by using this method. This example is part of a larger example that is available in the <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> method overview.  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#160](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#160)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#160](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#160)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="routeUrl" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the route to remove.</param>
+        <summary>Removes the route from the <see cref="T:System.Web.Routing.RouteCollection" /> object at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteExistingFiles">
+      <MemberSignature Language="C#" Value="public bool RouteExistingFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RouteExistingFiles" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteCollection.RouteExistingFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether ASP.NET routing should handle URLs that match an existing file.</summary>
+        <value>
+          <see langword="true" /> if ASP.NET routing handles all requests, even those that match an existing file; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this value can be changed dynamically, any change made after a service has been activated will be ignored when using ASP.NET routing integration. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][ASP.NET Routing Integration](http://go.microsoft.com/fwlink/?LinkId=195235).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Web.Routing.RouteBase item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Web.Routing.RouteBase item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteCollection.SetItem(System.Int32,System.Web.Routing.RouteBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.Routing.RouteBase" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the route to replace.</param>
+        <param name="item">The route to add at the specified index.</param>
+        <summary>Replaces the route at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you add an unnamed route to the <xref:System.Web.Routing.RouteCollection> object, you cannot add a route that already is in the collection.  
+  
+ Use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="item" /> is already in the collection.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Ignore">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a URL pattern that should not be checked for matches against routes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a route that is mapped to the <xref:System.Web.Routing.StopRoutingHandler> route handler. After you call this method, requests that match the specified URL pattern will not be processed as route requests.  
+  
+ ASP.NET routing automatically ignores requests when the URL matches a physical file, such as an image file. In some cases you might also want routing to ignore requests when there is no physical file. For example, the requests that ASP.NET automatically makes for .axd files should not be treated as route requests even though there is no physical file that corresponds to the .axd file-name extension.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="MapPageRoute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678).  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#122)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#122)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

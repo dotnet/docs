@@ -1,0 +1,202 @@
+<Type Name="FontNamesConverter" FullName="System.Web.UI.WebControls.FontNamesConverter">
+  <TypeSignature Language="C#" Value="public class FontNamesConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontNamesConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FontNamesConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts between a string containing a list of font names and an array of strings representing the individual names.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method of this class to convert a single string containing a list of font names to an array of strings containing the individual names. Each font name in the string must be separated by a comma. For example, the string "arial, times new roman, verdana", converts to an array that contains the strings "arial", "times new roman", and "verdana". Notice the commas are removed along with any white space at the beginning or end of the font name. White space in the middle of a font name is not removed.  
+  
+ The <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method performs the reverse operation. It converts an array of strings containing the individual font names to a single string containing a list of the names. For example, an array that contains the strings "arial", "times new roman", and "verdana" converts to the string "arial,times new roman,verdana". Notice that commas are automatically inserted between the font names without any white space.  
+  
+ Call the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method to verify that the conversion can be made before calling the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter> class to convert a string with a list of font names to an array of strings containing the individual names. The array of strings is then converted back to a single string and displayed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FontNamesConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontNamesConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FontNamesConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that provides information about the context of a type converter. You can optionally pass in <see langword="null" /> for this parameter.</param>
+        <param name="sourceType">A <see cref="T:System.Type" /> that represents the data type to convert from.</param>
+        <summary>Determines whether this converter can convert an object of the specified data type to an array of strings containing individual font names.</summary>
+        <returns>
+          <see langword="true" /> if the type can be converted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method to determine whether the specified data type can be converted to an array of strings containing individual font names.  
+  
+> [!NOTE]
+>  This converter can convert only from a `string` data type. The `sourceType` parameter must be of type <xref:System.String>. Otherwise, this method returns `false` to indicate that the specified data type cannot be converted.  
+  
+ You can optionally pass in `null` for the `context` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.CanConvertFrom%2A> method. The example determines whether the specified data type can be converted to an array of strings that contains the individual font names before performing the conversion.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that provides information about the context of a type converter. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass in <see langword="null" /> for this parameter.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that represents information about a culture such as language, calendar system, and so on. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass in <see langword="null" /> for this parameter.</param>
+        <param name="value">A <see cref="T:System.Object" /> instance that represents the source string to convert from.</param>
+        <summary>Converts a string that represents a list of font names into an array of strings containing individual font names.</summary>
+        <returns>A <see cref="T:System.Object" /> instance that represents the array of strings containing the individual font names.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string containing a list of font names to an array of strings containing the individual names. Each font name in the string must be separated by a comma. For example, the string "arial, times new roman, verdana", converts to an array that contains the strings "arial", "times new roman", and "verdana". Notice that the commas are removed along with any white space at the beginning or end of the font name. White space in the middle of a font name is not removed.  
+  
+> [!NOTE]
+>  The `context` and `culture` parameters are not used in this version of the method; they are reserved for future versions of the method. You can optionally pass in `null` for these parameters.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertFrom%2A> method to convert a string with a list of font names to an array of strings containing the individual names.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="M:System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)">
+          <paramref name="value" /> is not of type <see cref="T:System.String" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FontNamesConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that provides information about the context of a type converter. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass in <see langword="null" /> for this parameter.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that represents information about a culture such as language, calendar system, and so on. This parameter is not used in this method. It is reserved for future versions of this method. You can optionally pass in <see langword="null" /> for this parameter.</param>
+        <param name="value">An object that represents the source array of strings to convert from.</param>
+        <param name="destinationType">A <see cref="T:System.Object" /> instance object that represents the data type to convert to. This parameter must be of type <see cref="T:System.String" />.</param>
+        <summary>Creates a string that represents a list of font names from an array of strings containing individual font names.</summary>
+        <returns>A <see cref="T:System.Object" /> instance that represents a string containing a list of font names.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual font names to a single string containing a list of the names. For example, an array that contains the strings "arial", "times new roman", and "verdana" converts to the string "arial,times new roman,verdana". Notice that commas are automatically inserted between the font names without any white space.  
+  
+> [!NOTE]
+>  This converter can convert only to a `string` data type. The `destinationType` parameter must be of type <xref:System.String>.  
+  
+> [!NOTE]
+>  The `context` and `culture` parameters are not used in this version of the method; they are reserved for future versions of the method. You can optionally pass in `null` for these parameters.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.FontNamesConverter.ConvertTo%2A> method to convert an array of strings containing the individual names to a single string that contains a list of font names.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic FontNamesConverter.CanConvertFrom Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic FontNamesConverter.CanConvertFrom Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="M:System.ComponentModel.TypeConverter.GetConvertToException(System.Object,System.Type)">
+          <paramref name="destinationType" /> is not of type <see cref="T:System.String" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

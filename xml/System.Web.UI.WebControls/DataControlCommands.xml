@@ -1,0 +1,267 @@
+<Type Name="DataControlCommands" FullName="System.Web.UI.WebControls.DataControlCommands">
+  <TypeSignature Language="C#" Value="public sealed class DataControlCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataControlCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlCommands" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.Web.UI.WebControls.DataControlCommands" /> class contains public fields that all ASP.NET data-bound controls use, to promote a consistent user interface (UI). This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlCommands> class contains public fields for data-bound control command names. The class constructor is private, so you cannot create an instance of the class. However, because it only contains `const` string resources, you can use the class constructor and its public fields just as you would any `static` class.  
+  
+ Using the command names of the <xref:System.Web.UI.WebControls.DataControlCommands> class enables all the ASP.NET data-bound controls and their respective designer classes to use the same string resources for common commands, such as "Edit" or "Update", and to correctly handle events that are posted by an <xref:System.Web.UI.IPostBackEventHandler> instance. The following classes use <xref:System.Web.UI.WebControls.DataControlCommands>:  
+  
+-   <xref:System.Web.UI.WebControls.CommandField>  
+  
+-   <xref:System.Web.UI.WebControls.DataControlField>  
+  
+-   <xref:System.Web.UI.WebControls.GridView>  
+  
+-   <xref:System.Web.UI.WebControls.DetailsView>  
+  
+-   <xref:System.Web.UI.WebControls.FormView>  
+  
+-   <xref:System.Web.UI.WebControls.ListView>  
+  
+-   <xref:System.Web.UI.WebControls.NextPreviousPagerField>  
+  
+-   <xref:System.Web.UI.WebControls.NumericPagerField>  
+  
+-   <xref:System.Web.UI.Design.WebControls.FormViewDesigner>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CancelCommandName">
+      <MemberSignature Language="C#" Value="public const string CancelCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CancelCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.CancelCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Cancel".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteCommandName">
+      <MemberSignature Language="C#" Value="public const string DeleteCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.DeleteCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Delete".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditCommandName">
+      <MemberSignature Language="C#" Value="public const string EditCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EditCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.EditCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Edit".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstPageCommandArgument">
+      <MemberSignature Language="C#" Value="public const string FirstPageCommandArgument;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string FirstPageCommandArgument" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.FirstPageCommandArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "First".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertCommandName">
+      <MemberSignature Language="C#" Value="public const string InsertCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string InsertCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.InsertCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Insert".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPageCommandArgument">
+      <MemberSignature Language="C#" Value="public const string LastPageCommandArgument;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LastPageCommandArgument" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.LastPageCommandArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Last".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewCommandName">
+      <MemberSignature Language="C#" Value="public const string NewCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NewCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.NewCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "New".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageCommandArgument">
+      <MemberSignature Language="C#" Value="public const string NextPageCommandArgument;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NextPageCommandArgument" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Next".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageCommandName">
+      <MemberSignature Language="C#" Value="public const string PageCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PageCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.PageCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Page".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousPageCommandArgument">
+      <MemberSignature Language="C#" Value="public const string PreviousPageCommandArgument;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PreviousPageCommandArgument" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Prev".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectCommandName">
+      <MemberSignature Language="C#" Value="public const string SelectCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SelectCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.SelectCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Select".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortCommandName">
+      <MemberSignature Language="C#" Value="public const string SortCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SortCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.SortCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Sort".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCommandName">
+      <MemberSignature Language="C#" Value="public const string UpdateCommandName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateCommandName" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCommands.UpdateCommandName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the string "Update".</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,137 @@
+<Type Name="LocationReferenceEnvironment" FullName="System.Activities.LocationReferenceEnvironment">
+  <TypeSignature Language="C#" Value="public abstract class LocationReferenceEnvironment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LocationReferenceEnvironment extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.LocationReferenceEnvironment" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a representation of the environment of variables and arguments that is available to an activity at runtime.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LocationReferenceEnvironment ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Called by derived class constructors to initialize the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocationReferences">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Activities.LocationReference&gt; GetLocationReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.LocationReference&gt; GetLocationReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.GetLocationReferences" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.LocationReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns a collection of <see cref="T:System.Activities.LocationReference" /> objects in the current scope.</summary>
+        <returns>A collection of location reference objects in the current scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisible">
+      <MemberSignature Language="C#" Value="public abstract bool IsVisible (System.Activities.LocationReference locationReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsVisible(class System.Activities.LocationReference locationReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.IsVisible(System.Activities.LocationReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationReference" Type="System.Activities.LocationReference" />
+      </Parameters>
+      <Docs>
+        <param name="locationReference">The location to evaluate.</param>
+        <summary>When overridden in a derived class, determines whether the specified <see cref="T:System.Activities.LocationReference" /> is visible in the current scope.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.LocationReference" /> is visible in the current scope; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment Parent { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.LocationReferenceEnvironment.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the containing <see cref="T:System.Activities.LocationReferenceEnvironment" />.</summary>
+        <value>The containing <see cref="T:System.Activities.LocationReferenceEnvironment" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Activity Root { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Root" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.LocationReferenceEnvironment.Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the activity that determines the scoping rules for this environment.</summary>
+        <value>The activity that determines the scoping rules for this environment.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetLocationReference">
+      <MemberSignature Language="C#" Value="public abstract bool TryGetLocationReference (string name, out System.Activities.LocationReference result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetLocationReference(string name, class System.Activities.LocationReference result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.LocationReferenceEnvironment.TryGetLocationReference(System.String,System.Activities.LocationReference@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="result" Type="System.Activities.LocationReference&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Activities.LocationReference" /> to retrieve.</param>
+        <param name="result">When this method returns <see langword="true" />, <c>result</c> contains the <see cref="T:System.Activities.LocationReference" /> with the specified name; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>When overridden in a derived class, attempts to get the specified <see cref="T:System.Activities.LocationReference" />.</summary>
+        <returns>
+          <see langword="true" /> if a <see cref="T:System.Activities.LocationReference" /> with the specified name is present; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

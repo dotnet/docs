@@ -1,0 +1,110 @@
+<Type Name="SqlNotificationEventArgs" FullName="System.Data.SqlClient.SqlNotificationEventArgs">
+  <TypeSignature Language="C#" Value="public class SqlNotificationEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlNotificationEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the set of arguments passed to the notification event handler.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlNotificationEventArgs (System.Data.SqlClient.SqlNotificationType type, System.Data.SqlClient.SqlNotificationInfo info, System.Data.SqlClient.SqlNotificationSource source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.SqlClient.SqlNotificationType type, valuetype System.Data.SqlClient.SqlNotificationInfo info, valuetype System.Data.SqlClient.SqlNotificationSource source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlNotificationEventArgs.#ctor(System.Data.SqlClient.SqlNotificationType,System.Data.SqlClient.SqlNotificationInfo,System.Data.SqlClient.SqlNotificationSource)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Data.SqlClient.SqlNotificationType" />
+        <Parameter Name="info" Type="System.Data.SqlClient.SqlNotificationInfo" />
+        <Parameter Name="source" Type="System.Data.SqlClient.SqlNotificationSource" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+          <see cref="T:System.Data.SqlClient.SqlNotificationType" /> value that indicates whether this notification is generated because of an actual change, or by the subscription.</param>
+        <param name="info">
+          <see cref="T:System.Data.SqlClient.SqlNotificationInfo" /> value that indicates the reason for the notification event. This may occur because the data in the store actually changed, or the notification became invalid (for example, it timed out).</param>
+        <param name="source">
+          <see cref="T:System.Data.SqlClient.SqlNotificationSource" /> value that indicates the source that generated the notification.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlNotificationEventArgs" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Info">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlNotificationInfo Info { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlNotificationInfo Info" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Info" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the reason for the notification event, such as a row in the database being modified or a table being truncated.</summary>
+        <value>The notification event reason.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event may occur because the data in the store actually changed, or the notification is no longer valid (for example, it timed out).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlNotificationSource Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlNotificationSource Source" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the source that generated the notification, such as a change to the query data or the database’s state.</summary>
+        <value>The source of the notification.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlNotificationType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlNotificationType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this notification is generated because of an actual change, or by the subscription.</summary>
+        <value>A value indicating whether the notification was generated by a change or a subscription.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

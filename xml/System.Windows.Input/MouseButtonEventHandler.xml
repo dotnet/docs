@@ -1,0 +1,80 @@
+<Type Name="MouseButtonEventHandler" FullName="System.Windows.Input.MouseButtonEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void MouseButtonEventHandler(object sender, MouseButtonEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MouseButtonEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseButtonEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle mouse button related routed events, for example <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used with the following attached events.  
+  
+-   <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.MouseUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement?displayProperty=fullName>  
+  
+ This delegate is used with the following routed events. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+  
+-   <xref:System.Windows.UIElement.MouseDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.MouseUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.MouseLeftButtonDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.MouseLeftButtonUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.MouseRightButtonDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.MouseRightButtonUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseLeftButtonDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseLeftButtonUp?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseRightButtonDown?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.MouseRightButtonUp?displayProperty=fullName>  
+  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.UIElement.MouseDown> event handler that changes the background color of the source of the event.  The background color is determined by which button is pressed.  
+  
+ [!code-csharp[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargschangedbutton)]
+ [!code-vb[mousesnippetsample#MouseEventArgsChangedButton](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargschangedbutton)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

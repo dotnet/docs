@@ -1,0 +1,122 @@
+<Type Name="SoapRpcServiceAttribute" FullName="System.Web.Services.Protocols.SoapRpcServiceAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SoapRpcServiceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapRpcServiceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Sets the default format of SOAP requests and responses sent to and from XML Web service methods within the XML Web service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> allows you to set the default encoding style for XML Web service methods within an XML Web service to `RPC` method encoding and <xref:System.Web.Services.Description.SoapBindingUse> parameter encoding.  
+  
+ Web Services Description Language (WSDL) defines two styles for how an XML Web service method, or operation, can be encoded in a SOAP request or a SOAP response: `RPC` and `Document`. The `RPC` style refers to encoding the XML Web service method according to section 7 of the SOAP specification for using SOAP for RPC. This style specifies that all parameters are encapsulated within a single element named after the XML Web service method, and that each element within that element represents a parameter named after its respective parameter name.  
+  
+ To set the default method level encoding to `Document`, apply a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to the class implementing the XML Web service.  
+  
+ For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
+  
+ This attribute can be applied to a class implementing an XML Web service.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapRpcServiceAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapRpcServiceAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapRpcServiceAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an instance of the <xref:System.Web.Services.Protocols.SoapRpcServiceAttribute> class.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutingStyle">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapServiceRoutingStyle RoutingStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapServiceRoutingStyle RoutingStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapRpcServiceAttribute.RoutingStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapServiceRoutingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how SOAP messages are routed to the XML Web service.</summary>
+        <value>A <see cref="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" /> that represents how SOAP messages are routed to the XML Web service. The default value is <see cref="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse Use { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse Use" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapRpcServiceAttribute.Use" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding used when invoking the Web service's methods.</summary>
+        <value>A member of the <see cref="T:System.Web.Services.Description.SoapBindingUse" /> enumeration specifying the binding used when invoking the Web service's methods.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is <xref:System.Web.Services.Description.SoapBindingUse>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,528 @@
+<Type Name="DropDownList" FullName="System.Web.UI.WebControls.DropDownList">
+  <TypeSignature Language="C#" Value="public class DropDownList : System.Web.UI.WebControls.ListControl, System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DropDownList extends System.Web.UI.WebControls.ListControl implements class System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DropDownList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.ListControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ValidationProperty("SelectedItem")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control that allows the user to select a single item from a drop-down list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#Introduction)  
+  
+-   [Accessibility](#Accessibility)  
+  
+-   [Declarative Syntax](#DeclarativeSyntax)  
+  
+<a name="Introduction"></a>   
+## Introduction  
+ Use the <xref:System.Web.UI.WebControls.DropDownList> control to create a single-selection drop-down list control. You can control the appearance of the <xref:System.Web.UI.WebControls.DropDownList> control by setting the <xref:System.Web.UI.WebControls.DropDownList.BorderColor%2A>, <xref:System.Web.UI.WebControls.DropDownList.BorderStyle%2A>, and <xref:System.Web.UI.WebControls.DropDownList.BorderWidth%2A> properties.  
+  
+ To specify the items that you want to appear in the <xref:System.Web.UI.WebControls.DropDownList> control, place a <xref:System.Web.UI.WebControls.ListItem> object for each entry between the opening and closing tags of the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+ The <xref:System.Web.UI.WebControls.DropDownList> control also supports data binding. To bind the control to a data source, create a data source, such as a <xref:System.Collections.ArrayList?displayProperty=fullName> object, that contains the items to display in the control. Then, use the <xref:System.Web.UI.Control.DataBind%2A?displayProperty=fullName> method to bind the data source to the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+ Use the <xref:System.Web.UI.WebControls.DropDownList.SelectedIndex%2A> property to programmatically determine the index of the item selected by the user from the <xref:System.Web.UI.WebControls.DropDownList> control. The index can then be used to retrieve the selected item from the `Items` collection of the control.  
+  
+<a name="Accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:DropDownList  
+    AccessKey="string"  
+    AppendDataBoundItems="True|False"  
+    AutoPostBack="True|False"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CausesValidation="True|False"  
+    CssClass="string"  
+    DataMember="string"  
+    DataSource="string"  
+    DataSourceID="string"  
+    DataTextField="string"  
+    DataTextFormatString="string"  
+    DataValueField="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDataBound="DataBound event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnSelectedIndexChanged="SelectedIndexChanged event handler"  
+    OnTextChanged="TextChanged event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SelectedIndex="integer"  
+    SelectedValue="string"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    ValidationGroup="string"  
+    Visible="True|False"  
+    Width="size"  
+>  
+            <asp:ListItem  
+                Enabled="True|False"  
+                Selected="True|False"  
+                Text="string"  
+                Value="string"  
+            />  
+</asp:DropDownList>  
+```  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=191893).  
+  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.DropDownList> control that contains four items.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DropDownListDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListDeclarative/CS/dropdownlistdeclarativecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DropDownListDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListDeclarative/VB/dropdownlistdeclarativevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.DropDownList> control though data binding.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DropDownListDataBinding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListDataBinding/CS/dropdownlistdatabindingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DropDownListDataBinding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListDataBinding/VB/dropdownlistdatabindingvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DropDownList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DropDownList" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DropDownList> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DropDownList> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DropDownListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListCtor/CS/dropdownlistctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DropDownListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListCtor/VB/dropdownlistctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream that renders HTML contents to the client.</param>
+        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is used primarily by control developers when deriving a custom control from the <xref:System.Web.UI.WebControls.DropDownList> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DropDownList.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the border color of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.DropDownList.BorderColor%2A> property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to get or set the <xref:System.Web.UI.WebControls.DropDownList.BorderColor%2A> property in a custom <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomDropDownListBorderColor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListBorderColor/CS/custom_dropdownlist_bordercolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomDropDownListBorderColor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListBorderColor/VB/custom_dropdownlist_bordercolorvb.aspx#1)]  -->  
+[!code-csharp[CustomDropDownListBorderColor#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListBorderColor/CS/custom_dropdownlist_bordercolor.cs#2)]
+[!code-vb[CustomDropDownListBorderColor#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListBorderColor/VB/custom_dropdownlist_bordercolor.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DropDownList.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style of the control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.BorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.DropDownList.BorderStyle%2A> property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit BorderWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DropDownList.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border width for the control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the border width for the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.DropDownList.BorderWidth%2A> property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a collection to store child controls.</summary>
+        <returns>Always returns an <see cref="T:System.Web.UI.EmptyControlCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.DropDownList.CreateControlCollection%2A> method in a custom server control so that it always returns a new instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.DropDownList> control. For information about using custom server controls, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomDropDownListCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/CS/custom_dropdownlist_createcontrolcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomDropDownListCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/VB/custom_dropdownlist_createcontrolcollectionvb.aspx#1)]  -->  
+[!code-csharp[CustomDropDownListCreateControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/CS/custom_dropdownlist_createcontrolcollection.cs#2)]
+[!code-vb[CustomDropDownListCreateControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomDropDownListCreateControlCollection/VB/custom_dropdownlist_createcontrolcollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The index within the posted collection that references the content to load.</param>
+        <param name="postCollection">The collection of all incoming name values posted to the server.</param>
+        <summary>Processes postback data for the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control's state changes as a result of the postback event; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ASP.NET page framework tracks all the server controls that return `true` from this method call, and then invokes the <xref:System.Web.UI.WebControls.DropDownList.RaisePostDataChangedEvent%2A> method on the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises events for the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control when postback occurs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ASP.NET page framework calls the <xref:System.Web.UI.WebControls.DropDownList.RaisePostDataChangedEvent%2A> method on a <xref:System.Web.UI.WebControls.DropDownList> control when the <xref:System.Web.UI.WebControls.DropDownList.LoadPostData%2A> method indicates that the state of the list items has changed in the <xref:System.Web.UI.WebControls.DropDownList> control. The <xref:System.Web.UI.WebControls.DropDownList.RaisePostDataChangedEvent%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method to raise the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event. Control developers can override the <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method to perform custom processing when the user selects items in the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndex">
+      <MemberSignature Language="C#" Value="public override int SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DropDownList.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the selected item in the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control.</summary>
+        <value>The index of the selected item in the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control. The default value is 0, which selects the first item in the list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DropDownList.SelectedIndex%2A> property to programmatically specify or determine the index of the selected item from the <xref:System.Web.UI.WebControls.DropDownList> control. An item is always selected in the <xref:System.Web.UI.WebControls.DropDownList> control. You cannot clear the selection from every item in the list at the same time.  
+  
+> [!NOTE]
+>  The indexes for the items in the <xref:System.Web.UI.WebControls.DropDownList> control are zero-based.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DropDownList.SelectedIndex%2A> property to determine the selected item in the <xref:System.Web.UI.WebControls.DropDownList> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DropDownListSelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DropDownListSelectedIndex/CS/dropdownlistselectedindexcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DropDownListSelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DropDownListSelectedIndex/VB/dropdownlistselectedindexvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDisabledAttribute">
+      <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DropDownList.SupportsDisabledAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key value used to index an entry in the collection.</param>
+        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains post information.</param>
+        <summary>Processes posted data for the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the posted content is different from the last posting; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises events for the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control on postback.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyMultiSelect">
+      <MemberSignature Language="C#" Value="protected override void VerifyMultiSelect ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void VerifyMultiSelect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DropDownList.VerifyMultiSelect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Always throws an <see cref="T:System.Web.HttpException" /> exception because multiple selection is not supported for the <see cref="T:System.Web.UI.WebControls.DropDownList" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DropDownList> control does not support multiple selections and throws an <xref:System.Web.HttpException> exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">In all cases.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

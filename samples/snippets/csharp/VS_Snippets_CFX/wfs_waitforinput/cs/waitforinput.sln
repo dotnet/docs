@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 10
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitForInputTestClient", "WaitForInputTestClient\WaitForInputTestClient.csproj", "{2E769D2A-57B9-4CA9-A3BD-B603C0B6157E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Samples.Activities.Statements.WaitForInput", "WaitForInput\Microsoft.Samples.Activities.Statements.WaitForInput.csproj", "{01F7D698-373D-48D0-AC09-76A84DD283D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01F7D698-373D-48D0-AC09-76A84DD283D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F7D698-373D-48D0-AC09-76A84DD283D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F7D698-373D-48D0-AC09-76A84DD283D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F7D698-373D-48D0-AC09-76A84DD283D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E769D2A-57B9-4CA9-A3BD-B603C0B6157E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E769D2A-57B9-4CA9-A3BD-B603C0B6157E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E769D2A-57B9-4CA9-A3BD-B603C0B6157E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E769D2A-57B9-4CA9-A3BD-B603C0B6157E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

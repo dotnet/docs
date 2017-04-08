@@ -1,0 +1,1176 @@
+<Type Name="DependencyProperty" FullName="System.Windows.DependencyProperty">
+  <TypeSignature Language="C#" Value="public sealed class DependencyProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DependencyProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DependencyProperty" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Markup.DependencyPropertyConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.DependencyPropertyValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a property that can be set through methods such as, styling, data binding, animation, and inheritance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.DependencyProperty> supports the following capabilities in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)]:  
+  
+-   The property can be set in a style. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+  
+-   The property can be set through data binding. For more information about data binding dependency properties, see [How to: Bind the Properties of Two Controls](~/docs/framework/wpf/data/how-to-bind-the-properties-of-two-controls.md).  
+  
+-   The property can be set with a dynamic resource reference. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+-   The property can inherit its value automatically from a parent element in the element tree. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+-   The property can be animated. For more information, see [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md).  
+  
+-   The property can report when the previous value of the property has been changed and the property value can be coerced. For more information, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
+  
+-   The property reports information to [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], such as whether changing a property value should require the layout system to recompose the visuals for an element.  
+  
+-   The property receives support in the [!INCLUDE[wpfdesigner_current_long](~/includes/wpfdesigner-current-long-md.md)].  For example, the property can be edited in the **Properties** window.  
+  
+ To learn more about dependency properties, see [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md). If you want properties on your custom types to support the capabilities in the preceding list, you should create a dependency property.  To learn how to create custom dependency properties, see [Custom Dependency Properties](~/docs/framework/wpf/advanced/custom-dependency-properties.md).  
+  
+ An attached property is a property that enables any object to report information to the type that defines the attached property. In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], any type that inherits from <xref:System.Windows.DependencyObject> can use an attached property regardless of whether the type inherits from the type that defines the property. An attached property is a feature of the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] language.  To set an attached property in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], use the *ownerType*.*propertyName* syntax. An example of an attached property is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=fullName> property. If you want to create a property that can be used on all <xref:System.Windows.DependencyObject> types, then you should create an attached property. To learn more about attached properties, including how to create them, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
+  
+<a name="xamlAttributeUsage_DependencyProperty"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="dependencyPropertyName"/>  
+- or -  
+<object property="ownerType.dependencyPropertyName"/>  
+- or -  
+<object property="attachedPropertyOwnerType.attachedPropertyName"/>  
+```  
+  
+<a name="xamlValues_DependencyProperty"></a>   
+## XAML Values  
+ `dependencyPropertyName`  
+ A string that specifies the <xref:System.Windows.DependencyProperty.Name%2A?displayProperty=fullName> of the desired dependency property. This can be preceded by an XML namespace prefix if the property is not in the default XML namespace (for details, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).)  
+  
+ `ownerType`.`dependencyPropertyName`  
+ A string that specifies an owner type of a dependency property, a dot (.), then the <xref:System.Windows.DependencyProperty.Name%2A?displayProperty=fullName>. `ownerType` can also be preceded by an XML namespace prefix. This usage is particular to late-bound styles and templates, where the owner of the dependency property must be specified for parsing context because the `TargetType` is not yet known. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+  
+ `attachedPropertyOwnerType` *.* `attachedPropertyName`  
+ A string that specifies  the owner of an attached property, a dot (.), then the attached property name. `attachedPropertyOwnerType` can also be preceded by an XML namespace prefix.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddOwner">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty AddOwner (Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyProperty AddOwner(class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.AddOwner(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="ownerType">The type to add as an owner of this dependency property.</param>
+        <summary>Adds another type as an owner of a dependency property that has already been registered.</summary>
+        <returns>A reference to the original <see cref="T:System.Windows.DependencyProperty" /> identifier that identifies the dependency property. This identifier should be exposed by the adding class as a <see langword="public static readonly" /> field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables the property system to recognize a dependency property on a type that did not register that particular dependency property initially.  
+  
+ Typically, <xref:System.Windows.DependencyProperty.AddOwner%2A> is used to add dependency properties to classes that do not already expose that dependency property through managed class inheritance (class inheritance would cause the wrapper properties to be inherited by the derived class, and thus would provide general members-table access to the dependency property already). <xref:System.Windows.DependencyProperty.AddOwner%2A> enables the property system to recognize a dependency property on a type that did not register that dependency property initially.  
+  
+ This signature does not allow for specifying metadata.  When you use this method, the metadata is automatically generated for the new <xref:System.Windows.DependencyProperty> and its owner type. The auto-generated metadata is the result of the merged metadata from all of the base types that have this property defined. If no merged metadata is available, then the default metadata for the property is used. If the property is registered by using the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method, then the default metadata is the same as the metadata that is created when <xref:System.Windows.DependencyProperty.RegisterAttached%2A> was called. Otherwise, the <xref:System.Windows.PropertyMetadata> object is created with the <xref:System.Windows.PropertyMetadata.DefaultValue%2A> property set to the property type's default and all other properties of the <xref:System.Windows.PropertyMetadata> is set to `null`. Use the <xref:System.Windows.DependencyProperty.AddOwner%28System.Type%2CSystem.Windows.PropertyMetadata%29> signature if you want to provide metadata for the version of the dependency property as added to the provided type.  
+  
+ The return value of this method is typically used to declare and expose the dependency property by storing a dependency property identifier. The identifier provides access to the dependency property if you want to call property system [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] against the dependency property, particularly as it exists on the adding owner class. The same property name for both original owner and added owner should be used to indicate the similar functionality. You should use the <xref:System.Windows.DependencyProperty> return value of the <xref:System.Windows.DependencyProperty.AddOwner%2A> method to define the dependency property identifier, and also to declare [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrappers, for dependency properties that are added to types using <xref:System.Windows.DependencyProperty.AddOwner%2A>.  
+  
+ The <xref:System.Windows.DependencyProperty.AddOwner%2A> methodology recommended above is used when creating the dependency properties that are declared within [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For instance, both <xref:System.Windows.Controls.Border> and <xref:System.Windows.Controls.Control> define a `BorderBrush` dependency property, which have similar functionality. <xref:System.Windows.Controls.Control> defines its `BorderBrush` property to the property system by calling <xref:System.Windows.DependencyProperty.AddOwner%2A> based on the original owner <xref:System.Windows.Controls.Border> and its registered <xref:System.Windows.Controls.Border.BorderBrushProperty> dependency property identifer. The <xref:System.Windows.DependencyProperty.AddOwner%2A> return value is then used to establish a new static <xref:System.Windows.DependencyProperty> field (<xref:System.Windows.Controls.Control.BorderBrushProperty>) for that property on the added owner, and a `BorderBrush` property wrapper is also declared.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOwner">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty AddOwner (Type ownerType, System.Windows.PropertyMetadata typeMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyProperty AddOwner(class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.AddOwner(System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="ownerType">The type to add as owner of this dependency property.</param>
+        <param name="typeMetadata">The metadata that qualifies the dependency property as it exists on the provided type.</param>
+        <summary>Adds another type as an owner of a dependency property that has already been registered, providing dependency property metadata for the dependency property as it will exist on the provided owner type.</summary>
+        <returns>A reference to the original <see cref="T:System.Windows.DependencyProperty" /> identifier that identifies the dependency property. This identifier should be exposed by the adding class as a <see langword="public static readonly" /> field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables the property system to recognize a dependency property on a type that did not register that particular dependency property initially.  
+  
+ The return value of this method is used to declare and expose the dependency property, particularly as it exists on the adding owner class. Generally, the same property name for both original owner and added owner should be used to indicate the similar functionality. It is good practice to expose the identifiers, as well as new [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrappers, for dependency properties that are added to types using <xref:System.Windows.DependencyProperty.AddOwner%2A>.  
+  
+ The <xref:System.Windows.DependencyProperty.AddOwner%2A> methodology recommended above is used when creating [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] declared within [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For instance, both <xref:System.Windows.Controls.Border> and <xref:System.Windows.Controls.Control> define a `BorderBrush` dependency property, which have similar functionality. <xref:System.Windows.Controls.Control> defines its `BorderBrush` property to the property system by calling <xref:System.Windows.DependencyProperty.AddOwner%2A> on original owner <xref:System.Windows.Controls.Border> and its registered <xref:System.Windows.Controls.Border.BorderBrushProperty> dependency property identifer. The <xref:System.Windows.DependencyProperty.AddOwner%2A> return value is then used to establish a static <xref:System.Windows.DependencyProperty> field (<xref:System.Windows.Controls.Control.BorderBrushProperty>)for that property on the added owner, and a `BorderBrush` property wrapper is also declared.  
+  
+ The added owner's dependency property identifier should be used for operations such as <xref:System.Windows.DependencyObject.GetValue%2A>. However, type-specific operations involving either types or instances of the class that was added as owner with different metadata will still return the expected results even if the original (not the added owner's) dependency property identifier is specified in calls to methods such as <xref:System.Windows.DependencyObject.GetValue%2A> or <xref:System.Windows.DependencyProperty.GetMetadata%2A>. The metadata for the added owner is perpetuated by the <xref:System.Windows.DependencyProperty.AddOwner%2A> call itself, not necessarily referenced exclusively by the adding owner class identifier field. Nevertheless, it is good practice to expose the  identifier, as well as new [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrappers, for dependency properties that are added to types using <xref:System.Windows.DependencyProperty.AddOwner%2A>, because failing to do so creates disparity between the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representations of your properties.  
+  
+ The supplied metadata is merged with the property metadata for the dependency property as it exists on the base owner. Any characteristics that were specified in the original base metadata will persist. Only those characteristics that were specifically changed in the new metadata will override the characteristics of the base metadata. Some characteristics, such as <xref:System.Windows.PropertyMetadata.DefaultValue%2A>, are replaced if they are specified in the new metadata. Others, such as <xref:System.Windows.PropertyChangedCallback>, are combined. Ultimately, the merge behavior depends on the property metadata type being used for the override, so the behavior described here is for the existing property metadata classes used by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] dependency properties. For details, see [Dependency Property Metadata](~/docs/framework/wpf/advanced/dependency-property-metadata.md) and [Framework Property Metadata](~/docs/framework/wpf/advanced/framework-property-metadata.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMetadata">
+      <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata DefaultMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PropertyMetadata DefaultMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.DefaultMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.PropertyMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default metadata of the dependency property.</summary>
+        <value>The default metadata of the dependency property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default metadata is the property metadata that is available to that particular object or an object of a derived type where no alternative metadata was supplied by an explicit <xref:System.Windows.DependencyProperty.Register%2A> or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> call.  
+  
+ If the original owner applied metadata to the first <xref:System.Windows.DependencyProperty.Register%2A> call that established the dependency property, then that metadata is returned as <xref:System.Windows.DependencyProperty.DefaultMetadata%2A>.  
+  
+ If no metadata was applied in the original <xref:System.Windows.DependencyProperty.Register%2A> call, then default metadata is generated from within the <xref:System.Windows.DependencyProperty.Register%2A> call and this value is returned as the <xref:System.Windows.DependencyProperty.DefaultMetadata%2A>.  
+  
+ The main purpose of having default metadata associated with a <xref:System.Windows.DependencyProperty> is to supply a default value for this property on any <xref:System.Windows.DependencyObject> or a derived type.  
+  
+ For nonattached properties, the metadata type returned by this property cannot be cast to derived types of <xref:System.Windows.PropertyMetadata> type, even if the property was originally registered with a derived metadata type. If you want the originally registered metadata including its original possibly derived metadata type, call <xref:System.Windows.DependencyProperty.GetMetadata%28System.Type%29> instead, passing the original registering type as a parameter.  
+  
+ For attached properties, the type of the metadata returned by this property will match the type given in the original <xref:System.Windows.DependencyProperty.RegisterAttached%2A> registration method.  
+  
+   
+  
+## Examples  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#DPDefaultValue](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpdefaultvalue)]
+[!code-vb[PropertySystemEsoterics#DPDefaultValue](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpdefaultvalue)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for this <see cref="T:System.Windows.DependencyProperty" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Windows.DependencyProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property system uses its own unique identifier <xref:System.Windows.DependencyProperty.GlobalIndex%2A>, and the value of that property is returned by <xref:System.Windows.DependencyProperty.GetHashCode%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata GetMetadata (Type forType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.PropertyMetadata GetMetadata(class System.Type forType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetMetadata(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.PropertyMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="forType">The specific type from which to retrieve the dependency property metadata.</param>
+        <summary>Returns the metadata for this dependency property as it exists on a specified existing type.</summary>
+        <returns>A property metadata object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying either the type or an object reference to use as type is necessary because the metadata can vary from the original registration due either to <xref:System.Windows.DependencyProperty.AddOwner%2A> or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> calls that alter the metadata of the dependency property as it exists on a type.  
+  
+   
+  
+## Examples  
+ The following example gets metadata for a dependency property based on its type. The type is obtained by using a `typeof` operator.  
+  
+ [!code-csharp[PropertySystemEsoterics#GetMetadataType](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/default.xaml.cs#getmetadatatype)]
+ [!code-vb[PropertySystemEsoterics#GetMetadataType](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/default.xaml.vb#getmetadatatype)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata GetMetadata (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.PropertyMetadata GetMetadata(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetMetadata(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.PropertyMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">A dependency object that is checked for type, to determine which type-specific version of the dependency property the metadata should come from.</param>
+        <summary>Returns the metadata for this dependency property as it exists on the specified object instance.</summary>
+        <returns>A property metadata object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying either the type or an object reference is necessary because the metadata of any given dependency property can vary from the original registration due either to <xref:System.Windows.DependencyProperty.AddOwner%2A> or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> calls that can refine the property metadata as it exists on a type.  
+  
+ When you request property metadata based on an instance, you are really just passing the instance so that its type can be evaluated internally. Dependency property metadata does not vary per instance; it is always consistent for any given type-property combination.  
+  
+   
+  
+## Examples  
+ The following example gets metadata for a dependency property based on a specific <xref:System.Windows.DependencyObject> instance.  
+  
+ [!code-csharp[PropertySystemEsoterics#GetMetadataDOInstance](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/default.xaml.cs#getmetadatadoinstance)]
+ [!code-vb[PropertySystemEsoterics#GetMetadataDOInstance](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/default.xaml.vb#getmetadatadoinstance)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata GetMetadata (System.Windows.DependencyObjectType dependencyObjectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.PropertyMetadata GetMetadata(class System.Windows.DependencyObjectType dependencyObjectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetMetadata(System.Windows.DependencyObjectType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.PropertyMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObjectType" Type="System.Windows.DependencyObjectType" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObjectType">A specific object that records the dependency object type from which the dependency property metadata is desired.</param>
+        <summary>Returns the metadata for this dependency property as it exists on a specified type.</summary>
+        <returns>A property metadata object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying either the type or an object reference is necessary because the metadata of any given dependency property can vary from the original registration due either to <xref:System.Windows.DependencyProperty.AddOwner%2A> or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> calls that can refine the property metadata as it exists on a type.  
+  
+   
+  
+## Examples  
+ The following example gets metadata for a dependency property based on its <xref:System.Windows.DependencyObjectType>.  
+  
+ [!code-csharp[PropertySystemEsoterics#GetMetadataDOType](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/default.xaml.cs#getmetadatadotype)]
+ [!code-vb[PropertySystemEsoterics#GetMetadataDOType](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/default.xaml.vb#getmetadatadotype)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalIndex">
+      <MemberSignature Language="C#" Value="public int GlobalIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GlobalIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.GlobalIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an internally generated value that uniquely identifies the dependency property.</summary>
+        <value>A unique numeric identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is an integer, not a [!INCLUDE[TLA#tla_guid](~/includes/tlasharptla-guid-md.md)]. Generally, using this index value is not required, and there is no index access to tables of all dependency properties. Dependency properties should instead be referenced by their identifier fields.  
+  
+ <xref:System.Windows.DependencyProperty.GlobalIndex%2A> is used internally for faster access to data structures that use the <xref:System.Windows.DependencyProperty.GlobalIndex%2A> as a zero-based array index. A similar usage might have applications for designers or tools.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidType">
+      <MemberSignature Language="C#" Value="public bool IsValidType (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsValidType(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.IsValidType(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to check.</param>
+        <summary>Determines whether a specified value is acceptable for this dependency property's type, as checked against the property type provided in the original dependency property registration.</summary>
+        <returns>
+          <see langword="true" /> if the specified value is the registered property type or an acceptable derived type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of `null` is a valid type for reference type dependency properties, or for a <xref:System.Nullable%601> dependency property, and would return `true` for these cases. In cases where the dependency property is neither a reference nor a <xref:System.Nullable%601> type, <xref:System.Windows.DependencyProperty.IsValidType%2A> will return `false` for a null value rather than raise an exception.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Windows.DependencyProperty.IsValidType%2A> as a check before calling <xref:System.Windows.DependencyObject.SetValue%2A> on the dependency property.  
+  
+ [!code-csharp[PropertySystemEsoterics#TrySetValue](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#trysetvalue)]
+ [!code-vb[PropertySystemEsoterics#TrySetValue](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#trysetvalue)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidValue">
+      <MemberSignature Language="C#" Value="public bool IsValidValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsValidValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.IsValidValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to check.</param>
+        <summary>Determines whether the provided value is accepted for the type of property through basic type checking, and also potentially if it is within the allowed range of values for that type.</summary>
+        <returns>
+          <see langword="true" /> if the value is acceptable and is of the correct type or a derived type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a dependency property, an allowed range of values for that type can be specified through a <xref:System.Windows.ValidateValueCallback> that is provided in the dependency property registration.  
+  
+ This method calls <xref:System.Windows.DependencyProperty.IsValidType%2A> internally. If the dependency property in question has no <xref:System.Windows.ValidateValueCallback>,then calling this method is effectively equivalent to calling <xref:System.Windows.DependencyProperty.IsValidType%2A>. If the dependency property does have a <xref:System.Windows.ValidateValueCallback>, and if <xref:System.Windows.DependencyProperty.IsValidType%2A> would have returned `true`, then the value returned will be as implemented in the callback.  
+  
+ A null value is a valid value for reference type dependency properties, or for a <xref:System.Nullable%601> dependency property, and would return `true` for these cases. In cases where the dependency property is neither a reference nor a <xref:System.Nullable%601> type, <xref:System.Windows.DependencyProperty.IsValidType%2A> will return `false` for a null value rather than raise an exception.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Windows.DependencyProperty.IsValidValue%2A> as a check before calling <xref:System.Windows.DependencyObject.SetValue%2A> on the dependency property.  
+  
+ [!code-csharp[PropertySystemEsoterics#TrySetValueWithValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#trysetvaluewithvalidate)]
+ [!code-vb[PropertySystemEsoterics#TrySetValueWithValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#trysetvaluewithvalidate)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the dependency property.</summary>
+        <value>The name of the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets the name provided as the `name` parameter during dependency property registration. This name is immutable, and cannot be `null` or an empty string. Duplicate name registrations on the same owner type are not permitted, and will throw an exception when you attempt to register the duplicate.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Windows.DependencyProperty.Name%2A> of a dependency property must follow the convention of matching the name of its dependency property identifier minus the suffix "Property". For details, see [Custom Dependency Properties](~/docs/framework/wpf/advanced/custom-dependency-properties.md).  
+  
+   
+  
+## Examples  
+ The following example queries various characteristics of a dependency property identifier, including the <xref:System.Windows.DependencyProperty.Name%2A>.  
+  
+ [!code-csharp[PropertySystemEsoterics#DPProps](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpprops)]
+ [!code-vb[PropertySystemEsoterics#DPProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideMetadata">
+      <MemberSignature Language="C#" Value="public void OverrideMetadata (Type forType, System.Windows.PropertyMetadata typeMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OverrideMetadata(class System.Type forType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="forType">The type where this dependency property is inherited and where the provided alternate metadata will be applied.</param>
+        <param name="typeMetadata">The metadata to apply to the dependency property on the overriding type.</param>
+        <summary>Specifies alternate metadata for this dependency property when it is present on instances of a specified type, overriding the metadata that existed for the dependency property as it was inherited from base types.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dependency property metadata should be overridden before the property system uses the dependency property. This equates to the time that specific instances are created using the class that registers the dependency property. Calls to <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> should only be performed within the static constructors of the type that provides itself as the `forType` parameter of this method, or through similar instantiation. Attempting to change metadata after instances of the owner type exist will not raise exceptions, but will result in inconsistent behaviors in the property system.  
+  
+ After metadata for a particular derived class override is established with this method, subsequent attempts to override metadata on this same derived class will raise an exception.  
+  
+ The supplied metadata is merged with the property metadata for the dependency property as it exists on the base owner. Any characteristics that were specified in the original base metadata will persist; only those characteristics that were specifically changed in the new metadata will override the characteristics of the base metadata. Some characteristics such as <xref:System.Windows.PropertyMetadata.DefaultValue%2A> are replaced if specified in the new metadata. Others, such as <xref:System.Windows.PropertyChangedCallback>, are combined. Ultimately, the merge behavior depends on the property metadata type being used for the override, so the behavior described here is for the existing property metadata classes used by [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] dependency properties. For details, see [Dependency Property Metadata](~/docs/framework/wpf/advanced/dependency-property-metadata.md) and [Framework Property Metadata](~/docs/framework/wpf/advanced/framework-property-metadata.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to override metadata on a read-only dependency property (that operation cannot be done using this signature).</exception>
+        <exception cref="T:System.ArgumentException">Metadata was already established for the dependency property as it exists on the provided type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideMetadata">
+      <MemberSignature Language="C#" Value="public void OverrideMetadata (Type forType, System.Windows.PropertyMetadata typeMetadata, System.Windows.DependencyPropertyKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OverrideMetadata(class System.Type forType, class System.Windows.PropertyMetadata typeMetadata, class System.Windows.DependencyPropertyKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata,System.Windows.DependencyPropertyKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+        <Parameter Name="key" Type="System.Windows.DependencyPropertyKey" />
+      </Parameters>
+      <Docs>
+        <param name="forType">The type where this dependency property is inherited and where the provided alternate metadata will be applied.</param>
+        <param name="typeMetadata">The metadata to apply to the dependency property on the overriding type.</param>
+        <param name="key">The access key for a read-only dependency property.</param>
+        <summary>Supplies alternate metadata for a read-only dependency property when it is present on instances of a specified type, overriding the metadata that was provided in the initial dependency property registration. You must pass the <see cref="T:System.Windows.DependencyPropertyKey" /> for the read-only dependency property to avoid raising an exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This signature provides underlying implementation for a read-only dependency property identifier (<xref:System.Windows.DependencyPropertyKey>) method. If overriding metadata for a read-write dependency property, use <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29>.  
+  
+ Dependency property metadata should be overridden before the property system uses the dependency property. This equates to the time that specific objects are created for the class that registers the dependency property. Calls to <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> should only be performed within the static constructors of the type that provides itself as the `forType` parameter of this method, or through similar instantiation. Attempting to change metadata after instances of the owner type exist will not raise exceptions, but will result in inconsistent behaviors in the property system.  
+  
+ After metadata for a particular derived class override is established with this method, subsequent attempts to override metadata on this same derived class will raise an exception.  
+  
+ The supplied metadata is merged with the property metadata for the dependency property as it exists on the base owner. Any characteristics that were specified in the original base metadata will persist; only those characteristics that were specifically changed in the new metadata will override the characteristics of the base metadata. Some characteristics such as <xref:System.Windows.PropertyMetadata.DefaultValue%2A> are replaced if specified in the new metadata. Others, such as <xref:System.Windows.PropertyChangedCallback>, are combined. The merge behavior depends on the property metadata type being used for the override. For details, see [Dependency Property Metadata](~/docs/framework/wpf/advanced/dependency-property-metadata.md) and [Framework Property Metadata](~/docs/framework/wpf/advanced/framework-property-metadata.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerType">
+      <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.OwnerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the object that registered the dependency property with the property system, or added itself as owner of the property.</summary>
+        <value>The type of the object that registered the property or added itself as owner of the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value was provided during property registration. The owner will be either the original registering type in the case of a <xref:System.Windows.DependencyProperty> identifier generated from a <xref:System.Windows.DependencyProperty.Register%2A> call, or the type that added itself as owner in the case of a <xref:System.Windows.DependencyProperty> identifier generated from an <xref:System.Windows.DependencyProperty.AddOwner%2A> call.  
+  
+ The <xref:System.Windows.DependencyProperty.OwnerType%2A> on any given <xref:System.Windows.DependencyProperty> is immutable, and cannot be `null` in a valid <xref:System.Windows.DependencyProperty>.  
+  
+   
+  
+## Examples  
+ The following example gets the owner type based on a dependency property identifier `dp`, and then gets metadata on the owner type for that same identifier. This operation is actually equivalent to getting <xref:System.Windows.DependencyProperty.DefaultMetadata%2A> on `dp`.  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyType">
+      <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.PropertyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that the dependency property uses for its value.</summary>
+        <value>The <see cref="T:System.Type" /> of the property value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property reports the type of the property's value as declared by the original property registration, through the `propertyType` parameter. Similar to the <xref:System.Windows.DependencyProperty.Name%2A>, the property type of a dependency property is immutable after registration.  
+  
+   
+  
+## Examples  
+ The following example queries various characteristics of a dependency property identifier, including the <xref:System.Windows.DependencyProperty.PropertyType%2A>. The type name string of the <xref:System.Windows.DependencyProperty.PropertyType%2A> is obtained from the returned <xref:System.Type>.  
+  
+ [!code-csharp[PropertySystemEsoterics#DPProps](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpprops)]
+ [!code-vb[PropertySystemEsoterics#DPProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the dependency property identified by this <see cref="T:System.Windows.DependencyProperty" /> instance is a read-only dependency property.</summary>
+        <value>
+          <see langword="true" /> if the dependency property is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Read-only dependency properties are registered within the property system by calling the <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A> method as opposed to the <xref:System.Windows.DependencyProperty.Register%2A> method. Attached properties can also be registered as read-only; see <xref:System.Windows.DependencyProperty.RegisterAttachedReadOnly%2A>.  
+  
+ Read-only dependency properties require a <xref:System.Windows.DependencyPropertyKey> identifier rather than a <xref:System.Windows.DependencyProperty> identifier to perform metadata operations such as overriding the metadata or setting the value. If you obtained a collection of <xref:System.Windows.DependencyProperty> identifiers through a call to <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> or another [!INCLUDE[TLA2#tla_api](~/includes/tla2sharptla-api-md.md)] that exposes identifiers, check the <xref:System.Windows.DependencyProperty.ReadOnly%2A> value before attempting to call <xref:System.Windows.DependencyObject.SetValue%2A> or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> using that dependency property identifier as an input parameter, to verify that the dependency property that the identifier represents is not read-only. If the value of <xref:System.Windows.DependencyProperty.ReadOnly%2A> is `true` on a dependency property, there is no programmatic way to obtain a reference to the <xref:System.Windows.DependencyPropertyKey> identifier of that dependency property, from the metadata or from the <xref:System.Windows.DependencyProperty> identifier; the identifier must be available as a static field in order to call <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29> against a read-only dependency property.  
+  
+ When you create a custom dependency property, and register it as read-only, you should define only a get accessor for the [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] wrapper property. Otherwise, your class will have a confusing object model for the property wrapper as compared to the access to the backing dependency property. For details, see [Custom Dependency Properties](~/docs/framework/wpf/advanced/custom-dependency-properties.md) or [Read-Only Dependency Properties](~/docs/framework/wpf/advanced/read-only-dependency-properties.md).  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata and the dependency property identifier properties from various dependency property fields, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPProps](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpprops)]
+ [!code-vb[PropertySystemEsoterics#DPProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpprops)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty Register (string name, Type propertyType, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register. The name must be unique within the registration namespace of the owner type.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <summary>Registers a dependency property with the specified property name, property type, and owner type.</summary>
+        <returns>A dependency property identifier that should be used to set the value of a <see langword="public static readonly" /> field in your class. That identifier is then used to reference the dependency property later, for operations such as setting its value programmatically or obtaining metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+   
+  
+## Examples  
+ [!code-csharp[WPFAquariumSln#Register3Param](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#register3param)]
+ [!code-vb[WPFAquariumSln#Register3Param](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#register3param)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty Register (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="typeMetadata">Property metadata for the dependency property.</param>
+        <summary>Registers a dependency property with the specified property name, property type, owner type, and property metadata.</summary>
+        <returns>A dependency property identifier that should be used to set the value of a <see langword="public static readonly" /> field in your class. That identifier is then used to reference the dependency property later, for operations such as setting its value programmatically or obtaining metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty Register (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+        <Parameter Name="validateValueCallback" Type="System.Windows.ValidateValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="typeMetadata">Property metadata for the dependency property.</param>
+        <param name="validateValueCallback">A reference to a callback that should perform any custom validation of the dependency property value beyond typical type validation.</param>
+        <summary>Registers a dependency property with the specified property name, property type, owner type, property metadata, and a value validation callback for the property.</summary>
+        <returns>A dependency property identifier that should be used to set the value of a <see langword="public static readonly" /> field in your class. That identifier is then used to reference the dependency property later, for operations such as setting its value programmatically or obtaining metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+   
+  
+## Examples  
+ The following example registers a dependency property, including a validation callback (the callback definition is not shown; for details on the callback definition, see <xref:System.Windows.ValidateValueCallback>).  
+  
+ [!code-csharp[DPCallbackOverride#CurrentDefinitionWithWrapper](~/samples/snippets/csharp/VS_Snippets_Wpf/DPCallbackOverride/CSharp/SDKSampleLibrary/class1.cs#currentdefinitionwithwrapper)]
+ [!code-vb[DPCallbackOverride#CurrentDefinitionWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPCallbackOverride/visualbasic/sdksamplelibrary/class1.vb#currentdefinitionwithwrapper)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAttached">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <summary>Registers an attached property with the specified property name, property type, and owner type.</summary>
+        <returns>A dependency property identifier that should be used to set the value of a <see langword="public static readonly" /> field in your class. That identifier is then used to reference the dependency property later, for operations such as setting its value programmatically or obtaining metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attached property is a property concept defined by [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached properties as dependency properties. Because the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] attached properties are dependency properties, they can have metadata applied that can be used by the general property system for operations such as reporting layout characteristics. For more information, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+   
+  
+## Examples  
+ The following example registers an attached property on an abstract class using this <xref:System.Windows.DependencyProperty.RegisterAttached%2A> signature.  
+  
+ [!code-csharp[WPFAquariumSln#RegisterAttachedBubbler2](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler2)]
+ [!code-vb[WPFAquariumSln#RegisterAttachedBubbler2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAttached">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="defaultMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="defaultMetadata">Property metadata for the dependency property. This can include the default value as well as other characteristics.</param>
+        <summary>Registers an attached property with the specified property name, property type, owner type, and property metadata.</summary>
+        <returns>A dependency property identifier that should be used to set the value of a <see langword="public static readonly" /> field in your class. That identifier is then used to reference the dependency property later, for operations such as setting its value programmatically or obtaining metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attached property is a property concept defined by [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached properties as dependency properties. Because the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] attached properties are dependency properties, they can have metadata applied that can be used by the general property system for operations such as reporting layout characteristics. For more information, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+## Use RegisterAttached for Value-inheriting Dependency Properties  
+ One particular scenario for registering a dependency property with <xref:System.Windows.DependencyProperty.RegisterAttached%2A> instead of <xref:System.Windows.DependencyProperty.Register%2A> is to support property value inheritance. You should register value-inheriting dependency properties with <xref:System.Windows.DependencyProperty.RegisterAttached%2A> even if the class defines property wrapper accessors that expose the dependency property, and even if you do not intend to expose Get* and Set* static methods to provide true attached property support accessors.   Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain element boundaries in the runtime tree is undefined. Registering the property as attached effectively makes the attached property a global property to the property system, and assures that property value inheritance works across all boundaries in an element tree. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAttached">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="defaultMetadata" Type="System.Windows.PropertyMetadata" />
+        <Parameter Name="validateValueCallback" Type="System.Windows.ValidateValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="defaultMetadata">Property metadata for the dependency property. This can include the default value as well as other characteristics.</param>
+        <param name="validateValueCallback">A reference to a callback that should perform any custom validation of the dependency property value beyond typical type validation.</param>
+        <summary>Registers an attached property with the specified property type, owner type, property metadata, and value validation callback for the property.</summary>
+        <returns>A dependency property identifier that should be used to set the value of a <see langword="public static readonly" /> field in your class. That identifier is then used to reference the dependency property later, for operations such as setting its value programmatically or obtaining metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attached property is a property concept defined by [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] implements attached properties as dependency properties. Because the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] attached properties are dependency properties, they can have metadata applied that can be used by the general property system for operations such as reporting layout characteristics. For more information, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+## Use RegisterAttached for Value-inheriting Dependency Properties  
+ One particular scenario for registering a dependency property with <xref:System.Windows.DependencyProperty.RegisterAttached%2A> instead of <xref:System.Windows.DependencyProperty.Register%2A> is to support property value inheritance. You should register value-inheriting dependency properties with <xref:System.Windows.DependencyProperty.RegisterAttached%2A> even if the class defines property wrapper accessors that expose the dependency property, and even if you do not intend to expose Get* and Set* static methods to provide true attached property support accessors.   Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain element boundaries in the runtime tree is undefined. Registering the property as attached effectively makes the attached property a global property to the property system, and assures that property value inheritance works across all boundaries in an element tree. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+   
+  
+## Examples  
+ The following example registers an attached property on an abstract class using this <xref:System.Windows.DependencyProperty.RegisterAttached%2A> signature. This attached property is an enumeration type property, and the registration adds a validation callback to verify that the provided value is a value of the enumeration.  
+  
+ [!code-csharp[WPFAquariumSln#RegisterAttachedBubbler2](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler2)]
+ [!code-vb[WPFAquariumSln#RegisterAttachedBubbler2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAttachedReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterAttachedReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterAttachedReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="defaultMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="defaultMetadata">Property metadata for the dependency property.</param>
+        <summary>Registers a read-only attached property, with the specified property type, owner type, and property metadata.</summary>
+        <returns>A dependency property key that should be used to set the value of a static read-only field in your class, which is then used to reference the dependency property later.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the type <xref:System.Windows.DependencyPropertyKey>, whereas <xref:System.Windows.DependencyProperty.RegisterAttached%2A> returns the type <xref:System.Windows.DependencyProperty>. Typically, the keys that represent read-only properties are not made public, because the keys can be used to set the dependency property value by calling <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>. Your class design will affect your requirements, but it is generally recommended to limit the access and visibility of any <xref:System.Windows.DependencyPropertyKey> to only those parts of your code that are necessary to set that dependency property as part of class or application logic. It is also recommended that you expose a dependency property identifier for the read-only dependency property, by exposing the value of <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A?displayProperty=fullName> as a `public static readonly` field on your class.  
+  
+ Read-only attached properties are a rare scenario, because the primary scenario for an attached property is its use in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Without a public setter, an attached property cannot be set in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax.  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+## Use RegisterAttached for Value-inheriting Dependency Properties  
+ One particular scenario for registering a dependency property as attached is to support property value inheritance. You should register value-inheriting dependency properties with <xref:System.Windows.DependencyProperty.RegisterAttached%2A> even if the class defines property wrapper accessors that expose the dependency property, and even if you do not intend to expose Get* and Set* static methods to provide true attached property support accessors.   Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain element boundaries in the runtime tree is undefined. Registering the property as attached effectively makes the attached property a global property to the property system, and assures that property value inheritance works across all boundaries in an element tree. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAttachedReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterAttachedReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterAttachedReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="defaultMetadata" Type="System.Windows.PropertyMetadata" />
+        <Parameter Name="validateValueCallback" Type="System.Windows.ValidateValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="defaultMetadata">Property metadata for the dependency property.</param>
+        <param name="validateValueCallback">A reference to a user-created callback that should perform any custom validation of the dependency property value beyond typical type validation.</param>
+        <summary>Registers a read-only attached property, with the specified property type, owner type, property metadata, and a validation callback.</summary>
+        <returns>A dependency property key that should be used to set the value of a static read-only field in your class, which is then used to reference the dependency property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the type <xref:System.Windows.DependencyPropertyKey>, whereas <xref:System.Windows.DependencyProperty.RegisterAttached%2A> returns the type <xref:System.Windows.DependencyProperty>. Typically, the keys that represent the type <xref:System.Windows.DependencyProperty>. Typically, the keys that represent read-only properties are not made public, because the keys can be used to set the dependency property value by calling <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>. Your class design will affect your requirements, but it is generally recommended to limit the access and visibility of any <xref:System.Windows.DependencyPropertyKey> to only those parts of your code that are necessary to set that dependency property as part of class or application logic. It is also recommended that you expose a dependency property identifier for the read-only dependency property, by exposing the value of <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A?displayProperty=fullName> as a `public static readonly` field on your class.  
+  
+ Read-only attached properties are a rare scenario, because the primary scenario for an attached property is its use in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Without a public setter, an attached property cannot be set in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax.  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+## Use RegisterAttached for Value-inheriting Dependency Properties  
+ One particular scenario for registering a dependency property as attached instead of <xref:System.Windows.DependencyProperty.Register%2A> is to support property value inheritance. You should register value-inheriting dependency properties with <xref:System.Windows.DependencyProperty.RegisterAttached%2A> even if the class defines property wrapper accessors that expose the dependency property, and even if you do not intend to expose Get* and Set* static methods to provide true attached property support accessors.   Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain element boundaries in the runtime tree is undefined. Registering the property as attached effectively makes the attached property a global property to the property system, and assures that property value inheritance works across all boundaries in an element tree. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="typeMetadata">Property metadata for the dependency property.</param>
+        <summary>Registers a read-only dependency property, with the specified property type, owner type, and property metadata.</summary>
+        <returns>A dependency property key that should be used to set the value of a static read-only field in your class, which is then used to reference the dependency property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the type <xref:System.Windows.DependencyPropertyKey>, whereas <xref:System.Windows.DependencyProperty.RegisterAttached%2A> returns the type <xref:System.Windows.DependencyProperty>. Typically, the keys that represent read-only properties are not made public, because the keys can be used to set the dependency property value by calling <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>. Your class design will affect your requirements, but it is generally recommended to limit the access and visibility of any <xref:System.Windows.DependencyPropertyKey> to only those parts of your code that are necessary to set that dependency property as part of class or application logic. It is also recommended that you expose a dependency property identifier for the read-only dependency property, by exposing the value of <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A?displayProperty=fullName> as a `public static readonly` field on your class.  
+  
+ Read-only dependency properties are a fairly typical scenario both in the existing [!INCLUDE[TLA2#tla_api](~/includes/tla2sharptla-api-md.md)] and for customization scenarios, because other [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] features might require a dependency property even if that property is not intended to be settable by callers. You can use the value of a read-only dependency property as the basis for other property system operations that take a dependency property, such as basing a <xref:System.Windows.Trigger> on the dependency property in a style.  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+   
+  
+## Examples  
+ The following example registers an `AquariumSize` dependency property as read-only. The example defines `AquariumSizeKey` as an internal key (so that other classes in the assembly could override metadata) and exposes the dependency property identifier based on that key as `AquariumSizeProperty`. Also, a wrapper is created for `AquariumSize`, with only a get accessor.  
+  
+ [!code-csharp[WPFAquariumSln#RODP](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#rodp)]
+ [!code-vb[WPFAquariumSln#RODP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#rodp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyPropertyKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+        <Parameter Name="validateValueCallback" Type="System.Windows.ValidateValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the dependency property to register.</param>
+        <param name="propertyType">The type of the property.</param>
+        <param name="ownerType">The owner type that is registering the dependency property.</param>
+        <param name="typeMetadata">Property metadata for the dependency property.</param>
+        <param name="validateValueCallback">A reference to a user-created callback that should perform any custom validation of the dependency property value beyond typical type validation.</param>
+        <summary>Registers a read-only dependency property, with the specified property type, owner type, property metadata, and a validation callback.</summary>
+        <returns>A dependency property key that should be used to set the value of a static read-only field in your class, which is then used to reference the dependency property later.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the type <xref:System.Windows.DependencyPropertyKey>, whereas <xref:System.Windows.DependencyProperty.RegisterAttached%2A> returns the type <xref:System.Windows.DependencyProperty>. Typically, the keys that represent read-only properties are not made public, because the keys can be used to set the dependency property value by calling <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyPropertyKey%2CSystem.Object%29>. Your class design will affect your requirements, but it is generally recommended to limit the access and visibility of any <xref:System.Windows.DependencyPropertyKey> to only those parts of your code that are necessary to set that dependency property as part of class or application logic. It is also recommended that you expose a dependency property identifier for the read-only dependency property, by exposing the value of <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A?displayProperty=fullName> as a `public static readonly` field on your class.  
+  
+ Read-only dependency properties are a fairly typical scenario. You can use the value of a read-only dependency property as the basis for other property system operations that take a dependency property, such as basing a <xref:System.Windows.Trigger> on the dependency property in a style.  
+  
+ For more information on dependency property registration, see <xref:System.Windows.DependencyProperty>.  
+  
+ Validation on a read-only dependency property might be less important. The nonpublic access level you specify for the key reduces the likelihood for arbitrary invalid input.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string representation of the dependency property.</summary>
+        <returns>The string representation of the dependency property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation returns the <xref:System.Windows.DependencyProperty.Name%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsetValue">
+      <MemberSignature Language="C#" Value="public static readonly object UnsetValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object UnsetValue" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DependencyProperty.UnsetValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a static value that is used by the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system rather than <see langword="null" /> to indicate that the property exists, but does not have its value set by the property system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.DependencyProperty.UnsetValue> is a sentinel value that is used for scenarios where the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system is unable to determine a requested <xref:System.Windows.DependencyProperty> value. <xref:System.Windows.DependencyProperty.UnsetValue> is used rather than `null`, because `null` could be a valid property value, as well as a valid (and frequently used) <xref:System.Windows.PropertyMetadata.DefaultValue%2A>.  
+  
+ <xref:System.Windows.DependencyProperty.UnsetValue> is never returned out of <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=fullName>. When you call <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=fullName> on a dependency property on a <xref:System.Windows.DependencyObject> instance, one of the following applies:  
+  
+-   A dependency property has a default value established in metadata and that value is returned. This value might come from <xref:System.Windows.DependencyProperty.DefaultMetadata%2A>.  
+  
+-   Some other value was established by the property system, and the default value is no longer relevant. For details, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+  
+ Setting a <xref:System.Windows.PropertyMetadata.DefaultValue%2A> of <xref:System.Windows.DependencyProperty.UnsetValue> is specifically disallowed.  
+  
+ <xref:System.Windows.DependencyObject.ReadLocalValue%2A?displayProperty=fullName> returns <xref:System.Windows.DependencyProperty.UnsetValue> when the requested property has not been locally set.  
+  
+ <xref:System.Windows.DependencyProperty.UnsetValue> has a special meaning when used as the return value of a <xref:System.Windows.CoerceValueCallback>. For details, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
+  
+ If you are binding to a database, note that <xref:System.Windows.DependencyProperty.UnsetValue> is not equivalent to <xref:System.DBNull.Value>, in a similar way to how <xref:System.DBNull.Value> is not equivalent to a true null.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateValueCallback">
+      <MemberSignature Language="C#" Value="public System.Windows.ValidateValueCallback ValidateValueCallback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.ValidateValueCallback ValidateValueCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.ValidateValueCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ValidateValueCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value validation callback for the dependency property.</summary>
+        <value>The value validation callback for this dependency property, as provided for the <paramref name="validateValueCallback" /> parameter in the original dependency property registration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will contain `null` for any dependency property with no registered validation callback.  
+  
+ Validate value callbacks must act in a static sense: validation applied through the <xref:System.Windows.ValidateValueCallback> cannot determine whether the provided value is valid for any particular instance. The callback can only determine whether all objects that possess the dependency property should or should not accept the provided value as valid. If you need to perform validation that relies on knowing the values of other dependency properties on a particular instance, use a <xref:System.Windows.CoerceValueCallback> instead. The <xref:System.Windows.CoerceValueCallback> is registered as part of dependency property metadata, rather than directly within the dependency property identifier. For details, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,131 @@
+<Type Name="Saml2AttributeStatement" FullName="System.IdentityModel.Tokens.Saml2AttributeStatement">
+  <TypeSignature Language="C#" Value="public class Saml2AttributeStatement : System.IdentityModel.Tokens.Saml2Statement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2AttributeStatement extends System.IdentityModel.Tokens.Saml2Statement" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2AttributeStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.Saml2Statement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the AttributeStatement element specified in [Saml2Core, 2.7.3].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2AttributeStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class with no attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property is initialized to an empty collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2AttributeStatement (System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.Saml2Attribute})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the Attribute elements contained in this statement.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the attributes in the specified collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributes" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ One of the elements of the collection specified by <paramref name="attributes" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2AttributeStatement (System.IdentityModel.Tokens.Saml2Attribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.Saml2Attribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2AttributeStatement.#ctor(System.IdentityModel.Tokens.Saml2Attribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.IdentityModel.Tokens.Saml2Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">A <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that represents a single Attribute element contained in this statement.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes%2A> property (collection) is initialized with the specified attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attribute" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2AttributeStatement.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of attributes contained in the attribute statement. These attributes are associated with the assertion subject. [Saml2Core, 2.7.3]</summary>
+        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the attributes in the statement.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains the Attribute elements contained in the AttributeStatement element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

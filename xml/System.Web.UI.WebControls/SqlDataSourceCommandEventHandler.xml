@@ -1,0 +1,45 @@
+<Type Name="SqlDataSourceCommandEventHandler" FullName="System.Web.UI.WebControls.SqlDataSourceCommandEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void SqlDataSourceCommandEventHandler(object sender, SqlDataSourceCommandEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlDataSourceCommandEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceCommandEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.SqlDataSource.Updating" />, <see cref="E:System.Web.UI.WebControls.SqlDataSource.Inserting" />, and <see cref="E:System.Web.UI.WebControls.SqlDataSource.Deleting" /> events of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Inserting> event to perform any preprocessing steps, such as adding a parameter to the <xref:System.Data.Common.DbCommand> object contained by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to capture the value of an output parameter, before a database action is performed. In this example an insert is performed by a <xref:System.Web.UI.WebControls.DetailsView> control in a classic master-detail scenario, using a stored procedure. The value of the output parameter, which represents the primary key of the newly inserted row, is examined when the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event is raised after the operation completes.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/CS/sql15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_15sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_15sql/VB/sql15vb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to handle the <xref:System.Web.UI.WebControls.GridView.RowUpdating> event raised by the <xref:System.Web.UI.WebControls.GridView> control, to possibly cancel a database action performed by a <xref:System.Web.UI.WebControls.SqlDataSource> control associated with the <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_6sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_6sql/CS/sql6cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_6sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_6sql/VB/sql6vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

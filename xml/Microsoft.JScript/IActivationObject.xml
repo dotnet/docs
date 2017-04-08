@@ -1,0 +1,138 @@
+<Type Name="IActivationObject" FullName="Microsoft.JScript.IActivationObject">
+  <TypeSignature Language="C#" Value="public interface IActivationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivationObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IActivationObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods for resolving scope. This interface is implemented by all objects that take part in a scope hierarchy.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDefaultThisObject">
+      <MemberSignature Language="C#" Value="public object GetDefaultThisObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetDefaultThisObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetDefaultThisObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets the current default scope. Either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
+        <returns>The current default scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetField">
+      <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetField (string name, int lexLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name, int32 lexLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetField(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="lexLevel" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the field to search for.</param>
+        <param name="lexLevel">The lexical level to search.</param>
+        <summary>When implemented in a class, returns a field that has the specified name by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
+        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object that has the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method applies to fields that cannot be resolved at compile time. This happens when an `eval` expression refers to a field in the outer scope. Because the `eval` expression can declare a local field with the same name, the field cannot be early bound to the outer scope field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalScope">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.GlobalScope GetGlobalScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.GlobalScope GetGlobalScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetGlobalScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets the global scope by searching the scope hierarchy until it finds a scope that includes static variables, for example, a module scope.</summary>
+        <returns>The global scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalField">
+      <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetLocalField (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetLocalField(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetLocalField(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the field.</param>
+        <summary>When implemented in a class, gets the local declaration of a field that has the specified name. This is used at compile time for error checking.</summary>
+        <returns>The local declaration of the field.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemberValue">
+      <MemberSignature Language="C#" Value="public object GetMemberValue (string name, int lexlevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetMemberValue(string name, int32 lexlevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IActivationObject.GetMemberValue(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="lexlevel" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to search for.</param>
+        <param name="lexlevel">The lexical level to search.</param>
+        <summary>When implemented in a class, gets the value of the specified member by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
+        <returns>The value of the member <paramref name="name" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method applies to members that cannot be resolved at compile time. This occurs when an `eval` expression refers to a member in the outer scope. Because the `eval` expression can declare a local member with the same name, the member cannot be early bound to the outer scope member.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

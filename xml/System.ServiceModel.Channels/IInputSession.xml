@@ -1,0 +1,27 @@
+<Type Name="IInputSession" FullName="System.ServiceModel.Channels.IInputSession">
+  <TypeSignature Language="C#" Value="public interface IInputSession : System.ServiceModel.Channels.ISession" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputSession implements class System.ServiceModel.Channels.ISession" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IInputSession" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.ISession</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the interface for the session implemented on the receiving side of a one-way communication between messaging endpoints.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On the other side of the message interchange, the <xref:System.ServiceModel.Channels.IOutputSession> interface represents an outgoing <xref:System.ServiceModel.Channels.ISession> implemented on the sending side of a one-way communication between messaging endpoints. Note these two sessions are distinct.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

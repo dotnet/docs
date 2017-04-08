@@ -1,0 +1,307 @@
+<Type Name="EntityPropertyMappingAttribute" FullName="System.Data.Services.Common.EntityPropertyMappingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EntityPropertyMappingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityPropertyMappingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.EntityPropertyMappingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Attribute that specifies a custom mapping between properties of an entity type and elements of an entry in a feed returned by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> is used to define custom feed mapping in the data model of a reflection provider. This attribute is also applied to generated client data service classes when the metadata used to generate the classes indicates that custom feed mappings are defined in the data model. This information is necessary to make sure that the client can create and consume messages that support custom feeds. For more information, see [Feed Customization](~/docs/framework/data/wcf/feed-customization-wcf-data-services.md).  
+  
+   
+  
+## Examples  
+ In the following example, both properties of the `Order` type are mapped to existing feed elements. The `Product` property of the `Item` type is mapped to a custom feed attribute in a separate namespace.  
+  
+ [!code-csharp[Astoria Custom Feeds#CustomIQueryableFeeds](~/samples/snippets/csharp/VS_Snippets_Misc/astoria custom feeds/cs/orderitems.svc.cs#customiqueryablefeeds)]
+ [!code-vb[Astoria Custom Feeds#CustomIQueryableFeeds](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria custom feeds/vb/orderitems.svc.vb#customiqueryablefeeds)]  
+  
+ The previous example returns the following result for the URI `http://myservice/OrderItems.svc/Orders(0)?$expand=Items`.  
+  
+ [!code-xml[Astoria Custom Feeds#IQueryableFeedResultInline](~/samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/iqueryablefeedresultinline.xml#iqueryablefeedresultinline)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityPropertyMappingAttribute (string sourcePath, System.Data.Services.Common.SyndicationItemProperty targetSyndicationItem, System.Data.Services.Common.SyndicationTextContentKind targetTextContentKind, bool keepInContent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourcePath, valuetype System.Data.Services.Common.SyndicationItemProperty targetSyndicationItem, valuetype System.Data.Services.Common.SyndicationTextContentKind targetTextContentKind, bool keepInContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.EntityPropertyMappingAttribute.#ctor(System.String,System.Data.Services.Common.SyndicationItemProperty,System.Data.Services.Common.SyndicationTextContentKind,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourcePath" Type="System.String" />
+        <Parameter Name="targetSyndicationItem" Type="System.Data.Services.Common.SyndicationItemProperty" />
+        <Parameter Name="targetTextContentKind" Type="System.Data.Services.Common.SyndicationTextContentKind" />
+        <Parameter Name="keepInContent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sourcePath">The name of the property, as string, of the entity type that is mapped to the specified property of the feed item.</param>
+        <param name="targetSyndicationItem">A <see cref="T:System.Data.Services.Common.SyndicationItemProperty" /> value that represents the element in the feed to which to map the property. This value must be set to <c>None</c> if the <see cref="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath" /> is not <see langword="null" />.</param>
+        <param name="targetTextContentKind">A <see cref="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind" /> value that identifies the format of the content to display in the feed.</param>
+        <param name="keepInContent">Boolean value that is <see langword="true" /> when the property being mapped should appear both in its mapped-to location and in the content section of the feed.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Common.EntityPropertyMappingAttribute" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityPropertyMappingAttribute (string sourcePath, string targetPath, string targetNamespacePrefix, string targetNamespaceUri, bool keepInContent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourcePath, string targetPath, string targetNamespacePrefix, string targetNamespaceUri, bool keepInContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.EntityPropertyMappingAttribute.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourcePath" Type="System.String" />
+        <Parameter Name="targetPath" Type="System.String" />
+        <Parameter Name="targetNamespacePrefix" Type="System.String" />
+        <Parameter Name="targetNamespaceUri" Type="System.String" />
+        <Parameter Name="keepInContent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sourcePath">The name of the property of the entity type, as string, that is mapped to the specified property in the feed.</param>
+        <param name="targetPath">The name of the target, as string, in the resulting feed to which the property is mapped.</param>
+        <param name="targetNamespacePrefix">This parameter, together with <c>targetNamespaceUri</c>, specifies the namespace in which the <c>targetPath</c> element exists.</param>
+        <param name="targetNamespaceUri">Specifies the namespace URI of the element, as string, specified by the <c>targetName</c> property.</param>
+        <param name="keepInContent">Boolean value that is <see langword="true" /> when the property being mapped should appear both in its mapped-to location and in the content section of the feed.</param>
+        <summary>Creates an instance of the <see cref="T:System.Data.Services.Common.EntityPropertyMappingAttribute" /> to map a property to a custom feed element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If neither `targetNamespacePrefix` nor `targetNamespaceUri` are specified, the `targetName` will be put in the default namespace. If `targetNamespacePrefix` is not specified, a prefix is autogenerated. If `targetNamespacePrefix` is specified, but `targetNamespaceUri` is not specified, an exception is thrown at construction time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepInContent">
+      <MemberSignature Language="C#" Value="public bool KeepInContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepInContent" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether a property value should be repeated both in the content section of the feed and in the mapped location.</summary>
+        <value>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> when the property is mapped into both locations in the feed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Whenthe value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>is `true`, the feed is backward compatible with [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] client applications that use protocol version 1.0. When the value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.KeepInContent%2A>``is `false`, the protocol version used by the data service must be 2.0 or later versions. For more information, see [Data Service Versioning](~/docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourcePath">
+      <MemberSignature Language="C#" Value="public string SourcePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourcePath" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property of the syndication item that will be mapped to the specified element of the feed.</summary>
+        <value>String value that contains property name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath%2A> property cannot directly reference a complex type. For complex types, you must use a path expression where property names are separated by a backslash (`/`) character. For example, the following values are permitted for an entity type `Person` with an integer property `Age` and a complex property `Address`:  
+  
+-   `Age`  
+  
+-   `Address/Street`  
+  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath%2A> property cannot be set to a value that contains a space or any other character that is not valid in a property name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetNamespacePrefix">
+      <MemberSignature Language="C#" Value="public string TargetNamespacePrefix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetNamespacePrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string value that, together with <see cref="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri" />, specifies the namespace in which the <see cref="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath" /> element exists.</summary>
+        <value>String value that contains the target namespace prefix.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If neither <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> nor <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri%2A> are specified, the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> will be put in the default namespace. If <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> is not specified, a prefix is autogenerated. If <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> is specified, but <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri%2A> is not specified, an exception is thrown at construction time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetNamespaceUri">
+      <MemberSignature Language="C#" Value="public string TargetNamespaceUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetNamespaceUri" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string value that specifies the namespace URI of the element specified by the <see cref="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath" /> property.</summary>
+        <value>String that contains the namespace URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If mapping to non-syndication element/attribute, this property is the namespace for the target element/attribute.  
+  
+ If neither <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> nor <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri%2A> are specified, the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> will be put in the default namespace. If <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> is not specified, a prefix is autogenerated. If <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> is specified, but <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri%2A> is not specified, an exception is thrown at construction time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPath">
+      <MemberSignature Language="C#" Value="public string TargetPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetPath" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the custom target in the feed to which the property is mapped.</summary>
+        <value>String value with target XML element or attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property is set, the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri%2A> and <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> properties must also be set.  
+  
+ The value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> must be `null` (`Nothing` in Visual Basic) when the value of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetSyndicationItem%2A> property is anything other than <xref:System.Data.Services.Common.SyndicationItemProperty>.  
+  
+ <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> must be a path expression in which nested elements are separated by a backslash (`/`) and attributes are specified by an ampersand (`@`). In the following example, the string `UnitsInStock/@ReorderLevel` maps a property value to an attribute named `ReorderLevel` on a child element named `UnitsInStock` of the root entry element.  
+  
+ [!code-xml[Astoria Custom Feeds#EdmFeedMappedToAttributeSpecific](~/samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedmappedtoattributespecific)]  
+  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property cannot contain whitespace.  
+  
+ The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property is not expressed as a true XPath expression, but the specified element and attribute names must represent well-formed XML elements and attributes. An invalid value will cause an exception to occur when the data service is initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetSyndicationItem">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Common.SyndicationItemProperty TargetSyndicationItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Common.SyndicationItemProperty TargetSyndicationItem" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetSyndicationItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a property on the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If mapping to syndication element, this property is the name of the syndication item.  
+  
+ This value must be set to `None` if the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> is not null.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetTextContentKind">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Common.SyndicationTextContentKind TargetTextContentKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Common.SyndicationTextContentKind TargetTextContentKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationTextContentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of content of the property mapped by <see cref="T:System.Data.Services.Common.EntityPropertyMappingAttribute" />.</summary>
+        <value>A string that identifies the type of content in the feed element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If mapping to syndication content, this property is the content type of syndication item.  
+  
+ When you specify a value of <xref:System.Data.Services.Common.SyndicationTextContentKind> for the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind%2A> attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

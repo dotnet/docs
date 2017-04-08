@@ -1,0 +1,316 @@
+<Type Name="DynamicValidator" FullName="System.Web.DynamicData.DynamicValidator">
+  <TypeSignature Language="C#" Value="public class DynamicValidator : System.Web.UI.WebControls.BaseValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicValidator extends System.Web.UI.WebControls.BaseValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.BaseValidator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.DynamicData.DynamicValidator), "DynamicValidator.bmp")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enforces and catches exceptions that are thrown in a data model and displays the error.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicValidator> control can be used with data fields or data entities. It catches exceptions that are thrown in LINQ-to-SQL classes or entity in extensibility methods in the data model. The <xref:System.Web.DynamicData.DynamicValidator> control is associated with the controls that accept user input. For example, a <xref:System.Web.DynamicData.DynamicValidator> control that is associated with a text box that accepts user input for a UnitsInStock field in a Products table catches and displays the exception that is thrown if the input is greater or less than the allowable units in the data model.  
+  
+ By default, ASP.NET Dynamic Data does not display all exceptions from the data model in the page, because some database exceptions might contain confidential information. Dynamic Data displays <xref:System.Web.DynamicData.DynamicValidator.ValidationException%2A> values only. If you want your application to display other exceptions, you can create a <xref:System.Web.DynamicData.DynamicValidator> control, provide the exceptions that you want to display, and attach the exceptions to the <xref:System.Web.DynamicData.DynamicValidator> control. The exceptions that are thrown in the data model will be displayed in all pages in the application.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Web.DynamicData.DynamicValidator> control class that displays other exceptions in all pages.  
+  
+ [Visual Basic]  
+  
+```  
+''' <summary>   
+''' Display other exceptions in all pages.   
+''' </summary>   
+Public Class MyDynamicValidator   
+    Inherits DynamicValidator   
+  
+    Protected Overloads Overrides Sub ValidateException(ByVal exception As Exception)   
+        ' If it's not an exception that DynamicValidator displays find   
+        ' the innermost exception.   
+        If Not (TypeOf exception Is IDynamicValidatorException) AndAlso _  
+                Not (TypeOf exception Is ValidationException) Then   
+            While exception.InnerException IsNot Nothing   
+                exception = exception.InnerException   
+            End While   
+  
+            ' Wrap it in a ValidationException so that the base code   
+            ' does not ignore it.   
+            If ExceptionShouldBeDisplayedInPage(exception) Then   
+                exception = New ValidationException(Nothing, exception)   
+            End If   
+        End If   
+  
+        ' Call the base class for the exception that is modified.  
+        MyBase.ValidateException(exception)   
+    End Sub   
+  
+    Private Function ExceptionShouldBeDisplayedInPage(ByVal e As Exception) _  
+            As Boolean   
+        ' Add code to find the exception and   
+        ' decide whether it should be shown in the page.  
+  
+        Return True   
+    End Function   
+End Class  
+```  
+  
+ [C#]  
+  
+```  
+/// <summary>  
+/// Display other exceptions in all pages.   
+/// </summary>  
+public class MyDynamicValidator : DynamicValidator {  
+  
+    protected override void ValidateException(Exception exception) {  
+        // If it's not an exception that DynamicValidator displays find   
+        // the innermost exception.  
+        if (!(exception is IDynamicValidatorException) && !(exception   
+              is ValidationException)) {  
+            while (exception.InnerException != null) {  
+                exception = exception.InnerException;  
+            }  
+  
+            // Wrap it in a ValidationException so that the base code   
+            // does not ignore it.  
+            if (ExceptionShouldBeDisplayedInPage(exception)) {  
+                exception = new ValidationException(null, exception);  
+            }  
+        }  
+  
+        // Call the base class on the exception that is modified.  
+        base.ValidateException(exception);  
+    }  
+  
+    private bool ExceptionShouldBeDisplayedInPage(Exception e) {  
+        // Add your code to find the exception and  
+        // decides whether it should be shown in the page.  
+  
+           return true;  
+    }  
+}  
+```  
+  
+ The following example shows how to use tag remapping in the web.config file to display the exception in all the Web pages.  
+  
+```  
+<pages>  
+  <tagMapping>  
+    <add tagType="System.Web.DynamicData.DynamicValidator"   
+        mappedTagType="MyDynamicValidator"/>  
+  </tagMapping>  
+</pages>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicValidator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn Column { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the column to validate.</summary>
+        <value>The column to validate, or <see langword="null" /> if a data entity is validated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnName">
+      <MemberSignature Language="C#" Value="public string ColumnName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ColumnName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.ColumnName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the column to validate.</summary>
+        <value>The name of the column to validate, or <see langword="null" /> if a data entity is validated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPropertiesValid">
+      <MemberSignature Language="C#" Value="protected override bool ControlPropertiesValid ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ControlPropertiesValid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ControlPropertiesValid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the properties of the specified <see cref="T:System.Web.DynamicData.DynamicValidator" /> control are valid.</summary>
+        <returns>
+          <see langword="true" />, if the properties of the specified validation control are valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is overridden from the base class. The call to the base class fails if the control you try to validate does not have a validation property. For example if the control is a <xref:System.Web.UI.WebControls.GridView>, the base class will fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateIsValid">
+      <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.EvaluateIsValid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the value in the input control to validate is valid.</summary>
+        <returns>
+          <see langword="true" /> if the validation control that is evaluated is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see langword="Init" /> event to initialize the <see cref="T:System.Web.DynamicData.DynamicValidator" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateException">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateException (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateException(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ValidateException(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception that is thrown.</param>
+        <summary>Sets up a validation exception if an exception occurs in the data model.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when an exception is thrown. A column-specific validator fails when a validation exception contains an associated inner exception, but a global validator fail when a non-validation exception occurs.  
+  
+> [!NOTE]
+>  Only use this method if the exception is a <xref:System.Web.DynamicData.DynamicValidator.ValidationException%2A>. If the exception is caused by a database error, using this method can display a sensitive database error  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationException">
+      <MemberSignature Language="C#" Value="protected virtual Exception ValidationException { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ValidationException" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicValidator.ValidationException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets validation exception that occurs during validation.</summary>
+        <value>The validation exception that is thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the validation exception that is thrown if an error occurs when a value is edited or when a new value is inserted into the data model.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

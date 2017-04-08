@@ -1,0 +1,1589 @@
+<Type Name="DataColumn" FullName="System.Data.DataColumn">
+  <TypeSignature Language="C#" Value="public class DataColumn : System.ComponentModel.MarshalByValueComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataColumn extends System.ComponentModel.MarshalByValueComponent" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.MarshalByValueComponent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("ColumnName")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataColumnEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the schema of a column in a <see cref="T:System.Data.DataTable" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumn> is the fundamental building block for creating the schema of a <xref:System.Data.DataTable>. You build the schema by adding one or more <xref:System.Data.DataColumn> objects to the <xref:System.Data.DataColumnCollection>. For more information, see [Adding Columns to a DataTable](~/docs/framework/data/adonet/dataset-datatable-dataview/adding-columns-to-a-datatable.md).  
+  
+ Each <xref:System.Data.DataColumn> has a <xref:System.Data.DataColumn.DataType%2A> property that determines the kind of data the <xref:System.Data.DataColumn> contains. For example, you can restrict the data type to integers, or strings, or decimals. Because data that is contained by the <xref:System.Data.DataTable> is typically merged back into its original data source, you must match the data types to those in the data source. For more information, see [Data Type Mappings in ADO.NET](~/docs/framework/data/adonet/data-type-mappings-in-ado-net.md).  
+  
+ Properties such as <xref:System.Data.DataColumn.AllowDBNull%2A>, <xref:System.Data.DataColumn.Unique%2A>, and <xref:System.Data.DataColumn.ReadOnly%2A> put restrictions on the entry and updating of data, thereby helping to guarantee data integrity. You can also use the <xref:System.Data.DataColumn.AutoIncrement%2A>, <xref:System.Data.DataColumn.AutoIncrementSeed%2A>, and <xref:System.Data.DataColumn.AutoIncrementStep%2A> properties to control automatic data generation. For more information about <xref:System.Data.DataColumn.AutoIncrement%2A> columns, see [Creating AutoIncrement Columns](~/docs/framework/data/adonet/dataset-datatable-dataview/creating-autoincrement-columns.md). For more information, see [Defining Primary Keys](~/docs/framework/data/adonet/dataset-datatable-dataview/defining-primary-keys.md).  
+  
+ You can also make sure that values in a <xref:System.Data.DataColumn> are unique by creating a <xref:System.Data.UniqueConstraint> and adding it to the <xref:System.Data.ConstraintCollection> of the <xref:System.Data.DataTable> to which the <xref:System.Data.DataColumn> belongs. For more information, see [DataTable Constraints](~/docs/framework/data/adonet/dataset-datatable-dataview/datatable-constraints.md).  
+  
+ To create a relation between <xref:System.Data.DataColumn> objects, create a <xref:System.Data.DataRelation> object and add it to the <xref:System.Data.DataRelationCollection> of a <xref:System.Data.DataSet>.  
+  
+ You can use the <xref:System.Data.DataColumn.Expression%2A> property of the <xref:System.Data.DataColumn> object to calculate the values in a column, or create an aggregate column. For more information, see [Creating Expression Columns](~/docs/framework/data/adonet/dataset-datatable-dataview/creating-expression-columns.md).  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.DataTable> with several <xref:System.Data.DataColumn> objects.  
+  
+ [!code-csharp[Classic WebData DataColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.DataColumn" /> class as type string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When created, a <xref:System.Data.DataColumn> object has no default <xref:System.Data.DataColumn.ColumnName%2A> or <xref:System.Data.DataColumn.Caption%2A>. When you add it to a <xref:System.Data.DataColumnCollection>, a default name ("Column1", "Column2", and so on) will be generated if a name has not been assigned to the <xref:System.Data.DataColumn.ColumnName%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataColumn>, sets various properties, and adds it to a <xref:System.Data.DataColumnCollection> for the <xref:System.Data.DataTable> object.  
+  
+ [!code-csharp[Classic WebData DataColumn.DataColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.DataColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataColumn (string columnName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string columnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">A string that represents the name of the column to be created. If set to <see langword="null" /> or an empty string (""), a default name will be specified when added to the columns collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataColumn" /> class, as type string, using the specified column name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the name specific to a column becomes the <xref:System.Data.DataColumn.Caption%2A> property value.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataColumn> with a specified <xref:System.Data.DataColumn.ColumnName%2A>.  
+  
+ [!code-csharp[Classic WebData DataColumn.DataColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn1 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.DataColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataColumn (string columnName, Type dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string columnName, class System.Type dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="dataType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">A string that represents the name of the column to be created. If set to <see langword="null" /> or an empty string (""), a default name will be specified when added to the columns collection.</param>
+        <param name="dataType">A supported <see cref="P:System.Data.DataColumn.DataType" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataColumn" /> class using the specified column name and data type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataColumn> with a specified <xref:System.Data.DataColumn.ColumnName%2A> and <xref:System.Data.DataColumn.DataType%2A>.  
+  
+ [!code-csharp[Classic WebData DataColumn.DataColumn2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn2 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.DataColumn2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">No <paramref name="dataType" /> was specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataColumn (string columnName, Type dataType, string expr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string columnName, class System.Type dataType, string expr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String,System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="dataType" Type="System.Type" />
+        <Parameter Name="expr" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">A string that represents the name of the column to be created. If set to <see langword="null" /> or an empty string (""), a default name will be specified when added to the columns collection.</param>
+        <param name="dataType">A supported <see cref="P:System.Data.DataColumn.DataType" />.</param>
+        <param name="expr">The expression used to create this column. For more information, see the <see cref="P:System.Data.DataColumn.Expression" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataColumn" /> class using the specified name, data type, and expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a computed column.  
+  
+ [!code-csharp[Classic WebData DataColumn.DataColumn3 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn3 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.DataColumn3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn3 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">No <paramref name="dataType" /> was specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataColumn (string columnName, Type dataType, string expr, System.Data.MappingType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string columnName, class System.Type dataType, string expr, valuetype System.Data.MappingType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.#ctor(System.String,System.Type,System.String,System.Data.MappingType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="dataType" Type="System.Type" />
+        <Parameter Name="expr" Type="System.String" />
+        <Parameter Name="type" Type="System.Data.MappingType" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">A string that represents the name of the column to be created. If set to <see langword="null" /> or an empty string (""), a default name will be specified when added to the columns collection.</param>
+        <param name="dataType">A supported <see cref="P:System.Data.DataColumn.DataType" />.</param>
+        <param name="expr">The expression used to create this column. For more information, see the <see cref="P:System.Data.DataColumn.Expression" /> property.</param>
+        <param name="type">One of the <see cref="T:System.Data.MappingType" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataColumn" /> class using the specified name, data type, expression, and value that determines whether the column is an attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `type` argument sets the <xref:System.Data.DataColumn.ColumnMapping%2A> property. The property specifies how a <xref:System.Data.DataColumn> is mapped when a <xref:System.Data.DataSet> is transformed into an XML document. For example, if the column is named "fName," and the value it contains is "Bob," and `type` is set to `MappingType.Attribute`, the XML element would be as follows:  
+  
+ \<Name fName = 'Bob'/>  
+  
+ For more information about how columns are mapped to elements or attributes, see the <xref:System.Data.DataColumn.ColumnMapping%2A> property.  
+  
+   
+  
+## Examples  
+ The following example constructs a computed column.  
+  
+ [!code-csharp[Classic WebData DataColumn.DataColumn4 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn4 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.DataColumn4 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataColumn4 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">No <paramref name="dataType" /> was specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowDBNull">
+      <MemberSignature Language="C#" Value="public bool AllowDBNull { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowDBNull" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AllowDBNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether null values are allowed in this column for rows that belong to the table.</summary>
+        <value>
+          <see langword="true" /> if null values values are allowed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataColumn> and sets its <xref:System.Data.DataColumn.AllowDBNull%2A> property to `true`.  
+  
+ [!code-csharp[Classic WebData DataColumn.AllowDBNull Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.AllowDBNull Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.AllowDBNull Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.AllowDBNull Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoIncrement">
+      <MemberSignature Language="C#" Value="public bool AutoIncrement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoIncrement" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AutoIncrement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the column automatically increments the value of the column for new rows added to the table.</summary>
+        <value>
+          <see langword="true" /> if the value of the column increments automatically; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type of this column is not Int16, Int32, or Int64 when this property is set, the <xref:System.Data.DataColumn.DataType%2A> property is coerced to Int32. An exception is generated if this is a computed column. The <xref:System.Data.DataColumn.Expression%2A> property is set. The incremented value is used only if the row's value for this column, when added to the columns collection, is equal to the default value.  
+  
+ You can create a new row using the <xref:System.Data.DataRow.ItemArray%2A> property of the <xref:System.Data.DataRow> class and passing in an array of values. This is a potential problem for a column with its <xref:System.Data.DataColumn.AutoIncrement%2A> set to `true`, because its value is generated automatically. To use the <xref:System.Data.DataRow.ItemArray%2A> property, place `null` in the column's position in the array. For more information, see the <xref:System.Data.DataRow.ItemArray%2A> property of the <xref:System.Data.DataRow> class.  
+  
+ If the type of the column is <xref:System.Data.SqlTypes.SqlInt16> or <xref:System.Data.SqlTypes.SqlInt32>, <xref:System.Data.DataColumn.AutoIncrement%2A> will not work. Use Int16 or Int32 instead.  
+  
+ If the type of the column is <xref:System.Data.SqlTypes.SqlInt64> or <xref:System.Data.SqlTypes.SqlDecimal>, <xref:System.Data.DataColumn.AutoIncrement%2A> will only partially work. Use Int64 or Decimal instead.  
+  
+ When the <xref:System.Data.DataColumn.AutoIncrementStep%2A> value is added to the current value, the overflow check is suppressed.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Data.DataColumn.AutoIncrement%2A>, <xref:System.Data.DataColumn.AutoIncrementSeed%2A>, and <xref:System.Data.DataColumn.AutoIncrementStep%2A> properties.  
+  
+ [!code-csharp[Classic WebData DataColumn.AutoIncrementSeed Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.AutoIncrementSeed Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.AutoIncrementSeed Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.AutoIncrementSeed Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The column is a computed column.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoIncrementSeed">
+      <MemberSignature Language="C#" Value="public long AutoIncrementSeed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 AutoIncrementSeed" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AutoIncrementSeed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the starting value for a column that has its <see cref="P:System.Data.DataColumn.AutoIncrement" /> property set to <see langword="true" />. The default is 0.</summary>
+        <value>The starting value for the <see cref="P:System.Data.DataColumn.AutoIncrement" /> feature.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Data.DataColumn.AutoIncrement%2A>, <xref:System.Data.DataColumn.AutoIncrementSeed%2A>, and <xref:System.Data.DataColumn.AutoIncrementStep%2A> properties.  
+  
+ [!code-csharp[Classic WebData DataColumn.AutoIncrementSeed Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.AutoIncrementSeed Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.AutoIncrementSeed Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.AutoIncrementSeed Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoIncrementStep">
+      <MemberSignature Language="C#" Value="public long AutoIncrementStep { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 AutoIncrementStep" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.AutoIncrementStep" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the increment used by a column with its <see cref="P:System.Data.DataColumn.AutoIncrement" /> property set to <see langword="true" />.</summary>
+        <value>The number by which the value of the column is automatically incremented. The default is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Data.DataColumn.AutoIncrement%2A>, <xref:System.Data.DataColumn.AutoIncrementSeed%2A>, and <xref:System.Data.DataColumn.AutoIncrementStep%2A> properties.  
+  
+ [!code-csharp[Classic WebData DataColumn.AutoIncrementSeed Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.AutoIncrementSeed Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.AutoIncrementSeed Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.AutoIncrementSeed Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value set is zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Caption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the caption for the column.</summary>
+        <value>The caption of the column. If not set, returns the <see cref="P:System.Data.DataColumn.ColumnName" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.DataColumn.Caption%2A> property to display a descriptive or friendly name for a <xref:System.Data.DataColumn>.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataTable>. It then adds three <xref:System.Data.DataColumn> objects to a <xref:System.Data.DataColumnCollection> and sets the <xref:System.Data.DataColumn.Caption%2A> property for each <xref:System.Data.DataColumn>.  
+  
+ [!code-csharp[Classic WebData DataColumn.Caption Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.Caption Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.Caption Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.Caption Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckNotAllowNull">
+      <MemberSignature Language="C#" Value="protected void CheckNotAllowNull ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void CheckNotAllowNull() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.CheckNotAllowNull" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckUnique">
+      <MemberSignature Language="C#" Value="protected void CheckUnique ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckUnique() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.CheckUnique" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnMapping">
+      <MemberSignature Language="C#" Value="public virtual System.Data.MappingType ColumnMapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.MappingType ColumnMapping" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ColumnMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.MappingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.MappingType" /> of the column.</summary>
+        <value>One of the <see cref="T:System.Data.MappingType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumn.ColumnMapping%2A> property determines how a <xref:System.Data.DataColumn> is mapped when a <xref:System.Data.DataSet> is saved as an XML document using the <xref:System.Data.DataSet.WriteXml%2A> method.  
+  
+ For example, if a <xref:System.Data.DataColumn> is named "customerID," and its <xref:System.Data.DataColumn.ColumnMapping%2A> property is set to `MappingType.Element`, the column value will produce the following XML:  
+  
+```  
+<Customers>  
+ <customerID>ALFKI</customerID>  
+......  
+ </Customers>  
+ <Orders>  
+ <OrderID>12345</OrderID>  
+ <customerID>ALFKI</customerID>  
+......  
+ </Orders>  
+```  
+  
+ However, if the same column is mapped to `MappingType.Attribute`, the following XML is produced:  
+  
+```  
+<Customers customerID="ALFKI"........more attributes.....>  
+ <Order orderID="1234"....more attributes..../>  
+ <Order orderID="1234"....more attributes..../>  
+...... More orders for this customer  
+ </Customers>  
+```  
+  
+ Use the <xref:System.Data.DataColumn.%23ctor%2A> constructor that contains the `type` argument to specificy how the <xref:System.Data.DataColumn> is mapped when its <xref:System.Data.DataSet> is transformed to an XML document.  
+  
+ The <xref:System.Data.DataColumn.ColumnMapping%2A> property corresponds to the constructor argument `type`.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Data.DataColumn.ColumnMapping%2A> type property of new <xref:System.Data.DataColumn>.  
+  
+ [!code-csharp[Classic WebData DataColumn.ColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.ColumnMapping Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.ColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.ColumnMapping Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnName">
+      <MemberSignature Language="C#" Value="public string ColumnName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ColumnName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ColumnName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the column in the <see cref="T:System.Data.DataColumnCollection" />.</summary>
+        <value>The name of the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Data.DataColumn> is created, it has no <xref:System.Data.DataColumn.ColumnName%2A> value. However, when the <xref:System.Data.DataColumn> is added to a <xref:System.Data.DataColumnCollection> for a <xref:System.Data.DataTable> object, it is given a default name ("Column1", "Column2", and so on).  
+  
+ By default, the <xref:System.Data.DataColumn.Caption%2A> value is set to the <xref:System.Data.DataColumn.ColumnName%2A> value.  
+  
+   
+  
+## Examples  
+ The following examples gets the <xref:System.Data.DataColumn.ColumnName%2A> for every column in every table in a <xref:System.Data.DataSet>. The example also shows how to create a <xref:System.Data.DataColumn> with a new <xref:System.Data.DataColumn.ColumnName%2A>.  
+  
+ [!code-csharp[Classic WebData DataColumn.ColumnName Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.ColumnName Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.ColumnName Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.ColumnName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property is set to <see langword="null" /> or an empty string and the column belongs to a collection.</exception>
+        <exception cref="T:System.Data.DuplicateNameException">A column with the same name already exists in the collection. The name comparison is not case sensitive.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public Type DataType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DataType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Data.ColumnTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of data stored in the column.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the column data type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Data.DataColumn.DataType%2A> value is very important to guaranteeing the correct creation and updating of data in a data source.  
+  
+ The <xref:System.Data.DataColumn.DataType%2A> property supports the following base .NET Framework data types:  
+  
+-   <xref:System.Boolean>  
+  
+-   <xref:System.Byte>  
+  
+-   <xref:System.Char>  
+  
+-   <xref:System.DateTime>  
+  
+-   <xref:System.Decimal>  
+  
+-   <xref:System.Double>  
+  
+-   <xref:System.Guid>  
+  
+-   <xref:System.Int16>  
+  
+-   <xref:System.Int32>  
+  
+-   <xref:System.Int64>  
+  
+-   <xref:System.SByte>  
+  
+-   <xref:System.Single>  
+  
+-   <xref:System.String>  
+  
+-   <xref:System.TimeSpan>  
+  
+-   <xref:System.UInt16>  
+  
+-   <xref:System.UInt32>  
+  
+-   <xref:System.UInt64>  
+  
+ as well as the following array type:  
+  
+-   `Byte[]`  
+  
+ An exception is generated when changing this property after the column has begun storing data.  
+  
+ If <xref:System.Data.DataColumn.AutoIncrement%2A> is set to `true` before setting the <xref:System.Data.DataColumn.DataType%2A> property, and you try to set the type to anything except an integer type, an exception is generated.  
+  
+> [!NOTE]
+>  A column of data type `Byte[]` requires special treatment in certain cases since, unlike the base .NET Framework data types, it is a reference data type. If a column of data type `Byte[]` is used as a <xref:System.Data.DataTable.PrimaryKey%2A>, or as a <xref:System.Data.DataView.Sort%2A> or <xref:System.Data.DataView.RowFilter%2A> key for a <xref:System.Data.DataView>, any change to the column value must involve assigning the `Byte[]` column value to a separately instantiated `Byte[]` object. This assignment is required to trigger the update of the internal indexes used by sorting, filtering, and primary key operations. This is illustrated by the following example:  
+  
+```  
+byte[] columnValue = (byte[])myDataTable.Rows[0][0];  
+byte[] newValue = (byte[])columnValue.Clone();  
+newValue[1] = 2;  
+myDataTable.Rows[0][0] = newValue;  
+```  
+  
+> [!NOTE]
+>  Although it is possible to define a column as data type other than the base .NET Framework data types and `Byte[]`, such a column will be treated as a user-defined type, subject to the following usage restrictions. (For more information on user-defined types, see [Creating and Using User-Defined Types](http://msdn.microsoft.com/en-us/ec0266d2-7e5b-47e4-938a-85ac9d04fa40).)  
+  
+-   The column cannot be part of a <xref:System.Data.DataView.RowFilter%2A> or <xref:System.Data.DataTable.Select%2A> expression.  
+  
+-   If the column is used as a <xref:System.Data.DataTable.PrimaryKey%2A>, or as a <xref:System.Data.DataView.Sort%2A> or for a <xref:System.Data.DataView>, it must be treated as an immutable field; the column data must not be changed once it has been added to the table.  
+  
+-   Its <xref:System.Data.DataColumn.ColumnMapping%2A> can be only set to `MappingType.Element`.  
+  
+-   The class that implements the column’s data type must be must be marked with the <xref:System.SerializableAttribute>, and if necessary implement the <xref:System.Runtime.Serialization.ISerializable> or <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+  
+-   Support for change tracking is limited. To utilize the <xref:System.Data.DataTable> class’s change tracking mechanism, the class that implements the column’s data type must either implement the <xref:System.ComponentModel.IChangeTracking> interface, or take over the responsibility for informing the <xref:System.Data.DataRow> when the column value has been modified, either by calling <xref:System.Data.DataRow.SetModified%2A> on the row or by assigning the column value object to a separately instantiated column value object.  
+  
+   
+  
+## Examples  
+ The following example adds columns of several data types to a <xref:System.Data.DataTable>, and then adds one row to the table.  
+  
+ [!code-csharp[Classic WebData DataColumn.DataType Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataType Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.DataType Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DataType Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The column already has data stored.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeMode">
+      <MemberSignature Language="C#" Value="public System.Data.DataSetDateTime DateTimeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataSetDateTime DateTimeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.DateTimeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSetDateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="DateTimeMode" /> for the column.</summary>
+        <value>The <see cref="T:System.Data.DataSetDateTime" /> for the specified column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumn.DateTimeMode%2A> cannot be modified after rows are added to a <xref:System.Data.DataColumn>, except for modifying from <xref:System.Data.DataSetDateTime> and <xref:System.Data.DataSetDateTime> or vice-versa. The modification from `UnspecifiedLocal` to `Unspecified` and vice-versa is allowed as the difference between these two options is only during serialization and does not affect the storage.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public object DefaultValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Data.DefaultValueTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default value for the column when you are creating new rows.</summary>
+        <value>A value appropriate to the column's <see cref="P:System.Data.DataColumn.DataType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A default value is the value that is automatically assigned to the column when a <xref:System.Data.DataRow> is created (for example, the date and time when the <xref:System.Data.DataRow> was created.  
+  
+ When <xref:System.Data.DataColumn.AutoIncrement%2A> is set to true, there can be no default value.  
+  
+ You can create a new row using the <xref:System.Data.DataRow.ItemArray%2A> property of the <xref:System.Data.DataRow> class and passing the method an array of values. This is a potential problem for a column with a default value because its value is generated automatically. To use the <xref:System.Data.DataRow.ItemArray%2A> property with such a column, place `null` in the column's position in the array. For more information, see the <xref:System.Data.DataRow.ItemArray%2A> property.  
+  
+   
+  
+## Examples  
+ The following example creates several <xref:System.Data.DataColumn> objects that have different data types, and sets appropriate default values to each column.  
+  
+ [!code-vb[Classic WebData DataColumn.DefaultValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.DefaultValue Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">When you are adding a row, the default value is not an instance of the column's data type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public string Expression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression used to filter rows, calculate the values in a column, or create an aggregate column.</summary>
+        <value>An expression to calculate the value of a column, or create an aggregate column. The return type of an expression is determined by the <see cref="P:System.Data.DataColumn.DataType" /> of the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ One use of the <xref:System.Data.DataColumn.Expression%2A> property is to create calculated columns. For example, to calculate a tax value, the unit price is multiplied by a tax rate of a specific region. Because tax rates vary from region to region, it would be impossible to put a single tax rate in a column; instead, the value is calculated using the <xref:System.Data.DataColumn.Expression%2A> property, as shown in the Visual Basic code in the following section:  
+  
+ DataSet1.Tables("Products").Columns("tax").Expression = "UnitPrice * 0.086"  
+  
+ A second use is to create an aggregate column. Similar to a calculated value, an aggregate performs an operation based on the complete set of rows in the <xref:System.Data.DataTable>. A simple example is to count the number of rows returned in the set. This is the method you would use to count the number of transactions completed by a particular salesperson, as shown in this Visual Basic code:  
+  
+```  
+DataSet1.Tables("Orders").Columns("OrderCount").Expression = "Count(OrderID)"  
+```  
+  
+## Expression Syntax  
+ When you create an expression, use the <xref:System.Data.DataColumn.ColumnName%2A> property to refer to columns. For example, if the <xref:System.Data.DataColumn.ColumnName%2A> for one column is "UnitPrice", and another "Quantity", the expression would be as follows:  
+  
+ "UnitPrice * Quantity"  
+  
+> [!NOTE]
+>  If a column is used in an expression, then the expression is said to have a dependency on that column. If a dependent column is renamed or removed, no exception is thrown. An exception will be thrown when the now-broken expression column is accessed.  
+  
+ When you create an expression for a filter, enclose strings with single quotation marks:  
+  
+ "LastName = 'Jones'"  
+  
+ If a column name contains any non-alphanumeric characters or starts with a digit or matches (case-insensitively) any of the following reserved words, it requires special handling, as described in the following paragraphs.  
+  
+ And  
+  
+ Between  
+  
+ Child  
+  
+ False  
+  
+ In  
+  
+ Is  
+  
+ Like  
+  
+ Not  
+  
+ Null  
+  
+ Or  
+  
+ Parent  
+  
+ True  
+  
+ If a column name satisfies one of the above conditions, it must be wrapped in either square brackets or the "`" (grave accent) quotes. For example, to use a column named "Column#" in an expression, you would write either "[Column#]":  
+  
+ Total * [Column#]  
+  
+ or "\`Column#`":  
+  
+ Total * \`Column#`  
+  
+ If the column name is enclosed in square brackets then any ']' and '\\' characters (but not any other characters) in it must be escaped by prepending them with the backslash ("\\") character. If the column name is enclosed in grave accent characters then it must not contain any grave accent characters in it. For example, a column named "Column[]\\" would be written:  
+  
+ Total * [Column[\\]\\\\]  
+  
+ or  
+  
+ Total * \`Column[]\\`  
+  
+## User-Defined Values  
+ User-defined values may be used within expressions to be compared with column values. String values should be enclosed within single quotation marks (and each single quotation character in a string value has to be escaped by prepending it with another single quotation character). Date values should be enclosed within pound signs (#) or single quotes (') based on the data provider. Decimals and scientific notation are permissible for numeric values. For example:  
+  
+ "FirstName = 'John'"  
+  
+ "Price <= 50.00"  
+  
+ "Birthdate < #1/31/82#"  
+  
+ For columns that contain enumeration values, cast the value to an integer data type. For example:  
+  
+ "EnumColumn = 5"  
+  
+## Parsing Literal Expressions  
+ All literal expressions must be expressed in the invariant culture locale. When `DataSet` parses and converts literal expressions, it always uses the invariant culture, not the current culture.  
+  
+ String literals are identified when there are single quotes surrounding the value. For example:  
+  
+ 'John'  
+  
+ `Boolean` literals are true and false; they are not quoted in expressions.  
+  
+ `Integer` literals [+-]?[0-9]+ are treated as `System.Int32`, `System.Int64` or `System.Double`. `System.Double` can lose precision depending on how large the number is. For example, if the number in the literal is 2147483650, `DataSet` will first attempt to parse the number as an `Int32`. This will not succeed because the number is too large. In this case `DataSet` will parse the number as an `Int64`, which will succeed. If the literal was a number larger than the maximum value of an Int64, `DataSet` will parse the literal using `Double`.  
+  
+ Real literals using scientific notation, such as 4.42372E-30, are parsed using `System.Double`.  
+  
+ Real literals without scientific notation, but with a decimal point, are treated as `System.Decimal`. If the number exceeds the maximum or minimum values supported by `System.Decimal`, then it is parsed as a `System.Double`. For example:  
+  
+ 142526.144524 will be converted to a `Decimal`.  
+  
+ 345262.78036719560925667 will be treated as a `Double`.  
+  
+## Operators  
+ Concatenation is allowed using Boolean AND, OR, and NOT operators. You can use parentheses to group clauses and force precedence. The AND operator has precedence over other operators. For example:  
+  
+ (LastName = 'Smith' OR LastName = 'Jones') AND FirstName = 'John'  
+  
+ When you create comparison expressions, the following operators are allowed:  
+  
+ \<  
+  
+ >  
+  
+ \<=  
+  
+ >=  
+  
+ <>  
+  
+ =  
+  
+ IN  
+  
+ LIKE  
+  
+ The following arithmetic operators are also supported in expressions:  
+  
+ \+ (addition)  
+  
+ \- (subtraction)  
+  
+ \* (multiplication)  
+  
+ / (division)  
+  
+ % (modulus)  
+  
+## String Operators  
+ To concatenate a string, use the + character. The value of the <xref:System.Data.DataSet.CaseSensitive%2A> property of the <xref:System.Data.DataSet> class determines whether string comparisons are case-sensitive. However, you can override that value with the <xref:System.Data.DataTable.CaseSensitive%2A> property of the <xref:System.Data.DataTable> class.  
+  
+## Wildcard Characters  
+ Both the * and % can be used interchangeably for wildcard characters in a LIKE comparison. If the string in a LIKE clause contains a * or %, those characters should be enclosed in brackets ([]). If a bracket is in the clause, each bracket character should be enclosed in brackets (for example [[] or []]). A wildcard is allowed at the start and end of a pattern, or at the end of a pattern, or at the start of a pattern. For example:  
+  
+ "ItemName LIKE '*product\*'"  
+  
+ "ItemName LIKE '*product'"  
+  
+ "ItemName LIKE 'product*'"  
+  
+ Wildcard characters are not allowed in the middle of a string. For example, 'te*xt' is not allowed.  
+  
+## Parent/Child Relation Referencing  
+ A parent table may be referenced in an expression by prepending the column name with `Parent`. For example, the `Parent.Price` references the parent table's column named `Price`.  
+  
+ When a child has more than one parent row, use Parent(RelationName).ColumnName. For example, the Parent(RelationName).Price references the parent table’s column named Price via the relation.  
+  
+ A column in a child table may be referenced in an expression by prepending the column name with `Child`. However, because child relationships may return multiple rows, you must include the reference to the child column in an aggregate function. For example, `Sum(Child.Price)` would return the sum of the column named `Price` in the child table.  
+  
+ If a table has more than one child, the syntax is: `Child(RelationName)`. For example, if a table has two child tables named `Customers` and `Orders`, and the <xref:System.Data.DataRelation> object is named `Customers2Orders`, the reference would be as follows:  
+  
+ Avg(Child(Customers2Orders).Quantity)  
+  
+## Aggregates  
+ The following aggregate types are supported:  
+  
+ Sum (Sum)  
+  
+ Avg (Average)  
+  
+ Min (Minimum)  
+  
+ Max (Maximum)  
+  
+ Count (Count)  
+  
+ StDev (Statistical standard deviation)  
+  
+ Var (Statistical variance).  
+  
+ Aggregates are ordinarily performed along relationships. Create an aggregate expression by using one of the functions listed earlier and a child table column as detailed in Parent/Child Relation Referencing that was discussed earlier. For example:  
+  
+ Avg(Child.Price)  
+  
+ Avg(Child(Orders2Details).Price)  
+  
+ An aggregate can also be performed on a single table. For example, to create a summary of figures in a column named "Price":  
+  
+ Sum(Price)  
+  
+> [!NOTE]
+>  If you use a single table to create an aggregate, there would be no group-by functionality. Instead, all rows would display the same value in the column.  
+  
+ If a table has no rows, the aggregate functions will return `null`.  
+  
+ Data types can always be determined by examining the <xref:System.Data.DataColumn.DataType%2A> property of a column. You can also convert data types using the Convert function, shown in the following section.  
+  
+ An aggregate can only be applied to a single column and no other expressions can be used inside the aggregate.  
+  
+## Functions  
+ The following functions are also supported:  
+  
+ `CONVERT`  
+  
+|||  
+|-|-|  
+|Description|Converts particular expression to a specified .NET Framework Type.|  
+|Syntax|Convert(`expression`, `type`)|  
+|Arguments|`expression` -- The expression to convert.<br /><br /> `type` -- The .NET Framework type to which the value will be converted.|  
+  
+ Example: myDataColumn.Expression="Convert(total, 'System.Int32')"  
+  
+ All conversions are valid with the following exceptions: `Boolean` can be coerced to and from `Byte`, `SByte`, `Int16`, `Int32`, `Int64`, `UInt16`, `UInt32`, `UInt64`, `String` and itself only. `Char` can be coerced to and from `Int32`, `UInt32`, `String`, and itself only. `DateTime` can be coerced to and from `String` and itself only. `TimeSpan` can be coerced to and from `String` and itself only.  
+  
+ `LEN`  
+  
+|||  
+|-|-|  
+|Description|Gets the length of a string|  
+|Syntax|LEN(`expression`)|  
+|Arguments|`expression` -- The string to be evaluated.|  
+  
+ Example: myDataColumn.Expression="Len(ItemName)"  
+  
+ `ISNULL`  
+  
+|||  
+|-|-|  
+|Description|Checks an expression and either returns the checked expression or a replacement value.|  
+|Syntax|ISNULL(`expression`, `replacementvalue`)|  
+|Arguments|`expression` -- The expression to check.<br /><br /> `replacementvalue` -- If expression is `null`, `replacementvalue` is returned.|  
+  
+ Example: myDataColumn.Expression="IsNull(price, -1)"  
+  
+ `IIF`  
+  
+|||  
+|-|-|  
+|Description|Gets one of two values depending on the result of a logical expression.|  
+|Syntax|IIF(`expr`, `truepart`, `falsepart`)|  
+|Arguments|`expr` -- The expression to evaluate.<br /><br /> `truepart` -- The value to return if the expression is true.<br /><br /> `falsepart` -- The value to return if the expression is false.|  
+  
+ Example: myDataColumn.Expression = "IIF(total>1000, 'expensive', 'dear')  
+  
+ `TRIM`  
+  
+|||  
+|-|-|  
+|Description|Removes all leading and trailing blank characters like \r, \n, \t, ' '|  
+|Syntax|TRIM(`expression`)|  
+|Arguments|`expression` -- The expression to trim.|  
+  
+ `SUBSTRING`  
+  
+|||  
+|-|-|  
+|Description|Gets a sub-string of a specified length, starting at a specified point in the string.|  
+|Syntax|SUBSTRING(`expression`, `start`, `length`)|  
+|Arguments|`expression` -- The source string for the substring.<br /><br /> `start` -- Integer that specifies where the substring starts.<br /><br /> `length` -- Integer that specifies the length of the substring.|  
+  
+ Example: myDataColumn.Expression = "SUBSTRING(phone, 7, 8)"  
+  
+> [!NOTE]
+>  You can reset the <xref:System.Data.DataColumn.Expression%2A> property by assigning it a null value or empty string. If a default value is set on the expression column, all previously filled rows are assigned the default value after the <xref:System.Data.DataColumn.Expression%2A> property is reset.  
+  
+   
+  
+## Examples  
+ The following example creates three columns in a <xref:System.Data.DataTable>. The second and third columns contain expressions; the second calculates tax using a variable tax rate, and the third adds the result of the calculation to the value of the first column. The resulting table is displayed in a <xref:System.Windows.Forms.DataGrid> control.  
+  
+ [!code-csharp[Classic WebData DataColumn.Expression Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.Expression Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.Expression Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.Expression Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Data.DataColumn.AutoIncrement" /> or <see cref="P:System.Data.DataColumn.Unique" /> property is set to <see langword="true" />.</exception>
+        <exception cref="T:System.FormatException">When you are using the CONVERT function, the expression evaluates to a string, but the string does not contain a representation that can be converted to the type parameter.</exception>
+        <exception cref="T:System.InvalidCastException">When you are using the CONVERT function, the requested cast is not possible. See the Conversion function in the following section for detailed information about possible casts.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">When you use the SUBSTRING function, the start argument is out of range.  
+  
+ -Or-  
+  
+ When you use the SUBSTRING function, the length argument is out of range.</exception>
+        <exception cref="T:System.Exception">When you use the LEN function or the TRIM function, the expression does not evaluate to a string. This includes expressions that evaluate to <see cref="T:System.Char" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProperties">
+      <MemberSignature Language="C#" Value="public System.Data.PropertyCollection ExtendedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.PropertyCollection ExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.PropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of custom user information associated with a <see cref="T:System.Data.DataColumn" />.</summary>
+        <value>A <see cref="T:System.Data.PropertyCollection" /> of custom information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumn.ExtendedProperties%2A> property lets you store custom information with the object. For example, you may store a time when the data should be refreshed.  
+  
+ Extended properties must be of type <xref:System.String>. Properties that are not of type <xref:System.String> are not persisted when the <xref:System.Data.DataColumn> is written as XML.  
+  
+   
+  
+## Examples  
+ The following example adds a custom property to the <xref:System.Data.PropertyCollection> returned by the <xref:System.Data.DataColumn.ExtendedProperties%2A> property. The second example retrieves the custom property.  
+  
+ [!code-csharp[Classic WebData DataColumn.ExtendedProperties Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.ExtendedProperties Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.ExtendedProperties Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.ExtendedProperties Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLength">
+      <MemberSignature Language="C#" Value="public int MaxLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.MaxLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum length of a text column.</summary>
+        <value>The maximum length of the column in characters. If the column has no maximum length, the value is –1 (default).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumn.MaxLength%2A> property is ignored for non-text columns. A <xref:System.ArgumentException> exception is raised if you assign <xref:System.Data.DataColumn.MaxLength%2A> to a non-string column.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace of the <see cref="T:System.Data.DataColumn" />.</summary>
+        <value>The namespace of the <see cref="T:System.Data.DataColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataColumn.Namespace%2A> property is used when reading and writing an XML document into a <xref:System.Data.DataTable> in the <xref:System.Data.DataSet> using the <xref:System.Data.DataSet.ReadXml%2A>, <xref:System.Data.DataSet.WriteXml%2A>, <xref:System.Data.DataSet.ReadXmlSchema%2A>, or <xref:System.Data.DataSet.WriteXmlSchema%2A> methods.  
+  
+ The namespace of an XML document is used to scope XML attributes and elements when read into a <xref:System.Data.DataSet>. For example, a <xref:System.Data.DataSet> contains a schema read from a document that has the namespace "myCompany," and an attempt is made to read data (with the <xref:System.Data.DataSet.ReadXml%2A> method) from a document that has the namespace "theirCompany." Any data that does not correspond to the existing schema will be ignored.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The namespace already has data.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanging">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanging (System.ComponentModel.PropertyChangedEventArgs pcevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanging(class System.ComponentModel.PropertyChangedEventArgs pcevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pcevent" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="pcevent">Parameter reference.</param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ordinal">
+      <MemberSignature Language="C#" Value="public int Ordinal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Ordinal" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Ordinal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the (zero-based) position of the column in the <see cref="T:System.Data.DataColumnCollection" /> collection.</summary>
+        <value>The position of the column. Gets -1 if the column is not a member of a collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example returns the column name, ordinal, and data type of a column.  
+  
+ [!code-csharp[Classic WebData DataColumn.Ordinal Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.Ordinal Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.Ordinal Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.Ordinal Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prefix">
+      <MemberSignature Language="C#" Value="public string Prefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Prefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an XML prefix that aliases the namespace of the <see cref="T:System.Data.DataTable" />.</summary>
+        <value>The XML prefix for the <see cref="T:System.Data.DataTable" /> namespace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.Prefix%2A> is used throughout an XML document to identify elements which belong to the namespace for a <xref:System.Data.DataSet> object (as set by the <xref:System.Data.DataSet.Namespace%2A> property).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePropertyChanging">
+      <MemberSignature Language="C#" Value="protected void RaisePropertyChanging (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RaisePropertyChanging(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.RaisePropertyChanging(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Parameter reference.</param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the column allows for changes as soon as a row has been added to the table.</summary>
+        <value>
+          <see langword="true" /> if the column is read only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Data.DataColumn> and sets its <xref:System.Data.DataColumn.ReadOnly%2A> property `true`.  
+  
+ [!code-csharp[Classic WebData DataColumn.ReadOnly Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.ReadOnly Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.ReadOnly Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.ReadOnly Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property is set to <see langword="false" /> on a computed column.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOrdinal">
+      <MemberSignature Language="C#" Value="public void SetOrdinal (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOrdinal(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.SetOrdinal(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The specified ordinal.</param>
+        <summary>Changes the ordinal or position of the <see cref="T:System.Data.DataColumn" /> to the specified ordinal or position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes the ordinal or position of the <xref:System.Data.DataColumn> to the specified ordinal or position. If ordinal is less than 0 or greater than the existing number of columns – 1 (greater than the ordinal of the last column) then an Invalid <xref:System.ArgumentException> is thrown.  
+  
+ When you change a column’s ordinal, the column is moved to the new position in the collection of columns. Any columns between the previous and new ordinal will be renumbered, to adjust for a column's new ordinal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable Table" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Table" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.DataTable" /> to which the column belongs to.</summary>
+        <value>The <see cref="T:System.Data.DataTable" /> that the <see cref="T:System.Data.DataColumn" /> belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example returns the parent table of a <xref:System.Data.DataColumn> through its <xref:System.Data.DataColumn.Table%2A> property.  
+  
+ [!code-csharp[Classic WebData DataColumn.Table Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.Table Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.Table Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataColumn.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="P:System.Data.DataColumn.Expression" /> of the column, if one exists.</summary>
+        <returns>The <see cref="P:System.Data.DataColumn.Expression" /> value, if the property is set; otherwise, the <see cref="P:System.Data.DataColumn.ColumnName" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumn.ToString%2A> property to return the default string of each member of a collection of <xref:System.Data.DataColumn> objects.  
+  
+ [!code-csharp[Classic WebData DataColumn.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.ToString Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.ToString Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unique">
+      <MemberSignature Language="C#" Value="public bool Unique { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Unique" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataColumn.Unique" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the values in each row of the column must be unique.</summary>
+        <value>
+          <see langword="true" /> if the value must be unique; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As soon as this property is changed from false to true, a unique constraint will be created on this column to make sure that values are unique.  
+  
+   
+  
+## Examples  
+ The following example creates new <xref:System.Data.DataColumn>, sets its properties, and adds it to a table's columns collection.  
+  
+ [!code-csharp[Classic WebData DataColumn.Unique Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumn.Unique Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumn.Unique Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumn.Unique Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The column is a calculated column.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

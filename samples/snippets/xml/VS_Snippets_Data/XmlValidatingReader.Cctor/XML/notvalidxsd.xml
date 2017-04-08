@@ -1,0 +1,22 @@
+﻿<!--<snippet2>-->
+<?xml version='1.0'?>
+<bookstore xmlns="urn:bookstore-schema"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="urn:bookstore-schema books.xsd">
+  <book>
+    <author>
+      <first-name>Benjamin</first-name>
+      <last-name>Franklin</last-name>
+    </author>
+  </book>
+  <book genre="novel">
+    <title>The Confidence Man</title>
+    <author>
+      <first-name>Herman</first-name>
+      <last-name>Melville</last-name>
+    </author>
+    <price>11.99</price>
+  </book>
+</bookstore>
+<!--</snippet2>-->
+

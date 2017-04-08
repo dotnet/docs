@@ -1,0 +1,65 @@
+<Type Name="TypeReflector" FullName="Microsoft.JScript.TypeReflector">
+  <TypeSignature Language="C#" Value="public sealed class TypeReflector : Microsoft.JScript.ScriptObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeReflector extends Microsoft.JScript.ScriptObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.TypeReflector" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ScriptObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an implementation of <see cref="M:Microsoft.JScript.TypeReflector.GetMember(System.String,System.Reflection.BindingFlags)" /> that is faster than <see cref="M:System.Type.GetMember(System.String,System.Reflection.BindingFlags)" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMember">
+      <MemberSignature Language="C#" Value="public override System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.BindingFlags bindingAttr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.TypeReflector.GetMember(System.String,System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to search for.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify the way in which the search for members and types is conducted by the reflection operation.</param>
+        <summary>Searches for the specified member, using the specified binding constraints.</summary>
+        <returns>An array of <see cref="T:System.Reflection.MemberInfo" /> objects that represents the public members that have the specified name, if found; otherwise, an empty array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMembers">
+      <MemberSignature Language="C#" Value="public override System.Reflection.MemberInfo[] GetMembers (System.Reflection.BindingFlags bindingAttr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MemberInfo[] GetMembers(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.TypeReflector.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specify the way in which the search for members and types is conducted by the reflection operation.</param>
+        <summary>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</summary>
+        <returns>Throws a <see cref="T:Microsoft.JScript.JScriptException" /> exception in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

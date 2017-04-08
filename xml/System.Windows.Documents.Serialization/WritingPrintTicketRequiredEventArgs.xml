@@ -1,0 +1,132 @@
+<Type Name="WritingPrintTicketRequiredEventArgs" FullName="System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs">
+  <TypeSignature Language="C#" Value="public class WritingPrintTicketRequiredEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WritingPrintTicketRequiredEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingPrintTicketRequired" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WritingPrintTicketRequiredEventArgs (System.Windows.Xps.Serialization.PrintTicketLevel printTicketLevel, int sequence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Xps.Serialization.PrintTicketLevel printTicketLevel, int32 sequence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.#ctor(System.Windows.Xps.Serialization.PrintTicketLevel,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="printTicketLevel" Type="System.Windows.Xps.Serialization.PrintTicketLevel" />
+        <Parameter Name="sequence" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="printTicketLevel">An enumeration value that specifies scope of the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" /> as a page, document, or sequence of documents.</param>
+        <param name="sequence">Based on the scope of defined by <c>printTicketLevel</c>, the number of pages or the number of documents associated with the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPrintTicket">
+      <MemberSignature Language="C#" Value="public System.Printing.PrintTicket CurrentPrintTicket { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintTicket CurrentPrintTicket" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintTicket</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default printer settings to use when the document is printed.</summary>
+        <value>The default printer settings to use when the document is printed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A> property does not validate or modify the specified <xref:System.Printing.PrintTicket> for a particular <xref:System.Printing.PrintQueue>.  If needed, use the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method to create a <xref:System.Printing.PrintQueue>-specific <xref:System.Printing.PrintTicket> that is valid for a given printer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPrintTicketLevel">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Serialization.PrintTicketLevel CurrentPrintTicketLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Xps.Serialization.PrintTicketLevel CurrentPrintTicketLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the scope of the <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingPrintTicketRequired" /> event.</summary>
+        <value>An enumeration that indicates the scope of the <see cref="E:System.Windows.Documents.Serialization.SerializerWriter.WritingPrintTicketRequired" /> event as for a sequence of documents, a single document, or a single page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> property is <xref:System.Windows.Xps.Serialization.PrintTicketLevel>, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of documents output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  For other <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> values, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of pages output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequence">
+      <MemberSignature Language="C#" Value="public int Sequence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Sequence" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of documents or pages output with the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />.</summary>
+        <value>The number of documents or pages output with the <see cref="P:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> property is <xref:System.Windows.Xps.Serialization.PrintTicketLevel>, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of documents output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  For other <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicketLevel%2A> values, the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.Sequence%2A> property specifies the number of pages output with the <xref:System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs.CurrentPrintTicket%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

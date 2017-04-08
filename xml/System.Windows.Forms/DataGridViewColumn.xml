@@ -1,0 +1,1308 @@
+<Type Name="DataGridViewColumn" FullName="System.Windows.Forms.DataGridViewColumn">
+  <TypeSignature Language="C#" Value="public class DataGridViewColumn : System.Windows.Forms.DataGridViewBand, IDisposable, System.ComponentModel.IComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumn extends System.Windows.Forms.DataGridViewBand implements class System.ComponentModel.IComponent, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataGridViewBand</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IComponent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.DataGridViewColumnDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataGridViewColumnConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a column in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewColumn> class represents a logical column in a <xref:System.Windows.Forms.DataGridView> control. You can retrieve columns through the <xref:System.Windows.Forms.DataGridView.Columns%2A> collection of the control.  
+  
+ Unlike a <xref:System.Windows.Forms.DataGridViewRow>, which contains the actual collection of cells in a <xref:System.Windows.Forms.DataGridView>, <xref:System.Windows.Forms.DataGridViewColumn> is used mainly to adjust the appearance and behavior of the column user interface (UI), such as column width and cell style. For more information about cell styles, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
+  
+ Types that derive from <xref:System.Windows.Forms.DataGridViewColumn> typically initialize the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A> property to a new instance of a related type derived from the <xref:System.Windows.Forms.DataGridViewCell> class. Any column properties that relate to the appearance or behavior of individual cells are wrappers for the corresponding properties of the template cell. Changing one of these properties on the column automatically changes the value on the cell template and on all cells in the column. To override the specified value for individual cells, set the cell values after you set the column value.  
+  
+   
+  
+## Examples  
+ The following code example creates a Windows Form with a <xref:System.Windows.Forms.DataGridView> and a set of buttons. Each button label describes an operation related to a <xref:System.Windows.Forms.DataGridViewColumn> property, such as swapping the first and last column (using the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> property) or changing the text of a column header (using the <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A> property). Clicking a button changes the associated property of the <xref:System.Windows.Forms.DataGridViewColumn>.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#100](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#100)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#100)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#100)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you derive from <see cref="T:System.Windows.Forms.DataGridViewColumn" /> and add new properties to the derived class, be sure to override the <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method to copy the new properties during cloning operations. You should also call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumn.Clone" /> method so that the properties of the base class are copied to the new cell.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> class to the default state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewColumn (System.Windows.Forms.DataGridViewCell cellTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCell cellTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.#ctor(System.Windows.Forms.DataGridViewCell)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cellTemplate" Type="System.Windows.Forms.DataGridViewCell" />
+      </Parameters>
+      <Docs>
+        <param name="cellTemplate">An existing <see cref="T:System.Windows.Forms.DataGridViewCell" /> to use as a template.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> class using an existing <see cref="T:System.Windows.Forms.DataGridViewCell" /> as a template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A> property to the value of the `cellTemplate` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSizeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAutoSizeColumnMode AutoSizeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode AutoSizeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the mode by which the column automatically adjusts its width.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value that determines whether the column will automatically adjust its width and how it will determine its preferred width. The default is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName> property instead.  
+  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. The width available for fill mode is determined by subtracting the widths of all other columns from the width of the client area of the control. If this width is smaller than the combined <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values of all fill-mode columns, the horizontal scroll bar is displayed, all fill-mode columns are shown with their minimum widths, and user column-resizing is disabled. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
+  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property is set to any other value except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column will manage its width so that its cell values are fully displayed without clipping. In content-based sizing modes, size adjustments occur whenever cell contents change or, if <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is enabled, whenever row heights change. Some content-based sizing modes let you limit the size adjustment to the currently displayed rows in order to increase performance.  
+  
+ Only columns with a <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value of `true` are resized, and changing the visibility of a column does not cause resizing to occur. Additionally, when columns are set to automatically resize, the user cannot adjust the column widths with the mouse.  
+  
+ To adjust column widths programmatically, use the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> methods or set the column <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> property.  
+  
+ For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+  
+   
+  
+## Examples  
+ The following code example forces a column to automatically resize its width to fit its contents. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#109](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#109)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#109](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#109)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#109](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#109)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is a <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> that is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">The specified value when setting this property results in an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" /> for a visible column when column headers are hidden.  
+  
+ -or-  
+  
+ The specified value when setting this property results in an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> for a visible column that is frozen.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CellTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewCell CellTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCell CellTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template used to create new cells.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCell" /> that all other cells in the column are modeled after. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructors for the <xref:System.Windows.Forms.DataGridViewColumn> class initialize this property. The default constructor sets the property to `null`; the other constructor copies the cell template from its parameter.  
+  
+> [!NOTE]
+>  Changing the properties of the cell template will not immediately affect the user interface (UI) of the column's existing cells. These changes are only apparent after the column is regenerated (for example, by sorting the column or through a call to the <xref:System.Windows.Forms.DataGridView.InvalidateColumn%2A?displayProperty=fullName> method).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewCell> as a template for a <xref:System.Windows.Forms.DataGridViewColumn>. Style changes made to any cell in the column affect all of the column's cells. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#120)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#120)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#120)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellType">
+      <MemberSignature Language="C#" Value="public Type CellType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type CellType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.CellType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the run-time type of the cell template.</summary>
+        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> used as a template for this column. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base type of the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A> is <xref:System.Windows.Forms.DataGridViewCell>. Use this property to determine the actual derived type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an exact copy of this band.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.DataGridViewBand" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStrip">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ContextMenuStrip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shortcut menu for the column.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ContextMenuStrip" /> associated with the current <see cref="T:System.Windows.Forms.DataGridViewColumn" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The shortcut menu appears when a user clicks the right mouse button in the column's display area.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip%2A> property to add functionality for changing a cell's background color.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#130](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#130)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#130](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#130)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#130](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#130)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataPropertyName">
+      <MemberSignature Language="C#" Value="public string DataPropertyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataPropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DataPropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataGridViewColumnDataPropertyNameEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Forms.Design.DataMemberFieldConverter, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the data source property or database column to which the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> is bound.</summary>
+        <value>The case-insensitive name of the property or database column associated with the <see cref="T:System.Windows.Forms.DataGridViewColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A> property is set to `true`, each column automatically sets its <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A> property to the name of a property or database column in the data source specified by the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property. This binding can also be performed manually, which is useful when you want to display only a subset of the properties or database columns available in the data source. In such cases, set the <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A> property to `false`, and then manually add each <xref:System.Windows.Forms.DataGridViewColumn>, setting the value of each <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A> property to the properties or database columns in the data source that you want to display.  
+  
+   
+  
+## Examples  
+ The following code example shows how to choose what property each column will represent.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView._CollectionBound#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._CollectionBound/CS/collectionbound.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridView._CollectionBound#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._CollectionBound/VB/collectionbound.vb#20)]  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView._CollectionBound#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._CollectionBound/CS/collectionbound.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridView._CollectionBound#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._CollectionBound/VB/collectionbound.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCellStyle">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the column's default cell style.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents the default style of the cells in the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in this column, the styles specified through the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName> property, but are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName> properties.  
+  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property to set the content alignment of various columns.  
+  
+ [!code-csharp[System.Windows.Forms.GridViewContentAlignment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewContentAlignment/CS/changecolumnalignment.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewContentAlignment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewContentAlignment/VB/changecolumnalignment.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayIndex">
+      <MemberSignature Language="C#" Value="public int DisplayIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display order of the column relative to the currently displayed columns.</summary>
+        <value>The zero-based position of the column as it is displayed in the associated <see cref="T:System.Windows.Forms.DataGridView" />, or -1 if the band is not contained within a control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike the <xref:System.Windows.Forms.DataGridViewBand.Index%2A> property, the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> property corresponds to the current position of the column as displayed by the user interface (UI). By default, each column's <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> is set to numbers of increasing order, which reflects the order in which they were added. The <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value does not affect the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value. To determine the display position of a column based on its visibility or other state, use the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn%2A>, <xref:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn%2A>, or <xref:System.Windows.Forms.DataGridViewColumnCollection.GetNextColumn%2A> method of the <xref:System.Windows.Forms.DataGridViewColumnCollection> class.  
+  
+ Every column in the control has a unique <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value. The values start with 0 and proceed in numerical order without skipping any values. When you change the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value for a column, the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> values for other columns are changed to reflect the new order.  
+  
+ If the column has an associated <xref:System.Windows.Forms.DataGridView> control, setting this property will cause the control to redraw itself.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> property to swap the visual position of the first and last columns. Note that insertions occur before the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> is not <see langword="null" /> and the specified value when setting this property is less than 0 or greater than or equal to the number of columns in the control.  
+  
+ -or-  
+  
+ <see cref="P:System.Windows.Forms.DataGridViewElement.DataGridView" /> is <see langword="null" /> and the specified value when setting this property is less than -1.  
+  
+ -or-  
+  
+ The specified value when setting this property is equal to <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataGridViewBand" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disposed">
+      <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridViewColumn.Disposed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> is disposed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumn.Disposed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewColumn> named `DataGridViewColumn1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewColumn.Disposed> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#370](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#370)]
+ [!code-vb[System.Windows.Forms.EventExamples#370](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#370)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DividerWidth">
+      <MemberSignature Language="C#" Value="public int DividerWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DividerWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DividerWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width, in pixels, of the column divider.</summary>
+        <value>The thickness, in pixels, of the divider (the column's right margin).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is useful to provide a visual boundary between frozen columns and columns that can scroll. The extra edge is part of the current column, although it will take on the foreground color of the associated <xref:System.Windows.Forms.DataGridView>. The extra edge does not extend the area in which users can double-click to automatically resize a column. To resize a column, the user must double-click on the boundary between the divider and the adjacent column.  
+  
+   
+  
+## Examples  
+ The following code example adds a vertical edge after the third column. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#110](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#110)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#110](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#110)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#110](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillWeight">
+      <MemberSignature Language="C#" Value="public float FillWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 FillWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.FillWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that represents the width of the column when it is in fill mode relative to the widths of other fill-mode columns in the control.</summary>
+        <value>A <see cref="T:System.Single" /> representing the width of the column when it is in fill mode relative to the widths of other fill-mode columns. The default is 100.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
+  
+ The maximum sum of <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> values for all columns in a <xref:System.Windows.Forms.DataGridView> control is 65535.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#30)]
+ [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is less than or equal to 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Frozen">
+      <MemberSignature Language="C#" Value="public override bool Frozen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Frozen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Frozen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a column will move when a user scrolls the <see cref="T:System.Windows.Forms.DataGridView" /> control horizontally.</summary>
+        <value>
+          <see langword="true" /> to freeze the column; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a column is frozen, all the columns to its left (or to its right in right-to-left languages) are frozen as well. The frozen and unfrozen columns form two groups. If column repositioning is enabled by setting the <xref:System.Windows.Forms.DataGridView.AllowUserToOrderColumns%2A> property to `true`, the user cannot drag a column from one group to the other.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Frozen%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#7)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#7)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewbanddemo.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferredWidth">
+      <MemberSignature Language="C#" Value="public virtual int GetPreferredWidth (System.Windows.Forms.DataGridViewAutoSizeColumnMode autoSizeColumnMode, bool fixedHeight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPreferredWidth(valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode autoSizeColumnMode, bool fixedHeight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.GetPreferredWidth(System.Windows.Forms.DataGridViewAutoSizeColumnMode,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="autoSizeColumnMode" Type="System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+        <Parameter Name="fixedHeight" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="autoSizeColumnMode">A <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value that specifies an automatic sizing mode.</param>
+        <param name="fixedHeight">
+          <see langword="true" /> to calculate the width of the column based on the current row heights; <see langword="false" /> to calculate the width with the expectation that the row heights will be adjusted.</param>
+        <summary>Calculates the ideal width of the column based on the specified criteria.</summary>
+        <returns>The ideal width, in pixels, of the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used by the content-based automatic sizing feature of the <xref:System.Windows.Forms.DataGridView> control to determine the ideal width of a column.  
+  
+ A `fixedHeight` parameter value of `false` calculates the column width based on calculated row heights that will achieve ideal cell height-to-width ratios. For cell contents to wrap onto multiple lines, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
+  
+ For more information about automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="autoSizeColumnMode" /> is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet" />, <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.None" />, or <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="autoSizeColumnMode" /> is not a valid <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderCell">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumnHeaderCell HeaderCell { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewColumnHeaderCell HeaderCell" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.HeaderCell" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumnHeaderCell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" /> that represents the column header.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewColumnHeaderCell" /> that represents the header cell for the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The header of a column is typically used to display a column label. Depending on the current values of the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=fullName> properties, users can also click the column header to sort or select the column.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumn.HeaderCell%2A> property to change column header style and contents.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#150](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#150)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#150](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#150)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#150](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#150)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderText">
+      <MemberSignature Language="C#" Value="public string HeaderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.HeaderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the caption text on the column's header cell.</summary>
+        <value>A <see cref="T:System.String" /> with the desired text. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is useful only when the column has an associated header cell. For more information, see the <xref:System.Windows.Forms.DataGridViewBand.HeaderCellCore%2A> property.  
+  
+> [!NOTE]
+>  There is no corresponding header text property for rows. To display labels in row headers, you must handle the <xref:System.Windows.Forms.DataGridView.CellPainting?displayProperty=fullName> event and paint your own labels when <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.ColumnIndex%2A?displayProperty=fullName> is -1.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A> property to change the text in the column header. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#160](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#160)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#160)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#160](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#160)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritedAutoSizeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAutoSizeColumnMode InheritedAutoSizeMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode InheritedAutoSizeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sizing mode in effect for the column.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" /> value in effect for the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName> property instead.  
+  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
+  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property is set to any other value except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column will manage its width so that its cell values are fully displayed without clipping. In content-based sizing modes, size adjustments occur whenever cell contents change or, if <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is enabled, whenever row heights change. Some content-based sizing modes let you limit the size adjustment to the currently displayed rows in order to increase performance.  
+  
+ Only columns with a <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value of `true` are resized, and changing the visibility of a column does not cause resizing to occur. Additionally, when columns are set to automatically resize, the user cannot adjust the column widths with the mouse.  
+  
+ To adjust column widths programmatically, use the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> methods or set the column <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> property.  
+  
+ For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritedStyle">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle InheritedStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle InheritedStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.InheritedStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cell style currently applied to the column.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents the cell style used to display the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is useful to determine which cell styles are applied to all cells in a column regardless of any row styles that are also applied to the cells. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> and the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName> property.  
+  
+ For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDataBound">
+      <MemberSignature Language="C#" Value="public bool IsDataBound { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDataBound" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.IsDataBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the column is bound to a data source.</summary>
+        <value>
+          <see langword="true" /> if the column is connected to a data source; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A column becomes bound to a data source if it is part of a data-bound <xref:System.Windows.Forms.DataGridView>. A column can become part of a data-bound <xref:System.Windows.Forms.DataGridView> if the column is automatically created when the <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A> property is set to `true`, or if the column's <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A> property is set when the column is manually added to the <xref:System.Windows.Forms.DataGridView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumWidth">
+      <MemberSignature Language="C#" Value="public int MinimumWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.MinimumWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum width, in pixels, of the column.</summary>
+        <value>The number of pixels, from 2 to <see cref="F:System.Int32.MaxValue" />, that specifies the minimum width of the column. The default is 5.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> property sets a limit on how narrow the column can be resized in the user interface (UI). The <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> property can override the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example sets the minimum width of a column. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#107](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#107)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#107](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#107)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#107](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#107)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 2 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the column.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name of the column. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents a formal name associated with the column that can be used to identify the column in a collection. For example, the <xref:System.Windows.Forms.DataGridViewColumnCollection.Remove%2A> and <xref:System.Windows.Forms.DataGridViewColumnCollection.Contains%2A> methods of the <xref:System.Windows.Forms.DataGridViewColumnCollection> class use the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> property. The name is case-insensitive. The <xref:System.Windows.Forms.DataGridView> will treat `column1` and `COLUMN1` as the same column.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the column name.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView._CollectionBound#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._CollectionBound/CS/collectionbound.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridView._CollectionBound#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._CollectionBound/VB/collectionbound.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public override bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the user can edit the column's cells.</summary>
+        <value>
+          <see langword="true" /> if the user cannot edit the column's cells; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property affects the <xref:System.Windows.Forms.DataGridViewCell.ReadOnly%2A?displayProperty=fullName> property of each cell in the column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.ReadOnly%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#11)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#11)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewbanddemo.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This property is set to <see langword="false" /> for a column that is bound to a read-only data source.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Resizable">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewTriState Resizable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewTriState Resizable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Resizable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the column is resizable.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGridViewTriState" /> values. The default is <see cref="F:System.Windows.Forms.DataGridViewTriState.True" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property is <xref:System.Windows.Forms.DataGridViewTriState>, the user will not be able to manually adjust the column width.  
+  
+ By default, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value is based on the <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A?displayProperty=fullName> property value. If you explicitly set <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState> or <xref:System.Windows.Forms.DataGridViewTriState>, however, the control value is ignored. Set <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> to <xref:System.Windows.Forms.DataGridViewTriState> to restore the value-inheritance behavior.  
+  
+ Because <xref:System.Windows.Forms.DataGridViewTriState> restores the value inheritance, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property will never return a <xref:System.Windows.Forms.DataGridViewTriState> value unless the column has not been added to a <xref:System.Windows.Forms.DataGridView> control. If you need to determine whether the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value of a column is inherited, check its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property. If the <xref:System.Windows.Forms.DataGridViewElement.State%2A> property value includes the <xref:System.Windows.Forms.DataGridViewElementStates> flag, the <xref:System.Windows.Forms.DataGridViewColumn.Resizable%2A> property value is not inherited.  
+  
+   
+  
+## Examples  
+ The following code example uses this property to fix the size of the third column so that the user cannot change the column width.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.MouseBasedResizing#12](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.MouseBasedResizing/CPP/mousesizing.cpp#12)]
+ [!code-csharp[System.Windows.Forms.DataGridView.MouseBasedResizing#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.MouseBasedResizing/CS/mousesizing.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridView.MouseBasedResizing#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.MouseBasedResizing/VB/mousesizing.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the site of the column.</summary>
+        <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the column, if any.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumnSortMode SortMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewColumnSortMode SortMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sort mode for the column.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewColumnSortMode" /> that specifies the criteria used to order the rows based on the cell values in a column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Forms.DataGridView> control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, a sorting glyph is automatically displayed in the column header.  
+  
+ Starting in the [!INCLUDE[net_2015](~/includes/net-2015-md.md)], the sorting glyph is resized according to the system DPI settings when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+```  
+  
+ When the control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property.  
+  
+ The default sort mode of a <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is <xref:System.Windows.Forms.DataGridViewColumnSortMode>. The default sort mode for other column types is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
+  
+ The <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> value does not prevent you from sorting a column programmatically, although other restrictions may apply. For more information, see the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
+  
+ A <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#066](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#066)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#066](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#066)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The value assigned to the property conflicts with <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipText">
+      <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ToolTipText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text used for ToolTips.</summary>
+        <value>The text to display as a ToolTip for the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The column's ToolTip displays when the mouse pointer rests on the column header.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set a column's ToolTip. This code example is part of a larger code example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#145](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#145)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#145](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#145)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#145](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a string that describes the column.</summary>
+        <returns>A <see cref="T:System.String" /> that describes the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method. The returned string contains the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> and <xref:System.Windows.Forms.DataGridViewBand.Index%2A> properties of the <xref:System.Windows.Forms.DataGridViewColumn>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueType">
+      <MemberSignature Language="C#" Value="public Type ValueType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValueType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ValueType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data type of the values in the column's cells.</summary>
+        <value>A <see cref="T:System.Type" /> that describes the run-time class of the values stored in the column's cells.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used when filtering or sorting the columns with respect to the contents of their cells.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewColumn.ValueType%2A> property in the initialization of a <xref:System.Windows.Forms.DataGridViewComboBoxColumn> that contains <xref:System.Drawing.Color> values.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the column is visible.</summary>
+        <value>
+          <see langword="true" /> if the column is visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to hide a column from view while keeping the column in the <xref:System.Windows.Forms.DataGridView>. To completely remove a column, use the <xref:System.Windows.Forms.DataGridViewColumnCollection.Remove%2A?displayProperty=fullName> method.  
+  
+ To hide a column that is automatically generated when binding to a data source, set this property in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event handler.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewBand.Visible%2A?displayProperty=fullName> property, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewBand> class overview.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewBandDemo.cpp#9)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewBandDemo.cs#9)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewbanddemo.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current width of the column.</summary>
+        <value>The width, in pixels, of the column. The default is 100.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified value when setting this property is less than the value of the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> property, the <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> property value is used instead.  
+  
+   
+  
+## Examples  
+ The following code example sets the width of a column. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#108](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#108)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#108](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#108)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#108](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#108)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified value when setting this property is greater than 65536.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

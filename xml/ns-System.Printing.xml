@@ -1,0 +1,32 @@
+<Namespace Name="System.Printing">
+  <Docs>
+    <summary>Provides classes that enable you to automate the management of print servers, print queues, and print jobs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This namespace contains the following core classes:  
+  
+-   The <xref:System.Printing.PrintSystemObject> class, which is the base class for the other core printing classes.  
+  
+-   The <xref:System.Printing.PrintServer> class, which represents an actual print server, usually a computer.  
+  
+-   The <xref:System.Printing.PrintQueue> class, which represents an actual print queue and its printer.  
+  
+-   The <xref:System.Printing.PrintSystemJobInfo> class, which represents a particular print job.  
+  
+-   The <xref:System.Printing.PrintTicket> class, which instructs the printer how to process a print job.  
+  
+ Classes derived from the <xref:System.Printing.PrintSystemObject> class each have a <xref:System.Printing.PrintSystemObject.Commit%2A> and a <xref:System.Printing.PrintSystemObject.Refresh%2A> method. You must use these methods to ensure that instances of the classes are synchronized with the hardware or software components that they represent.  
+  
+ The <xref:System.Printing> namespace also includes many enumerations that describe printer capabilities, such as whether a printer can produce collated output, and that specify instructions to printers, such as the paper size to use for a print job.  
+  
+ This namespace is part of the enhanced printing services provided with [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)]. Managed code developers using [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] must use the [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)] in the <xref:System.Drawing.Printing> namespace.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

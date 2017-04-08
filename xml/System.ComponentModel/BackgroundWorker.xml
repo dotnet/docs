@@ -1,0 +1,849 @@
+<Type Name="BackgroundWorker" FullName="System.ComponentModel.BackgroundWorker">
+  <TypeSignature Language="C#" Value="public class BackgroundWorker : System.ComponentModel.Component" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackgroundWorker extends System.ComponentModel.Component" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.BackgroundWorker" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("DoWork")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Executes an operation on a separate thread.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.BackgroundWorker> class allows you to run an operation on a separate, dedicated thread. Time-consuming operations like downloads and database transactions can cause your user interface (UI) to seem as though it has stopped responding while they are running. When you want a responsive UI and you are faced with long delays associated with such operations, the <xref:System.ComponentModel.BackgroundWorker> class provides a convenient solution.  
+  
+ To execute a time-consuming operation in the background, create a <xref:System.ComponentModel.BackgroundWorker> and listen for events that report the progress of your operation and signal when your operation is finished. You can create the <xref:System.ComponentModel.BackgroundWorker> programmatically or you can drag it onto your form from the **Components** tab of the **Toolbox**. If you create the <xref:System.ComponentModel.BackgroundWorker> in the Windows Forms Designer, it will appear in the Component Tray, and its properties will be displayed in the Properties window.  
+  
+ To set up for a background operation, add an event handler for the <xref:System.ComponentModel.BackgroundWorker.DoWork> event. Call your time-consuming operation in this event handler. To start the operation, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A>. To receive notifications of progress updates, handle the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event. To receive a notification when the operation is completed, handle the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event.  
+  
+> [!NOTE]
+>  You must be careful not to manipulate any user-interface objects in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler. Instead, communicate to the user interface through the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> events.  
+>   
+>  <xref:System.ComponentModel.BackgroundWorker> events are not marshaled across <xref:System.AppDomain> boundaries. Do not use a <xref:System.ComponentModel.BackgroundWorker> component to perform multithreaded operations in more than one <xref:System.AppDomain>.  
+  
+ If your background operation requires a parameter, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> with your parameter. Inside the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can extract the parameter from the <xref:System.ComponentModel.DoWorkEventArgs.Argument%2A?displayProperty=fullName> property.  
+  
+ For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the basics of the <xref:System.ComponentModel.BackgroundWorker> class for executing a time-consuming operation asynchronously. The following illustration shows an example of the output.  
+  
+ ![BackgroundWorker simple example](~/add/media/backgroundworker-simple.png "BackgroundWorker simple example")  
+  
+ To try this code, create a Windows Forms application. Add a <xref:System.Windows.Forms.Label> control named `resultLabel` and add two <xref:System.Windows.Forms.Button> controls named `startAsyncButton` and `cancelAsyncButton`. Create <xref:System.Windows.Forms.Control.Click> event handlers for both buttons. From the **Components** tab of the Toolbox, add a <xref:System.ComponentModel.BackgroundWorker> component named `backgroundWorker1`. Create <xref:System.ComponentModel.BackgroundWorker.DoWork>, <xref:System.ComponentModel.BackgroundWorker.ProgressChanged>, and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handlers for the <xref:System.ComponentModel.BackgroundWorker>. In the code for the form, replace the existing code with the following code.  
+  
+ [!code-csharp[System.ComponentModel.BackgroundWorkerSimple#1](~/samples/snippets/csharp/VS_Snippets_Winforms/system.componentmodel.backgroundworkersimple/cs/form1.cs#1)]
+ [!code-vb[System.ComponentModel.BackgroundWorkerSimple#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.componentmodel.backgroundworkersimple/vb/form1.vb#1)]  
+  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker> class for executing a time-consuming operation asynchronously. The following illustration shows an example of the output.  
+  
+ ![BackgroundWorker Fibonacci example](~/add/media/backgroundworker-fibonacci.png "BackgroundWorker Fibonacci example")  
+  
+ The operation computes the selected Fibonacci number, reports progress updates as the calculation proceeds, and permits a pending calculation to be canceled.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#1)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#1)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BackgroundWorker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.BackgroundWorker" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a <xref:System.ComponentModel.BackgroundWorker>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="public void CancelAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.CancelAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Requests cancellation of a pending background operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A> submits a request to terminate the pending background operation and sets the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property to `true`.  
+  
+ When you call <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A>, your worker method has an opportunity to stop its execution and exit. The worker code should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property to see if it has been set to `true`.  
+  
+> [!CAUTION]
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A> method to cancel an asynchronous ("background") operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#4)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#4)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CancellationPending">
+      <MemberSignature Language="C#" Value="public bool CancellationPending { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CancellationPending" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.CancellationPending" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the application has requested cancellation of a background operation.</summary>
+        <value>
+          <see langword="true" /> if the application has requested cancellation of a background operation; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> is `true`, then the <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A> method has been called on the <xref:System.ComponentModel.BackgroundWorker>.  
+  
+ This property is meant for use by the worker thread, which should periodically check <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> and abort the background operation when it is set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property to query a <xref:System.ComponentModel.BackgroundWorker> about its cancellation state. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#8)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#8)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoWork">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.DoWorkEventHandler DoWork;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.DoWorkEventHandler DoWork" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.DoWork" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.DoWorkEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when <see cref="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync" /> is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised when you call the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method. This is where you start the operation that performs the potentially time-consuming work.  
+  
+ Your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler should periodically check the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> property value and abort the operation if it is `true`. When this occurs, you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=fullName> to `true`, and the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will be set to `true`.  
+  
+> [!CAUTION]
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+  
+ If your operation produces a result, you can assign the result to the <xref:System.ComponentModel.DoWorkEventArgs.Result%2A?displayProperty=fullName> property. This will be available to the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler in the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property.  
+  
+ If the operation raises an exception that your code does not handle, the <xref:System.ComponentModel.BackgroundWorker> catches the exception and passes it into the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler, where it is exposed as the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName>. If you are running under the Visual Studio debugger, the debugger will break at the point in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler where the unhandled exception was raised. If you have more than one <xref:System.ComponentModel.BackgroundWorker>, you should not reference any of them directly, as this would couple your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler to a specific instance of <xref:System.ComponentModel.BackgroundWorker>. Instead, you should access your <xref:System.ComponentModel.BackgroundWorker> by casting the `sender` parameter in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler.  
+  
+ You must be careful not to manipulate any user-interface objects in your <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler. Instead, communicate to the user interface through the <xref:System.ComponentModel.BackgroundWorker> events.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.DoWork> event to start an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#5)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#5)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBusy">
+      <MemberSignature Language="C#" Value="public bool IsBusy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBusy" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.IsBusy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.ComponentModel.BackgroundWorker" /> is running an asynchronous operation.</summary>
+        <value>
+          <see langword="true" />, if the <see cref="T:System.ComponentModel.BackgroundWorker" /> is running an asynchronous operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.BackgroundWorker> starts an asynchronous operation when you call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.BackgroundWorker.IsBusy%2A> property to wait for completion of a <xref:System.ComponentModel.BackgroundWorker> operation. This code example is part of a larger example described in [How to: Download a File in the Background](~/docs/framework/winforms/controls/how-to-download-a-file-in-the-background.md).  
+  
+ [!code-csharp[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs#2)]
+ [!code-vb[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDoWork">
+      <MemberSignature Language="C#" Value="protected virtual void OnDoWork (System.ComponentModel.DoWorkEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDoWork(class System.ComponentModel.DoWorkEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnDoWork(System.ComponentModel.DoWorkEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.DoWorkEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.DoWork" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProgressChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnProgressChanged (System.ComponentModel.ProgressChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnProgressChanged(class System.ComponentModel.ProgressChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.ProgressChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.ComponentModel.BackgroundWorker.OnProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.OnProgressChanged%2A> method to report the progress of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager> class.  
+  
+ [!code-csharp[System.ComponentModel.AsyncOperationManager#24](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#24)]
+ [!code-vb[System.ComponentModel.AsyncOperationManager#24](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRunWorkerCompleted">
+      <MemberSignature Language="C#" Value="protected virtual void OnRunWorkerCompleted (System.ComponentModel.RunWorkerCompletedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRunWorkerCompleted(class System.ComponentModel.RunWorkerCompletedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.RunWorkerCompletedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(System.ComponentModel.RunWorkerCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.ProgressChangedEventHandler ProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.ProgressChangedEventHandler ProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.ProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ProgressChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when <see cref="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" /> is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised when you call the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event to report the progress of an asynchronous operation to the user. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#7)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#7)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportProgress">
+      <MemberSignature Language="C#" Value="public void ReportProgress (int percentProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportProgress(int32 percentProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="percentProgress" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="percentProgress">The percentage, from 0 to 100, of the background operation that is complete.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need the background operation to report on its progress, you can call the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to raise the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event. The <xref:System.ComponentModel.BackgroundWorker.WorkerReportsProgress%2A> property value must be `true`, or <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> will throw an <xref:System.InvalidOperationException>.  
+  
+ It is up to you to implement a meaningful way of measuring your background operation's progress as a percentage of the total task completed.  
+  
+ The call to the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method is asynchronous and returns immediately. The <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event handler executes on the thread that created the <xref:System.ComponentModel.BackgroundWorker>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to report the progress of an asynchronous operation to the user. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#8)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#8)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" /> property is set to <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportProgress">
+      <MemberSignature Language="C#" Value="public void ReportProgress (int percentProgress, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportProgress(int32 percentProgress, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.ReportProgress(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="percentProgress" Type="System.Int32" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="percentProgress">The percentage, from 0 to 100, of the background operation that is complete.</param>
+        <param name="userState">The state object passed to <see cref="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)" />.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.BackgroundWorker.ProgressChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need the background operation to report on its progress, you can call the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to raise the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event. The <xref:System.ComponentModel.BackgroundWorker.WorkerReportsProgress%2A> property value must `true`, or <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> will throw an <xref:System.InvalidOperationException>.  
+  
+ It is up to you to implement a meaningful way of measuring your background operation's progress as a percentage of the total task completed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to report the progress of an asynchronous operation to the user. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripProgressBar> class.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStripProgressBar#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripProgressBar/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.ToolStripProgressBar#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStripProgressBar/VB/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" /> property is set to <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RunWorkerAsync">
+      <MemberSignature Language="C#" Value="public void RunWorkerAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunWorkerAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts execution of a background operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method submits a request to start the operation running asynchronously. When the request is serviced, the <xref:System.ComponentModel.BackgroundWorker.DoWork> event is raised, which in turn starts execution of your background operation.  
+  
+ If the background operation is already running, calling <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> again will raise an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method to start an asynchronous operation. It is part of a larger example described in [How to: Download a File in the Background](~/docs/framework/winforms/controls/how-to-download-a-file-in-the-background.md).  
+  
+ [!code-csharp[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs#2)]
+ [!code-vb[System.ComponentModel.BackgroundWorker.IsBusy#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RunWorkerAsync">
+      <MemberSignature Language="C#" Value="public void RunWorkerAsync (object argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunWorkerAsync(object argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="argument">A parameter for use by the background operation to be executed in the <see cref="E:System.ComponentModel.BackgroundWorker.DoWork" /> event handler.</param>
+        <summary>Starts execution of a background operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method submits a request to start the operation running asynchronously. When the request is serviced, the <xref:System.ComponentModel.BackgroundWorker.DoWork> event is raised, which in turn starts execution of your background operation.  
+  
+ If your operation requires a parameter, you can provide it as the `argument` parameter to <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A>.  
+  
+ If the background operation is already running, calling <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> again will raise an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method to start an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#3)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#3)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.ComponentModel.BackgroundWorker.IsBusy" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RunWorkerCompleted">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.RunWorkerCompletedEventHandler RunWorkerCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.RunWorkerCompletedEventHandler RunWorkerCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.BackgroundWorker.RunWorkerCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RunWorkerCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the background operation has completed, has been canceled, or has raised an exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised when the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler returns.  
+  
+ If the operation completes successfully and its result is assigned in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler, you can access the result through the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property.  
+  
+ The <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> indicates that an exception was thrown by the operation.  
+  
+ The <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> indicates whether a cancellation request was processed by the background operation. If your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler detects a cancellation request by checking the <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> flag and setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> flag of <xref:System.ComponentModel.DoWorkEventArgs?displayProperty=fullName> to `true`, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> also will be set to `true`.  
+  
+> [!CAUTION]
+>  Be aware that your code in the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler may finish its work as a cancellation request is being made, and your polling loop may miss <xref:System.ComponentModel.BackgroundWorker.CancellationPending%2A> being set to `true`. In this case, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> flag of <xref:System.ComponentModel.RunWorkerCompletedEventArgs?displayProperty=fullName> in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler will not be set to `true`, even though a cancellation request was made. This situation is called a *race condition* and is a common concern in multithreaded programming. For more information about multithreading design issues, see [Managed Threading Best Practices](~/docs/standard/threading/managed-threading-best-practices.md).  
+  
+ Your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler should always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=fullName> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A?displayProperty=fullName> properties before accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property. If an exception was raised or if the operation was canceled, accessing the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=fullName> property raises an exception.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event to handle the result of an asynchronous operation. This code example is part of a larger example provided for the <xref:System.ComponentModel.BackgroundWorker> class.  
+  
+ [!code-cpp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#6)]
+ [!code-csharp[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#6)]
+ [!code-vb[System.ComponentModel.BackgroundWorker#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkerReportsProgress">
+      <MemberSignature Language="C#" Value="public bool WorkerReportsProgress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WorkerReportsProgress" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.WorkerReportsProgress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.ComponentModel.BackgroundWorker" /> can report progress updates.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.ComponentModel.BackgroundWorker" /> supports progress updates; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.ComponentModel.BackgroundWorker.WorkerReportsProgress%2A> property to `true` if you want the <xref:System.ComponentModel.BackgroundWorker> to support progress updates. When this property is `true`, user code can call the <xref:System.ComponentModel.BackgroundWorker.ReportProgress%2A> method to raise the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkerSupportsCancellation">
+      <MemberSignature Language="C#" Value="public bool WorkerSupportsCancellation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WorkerSupportsCancellation" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.ComponentModel.BackgroundWorker" /> supports asynchronous cancellation.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.ComponentModel.BackgroundWorker" /> supports cancellation; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.ComponentModel.BackgroundWorker.WorkerSupportsCancellation%2A> property to `true` if you want the <xref:System.ComponentModel.BackgroundWorker> to support cancellation. When this property is `true`, you can call the <xref:System.ComponentModel.BackgroundWorker.CancelAsync%2A> method to interrupt a background operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

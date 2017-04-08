@@ -1,0 +1,81 @@
+<Type Name="IPartitionResolver" FullName="System.Web.IPartitionResolver">
+  <TypeSignature Language="C#" Value="public interface IPartitionResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPartitionResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Web.IPartitionResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods that must be implemented for custom session-state partition resolution.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.Web.IPartitionResolver> interface and the <xref:System.Web.IPartitionResolver.Initialize%2A> and <xref:System.Web.IPartitionResolver.ResolvePartition%2A> methods, if you are providing custom partition resolution for session-state data across multiple backend nodes when in SQL or state-server mode.  
+  
+ The session-state management information can be configured in the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) of the configuration file with the `partitionResolverType` attribute. If a value is specified for the `partitionResolverType` attribute, the `sqlConnectionString` and `stateConnectionString` attributes are ignored.  
+  
+ The partition resolution configuration can also be set programmatically using the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> property. If the <xref:System.Web.Configuration.SessionStateSection.PartitionResolverType%2A> property is specified, the <xref:System.Web.Configuration.SessionStateSection.SqlConnectionString%2A> and <xref:System.Web.Configuration.SessionStateSection.StateConnectionString%2A> properties are ignored.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IPartitionResolver.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the custom partition resolver.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.IPartitionResolver.Initialize%2A> method to provide any initialization code that is needed for your custom partition resolution. The <xref:System.Web.SessionState.SessionStateModule> creates the type implementing the <xref:System.Web.IPartitionResolver> interface, calls the <xref:System.Web.IPartitionResolver.Initialize%2A> method to initialize it (once per instance), and then indicates to the ASP.NET state service or SQL Server provider that partitioning is being used and passes a resolver instance to the provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvePartition">
+      <MemberSignature Language="C#" Value="public string ResolvePartition (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolvePartition(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IPartitionResolver.ResolvePartition(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">An identifier used to determine which partition to use for the current session state.</param>
+        <summary>Resolves the partition based on a key parameter.</summary>
+        <returns>A string with connection information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `key` parameter of the <xref:System.Web.IPartitionResolver.ResolvePartition%2A> method is the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> property. The <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> property uniquely identifies a browser with session data on the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

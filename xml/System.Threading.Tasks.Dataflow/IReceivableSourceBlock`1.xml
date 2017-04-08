@@ -1,0 +1,73 @@
+<Type Name="IReceivableSourceBlock&lt;TOutput&gt;" FullName="System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt;">
+  <TypeSignature Language="C#" Value="public interface IReceivableSourceBlock&lt;TOutput&gt; : System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReceivableSourceBlock`1&lt;TOutput&gt; implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!TOutput&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TOutput" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TOutput">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryReceive">
+      <MemberSignature Language="C#" Value="public bool TryReceive (Predicate&lt;TOutput&gt; filter, out TOutput item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(class System.Predicate`1&lt;!TOutput&gt; filter, !TOutput item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceive(System.Predicate{`0},`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.Predicate&lt;TOutput&gt;" />
+        <Parameter Name="item" Type="TOutput&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="filter">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReceiveAll">
+      <MemberSignature Language="C#" Value="public bool TryReceiveAll (out System.Collections.Generic.IList&lt;TOutput&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveAll(class System.Collections.Generic.IList`1&lt;!TOutput&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IList&lt;TOutput&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

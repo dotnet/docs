@@ -1,0 +1,299 @@
+<Type Name="MessagePartSpecification" FullName="System.ServiceModel.Security.MessagePartSpecification">
+  <TypeSignature Language="C#" Value="public class MessagePartSpecification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePartSpecification extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.MessagePartSpecification" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies which parts are included in a message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This specification is used to indicate which message parts need to be signed and which parts need to be encrypted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagePartSpecification ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an empty <see cref="T:System.ServiceModel.Security.MessagePartSpecification" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagePartSpecification (bool isBodyIncluded);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isBodyIncluded) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isBodyIncluded" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isBodyIncluded">Initializes whether the message body is included in the specification.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> and specifies whether the message body is included.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagePartSpecification (System.Xml.XmlQualifiedName[] headerTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName[] headerTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Xml.XmlQualifiedName[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="headerTypes" Type="System.Xml.XmlQualifiedName[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="headerTypes">The array of header types to use.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> with an array of message headers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each header is specified using its name and namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagePartSpecification (bool isBodyIncluded, System.Xml.XmlQualifiedName[] headerTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isBodyIncluded, class System.Xml.XmlQualifiedName[] headerTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.#ctor(System.Boolean,System.Xml.XmlQualifiedName[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isBodyIncluded" Type="System.Boolean" />
+        <Parameter Name="headerTypes" Type="System.Xml.XmlQualifiedName[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="isBodyIncluded">Initializes whether the message body is included in the specification.</param>
+        <param name="headerTypes">The array of header types to use.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> with an array of message headers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each header is specified using its name and namespace. In addition, the `isBodyIncluded` parameter specifies whether the message body is to be included or not.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the list of headers in this specification.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> is read only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Xml.XmlQualifiedName&gt; HeaderTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Xml.XmlQualifiedName&gt; HeaderTypes" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.HeaderTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Xml.XmlQualifiedName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the header types for this specification.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> that holds the header types for this message specification.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBodyIncluded">
+      <MemberSignature Language="C#" Value="public bool IsBodyIncluded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBodyIncluded" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.IsBodyIncluded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the message body is included in this specification.</summary>
+        <value>
+          <see langword="true" /> if the message body is included in this specification; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> is read only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the specification is read only.</summary>
+        <value>
+          <see langword="true" /> if the specification is read only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.ServiceModel.Security.MessagePartSpecification.MakeReadOnly%2A> to set this property to `true`. <xref:System.ServiceModel.Security.MessagePartSpecification.Clear%2A> sets the property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeReadOnly">
+      <MemberSignature Language="C#" Value="public void MakeReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.MakeReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the specification to read only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.Security.MessagePartSpecification.Clear%2A> removes all headers in the specification and makes the collection read/write.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoParts">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.MessagePartSpecification NoParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.MessagePartSpecification NoParts" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.MessagePartSpecification.NoParts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.MessagePartSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an empty instance of this class.</summary>
+        <value>An empty instance of this class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `null`, a new empty instance of this class is created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public void Union (System.ServiceModel.Security.MessagePartSpecification other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.ServiceModel.Security.MessagePartSpecification other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="specification" Type="System.ServiceModel.Security.MessagePartSpecification" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>Merges two message part specifications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the <xref:System.ServiceModel.Security.MessagePartSpecification.Union%2A> method is called, the <xref:System.ServiceModel.Security.MessagePartSpecification> holds all header information from both specifications, and the <xref:System.ServiceModel.Security.MessagePartSpecification.IsBodyIncluded%2A> property is set to the logical OR of both specifications.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> is read only.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="specification" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

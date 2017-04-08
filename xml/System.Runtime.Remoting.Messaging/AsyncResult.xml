@@ -1,0 +1,432 @@
+<Type Name="AsyncResult" FullName="System.Runtime.Remoting.Messaging.AsyncResult">
+  <TypeSignature Language="C#" Value="public class AsyncResult : IAsyncResult, System.Runtime.Remoting.Messaging.IMessageSink" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit AsyncResult extends System.Object implements class System.IAsyncResult, class System.Runtime.Remoting.Messaging.IMessageSink" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.AsyncResult" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IAsyncResult</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMessageSink</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates the results of an asynchronous operation on a delegate.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.AsyncResult> class is used in conjunction with asynchronous method calls made using delegates. The <xref:System.IAsyncResult> returned from the delegate's `BeginInvoke` method can be cast to an <xref:System.Runtime.Remoting.Messaging.AsyncResult>. The <xref:System.Runtime.Remoting.Messaging.AsyncResult> has the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate%2A> property that holds the delegate object on which the asynchronous call was invoked.  
+  
+ For more information about `BeginInvoke` and asynchronous calls using delegates, see [Asynchronous Programming Using Delegates](~/docs/standard/asynchronous-programming-patterns/asynchronous-programming-using-delegates.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle%2A> property to get a <xref:System.Threading.WaitHandle>, and how to wait for an asynchronous call on a delegate. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.  
+  
+ The example consists of two classes, the class that contains the method which is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#3](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/waithandle.cpp#3)]
+[!code-csharp[AsyncDelegateExamples#3](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/waithandle.cs#3)]
+[!code-vb[AsyncDelegateExamples#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsyncDelegate">
+      <MemberSignature Language="C#" Value="public virtual object AsyncDelegate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AsyncDelegate" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the delegate object on which the asynchronous call was invoked.</summary>
+        <value>The delegate object on which the asynchronous call was invoked.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate%2A> property can be cast to the actual class of the user-defined delegate.  
+  
+ For example, if the delegate that was used to make the asynchronous call is of type `MyDelegate`, the delegate that is returned by this property must be cast to `MyDelegate`. The callback method can then call the delegate's `EndInvoke` method with the correct signature, in order to obtain the results of the asynchronous method call.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate%2A> property to get the delegate that was used to make the asynchronous call, in order to call `EndInvoke`. The example casts the <xref:System.IAsyncResult>, which is the only parameter of the callback method, to an <xref:System.Runtime.Remoting.Messaging.AsyncResult> object.  
+  
+ The example consists of two classes, the class that contains the method which is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information on the way this callback example works, and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#5](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/callback.cpp#5)]
+[!code-csharp[AsyncDelegateExamples#5](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/callback.cs#5)]
+[!code-vb[AsyncDelegateExamples#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/callback.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncProcessMessage">
+      <MemberSignature Language="C#" Value="public virtual System.Runtime.Remoting.Messaging.IMessageCtrl AsyncProcessMessage (System.Runtime.Remoting.Messaging.IMessage msg, System.Runtime.Remoting.Messaging.IMessageSink replySink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageCtrl AsyncProcessMessage(class System.Runtime.Remoting.Messaging.IMessage msg, class System.Runtime.Remoting.Messaging.IMessageSink replySink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.AsyncResult.AsyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Messaging.IMessageSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessageCtrl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+        <Parameter Name="replySink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The request <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> interface.</param>
+        <param name="replySink">The response <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" /> interface.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" /> interface.</summary>
+        <returns>No value is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncProcessMessage%2A> method of the <xref:System.Runtime.Remoting.Messaging.IMessageSink> interface is not relevant to the <xref:System.Runtime.Remoting.Messaging.AsyncResult> class. Implementation by <xref:System.Runtime.Remoting.Messaging.AsyncResult> throws a <xref:System.NotSupportedException>. Instead, obtain an <xref:System.Runtime.Remoting.Messaging.AsyncResult> by casting the <xref:System.IAsyncResult> interface returned by an asynchronous call made using a delegate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncState">
+      <MemberSignature Language="C#" Value="public virtual object AsyncState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AsyncState" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.AsyncState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object provided as the last parameter of a <see langword="BeginInvoke" /> method call.</summary>
+        <value>The object provided as the last parameter of a <see langword="BeginInvoke" /> method call.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the `BeginInvoke` method, see [Asynchronous Programming Using Delegates](~/docs/standard/asynchronous-programming-patterns/asynchronous-programming-using-delegates.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncState%2A> property is used to pass information to a callback method. The last parameter of the `BeginInvoke` method call is a format string, which the callback method uses to format an output message.  
+  
+ The example consists of two classes, the class that contains the method which is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information on the way this callback example works, and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#5](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/callback.cpp#5)]
+[!code-csharp[AsyncDelegateExamples#5](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/callback.cs#5)]
+[!code-vb[AsyncDelegateExamples#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/callback.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncWaitHandle">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.WaitHandle AsyncWaitHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle AsyncWaitHandle" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.WaitHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Threading.WaitHandle" /> that encapsulates Win32 synchronization handles, and allows the implementation of various synchronization schemes.</summary>
+        <value>A <see cref="T:System.Threading.WaitHandle" /> that encapsulates Win32 synchronization handles, and allows the implementation of various synchronization schemes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Threading.WaitHandle> returned by this method is automatically signaled when the asynchronous operation has completed.  
+  
+ The wait handle is not closed automatically when you call `EndInvoke` on the delegate that was used to make the asynchronous method call. If you release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle. To free the system resources as soon as you are finished using the wait handle, call the <xref:System.Threading.WaitHandle.Close%2A?displayProperty=fullName> method. Garbage collection works more efficiently when disposable objects are explicitly closed or disposed.  
+  
+> [!CAUTION]
+>  The <xref:System.Threading.WaitHandle> contained in the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle%2A> property can be used to block the current thread until the asynchronous call is complete. However the <xref:System.Threading.WaitHandle> will ignore the <xref:System.AsyncCallback>, if one was specified during the `BeginInvoke` call. Therefore, a situation can occur where the application shuts down before the <xref:System.AsyncCallback> has finished executing, even if a <xref:System.Threading.WaitHandle> is used to block until the asynchronous call completion. For an example of such a situation, see the example for the <xref:System.Runtime.Remoting.Messaging.AsyncResult> class, and remove the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> statement.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle%2A> property to get a <xref:System.Threading.WaitHandle>, and how to wait for an asynchronous call on a delegate. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.  
+  
+ The example consists of two classes, the class that contains the method which is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#3](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/waithandle.cpp#3)]
+[!code-csharp[AsyncDelegateExamples#3](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/waithandle.cs#3)]
+[!code-vb[AsyncDelegateExamples#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedSynchronously">
+      <MemberSignature Language="C#" Value="public virtual bool CompletedSynchronously { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CompletedSynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.CompletedSynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see langword="BeginInvoke" /> call completed synchronously.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="BeginInvoke" /> call completed synchronously; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If it is detected that the `BeginInvoke` call completed synchronously in the <xref:System.AsyncCallback> delegate, it is probable that the thread that called BeginInvoke is the current thread. Most providers of the <xref:System.IAsyncResult> interface will not use the capability and will return a default `false`.  
+  
+ Current implementation of <xref:System.Runtime.Remoting.Messaging.AsyncResult.CompletedSynchronously%2A> always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndInvokeCalled">
+      <MemberSignature Language="C#" Value="public bool EndInvokeCalled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndInvokeCalled" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.EndInvokeCalled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether <see langword="EndInvoke" /> has been called on the current <see cref="T:System.Runtime.Remoting.Messaging.AsyncResult" />.</summary>
+        <value>
+          <see langword="true" /> if <see langword="EndInvoke" /> has been called on the current <see cref="T:System.Runtime.Remoting.Messaging.AsyncResult" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReplyMessage">
+      <MemberSignature Language="C#" Value="public virtual System.Runtime.Remoting.Messaging.IMessage GetReplyMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessage GetReplyMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.AsyncResult.GetReplyMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessage</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the response message for the asynchronous call.</summary>
+        <returns>A remoting message that should represent a response to a method call on a remote object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.AsyncResult.GetReplyMessage%2A> method can return an object after the <xref:System.Runtime.Remoting.Messaging.AsyncResult.SyncProcessMessage%2A> method is called. The <xref:System.Runtime.Remoting.Messaging.IMessage> return value can be cast to an <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage>.  
+  
+ However, you do not need to call either of these methods directly. They are intended for use by the remoting infrastructure of the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompleted">
+      <MemberSignature Language="C#" Value="public virtual bool IsCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.IsCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the server has completed the call.</summary>
+        <value>
+          <see langword="true" /> after the server has completed the call; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The server must not use any client supplied resources outside of the agreed upon sharing semantics after it sets the <xref:System.Runtime.Remoting.Messaging.AsyncResult.IsCompleted%2A> property to `true`. Thus, it is safe for the client to destroy the resources after the <xref:System.Runtime.Remoting.Messaging.AsyncResult.IsCompleted%2A> property returns `true`.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.Runtime.Remoting.Messaging.AsyncResult> returned by `BeginInvoke` to discover when an asynchronous call completes. You might do this when making the asynchronous call from a thread that services the user interface. Polling for completion allows the calling thread to continue executing while the asynchronous call executes on a <xref:System.Threading.ThreadPool> thread.  
+  
+ The example consists of two classes, the class that contains the method which is called asynchronously, and the class that contains the `Main` method that makes the call.  
+  
+ For more information and more examples of calling methods asynchronously by using delegates, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ [!code-cpp[AsyncDelegateExamples#1](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/TestMethod.cpp#1)]
+ [!code-csharp[AsyncDelegateExamples#1](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/TestMethod.cs#1)]
+ [!code-vb[AsyncDelegateExamples#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]  
+[!code-cpp[AsyncDelegateExamples#4](~/samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/polling.cpp#4)]
+[!code-csharp[AsyncDelegateExamples#4](~/samples/snippets/csharp/VS_Snippets_CLR/AsyncDelegateExamples/CS/polling.cs#4)]
+[!code-vb[AsyncDelegateExamples#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/polling.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextSink">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink NextSink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Messaging.IMessageSink NextSink" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.AsyncResult.NextSink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the next message sink in the sink chain.</summary>
+        <value>An <see cref="T:System.Runtime.Remoting.Messaging.IMessageSink" /> interface that represents the next message sink in the sink chain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current implementation of <xref:System.Runtime.Remoting.Messaging.AsyncResult.NextSink%2A> returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMessageCtrl">
+      <MemberSignature Language="C#" Value="public virtual void SetMessageCtrl (System.Runtime.Remoting.Messaging.IMessageCtrl mc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMessageCtrl(class System.Runtime.Remoting.Messaging.IMessageCtrl mc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.AsyncResult.SetMessageCtrl(System.Runtime.Remoting.Messaging.IMessageCtrl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mc" Type="System.Runtime.Remoting.Messaging.IMessageCtrl" />
+      </Parameters>
+      <Docs>
+        <param name="mc">The <see cref="T:System.Runtime.Remoting.Messaging.IMessageCtrl" /> for the current remote method call.</param>
+        <summary>Sets an <see cref="T:System.Runtime.Remoting.Messaging.IMessageCtrl" /> for the current remote method call, which provides a way to control asynchronous messages after they have been dispatched.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not need to call the <xref:System.Runtime.Remoting.Messaging.AsyncResult.SetMessageCtrl%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncProcessMessage">
+      <MemberSignature Language="C#" Value="public virtual System.Runtime.Remoting.Messaging.IMessage SyncProcessMessage (System.Runtime.Remoting.Messaging.IMessage msg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessage SyncProcessMessage(class System.Runtime.Remoting.Messaging.IMessage msg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.AsyncResult.SyncProcessMessage(System.Runtime.Remoting.Messaging.IMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+      </Parameters>
+      <Docs>
+        <param name="msg">A response message to a method call on a remote object.</param>
+        <summary>Synchronously processes a response message returned by a method call on a remote object.</summary>
+        <returns>Returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Messaging.AsyncResult.SyncProcessMessage%2A> method implements the <xref:System.Runtime.Remoting.Messaging.IMessageSink> interface. You do not need to call this method directly. It is intended for use by the remoting infrastructure of the .NET Framework.  
+  
+ <xref:System.Runtime.Remoting.Messaging.AsyncResult.SyncProcessMessage%2A> invokes the consumer code's <xref:System.AsyncCallback> delegate. It also sets the <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage> instance returned by the <xref:System.Runtime.Remoting.Messaging.AsyncResult.GetReplyMessage%2A> method. If the `msg` parameter is of type <xref:System.Runtime.Remoting.Messaging.IMethodReturnMessage>, the same object is returned by <xref:System.Runtime.Remoting.Messaging.AsyncResult.GetReplyMessage%2A>. Otherwise, a reply message that contains a remoting exception is returned.  
+  
+ <xref:System.Runtime.Remoting.Messaging.AsyncResult.SyncProcessMessage%2A> also modifies the value returned by the <xref:System.Runtime.Remoting.Messaging.AsyncResult.IsCompleted%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

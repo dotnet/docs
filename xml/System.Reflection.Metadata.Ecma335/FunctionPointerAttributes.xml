@@ -1,0 +1,66 @@
+<Type Name="FunctionPointerAttributes" FullName="System.Reflection.Metadata.Ecma335.FunctionPointerAttributes">
+  <TypeSignature Language="C#" Value="public enum FunctionPointerAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FunctionPointerAttributes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasExplicitThis">
+      <MemberSignature Language="C#" Value="HasExplicitThis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.FunctionPointerAttributes HasExplicitThis = int32(96)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.HasExplicitThis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.FunctionPointerAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasThis">
+      <MemberSignature Language="C#" Value="HasThis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.FunctionPointerAttributes HasThis = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.HasThis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.FunctionPointerAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.Ecma335.FunctionPointerAttributes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.FunctionPointerAttributes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.FunctionPointerAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

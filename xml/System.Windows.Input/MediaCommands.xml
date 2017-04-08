@@ -1,0 +1,1446 @@
+<Type Name="MediaCommands" FullName="System.Windows.Input.MediaCommands">
+  <TypeSignature Language="C#" Value="public static class MediaCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MediaCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.MediaCommands" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a standard set of media related commands.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The commands in the <xref:System.Windows.Input.MediaCommands> class and commands in the other command library classes, such as <xref:System.Windows.Input.ComponentCommands> and <xref:System.Windows.Input.ApplicationCommands>, are intended to represent a set of common commands that application programmers encounter frequently.  The commands only represent the instance of the <xref:System.Windows.Input.RoutedCommand> and not the implementation logic for the command. The implementation logic is bound to the command via a <xref:System.Windows.UIElement.CommandBindings%2A>.  For example, if the <xref:System.Windows.Input.MediaCommands.Play%2A> command is executed on a control (the command target), the logic which performs the <xref:System.Windows.Input.MediaCommands.Play%2A> command may not be provided by the command target, so the application writer will be responsible for writing the logic that determines how the command target will handle the command.  
+  
+ Many controls do provide implementation logic for many of the commands in the command library.  For example, the <xref:System.Windows.Controls.TextBox> class provides logic for the <xref:System.Windows.Input.ApplicationCommands.Paste%2A> command, <xref:System.Windows.Input.ApplicationCommands.Cut%2A> command, <xref:System.Windows.Input.ApplicationCommands.Copy%2A> command, <xref:System.Windows.Input.ApplicationCommands.Undo%2A> command, and <xref:System.Windows.Input.ApplicationCommands.Redo%2A> command.  
+  
+ For more information on commands and commanding see the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BoostBass">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand BoostBass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand BoostBass" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.BoostBass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Boost Base command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Boost Bass  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to toggle the bass boost on or off.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_BoostBass"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="BoostBass"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelDown">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ChannelDown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ChannelDown" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.ChannelDown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Channel Down command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Channel Down  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to decrement the channel value.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_ChannelDown"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ChannelDown"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelUp">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ChannelUp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ChannelUp" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.ChannelUp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Channel Up command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Channel Up  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to increment the channel value.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_ChannelUp"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ChannelUp"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseBass">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseBass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseBass" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseBass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Decrease Bass command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Decrease Bass  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to decrease the bass.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_DecreaseBass"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DecreaseBass"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseMicrophoneVolume">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseMicrophoneVolume { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseMicrophoneVolume" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseMicrophoneVolume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Decrease Microphone Volume command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Decrease Microphone Volume  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to decrease the microphone volume.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_DecreaseMicrophoneVolume"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DecreaseMicrophoneVolume"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseTreble">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseTreble { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseTreble" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseTreble" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Decrease Treble command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Decrease Treble  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to decrease the treble.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_DecreaseTreble"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DecreaseTreble"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseVolume">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand DecreaseVolume { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand DecreaseVolume" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.DecreaseVolume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Decrease Volume command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Decrease Volume  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to decrease the volume.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_DecreaseVolume"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DecreaseVolume"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FastForward">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand FastForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand FastForward" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.FastForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Fast Forward command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Fast Forward  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to increase the speed of playback.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_FastForward"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="FastForward"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseBass">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseBass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseBass" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseBass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Increase Bass command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Increase Bass  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to increase the bass.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_IncreaseBass"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IncreaseBass"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseMicrophoneVolume">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseMicrophoneVolume { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseMicrophoneVolume" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseMicrophoneVolume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Increase Microphone Volume command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Increase Microphone Volume  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to increase the microphone volume.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_IncreaseMicrophoneVolume"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IncreaseMicrophoneVolume"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseTreble">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseTreble { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseTreble" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseTreble" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Increase Treble command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Increase Treble  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to increase the treble.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_IncreaseTreble"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IncreaseTreble"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseVolume">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand IncreaseVolume { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand IncreaseVolume" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.IncreaseVolume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Increase Volume command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Increase Volume  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to increase the volume.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_IncreaseVolume"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IncreaseVolume"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MuteMicrophoneVolume">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MuteMicrophoneVolume { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MuteMicrophoneVolume" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.MuteMicrophoneVolume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Mute Microphone Volume command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Mute Microphone Volume  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to mute the microphone.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_MuteMicrophoneVolume"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MuteMicrophoneVolume"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MuteVolume">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MuteVolume { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MuteVolume" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.MuteVolume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Mute Volume command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Mute Volume  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to mute the volume.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_MuteVolume"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MuteVolume"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextTrack">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand NextTrack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand NextTrack" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.NextTrack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Next Track command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Next Track  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to select the next track.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_NextTrack"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="NextTrack"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Pause { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Pause" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Pause" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Pause command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Pause  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to pause playback.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_Pause"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Pause"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Play { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Play" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Play" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Play command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Play  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to begin playing at the current position.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_Play"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Play"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousTrack">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand PreviousTrack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand PreviousTrack" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.PreviousTrack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Previous Track command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Previous Track  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to select the previous track.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_PreviousTrack"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PreviousTrack"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Record">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Record { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Record" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Record" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Record command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Record  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to begin recording.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_Record"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Record"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rewind">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Rewind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Rewind" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Rewind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Rewind command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Rewind  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to reverse playback.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_Rewind"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Rewind"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Select { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Select" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Select" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Select command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Select  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to put the media in select mode.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_Select"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Select"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand Stop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand Stop" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.Stop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Stop command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Stop  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to stop playback.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_Stop"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Stop"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleMicrophoneOnOff">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ToggleMicrophoneOnOff { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ToggleMicrophoneOnOff" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.ToggleMicrophoneOnOff" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Toggle Microphone On Off command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Toggle Microphone OnOff  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to toggle the microphone on or off.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_ToggleMicrophoneOnOff"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ToggleMicrophoneOnOff"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TogglePlayPause">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand TogglePlayPause { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand TogglePlayPause" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.MediaCommands.TogglePlayPause" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the Toggle Play Pause command.</summary>
+        <value>The command.  
+  
+ <list type="table">  
+<listheader>  
+<term> Default Values  
+  
+ </term>  
+<description></description>  
+</listheader>  
+<item>  
+<term> Key Gesture  
+  
+ </term>  
+<description> No gesture defined.  
+  
+ </description>  
+</item>  
+<item>  
+<term> UI Text  
+  
+ </term>  
+<description> Toggle Play Pause  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This command indicates the intention to toggle playback between play and pause.  
+  
+ There is not necessarily an actual implementation responding to the command on any given object; in many cases the implementation in response to that command is the responsibility of the application writer.  
+  
+<a name="xamlAttributeUsage_TogglePlayPause"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="TogglePlayPause"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

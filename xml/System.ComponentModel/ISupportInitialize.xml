@@ -1,0 +1,107 @@
+<Type Name="ISupportInitialize" FullName="System.ComponentModel.ISupportInitialize">
+  <TypeSignature Language="C#" Value="public interface ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitialize" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies that this object supports a simple, transacted notification for batch initialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.ISupportInitialize> allows controls to optimize multiple property assignments. As a result, you can initialize co-dependent properties or batch set multiple properties at design time.  
+  
+ Call the <xref:System.ComponentModel.ISupportInitialize.BeginInit%2A> method to signal the object that initialization is starting. Call the <xref:System.ComponentModel.ISupportInitialize.EndInit%2A> method to signal that initialization is complete.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.ISupportInitialize> interface to initialize three <xref:System.Windows.Forms.TrackBar> controls.  
+  
+ [!code-cpp[TrackBar#4](~/samples/snippets/cpp/VS_Snippets_Winforms/Trackbar/CPP/form1.cpp#4)]
+ [!code-csharp[TrackBar#4](~/samples/snippets/csharp/VS_Snippets_Winforms/Trackbar/CS/form1.cs#4)]
+ [!code-vb[TrackBar#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Trackbar/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginInit">
+      <MemberSignature Language="C#" Value="public void BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISupportInitialize.BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the object that initialization is starting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.ISupportInitialize> interface to initialize three <xref:System.Windows.Forms.TrackBar> controls.  
+  
+ [!code-cpp[TrackBar#4](~/samples/snippets/cpp/VS_Snippets_Winforms/Trackbar/CPP/form1.cpp#4)]
+ [!code-csharp[TrackBar#4](~/samples/snippets/csharp/VS_Snippets_Winforms/Trackbar/CS/form1.cs#4)]
+ [!code-vb[TrackBar#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Trackbar/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndInit">
+      <MemberSignature Language="C#" Value="public void EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ISupportInitialize.EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the object that initialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.ISupportInitialize> interface to initialize three <xref:System.Windows.Forms.TrackBar> controls.  
+  
+ [!code-cpp[TrackBar#4](~/samples/snippets/cpp/VS_Snippets_Winforms/Trackbar/CPP/form1.cpp#4)]
+ [!code-csharp[TrackBar#4](~/samples/snippets/csharp/VS_Snippets_Winforms/Trackbar/CS/form1.cs#4)]
+ [!code-vb[TrackBar#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Trackbar/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,323 @@
+<Type Name="WorkflowRuntimeElement" FullName="System.ServiceModel.Configuration.WorkflowRuntimeElement">
+  <TypeSignature Language="C#" Value="public class WorkflowRuntimeElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowRuntimeElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WorkflowRuntimeElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.BehaviorExtensionElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a configuration element that specifies settings for an instance of <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> for hosting workflow-based [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To enable or disable one of the `ServiceDebugElement` features using a configuration file, you must:  
+  
+1.  Add a behavior configuration attribute to the service element of your [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service. Endpoint behaviors are configured on `endpoint` elements; service behaviors are configured on `service` elements.  
+  
+2.  Create a `serviceBehaviors` section, and add a behavior element with the name that corresponds to the `behaviorConfiguration` attribute value from step 1.  
+  
+3.  Add a `serviceDebug` element to the behavior element from step 2, and enable or disable the various properties as needed.  
+  
+   
+  
+## Examples  
+ `<serviceBehaviors>`  
+  
+ `<behavior name="ServiceBehavior">`  
+  
+ `<workflowRuntime name="WorkflowServiceHostRuntime" validateOnCreate="true" enablePerformanceCounters="true">`  
+  
+ `<services>`  
+  
+ `<add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>`  
+  
+ `</services>`  
+  
+ `</workflowRuntime>`  
+  
+ `</behavior>`  
+  
+ `</serviceBehaviors>`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowRuntimeElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WorkflowRuntimeElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WorkflowRuntimeElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BehaviorType">
+      <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.BehaviorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of this behavior element.</summary>
+        <value>The type of the behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedInstanceExpiration">
+      <MemberSignature Language="C#" Value="public TimeSpan CachedInstanceExpiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CachedInstanceExpiration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.CachedInstanceExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cachedInstanceExpiration", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.PositiveTimeSpanValidator</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the time that a cached instance will expire.</summary>
+        <value>The time that a cached instance will expire.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommonParameters">
+      <MemberSignature Language="C#" Value="public System.Configuration.NameValueConfigurationCollection CommonParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.NameValueConfigurationCollection CommonParameters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.CommonParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("commonParameters", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.NameValueConfigurationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of common parameters used by services.</summary>
+        <value>A <see langword="NameValueConfigurationCollection" /> that contains common parameters used by services. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection will typically include the database connection string that might be shared by durable services.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBehavior">
+      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WorkflowRuntimeElement.CreateBehavior" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a custom behavior based on the settings of this configuration element.</summary>
+        <returns>A custom behavior based on the settings of this configuration element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnablePerformanceCounters">
+      <MemberSignature Language="C#" Value="public bool EnablePerformanceCounters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnablePerformanceCounters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.EnablePerformanceCounters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enablePerformanceCounters", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether performance counters are enabled.</summary>
+        <value>
+          <see langword="true" /> if performance counters are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Performance counters provide information on various workflow-related statistics, but they cause a performance penalty when the workflow runtime engine starts, and when workflow instances are running. The default value is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the workflow runtime engine.</summary>
+        <value>A string that contains the name of the workflow runtime engine.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to set <xref:System.Workflow.Runtime.WorkflowRuntime.Name%2A>. The default is an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel%2A> property is also contained in this property collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Services">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection Services { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection Services" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.Services" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("services", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.ExtendedWorkflowRuntimeServiceElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of services that will be added to the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> engine.</summary>
+        <value>The collection of services that will be added to the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> engine.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> will be initialized by the workflow runtime engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore, the services specified in the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection> must follow certain rules about the signatures of their constructors. For more information, see <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateOnCreate">
+      <MemberSignature Language="C#" Value="public bool ValidateOnCreate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateOnCreate" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WorkflowRuntimeElement.ValidateOnCreate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("validateOnCreate", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether validation will occur on creation of the workflow instance.</summary>
+        <value>
+          <see langword="true" /> if validation will occur on creation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, the workflow validation is executed every time <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> is called. If validation errors are found, a <xref:System.Workflow.ComponentModel.Compiler.WorkflowValidationFailedException> error is thrown.  
+  
+ When this property is set to `false`, <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> creates a workflow instance and skips validation. In this case, the host application must ensure that the workflow is properly configured, or the runtime error occurs.  
+  
+ The default value for this property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,336 @@
+<Type Name="ComputerPrincipal" FullName="System.DirectoryServices.AccountManagement.ComputerPrincipal">
+  <TypeSignature Language="C#" Value="public class ComputerPrincipal : System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComputerPrincipal extends System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.AccountManagement.AuthenticablePrincipal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.DirectoryServices.AccountManagement.DirectoryRdnPrefix("CN")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates principals that are computer accounts.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComputerPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class and assigns it to the specified context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The computer principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComputerPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName, string password, bool enabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName, string password, bool enabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="samAccountName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="samAccountName">The SAM account name for this computer principal.</param>
+        <param name="password">The password for this account.</param>
+        <param name="enabled">A Boolean value that specifies whether the account is enabled.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class by using the specified context, SAM account name, password, and enabled value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByBadPasswordAttempt">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByBadPasswordAttempt (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByBadPasswordAttempt(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByBadPasswordAttempt(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to find computers with bad password attempts.</param>
+        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
+        <summary>Returns a <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> collection of <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have had bad password attempts within the parameters specified.</summary>
+        <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByExpirationTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByExpirationTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByExpirationTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByExpirationTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
+        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
+        <summary>Returns a <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> collection of <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have an expiration time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByIdentity">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.ComputerPrincipal FindByIdentity (System.DirectoryServices.AccountManagement.PrincipalContext context, string identityValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.ComputerPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, string identityValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ComputerPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="identityValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="identityValue">The identity of the computer. This parameter can be any format that is contained in the <see cref="T:System.DirectoryService.AccountManagement.IdentityType" /> enumeration.</param>
+        <summary>Returns a computer principal object that matches the specified identity value.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object that matches the specified identity value, or null if no matches are found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.MultipleMatchesException">Multiple computer principal objects matching the current computer object were found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByIdentity">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.ComputerPrincipal FindByIdentity (System.DirectoryServices.AccountManagement.PrincipalContext context, System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.ComputerPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ComputerPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="identityType" Type="System.DirectoryServices.AccountManagement.IdentityType" />
+        <Parameter Name="identityValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
+        <param name="identityValue">The identity of the computer. This parameter can be any format that is contained in the <see cref="T:System.DirectoryService.AccountManagement.IdentityType" /> enumeration.</param>
+        <summary>Returns a computer principal object that matches the specified identity type and value. This version of the <see cref="Overload:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.MultipleMatchesException">Multiple computer principal objects matching the current computer object were found.</exception>
+        <exception cref="T:System.ComponenetModel.InvalidEnumerationOperatorException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLockoutTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByLockoutTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByLockoutTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByLockoutTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
+        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
+        <summary>Returns a <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> collection of <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have a lockout time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLogonTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByLogonTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByLogonTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByLogonTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
+        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
+        <summary>Returns a <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> collection of <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have a logon time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByPasswordSetTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByPasswordSetTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.ComputerPrincipal&gt; FindByPasswordSetTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.ComputerPrincipal.FindByPasswordSetTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.ComputerPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryService.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> structure that is used in conjunction with the <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> to filter search results.</param>
+        <param name="type">The <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies the type of comparison to use in the search.</param>
+        <summary>Returns a <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> collection of <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that have a password set time within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryService.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryService.AccountManagement.ComputerPincipal" /> objects that match the search parameters, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicePrincipalNames">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalValueCollection&lt;string&gt; ServicePrincipalNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.PrincipalValueCollection`1&lt;string&gt; ServicePrincipalNames" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.ComputerPrincipal.ServicePrincipalNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalValueCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the Service Principal Names (SPN) for the computer account.</summary>
+        <value>A collection of SPNs that specify the names of the accounts registered for this computer. The syntax for the SPN depends on the underlying store.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" /> class. The Context property must be set on the object prior to calling <see cref="M:System.DirectoryServices.AccountManagement.Principal.Save" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The computer principal account is not persisted when it is created. To persist the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

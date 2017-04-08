@@ -1,0 +1,21 @@
+<Type Name="Image+GetThumbnailImageAbort" FullName="System.Drawing.Image+GetThumbnailImageAbort">
+  <TypeSignature Language="C#" Value="public delegate bool Image.GetThumbnailImageAbort();" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Image/GetThumbnailImageAbort extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Image.GetThumbnailImageAbort" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Provides a callback method for determining when the <see cref="M:System.Drawing.Image.GetThumbnailImage(System.Int32,System.Int32,System.Drawing.Image.GetThumbnailImageAbort,System.IntPtr)" /> method should prematurely cancel execution.</summary>
+    <returns>This method returns <see langword="true" /> if it decides that the <see cref="M:System.Drawing.Image.GetThumbnailImage(System.Int32,System.Int32,System.Drawing.Image.GetThumbnailImageAbort,System.IntPtr)" /> method should prematurely stop execution; otherwise, it returns <see langword="false" />.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,53 @@
+<Type Name="ObjectDataSourceFilteringEventHandler" FullName="System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ObjectDataSourceFilteringEventHandler(object sender, ObjectDataSourceFilteringEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectDataSourceFilteringEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" />.</param>
+    <param name="e">An <see cref="T:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.ObjectDataSourceView.Filtering" /> event of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to display filtered data by using an <xref:System.Web.UI.WebControls.ObjectDataSource> control to retrieve data from a middle-tier business object, and then using a <xref:System.Web.UI.WebControls.GridView> control to display the results. The second code example provides an example of a middle-tier business object that is used by the first code example.  
+  
+ The following code example demonstrates how to display filtered data by using an <xref:System.Web.UI.WebControls.ObjectDataSource> control to retrieve data from a middle-tier business object, and then using a <xref:System.Web.UI.WebControls.GridView> control to display the results. The <xref:System.Web.UI.WebControls.ObjectDataSource> control can filter data only when the method that retrieves the data retrieves it as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> object. For this reason, the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property identifies a business object method that retrieves data as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> object.  
+  
+ The code example consists of a <xref:System.Web.UI.WebControls.TextBox> control, a <xref:System.Web.UI.WebControls.GridView> control, the <xref:System.Web.UI.WebControls.ObjectDataSource> control, and a **Submit** button. By default, the <xref:System.Web.UI.WebControls.TextBox> control is populated with the name of one of the employees at Northwind Traders. The <xref:System.Web.UI.WebControls.GridView> control displays information about the employee who is identified by the name in the <xref:System.Web.UI.WebControls.TextBox>. To retrieve data for another employee, in the <xref:System.Web.UI.WebControls.TextBox> control, type the full name of the employee, and then click the **Submit** button.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property specifies an expression that is used to filter the data that is retrieved by the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. It uses parameter placeholders that are evaluated to the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection. In this example, the parameter placeholder is enclosed by single quotation marks (') because the type of the parameter is a string type that might contain spaces. If the type of the parameter is numeric or date, quotation marks are not required. The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection contains one parameter, a <xref:System.Web.UI.WebControls.FormParameter> object that is bound to the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+ If no name is specified in the <xref:System.Web.UI.WebControls.TextBox> control, a new parameter is added to the <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues%2A> collection so that the search is successful.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+  
+ The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes: `EmployeeLogic` and `NorthwindEmployee`. The `EmployeeLogic` class encapsulates business logic and the `NorthwindEmployee` class is a model class that contains only the basic functionality that is required to load and persist data from the data tier. For simplicity, the `EmployeeLogic` class creates a static set of data, rather than retrieving the data from a data tier. For a complete working example, you must compile and use these classes with the Web Forms code examples that are provided.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/northwindemployee9.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/northwindemployee9.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

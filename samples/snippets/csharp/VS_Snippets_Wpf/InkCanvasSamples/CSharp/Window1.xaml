@@ -1,0 +1,40 @@
+﻿<Window x:Class="InkCanvasSamples.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="InkCanvasSamples"
+    >
+	<DockPanel>
+		<StackPanel Background="DarkBlue" DockPanel.Dock="Left">
+			<TextBlock Name="modeLabel" Foreground="White" >Ink</TextBlock>
+			<TextBlock Name="erasingModeLabel" Foreground="White" ></TextBlock>
+			<Button Name="copyButton">Copy to clipboard</Button>
+			<Button Name="pasteButton">Paste from clipboard</Button>
+			<Button Name="copyXamlButton">Copy Xaml to Clipboard</Button>
+			<Button Name="selectElementsButton">Select InkCanvas Elements</Button>
+			<Button Name="cutSelectionButton">Cut Selection</Button>
+			<Button Name="changePointDescriptionsButton">Change Point Descriptions</Button>
+			<Button Name="comparePointDescriptionsButton">Compare Point Descriptions</Button>
+			<Button Name="changeColorsOfSelectionButton">Change the color of the selected objects</Button>
+			<Button Name="replaceStrokeButton">Replace Stroke</Button>
+      <Button Name="positionButtonButton">Position button</Button>
+    </StackPanel>
+		<InkCanvas Name="inkCanvas1" Background="LightBlue">
+			<Rectangle
+				Name="rect1" 
+				Width="100"
+				Height="50"
+				Fill="Blue"
+				Stroke="Black" StrokeThickness="4"
+				RadiusX="20" RadiusY="20"
+				Canvas.Left="10"
+				Canvas.Top="200"/>
+
+			<TextBox Name="textbox1" Width="70" Height="30" InkCanvas.Left="300">select me</TextBox>
+      <Button Name="button1" Width="70" Height="20" InkCanvas.Left="400">Select me</Button>
+      <InkCanvas Name="inkCanvas2" Width="200" Height="200" Background="Green">
+        <Label Name="label1" Background="Black"  Foreground="White" InkCanvas.Left="50" InkCanvas.Right="100" 
+               InkCanvas.Top="50" InkCanvas.Bottom="100">my label</Label>
+      </InkCanvas>
+    </InkCanvas>
+	</DockPanel>
+</Window>

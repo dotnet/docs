@@ -1,0 +1,131 @@
+<Type Name="CacheEntryChangeMonitor" FullName="System.Runtime.Caching.CacheEntryChangeMonitor">
+  <TypeSignature Language="C#" Value="public abstract class CacheEntryChangeMonitor : System.Runtime.Caching.ChangeMonitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CacheEntryChangeMonitor extends System.Runtime.Caching.ChangeMonitor" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryChangeMonitor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Caching.ChangeMonitor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class that represents a <see cref="T:System.Runtime.Caching.ChangeMonitor" /> type that can be implemented in order to monitor changes to cache entries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryChangeMonitor> class provides abstract, read-only properties that can be implemented for monitoring cache entries. This class is used when a cache implementation has to monitor changes to entries in its own cache. For caches that are <xref:System.Runtime.Caching.ObjectCache> cache implementations, an instance of the <xref:System.Runtime.Caching.CacheEntryChangeMonitor> type is returned by the <xref:System.Runtime.Caching.ObjectCache.CreateCacheEntryChangeMonitor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%29> method.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>For information about the inheritance contract that must be followed, see the information for inheritors in the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> class overview.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CacheEntryChangeMonitor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheEntryChangeMonitor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.CacheEntryChangeMonitor" /> class. This constructor is called from constructors in derived classes to initialize the base class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryChangeMonitor> class has a default constructor.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The constructor of a derived class must set the <see cref="P:System.Runtime.Caching.ChangeMonitor.UniqueId" /> property, begin monitoring, and call <see cref="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" /> before the constructor returns. If a dependency changes before initialization is complete (for example, if a dependent cache key is not found in the cache), the constructor must call the <see cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" /> method. The constructor can call the <see cref="M:System.Runtime.Caching.ChangeMonitor.Dispose" /> method only after <see cref="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" /> is called, because <see cref="M:System.Runtime.Caching.ChangeMonitor.Dispose" /> throws an exception if initialization is not completed.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheKeys">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; CacheKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CacheKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.CacheKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of cache keys that are monitored for changes.</summary>
+        <value>A collection of cache keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection is typically set in the constructor of a derived <xref:System.Runtime.Caching.CacheEntryChangeMonitor> type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public abstract DateTimeOffset LastModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.LastModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the latest time (in UTC time) that the monitored cache entry was changed.</summary>
+        <value>The elapsed time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If multiple cache entries are being monitored for changes, the <xref:System.Runtime.Caching.CacheEntryChangeMonitor.LastModified%2A> property returns the latest time a modification occurred in any of the cache entries.  
+  
+ The value of the <xref:System.Runtime.Caching.CacheEntryChangeMonitor.LastModified%2A> property is typically calculated during initialization of a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionName">
+      <MemberSignature Language="C#" Value="public abstract string RegionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RegionName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.RegionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of a region of the cache.</summary>
+        <value>The name of a region in the cache.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property typically indicates a particular region where changes are monitored in the cache. The <xref:System.Runtime.Caching.CacheEntryChangeMonitor.RegionName%2A> property provides the option to configure change monitors so that they monitor cache entries only in a specific cache region.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

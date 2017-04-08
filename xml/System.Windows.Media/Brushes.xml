@@ -1,0 +1,4551 @@
+<Type Name="Brushes" FullName="System.Windows.Media.Brushes">
+  <TypeSignature Language="C#" Value="public sealed class Brushes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Brushes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Brushes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements a set of predefined <see cref="T:System.Windows.Media.SolidColorBrush" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Color names in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] match the color names in [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)], [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)], and [!INCLUDE[TLA#tla_ie](~/includes/tlasharptla-ie-md.md)]. These colors and their names are based on the UNIX X11 color values.  
+  
+ The following image shows the color of each predefined brush, its name, and its hexadecimal value.  
+  
+ ![Predefined colors](~/add/media/art-color-table.png "Predefined colors")  
+Color table including a color swatch, the color name, and the hexadecimal value  
+  
+ See the <xref:System.Windows.Media.Brush> class for a variety of other, more complex, ways that you can paint an area. For example, try using gradients (<xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>) or images (<xref:System.Windows.Media.ImageBrush>).  
+  
+<a name="xamlTextUsage_Brushes"></a>   
+## XAML Text Usage  
+ You cannot declare this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but you can use its static properties to assign values in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AliceBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush AliceBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush AliceBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.AliceBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF0F8FF</c>.</summary>
+        <value>A frozen <see cref="T:System.Windows.Media.SolidColorBrush" /> with a <see cref="P:System.Windows.Media.SolidColorBrush.Color" /> of <c>#FFF0F8FF</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the brush returned by this property is frozen (its <xref:System.Windows.Freezable.IsFrozen%2A> property is **true**), it can't be animated. For information about how to animate a SolidColorBrush, see [How to: Animate the Color or Opacity of a SolidColorBrush](~/docs/framework/wpf/graphics-multimedia/how-to-animate-the-color-or-opacity-of-a-solidcolorbrush.md).  
+  
+ See the <xref:System.Windows.Media.Brushes> class page for usage information, including examples, and for a listing of predefined system colors.  
+  
+<a name="xamlAttributeUsage_AliceBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="AliceBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AntiqueWhite">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush AntiqueWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush AntiqueWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.AntiqueWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFAEBD7</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_AntiqueWhite"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="AntiqueWhite"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aqua">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Aqua { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Aqua" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Aqua" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00FFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Aqua"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Aqua"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aquamarine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Aquamarine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Aquamarine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Aquamarine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF7FFFD4</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Aquamarine"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Aquamarine"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Azure">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Azure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Azure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Azure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF0FFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Azure"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Azure"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Beige">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Beige { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Beige" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Beige" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF5F5DC</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Beige"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Beige"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bisque">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Bisque { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Bisque" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Bisque" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFE4C4</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Bisque"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bisque"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Black">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Black { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Black" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Black" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF000000</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Black"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Black"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlanchedAlmond">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush BlanchedAlmond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush BlanchedAlmond" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.BlanchedAlmond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFEBCD</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_BlanchedAlmond"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="BlanchedAlmond"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Blue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Blue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Blue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Blue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF0000FF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Blue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Blue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlueViolet">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush BlueViolet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush BlueViolet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.BlueViolet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF8A2BE2</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_BlueViolet"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="BlueViolet"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Brown">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Brown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Brown" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Brown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFA52A2A</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Brown"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Brown"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BurlyWood">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush BurlyWood { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush BurlyWood" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.BurlyWood" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDEB887</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_BurlyWood"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="BurlyWood"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CadetBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush CadetBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush CadetBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.CadetBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF5F9EA0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_CadetBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="CadetBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chartreuse">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Chartreuse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Chartreuse" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Chartreuse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF7FFF00</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Chartreuse"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Chartreuse"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chocolate">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Chocolate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Chocolate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Chocolate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFD2691E</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Chocolate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Chocolate"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coral">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Coral { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Coral" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Coral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF7F50</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Coral"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Coral"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornflowerBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush CornflowerBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush CornflowerBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.CornflowerBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF6495ED</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_CornflowerBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="CornflowerBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cornsilk">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Cornsilk { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Cornsilk" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Cornsilk" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFF8DC</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Cornsilk"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Cornsilk"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crimson">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Crimson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Crimson" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Crimson" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDC143C</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Crimson"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Crimson"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cyan">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Cyan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Cyan" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Cyan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00FFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Cyan"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Cyan"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00008B</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkCyan">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkCyan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkCyan" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkCyan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF008B8B</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkCyan"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkCyan"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGoldenrod">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkGoldenrod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkGoldenrod" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkGoldenrod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFB8860B</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkGoldenrod"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkGoldenrod"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkGray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFA9A9A9</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkGray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkGray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF006400</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkKhaki">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkKhaki { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkKhaki" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkKhaki" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFBDB76B</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkKhaki"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkKhaki"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkMagenta">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkMagenta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkMagenta" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkMagenta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF8B008B</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkMagenta"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkMagenta"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOliveGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkOliveGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkOliveGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkOliveGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF556B2F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkOliveGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkOliveGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOrange">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkOrange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkOrange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkOrange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF8C00</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkOrange"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkOrange"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOrchid">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkOrchid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkOrchid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkOrchid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF9932CC</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkOrchid"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkOrchid"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkRed">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkRed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF8B0000</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkRed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkRed"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSalmon">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkSalmon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkSalmon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkSalmon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFE9967A</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkSalmon"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkSalmon"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkSeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkSeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkSeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF8FBC8F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkSeaGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkSeaGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSlateBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkSlateBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkSlateBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkSlateBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF483D8B</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkSlateBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkSlateBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSlateGray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkSlateGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkSlateGray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkSlateGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF2F4F4F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkSlateGray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkSlateGray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkTurquoise">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkTurquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkTurquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkTurquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00CED1</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkTurquoise"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkTurquoise"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkViolet">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DarkViolet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DarkViolet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DarkViolet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF9400D3</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DarkViolet"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DarkViolet"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepPink">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DeepPink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DeepPink" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DeepPink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF1493</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DeepPink"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DeepPink"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepSkyBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DeepSkyBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DeepSkyBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DeepSkyBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00BFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DeepSkyBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DeepSkyBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DimGray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DimGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DimGray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DimGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF696969</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DimGray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DimGray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DodgerBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush DodgerBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush DodgerBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.DodgerBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF1E90FF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_DodgerBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="DodgerBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firebrick">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Firebrick { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Firebrick" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Firebrick" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFB22222</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Firebrick"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Firebrick"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FloralWhite">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush FloralWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush FloralWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.FloralWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFAF0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_FloralWhite"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="FloralWhite"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForestGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush ForestGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush ForestGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.ForestGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF228B22</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_ForestGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="ForestGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fuchsia">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Fuchsia { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Fuchsia" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Fuchsia" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF00FF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Fuchsia"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Fuchsia"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gainsboro">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Gainsboro { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Gainsboro" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Gainsboro" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDCDCDC</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Gainsboro"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gainsboro"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GhostWhite">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush GhostWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush GhostWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.GhostWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF8F8FF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_GhostWhite"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="GhostWhite"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gold">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Gold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Gold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Gold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFD700</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Gold"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gold"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Goldenrod">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Goldenrod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Goldenrod" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Goldenrod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDAA520</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Goldenrod"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Goldenrod"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Gray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Gray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Gray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF808080</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Gray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Green">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Green { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Green" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Green" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF008000</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Green"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Green"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreenYellow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush GreenYellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush GreenYellow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.GreenYellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFADFF2F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_GreenYellow"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="GreenYellow"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Honeydew">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Honeydew { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Honeydew" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Honeydew" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF0FFF0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Honeydew"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Honeydew"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HotPink">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush HotPink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush HotPink" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.HotPink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF69B4</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_HotPink"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="HotPink"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndianRed">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush IndianRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush IndianRed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.IndianRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFCD5C5C</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_IndianRed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="IndianRed"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indigo">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Indigo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Indigo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Indigo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF4B0082</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Indigo"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Indigo"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ivory">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Ivory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Ivory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Ivory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFFF0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Ivory"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Ivory"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Khaki">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Khaki { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Khaki" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Khaki" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF0E68C</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Khaki"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Khaki"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lavender">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Lavender { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Lavender" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Lavender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFE6E6FA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Lavender"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Lavender"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LavenderBlush">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LavenderBlush { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LavenderBlush" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LavenderBlush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFF0F5</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LavenderBlush"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LavenderBlush"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LawnGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LawnGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LawnGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LawnGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF7CFC00</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LawnGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LawnGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LemonChiffon">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LemonChiffon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LemonChiffon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LemonChiffon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFACD</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LemonChiffon"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LemonChiffon"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFADD8E6</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightCoral">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightCoral { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightCoral" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightCoral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF08080</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightCoral"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightCoral"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightCyan">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightCyan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightCyan" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightCyan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFE0FFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightCyan"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightCyan"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGoldenrodYellow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightGoldenrodYellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightGoldenrodYellow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightGoldenrodYellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFAFAD2</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightGoldenrodYellow"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightGoldenrodYellow"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightGray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFD3D3D3</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightGray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightGray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF90EE90</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightPink">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightPink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightPink" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightPink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFB6C1</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightPink"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightPink"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSalmon">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightSalmon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightSalmon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightSalmon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFA07A</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightSalmon"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightSalmon"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightSeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightSeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightSeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF20B2AA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightSeaGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightSeaGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSkyBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightSkyBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightSkyBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightSkyBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF87CEFA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightSkyBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightSkyBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSlateGray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightSlateGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightSlateGray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightSlateGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF778899</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightSlateGray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightSlateGray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSteelBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightSteelBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightSteelBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightSteelBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFB0C4DE</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightSteelBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightSteelBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightYellow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LightYellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LightYellow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LightYellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFFE0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LightYellow"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LightYellow"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lime">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Lime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Lime" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Lime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00FF00</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Lime"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Lime"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimeGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush LimeGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush LimeGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.LimeGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF32CD32</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_LimeGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="LimeGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Linen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Linen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Linen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Linen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFAF0E6</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Linen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Linen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Magenta">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Magenta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Magenta" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Magenta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF00FF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Magenta"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Magenta"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maroon">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Maroon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Maroon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Maroon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF800000</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Maroon"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Maroon"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumAquamarine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumAquamarine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumAquamarine" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumAquamarine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF66CDAA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumAquamarine"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumAquamarine"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF0000CD</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumOrchid">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumOrchid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumOrchid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumOrchid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFBA55D3</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumOrchid"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumOrchid"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumPurple">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumPurple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumPurple" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumPurple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF9370DB</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumPurple"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumPurple"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumSeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumSeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumSeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF3CB371</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumSeaGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumSeaGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSlateBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumSlateBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumSlateBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumSlateBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF7B68EE</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumSlateBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumSlateBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSpringGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumSpringGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumSpringGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumSpringGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00FA9A</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumSpringGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumSpringGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumTurquoise">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumTurquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumTurquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumTurquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF48D1CC</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumTurquoise"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumTurquoise"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumVioletRed">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MediumVioletRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MediumVioletRed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MediumVioletRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFC71585</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MediumVioletRed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MediumVioletRed"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MidnightBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MidnightBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MidnightBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MidnightBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF191970</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MidnightBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MidnightBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MintCream">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MintCream { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MintCream" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MintCream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF5FFFA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MintCream"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MintCream"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MistyRose">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush MistyRose { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush MistyRose" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.MistyRose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFE4E1</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_MistyRose"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="MistyRose"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Moccasin">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Moccasin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Moccasin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Moccasin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFE4B5</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Moccasin"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Moccasin"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavajoWhite">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush NavajoWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush NavajoWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.NavajoWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFDEAD</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_NavajoWhite"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="NavajoWhite"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navy">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Navy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Navy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Navy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF000080</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Navy"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Navy"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldLace">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush OldLace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush OldLace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.OldLace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFDF5E6</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_OldLace"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="OldLace"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Olive">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Olive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Olive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Olive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF808000</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Olive"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Olive"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OliveDrab">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush OliveDrab { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush OliveDrab" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.OliveDrab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF6B8E23</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_OliveDrab"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="OliveDrab"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orange">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Orange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Orange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Orange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFA500</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Orange"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Orange"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrangeRed">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush OrangeRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush OrangeRed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.OrangeRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF4500</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_OrangeRed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="OrangeRed"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orchid">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Orchid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Orchid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Orchid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDA70D6</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Orchid"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Orchid"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleGoldenrod">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PaleGoldenrod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PaleGoldenrod" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PaleGoldenrod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFEEE8AA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PaleGoldenrod"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PaleGoldenrod"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PaleGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PaleGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PaleGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF98FB98</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PaleGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PaleGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleTurquoise">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PaleTurquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PaleTurquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PaleTurquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFAFEEEE</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PaleTurquoise"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PaleTurquoise"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleVioletRed">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PaleVioletRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PaleVioletRed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PaleVioletRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDB7093</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PaleVioletRed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PaleVioletRed"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PapayaWhip">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PapayaWhip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PapayaWhip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PapayaWhip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFEFD5</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PapayaWhip"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PapayaWhip"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeachPuff">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PeachPuff { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PeachPuff" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PeachPuff" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFDAB9</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PeachPuff"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PeachPuff"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Peru">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Peru { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Peru" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Peru" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFCD853F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Peru"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Peru"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pink">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Pink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Pink" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Pink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFC0CB</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Pink"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Pink"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Plum">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Plum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Plum" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Plum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFDDA0DD</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Plum"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Plum"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowderBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush PowderBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush PowderBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.PowderBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFB0E0E6</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_PowderBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="PowderBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Purple">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Purple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Purple" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Purple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF800080</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Purple"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Purple"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Red">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Red { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Red" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Red" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF0000</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Red"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Red"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RosyBrown">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush RosyBrown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush RosyBrown" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.RosyBrown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFBC8F8F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_RosyBrown"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="RosyBrown"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoyalBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush RoyalBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush RoyalBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.RoyalBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF4169E1</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_RoyalBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="RoyalBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaddleBrown">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SaddleBrown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SaddleBrown" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SaddleBrown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF8B4513</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SaddleBrown"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SaddleBrown"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Salmon">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Salmon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Salmon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Salmon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFA8072</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Salmon"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Salmon"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SandyBrown">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SandyBrown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SandyBrown" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SandyBrown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF4A460</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SandyBrown"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SandyBrown"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF2E8B57</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SeaGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SeaGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaShell">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SeaShell { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SeaShell" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SeaShell" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFF5EE</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Seashell"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SeaShell"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sienna">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Sienna { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Sienna" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Sienna" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFA0522D</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Sienna"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Sienna"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Silver">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Silver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Silver" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Silver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFC0C0C0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Silver"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Silver"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkyBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SkyBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SkyBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SkyBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF87CEEB</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SkyBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SkyBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlateBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SlateBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SlateBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SlateBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF6A5ACD</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SlateBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SlateBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlateGray">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SlateGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SlateGray" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SlateGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF708090</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SlateGray"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SlateGray"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Snow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Snow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Snow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Snow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFAFA</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Snow"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Snow"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpringGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SpringGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SpringGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SpringGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF00FF7F</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SpringGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SpringGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SteelBlue">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush SteelBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush SteelBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.SteelBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF4682B4</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_SteelBlue"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="SteelBlue"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tan">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Tan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Tan" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Tan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFD2B48C</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Tan"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Tan"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Teal">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Teal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Teal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Teal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF008080</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Teal"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Teal"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thistle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Thistle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Thistle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Thistle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFD8BFD8</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Thistle"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Thistle"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tomato">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Tomato { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Tomato" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Tomato" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFF6347</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Tomato"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Tomato"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transparent">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#00FFFFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Transparent"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Transparent"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Turquoise">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Turquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Turquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Turquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF40E0D0</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Turquoise"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Turquoise"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Violet">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Violet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Violet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Violet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFEE82EE</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Violet"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Violet"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wheat">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Wheat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Wheat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Wheat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF5DEB3</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Wheat"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Wheat"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="White">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush White { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush White" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.White" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFFFF</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_White"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="White"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhiteSmoke">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush WhiteSmoke { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush WhiteSmoke" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.WhiteSmoke" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFF5F5F5</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_WhiteSmoke"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="WhiteSmoke"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yellow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush Yellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush Yellow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.Yellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FFFFFF00</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_Yellow"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Yellow"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YellowGreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.SolidColorBrush YellowGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.SolidColorBrush YellowGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Brushes.YellowGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid fill color that has a hexadecimal value of <c>#FF9ACD32</c>.</summary>
+        <value>A solid fill color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Windows.Media.Brushes> for usage information, including examples, and for a table that shows the colors defined by the <xref:System.Windows.Media.Brushes> class.  
+  
+<a name="xamlAttributeUsage_YellowGreen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="YellowGreen"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

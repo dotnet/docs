@@ -1,0 +1,289 @@
+<Type Name="JumpTask" FullName="System.Windows.Shell.JumpTask">
+  <TypeSignature Language="C#" Value="public class JumpTask : System.Windows.Shell.JumpItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JumpTask extends System.Windows.Shell.JumpItem" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpTask" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Shell.JumpItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a shortcut to an application in the [!INCLUDE[win7](~/includes/win7-md.md)] taskbar Jump List.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Shell.JumpTask> can be thought of as a shortcut to an application. You specify the path to the executable file by setting the <xref:System.Windows.Shell.JumpTask.ApplicationPath%2A> property. If the <xref:System.Windows.Shell.JumpTask.ApplicationPath%2A> is not set, the path of the current running process is implied. You can optionally specify <xref:System.Windows.Shell.JumpTask.Arguments%2A> to pass to the application at startup.  
+  
+ You can set basic display properties, such as <xref:System.Windows.Shell.JumpTask.Title%2A>, <xref:System.Windows.Shell.JumpTask.Description%2A>, and <xref:System.Windows.Shell.JumpTask.IconResourcePath%2A> to specify the appearance of the task in the Jump List. An icon used with a <xref:System.Windows.Shell.JumpTask> must be available as a native resource. If multiple icon resources are available in a DLL or executable file, you specify the one to use by indicating an offset in the <xref:System.Windows.Shell.JumpTask.IconResourceIndex%2A> property.  
+  
+ By default, a <xref:System.Windows.Shell.JumpTask> will be placed in the **Tasks** category of the Jump List. You can specify custom grouping of tasks by setting the <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> property.  
+  
+ You can visually separate items in a Jump List by creating a <xref:System.Windows.Shell.JumpTask> that does not have a <xref:System.Windows.Shell.JumpTask.Title%2A> and <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> specified. This empty <xref:System.Windows.Shell.JumpTask> will be displayed as a horizontal line in the Jump List. In this case, other properties can be set, but they will not have any effect.  
+  
+   
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ The following example shows how to configure a <xref:System.Windows.Shell.JumpTask> in code. The <xref:System.Windows.Shell.JumpTask> opens the Calculator application.  
+  
+ [!code-csharp[Shell_JumpListSample#241](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#241)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpTask" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationPath">
+      <MemberSignature Language="C#" Value="public string ApplicationPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationPath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.ApplicationPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to the application.</summary>
+        <value>The path to the application. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Shell.JumpTask.ApplicationPath%2A> property is not specified, then the path of the current running process is implied. An application can contain tasks for executables other than itself.  
+  
+   
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ The following example shows how to configure a <xref:System.Windows.Shell.JumpTask> in code. The <xref:System.Windows.Shell.JumpTask> opens the Calculator application.  
+  
+ [!code-csharp[Shell_JumpListSample#241](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#241)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public string Arguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Arguments" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the arguments passed to the application on startup.</summary>
+        <value>The arguments passed to the application on startup. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text displayed in the tooltip for the task in the Jump List.</summary>
+        <value>The text displayed in the tooltip for the task. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ The following example shows how to configure a <xref:System.Windows.Shell.JumpTask> in code. The <xref:System.Windows.Shell.JumpTask> opens the Calculator application.  
+  
+ [!code-csharp[Shell_JumpListSample#241](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#241)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconResourceIndex">
+      <MemberSignature Language="C#" Value="public int IconResourceIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IconResourceIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.IconResourceIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the zero-based index of an icon embedded in a resource.</summary>
+        <value>The zero-based index of the icon, or -1 if no icon is used. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An icon used with a <xref:System.Windows.Shell.JumpTask> must be available as a native resource. If multiple icons are available in a DLL or executable file, you specify the one to use by indicating an offset in the <xref:System.Windows.Shell.JumpTask.IconResourceIndex%2A> property.  
+  
+ If no icon resource is specified, or if the specified icon is not found, the standard system icon is displayed. To specify that no icon is displayed, set the <xref:System.Windows.Shell.JumpTask.IconResourceIndex%2A> property to -1.  
+  
+   
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconResourcePath">
+      <MemberSignature Language="C#" Value="public string IconResourcePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IconResourcePath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.IconResourcePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to a resource that contains the icon to display in the Jump List.</summary>
+        <value>The path to a resource that contains the icon. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An icon used with a <xref:System.Windows.Shell.JumpTask> must be available as a native resource. If multiple icons are available in a DLL or executable file, you specify the one to use by indicating an offset in the <xref:System.Windows.Shell.JumpTask.IconResourceIndex%2A> property.  
+  
+ If no icon resource is specified, or if the specified icon is not found, the standard system icon is displayed. To specify that no icon is displayed, set the <xref:System.Windows.Shell.JumpTask.IconResourceIndex%2A> property to -1.  
+  
+   
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ The following example shows how to configure a <xref:System.Windows.Shell.JumpTask> in code. The <xref:System.Windows.Shell.JumpTask> opens the Calculator application.  
+  
+ [!code-csharp[Shell_JumpListSample#241](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#241)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text displayed for the task in the Jump List.</summary>
+        <value>The text displayed for the task in the Jump List. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the <xref:System.Windows.Shell.JumpTask.Title%2A> property must be set for the <xref:System.Windows.Shell.JumpTask> to appear in the Jump List as a clickable task.  
+  
+ Alternatively, you can visually separate items in a Jump List by creating a <xref:System.Windows.Shell.JumpTask> that does not have a <xref:System.Windows.Shell.JumpTask.Title%2A> and <xref:System.Windows.Shell.JumpItem.CustomCategory%2A> specified. This empty <xref:System.Windows.Shell.JumpTask> will be displayed as a horizontal line in the Jump List. In this case, other properties can be set, but they will not have any effect.  
+  
+   
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file name `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ The following example shows how to configure a <xref:System.Windows.Shell.JumpTask> in code. The <xref:System.Windows.Shell.JumpTask> opens the Calculator application.  
+  
+ [!code-csharp[Shell_JumpListSample#241](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml.cs#241)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingDirectory">
+      <MemberSignature Language="C#" Value="public string WorkingDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WorkingDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.WorkingDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the working directory of the application on startup.</summary>
+        <value>The working directory of the application on startup. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to declare a <xref:System.Windows.Shell.JumpTask> in markup. The <xref:System.Windows.Shell.JumpTask> opens a text file named `readme.txt` in the Notepad application.  
+  
+ [!code-xml[Shell_JumpListSample#002](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#002)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,5 @@
+---
+uid: System.Web.UI.DataSourceViewSelectCallback
+ms.author: "riande"
+manager: "wpickett"
+---

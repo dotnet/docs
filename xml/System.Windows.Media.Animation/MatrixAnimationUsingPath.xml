@@ -1,0 +1,414 @@
+<Type Name="MatrixAnimationUsingPath" FullName="System.Windows.Media.Animation.MatrixAnimationUsingPath">
+  <TypeSignature Language="C#" Value="public class MatrixAnimationUsingPath : System.Windows.Media.Animation.MatrixAnimationBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MatrixAnimationUsingPath extends System.Windows.Media.Animation.MatrixAnimationBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.MatrixAnimationBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Animates the value of a <see cref="T:System.Windows.Media.Matrix" /> property by using a <see cref="T:System.Windows.Media.PathGeometry" /> to generate the animated values. This animation can be used to move a visual object along a path.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> enables you to animate the angle and position of an object with a single animation and <xref:System.Windows.Media.MatrixTransform>.  
+  
+ A <xref:System.Windows.Media.Animation.PointAnimationUsingPath> animates its target by using linear interpolation over the specified <xref:System.Windows.Media.Animation.Timeline.Duration%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MatrixAnimationUsingPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.MatrixAnimationUsingPath.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no default <xref:System.Windows.Media.PathGeometry>, so the user must specify one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.MatrixAnimationUsingPath Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.MatrixAnimationUsingPath Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.MatrixAnimationUsingPath.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.MatrixAnimationUsingPath</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.MatrixAnimationUsingPath.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" />.</summary>
+        <returns>The new instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoesRotateWithTangent">
+      <MemberSignature Language="C#" Value="public bool DoesRotateWithTangent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DoesRotateWithTangent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the object rotates along the tangent of the path.</summary>
+        <value>
+          <see langword="true" /> if the object will rotate along the tangent of the path; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use property when you want the animated object to appear to "slide" along the animation path.  
+  
+<a name="dependencyPropertyInfo_DoesRotateWithTangent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoesRotateWithTangentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DoesRotateWithTangentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DoesRotateWithTangentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangent" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Matrix GetCurrentValueCore (System.Windows.Media.Matrix defaultOriginValue, System.Windows.Media.Matrix defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Matrix GetCurrentValueCore(valuetype System.Windows.Media.Matrix defaultOriginValue, valuetype System.Windows.Media.Matrix defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.MatrixAnimationUsingPath.GetCurrentValueCore(System.Windows.Media.Matrix,System.Windows.Media.Matrix,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultOriginValue" Type="System.Windows.Media.Matrix" />
+        <Parameter Name="defaultDestinationValue" Type="System.Windows.Media.Matrix" />
+        <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="defaultOriginValue">The suggested origin value, used if the animation does not have its own explicitly set start value.</param>
+        <param name="defaultDestinationValue">The suggested destination value, used if the animation does not have its own explicitly set end value.</param>
+        <param name="animationClock">An <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that generates the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> used by the animation.</param>
+        <summary>Calculates a value that represents the current value of the property being animated, as determined by the <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" />.</summary>
+        <returns>The calculated value of the property, as determined by the current animation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAdditive">
+      <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the target property's current value should be added to this animation's starting value.</summary>
+        <value>
+          <see langword="true" /> if the target property's current value should be added to this animation's starting value; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsAdditive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsAdditiveProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  This dependency property is unusual because the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline> and is shared by various derived classes.  
+  
+   
+  
+## Examples  
+ The following example uses two similar <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> animations to animate the same rectangle. The first animation's <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive%2A> property is set to `false`, so it always animates the rectangle from (0,0), the animation's starting value. The second animation has the same target values (their <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometry%2A> settings are identical), but its <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive%2A> property is set to `true`; as a result, it animates the rectangle from whatever position it is at when the animation is applied.  
+  
+ <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAdditiveExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snip/CS/matrixanimationusingpathisadditiveexample.xaml#matrixanimationusingpathisadditiveexamplewholepage)]  -->
+ <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAdditiveExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/PathAnimationGallery_snip/xaml/matrixanimationusingpathisadditiveexample.xaml#matrixanimationusingpathisadditiveexamplewholepage)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAngleCumulative">
+      <MemberSignature Language="C#" Value="public bool IsAngleCumulative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAngleCumulative" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the rotation angle of the animated matrix should accumulate over repetitions.</summary>
+        <value>
+          <see langword="true" /> if the animation's rotation angle should accumulate over repetitions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is set to `true`, the rotation angle of the animated matrix will accumulate as the animation repeats.  If your path is a small arc, a cumulative angle will cause your object to continuously rotate with each repeat instead of restarting the rotation.  When combined with an <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulative%2A> of `true`, your object might appear to tumble while it bounces (depending on the path you specify). For related information, see <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulative%2A>.  
+  
+ Setting this property has no effect if <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangent%2A> is `false`.  
+  
+ This property determines whether the animation matrix's angle accumulates when the animation repeats because of its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> setting; it does not cause the offset to accumulate when the animation is restarted. For information on how to make an animation build off a previous animation's values, see <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive%2A>.  
+  
+<a name="dependencyPropertyInfo_IsAngleCumulative"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulativeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example uses two similar <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> animations to animate the same rectangle. Both animations have the same <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometry%2A> setting, which causes the rectangle to rotate as it moves along the screen to the right, and both animations are set to repeat four times. The first animation's <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative%2A> property is set to `false`, so the rectangle jumps back to its original angle when the animation repeats. The second animation's <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative%2A> property is set to `true`; as a result, the rectangle angle appears to increase when the animation repeats, rather than jumping back to its original value.  
+  
+ <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAngleCumulativeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snip/CS/matrixanimationusingpathisanglecumulativeexample.xaml#matrixanimationusingpathisanglecumulativeexamplewholepage)]  -->
+ <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAngleCumulativeExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/PathAnimationGallery_snip/xaml/matrixanimationusingpathisanglecumulativeexample.xaml#matrixanimationusingpathisanglecumulativeexamplewholepage)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAngleCumulativeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsAngleCumulativeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsAngleCumulativeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulativeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffsetCumulative">
+      <MemberSignature Language="C#" Value="public bool IsOffsetCumulative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOffsetCumulative" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the offset produced by the animated matrix will accumulate over repetitions.</summary>
+        <value>
+          <see langword="true" /> if the object will accumulate over repeats of the animation; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is set to `true`, the offset of the animated matrix will accumulate as the animation repeats. For example, if the path is a small arc and the animation is set to repeat, a cumulative offset will cause the object to appear to bounce across the screen.  
+  
+ This property determines whether the animation matrix's offset accumulates when the animation repeats because of its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> setting; it does not cause the offset to accumulate when the animation is restarted. For information on how to make an animation build off a previous animation's values, see <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive%2A>.  
+  
+<a name="dependencyPropertyInfo_IsOffsetCumulative"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulativeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffsetCumulativeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsOffsetCumulativeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsOffsetCumulativeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulativeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulative" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChanged">
+      <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.MatrixAnimationUsingPath.OnChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when this <see cref="T:System.Windows.Media.Animation.MatrixAnimationUsingPath" /> is modified.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>For information about overriding this method, see <see cref="M:System.Windows.Freezable.OnChanged" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PathGeometry">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry PathGeometry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.PathGeometry PathGeometry" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PathGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the geometry used to generate this animation's output values.</summary>
+        <value>The geometry used to generate this animation's output values. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.PathGeometry> can describe complex shapes that contain curves and arcs, enabling you specify complex shapes for your animation input. For more information, see [Geometry Overview](~/docs/framework/wpf/graphics-multimedia/geometry-overview.md).  
+  
+<a name="dependencyPropertyInfo_PathGeometry"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometryProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathGeometryProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathGeometryProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathGeometryProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometryProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometry" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

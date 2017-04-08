@@ -1,0 +1,148 @@
+<Type Name="ExpressionBuilder" FullName="System.Web.Configuration.ExpressionBuilder">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionBuilder : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExpressionBuilder extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ExpressionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Retrieves a dynamic resource during compilation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET automatically evaluates expressions during page parsing using the <xref:System.Web.Configuration.ExpressionBuilder> class. The <xref:System.Web.Configuration.ExpressionBuilderCollection> collection, which is made up of the `expressionBuilders` elements contained in the `compilation` section of the configuration. The <xref:System.Web.Configuration.ExpressionBuilder> contains specific values in key/value pairs.  
+  
+ A value is retrieved by including an expression of the form  
+  
+ `<%$ ExpressionPrefix: ExpressionKey %>`  
+  
+ within the page. The `ExpressionPrefix` maps the type of expression to be retrieved as either a common expression-builder type (that is, <xref:System.Web.Compilation.AppSettingsExpressionBuilder>) or a custom expression builder type. The `ExpressionKey` specifies the key used to reference the returned value.  
+  
+ If you choose to implement a common expression-builder type, you must map the expression builder to the associated section name in the configuration. If you choose to implement a custom expression-builder type, you must map your expression builder to your custom expression-builder class, which must derive from the <xref:System.Web.Configuration.ExpressionBuilder> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionBuilder (string expressionPrefix, string theType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string expressionPrefix, string theType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ExpressionBuilder.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expressionPrefix" Type="System.String" />
+        <Parameter Name="theType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="expressionPrefix">A string that identifies the type of expression to retrieve.</param>
+        <param name="theType">A string that specifies the expression type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ExpressionBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create an <xref:System.Web.Configuration.ExpressionBuilder> object. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ExpressionBuilderCollection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ExpressionBuilderCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/CS/ExpressionBuilderCollection.cs#2)]
+ [!code-vb[System.Web.Configuration.ExpressionBuilderCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ExpressionBuilderCollection/VB/ExpressionBuilderCollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionPrefix">
+      <MemberSignature Language="C#" Value="public string ExpressionPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExpressionPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("expressionPrefix", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that identifies the type of expression to retrieve.</summary>
+        <value>A string that identifies the type of expression to retrieve.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ExpressionBuilder.ExpressionPrefix%2A> maps the expression to the associated section name in the configuration for common expression types, or maps the expression to the custom expression class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ExpressionBuilder.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ExpressionBuilder.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("type", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies the expression type.</summary>
+        <value>A string that specifies the expression type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ExpressionBuilder.Type%2A> specifies the type of object used to determine the value of the expression. The type can specify either a section within the configuration, or a custom class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,216 @@
+<Type Name="DesignerOptions" FullName="System.Windows.Forms.Design.DesignerOptions">
+  <TypeSignature Language="C#" Value="public class DesignerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides access to get and set option values for a designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DesignerOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.DesignerOptions" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableInSituEditing">
+      <MemberSignature Language="C#" Value="public virtual bool EnableInSituEditing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableInSituEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.EnableInSituEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that enables or disables in-place editing for <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</summary>
+        <value>
+          <see langword="true" /> if in-place editing for <see cref="T:System.Windows.Forms.ToolStrip" /> controls is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridSize">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Size GridSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size GridSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.GridSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Drawing.Size" /> representing the dimensions of a grid unit.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> representing the dimensions of a grid unit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectBoundSmartTagAutoShow">
+      <MemberSignature Language="C#" Value="public virtual bool ObjectBoundSmartTagAutoShow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ObjectBoundSmartTagAutoShow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.ObjectBoundSmartTagAutoShow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether a designer shows a component's smart tag panel automatically on creation.</summary>
+        <value>
+          <see langword="true" /> to allow a component's smart tag panel to open automatically upon creation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A component's smart tag panel is set to automatically open when the <xref:System.ComponentModel.Design.DesignerActionList.AutoShow%2A?displayProperty=fullName> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowGrid">
+      <MemberSignature Language="C#" Value="public virtual bool ShowGrid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowGrid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.ShowGrid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that enables or disables the grid in the designer.</summary>
+        <value>
+          <see langword="true" /> if the grid is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapToGrid">
+      <MemberSignature Language="C#" Value="public virtual bool SnapToGrid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SnapToGrid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.SnapToGrid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that enables or disables whether controls are automatically placed at grid coordinates.</summary>
+        <value>
+          <see langword="true" /> if snapping is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseOptimizedCodeGeneration">
+      <MemberSignature Language="C#" Value="public virtual bool UseOptimizedCodeGeneration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseOptimizedCodeGeneration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.UseOptimizedCodeGeneration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that enables or disables the component cache.</summary>
+        <value>
+          <see langword="true" /> if the component cache is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The component cache is a performance enhancement that is incompatible with certain designers. You can disable it with this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSmartTags">
+      <MemberSignature Language="C#" Value="public virtual bool UseSmartTags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSmartTags" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.UseSmartTags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that enables or disables smart tags in the designer.</summary>
+        <value>
+          <see langword="true" /> if smart tags in the designer are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This option is not exposed on the **Options** item of the **Tools** menu in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSnapLines">
+      <MemberSignature Language="C#" Value="public virtual bool UseSnapLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSnapLines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.UseSnapLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that enables or disables snaplines in the designer.</summary>
+        <value>
+          <see langword="true" /> if snaplines in the designer are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

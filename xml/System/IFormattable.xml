@@ -1,0 +1,169 @@
+<Type Name="IFormattable" FullName="System.IFormattable">
+  <TypeSignature Language="C#" Value="public interface IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.IFormattable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides functionality to format the value of an object into a string representation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IFormattable> interface converts an object to its string representation based on a format string and a format provider.  
+  
+ A format string typically defines the general appearance of an object. For example, the .NET Framework supports the following:  
+  
+-   Standard format strings for formatting enumeration values (see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md)).  
+  
+-   Standard and custom format strings for formatting numeric values (see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md)).  
+  
+-   Standard and custom format strings for formatting date and time values (see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md)).  
+  
+-   Standard and custom format strings for formatting time intervals (see [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md)).  
+  
+ You can also define your own format strings to support formatting of your application-defined types.  
+  
+ A format provider returns a formatting object that typically defines the symbols used in converting an object to its string representation. For example, when you convert a number to a currency value, a format provider defines the currency symbol that appears in the result string. The .NET Framework defines three format providers:  
+  
+-   The <xref:System.Globalization.CultureInfo?displayProperty=fullName> class, which returns either a <xref:System.Globalization.NumberFormatInfo> object for formatting numeric values, or a <xref:System.Globalization.DateTimeFormatInfo> object for formatting date and time values.  
+  
+-   The <xref:System.Globalization.NumberFormatInfo?displayProperty=fullName> class, which returns an instance of itself for formatting numeric values.  
+  
+-   The <xref:System.Globalization.DateTimeFormatInfo?displayProperty=fullName> class, which returns an instance of itself for formatting date and time values.  
+  
+ In addition, you can define your own custom format providers to supply culture-specific, profession-specific, or industry-specific information used in formatting. For more information about implementing custom formatting by using a custom format provider, see <xref:System.ICustomFormatter>.  
+  
+ The <xref:System.IFormattable> interface defines a single method, <xref:System.IFormattable.ToString%2A>, that supplies formatting services for the implementing type. The <xref:System.IFormattable.ToString%2A> method can be called directly. In addition, it is called automatically by the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods, and by methods that use the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) in the .NET Framework. Such methods include <xref:System.Console.WriteLine%28System.String%2CSystem.Object%29?displayProperty=fullName>, <xref:System.String.Format%2A?displayProperty=fullName>, and <xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%29?displayProperty=fullName>, among others. The <xref:System.IFormattable.ToString%2A> method is called for each format item in the method's format string.  
+  
+ The <xref:System.IFormattable> interface is implemented by the base data types.  
+  
+   
+  
+## Examples  
+ The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface. The class supports four format specifiers: "G" and "C", which indicate that the temperature is to be displayed in Celsius; "F", which indicates that the temperature is to be displayed in Fahrenheit; and "K", which indicates that the temperature is to be displayed in Kelvin. In addition, the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation also can handle a format string that is `null` or empty. The other two `ToString` methods defined by the `Temperature` class simply wrap a call to the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation.  
+  
+ [!code-csharp[System.IFormattable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iformattable/cs/example1.cs#1)]
+ [!code-vb[System.IFormattable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iformattable/vb/example1.vb#1)]  
+  
+ The following example then calls the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> implementation either directly or by using a composite format string.  
+  
+ [!code-csharp[System.IFormattable#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iformattable/cs/example1.cs#2)]
+ [!code-vb[System.IFormattable#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iformattable/vb/example1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Classes that require more control over the formatting of strings than <see cref="M:System.Object.ToString" /> provides should implement <see cref="T:System.IFormattable" />.  
+  
+ A class that implements <see cref="T:System.IFormattable" /> must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](~/docs/standard/base-types/formatting-types.md)</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="formatProvider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IFormattable.ToString%2A> method converts a value to a string representation that can be expressed in multiple ways. Its precise format depends on specific symbols or a specified order defined by specific cultures, professions, or industries. You can call the method directly. It is also called automatically by the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods, and by methods that use the composite formatting feature in the .NET Framework, such as [String.Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, and [StringBuilder.AppendFormat(String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. (For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).)  
+  
+ Composite formatting methods call the <xref:System.IFormattable.ToString%2A> method once for each format item in a format string. The parameters passed to the method depend on the specific formatting method that is called and on the content of the format item, as follows:  
+  
+-   If the format item does not include a format string (for example, if the format item is simply `{0}`), it is passed `null` as the value of the <xref:System.String?displayProperty=fullName> parameter.  
+  
+-   If the format item includes a format string (for example, `{0:G}`), that format string is passed as the value of the <xref:System.String?displayProperty=fullName> parameter.  
+  
+-   If the original method call does not include an <xref:System.IFormatProvider?displayProperty=fullName> parameter, <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> is passed as the value of the <xref:System.IFormatProvider?displayProperty=fullName> parameter.  
+  
+-   If the original method call includes an <xref:System.IFormatProvider?displayProperty=fullName> parameter, the provider that is supplied in the method call is passed as the value of the <xref:System.IFormatProvider?displayProperty=fullName> parameter.  
+  
+> [!NOTE]
+>  An object's <xref:System.IFormattable.ToString%2A> implementation is called by composite formatting methods only if they are not passed an <xref:System.ICustomFormatter> format provider, or if the <xref:System.ICustomFormatter.Format%2A> method of the custom format provider returns `null`.  
+  
+ The .NET Framework includes three format providers, all of which implement the <xref:System.IFormatProvider> interface:  
+  
+-   <xref:System.Globalization.NumberFormatInfo> supplies numeric formatting information, such as the characters to use for decimal and group separators, and the spelling and placement of currency symbols in monetary values.  
+  
+-   <xref:System.Globalization.DateTimeFormatInfo> supplies date-related and time-related formatting information, such as the position of the month, the day, and the year in a date pattern.  
+  
+-   <xref:System.Globalization.CultureInfo> contains the default formatting information in a specific culture, including the numeric format information, and date-related and time-related formatting information.  
+  
+ In addition, you can define your own custom format provider.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a `Temperature` class that implements the <xref:System.IFormattable.ToString%2A> method. This code example is part of a larger example provided for the <xref:System.IFormattable> class.  
+  
+ [!code-csharp[System.IFormattable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iformattable/cs/example1.cs#1)]
+ [!code-vb[System.IFormattable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iformattable/vb/example1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" /> method must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

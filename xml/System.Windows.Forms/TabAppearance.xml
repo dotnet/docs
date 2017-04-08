@@ -1,0 +1,82 @@
+<Type Name="TabAppearance" FullName="System.Windows.Forms.TabAppearance">
+  <TypeSignature Language="C#" Value="public enum TabAppearance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabAppearance extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabAppearance" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the appearance of the tabs in a tab control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TabControl.Alignment%2A?displayProperty=fullName> and <xref:System.Windows.Forms.TabControl.Appearance%2A?displayProperty=fullName> properties and the <xref:System.Windows.Forms.TabAlignment> and <xref:System.Windows.Forms.TabAppearance> enumerations. To run the example, paste the following codein a form containing a <xref:System.Windows.Forms.TabControl> called TabControl1. Call the ChangeTheLookOfTheTabControl method in the form's constructor or Load method.  
+  
+ [!code-cpp[System.Windows.Forms.TabControlExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.TabControlExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.TabControlExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TabControlExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Buttons">
+      <MemberSignature Language="C#" Value="Buttons" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAppearance Buttons = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAppearance.Buttons" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tabs have the appearance of three-dimensional buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FlatButtons">
+      <MemberSignature Language="C#" Value="FlatButtons" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAppearance FlatButtons = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAppearance.FlatButtons" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tabs have the appearance of flat buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabAppearance Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabAppearance.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tabs have the standard appearance of tabs.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

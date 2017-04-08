@@ -1,0 +1,482 @@
+<Type Name="SoapReflectionImporter" FullName="System.Xml.Serialization.SoapReflectionImporter">
+  <TypeSignature Language="C#" Value="public class SoapReflectionImporter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapReflectionImporter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapReflectionImporter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Generates mappings to SOAP-encoded messages from .NET Framework types or Web service method information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.SoapReflectionImporter> class provides type mappings to SOAP-encoded message parts, as defined in a Web Services Description Language (WSDL) document. It is used only when a Web service or client specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification.  
+  
+   
+  
+## Examples  
+ The following example serializes a class named `Group`. The serialization of the `GroupName` and `IgnoreThis` fields and the members of the `GroupType` enumeration are overridden. In the `CreateOverrideSerializer` method, a <xref:System.Xml.Serialization.SoapAttributeOverrides> is created, and for each overridden member or enumeration, a <xref:System.Xml.Serialization.SoapAttributes> is created with the appropriate property set and added to the <xref:System.Xml.Serialization.SoapAttributeOverrides>. An <xref:System.Xml.Serialization.XmlTypeMapping> is created using the <xref:System.Xml.Serialization.SoapAttributeOverrides>, and that <xref:System.Xml.Serialization.XmlTypeMapping> is used to create the <xref:System.Xml.Serialization.XmlSerializer> that overrides the default serialization.  
+  
+ [!code-cpp[SoapAttributesOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapAttributesOverrides/CPP/soapover.cpp#1)]
+ [!code-csharp[SoapAttributesOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapAttributesOverrides/CS/soapover.cs#1)]
+ [!code-vb[SoapAttributesOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapAttributesOverrides/VB/SoapOver.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapReflectionImporter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapReflectionImporter (string defaultNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string defaultNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="defaultNamespace">The default XML namespace to use for imported type mappings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> class, specifying a default XML namespace for imported type mappings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapReflectionImporter (System.Xml.Serialization.SoapAttributeOverrides attributeOverrides);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.SoapAttributeOverrides attributeOverrides) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.#ctor(System.Xml.Serialization.SoapAttributeOverrides)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeOverrides" Type="System.Xml.Serialization.SoapAttributeOverrides" />
+      </Parameters>
+      <Docs>
+        <param name="attributeOverrides">A <see cref="T:System.Xml.Serialization.SoapAttributeOverrides" /> object that overrides how the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class serializes mapped types using SOAP encoding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> class, specifying overrides for XML serialization.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapReflectionImporter (System.Xml.Serialization.SoapAttributeOverrides attributeOverrides, string defaultNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.SoapAttributeOverrides attributeOverrides, string defaultNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.#ctor(System.Xml.Serialization.SoapAttributeOverrides,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeOverrides" Type="System.Xml.Serialization.SoapAttributeOverrides" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attributeOverrides">A <see cref="T:System.Xml.Serialization.SoapAttributeOverrides" /> object that overrides how the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class serializes mapped types using SOAP encoding.</param>
+        <param name="defaultNamespace">The default XML namespace to use for imported type mappings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> class, specifying XML serialization overrides and a default XML namespace.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportMembersMapping">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlMembersMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="members" Type="System.Xml.Serialization.XmlReflectionMember[]" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of .NET Framework code entities that belong to a Web service method.</param>
+        <summary>Generates internal type mappings for information that is gathered from a Web service method.</summary>
+        <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+  
+ The following list describes possible values for the `members` parameter:  
+  
+-   Web service method input parameters.  
+  
+-   Web service method output parameters, plus the return type, if not void, at index zero.  
+  
+-   SOAP input headers.  
+  
+-   SOAP output headers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportMembersMapping">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool writeAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool writeAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlMembersMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="members" Type="System.Xml.Serialization.XmlReflectionMember[]" />
+        <Parameter Name="hasWrapperElement" Type="System.Boolean" />
+        <Parameter Name="writeAccessors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> to indicate that elements that correspond to WSDL message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <param name="writeAccessors">
+          <see langword="true" /> to indicate an RPC-style Web service binding; <see langword="false" /> to indicate a document-style Web service binding or a SOAP header.</param>
+        <summary>Generates internal type mappings for information that is gathered from a Web service method.</summary>
+        <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ImportMembersMapping Method (String, String, XmlReflectionMember\<xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+  
+ The following list describes possible values for the `members` parameter:  
+  
+-   Web service method input parameters.  
+  
+-   Web service method output parameters, plus the return type, if not void, at index zero.  
+  
+-   SOAP input headers.  
+  
+-   SOAP output headers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportMembersMapping">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool writeAccessors, bool validate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool writeAccessors, bool validate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlMembersMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="members" Type="System.Xml.Serialization.XmlReflectionMember[]" />
+        <Parameter Name="hasWrapperElement" Type="System.Boolean" />
+        <Parameter Name="writeAccessors" Type="System.Boolean" />
+        <Parameter Name="validate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> to indicate that elements that correspond to WSDL message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <param name="writeAccessors">
+          <see langword="true" /> to indicate an RPC-style Web service binding; <see langword="false" /> to indicate a document-style Web service binding or a SOAP header.</param>
+        <param name="validate">
+          <see langword="true" /> to indicate that a generated deserializer should check for the expected qualified name of the wrapper element; otherwise, <see langword="false" />. This parameter's value is relevant only if the <c>hasWrapperElement</c> parameter's value is <see langword="true" />.</param>
+        <summary>Generates internal type mappings for information that is gathered from a Web service method.</summary>
+        <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [ImportMembersMapping Method (String, String, XmlReflectionMember\<xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+  
+ The following list describes possible values for the `members` parameter:  
+  
+-   Web service method input parameters.  
+  
+-   Web service method output parameters, plus the return type, if not void, at index zero.  
+  
+-   SOAP input headers.  
+  
+-   SOAP output headers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportMembersMapping">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool writeAccessors, bool validate, System.Xml.Serialization.XmlMappingAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool writeAccessors, bool validate, valuetype System.Xml.Serialization.XmlMappingAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean,System.Xml.Serialization.XmlMappingAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlMembersMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="members" Type="System.Xml.Serialization.XmlReflectionMember[]" />
+        <Parameter Name="hasWrapperElement" Type="System.Boolean" />
+        <Parameter Name="writeAccessors" Type="System.Boolean" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="access" Type="System.Xml.Serialization.XmlMappingAccess" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">An XML element name produced from the Web service method.</param>
+        <param name="ns">An XML element namespace produced from the Web service method.</param>
+        <param name="members">An array of .NET Framework code entities that belong to a Web service method.</param>
+        <param name="hasWrapperElement">
+          <see langword="true" /> to indicate that elements that correspond to WSDL message parts should be enclosed in an extra wrapper element in a SOAP message; otherwise, <see langword="false" />.</param>
+        <param name="writeAccessors">
+          <see langword="true" /> to indicate an RPC-style Web service binding; <see langword="false" /> to indicate a document-style Web service binding or a SOAP header.</param>
+        <param name="validate">
+          <see langword="true" /> to indicate that a generated deserializer should check for the expected qualified name of the wrapper element; otherwise, <see langword="false" />. This parameter's value is relevant only if the <c>hasWrapperElement</c> parameter's value is <see langword="true" />.</param>
+        <param name="access">One of the <see cref="T:System.Xml.Serialization.XmlMappingAccess" /> values.</param>
+        <summary>Generates internal type mappings for information that is gathered from a Web service method.</summary>
+        <returns>Internal .NET Framework type mappings to the element parts of a WSDL message definition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping%2A> method is called while initializing a Web service or client, or reflecting a Web service. You do not need to call it directly.  
+  
+ The following list describes possible values for the `members` parameter:  
+  
+-   Web service method input parameters.  
+  
+-   Web service method output parameters, plus the return type, if not void, at index zero.  
+  
+-   SOAP input headers.  
+  
+-   SOAP output headers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportTypeMapping">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlTypeMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The .NET Framework type for which to generate a type mapping.</param>
+        <summary>Generates a mapping to an XML Schema element for a .NET Framework type.</summary>
+        <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML Schema element is serialized using SOAP encoding.  
+  
+ You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportTypeMapping">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (Type type, string defaultNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Type type, string defaultNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlTypeMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The .NET Framework type for which to generate a type mapping.</param>
+        <param name="defaultNamespace">The default XML namespace to use.</param>
+        <summary>Generates a mapping to an XML Schema element for a .NET Framework type.</summary>
+        <returns>Internal .NET Framework mapping of a type to an XML Schema element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML Schema element is serialized using SOAP encoding.  
+  
+ You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeType">
+      <MemberSignature Language="C#" Value="public void IncludeType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncludeType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.IncludeType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The .NET Framework type for which to save type mapping information.</param>
+        <summary>Places mappings for a type in the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> instance's context for later use when import methods are invoked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not need to call the <xref:System.Xml.Serialization.SoapReflectionImporter.IncludeType%2A> method directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeTypes">
+      <MemberSignature Language="C#" Value="public void IncludeTypes (System.Reflection.ICustomAttributeProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncludeTypes(class System.Reflection.ICustomAttributeProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapReflectionImporter.IncludeTypes(System.Reflection.ICustomAttributeProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Reflection.ICustomAttributeProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">An <see cref="T:System.Reflection.ICustomAttributeProvider" /> reflection object that contains custom attributes that are derived from the <see cref="T:System.Xml.Serialization.SoapIncludeAttribute" /> attribute.</param>
+        <summary>Places mappings for derived types in the <see cref="T:System.Xml.Serialization.SoapReflectionImporter" /> instance's context for later use when import methods are invoked.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,126 @@
+<Type Name="ParameterCollectionEditor" FullName="System.Web.UI.Design.WebControls.ParameterCollectionEditor">
+  <TypeSignature Language="C#" Value="public class ParameterCollectionEditor : System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParameterCollectionEditor extends System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Design.UITypeEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a component editor for the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> object that is specified by the <see langword="Parameters" /> properties of the associated data source control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.Parameter> elements of the <xref:System.Web.UI.WebControls.ParameterCollection> object at design time, as specified by one of the `Parameters` properties. The `Parameters` properties include the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.InsertParameters%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> and <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateParameters%2A> properties of the <xref:System.Web.UI.WebControls.ObjectDataSource>, <xref:System.Web.UI.WebControls.SqlDataSource>, and other data source controls.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> is invoked by selecting the ellipsis (**…**) button on one of the `Parameters` properties in the **Properties** grid of the visual designer.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> method edits the <xref:System.Web.UI.WebControls.Parameter> elements of the <xref:System.Web.UI.WebControls.ParameterCollection> for the associated data source control. The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle%2A> method gets the editing style that is associated with this editor.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> and <xref:System.Drawing.Design.UITypeEditor> (the collection editor base class) classes with a `SelectParameters` property in a custom control.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.DesignerEditors#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.DesignerEditors/CS/DesignerEditors.cs#2)]
+ [!code-vb[System.Web.UI.Design.WebControls.DesignerEditors#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.DesignerEditors/VB/DesignerEditors.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParameterCollectionEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterCollectionEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ParameterCollectionEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor> class when the page designer selects the ellipsis (**…**) button on one of the `Parameters` properties in the visual designer's **Properties** grid while designing the associated data source control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditValue">
+      <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used to acquire context information.</param>
+        <param name="provider">An object implementing the <see cref="T:System.IServiceProvider" /> through which editing services can be obtained.</param>
+        <param name="value">The object to edit the value for.</param>
+        <summary>Edits the elements of the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> objects of the associated data source control.</summary>
+        <returns>The new <paramref name="value" />; otherwise, if the value of the object has not changed, <paramref name="value" /> unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> method extracts the associated data source control and the data source control designer that is associated with that control from the `context` parameter. The supported data source controls include the <xref:System.Web.UI.WebControls.ObjectDataSource> and <xref:System.Web.UI.WebControls.SqlDataSource> controls, with their corresponding <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> and <xref:System.Web.UI.Design.WebControls.SqlDataSourceDesigner> designers.  
+  
+ Once the data is extracted, the <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.EditValue%2A> calls back to the data source control designer to display an editing dialog box that is used to edit a <xref:System.Web.UI.WebControls.ParameterCollection> object that is referenced by one of the `Parameters` properties of the data source control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditStyle">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object that indicates the context of the object being edited.</param>
+        <summary>Gets the editing style that is associated with this editor.</summary>
+        <returns>The editing style that is associated with this editor.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ParameterCollectionEditor.GetEditStyle%2A> method always returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value, which indicates that the user interface for the editor is a modal dialog box.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

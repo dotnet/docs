@@ -1,0 +1,103 @@
+<Type Name="IncrementalLassoHitTester" FullName="System.Windows.Ink.IncrementalLassoHitTester">
+  <TypeSignature Language="C#" Value="public class IncrementalLassoHitTester : System.Windows.Ink.IncrementalHitTester" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncrementalLassoHitTester extends System.Windows.Ink.IncrementalHitTester" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.IncrementalLassoHitTester" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Ink.IncrementalHitTester</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Dynamically hit tests a <see cref="T:System.Windows.Ink.Stroke" /> with a lasso.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.IncrementalLassoHitTester> hit tests strokes by determining whether a lasso path surrounds it. Use the <xref:System.Windows.Ink.IncrementalHitTester.AddPoints%2A> method in the stylus events to add the points to the <xref:System.Windows.Ink.IncrementalLassoHitTester>. When the points added to the <xref:System.Windows.Ink.IncrementalLassoHitTester> selects or unselects a <xref:System.Windows.Ink.Stroke>, the <xref:System.Windows.Ink.IncrementalLassoHitTester> raises the <xref:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged> event  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to dynamically select strokes in a custom control. For the entire sample, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
+  
+ [!code-csharp[StrokeCollectionMethods#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#18)]
+ [!code-vb[StrokeCollectionMethods#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#18)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddPointsCore">
+      <MemberSignature Language="C#" Value="protected override void AddPointsCore (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddPointsCore(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalLassoHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="points">The points to add</param>
+        <summary>Adds points to the <see cref="T:System.Windows.Ink.IncrementalHitTester" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectionChanged">
+      <MemberSignature Language="C#" Value="protected void OnSelectionChanged (System.Windows.Ink.LassoSelectionChangedEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSelectionChanged(class System.Windows.Ink.LassoSelectionChangedEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalLassoHitTester.OnSelectionChanged(System.Windows.Ink.LassoSelectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="System.Windows.Ink.LassoSelectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">Event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Ink.LassoSelectionChangedEventHandler SelectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.LassoSelectionChangedEventHandler SelectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.LassoSelectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the lasso path selects or unselects an ink <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to dynamically select strokes in a custom control. For the entire sample, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
+  
+ [!code-csharp[StrokeCollectionMethods#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#18)]
+ [!code-vb[StrokeCollectionMethods#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

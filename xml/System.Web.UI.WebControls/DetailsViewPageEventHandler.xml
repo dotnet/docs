@@ -1,0 +1,50 @@
+<Type Name="DetailsViewPageEventHandler" FullName="System.Web.UI.WebControls.DetailsViewPageEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DetailsViewPageEventHandler(object sender, DetailsViewPageEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DetailsViewPageEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewPageEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.DetailsViewPageEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.DetailsViewPageEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DetailsView.PageIndexChanging" /> event of a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DetailsView> control raises the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event when a pager button (a button with its `CommandName` property set to "Page") within the control is clicked, but before the <xref:System.Web.UI.WebControls.DetailsView> control handles the paging operation. This allows you to provide an event handler that performs a custom routine, such as canceling the paging operation, whenever this event occurs.  
+  
+> [!NOTE]
+>  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ When you create a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewPageEventHandlerDynamic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPageEventHandlerDynamic/CS/detailsviewpageeventhandlerdynamiccs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewPageEventHandlerDynamic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPageEventHandlerDynamic/VB/detailsviewpageeventhandlerdynamicvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.DetailsViewPageEventHandler> delegate to the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event of a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewPageEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewPageEventHandlerDeclarative/CS/detailsviewpageeventhandlerdeclarativecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewPageEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewPageEventHandlerDeclarative/VB/detailsviewpageeventhandlerdeclarativevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

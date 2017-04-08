@@ -1,0 +1,125 @@
+<Type Name="AddedConditionAction" FullName="System.Workflow.Activities.Rules.AddedConditionAction">
+  <TypeSignature Language="C#" Value="public sealed class AddedConditionAction : System.Workflow.Activities.Rules.RuleConditionChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddedConditionAction extends System.Workflow.Activities.Rules.RuleConditionChangeAction" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.AddedConditionAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.Rules.RuleConditionChangeAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the addition of a <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to a workflow during dynamic update. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used by a tracking service to determine which <xref:System.Workflow.Activities.Rules.RuleCondition>s have been added during a dynamic update. An instance of this object is generated for every <xref:System.Workflow.Activities.Rules.RuleCondition> that is added (that is, that did not exist in the workflow before this dynamic update).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddedConditionAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.AddedConditionAction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.AddedConditionAction" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddedConditionAction (System.Workflow.Activities.Rules.RuleCondition addedConditionDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleCondition addedConditionDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.AddedConditionAction.#ctor(System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addedConditionDefinition" Type="System.Workflow.Activities.Rules.RuleCondition" />
+      </Parameters>
+      <Docs>
+        <param name="addedConditionDefinition">The condition added to the workflow.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.AddedConditionAction" /> class using the definition of the added condition.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addedConditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyTo">
+      <MemberSignature Language="C#" Value="protected override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.AddedConditionAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionDefinition">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleCondition ConditionDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleCondition ConditionDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.AddedConditionAction.ConditionDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to add to the workflow.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to add to the workflow.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Workflow.Activities.Rules.AddedConditionAction.ConditionDefinition" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionName">
+      <MemberSignature Language="C#" Value="public override string ConditionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.AddedConditionAction.ConditionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that contains the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> that was added to the workflow.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> that was added to the workflow.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

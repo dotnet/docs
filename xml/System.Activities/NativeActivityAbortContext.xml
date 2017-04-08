@@ -1,0 +1,44 @@
+<Type Name="NativeActivityAbortContext" FullName="System.Activities.NativeActivityAbortContext">
+  <TypeSignature Language="C#" Value="public sealed class NativeActivityAbortContext : System.Activities.ActivityContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NativeActivityAbortContext extends System.Activities.ActivityContext" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivityAbortContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.ActivityContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the execution environment of an activity that is being aborted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors that create activities that are derived from <xref:System.Activities.NativeActivity%601> can override <xref:System.Activities.NativeActivity%601.Abort%2A> to take action in response to being aborted. For example, an activity that interacts with <xref:System.Data.SqlClient.SqlCommand> might want to call <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> if the activity is being aborted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public Exception Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Reason" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivityAbortContext.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Exception" /> that contains the reason for the activity being aborted.</summary>
+        <value>An exception that contains the reason for the activity being aborted.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

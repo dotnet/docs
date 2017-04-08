@@ -1,0 +1,81 @@
+<Type Name="XamlSetMarkupExtensionAttribute" FullName="System.Windows.Markup.XamlSetMarkupExtensionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class XamlSetMarkupExtensionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XamlSetMarkupExtensionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a class can use a markup extension to provide a value, and references a handler to use for markup extension set operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default implementation for a XAML object writer uses CLR reflection and this CLR attribute to determine if there is an intentional callback for markup extension usages that set values of a type or member. For example, a <xref:System.Xaml.XamlServices> load or parse, or a <xref:System.Xaml.XamlXmlReader> / <xref:System.Xaml.XamlObjectWriter> sequence, will use this attribute and invoke the named callback as part of the operation whenever writing the object node based on a markup extension usage.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlSetMarkupExtensionAttribute (string xamlSetMarkupExtensionHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xamlSetMarkupExtensionHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetMarkupExtensionAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xamlSetMarkupExtensionHandler" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xamlSetMarkupExtensionHandler">The name of the handler to use for markup extension set operations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetMarkupExtensionAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method referenced by name through the `xamlSetMarkupExtensionHandler` value should be based on a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data constraint.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XamlSetMarkupExtensionHandler">
+      <MemberSignature Language="C#" Value="public string XamlSetMarkupExtensionHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XamlSetMarkupExtensionHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetMarkupExtensionAttribute.XamlSetMarkupExtensionHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the handler to use for markup extension set operations.</summary>
+        <value>The name of the handler to use for markup extension set operations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The  handler should be based on a generic <xref:System.EventHandler%601> delegate with <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> event data constraint.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

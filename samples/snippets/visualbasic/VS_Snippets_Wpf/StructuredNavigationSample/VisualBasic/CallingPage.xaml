@@ -1,0 +1,18 @@
+﻿<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="StructuredNavigationSample.CallingPage"
+    WindowTitle="Calling Page"
+    WindowWidth="250" WindowHeight="150">
+
+  <TextBlock Margin="10">
+
+    <Hyperlink Name="pageFunctionHyperlink">Call Page Function</Hyperlink>
+    <LineBreak />
+
+    <!-- Results -->
+    <TextBlock Name="pageFunctionResultsTextBlock" Visibility="Hidden" />
+
+  </TextBlock>
+
+</Page>

@@ -1,0 +1,356 @@
+<Type Name="SortKey" FullName="System.Globalization.SortKey">
+  <TypeSignature Language="C#" Value="public class SortKey" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable beforefieldinit SortKey extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.SortKey" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the result of mapping a string to its sort key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A culture-sensitive comparison of two strings depends on each character in the strings having several categories of sort weights, including script, alphabetic, case, and diacritic weights. A sort key serves as the repository of these weights for a particular string.  
+  
+ The <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=fullName> method returns an instance of the <xref:System.Globalization.SortKey> class that reflects the culture-sensitive mapping of characters in a specified string. The value of a <xref:System.Globalization.SortKey> object is its key data, which is returned by the <xref:System.Globalization.SortKey.KeyData%2A> property. This key data consists of a series of bytes that encode the string, culture-specific sorting rules, and user-specified comparison options. A comparison using sort keys consists of a bitwise comparison of the corresponding key data in each sort key.  For example, if you create a sort key by calling the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29> method with a value of <xref:System.Globalization.CompareOptions?displayProperty=fullName>, a string comparison operation that uses the sort key is case-insensitive.  
+  
+ After you create a sort key for a string, you compare sort keys by calling the static <xref:System.Globalization.SortKey.Compare%2A?displayProperty=fullName> method. This method performs a simple byte-by-byte comparison, so it is much faster than the <xref:System.String.Compare%2A?displayProperty=fullName> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> method.  
+  
+## Performance considerations  
+ When performing a string comparison, the <xref:System.Globalization.SortKey.Compare%2A> and <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> methods yield the same results, but they target different scenarios.  
+  
+ At a high level, the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> method generates the sort key for each string, performs the comparison, and then discards the sort key and returns the result of the comparison. However, the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> method actually doesn't generate an entire sort key to perform the comparison. Instead, the method generates the key data for each text element (that is, base character, surrogate pair, or combining character sequence) in each string. The method then compares the key data for the corresponding text elements. The operation terminates as soon as the ultimate result of the comparison is determined. Sort key information is computed, but no <xref:System.Globalization.SortKey> object is created. This strategy is economical in terms of performance if both strings are compared once, but becomes expensive if the same strings are compared many times.  
+  
+ The <xref:System.Globalization.SortKey.Compare%2A> method requires generation of a <xref:System.Globalization.SortKey> object for each string before performing the comparison. This strategy is expensive in terms of performance for the first comparison because of the time and memory invested to generate the <xref:System.Globalization.SortKey> objects. However, it becomes economical if the same sort keys are compared many times.  
+  
+ For example, suppose you write an application that searches a database table for the row in which the string-based index column matches a specified search string. The table contains thousands of rows, and comparing the search string to the index in each row will take a long time. Therefore, when the application stores a row and its index column, it also generates and stores the sort key for the index in a column dedicated to improving search performance. When the application searches for a target row, it compares the sort key for the search string to the sort key for the index string, instead of comparing the search string to the index string.  
+  
+## Security considerations  
+ The <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29?displayProperty=fullName> method returns a <xref:System.Globalization.SortKey> object with the value based on a specified string and <xref:System.Globalization.CompareOptions> value, and the culture associated with the underlying <xref:System.Globalization.CompareInfo> object. If a security decision depends on a string comparison or case change, you should use the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29?displayProperty=fullName> method of the invariant culture to ensure that the behavior of the operation is consistent, regardless of the culture settings of the operating system.  
+  
+ Use the following steps to obtain a sort key:  
+  
+1.  Retrieve the invariant culture from the <xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=fullName> property.  
+  
+2.  Retrieve a <xref:System.Globalization.CompareInfo> object for the invariant culture from the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property.  
+  
+3.  Call the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29?displayProperty=fullName> method.  
+  
+ Working with the value of a <xref:System.Globalization.SortKey> object is equivalent to calling the Windows `LCMapString` method with the LCMAP_SORTKEY value specified. However, for the <xref:System.Globalization.SortKey> object, the sort keys for English characters precede the sort keys for Korean characters.  
+  
+ <xref:System.Globalization.SortKey> objects can be serialized, but only so that they can cross <xref:System.AppDomain> objects. If an application serializes a <xref:System.Globalization.SortKey> object, the application must regenerate all the sort keys when there is a new version of the .NET Framework.  
+  
+ For more information about sort keys, see Unicode Technical Standard #10, "Unicode Collation Algorithm" on the [Unicode Consortium website](http://go.microsoft.com/fwlink/?linkid=37123).  
+  
+   
+  
+## Examples  
+ The following example compares the string "llama" using the "en-US" and "es-ES" cultures, and the "en-US" and "es-ES" traditional cultures.  
+  
+ [!code-cpp[System.Globalization.SortKey.Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.SortKey.Compare/CPP/sortkey_compare.cpp#1)]
+ [!code-csharp[System.Globalization.SortKey.Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.SortKey.Compare/CS/sortkey_compare.cs#1)]
+ [!code-vb[System.Globalization.SortKey.Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.SortKey.Compare/VB/sortkey_compare.vb#1)]  
+  
+ The following example shows how you can use the <xref:System.Globalization.SortKey> class to improve performance in an application that relies extensively on sorting and searching a large array. The example creates an unordered array of names, which in this case has 13 elements. It then stores the sort key of each name in a parallel array, which it passes to the <xref:System.Array.Sort%28System.Array%2CSystem.Array%29?displayProperty=fullName> method. The result is a sorted array. The example then searches the array for three strings. For each search string, it calls the <xref:System.Globalization.CompareInfo.GetSortKey%28System.String%2CSystem.Globalization.CompareOptions%29?displayProperty=fullName> method to retrieve the string's sort key, and then calls the <xref:System.Array.FindIndex%2A?displayProperty=fullName> method to retrieve the index of that sort key in the array of sort keys. Because the name and sort key arrays are parallel, the returned index is also the index of the name in the `names` array.  
+  
+ [!code-csharp[System.Globalization.SortKey.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.sortkey.class/cs/sortkey1.cs#1)]
+ [!code-vb[System.Globalization.SortKey.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.sortkey.class/vb/sortkey1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (System.Globalization.SortKey sortkey1, System.Globalization.SortKey sortkey2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(class System.Globalization.SortKey sortkey1, class System.Globalization.SortKey sortkey2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.Compare(System.Globalization.SortKey,System.Globalization.SortKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sortkey1" Type="System.Globalization.SortKey" />
+        <Parameter Name="sortkey2" Type="System.Globalization.SortKey" />
+      </Parameters>
+      <Docs>
+        <param name="sortkey1">The first sort key to compare.</param>
+        <param name="sortkey2">The second sort key to compare.</param>
+        <summary>Compares two sort keys.</summary>
+        <returns>A signed integer that indicates the relationship between <paramref name="sortkey1" /> and <paramref name="sortkey2" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="sortkey1" /> is less than <paramref name="sortkey2" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="sortkey1" /> is equal to <paramref name="sortkey2" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="sortkey1" /> is greater than <paramref name="sortkey2" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.SortKey.Compare%2A> method compares the <xref:System.Globalization.SortKey.KeyData%2A> properties of the `sortkey1` and `sortkey2` parameters. The method yields the same results as the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> method.  
+  
+ For more information about the <xref:System.Globalization.SortKey.Compare%2A> method and the comparison of sort keys, see the <xref:System.Globalization.SortKey> class topic.  
+  
+   
+  
+## Examples  
+ The following code example compares two strings using the <xref:System.Globalization.SortKey.Compare%2A> method and the equivalent <xref:System.Globalization.CompareInfo.Compare%28System.String%2CSystem.String%2CSystem.Globalization.CompareOptions%29?displayProperty=fullName> method.  
+  
+ [!code-csharp[sys.glob.sortkey.compare#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.sortkey.compare/cs/skcmp.cs#1)]
+ [!code-vb[sys.glob.sortkey.compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.sortkey.compare/vb/skcmp.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sortkey1" /> or <paramref name="sortkey2" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to compare with the current <see cref="T:System.Globalization.SortKey" /> object.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Globalization.SortKey" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> parameter is equal to the current <see cref="T:System.Globalization.SortKey" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Globalization.SortKey> objects are considered equal if their <xref:System.Globalization.SortKey.KeyData%2A> properties are equal.  
+  
+ This method overrides <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example shows the results of <xref:System.Globalization.SortKey.Equals%2A> when compared with different <xref:System.Globalization.SortKey> objects.  
+  
+ [!code-cpp[System.Globalization.SortKey.Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.SortKey.Equals/CPP/sortkey_equals.cpp#1)]
+ [!code-csharp[System.Globalization.SortKey.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.SortKey.Equals/CS/sortkey_equals.cs#1)]
+ [!code-vb[System.Globalization.SortKey.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.SortKey.Equals/VB/sortkey_equals.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the current <see cref="T:System.Globalization.SortKey" /> object that is suitable for hashing algorithms and data structures such as a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Globalization.SortKey" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method generates the same hash code for two objects that are equal according to the <xref:System.Globalization.SortKey.Equals%2A> method.  
+  
+ This method overrides <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyData">
+      <MemberSignature Language="C#" Value="public virtual byte[] KeyData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] KeyData" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.SortKey.KeyData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the byte array representing the current <see cref="T:System.Globalization.SortKey" /> object.</summary>
+        <value>A byte array representing the current <see cref="T:System.Globalization.SortKey" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the use of the data returned by the <xref:System.Globalization.SortKey.KeyData%2A> property in comparing strings, see the <xref:System.Globalization.SortKey> class topic.  
+  
+   
+  
+## Examples  
+ The following code example displays an original string and the equivalent string and key data for a case-sensitive sort key and a case-insensitive sort key.  
+  
+ [!code-csharp[sys.glob.sortkey.tostring#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.sortkey.tostring/cs/ts.cs#1)]
+ [!code-vb[sys.glob.sortkey.tostring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.sortkey.tostring/vb/ts.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalString">
+      <MemberSignature Language="C#" Value="public virtual string OriginalString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalString" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.SortKey.OriginalString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the original string used to create the current <see cref="T:System.Globalization.SortKey" /> object.</summary>
+        <value>The original string used to create the current <see cref="T:System.Globalization.SortKey" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays an original string and the equivalent string and key data for a case-sensitive sort key and a case-insensitive sort key.  
+  
+ [!code-csharp[sys.glob.sortkey.tostring#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.sortkey.tostring/cs/ts.cs#1)]
+ [!code-vb[sys.glob.sortkey.tostring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.sortkey.tostring/vb/ts.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.SortKey.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Globalization.SortKey" /> object.</summary>
+        <returns>A string that represents the current <see cref="T:System.Globalization.SortKey" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is the concatenation of the string "SortKey - ", the culture identifier and compare options of the current <xref:System.Globalization.SortKey> object, and the value of the <xref:System.Globalization.SortKey.OriginalString%2A> property.  
+  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example displays an original string, the strings yielded by the <xref:System.Globalization.SortKey.ToString%2A> method for case-sensitive and case-insensitive sort keys, and the key data for case-sensitive and case-insensitive sort keys.  
+  
+ [!code-csharp[sys.glob.sortkey.tostring#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.sortkey.tostring/cs/ts.cs#1)]
+ [!code-vb[sys.glob.sortkey.tostring#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.sortkey.tostring/vb/ts.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

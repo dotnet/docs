@@ -1,0 +1,3506 @@
+<Type Name="ILOpCode" FullName="System.Reflection.Metadata.ILOpCode">
+  <TypeSignature Language="C#" Value="public enum ILOpCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ILOpCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ILOpCode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Add = unsigned int16(88)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Add_ovf">
+      <MemberSignature Language="C#" Value="Add_ovf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Add_ovf = unsigned int16(214)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Add_ovf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Add_ovf_un">
+      <MemberSignature Language="C#" Value="Add_ovf_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Add_ovf_un = unsigned int16(215)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Add_ovf_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="And" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode And = unsigned int16(95)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.And" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Arglist">
+      <MemberSignature Language="C#" Value="Arglist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Arglist = unsigned int16(65024)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Arglist" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Beq">
+      <MemberSignature Language="C#" Value="Beq" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Beq = unsigned int16(59)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Beq" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Beq_s">
+      <MemberSignature Language="C#" Value="Beq_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Beq_s = unsigned int16(46)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Beq_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bge">
+      <MemberSignature Language="C#" Value="Bge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bge = unsigned int16(60)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bge_s">
+      <MemberSignature Language="C#" Value="Bge_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bge_s = unsigned int16(47)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bge_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bge_un">
+      <MemberSignature Language="C#" Value="Bge_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bge_un = unsigned int16(65)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bge_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bge_un_s">
+      <MemberSignature Language="C#" Value="Bge_un_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bge_un_s = unsigned int16(52)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bge_un_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgt">
+      <MemberSignature Language="C#" Value="Bgt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bgt = unsigned int16(61)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bgt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgt_s">
+      <MemberSignature Language="C#" Value="Bgt_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bgt_s = unsigned int16(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bgt_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgt_un">
+      <MemberSignature Language="C#" Value="Bgt_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bgt_un = unsigned int16(66)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bgt_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgt_un_s">
+      <MemberSignature Language="C#" Value="Bgt_un_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bgt_un_s = unsigned int16(53)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bgt_un_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ble">
+      <MemberSignature Language="C#" Value="Ble" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ble = unsigned int16(62)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ble" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ble_s">
+      <MemberSignature Language="C#" Value="Ble_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ble_s = unsigned int16(49)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ble_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ble_un">
+      <MemberSignature Language="C#" Value="Ble_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ble_un = unsigned int16(67)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ble_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ble_un_s">
+      <MemberSignature Language="C#" Value="Ble_un_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ble_un_s = unsigned int16(54)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ble_un_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blt">
+      <MemberSignature Language="C#" Value="Blt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Blt = unsigned int16(63)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Blt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blt_s">
+      <MemberSignature Language="C#" Value="Blt_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Blt_s = unsigned int16(50)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Blt_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blt_un">
+      <MemberSignature Language="C#" Value="Blt_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Blt_un = unsigned int16(68)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Blt_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blt_un_s">
+      <MemberSignature Language="C#" Value="Blt_un_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Blt_un_s = unsigned int16(55)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Blt_un_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bne_un">
+      <MemberSignature Language="C#" Value="Bne_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bne_un = unsigned int16(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bne_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bne_un_s">
+      <MemberSignature Language="C#" Value="Bne_un_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Bne_un_s = unsigned int16(51)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Bne_un_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Box">
+      <MemberSignature Language="C#" Value="Box" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Box = unsigned int16(140)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Box" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Br">
+      <MemberSignature Language="C#" Value="Br" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Br = unsigned int16(56)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Br" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Br_s">
+      <MemberSignature Language="C#" Value="Br_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Br_s = unsigned int16(43)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Br_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Break">
+      <MemberSignature Language="C#" Value="Break" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Break = unsigned int16(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Break" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Brfalse">
+      <MemberSignature Language="C#" Value="Brfalse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Brfalse = unsigned int16(57)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Brfalse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Brfalse_s">
+      <MemberSignature Language="C#" Value="Brfalse_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Brfalse_s = unsigned int16(44)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Brfalse_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Brtrue">
+      <MemberSignature Language="C#" Value="Brtrue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Brtrue = unsigned int16(58)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Brtrue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Brtrue_s">
+      <MemberSignature Language="C#" Value="Brtrue_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Brtrue_s = unsigned int16(45)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Brtrue_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Call">
+      <MemberSignature Language="C#" Value="Call" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Call = unsigned int16(40)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Call" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Calli">
+      <MemberSignature Language="C#" Value="Calli" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Calli = unsigned int16(41)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Calli" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Callvirt">
+      <MemberSignature Language="C#" Value="Callvirt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Callvirt = unsigned int16(111)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Callvirt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Castclass">
+      <MemberSignature Language="C#" Value="Castclass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Castclass = unsigned int16(116)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Castclass" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ceq">
+      <MemberSignature Language="C#" Value="Ceq" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ceq = unsigned int16(65025)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ceq" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cgt">
+      <MemberSignature Language="C#" Value="Cgt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Cgt = unsigned int16(65026)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Cgt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cgt_un">
+      <MemberSignature Language="C#" Value="Cgt_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Cgt_un = unsigned int16(65027)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Cgt_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ckfinite">
+      <MemberSignature Language="C#" Value="Ckfinite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ckfinite = unsigned int16(195)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ckfinite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Clt">
+      <MemberSignature Language="C#" Value="Clt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Clt = unsigned int16(65028)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Clt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Clt_un">
+      <MemberSignature Language="C#" Value="Clt_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Clt_un = unsigned int16(65029)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Clt_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Constrained">
+      <MemberSignature Language="C#" Value="Constrained" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Constrained = unsigned int16(65046)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Constrained" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_i">
+      <MemberSignature Language="C#" Value="Conv_i" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_i = unsigned int16(211)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_i" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_i1">
+      <MemberSignature Language="C#" Value="Conv_i1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_i1 = unsigned int16(103)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_i1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_i2">
+      <MemberSignature Language="C#" Value="Conv_i2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_i2 = unsigned int16(104)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_i2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_i4">
+      <MemberSignature Language="C#" Value="Conv_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_i4 = unsigned int16(105)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_i8">
+      <MemberSignature Language="C#" Value="Conv_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_i8 = unsigned int16(106)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i">
+      <MemberSignature Language="C#" Value="Conv_ovf_i" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i = unsigned int16(212)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_i_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i_un = unsigned int16(138)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i1">
+      <MemberSignature Language="C#" Value="Conv_ovf_i1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i1 = unsigned int16(179)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i1_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_i1_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i1_un = unsigned int16(130)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i1_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i2">
+      <MemberSignature Language="C#" Value="Conv_ovf_i2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i2 = unsigned int16(181)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i2_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_i2_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i2_un = unsigned int16(131)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i2_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i4">
+      <MemberSignature Language="C#" Value="Conv_ovf_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i4 = unsigned int16(183)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i4_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_i4_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i4_un = unsigned int16(132)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i4_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i8">
+      <MemberSignature Language="C#" Value="Conv_ovf_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i8 = unsigned int16(185)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_i8_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_i8_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_i8_un = unsigned int16(133)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_i8_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u">
+      <MemberSignature Language="C#" Value="Conv_ovf_u" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u = unsigned int16(213)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_u_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u_un = unsigned int16(139)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u1">
+      <MemberSignature Language="C#" Value="Conv_ovf_u1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u1 = unsigned int16(180)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u1_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_u1_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u1_un = unsigned int16(134)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u1_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u2">
+      <MemberSignature Language="C#" Value="Conv_ovf_u2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u2 = unsigned int16(182)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u2_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_u2_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u2_un = unsigned int16(135)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u2_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u4">
+      <MemberSignature Language="C#" Value="Conv_ovf_u4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u4 = unsigned int16(184)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u4_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_u4_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u4_un = unsigned int16(136)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u4_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u8">
+      <MemberSignature Language="C#" Value="Conv_ovf_u8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u8 = unsigned int16(186)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_ovf_u8_un">
+      <MemberSignature Language="C#" Value="Conv_ovf_u8_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_ovf_u8_un = unsigned int16(137)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_ovf_u8_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_r_un">
+      <MemberSignature Language="C#" Value="Conv_r_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_r_un = unsigned int16(118)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_r_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_r4">
+      <MemberSignature Language="C#" Value="Conv_r4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_r4 = unsigned int16(107)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_r4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_r8">
+      <MemberSignature Language="C#" Value="Conv_r8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_r8 = unsigned int16(108)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_r8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_u">
+      <MemberSignature Language="C#" Value="Conv_u" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_u = unsigned int16(224)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_u" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_u1">
+      <MemberSignature Language="C#" Value="Conv_u1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_u1 = unsigned int16(210)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_u1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_u2">
+      <MemberSignature Language="C#" Value="Conv_u2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_u2 = unsigned int16(209)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_u2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_u4">
+      <MemberSignature Language="C#" Value="Conv_u4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_u4 = unsigned int16(109)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_u4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conv_u8">
+      <MemberSignature Language="C#" Value="Conv_u8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Conv_u8 = unsigned int16(110)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Conv_u8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cpblk">
+      <MemberSignature Language="C#" Value="Cpblk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Cpblk = unsigned int16(65047)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Cpblk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cpobj">
+      <MemberSignature Language="C#" Value="Cpobj" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Cpobj = unsigned int16(112)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Cpobj" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Div">
+      <MemberSignature Language="C#" Value="Div" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Div = unsigned int16(91)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Div" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Div_un">
+      <MemberSignature Language="C#" Value="Div_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Div_un = unsigned int16(92)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Div_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dup">
+      <MemberSignature Language="C#" Value="Dup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Dup = unsigned int16(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Dup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Endfilter">
+      <MemberSignature Language="C#" Value="Endfilter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Endfilter = unsigned int16(65041)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Endfilter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Endfinally">
+      <MemberSignature Language="C#" Value="Endfinally" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Endfinally = unsigned int16(220)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Endfinally" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Initblk">
+      <MemberSignature Language="C#" Value="Initblk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Initblk = unsigned int16(65048)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Initblk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Initobj">
+      <MemberSignature Language="C#" Value="Initobj" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Initobj = unsigned int16(65045)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Initobj" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Isinst">
+      <MemberSignature Language="C#" Value="Isinst" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Isinst = unsigned int16(117)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Isinst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Jmp">
+      <MemberSignature Language="C#" Value="Jmp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Jmp = unsigned int16(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Jmp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarg">
+      <MemberSignature Language="C#" Value="Ldarg" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarg = unsigned int16(65033)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarg" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarg_0">
+      <MemberSignature Language="C#" Value="Ldarg_0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarg_0 = unsigned int16(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarg_0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarg_1">
+      <MemberSignature Language="C#" Value="Ldarg_1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarg_1 = unsigned int16(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarg_1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarg_2">
+      <MemberSignature Language="C#" Value="Ldarg_2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarg_2 = unsigned int16(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarg_2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarg_3">
+      <MemberSignature Language="C#" Value="Ldarg_3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarg_3 = unsigned int16(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarg_3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarg_s">
+      <MemberSignature Language="C#" Value="Ldarg_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarg_s = unsigned int16(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarg_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarga">
+      <MemberSignature Language="C#" Value="Ldarga" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarga = unsigned int16(65034)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarga" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldarga_s">
+      <MemberSignature Language="C#" Value="Ldarga_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldarga_s = unsigned int16(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldarga_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4">
+      <MemberSignature Language="C#" Value="Ldc_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4 = unsigned int16(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_0">
+      <MemberSignature Language="C#" Value="Ldc_i4_0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_0 = unsigned int16(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_1">
+      <MemberSignature Language="C#" Value="Ldc_i4_1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_1 = unsigned int16(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_2">
+      <MemberSignature Language="C#" Value="Ldc_i4_2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_2 = unsigned int16(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_3">
+      <MemberSignature Language="C#" Value="Ldc_i4_3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_3 = unsigned int16(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_4">
+      <MemberSignature Language="C#" Value="Ldc_i4_4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_4 = unsigned int16(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_5">
+      <MemberSignature Language="C#" Value="Ldc_i4_5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_5 = unsigned int16(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_6">
+      <MemberSignature Language="C#" Value="Ldc_i4_6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_6 = unsigned int16(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_7">
+      <MemberSignature Language="C#" Value="Ldc_i4_7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_7 = unsigned int16(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_8">
+      <MemberSignature Language="C#" Value="Ldc_i4_8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_8 = unsigned int16(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_m1">
+      <MemberSignature Language="C#" Value="Ldc_i4_m1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_m1 = unsigned int16(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_m1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i4_s">
+      <MemberSignature Language="C#" Value="Ldc_i4_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i4_s = unsigned int16(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i4_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_i8">
+      <MemberSignature Language="C#" Value="Ldc_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_i8 = unsigned int16(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_r4">
+      <MemberSignature Language="C#" Value="Ldc_r4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_r4 = unsigned int16(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_r4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldc_r8">
+      <MemberSignature Language="C#" Value="Ldc_r8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldc_r8 = unsigned int16(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldc_r8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem">
+      <MemberSignature Language="C#" Value="Ldelem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem = unsigned int16(163)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_i">
+      <MemberSignature Language="C#" Value="Ldelem_i" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_i = unsigned int16(151)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_i" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_i1">
+      <MemberSignature Language="C#" Value="Ldelem_i1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_i1 = unsigned int16(144)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_i1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_i2">
+      <MemberSignature Language="C#" Value="Ldelem_i2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_i2 = unsigned int16(146)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_i2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_i4">
+      <MemberSignature Language="C#" Value="Ldelem_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_i4 = unsigned int16(148)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_i8">
+      <MemberSignature Language="C#" Value="Ldelem_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_i8 = unsigned int16(150)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_r4">
+      <MemberSignature Language="C#" Value="Ldelem_r4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_r4 = unsigned int16(152)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_r4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_r8">
+      <MemberSignature Language="C#" Value="Ldelem_r8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_r8 = unsigned int16(153)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_r8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_ref">
+      <MemberSignature Language="C#" Value="Ldelem_ref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_ref = unsigned int16(154)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_ref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_u1">
+      <MemberSignature Language="C#" Value="Ldelem_u1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_u1 = unsigned int16(145)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_u1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_u2">
+      <MemberSignature Language="C#" Value="Ldelem_u2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_u2 = unsigned int16(147)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_u2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelem_u4">
+      <MemberSignature Language="C#" Value="Ldelem_u4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelem_u4 = unsigned int16(149)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelem_u4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldelema">
+      <MemberSignature Language="C#" Value="Ldelema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldelema = unsigned int16(143)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldelema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldfld">
+      <MemberSignature Language="C#" Value="Ldfld" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldfld = unsigned int16(123)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldfld" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldflda">
+      <MemberSignature Language="C#" Value="Ldflda" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldflda = unsigned int16(124)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldflda" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldftn">
+      <MemberSignature Language="C#" Value="Ldftn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldftn = unsigned int16(65030)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldftn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_i">
+      <MemberSignature Language="C#" Value="Ldind_i" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_i = unsigned int16(77)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_i" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_i1">
+      <MemberSignature Language="C#" Value="Ldind_i1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_i1 = unsigned int16(70)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_i1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_i2">
+      <MemberSignature Language="C#" Value="Ldind_i2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_i2 = unsigned int16(72)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_i2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_i4">
+      <MemberSignature Language="C#" Value="Ldind_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_i4 = unsigned int16(74)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_i8">
+      <MemberSignature Language="C#" Value="Ldind_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_i8 = unsigned int16(76)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_r4">
+      <MemberSignature Language="C#" Value="Ldind_r4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_r4 = unsigned int16(78)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_r4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_r8">
+      <MemberSignature Language="C#" Value="Ldind_r8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_r8 = unsigned int16(79)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_r8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_ref">
+      <MemberSignature Language="C#" Value="Ldind_ref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_ref = unsigned int16(80)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_ref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_u1">
+      <MemberSignature Language="C#" Value="Ldind_u1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_u1 = unsigned int16(71)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_u1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_u2">
+      <MemberSignature Language="C#" Value="Ldind_u2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_u2 = unsigned int16(73)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_u2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldind_u4">
+      <MemberSignature Language="C#" Value="Ldind_u4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldind_u4 = unsigned int16(75)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldind_u4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldlen">
+      <MemberSignature Language="C#" Value="Ldlen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldlen = unsigned int16(142)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldlen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloc">
+      <MemberSignature Language="C#" Value="Ldloc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloc = unsigned int16(65036)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloc_0">
+      <MemberSignature Language="C#" Value="Ldloc_0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloc_0 = unsigned int16(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloc_0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloc_1">
+      <MemberSignature Language="C#" Value="Ldloc_1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloc_1 = unsigned int16(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloc_1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloc_2">
+      <MemberSignature Language="C#" Value="Ldloc_2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloc_2 = unsigned int16(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloc_2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloc_3">
+      <MemberSignature Language="C#" Value="Ldloc_3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloc_3 = unsigned int16(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloc_3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloc_s">
+      <MemberSignature Language="C#" Value="Ldloc_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloc_s = unsigned int16(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloc_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloca">
+      <MemberSignature Language="C#" Value="Ldloca" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloca = unsigned int16(65037)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloca" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldloca_s">
+      <MemberSignature Language="C#" Value="Ldloca_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldloca_s = unsigned int16(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldloca_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldnull">
+      <MemberSignature Language="C#" Value="Ldnull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldnull = unsigned int16(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldnull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldobj">
+      <MemberSignature Language="C#" Value="Ldobj" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldobj = unsigned int16(113)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldobj" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldsfld">
+      <MemberSignature Language="C#" Value="Ldsfld" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldsfld = unsigned int16(126)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldsfld" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldsflda">
+      <MemberSignature Language="C#" Value="Ldsflda" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldsflda = unsigned int16(127)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldsflda" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldstr">
+      <MemberSignature Language="C#" Value="Ldstr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldstr = unsigned int16(114)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldstr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldtoken">
+      <MemberSignature Language="C#" Value="Ldtoken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldtoken = unsigned int16(208)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldtoken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ldvirtftn">
+      <MemberSignature Language="C#" Value="Ldvirtftn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ldvirtftn = unsigned int16(65031)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ldvirtftn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Leave">
+      <MemberSignature Language="C#" Value="Leave" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Leave = unsigned int16(221)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Leave" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Leave_s">
+      <MemberSignature Language="C#" Value="Leave_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Leave_s = unsigned int16(222)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Leave_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Localloc">
+      <MemberSignature Language="C#" Value="Localloc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Localloc = unsigned int16(65039)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Localloc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mkrefany">
+      <MemberSignature Language="C#" Value="Mkrefany" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Mkrefany = unsigned int16(198)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Mkrefany" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mul">
+      <MemberSignature Language="C#" Value="Mul" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Mul = unsigned int16(90)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Mul" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mul_ovf">
+      <MemberSignature Language="C#" Value="Mul_ovf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Mul_ovf = unsigned int16(216)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Mul_ovf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mul_ovf_un">
+      <MemberSignature Language="C#" Value="Mul_ovf_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Mul_ovf_un = unsigned int16(217)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Mul_ovf_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Neg">
+      <MemberSignature Language="C#" Value="Neg" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Neg = unsigned int16(101)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Neg" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Newarr">
+      <MemberSignature Language="C#" Value="Newarr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Newarr = unsigned int16(141)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Newarr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Newobj">
+      <MemberSignature Language="C#" Value="Newobj" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Newobj = unsigned int16(115)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Newobj" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nop">
+      <MemberSignature Language="C#" Value="Nop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Nop = unsigned int16(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Nop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Not">
+      <MemberSignature Language="C#" Value="Not" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Not = unsigned int16(102)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Not" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="Or" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Or = unsigned int16(96)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Or" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pop">
+      <MemberSignature Language="C#" Value="Pop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Pop = unsigned int16(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Pop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Readonly">
+      <MemberSignature Language="C#" Value="Readonly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Readonly = unsigned int16(65054)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Readonly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Refanytype">
+      <MemberSignature Language="C#" Value="Refanytype" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Refanytype = unsigned int16(65053)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Refanytype" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Refanyval">
+      <MemberSignature Language="C#" Value="Refanyval" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Refanyval = unsigned int16(194)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Refanyval" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rem">
+      <MemberSignature Language="C#" Value="Rem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Rem = unsigned int16(93)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Rem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rem_un">
+      <MemberSignature Language="C#" Value="Rem_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Rem_un = unsigned int16(94)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Rem_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ret">
+      <MemberSignature Language="C#" Value="Ret" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Ret = unsigned int16(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Ret" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rethrow">
+      <MemberSignature Language="C#" Value="Rethrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Rethrow = unsigned int16(65050)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Rethrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shl">
+      <MemberSignature Language="C#" Value="Shl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Shl = unsigned int16(98)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Shl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shr">
+      <MemberSignature Language="C#" Value="Shr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Shr = unsigned int16(99)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Shr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shr_un">
+      <MemberSignature Language="C#" Value="Shr_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Shr_un = unsigned int16(100)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Shr_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sizeof">
+      <MemberSignature Language="C#" Value="Sizeof" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Sizeof = unsigned int16(65052)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Sizeof" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Starg">
+      <MemberSignature Language="C#" Value="Starg" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Starg = unsigned int16(65035)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Starg" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Starg_s">
+      <MemberSignature Language="C#" Value="Starg_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Starg_s = unsigned int16(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Starg_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem">
+      <MemberSignature Language="C#" Value="Stelem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem = unsigned int16(164)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_i">
+      <MemberSignature Language="C#" Value="Stelem_i" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_i = unsigned int16(155)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_i" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_i1">
+      <MemberSignature Language="C#" Value="Stelem_i1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_i1 = unsigned int16(156)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_i1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_i2">
+      <MemberSignature Language="C#" Value="Stelem_i2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_i2 = unsigned int16(157)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_i2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_i4">
+      <MemberSignature Language="C#" Value="Stelem_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_i4 = unsigned int16(158)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_i8">
+      <MemberSignature Language="C#" Value="Stelem_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_i8 = unsigned int16(159)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_r4">
+      <MemberSignature Language="C#" Value="Stelem_r4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_r4 = unsigned int16(160)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_r4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_r8">
+      <MemberSignature Language="C#" Value="Stelem_r8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_r8 = unsigned int16(161)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_r8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stelem_ref">
+      <MemberSignature Language="C#" Value="Stelem_ref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stelem_ref = unsigned int16(162)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stelem_ref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stfld">
+      <MemberSignature Language="C#" Value="Stfld" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stfld = unsigned int16(125)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stfld" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_i">
+      <MemberSignature Language="C#" Value="Stind_i" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_i = unsigned int16(223)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_i" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_i1">
+      <MemberSignature Language="C#" Value="Stind_i1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_i1 = unsigned int16(82)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_i1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_i2">
+      <MemberSignature Language="C#" Value="Stind_i2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_i2 = unsigned int16(83)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_i2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_i4">
+      <MemberSignature Language="C#" Value="Stind_i4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_i4 = unsigned int16(84)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_i4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_i8">
+      <MemberSignature Language="C#" Value="Stind_i8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_i8 = unsigned int16(85)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_i8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_r4">
+      <MemberSignature Language="C#" Value="Stind_r4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_r4 = unsigned int16(86)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_r4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_r8">
+      <MemberSignature Language="C#" Value="Stind_r8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_r8 = unsigned int16(87)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_r8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stind_ref">
+      <MemberSignature Language="C#" Value="Stind_ref" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stind_ref = unsigned int16(81)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stind_ref" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stloc">
+      <MemberSignature Language="C#" Value="Stloc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stloc = unsigned int16(65038)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stloc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stloc_0">
+      <MemberSignature Language="C#" Value="Stloc_0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stloc_0 = unsigned int16(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stloc_0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stloc_1">
+      <MemberSignature Language="C#" Value="Stloc_1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stloc_1 = unsigned int16(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stloc_1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stloc_2">
+      <MemberSignature Language="C#" Value="Stloc_2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stloc_2 = unsigned int16(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stloc_2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stloc_3">
+      <MemberSignature Language="C#" Value="Stloc_3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stloc_3 = unsigned int16(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stloc_3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stloc_s">
+      <MemberSignature Language="C#" Value="Stloc_s" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stloc_s = unsigned int16(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stloc_s" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stobj">
+      <MemberSignature Language="C#" Value="Stobj" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stobj = unsigned int16(129)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stobj" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stsfld">
+      <MemberSignature Language="C#" Value="Stsfld" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Stsfld = unsigned int16(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Stsfld" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sub">
+      <MemberSignature Language="C#" Value="Sub" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Sub = unsigned int16(89)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Sub" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sub_ovf">
+      <MemberSignature Language="C#" Value="Sub_ovf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Sub_ovf = unsigned int16(218)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Sub_ovf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sub_ovf_un">
+      <MemberSignature Language="C#" Value="Sub_ovf_un" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Sub_ovf_un = unsigned int16(219)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Sub_ovf_un" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch">
+      <MemberSignature Language="C#" Value="Switch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Switch = unsigned int16(69)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Switch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tail">
+      <MemberSignature Language="C#" Value="Tail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Tail = unsigned int16(65044)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Tail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Throw">
+      <MemberSignature Language="C#" Value="Throw" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Throw = unsigned int16(122)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Throw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unaligned">
+      <MemberSignature Language="C#" Value="Unaligned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Unaligned = unsigned int16(65042)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Unaligned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unbox">
+      <MemberSignature Language="C#" Value="Unbox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Unbox = unsigned int16(121)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Unbox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unbox_any">
+      <MemberSignature Language="C#" Value="Unbox_any" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Unbox_any = unsigned int16(165)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Unbox_any" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Volatile">
+      <MemberSignature Language="C#" Value="Volatile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Volatile = unsigned int16(65043)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Volatile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xor">
+      <MemberSignature Language="C#" Value="Xor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ILOpCode Xor = unsigned int16(97)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ILOpCode.Xor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ILOpCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

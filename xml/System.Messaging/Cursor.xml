@@ -1,0 +1,72 @@
+<Type Name="Cursor" FullName="System.Messaging.Cursor">
+  <TypeSignature Language="C#" Value="public sealed class Cursor : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Cursor extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.Cursor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A <see cref="T:System.Messaging.Cursor" /> is used to maintain a specific location in a <see cref="T:System.Messaging.MessageQueue" /> when reading the queue's messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get a cursor for a <xref:System.Messaging.MessageQueue>, call the <xref:System.Messaging.MessageQueue.CreateCursor%2A> method for that queue.  
+  
+ A <xref:System.Messaging.Cursor> is used with such methods as <xref:System.Messaging.MessageQueue.Peek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%29> and <xref:System.Messaging.MessageQueue.Receive%28System.TimeSpan%2CSystem.Messaging.Cursor%29> when you need to read messages that are not at the front of the queue. This includes reading messages synchronously or asynchronously. Cursors do not need to be used to read only the first message in a queue.  
+  
+ When reading messages within a transaction, Message Queuing does not roll back cursor movement if the transaction is aborted. For example, suppose there is a queue with two messages, A1 and A2. If you remove message A1 while in a transaction, Message Queuing moves the cursor to message A2. However, if the transaction is aborted for any reason, message A1 is inserted back into the queue but the cursor remains pointing at message A2.  
+  
+ To close the cursor, call <xref:System.Messaging.Cursor.Close%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Cursor.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the cursor, allowing Message Queuing to release the associated resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Cursor.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Messaging.Cursor" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

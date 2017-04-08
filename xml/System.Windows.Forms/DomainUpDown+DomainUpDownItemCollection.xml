@@ -1,0 +1,204 @@
+<Type Name="DomainUpDown+DomainUpDownItemCollection" FullName="System.Windows.Forms.DomainUpDown+DomainUpDownItemCollection">
+  <TypeSignature Language="C#" Value="public class DomainUpDown.DomainUpDownItemCollection : System.Collections.ArrayList" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DomainUpDown/DomainUpDownItemCollection extends System.Collections.ArrayList" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ArrayList</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates a collection of objects for use by the <see cref="T:System.Windows.Forms.DomainUpDown" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a collection of objects to display in the <xref:System.Windows.Forms.DomainUpDown> control, you can add or remove the items individually by using the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A> and <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A> methods. The collection is accessed from the parent control, <xref:System.Windows.Forms.DomainUpDown>, by the <xref:System.Windows.Forms.DomainUpDown.Items%2A> property.  
+  
+   
+  
+## Examples  
+ The following example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the up-down control. The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox> and a <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the up-down control.  
+  
+ [!code-cpp[Classic DomainUpDown.DomainUpDownItemCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DomainUpDown.DomainUpDownItemCollection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DomainUpDown.DomainUpDownItemCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DomainUpDown.DomainUpDownItemCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic DomainUpDown.DomainUpDownItemCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DomainUpDown.DomainUpDownItemCollection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override int Add (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Add(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Object" /> to be added to the end of the collection.</param>
+        <summary>Adds the specified object to the end of the collection.</summary>
+        <returns>The zero-based index value of the <see cref="T:System.Object" /> added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also add a new <xref:System.Object> to the collection by using the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert%2A> method.  
+  
+ To remove an <xref:System.Object> that you have previously added, use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A> or <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt%2A> methods.  
+  
+   
+  
+## Examples  
+ The following example creates and initializes a <xref:System.Windows.Forms.DomainUpDown> control. The example allows you to set some of its properties and create a collection of strings for display in the up-down control. The code assumes that a <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.CheckBox> and a <xref:System.Windows.Forms.Button> have been instantiated on a form. The example also assumes that you have a member variable at the class level declared as a 32-bit signed integer named `myCounter`. You can enter a string in the text box and add it to the <xref:System.Windows.Forms.DomainUpDown.Items%2A> collection when the button is clicked. By clicking the check box, you can toggle the <xref:System.Windows.Forms.DomainUpDown.Sorted%2A> property and observe the difference in the collection of items in the up-down control.  
+  
+ [!code-cpp[Classic DomainUpDown.DomainUpDownItemCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DomainUpDown.DomainUpDownItemCollection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DomainUpDown.DomainUpDownItemCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DomainUpDown.DomainUpDownItemCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic DomainUpDown.DomainUpDownItemCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DomainUpDown.DomainUpDownItemCollection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public override void Insert (int index, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Insert(int32 index, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The indexed location within the collection to insert the <see cref="T:System.Object" />.</param>
+        <param name="item">The <see cref="T:System.Object" /> to insert.</param>
+        <summary>Inserts the specified object into the collection at the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also add a new <xref:System.Object> to the collection by using the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A> method.  
+  
+ To remove an <xref:System.Object> that you have previously added, use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A> or <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The indexed location of the item in the collection.</param>
+        <summary>Gets or sets the item at the specified indexed location in the collection.</summary>
+        <value>An <see cref="T:System.Object" /> that represents the item at the specified indexed location.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To assign items to a specific location, or to retrieve them from the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection>, you can reference the collection object with a specific index value. The index value of the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection> is a zero-based index.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public override void Remove (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Remove(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Object" /> to remove from the collection.</param>
+        <summary>Removes the specified item from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also remove an <xref:System.Object> that you have previously added by using the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt%2A> method.  
+  
+ To add a new <xref:System.Object> to the collection, use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert%2A> or <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public override void RemoveAt (int item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAt(int32 item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="item">The indexed location of the <see cref="T:System.Object" /> in the collection.</param>
+        <summary>Removes the item from the specified location in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also remove an <xref:System.Object> that you have previously added by using the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove%2A> method.  
+  
+ To add a new <xref:System.Object> to the collection, use the <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert%2A> or <xref:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

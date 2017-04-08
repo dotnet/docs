@@ -1,0 +1,263 @@
+<Type Name="DataMemberAttribute" FullName="System.Runtime.Serialization.DataMemberAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DataMemberAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataMemberAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataMemberAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>When applied to the member of a type, specifies that the member is part of a data contract and is serializable by the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute in conjunction with the <xref:System.Runtime.Serialization.DataContractAttribute> to identify members of a type that are part of a data contract. One of the serializers that can serialize data contracts is the <xref:System.Runtime.Serialization.DataContractSerializer>.  
+  
+ The data contract model is an "opt-in" model. Applying the <xref:System.Runtime.Serialization.DataMemberAttribute> to a field or property explicitly specifies that the member value will be serialized. In contrast, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serializes public and private fields of a type, and the <xref:System.Xml.Serialization.XmlSerializer> serializes only public fields and properties of a type.  
+  
+> [!CAUTION]
+>  You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> to private fields or properties. Be aware that the data returned by the member (even if it's private) will be serialized and deserialized, and thus can be viewed or intercepted by a malicious user or process.  
+  
+ By default, the CLR member name is used as the name of the data member. By setting the <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A> property, you can customize the name of the data member. This can be used to provide a name that may not be allowed as a CLR member name. When mapping to XML using the <xref:System.Runtime.Serialization.DataContractSerializer>, this name is used as the name of the schema element in a type.  
+  
+> [!NOTE]
+>  Properties to which the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute has been applied must have both `get` and `set` fields; they cannot be `get`-only or `set`-only.  
+  
+ For more information about data contracts and data members, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md). For more information about member names, see [Data Member Default Values](~/docs/framework/wcf/feature-details/data-member-default-values.md).  
+  
+   
+  
+## Examples  
+ The following example shows a type to which the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes have been applied. The <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A> property on the <xref:System.Runtime.Serialization.DataMemberAttribute> is set to "ID".  
+  
+ [!code-csharp[DataMemberAttribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/datamemberattribute/cs/overview.cs#0)]
+ [!code-vb[DataMemberAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/datamemberattribute/vb/overview.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataMemberAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataMemberAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.DataMemberAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitDefaultValue">
+      <MemberSignature Language="C#" Value="public bool EmitDefaultValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EmitDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether to serialize the default value for a field or property being serialized.</summary>
+        <value>
+          <see langword="true" /> if the default value for a member should be generated in the serialization stream; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], types have a concept of default values. For example, for any reference type the default value is `null`, and for an integer type it is 0. It is occasionally desirable to omit a data member from the serialized data when it is set to its default value. To do this, set the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property to `false` (it is `true` by default).  
+  
+> [!NOTE]
+>  Setting the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property to `false` is not a recommended practice. It should only be done if there is a specific need to do so (such as for interoperability or to reduce data size).  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property set to `false` on various fields.  
+  
+ [!code-csharp[DataMemberAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/datamemberattribute/cs/overview.cs#3)]
+ [!code-vb[DataMemberAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/datamemberattribute/vb/overview.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNameSetExplicitly">
+      <MemberSignature Language="C#" Value="public bool IsNameSetExplicitly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNameSetExplicitly" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.IsNameSetExplicitly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether <see cref="P:System.Runtime.Serialization.DataMemberAttribute.Name" /> has been explicitly set.</summary>
+        <value>Returns <see langword="true" /> if the name has been explicitly set; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequired">
+      <MemberSignature Language="C#" Value="public bool IsRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.IsRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that instructs the serialization engine that the member must be present when reading or deserializing.</summary>
+        <value>
+          <see langword="true" />, if the member is required; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property is used for ensuring compatibility with future versions of a type. For more information, see [Data Contract Versioning](~/docs/framework/wcf/feature-details/data-contract-versioning.md) and [Best Practices: Data Contract Versioning](~/docs/framework/wcf/best-practices-data-contract-versioning.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">the member is not present.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a data member name.</summary>
+        <value>The name of the data member. The default is the name of the target that the attribute is applied to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to override the default name of the data member that is derived from the name of the member annotated with the <xref:System.Runtime.Serialization.DataMemberAttribute>.  
+  
+ The <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A> property enables you to use names that are not permitted as common language runtime (CLR) identifiers. In addition, this property enables the type author to define a data member name separate from the CLR member name. This separate definition helps in versioning scenarios (changing the CLR member name without breaking the data contract) and allows a different naming convention for data contact members and CLR members.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the order of serialization and deserialization of a member.</summary>
+        <value>The numeric order of serialization or deserialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a type requires that one member be serialized or deserialized before another, use this property to specify the order. For more information, see [Data Member Order](~/docs/framework/wcf/feature-details/data-member-order.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

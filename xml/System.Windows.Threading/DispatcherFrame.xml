@@ -1,0 +1,135 @@
+<Type Name="DispatcherFrame" FullName="System.Windows.Threading.DispatcherFrame">
+  <TypeSignature Language="C#" Value="public class DispatcherFrame : System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi DispatcherFrame extends System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherFrame" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an execution loop in the <see cref="T:System.Windows.Threading.Dispatcher" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Threading.DispatcherFrame> objects typically fall into two categories:  
+  
+-   Long running, general purpose frames that exit only when instructed to.  These frames should exit when they are requested.  
+  
+-   Short running, very specific frames that exit when an important criteria is met.  These frames may consider not to exit when they are requested in favor of waiting for their exit criteria to be met.  These frames should have a time-out associated with them.  
+  
+<a name="xamlTextUsage_DispatcherFrame"></a>   
+## XAML Text Usage  
+ You cannot use this managed class in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Windows.Threading.DispatcherFrame> to achieve similar results as the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] <xref:System.Windows.Forms.Application.DoEvents%2A> method.  
+  
+ [!code-csharp[dispatchersnippets#DispatcherDispatcherFrameDoEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/DispatcherSnippets/CSharp/Window1.xaml.cs#dispatcherdispatcherframedoevents)]
+ [!code-vb[dispatchersnippets#DispatcherDispatcherFrameDoEvents](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DispatcherSnippets/visualbasic/window1.xaml.vb#dispatcherdispatcherframedoevents)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DispatcherFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherFrame.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherFrame" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DispatcherFrame (bool exitWhenRequested);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool exitWhenRequested) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherFrame.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exitWhenRequested" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="exitWhenRequested">Indicates whether this frame will exit when all frames are requested to exit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherFrame" /> class, by using the specified exit request flag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Threading.DispatcherFrame> typically fall into two categories:  
+  
+-   Long running, general purpose frames, that exit only when instructed to.  These frames should exit when they are requested.  
+  
+-   Short running, very specific frames that exit when an important criteria is met.  These frames may consider not exiting when they are requested in favor of waiting for their exit criteria to be met.  These frames should have a time-out associated with them.  
+  
+-  
+  
+-   At application shutdown, all frames are request to exit.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="public bool Continue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Continue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherFrame.Continue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether this <see cref="T:System.Windows.Threading.DispatcherFrame" /> should continue.</summary>
+        <value>
+          <see langword="true" /> if the frame should continue; otherwise, <see langword="false" />.  The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Threading.DispatcherFrame.Continue%2A> is queried at the top of each dispatcher loop.  
+  
+ At application shutdown, all frames are request to exit.  
+  
+<a name="xamlTextUsage_Continue"></a>   
+## XAML Text Usage  
+ Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], or cannot be used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Windows.Threading.DispatcherFrame> to achieve similar results as the [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] <xref:System.Windows.Forms.Application.DoEvents%2A> method.  
+  
+ [!code-csharp[dispatchersnippets#DispatcherDispatcherFrameDoEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/DispatcherSnippets/CSharp/Window1.xaml.cs#dispatcherdispatcherframedoevents)]
+ [!code-vb[dispatchersnippets#DispatcherDispatcherFrameDoEvents](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DispatcherSnippets/visualbasic/window1.xaml.vb#dispatcherdispatcherframedoevents)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

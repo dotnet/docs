@@ -1,0 +1,90 @@
+<Type Name="SqlDataSourceSelectingEventArgs" FullName="System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs">
+  <TypeSignature Language="C#" Value="public class SqlDataSourceSelectingEventArgs : System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceSelectingEventArgs extends System.Web.UI.WebControls.SqlDataSourceCommandEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.SqlDataSourceCommandEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.SqlDataSource.Selecting" /> event of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By adding an event handler delegate to handle the <xref:System.Web.UI.WebControls.SqlDataSource.Selecting> event, you can perform any additional preprocessing required or cancel the database query entirely. Because the <xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs> class is derived from the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> class, you can cancel a pending <xref:System.Web.UI.WebControls.SqlDataSource> database query by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can examine and manipulate the <xref:System.Data.Common.DbCommand.CommandText%2A>, <xref:System.Data.Common.DbCommand.Parameters%2A> collection, and other database query properties prior to running the query by accessing the <xref:System.Data.Common.DbCommand> object exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs.Command%2A> property. You can also examine the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method by accessing the <xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs.Arguments%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs> class is used in the <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting%2A> method to provide access to a <xref:System.Web.UI.WebControls.SqlDataSource> database query before it is run.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSource> control exposes many events that you can handle to work with the underlying data objects during the course of a data operation. The following table lists the events and associated <xref:System.EventArgs> classes and event handler delegates.  
+  
+|Event|EventArgs|EventHandler|  
+|-----------|---------------|------------------|  
+|<xref:System.Web.UI.WebControls.SqlDataSource.Selecting>.<br /><br /> Occurs before the data is retrieved.|<xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs>|<xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventHandler>|  
+|<xref:System.Web.UI.WebControls.SqlDataSource.Inserting>, <xref:System.Web.UI.WebControls.SqlDataSource.Updating>, and <xref:System.Web.UI.WebControls.SqlDataSource.Deleting>.<br /><br /> Occur before an insert, update, or delete operation is performed.|<xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs>|<xref:System.Web.UI.WebControls.SqlDataSourceCommandEventHandler>|  
+|<xref:System.Web.UI.WebControls.SqlDataSource.Selected>, <xref:System.Web.UI.WebControls.SqlDataSource.Inserted>, <xref:System.Web.UI.WebControls.SqlDataSource.Updated>, and <xref:System.Web.UI.WebControls.SqlDataSource.Deleted>.<br /><br /> Occur after the data retrieval, insert, update, or delete operation completes.|<xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.SqlDataSourceStatusEventHandler>|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlDataSourceSelectingEventArgs (System.Data.Common.DbCommand command, System.Web.UI.DataSourceSelectArguments arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DbCommand command, class System.Web.UI.DataSourceSelectArguments arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs.#ctor(System.Data.Common.DbCommand,System.Web.UI.DataSourceSelectArguments)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="command" Type="System.Data.Common.DbCommand" />
+        <Parameter Name="arguments" Type="System.Web.UI.DataSourceSelectArguments" />
+      </Parameters>
+      <Docs>
+        <param name="command">An <see cref="T:System.Data.Common.DbCommand" /> object that represents the cancelable <see cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" /> query.</param>
+        <param name="arguments">The <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object passed to the <see cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" /> method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" /> class, using the specified <see cref="T:System.Data.Common.DbCommand" /> object and any <see cref="T:System.Web.UI.DataSourceSelectArguments" /> passed to the <see cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `inputParameters` parameter is an <xref:System.Collections.IDictionary> collection of name/value pairs that match those in the method signature and are passed by reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceSelectArguments Arguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataSourceSelectArguments Arguments" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceSelectArguments</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object passed to the <see cref="M:System.Web.UI.WebControls.SqlDataSource.Select(System.Web.UI.DataSourceSelectArguments)" /> method.</summary>
+        <value>A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object, or <see langword="null" /> if no <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object is specified during <see cref="T:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs" /> creation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can examine the <xref:System.Web.UI.DataSourceSelectArguments> object to determine whether sorting, paging, or a row count are requested as part of the data retrieval operation.  
+  
+ Data-bound controls use the <xref:System.Web.UI.DataSourceSelectArguments> class to request that the <xref:System.Web.UI.WebControls.SqlDataSource> perform additional data-related operations on a result set, such as sorting the data or returning a specific subset of data. These data-related operations are enumerated by the <xref:System.Web.UI.DataSourceCapabilities> enumeration. For more information, see <xref:System.Web.UI.DataSourceSelectArguments>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

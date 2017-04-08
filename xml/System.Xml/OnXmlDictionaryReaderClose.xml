@@ -1,0 +1,33 @@
+<Type Name="OnXmlDictionaryReaderClose" FullName="System.Xml.OnXmlDictionaryReaderClose">
+  <TypeSignature Language="C#" Value="public delegate void OnXmlDictionaryReaderClose(XmlDictionaryReader reader);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OnXmlDictionaryReaderClose extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.OnXmlDictionaryReaderClose" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> that fires the <c>OnClose</c> event.</param>
+    <summary>
+      <see langword="delegate" /> for a callback method when closing the reader.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,2541 @@
+<Type Name="TabControl" FullName="System.Windows.Forms.TabControl">
+  <TypeSignature Language="C#" Value="public class TabControl : System.Windows.Forms.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabControl extends System.Windows.Forms.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("SelectedIndexChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("TabPages")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.TabControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Manages a related set of tab pages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.TabControl> contains tab pages, which are represented by <xref:System.Windows.Forms.TabPage> objects that you add through the <xref:System.Windows.Forms.TabControl.TabPages%2A> property. The order of tab pages in this collection reflects the order the tabs appear in the control.  
+  
+ The user can change the current <xref:System.Windows.Forms.TabPage> by clicking one of the tabs in the control. You can also programmatically change the current <xref:System.Windows.Forms.TabPage> by using one of the following <xref:System.Windows.Forms.TabControl> properties:  
+  
+-   <xref:System.Windows.Forms.TabControl.SelectedIndex%2A>  
+  
+-   <xref:System.Windows.Forms.TabControl.SelectedTab%2A>  
+  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], you can also use one of the following methods:  
+  
+-   <xref:System.Windows.Forms.TabControl.SelectTab%2A>  
+  
+-   <xref:System.Windows.Forms.TabControl.DeselectTab%2A>  
+  
+ In [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], you can respond when the current tab changes by handling one of the following events:  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselected>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selected>  
+  
+ The tabs in a <xref:System.Windows.Forms.TabControl> are part of the <xref:System.Windows.Forms.TabControl>, but not parts of the individual <xref:System.Windows.Forms.TabPage> controls. Members of the <xref:System.Windows.Forms.TabPage> class, such as the <xref:System.Windows.Forms.Control.ForeColor%2A> property, affect only the client rectangle of the tab page, but not the tabs. Additionally, the <xref:System.Windows.Forms.Control.Hide%2A> method of the <xref:System.Windows.Forms.TabPage> will not hide the tab. To hide the tab, you must remove the <xref:System.Windows.Forms.TabPage> control from the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection.  
+  
+ In [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
+  
+ The following events are not raised for the <xref:System.Windows.Forms.TabControl> class unless there is at least one <xref:System.Windows.Forms.TabPage> in the <xref:System.Windows.Forms.TabControl.TabPages%2A?displayProperty=fullName> collection: <xref:System.Windows.Forms.Control.Click?displayProperty=fullName>, <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseDown?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseHover?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseEnter?displayProperty=fullName>, <xref:System.Windows.Forms.Control.MouseLeave?displayProperty=fullName> and <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName>. If there is at least one <xref:System.Windows.Forms.TabPage> in the collection, and the user interacts with the tab control's header (where the <xref:System.Windows.Forms.TabPage> names appear), the <xref:System.Windows.Forms.TabControl> raises the appropriate event. However, if the user interaction is within the <xref:System.Windows.Forms.Control.ClientRectangle%2A> of the tab page, the <xref:System.Windows.Forms.TabPage> raises the appropriate event.  
+  
+ Controls contained in a <xref:System.Windows.Forms.TabPage> are not created until the tab page is shown, and any data bindings in these controls are not activated until the tab page is shown.  
+  
+ When visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment>, the tab contents might not render correctly. To work around this issue, you can paint the tab contents yourself using owner drawing. For more information, see [How to: Display Side-Aligned Tabs with TabControl](~/docs/framework/winforms/controls/how-to-display-side-aligned-tabs-with-tabcontrol.md).  
+  
+ When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment> and the <xref:System.Windows.Forms.TabControl.Appearance%2A> property is set to a value other than <xref:System.Windows.Forms.TabAppearance>, the tab page contents might not render correctly.  
+  
+   
+  
+## Examples  
+ The following code example uses the Visual Studio Windows Forms Designer to create a <xref:System.Windows.Forms.TabControl> with three tab pages. Each tab page contains several controls.  
+  
+ [!code-cpp[Classic TabControl Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TabControl Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TabControl Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TabControl Example/CS/source.cs#1)]
+ [!code-vb[Classic TabControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TabControl Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TabControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabControl.%23ctor%2A> constructor creates an instance of `tabControl1`.  
+  
+ Use the <xref:System.Windows.Forms> namespace for this example.  
+  
+ [!code-cpp[TabControl_constructor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabControl_constructor/CPP/form1.cpp#1)]
+ [!code-csharp[TabControl_constructor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabControl_constructor/CS/form1.cs#1)]
+ [!code-vb[TabControl_constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabControl_constructor/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TabAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TabAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.Alignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the area of the control (for example, along the top) where the tabs are aligned.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.TabAlignment" /> values. The default is <see langword="Top" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to <xref:System.Windows.Forms.TabAlignment> or <xref:System.Windows.Forms.TabAlignment>, the <xref:System.Windows.Forms.TabControl.Multiline%2A> property is automatically set to `true`.  
+  
+ When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to <xref:System.Windows.Forms.TabAppearance>, it only appears as such when the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to <xref:System.Windows.Forms.TabAlignment>. Otherwise, the <xref:System.Windows.Forms.TabControl.Appearance%2A> property displays as if set to the <xref:System.Windows.Forms.TabAppearance> value.  
+  
+ When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to <xref:System.Windows.Forms.TabAppearance>, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to <xref:System.Windows.Forms.TabAlignment> so that the buttons display correctly.  
+  
+> [!NOTE]
+>  When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `Buttons`, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to `Top` so that the tab page contents display correctly. Additionally, when visual styles are enabled, and the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to a value other than <xref:System.Windows.Forms.TabAlignment>, the tab contents may not render correctly.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to `Left`, which positions the tabs of `tabControl1` on the left side.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabAlignment#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabAlignment/CPP/form1.cpp#1)]
+ [!code-csharp[TabAlignment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabAlignment/CS/form1.cs#1)]
+ [!code-vb[TabAlignment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabAlignment/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabAlignment" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Appearance">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TabAppearance Appearance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TabAppearance Appearance" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.Appearance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the visual appearance of the control's tabs.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.TabAppearance" /> values. The default is <see langword="Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `FlatButtons`, it only appears as such when the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to `Top`. Otherwise, the <xref:System.Windows.Forms.TabControl.Appearance%2A> property appears as if set to the `Buttons` value.  
+  
+> [!NOTE]
+>  When you set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `Buttons`, you must also set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property to `Top` so that the tab page contents display correctly.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. This example sets the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `Buttons`, which displays the tabs of the tab pages as buttons.  
+  
+ Use the <xref:System.Windows.Forms> namespace for this example.  
+  
+ [!code-cpp[Appearance#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Appearance/CPP/form1.cpp#1)]
+ [!code-csharp[Appearance#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Appearance/CS/form1.cs#1)]
+ [!code-vb[Appearance#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Appearance/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabAppearance" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The background color for the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColorChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.BackColorChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This event is not meaningful for this control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImage">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.BackgroundImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The background image displayed in the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.BackgroundImageChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabControl.BackgroundImage" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabControl.BackgroundImage%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabControl.BackgroundImageChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageLayout">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.BackgroundImageLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>One of the values of <see cref="T:System.Windows.Forms.ImageLayout" />. The default value is Tile.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageLayoutChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.BackgroundImageLayoutChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabControl.BackgroundImageLayout" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabControl.BackgroundImageLayout%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabControl.BackgroundImageLayoutChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlsInstance">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Control.ControlCollection CreateControlsInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.Control/ControlCollection CreateControlsInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.CreateControlsInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control+ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.CreateControlsInstance" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Forms.Control.ControlCollection" /> assigned to the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHandle">
+      <MemberSignature Language="C#" Value="protected override void CreateHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.CreateHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.CreateHandle" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member overrides <see cref="P:System.Windows.Forms.Control.CreateParams" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deselected">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.TabControlEventHandler Deselected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.TabControlEventHandler Deselected" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.Deselected" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabControlEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a tab is deselected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the current tab changes in a <xref:System.Windows.Forms.TabControl>, the following events occur in the following order.  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselected>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selected>  
+  
+ These events let you perform tasks such as canceling a tab change if a <xref:System.Windows.Forms.TabPage> is in an invalid state or updating the state of a newly displayed <xref:System.Windows.Forms.TabPage>.  
+  
+ The current tab changes when the user clicks a tab, when you call the <xref:System.Windows.Forms.TabControl.DeselectTab%2A> or <xref:System.Windows.Forms.TabControl.SelectTab%2A> method, or when you change the value of the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> or <xref:System.Windows.Forms.TabControl.SelectedTab%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Deselected> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#560](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#560)]
+ [!code-vb[System.Windows.Forms.EventExamples#560](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#560)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deselecting">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.TabControlCancelEventHandler Deselecting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.TabControlCancelEventHandler Deselecting" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.Deselecting" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabControlCancelEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before a tab is deselected, enabling a handler to cancel the tab change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the current tab changes in a <xref:System.Windows.Forms.TabControl>, the following events occur in the following order.  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselected>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selected>  
+  
+ These events let you perform tasks such as canceling a tab change if a <xref:System.Windows.Forms.TabPage> is in an invalid state or updating the state of a newly displayed <xref:System.Windows.Forms.TabPage>.  
+  
+ The current tab changes when the user clicks a tab, when you call the <xref:System.Windows.Forms.TabControl.DeselectTab%2A> or <xref:System.Windows.Forms.TabControl.SelectTab%2A> method, or when you change the value of the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> or <xref:System.Windows.Forms.TabControl.SelectedTab%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Deselecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Deselecting> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#559](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#559)]
+ [!code-vb[System.Windows.Forms.EventExamples#559](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#559)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeselectTab">
+      <MemberSignature Language="C#" Value="public void DeselectTab (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeselectTab(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.DeselectTab(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection of the tab to deselect.</param>
+        <summary>Makes the tab following the tab with the specified index the current tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to programmatically deselect a particular tab in a <xref:System.Windows.Forms.TabControl>. If there are at least two tabs in the control, the tab following the specified tab becomes the current tab. If the specified tab is the last tab in the control, the first tab becomes the current tab.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeselectTab">
+      <MemberSignature Language="C#" Value="public void DeselectTab (string tabPageName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeselectTab(string tabPageName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.DeselectTab(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tabPageName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tabPageName">The <see cref="P:System.Windows.Forms.Control.Name" /> of the tab to deselect.</param>
+        <summary>Makes the tab following the tab with the specified name the current tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to programmatically deselect a particular tab in a <xref:System.Windows.Forms.TabControl>. If there are at least two tabs in the control, the tab following the specified tab becomes the current tab. If the specified tab is the last tab in the control, the first tab becomes the current tab.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tabPageName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tabPageName" /> does not match the <see cref="P:System.Windows.Forms.Control.Name" /> property of any <see cref="T:System.Windows.Forms.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeselectTab">
+      <MemberSignature Language="C#" Value="public void DeselectTab (System.Windows.Forms.TabPage tabPage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeselectTab(class System.Windows.Forms.TabPage tabPage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.DeselectTab(System.Windows.Forms.TabPage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
+      </Parameters>
+      <Docs>
+        <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to deselect.</param>
+        <summary>Makes the tab following the specified <see cref="T:System.Windows.Forms.TabPage" /> the current tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to programmatically deselect a particular tab in a <xref:System.Windows.Forms.TabControl>. If there are at least two tabs in the control, the tab following the specified tab becomes the current tab. If the specified tab is the last tab in the control, the first tab becomes the current tab.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.  
+  
+ -or-  
+  
+ <paramref name="tabPage" /> is not in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tabPage" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRectangle">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle DisplayRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle DisplayRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.DisplayRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the display area of the control's tab pages.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the display area of the tab pages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.DisplayRectangle%2A> property to draw a <xref:System.Drawing.Rectangle> representing the tab page display area of `tabControl1`. Notice that the example uses the <xref:System.Drawing.Rectangle.Inflate%2A> method; otherwise, the <xref:System.Windows.Forms.TabPage> drawing code overwrites the <xref:System.Drawing.Rectangle> drawn in the `DrawOnTabPage` method.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[DisplayRectangle1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DisplayRectangle1/CPP/form1.cpp#1)]
+ [!code-csharp[DisplayRectangle1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DisplayRectangle1/CS/form1.cs#1)]
+ [!code-vb[DisplayRectangle1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayRectangle1/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleBuffered">
+      <MemberSignature Language="C#" Value="protected override bool DoubleBuffered { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DoubleBuffered" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.DoubleBuffered" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>A <see cref="T:System.Boolean" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawItem">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawItemEventHandler DrawItem;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawItemEventHandler DrawItem" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.DrawItem" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.TabControl" /> needs to paint each of its tabs if the <see cref="P:System.Windows.Forms.TabControl.DrawMode" /> property is set to <see cref="F:System.Windows.Forms.TabDrawMode.OwnerDrawFixed" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode>, the <xref:System.Windows.Forms.TabControl> raises the <xref:System.Windows.Forms.TabControl.DrawItem> event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
+  
+ The <xref:System.Windows.Forms.TabControl> does not support variable tab sizes with owner drawing.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example declares an event handler that is used to draw a string and `Rectangle` on the tab of `tabPage1`. The event handler is bound to the `DrawItem` event.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[DrawItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DrawItem/CPP/drawitem.cpp#1)]
+ [!code-csharp[DrawItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DrawItem/CS/drawitem.cs#1)]
+ [!code-vb[DrawItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DrawItem/VB/drawitem.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TabDrawMode DrawMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TabDrawMode DrawMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.DrawMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the way that the control's tabs are drawn.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.TabDrawMode" /> values. The default is <see langword="Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to <xref:System.Windows.Forms.TabDrawMode>, the <xref:System.Windows.Forms.TabControl> raises the <xref:System.Windows.Forms.TabControl.DrawItem> event whenever it needs to paint one of its tabs. To customize the appearance of the tabs, provide your own painting code in a handler for the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
+  
+ The <xref:System.Windows.Forms.TabControl> does not support variable tab sizes with owner drawing.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example sets the <xref:System.Windows.Forms.TabControl.DrawMode%2A> property to `OwnerDrawFixed`, which specifies that the tabs are drawn by the parent object `Form1`. The value `OwnerDrawFixed` also enables access to the <xref:System.Windows.Forms.TabControl.DrawItem> event, which, in this example, is used to draw `myTabRect` on the `tabPage1` tab.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces with this example.  
+  
+ [!code-cpp[DrawMode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DrawMode/CPP/drawmode.cpp#1)]
+ [!code-csharp[DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DrawMode/CS/drawmode.cs#1)]
+ [!code-vb[DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DrawMode/VB/drawmode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabDrawMode" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The foreground color of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColorChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.ForeColorChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabControl.ForeColor" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabControl.ForeColor%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabControl.ForeColorChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control GetControl (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Control GetControl(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.GetControl(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Windows.Forms.TabPage" /> to get.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.TabPage" /> control at the specified location.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.TabPage" /> at the specified location.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than the <see cref="P:System.Windows.Forms.TabControl.TabCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItems">
+      <MemberSignature Language="C#" Value="protected virtual object[] GetItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object[] GetItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.GetItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an array of <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+        <returns>An array of <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItems">
+      <MemberSignature Language="C#" Value="protected virtual object[] GetItems (Type baseType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object[] GetItems(class System.Type baseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.GetItems(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseType">The <see cref="T:System.Type" /> of the array to create.</param>
+        <summary>Copies the <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="T:System.Windows.Forms.TabControl" /> to an array of the specified type.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" /> as an array of the specified type.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArrayTypeMismatchException">The type <see cref="T:System.Windows.Forms.TabPage" /> cannot be converted to <paramref name="baseType" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTabRect">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetTabRect (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetTabRect(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.GetTabRect(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the tab you want.</param>
+        <summary>Returns the bounding rectangle for a specified tab in this tab control.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the specified tab.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.GetTabRect%2A> method to get a `Rectangle` that represents the `tabPage1` tab area. The `myTabRect``Rectangle` is drawn by the <xref:System.Windows.Forms.TabControl.DrawItem> event.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces with this example.  
+  
+ [!code-cpp[GetTabRect#1](~/samples/snippets/cpp/VS_Snippets_Winforms/GetTabRect/CPP/gettabrect.cpp#1)]
+ [!code-csharp[GetTabRect#1](~/samples/snippets/csharp/VS_Snippets_Winforms/GetTabRect/CS/gettabrect.cs#1)]
+ [!code-vb[GetTabRect#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/GetTabRect/VB/gettabrect.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index is less than zero.  
+  
+ -or-  
+  
+ The index is greater than or equal to <see cref="P:System.Windows.Forms.TabControl.TabPageCollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToolTipText">
+      <MemberSignature Language="C#" Value="protected string GetToolTipText (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetToolTipText(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.GetToolTipText(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Windows.Forms.TabPage" /> that owns the desired ToolTip.</param>
+        <summary>Gets the ToolTip for the specified <see cref="T:System.Windows.Forms.TabPage" />.</summary>
+        <returns>The ToolTip text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HotTrack">
+      <MemberSignature Language="C#" Value="public bool HotTrack { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HotTrack" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.HotTrack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control's tabs change in appearance when the mouse passes over them.</summary>
+        <value>
+          <see langword="true" /> if the tabs change in appearance when the mouse passes over them; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The color that the tab changes to when the mouse is over it is determined by the local computer's system colors. To change the system colors, use Control Panel.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.HotTrack%2A> property is set to `true`, which highlights the tab <xref:System.Windows.Forms.TabPage.Text%2A>`myTabPage1` or `myTabPage2` when the mouse passes over the tabs.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[HotTrack#1](~/samples/snippets/cpp/VS_Snippets_Winforms/HotTrack/CPP/form1.cpp#1)]
+ [!code-csharp[HotTrack#1](~/samples/snippets/csharp/VS_Snippets_Winforms/HotTrack/CS/form1.cs#1)]
+ [!code-vb[HotTrack#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/HotTrack/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageList">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList ImageList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList ImageList" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.ImageList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the images to display on the control's tabs.</summary>
+        <value>An <see cref="T:System.Windows.Forms.ImageList" /> that specifies the images to display on the tabs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To display an image on a tab, set the <xref:System.Windows.Forms.TabPage.ImageIndex%2A> property of that <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.ImageIndex%2A> acts as the index into the <xref:System.Windows.Forms.TabControl.ImageList%2A>.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.ImageList%2A> property to display images, from the collection defined by the <xref:System.Windows.Forms.ImageList> named `myImages`, on the tabs of `tabControl1`.  
+  
+ Use the <xref:System.Drawing>, <xref:System.ComponentModel>, <xref:System.Windows.Forms>, and <xref:System.Resources> namespaces for this example.  
+  
+ [!code-cpp[TabControl.ImageList#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabControl.ImageList/CPP/form1.cpp#1)]
+ [!code-csharp[TabControl.ImageList#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabControl.ImageList/CS/form1.cs#1)]
+ [!code-vb[TabControl.ImageList#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabControl.ImageList/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputKey">
+      <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
+        <summary>Determines whether the specified key is a regular input key or a special key that requires preprocessing.</summary>
+        <returns>
+          <see langword="true" /> if the specified key is a regular input key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method during window-message preprocessing to determine whether the specified key is a regular input key that should be sent directly to the tab control or a special key (such as PAGE UP and PAGE DOWN) that should preprocessed. In the latter case, send the key to the control only if it is not consumed by the preprocessing phase.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size ItemSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size ItemSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.ItemSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the control's tabs.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the tabs. The default automatically sizes the tabs to fit the icons and labels on the tabs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To change the <xref:System.Drawing.Size.Width%2A> property of the <xref:System.Windows.Forms.TabControl.ItemSize%2A> property, the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property must be set to `Fixed`.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. To define the dimensions of the tabs, set the <xref:System.Windows.Forms.TabControl.ItemSize%2A> property equal to a <xref:System.Drawing.Size> structure. In this example, <xref:System.Drawing.Size> defines the tabs 90 pixels wide and 50 pixels high. You cannot change the width of the tabs unless the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property is set to the <xref:System.Windows.Forms.TabSizeMode> value.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[ItemSize#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ItemSize/CPP/form1.cpp#1)]
+ [!code-csharp[ItemSize#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ItemSize/CS/form1.cs#1)]
+ [!code-vb[ItemSize#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ItemSize/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.Size" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiline">
+      <MemberSignature Language="C#" Value="public bool Multiline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Multiline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.Multiline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether more than one row of tabs can be displayed.</summary>
+        <value>
+          <see langword="true" /> if more than one row of tabs can be displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Forms.TabControl.Multiline%2A> is `false`, only one row of tabs is displayed, even if all the tabs do not fit in the available space. In that case, however, arrows are displayed that enable the user to navigate to the undisplayed tabs.  
+  
+ If the <xref:System.Windows.Forms.TabControl.Multiline%2A> property is changed to `false` while the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to `Left` or `Right`, the <xref:System.Windows.Forms.TabControl.Alignment%2A> property is automatically reset to `Top`.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with four <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.Multiline%2A> property is set to `true`, which displays two rows of tabs instead of one.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Multiline#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Multiline/CPP/form1.cpp#1)]
+ [!code-csharp[Multiline#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Multiline/CS/form1.cs#1)]
+ [!code-vb[Multiline#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Multiline/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeselected">
+      <MemberSignature Language="C#" Value="protected virtual void OnDeselected (System.Windows.Forms.TabControlEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeselected(class System.Windows.Forms.TabControlEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.TabControlEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Deselected" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnDeselected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeselecting">
+      <MemberSignature Language="C#" Value="protected virtual void OnDeselecting (System.Windows.Forms.TabControlCancelEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeselecting(class System.Windows.Forms.TabControlCancelEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Deselecting" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnDeselecting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDrawItem">
+      <MemberSignature Language="C#" Value="protected virtual void OnDrawItem (System.Windows.Forms.DrawItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawItem(class System.Windows.Forms.DrawItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DrawItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.DrawItem" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnDrawItem%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEnter">
+      <MemberSignature Language="C#" Value="protected override void OnEnter (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnter(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Enter" /> event of the <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], this method also raises the <xref:System.Windows.Forms.Control.Enter> event of the current <xref:System.Windows.Forms.TabPage>. In [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnEnter%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFontChanged">
+      <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnFontChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnFontChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnFontChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnFontChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleDestroyed">
+      <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnHandleDestroyed%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnHandleDestroyed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyDown">
+      <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs ke);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs ke) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ke" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="ke">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabControl> control enables the user to use the keyboard to switch between <xref:System.Windows.Forms.TabPage> controls. The following table describes how the <xref:System.Windows.Forms.TabControl> switches between the selected <xref:System.Windows.Forms.TabPage> controls, depending on which keys are pressed.  
+  
+|Key|Description|  
+|---------|-----------------|  
+|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the next <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the previous <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the next <xref:System.Windows.Forms.TabPage>.|  
+|<xref:System.Windows.Forms.Keys> + <xref:System.Windows.Forms.Keys>|Selects the previous <xref:System.Windows.Forms.TabPage>.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLeave">
+      <MemberSignature Language="C#" Value="protected override void OnLeave (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLeave(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Leave" /> event of the <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], this method also raises the <xref:System.Windows.Forms.Control.Leave> event of the current <xref:System.Windows.Forms.TabPage>. In [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], the tab is considered part of the tab page for determining when the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> occur. In earlier versions of the .NET Framework, the <xref:System.Windows.Forms.Control.Enter> and <xref:System.Windows.Forms.Control.Leave> events of the <xref:System.Windows.Forms.TabPage> do not occur when focus enters or leaves a tab, but only when focus enters or leaves the client rectangle of the tab page.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnLeave%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResize">
+      <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnResize(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRightToLeftLayoutChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnRightToLeftLayoutChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRightToLeftLayoutChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.RightToLeftLayoutChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnRightToLeftLayoutChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelected">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelected (System.Windows.Forms.TabControlEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelected(class System.Windows.Forms.TabControlEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.TabControlEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Selected" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnSelected%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedIndexChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedIndexChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.SelectedIndexChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnSelectedIndexChanged%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelecting">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelecting (System.Windows.Forms.TabControlCancelEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelecting(class System.Windows.Forms.TabControlCancelEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Selecting" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.TabControl.OnSelecting%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStyleChanged">
+      <MemberSignature Language="C#" Value="protected override void OnStyleChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStyleChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.OnStyleChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.OnStyleChanged(System.EventArgs)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space around each item on the control's tab pages.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> that specifies the amount of space around each item. The default is (6,3).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.Padding%2A> property is used to create a cushion of 22 pixels around the tab <xref:System.Windows.Forms.TabPage.Text%2A>`myTabPage1` and `myTabPage2`.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[Padding#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Padding/CPP/form1.cpp#1)]
+ [!code-csharp[Padding#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Padding/CS/form1.cs#1)]
+ [!code-vb[Padding#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Padding/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The width or height of the <see cref="T:System.Drawing.Point" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Paint">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.Paint" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This event is not meaningful for this control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessKeyPreview">
+      <MemberSignature Language="C#" Value="protected override bool ProcessKeyPreview (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyPreview(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.ProcessKeyPreview(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
+        <summary>Previews a keyboard message.</summary>
+        <returns>
+          <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAll">
+      <MemberSignature Language="C#" Value="protected void RemoveAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.RemoveAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all the tab pages and additional controls from this tab control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All controls are removed through the `Controls` property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeftLayout">
+      <MemberSignature Language="C#" Value="public virtual bool RightToLeftLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RightToLeftLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.RightToLeftLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether right-to-left mirror placement is turned on.</summary>
+        <value>
+          <see langword="true" /> if right-to-left mirror placement is turned on; <see langword="false" /> for standard child control placement. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabControl.RightToLeftLayout%2A> property is primarily useful for developing forms for worldwide audiences. Many containers are designed so that controls are laid out in the container in a left-to-right fashion. These containers are compatible with languages that follow this writing direction. However, when you display the same containers to users of right-to-left languages, it is often preferable to reverse the order of the controls on the form. If both the <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> and <xref:System.Windows.Forms.Control.RightToLeft%2A> properties are `true`, mirroring will be turned on for the container and control placement and text flow will be right-to-left.  
+  
+ Changing the value of this property raises the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event.  
+  
+ For more information about globalization issues, see [Best Practices for Developing World-Ready Applications](~/docs/standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeftLayoutChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler RightToLeftLayoutChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftLayoutChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.RightToLeftLayoutChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabControl.RightToLeftLayout" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.RightToLeftLayoutChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#555](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#555)]
+ [!code-vb[System.Windows.Forms.EventExamples#555](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#555)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowCount">
+      <MemberSignature Language="C#" Value="public int RowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.RowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows that are currently being displayed in the control's tab strip.</summary>
+        <value>The number of rows that are currently being displayed in the tab strip.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.TabControl.RowCount%2A> property when the <xref:System.Windows.Forms.TabControl.Multiline%2A> property is `true` and you want to know the number of rows that the tabs occupy.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with five <xref:System.Windows.Forms.TabPage> objects. This example uses the <xref:System.Windows.Forms.TabControl.RowCount%2A> property to get the number of rows currently in the `tabControl1` tab strip.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[RowCount#1](~/samples/snippets/cpp/VS_Snippets_Winforms/RowCount/CPP/form1.cpp#1)]
+ [!code-csharp[RowCount#1](~/samples/snippets/csharp/VS_Snippets_Winforms/RowCount/CS/form1.cs#1)]
+ [!code-vb[RowCount#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/RowCount/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleCore">
+      <MemberSignature Language="C#" Value="protected override void ScaleCore (float dx, float dy);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleCore(float32 dx, float32 dy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.ScaleCore(System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Single" />
+        <Parameter Name="dy" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="dx">The horizontal scaling factor.</param>
+        <param name="dy">The vertical scaling factor.</param>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.TabControlEventHandler Selected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.TabControlEventHandler Selected" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.Selected" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabControlEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a tab is selected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the current tab changes in a <xref:System.Windows.Forms.TabControl>, the following events occur in the following order.  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselected>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selected>  
+  
+ These events let you perform tasks such as canceling a tab change if a <xref:System.Windows.Forms.TabPage> is in an invalid state or updating the state of a newly displayed <xref:System.Windows.Forms.TabPage>.  
+  
+ The current tab changes when the user clicks a tab, when you call the <xref:System.Windows.Forms.TabControl.DeselectTab%2A> or <xref:System.Windows.Forms.TabControl.SelectTab%2A> method, or when you change the value of the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> or <xref:System.Windows.Forms.TabControl.SelectedTab%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selected> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#558](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#558)]
+ [!code-vb[System.Windows.Forms.EventExamples#558](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#558)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndex">
+      <MemberSignature Language="C#" Value="public int SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the currently selected tab page.</summary>
+        <value>The zero-based index of the currently selected tab page. The default is -1, which is also the value if no tab page is selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property sets `tabPage2` as the currently selected tab page using its index value.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[SelectedIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SelectedIndex/CPP/form1.cpp#1)]
+ [!code-csharp[SelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SelectedIndex/CS/form1.cs#1)]
+ [!code-vb[SelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SelectedIndex/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndexChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.SelectedIndexChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.TabControl.SelectedIndex" /> property has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this event occurs, you can check the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property to determine its new value. Alternatively, you can handle the <xref:System.Windows.Forms.TabControl.Selected> event and use the <xref:System.Windows.Forms.TabControlEventArgs.TabPageIndex%2A?displayProperty=fullName> property to determine the index of the selected tab page.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#556](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#556)]
+ [!code-vb[System.Windows.Forms.EventExamples#556](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#556)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedTab">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TabPage SelectedTab { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TabPage SelectedTab" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.SelectedTab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabPage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the currently selected tab page.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TabPage" /> that represents the selected tab page. If no tab page is selected, the value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tab page must be in the <xref:System.Windows.Forms.TabControl.TabPages%2A> collection to make it the current tab page.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.SelectedTab%2A> property sets `tabPage2` as the currently selected tab page.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[SelectedTab#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SelectedTab/CPP/form1.cpp#1)]
+ [!code-csharp[SelectedTab#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SelectedTab/CS/form1.cs#1)]
+ [!code-vb[SelectedTab#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SelectedTab/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selecting">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.TabControlCancelEventHandler Selecting;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.TabControlCancelEventHandler Selecting" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.Selecting" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabControlCancelEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before a tab is selected, enabling a handler to cancel the tab change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the current tab changes in a <xref:System.Windows.Forms.TabControl>, the following events occur in the following order.  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Deselected>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selecting>  
+  
+-   <xref:System.Windows.Forms.TabControl.Selected>  
+  
+ These events let you perform tasks such as canceling a tab change if a <xref:System.Windows.Forms.TabPage> is in an invalid state or updating the state of a newly displayed <xref:System.Windows.Forms.TabPage>.  
+  
+ The current tab changes when the user clicks a tab, when you call the <xref:System.Windows.Forms.TabControl.DeselectTab%2A> or <xref:System.Windows.Forms.TabControl.SelectTab%2A> method, or when you change the value of the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> or <xref:System.Windows.Forms.TabControl.SelectedTab%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TabControl.Selecting> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TabControl> named `TabControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TabControl.Selecting> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#557](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#557)]
+ [!code-vb[System.Windows.Forms.EventExamples#557](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#557)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectTab">
+      <MemberSignature Language="C#" Value="public void SelectTab (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectTab(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.SelectTab(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection of the tab to select.</param>
+        <summary>Makes the tab with the specified index the current tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to programmatically select a particular tab in a <xref:System.Windows.Forms.TabControl>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectTab">
+      <MemberSignature Language="C#" Value="public void SelectTab (string tabPageName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectTab(string tabPageName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.SelectTab(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tabPageName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tabPageName">The <see cref="P:System.Windows.Forms.Control.Name" /> of the tab to select.</param>
+        <summary>Makes the tab with the specified name the current tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to programmatically select a particular tab in a <xref:System.Windows.Forms.TabControl>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tabPageName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tabPageName" /> does not match the <see cref="P:System.Windows.Forms.Control.Name" /> property of any <see cref="T:System.Windows.Forms.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectTab">
+      <MemberSignature Language="C#" Value="public void SelectTab (System.Windows.Forms.TabPage tabPage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectTab(class System.Windows.Forms.TabPage tabPage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.SelectTab(System.Windows.Forms.TabPage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
+      </Parameters>
+      <Docs>
+        <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to select.</param>
+        <summary>Makes the specified <see cref="T:System.Windows.Forms.TabPage" /> the current tab.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to programmatically select a particular tab in a <xref:System.Windows.Forms.TabControl>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than the number of <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection minus 1.  
+  
+ -or-  
+  
+ <paramref name="tabPage" /> is not in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tabPage" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowToolTips">
+      <MemberSignature Language="C#" Value="public bool ShowToolTips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowToolTips" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.ShowToolTips" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a tab's ToolTip is shown when the mouse passes over the tab.</summary>
+        <value>
+          <see langword="true" /> if ToolTips are shown for the tabs that have them; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a ToolTip for a tab, set the <xref:System.Windows.Forms.TabPage.ToolTipText%2A> property of the <xref:System.Windows.Forms.TabPage>.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. For tab page ToolTips to display, the <xref:System.Windows.Forms.TabControl.ShowToolTips%2A> property must equal to `true`, as in this example. The <xref:System.Windows.Forms.TabPage.ToolTipText%2A> property is used to assign string values to the ToolTips.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolTipText/CPP/form1.cpp#1)]
+ [!code-csharp[ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolTipText/CS/form1.cs#1)]
+ [!code-vb[ToolTipText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolTipText/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TabSizeMode SizeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TabSizeMode SizeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.SizeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabSizeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the way that the control's tabs are sized.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.TabSizeMode" /> values. The default is <see langword="Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with five <xref:System.Windows.Forms.TabPage>. This example sets the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property to `FillToRight`, which sizes the tabs so that each row fills the entire width of `tabControl1`.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[SizeMode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SizeMode/CPP/form1.cpp#1)]
+ [!code-csharp[SizeMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SizeMode/CS/form1.cs#1)]
+ [!code-vb[SizeMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SizeMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.TabSizeMode" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TabCount">
+      <MemberSignature Language="C#" Value="public int TabCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TabCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of tabs in the tab strip.</summary>
+        <value>The number of tabs in the tab strip.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with five <xref:System.Windows.Forms.TabPage> objects. This example uses the <xref:System.Windows.Forms.TabControl.TabCount%2A> property to get the number of tabs currently in the `tabControl1` tab strip.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabCount#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabCount/CPP/form1.cpp#1)]
+ [!code-csharp[TabCount#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabCount/CS/form1.cs#1)]
+ [!code-vb[TabCount#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabCount/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabPages">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TabControl.TabPageCollection TabPages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TabControl/TabPageCollection TabPages" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.TabPages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.TabPageCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabControl+TabPageCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of tab pages in this tab control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> that contains the <see cref="T:System.Windows.Forms.TabPage" /> objects in this <see cref="T:System.Windows.Forms.TabControl" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of tab pages in this collection reflects the order the tabs appear in the control.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method to add a single tab page to the `tabControl1` tab control. Notice the <xref:System.Windows.Forms.TabControl.TabPages%2A> property is used to get the `tabControl1` controls collection to add the `tabPage1` to this collection.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
+  
+ [!code-cpp[TabPageCollection.Add#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPageCollection.Add/CPP/form1.cpp#1)]
+ [!code-csharp[TabPageCollection.Add#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPageCollection.Add/CS/form1.cs#1)]
+ [!code-vb[TabPageCollection.Add#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPageCollection.Add/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabControl.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member is not meaningful for this control.</summary>
+        <value>The text associated with this control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabControl.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TabControl.Text" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TabControl.Text%2A> property is not meaningful for this control, although you can change its value and handle the <xref:System.Windows.Forms.TabControl.TextChanged> event to detect the change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+        <returns>A string that represents the current <see cref="T:System.Windows.Forms.TabControl" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string includes the type and the <xref:System.Windows.Forms.TabControl.TabPageCollection.Count%2A> property of the control. If there is at least one <xref:System.Windows.Forms.TabPage> control on the <xref:System.Windows.Forms.TabControl>, this method returns a string that includes the string returned by the <xref:System.Windows.Forms.TabPage.ToString%2A> method for the first <xref:System.Windows.Forms.TabPage>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTabSelection">
+      <MemberSignature Language="C#" Value="protected void UpdateTabSelection (bool updateFocus);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateTabSelection(bool updateFocus) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.UpdateTabSelection(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateFocus" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="updateFocus">
+          <see langword="true" /> to change focus to the next <see cref="T:System.Windows.Forms.TabPage" />; otherwise, <see langword="false" />.</param>
+        <summary>Sets the <see cref="P:System.Windows.Forms.TabPage.Visible" /> property to <see langword="true" /> for the appropriate <see cref="T:System.Windows.Forms.TabPage" /> control in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method ensures the appropriate <xref:System.Windows.Forms.TabControlEventArgs.TabPage%2A> is visible. If you want the tab control to set the <xref:System.Windows.Forms.TabPage.Visible%2A> property to `true` for the next <xref:System.Windows.Forms.TabPage> in the tab order, call this method with `updateFocus` set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">A Windows Message Object.</param>
+        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

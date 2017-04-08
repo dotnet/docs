@@ -1,0 +1,80 @@
+<Type Name="DataContractFormatAttribute" FullName="System.ServiceModel.DataContractFormatAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DataContractFormatAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataContractFormatAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.DataContractFormatAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Interface, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Instructs the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure to use the <see cref="T:System.Runtime.Serialization.DataContractSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is similar to the <xref:System.ServiceModel.XmlSerializerFormatAttribute> attribute. Both attributes can be applied to either a method or a class.  
+  
+ A method can have either of the two attributes applied, but not both. Any operation that has neither applied will use the attribute applied to the containing class. If the containing class does not have either attribute applied, the <xref:System.Runtime.Serialization.DataContractSerializer> is used.  
+  
+ Applying the attribute also causes a <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> to be created at run time. The behavior allows customization at run time of the serializer behavior.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.ServiceModel.DataContractFormatAttribute> and sets the <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> property to <xref:System.ServiceModel.OperationFormatStyle>. The RPC style is described in the Web Service Description Language specification (WSDL).  
+  
+ [!code-csharp[DataContractFormatAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractformatattribute/cs/source.cs#1)]
+ [!code-vb[DataContractFormatAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractformatattribute/vb/source.vb#1)]
+ [!code-vb[DataContractFormatAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractformatattribute/cs/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContractFormatAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DataContractFormatAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DataContractFormatAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.OperationFormatStyle Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.OperationFormatStyle Style" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.DataContractFormatAttribute.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OperationFormatStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SOAP style of the serialized data.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.OperationFormatStyle" /> values. The default is <see cref="F:System.ServiceModel.OperationFormatStyle.Document" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

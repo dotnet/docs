@@ -1,0 +1,48 @@
+<Type Name="PauseStoryboard" FullName="System.Windows.Media.Animation.PauseStoryboard">
+  <TypeSignature Language="C#" Value="public sealed class PauseStoryboard : System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PauseStoryboard extends System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PauseStoryboard" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ControllableStoryboardAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A trigger action that pauses a <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.Animation.PauseStoryboard> with an <xref:System.Windows.EventTrigger> or a <xref:System.Windows.Trigger> to pause a Storyboard.  
+  
+ <xref:System.Windows.Media.Animation.PauseStoryboard> only affects a <xref:System.Windows.Media.Animation.Storyboard> when it is active (after the <xref:System.Windows.Media.Animation.Storyboard> starts).  
+  
+ To control a <xref:System.Windows.Media.Animation.Storyboard>, the <xref:System.Windows.Media.Animation.PauseStoryboard> must reference the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of the <xref:System.Windows.Media.Animation.BeginStoryboard> that controls that <xref:System.Windows.Media.Animation.Storyboard>. See [How to: Use Event Triggers to Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md) for an example.  
+  
+## Beginning a Paused Animation  
+ When a <xref:System.Windows.Media.Animation.BeginStoryboard> action is triggered after it has been paused, it appears to resume and restart. That's not what actually happens, however: the <xref:System.Windows.Media.Animation.BeginStoryboard> action actually replaces itself with an unpaused version. Each time a <xref:System.Windows.Media.Animation.BeginStoryboard> action is triggered, clock objects are created for its storyboard. These clocks are distributed to the properties they animate. So, when a <xref:System.Windows.Media.Animation.BeginStoryboard> is triggered again, it doesn't restart its clocks, it replaces them with new clocks.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PauseStoryboard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PauseStoryboard.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.PauseStoryboard" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

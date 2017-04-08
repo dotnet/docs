@@ -1,0 +1,224 @@
+<Type Name="IObserver&lt;T&gt;" FullName="System.IObserver&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IObserver&lt;in T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObserver`1&lt;- T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.IObserver`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The object that provides notification information.</typeparam>
+    <summary>Provides a mechanism for receiving push-based notifications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IObserver%601> and <xref:System.IObservable%601> interfaces provide a generalized mechanism for push-based notification, also known as the observer design pattern. The <xref:System.IObservable%601> interface represents the class that sends notifications (the provider); the <xref:System.IObserver%601> interface represents the class that receives them (the observer). `T` represents the class that provides the notification information.  
+  
+ An <xref:System.IObserver%601> implementation arranges to receive notifications from a provider (an <xref:System.IObservable%601> implementation) by passing an instance of itself to the provider's <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method. This method returns an <xref:System.IDisposable> object that can be used to unsubscribe the observer before the provider finishes sending notifications.  
+  
+ The <xref:System.IObserver%601> interface defines the following three methods that the observer must implement:  
+  
+-   The <xref:System.IObserver%601.OnNext%2A> method, which is typically called by the provider to supply the observer with new data or state information.  
+  
+-   The <xref:System.IObserver%601.OnError%2A> method, which is typically called by the provider to indicate that data is unavailable, inaccessible, or corrupted, or that the provider has experienced some other error condition.  
+  
+-   The <xref:System.IObserver%601.OnCompleted%2A> method, which is typically called by the provider to indicate that it has finished sending notifications to observers.  
+  
+   
+  
+## Examples  
+ The following example illustrates the observer design pattern. It defines a `Location` class that contains latitude and longitude information.  
+  
+ [!code-csharp[System.IObserver.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/provider.cs#5)]
+ [!code-vb[System.IObserver.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/provider.vb#5)]  
+  
+ The `LocationReporter` class provides the <xref:System.IObserver%601> implementation. It displays information about the current location to the console. Its constructor includes a `name` parameter, which allows the `LocationReporter` instance to identify itself in its string output. It also includes a `Subscribe` method, which wraps a call to the provider's <xref:System.IObservable%601.Subscribe%2A> method. This enables the method to assign the returned <xref:System.IDisposable> reference to a private variable. The `LocationReporter` class also includes an `Unsubscribe` method, which calls the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method of the object returned by the <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method. The following code defines the `LocationReporter` class.  
+  
+ [!code-csharp[System.IObserver.Class#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/observer.cs#8)]
+ [!code-vb[System.IObserver.Class#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/observer.vb#8)]  
+  
+ The `LocationTracker` class provides the <xref:System.IObservable%601> implementation. Its `TrackLocation` method is passed a nullable `Location` object that contains the latitude and longitude data. If the `Location` value is not `null`, the `TrackLocation` method calls the <xref:System.IObserver%601.OnNext%2A> method of each observer.  
+  
+ [!code-csharp[System.IObserver.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/provider.cs#6)]
+ [!code-vb[System.IObserver.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/provider.vb#6)]  
+  
+ If the `Location` value is `null`, the `TrackLocation` method instantiates a `LocationNotFoundException` object, which is shown in the following example. It then calls each observer's <xref:System.IObserver%601.OnError%2A> method and passes it the `LocationNotFoundException` object. Note that `LocationNotFoundException` derives from <xref:System.Exception> but does not add any new members.  
+  
+ [!code-csharp[System.IObserver.Class#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/provider.cs#7)]
+ [!code-vb[System.IObserver.Class#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/provider.vb#7)]  
+  
+ Observers register to receive notifications from a `TrackLocation` object by calling its <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method, which assigns a reference to the observer object to a private generic <xref:System.Collections.Generic.List%601> object. The method returns an `Unsubscriber` object, which is an <xref:System.IDisposable> implementation that enables observers to stop receiving notifications. The `LocationTracker` class also includes an `EndTransmission` method. When no further location data is available, the method calls each observer's <xref:System.IObserver%601.OnCompleted%2A> method and then clears the internal list of observers.  
+  
+ The following code then instantiates the provider and the observer.  
+  
+ [!code-csharp[System.IObserver.Class#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/program.cs#9)]
+ [!code-vb[System.IObserver.Class#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/module1.vb#9)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnCompleted">
+      <MemberSignature Language="C#" Value="public void OnCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnCompleted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the observer that the provider has finished sending push-based notifications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the observer's <xref:System.IObserver%601.OnCompleted%2A> implementation is called, the <xref:System.IObserver%601.OnCompleted%2A> method can optionally call the <xref:System.IDisposable.Dispose%2A> method of the <xref:System.IDisposable> object that was returned to the observer when it called the <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following example provides an implementation of the <xref:System.IObserver%601.OnCompleted%2A> method in a latitude/longitude tracking application. The method simply reports that no further data is available and calls the provider's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation. See the Example section of the <xref:System.IObserver%601> topic for the complete example.  
+  
+ [!code-csharp[System.IObserver.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/observer.cs#11)]
+ [!code-vb[System.IObserver.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/observer.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="public void OnError (Exception error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnError(class System.Exception error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnError(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="error">An object that provides additional information about the error.</param>
+        <summary>Notifies the observer that the provider has experienced an error condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although `error` is an object that is derived from <xref:System.Exception?displayProperty=fullName>, it does not necessarily represent an exception that is thrown by the provider. It can also represent a routine or expected error condition, such as data that is missing or unavailable. The <xref:System.IObserver%601.OnError%2A> method should be seen as informational, and the provider should not expect the observer to provide error handling.  
+  
+   
+  
+## Examples  
+ The following example provides an implementation of the <xref:System.IObserver%601.OnError%2A> method in a latitude/longitude tracking application. The method simply reports that data is currently unavailable; it does not make use of the <xref:System.Exception> object passed to it as a parameter. See the Example section of the <xref:System.IObserver%601> topic for the complete example.  
+  
+ [!code-csharp[System.IObserver.Class#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/observer.cs#10)]
+ [!code-vb[System.IObserver.Class#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/observer.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNext">
+      <MemberSignature Language="C#" Value="public void OnNext (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnNext(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IObserver`1.OnNext(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">The current notification information.</param>
+        <summary>Provides the observer with new data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an observer has called a provider's <xref:System.IObservable%601.Subscribe%2A?displayProperty=fullName> method, the provider calls the observer's <xref:System.IObserver%601.OnNext%2A> method to provide notifications.  
+  
+   
+  
+## Examples  
+ The following example provides an implementation of the <xref:System.IObserver%601.OnNext%2A> method in a latitude/longitude tracking application. See the Example section of the <xref:System.IObserver%601> topic for the complete example.  
+  
+ [!code-csharp[System.IObserver.Class#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.iobserver.class/cs/observer.cs#12)]
+ [!code-vb[System.IObserver.Class#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.iobserver.class/vb/observer.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

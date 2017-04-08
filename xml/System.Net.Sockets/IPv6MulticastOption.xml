@@ -1,0 +1,216 @@
+<Type Name="IPv6MulticastOption" FullName="System.Net.Sockets.IPv6MulticastOption">
+  <TypeSignature Language="C#" Value="public class IPv6MulticastOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IPv6MulticastOption extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IPv6MulticastOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Sockets</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains option values for joining an IPv6 multicast group.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Net.Sockets.IPv6MulticastOption> object.  
+  
+ [!code-cpp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CPP/joinmulticastgroup.cpp#4)]
+ [!code-csharp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CS/joinmulticastgroup.cs#4)]
+ [!code-vb[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/VB/joinmulticastgroup.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IPv6MulticastOption (System.Net.IPAddress group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.IPAddress group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPv6MulticastOption.#ctor(System.Net.IPAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="group" Type="System.Net.IPAddress" />
+      </Parameters>
+      <Docs>
+        <param name="group">The <see cref="T:System.Net.IPAddress" /> of the multicast group.</param>
+        <summary>Initializes a new version of the <see cref="T:System.Net.Sockets.IPv6MulticastOption" /> class for the specified IP multicast group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Net.Sockets.IPv6MulticastOption> object.  
+  
+ [!code-cpp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CPP/joinmulticastgroup.cpp#4)]
+ [!code-csharp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CS/joinmulticastgroup.cs#4)]
+ [!code-vb[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/VB/joinmulticastgroup.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IPv6MulticastOption (System.Net.IPAddress group, long ifindex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.IPAddress group, int64 ifindex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPv6MulticastOption.#ctor(System.Net.IPAddress,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="group" Type="System.Net.IPAddress" />
+        <Parameter Name="ifindex" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="group">The group <see cref="T:System.Net.IPAddress" />.</param>
+        <param name="ifindex">The local interface address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.IPv6MulticastOption" /> class with the specified IP multicast group and the local interface address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ifindex` parameter specifies the interface on which data is received or sent.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Net.Sockets.IPv6MulticastOption> object.  
+  
+ [!code-cpp[System.Net.Sockets.UdpClient.JoinMulticastGroup#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CPP/joinmulticastgroup.cpp#5)]
+ [!code-csharp[System.Net.Sockets.UdpClient.JoinMulticastGroup#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CS/joinmulticastgroup.cs#5)]
+ [!code-vb[System.Net.Sockets.UdpClient.JoinMulticastGroup#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/VB/joinmulticastgroup.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="ifindex" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="ifindex" /> is greater than 0x00000000FFFFFFFF.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public System.Net.IPAddress Group { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress Group" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.IPv6MulticastOption.Group" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the IP address of a multicast group.</summary>
+        <value>An <see cref="T:System.Net.IPAddress" /> that contains the Internet address of a multicast group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Net.Sockets.IPv6MulticastOption> object.  
+  
+ [!code-cpp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CPP/joinmulticastgroup.cpp#4)]
+ [!code-csharp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CS/joinmulticastgroup.cs#4)]
+ [!code-vb[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/VB/joinmulticastgroup.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="group" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceIndex">
+      <MemberSignature Language="C#" Value="public long InterfaceIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 InterfaceIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.IPv6MulticastOption.InterfaceIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interface index that is associated with a multicast group.</summary>
+        <value>A <see cref="T:System.UInt64" /> value that specifies the address of the interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the interface on which data is received or sent.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Net.Sockets.IPv6MulticastOption> object.  
+  
+ [!code-cpp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CPP/joinmulticastgroup.cpp#4)]
+ [!code-csharp[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/CS/joinmulticastgroup.cs#4)]
+ [!code-vb[System.Net.Sockets.UdpClient.JoinMulticastGroup#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Sockets.UdpClient.JoinMulticastGroup/VB/joinmulticastgroup.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value that is specified for a set operation is less than 0 or greater than 0x00000000FFFFFFFF.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

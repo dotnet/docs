@@ -1,0 +1,98 @@
+<Type Name="StoreContentChangedEventArgs" FullName="System.Windows.Annotations.Storage.StoreContentChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class StoreContentChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StoreContentChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.StoreContentChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs> data includes the <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation%2A> associated with the event and the <xref:System.Windows.Annotations.Storage.StoreContentAction> of <xref:System.Windows.Annotations.Storage.StoreContentAction> or <xref:System.Windows.Annotations.Storage.StoreContentAction>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StoreContentChangedEventArgs (System.Windows.Annotations.Storage.StoreContentAction action, System.Windows.Annotations.Annotation annotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Annotations.Storage.StoreContentAction action, class System.Windows.Annotations.Annotation annotation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.#ctor(System.Windows.Annotations.Storage.StoreContentAction,System.Windows.Annotations.Annotation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Windows.Annotations.Storage.StoreContentAction" />
+        <Parameter Name="annotation" Type="System.Windows.Annotations.Annotation" />
+      </Parameters>
+      <Docs>
+        <param name="action">The action of the event.</param>
+        <param name="annotation">The annotation added or removed.</param>
+        <summary>Initializes a new instance of the <see cref="M:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.#ctor(System.Windows.Annotations.Storage.StoreContentAction,System.Windows.Annotations.Annotation)" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="annotation" /> or <paramref name="action" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.Storage.StoreContentAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Annotations.Storage.StoreContentAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Storage.StoreContentAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the action performed.</summary>
+        <value>An action <see cref="F:System.Windows.Annotations.Storage.StoreContentAction.Added" /> or <see cref="F:System.Windows.Annotations.Storage.StoreContentAction.Deleted" /> value that identifies the operation performed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The annotation affected is specified in the <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.Annotation Annotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.Annotation Annotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Annotations.Annotation" /> that changed in the store.</summary>
+        <value>The <see cref="T:System.Windows.Annotations.Annotation" /> that changed in the store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The operation performed with the <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation%2A> is specified by the <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Action%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

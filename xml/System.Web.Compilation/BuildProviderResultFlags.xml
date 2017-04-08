@@ -1,0 +1,62 @@
+<Type Name="BuildProviderResultFlags" FullName="System.Web.Compilation.BuildProviderResultFlags">
+  <TypeSignature Language="C#" Value="public enum BuildProviderResultFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildProviderResultFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderResultFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the required behavior when a virtual path is built.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildProviderResultFlags> values are used to indicate the results from the <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A?displayProperty=fullName> method. The enumeration values indicate actions that are required after a virtual path is built within the ASP.NET build environment. The <xref:System.Web.Compilation.BuildProviderResultFlags> values are used by the ASP.NET build environment when using instances of the <xref:System.Web.Compilation.BuildProvider> class to build files and load the compiled assemblies.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderResultFlags Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderResultFlags.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildProviderResultFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default value; no special action is required after compilation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShutdownAppDomainOnChange">
+      <MemberSignature Language="C#" Value="ShutdownAppDomainOnChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderResultFlags ShutdownAppDomainOnChange = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderResultFlags.ShutdownAppDomainOnChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildProviderResultFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The compilation of the virtual path requires the containing <see cref="T:System.AppDomain" /> to be unloaded and restarted. This is only used in advanced compilation scenarios; typically, you should use the <see cref="F:System.Web.Compilation.BuildProviderResultFlags.Default" /> value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

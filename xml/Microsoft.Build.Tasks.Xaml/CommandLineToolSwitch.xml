@@ -1,0 +1,490 @@
+<Type Name="CommandLineToolSwitch" FullName="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch">
+  <TypeSignature Language="C#" Value="public class CommandLineToolSwitch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineToolSwitch extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a single command line tool switch.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineToolSwitch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineToolSwitch (Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType toolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType toolType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor(Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolType" Type="Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">The type of the switch.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch" /> to hold the name, tool, attributes, dependent switches, and values..</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowMultipleValues">
+      <MemberSignature Language="C#" Value="public bool AllowMultipleValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowMultipleValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.AllowMultipleValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether multiple values are allowed.</summary>
+        <value>
+          <see langword="True" /> if multiple values are allowed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgumentRequired">
+      <MemberSignature Language="C#" Value="public bool ArgumentRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ArgumentRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ArgumentRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether arguments are required in the command line tool switch.</summary>
+        <value>
+          <see langword="True" /> if arguments are required; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Tuple&lt;string,bool&gt;&gt; Arguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Tuple`2&lt;string, bool&gt;&gt; Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Tuple&lt;System.String,System.Boolean&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the arguments required for the command line tool switch.</summary>
+        <value>The arguments required for the command line tool switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BooleanValue">
+      <MemberSignature Language="C#" Value="public bool BooleanValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BooleanValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.BooleanValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Boolean value of the command line switch.</summary>
+        <value>The Boolean value of the command line switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the description of the single command line tool switch.</summary>
+        <value>The description of the single command line tool switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display name of the switch.</summary>
+        <value>The display name of the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackArgumentParameter">
+      <MemberSignature Language="C#" Value="public string FallbackArgumentParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FallbackArgumentParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FallbackArgumentParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fallback parameter.</summary>
+        <value>The fallback parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FalseSuffix">
+      <MemberSignature Language="C#" Value="public string FalseSuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FalseSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.FalseSuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the suffix to use when the switch is false or negated.</summary>
+        <value>The suffix to use when the switch is false or negated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeInCommandLine">
+      <MemberSignature Language="C#" Value="public bool IncludeInCommandLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInCommandLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IncludeInCommandLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to include the command line tool switch in the command line.</summary>
+        <value>
+          <see langword="true" /> if to include the command line tool switch in the command line; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the switch is valid.</summary>
+        <value>
+          <see langword="True" /> if the switch is valid; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the switch.</summary>
+        <value>The name of the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="public int Number { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Number" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Number" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for integer type switches.</summary>
+        <value>The value for integer type switches.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overrides">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedList&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; Overrides { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.LinkedList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; Overrides" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Overrides" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.LinkedList&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the overrides for the switch.</summary>
+        <value>The overrides for the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parents">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedList&lt;string&gt; Parents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.LinkedList`1&lt;string&gt; Parents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Parents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.LinkedList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parents for the switch.</summary>
+        <value>The parents for the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="public bool Required { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Required" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Required" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the switch is required.</summary>
+        <value>
+          <see langword="True" /> If the switch is required; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReverseSwitchValue">
+      <MemberSignature Language="C#" Value="public string ReverseSwitchValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReverseSwitchValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.ReverseSwitchValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the reverse switch text.</summary>
+        <value>The reverse switch text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reversible">
+      <MemberSignature Language="C#" Value="public bool Reversible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Reversible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Reversible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the switch is reversible.</summary>
+        <value>
+          <see langword="True" /> if the switch is reversible; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Separator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the separator between the switch and its arguments.</summary>
+        <value>The separator between the switch and its arguments.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringList">
+      <MemberSignature Language="C#" Value="public string[] StringList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] StringList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.StringList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of strings.</summary>
+        <value>The collection of strings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchValue">
+      <MemberSignature Language="C#" Value="public string SwitchValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SwitchValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.SwitchValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for the switch.</summary>
+        <value>The value for the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskItemArray">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] TaskItemArray { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] TaskItemArray" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TaskItemArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of task items.</summary>
+        <value>The array of task items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueSuffix">
+      <MemberSignature Language="C#" Value="public string TrueSuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrueSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.TrueSuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the suffix to use when the switch is true.</summary>
+        <value>The suffix to use when the switch is true.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.CommandLineToolSwitchType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the switch.</summary>
+        <value>The type of the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the switch.</summary>
+        <value>The value of the switch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

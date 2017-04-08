@@ -1,0 +1,67 @@
+<Type Name="AutoSizeMode" FullName="System.Windows.Forms.AutoSizeMode">
+  <TypeSignature Language="C#" Value="public enum AutoSizeMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoSizeMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoSizeMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a control will behave when its <see cref="P:System.Windows.Forms.Control.AutoSize" /> property is enabled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the GrowAndShrink value produces the same behavior that you get for controls with the <xref:System.Windows.Forms.Control.AutoSize%2A> property enabled but which have no  
+  
+ `AutoSizeMode` property. The <xref:System.Windows.Forms.Control.MinimumSize%2A> and <xref:System.Windows.Forms.Control.MaximumSize%2A> properties are respected, but the current value of the <xref:System.Windows.Forms.Control.Size%2A> property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example shows a form created using code that automatically resizes to fit its contents. When ran, the form will display a <xref:System.Windows.Forms.Label>, a <xref:System.Windows.Forms.TextBox> for entering a URL, and a <xref:System.Windows.Forms.Button> for displaying that URL inside of the user's default Web browser. The code example uses a <xref:System.Windows.Forms.FlowLayoutPanel> to lay out the contained controls one after the other, and sets the <xref:System.Windows.Forms.Control.AutoSize%2A> and <xref:System.Windows.Forms.AutoSizeMode> to grow and shrink to fit the contents of its form.  
+  
+ [!code-csharp[Form.AutoSize#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Form.AutoSize/CS/Form1.cs#1)]
+ [!code-vb[Form.AutoSize#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Form.AutoSize/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GrowAndShrink">
+      <MemberSignature Language="C#" Value="GrowAndShrink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoSizeMode GrowAndShrink = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoSizeMode.GrowAndShrink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control grows or shrinks to fit its contents. The control cannot be resized manually.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GrowOnly">
+      <MemberSignature Language="C#" Value="GrowOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoSizeMode GrowOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoSizeMode.GrowOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control grows as much as necessary to fit its contents but does not shrink smaller than the value of its <see cref="P:System.Windows.Forms.Control.Size" /> property. The form can be resized, but cannot be made so small that any of its contained controls are hidden.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

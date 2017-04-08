@@ -1,0 +1,1398 @@
+<Type Name="DataManipulator" FullName="System.Windows.Forms.DataVisualization.Charting.DataManipulator">
+  <TypeSignature Language="C#" Value="public class DataManipulator : System.Windows.Forms.DataVisualization.Charting.DataFormula" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataManipulator extends System.Windows.Forms.DataVisualization.Charting.DataFormula" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.DataManipulator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.DataFormula</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides method that performs data manipulation operations at run time. This class is exposed by the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Chart.DataManipulator" /> property of the root <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataManipulator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.DataManipulator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportSeriesValues">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExportSeriesValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.ExportSeriesValues" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exports the data for every series stored in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.SeriesCollection" /> to the <see cref="T:System.Data.DataSet" /> object.</summary>
+        <returns>A <see cref="T:System.Data.DataSet" /> object that contains the exported series data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportSeriesValues">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExportSeriesValues (string seriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues(string seriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.ExportSeriesValues(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="seriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be exported.</param>
+        <summary>Exports the data from one or more series to the <see cref="T:System.Data.DataSet" /> object.</summary>
+        <returns>A <see cref="T:System.Data.DataSet" /> object that contains the exported series data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportSeriesValues">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExportSeriesValues (System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExportSeriesValues(class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.ExportSeriesValues(System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="series">The series to be exported.</param>
+        <summary>Exports the data from the specified series to the <see cref="T:System.Data.DataSet" /> object.</summary>
+        <returns>A <see cref="T:System.Data.DataSet" /> object that contains the exported series data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.IDataPointFilter,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">An object that implements the <see cref="T:System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" /> interface.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <summary>Performs custom filtering on the data points in one or more series, based on the points of the first series. The filtered <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> objects also store the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.IDataPointFilter,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">An object that implements the <see cref="T:System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" /> interface.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is filtered.</param>
+        <summary>Performs custom filtering on the data points in a series. The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is filtered also stores the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.CompareMethod,System.Double,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" /> enumeration value that determines the comparison method for the filtering rule. Can be <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />, <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />, and so forth.</param>
+        <param name="compareValue">The value part of the filtering rule that is applied to the first Y-values of data points. For example, in the filtering rule "&lt;6", 6 is the value.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <summary>Filters one or more series by applying a filtering rule to the first Y-value of the data points in the first series. The filtered <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> objects are used to store the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.CompareMethod,System.Double,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" /> enumeration value that determines the comparison method for the filtering rule. Can be <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />, <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />, and so forth.</param>
+        <param name="compareValue">The value part of the filtering rule that is applied to the first Y-values of data points. For example, in the filtering rule "&lt;6", 6 is the value.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is filtered.</param>
+        <summary>Filters the data points in a series by applying a filtering rule to the first Y-value of each data point. The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is filtered also stores the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.DateRangeType,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Windows.Forms.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <summary>Filters the data points of one or more series, either by removing the specified points or by marking them as empty for the given date/time ranges. The filtered <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> objects are used to store the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.DateRangeType,System.String,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Windows.Forms.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <summary>Filters the data points in a series, either by removing the specified points or by marking them as empty for the specified date/time ranges. The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is filtered is used to store the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.IDataPointFilter,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">An object that implements the <see cref="T:System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" /> interface.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. Make sure that the number of output series matches the number of input series, otherwise an exception will be thrown.</param>
+        <summary>Performs custom filtering on the data points in one or more series, based on the points of the first series.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(class System.Windows.Forms.DataVisualization.Charting.IDataPointFilter filterInterface, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.IDataPointFilter,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterInterface" Type="System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="filterInterface">An object that implements the <see cref="T:System.Windows.Forms.DataVisualization.Charting.IDataPointFilter" /> interface.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <summary>Performs custom filtering on the data points in a series.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.CompareMethod,System.Double,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" /> enumeration value that determines the comparison method for the filtering rule. Can be <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />, <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />, and so forth.</param>
+        <param name="compareValue">The value part of the filtering rule that is applied to the first Y-values of data points. For example, in the filtering rule "&lt;6", 6 is the value.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. The number of output series must match the number of input series, otherwise an exception will be thrown.</param>
+        <summary>Filters one or more series by applying a filtering rule to the first Y-value of each of the data points in the first series.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.CompareMethod,System.Double,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" /> enumeration value that determines the comparison method for the filtering rule. Can be <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />, <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />, and so forth.</param>
+        <param name="compareValue">The value part of the filtering rule that is applied to the first Y-values of data points. For example, in the filtering rule "&lt;6", 6 is the value.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <summary>Filters the data points in a series by applying a filtering rule to the first Y-value of each of the data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.DateRangeType,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Windows.Forms.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. Make sure that the number of output series matches the number of input series, otherwise an exception will be thrown.</param>
+        <summary>Filters the data points of one or more series, either by removing the specified points or by marking them as empty for the given date/time ranges.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.DateRangeType dateRange, string rangeElements, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.DateRangeType,System.String,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateRange" Type="System.Windows.Forms.DataVisualization.Charting.DateRangeType" />
+        <Parameter Name="rangeElements" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="dateRange">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateRangeType" /> enumeration value that represents a date/time interval, such as days of the week, days of the month, and so forth. Determines the range over which the given elements will be filtered.</param>
+        <param name="rangeElements">Specifies the elements within the date/time range designated by the <c>dateRange</c> parameter that will be filtered. Can be a single value, for example, "7"; comma-separated values, for example, "5,6"; a range of values, such as "9-11"; or any variation thereof, such as "5,6,9-11".</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <summary>Filters the data points in a series, either by removing the specified points or by marking them as empty for the specified date/time ranges.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, string inputSeriesNames, string outputSeriesNames, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, string inputSeriesNames, string outputSeriesNames, string usingValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.CompareMethod,System.Double,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" /> enumeration value that determines the comparison method for the filtering rule. Can be <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />, <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />, and so forth.</param>
+        <param name="compareValue">The value part of the filtering rule that is applied to the first Y-values of data points. For example, in the filtering rule "&lt;6", 6 is the value.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. The number of output series must equal the number of input series, otherwise an exception will be thrown.</param>
+        <param name="usingValue">The data point value that the filtering rule is applied to. Can be X, Y, Y2, Y3, and so forth.</param>
+        <summary>Filters one or more series by applying a filtering rule to the specified data point values in the first series.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public void Filter (System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, double compareValue, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Filter(valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod compareMethod, float64 compareValue, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries, string usingValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Filter(System.Windows.Forms.DataVisualization.Charting.CompareMethod,System.Double,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compareMethod" Type="System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+        <Parameter Name="compareValue" Type="System.Double" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compareMethod">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" /> enumeration value that determines the comparison method for the filtering rule. Can be <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />, <see cref="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />, and so forth.</param>
+        <param name="compareValue">The value part of the filtering rule that is applied to the first Y-values of data points. For example, in the filtering rule "&lt;6", 6 is the value.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <param name="usingValue">The data point value that the filtering rule is applied to. Can be X, Y, Y2, Y3, and so forth.</param>
+        <summary>Filters the data points in a series by applying a filtering rule to the specified data point values for comparison.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterMatchedPoints">
+      <MemberSignature Language="C#" Value="public bool FilterMatchedPoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterMatchedPoints" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterMatchedPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether points are filtered if they match criteria specified in arguments in the <c>Filter</c> methods of this class.</summary>
+        <value>
+          <see langword="true" /> if points that match specified criteria are filtered; <see langword="false" /> if points that do not match the criteria are filtered. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterSetEmptyPoints">
+      <MemberSignature Language="C#" Value="public bool FilterSetEmptyPoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterSetEmptyPoints" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterSetEmptyPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether points filtered by the <c>Filter</c> or <c>FilterTopN</c> methods will be removed or marked as empty.</summary>
+        <value>
+          <see langword="true" /> if filtered points will be marked as empty; <see langword="false" /> if they will be removed. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <summary>Filters all data points in one or more series except for a specified number of points. The points that are not filtered correspond to points in the first series that have the largest first Y-values. The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> objects that are filtered are used to store the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <summary>Filters all data points in a series except for a specified number of points with the largest first Y-values. The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is filtered is used to store the modified data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames, string outputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames, string outputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. Make sure that the number of output series matches the number of input series, otherwise an exception will be thrown.</param>
+        <summary>Filters all data points in one or more series except for a specified number of points. The points that aren't filtered correspond to points in the first series that have the largest first Y-values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <summary>Filters all data points in a series except for a specified number of points with the largest first Y-values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. Make sure that the number of output series matches the number of input series, otherwise an exception will be thrown.</param>
+        <param name="usingValue">The data point value that the filtering rule is applied to. Can be X, Y, Y2, Y3, and so forth.</param>
+        <summary>Filters all data points in one or more series except for a specified number of points. The points that are not filtered correspond to points in the first series that have the largest values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries, string usingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries, string usingValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="usingValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <param name="usingValue">The data point value that the filtering rule is applied to. Can be X, Y, Y2, Y3, and so forth.</param>
+        <summary>Filters all data points in a series except for a specified number of points with the largest values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue, bool getTopValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, string inputSeriesNames, string outputSeriesNames, string usingValue, bool getTopValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+        <Parameter Name="outputSeriesNames" Type="System.String" />
+        <Parameter Name="usingValue" Type="System.String" />
+        <Parameter Name="getTopValues" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be filtered.</param>
+        <param name="outputSeriesNames">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that store the filtered data. Make sure that the number of output series matches the number of input series, otherwise an exception will be thrown.</param>
+        <param name="usingValue">The data point value that the filtering rule is applied to. Can be X, Y, Y2, Y3, and so forth.</param>
+        <param name="getTopValues">
+          <see langword="true" /> if the largest values are kept; <see langword="false" /> if the smallest values are kept.</param>
+        <summary>Filters all data points in one or more series except for a specified number of points. The points that are not filtered correspond to points in the first input series that have the largest or smallest values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTopN">
+      <MemberSignature Language="C#" Value="public void FilterTopN (int pointCount, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries, string usingValue, bool getTopValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FilterTopN(int32 pointCount, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries, string usingValue, bool getTopValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.FilterTopN(System.Int32,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointCount" Type="System.Int32" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="usingValue" Type="System.String" />
+        <Parameter Name="getTopValues" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pointCount">The number of data points that the filtering operation will not remove.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be filtered.</param>
+        <param name="outputSeries">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that stores the filtered data. If the series does not exist, an exception will be thrown.</param>
+        <param name="usingValue">The data point value that the filtering rule is applied to. Can be X, Y, Y2, Y3, and so forth.</param>
+        <param name="getTopValues">
+          <see langword="true" /> if the largest values are kept; <see langword="false" /> if the smallest values are kept.</param>
+        <summary>Filters all data points in a series except for a specified number of points with the smallest or largest values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be grouped.</param>
+        <summary>Groups data points for one or more series, using one or more formulas. Series are cleared of their original data and used to store the new data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be grouped.</param>
+        <summary>Groups data points in a series using one or more formulas. The series that is grouped is cleared of its original data, and used to store the new data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName, string outputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, string inputSeriesName, string outputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="outputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be grouped.</param>
+        <param name="outputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that will store the grouped data points. If a series does not exist, it will be created; if it does exist, it will first be cleared of all data before storing grouped data points. The number of output series must equal the number of input series, or an exception will be thrown.</param>
+        <summary>Groups data points for one or more series, using one or more formulas. Output series are used to store the grouped data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be grouped.</param>
+        <param name="outputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that will store the new data points created by the grouping operation. If it does not exist, an exception will be thrown.</param>
+        <summary>Groups data points in a series using one or more formulas. An output series is used to store the grouped data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be grouped.</param>
+        <summary>Groups data points for one or more series, using one or more formulas. Series are cleared of their original data and used to store the new data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be grouped.</param>
+        <summary>Groups data points in a series using one or more formulas. The series that is grouped is cleared of its original data, and used to store the new data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName, string outputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, string inputSeriesName, string outputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="outputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="inputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be grouped.</param>
+        <param name="outputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that will store the grouped data points. If a series does not exist, it will be created; if it does exist, it will first be cleared of all data before storing grouped data points. The number of output series must equal the number of input series, or an exception will be thrown.</param>
+        <summary>Groups data points for one or more series, using one or more formulas. Output series are used to store the grouped data points, and an offset can be used for intervals.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public void Group (string formula, double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Group(string formula, float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Group(System.String,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="inputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be grouped.</param>
+        <param name="outputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that will store the new data points created by the grouping operation. If it does not exist, an exception will be thrown.</param>
+        <summary>Groups data points in a series using one or more formulas. An output series is used to store the grouped data points, and an offset can be used for intervals.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, string inputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="inputSeriesName">A comma-separated list of names of the input <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" />.</param>
+        <summary>Groups data points in one or more series by axis labels, using one or more formulas. Original data point values are cleared, and each of the series then stores its new grouped data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, System.Windows.Forms.DataVisualization.Charting.Series inputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="inputSeries">The input <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" />.</param>
+        <summary>Groups data points in a series by axis labels, using one or more formulas. Original data point values are cleared, and the series then stores the new grouped data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, string inputSeriesName, string outputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, string inputSeriesName, string outputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="outputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="inputSeriesName">A comma-separated list of names of the input <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" />.</param>
+        <param name="outputSeriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that will store the grouped data points. If a series does not exist, it will be created; if it does exist, it will first be cleared of all data before storing grouped data points. The number of output series must equal the number of input series, or an exception will be thrown.</param>
+        <summary>Groups data points in one or more series by axis labels, using one or more formulas. Output series are used to store the grouped data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByAxisLabel">
+      <MemberSignature Language="C#" Value="public void GroupByAxisLabel (string formula, System.Windows.Forms.DataVisualization.Charting.Series inputSeries, System.Windows.Forms.DataVisualization.Charting.Series outputSeries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GroupByAxisLabel(string formula, class System.Windows.Forms.DataVisualization.Charting.Series inputSeries, class System.Windows.Forms.DataVisualization.Charting.Series outputSeries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.Windows.Forms.DataVisualization.Charting.Series,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formula" Type="System.String" />
+        <Parameter Name="inputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+        <Parameter Name="outputSeries" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="formula">A comma-separated list of one or more formulas to be used for calculating the grouped data point values.</param>
+        <param name="inputSeries">The input <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be grouped.</param>
+        <param name="outputSeries">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> that will store the new data points created by the grouping operation. If it does not exist, an exception will be thrown.</param>
+        <summary>Groups data points in a series by axis labels, using one or more formulas. An output series is used to store the grouped data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, string seriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be checked.</param>
+        <summary>Replaces the missing data points in one or more series with empty points. Each series is checked for a given interval that is determined by the <paramref name="interval" /> and <paramref name="intervalType" /> arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object that is checked.</param>
+        <summary>Replaces the missing data points in a series with empty points. The series is checked for a given interval that is determined by the <paramref name="interval" /> and <paramref name="intervalType" /> arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, string seriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be checked.</param>
+        <summary>Replaces the missing data points in one or more series with empty points. Each series is checked for a given interval that is determined by the <paramref name="interval" />, <paramref name="intervalOffset" />, <paramref name="intervalOffsetType" /> and <paramref name="intervalType" /> arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object in which to insert the empty points.</param>
+        <summary>Replaces the missing data points in a series with empty points. The series is checked for a given interval that is determined by the <paramref name="interval" />, <paramref name="intervalOffset" />, <paramref name="intervalOffsetType" /> and <paramref name="intervalType" /> arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, double fromXValue, double toXValue, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, float64 fromXValue, float64 toXValue, string seriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Double,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="fromXValue" Type="System.Double" />
+        <Parameter Name="toXValue" Type="System.Double" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="fromXValue">The starting point for the series range to be checked. Uses the X-values of the data points.</param>
+        <param name="toXValue">The end point for the series range to be checked. Uses the X-values of the data points.</param>
+        <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be checked.</param>
+        <summary>Replaces the missing data points in one or more series with empty points. Each series is checked for a given interval that is determined by the <paramref name="interval" />, <paramref name="intervalOffset" />, <paramref name="intervalOffsetType" /> and <paramref name="intervalType" /> arguments. The series range that is checked is determined by the <paramref name="toXValue" /> and <paramref name="fromXValue" /> arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertEmptyPoints">
+      <MemberSignature Language="C#" Value="public void InsertEmptyPoints (double interval, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, double intervalOffset, System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, double fromXValue, double toXValue, System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEmptyPoints(float64 interval, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalType, float64 intervalOffset, valuetype System.Windows.Forms.DataVisualization.Charting.IntervalType intervalOffsetType, float64 fromXValue, float64 toXValue, class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Double,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interval" Type="System.Double" />
+        <Parameter Name="intervalType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="intervalOffset" Type="System.Double" />
+        <Parameter Name="intervalOffsetType" Type="System.Windows.Forms.DataVisualization.Charting.IntervalType" />
+        <Parameter Name="fromXValue" Type="System.Double" />
+        <Parameter Name="toXValue" Type="System.Double" />
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="interval">The size of the interval checked for missing data points.</param>
+        <param name="intervalType">The unit of measurement for the <c>interval</c> parameter.</param>
+        <param name="intervalOffset">The interval offset size.</param>
+        <param name="intervalOffsetType">The unit of measurement for the interval offset.</param>
+        <param name="fromXValue">The starting point for the series range to be checked. Uses the X-values of the data points.</param>
+        <param name="toXValue">The end point for the series range to be checked. Uses the X-values of the data points.</param>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> in which to insert the empty points.</param>
+        <summary>Replaces the missing data points in a series with empty points. The series is checked for a given interval that is determined by the <paramref name="interval" />, <paramref name="intervalOffset" />, <paramref name="intervalOffsetType " />and <paramref name="intervalType" /> arguments. The series range that is checked is determined by the <paramref name="toXValue" /> and <paramref name="fromXValue" /> arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Collections.Generic.IComparer&lt;System.Windows.Forms.DataVisualization.Charting.DataPoint&gt; comparer, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(class System.Collections.Generic.IComparer`1&lt;class System.Windows.Forms.DataVisualization.Charting.DataPoint&gt; comparer, string seriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort(System.Collections.Generic.IComparer{System.Windows.Forms.DataVisualization.Charting.DataPoint},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Windows.Forms.DataVisualization.Charting.DataPoint&gt;" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">An object that implements the <see cref="T:System.Collections.IComparer" /> interface and provides the custom sorting logic.</param>
+        <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be sorted.</param>
+        <summary>Performs a custom sort on the data points in one or more series.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a custom sort on the data points in one or more series; the sort logic is defined by the `comparer` parameter. Override and implement the <xref:System.Collections.IComparer.Compare%2A> method of the <xref:System.Collections.IComparer> interface, perform the comparison(s) and then return `true` or `false`. The sort order is determined by the return value.  
+  
+ Note that if multiple series are sorted, the series must be aligned, otherwise an exception will be thrown.  
+  
+ The two object parameters of the <xref:System.Collections.IComparer.Compare%2A> method must always be of type <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint>.  
+  
+> [!IMPORTANT]
+>  All data points, regardless of the series they belong to, are sorted based on the first series; if the position of a data point in the first series changes, all corresponding points in the other series change as well.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Collections.Generic.IComparer&lt;System.Windows.Forms.DataVisualization.Charting.DataPoint&gt; comparer, System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(class System.Collections.Generic.IComparer`1&lt;class System.Windows.Forms.DataVisualization.Charting.DataPoint&gt; comparer, class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort(System.Collections.Generic.IComparer{System.Windows.Forms.DataVisualization.Charting.DataPoint},System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Windows.Forms.DataVisualization.Charting.DataPoint&gt;" />
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">An object that implements the <see cref="T:System.Collections.IComparer" /> interface and provides the custom sorting logic.</param>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be sorted.</param>
+        <summary>Performs a custom sort on the data points in a series.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a custom sort on the data points in a series; the sort logic is defined by the `comparer` parameter. Override and implement the <xref:System.Collections.IComparer.Compare%2A> method of the <xref:System.Collections.IComparer> interface, perform the comparison(s) and then return `true` or `false`. The sort order is determined by the return value.  
+  
+ The two object parameters of the <xref:System.Collections.IComparer.Compare%2A> method must always be of type <xref:System.Windows.Forms.DataVisualization.Charting.DataPoint>.  
+  
+ To perform a custom sort for more than one series per function call, use the <xref:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, string seriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort(System.Windows.Forms.DataVisualization.Charting.PointSortOrder,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Windows.Forms.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.PointSortOrder" /> enumeration value that determines if the sort is ascending or descending.</param>
+        <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be sorted.</param>
+        <summary>Performs a sort on the data points in one or more series, using the specified order. The sort is based on the first Y-value of each of the data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort(System.Windows.Forms.DataVisualization.Charting.PointSortOrder,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Windows.Forms.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.PointSortOrder" /> enumeration value that determines if the sort is ascending or descending.</param>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be sorted.</param>
+        <summary>Performs a sort on the data points in a series using the specified order. The sort is based on the first Y-value of each of the data points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, string seriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, string seriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort(System.Windows.Forms.DataVisualization.Charting.PointSortOrder,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Windows.Forms.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="sortBy" Type="System.String" />
+        <Parameter Name="seriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.PointSortOrder" /> enumeration value that determines if the sort is ascending or descending.</param>
+        <param name="sortBy">A <see langword="string" /> value that represents the data point values to be sorted. Possible values are: "X", "Y", "Y2", "Y3", "AxisLabel", and so forth.</param>
+        <param name="seriesName">A comma-separated list of names of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> to be sorted.</param>
+        <summary>Performs a sort on the data points in one or more series, using the specified order. The sort can be based on any available data point value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs an ascending or descending sort on data points in a series, and is based on the value that is set in the `sortBy` parameter such as "X", "AxisLabel", "Y", "Y1", and so forth.  
+  
+ Note that if multiple series are sorted, the series must be aligned, otherwise an exception will be thrown.  
+  
+> [!IMPORTANT]
+>  All series will be sorted using the specified Y-value from the FIRST listed series; that is, all data points, regardless of the series they belong to, are sorted based on the first series.  
+  
+ To sort points using a custom sort routine, use a different definition of this overloaded method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public void Sort (System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, System.Windows.Forms.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort(valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder pointSortOrder, string sortBy, class System.Windows.Forms.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.DataManipulator.Sort(System.Windows.Forms.DataVisualization.Charting.PointSortOrder,System.String,System.Windows.Forms.DataVisualization.Charting.Series)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointSortOrder" Type="System.Windows.Forms.DataVisualization.Charting.PointSortOrder" />
+        <Parameter Name="sortBy" Type="System.String" />
+        <Parameter Name="series" Type="System.Windows.Forms.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="pointSortOrder">A <see cref="T:System.Windows.Forms.DataVisualization.Charting.PointSortOrder" /> enumeration value that determines if the sort is ascending or descending</param>
+        <param name="sortBy">A <see langword="string" /> value that represents the data point values to be sorted. Possible values are: "X", "Y", "Y2", "Y3", "AxisLabel", and so forth.</param>
+        <param name="series">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" /> object to be sorted.</param>
+        <summary>Performs a sort on the data points in a series using the specified order. The sort can be based on any available data point value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

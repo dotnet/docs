@@ -1,0 +1,392 @@
+<Type Name="SqlTransaction" FullName="System.Data.SqlClient.SqlTransaction">
+  <TypeSignature Language="C#" Value="public sealed class SqlTransaction : System.Data.Common.DbTransaction, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlTransaction extends System.Data.Common.DbTransaction implements class System.Data.IDbTransaction, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlTransaction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbTransaction</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a [!INCLUDE[tsql](~/includes/tsql-md.md)] transaction to be made in a [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] database. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application creates a <xref:System.Data.SqlClient.SqlTransaction> object by calling <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> on the <xref:System.Data.SqlClient.SqlConnection> object. All subsequent operations associated with the transaction (for example, committing or aborting the transaction), are performed on the <xref:System.Data.SqlClient.SqlTransaction> object.  
+  
+> [!NOTE]
+>  `Try`/`Catch` exception handling should always be used when committing or rolling back a <xref:System.Data.SqlClient.SqlTransaction>. Both <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> generate an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
+  
+ For more information on [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] transactions, see [Explicit Transactions](http://msdn.microsoft.com/library/ms175127\(SQL.105\).aspx) and [Coding Efficient Transactions](http://msdn.microsoft.com/library/ms187484\(SQL.105\).aspx).  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection> and a <xref:System.Data.SqlClient.SqlTransaction>. It also demonstrates how to use the <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A>, <xref:System.Data.SqlClient.SqlTransaction.Commit%2A>, and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> methods. The transaction is rolled back on any error, or if it is disposed without first being committed. `Try`/`Catch` error handling is used to handle any errors when attempting to commit or roll back the transaction.  
+  
+ [!code-csharp[Classic WebData SqlConnection.BeginTransaction Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlConnection.BeginTransaction Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public override void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Commit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits the database transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> method is equivalent to the Transact-SQL COMMIT TRANSACTION statement. You cannot roll back a transaction once it has been committed, because all modifications have become a permanent part of the database. For more information, see SQL Server Books Online.  
+  
+> [!NOTE]
+>  `Try`/`Catch` exception handling should always be used when committing or rolling back a <xref:System.Data.SqlClient.SqlTransaction>. Both `Commit` and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> generates an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
+  
+ For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection> and a <xref:System.Data.SqlClient.SqlTransaction>. It also demonstrates how to use the <xref:System.Data.SqlClient.SqlTransaction.Commit%2A>, <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A>, and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> methods. The transaction is rolled back on any error. `Try`/`Catch` error handling is used to handle any errors when attempting to commit or roll back the transaction.  
+  
+ [!code-csharp[Classic WebData SqlConnection.BeginTransaction Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlConnection.BeginTransaction Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">An error occurred while trying to commit the transaction.</exception>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been committed or rolled back.  
+  
+ -or-  
+  
+ The connection is broken.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlConnection Connection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlConnection Connection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlTransaction.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.SqlClient.SqlConnection" /> object associated with the transaction, or <see langword="null" /> if the transaction is no longer valid.</summary>
+        <value>The <see cref="T:System.Data.SqlClient.SqlConnection" /> object associated with the transaction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A single application may have multiple database connections, each with zero or more transactions. This property lets you determine the connection object associated with a particular transaction created by <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbConnection">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbConnection DbConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbConnection DbConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlTransaction.DbConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsolationLevel">
+      <MemberSignature Language="C#" Value="public override System.Data.IsolationLevel IsolationLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.IsolationLevel IsolationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlTransaction.IsolationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="T:System.Data.IsolationLevel" /> for this transaction.</summary>
+        <value>The <see cref="T:System.Data.IsolationLevel" /> for this transaction. The default is <see langword="ReadCommitted" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Parallel transactions are not supported. Therefore, the <xref:System.Data.IsolationLevel> applies to the whole transaction.  
+  
+ For more information on SQL Server isolation levels, see "Isolation Levels in the Database Engine" in SQL Server Books Online.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rollback">
+      <MemberSignature Language="C#" Value="public override void Rollback ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Rollback() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Rollback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Rolls back a transaction from a pending state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method is equivalent to the Transact-SQL ROLLBACK TRANSACTION statement. For more information, see SQL Server Books Online.  
+  
+ The transaction can only be rolled back from a pending state (after <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> has been called, but before <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> is called). The transaction is rolled back in the event it is disposed before `Commit` or `Rollback` is called.  
+  
+> [!NOTE]
+>  `Try`/`Catch` exception handling should always be used when rolling back a transaction. A `Rollback` generates an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
+  
+ For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection> and a <xref:System.Data.SqlClient.SqlTransaction>. It also demonstrates how to use the <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A>, <xref:System.Data.SqlClient.SqlTransaction.Commit%2A>, and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> methods. The transaction is rolled back on any error. `Try`/`Catch` error handling is used to handle any errors when attempting to commit or roll back the transaction.  
+  
+ [!code-csharp[Classic WebData SqlConnection.BeginTransaction Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlConnection.BeginTransaction Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">An error occurred while trying to commit the transaction.</exception>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been committed or rolled back.  
+  
+ -or-  
+  
+ The connection is broken.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Rollback">
+      <MemberSignature Language="C#" Value="public void Rollback (string transactionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rollback(string transactionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Rollback(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transactionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="transactionName">The name of the transaction to roll back, or the savepoint to which to roll back.</param>
+        <summary>Rolls back a transaction from a pending state, and specifies the transaction or savepoint name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method is equivalent to the Transact-SQL ROLLBACK TRANSACTION statement. For more information, see "Explicit Transactions" and "Transaction Savepoints" in SQL Server Books Online.  
+  
+ The transaction can only be rolled back from a pending state (after <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> has been called, but before <xref:System.Data.SqlClient.SqlTransaction.Commit%2A> is called). The transaction is rolled back if it is disposed before `Commit` or `Rollback` is called.  
+  
+> [!NOTE]
+>  `Try`/`Catch` exception handling should always be used when rolling back a transaction. A `Rollback` generates an <xref:System.InvalidOperationException> if the connection is terminated or if the transaction has already been rolled back on the server.  
+  
+ For more information on SQL Server transactions, see "Explicit Transactions" and "Coding Efficient Transactions" in SQL Server Books Online.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection> and a <xref:System.Data.SqlClient.SqlTransaction>. It also demonstrates how to use the <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A>, <xref:System.Data.SqlClient.SqlTransaction.Commit%2A>, and <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> methods. The transaction is rolled back on any error. `Try`/`Catch` error handling is used to handle any errors when attempting to commit or roll back the transaction.  
+  
+ [!code-csharp[Classic WebData SqlConnection.BeginTransaction2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction2 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlConnection.BeginTransaction2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection.BeginTransaction2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">No transaction name was specified.</exception>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been committed or rolled back.  
+  
+ -or-  
+  
+ The connection is broken.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (string savePointName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string savePointName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlTransaction.Save(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savePointName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="savePointName">The name of the savepoint.</param>
+        <summary>Creates a savepoint in the transaction that can be used to roll back a part of the transaction, and specifies the savepoint name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.SqlClient.SqlTransaction.Save%2A> method is equivalent to the Transact-SQL SAVE TRANSACTION statement.  
+  
+ The value used in the `savePoint` parameter can be the same value used in the `transactionName` parameter of some implementations of the <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> method.  
+  
+ Savepoints offer a mechanism to roll back parts of transactions. You create a savepoint using the <xref:System.Data.SqlClient.SqlTransaction.Save%2A> method, and then later call the <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A> method to roll back to the savepoint instead of rolling back to the start of the transaction.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">An error occurred while trying to commit the transaction.</exception>
+        <exception cref="T:System.InvalidOperationException">The transaction has already been committed or rolled back.  
+  
+ -or-  
+  
+ The connection is broken.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

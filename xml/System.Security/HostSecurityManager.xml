@@ -1,0 +1,451 @@
+<Type Name="HostSecurityManager" FullName="System.Security.HostSecurityManager">
+  <TypeSignature Language="C#" Value="public class HostSecurityManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HostSecurityManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.HostSecurityManager" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows the control and customization of security behavior for application domains.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a new <xref:System.AppDomain>, the common language runtime queries the <xref:System.AppDomainManager> for the presence of a <xref:System.Security.HostSecurityManager>, which participates in making security decisions for the <xref:System.AppDomain>.  Host providers should implement a host security manager that inherits from the <xref:System.Security.HostSecurityManager> class.  
+  
+   
+  
+## Examples  
+ The following example shows a very simple implementation of a <xref:System.Security.HostSecurityManager>.  
+  
+ [!code-csharp[System.Security.HostSecurityManager#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#1)]
+ [!code-vb[System.Security.HostSecurityManager#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+    <block subset="none" type="overrides">
+      <para>Some members of a <see cref="T:System.Security.HostSecurityManager" /> are called whenever an assembly is loaded, either implicitly or explicitly. The <see cref="M:System.Security.HostSecurityManager.ProvideAssemblyEvidence(System.Reflection.Assembly,System.Security.Policy.Evidence)" /> and <see cref="M:System.Security.HostSecurityManager.ProvideAppDomainEvidence(System.Security.Policy.Evidence)" /> methods must not load any assemblies, because doing so will result in the members of the <see cref="T:System.Security.HostSecurityManager" /> being recursively called. To avoid circular references, you should create new instances of classes that can cause assemblies to be loaded, either implicitly or explicitly, in the constructor of a class that derives from <see cref="T:System.Security.HostSecurityManager" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HostSecurityManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.HostSecurityManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
+        <block subset="none" type="overrides">
+          <para>Create instances of classes that can cause assemblies to be loaded, either explicitly or implicitly, in this constructor.  The get accessor for the <see cref="P:System.Security.HostSecurityManager.DomainPolicy" /> property and the <see cref="M:System.Security.HostSecurityManager.ProvideAssemblyEvidence(System.Reflection.Assembly,System.Security.Policy.Evidence)" /> and <see cref="M:System.Security.HostSecurityManager.ProvideAppDomainEvidence(System.Security.Policy.Evidence)" /> methods are called whenever an assembly is loaded, and their subsequent loading of assemblies will cause circular references.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DetermineApplicationTrust">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.ApplicationTrust DetermineApplicationTrust (System.Security.Policy.Evidence applicationEvidence, System.Security.Policy.Evidence activatorEvidence, System.Security.Policy.TrustManagerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.ApplicationTrust DetermineApplicationTrust(class System.Security.Policy.Evidence applicationEvidence, class System.Security.Policy.Evidence activatorEvidence, class System.Security.Policy.TrustManagerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.DetermineApplicationTrust(System.Security.Policy.Evidence,System.Security.Policy.Evidence,System.Security.Policy.TrustManagerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.ApplicationTrust</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="applicationEvidence" Type="System.Security.Policy.Evidence" />
+        <Parameter Name="activatorEvidence" Type="System.Security.Policy.Evidence" />
+        <Parameter Name="context" Type="System.Security.Policy.TrustManagerContext" />
+      </Parameters>
+      <Docs>
+        <param name="applicationEvidence">The evidence for the application to be activated.</param>
+        <param name="activatorEvidence">Optionally, the evidence for the activating application domain.</param>
+        <param name="context">The trust context.</param>
+        <summary>Determines whether an application should be executed.</summary>
+        <returns>An object that contains trust information about the application.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class. The base implementation calls the application security manager to determine if the application should be executed.  
+  
+ The base implementation does not use the activator evidence. However, an overridden implementation could use the activator evidence to determine the security evidence for the application domain attempting to activate the application.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Security.HostSecurityManager.DetermineApplicationTrust%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+  
+ [!code-csharp[System.Security.HostSecurityManager#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#3)]
+ [!code-vb[System.Security.HostSecurityManager#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationEvidence" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An <see cref="T:System.Runtime.Hosting.ActivationArguments" /> object could not be found in the application evidence.  
+  
+ -or-  
+  
+ The <see cref="P:System.Runtime.Hosting.ActivationArguments.ActivationContext" /> property in the activation arguments is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Security.Policy.ApplicationTrust" /> grant set does not contain the minimum request set specified by the <see cref="T:System.ActivationContext" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainPolicy">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.PolicyLevel DomainPolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.PolicyLevel DomainPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Security.HostSecurityManager.DomainPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.PolicyLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the security policy for the current application domain.</summary>
+        <value>The security policy for the current application domain. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be overridden in a derived class. The base implementation always returns `null`.  
+  
+ This property is called at <xref:System.AppDomain> creation time. It allows a host to supply a policy for the current <xref:System.AppDomain>.  A policy level consists of the following:  
+  
+-   A set of code groups organized into a single rooted tree.  
+  
+-   A set of named permission sets that are referenced by the code groups to specify permissions to be granted to code belonging to the code group.  
+  
+-   A list of fully trusted assemblies.  
+  
+> [!IMPORTANT]
+>  See the Notes to Inheritors for the <xref:System.Security.HostSecurityManager> class for critical implementation information.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public virtual System.Security.HostSecurityManagerOptions Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.HostSecurityManagerOptions Flags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.HostSecurityManager.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.HostSecurityManagerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the flag representing the security policy components of concern to the host.</summary>
+        <value>One of the enumeration values that specifies security policy components. The default is <see cref="F:System.Security.HostSecurityManagerOptions.AllFlags" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be overridden in a derived class. The base implementation always returns <xref:System.Security.HostSecurityManagerOptions>.  
+  
+ The derived host can change the value of this property when only a subset of the <xref:System.Security.HostSecurityManagerOptions> is of interest.  The possible subsets include none, the refused set, the policy level, and assembly evidence.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Security.HostSecurityManager.Flags%2A> property for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+  
+ [!code-csharp[System.Security.HostSecurityManager#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#2)]
+ [!code-vb[System.Security.HostSecurityManager#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateAppDomainEvidence">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.EvidenceBase GenerateAppDomainEvidence (Type evidenceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase GenerateAppDomainEvidence(class System.Type evidenceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GenerateAppDomainEvidence(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.EvidenceBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidenceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="evidenceType">The evidence type.</param>
+        <summary>Requests a specific evidence type for the application domain.</summary>
+        <returns>The requested application domain evidence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class. The base implementation returns `null`.  
+  
+ The common language runtime calls this method when evidence of the specified type is needed for the current <xref:System.AppDomain>. The returned value is used as host-supplied evidence, and is stored in the <xref:System.AppDomain.Evidence%2A> collection of the <xref:System.AppDomain.CurrentDomain%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the collection.  
+  
+ To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
+  
+ This method of generating evidence allows hosts to delay evidence generation for an <xref:System.AppDomain> until the evidence is needed. In the .NET Framework version 3.5 and earlier versions, it was necessary to provide <xref:System.AppDomain> evidence at load time by overriding the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method. We recommend that you use <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> to provide evidence instead of overriding <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A>.  
+  
+ The <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> method is called back into only for types of evidence that the host has specified in the override of the <xref:System.Security.HostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes%2A> method.  
+  
+ A return value of `null` indicates that the host cannot generate evidence of this specific type.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+  
+ [!code-csharp[System.Security.HostSecurityManager#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#6)]
+ [!code-vb[System.Security.HostSecurityManager#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateAssemblyEvidence">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.EvidenceBase GenerateAssemblyEvidence (Type evidenceType, System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase GenerateAssemblyEvidence(class System.Type evidenceType, class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GenerateAssemblyEvidence(System.Type,System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.EvidenceBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidenceType" Type="System.Type" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="evidenceType">The evidence type.</param>
+        <param name="assembly">The target assembly.</param>
+        <summary>Requests a specific evidence type for the assembly.</summary>
+        <returns>The requested assembly evidence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class. The base implementation returns `null`.  
+  
+ The common language runtime calls this method when evidence of the specified type is needed for the current assembly. The returned value is used as host-supplied evidence, and is stored in the <xref:System.Reflection.Assembly.Evidence%2A> property. You can use the <xref:System.Security.Policy.Evidence.GetAssemblyEvidence%2A?displayProperty=fullName> method to obtain the generated evidence from the <xref:System.Reflection.Assembly.Evidence%2A> property.  
+  
+ To get a callback to this method, hosts must specify the <xref:System.Security.HostSecurityManagerOptions> flag in the <xref:System.Security.HostSecurityManager.Flags%2A> property.  
+  
+ This method of generating evidence allows hosts to delay evidence generation for an <xref:System.AppDomain> until the evidence is needed. In the .NET Framework 3.5 and earlier versions, it was necessary to provide <xref:System.AppDomain> evidence at load time by overriding the <xref:System.Security.HostSecurityManager.ProvideAppDomainEvidence%2A> method. We recommend that you use <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> to provide evidence instead of overriding <xref:System.Security.HostSecurityManager.ProvideAssemblyEvidence%2A>.  
+  
+ The <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> method is called back into only for types of evidence that the host has specified in the override of the <xref:System.Security.HostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes%2A> method.  
+  
+ A return value of `null` indicates that the host cannot generate evidence of this specific type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostSuppliedAppDomainEvidenceTypes">
+      <MemberSignature Language="C#" Value="public virtual Type[] GetHostSuppliedAppDomainEvidenceTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetHostSuppliedAppDomainEvidenceTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines which evidence types the host can supply for the application domain, if requested.</summary>
+        <returns>An array of evidence types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class. The base implementation returns `null`.  
+  
+ The types returned by this method determine whether the <xref:System.Security.HostSecurityManager.GenerateAppDomainEvidence%2A> method is called back into. The presence of a type in this list does not mean that the host must be able to generate this evidence type, but that it may be able to. For that reason, it is best to over-specify rather than under-specify the types in this list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostSuppliedAssemblyEvidenceTypes">
+      <MemberSignature Language="C#" Value="public virtual Type[] GetHostSuppliedAssemblyEvidenceTypes (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetHostSuppliedAssemblyEvidenceTypes(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The target assembly.</param>
+        <summary>Determines which evidence types the host can supply for the assembly, if requested.</summary>
+        <returns>An array of evidence types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden by a derived class. The base implementation returns `null`.  
+  
+ The types returned by this method determine whether the <xref:System.Security.HostSecurityManager.GenerateAssemblyEvidence%2A> method is called back into. The presence of a type in this list does not mean that the host must be able to generate this evidence type, but that it may be able to. For that reason, it is best to over-specify rather than under-specify the types in this list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideAppDomainEvidence">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.Evidence ProvideAppDomainEvidence (System.Security.Policy.Evidence inputEvidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.Evidence ProvideAppDomainEvidence(class System.Security.Policy.Evidence inputEvidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ProvideAppDomainEvidence(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Evidence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputEvidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="inputEvidence">Additional evidence to add to the <see cref="T:System.AppDomain" /> evidence.</param>
+        <summary>Provides the application domain evidence for an assembly being loaded.</summary>
+        <returns>The evidence to be used for the <see cref="T:System.AppDomain" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden in a derived class.  
+  
+ This method is called whenever an <xref:System.AppDomain> object is created. The `inputEvidence` parameter is the computed evidence from the common language runtime. The host implementation can choose to extend or reduce the evidence. The return value is the evidence to be used for the application domain.  The base implementation always returns the evidence object passed in as the `inputEvidence` parameter.  
+  
+> [!IMPORTANT]
+>  See the Notes to Inheritors for the <xref:System.Security.HostSecurityManager> class for critical implementation information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideAssemblyEvidence">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.Evidence ProvideAssemblyEvidence (System.Reflection.Assembly loadedAssembly, System.Security.Policy.Evidence inputEvidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.Evidence ProvideAssemblyEvidence(class System.Reflection.Assembly loadedAssembly, class System.Security.Policy.Evidence inputEvidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ProvideAssemblyEvidence(System.Reflection.Assembly,System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Evidence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="loadedAssembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="inputEvidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="loadedAssembly">The loaded assembly.</param>
+        <param name="inputEvidence">Additional evidence to add to the assembly evidence.</param>
+        <summary>Provides the assembly evidence for an assembly being loaded.</summary>
+        <returns>The evidence to be used for the assembly.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be overridden in a derived class.  
+  
+ This method is called whenever an assembly is loaded, either implicitly or explicitly. The passed in parameters are the assembly being loaded, and the computed evidence from the common language runtime. The host implementation can choose to extend or reduce the evidence. The return value is the evidence to be used for the assembly.  The base implementation always returns the evidence object passed in as the `inputEvidence` parameter.  
+  
+> [!IMPORTANT]
+>  See the Notes to Inheritors for the <xref:System.Security.HostSecurityManager> class for critical implementation information.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Security.HostSecurityManager.ProvideAssemblyEvidence%2A> method for a custom host security manager. This example is part of a larger example provided for the <xref:System.Security.HostSecurityManager> class.  
+  
+ [!code-csharp[System.Security.HostSecurityManager#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.HostSecurityManager/CS/customsecuritymanager.cs#5)]
+ [!code-vb[System.Security.HostSecurityManager#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.HostSecurityManager/VB/customsecuritymanager.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvePolicy">
+      <MemberSignature Language="C#" Value="public virtual System.Security.PermissionSet ResolvePolicy (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.PermissionSet ResolvePolicy(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ResolvePolicy(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The evidence set used to evaluate policy.</param>
+        <summary>Determines what permissions to grant to code based on the specified evidence.</summary>
+        <returns>The permission set that can be granted by the security system.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method invokes the security policy engine, providing it with the specified evidence. The result is determined by the security policy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="evidence" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,124 @@
+<Type Name="ViewEvent" FullName="System.Web.UI.Design.ViewEvent">
+  <TypeSignature Language="C#" Value="public sealed class ViewEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ViewEvent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the kind of event that has occurred on a view of a control at design time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.Design.ViewEvent> object is provided to the designer component by the design host, for example [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], when raising an event caused by certain user actions on the design-time view of a control. The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=fullName> event is handled by a <xref:System.Web.UI.Design.ViewEventHandler> delegate method, which takes a <xref:System.Web.UI.Design.ViewEventArgs> object as a parameter. The <xref:System.Web.UI.Design.ViewEventArgs.EventType%2A> property of the <xref:System.Web.UI.Design.ViewEventArgs> class is a <xref:System.Web.UI.Design.ViewEvent> object. The <xref:System.Web.UI.Design.ViewEventHandler> delegate method compares the <xref:System.Web.UI.Design.ViewEventArgs.EventType%2A> property to the static <xref:System.Web.UI.Design.ViewEvent> fields to determine which type of action raised the event. For example, an event is raised under the following circumstances:  
+  
+-   You click a region on the design surface.  
+  
+-   The designer draws a control on the design surface.  
+  
+-   You enter or exit template editing mode for a control.  
+  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent?displayProperty=fullName> event. Custom control designers override the <xref:System.Web.UI.Design.ControlDesigner.OnClick%2A>, <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A>, and <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> methods to process those events for the control on the design surface.  
+  
+ The designer host initializes a <xref:System.Web.UI.Design.ViewEventArgs> object for the type of action on the design surface, and then passes the object to the <xref:System.Web.UI.Design.ViewEventHandler> delegate. The <xref:System.Web.UI.Design.ViewEventArgs.EventType%2A> property of the <xref:System.Web.UI.Design.ViewEventArgs> object indicates which type of action:  
+  
+-   A <xref:System.Web.UI.Design.ViewEvent.Click> event.  
+  
+-   A <xref:System.Web.UI.Design.ViewEvent.Paint> event.  
+  
+-   A <xref:System.Web.UI.Design.ViewEvent.TemplateModeChanged> event.  
+  
+ The <xref:System.Web.UI.Design.ViewEventArgs.EventArgs%2A> property supplies the event arguments that are specific to the type of action.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Click">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.ViewEvent Click;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.ViewEvent Click" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewEvent.Click" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a view event was raised for a click on a designer region.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.Design.ViewEventHandler> delegate method compares the <xref:System.Web.UI.Design.ViewEventArgs.EventType%2A> property to the static <xref:System.Web.UI.Design.ViewEvent> fields to determine which type of action raised the event. A <xref:System.Web.UI.Design.ViewEvent> object is equal to <xref:System.Web.UI.Design.ViewEvent.Click> to indicate that you clicked a region on the design surface.  
+  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default <xref:System.Web.UI.Design.ViewEventHandler> delegate. If the event type is <xref:System.Web.UI.Design.ViewEvent.Click>, the delegate calls the <xref:System.Web.UI.Design.ControlDesigner.OnClick%2A> method. Classes deriving from the <xref:System.Web.UI.Design.ControlDesigner> class override the <xref:System.Web.UI.Design.ControlDesigner.OnClick%2A> method to handle click events on a region at design time. The event arguments indicate which designer region was clicked, if any.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paint">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.ViewEvent Paint;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.ViewEvent Paint" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewEvent.Paint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a view event was raised for drawing a control on the design surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.Design.ViewEventHandler> delegate method compares the <xref:System.Web.UI.Design.ViewEventArgs.EventType%2A> property to the static <xref:System.Web.UI.Design.ViewEvent> fields to determine which type of action raised the event. A <xref:System.Web.UI.Design.ViewEvent> object is equal to <xref:System.Web.UI.Design.ViewEvent.Paint> to indicate a paint event on the control on the design surface.  
+  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default <xref:System.Web.UI.Design.ViewEventHandler> delegate. If the event type is <xref:System.Web.UI.Design.ViewEvent.Paint>, the delegate calls the <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method. Classes deriving from the <xref:System.Web.UI.Design.ControlDesigner> class override the <xref:System.Web.UI.Design.ControlDesigner.OnPaint%2A> method to handle click events on a region at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateModeChanged">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.ViewEvent TemplateModeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.ViewEvent TemplateModeChanged" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewEvent.TemplateModeChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a view event was raised for changing the template mode of a control designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.Design.ViewEventHandler> delegate method compares the <xref:System.Web.UI.Design.ViewEventArgs.EventType%2A> property to the static <xref:System.Web.UI.Design.ViewEvent> fields to determine which type of action raised the event. A <xref:System.Web.UI.Design.ViewEvent> object is equal to <xref:System.Web.UI.Design.ViewEvent.TemplateModeChanged> to indicate that the template editing mode changed for a control on the design surface.  
+  
+ The <xref:System.Web.UI.Design.ControlDesigner> class supplies a default <xref:System.Web.UI.Design.ViewEventHandler> delegate. If the event type is <xref:System.Web.UI.Design.ViewEvent.TemplateModeChanged>, the delegate sets the value for the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property.  
+  
+ Custom designers that are derived from the <xref:System.Web.UI.Design.TemplatedControlDesigner> class can override the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method to perform additional processing when the template editing mode changes for a control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

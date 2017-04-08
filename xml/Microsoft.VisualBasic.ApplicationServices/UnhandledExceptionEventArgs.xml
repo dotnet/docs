@@ -1,0 +1,90 @@
+<Type Name="UnhandledExceptionEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs">
+  <TypeSignature Language="C#" Value="public class UnhandledExceptionEventArgs : System.Threading.ThreadExceptionEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi UnhandledExceptionEventArgs extends System.Threading.ThreadExceptionEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Threading.ThreadExceptionEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see langword="My.Application.UnhandledException" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event occurs when an unhandled exception occurs in an application that implements the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs> contains the <xref:System.Exception> that occurred and indicates whether the application should exit upon exiting the exception handler.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnhandledExceptionEventArgs (bool exitApplication, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(bool exitApplication, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.#ctor(System.Boolean,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exitApplication" Type="System.Boolean" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exitApplication">A <see cref="T:System.Boolean" /> that indicates whether the application should exit upon exiting the exception handler.</param>
+        <param name="exception">The <see cref="T:System.Exception" /> that occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event occurs when an unhandled exception occurs in an application that implements the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs> contains the <xref:System.Exception> that occurred and indicates whether the application should exit upon exiting the exception handler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitApplication">
+      <MemberSignature Language="C#" Value="public bool ExitApplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExitApplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the application should exit upon exiting the exception handler.</summary>
+        <value>A <see cref="T:System.Boolean" /> that indicates whether the application should exit upon exiting the exception handler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Visual Basic Application Model checks the value of this property after running the handlers of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event. If <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> is `True`, then the application exits. Otherwise, the application continues to run. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

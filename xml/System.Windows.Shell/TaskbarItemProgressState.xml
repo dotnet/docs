@@ -1,0 +1,105 @@
+<Type Name="TaskbarItemProgressState" FullName="System.Windows.Shell.TaskbarItemProgressState">
+  <TypeSignature Language="C#" Value="public enum TaskbarItemProgressState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskbarItemProgressState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.TaskbarItemProgressState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the state of the progress indicator in the Windows taskbar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can communicate the progress of long-running tasks by displaying a progress indicator in the [!INCLUDE[win7](~/includes/win7-md.md)] taskbar. The color of the indicator is determined by the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressState%2A> property, which contains one of the <xref:System.Windows.Shell.TaskbarItemProgressState> enumeration values. If the <xref:System.Windows.Shell.TaskbarItemProgressState> is Normal, Paused, or Error, the <xref:System.Windows.Shell.TaskbarItemInfo.ProgressValue%2A> property determines the completeness of the progress indicator. <xref:System.Windows.Shell.TaskbarItemInfo.ProgressValue%2A> is ignored for other values of <xref:System.Windows.Shell.TaskbarItemInfo.ProgressState%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.TaskbarItemProgressState Error = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.TaskbarItemProgressState.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A red progress indicator is displayed in the taskbar button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Indeterminate">
+      <MemberSignature Language="C#" Value="Indeterminate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.TaskbarItemProgressState Indeterminate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.TaskbarItemProgressState.Indeterminate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A pulsing green indicator is displayed in the taskbar button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.TaskbarItemProgressState None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.TaskbarItemProgressState.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No progress indicator is displayed in the taskbar button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.TaskbarItemProgressState Normal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.TaskbarItemProgressState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A green progress indicator is displayed in the taskbar button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.TaskbarItemProgressState Paused = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.TaskbarItemProgressState.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.TaskbarItemProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A yellow progress indicator is displayed in the taskbar button.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

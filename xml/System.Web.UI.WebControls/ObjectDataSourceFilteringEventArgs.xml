@@ -1,0 +1,103 @@
+<Type Name="ObjectDataSourceFilteringEventArgs" FullName="System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs">
+  <TypeSignature Language="C#" Value="public class ObjectDataSourceFilteringEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDataSourceFilteringEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ObjectDataSource.Filtering" /> event of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs> class is used to pass data to the <xref:System.Web.UI.WebControls.ObjectDataSource.Filtering> event handler of the <xref:System.Web.UI.WebControls.ObjectDataSource> control. The <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues%2A> property provides access to the filter parameter values before the filtering operation is performed. You can cancel the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs> to `true`.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to display filtered data by using an <xref:System.Web.UI.WebControls.ObjectDataSource> control to retrieve data from a middle-tier business object, and then using a <xref:System.Web.UI.WebControls.GridView> control to display the results. The second code example provides an example of a middle-tier business object that is used by the first code example.  
+  
+ The following code example demonstrates how to display filtered data by using an <xref:System.Web.UI.WebControls.ObjectDataSource> control to retrieve data from a middle-tier business object, and then using a <xref:System.Web.UI.WebControls.GridView> control to display the results. The <xref:System.Web.UI.WebControls.ObjectDataSource> control can filter data only when the method that retrieves the data retrieves it as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> object. For this reason, the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property identifies a business object method that retrieves data as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> object.  
+  
+ The code example consists of a <xref:System.Web.UI.WebControls.TextBox> control, a <xref:System.Web.UI.WebControls.GridView> control, the <xref:System.Web.UI.WebControls.ObjectDataSource> control, and a **Submit** button. By default, the <xref:System.Web.UI.WebControls.TextBox> control is populated with the name of one of the employees at Northwind Traders. The <xref:System.Web.UI.WebControls.GridView> control displays information about the employee who is identified by the name in the <xref:System.Web.UI.WebControls.TextBox>. To retrieve data for another employee, in the <xref:System.Web.UI.WebControls.TextBox> control, type the full name of the employee, and then click the **Submit** button.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property specifies an expression that is used to filter the data that is retrieved by the method that is specified by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. It uses parameter placeholders that are evaluated to the parameters that are contained in the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection. In this example, the parameter placeholder is enclosed by single quotation marks (') because the type of the parameter is a string type that might contain spaces. If the type of the parameter is numeric or date, quotation marks are not required. The <xref:System.Web.UI.WebControls.ObjectDataSource.FilterParameters%2A> collection contains one parameter, a <xref:System.Web.UI.WebControls.FormParameter> object that is bound to the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+ If no name is specified in the <xref:System.Web.UI.WebControls.TextBox> control, a new parameter is added to the <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues%2A> collection so that the search is successful.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/objds9cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/objds9vb.aspx#1)]  -->  
+  
+ The following code example provides an example of a middle-tier business object that the preceding code example uses. The code example consists of two basic classes: `EmployeeLogic` and `NorthwindEmployee`. The `EmployeeLogic` class encapsulates business logic and the `NorthwindEmployee` class is a model class that contains only the basic functionality that is required to load and persist data from the data tier. For simplicity, the `EmployeeLogic` class creates a static set of data, rather than retrieving the data from a data tier. For a complete working example, you must compile and use these classes with the Web Forms code examples that are provided.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_9#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/CS/northwindemployee9.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_9#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_9/VB/northwindemployee9.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectDataSourceFilteringEventArgs (System.Collections.Specialized.IOrderedDictionary parameterValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.IOrderedDictionary parameterValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameterValues" Type="System.Collections.Specialized.IOrderedDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="parameterValues">An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs" /> class by using the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters in the `parameterValues` collection are associated with any parameters that are specified in the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property when the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method runs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary ParameterValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary ParameterValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> interface that provides access to the <see cref="T:System.Web.UI.WebControls.Parameter" /> objects of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> class.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of <see cref="T:System.Web.UI.WebControls.Parameter" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs> class is used to pass data to the <xref:System.Web.UI.WebControls.ObjectDataSource.Filtering> event handler of the <xref:System.Web.UI.WebControls.ObjectDataSource> object. The <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs.ParameterValues%2A> property provides access to the filter parameter values before the filtering operation is performed.  
+  
+> [!IMPORTANT]
+>  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

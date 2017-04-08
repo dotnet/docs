@@ -1,0 +1,29 @@
+<healthMonitoring 
+      heartBeatInterval="0" 
+      enabled="true">
+
+        <eventMappings>
+
+           <add name="SampleWebRequestEvent" type="SamplesAspNet.SampleWebRequestEvent,webrequestevent, Version=1.0.1759.21676, Culture=neutral, PublicKeyToken=0d72899b07049076, processorArchitecture=MSIL" />
+
+       </eventMappings>
+
+        <profiles>
+        
+            <add name="Custom" 
+              minInstances="1" 
+              maxLimit="Infinite" 
+              minInterval="00:00:00" />
+              
+        </profiles>
+
+        <rules>
+            <clear />
+
+            <add name="Custom Web Request Event" 
+              eventName="SampleWebRequestEvent"
+              provider="EventLogProvider" 
+              profile="Custom" />
+        </rules>
+
+</healthMonitoring>

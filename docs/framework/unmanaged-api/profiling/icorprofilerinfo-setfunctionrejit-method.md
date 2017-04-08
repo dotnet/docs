@@ -1,0 +1,50 @@
+---
+title: "ICorProfilerInfo::SetFunctionReJIT Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ICorProfilerInfo.SetFunctionReJIT"
+apilocation: 
+  - "mscorwks.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ICorProfilerInfo::SetFunctionReJIT"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ICorProfilerInfo::SetFunctionReJIT method [.NET Framework profiling]"
+  - "SetFunctionReJIT method [.NET Framework profiling]"
+ms.assetid: 36ba4f15-78e5-4e52-b3b8-6341f710c696
+caps.latest.revision: 15
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+# ICorProfilerInfo::SetFunctionReJIT Method
+Not implemented. Do not use.  
+  
+## Syntax  
+  
+```  
+HRESULT SetFunctionReJIT(  
+    [in] FunctionID functionId);  
+```  
+  
+## Requirements  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+  
+ **Header:** CorProf.idl, CorProf.h  
+  
+ **Library:** CorGuids.lib  
+  
+ **.NET Framework Version:** 1.0  
+  
+## See Also  
+ [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

@@ -1,0 +1,1161 @@
+<Type Name="Operators" FullName="Microsoft.VisualBasic.CompilerServices.Operators">
+  <TypeSignature Language="C#" Value="public sealed class Operators" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Operators extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Operators" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides late-bound math operators, such as <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" /> and <see cref="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />, which the Visual Basic compiler uses internally.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddObject">
+      <MemberSignature Language="C#" Value="public static object AddObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object AddObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.AddObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic addition (+) operator.</summary>
+        <returns>The sum of <paramref name="Left" /> and <paramref name="Right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AndObject">
+      <MemberSignature Language="C#" Value="public static object AndObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object AndObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.AndObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <param name="Right">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <summary>Represents the Visual Basic <see langword="And" /> operator.</summary>
+        <returns>For <see langword="Boolean" /> operations, <see langword="True" /> if both <paramref name="Left" /> and <paramref name="Right" /> evaluate to <see langword="True" />; otherwise, <see langword="False" />. For bitwise operations, 1 if both <paramref name="Left" /> and <paramref name="Right" /> evaluate to 1; otherwise, 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObject">
+      <MemberSignature Language="C#" Value="public static int CompareObject (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 CompareObject(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObject(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents Visual Basic comparison operators.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="Left" /> is less than <paramref name="Right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> <paramref name="Left" /> and <paramref name="Right" /> are equal.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="Left" /> is greater than <paramref name="Right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObjectEqual">
+      <MemberSignature Language="C#" Value="public static object CompareObjectEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the Visual Basic equal (=) operator.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="Left" /> and <paramref name="Right" /> are equal; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObjectGreater">
+      <MemberSignature Language="C#" Value="public static object CompareObjectGreater (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectGreater(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreater(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the Visual Basic greater-than (&gt;) operator.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="Left" /> is greater than <paramref name="Right" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObjectGreaterEqual">
+      <MemberSignature Language="C#" Value="public static object CompareObjectGreaterEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectGreaterEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the Visual Basic greater-than or equal-to (&gt;=) operator.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="Left" /> is greater than or equal to <paramref name="Right" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObjectLess">
+      <MemberSignature Language="C#" Value="public static object CompareObjectLess (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectLess(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLess(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the Visual Basic less-than (&lt;) operator.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="Left" /> is less than <paramref name="Right" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObjectLessEqual">
+      <MemberSignature Language="C#" Value="public static object CompareObjectLessEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectLessEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectLessEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the Visual Basic less-than or equal-to (&lt;=) operator.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="Left" /> is less than or equal to <paramref name="Right" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareObjectNotEqual">
+      <MemberSignature Language="C#" Value="public static object CompareObjectNotEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CompareObjectNotEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareObjectNotEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the Visual Basic not-equal (&lt;&gt;) operator.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="Left" /> is not equal to <paramref name="Right" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareString">
+      <MemberSignature Language="C#" Value="public static int CompareString (string Left, string Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 CompareString(string Left, string Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.CompareString(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.String" />
+        <Parameter Name="Right" Type="System.String" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any <see langword="String" /> expression.</param>
+        <param name="Right">Required. Any <see langword="String" /> expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Performs binary or text string comparison when given two strings.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="Left" /> is less than <paramref name="Right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> <paramref name="Left" /> is equal to <paramref name="Right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="Left" /> is greater than <paramref name="Right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ When the Visual Basic equality operator is used to compare two strings, it passes the strings to the <xref:Microsoft.VisualBasic.CompilerServices.Operators.CompareString%2A> method along with a value of `False` for the `TextCompare` argument. This performs a case-sensitive comparison that is either ordinal or based on the current culture, depending on the value of the  statement.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConcatenateObject">
+      <MemberSignature Language="C#" Value="public static object ConcatenateObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object ConcatenateObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConcatenateObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <summary>Represents the Visual Basic concatenation (&amp;) operator.</summary>
+        <returns>A string representing the concatenation of <paramref name="Left" /> and <paramref name="Right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalCompareObjectEqual">
+      <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the overloaded Visual Basic equals (=) operator.</summary>
+        <returns>The result of the overloaded equals operator. <see langword="False" /> if operator overloading is not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalCompareObjectGreater">
+      <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectGreater (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectGreater(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreater(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the overloaded Visual Basic greater-than (&gt;) operator.</summary>
+        <returns>The result of the overloaded greater-than operator. <see langword="False" /> if operator overloading is not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalCompareObjectGreaterEqual">
+      <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectGreaterEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectGreaterEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectGreaterEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the overloaded Visual Basic greater-than or equal-to (&gt;=) operator.</summary>
+        <returns>The result of the overloaded greater-than or equal-to operator. <see langword="False" /> if operator overloading is not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalCompareObjectLess">
+      <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectLess (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectLess(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLess(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the overloaded Visual Basic less-than (&lt;) operator.</summary>
+        <returns>The result of the overloaded less-than operator. <see langword="False" /> if operator overloading is not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalCompareObjectLessEqual">
+      <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectLessEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectLessEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectLessEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the overloaded Visual Basic less-than or equal-to (&lt;=) operator.</summary>
+        <returns>The result of the overloaded less-than or equal-to operator. <see langword="False" /> if operator overloading is not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalCompareObjectNotEqual">
+      <MemberSignature Language="C#" Value="public static bool ConditionalCompareObjectNotEqual (object Left, object Right, bool TextCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ConditionalCompareObjectNotEqual(object Left, object Right, bool TextCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ConditionalCompareObjectNotEqual(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+        <Parameter Name="TextCompare" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any expression.</param>
+        <param name="Right">Required. Any expression.</param>
+        <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
+        <summary>Represents the overloaded Visual Basic not-equal (&lt;&gt;) operator.</summary>
+        <returns>The result of the overloaded not-equal operator. <see langword="False" /> if operator overloading is not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DivideObject">
+      <MemberSignature Language="C#" Value="public static object DivideObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object DivideObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.DivideObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic division (/) operator.</summary>
+        <returns>The full quotient of <paramref name="Left" /> divided by <paramref name="Right" />, including any remainder.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExponentObject">
+      <MemberSignature Language="C#" Value="public static object ExponentObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object ExponentObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ExponentObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic exponent (^) operator.</summary>
+        <returns>The result of <paramref name="Left" /> raised to the power of <paramref name="Right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackInvokeUserDefinedOperator">
+      <MemberSignature Language="C#" Value="public static object FallbackInvokeUserDefinedOperator (object vbOp, object[] Arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FallbackInvokeUserDefinedOperator(object vbOp, object[] Arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.FallbackInvokeUserDefinedOperator(System.Object,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("do not use this method", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vbOp" Type="System.Object" />
+        <Parameter Name="Arguments" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="vbOp">The user-defined operator.</param>
+        <param name="Arguments">Argument values to pass to the user-defined operator.</param>
+        <summary>Executes a late-bound evaluation of a user-defined operator. This helper method is not meant to be called directly from your code.</summary>
+        <returns>The result returned from the user-defined operator.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntDivideObject">
+      <MemberSignature Language="C#" Value="public static object IntDivideObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object IntDivideObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.IntDivideObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic integer division (\\) operator.</summary>
+        <returns>The integer quotient of <paramref name="Left" /> divided by <paramref name="Right" />, which discards any remainder and retains only the integer portion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftShiftObject">
+      <MemberSignature Language="C#" Value="public static object LeftShiftObject (object Operand, object Amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LeftShiftObject(object Operand, object Amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.LeftShiftObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Operand" Type="System.Object" />
+        <Parameter Name="Amount" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Operand">Required. Integral numeric expression. The bit pattern to be shifted. The data type must be an integral type (<see langword="SByte" />, <see langword="Byte" />, <see langword="Short" />, <see langword="UShort" />, <see langword="Integer" />, <see langword="UInteger" />, <see langword="Long" />, or <see langword="ULong" />).</param>
+        <param name="Amount">Required. Numeric expression. The number of bits to shift the bit pattern. The data type must be <see langword="Integer" /> or widen to <see langword="Integer" />.</param>
+        <summary>Represents the Visual Basic arithmetic left shift (&lt;&lt;) operator.</summary>
+        <returns>An integral numeric value. The result of shifting the bit pattern. The data type is the same as that of <paramref name="Operand" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LikeObject">
+      <MemberSignature Language="C#" Value="public static object LikeObject (object Source, object Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LikeObject(object Source, object Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.LikeObject(System.Object,System.Object,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object" />
+        <Parameter Name="Pattern" Type="System.Object" />
+        <Parameter Name="CompareOption" Type="Microsoft.VisualBasic.CompareMethod" />
+      </Parameters>
+      <Docs>
+        <param name="Source">Required. Any expression.</param>
+        <param name="Pattern">Required. Any string expression conforming to the pattern-matching conventions described in Like Operator.</param>
+        <param name="CompareOption">Required. A <see cref="T:Microsoft.VisualBasic.CompareMethod" /> value that specifies that the operation use either text or binary comparison.</param>
+        <summary>Represents the Visual Basic <see langword="Like" /> operator.</summary>
+        <returns>
+          <see langword="True" /> if the string representation of the value in <paramref name="Source" /> satisfies the pattern that is contained in <paramref name="Pattern" />; otherwise, <see langword="False" />. <see langword="True" /> if both <paramref name="Source" /> and <paramref name="Pattern" /> are <see langword="Nothing" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LikeString">
+      <MemberSignature Language="C#" Value="public static bool LikeString (string Source, string Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool LikeString(string Source, string Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.LikeString(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Pattern" Type="System.String" />
+        <Parameter Name="CompareOption" Type="Microsoft.VisualBasic.CompareMethod" />
+      </Parameters>
+      <Docs>
+        <param name="Source">Required. Any <see langword="String" /> expression.</param>
+        <param name="Pattern">Required. Any <see langword="String" /> expression conforming to the pattern-matching conventions described in Like Operator.</param>
+        <param name="CompareOption">Required. A <see cref="T:Microsoft.VisualBasic.CompareMethod" /> value that specifies that the operation use either text or binary comparison.</param>
+        <summary>Represents the Visual Basic <see langword="Like" /> operator.</summary>
+        <returns>
+          <see langword="True" /> if the value in <paramref name="Source" /> satisfies the pattern that is contained in <paramref name="Pattern" />; otherwise, <see langword="False" />. <see langword="True" /> if both <paramref name="Source" /> and <paramref name="Pattern" /> are empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModObject">
+      <MemberSignature Language="C#" Value="public static object ModObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object ModObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.ModObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic <see langword="Mod" /> operator.</summary>
+        <returns>The remainder after <paramref name="Left" /> is divided by <paramref name="Right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyObject">
+      <MemberSignature Language="C#" Value="public static object MultiplyObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object MultiplyObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.MultiplyObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic multiply (*) operator.</summary>
+        <returns>The product of <paramref name="Left" /> and <paramref name="Right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NegateObject">
+      <MemberSignature Language="C#" Value="public static object NegateObject (object Operand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object NegateObject(object Operand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.NegateObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Operand" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Operand">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic unary minus (–) operator.</summary>
+        <returns>The negative value of <paramref name="Operand" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotObject">
+      <MemberSignature Language="C#" Value="public static object NotObject (object Operand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object NotObject(object Operand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.NotObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Operand" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Operand">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <summary>Represents the Visual Basic <see langword="Not" /> operator.</summary>
+        <returns>For <see langword="Boolean" /> operations, <see langword="False" /> if <paramref name="Operand" /> is <see langword="True" />; otherwise, <see langword="True" />. For bitwise operations, 1 if <paramref name="Operand" /> is 0; otherwise, 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrObject">
+      <MemberSignature Language="C#" Value="public static object OrObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object OrObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.OrObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <param name="Right">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <summary>Represents the Visual Basic <see langword="Or" /> operator.</summary>
+        <returns>For <see langword="Boolean" /> operations, <see langword="False" /> if both <paramref name="Left" /> and <paramref name="Right" /> evaluate to <see langword="False" />; otherwise, <see langword="True" />. For bitwise operations, 0 if both <paramref name="Left" /> and <paramref name="Right" /> evaluate to 0; otherwise, 1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlusObject">
+      <MemberSignature Language="C#" Value="public static object PlusObject (object Operand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object PlusObject(object Operand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.PlusObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Operand" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Operand">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic unary plus (+) operator.</summary>
+        <returns>The value of <paramref name="Operand" />. (The sign of the <paramref name="Operand" /> is unchanged.)</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightShiftObject">
+      <MemberSignature Language="C#" Value="public static object RightShiftObject (object Operand, object Amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object RightShiftObject(object Operand, object Amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.RightShiftObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Operand" Type="System.Object" />
+        <Parameter Name="Amount" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Operand">Required. Integral numeric expression. The bit pattern to be shifted. The data type must be an integral type (<see langword="SByte" />, <see langword="Byte" />, <see langword="Short" />, <see langword="UShort" />, <see langword="Integer" />, <see langword="UInteger" />, <see langword="Long" />, or <see langword="ULong" />).</param>
+        <param name="Amount">Required. Numeric expression. The number of bits to shift the bit pattern. The data type must be <see langword="Integer" /> or widen to <see langword="Integer" />.</param>
+        <summary>Represents the Visual Basic arithmetic right shift (&gt;&gt;) operator.</summary>
+        <returns>An integral numeric value. The result of shifting the bit pattern. The data type is the same as that of <paramref name="Operand" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubtractObject">
+      <MemberSignature Language="C#" Value="public static object SubtractObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object SubtractObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.SubtractObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any numeric expression.</param>
+        <param name="Right">Required. Any numeric expression.</param>
+        <summary>Represents the Visual Basic subtraction (–) operator.</summary>
+        <returns>The difference between <paramref name="Left" /> and <paramref name="Right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XorObject">
+      <MemberSignature Language="C#" Value="public static object XorObject (object Left, object Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object XorObject(object Left, object Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Operators.XorObject(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Object" />
+        <Parameter Name="Right" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <param name="Right">Required. Any <see langword="Boolean" /> or numeric expression.</param>
+        <summary>Represents the Visual Basic <see langword="Xor" /> operator.</summary>
+        <returns>A <see langword="Boolean" /> or numeric value. For a <see langword="Boolean" /> comparison, the return value is the logical exclusion (exclusive logical disjunction) of two <see langword="Boolean" /> values. For bitwise (numeric) operations, the return value is a numeric value that represents the bitwise exclusion (exclusive bitwise disjunction) of two numeric bit patterns. For more information, see [Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,111 @@
+<Type Name="SortKey" FullName="System.DirectoryServices.Protocols.SortKey">
+  <TypeSignature Language="C#" Value="public class SortKey" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential beforefieldinit SortKey extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SortKey" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SortKey" /> class stores sort criteria for use by sort controls.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortKey.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortKey.#ctor" /> constructor creates and initializes a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortKey" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortKey (string attributeName, string matchingRule, bool reverseOrder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, string matchingRule, bool reverseOrder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortKey.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="matchingRule" Type="System.String" />
+        <Parameter Name="reverseOrder" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the attribute to use as a sort key.</param>
+        <param name="matchingRule">The object identifier (OID) of the matching rule for the sort.</param>
+        <param name="reverseOrder">
+          <see langword="true" /> if the sort is ordered from the lowest to highest or <see langword="false" /> if the sort order is from highest to lowest.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortKey.#ctor(System.String,System.String,System.Boolean)" /> constructor creates and initializes a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortKey" /> class using the specified attribute name, matching rule, and sort order.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeName">
+      <MemberSignature Language="C#" Value="public string AttributeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttributeName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.AttributeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortKey.AttributeName" /> property specifies the name of the attribute to use as a sort key.</summary>
+        <value>The name of the attribute to use as a sort key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchingRule">
+      <MemberSignature Language="C#" Value="public string MatchingRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MatchingRule" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.MatchingRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortKey.MatchingRule" /> property specifies the object identifier (OID) of the matching rule for the sort.</summary>
+        <value>The OID of the matching rule for the sort.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReverseOrder">
+      <MemberSignature Language="C#" Value="public bool ReverseOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReverseOrder" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortKey.ReverseOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortKey.ReverseOrder" /> property specifies if the sort should be returned in reverse order.</summary>
+        <value>This property is <see langword="true" /> if the sort is ordered from the lowest to highest or <see langword="false" /> if the sort is ordered from highest to lowest.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

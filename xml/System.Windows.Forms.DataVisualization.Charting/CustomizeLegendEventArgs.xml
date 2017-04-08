@@ -1,0 +1,116 @@
+<Type Name="CustomizeLegendEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs">
+  <TypeSignature Language="C#" Value="public class CustomizeLegendEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomizeLegendEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" /> event of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs> class is used in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event.  
+  
+ There are only two properties in this class. The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems%2A> property allows you to delete or modify both default and custom legend items, and to add custom legend items. This property can also be used to change the order of legend items.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName%2A> property is used to identify the legend that raised this event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomizeLegendEventArgs (System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection legendItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection legendItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="legendItems" Type="System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />
+      </Parameters>
+      <Docs>
+        <param name="legendItems">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" /> class with the specified <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomizeLegendEventArgs (System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection legendItems, string legendName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection legendItems, string legendName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="legendItems" Type="System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />
+        <Parameter Name="legendName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="legendItems">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />.</param>
+        <param name="legendName">The legend name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs" /> class with the specified <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> and legend name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegendItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection LegendItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection LegendItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to remove, modify or change the order of both custom and default legend items in the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" /> event. Can also be used to add custom legend items.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems%2A> property allows you to delete or modify both default and custom legend items in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend> event, and to add custom legend items. The order of legend items can also be changed.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem.SeriesPointIndex%2A> and [LegendItem.SeriesPointIndex](assetId:///LegendItem.SeriesPointIndex?qualifyHint=False&amp;autoUpgrade=True) properties can be used to determine the data element that is associated with a default legend item. These properties will return zero-length strings for custom legend items, because custom items are not associated with chart data.  
+  
+ This property enables you to determine which <xref:System.Windows.Forms.DataVisualization.Charting.Legend> the event was raised for, which enables you to customize an individual [Legend](assetId:///Legend?qualifyHint=False&amp;autoUpgrade=True).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegendName">
+      <MemberSignature Language="C#" Value="public string LegendName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LegendName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.CustomizeLegendEventArgs.LegendName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> object, which can be used to determine which legend was the sender of the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.CustomizeLegend" /> event.</summary>
+        <value>A <see langword="string" /> value that represents the name of the associated <see cref="T:System.Windows.Forms.DataVisualization.Charting.Legend" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

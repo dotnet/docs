@@ -1,0 +1,1060 @@
+<Type Name="FrameworkPropertyMetadata" FullName="System.Windows.FrameworkPropertyMetadata">
+  <TypeSignature Language="C#" Value="public class FrameworkPropertyMetadata : System.Windows.UIPropertyMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrameworkPropertyMetadata extends System.Windows.UIPropertyMetadata" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkPropertyMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.UIPropertyMetadata</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Reports or applies metadata for a dependency property, specifically adding framework-specific property system characteristics.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class derives from <xref:System.Windows.PropertyMetadata> (through <xref:System.Windows.UIPropertyMetadata>) . For most WPF framework-level application development purposes, <xref:System.Windows.FrameworkPropertyMetadata> is the type used for dependency property metadata, rather than the base metadata types <xref:System.Windows.PropertyMetadata> or <xref:System.Windows.UIPropertyMetadata>. This is true both for existing dependency properties and for most custom dependency property scenarios.  
+  
+ The members declared by this class that supplement the <xref:System.Windows.PropertyMetadata> base class include various Boolean properties that specify or report WPF framework-level property system behavior such as property inheritance, data binding, and layout.  
+  
+ Several constructor signatures for creating a <xref:System.Windows.FrameworkPropertyMetadata> instance take a <xref:System.Windows.FrameworkPropertyMetadataOptions> parameter. The <xref:System.Windows.FrameworkPropertyMetadataOptions> enumeration is used only to specify initial behavior in the constructor, and is not otherwise exposed after <xref:System.Windows.FrameworkPropertyMetadata> is constructed. From a constructed instance, you can get or set the corresponding information through various properties that share the name of the enumeration values used in the constructor call.  
+  
+<a name="xamlTextUsage_FrameworkPropertyMetadata"></a>   
+## XAML Text Usage  
+ This class is not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example gets metadata for a dependency property on a particular owner as the initial base <xref:System.Windows.PropertyMetadata> type. That metadata is cast to <xref:System.Windows.FrameworkPropertyMetadata>. If the cast returned a valid <xref:System.Windows.FrameworkPropertyMetadata>, then various <xref:System.Windows.FrameworkPropertyMetadata> property values are reported through a simple UI (not shown).  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This signature initializes all values of <xref:System.Windows.FrameworkPropertyMetadata.%23ctor%2A> to their property defaults. <xref:System.Windows.PropertyMetadata.DefaultValue%2A> will be `null`, and the various <xref:System.Windows.FrameworkPropertyMetadata> Boolean properties will be `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a value of a specific type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the specified default value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor1param](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor1param)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+      </Parameters>
+      <Docs>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the specified <see cref="T:System.Windows.PropertyChangedCallback" /> callback.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor1paramcallback](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor1paramcallback)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="flags" Type="System.Windows.FrameworkPropertyMetadataOptions" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a value of a specific type.</param>
+        <param name="flags">The metadata option flags (a combination of <see cref="T:System.Windows.FrameworkPropertyMetadataOptions" /> values). These options specify characteristics of the dependency property that interact with systems such as layout or data binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and framework-level metadata options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+ Values marked as set flags in the `flags` parameter will set the Boolean value of <xref:System.Windows.FrameworkPropertyMetadata> properties that match that <xref:System.Windows.FrameworkPropertyMetadataOptions> flag's name to `true`. You can subsequently change the values of the properties in the metadata, as long as the metadata has not yet been applied to a specific property system operation.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor_DV_FPMO](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor_dv_fpmo)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a value of a specific type.</param>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and specified <see cref="T:System.Windows.PropertyChangedCallback" /> callback.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor2param](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor2param)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+        <Parameter Name="coerceValueCallback" Type="System.Windows.CoerceValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <param name="coerceValueCallback">A reference to a handler implementation will be called whenever the property system calls <see cref="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)" /> for this dependency property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the specified callbacks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation calls a base initializer and then adds the `coerceValueCallback` by setting the property on the base instance.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor_PCC_CVC](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor_pcc_cvc)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="flags" Type="System.Windows.FrameworkPropertyMetadataOptions" />
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a value of a specific type.</param>
+        <param name="flags">The metadata option flags (a combination of <see cref="T:System.Windows.FrameworkPropertyMetadataOptions" /> values). These options specify characteristics of the dependency property that interact with systems such as layout or data binding.</param>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and framework metadata options, and specified <see cref="T:System.Windows.PropertyChangedCallback" /> callback.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+ Values marked as set flags in the `flags` parameter will set the Boolean value of <xref:System.Windows.FrameworkPropertyMetadata> properties that match that <xref:System.Windows.FrameworkPropertyMetadataOptions> flag's name to `true`. You can still change the values of the properties in the metadata, as long as the metadata has not yet been applied to a specific property system operation.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor_DV_FPMO_PCC](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor_dv_fpmo_pcc)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+        <Parameter Name="coerceValueCallback" Type="System.Windows.CoerceValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a specific type.</param>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <param name="coerceValueCallback">A reference to a handler implementation that will be called whenever the property system calls <see cref="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)" /> for this dependency property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and specified callbacks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor3param](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor3param)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="flags" Type="System.Windows.FrameworkPropertyMetadataOptions" />
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+        <Parameter Name="coerceValueCallback" Type="System.Windows.CoerceValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a specific type.</param>
+        <param name="flags">The metadata option flags (a combination of <see cref="T:System.Windows.FrameworkPropertyMetadataOptions" /> values). These options specify characteristics of the dependency property that interact with systems such as layout or data binding.</param>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <param name="coerceValueCallback">A reference to a handler implementation that will be called whenever the property system calls <see cref="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)" /> against this property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and framework metadata options, and specified callbacks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+ Values marked as set flags in the `flags` parameter will set the Boolean value of <xref:System.Windows.FrameworkPropertyMetadata> properties that match that <xref:System.Windows.FrameworkPropertyMetadataOptions> flag's name to `true`. You can still change the values of the properties in the metadata, as long as the metadata has not yet been applied to a specific property system operation.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor_DV_FPMO_PCC_CVC](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor_dv_fpmo_pcc_cvc)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="flags" Type="System.Windows.FrameworkPropertyMetadataOptions" />
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+        <Parameter Name="coerceValueCallback" Type="System.Windows.CoerceValueCallback" />
+        <Parameter Name="isAnimationProhibited" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a specific type.</param>
+        <param name="flags">The metadata option flags (a combination of <see cref="T:System.Windows.FrameworkPropertyMetadataOptions" /> values). These options specify characteristics of the dependency property that interact with systems such as layout or data binding.</param>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <param name="coerceValueCallback">A reference to a handler implementation that will be called whenever the property system calls <see cref="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)" /> on this dependency property.</param>
+        <param name="isAnimationProhibited">
+          <see langword="true" /> to prevent the property system from animating the property that this metadata is applied to. Such properties will raise a run-time exception originating from the property system if animations of them are attempted. <see langword="false" /> to permit animating the property. The default is <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and framework metadata options, specified callbacks, and a Boolean that can be used to prevent animation of the property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+ The `isAnimationProhibited` parameter sets the initial value of the <xref:System.Windows.UIPropertyMetadata.IsAnimationProhibited%2A> property declared by the immediate base <xref:System.Windows.UIPropertyMetadata> class.  
+  
+ Values marked as set flags in the `flags` parameter will set the Boolean value of <xref:System.Windows.FrameworkPropertyMetadata> properties that match that <xref:System.Windows.FrameworkPropertyMetadataOptions> flag's name to `true`. You can still change the values of the properties in the metadata, as long as the metadata has not yet been applied to a specific property system operation.  
+  
+   
+  
+## Examples  
+ The following example calls this constructor signature:  
+  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor_DV_FPMO_PCC_CVC_IAP](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor_dv_fpmo_pcc_cvc_iap)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited, System.Windows.Data.UpdateSourceTrigger defaultUpdateSourceTrigger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited, valuetype System.Windows.Data.UpdateSourceTrigger defaultUpdateSourceTrigger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean,System.Windows.Data.UpdateSourceTrigger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="flags" Type="System.Windows.FrameworkPropertyMetadataOptions" />
+        <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
+        <Parameter Name="coerceValueCallback" Type="System.Windows.CoerceValueCallback" />
+        <Parameter Name="isAnimationProhibited" Type="System.Boolean" />
+        <Parameter Name="defaultUpdateSourceTrigger" Type="System.Windows.Data.UpdateSourceTrigger" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The default value of the dependency property, usually provided as a specific type.</param>
+        <param name="flags">The metadata option flags (a combination of <see cref="T:System.Windows.FrameworkPropertyMetadataOptions" /> values). These options specify characteristics of the dependency property that interact with systems such as layout or data binding.</param>
+        <param name="propertyChangedCallback">A reference to a handler implementation that the property system will call whenever the effective value of the property changes.</param>
+        <param name="coerceValueCallback">A reference to a handler implementation that will be called whenever the property system calls <see cref="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)" /> against this property.</param>
+        <param name="isAnimationProhibited">
+          <see langword="true" /> to prevent the property system from animating the property that this metadata is applied to. Such properties will raise a run-time exception originating from the property system if animations of them are attempted. The default is <see langword="false" />.</param>
+        <param name="defaultUpdateSourceTrigger">The <see cref="T:System.Windows.Data.UpdateSourceTrigger" /> to use when bindings for this property are applied that have their <see cref="T:System.Windows.Data.UpdateSourceTrigger" /> set to <see cref="F:System.Windows.Data.UpdateSourceTrigger.Default" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class with the provided default value and framework metadata options, specified callbacks, a Boolean that can be used to prevent animation of the property, and a data-binding update trigger default.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of the value provided for `defaultValue` must match or be related to the type specified in the original registration of the dependency property that this metadata will be applied to. Mismatches between metadata default value type and the type of the dependency property it is being applied to can be difficult to debug, because the mismatch is not detectable during compilation. The property system does not evaluate the effective value of a property until run time, so the result of a default value type/property type mismatch is a run-time error.  
+  
+ The value <xref:System.Windows.DependencyProperty.UnsetValue> has special meaning in the property system, and cannot be used as a dependency property default value.  
+  
+ The `isAnimationProhibited` parameter sets the initial value of the <xref:System.Windows.UIPropertyMetadata.IsAnimationProhibited%2A> property declared by the immediate base <xref:System.Windows.UIPropertyMetadata> class.  
+  
+ For more information about the update source behavior for bindings, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ Values marked as set flags in the `flags` parameter will set the Boolean value of <xref:System.Windows.FrameworkPropertyMetadata> properties that match that <xref:System.Windows.FrameworkPropertyMetadataOptions> flag's name to `true`. You can still change the values of the properties in the metadata, as long as the metadata has not yet been applied to a specific property system operation.  
+  
+   
+  
+## Examples  
+ [!code-csharp[PropertyMetadataAPIs#Initfpm](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#initfpm)]  
+[!code-csharp[PropertyMetadataAPIs#FPMCtor_DV_FPMO_PCC_CVC_IAP_DUST](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertyMetadataAPIs/CSharp/Class1.cs#fpmctor_dv_fpmo_pcc_cvc_iap_dust)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="defaultValue" /> is set to <see cref="F:System.Windows.DependencyProperty.UnsetValue" />; see Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectsArrange">
+      <MemberSignature Language="C#" Value="public bool AffectsArrange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AffectsArrange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsArrange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a dependency property potentially affects the arrange pass during layout engine operations.</summary>
+        <value>
+          <see langword="true" /> if the dependency property on which this metadata exists potentially affects the arrange pass; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> set to `true` will initiate a deferred request to invalidate the visuals for that element (a call to <xref:System.Windows.UIElement.InvalidateArrange%2A>). Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
+  
+ Custom <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementations might choose to have similar behavior for dependency property changes where <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> is `true`.  
+  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_AffectsArrange"></a>   
+## XAML Text Usage  
+ Members of this class are either not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata from various dependency property fields, queries the value of various <xref:System.Windows.FrameworkPropertyMetadata> properties on it, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectsMeasure">
+      <MemberSignature Language="C#" Value="public bool AffectsMeasure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AffectsMeasure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsMeasure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a dependency property potentially affects the measure pass during layout engine operations.</summary>
+        <value>
+          <see langword="true" /> if the dependency property on which this metadata exists potentially affects the measure pass; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> set to `true` will initiate a deferred request to invalidate the visuals for that element. Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
+  
+ Custom <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementations might choose to have similar behavior for dependency property changes where <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> is `true`.  
+  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_AffectsMeasure"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata from various dependency property fields, queries the value of various <xref:System.Windows.FrameworkPropertyMetadata> properties on it, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectsParentArrange">
+      <MemberSignature Language="C#" Value="public bool AffectsParentArrange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AffectsParentArrange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a dependency property potentially affects the arrange pass of its parent element's layout during layout engine operations.</summary>
+        <value>
+          <see langword="true" /> if the dependency property on which this metadata exists potentially affects the arrange pass specifically on its parent element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> set to `true` will initiate a deferred request to invalidate the visuals for the parent element.  
+  
+ Generally, you do not need to report changes of a <xref:System.Windows.FrameworkElement> property to a parent element using <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> because the element itself would already have its own <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> as `true`. That is usually sufficient, because changes in the child element generally initiate a parent arrange when appropriate. <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is sometimes used for a <xref:System.Windows.FrameworkContentElement> derived class. In this case, the child element sets a property, but a <xref:System.Windows.FrameworkContentElement> derived class does not control its own rendering. The rendering is handled by a <xref:System.Windows.FrameworkElement> parent element that serves as the content host. For instance, a change to the value of the <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=fullName> attached property by a child element invalidates arrange of the parent, because the position of the child in the parent must be changed. Therefore, the <xref:System.Windows.Documents.FixedPage.Left%2A?displayProperty=fullName> attached property has metadata where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is `true`. Another example is <xref:System.Windows.Controls.Control.Padding%2A>; when this property changes, the parent might change the positioning of the child, depending on available space.  
+  
+ Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
+  
+ Custom <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementations might choose to have similar behavior for dependency property changes where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange%2A> is `true`.  
+  
+ Properties on any derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_AffectsParentArrange"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectsParentMeasure">
+      <MemberSignature Language="C#" Value="public bool AffectsParentMeasure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AffectsParentMeasure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a dependency property potentially affects the measure pass of its parent element's layout during layout engine operations.</summary>
+        <value>
+          <see langword="true" /> if the dependency property on which this metadata exists potentially affects the measure pass specifically on its parent element; otherwise, <see langword="false" />.The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> set to `true` will initiate a deferred request to invalidate the visuals for the parent element. Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
+  
+ Generally, you do not need to report changes of a <xref:System.Windows.FrameworkElement> property to a parent element using <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> because the element itself would already have its own <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A> as `true`. That is usually sufficient, because changes in the child element generally initiate a parent measure pass when appropriate. <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is sometimes used for a <xref:System.Windows.FrameworkContentElement> derived class. In this case, the child element sets a property, but a <xref:System.Windows.FrameworkContentElement> derived class does not control its own rendering. The rendering is handled by a <xref:System.Windows.FrameworkElement> parent element that serves as the content host. For instance, a change to the value of the <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=fullName> property by a child element invalidates measure of the parent, because the relative spacing of paragraphs might change and might increase or decrease the content host size. Therefore, the <xref:System.Windows.Documents.Paragraph.KeepWithNext%2A?displayProperty=fullName> property has metadata where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is `true`.  
+  
+ Content host elements also frequently look for changes in dependency properties where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is `true`, as part of content host rendering logic. For instance, the <xref:System.Windows.Controls.TextBox> element must respond to certain changes within text that might require that the bounding box of the <xref:System.Windows.Controls.TextBox> itself be changed.  
+  
+ Custom <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementations might choose to have similar behavior for dependency property changes where <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A> is `true`.  
+  
+ Properties on any derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_AffectsParentMeasure"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectsRender">
+      <MemberSignature Language="C#" Value="public bool AffectsRender { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AffectsRender" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsRender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a dependency property potentially affects the general layout in some way that does not specifically influence arrangement or measurement, but would require a redraw.</summary>
+        <value>
+          <see langword="true" /> if the dependency property on which this metadata exists affects rendering; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> include an implementation of <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> that monitors effective value changes to all dependency properties that exist on an element. As part of that logic, dependency properties that change effective value and have metadata with <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> set to `true` will initiate a deferred request to invalidate the visuals for that element. Because this WPF framework-level implementation is already in place, you typically do not need to look for dependency properties with <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> unless you are substantially replacing or modifying the WPF framework-level layout behavior.  
+  
+ Custom <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementations might choose to have similar behavior for dependency property changes where <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> is `true`.  
+  
+ Properties on any derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_AffectsRender"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata from various dependency property fields, queries the value of various <xref:System.Windows.FrameworkPropertyMetadata> properties on it, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BindsTwoWayByDefault">
+      <MemberSignature Language="C#" Value="public bool BindsTwoWayByDefault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BindsTwoWayByDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the property binds two-way by default.</summary>
+        <value>
+          <see langword="true" /> if the dependency property on which this metadata exists binds two-way by default; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In absence of this property being `true`, binding updates are one-way by default, based on the default behavior of the <xref:System.Windows.Data.Binding> constructors or equivalent [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax.  
+  
+ In existing elements, you will usually find this property set to `true` in metadata for dependency properties that both report state and are modifiable by user action, for example <xref:System.Windows.Controls.Primitives.Selector.IsSelected%2A?displayProperty=fullName>.  
+  
+ This property only reports the default binding update characteristics of the dependency property in general. Any binding set to this property on an instance can locally set the <xref:System.Windows.Data.Binding.Mode%2A> property of the binding and change this default.  
+  
+ Properties on any derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_BindsTwoWayByDefault"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata from various dependency property fields, queries the value of various <xref:System.Windows.FrameworkPropertyMetadata> properties on it, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultUpdateSourceTrigger">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.UpdateSourceTrigger DefaultUpdateSourceTrigger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Data.UpdateSourceTrigger DefaultUpdateSourceTrigger" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.UpdateSourceTrigger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default for <see cref="T:System.Windows.Data.UpdateSourceTrigger" /> to use when bindings for the property with this metadata are applied, which have their <see cref="T:System.Windows.Data.UpdateSourceTrigger" /> set to <see cref="F:System.Windows.Data.UpdateSourceTrigger.Default" />.</summary>
+        <value>A value of the enumeration, other than <see cref="F:System.Windows.Data.UpdateSourceTrigger.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_DefaultUpdateSourceTrigger"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">This property is set to <see cref="F:System.Windows.Data.UpdateSourceTrigger.Default" />; the value you set is supposed to become the default when requested by bindings.</exception>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherits">
+      <MemberSignature Language="C#" Value="public bool Inherits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Inherits" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.Inherits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the value of the dependency property is inheritable.</summary>
+        <value>
+          <see langword="true" /> if the property value is inheritable; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Property value inheritance is a feature of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system at the WPF framework level, whereby certain dependency properties can be locally set on an element at or near the root of a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] element tree and then have their value inherited by all elements within the logical tree of child elements that also possess that property. Property value inheritance is not enabled by default, and enabling it does have some performance implications. For details, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+> [!NOTE]
+>  Although property value inheritance might appear to work for nonattached dependency properties, the inheritance behavior for a nonattached property through certain object-object divisions in the runtime tree is undefined. Always use <xref:System.Windows.DependencyProperty.RegisterAttached%2A> to register properties where you specify <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> in the metadata.  
+  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_Inherits"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata from various dependency property fields, queries the value of various <xref:System.Windows.FrameworkPropertyMetadata> properties on it, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDataBindingAllowed">
+      <MemberSignature Language="C#" Value="public bool IsDataBindingAllowed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDataBindingAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether data binding is supported for the dependency property.</summary>
+        <value>
+          <see langword="true" /> if data binding is supported on the dependency property to which this metadata applies; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property reports `false` for one of two possible conditions: either data binding to a dependency property is not allowed because the dependency property is read-only (as reported in the dependency property identifier, not the metadata), or the value of another metadata property, <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>, is set to `true` in this metadata. This property is exposed as a convenience so that callers do not have to check both <xref:System.Windows.DependencyProperty.ReadOnly%2A> and <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>.  
+  
+ If you are attempting to create metadata that specifies that an otherwise read/write property should not support data binding, specify the flag <xref:System.Windows.FrameworkPropertyMetadataOptions> (note the slight naming convention difference versus <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>).  
+  
+<a name="xamlTextUsage_IsDataBindingAllowed"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example obtains the default metadata from various dependency property fields, queries the value of various <xref:System.Windows.FrameworkPropertyMetadata> properties on it, and uses the information to populate a table to implement a "metadata browser".  
+  
+ [!code-csharp[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#dpgetmetadatasingle)]
+ [!code-vb[PropertySystemEsoterics#DPGetMetadataSingle](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#dpgetmetadatasingle)]  
+[!code-csharp[PropertySystemEsoterics#FPMProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertySystemEsoterics/CSharp/XAMLAPP/page2.xaml.cs#fpmproperties)]
+[!code-vb[PropertySystemEsoterics#FPMProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertySystemEsoterics/visualbasic/xamlapp/page2.xaml.vb#fpmproperties)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNotDataBindable">
+      <MemberSignature Language="C#" Value="public bool IsNotDataBindable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNotDataBindable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the dependency property supports data binding.</summary>
+        <value>
+          <see langword="true" /> if the property does not support data binding; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this metadata property is set to `true` specifically for properties that should not support data binding, despite being read-write properties. The expectation is that in most cases where a dependency property is declared, data binding is desired, because data binding is one of the key scenarios where a dependency property is useful. Unlike <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, this does not merely change a default that can later be changed on a specific binding. Setting this property `true` in the metadata for a dependency property metadata will disable all bindings from applying their values through expressions to that dependency property.  
+  
+ Read-only dependency properties do not support data binding (because they have no setter that can apply changed values), but will still report `false` for <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A>. This is because properties that correspond to a <xref:System.Windows.FrameworkPropertyMetadataOptions> values will report parity with how the metadata was actually established, rather than always reporting the end result behavior that the naming of the property might imply. To determine whether a given dependency property permits data binding, you should usually check <xref:System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed%2A> instead. <xref:System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed%2A> is a convenience for checking both <xref:System.Windows.DependencyProperty.ReadOnly%2A> and <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A> as a single operation, yielding the expected result.  
+  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_IsNotDataBindable"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Journal">
+      <MemberSignature Language="C#" Value="public bool Journal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Journal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.Journal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether this property contains journaling information that applications can or should store as part of a journaling implementation.</summary>
+        <value>
+          <see langword="true" /> if journaling should be performed on the dependency property that this metadata is applied to; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_Journal"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="protected override void Merge (System.Windows.PropertyMetadata baseMetadata, System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Merge(class System.Windows.PropertyMetadata baseMetadata, class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseMetadata" Type="System.Windows.PropertyMetadata" />
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="baseMetadata">The base metadata to merge.</param>
+        <param name="dp">The dependency property this metadata is being applied to.</param>
+        <summary>Enables a merge of the source metadata with base metadata.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used internally when metadata is being overridden.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Classes that derive from <see cref="T:System.Windows.PropertyMetadata" /> (or this class particularly) should override this method to account for any metadata properties they have added in their implementations. For instance, your implementation might have added a new flagwise enumeration value, and the <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> implementation should then be able to combine those flags correctly.  
+  
+ Always call the base implementation prior to your own implementation, because the base implementation takes care of merging all the properties already defined on previous types in the hierarchy.  
+  
+ The behavior added by the <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> implementation in <see cref="T:System.Windows.FrameworkPropertyMetadata" /> is that specific WPF framework-level properties in the metadata such as <see cref="P:System.Windows.FrameworkPropertyMetadata.AffectsRender" /> are combined in a bitwise or operation.  
+  
+ The <see cref="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" /> behavior also implements the behavior when you override the property metadata on an existing dependency property by calling <see cref="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />., using override metadata that is <see cref="T:System.Windows.FrameworkPropertyMetadata" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApply">
+      <MemberSignature Language="C#" Value="protected override void OnApply (System.Windows.DependencyProperty dp, Type targetType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApply(class System.Windows.DependencyProperty dp, class System.Type targetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="targetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="dp">The dependency property to which the metadata has been applied.</param>
+        <param name="targetType">The type associated with this metadata if this is type-specific metadata. If this is default metadata, this value can be <see langword="null" />.</param>
+        <summary>Called when this metadata has been applied to a property, which indicates that the metadata is being sealed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any mutability of the data structure of a <xref:System.Windows.FrameworkPropertyMetadata> instance should be marked as immutable when this method is invoked.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="T:System.Windows.FrameworkPropertyMetadata" /> implementation of this method does nothing beyond calling the base implementation.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OverridesInheritanceBehavior">
+      <MemberSignature Language="C#" Value="public bool OverridesInheritanceBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OverridesInheritanceBehavior" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the property value inheritance evaluation should span across certain content boundaries in the logical tree of elements.</summary>
+        <value>
+          <see langword="true" /> if the property value inheritance should span across certain content boundaries; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This metadata reports a seldom-applied modification to property value inheritance behavior across special parent element-child element boundaries. The canonical example of such a boundary is the contents of a <xref:System.Windows.Controls.Frame>, where the <xref:System.Windows.Controls.Frame> content might get reloaded independently of the existence of the <xref:System.Windows.Controls.Frame>. The desired property system behavior is that property value inheritance should not traverse into the contents of the <xref:System.Windows.Controls.Frame>, because these contents might be elements that the application hosting the frame does not own or control. Specifying metadata with <xref:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior%2A> set to `true`, as well as specifying <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A> as `true`, will cause the property on which the metadata is applied to be inheritable even across the <xref:System.Windows.Controls.Frame> boundary or similar boundaries.  
+  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, after the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_OverridesInheritanceBehavior"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubPropertiesDoNotAffectRender">
+      <MemberSignature Language="C#" Value="public bool SubPropertiesDoNotAffectRender { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SubPropertiesDoNotAffectRender" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether sub-properties of the dependency property do not affect the rendering of the containing object.</summary>
+        <value>
+          <see langword="true" /> if changes to sub-property values do not affect rendering if changed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This metadata option is pertinent for dependency properties that are reference types, where that type has property values of its own. Typically, the layout system logic is to assume that any dependency property with sub-properties potentially will affect layout, because checking all sub-properties for changes is more time consuming than actually running another render pass. Setting this option to `true` is useful for optimizing performance of the WPF framework level layout system implementation.  
+  
+ Properties on derived classes of <xref:System.Windows.PropertyMetadata> are typically defined in the object model as read-write. This is so they can be adjusted after initialization of the instance. However, once the metadata is consumed as part of a call to <xref:System.Windows.DependencyProperty.Register%2A>, <xref:System.Windows.DependencyProperty.AddOwner%2A>, or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, the property system will seal that metadata instance and properties that convey the specifics of the metadata are now considered immutable. Attempting to set this property after <xref:System.Windows.PropertyMetadata.IsSealed%2A> is `true` on this metadata instance will raise an exception.  
+  
+<a name="xamlTextUsage_SubPropertiesDoNotAffectRender"></a>   
+## XAML Text Usage  
+ Members of this class are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The metadata has already been applied to a dependency property operation, so that metadata is sealed and properties of the metadata cannot be set.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

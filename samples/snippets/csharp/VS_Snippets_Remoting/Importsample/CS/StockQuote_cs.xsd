@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" ?>
+<schema targetNamespace="http://localhost/stockquote/schemas" xmlns="http://www.w3.org/2000/10/XMLSchema">
+   <element name="TradePriceRequest">
+      <complexType>
+         <all>
+            <element name="tickerSymbol" type="string" />
+         </all>
+      </complexType>
+   </element>
+   <element name="TradePrice">
+      <complexType>
+         <all>
+            <element name="price" type="float" />
+         </all>
+      </complexType>
+   </element>
+</schema>

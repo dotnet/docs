@@ -1,0 +1,89 @@
+<Type Name="ExtendedDNControl" FullName="System.DirectoryServices.Protocols.ExtendedDNControl">
+  <TypeSignature Language="C#" Value="public class ExtendedDNControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExtendedDNControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ExtendedDNControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class requests an extended form of the distinguished name of an Active Directory Domain Services object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExtendedDNControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExtendedDNControl (System.DirectoryServices.Protocols.ExtendedDNFlag flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.Protocols.ExtendedDNFlag flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor(System.DirectoryServices.Protocols.ExtendedDNFlag)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="flag" Type="System.DirectoryServices.Protocols.ExtendedDNFlag" />
+      </Parameters>
+      <Docs>
+        <param name="flag">A value of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> enumeration that specifies the format of the extended distinguished name.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedDNControl.#ctor(System.DirectoryServices.Protocols.ExtendedDNFlag)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.ExtendedDNControl" /> class using the specified flag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flag">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.ExtendedDNFlag Flag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.ExtendedDNFlag Flag" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.ExtendedDNControl.Flag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ExtendedDNFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.ExtendedDNControl.Flag" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> that specifies the format of the extended distinguished name.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.ExtendedDNFlag" /> that specifies the format of the extended distinguished name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.ExtendedDNControl.GetValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.ExtendedDNControl.GetValue" /> method returns the format of the extended distinguished name.</summary>
+        <returns>The format of the extended distinguished name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

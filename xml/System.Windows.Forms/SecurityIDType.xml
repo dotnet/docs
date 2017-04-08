@@ -1,0 +1,162 @@
+<Type Name="SecurityIDType" FullName="System.Windows.Forms.SecurityIDType">
+  <TypeSignature Language="C#" Value="public enum SecurityIDType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityIDType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SecurityIDType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>This enumeration is not used.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alias">
+      <MemberSignature Language="C#" Value="Alias" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType Alias = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Alias" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Computer">
+      <MemberSignature Language="C#" Value="Computer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType Computer = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Computer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletedAccount">
+      <MemberSignature Language="C#" Value="DeletedAccount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType DeletedAccount = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.DeletedAccount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Domain">
+      <MemberSignature Language="C#" Value="Domain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType Domain = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Domain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="Group" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType Group = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Group" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType Invalid = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType Unknown = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="User" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType User = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.User" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WellKnownGroup">
+      <MemberSignature Language="C#" Value="WellKnownGroup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SecurityIDType WellKnownGroup = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SecurityIDType.WellKnownGroup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SecurityIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

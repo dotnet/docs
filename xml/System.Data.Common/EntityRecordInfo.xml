@@ -1,0 +1,61 @@
+<Type Name="EntityRecordInfo" FullName="System.Data.Common.EntityRecordInfo">
+  <TypeSignature Language="C#" Value="public class EntityRecordInfo : System.Data.Common.DataRecordInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityRecordInfo extends System.Data.Common.DataRecordInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.EntityRecordInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DataRecordInfo</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to entity metadata.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityRecordInfo (System.Data.Metadata.Edm.EntityType metadata, System.Collections.Generic.IEnumerable&lt;System.Data.Metadata.Edm.EdmMember&gt; memberInfo, System.Data.EntityKey entityKey, System.Data.Metadata.Edm.EntitySet entitySet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EntityType metadata, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Metadata.Edm.EdmMember&gt; memberInfo, class System.Data.EntityKey entityKey, class System.Data.Metadata.Edm.EntitySet entitySet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.EntityRecordInfo.#ctor(System.Data.Metadata.Edm.EntityType,System.Collections.Generic.IEnumerable{System.Data.Metadata.Edm.EdmMember},System.Data.EntityKey,System.Data.Metadata.Edm.EntitySet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Data.Metadata.Edm.EntityType" />
+        <Parameter Name="memberInfo" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Metadata.Edm.EdmMember&gt;" />
+        <Parameter Name="entityKey" Type="System.Data.EntityKey" />
+        <Parameter Name="entitySet" Type="System.Data.Metadata.Edm.EntitySet" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The <see cref="T:System.Data.Metadata.Edm.EntityType" /> of the entity represented by the <see cref="T:System.Data.Common.DbDataRecord" /> described by this <see cref="T:System.Data.Common.EntityRecordInfo" /> object.</param>
+        <param name="memberInfo">An enumerable collection of <see cref="T:System.Data.Metadata.Edm.EdmMember" /> objects that represent column information.</param>
+        <param name="entityKey">The key for the entity.</param>
+        <param name="entitySet">The entity set to which the entity belongs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.EntityRecordInfo" /> class of a specific entity type with an enumerable collection of data fields and with specific key and entity set information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityKey">
+      <MemberSignature Language="C#" Value="public System.Data.EntityKey EntityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.EntityKey EntityKey" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.EntityRecordInfo.EntityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.EntityKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.EntityKey" /> for the entity.</summary>
+        <value>The key for the entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

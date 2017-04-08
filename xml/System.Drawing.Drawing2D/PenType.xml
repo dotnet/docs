@@ -1,0 +1,105 @@
+<Type Name="PenType" FullName="System.Drawing.Drawing2D.PenType">
+  <TypeSignature Language="C#" Value="public enum PenType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PenType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of fill a <see cref="T:System.Drawing.Pen" /> object uses to fill lines.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pen type is determined by the <xref:System.Drawing.Brush> property of the <xref:System.Drawing.Pen> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HatchFill">
+      <MemberSignature Language="C#" Value="HatchFill" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType HatchFill = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.HatchFill" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a hatch fill.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LinearGradient">
+      <MemberSignature Language="C#" Value="LinearGradient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType LinearGradient = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.LinearGradient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a linear gradient fill.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PathGradient">
+      <MemberSignature Language="C#" Value="PathGradient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType PathGradient = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.PathGradient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a path gradient fill.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SolidColor">
+      <MemberSignature Language="C#" Value="SolidColor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType SolidColor = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.SolidColor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a solid fill.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextureFill">
+      <MemberSignature Language="C#" Value="TextureFill" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenType TextureFill = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenType.TextureFill" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a bitmap texture fill.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

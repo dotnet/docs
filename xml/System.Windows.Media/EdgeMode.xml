@@ -1,0 +1,67 @@
+<Type Name="EdgeMode" FullName="System.Windows.Media.EdgeMode">
+  <TypeSignature Language="C#" Value="public enum EdgeMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EdgeMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.EdgeMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines how the edges of non-text drawing primitives are rendered.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Text objects are always displayed by using anti aliasing, and are not affected by setting the edge mode value. The default value for non-text drawing primitives, such as <xref:System.Windows.Shapes.Ellipse> and <xref:System.Windows.Shapes.Polygon>, is Unspecified.  
+  
+ When you set the edge mode value of a visual object, all the child drawing primitives of that visual object are set to the same <xref:System.Windows.Media.EdgeMode> value.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.RenderOptions.SetEdgeMode%2A> method to set the edge mode for a drawing primitive to Aliased.  
+  
+ [!code-csharp[VisualSnippets#SetEdgeMode](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Snippets.cs#setedgemode)]
+ [!code-vb[VisualSnippets#SetEdgeMode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/snippets.vb#setedgemode)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aliased">
+      <MemberSignature Language="C#" Value="Aliased" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.EdgeMode Aliased = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.EdgeMode.Aliased" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.EdgeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Render the edges of non-text drawing primitives as aliased edges.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.EdgeMode Unspecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.EdgeMode.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.EdgeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No edge mode is specified. Do not alter the current edge mode of non-text drawing primitives. This is the default value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

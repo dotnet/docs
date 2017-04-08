@@ -1,0 +1,319 @@
+<Type Name="BitmapCache" FullName="System.Windows.Media.BitmapCache">
+  <TypeSignature Language="C#" Value="public sealed class BitmapCache : System.Windows.Media.CacheMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCache extends System.Windows.Media.CacheMode" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.BitmapCache" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.CacheMode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Creates and caches a bitmap representation of a <see cref="T:System.Windows.UIElement" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.BitmapCache> class to improve rendering performance of a complex <xref:System.Windows.UIElement>. Create a <xref:System.Windows.Media.BitmapCache> and assign it to the <xref:System.Windows.UIElement.CacheMode%2A> property of a <xref:System.Windows.UIElement> to cache the element and its subtree as a bitmap in video memory. This is useful when you need to animate, translate, or scale a <xref:System.Windows.UIElement> as quickly as possible. This approach enables a tradeoff between performance and visual quality while content is cached.  
+  
+ Use the <xref:System.Windows.Media.BitmapCacheBrush> class to efficiently reuse a cached element.  
+  
+ Set the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> property to scale the bitmap cache. This is useful if an element will be zoomed, and you want the element to render more clearly than it would if the cache were simply generated at the element’s native resolution.  
+  
+ Set the <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property when the cache displays content that requires pixel-alignment to render correctly, such as ClearType text. This property is ignored by the <xref:System.Windows.Media.BitmapCacheBrush> and <xref:System.Windows.Media.Media3D.Viewport2DVisual3D> classes.  
+  
+ Caching a control does not affect mouse-over behavior, so mouse-over hit testing operates as if it the bitmap were a live control.  
+  
+ Cache regeneration occurs only when the structure of the <xref:System.Windows.UIElement> or its subtree changes, or when the <xref:System.Windows.Media.CacheMode> settings change. Setting the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> or <xref:System.Windows.Media.BitmapCache.EnableClearType%2A> properties causes cache regeneration. Changes to the parent visual tree of the cached <xref:System.Windows.UIElement>, such as transforms, scales, opacities, and effects, do not affect the cache.  
+  
+ The cache functions when hardware acceleration is not available. In this case, the bitmap is rendered in software, and the maximum bitmap dimensions are 2048 x 2048.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Media.RenderOptions> and <xref:System.Windows.Media.TextOptions> do not propagate through a cached element. You may have to set these options again in child elements below the cache.  
+  
+   
+  
+## Examples  
+ The following XAML shows how to cache a <xref:System.Windows.Controls.Canvas> element. For the complete code example, see [How to: Improve Rendering Performance by Caching an Element](~/docs/framework/wpf/graphics-multimedia/how-to-improve-rendering-performance-by-caching-an-element.md).  
+  
+ [!code-xml[System.Windows.Media.BitmapCache#_BitmapCacheCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachecreation)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BitmapCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCache" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BitmapCache (double renderAtScale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 renderAtScale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="renderAtScale" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="renderAtScale">A double that scales the bitmap.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.BitmapCache" /> class with the specified scale.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following XAML shows how to create and assign a <xref:System.Windows.Media.BitmapCache> to a <xref:System.Windows.Controls.Canvas> element. For the complete code example, see [How to: Improve Rendering Performance by Caching an Element](~/docs/framework/wpf/graphics-multimedia/how-to-improve-rendering-performance-by-caching-an-element.md).  
+  
+ [!code-xml[System.Windows.Media.BitmapCache#_BitmapCacheCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachecreation)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCache Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCache Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BitmapCache</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of the <see cref="T:System.Windows.Media.BitmapCache" />, making deep copies of the object's values. When copying the object's dependency properties, this method copies expressions (which might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.BitmapCache CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.BitmapCache CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BitmapCache</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone (deep copy) of the <see cref="T:System.Windows.Media.BitmapCache" /> using its current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.BitmapCache.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableClearType">
+      <MemberSignature Language="C#" Value="public bool EnableClearType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableClearType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCache.EnableClearType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the bitmap is rendered with ClearType activated.</summary>
+        <value>
+          <see langword="true" /> if ClearType is active; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Media.BitmapCache.EnableClearType%2A> property to allow ClearType text to be rendered in the cache.  
+  
+ When the <xref:System.Windows.Media.BitmapCache.EnableClearType%2A> property is `true`, your application must render all of its ClearType text on an opaque background.  
+  
+ When the <xref:System.Windows.Media.BitmapCache.EnableClearType%2A> property is `false`, text in the cache is rendered with grayscale antialiasing.  
+  
+ ClearType text requires correct pixel alignment of rendered characters, so you should set the <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property to `true`. If you do not set this property, the content may not blend correctly.  
+  
+ Use the <xref:System.Windows.Media.BitmapCache.EnableClearType%2A> property when you know the cache is rendered on pixel boundaries, so it is safe to cache ClearType text. This situation occurs commonly in text-scrolling scenarios.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableClearTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EnableClearTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EnableClearTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCache.EnableClearTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.BitmapCache.EnableClearType" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAtScale">
+      <MemberSignature Language="C#" Value="public double RenderAtScale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RenderAtScale" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCache.RenderAtScale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the scale that is applied to the bitmap.</summary>
+        <value>The scale that is applied to the bitmap. The default is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> property to render the <xref:System.Windows.Media.BitmapCache> at a multiple of the normal bitmap size. The normal size is determined by the local size of the element.  
+  
+ Values greater than 1 increase the resolution of the bitmap relative to the native resolution of the element, and values less than 1 decrease the resolution. For example, if the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> property is set to 2.0, and you apply a scale transform that enlarges the content by a factor of 2, the content will have the same visual quality as the same content with <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> set to 1.0 and a transform scale of 1.  
+  
+ When <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> is set to 0, no bitmap is rendered. Negative values are clamped to 0.  
+  
+ If you change this value, the cache is regenerated at the appropriate new resolution.  
+  
+ The following images show how the same content appears for different values of the <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> property.  
+  
+ **RenderAtScale = 1**  
+  
+ ![RenderAtScale &#61; 1](~/add/media/ndp-scale-1.png "RenderAtScale = 1")  
+  
+ **RenderAtScale = 0.5**  
+  
+ ![RenderAtScale &#61; 0.5](~/add/media/ndp-scale05.png "RenderAtScale = 0.5")  
+  
+ **RenderAtScale = 0.2**  
+  
+ ![RenderAtScale &#61; 0.2](~/add/media/ndp-scale02.png "RenderAtScale = 0.2")  
+  
+ The following image shows a zoom transform that is applied to an ancestor of the cached element. When the zoom is set to 1 and <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> is set to 1, the image quality is almost the same as when <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> is set to 2. But when zoom is greater than 1, setting <xref:System.Windows.Media.BitmapCache.RenderAtScale%2A> to 2 will have better image quality.  
+  
+ **RenderAtScale = 1.0**  
+  
+ ![RenderAtScale &#61; 1.0](~/add/media/ndp-scale-10.png "RenderAtScale = 1.0")  
+  
+ **RenderAtScale = 2.0**  
+  
+ ![RenderAtScale &#61; 2.0](~/add/media/ndp-scale-20.png "RenderAtScale = 2.0")  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAtScaleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RenderAtScaleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RenderAtScaleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCache.RenderAtScaleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.BitmapCache.RenderAtScale" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapsToDevicePixels">
+      <MemberSignature Language="C#" Value="public bool SnapsToDevicePixels { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SnapsToDevicePixels" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.BitmapCache.SnapsToDevicePixels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the bitmap is rendered with pixel snapping.</summary>
+        <value>
+          <see langword="true" /> if pixel snapping is active; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property when the cache displays content that requires pixel-alignment to render correctly. This is the case for ClearType text. If you set the <xref:System.Windows.Media.BitmapCache.EnableClearType%2A> property to `true`, consider setting <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> to `true` to ensure proper rendering.  
+  
+ When the <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property is set to `false`, you can move and scale the cached element by a fraction of a pixel, and bilinear filtering is applied.  
+  
+ When the <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property is set to `true`, the bitmap cache is aligned with pixel boundaries of the destination. If you move or scale the cached element by a fraction of a pixel, the bitmap snaps to the pixel grid. In this case, the top-left corner of the bitmap is rounded up and snapped to the pixel grid, but the bottom-right corner is on a fractional pixel boundary.  
+  
+ The <xref:System.Windows.Media.BitmapCache.SnapsToDevicePixels%2A> property is ignored by <xref:System.Windows.Media.BitmapCacheBrush> and when used with a <xref:System.Windows.Media.Media3D.Viewport2DVisual3D>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapsToDevicePixelsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SnapsToDevicePixelsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SnapsToDevicePixelsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapCache.SnapsToDevicePixelsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.BitmapCache.SnapsToDevicePixels" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

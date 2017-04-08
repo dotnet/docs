@@ -1,0 +1,360 @@
+<Type Name="Saml2Assertion" FullName="System.IdentityModel.Tokens.Saml2Assertion">
+  <TypeSignature Language="C#" Value="public class Saml2Assertion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2Assertion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Assertion" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the Assertion element specified in [Saml2Core, 2.3.3].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2Assertion (System.IdentityModel.Tokens.Saml2NameIdentifier issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.Saml2NameIdentifier issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Assertion.#ctor(System.IdentityModel.Tokens.Saml2NameIdentifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="issuer" Type="System.IdentityModel.Tokens.Saml2NameIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that specifies the SAML authority that is making the claim(s) in the assertion. [Saml2Core, 2.3.3].</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> class with the specified issuer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2Assertion.IssueInstant%2A> property is set to the value of the <xref:System.DateTime.UtcNow%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="issuer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Advice">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2Advice Advice { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2Advice Advice" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Advice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Advice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional information related to the assertion that assists processing in certain situations but which may be ignored by applications that do not understand the advice or do not wish to make use of it. [Saml2Core, 2.3.3]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> that contains additional information related to the assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Advice element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanWriteSourceData">
+      <MemberSignature Language="C#" Value="public virtual bool CanWriteSourceData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanWriteSourceData" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.CanWriteSourceData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this assertion was deserialized from XML source and can re-emit the XML data unchanged.</summary>
+        <value>
+          <see langword="true" /> if this assertion can re-emit the XML source data unchanged; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation preserves the source data when read using the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAssertion%2A> method and can re-emit the original data as long as the <xref:System.IdentityModel.Tokens.Saml2Assertion.Id%2A> property has not changed from the time that assertion was read.  
+  
+> [!IMPORTANT]
+>  It is very important that SAML assertions with different data have different IDs. If implementing a scheme whereby an assertion "template" is loaded and certain bits of data are filled in, the Id must be changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conditions">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2Conditions Conditions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2Conditions Conditions" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Conditions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Conditions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the conditions that must be evaluated when assessing the validity of and/or when using the assertion. [Saml2Core 2.3.3]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> that contains the conditions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Conditions element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptingCredentials">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.EncryptingCredentials EncryptingCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.EncryptingCredentials EncryptingCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.EncryptingCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the credentials used for encrypting the assertion. The key identifier in the encrypting credentials is used for the embedded <see langword="EncryptedKey" /> in the <see langword="EncryptedData" /> element.</summary>
+        <value>Returns <see cref="T:Microsoft.IdentityModel.Tokens.EncryptingCredentials" /> that represents the credentials.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalEncryptedKeys">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.EncryptedKeyIdentifierClause&gt; ExternalEncryptedKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.EncryptedKeyIdentifierClause&gt; ExternalEncryptedKeys" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.ExternalEncryptedKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.EncryptedKeyIdentifierClause&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection that contains any additional encrypted keys that are specified external to the EncryptedData element, as children of the EncryptedAssertion element.</summary>
+        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> that contains the keys.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2Id Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2Id Id" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Id</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identifier for this assertion. [Saml2Core, 2.3.3]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> that represents the identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ID attribute. This attribute is required.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IssueInstant">
+      <MemberSignature Language="C#" Value="public DateTime IssueInstant { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime IssueInstant" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.IssueInstant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time instant of issue in UTC. [Saml2Core, 2.3.3]</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the time at which this assertion was issued in UTC. The default is <see cref="P:System.DateTime.UtcNow" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The IssueInstant attribute. This attribute is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Issuer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2NameIdentifier Issuer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2NameIdentifier Issuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Issuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identifier for the SAML authority that is making the claim(s) in the assertion. [Saml2Core, 2.3.3]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that specifies the issuer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Issuer element. This element is required.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SigningCredentials">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SigningCredentials SigningCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SigningCredentials SigningCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.SigningCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SigningCredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The credentials used by the issuer to protect the integrity of the assertion.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SigningCredentials" /> that represents the credentials.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Statements">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Statement&gt; Statements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.Saml2Statement&gt; Statements" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Statements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Statement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains the statements regarding the subject made in this assertion.</summary>
+        <value>A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> that contains the statements for this assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Elements in this collection can be of type <xref:System.IdentityModel.Tokens.Saml2AttributeStatement>, <xref:System.IdentityModel.Tokens.Saml2AuthenticationStatement>, and/or <xref:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement> to represent each of the following SAML elements: AttributeStatement, AuthnStatement, and AuthzDecisionStatement.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2Subject Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2Subject Subject" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Subject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Subject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the subject of the statement(s) in the assertion. [Saml2Core, 2.3.3]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2Subject" /> that specifies the subject.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Subject element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2Assertion.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the SAML version of this assertion. [Saml2Core, 2.3.3]</summary>
+        <value>A string that contains the version.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Version attribute; only version "2.0" is supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSourceData">
+      <MemberSignature Language="C#" Value="public virtual void WriteSourceData (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteSourceData(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Assertion.WriteSourceData(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the source data.</param>
+        <summary>Writes the source data, if available.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">No source data is available</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

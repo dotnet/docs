@@ -1,0 +1,44 @@
+<Type Name="In" FullName="Microsoft.JScript.In">
+  <TypeSignature Language="C#" Value="public sealed class In : Microsoft.JScript.BinaryOp" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit In extends Microsoft.JScript.BinaryOp" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.In" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.BinaryOp</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Determines whether an object is contained in another object. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="JScriptIn">
+      <MemberSignature Language="C#" Value="public static bool JScriptIn (object v1, object v2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool JScriptIn(object v1, object v2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.In.JScriptIn(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="System.Object" />
+        <Parameter Name="v2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="v1">The object to search for.</param>
+        <param name="v2">The object to search in.</param>
+        <summary>Determines whether the first specified object is contained in the second specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="v1" /> is contained in <paramref name="v2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="IContentResolutionService" FullName="System.Web.UI.Design.IContentResolutionService">
+  <TypeSignature Language="C#" Value="public interface IContentResolutionService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContentResolutionService" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IContentResolutionService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for access to a master page from a content page at design time, if provided by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+    <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>A control designer, or a class implementing the <see cref="T:System.Web.UI.Design.IContentResolutionService" /> interface, should not assume the availability of the <see cref="T:System.Web.UI.Design.IContentResolutionService" /> from a design host and, if it is not available, should fail gracefully.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="ContentDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionary ContentDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary ContentDefinitions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IContentResolutionService.ContentDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.Design.ContentDefinition" /> objects for the content placeholders that are identified in the master page.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> containing identifiers and <see cref="T:System.Web.UI.Design.ContentDefinition" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContentDesignerState">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.ContentDesignerState GetContentDesignerState (string identifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.UI.Design.ContentDesignerState GetContentDesignerState(string identifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IContentResolutionService.GetContentDesignerState(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ContentDesignerState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">The identifier for a content place holder.</param>
+        <summary>Retrieves the current state of the identified content place holder.</summary>
+        <returns>The current state of the identified content placeholder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContentDesignerState">
+      <MemberSignature Language="C#" Value="public void SetContentDesignerState (string identifier, System.Web.UI.Design.ContentDesignerState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContentDesignerState(string identifier, valuetype System.Web.UI.Design.ContentDesignerState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IContentResolutionService.SetContentDesignerState(System.String,System.Web.UI.Design.ContentDesignerState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.String" />
+        <Parameter Name="state" Type="System.Web.UI.Design.ContentDesignerState" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">The identifier for a content place holder.</param>
+        <param name="state">A <see cref="T:System.Web.UI.Design.ContentDesignerState" />.</param>
+        <summary>Sets the current state of the identified content place holder.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,688 @@
+<Type Name="DataGridColumnCollection" FullName="System.Web.UI.WebControls.DataGridColumnCollection">
+  <TypeSignature Language="C#" Value="public sealed class DataGridColumnCollection : System.Collections.ICollection, System.Web.UI.IStateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataGridColumnCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Web.UI.IStateManager" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridColumnCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IStateManager</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A collection of <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column objects that represent the columns in a <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection to programmatically manage a collection of <xref:System.Web.UI.WebControls.DataGridColumn>-derived column objects. These objects represent the columns in a <xref:System.Web.UI.WebControls.DataGrid> control. You can add, remove, or insert columns in the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+> [!NOTE]
+>  When the <xref:System.Web.UI.WebControls.DataGrid.AutoGenerateColumns%2A> property is set to `true,` the columns created by the <xref:System.Web.UI.WebControls.DataGrid> control are not added to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid> control does not store the contents of its <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection in the view state. To add or remove a column dynamically, you must programmatically add or remove the column every time the page is refreshed. Provide a `Page_Init` function that adds or removes the column before the <xref:System.Web.UI.WebControls.DataGrid> control's state is reloaded and the control is rebuilt. Otherwise, the changes to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection are not reflected in the <xref:System.Web.UI.WebControls.DataGrid> control when it is displayed.  
+  
+> [!NOTE]
+>  Although you can programmatically add columns to or remove columns from the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control, it is easier to list the columns statically and then use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to display or hide each column.  
+  
+ The order of the columns in the collection determines the order that the columns are displayed in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ The following table lists the different column classes that derive from the <xref:System.Web.UI.WebControls.DataGridColumn> class.  
+  
+|Column Class|Description|  
+|------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.BoundColumn>|A column that is bound to a field in a data source. It displays each item in the field as text. This is the default column type for the <xref:System.Web.UI.WebControls.DataGrid> control.|  
+|<xref:System.Web.UI.WebControls.ButtonColumn>|A column that displays a command button for each item in the column. This allows you to create a column of custom button controls, such as Add or Remove buttons.|  
+|<xref:System.Web.UI.WebControls.EditCommandColumn>|A column that contains editing commands for each item in the column.|  
+|<xref:System.Web.UI.WebControls.HyperLinkColumn>|A column that displays each item in the column as a hyperlink. The contents of the column can be bound to a field in a data source, or to static text.|  
+|<xref:System.Web.UI.WebControls.TemplateColumn>|A column that displays each item in the column according to a specified template. This allows you to control the content of the column, for example to display images.|  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.DataGridColumn> class is the base class for the column classes listed. It is not used directly in the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection to dynamically add a column to the <xref:System.Web.UI.WebControls.DataGrid> control. Note that the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control is an instance of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCtor/CS/datagridctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCtor/VB/datagridctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridColumnCollection (System.Web.UI.WebControls.DataGrid owner, System.Collections.ArrayList columns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataGrid owner, class System.Collections.ArrayList columns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.#ctor(System.Web.UI.WebControls.DataGrid,System.Collections.ArrayList)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.WebControls.DataGrid" />
+        <Parameter Name="columns" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that corresponds with this collection.</param>
+        <param name="columns">A <see cref="T:System.Collections.ArrayList" /> that stores the collection of columns.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> class.  
+  
+ [!code-csharp[Classic DataGridColumnCollection.DataGridColumnCollection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.DataGridColumnCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridColumnCollection.DataGridColumnCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.DataGridColumnCollection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.UI.WebControls.DataGridColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.WebControls.DataGridColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.Add(System.Web.UI.WebControls.DataGridColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.UI.WebControls.DataGridColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">The <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object to append to the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</param>
+        <summary>Appends the specified <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object to the end of the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to add a <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object to the end of a <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid> control does not store the contents of its <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection in the view state. To add or remove a column dynamically, you must programmatically add or remove the column each time the page is refreshed. Provide a `Page_Init` function that adds or removes the column before the <xref:System.Web.UI.WebControls.DataGrid> control can reload its state and rebuild itself. Otherwise, the changes to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection are not reflected in the <xref:System.Web.UI.WebControls.DataGrid> control when it is displayed.  
+  
+> [!NOTE]
+>  Although you can programmatically add columns to or remove columns from the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control, it is easier to list the columns statically and then use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to display or hide each column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.Add%2A> method to dynamically add a column to the <xref:System.Web.UI.WebControls.DataGrid> control. Note that the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control is an instance of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCtor/CS/datagridctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCtor/VB/datagridctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public void AddAt (int index, System.Web.UI.WebControls.DataGridColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAt(int32 index, class System.Web.UI.WebControls.DataGridColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.AddAt(System.Int32,System.Web.UI.WebControls.DataGridColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Web.UI.WebControls.DataGridColumn" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index location in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> at which to insert the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column.</param>
+        <param name="column">The <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column to insert in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</param>
+        <summary>Inserts a <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to insert a <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object at the specified index location in the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid> control does not store the contents of its <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection in the view state. To add or remove a column dynamically, you must programmatically add or remove the column each time the page is refreshed. Provide a `Page_Init` function that adds or removes the column before the <xref:System.Web.UI.WebControls.DataGrid> control can reload its state and rebuild itself. Otherwise, the changes to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection are not reflected in the <xref:System.Web.UI.WebControls.DataGrid> control when it is displayed.  
+  
+> [!NOTE]
+>  Although you can programmatically add columns to or remove columns from the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control, it is easier to list the columns statically and then use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to display or hide each column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.AddAt%2A> method to dynamically add a column to the <xref:System.Web.UI.WebControls.DataGrid> control. Note that the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control is an instance of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.AddAt Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.AddAt Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.AddAt Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="column" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column objects from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to remove all <xref:System.Web.UI.WebControls.DataGridColumn>-derived column objects from the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TableRowCollection.Count%2A> property is automatically set to `0` after this method is used.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.Clear%2A> method to empty the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection before adding new columns to the collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.Clear Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.Clear Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</param>
+        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
+        <summary>Copies the items from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection to the specified <see cref="T:System.Array" />, starting at the specified index in the <see cref="T:System.Array" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to copy the contents of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection into the specified <xref:System.Array?displayProperty=fullName>, starting at the specified index.  
+  
+> [!NOTE]
+>  The `array` parameter must be a zero-based <xref:System.Array?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection to an array of <xref:System.Web.UI.WebControls.DataGridColumn> objects.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.CopyTo Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.CopyTo Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumnCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of columns in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <value>The number of columns in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to determine the number of columns in the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection. The <xref:System.Web.UI.WebControls.DataGridColumnCollection.Count%2A> property is commonly used when iterating through the collection to determine the upper bound of the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.Count%2A> property to determine the upper bound of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection. This value is then used to iterate though the collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[classic datagridcolumncollection.this example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.this Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[classic datagridcolumncollection.this example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.this Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Collections.IEnumerator" /> interface that contains all the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column objects in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <returns>A <see cref="T:System.Collections.IEnumerator" /> interface that contains all <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column objects in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> interface that can be iterated through easily to get each item in the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ Use the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property to get the item currently pointed to in the collection.  
+  
+ Use the <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method to move to the next item in the collection.  
+  
+ Use the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the initial position.  
+  
+> [!NOTE]
+>  The <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> method must be called after creating a <xref:System.Collections.IEnumerator?displayProperty=fullName> object, or after using the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method to move the enumerator to the first item in the collection. Otherwise, the item represented by the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property is undefined.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.GetEnumerator%2A> method to create a <xref:System.Collections.IEnumerator?displayProperty=fullName> interface that can be iterated though to display the contents of the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.GetEnumerator Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.GetEnumerator Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.DataGridColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.DataGridColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.IndexOf(System.Web.UI.WebControls.DataGridColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.UI.WebControls.DataGridColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">The <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column to search for in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</param>
+        <summary>Returns the index of the specified <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <returns>The index position of the specified <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />. The default value is <see langword="-1" />, which indicates that the specified <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived object is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine the index number of the specified <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object in the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection. If the specified <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object is not found, an index of `-1` is returned.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.IndexOf%2A> method to determine the index of a <xref:System.Web.UI.WebControls.DataGridColumn>-derived object in a <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.IndexOf Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.IndexOf Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.IndexOf Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.IndexOf Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumnCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the columns in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection can be modified.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property always returns `false` to indicate that the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection can be written to in all cases.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumnCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is derived from the <xref:System.Collections.ICollection?displayProperty=fullName> class and is overridden to always return `false`.  
+  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataGridColumn this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridColumn Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumnCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataGridColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> to retrieve.</param>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection at the specified index.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this indexer to get a <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object from the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection at the specified index using array notation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the indexer to get a <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object from the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection. The heading text from the <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object is then displayed on the Web page for each item in the collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[classic datagridcolumncollection.this example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.this Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[classic datagridcolumncollection.this example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.this Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.DataGridColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.DataGridColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.Remove(System.Web.UI.WebControls.DataGridColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.UI.WebControls.DataGridColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">The <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column to remove from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" />.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to remove the specified <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object from a <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid> control does not store the contents of its <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection in the view state. To add or remove a column dynamically, you must programmatically add or remove the column every time the page is refreshed. Provide a `Page_Init` function that adds or removes the column before the <xref:System.Web.UI.WebControls.DataGrid> control can reload its state and rebuild itself. Otherwise, the changes to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection are not reflected in the <xref:System.Web.UI.WebControls.DataGrid> control when it is displayed.  
+  
+> [!NOTE]
+>  Although you can programmatically add columns to or remove columns from the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control, it is easier to list the columns statically and then use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to display or hide each column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.Remove%2A> method to remove a column from the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection. Note that the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control is the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.Remove Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.Remove Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column in the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> to remove.</param>
+        <summary>Removes a <see cref="T:System.Web.UI.WebControls.DataGridColumn" />-derived column object from the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to remove a <xref:System.Web.UI.WebControls.DataGridColumn>-derived column object from a <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection at the specified index.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid> control does not store the contents of its <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection in the view state. To add or remove a column dynamically, you must programmatically add or remove the column each time the page is refreshed. Provide a `Page_Init` function that adds or removes the column before the <xref:System.Web.UI.WebControls.DataGrid> control can reload its state and rebuild itself. Otherwise, the changes to the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection are not reflected in the <xref:System.Web.UI.WebControls.DataGrid> control when it is displayed.  
+  
+> [!NOTE]
+>  Although you can programmatically add columns to or remove columns from the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> collection of the <xref:System.Web.UI.WebControls.DataGrid> control, it is easier to list the columns statically and then use the <xref:System.Web.UI.WebControls.DataGridColumn.Visible%2A> property to display or hide each column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridColumnCollection.RemoveAt%2A> method to remove a column from the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection. Note that the <xref:System.Web.UI.WebControls.DataGrid.Columns%2A> property of the <xref:System.Web.UI.WebControls.DataGrid> control is the <xref:System.Web.UI.WebControls.DataGridColumnCollection> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridColumnCollection.RemoveAt Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridColumnCollection.RemoveAt Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridColumnCollection.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridColumnCollection.RemoveAt Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than <see langword="0" /> or greater than <see cref="P:System.Web.UI.WebControls.DataGridColumnCollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that can be used to synchronize access to the <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> collection.</summary>
+        <value>A <see cref="T:System.Object" /> that can be used to synchronize access to the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned in this implementation is the <xref:System.Web.UI.WebControls.DataGridColumnCollection> object.  
+  
+ For more information on the <xref:System.Web.UI.WebControls.DataGridColumnCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A?displayProperty=fullName> property of the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridColumnCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection is tracking its view-state changes.</summary>
+        <value>
+          <see langword="true" /> if a <see cref="T:System.Web.UI.WebControls.DataGridColumnCollection" /> object is tracking its view-state changes; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataGridColumnCollection.System%23Web%23UI%23IStateManager%23IsTrackingViewState%2A> member is an explicit interface member implementation. It can be used only when a <xref:System.Web.UI.WebControls.DataGridColumnCollection> instance is cast to an <xref:System.Web.UI.IStateManager> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.LoadViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that contains the saved view state values for the control.</param>
+        <summary>Loads the previously saved state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
+      <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an object containing state changes.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the saved view state values for the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
+      <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridColumnCollection.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts tracking state changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

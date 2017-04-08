@@ -1,0 +1,255 @@
+<Type Name="ProcessInfo" FullName="System.Web.ProcessInfo">
+  <TypeSignature Language="C#" Value="public class ProcessInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ProcessInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information on processes currently executing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the static methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=fullName> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=fullName>. These methods are the only useful ways to create an initialized object.  
+  
+> [!NOTE]
+>  If you are using Microsoft Internet Information Services (IIS) 6.0, process metrics returned by the <xref:System.Web.ProcessInfo> classes are available only if you are running in IIS 5.0 isolation mode. If you are using IIS 6.0 in worker process isolation mode, the ASP.NET process model is disabled and an <xref:System.Web.HttpException> exception is thrown when you access <xref:System.Web.ProcessInfo> members.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.ProcessInfo.Age%2A>, <xref:System.Web.ProcessInfo.PeakMemoryUsed%2A>, <xref:System.Web.ProcessInfo.ProcessID%2A>, <xref:System.Web.ProcessInfo.RequestCount%2A>, <xref:System.Web.ProcessInfo.ShutdownReason%2A>, <xref:System.Web.ProcessInfo.StartTime%2A> and <xref:System.Web.ProcessInfo.Status%2A> properties of the <xref:System.Web.ProcessInfo> class. The example displays a <xref:System.Web.UI.WebControls.LinkButton>. When the <xref:System.Web.UI.WebControls.LinkButton> is clicked, the current process information is displayed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ProcessInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ProcessInfo/CS/processinfocs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ProcessInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ProcessInfo/VB/processinfovb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProcessInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ProcessInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ProcessInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the `static` methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=fullName> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=fullName>. These methods are the only useful ways to create an initialized <xref:System.Web.ProcessInfo> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProcessInfo (DateTime startTime, TimeSpan age, int processID, int requestCount, System.Web.ProcessStatus status, System.Web.ProcessShutdownReason shutdownReason, int peakMemoryUsed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime startTime, valuetype System.TimeSpan age, int32 processID, int32 requestCount, valuetype System.Web.ProcessStatus status, valuetype System.Web.ProcessShutdownReason shutdownReason, int32 peakMemoryUsed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ProcessInfo.#ctor(System.DateTime,System.TimeSpan,System.Int32,System.Int32,System.Web.ProcessStatus,System.Web.ProcessShutdownReason,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startTime" Type="System.DateTime" />
+        <Parameter Name="age" Type="System.TimeSpan" />
+        <Parameter Name="processID" Type="System.Int32" />
+        <Parameter Name="requestCount" Type="System.Int32" />
+        <Parameter Name="status" Type="System.Web.ProcessStatus" />
+        <Parameter Name="shutdownReason" Type="System.Web.ProcessShutdownReason" />
+        <Parameter Name="peakMemoryUsed" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startTime">A <see cref="T:System.DateTime" /> that indicates the time at which the process started.</param>
+        <param name="age">The <see cref="T:System.TimeSpan" /> that indicates the time elapsed since the process started.</param>
+        <param name="processID">The ID number assigned to the process.</param>
+        <param name="requestCount">The number of start requests for the process.</param>
+        <param name="status">One of the <see cref="T:System.Web.ProcessStatus" /> values that indicates the current status of the process.</param>
+        <param name="shutdownReason">One of the <see cref="T:System.Web.ProcessShutdownReason" /> values.</param>
+        <param name="peakMemoryUsed">The maximum memory used, in kilobytes (KB).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ProcessInfo" /> class and sets internal information indicating the status of the process.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class returns information about ASP.NET worker processes that are running under the ASP.NET process model. Objects of this type are returned by the static methods <xref:System.Web.ProcessModelInfo.GetCurrentProcessInfo%2A?displayProperty=fullName> and <xref:System.Web.ProcessModelInfo.GetHistory%2A?displayProperty=fullName>. These methods are the only useful ways to create an initialized <xref:System.Web.ProcessInfo> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Age">
+      <MemberSignature Language="C#" Value="public TimeSpan Age { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Age" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.Age" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of time the process has been running.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that indicates the time elapsed since the process started.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeakMemoryUsed">
+      <MemberSignature Language="C#" Value="public int PeakMemoryUsed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PeakMemoryUsed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.PeakMemoryUsed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum amount of memory the process has used.</summary>
+        <value>The maximum memory used, in kilobytes (KB).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessID">
+      <MemberSignature Language="C#" Value="public int ProcessID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProcessID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.ProcessID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ID number assigned to the process.</summary>
+        <value>The process ID number assigned by Windows.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestCount">
+      <MemberSignature Language="C#" Value="public int RequestCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RequestCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.RequestCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of start requests for the process.</summary>
+        <value>The number of requests executed by the process.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAll">
+      <MemberSignature Language="C#" Value="public void SetAll (DateTime startTime, TimeSpan age, int processID, int requestCount, System.Web.ProcessStatus status, System.Web.ProcessShutdownReason shutdownReason, int peakMemoryUsed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAll(valuetype System.DateTime startTime, valuetype System.TimeSpan age, int32 processID, int32 requestCount, valuetype System.Web.ProcessStatus status, valuetype System.Web.ProcessShutdownReason shutdownReason, int32 peakMemoryUsed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ProcessInfo.SetAll(System.DateTime,System.TimeSpan,System.Int32,System.Int32,System.Web.ProcessStatus,System.Web.ProcessShutdownReason,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startTime" Type="System.DateTime" />
+        <Parameter Name="age" Type="System.TimeSpan" />
+        <Parameter Name="processID" Type="System.Int32" />
+        <Parameter Name="requestCount" Type="System.Int32" />
+        <Parameter Name="status" Type="System.Web.ProcessStatus" />
+        <Parameter Name="shutdownReason" Type="System.Web.ProcessShutdownReason" />
+        <Parameter Name="peakMemoryUsed" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startTime">A <see cref="T:System.DateTime" /> that indicates the time at which the process started.</param>
+        <param name="age">A <see cref="T:System.TimeSpan" /> that indicates the time elapsed since the process started.</param>
+        <param name="processID">The ID number assigned to the process.</param>
+        <param name="requestCount">The number of start requests for the process.</param>
+        <param name="status">One of the <see cref="T:System.Web.ProcessStatus" /> values that indicates the time elapsed since the process started.</param>
+        <param name="shutdownReason">One of the <see cref="T:System.Web.ProcessShutdownReason" /> values.</param>
+        <param name="peakMemoryUsed">The maximum memory used, in kilobytes (KB).</param>
+        <summary>Sets internal information indicating the status of the process.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShutdownReason">
+      <MemberSignature Language="C#" Value="public System.Web.ProcessShutdownReason ShutdownReason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ProcessShutdownReason ShutdownReason" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.ShutdownReason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ProcessShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates why the process shut down.</summary>
+        <value>On of the <see cref="T:System.Web.ProcessShutdownReason" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public DateTime StartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartTime" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time at which the process started.</summary>
+        <value>A <see cref="T:System.DateTime" /> that indicates the time at which the process started.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Web.ProcessStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ProcessStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ProcessInfo.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ProcessStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current status of the process.</summary>
+        <value>One of the <see cref="T:System.Web.ProcessStatus" /> values that indicates the current status of the process.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

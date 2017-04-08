@@ -1,0 +1,303 @@
+<Type Name="WebChannelFactory&lt;TChannel&gt;" FullName="System.ServiceModel.Web.WebChannelFactory&lt;TChannel&gt;">
+  <TypeSignature Language="C#" Value="public class WebChannelFactory&lt;TChannel&gt; : System.ServiceModel.ChannelFactory&lt;TChannel&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebChannelFactory`1&lt;TChannel&gt; extends System.ServiceModel.ChannelFactory`1&lt;!TChannel&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebChannelFactory`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TChannel">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ChannelFactory&lt;TChannel&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">TChannel</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TChannel">The type of channel to create.</typeparam>
+    <summary>A class for accessing [!INCLUDE[indigo1](~/includes/indigo1-md.md)] Web services on a client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a special <xref:System.ServiceModel.ChannelFactory> that automatically adds the <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint if it is not already present. Furthermore, it adds a default <xref:System.ServiceModel.WebHttpBinding> to the endpoint if the binding is not explicitly configured and the address is an HTTP or HTTPS address.  
+  
+ If all the operations of the contract have no return value or have a return value of type <xref:System.IO.Stream>, then the <xref:System.ServiceModel.Web.WebChannelFactory%601> configures the binding for the appropriate content type.  
+  
+   
+  
+## Examples  
+ The following code shows how to use the <xref:System.ServiceModel.Web.WebChannelFactory%601> class to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#0](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#0)]
+ [!code-vb[BasicWebProgramming#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#0)]  
+  
+ For a full code example, see [Basic WCF REST Programming Model Sample](http://msdn.microsoft.com/en-us/d3265542-febc-4018-84ea-32ddcfd2d874).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding to use when creating the channel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#1](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#1)]
+ [!code-vb[BasicWebProgramming#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The endpoint to use when creating the channel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#2](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#2)]
+ [!code-vb[BasicWebProgramming#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (string configurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configurationName">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `endpointConfigurationName` parameter must be set to the same value as the `name` attribute of the `<endpoint>` element in the application configuration file.  
+  
+   
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#3](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#3)]
+ [!code-vb[BasicWebProgramming#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="channelType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type passed for the type parameter must be an interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (Uri remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="remoteAddress" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="remoteAddress">The URI of the Web service that is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class with the specified <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and call a service.  
+  
+ [!code-csharp[BasicWebProgramming#4](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#4)]
+ [!code-vb[BasicWebProgramming#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (System.ServiceModel.Channels.Binding binding, Uri remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.Uri remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.ServiceModel.Channels.Binding,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding to use.</param>
+        <param name="remoteAddress">The URI of the Web service that is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class with the specified binding and <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and call a service.  
+  
+ [!code-csharp[BasicWebProgramming#5](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#5)]
+ [!code-vb[BasicWebProgramming#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (string endpointConfigurationName, Uri remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.Uri remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The name within the application configuration file where the channel is configured.</param>
+        <param name="remoteAddress">The URI of the Web service that is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class with the specified endpoint configuration and <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `endpointConfigurationName` parameter must be set to the same value as the `name` attribute of the `<endpoint>` element in the application configuration file.  
+  
+   
+  
+## Examples  
+ The following code shows how to use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and call a service.  
+  
+ [!code-csharp[BasicWebProgramming#6](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#6)]
+ [!code-vb[BasicWebProgramming#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnOpening">
+      <MemberSignature Language="C#" Value="protected override void OnOpening ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnOpening() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.OnOpening" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method is called when the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> is opened.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is called, if the <xref:System.ServiceModel.Web.WebChannelFactory%601> is not already associated with a binding a new <xref:System.ServiceModel.WebHttpBinding> is created based on the URI scheme of the remote address. Bindings with an HTTPS remote address are appropriately configured with the <xref:System.ServiceModel.WebHttpSecurity.Mode%2A> property set to <xref:System.ServiceModel.WebHttpSecurityMode> and the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property set to `None`. The <xref:System.ServiceModel.Web.WebChannelFactory%601> adds an instance of <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint if one does not already exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

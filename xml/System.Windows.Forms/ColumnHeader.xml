@@ -1,0 +1,612 @@
+<Type Name="ColumnHeader" FullName="System.Windows.Forms.ColumnHeader">
+  <TypeSignature Language="C#" Value="public class ColumnHeader : System.ComponentModel.Component, ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnHeader extends System.ComponentModel.Component implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ColumnHeaderConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays a single column header in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A column header is an item in a <xref:System.Windows.Forms.ListView> control that contains heading text. <xref:System.Windows.Forms.ColumnHeader> objects can be added to a <xref:System.Windows.Forms.ListView> using the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> class. To add a group of columns to a <xref:System.Windows.Forms.ListView>, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> class. You can use the <xref:System.Windows.Forms.ColumnHeader.Index%2A> property of the <xref:System.Windows.Forms.ColumnHeader> class to determine where the <xref:System.Windows.Forms.ColumnHeader> is located in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ <xref:System.Windows.Forms.ColumnHeader> provides the <xref:System.Windows.Forms.ColumnHeader.Text%2A> and <xref:System.Windows.Forms.ColumnHeader.TextAlign%2A> properties to set the text displayed in the control and the alignment of the text in the column header. To determine whether a <xref:System.Windows.Forms.ColumnHeader> is associated with a <xref:System.Windows.Forms.ListView> control, you can reference the <xref:System.Windows.Forms.ColumnHeader.ListView%2A> property. If you want to copy a <xref:System.Windows.Forms.ColumnHeader> for use in another <xref:System.Windows.Forms.ListView> control, you can use the <xref:System.Windows.Forms.ColumnHeader.Clone%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control. The example creates <xref:System.Windows.Forms.ColumnHeader> objects and sets the column header's <xref:System.Windows.Forms.ColumnHeader.Text%2A>, <xref:System.Windows.Forms.ColumnHeader.TextAlign%2A> and <xref:System.Windows.Forms.ColumnHeader.Width%2A> properties. The example also adds items and subitems to the <xref:System.Windows.Forms.ListView>. To run this example paste the following code in a form and call the `PopulateListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeader" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control. The example creates <xref:System.Windows.Forms.ColumnHeader> objects and sets the column header's <xref:System.Windows.Forms.ColumnHeader.Text%2A>, <xref:System.Windows.Forms.ColumnHeader.TextAlign%2A> and <xref:System.Windows.Forms.ColumnHeader.Width%2A> properties. The example also adds items and subitems to the <xref:System.Windows.Forms.ListView>. To run this example paste the following code in a form and call the `PopulateListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnHeader (int imageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 imageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="imageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="imageIndex">The index of the image to display in the <see cref="T:System.Windows.Forms.ColumnHeader" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeader" /> class with the image specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnHeader (string imageKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string imageKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="imageKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="imageKey">The key of the image to display in the <see cref="T:System.Windows.Forms.ColumnHeader" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeader" /> class with the image specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoResize">
+      <MemberSignature Language="C#" Value="public void AutoResize (System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AutoResize(valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.AutoResize(System.Windows.Forms.ColumnHeaderAutoResizeStyle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headerAutoResize" Type="System.Windows.Forms.ColumnHeaderAutoResizeStyle" />
+      </Parameters>
+      <Docs>
+        <param name="headerAutoResize">One of the <see cref="T:System.Windows.Forms.ColumnHeaderAutoResizeStyle" /> values.</param>
+        <summary>Resizes the width of the column as indicated by the resize style.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Forms.ColumnHeader.AutoResize%2A> method is only effective once the <xref:System.Windows.Forms.ListView> and containing <xref:System.Windows.Forms.Form> have been constructed, and the column is populated with items. If new items are added to the <xref:System.Windows.Forms.ListView>, the column will not resize unless <xref:System.Windows.Forms.ColumnHeader.AutoResize%2A> is called again.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A value other than <see cref="F:System.Windows.Forms.ColumnHeaderAutoResizeStyle.None" /> is passed to the <see cref="M:System.Windows.Forms.ColumnHeader.AutoResize(System.Windows.Forms.ColumnHeaderAutoResizeStyle)" /> method when the <see cref="P:System.Windows.Forms.ListView.View" /> property is a value other than <see cref="F:System.Windows.Forms.View.Details" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an identical copy of the current <see cref="T:System.Windows.Forms.ColumnHeader" /> that is not attached to any list view control.</summary>
+        <returns>An object representing a copy of this <see cref="T:System.Windows.Forms.ColumnHeader" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to copy existing <xref:System.Windows.Forms.ColumnHeader> objects from an existing <xref:System.Windows.Forms.ListView> control for use in other <xref:System.Windows.Forms.ListView> controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayIndex">
+      <MemberSignature Language="C#" Value="public int DisplayIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.DisplayIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display order of the column relative to the currently displayed columns.</summary>
+        <value>The display order of the column, relative to the currently displayed columns.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.ColumnHeader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Windows.Forms.ColumnHeader.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.ColumnHeader>. The <xref:System.Windows.Forms.ColumnHeader.Dispose%2A> method leaves the <xref:System.Windows.Forms.ColumnHeader> in an unusable state. After calling <xref:System.Windows.Forms.ColumnHeader.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.ColumnHeader> so the memory it was occupying can be reclaimed by garbage collection.  
+  
+> [!NOTE]
+>  Always call <xref:System.Windows.Forms.ColumnHeader.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.ColumnHeader>. Otherwise, the resources the <xref:System.Windows.Forms.ColumnHeader> is using will not be freed until garbage collection calls the <xref:System.Windows.Forms.ColumnHeader> object's destructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageIndex">
+      <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ImageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageIndexConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the image displayed in the <see cref="T:System.Windows.Forms.ColumnHeader" />.</summary>
+        <value>The index of the image displayed in the <see cref="T:System.Windows.Forms.ColumnHeader" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.ImageIndex%2A> property refers to the index of an image specified by the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property of the <xref:System.Windows.Forms.ListView> that contains the <xref:System.Windows.Forms.ColumnHeader>. The <xref:System.Windows.Forms.ColumnHeader.ImageIndex%2A> property returns -1 if there is no <xref:System.Windows.Forms.ListView.SmallImageList%2A> set on the containing <xref:System.Windows.Forms.ListView>. The image displayed in a column is typically used to indicate the state of items in the column.  
+  
+ <xref:System.Windows.Forms.ColumnHeader.ImageKey%2A> and <xref:System.Windows.Forms.ColumnHeader.ImageIndex%2A> are mutually exclusive, meaning if one is set, the other is set to an invalid value and ignored.  
+  
+ The image associated with a <xref:System.Windows.Forms.ColumnHeader> is typically used to indicate the state information. If you set the <xref:System.Windows.Forms.ColumnHeader.ImageIndex%2A> to a value greater than the index of the last item in the associated image list, <xref:System.Windows.Forms.ColumnHeader.ImageIndex%2A> will be set to the index of the last item in the image list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see cref="P:System.Windows.Forms.ColumnHeader.ImageIndex" /> is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageKey">
+      <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ImageKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key of the image displayed in the column.</summary>
+        <value>The key of the image displayed in the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.ImageKey%2A> and <xref:System.Windows.Forms.ColumnHeader.ImageIndex%2A> properties are mutually exclusive, meaning if one is set, the other is set to an invalid value and ignored.  
+  
+ If <xref:System.Windows.Forms.ColumnHeader.ImageKey%2A> is set to an invalid value, an image will not be displayed, and an exception will not be thrown.  
+  
+ The image associated with a <xref:System.Windows.Forms.ColumnHeader> is typically used to indicate the state information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageList">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList ImageList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList ImageList" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ImageList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the image list associated with the <see cref="T:System.Windows.Forms.ColumnHeader" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ColumnHeader" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader> returns the value of the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property for the <xref:System.Windows.Forms.ListView> that contains the <xref:System.Windows.Forms.ColumnHeader>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location with the <see cref="T:System.Windows.Forms.ListView" /> control's <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> of this column.</summary>
+        <value>The zero-based index of the column header within the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> of the <see cref="T:System.Windows.Forms.ListView" /> control it is contained in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property does not necessarily correspond to the current visual position of the column header within the <xref:System.Windows.Forms.ListView>. This can be due to the user reordering the column headers at run time (when the <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A> property is set to `true`). If the <xref:System.Windows.Forms.ColumnHeader> is not contained within a <xref:System.Windows.Forms.ListView> control this property returns a value of -1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListView">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView ListView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView ListView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.ListView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ListView" /> control the <see cref="T:System.Windows.Forms.ColumnHeader" /> is located in.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ListView" /> control that represents the control that contains the <see cref="T:System.Windows.Forms.ColumnHeader" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to determine which <xref:System.Windows.Forms.ListView> control a specific <xref:System.Windows.Forms.ColumnHeader> object is associated with.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Windows.Forms.ColumnHeader" />.</summary>
+        <value>The name of the <see cref="T:System.Windows.Forms.ColumnHeader" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that contains data to associate with the <see cref="T:System.Windows.Forms.ColumnHeader" />.</summary>
+        <value>An <see cref="T:System.Object" /> that contains data to associate with the <see cref="T:System.Windows.Forms.ColumnHeader" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text displayed in the column header.</summary>
+        <value>The text displayed in the column header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control. The example creates <xref:System.Windows.Forms.ColumnHeader> objects and sets the column header's <xref:System.Windows.Forms.ColumnHeader.Text%2A>, <xref:System.Windows.Forms.ColumnHeader.TextAlign%2A> and <xref:System.Windows.Forms.ColumnHeader.Width%2A> properties. The example also adds items and subitems to the <xref:System.Windows.Forms.ListView>. To run this example paste the following code in a form and call the `PopulateListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlign">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HorizontalAlignment TextAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.HorizontalAlignment TextAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.TextAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HorizontalAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal alignment of the text displayed in the <see cref="T:System.Windows.Forms.ColumnHeader" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values. The default is <see cref="F:System.Windows.Forms.HorizontalAlignment.Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to provide different text alignment settings for the text displayed in each <xref:System.Windows.Forms.ColumnHeader>.  
+  
+> [!NOTE]
+>  Due to a limitation in the underlying control, this property has no effect on the first column in the <xref:System.Windows.Forms.ListView> control, which is always aligned to the left. To work around this limitation in [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], you can handle the <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=fullName> event and paint the column header yourself.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control. The example creates <xref:System.Windows.Forms.ColumnHeader> objects and sets the column header's <xref:System.Windows.Forms.ColumnHeader.Text%2A>, <xref:System.Windows.Forms.ColumnHeader.TextAlign%2A> and <xref:System.Windows.Forms.ColumnHeader.Width%2A> properties. The example also adds items and subitems to the <xref:System.Windows.Forms.ListView>. To run this example paste the following code in a form and call the `PopulateListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeader.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any. This method should not be overridden.</summary>
+        <returns>A <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any, or <see langword="null" /> if the <see cref="T:System.ComponentModel.Component" /> is unnamed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnHeader.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(60)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the column.</summary>
+        <value>The width of the column, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to set the <xref:System.Windows.Forms.ColumnHeader.Width%2A> of the <xref:System.Windows.Forms.ColumnHeader>. The <xref:System.Windows.Forms.ColumnHeader> can be set to adjust at run time to the column contents or heading. To adjust the width of the longest item in the column, set the <xref:System.Windows.Forms.ColumnHeader.Width%2A> property to -1. To autosize to the width of the column heading, set the <xref:System.Windows.Forms.ColumnHeader.Width%2A> property to -2.  
+  
+> [!NOTE]
+>  Unexpected behavior can result when the combined width of all columns exceeds 32,768 pixels.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> control. The example creates <xref:System.Windows.Forms.ColumnHeader> objects and sets the column header's <xref:System.Windows.Forms.ColumnHeader.Text%2A>, <xref:System.Windows.Forms.ColumnHeader.TextAlign%2A> and <xref:System.Windows.Forms.ColumnHeader.Width%2A> properties. The example also adds items and subitems to the <xref:System.Windows.Forms.ListView>. To run this example paste the following code in a form and call the `PopulateListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewAndPictureBox#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewAndPictureBox/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

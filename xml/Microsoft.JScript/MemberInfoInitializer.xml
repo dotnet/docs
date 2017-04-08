@@ -1,0 +1,66 @@
+<Type Name="MemberInfoInitializer" FullName="Microsoft.JScript.MemberInfoInitializer">
+  <TypeSignature Language="C#" Value="public interface MemberInfoInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MemberInfoInitializer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.MemberInfoInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("98A3BF0A-1B56-4f32-ACE0-594FEB27EC48")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that an external COM object must implement. This interface is used by an external COM implementation to expose its objects to JScript because JScript needs a managed <see cref="T:System.Reflection.MemberInfo" /> to bind to an external object. This interface is implemented by <see cref="T:Microsoft.JScript.COMFieldInfo" />, <see cref="T:Microsoft.JScript.COMMethodInfo" />, and <see cref="T:Microsoft.JScript.COMPropertyInfo" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCOMMemberInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.COMMemberInfo GetCOMMemberInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.COMMemberInfo GetCOMMemberInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MemberInfoInitializer.GetCOMMemberInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.COMMemberInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets a managed object that enables JScript to communicate with an external COM member.</summary>
+        <returns>A managed object that enables JScript to communicate with an external COM member.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (string name, Microsoft.JScript.COMMemberInfo dispatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(string name, class Microsoft.JScript.COMMemberInfo dispatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.MemberInfoInitializer.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dispatch" Type="Microsoft.JScript.COMMemberInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the external COM member.</param>
+        <param name="dispatch">Information that enables JScript to call, get, and set the external COM member.</param>
+        <summary>When implemented in a class, initializes the information that enables JScript to communicate with the specified external COM member.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,62 @@
+<Type Name="TableHeaderRow" FullName="System.Web.UI.WebControls.TableHeaderRow">
+  <TypeSignature Language="C#" Value="public class TableHeaderRow : System.Web.UI.WebControls.TableRow" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableHeaderRow extends System.Web.UI.WebControls.TableRow" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderRow" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.TableRow</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a heading row in a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableHeaderRow> class represents a heading row in a <xref:System.Web.UI.WebControls.Table> control. This class supports displaying tables on devices with a limited screen size. On these devices, a table with many columns and rows must be rendered across multiple pages. Adding a <xref:System.Web.UI.WebControls.TableHeaderRow> to a <xref:System.Web.UI.WebControls.Table> control allows you to specify a heading row that is rendered as the first row on each page that displays a view of the table. For more information about the view formats for a table rendered on a device with a limited screen size, see <xref:System.Web.UI.WebControls.Table>.  
+  
+ A <xref:System.Web.UI.WebControls.TableHeaderRow> object can contain only <xref:System.Web.UI.WebControls.TableCell> objects. To add content to the <xref:System.Web.UI.WebControls.TableHeaderRow>, you must add one or more <xref:System.Web.UI.WebControls.TableCell> objects to the row. Then, set the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property of each <xref:System.Web.UI.WebControls.TableCell> object in the row to specify the contents of each cell. Alternatively, you can add a control to a <xref:System.Web.UI.WebControls.TableCell> object to specify its contents.  
+  
+ You can programmatically manage the cells in the <xref:System.Web.UI.WebControls.TableHeaderRow> by using the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection. The <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection is a collection of <xref:System.Web.UI.WebControls.TableCell> objects that represent the cells in the row.  
+  
+ The <xref:System.Web.UI.WebControls.TableHeaderRow> inherits properties from <xref:System.Web.UI.WebControls.TableRow> that allow you to control how the contents in the row are displayed. For example, you can use the <xref:System.Web.UI.WebControls.TableRow.HorizontalAlign%2A> and <xref:System.Web.UI.WebControls.TableRow.VerticalAlign%2A> properties to specify the alignment of the contents.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the declarative syntax for creating a <xref:System.Web.UI.WebControls.Table> control that has a <xref:System.Web.UI.WebControls.TableHeaderRow> and a <xref:System.Web.UI.WebControls.TableFooterRow>.  
+  
+ <!-- TODO: review snippet reference [!code-vb[TableHeaderRowClass1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableHeaderRowClass1/VB/tableheaderrowclass1vb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to programmatically create a <xref:System.Web.UI.WebControls.Table> control that has a <xref:System.Web.UI.WebControls.TableHeaderRow> and a <xref:System.Web.UI.WebControls.TableFooterRow>.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TableHeaderRowClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableHeaderRowClass2/CS/tableheaderrowclass2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TableHeaderRowClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableHeaderRowClass2/VB/tableheaderrowclass2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableHeaderRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableHeaderRow.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableHeaderRow" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,136 @@
+<Type Name="DataRowChangeEventArgs" FullName="System.Data.DataRowChangeEventArgs">
+  <TypeSignature Language="C#" Value="public class DataRowChangeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataRowChangeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataRowChangeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Data.DataTable.RowChanged" />, <see cref="E:System.Data.DataTable.RowChanging" />, <see cref="M:System.Data.DataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)" />, and <see cref="M:System.Data.DataTable.OnRowDeleted(System.Data.DataRowChangeEventArgs)" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.RowChanged>, <xref:System.Data.DataTable.RowChanging>, <xref:System.Data.DataTable.OnRowDeleted%2A>, and <xref:System.Data.DataTable.OnRowDeleting%2A> events occur when an action is performed on a <xref:System.Data.DataRow>.  
+  
+   
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRowChangeEventArgs (System.Data.DataRow row, System.Data.DataRowAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow row, valuetype System.Data.DataRowAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRowChangeEventArgs.#ctor(System.Data.DataRow,System.Data.DataRowAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="row" Type="System.Data.DataRow" />
+        <Parameter Name="action" Type="System.Data.DataRowAction" />
+      </Parameters>
+      <Docs>
+        <param name="row">The <see cref="T:System.Data.DataRow" /> upon which an action is occuring.</param>
+        <param name="action">One of the <see cref="T:System.Data.DataRowAction" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRowChangeEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Data.DataRowAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRowChangeEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the action that has occurred on a <see cref="T:System.Data.DataRow" />.</summary>
+        <value>One of the <see cref="T:System.Data.DataRowAction" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="public System.Data.DataRow Row { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataRow Row" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRowChangeEventArgs.Row" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row upon which an action has occurred.</summary>
+        <value>The <see cref="T:System.Data.DataRow" /> upon which an action has occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds a <xref:System.Data.DataRowChangeEventHandler> and the procedure to handle the event when a row is changed.  
+  
+ [!code-vb[DataWorks Data.DataRowChangeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataRowChangeEventArgs/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,56 @@
+<Type Name="ImeModeConversion" FullName="System.Windows.Forms.ImeModeConversion">
+  <TypeSignature Language="C#" Value="public struct ImeModeConversion" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImeModeConversion extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeModeConversion" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Helper class that provides information about the IME conversion mode.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImeModeConversionBits">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode,System.Windows.Forms.ImeModeConversion&gt; ImeModeConversionBits { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.Dictionary`2&lt;valuetype System.Windows.Forms.ImeMode, valuetype System.Windows.Forms.ImeModeConversion&gt; ImeModeConversionBits" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImeModeConversion.ImeModeConversionBits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.Windows.Forms.ImeMode,System.Windows.Forms.ImeModeConversion&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the conversion mode flags corresponding to each <see cref="T:System.Windows.Forms.ImeMode" />.</summary>
+        <value>A dictionary that contains the flags to <see cref="T:System.Windows.Forms.ImeMode" /> mapping.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCurrentConversionTableSupported">
+      <MemberSignature Language="C#" Value="public static bool IsCurrentConversionTableSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsCurrentConversionTableSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ImeModeConversion.IsCurrentConversionTableSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the current language table is supported.</summary>
+        <value>
+          <see langword="true" /> if the language table is supported; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

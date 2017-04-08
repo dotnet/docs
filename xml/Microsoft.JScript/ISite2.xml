@@ -1,0 +1,49 @@
+<Type Name="ISite2" FullName="Microsoft.JScript.ISite2">
+  <TypeSignature Language="C#" Value="public interface ISite2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISite2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ISite2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("BFF6C980-0705-4394-88B8-A03A4B8B4CD7")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that are used by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> for name resolution. Provides extra functionality that is needed by an IActiveScript host.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetParentChain">
+      <MemberSignature Language="C#" Value="public object[] GetParentChain (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetParentChain(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ISite2.GetParentChain(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Reflection.IReflect" /> object to get the parent hierarchy of.</param>
+        <summary>When implemented in a class, gets the parent object hierarchy for the specified object.</summary>
+        <returns>An array that contains the parent objects of <paramref name="obj" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

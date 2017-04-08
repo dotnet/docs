@@ -1,0 +1,57 @@
+<Type Name="WebClassNextItemRespondNotFound" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound">
+  <TypeSignature Language="C#" Value="public class WebClassNextItemRespondNotFound : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi WebClassNextItemRespondNotFound extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Raises an <see cref="T:System.Exception" /> in a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebClassNextItemRespondNotFound ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassNextItemRespondNotFound" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

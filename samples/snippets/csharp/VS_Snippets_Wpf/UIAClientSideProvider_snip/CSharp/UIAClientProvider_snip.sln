@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSProviderDLL", "CSProviderDLL.csproj", "{DE3821F7-1398-4206-8766-BFA6E5E1D354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSProviderClient", "CSProviderClient.csproj", "{DBA8BA24-171C-4B20-8D27-7C96D3263E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSideImplementation", "ClientSideImplementation.csproj", "{63306C0C-1A3B-4F39-AFCE-6CC1180C56CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE3821F7-1398-4206-8766-BFA6E5E1D354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3821F7-1398-4206-8766-BFA6E5E1D354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3821F7-1398-4206-8766-BFA6E5E1D354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3821F7-1398-4206-8766-BFA6E5E1D354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA8BA24-171C-4B20-8D27-7C96D3263E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA8BA24-171C-4B20-8D27-7C96D3263E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA8BA24-171C-4B20-8D27-7C96D3263E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA8BA24-171C-4B20-8D27-7C96D3263E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63306C0C-1A3B-4F39-AFCE-6CC1180C56CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63306C0C-1A3B-4F39-AFCE-6CC1180C56CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63306C0C-1A3B-4F39-AFCE-6CC1180C56CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63306C0C-1A3B-4F39-AFCE-6CC1180C56CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

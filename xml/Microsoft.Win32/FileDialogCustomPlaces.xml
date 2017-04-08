@@ -1,0 +1,451 @@
+<Type Name="FileDialogCustomPlaces" FullName="Microsoft.Win32.FileDialogCustomPlaces">
+  <TypeSignature Language="C#" Value="public static class FileDialogCustomPlaces" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FileDialogCustomPlaces extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.FileDialogCustomPlaces" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the known folders for custom places in file dialog boxes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom places are available starting in[!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contacts">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Contacts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Contacts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Contacts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Contacts folder for the current user.</summary>
+        <value>The Contacts folder for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 56784854-C6CB-462b-8169-88E350ACB882.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cookies">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Cookies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Cookies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Cookies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Internet cookies folder for the current user.</summary>
+        <value>The Internet cookies folder for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 2B0F765D-C0E9-4171-908E-08A611B84FF6.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Desktop">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Desktop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Desktop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Desktop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder for storing files on the desktop for the current user.</summary>
+        <value>The folder for storing files on the desktop for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is B4BFCC3A-DB2C-424C-B029-7FE99A87C641.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Documents">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Documents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Documents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Documents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Documents folder for the current user.</summary>
+        <value>The Documents folder for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is FDD39AD0-238F-46AF-ADB4-6C85480369C7.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Favorites">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Favorites { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Favorites" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Favorites" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Favorites folder for the current user.</summary>
+        <value>The  Favorites folder for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 1777F761-68AD-4D8A-87BD-30B759FA33DD.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalApplicationData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace LocalApplicationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace LocalApplicationData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.LocalApplicationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder for application-specific data that is used by the current, non-roaming user.</summary>
+        <value>The folder for application-specific data that is used by the current, non-roaming user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is F1B32785-6FBA-4FCF-9D55-7B8E7F157091.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Music">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Music { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Music" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Music" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Music folder for the current user.</summary>
+        <value>The Music folder for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 4BD8D571-6D19-48D3-BE97-422220080E43.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pictures">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Pictures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Pictures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Pictures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Pictures folder for the current user.</summary>
+        <value>The Pictures folder for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 33E28130-4E1E-4676-835A-98395C3BC3BB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgramFiles">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace ProgramFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace ProgramFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.ProgramFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Program Files folder.</summary>
+        <value>The Program Files folder.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 905E63B6-C1BF-494E-B29C-65B732D3D21A.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgramFilesCommon">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace ProgramFilesCommon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace ProgramFilesCommon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.ProgramFilesCommon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder for components that are shared across applications.</summary>
+        <value>The folder for components that are shared across applications.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is F7F1ED05-9F6D-47A2-AAAE-29D317C6F066.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Programs">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Programs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Programs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Programs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder that contains the program groups for the current user.</summary>
+        <value>The folder that contains the program groups for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is A77F5D77-2E2B-44C3-A6A2-ABA601054A51.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoamingApplicationData">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace RoamingApplicationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace RoamingApplicationData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.RoamingApplicationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder for application-specific data for the current roaming user.</summary>
+        <value>The folder for application-specific data for the current roaming user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 3EB685DB-65F9-4CF6-A03A-E3EF65729F3D.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendTo">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace SendTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace SendTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.SendTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder that contains the Send To menu items for the current user.</summary>
+        <value>The folder that contains the Send To menu items for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 8983036C-27C0-404B-8F08-102D10DCFD74.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartMenu">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace StartMenu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace StartMenu" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.StartMenu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder that contains the Start menu items for the current user.</summary>
+        <value>The folder that contains the Start menu items for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 625B53C3-AB48-4EC1-BA1F-A1EF4146FC19.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Startup">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Startup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Startup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Startup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder that corresponds to the Startup program group for the current user.</summary>
+        <value>The folder that corresponds to the Startup program group for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is B97D20BB-F46A-4C97-BA10-5E3608430854.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace System { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace System" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.System" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the System folder.</summary>
+        <value>The System folder.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is 1AC14E77-02E7-4E5D-B744-2EB1AE5198B7.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Templates">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.FileDialogCustomPlace Templates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.FileDialogCustomPlace Templates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlaces.Templates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.FileDialogCustomPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the folder for document templates for the current user.</summary>
+        <value>The folder for document templates for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUID for this folder is A63293E8-664E-48DB-A079-DF759E0509F7.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

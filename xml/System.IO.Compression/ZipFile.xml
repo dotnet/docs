@@ -1,0 +1,742 @@
+<Type Name="ZipFile" FullName="System.IO.Compression.ZipFile">
+  <TypeSignature Language="C#" Value="public static class ZipFile" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ZipFile extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipFile" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods for creating, extracting, and opening zip archives.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  To use the <xref:System.IO.Compression.ZipFile> class, you must add a reference to the `System.IO.Compression.FileSystem` assembly in your project; otherwise, you'll get the following error message when trying to compile : **The name 'ZipFile' does not exist in the current context**. For more information on how to add a reference to your project in Visual Studio, see [How to: Add or Remove References By Using the Reference Manager](http://msdn.microsoft.com/library/1aabb520-99b0-46c6-9368-21b4d84793eb).  
+  
+ The methods for manipulating zip archives and their files are spread across three classes: <xref:System.IO.Compression.ZipFile>, <xref:System.IO.Compression.ZipArchive> and <xref:System.IO.Compression.ZipArchiveEntry>.  
+  
+|To…|Use…|  
+|---------|----------|  
+|Create a zip archive from a directory|<xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=fullName>|  
+|Extract the contents of a zip archive to a directory|<xref:System.IO.Compression.ZipFile.ExtractToDirectory%2A?displayProperty=fullName>|  
+|Add new files to an existing zip archive|<xref:System.IO.Compression.ZipArchive.CreateEntry%2A?displayProperty=fullName>|  
+|Retrieve an file in a zip archive|<xref:System.IO.Compression.ZipArchive.GetEntry%2A?displayProperty=fullName>|  
+|Retrieve all of the files in a zip archive|<xref:System.IO.Compression.ZipArchive.Entries%2A?displayProperty=fullName>|  
+|To open a stream to an individual file contained in a zip archive|<xref:System.IO.Compression.ZipArchiveEntry.Open%2A?displayProperty=fullName>|  
+|Delete a file from a zip archive|<xref:System.IO.Compression.ZipArchiveEntry.Delete%2A?displayProperty=fullName>|  
+  
+ You cannot use the <xref:System.IO.Compression.ZipFile> or  <xref:System.IO.Compression.ZipFileExtensions> classes  in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, you should use the following classes to work with compressed files.  
+  
+-   <xref:System.IO.Compression.ZipArchive>  
+  
+-   <xref:System.IO.Compression.ZipArchiveEntry>  
+  
+-   <xref:System.IO.Compression.DeflateStream>  
+  
+-   <xref:System.IO.Compression.GZipStream>  
+  
+   
+  
+## Examples  
+ This example shows how to create and extract a zip archive by using the <xref:System.IO.Compression.ZipFile> class. It compresses the contents of a folder into a zip archive, and then extracts that content to a new folder.  
+  
+> [!TIP]
+>  To use the <xref:System.IO.Compression.ZipFile> class, you must reference the `System.IO.Compression.FileSystem` assembly in your project.  
+  
+ [!code-csharp[System.IO.Compression.ZipFile#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.zipfile/cs/program1.cs#1)]
+ [!code-vb[System.IO.Compression.ZipFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.zipfile/vb/program1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromDirectory">
+      <MemberSignature Language="C#" Value="public static void CreateFromDirectory (string sourceDirectoryName, string destinationArchiveFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceDirectoryName" Type="System.String" />
+        <Parameter Name="destinationArchiveFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <summary>Creates a zip archive that contains the files and directories from the specified directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The directory structure from the file system is preserved in the archive. If the directory is empty, an empty archive is created. This method overload does not include the base directory in the archive and does not allow you to specify a compression level. If you want to include the base directory or specify a compression level, call the <xref:System.IO.Compression.ZipFile.CreateFromDirectory%28System.String%2CSystem.String%2CSystem.IO.Compression.CompressionLevel%2CSystem.Boolean%29> method overload.  
+  
+ If the archive already exists, an <xref:System.IO.IOException> exception is thrown. If an entry with the specified name already exists in the archive, a second entry is created with an identical name.  
+  
+ If a file in the directory cannot be added to the archive, the archive is left incomplete and invalid, and the method throws an <xref:System.IO.IOException> exception.  
+  
+   
+  
+## Examples  
+ This example shows how to create and extract a zip archive by using the <xref:System.IO.Compression.ZipFile> class. It compresses the contents of a folder into a zip archive, and then extracts that content to a new folder. To use the <xref:System.IO.Compression.ZipFile> class, you must reference the `System.IO.Compression.FileSystem` assembly in your project.  
+  
+ [!code-csharp[System.IO.Compression.ZipFile#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.zipfile/cs/program1.cs#1)]
+ [!code-vb[System.IO.Compression.ZipFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.zipfile/vb/program1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">In <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="sourceDirectoryName" /> is invalid or does not exist (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="destinationArchiveFileName" /> already exists.  
+  
+ -or-  
+  
+ A file in the specified directory could not be opened.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">
+          <paramref name="destinationArchiveFileName" /> specifies a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission to access the directory specified in <paramref name="sourceDirectoryName" /> or the file specified in <paramref name="destinationArchiveFileName" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> contains an invalid format.  
+  
+ -or-  
+  
+ The zip archive does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromDirectory">
+      <MemberSignature Language="C#" Value="public static void CreateFromDirectory (string sourceDirectoryName, string destinationArchiveFileName, System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,System.IO.Compression.CompressionLevel,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceDirectoryName" Type="System.String" />
+        <Parameter Name="destinationArchiveFileName" Type="System.String" />
+        <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" />
+        <Parameter Name="includeBaseDirectory" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</param>
+        <param name="includeBaseDirectory">
+          <see langword="true" /> to include the directory name from <c>sourceDirectoryName</c> at the root of the archive; <see langword="false" /> to include only the contents of the directory.</param>
+        <summary>Creates a zip archive that contains the files and directories from the specified directory, uses the specified compression level, and optionally includes the base directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The directory structure from the file system is preserved in the archive. If the directory is empty, an empty archive is created. Use this method overload to specify the compression level and whether to include the base directory in the archive.  
+  
+ If the archive already exists, an <xref:System.IO.IOException> exception is thrown. If an entry with the specified name already exists in the archive, a second entry is created with an identical name.  
+  
+ If a file in the directory cannot be added to the archive, the archive is left incomplete and invalid, and the method throws an <xref:System.IO.IOException> exception.  
+  
+   
+  
+## Examples  
+ This example shows how to create and extract a zip archive by using the <xref:System.IO.Compression.ZipFile> class. It compresses the contents of a folder into a zip archive, and then extracts that content to a new folder. When compressing the archive, the base directory is included and the compression level is set to emphasize the speed of the operation over efficiency. To use the <xref:System.IO.Compression.ZipFile> class, you must reference the `System.IO.Compression.FileSystem` assembly in your project.  
+  
+ [!code-csharp[System.IO.Compression.ZipFile#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.zipfile/cs/program2.cs#2)]
+ [!code-vb[System.IO.Compression.ZipFile#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.zipfile/vb/program2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">In <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="sourceDirectoryName" /> is invalid or does not exist (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="destinationArchiveFileName" /> already exists.  
+  
+ -or-  
+  
+ A file in the specified directory could not be opened.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">
+          <paramref name="destinationArchiveFileName" /> specifies a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission to access the directory specified in <paramref name="sourceDirectoryName" /> or the file specified in <paramref name="destinationArchiveFileName" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> contains an invalid format.  
+  
+ -or-  
+  
+ The zip archive does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromDirectory">
+      <MemberSignature Language="C#" Value="public static void CreateFromDirectory (string sourceDirectoryName, string destinationArchiveFileName, System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory, System.Text.Encoding entryNameEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory, class System.Text.Encoding entryNameEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,System.IO.Compression.CompressionLevel,System.Boolean,System.Text.Encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceDirectoryName" Type="System.String" />
+        <Parameter Name="destinationArchiveFileName" Type="System.String" />
+        <Parameter Name="compressionLevel" Type="System.IO.Compression.CompressionLevel" />
+        <Parameter Name="includeBaseDirectory" Type="System.Boolean" />
+        <Parameter Name="entryNameEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="sourceDirectoryName">The path to the directory to be archived, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="destinationArchiveFileName">The path of the archive to be created, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="compressionLevel">One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</param>
+        <param name="includeBaseDirectory">
+          <see langword="true" /> to include the directory name from <c>sourceDirectoryName</c> at the root of the archive; <see langword="false" /> to include only the contents of the directory.</param>
+        <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</param>
+        <summary>Creates a zip archive that contains the files and directories from the specified directory, uses the specified compression level and character encoding for entry names, and optionally includes the base directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The directory structure from the file system is preserved in the archive. If the directory is empty, an empty archive is created. Use this method overload to specify the compression level and character encoding, and whether to include the base directory in the archive.  
+  
+ If the archive already exists, an <xref:System.IO.IOException> exception is thrown. If an entry with the specified name already exists in the archive, a second entry is created with an identical name.  
+  
+ If a file in the directory cannot be added to the archive, the archive is left incomplete and invalid, and the method throws an <xref:System.IO.IOException> exception.  
+  
+ If `entryNameEncoding` is set to a value other than `null`, the entry names are encoded by using the specified encoding. If the specified encoding is a UTF-8, the language encoding flag (in the general-purpose bit flag of the local file header) is set for each entry,  
+  
+ If `entryNameEncoding` is set to `null`, the entry names are encoded according to the following rules:  
+  
+-   For entry names that contain characters outside the ASCII range, the language encoding flag is set, and UTF-8 is used to encode the entry name.  
+  
+-   For entry names that contain only ASCII characters, the language encoding flag is set, and the current system default code page is used to encode the entry names.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.  
+  
+ -or-  
+  
+ <paramref name="entryNameEncoding" /> is set to a Unicode encoding other than UTF-8.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">In <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="sourceDirectoryName" /> is invalid or does not exist (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="destinationArchiveFileName" /> already exists.  
+  
+ -or-  
+  
+ A file in the specified directory could not be opened.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">
+          <paramref name="destinationArchiveFileName" /> specifies a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission to access the directory specified in <paramref name="sourceDirectoryName" /> or the file specified in <paramref name="destinationArchiveFileName" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="sourceDirectoryName" /> or <paramref name="destinationArchiveFileName" /> contains an invalid format.  
+  
+ -or-  
+  
+ The zip archive does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractToDirectory">
+      <MemberSignature Language="C#" Value="public static void ExtractToDirectory (string sourceArchiveFileName, string destinationDirectoryName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceArchiveFileName" Type="System.String" />
+        <Parameter Name="destinationDirectoryName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceArchiveFileName">The path to the archive that is to be extracted.</param>
+        <param name="destinationDirectoryName">The path to the directory in which to place the extracted files, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <summary>Extracts all the files in the specified zip archive to a directory on the file system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates the specified directory and all subdirectories. The destination directory cannot already exist. Exceptions related to validating the paths in the `destinationDirectoryName` or `sourceArchiveFileName` parameters are thrown before extraction. Otherwise, if an error occurs during extraction, the archive remains partially extracted. Each extracted file has the same relative path to the directory specified by `destinationDirectoryName` as its source entry has to the root of the archive.  
+  
+   
+  
+## Examples  
+ This example shows how to create and extract a zip archive by using the <xref:System.IO.Compression.ZipFile> class. It compresses the contents of a folder into a zip archive and extracts that content to a new folder. To use the <xref:System.IO.Compression.ZipFile> class, you must reference the `System.IO.Compression.FileSystem` assembly in your project.  
+  
+ [!code-csharp[System.IO.Compression.ZipFile#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.zipfile/cs/program1.cs#1)]
+ [!code-vb[System.IO.Compression.ZipFile#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.zipfile/vb/program1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path in <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">The directory specified by <paramref name="destinationDirectoryName" /> already exists.  
+  
+ -or-  
+  
+ The name of an entry in the archive is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.  
+  
+ -or-  
+  
+ Extracting an archive entry would create a file that is outside the directory specified by <paramref name="destinationDirectoryName" />. (For example, this might happen if the entry name contains parent directory accessors.)  
+  
+ -or-  
+  
+ An archive entry to extract has the same name as an entry that has already been extracted from the same archive.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission to access the archive or the destination directory.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> contains an invalid format.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="sourceArchiveFileName" /> was not found.</exception>
+        <exception cref="T:System.IO.InvalidDataException">The archive specified by <paramref name="sourceArchiveFileName" /> is not a valid zip archive.  
+  
+ -or-  
+  
+ An archive entry was not found or was corrupt.  
+  
+ -or-  
+  
+ An archive entry was compressed by using a compression method that is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractToDirectory">
+      <MemberSignature Language="C#" Value="public static void ExtractToDirectory (string sourceArchiveFileName, string destinationDirectoryName, System.Text.Encoding entryNameEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, class System.Text.Encoding entryNameEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceArchiveFileName" Type="System.String" />
+        <Parameter Name="destinationDirectoryName" Type="System.String" />
+        <Parameter Name="entryNameEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="sourceArchiveFileName">The path to the archive that is to be extracted.</param>
+        <param name="destinationDirectoryName">The path to the directory in which to place the extracted files, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</param>
+        <summary>Extracts all the files in the specified zip archive to a directory on the file system and uses the specified character encoding for entry names.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates the specified directory and all subdirectories. The destination directory cannot already exist. Exceptions related to validating the paths in the `destinationDirectoryName` or `sourceArchiveFileName` parameters are thrown before extraction. Otherwise, if an error occurs during extraction, the archive remains partially extracted. Each extracted file has the same relative path to the directory specified by `destinationDirectoryName` as its source entry has to the root of the archive.  
+  
+ If `entryNameEncoding` is set to a value other than `null`, entry names are decoded according to the following rules:  
+  
+-   For entry names where the language encoding flag (in the general-purpose bit flag of the local file header) is not set, the entry names are decoded by using the specified encoding.  
+  
+-   For entries where the language encoding flag is set, the entry names are decoded by using UTF-8.  
+  
+ If `entryNameEncoding` is set to `null`, entry names are decoded according to the following rules:  
+  
+-   For entries where the language encoding flag (in the general-purpose bit flag of the local file header) is not set, entry names are decoded by using the current system default code page.  
+  
+-   For entries where the language encoding flag is set, the entry names are decoded by using UTF-8.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.  
+  
+ -or-  
+  
+ <paramref name="entryNameEncoding" /> is set to a Unicode encoding other than UTF-8.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path in <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">The directory specified by <paramref name="destinationDirectoryName" /> already exists.  
+  
+ -or-  
+  
+ The name of an entry in the archive is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.  
+  
+ -or-  
+  
+ Extracting an archive entry would create a file that is outside the directory specified by <paramref name="destinationDirectoryName" />. (For example, this might happen if the entry name contains parent directory accessors.)  
+  
+ -or-  
+  
+ An archive entry to extract has the same name as an entry that has already been extracted from the same archive.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission to access the archive or the destination directory.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="destinationDirectoryName" /> or <paramref name="sourceArchiveFileName" /> contains an invalid format.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="sourceArchiveFileName" /> was not found.</exception>
+        <exception cref="T:System.IO.InvalidDataException">The archive specified by <paramref name="sourceArchiveFileName" /> is not a valid zip archive.  
+  
+ -or-  
+  
+ An archive entry was not found or was corrupt.  
+  
+ -or-  
+  
+ An archive entry was compressed by using a compression method that is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public static System.IO.Compression.ZipArchive Open (string archiveFileName, System.IO.Compression.ZipArchiveMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchive Open(string archiveFileName, valuetype System.IO.Compression.ZipArchiveMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.Open(System.String,System.IO.Compression.ZipArchiveMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Compression.ZipArchive</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="archiveFileName" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.Compression.ZipArchiveMode" />
+      </Parameters>
+      <Docs>
+        <param name="archiveFileName">The path to the archive to open, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="mode">One of the enumeration values that specifies the actions which are allowed on the entries in the opened archive.</param>
+        <summary>Opens a zip archive at the specified path and in the specified mode.</summary>
+        <returns>The opened zip archive.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>, the archive is opened with <xref:System.IO.FileMode> from the <xref:System.IO.FileMode> enumeration as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown. Setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode> is equivalent to calling the <xref:System.IO.Compression.ZipFile.OpenRead%2A> method.  
+  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>, the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive already exists, an <xref:System.IO.IOException> is thrown.  
+  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>,  the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive exists, it is opened. The existing entries can be modified and new entries can be created. If the archive does not exist, a new archive is created; however, creating a zip archive in <xref:System.IO.Compression.ZipArchiveMode> mode is not as efficient as creating it in <xref:System.IO.Compression.ZipArchiveMode> mode.  
+  
+   
+  
+## Examples  
+ The following example shows how to open a zip archive in the update mode and add an entry to the archive.  
+  
+ [!code-csharp[System.IO.Compression.ZipArchive#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program3.cs#3)]
+ [!code-vb[System.IO.Compression.ZipArchive#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program3.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="archiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="archiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">In <paramref name="archiveFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="archiveFileName" /> is invalid or does not exist (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="archiveFileName" /> could not be opened.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is set to <see cref="F:System.IO.Compression.ZipArchiveMode.Create" />, but the file specified in <paramref name="archiveFileName" /> already exists.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">
+          <paramref name="archiveFileName" /> specifies a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission to access the file specified in <paramref name="archiveFileName" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="mode" /> specifies an invalid value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="mode" /> is set to <see cref="F:System.IO.Compression.ZipArchiveMode.Read" />, but the file specified in <paramref name="archiveFileName" /> is not found.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="archiveFileName" /> contains an invalid format.</exception>
+        <exception cref="T:System.IO.InvalidDataException">
+          <paramref name="archiveFileName" /> could not be interpreted as a zip archive.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is <see cref="F:System.IO.Compression.ZipArchiveMode.Update" />, but an entry is missing or corrupt and cannot be read.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is <see cref="F:System.IO.Compression.ZipArchiveMode.Update" />, but an entry is too large to fit into memory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public static System.IO.Compression.ZipArchive Open (string archiveFileName, System.IO.Compression.ZipArchiveMode mode, System.Text.Encoding entryNameEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchive Open(string archiveFileName, valuetype System.IO.Compression.ZipArchiveMode mode, class System.Text.Encoding entryNameEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.Open(System.String,System.IO.Compression.ZipArchiveMode,System.Text.Encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Compression.ZipArchive</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="archiveFileName" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.Compression.ZipArchiveMode" />
+        <Parameter Name="entryNameEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="archiveFileName">The path to the archive to open, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <param name="mode">One of the enumeration values that specifies the actions that are allowed on the entries in the opened archive.</param>
+        <param name="entryNameEncoding">The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</param>
+        <summary>Opens a zip archive at the specified path, in the specified mode, and by using the specified character encoding for entry names.</summary>
+        <returns>The opened zip archive.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>, the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown. Setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode> is equivalent to calling the <xref:System.IO.Compression.ZipFile.OpenRead%2A> method.  
+  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>, the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive already exists, an <xref:System.IO.IOException> is thrown.  
+  
+ When you set the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>,  the archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive exists, it is opened. The existing entries can be modified and new entries can be created. If the archive does not exist, a new archive is created; however, creating a zip archive in <xref:System.IO.Compression.ZipArchiveMode> mode is not as efficient as creating it in <xref:System.IO.Compression.ZipArchiveMode> mode.  
+  
+ When you open a zip archive file for reading and `entryNameEncoding` is set to `null`, entry names are decoded according to the following rules:  
+  
+-   When the language encoding flag (in the general-purpose bit flag of the local file header) is not set, the current system default code page is used to decode the entry name.  
+  
+-   When the language encoding flag is set, UTF-8 is used to decode the entry name.  
+  
+ When you open a zip archive file for reading and `entryNameEncoding` is set to a value other than `null`, entry names are decoded according to the following rules:  
+  
+-   When the language encoding flag is not set, the specified `entryNameEncoding` is used to decode the entry name.  
+  
+-   When the language encoding flag is set, UTF-8 is used to decode the entry name.  
+  
+ When you write to archive files and `entryNameEncoding` is set to `null`, entry names are encoded according to the following rules:  
+  
+-   For entry names that contain characters outside the ASCII range, the language encoding flag is set, and entry names are encoded by using UTF-8.  
+  
+-   For entry names that contain only ASCII characters, the language encoding flag is not set, and entry names are encoded by using the current system default code page.  
+  
+ When you write to archive files and `entryNameEncoding` is set to a value other than `null`, the specified `entryNameEncoding` is used to encode the entry names into bytes. The language encoding flag (in the general-purpose bit flag of the local file header) is set only when the specified encoding is a UTF-8 encoding.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="archiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.  
+  
+ -or-  
+  
+ <paramref name="entryNameEncoding" /> is set to a Unicode encoding other than UTF-8.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="archiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">In <paramref name="archiveFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="archiveFileName" /> is invalid or does not exist (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="archiveFileName" /> could not be opened.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is set to <see cref="F:System.IO.Compression.ZipArchiveMode.Create" />, but the file specified in <paramref name="archiveFileName" /> already exists.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">
+          <paramref name="archiveFileName" /> specifies a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission to access the file specified in <paramref name="archiveFileName" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="mode" /> specifies an invalid value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="mode" /> is set to <see cref="F:System.IO.Compression.ZipArchiveMode.Read" />, but the file specified in <paramref name="archiveFileName" /> is not found.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="archiveFileName" /> contains an invalid format.</exception>
+        <exception cref="T:System.IO.InvalidDataException">
+          <paramref name="archiveFileName" /> could not be interpreted as a zip archive.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is <see cref="F:System.IO.Compression.ZipArchiveMode.Update" />, but an entry is missing or corrupt and cannot be read.  
+  
+ -or-  
+  
+ <paramref name="mode" /> is <see cref="F:System.IO.Compression.ZipArchiveMode.Update" />, but an entry is too large to fit into memory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenRead">
+      <MemberSignature Language="C#" Value="public static System.IO.Compression.ZipArchive OpenRead (string archiveFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchive OpenRead(string archiveFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.OpenRead(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Compression.ZipArchive</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="archiveFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="archiveFileName">The path to the archive to open, specified as a relative or absolute path. A relative path is interpreted as relative to the current working directory.</param>
+        <summary>Opens a zip archive for reading at the specified path.</summary>
+        <returns>The opened zip archive.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is equivalent to calling the <xref:System.IO.Compression.ZipFile.Open%2A> method and setting the `mode` parameter to <xref:System.IO.Compression.ZipArchiveMode>. The archive is opened with <xref:System.IO.FileMode?displayProperty=fullName> as the file mode value. If the archive does not exist, a <xref:System.IO.FileNotFoundException> exception is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to open a zip archive for reading.  
+  
+ [!code-csharp[System.IO.Compression.ZipArchive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchive/cs/program1.cs#1)]
+ [!code-vb[System.IO.Compression.ZipArchive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchive/vb/program1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="archiveFileName" /> is <see cref="F:System.String.Empty" />, contains only white space, or contains at least one invalid character.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="archiveFileName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IO.PathTooLongException">In <paramref name="archiveFileName" />, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">
+          <paramref name="archiveFileName" /> is invalid or does not exist (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="archiveFileName" /> could not be opened.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">
+          <paramref name="archiveFileName" /> specifies a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission to access the file specified in <paramref name="archiveFileName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file specified in <paramref name="archiveFileName" /> is not found.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="archiveFileName" /> contains an invalid format.</exception>
+        <exception cref="T:System.IO.InvalidDataException">
+          <paramref name="archiveFileName" /> could not be interpreted as a zip archive.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

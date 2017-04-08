@@ -1,0 +1,2016 @@
+<Type Name="WebPart" FullName="System.Web.UI.WebControls.WebParts.WebPart">
+  <TypeSignature Language="C#" Value="public abstract class WebPart : System.Web.UI.WebControls.WebParts.Part, System.Web.UI.WebControls.WebParts.IWebActionable, System.Web.UI.WebControls.WebParts.IWebEditable, System.Web.UI.WebControls.WebParts.IWebPart" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPart extends System.Web.UI.WebControls.WebParts.Part implements class System.Web.UI.WebControls.WebParts.IWebActionable, class System.Web.UI.WebControls.WebParts.IWebEditable, class System.Web.UI.WebControls.WebParts.IWebPart" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.Part</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.WebParts.IWebActionable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.WebParts.IWebEditable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.WebParts.IWebPart</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.WebPartDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the base class for custom ASP.NET Web Parts controls, adding to the base <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> class features some additional user interface (UI) properties, the ability to create connections, and personalization behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create controls with Web Parts functionality, you have two basic options. You can create custom controls that derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, or you can create or use other server controls. Existing ASP.NET controls, custom server controls, and user controls can all be given full Web Parts functionality by declaring them within (or adding them programmatically to) a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone control, with the result that they will be wrapped with <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> objects at run time and treated as true <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For details, see the documentation for the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class. For speed of development and maximum reuse of code, using existing server controls can be a good option. For maximum programmatic control over the behavior and Web Parts functionality of controls, creating a custom control that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class is often the best option.  
+  
+ The abstract <xref:System.Web.UI.WebControls.WebParts.WebPart> class inherits from the base <xref:System.Web.UI.WebControls.WebParts.Part> control and provides the basic elements for all <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The class includes a common set of properties that affect the appearance of the UI. The <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowConnect%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize%2A>, and <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> properties each specify whether the user of a Web application is permitted to interact with the part control in the way indicated by the given property name. The <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.Description%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.Height%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.Title%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A>, and <xref:System.Web.UI.WebControls.WebParts.WebPart.Width%2A> properties determine the size, visibility, appearance, and supporting content (such as a title and a description) for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ The relationship of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control to its context within the Web Parts control set is determined by properties such as <xref:System.Web.UI.WebControls.WebParts.WebPart.WebPartManager%2A>, which holds a reference to the control's associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> object, and <xref:System.Web.UI.WebControls.WebParts.WebPart.Zone%2A>, which references the <xref:System.Web.UI.WebControls.WebParts.WebZone> that contains the control. There can be only one <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control per page, and each instance of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control can reside within only one <xref:System.Web.UI.WebControls.WebParts.WebZone> at a time.  
+  
+> [!NOTE]
+>  A <xref:System.Web.UI.WebControls.WebParts.WebPart> control can be placed outside of a zone on a Web page, but in this case it functions as a normal server control and loses nearly all Web Parts functionality.  
+  
+ Several other important properties affect unique features of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property allows developers to set an arbitrary string that can be used as a filter at run time to determine whether a control is added to the page. Used together with a feature such as role management, the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property provides a useful mechanism for creating views based on defined user roles. The <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property indicates whether, during an export, all the available property data on a control is exported, or only the non-sensitive data. This allows developers to distinguish between data that is sensitive and data that is not, for security purposes. The <xref:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject%2A> property returns a reference to an instance of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, so that an <xref:System.Web.UI.WebControls.WebParts.EditorPart> control can edit it when the page is in edit mode. Finally, there are several properties that indicate the status of the control relative to the rest of the page. The <xref:System.Web.UI.WebControls.WebParts.WebPart.IsClosed%2A> property indicates whether a control is closed (and thus added to a <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> object), or if it is open and available on the page. The <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property indicates whether a control is a shared control (versus a user-specific control), meaning that it is visible to all users of a Web page. The <xref:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone%2A> property indicates whether a control is currently contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase>-derived zone (such as <xref:System.Web.UI.WebControls.WebParts.WebPartZone>). A value of `false` indicates the control is inside a zone and thus has full Web Parts functionality. The <xref:System.Web.UI.WebControls.WebParts.WebPart.IsStatic%2A> property indicates whether a control is static or dynamic. A static control is declared in the markup of a Web page, whereas a dynamic control is added programmatically.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart> class also provides several methods that determine what happens at various points in the control's life cycle. For example, the <xref:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged%2A> methods can both be overridden in a derived class to provide programmatic control over the rendering of a control's contents during the event that corresponds to each method's name.  
+  
+ Classes that derive from <xref:System.Web.UI.WebControls.WebParts.WebPart> can add <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> objects to the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> collection. The verbs are rendered in a verbs menu, which appears in the title bar of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> objects provide simple UI elements for common user actions such as hiding or minimizing the control or displaying Help.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.CreateEditorParts%2A> method creates a collection of any custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that are associated with a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Developers can override this method so that it creates custom controls designed specifically to edit their <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The method is called when a user clicks the edit verb on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.WebParts.WebPart> control and reference it in a Web page.  
+  
+ The first part of the example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. This control demonstrates how to create a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that gives you access to the features of the Web Parts control set. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_General_TextDisplayPart#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textdisplaywebpart.cs#2)]
+ [!code-vb[WebParts_General_TextDisplayPart#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textdisplaywebpart.vb#2)]  
+  
+ The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. Notice that many of the various <xref:System.Web.UI.WebControls.WebParts.WebPart> properties can be assigned declaratively to the custom control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebPart ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.%23ctor%2A> constructor initializes default values for several UI-oriented properties, including the various `Allow` properties that determine the control's capabilities. These properties are then incorporated into an inherited class instance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a control that derives from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class inherits the default property values set in the base <xref:System.Web.UI.WebControls.WebParts.WebPart.%23ctor%2A> constructor, but then changes the value of one property in the constructor of the derived control.  
+  
+ The first part of this example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. This control demonstrates how to create a simple custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that gives you access to the features of the Web Parts control set. Note that in the constructor of the custom control, the `TextDisplayWebPart.AllowClose` property is set to `false`, which has the effect of preventing users from closing the control on a Web page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_General_TextDisplayPart#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textdisplaywebpart.cs#2)]
+ [!code-vb[WebParts_General_TextDisplayPart#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textdisplaywebpart.vb#2)]  
+  
+ The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. After you load the page in a browser, if you click the verbs menu in the title bar of the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the close verb is now disabled, which prevents users from closing the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowClose">
+      <MemberSignature Language="C#" Value="public virtual bool AllowClose { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowClose" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AllowClose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an end user can close a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control on a Web page.</summary>
+        <value>
+          <see langword="true" /> if the control can be closed on a Web page; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After a user closes a <xref:System.Web.UI.WebControls.WebParts.WebPart> control on a Web page, the control is no longer visible or available on the page. The closed control is added to the page catalog, a Web Parts entity that stores a reference to the control. If a developer adds a <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control to the page within a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control, users are able to switch the page to catalog display mode, select the closed control in the page catalog, and add it back to the page.  
+  
+> [!NOTE]
+>  A closed <xref:System.Web.UI.WebControls.WebParts.WebPart> control can be added back to a page either programmatically, or by a user who selects the closed control from the page catalog when the page is in catalog display mode.  
+  
+ Closing a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is different from deleting it. A closed control can be added back to a page, while a deleted control is permanently removed. For more information on deleting controls, see the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart%2A> method. Closing a control is also different from hiding it. A control that is hidden is still present on the page, still participates in page life cycle events, and is only hidden from the user's view, but a closed control is not even rendered on a page.  
+  
+ Both static and dynamic <xref:System.Web.UI.WebControls.WebParts.WebPart> controls (static controls are declared in a page's markup, while dynamic controls are added programmatically) can be closed.  
+  
+ If a developer sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `false`, a close verb does not appear on the control, and the user is not able to close the control.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, so that it cannot be closed.  
+  
+ The first part of this example contains the code for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. Note that in the constructor of the custom control, the `TextDisplayWebPart.AllowClose` property is set to `false`, which has the effect of preventing users from closing the control on a Web page. This means that the close verb on the verbs menu of the control will be disabled for users. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_General_TextDisplayPart#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textdisplaywebpart.cs#2)]
+ [!code-vb[WebParts_General_TextDisplayPart#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textdisplaywebpart.vb#2)]  
+  
+ The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. Note that in the `<aspSample:TextDisplayWebPart>` element that references the control, you could also change the value of the property set by the control's constructor. To allow the control to be closed, simply add an `AllowClose="true"` attribute to the element in the declarative markup.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_General_TextDisplayPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/CS/textwebpartcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_General_TextDisplayPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_General_TextDisplayPart/VB/textwebpartvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowConnect">
+      <MemberSignature Language="C#" Value="public virtual bool AllowConnect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowConnect" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AllowConnect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control allows other controls to form connections with it.</summary>
+        <value>A Boolean value that indicates whether connections can be formed with the control. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property value can be set declaratively in page markup, or programmatically.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowEdit">
+      <MemberSignature Language="C#" Value="public virtual bool AllowEdit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowEdit" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an end user can modify a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control through the user interface (UI) provided by one or more <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control can be modified; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To allow end users to edit a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property must be set to `true` (the default), and the page's display mode must be in edit mode. Display modes are represented by fields in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. In this case, the mode is <xref:System.Web.UI.WebControls.WebParts.WebPartManager.EditDisplayMode>. For details about page display modes and how to change them, see the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> class overview.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property is set to `false` either declaratively or programmatically, editing options are limited. The only possible editing operations are changes to the page's layout, using a <xref:System.Web.UI.WebControls.WebParts.LayoutEditorPart> control, or other basic operations enabled through custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
+  
+ For an example that uses <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls from the Web Parts control set and shows how to enable editing of a custom Web Parts control, see [Walkthrough: Creating a Web Parts Page](http://msdn.microsoft.com/library/e05b659c-d6da-46cb-b177-48efe55f2770).  
+  
+> [!IMPORTANT]
+>  The effect that the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property has on a control's behavior is also impacted by the current personalization scope of the Web page, and the individual Web Parts controls on that page. For more information, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowEdit%2A> property for a Web Parts control, so that the control cannot be edited. This example assumes the use of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowEdit#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowEdit#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ In the declarative markup for the Web page, on the `<aspSample:TextDisplayWebPart>` element that references the control, note the `AllowEdit="false"` attribute. Although `true` is the default, the attribute has been set to `false` for the purposes of this example. Load the page in a browser and use the **Display Modes** drop-down list control to change the display mode to edit mode. Next, click the verbs menu in the title bar of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and note that the edit verb is missing, because you disabled editing on the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/CS/alloweditCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowEdit/VB/alloweditVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowHide">
+      <MemberSignature Language="C#" Value="public virtual bool AllowHide { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowHide" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AllowHide" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether end users are allowed to hide a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control can be hidden; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property determines whether users can modify the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property. In the default case, when the property value is `true`, users can change the value when the control is being edited. By default, controls are not hidden and their <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property value is `false`. When a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being edited, if a user selects a check box to hide the control (which sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property to `true`), the control will no longer be visible when the page returns to browse mode.  
+  
+ Hidden controls are distinct from controls that are closed, because the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property has a distinct meaning within the Web Parts control set. Closed controls are not even rendered on a page, and do not participate in page life cycle events. In contrast, while hidden <xref:System.Web.UI.WebControls.WebParts.WebPart> controls are not visible to users, they are still rendered on a Web page, are still contained in a zone, and can still maintain connections with other <xref:System.Web.UI.WebControls.WebParts.WebPart> controls as part of a Web Parts application.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property for a custom Web Parts control, so that the custom control cannot be hidden by a user. This example assumes the use of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowHide#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowHide#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ In the declarative markup for the Web page, on the `<aspSample:TextDisplayWebPart>` element that references the control, note the `AllowHide="false"` attribute, which prevents a user who is editing the control from being able to hide it. Load the page in a browser and use the **Display Mode** drop-down list control to change the display mode to edit mode. Next, click the verbs menu in the title bar of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control and click the edit verb. As the edit user interface (UI) is displayed, you can see that the UI to edit the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property is now disabled, which occurred because you set the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property value to `false`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowHide#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/CS/allowhidecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowHide#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowHide/VB/allowhidevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowMinimize">
+      <MemberSignature Language="C#" Value="public virtual bool AllowMinimize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowMinimize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether end users can minimize a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control can be minimized; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize%2A> property, if set to `false`, prevents an end user from being able to minimize the control, and the user interface (UI) for minimizing the control does not appear in the control's title bar. In Web Parts terminology, when the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize%2A> property is set to `false`, the minimize verb does not appear on the control's verbs menu.  
+  
+ When a user minimizes a control, it reduces the control's size down to a minimal area that displays only part of the control's title bar and title.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowMinimize%2A> property for a custom Web Parts control, so that the control cannot be minimized by a user. This example assumes the use of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ In the declarative markup for the Web page, on the `<aspSample:TextDisplayWebPart>` element that references the control, note the `AllowMinimize="false"` attribute, which hides the minimize verb in the <xref:System.Web.UI.WebControls.WebParts.WebPart> control's verbs menu, and prevents a user from being able to minimize the control. Load the page in a browser, and click the verbs menu on the <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The minimize verb, which would normally be present on the verbs menu, is hidden because you disabled it in the declarative markup for the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowMinimize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowMinimize/CS/allowminimizecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowMinimize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowMinimize/VB/allowminimizevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowZoneChange">
+      <MemberSignature Language="C#" Value="public virtual bool AllowZoneChange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowZoneChange" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a user can move a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control between <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zones.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control can move between zones; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> property is `true`, and a Web page is in a display mode that allows layout changes (such as edit or design mode), a user can change the page layout by moving a control to another <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone on the page. If the property is set to `false`, a control cannot be moved between zones, but can still be moved within its current zone.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to change the default setting of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> property for a custom Web Parts control, so that an end user cannot move the control to a different zone. This example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowZoneChange#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ In the declarative markup for the Web Page, on the second `<aspSample:TextDisplayWebPart>` element, note the `AllowZoneChange="false"` attribute. At run time, an end user could drag the first control into **WebPartZone2**, but could not do the same with the second control. Load the page in a browser and use the **Display Mode** drop-down list control to change the display mode to design mode. Try to drag each of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls into another zone, and note the different behavior based on the values of their <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowZoneChange%2A> properties.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_AllowZoneChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/CS/allowzonechangecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_AllowZoneChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_AllowZoneChange/VB/allowzonechangevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorizationFilter">
+      <MemberSignature Language="C#" Value="public virtual string AuthorizationFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthorizationFilter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an arbitrary string to determine whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is authorized to be added to a page.</summary>
+        <value>A string that authorizes a control to be added to a Web page. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web Parts control set does not implement any default behavior for the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property. However, the property is provided so that you can assign an arbitrary string value to a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control; this property can be checked by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control during its <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event to determine whether the control can be added to the page.  
+  
+ In some cases, the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property might be used with the ASP.NET role manager feature, so that if a user is in a certain role, and if the string value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property meets certain conditions set by the developer, then the control can be added. This approach allows developers to create custom views of a page based on a combination of roles and other authorization criteria that they specify.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property. It shows how to set a custom method handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event, so that the handler can provide custom filtering code for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart%2A> method. This example would be a typical way for a page developer to provide a filtering scenario and authorization of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls to be added to a page.  
+  
+ In the Web page code, notice that the `<asp:webpartmanager>` element has the `OnAuthorizeWebPart` attribute with the name of the event handler assigned to it. This method checks whether the controls on the page have their <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property value set to `admin`, and if so, returns `true`, which means that they will be authorized and added to the page.  
+  
+> [!NOTE]
+>  Note that controls that do not have any value assigned to the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property are added as well, because they are assumed not to be part of a filtering scenario. This would be a common approach in a filtering scenario: some controls would be filtered, and others would not be, because they are presumed to be available for all users.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartManager_AuthorizeWebPart#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartManager_AuthorizeWebPart/CS/AuthorizeWebPartCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartManager_AuthorizeWebPart#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartManager_AuthorizeWebPart/VB/AuthorizeWebPartVB.aspx#1)]  -->  
+  
+ Because setting up users in roles is beyond the scope of this topic, this code example does not check user roles in the filtering. However, the scenario of filtering controls according to user roles is likely to be one of the most common uses of this filtering feature. If you have roles on your site, and you want to check user roles in this method to filter controls, the method would resemble the following code block (versus the simpler approach in the preceding code example that does not use roles).  
+  
+```  
+protected void mgr1_AuthorizeWebPart(object sender,   
+  WebPartAuthorizationEventArgs e)  
+{  
+  if (!String.IsNullOrEmpty(e.AuthorizationFilter))  
+  {  
+    if(Roles.IsUserInRole(Page.User.Identity.Name, e.authorizationFilter))  
+      e.IsAuthorized = true;  
+    else  
+      e.IsAuthorized = false;  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To use this property, you must create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, and override either its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnAuthorizeWebPart(System.Web.UI.WebControls.WebParts.WebPartAuthorizationEventArgs)" /> method or its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized(System.Web.UI.WebControls.WebParts.WebPart)" /> method to handle the check for the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogIconImageUrl">
+      <MemberSignature Language="C#" Value="public virtual string CatalogIconImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that represents a Web Parts control in a catalog of controls.</summary>
+        <value>A string that represents the URL to an image used to represent the control in a catalog. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A> property for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, so that an image appears with the control in a catalog of controls. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example also uses a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_CatalogIconImageUrl#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ In the declarative markup of the Web page, note the `<asp:CatalogZone>` element. Nested within it are several elements, including an `<aspSample:TextDisplayWebPart>` element. This set of elements enables the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to appear in a catalog. In the markup for the `<aspSample:TextDisplayWebPart>` element, notice that the `CatalogIconImageUrl` attribute is assigned a string that contains the URL to an image file. Load the page in a browser and use the **Display Mode** drop-down list control to change the display mode to catalog mode. Then use the catalog user interface (UI) to add the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_CatalogIconImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/CS/catalogiconimageurlcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_CatalogIconImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_CatalogIconImageURL/VB/catalogiconimageurlvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChromeState">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.PartChromeState ChromeState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.PartChromeState ChromeState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.ChromeState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether a part control is in a minimized or normal state.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeState" /> values. The default is <see cref="F:System.Web.UI.WebControls.WebParts.PartChromeState.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A part control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property value can be normal or minimized. The <xref:System.Web.UI.WebControls.WebParts.WebPart> class overrides the base property so that end users can personalize it.  
+  
+ For a code example that uses this property, see the base <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeState" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChromeType">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.PartChromeType ChromeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.PartChromeType ChromeType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.ChromeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of border that frames a Web Parts control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values. The default is <see cref="F:System.Web.UI.WebControls.WebParts.PartChromeType.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A part control's <xref:System.Web.UI.WebControls.WebParts.WebPart.WebPartManager%2A> property determines what kind of border surrounds the control. Options include showing a title only, a border only, a title and border, neither, or the default option, which simply uses the value of the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartChromeType%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart> class overrides the base property so that end users can personalize it.  
+  
+ For a code example that uses this property, see the base <xref:System.Web.UI.WebControls.WebParts.Part.ChromeType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectErrorMessage">
+      <MemberSignature Language="C#" Value="public string ConnectErrorMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an error message to display to users if errors occur during the connection process.</summary>
+        <value>A string that contains the error message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage%2A> property is supplied internally by the Web Parts control set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEditorParts">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.CreateEditorParts" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.EditorPartCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls that can be used to edit a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control when it is in edit mode.</summary>
+        <returns>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> that contains custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Developers can use this method to create instances of custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls that they want to associate with a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The method is called when a user clicks the edit verb on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+> [!NOTE]
+>  Any new instance of an <xref:System.Web.UI.WebControls.WebParts.EditorPart> control that is created in this method must have a value assigned to its ID property before it can be added to the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts%2A> collection.  
+  
+ For a code example that uses the <xref:System.Web.UI.WebControls.WebParts.WebPart.CreateEditorParts%2A> method, see the <xref:System.Web.UI.WebControls.WebParts.EditorPart> class overview.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public override string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a brief phrase that summarizes what the part control does, for use in ToolTips and catalogs of part controls.</summary>
+        <value>A string that briefly summarizes the part control's functionality. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.Description%2A> property is typically a string that is used in catalogs that provide lists of part controls, and as a ToolTip in the part control's title bar. The content of the <xref:System.Web.UI.WebControls.WebParts.WebPart.Description%2A> property appears in a ToolTip when you position your mouse pointer over the title text in a part control's title bar. The ToolTip text is created from the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property, followed by a hyphen, followed by the <xref:System.Web.UI.WebControls.WebParts.WebPart.Description%2A> property value.  
+  
+ For a code example that uses this property, see the base <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A> property.  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.ContentDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ContentDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ContentDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal direction that content flows within the control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.ContentDirection" /> that indicates the horizontal direction content will flow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart> class overrides the base property values so that ends users can personalize the property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayTitle">
+      <MemberSignature Language="C#" Value="public string DisplayTitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that contains the full title text actually displayed in the title bar of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control instance.</summary>
+        <value>A string that represents the complete, displayed title of the control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property returns either the current value of the <xref:System.Web.UI.WebControls.WebParts.Part.Title%2A> property or, if the control has no title, a calculated value. The calculated value consists of a localizable resource string for untitled controls, plus (if there are multiple controls within the zone) a number based on the index of the control within the zone.  
+  
+ For custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls where the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property has been overridden to return a string value to use as a subtitle, the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property is concatenated with the subtitle to produce a complete title.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property value also serves as part of a ToolTip that appears when a user positions the mouse pointer over the title bar of a control. The full ToolTip consists of the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> value, followed by a hyphen, followed by the value of the control's <xref:System.Web.UI.WebControls.WebParts.WebPart.Description%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartExportMode ExportMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.WebPartExportMode ExportMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.ExportMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartExportMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether all, some, or none of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control's properties can be exported.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartExportMode" /> values. The default is <see cref="F:System.Web.UI.WebControls.WebParts.WebPartExportMode.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a <xref:System.Web.UI.WebControls.WebParts.WebPart> control cannot be exported and its <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>. To enable exporting all properties for the control, set the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> value to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>. To export only certain properties while preventing the export of properties that contain sensitive data, you set the property value to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>.  
+  
+ To export property value descriptions for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the properties must also be marked with the `Personalizable` attribute in the metadata for the property's source code. For details, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute>.  
+  
+> [!NOTE]
+>  To enable the export feature for a Web application that includes Web Parts controls, in the Web.config file for your application, you must add an attribute to the `<webParts>` element within the `<system.web>` section, as in the following markup.  
+>   
+>  `<webParts  enableExport="true">`  
+>   
+>  `</webParts>`  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property. Note that for the export code example to work, you must also update your Web.config file by adding the attribute `enableExport="true"` to the `<webParts>` element, as indicated in the Remarks section.  
+  
+ The first part of this example contains the code for a control named `TextDisplayWebPart`. This control is the same as the custom control that is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview, except that it adds a `Personalizable` attribute to the `TextDisplayWebPart.ContentText` property so the property can be exported. Note that the attribute declaration includes a value of `true` for the `isSensitive` parameter, meaning that the property is marked as sensitive data for export purposes. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPart_ExportMode#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/CS/textdisplaywebpart.cs#2)]
+ [!code-vb[WebParts_WebPart_ExportMode#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/VB/textdisplaywebpart.vb#2)]  
+  
+ The second part of the example shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>, meaning that even properties with sensitive values will be exported.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_ExportMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/CS/exportmodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_ExportMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_ExportMode/VB/exportmodevb.aspx#1)]  -->  
+  
+ Load the Web page in a browser, and on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control, click the export verb and follow the instructions to export a description file containing the control's state and property data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartExportMode" /> values.</exception>
+        <exception cref="T:System.InvalidOperationException">The control is already loaded and the personalization scope of the control is set to the <see cref="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" /> scope.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSharedData">
+      <MemberSignature Language="C#" Value="public bool HasSharedData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasSharedData" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.HasSharedData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control has any shared personalization data associated with it.</summary>
+        <value>A Boolean value that indicates whether the control has shared personalization data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property refers to personalization data that is set on a control in shared scope, meaning personalization data that is seen by all users.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasUserData">
+      <MemberSignature Language="C#" Value="public bool HasUserData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasUserData" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.HasUserData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control has any user personalization data associated with it.</summary>
+        <value>A Boolean value that indicates whether the control has any user personalization data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property refers to custom personalization data that is user-specific -- in other words, specific settings by a user on a control that are visible only to that user.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Height" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of a zone.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> object that indicates the height of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" />. The default type of a <see cref="T:System.Web.UI.WebControls.Unit" /> is pixels, as indicated by the <see cref="P:System.Web.UI.WebControls.Unit.Type" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Internet Explorer rendering modes can affect the height of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control and the height of the zone that contains it. Internet Explorer renders Web pages either in compatibility mode (backward compatible with previous browser versions) or in standards mode (determined by the presence of a `DOCTYPE` declaration in the page). For information about these modes, see the DHTML [compatMode](http://go.microsoft.com/fwlink/?LinkId=57175) property.  
+  
+ When Internet Explorer renders a page in standards mode, under some circumstances it might not resize cells in tables, even when a cell's HTML markup is `<td height="100%">`. As a result, <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and their containing zone are rendered so that the controls do not stretch to the full height of the zone.  
+  
+ When Internet Explorer is in standard mode, controls do not render to stretch to their full height in the following cases:  
+  
+-   When a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property is set to <xref:System.Web.UI.WebControls.Orientation> and you explicitly set the height on the zone. To enable controls to fill the full height of the zone, do not specify the height of a horizontally oriented zone.  
+  
+-   When a zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> property is set to <xref:System.Web.UI.WebControls.Orientation> and you do not explicitly set the height of the zone or of the contained controls. To enable controls to fill the full height of the zone, set the height of the zone or of the controls in a vertically oriented zone.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the rendering issue that affects the height of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone>.  To demonstrate this issue, you must run the page in Internet Explorer.  
+  
+ Note that the zone's orientation is set to horizontal, and that the height of the zone and the controls within it is not set explicitly.  The result is that in the <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, the shorter <xref:System.Web.UI.WebControls.WebParts.WebPart> control does not stretch to the height of the zone upon rendering.  However, if you remove the `DOCTYPE` declaration from the page and run the page again, the issue does not occur, because now the browser will not render the page in standards mode.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Height#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Height/CS/Defaultcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Height#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Height/VB/Defaultvb.aspx#1)]  -->  
+  
+ To see how the workaround (described in the Remarks section) works, try adding a `height` attribute to the `<asp:webpartzone>` element, while keeping the `DOCTYPE` declaration in the page.  You can use the following code to add the attribute to the tag:  
+  
+ `Height="200px"`  
+  
+ Run the page, and now both <xref:System.Web.UI.WebControls.WebParts.WebPart> controls stretch to fill the explicitly declared height of the zone.  
+  
+ You can also experiment with this code example to observe the height-related rendering issue in the other scenario, which occurs when the zone's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation%2A> is set to <xref:System.Web.UI.WebControls.Orientation>.  Remove the existing `LayoutOrientation` attribute and its value from the `<asp:webpartzone>` element, which will cause the zone's orientation to revert to the default vertical orientation.  Set the height attribute on the `<asp:webpartzone>` element to 200 pixels, as you did above, and run the page.  The zone's height looks too large, and the controls are not sized proportionately to the zone's height.  Now remove the height attribute and run the page again.  The controls now render relative to the height of the zone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartHelpMode HelpMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.WebPartHelpMode HelpMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.HelpMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartHelpMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of user interface (UI) used to display Help content for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" /> values. The default is <see cref="F:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Modal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property to determine how a browser will display Help content for a control. The following table lists the effects of the various Help modes on a browser when Help content for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is displayed.  
+  
+|Help mode|Browser behavior|  
+|---------------|----------------------|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode>|Opens a separate browser window, if the browser has this capability. A user must close the window before returning to the Web Parts page.|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode>|Opens a separate browser window, if the browser has this capability. A user does not have to close the window before returning to the Web page.|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode>|Replaces the Web Parts page in the browser window.|  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property to display Help for a control in the same browser window. The first part of this example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example also includes an HTML page that contains fictitious Help content for the `TextDisplayWebPart` control. For this example to work, you must save the following code in a file named Textwebparthelp.htm and place it in the same directory of your site as the .aspx page.  
+  
+```  
+<html>  
+<head runat="server">  
+    <title>Text Content WebPart Help</title>  
+</head>  
+<body>  
+  <div>  
+  <h1>Text Content WebPart Help</h1>  
+  To make the WebPart control work...  
+  </div>  
+</body>  
+</html>  
+```  
+  
+ The final part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode>, and the code also sets the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property to the name of the HTML file that contains the Help content. Load the page into a browser, and click the help verb on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified is not one of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartHelpMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpUrl">
+      <MemberSignature Language="C#" Value="public virtual string HelpUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to a Help file for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that represents the URL to a Help file. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To enable a verb menu with a help verb in the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, you must provide a value for the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property. The manner in which the Help content is displayed in the browser is determined by the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property. This example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example also includes an HTML page that contains fictitious Help content for the `TextDisplayWebPart` control. For this example to work, you must save the following code in a file named Textwebparthelp.htm and place it in the same directory of your site as the .aspx page.  
+  
+```  
+<html>  
+<head runat="server">  
+    <title>Text Content WebPart Help</title>  
+</head>  
+<body>  
+  <div>  
+  <h1>Text Content WebPart Help</h1>  
+  To make the WebPart control work...  
+  </div>  
+</body>  
+</html>  
+```  
+  
+ The final part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode>, and the code also sets the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property to the name of the HTML file that contains the Help content. Load the page into a browser, and click the help verb on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="public virtual bool Hidden { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Hidden" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is displayed on a Web page.</summary>
+        <value>
+          <see langword="false" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is displayed on a Web page; otherwise, <see langword="true" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPart> control that is hidden remains in its zone, is actually rendered on its page, and participates in page life cycle phases such as the `PreRender` phase, even though it is not visible in a browser. This is different from <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that are closed, because closed controls are not even rendered on a page, while hidden controls are rendered and active in Web Parts applications, though not visible to users. The Web Parts control set hides the <xref:System.Web.UI.WebControls.WebParts.WebPart> control by setting its cascading style sheet (CSS) style to a value of `display:none`.  
+  
+ Even if the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property for a control is set to `true`, the control is still displayed if the current display mode on the page allows hidden controls to be displayed. For example, edit mode allows hidden controls to be displayed, so that users can edit them. When hidden controls are visible in certain display modes, the title of the control displays a string indicating that the control is in hidden status.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is set to `false`, which is the default, the control is displayed on the page. Note that if the <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowHide%2A> property is set to `false`, end users are not allowed to edit the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property value.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.Hidden%2A> property for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ Notice that in the Web page, in the declarative markup for the `<aspSample:TextDisplayWebPart>` element, the `Hidden` attribute value is set to `true`. The `TextDisplayWebPart` control will not appear if the page is loaded in a browser. However, the control is still present on the page and in its zone, and it still could participate in connections with other <xref:System.Web.UI.WebControls.WebParts.WebPart> controls if you created those connections.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Hidden#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Hidden/CS/hiddencs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Hidden#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Hidden/VB/hiddenvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportErrorMessage">
+      <MemberSignature Language="C#" Value="public virtual string ImportErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImportErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an error message that is used if errors occur when a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is imported.</summary>
+        <value>A string that contains the error message. The default value is a standard error message supplied by the Web Parts control set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage%2A> property allows you to set a custom error message that is displayed if an error occurs when a user tries to import a part control's description file into a catalog of Web Parts controls. You can set the property declaratively on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, adding the `ImportErrorMessage` attribute within the opening tag of the control and assigning an error message string to it. You can also set the property value programmatically.  
+  
+ For a full code example that demonstrates both exporting and importing .WebPart description files for <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, which includes use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ImportErrorMessage%2A> property, see the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> class.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClosed">
+      <MemberSignature Language="C#" Value="public bool IsClosed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.IsClosed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is currently closed on a Web Parts page.</summary>
+        <value>A Boolean value that indicates whether the control is closed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPart> control that is closed is not rendered on the page and does not participate in page events. However, it is maintained in a page catalog by the Web Parts application, and can be added back to the page by users if the appropriate user interface (UI) is provided. For more information, see <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShared">
+      <MemberSignature Language="C#" Value="public bool IsShared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsShared" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is shared, meaning that it is visible to all users of a Web Parts page.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control has shared user visibility on a Web page; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A shared Web Parts control is visible to all users of a Web page. The opposite of a shared control is a per-user control, which is user-specific and is visible only to the user who added that control to a page.  
+  
+ If a dynamic control is added while a user is viewing the page in shared personalization scope, the control will be shared. If the control is added while the user is in user personalization scope, the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property value for that control will be `false`.  
+  
+ For more information about shared and per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ When you load the Web page in a browser and click the **Check Sharing** button, the code checks the <xref:System.Web.UI.WebControls.WebParts.WebPart.IsShared%2A> property on the `TextDisplayWebPart` control, and the value of the property is `true`, because the control is referenced as a static control in the declarative markup of the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_IsShared#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_IsShared/CS/issharedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_IsShared#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_IsShared/VB/issharedvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStandalone">
+      <MemberSignature Language="C#" Value="public bool IsStandalone { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStandalone" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.IsStandalone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is standalone, meaning that it is not contained within a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is not contained in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStatic">
+      <MemberSignature Language="C#" Value="public bool IsStatic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStatic" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is a static control, which means the control is declared in the markup of a Web Parts page and not added to the page programmatically.</summary>
+        <value>A Boolean value that indicates whether the control is static.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A static <xref:System.Web.UI.WebControls.WebParts.WebPart> control is one that is declared in the markup of a Web Parts page. This contrasts with a dynamic <xref:System.Web.UI.WebControls.WebParts.WebPart> control, which is added either programmatically or by a user selecting the control from a catalog of controls at run time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClosing">
+      <MemberSignature Language="C#" Value="protected virtual void OnClosing (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnClosing(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.OnClosing(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Enables derived classes to provide custom handling when a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is closed on a Web Parts page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method in the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class contains no implementation. Derived <xref:System.Web.UI.WebControls.WebParts.WebPart> controls can override the method if needed to provide custom handling when the control is closed. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control automatically invokes the <xref:System.Web.UI.WebControls.WebParts.WebPart.OnClosing%2A> method if you provide an implementation in a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnConnectModeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnConnectModeChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnConnectModeChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Enables derived classes to provide custom handling when a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is beginning or ending the process of connecting to other controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method in the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class contains no implementation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>A derived control needs to override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnConnectModeChanged(System.EventArgs)" /> method. Developers can raise custom events or carry out other actions. The method is called by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control when the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartConnecting(System.Web.UI.WebControls.WebParts.WebPart)" /> and <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartConnecting" /> methods are called to establish connections between controls.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeleting">
+      <MemberSignature Language="C#" Value="protected virtual void OnDeleting (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnDeleting(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Enables derived classes to provide custom handling when a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is permanently removed from a Web Parts page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method in the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class contains no implementation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>A derived control needs to override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnDeleting(System.EventArgs)" /> method. Developers can raise custom events or carry out other actions. The method is called when the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" /> method is called.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEditModeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnEditModeChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnEditModeChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Enables derived classes to provide custom handling when a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control is entering or leaving edit mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method in the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class contains no implementation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>A derived control needs to override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.OnEditModeChanged(System.EventArgs)" /> method, and use the overridden method to raise a custom event. Developers can raise custom events or carry out other actions. The method is called when the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.BeginWebPartEditing(System.Web.UI.WebControls.WebParts.WebPart)" /> and <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.EndWebPartEditing" /> methods are called during editing.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPersonalizationDirty">
+      <MemberSignature Language="C#" Value="protected void SetPersonalizationDirty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetPersonalizationDirty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets a flag indicating that personalization data has changed for the current <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A> method sets a flag indicating that control state data has been changed (personalized) on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control therefore needs to persist the personalization data to long term storage.  
+  
+ Normally the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> persists personalization changes on <xref:System.Web.UI.WebControls.WebParts.WebPart> controls without a need for developers to call the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A> method. But there are two cases in which developers do need to call this method. The first case is when control state data is changed during an HTTP `GET` request to a page. By default, changes to control state data during a `GET` request are not persisted (for security purposes). But the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A> method provides a way to persist legitimate personalization changes to <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in this case.  
+  
+ The second case for calling the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A> method occurs during an HTTP `POST` request to a page. If a <xref:System.Web.UI.WebControls.WebParts.WebPart> control has complex personalizable properties (such as a property that contains an <xref:System.Collections.ArrayList> object), and control state data in those properties is personalized during a `POST` request, developers must call the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A> method to ensure that the changes are persisted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.WebPartManager" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPersonalizationDirty">
+      <MemberSignature Language="C#" Value="public static void SetPersonalizationDirty (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPersonalizationDirty(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> for which the personalization data has changed.</param>
+        <summary>Sets a flag indicating that personalization data has changed for the specified server control that resides in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=fullName> method has the same purpose as the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty?displayProperty=fullName> method, which is to set a flag indicating that control state data has been changed (personalized) on a server control during an HTTP `GET` request. The difference between these methods is that the <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A?displayProperty=fullName> method is used for server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, but are placed within <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones to participate in Web Parts applications.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The object in the <paramref name="control" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The control derives from <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />. Controls that derive from <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> should use the protected <see cref="M:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty" /> method instead.</exception>
+        <exception cref="T:System.InvalidOperationException">The page associated with the control does not have a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtitle">
+      <MemberSignature Language="C#" Value="public virtual string Subtitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that is concatenated with the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Title" /> property value to form a complete title for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that serves as a subtitle for the control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property optionally to return a standard subtitle string in your custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that will be appended to the control's title.  
+  
+ If you provide a value for the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property in a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the Web Parts control set automatically appends it to the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.Title%2A> property to create a complete title for the control.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to provide a subtitle for instances of a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ The first part of this example contains the code for a custom control named `TextDisplayWebPart`. This control is the same as the custom control which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview, except that it also overrides the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property to provide a standard subtitle containing a fictitious company name for instances of the custom control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example assumes that you compile the source code into an assembly, place it in a Bin subfolder of your Web application, and reference the assembly with a `Register` directive in your Web page. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPart_Subtitle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/CS/textdisplaywebpart.cs#2)]
+ [!code-vb[WebParts_WebPart_Subtitle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/VB/textdisplaywebpart.vb#2)]  
+  
+ The second part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control in an ASP.NET Web page. After you load the page in a browser, the control's title bar text includes the title assigned to the control in the declarative markup, a hyphen separator, and the value of the custom subtitle from the `TextDisplayWebPart` control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Subtitle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/CS/subtitlecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Subtitle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Subtitle/VB/subtitlevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To supply a subtitle for instances of a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, you must override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Subtitle" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public override string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of a part control.</summary>
+        <value>A string that represents the title of the part control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a developer assigns a value to the <xref:System.Web.UI.WebControls.WebParts.WebPart.Title%2A> property, then that value determines all (or at least part of) the text in the control's title bar. The title text also appears as part of the ToolTip text when you position your mouse pointer over the title bar of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control or other server control that appears in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone.  
+  
+ The complete text displayed in a control's title bar is also affected by the <xref:System.Web.UI.WebControls.WebParts.WebPart.Subtitle%2A> property. If that property has a value assigned to it, the value is concatenated to the title. If no value is assigned to the <xref:System.Web.UI.WebControls.WebParts.WebPart.Title%2A> property, a calculated title is displayed. At any point, developers can retrieve the actual, total text displayed in a <xref:System.Web.UI.WebControls.WebParts.WebPart> control's title bar by getting the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property.  
+  
+ The style of the title text is determined by the <xref:System.Web.UI.WebControls.WebParts.WebZone.PartTitleStyle%2A> property of the zone that contains the part control.  
+  
+ For a code example that demonstrates the use of the base property, see the <xref:System.Web.UI.WebControls.WebParts.Part.Title%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleIconImageUrl">
+      <MemberSignature Language="C#" Value="public virtual string TitleIconImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image used to represent a Web Parts control in the control's title bar.</summary>
+        <value>A string that represents the URL to an image used to represent the control in its title bar. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleIconImageUrl%2A> property for a custom Web Parts control, so that the control appears with an image in a catalog of controls. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ In the declarative markup of the Web page, note the `<aspSample:TextDisplayWebPart>` element. Its `TitleIconImageUrl` attribute is assigned a string that contains the URL to an image file. Load the page in a browser, and if you provided a legitimate URL to an image, the image appears in the title bar of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_TitleIconImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_TitleIconImageUrl/CS/titleiconimageurlcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_TitleIconImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_TitleIconImageUrl/VB/titleiconimageurlvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleUrl">
+      <MemberSignature Language="C#" Value="public virtual string TitleUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable(System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URL to supplemental information about a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that represents a URL to more information about the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you assign a URL to the <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A> property, the title of the control becomes a link to supplemental information about the control. The URL is not rendered when the page is in a display mode where controls can be dragged, such as design, edit, or catalog mode.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ The personalization scope of this property is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and can be modified only by authorized users. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> and [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A> property for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ Notice that the `<aspSample:TextDisplayWebPart>` element contains the `TitleUrl` attribute with a fictitious URL. If you load the page in a browser, the title of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control is now a link to the resource pointed to by the <xref:System.Web.UI.WebControls.WebParts.WebPart.TitleUrl%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_TitleUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_TitleUrl/CS/titleurlcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_TitleUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_TitleUrl/VB/titleurlvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The internal validation system has determined that the URL might contain script attacks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPart.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the control to track changes to its view state so they can be stored in the object's <see cref="P:System.Web.UI.Control.ViewState" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of custom verbs associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" /> that contains custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control. The default value is <see cref="F:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Verbs derive from the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class, and provide user interface (UI) actions that users can perform on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Usually verbs are represented in the UI as buttons, links, or menu items. By default, common Web Parts verbs appear on a drop-down verbs menu in each <xref:System.Web.UI.WebControls.WebParts.WebPart> control's title bar. There are standard verbs for opening, closing, editing, and minimizing a control, and other verbs for exporting a definition for the control or loading a Help file. These verbs are not included in the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> collection, because the collection contains only custom verbs that you create and return by overriding this property in a derived class.  
+  
+ When you create custom verbs and add them to the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> collection, you can then access the verbs programmatically from a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> property for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ Note that for the code example to work, you must add a setting in the Web.config file to enable exporting Web Parts description files. Ensure that you have a Web.config file in the same directory as the Web page for this code example. Within the `<system.web>` section, make sure there is a `<webParts>` element with an `enableExport` attribute set to `true`, as in the following markup.  
+  
+ `<webParts enableExport="true">`  
+  
+ `...`  
+  
+ `</webParts>`  
+  
+ Load the Web page in a browser. When you click the **Display Verb Count** button, it accesses the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> property to get the count of custom verbs for the `TextDisplayWebPart` control, and displays the count in a label. Because no custom verbs have been added to the control in this case, the count is zero.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Verbs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Verbs/CS/verbscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Verbs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Verbs/VB/verbsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes can override the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Verbs" /> property to allow users to add custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects to the verb collection for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="WebBrowsableObject">
+      <MemberSignature Language="C#" Value="public virtual object WebBrowsableObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object WebBrowsableObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control to enable it to be edited by custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
+        <value>A <see cref="T:System.Object" /> that consists of the child control of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you create a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and also create related custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to enable users to edit the control at run time, you must implement the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface, which includes the <xref:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject%2A> property.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPart> control enters edit mode, the <xref:System.Web.UI.WebControls.WebParts.WebPart.WebBrowsableObject%2A> property is called by an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control to get a reference to the <xref:System.Web.UI.WebControls.WebParts.WebPart> control and enable the custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls to edit it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebPartManager">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.WebPartManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control instance.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> that is associated with a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A Web Parts page always has a single instance of a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control tracks and manages all the other Web Parts controls on a page, including all zones that derive from the base <xref:System.Web.UI.WebControls.WebParts.WebZone> class, and all part controls that derive from the base <xref:System.Web.UI.WebControls.WebParts.Part> class.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.WebPartManager%2A> property exists so that every <xref:System.Web.UI.WebControls.WebParts.WebPart> control can be associated with its <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, in turn, maintains a collection of all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls on a page in its <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Width" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.Personalizable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the Web server control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the width of the control. The default is <see cref="F:System.Web.UI.WebControls.Unit.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zone">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartZoneBase Zone { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartZoneBase Zone" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.Zone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartZoneBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone that currently contains a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> that currently contains a Web Parts control on a Web page. If a Web Parts control is currently closed on a page, the return value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the architecture of the Web Parts control set, controls can have Web Parts functionality only if they operate inside of <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones. The standard <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone to use on Web pages is the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control. Although end users can move Web Parts controls between different zones on a Web page, a given instance of a control can reside in only one zone at a time. A Web Parts control, and its associated <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, use the <xref:System.Web.UI.WebControls.WebParts.WebPart.Zone%2A> property to keep track of which zone the control currently resides in, and what common layout and style characteristics of the zone apply to all contained Web Parts controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.WebPart.Zone%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> properties for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ The second part of the code example is the Web page. There are two `<asp:webpartzone>` elements on the page, each representing a Web Parts zone. The first zone contains a standard <xref:System.Web.UI.WebControls.Calendar> control, which acts like a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time because it is in a zone. The second zone contains the `TextDisplayWebPart` control. When a user clicks the **Zone Information** button, the `Label1` control displays the values of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> property for the control, and the <xref:System.Web.UI.Control.ID%2A> property of the zone that currently contains the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/webpartzoneindexcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/webpartzoneindexvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZoneIndex">
+      <MemberSignature Language="C#" Value="public int ZoneIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ZoneIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index position of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control within its zone.</summary>
+        <value>The numerical order of a control within its zone. The first control in a zone has an index value of zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> property indicates a Web Parts control's numerical order (or ordinal position) within its zone, relative to other controls in the zone. The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses this property to track and manage its collection of Web Parts controls on a Web page.  
+  
+> [!IMPORTANT]
+>  You cannot assume that the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> property for a control will equal the index value for the same control within the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts%2A> collection of the control's zone. Often a control's relative position in its zone (its <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> value), and its index within the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts%2A> collection of its zone, will be different values as controls are added to and removed from zones.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.WebPart.Zone%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> properties for a custom Web Parts control. This example assumes the use of a custom control, `TextDisplayWebPart`, created in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+  
+ The code example includes a custom user control that enables users to change display modes on a Web Parts page. The user control is referenced by means of a `Register` directive near the top of the Web page that hosts the user control. For a detailed description of how to create this user control and work with display modes, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ The second part of the code example is the Web page. There are two `<asp:webpartzone>` elements on the page, each representing a Web Parts zone. The first zone contains a standard <xref:System.Web.UI.WebControls.Calendar> control, which acts like a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time because it is in a zone. The second zone contains the `TextDisplayWebPart` control. When a user clicks the **Zone Information** button, the `Label1` control displays the values of the <xref:System.Web.UI.WebControls.WebParts.WebPart.ZoneIndex%2A> property for the control, and the <xref:System.Web.UI.Control.ID%2A> property of the zone that currently contains the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_Zone#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_Zone/CS/webpartzoneindexcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_Zone#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_Zone/VB/webpartzoneindexvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

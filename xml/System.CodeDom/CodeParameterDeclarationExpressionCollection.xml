@@ -1,0 +1,403 @@
+<Type Name="CodeParameterDeclarationExpressionCollection" FullName="System.CodeDom.CodeParameterDeclarationExpressionCollection">
+  <TypeSignature Language="C#" Value="public class CodeParameterDeclarationExpressionCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeParameterDeclarationExpressionCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeParameterDeclarationExpression> objects.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#1)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#1)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpressionCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpressionCollection (System.CodeDom.CodeParameterDeclarationExpression[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeParameterDeclarationExpression[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor(System.CodeDom.CodeParameterDeclarationExpression[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> objects with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> class containing the specified array of <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> objects.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">one or more objects in the array are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeParameterDeclarationExpressionCollection (System.CodeDom.CodeParameterDeclarationExpressionCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeParameterDeclarationExpressionCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor(System.CodeDom.CodeParameterDeclarationExpressionCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpressionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> class containing the elements of the specified source collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeParameterDeclarationExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeParameterDeclarationExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.Add(System.CodeDom.CodeParameterDeclarationExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to add.</param>
+        <summary>Adds the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to the collection.</summary>
+        <returns>The index at which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to add a <xref:System.CodeDom.CodeParameterDeclarationExpression> object to a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> instance.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#3)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#3)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeParameterDeclarationExpression[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeParameterDeclarationExpression[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.AddRange(System.CodeDom.CodeParameterDeclarationExpression[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> containing the objects to add to the collection.</param>
+        <summary>Copies the elements of the specified array to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection.AddRange%28System.CodeDom.CodeParameterDeclarationExpression%5B%5D%29> method overload to add the members of a <xref:System.CodeDom.CodeParameterDeclarationExpression> array to a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeParameterDeclarationExpressionCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeParameterDeclarationExpressionCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.AddRange(System.CodeDom.CodeParameterDeclarationExpressionCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpressionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> containing the objects to add to the collection.</param>
+        <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection.AddRange%28System.CodeDom.CodeParameterDeclarationExpressionCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> object to another  <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeParameterDeclarationExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeParameterDeclarationExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.Contains(System.CodeDom.CodeParameterDeclarationExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to search for in the collection.</param>
+        <summary>Gets a value indicating whether the collection contains the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" />.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeParameterDeclarationExpression> object and get the index value at which it was found.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeParameterDeclarationExpression[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeParameterDeclarationExpression[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.CopyTo(System.CodeDom.CodeParameterDeclarationExpression[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.CodeDom.CodeParameterDeclarationExpression[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
+        <param name="index">The index of the array at which to begin inserting.</param>
+        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection> to an <xref:System.Array> beginning at the specified index value.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#6)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#6)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the <see cref="T:System.CodeDom.CodeParameterDeclarationExpressionCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeParameterDeclarationExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeParameterDeclarationExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.IndexOf(System.CodeDom.CodeParameterDeclarationExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to locate in the collection.</param>
+        <summary>Gets the index in the collection of the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" />, if it exists in the collection.</summary>
+        <returns>The index in the collection of the specified object, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example searches for the presence of a specific <xref:System.CodeDom.CodeParameterDeclarationExpression> instance and uses the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection.IndexOf%2A> method to get the index value at which it was found.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeParameterDeclarationExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeParameterDeclarationExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.Insert(System.Int32,System.CodeDom.CodeParameterDeclarationExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index where the specified object should be inserted.</param>
+        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeParameterDeclarationExpression> object to a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#8)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#8)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeParameterDeclarationExpression this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeParameterDeclarationExpression Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeParameterDeclarationExpressionCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeParameterDeclarationExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the collection to access.</param>
+        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> at the specified index in the collection.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> at each valid index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an indexer that can be used to access the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeParameterDeclarationExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeParameterDeclarationExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeParameterDeclarationExpressionCollection.Remove(System.CodeDom.CodeParameterDeclarationExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeParameterDeclarationExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.CodeDom.CodeParameterDeclarationExpression" /> from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeParameterDeclarationExpression> object from a <xref:System.CodeDom.CodeParameterDeclarationExpressionCollection>.  
+  
+ [!code-cpp[CodeParameterDeclarationExpressionCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CPP/class1.cpp#9)]
+ [!code-csharp[CodeParameterDeclarationExpressionCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/CS/class1.cs#9)]
+ [!code-vb[CodeParameterDeclarationExpressionCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeParameterDeclarationExpressionCollectionExample/VB/class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

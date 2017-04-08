@@ -1,0 +1,77 @@
+<Type Name="DesignerActionTextItem" FullName="System.ComponentModel.Design.DesignerActionTextItem">
+  <TypeSignature Language="C#" Value="public class DesignerActionTextItem : System.ComponentModel.Design.DesignerActionItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionTextItem extends System.ComponentModel.Design.DesignerActionItem" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionTextItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.DesignerActionItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a static text item on a smart tag panel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionTextItem> class represents individual static text items in a smart tag panel. Individual items are associated together to form a panel by returning the group from a call to the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+ Most commonly, a static text item is used to create an informative label in a panel. Clicking on a static text item causes no action. The derived type <xref:System.ComponentModel.Design.DesignerActionHeaderItem> is typically used to create labels to separate categories.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+  
+ For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionTextItem (string displayName, string category);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string category) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionTextItem.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The category used to group similar items on the panel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionTextItem" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionTextItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`.  
+  
+ For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+  
+ For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

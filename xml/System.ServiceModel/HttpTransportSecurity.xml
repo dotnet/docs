@@ -1,0 +1,272 @@
+<Type Name="HttpTransportSecurity" FullName="System.ServiceModel.HttpTransportSecurity">
+  <TypeSignature Language="C#" Value="public sealed class HttpTransportSecurity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpTransportSecurity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.HttpTransportSecurity" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the transport-level security settings for the <see cref="T:System.ServiceModel.WSHttpBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:System.ServiceModel.WSHttpSecurity.Transport%2A> to set the transport-level security settings for a binding.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpTransportSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.HttpTransportSecurity" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCredentialType">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.HttpClientCredentialType ClientCredentialType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HttpClientCredentialType ClientCredentialType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.HttpClientCredentialType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of client credential to be used for authentication.</summary>
+        <value>Returns the <see cref="T:System.ServiceModel.HttpClientCredentialType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value can be one of the following enumeration members:  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+   
+  
+## Examples  
+ The following code shows how to access and set this property.  
+  
+ [!code-csharp[c_ProgrammingSecurity#11](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#11)]
+ [!code-vb[c_ProgrammingSecurity#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Setting the property to an undefined value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProtectionPolicy">
+      <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ExtendedProtectionPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extended protection policy.</summary>
+        <value>The extended protection policy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProxyCredentialType">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.HttpProxyCredentialType ProxyCredentialType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HttpProxyCredentialType ProxyCredentialType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.HttpProxyCredentialType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of client credential to be used for authentication against the proxy.</summary>
+        <value>Returns the <see cref="T:System.ServiceModel.HttpProxyCredentialType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value can be one of the following enumeration members:  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Setting the property to an undefined value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Realm">
+      <MemberSignature Language="C#" Value="public string Realm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Realm" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.Realm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the authentication realm for digest or basic authentication.</summary>
+        <value>The authentication realm. The default value is "".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An *authentication realm* is a string that contains at least the name of the host performing the authentication and can additionally indicate the collection of users who might have access. An example might be "registered_someone@example.com". The authentication realm is displayed to a user to show which one of several possible user names and passwords can be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeClientCredentialType">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeClientCredentialType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeClientCredentialType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeClientCredentialType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" /> property has changed from its default value and should be serialized. . Used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeExtendedProtectionPolicy">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeExtendedProtectionPolicy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeExtendedProtectionPolicy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeExtendedProtectionPolicy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.HttpTransportSecurity.ExtendedProtectionPolicy" /> property has changed from its default value and should be serialized. Used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.HttpTransportSecurity.ExtendedProtectionPolicy" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeProxyCredentialType">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeProxyCredentialType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeProxyCredentialType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeProxyCredentialType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" /> property has changed from its default value and should be serialized. Used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeRealm">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeRealm ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeRealm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeRealm" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.HttpTransportSecurity.Realm" /> property has changed from its default value and should be serialized. . Used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.HttpTransportSecurity.Realm" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

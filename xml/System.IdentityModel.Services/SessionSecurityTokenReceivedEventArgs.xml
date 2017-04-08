@@ -1,0 +1,92 @@
+<Type Name="SessionSecurityTokenReceivedEventArgs" FullName="System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs">
+  <TypeSignature Language="C#" Value="public class SessionSecurityTokenReceivedEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSecurityTokenReceivedEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived> event is raised from within the <xref:System.IdentityModel.Services.SessionAuthenticationModule.OnAuthenticateRequest%2A?displayProperty=fullName> method after a session token (<xref:System.IdentityModel.Tokens.SessionSecurityToken>) has been successfully read from the session cookie. In the event handler, you can modify properties of the session token before it is passed further along the pipeline and is used to authenticate the entity making the request (user).  
+  
+ You can access the token through the <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken%2A> property. After modifying the token, you can ensure that it is written back to the cookie by setting the <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie%2A> to `true`. Finally, the <xref:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived> event is a cancelable event, and you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property (inherited from <xref:System.ComponentModel.CancelEventArgs>) to abort further processing of the request.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SessionSecurityTokenReceivedEventArgs (System.IdentityModel.Tokens.SessionSecurityToken sessionToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SessionSecurityToken sessionToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sessionToken" Type="System.IdentityModel.Tokens.SessionSecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="sessionToken">The session security token that was received.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SecurityTokenReceivedEventArgs" /> class that has the specified session token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken%2A> property is set to the token specified by the `sessionToken` parameter. The <xref:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie%2A> property is initialized to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sessionToken" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReissueCookie">
+      <MemberSignature Language="C#" Value="public bool ReissueCookie { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReissueCookie" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.ReissueCookie" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether to reissue the session cookie with the response.</summary>
+        <value>
+          <see langword="true" /> to reissue the session cookie with the response; otherwise, <see langword="false" />. The default is <see langword="false" />, the session cookie is not reissued with the response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionToken">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SessionSecurityToken SessionToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SessionSecurityToken SessionToken" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs.SessionToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SessionSecurityToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the session security token that was received.</summary>
+        <value>The session token that was received.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

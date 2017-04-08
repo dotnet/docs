@@ -1,0 +1,45 @@
+<Type Name="DataGridPageChangedEventHandler" FullName="System.Web.UI.WebControls.DataGridPageChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridPageChangedEventHandler(object source, DataGridPageChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridPageChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridPageChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="source" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.DataGridPageChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="source">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.DataGridPageChangedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DataGrid.PageIndexChanged" /> event of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event is raised when a button in the page selection element of the <xref:System.Web.UI.WebControls.DataGrid> control is clicked.  
+  
+ When you create a <xref:System.Web.UI.WebControls.DataGridPageChangedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.PageIndexChanged> event. It displays pages on the <xref:System.Web.UI.WebControls.DataGrid> control in 10-item increments.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridAllowPaging/CS/datagridallowpagingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridAllowPaging/VB/datagridallowpagingvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PageIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageIndexChanged/CS/datagridpageindexchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PageIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageIndexChanged/VB/datagridpageindexchangedvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

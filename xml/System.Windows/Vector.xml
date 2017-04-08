@@ -1,0 +1,1348 @@
+<Type Name="Vector" FullName="System.Windows.Vector">
+  <TypeSignature Language="C#" Value="public struct Vector : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Vector extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Vector" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.VectorConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Converters.VectorValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a displacement in [!INCLUDE[TLA#tla_2d](~/includes/tlasharptla-2d-md.md)] space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Point> represents a fixed position, but a <xref:System.Windows.Vector> represents a direction and a magnitude (for example, velocity or acceleration). Thus, the endpoints of a line segment are points but their difference is a vector; that is, the direction and length of that line segment.  
+  
+ In XAML, the delimiter between the <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> values of a <xref:System.Windows.Vector> can be either a comma or a space.  
+  
+ Some cultures might use the comma character as the decimal delimiter instead of the period character. XAML processing for invariant culture defaults to en-US in most XAML processor implementations, and expects the period to be the decimal delimiter. You should avoid using the comma character as the decimal delimiter if specifying a <xref:System.Windows.Vector> in XAML, because that will clash with the string type conversion of a <xref:System.Windows.Vector> attribute value into the <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> components.  
+  
+<a name="xamlAttributeUsage_Vector"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="x,y"/>  
+-or-  
+<object property="x y"/>  
+```  
+  
+<a name="xamlValues_Vector"></a>   
+## XAML Values  
+ *x*  
+ The vector's X component. For more information, see the <xref:System.Windows.Vector.X%2A> property.  
+  
+ *y*  
+ The vector's Y component. For more information, see the <xref:System.Windows.Vector.Y%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to add two <xref:System.Windows.Vector> structures.  
+  
+ [!code-csharp[VectorSample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorSample/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[VectorSample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorSample/visualbasic/window1.xaml.vb#10)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector (double x, double y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">The <see cref="P:System.Windows.Vector.X" />-offset of the new <see cref="T:System.Windows.Vector" />.</param>
+        <param name="y">The <see cref="P:System.Windows.Vector.Y" />-offset of the new <see cref="T:System.Windows.Vector" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Vector" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create two vectors and add them together.  
+  
+ [!code-csharp[VectorExamples_snip#AddTwoVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addtwovectorsexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Windows.Point Add (System.Windows.Vector vector, System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Point Add(valuetype System.Windows.Vector vector, valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Add(System.Windows.Vector,System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The amount to translate the specified point.</param>
+        <param name="point">The point to translate.</param>
+        <summary>Translates the specified point by the specified vector and returns the resulting point.</summary>
+        <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to add a <xref:System.Windows.Point> structure to a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#AddPointAndVectorExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addpointandvectorexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Add (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Add(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Add(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to add.</param>
+        <param name="vector2">The second vector to add.</param>
+        <summary>Adds two vectors and returns the result as a <see cref="T:System.Windows.Vector" /> structure.</summary>
+        <returns>The sum of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to add two <xref:System.Windows.Vector> structures.  
+  
+ [!code-csharp[VectorExamples_snip#AddTwoVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#addtwovectorsexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AngleBetween">
+      <MemberSignature Language="C#" Value="public static double AngleBetween (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 AngleBetween(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.AngleBetween(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to evaluate.</param>
+        <param name="vector2">The second vector to evaluate.</param>
+        <summary>Retrieves the angle, expressed in degrees, between the two specified vectors.</summary>
+        <returns>The angle, in degrees, between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to get the angle between two <xref:System.Windows.Vector> structures.  
+  
+ [!code-csharp[VectorExamples_snip#AngleBetweenExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#anglebetweenexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossProduct">
+      <MemberSignature Language="C#" Value="public static double CrossProduct (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 CrossProduct(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.CrossProduct(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to evaluate.</param>
+        <param name="vector2">The second vector to evaluate.</param>
+        <summary>Calculates the cross product of two vectors.</summary>
+        <returns>The cross product of <paramref name="vector1" /> and <paramref name="vector2" />. The following formula is used to calculate the cross product:  
+  
+ <c>(Vector1.X * Vector2.Y) - (Vector1.Y * Vector2.X)</c></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to calculate the cross product of two <xref:System.Windows.Vector> structures.  
+  
+ [!code-csharp[VectorExamples_snip#CrossProductExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#crossproductexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Determinant">
+      <MemberSignature Language="C#" Value="public static double Determinant (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Determinant(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Determinant(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to evaluate.</param>
+        <param name="vector2">The second vector to evaluate.</param>
+        <summary>Calculates the determinant of two vectors.</summary>
+        <returns>The determinant of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to calculate the determinant of two <xref:System.Windows.Vector> structures.  
+  
+ [!code-csharp[VectorExamples_snip#DeterminantExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#determinantexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Divide (System.Windows.Vector vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Divide(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Divide(System.Windows.Vector,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector structure to divide.</param>
+        <param name="scalar">The amount by which <c>vector</c> is divided.</param>
+        <summary>Divides the specified vector by the specified scalar and returns the result as a <see cref="T:System.Windows.Vector" />.</summary>
+        <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to divide a <xref:System.Windows.Vector> by a scalar.  
+  
+ [!code-csharp[VectorExamples_snip#DivideExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#divideexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The vector to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Object" /> is a <see cref="T:System.Windows.Vector" /> structure and, if it is, whether it has the same <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values as this vector.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Vector" /> and has the same <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values as this vector; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to check whether a <xref:System.Windows.Vector> and an <xref:System.Object> are equal.  
+  
+ [!code-csharp[VectorExamples_snip#EqualsExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample2_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Vector value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Vector value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Equals(System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="value">The vector to compare with this vector.</param>
+        <summary>Compares two vectors for equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> has the same <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values as this vector; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to check whether two <xref:System.Windows.Vector> structures are equal.  
+  
+ [!code-csharp[VectorExamples_snip#EqualsExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample2_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Equals(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to compare.</param>
+        <param name="vector2">The second vector to compare.</param>
+        <summary>Compares the two specified vectors for equality.</summary>
+        <returns>
+          <see langword="true" /> if t he <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to check whether two <xref:System.Windows.Vector> structures are equal.  
+  
+ [!code-csharp[VectorExamples_snip#EqualsExample1_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#equalsexample1_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this vector.</summary>
+        <returns>The hash code for this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the hash code of a <xref:System.Windows.Vector>.  
+  
+ [!code-csharp[VectorExamples_snip#GetHashCodeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#gethashcodeexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public double Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Vector.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of this vector.</summary>
+        <value>The length of this vector.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of a vector is sometimes referred to as the magnitude.  
+  
+   
+  
+## Examples  
+ The following example shows how use this property to get the length of a vector.  
+  
+ [!code-csharp[VectorExamples_snip#LengthExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#lengthexample)]
+ [!code-vb[VectorExamples_snip#LengthExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#lengthexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthSquared">
+      <MemberSignature Language="C#" Value="public double LengthSquared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LengthSquared" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Vector.LengthSquared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the square of the length of this vector.</summary>
+        <value>The square of the <see cref="P:System.Windows.Vector.Length" /> of this vector.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of a vector is sometimes referred to as its magnitude.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property to get the square of the length of a vector.  
+  
+ [!code-csharp[VectorExamples_snip#LengthSquaredExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#lengthsquaredexample)]
+ [!code-vb[VectorExamples_snip#LengthSquaredExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#lengthsquaredexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Multiply (double scalar, System.Windows.Vector vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Multiply(float64 scalar, valuetype System.Windows.Vector vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Double,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalar" Type="System.Double" />
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="scalar">The scalar to multiply.</param>
+        <param name="vector">The vector to multiply.</param>
+        <summary>Multiplies the specified scalar by the specified vector and returns the resulting <see cref="T:System.Windows.Vector" />.</summary>
+        <returns>The result of multiplying <paramref name="scalar" /> and <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to multiply a scalar by a <xref:System.Windows.Vector>.  
+  
+ [!code-csharp[VectorExamples_snip#MultiplyVectorByScalarExample2_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbyscalarexample2_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Multiply (System.Windows.Vector vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Multiply(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Windows.Vector,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector to multiply.</param>
+        <param name="scalar">The scalar to multiply.</param>
+        <summary>Multiplies the specified vector by the specified scalar and returns the resulting <see cref="T:System.Windows.Vector" />.</summary>
+        <returns>The result of multiplying <paramref name="vector" /> and <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a scalar.  
+  
+ [!code-csharp[VectorExamples_snip#MultiplyVectorByScalarExample1_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbyscalarexample1_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Multiply (System.Windows.Vector vector, System.Windows.Media.Matrix matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Multiply(valuetype System.Windows.Vector vector, valuetype System.Windows.Media.Matrix matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Windows.Vector,System.Windows.Media.Matrix)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="matrix" Type="System.Windows.Media.Matrix" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector structure to transform.</param>
+        <param name="matrix">The transformation to apply to <c>vector</c>.</param>
+        <summary>Transforms the coordinate space of the specified vector using the specified <see cref="T:System.Windows.Media.Matrix" />.</summary>
+        <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a <xref:System.Windows.Media.Matrix>.  
+  
+ [!code-csharp[VectorExamples_snip#MultiplyVectorByMatrixExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#multiplyvectorbymatrixexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static double Multiply (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Multiply(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Multiply(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to multiply.</param>
+        <param name="vector2">The second vector structure to multiply.</param>
+        <summary>Calculates the dot product of the two specified vectors and returns the result as a <see cref="T:System.Double" />.</summary>
+        <returns>A <see cref="T:System.Double" /> containing the scalar dot product of <paramref name="vector1" /> and <paramref name="vector2" />, which is calculated using the following formula:  
+  
+ <c>(vector1.X * vector2.X) + (vector1.Y * vector2.Y)</c></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to multiply a <xref:System.Windows.Vector> by a <xref:System.Windows.Vector>.  
+  
+ [!code-csharp[VectorExamples_snip#GetDotProductExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#getdotproductexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negate">
+      <MemberSignature Language="C#" Value="public void Negate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Negate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Negate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Negates this vector. The vector has the same magnitude as before, but its direction is now opposite.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to negate a vector.  
+  
+ [!code-csharp[VectorExamples_snip#NegateExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#negateexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normalize">
+      <MemberSignature Language="C#" Value="public void Normalize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Normalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Normalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Normalizes this vector.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A normalized vector maintains its direction but its <xref:System.Windows.Vector.Length%2A> becomes 1. The resulting vector is often called a unit vector. A vector is normalized by dividing the vector by its own <xref:System.Windows.Vector.Length%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to normalize a vector.  
+  
+ [!code-csharp[VectorExamples_snip#NormalizeExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#normalizeexample_csharp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Addition (System.Windows.Vector vector, System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Addition(valuetype System.Windows.Vector vector, valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Addition(System.Windows.Vector,System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector used to translate <c>point</c>.</param>
+        <param name="point">The point to translate.</param>
+        <summary>Translates a point by the specified vector and returns the resulting point.</summary>
+        <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (+) to translate a <xref:System.Windows.Point> structure to a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedAdditionOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedadditionoperatorexample2)]
+ [!code-vb[VectorExamples_snip#OverloadedAdditionOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedadditionoperatorexample2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Addition (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Addition(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Addition(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to add.</param>
+        <param name="vector2">The second vector to add.</param>
+        <summary>Adds two vectors and returns the result as a vector.</summary>
+        <returns>The sum of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (+) to add two <xref:System.Windows.Vector> structures and return a <xref:System.Windows.Vector>.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedAdditionOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedadditionoperatorexample1)]
+ [!code-vb[VectorExamples_snip#OverloadedAdditionOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedadditionoperatorexample1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Division">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Division (System.Windows.Vector vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Division(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Division(System.Windows.Vector,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector to divide.</param>
+        <param name="scalar">The scalar by which <c>vector</c> will be divided.</param>
+        <summary>Divides the specified vector by the specified scalar and returns the resulting vector.</summary>
+        <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (/) to divide a <xref:System.Windows.Vector> structure by a scalar.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadeddivisionoperatorexample)]
+ [!code-vb[VectorExamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadeddivisionoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Equality(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to compare.</param>
+        <param name="vector2">The second vector to compare.</param>
+        <summary>Compares two vectors for equality.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this operator (==) to check whether two <xref:System.Windows.Vector> structures are equal.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedequalityoperatorexample)]
+ [!code-vb[VectorExamples_snip#OverloadedEqualityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedequalityoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Explicit (System.Windows.Vector vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Explicit(valuetype System.Windows.Vector vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Explicit(System.Windows.Vector)~System.Windows.Point" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Size op_Explicit (System.Windows.Vector vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Size op_Explicit(valuetype System.Windows.Vector vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Explicit(System.Windows.Vector)~System.Windows.Size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Inequality(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to compare.</param>
+        <param name="vector2">The second vector to compare.</param>
+        <summary>Compares two vectors for inequality.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are different; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Windows.Vector> structures that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this operator (!=) to check whether two <xref:System.Windows.Vector> structures are not equal.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedinequalityoperatorexample)]
+ [!code-vb[VectorExamples_snip#OverloadedInequalityOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedinequalityoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Multiply (double scalar, System.Windows.Vector vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(float64 scalar, valuetype System.Windows.Vector vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalar" Type="System.Double" />
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="scalar">The scalar to multiply.</param>
+        <param name="vector">The vector to multiply.</param>
+        <summary>Multiplies the specified scalar by the specified vector and returns the resulting vector.</summary>
+        <returns>The result of multiplying <paramref name="scalar" /> and <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (*) to multiply a scalar by a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedMultiplicationOperatorExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplicationoperatorexample2)]
+ [!code-vb[VectorExamples_snip#OverloadedMultiplicationOperatorExample2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplicationoperatorexample2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Multiply (System.Windows.Vector vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector to multiply.</param>
+        <param name="scalar">The scalar to multiply.</param>
+        <summary>Multiplies the specified vector by the specified scalar and returns the resulting vector.</summary>
+        <returns>The result of multiplying <paramref name="vector" /> and <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a scalar.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedMultiplicationOperatorExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplicationoperatorexample1)]
+ [!code-vb[VectorExamples_snip#OverloadedMultiplicationOperatorExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplicationoperatorexample1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Multiply (System.Windows.Vector vector, System.Windows.Media.Matrix matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(valuetype System.Windows.Vector vector, valuetype System.Windows.Media.Matrix matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Windows.Media.Matrix)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+        <Parameter Name="matrix" Type="System.Windows.Media.Matrix" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector to transform.</param>
+        <param name="matrix">The transformation to apply to <c>vector</c>.</param>
+        <summary>Transforms the coordinate space of the specified vector using the specified <see cref="T:System.Windows.Media.Matrix" />.</summary>
+        <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a <xref:System.Windows.Media.Matrix> structure.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedMultiplyVectorByMatrixOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedmultiplyvectorbymatrixoperatorexample)]
+ [!code-vb[VectorExamples_snip#OverloadedMultiplyVectorByMatrixOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedmultiplyvectorbymatrixoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static double op_Multiply (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Multiply(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first vector to multiply.</param>
+        <param name="vector2">The second vector to multiply.</param>
+        <summary>Calculates the dot product of the two specified vector structures and returns the result as a <see cref="T:System.Double" />.</summary>
+        <returns>Returns a <see cref="T:System.Double" /> containing the scalar dot product of <paramref name="vector1" /> and <paramref name="vector2" />, which is calculated using the following formula:  
+  
+ <c>vector1.X * vector2.X + vector1.Y * vector2.Y</c></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (*) to multiply a <xref:System.Windows.Vector> structure by a <xref:System.Windows.Vector>.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedOperatorGetDotProductExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedoperatorgetdotproductexample)]
+ [!code-vb[VectorExamples_snip#OverloadedOperatorGetDotProductExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedoperatorgetdotproductexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Subtraction (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Subtraction(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Subtraction(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The vector from which <c>vector2</c> is subtracted.</param>
+        <param name="vector2">The vector to subtract from <c>vector1</c>.</param>
+        <summary>Subtracts one specified vector from another.</summary>
+        <returns>The difference between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this operator (-) to subtract a <xref:System.Windows.Vector> structure from a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedSubtractionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadedsubtractionoperatorexample)]
+ [!code-vb[VectorExamples_snip#OverloadedSubtractionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadedsubtractionoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryNegation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_UnaryNegation (System.Windows.Vector vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_UnaryNegation(valuetype System.Windows.Vector vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_UnaryNegation(System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The vector to negate.</param>
+        <summary>Negates the specified vector.</summary>
+        <returns>A vector with <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values opposite of the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this negation operator to negate a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#OverloadedNegationOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadednegationoperatorexample)]
+ [!code-vb[VectorExamples_snip#OverloadedNegationOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadednegationoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Parse (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Parse(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The string representation of the vector.</param>
+        <summary>Converts a string representation of a vector into the equivalent <see cref="T:System.Windows.Vector" /> structure.</summary>
+        <returns>The equivalent <see cref="T:System.Windows.Vector" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to convert a string representation of a vector into a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#ParseExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#parseexample)]
+ [!code-vb[VectorExamples_snip#ParseExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#parseexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector Subtract (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Vector Subtract(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.Subtract(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Vector" />
+        <Parameter Name="vector2" Type="System.Windows.Vector" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The vector from which <c>vector2</c> is subtracted.</param>
+        <param name="vector2">The vector to subtract from <c>vector1</c>.</param>
+        <summary>Subtracts the specified vector from another specified vector.</summary>
+        <returns>The difference between <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to subtract a <xref:System.Windows.Vector> structure from a <xref:System.Windows.Vector> structure.  
+  
+ [!code-csharp[VectorExamples_snip#SubtractExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#subtractexample)]
+ [!code-vb[VectorExamples_snip#SubtractExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#subtractexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The string specifying the format to use.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The <see langword="IFormatProvider" /> to use to format the value.  
+  
+ -or-  
+  
+ <see langword="null" /> to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>A string containing the value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string representation of this <see cref="T:System.Windows.Vector" /> structure.</summary>
+        <returns>A string that represents the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of this <see cref="T:System.Windows.Vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this method to get a string representation of a <xref:System.Windows.Vector>.  
+  
+ [!code-csharp[VectorExamples_snip#ToStringExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#tostringexample)]
+ [!code-vb[VectorExamples_snip#ToStringExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#tostringexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Vector.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The culture-specific formatting information.</param>
+        <summary>Returns the string representation of this <see cref="T:System.Windows.Vector" /> structure with the specified formatting information.</summary>
+        <returns>A string that represents the <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> values of this <see cref="T:System.Windows.Vector" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public double X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Vector.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.Vector.X" /> component of this vector.</summary>
+        <value>The <see cref="P:System.Windows.Vector.X" /> component of this vector. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to check two <xref:System.Windows.Vector> structures for equality.  
+  
+ [!code-csharp[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorequalityexample)]
+ [!code-vb[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#vectorequalityexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public double Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Vector.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.Vector.Y" /> component of this vector.</summary>
+        <value>The <see cref="P:System.Windows.Vector.Y" /> component of this vector. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to check two <xref:System.Windows.Vector> structures for equality.  
+  
+ [!code-csharp[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#vectorequalityexample)]
+ [!code-vb[VectorExamples_snip#VectorEqualityExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#vectorequalityexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two vectors for equality.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A vector's <xref:System.Windows.Vector.X%2A> and <xref:System.Windows.Vector.Y%2A> properties are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when arithmetic operations are performed on it, a comparison between two <xref:System.Double> structures that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

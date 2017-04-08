@@ -1,0 +1,50 @@
+<Type Name="HitTestFilterCallback" FullName="System.Windows.Media.HitTestFilterCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Windows.Media.HitTestFilterBehavior HitTestFilterCallback(DependencyObject potentialHitTestTarget);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestFilterCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterCallback" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="potentialHitTestTarget" Type="System.Windows.DependencyObject" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="potentialHitTestTarget">The visual to hit test.</param>
+    <summary>Represents the callback method that specifies parts of the visual tree to omit from hit test processing</summary>
+    <returns>A <see cref="T:System.Windows.Media.HitTestFilterBehavior" /> that represents the action resulting from the hit test.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hit test filter callback method is invoked for all the visual objects that map to the hit test criteria, starting from the visual you specify and descending through its branch of the visual tree. However, you may want to ignore certain branches of the visual tree that you are not interested in processing in your hit test results callback function. The return value of the hit test filter callback function determines what type of action the enumeration of the visual objects should take. For example, if you return the value, <xref:System.Windows.Media.HitTestFilterBehavior>, you can remove the current visual object and its descendants from the hit test results enumeration. This means that the hit test results callback method will not see these objects in its enumeration.  
+  
+> [!NOTE]
+>  Pruning the visual tree of objects decreases the amount of processing during the hit test results enumeration pass.  
+  
+ ![Pruning a visual tree using a hit test filter](~/add/media/filteredvisualtree-01.png "Pruning a visual tree using a hit test filter")  
+Pruning a visual tree  
+  
+   
+  
+## Examples  
+ The following example shows how to invoke <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> by using a <xref:System.Windows.Media.HitTestFilterCallback> value. The corresponding hit test callback method is also defined.  
+  
+ [!code-csharp[HitTestingOverview#104](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#104)]
+ [!code-vb[HitTestingOverview#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#104)]  
+  
+ The following example shows how to return a <xref:System.Windows.Media.HitTestFilterBehavior> value from a hit test filter callback method.  
+  
+ [!code-csharp[HitTestingOverview#106](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#106)]
+ [!code-vb[HitTestingOverview#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#106)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,52 @@
+---
+title: "ICorDebugReferenceValue::GetValue Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ICorDebugReferenceValue.GetValue"
+apilocation: 
+  - "mscordbi.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ICorDebugReferenceValue::GetValue"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetValue method, ICorDebugReferenceValue interface [.NET Framework debugging]"
+  - "ICorDebugReferenceValue::GetValue method [.NET Framework debugging]"
+ms.assetid: 5da07f99-6c70-46ec-b997-5ab6fb7106cd
+caps.latest.revision: 11
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+# ICorDebugReferenceValue::GetValue Method
+Gets the current memory address of the referenced object.  
+  
+## Syntax  
+  
+```  
+HRESULT GetValue (  
+    [out] CORDB_ADDRESS   *pValue  
+);  
+```  
+  
+#### Parameters  
+ `pValue`  
+ [out] A pointer to a `CORDB_ADDRESS` value that specifies the address of the object to which this ICorDebugReferenceValue object points.  
+  
+## Requirements  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+  
+ **Header:** CorDebug.idl, CorDebug.h  
+  
+ **Library:** CorGuids.lib  
+  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

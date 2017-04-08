@@ -1,0 +1,114 @@
+<Type Name="CodeAssignStatement" FullName="System.CodeDom.CodeAssignStatement">
+  <TypeSignature Language="C#" Value="public class CodeAssignStatement : System.CodeDom.CodeStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeAssignStatement extends System.CodeDom.CodeStatement" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAssignStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a simple assignment statement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeAssignStatement> can be used to represent a statement that assigns the value of an object to another object, or a reference to another reference. Simple assignment statements are usually of the form " `value1` = `value2` ", where `value1` is the object being assigned to, and `value2` is being assigned. The <xref:System.CodeDom.CodeAssignStatement.Left%2A> property indicates the object to assign to. The <xref:System.CodeDom.CodeAssignStatement.Right%2A> property indicates the object to assign.  
+  
+   
+  
+## Examples  
+ The following code creates a <xref:System.CodeDom.CodeAssignStatement> that assigns the value 10 to an integer variable named `i` :  
+  
+ [!code-cpp[CodeAssignStatement#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeAssignStatement/CPP/codeassignstatementsnippet.cpp#1)]
+ [!code-csharp[CodeAssignStatement#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeAssignStatement/CS/codeassignstatementsnippet.cs#1)]
+ [!code-vb[CodeAssignStatement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeAssignStatement/VB/codeassignstatementsnippet.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAssignStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAssignStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAssignStatement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAssignStatement (System.CodeDom.CodeExpression left, System.CodeDom.CodeExpression right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression left, class System.CodeDom.CodeExpression right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAssignStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="left" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="right" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="left">The variable to assign to.</param>
+        <param name="right">The value to assign.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAssignStatement" /> class using the specified expressions.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Left" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAssignStatement.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression representing the object or reference to assign to.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object or reference to assign to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Right { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Right" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAssignStatement.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression representing the object or reference to assign.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object or reference to assign.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

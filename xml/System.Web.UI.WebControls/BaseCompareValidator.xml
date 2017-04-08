@@ -1,0 +1,560 @@
+<Type Name="BaseCompareValidator" FullName="System.Web.UI.WebControls.BaseCompareValidator">
+  <TypeSignature Language="C#" Value="public abstract class BaseCompareValidator : System.Web.UI.WebControls.BaseValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseCompareValidator extends System.Web.UI.WebControls.BaseValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BaseCompareValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.BaseValidator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the abstract base class for validation controls that perform typed comparisons.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator> class is inherited by validation controls that compare values, such as the <xref:System.Web.UI.WebControls.CompareValidator> and <xref:System.Web.UI.WebControls.RangeValidator> controls, to provide basic common functionality.  
+  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property to specify the data type that that the values are converted to before being compared.  
+  
+> [!NOTE]
+>  If the value of the input control being validated cannot be converted to the specified data type, validation fails. The <xref:System.Web.UI.WebControls.BaseValidator.IsValid%2A> property of the validation control is set to `false`.  
+  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator> class also contains several static properties and methods that are useful when performing comparison validations. You can determine whether a string can be converted to a specific data type by using the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%2A> method. The maximum year that can be represented by a two-digit year is contained in the <xref:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear%2A> property. The <xref:System.Web.UI.WebControls.BaseCompareValidator.GetFullYear%2A> method allows you to convert a two-digit year to a four-digit year.  
+  
+> [!NOTE]
+>  When you use validator controls that derive from the <xref:System.Web.UI.WebControls.BaseCompareValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+  
+ For more information about validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>.  
+  
+## Accessibility  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BaseCompareValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.BaseCompareValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.BaseCompareValidator> class is abstract, you cannot create a <xref:System.Web.UI.WebControls.BaseCompareValidator> object directly. This constructor is commonly called by the constructor of a derived class to initialize the properties defined in the <xref:System.Web.UI.WebControls.BaseCompareValidator> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Adds the HTML attributes and styles that need to be rendered for the control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.AddAttributesToRender%2A> method is used to render the attributes of the control in the HTML tag for the control. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for a control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.BaseCompareValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method, be sure to call the corresponding method in the base class. Otherwise, the attributes contained in the base class will not be rendered.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvert">
+      <MemberSignature Language="C#" Value="public static bool CanConvert (string text, System.Web.UI.WebControls.ValidationDataType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanConvert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.CanConvert(System.String,System.Web.UI.WebControls.ValidationDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.ValidationDataType" />
+      </Parameters>
+      <Docs>
+        <param name="text">The string to test.</param>
+        <param name="type">One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</param>
+        <summary>Determines whether the specified string can be converted to the specified data type. This version of the overloaded method tests currency, double, and date values using the format used by the current culture.</summary>
+        <returns>
+          <see langword="true" /> if the specified data string can be converted to the specified data type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%29> method to determine whether the specified string can be converted to the specified data type. This method is commonly used to test whether a string can be converted to a compatible data type before performing an operation that depends on that data type.  
+  
+ This version of the method tests the value using the format used by the current culture. To test the value using a culture-neutral format, use the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Boolean%29?displayProperty=fullName> overloaded version of this method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates using the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%2A> method to compare two integer values and determine whether the second integer can be converted.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseCompareValidatorCanConvert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseCompareValidatorCanConvert/CS/basecomparevalidatorcanconvertcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseCompareValidatorCanConvert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseCompareValidatorCanConvert/VB/basecomparevalidatorcanconvertvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvert">
+      <MemberSignature Language="C#" Value="public static bool CanConvert (string text, System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanConvert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.CanConvert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.ValidationDataType" />
+        <Parameter Name="cultureInvariant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="text">The string to test.</param>
+        <param name="type">One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> enumeration values.</param>
+        <param name="cultureInvariant">
+          <see langword="true" /> to test values using a culture-neutral format; otherwise, <see langword="false" />.</param>
+        <summary>Determines whether the specified string can be converted to the specified data type. This version of the overloaded method allows you to specify whether values are tested using a culture-neutral format.</summary>
+        <returns>
+          <see langword="true" /> if the specified data string can be converted to the specified data type; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Boolean%29> method to determine whether the specified string can be converted to the specified data type. This method is commonly used to test whether a string can be converted to a compatible data type before performing an operation that depends on that data type. To indicate that values should be tested using a culture-neutral format, pass in `true` for the `cultureInvariant` parameter; otherwise, values are tested using the format used by the current culture. When testing a value using the format used by the current culture, consider using the <xref:System.Web.UI.WebControls.BaseCompareValidator.CanConvert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%29?displayProperty=fullName> overloaded version of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="protected static bool Compare (string leftText, string rightText, System.Web.UI.WebControls.ValidationCompareOperator op, System.Web.UI.WebControls.ValidationDataType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Compare(string leftText, string rightText, valuetype System.Web.UI.WebControls.ValidationCompareOperator op, valuetype System.Web.UI.WebControls.ValidationDataType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Compare(System.String,System.String,System.Web.UI.WebControls.ValidationCompareOperator,System.Web.UI.WebControls.ValidationDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="leftText" Type="System.String" />
+        <Parameter Name="rightText" Type="System.String" />
+        <Parameter Name="op" Type="System.Web.UI.WebControls.ValidationCompareOperator" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.ValidationDataType" />
+      </Parameters>
+      <Docs>
+        <param name="leftText">The value on the left side of the operator.</param>
+        <param name="rightText">The value on the right side of the operator.</param>
+        <param name="op">One of the <see cref="T:System.Web.UI.WebControls.ValidationCompareOperator" /> values.</param>
+        <param name="type">One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</param>
+        <summary>Compares two strings using the specified operator and data type. This version of the overloaded method compares currency, double, and date values using the format used by the current culture.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="leftValue" /> parameter relates to the <paramref name="rightValue" /> parameter in the manner specified by the <paramref name="op" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.Compare%28System.String%2CSystem.String%2CSystem.Web.UI.WebControls.ValidationCompareOperator%2CSystem.Web.UI.WebControls.ValidationDataType%29> method is used to test whether the value of the `leftText` parameter relates to the value of the `rightText` parameter in the manner specified by the `op` parameter. The `type` parameter specifies the data type of the values being compared.  
+  
+> [!NOTE]
+>  If the `op` parameter is set to `ValidationCompareOperator.DataTypeCheck`, this method tests only the value of the `leftText` parameter for the data type specified by the `type` parameter. The `rightText` parameter is ignored.  
+  
+ This version of the method compares the values using the format used by the current culture. To compare the values using a culture-neutral format, use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Compare%28System.String%2CSystem.Boolean%2CSystem.String%2CSystem.Boolean%2CSystem.Web.UI.WebControls.ValidationCompareOperator%2CSystem.Web.UI.WebControls.ValidationDataType%29?displayProperty=fullName> overloaded version of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="protected static bool Compare (string leftText, bool cultureInvariantLeftText, string rightText, bool cultureInvariantRightText, System.Web.UI.WebControls.ValidationCompareOperator op, System.Web.UI.WebControls.ValidationDataType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Compare(string leftText, bool cultureInvariantLeftText, string rightText, bool cultureInvariantRightText, valuetype System.Web.UI.WebControls.ValidationCompareOperator op, valuetype System.Web.UI.WebControls.ValidationDataType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Compare(System.String,System.Boolean,System.String,System.Boolean,System.Web.UI.WebControls.ValidationCompareOperator,System.Web.UI.WebControls.ValidationDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="leftText" Type="System.String" />
+        <Parameter Name="cultureInvariantLeftText" Type="System.Boolean" />
+        <Parameter Name="rightText" Type="System.String" />
+        <Parameter Name="cultureInvariantRightText" Type="System.Boolean" />
+        <Parameter Name="op" Type="System.Web.UI.WebControls.ValidationCompareOperator" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.ValidationDataType" />
+      </Parameters>
+      <Docs>
+        <param name="leftText">The value on the left side of the operator.</param>
+        <param name="cultureInvariantLeftText">
+          <see langword="true" /> to convert the left side value to a culture-neutral format; otherwise, <see langword="false" />.</param>
+        <param name="rightText">The value on the right side of the operator.</param>
+        <param name="cultureInvariantRightText">
+          <see langword="true" /> to convert the right side value to a culture-neutral format; otherwise, <see langword="false" />.</param>
+        <param name="op">One of the <see cref="T:System.Web.UI.WebControls.ValidationCompareOperator" /> values.</param>
+        <param name="type">One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</param>
+        <summary>Compares two strings using the specified operator and validation data type. This version of the overload allows you to specify whether values are compared using a culture-neutral format.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="leftValue" /> parameter relates to the <paramref name="rightValue" /> parameter in the manner specified by the <paramref name="op" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.Compare%28System.String%2CSystem.Boolean%2CSystem.String%2CSystem.Boolean%2CSystem.Web.UI.WebControls.ValidationCompareOperator%2CSystem.Web.UI.WebControls.ValidationDataType%29> method is used to test whether the value of the `leftText` parameter relates to the value of the `rightText` parameter in the manner specified by the `op` parameter. The `type` parameter specifies the data type of the values being compared.  
+  
+> [!NOTE]
+>  If the `op` parameter is set to `ValidationCompareOperator.DataTypeCheck`, this method tests only the value of the `leftText` parameter for the data type specified by the `type` parameter. The `rightText` parameter is ignored.  
+  
+ To indicate that values should be compared using a culture-neutral format, pass in `true` for the `cultureInvariantLeftText` and `cultureInvariantRightText` parameters; otherwise, the values are compared using the format used by the current culture. When comparing values using the format used by the current culture, consider using the <xref:System.Web.UI.WebControls.BaseCompareValidator.Compare%28System.String%2CSystem.String%2CSystem.Web.UI.WebControls.ValidationCompareOperator%2CSystem.Web.UI.WebControls.ValidationDataType%29?displayProperty=fullName> overloaded version of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="protected static bool Convert (string text, System.Web.UI.WebControls.ValidationDataType type, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.ValidationDataType" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to convert.</param>
+        <param name="type">One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</param>
+        <param name="value">When this method returns, contains an object with the conversion result. This parameter is passed uninitialized.</param>
+        <summary>Converts the specified text into an object of the specified data type. This version of the overloaded method converts currency, double, and date values using the format used by the current culture.</summary>
+        <returns>
+          <see langword="true" /> if the conversion is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.Convert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Object%40%29> method is used to convert text into an object of the specified data type. Although the method returns `true` or `false` to indicate whether the conversion was successful, the converted value is stored in the `value` `out` parameter.  
+  
+> [!NOTE]
+>  If the conversion is unsuccessful, the `value` parameter is set to `null`.  
+  
+ This version of the method converts values using the format used by the current culture. To convert values using a culture-neutral format, use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Convert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Boolean%2CSystem.Object%40%29?displayProperty=fullName> overloaded version of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="protected static bool Convert (string text, System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Boolean,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="type" Type="System.Web.UI.WebControls.ValidationDataType" />
+        <Parameter Name="cultureInvariant" Type="System.Boolean" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to convert.</param>
+        <param name="type">One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</param>
+        <param name="cultureInvariant">
+          <see langword="true" /> to convert values to a culture-neutral format; otherwise, <see langword="false" />.</param>
+        <param name="value">When this method returns, contains an object with the conversion result. This parameter is passed uninitialized.</param>
+        <summary>Converts the specified text into an object of the specified data type. This version of the overloaded method allows you to specify whether values are converted using a culture-neutral format.</summary>
+        <returns>
+          <see langword="true" /> if the conversion is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.Convert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Boolean%2CSystem.Object%40%29> method is used to convert text into an object of the specified data type. Although the method returns `true` or `false` to indicate whether the conversion was successful, the converted value is stored in the `value``out` parameter.  
+  
+> [!NOTE]
+>  If the conversion is unsuccessful, the `value` parameter is set to `null`.  
+  
+ To indicate that values should be converted using a culture-neutral format, pass in `true` for the `cultureInvariant` parameter; otherwise, values are converted using the format used by the current culture. When converting a value using the format used by the current culture, consider using the <xref:System.Web.UI.WebControls.BaseCompareValidator.Convert%28System.String%2CSystem.Web.UI.WebControls.ValidationDataType%2CSystem.Object%40%29?displayProperty=fullName> overloaded version of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureInvariantValues">
+      <MemberSignature Language="C#" Value="public bool CultureInvariantValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CultureInvariantValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether values are converted to a culture-neutral format before being compared.</summary>
+        <value>
+          <see langword="true" /> to convert values to a culture-neutral format before they are compared; otherwise, <see langword="false" />.The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues%2A> property is set to `true`, properties of the control that are not strongly typed are converted to a culture-neutral format before being compared. When this property is set to `false`, values are converted to the format of the current culture. The <xref:System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues%2A> property does not affect values that are entered by users of the control on a Web page.  
+  
+ This property cannot be set by themes or by style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CutoffYear">
+      <MemberSignature Language="C#" Value="protected static int CutoffYear { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 CutoffYear" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum year that can be represented by a two-digit year.</summary>
+        <value>The maximum year that can be represented by a two-digit year.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear%2A> property to determine the maximum year that can be represented by a two-digit year in a 100-year range. For example, if this property contains the value `2029`, you can represent the years 1930 to 2029 using a two-digit year. The two-digit year 30 is interpreted as 1930, while 29 is interpreted as 2029. You cannot change the value of this property directly; however, you can change the maximum year that can be represented by a two-digit year by setting the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetermineRenderUplevel">
+      <MemberSignature Language="C#" Value="protected override bool DetermineRenderUplevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool DetermineRenderUplevel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.DetermineRenderUplevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the validation control can be rendered for a newer ("uplevel") browser.</summary>
+        <returns>
+          <see langword="true" /> if the validation control can be rendered for an "uplevel" browser; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseCompareValidator.DetermineRenderUplevel%2A> method is a helper function used primarily by the <xref:System.Web.UI.WebControls.BaseValidator.RenderUplevel%2A> property to determine whether the client's browser supports "uplevel" rendering (rendering on a newer browser). The <xref:System.Web.UI.WebControls.BaseCompareValidator> class overrides this method to return `false` if the current culture uses a non-Gregorian calendar.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.WebControls.BaseCompareValidator.DetermineRenderUplevel" /> method, be sure to call the corresponding method in the base class. Otherwise, conditions defined in the base class will be bypassed.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateElementOrder">
+      <MemberSignature Language="C#" Value="protected static string GetDateElementOrder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string GetDateElementOrder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.GetDateElementOrder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines the order in which the month, day, and year appear in a date value for the current culture.</summary>
+        <returns>A string that represents the order in which the month, day, and year appear in a date value for the current culture.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The month, day, and year of a date value can appear in different orders depending on the current culture settings. The <xref:System.Web.UI.WebControls.BaseCompareValidator.GetDateElementOrder%2A> method is used to determine the order in which these values appear. The following table shows the different values returned by this method.  
+  
+|Date element order|Return value|  
+|------------------------|------------------|  
+|Day, Month, Year|"dmy"|  
+|Month, Day, Year|"mdy"|  
+|Year, Month, Day|"ymd"|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFullYear">
+      <MemberSignature Language="C#" Value="protected static int GetFullYear (int shortYear);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig int32 GetFullYear(int32 shortYear) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.GetFullYear(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shortYear" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="shortYear">A two-digit year.</param>
+        <summary>Generates the four-digit year representation of the specified two-digit year.</summary>
+        <returns>The four-digit year representation of the specified two-digit year.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.GetFullYear%2A> method to generate the four-digit year representation of the specified two-digit year. The four-digit year representation depends on the value of the <xref:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear%2A> property, which contains the maximum year that can be represented by a two-digit year in a 100-year range. For example, if the <xref:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear%2A> property contains the value `2029`, the <xref:System.Web.UI.WebControls.BaseCompareValidator.GetFullYear%2A> method returns a year between 1930 and 2029. The two-digit year 30 is interpreted as 1930, while 29 is interpreted as 2029. You can change the maximum year that can be represented by a two-digit year by setting the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property.  
+  
+> [!NOTE]
+>  Because this method is `static`, you can use it without creating an instance of the class by qualifying the method name along with the class name--for example, `BaseCompareValidator.GetFullYear`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ValidationDataType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ValidationDataType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data type that the values being compared are converted to before the comparison is made.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> enumeration values. The default value is <see langword="String" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property to specify the data type used for comparison. The <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is used differently by the various comparison validation controls.  
+  
+> [!IMPORTANT]
+>  When the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property is set to <xref:System.Web.UI.WebControls.ValidationDataType> and the current calendar type is non-Gregorian, the validator performs server-side validation only. The validator client script supports only Gregorian calendars.  
+  
+ For example, in the <xref:System.Web.UI.WebControls.RangeValidator> control, all values being compared (the upper bound, lower bound, and value of the input control) are converted to the specified data type before any comparison is performed. However, if you use a <xref:System.Web.UI.WebControls.CompareValidator> control and set its <xref:System.Web.UI.WebControls.CompareValidator.Operator%2A> property to `ValidationCompareOperator.DataTypeCheck`, only the value of the input control is converted to the specified data type.  
+  
+> [!NOTE]
+>  If the value of the input control associated with the validation control cannot be converted to the specified data type, validation fails. The <xref:System.Web.UI.WebControls.BaseValidator.IsValid%2A> property of the validation control is set to `false`.  
+  
+ The following table lists the values that you can use for the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property.  
+  
+|Data type|Description|  
+|---------------|-----------------|  
+|`String`|Specifies a string data type.|  
+|`Integer`|Specifies a 32-bit signed integer data type.|  
+|`Double`|Specifies a double-precision floating-point number data type.|  
+|`Date`|Specifies a date data type.|  
+|`Currency`|Specifies a monetary data type.|  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseCompareValidator.Type%2A> property to specify the data type that the values being compared are converted to before the comparison is made.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic CompareValidator Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CompareValidator Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic CompareValidator Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CompareValidator Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified data type is not one of the <see cref="T:System.Web.UI.WebControls.ValidationDataType" /> values.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

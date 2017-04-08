@@ -1,0 +1,77 @@
+<Type Name="TransactionMessageProperty" FullName="System.ServiceModel.Channels.TransactionMessageProperty">
+  <TypeSignature Language="C#" Value="public sealed class TransactionMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransactionMessageProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransactionMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Allows a custom channel, which uses a proprietary transaction flow mechanism, to inject its transaction into the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] framework. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class allows third-party channel developers who use a proprietary transaction flow mechanism for their channel, to introduce their transaction into the ServiceModel framework. The transaction is then used when executing the service method. This mechanism cannot be used in conjunction with the <xref:System.ServiceModel.TransactionFlowAttribute>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public static void Set (System.Transactions.Transaction transaction, System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set(class System.Transactions.Transaction transaction, class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.TransactionMessageProperty.Set(System.Transactions.Transaction,System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="transaction">The transaction that will be used when executing the service method.</param>
+        <param name="message">The incoming message that results in calling the service method.</param>
+        <summary>Sets the transaction that will be used when executing the service method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A custom incoming channel (which is part of a service’s channel stack) can call this method to add a <xref:System.ServiceModel.Channels.TransactionMessageProperty>, containing the `transaction` parameter, to the `Properties` collection of the `message` parameter. This prompts the infrastructure to create a <xref:System.Transactions.TransactionScope> instance using the transaction passed in, before calling the service method requested in the incoming message. The service method must have the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property set to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ServiceModel.FaultException">The property has already been set on <paramref name="message" />.</exception>
+        <exception cref="T:System.Transactions.TransactionException">
+          <paramref name="transaction" /> needs to be unmarshaled, and that operation fails.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Transaction">
+      <MemberSignature Language="C#" Value="public System.Transactions.Transaction Transaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Transactions.Transaction Transaction" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.TransactionMessageProperty.Transaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.Transaction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transaction that will be used when executing the service method.</summary>
+        <value>A <see cref="T:System.Transactions.Transaction" /> instance that will be used when executing the service method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

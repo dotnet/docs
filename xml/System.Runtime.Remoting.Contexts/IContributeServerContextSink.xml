@@ -1,0 +1,56 @@
+<Type Name="IContributeServerContextSink" FullName="System.Runtime.Remoting.Contexts.IContributeServerContextSink">
+  <TypeSignature Language="C#" Value="public interface IContributeServerContextSink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContributeServerContextSink" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContributeServerContextSink" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contributes an interception sink at the context boundary on the server end of a remoting call.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Contexts.IContributeServerContextSink> interface is implemented by context properties in a <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an interception sink at the context boundary on the server end of a remoting call.  
+  
+ The server context chain is composed from those properties in the server context that implement <xref:System.Runtime.Remoting.Contexts.IContributeServerContextSink> and which contribute a sink by using the <xref:System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink%2A> method call.  
+  
+ Serialization is an example of such a context property. In this case, the message sink would involve taking a synchronization primitive lock before processing a call any further.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetServerContextSink">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink GetServerContextSink (System.Runtime.Remoting.Messaging.IMessageSink nextSink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink GetServerContextSink(class System.Runtime.Remoting.Messaging.IMessageSink nextSink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContributeServerContextSink.GetServerContextSink(System.Runtime.Remoting.Messaging.IMessageSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nextSink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
+      </Parameters>
+      <Docs>
+        <param name="nextSink">The chain of sinks composed so far.</param>
+        <summary>Takes the first sink in the chain of sinks composed so far, and then chains its message sink in front of the chain already formed.</summary>
+        <returns>The composite sink chain.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

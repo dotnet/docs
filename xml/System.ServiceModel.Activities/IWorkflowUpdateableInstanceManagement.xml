@@ -1,0 +1,195 @@
+<Type Name="IWorkflowUpdateableInstanceManagement" FullName="System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement">
+  <TypeSignature Language="C#" Value="public interface IWorkflowUpdateableInstanceManagement : System.ServiceModel.Activities.IWorkflowInstanceManagement" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowUpdateableInstanceManagement implements class System.ServiceModel.Activities.IWorkflowInstanceManagement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Activities.IWorkflowInstanceManagement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.Activities.Description.WorkflowContractBehavior</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceContract(ConfigurationName="System.ServiceModel.Activities.IWorkflowInstanceManagement", Name="IWorkflowInstanceManagement", Namespace="http://schemas.datacontract.org/2008/10/WorkflowServices")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a service contract that defines a set of operations that allow you to update workflow instances.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginTransactedUpdate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTransactedUpdate (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTransactedUpdate(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.BeginTransactedUpdate(System.Guid,System.Activities.WorkflowIdentity,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(AsyncPattern=true, Name="TransactedUpdate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous operation that updates a workflow instance within a transaction.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginUpdate (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginUpdate(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.BeginUpdate(System.Guid,System.Activities.WorkflowIdentity,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(AsyncPattern=true, Name="Update")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous operation to update the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTransactedUpdate">
+      <MemberSignature Language="C#" Value="public void EndTransactedUpdate (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTransactedUpdate(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.EndTransactedUpdate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous transacted update operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUpdate">
+      <MemberSignature Language="C#" Value="public void EndUpdate (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndUpdate(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.EndUpdate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous update operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactedUpdate">
+      <MemberSignature Language="C#" Value="public void TransactedUpdate (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TransactedUpdate(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.TransactedUpdate(System.Guid,System.Activities.WorkflowIdentity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Name="TransactedUpdate")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ServiceModel.TransactionFlow(System.ServiceModel.TransactionFlowOption.Allowed)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Updates the specified workflow instance within a transaction.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement.Update(System.Guid,System.Activities.WorkflowIdentity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Name="Update")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The GUID identifier of the workflow instance to terminate.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Updates the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,334 @@
+<Type Name="MsgBoxStyle" FullName="Microsoft.VisualBasic.MsgBoxStyle">
+  <TypeSignature Language="C#" Value="public enum MsgBoxStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsgBoxStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MsgBoxStyle" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates which buttons to display when calling the <see langword="MsgBox" /> function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call the `MsgBox` function, you can use the `MsgBoxStyle` enumeration in your code in place of the actual values. The `Buttons` argument takes the `MsgBoxStyle` enumeration members.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortRetryIgnore">
+      <MemberSignature Language="C#" Value="AbortRetryIgnore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle AbortRetryIgnore = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.AbortRetryIgnore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Abort**, **Retry**, and **Ignore** buttons. This member is equivalent to the Visual Basic constant <see langword="vbAbortRetryIgnore" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationModal">
+      <MemberSignature Language="C#" Value="ApplicationModal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle ApplicationModal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.ApplicationModal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Application modal message box. This member is equivalent to the Visual Basic constant <see langword="vbApplicationModal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Critical">
+      <MemberSignature Language="C#" Value="Critical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle Critical = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.Critical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Critical message. This member is equivalent to the Visual Basic constant <see langword="vbCritical" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultButton1">
+      <MemberSignature Language="C#" Value="DefaultButton1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle DefaultButton1 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.DefaultButton1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>First button is default. This member is equivalent to the Visual Basic constant <see langword="vbDefaultButton1" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultButton2">
+      <MemberSignature Language="C#" Value="DefaultButton2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle DefaultButton2 = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.DefaultButton2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Second button is default. This member is equivalent to the Visual Basic constant <see langword="vbDefaultButton2" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultButton3">
+      <MemberSignature Language="C#" Value="DefaultButton3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle DefaultButton3 = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.DefaultButton3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Third button is default. This member is equivalent to the Visual Basic constant <see langword="vbDefaultButton3" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exclamation">
+      <MemberSignature Language="C#" Value="Exclamation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle Exclamation = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.Exclamation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Warning message. This member is equivalent to the Visual Basic constant <see langword="vbExclamation" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Information">
+      <MemberSignature Language="C#" Value="Information" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle Information = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.Information" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Information message. This member is equivalent to the Visual Basic constant <see langword="vbInformation" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgBoxHelp">
+      <MemberSignature Language="C#" Value="MsgBoxHelp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle MsgBoxHelp = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.MsgBoxHelp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Help text. This member is equivalent to the Visual Basic constant <see langword="vbMsgBoxHelp" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgBoxRight">
+      <MemberSignature Language="C#" Value="MsgBoxRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle MsgBoxRight = int32(524288)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.MsgBoxRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Right-aligned text. This member is equivalent to the Visual Basic constant <see langword="vbMsgBoxRight" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgBoxRtlReading">
+      <MemberSignature Language="C#" Value="MsgBoxRtlReading" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle MsgBoxRtlReading = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.MsgBoxRtlReading" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Right-to-left reading text (Hebrew and Arabic systems). This member is equivalent to the Visual Basic constant <see langword="vbMsgBoxRtlReading" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgBoxSetForeground">
+      <MemberSignature Language="C#" Value="MsgBoxSetForeground" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle MsgBoxSetForeground = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.MsgBoxSetForeground" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Foreground message box window. This member is equivalent to the Visual Basic constant <see langword="vbMsgBoxSetForeground" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OkCancel">
+      <MemberSignature Language="C#" Value="OkCancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle OkCancel = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.OkCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**OK** and **Cancel** buttons. This member is equivalent to the Visual Basic constant <see langword="vbOKCancel" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OkOnly">
+      <MemberSignature Language="C#" Value="OkOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle OkOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.OkOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**OK** button only (default). This member is equivalent to the Visual Basic constant <see langword="vbOKOnly" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Question">
+      <MemberSignature Language="C#" Value="Question" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle Question = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.Question" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Warning query. This member is equivalent to the Visual Basic constant <see langword="vbQuestion" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryCancel">
+      <MemberSignature Language="C#" Value="RetryCancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle RetryCancel = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.RetryCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Retry** and **Cancel** buttons. This member is equivalent to the Visual Basic constant <see langword="vbRetryCancel" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemModal">
+      <MemberSignature Language="C#" Value="SystemModal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle SystemModal = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.SystemModal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>System modal message box. This member is equivalent to the Visual Basic constant <see langword="vbSystemModal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YesNo">
+      <MemberSignature Language="C#" Value="YesNo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle YesNo = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.YesNo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Yes** and **No** buttons. This member is equivalent to the Visual Basic constant <see langword="vbYesNo" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YesNoCancel">
+      <MemberSignature Language="C#" Value="YesNoCancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxStyle YesNoCancel = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxStyle.YesNoCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Yes**, **No**, and **Cancel** buttons. This member is equivalent to the Visual Basic constant <see langword="vbYesNoCancel" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

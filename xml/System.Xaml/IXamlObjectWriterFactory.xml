@@ -1,0 +1,64 @@
+<Type Name="IXamlObjectWriterFactory" FullName="System.Xaml.IXamlObjectWriterFactory">
+  <TypeSignature Language="C#" Value="public interface IXamlObjectWriterFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlObjectWriterFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlObjectWriterFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a service that generates a <see cref="T:System.Xaml.XamlObjectWriter" /> that is based on the current internal parser context.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An internal factory class implements this service for .NET Framework XAML Services. By obtaining the service from an existing XAML object writer, you can call <xref:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter%2A> to construct a new compatible XAML object writer. The factory-constructed object writer can resume writing to the object graph after the first write operation is suspended.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetParentSettings">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlObjectWriterSettings GetParentSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xaml.XamlObjectWriterSettings GetParentSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlObjectWriterFactory.GetParentSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlObjectWriterSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.Xaml.XamlObjectWriterSettings" /> from the original internal parser context.</summary>
+        <returns>The settings from the original internal parser context.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXamlObjectWriter">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlObjectWriter GetXamlObjectWriter (System.Xaml.XamlObjectWriterSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xaml.XamlObjectWriter GetXamlObjectWriter(class System.Xaml.XamlObjectWriterSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlObjectWriterFactory.GetXamlObjectWriter(System.Xaml.XamlObjectWriterSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlObjectWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Xaml.XamlObjectWriterSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The settings to use for construction and initialization of the <see cref="T:System.Xaml.XamlObjectWriter" />.</param>
+        <summary>Returns a <see cref="T:System.Xaml.XamlObjectWriter" /> that is based on active XAML schema context.</summary>
+        <returns>A <see cref="T:System.Xaml.XamlObjectWriter" /> that has the specified settings.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

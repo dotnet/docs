@@ -1,0 +1,63 @@
+<Type Name="MemberInfoExtensions" FullName="System.Reflection.MemberInfoExtensions">
+  <TypeSignature Language="C#" Value="public static class MemberInfoExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MemberInfoExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.MemberInfoExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMetadataToken">
+      <MemberSignature Language="C#" Value="public static int GetMetadataToken (this System.Reflection.MemberInfo member);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetMetadataToken(class System.Reflection.MemberInfo member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfoExtensions.GetMetadataToken(System.Reflection.MemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="member" Type="System.Reflection.MemberInfo" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="member">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMetadataToken">
+      <MemberSignature Language="C#" Value="public static bool HasMetadataToken (this System.Reflection.MemberInfo member);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasMetadataToken(class System.Reflection.MemberInfo member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfoExtensions.HasMetadataToken(System.Reflection.MemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="member" Type="System.Reflection.MemberInfo" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="member">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

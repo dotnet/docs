@@ -1,0 +1,642 @@
+<Type Name="CompilerParameters" FullName="System.CodeDom.Compiler.CompilerParameters">
+  <TypeSignature Language="C#" Value="public class CompilerParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompilerParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerParameters" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the parameters used to invoke a compiler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CodeDom.Compiler.CompilerParameters> object represents the settings and options for an <xref:System.CodeDom.Compiler.ICodeCompiler> interface.  
+  
+ If you are compiling an executable program, you must set the <xref:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable%2A> property to `true`. When the <xref:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable%2A> is set to `false`, the compiler will generate a class library. By default, a new <xref:System.CodeDom.Compiler.CompilerParameters> is initialized with its <xref:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable%2A> property set to `false`. If you are compiling an executable from a CodeDOM graph, a <xref:System.CodeDom.CodeEntryPointMethod> must be defined in the graph. If there are multiple code entry points, you can indicate the class that defines the entry point to use by setting the name of the class to the <xref:System.CodeDom.Compiler.CompilerParameters.MainClass%2A> property.  
+  
+ You can specify a file name for the output assembly in the <xref:System.CodeDom.Compiler.CompilerParameters.OutputAssembly%2A> property. Otherwise, a default output file name will be used. To include debug information in a generated assembly, set the <xref:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation%2A> property to `true`. If your project references any assemblies, you must specify the assembly names as items in a <xref:System.Collections.Specialized.StringCollection> set to the <xref:System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies%2A> property of the <xref:System.CodeDom.Compiler.CompilerParameters> used when invoking compilation.  
+  
+ You can compile an assembly that is written to memory rather than disk by setting the <xref:System.CodeDom.Compiler.CompilerParameters.GenerateInMemory%2A> property to `true`. When an assembly is generated in memory, your code can obtain a reference to the generated assembly from the <xref:System.CodeDom.Compiler.CompilerResults.CompiledAssembly%2A> property of a <xref:System.CodeDom.Compiler.CompilerResults>. If an assembly is written to disk, you can obtain the path to the generated assembly from the <xref:System.CodeDom.Compiler.CompilerResults.PathToAssembly%2A> property of a <xref:System.CodeDom.Compiler.CompilerResults>.  
+  
+ To specify a warning level at which to halt compilation, set the <xref:System.CodeDom.Compiler.CompilerParameters.WarningLevel%2A> property to an integer that represents the warning level at which to halt compilation. You can also configure the compiler to halt compilation if warnings are encountered by setting the <xref:System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors%2A> property to `true`.  
+  
+ To specify a custom command-line arguments string to use when invoking the compilation process, set the string in the <xref:System.CodeDom.Compiler.CompilerParameters.CompilerOptions%2A> property. If a Win32 security token is required to invoke the compiler process, specify the token in the <xref:System.CodeDom.Compiler.CompilerParameters.UserToken%2A> property. To include .NET Framework resource files in the compiled assembly, add the names of the resource files to the <xref:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources%2A> property. To reference .NET Framework resources in another assembly, add the names of the resource files to the <xref:System.CodeDom.Compiler.CompilerParameters.LinkedResources%2A> property. To include a Win32 resource file in the compiled assembly, specify the name of the Win32 resource file in the <xref:System.CodeDom.Compiler.CompilerParameters.Win32Resource%2A> property.  
+  
+> [!NOTE]
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ The following example builds a CodeDOM source graph for a simple Hello World program.  The source is then saved to a file, compiled into an executable, and run. The `CompileCode` method illustrates how to use the <xref:System.CodeDom.Compiler.CompilerParameters> class to specify various compiler settings and options.  
+  
+ [!code-cpp[CompilerParametersExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#1)]
+ [!code-csharp[CompilerParametersExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#1)]
+ [!code-vb[CompilerParametersExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilerParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilerParameters (string[] assemblyNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The names of the assemblies to reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> class using the specified assembly names.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilerParameters (string[] assemblyNames, string outputName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, string outputName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="outputName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The names of the assemblies to reference.</param>
+        <param name="outputName">The output file name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> class using the specified assembly names and output file name.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilerParameters (string[] assemblyNames, string outputName, bool includeDebugInformation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, string outputName, bool includeDebugInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="outputName" Type="System.String" />
+        <Parameter Name="includeDebugInformation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The names of the assemblies to reference.</param>
+        <param name="outputName">The output file name.</param>
+        <param name="includeDebugInformation">
+          <see langword="true" /> to include debug information; <see langword="false" /> to exclude debug information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerParameters" /> class using the specified assembly names, output name, and a value indicating whether to include debug information.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CompilerOptions">
+      <MemberSignature Language="C#" Value="public string CompilerOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompilerOptions" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.CompilerOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets optional command-line arguments to use when invoking the compiler.</summary>
+        <value>Any additional command-line arguments for the compiler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.CodeDom.Compiler.ICodeCompiler> typically includes this string on the command line when invoking a command-line compiler. By default, this property contains an empty string.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoreAssemblyFileName">
+      <MemberSignature Language="C#" Value="public string CoreAssemblyFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CoreAssemblyFileName" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.CoreAssemblyFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the core or standard assembly that contains basic types such as <see cref="T:System.Object" />, <see cref="T:System.String" />, or <see cref="T:System.Int32" />.</summary>
+        <value>The name of the core assembly that contains basic types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is an empty string or `null`, the compiler uses the default core assembly. Depending on the compiler version, the default core assembly may be mscorlib.dll or System.Runtime.dll in a Framework directory or reference assembly directory. If the value of this property is not empty, the Code Document Object Model (CodeDOM) explicitly references the specified assembly and emits compiler options that cause the compiler to not reference any assemblies implicitly during compilation.. For compilers that reference the core or standard assembly only implicitly by default, this property can be used on its own. For compilers that implicitly reference assemblies in addition to the core or standard assembly, using this option may require specifying additional entries in the <xref:System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies%2A?displayProperty=fullName>property.  
+  
+> [!NOTE]
+>  An <xref:System.CodeDom.Compiler.ICodeCompiler> or <xref:System.CodeDom.Compiler.CodeDomProvider> implementation may choose to ignore this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmbeddedResources">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EmbeddedResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection EmbeddedResources" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the .NET Framework resource files to include when compiling the assembly output.</summary>
+        <value>A collection that contains the file paths of .NET Framework resources to include in the generated assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Embedded resources are built into the generated assembly output file. Including files through this property is similar to the `/resource` command-line argument supported by many of the .NET Framework compilers.  
+  
+ Not all compilers support .NET Framework resource files, so you should test for this support by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport>.  
+  
+ Add one or more .NET Framework resource file paths to the returned <xref:System.Collections.Specialized.StringCollection> to embed the file resources in the compiled assembly. Adding a duplicate or invalid file path results in compilation errors; ensure that each string specifies a unique path to a valid .NET Framework resource file.  
+  
+ Use <xref:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources%2A> to include default or neutral culture .NET Framework resources for an assembly; use the <xref:System.CodeDom.Compiler.CompilerParameters.LinkedResources%2A> property to reference .NET Framework resources in satellite assemblies.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evidence">
+      <MemberSignature Language="C#" Value="public System.Security.Policy.Evidence Evidence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.Evidence Evidence" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.Evidence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("CAS policy is obsolete and will be removed in a future release of the .NET Framework. Please see http://go2.microsoft.com/fwlink/?LinkId=131738 for more information.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Evidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an evidence object that represents the security policy permissions to grant the compiled assembly.</summary>
+        <value>An  object that represents the security policy permissions to grant the compiled assembly.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability control evidence. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateExecutable">
+      <MemberSignature Language="C#" Value="public bool GenerateExecutable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateExecutable" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to generate an executable.</summary>
+        <value>
+          <see langword="true" /> if an executable should be generated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is `false`, a DLL will be generated. By default, the value of this property is `false`.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateInMemory">
+      <MemberSignature Language="C#" Value="public bool GenerateInMemory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateInMemory" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.GenerateInMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to generate the output in memory.</summary>
+        <value>
+          <see langword="true" /> if the compiler should generate the output in memory; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeDebugInformation">
+      <MemberSignature Language="C#" Value="public bool IncludeDebugInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeDebugInformation" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to include debug information in the compiled executable.</summary>
+        <value>
+          <see langword="true" /> if debug information should be generated; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkedResources">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection LinkedResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection LinkedResources" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.LinkedResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the .NET Framework resource files that are referenced in the current source.</summary>
+        <value>A collection that contains the file paths of .NET Framework resources that are referenced by the source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Linked resource files allow your assembly to reference .NET Framework resources without embedding the actual resources in the assembly. Referencing files through this property is similar to the `/linkresource` command-line argument supported by many of the .NET Framework compilers.  
+  
+ Not all compilers support .NET Framework resource files, so you should test for this support by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport>.  
+  
+ Add one or more .NET Framework resource file paths to the returned <xref:System.Collections.Specialized.StringCollection> to create links for the resources in the compiled assembly. Adding a duplicate or invalid file path results in compilation errors; ensure that each string specifies a unique path to a valid .NET Framework resource file.  
+  
+ Use <xref:System.CodeDom.Compiler.CompilerParameters.LinkedResources%2A> to reference .NET Framework resources in satellite assemblies, localized for a particular culture; use the <xref:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources%2A> property to embed the resources into the compiled assembly.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MainClass">
+      <MemberSignature Language="C#" Value="public string MainClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MainClass" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.MainClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the main class.</summary>
+        <value>The name of the main class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The main class contains the entry point for the program.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputAssembly">
+      <MemberSignature Language="C#" Value="public string OutputAssembly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OutputAssembly" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.OutputAssembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the output assembly.</summary>
+        <value>The name of the output assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedAssemblies">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ReferencedAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection ReferencedAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the assemblies referenced by the current project.</summary>
+        <value>A collection that contains the assembly names that are referenced by the source to compile.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string collection should consist of, or include, the assemblies referenced by the current project. Add assembly file names to the returned <xref:System.Collections.Specialized.StringCollection> to import the assembly manifest and reference the assembly type information in the current project.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TempFiles">
+      <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.TempFileCollection TempFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.Compiler.TempFileCollection TempFiles" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.TempFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.TempFileCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection that contains the temporary files.</summary>
+        <value>A collection that contains the temporary files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The temporary files in the collection are retained or deleted upon the completion of compiler activity based on the value of the <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property in the collection. The <xref:System.CodeDom.Compiler.TempFileCollection.KeepFiles%2A> property is set if the collection is created using the <xref:System.CodeDom.Compiler.TempFileCollection.%23ctor%28System.String%2CSystem.Boolean%29> constructor with the `keepFiles` parameter set to `true`.  
+  
+> [!NOTE]
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TreatWarningsAsErrors">
+      <MemberSignature Language="C#" Value="public bool TreatWarningsAsErrors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TreatWarningsAsErrors" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to treat warnings as errors.</summary>
+        <value>
+          <see langword="true" /> if warnings should be treated as errors; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserToken">
+      <MemberSignature Language="C#" Value="public IntPtr UserToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int UserToken" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.UserToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the user token to use when creating the compiler process.</summary>
+        <value>The user token to use.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarningLevel">
+      <MemberSignature Language="C#" Value="public int WarningLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WarningLevel" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.WarningLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the warning level at which the compiler aborts compilation.</summary>
+        <value>The warning level at which the compiler aborts compilation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options. This code example is part of a larger example provided for the <xref:System.CodeDom.Compiler.CompilerParameters> class.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32Resource">
+      <MemberSignature Language="C#" Value="public string Win32Resource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Win32Resource" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerParameters.Win32Resource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file name of a Win32 resource file to link into the compiled assembly.</summary>
+        <value>A Win32 resource file that will be linked into the compiled assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Linking files through this property is similar to the `/winres` and `/winresource` command-line arguments supported by many of the .NET Framework compilers.  
+  
+ Use <xref:System.CodeDom.Compiler.CompilerParameters.Win32Resource%2A> to compile a Win32 resource file into the assembly. Use <xref:System.CodeDom.Compiler.CompilerParameters.EmbeddedResources%2A> or <xref:System.CodeDom.Compiler.CompilerParameters.LinkedResources%2A> to compile with .NET Framework resource files.  
+  
+ Not all compilers support Win32 resource files, so you should test a code generator for this support before linking a resource file by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

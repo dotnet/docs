@@ -1,0 +1,26 @@
+<Type Name="PropertyValueMorphHelper" FullName="System.Activities.Presentation.Model.PropertyValueMorphHelper">
+  <TypeSignature Language="C#" Value="public delegate object PropertyValueMorphHelper(ModelItem originalValue, ModelProperty newModelProperty);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueMorphHelper extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.PropertyValueMorphHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="originalValue" Type="System.Activities.Presentation.Model.ModelItem" />
+    <Parameter Name="newModelProperty" Type="System.Activities.Presentation.Model.ModelProperty" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Object</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="originalValue">The model item property value to convert to the new type.</param>
+    <param name="newModelProperty">The model item property whose type the <c>originalValue</c> needs to be converted to.</param>
+    <summary>Represents a delegate that is used to reference the method that handles type conversions for <see cref="T:System.Activities.Presentation.Model.ModelItem" /> property values.</summary>
+    <returns>The converted property value.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

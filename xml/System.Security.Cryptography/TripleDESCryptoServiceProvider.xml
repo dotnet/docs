@@ -1,0 +1,304 @@
+<Type Name="TripleDESCryptoServiceProvider" FullName="System.Security.Cryptography.TripleDESCryptoServiceProvider">
+  <TypeSignature Language="C#" Value="public sealed class TripleDESCryptoServiceProvider : System.Security.Cryptography.TripleDES" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TripleDESCryptoServiceProvider extends System.Security.Cryptography.TripleDES" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.TripleDESCryptoServiceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.TripleDES</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a wrapper object to access the cryptographic service provider (CSP) version of the <see cref="T:System.Security.Cryptography.TripleDES" /> algorithm. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This algorithm supports key lengths from 128 bits to 192 bits in increments of 64 bits.  
+  
+> [!NOTE]
+>  A newer symmetric encryption algorithm, Advanced Encryption Standard (AES), is available. Consider using the <xref:System.Security.Cryptography.AesCryptoServiceProvider> class instead of the <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> class. Use <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> only for compatibility with legacy applications and data.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in a file.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CPP/fileexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CS/fileexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/VB/fileexample.vb#1)]  
+  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in memory.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CPP/memoryexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CS/memoryexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/VB/memoryexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TripleDESCryptoServiceProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.TripleDESCryptoServiceProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in a file.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CPP/fileexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CS/fileexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/VB/fileexample.vb#1)]  
+  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in memory.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CPP/memoryexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CS/memoryexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/VB/memoryexample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="T:System.Security.Cryptography.TripleDES" /> cryptographic service provider is not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.TripleDES" /> decryptor object with the specified key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />) and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric <see cref="T:System.Security.Cryptography.TripleDES" /> decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method decrypts an encrypted message created using the <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider.CreateEncryptor%2A> overload with the same parameters.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in a file.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CPP/fileexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CS/fileexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/VB/fileexample.vb#1)]  
+  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in memory.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CPP/memoryexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CS/memoryexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/VB/memoryexample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" /> property is <see cref="F:System.Security.Cryptography.CipherMode.OFB" />.  
+  
+ -or-  
+  
+ The value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" /> property is <see cref="F:System.Security.Cryptography.CipherMode.CFB" /> and the value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize" /> property is not 8.  
+  
+ -or-  
+  
+ An invalid key size was used.  
+  
+ -or-  
+  
+ The algorithm key size was not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEncryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.  
+  
+ <block subset="none" type="note">  
+<para>  
+ The initialization vector must be 8 bytes long. If it is longer than 8 bytes, it is truncated and an exception is not thrown. Before you call <see cref="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])" />, check the length of the initialization vector and throw an exception if it is too long.  
+  
+</para>  
+</block></param>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.TripleDES" /> encryptor object with the specified key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />) and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric <see cref="T:System.Security.Cryptography.TripleDES" /> encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider.CreateDecryptor%2A> overload with the same parameters to decrypt the result of this method.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in a file.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CPP/fileexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/CS/fileexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.File#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.File/VB/fileexample.vb#1)]  
+  
+ The following code example creates a <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider> object and uses it to encrypt and decrypt data in memory.  
+  
+ [!code-cpp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CPP/memoryexample.cpp#1)]
+ [!code-csharp[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/CS/memoryexample.cs#1)]
+ [!code-vb[Cryptography.3DESCSP.CreateEncryptor.Memory#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.3DESCSP.CreateEncryptor.Memory/VB/memoryexample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" /> property is <see cref="F:System.Security.Cryptography.CipherMode.OFB" />.  
+  
+ -or-  
+  
+ The value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" /> property is <see cref="F:System.Security.Cryptography.CipherMode.CFB" /> and the value of the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize" /> property is not 8.  
+  
+ -or-  
+  
+ An invalid key size was used.  
+  
+ -or-  
+  
+ The algorithm key size was not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateIV">
+      <MemberSignature Language="C#" Value="public override void GenerateIV ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateIV() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.GenerateIV" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a random initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) to use for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to generate a random initialization vector when none is specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public override void GenerateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.TripleDESCryptoServiceProvider.GenerateKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a random <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> to be used for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to generate a random key when none is specified. This method will never return a weak key (see <xref:System.Security.Cryptography.TripleDES.IsWeakKey%2A>).  
+  
+ This algorithm supports key lengths from 128 bits to 192 bits in increments of 64 bits.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

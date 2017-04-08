@@ -1,0 +1,371 @@
+<Type Name="FilterableAttribute" FullName="System.Web.UI.FilterableAttribute">
+  <TypeSignature Language="C#" Value="public sealed class FilterableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FilterableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.FilterableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether the property to which the attribute is applied supports device filtering. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FilterableAttribute> attribute is applied to a property to specify whether the property supports device filtering. When a property supports device filtering, you can override the value of a property for a specific device by specifying a device filter. By default, properties are filterable, so a control developer could prevent device filtering on a property by setting the <xref:System.Web.UI.FilterableAttribute> attribute to `false`. For more information, see [Customizing for Specific Devices](http://msdn.microsoft.com/en-us/a7f55dfa-290b-45f8-bf8f-d5a4540bae61).  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.FilterableAttribute> class, see the <xref:System.Web.UI.FilterableAttribute.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a <xref:System.Web.UI.FilterableAttribute> attribute to a property of a custom control to indicate that the property does not support device filtering.  
+  
+ [!code-csharp[FilterableAttribute_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FilterableAttribute_2/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[FilterableAttribute_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FilterableAttribute_2/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FilterableAttribute (bool filterable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool filterable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filterable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="filterable">
+          <see langword="true" /> to indicate that the property to which the attribute is applied supports device filtering; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.FilterableAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.FilterableAttribute> class. The following table shows the initial property value for an instance of the <xref:System.Web.UI.FilterableAttribute> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.FilterableAttribute.Filterable%2A>|The value of the `filterable` parameter.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a <xref:System.Web.UI.FilterableAttribute> attribute to a property of a custom control. This constructor is called internally by ASP.NET to create a <xref:System.Web.UI.FilterableAttribute> object that represents the attribute.  
+  
+ [!code-csharp[FilterableAttribute_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FilterableAttribute_2/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[FilterableAttribute_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FilterableAttribute_2/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FilterableAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FilterableAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.FilterableAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a predefined <see cref="T:System.Web.UI.FilterableAttribute" /> object with default property settings. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FilterableAttribute.Default> field represents a predefined <xref:System.Web.UI.FilterableAttribute> object with default property settings. This field is often used when comparing a <xref:System.Web.UI.FilterableAttribute> object to the predefined object.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.FilterableAttribute.Default> field is identical to the <xref:System.Web.UI.FilterableAttribute> object represented by the <xref:System.Web.UI.FilterableAttribute> field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+        <summary>Determines whether the current instance of the <see cref="T:System.Web.UI.FilterableAttribute" /> class is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the object contained in the <paramref name="obj" /> parameter is equal to the current instance of the <see cref="T:System.Web.UI.FilterableAttribute" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.FilterableAttribute.Equals%2A> method to determine whether the current instance of the <xref:System.Web.UI.FilterableAttribute> class is equal to the specified object. For the objects to be equal, they must meet the following criteria:  
+  
+1.  The object contained in the `obj` parameter must be a <xref:System.Web.UI.FilterableAttribute> object.  
+  
+2.  The <xref:System.Web.UI.FilterableAttribute.Filterable%2A> property of both objects must be equal.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filterable">
+      <MemberSignature Language="C#" Value="public bool Filterable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Filterable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.FilterableAttribute.Filterable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the property to which the <see cref="T:System.Web.UI.FilterableAttribute" /> attribute is applied supports device filtering.</summary>
+        <value>
+          <see langword="true" /> to indicate that the property to which the attribute is applied supports device filtering; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.FilterableAttribute.Filterable%2A> property to determine whether the property to which the <xref:System.Web.UI.FilterableAttribute> attribute is applied supports device filtering. When a property supports device filtering, you can override the value of a property for a specific device by specifying a device filter. For more information, see [Customizing for Specific Devices](http://msdn.microsoft.com/en-us/a7f55dfa-290b-45f8-bf8f-d5a4540bae61).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a <xref:System.Web.UI.FilterableAttribute> attribute to a property of a custom control to indicate that the property does not support device filtering.  
+  
+ [!code-csharp[FilterableAttribute_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FilterableAttribute_2/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[FilterableAttribute_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FilterableAttribute_2/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the current instance of the <see cref="T:System.Web.UI.FilterableAttribute" /> class is equal to the <see cref="F:System.Web.UI.FilterableAttribute.Default" /> attribute.</summary>
+        <returns>
+          <see langword="true" /> if the current instance of <see cref="T:System.Web.UI.FilterableAttribute" /> is equal to <see cref="F:System.Web.UI.FilterableAttribute.Default" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FilterableAttribute.IsDefaultAttribute%2A> method is a helper method used by ASP.NET to determine whether the current instance of the <xref:System.Web.UI.FilterableAttribute> class is equal to the <xref:System.Web.UI.FilterableAttribute> object contained in the <xref:System.Web.UI.FilterableAttribute.Default> field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObjectFilterable">
+      <MemberSignature Language="C#" Value="public static bool IsObjectFilterable (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsObjectFilterable(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsObjectFilterable(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The <see cref="T:System.Object" /> to test.</param>
+        <summary>Determines whether the specified <see cref="T:System.Object" /> supports device filtering.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> contained in the <paramref name="instance" /> parameter supports device filtering; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.FilterableAttribute.IsObjectFilterable%2A> method to determine whether the specified <xref:System.Object> supports device filtering.  
+  
+> [!NOTE]
+>  An object supports device filtering if its data type supports device filtering. For more information, see the <xref:System.Web.UI.FilterableAttribute.IsTypeFilterable%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instance" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPropertyFilterable">
+      <MemberSignature Language="C#" Value="public static bool IsPropertyFilterable (System.ComponentModel.PropertyDescriptor propertyDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPropertyFilterable(class System.ComponentModel.PropertyDescriptor propertyDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsPropertyFilterable(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDescriptor" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDescriptor">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that contains the properties of the property to test.</param>
+        <summary>Determines whether a property supports device filtering.</summary>
+        <returns>
+          <see langword="true" /> if the property represented by the <see cref="T:System.ComponentModel.PropertyDescriptor" /> object contained in the <paramref name="propertyDescriptor" /> parameter supports device filtering; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.FilterableAttribute.IsPropertyFilterable%2A> method to determine whether a property supports device filtering. To use this method, you must pass in a <xref:System.ComponentModel.PropertyDescriptor> object that contains the properties of the property to test.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTypeFilterable">
+      <MemberSignature Language="C#" Value="public static bool IsTypeFilterable (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeFilterable(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FilterableAttribute.IsTypeFilterable(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.Type" /> that represents the data type to test.</param>
+        <summary>Determines whether the specified data type supports device filtering.</summary>
+        <returns>
+          <see langword="true" /> if the data type contained in the <paramref name="type" /> parameter supports device filtering; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.FilterableAttribute.IsTypeFilterable%2A> method to determine whether the specified type supports device filtering. A type supports device filtering if it has a <xref:System.Web.UI.FilterableAttribute> attribute applied to it.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FilterableAttribute No;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FilterableAttribute No" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.FilterableAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a predefined <see cref="T:System.Web.UI.FilterableAttribute" /> object that indicates that a property does not support device filtering. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FilterableAttribute.No> field represents a predefined <xref:System.Web.UI.FilterableAttribute> object that indicates that a property does not support device filtering. This field is often used when comparing a <xref:System.Web.UI.FilterableAttribute> object to the predefined <xref:System.Web.UI.FilterableAttribute> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FilterableAttribute Yes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FilterableAttribute Yes" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.FilterableAttribute.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.FilterableAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a predefined <see cref="T:System.Web.UI.FilterableAttribute" /> object that indicates that a property supports device filtering. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FilterableAttribute.Yes> field represents a predefined <xref:System.Web.UI.FilterableAttribute> object that indicates that a property supports device filtering. This field is often used when comparing a <xref:System.Web.UI.FilterableAttribute> object to the predefined <xref:System.Web.UI.FilterableAttribute> object.  
+  
+> [!NOTE]
+>  This is the default <xref:System.Web.UI.FilterableAttribute> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

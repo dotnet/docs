@@ -1,0 +1,117 @@
+<Type Name="SharedPersonalizationStateInfo" FullName="System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo">
+  <TypeSignature Language="C#" Value="public sealed class SharedPersonalizationStateInfo : System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SharedPersonalizationStateInfo extends System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.PersonalizationStateInfo</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a lightweight version of shared personalization information about a page. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents statistical information about the personalization state of a page. It does not return the personalization data (such as property data that is applied or extracted when personalization occurs) itself. This class can be used to determine how many users have saved personalization settings for a page, and the size, in bytes, of that information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SharedPersonalizationStateInfo (string path, DateTime lastUpdatedDate, int size, int sizeOfPersonalizations, int countOfPersonalizations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.DateTime lastUpdatedDate, int32 size, int32 sizeOfPersonalizations, int32 countOfPersonalizations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.#ctor(System.String,System.DateTime,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="lastUpdatedDate" Type="System.DateTime" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="sizeOfPersonalizations" Type="System.Int32" />
+        <Parameter Name="countOfPersonalizations" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="path">The page that the information applies to. <c>path</c> is an application-relative (using tilde syntax) virtual path.</param>
+        <param name="lastUpdatedDate">A <see cref="T:System.DateTime" /> indicating when the shared information for the page was last updated.</param>
+        <param name="size">The size, in bytes, of the shared state information for the page.</param>
+        <param name="sizeOfPersonalizations">The total size, in bytes, of all per-user personalization information that exists for the page.</param>
+        <param name="countOfPersonalizations">The total number of users who have personalized the page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `countOfPersonalizations` parameter represents the total number of users who have personalized a page. For example, if 100 users personalize a page, then the value of `countOfPersonalizations` for that page would be 100, not 100 multiplied by the number of personalized properties. Note that this count might or might not match the total number of rows used in the underlying data store to persist per-user information, because some data storage providers use multiple rows to store per-user personalization information for a single user and page combination.  
+  
+ Note that `path` is trimmed if non-null.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" />, when trimmed, is an empty string ("").</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="size" />, <paramref name="sizeOfPersonalizations" /> or <paramref name="countOfPersonalizations" /> is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CountOfPersonalizations">
+      <MemberSignature Language="C#" Value="public int CountOfPersonalizations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CountOfPersonalizations" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.CountOfPersonalizations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of users that have personalized a page.</summary>
+        <value>The total number of per-user personalization settings that have been applied to a page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the total number of users that have personalized a page. For example, if 100 users personalize a page, then the value of <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.CountOfPersonalizations%2A> for that page would be 100, not 100 multiplied by the number of personalized properties. Note that this count might or might not match the total number of rows used in the underlying data store to persist per-user information, because some data storage providers use multiple rows to store per-user personalization information for a single user and page combination.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeOfPersonalizations">
+      <MemberSignature Language="C#" Value="public int SizeOfPersonalizations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SizeOfPersonalizations" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.SizeOfPersonalizations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total size of all per-user personalization information for a page.</summary>
+        <value>The total size, in bytes, of all personalization information for a page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the size of all per-user personalization information that exists for a page. This will be a different value than the value returned by <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Size%2A> because <xref:System.Web.UI.WebControls.WebParts.SharedPersonalizationStateInfo.SizeOfPersonalizations%2A> is the size in bytes of only the per-user state for a page and does not include the size of shared state data included in the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Size%2A> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,74 @@
+<Type Name="NamedServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt;" FullName="System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt;">
+  <TypeSignature Language="C#" Value="public abstract class NamedServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt; : System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt; where TServiceModelExtensionElement : ServiceModelExtensionElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NamedServiceModelExtensionCollectionElement`1&lt;(class System.ServiceModel.Configuration.ServiceModelExtensionElement) TServiceModelExtensionElement&gt; extends System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement`1&lt;!TServiceModelExtensionElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TServiceModelExtensionElement">
+      <Constraints>
+        <BaseTypeName>System.ServiceModel.Configuration.ServiceModelExtensionElement</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.ServiceModelExtensionCollectionElement&lt;TServiceModelExtensionElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TServiceModelExtensionElement">TServiceModelExtensionElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TServiceModelExtensionElement">A ServiceModel extension element.</typeparam>
+    <summary>Contains a collection of <see cref="T:System.ServiceModel.Configuration.ServiceModelExtensionElement" /> instances.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of this collection.</summary>
+        <value>The name of this collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NamedServiceModelExtensionCollectionElement`1.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

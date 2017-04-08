@@ -1,0 +1,85 @@
+<Type Name="ConfigurationUserLevel" FullName="System.Configuration.ConfigurationUserLevel">
+  <TypeSignature Language="C#" Value="public enum ConfigurationUserLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationUserLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationUserLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Used to specify which configuration file is to be represented by the Configuration object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Configuration.ConfigurationUserLevel> to specify which configuration file is to be represented by the Configuration object returned by <xref:System.Configuration.ConfigurationManager.OpenExeConfiguration%2A?displayProperty=fullName> and <xref:System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration%2A?displayProperty=fullName>.  
+  
+ Application configuration files are in the same directory as the application and have the same name, but with a .config extension. For example, the configuration file for C:\System\Public.exe is C:\System\Public.exe.config.  
+  
+ Applications use a global configuration that applies to all users, separate configurations that apply to individual users, and configurations that apply to roaming users.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationUserLevel> enumeration.  
+  
+ [!code-csharp[System.Configuration.ConfigurationUserLevel#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.configuration.configurationuserlevel/cs/configurationuserlevel.cs#1)]
+ [!code-vb[System.Configuration.ConfigurationUserLevel#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.configuration.configurationuserlevel/vb/configurationuserlevel.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationUserLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the <see cref="T:System.Configuration.Configuration" /> that applies to all users.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PerUserRoaming">
+      <MemberSignature Language="C#" Value="PerUserRoaming" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationUserLevel PerUserRoaming = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.PerUserRoaming" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the roaming <see cref="T:System.Configuration.Configuration" /> that applies to the current user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PerUserRoamingAndLocal">
+      <MemberSignature Language="C#" Value="PerUserRoamingAndLocal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationUserLevel PerUserRoamingAndLocal = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the local <see cref="T:System.Configuration.Configuration" /> that applies to the current user.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

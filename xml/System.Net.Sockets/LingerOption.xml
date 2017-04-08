@@ -1,0 +1,208 @@
+<Type Name="LingerOption" FullName="System.Net.Sockets.LingerOption">
+  <TypeSignature Language="C#" Value="public class LingerOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LingerOption extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.LingerOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Sockets</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Net.Sockets.Socket" /> will remain connected after a call to the <see cref="M:System.Net.Sockets.Socket.Close" /> or <see cref="M:System.Net.Sockets.TcpClient.Close" /> methods and the length of time it will remain connected, if data remains to be sent.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There may still be data available in the outgoing network buffer after an application calls the <xref:System.Net.Sockets.Socket> or <xref:System.Net.Sockets.TcpClient> method. If you want to specify the amount of time that the <xref:System.Net.Sockets.Socket> will attempt to transmit unsent data after closing, create a <xref:System.Net.Sockets.LingerOption> with the `enable` parameter set to `true`, and the `seconds` parameter set to the desired amount of time. The `seconds` parameter is used to indicate how long you would like the <xref:System.Net.Sockets.Socket> to remain connected before timing out. If you do not want the <xref:System.Net.Sockets.Socket> to stay connected for any length of time after closing, create a <xref:System.Net.Sockets.LingerOption> instance with the `enable` parameter set to `true` and the `seconds` parameter set to zero. In this case, the <xref:System.Net.Sockets.Socket> will close immediately and any unsent data will be lost. Once created, pass the <xref:System.Net.Sockets.LingerOption> to the <xref:System.Net.Sockets.Socket.SetSocketOption%2A?displayProperty=fullName> method. If you are sending and receiving data with a <xref:System.Net.Sockets.TcpClient>, then set the <xref:System.Net.Sockets.LingerOption> instance in the <xref:System.Net.Sockets.TcpClient.LingerState%2A?displayProperty=fullName> property.  
+  
+ The IP stack computes the default IP protocol time-out period to use based on the round trip time of the connection. In most cases, the time-out computed by the stack is more relevant than one defined by an application. This is the default behavior for a <xref:System.Net.Sockets.Socket> when the <xref:System.Net.Sockets.Socket.LingerState%2A> property is not set and for a <xref:System.Net.Sockets.TcpClient> when the <xref:System.Net.Sockets.TcpClient.LingerState%2A> property is not set.  
+  
+   
+  
+## Examples  
+ The following example sets a previously created <xref:System.Net.Sockets.Socket> to linger one second after calling the <xref:System.Net.Sockets.Socket.Close%2A> method.  
+  
+ [!code-cpp[Classic LingerOption Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic LingerOption Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic LingerOption Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic LingerOption Example/CS/source.cs#1)]
+ [!code-vb[Classic LingerOption Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic LingerOption Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LingerOption (bool enable, int seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enable, int32 seconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.LingerOption.#ctor(System.Boolean,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enable" Type="System.Boolean" />
+        <Parameter Name="seconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="enable">
+          <see langword="true" /> to remain connected after the <see cref="M:System.Net.Sockets.Socket.Close" /> method is called; otherwise, <see langword="false" />.</param>
+        <param name="seconds">The number of seconds to remain connected after the <see cref="M:System.Net.Sockets.Socket.Close" /> method is called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.LingerOption" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There may still be data available in the outgoing network buffer after you close the <xref:System.Net.Sockets.Socket>. Use the `enable` parameter to specify whether you would like the <xref:System.Net.Sockets.Socket> to continue transmitting unsent data after the close method is called. Use the `seconds` parameter to indicate how long you would like the <xref:System.Net.Sockets.Socket> to attempt transferring unsent data before timing out. If you specify `true` for the `enable` parameter and 0 for the `seconds` parameter, the <xref:System.Net.Sockets.Socket> will attempt to send data until there is no data left in the outgoing network buffer. If you specify `false` for the `enable` parameter, the <xref:System.Net.Sockets.Socket> will close immediately and any unsent data will be lost.  
+  
+ The following table describes the behavior on the <xref:System.Net.Sockets.Socket.Close%2A?displayProperty=fullName> and <xref:System.Net.Sockets.TcpClient.Close%2A?displayProperty=fullName> methods based on the possible values of the `enable` and `seconds` parameters when an T:System.Net.Sockets.LingerOption instance is created and set in the <xref:System.Net.Sockets.Socket.LingerState%2A?displayProperty=fullName> or <xref:System.Net.Sockets.TcpClient.LingerState%2A?displayProperty=fullName> property.  
+  
+|`enable`|`seconds`|Behavior|  
+|--------------|---------------|--------------|  
+|`false` (disabled), the default value|The time-out is not applicable, (default).|Attempts to send pending data for a connection-oriented socket (TCP, for example) until the default IP protocol time-out expires.|  
+|`true` (enabled)|A nonzero time-out|Attempts to send pending data until the specified time-out expires, and if the attempt fails, then Winsock resets the connection.|  
+|`true` (enabled)|A zero timeout.|Discards any pending data. For connection-oriented socket (TCP, for example), Winsock resets the connection.|  
+  
+ The IP stack computes the default IP protocol time-out period to use based on the round trip time of the connection. In most cases, the time-out computed by the stack is more relevant than one defined by an application. This is the default behavior for a socket when the <xref:System.Net.Sockets.Socket.LingerState%2A> property is not set.  
+  
+ When the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.Socket.LingerState%2A> property is set greater than the default IP protocol time-out, the default IP protocol time-out will still apply and override.  
+  
+   
+  
+## Examples  
+ The following example sets a previously created <xref:System.Net.Sockets.Socket> to linger one second after calling the <xref:System.Net.Sockets.Socket.Close%2A> method.  
+  
+ [!code-cpp[Classic LingerOption Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic LingerOption Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic LingerOption Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic LingerOption Example/CS/source.cs#1)]
+ [!code-vb[Classic LingerOption Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic LingerOption Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.LingerOption.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to linger after the <see cref="T:System.Net.Sockets.Socket" /> is closed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Net.Sockets.Socket" /> should linger after <see cref="M:System.Net.Sockets.Socket.Close" /> is called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Net.Sockets.LingerOption.Enabled%2A> property to determine whether the <xref:System.Net.Sockets.Socket> will linger after closing. Change this value to `true` or `false` and pass the altered <xref:System.Net.Sockets.LingerOption> to the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method or set the <xref:System.Net.Sockets.TcpClient.LingerState%2A> or <xref:System.Net.Sockets.Socket.LingerState%2A> property.to disable or enable lingering.  
+  
+ The following table describes the behavior for the possible values of the <xref:System.Net.Sockets.LingerOption.Enabled%2A> property and the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.Socket.LingerState%2A> property.  
+  
+|`enable`|`seconds`|Behavior|  
+|--------------|---------------|--------------|  
+|`false` (disabled), the default value|The time-out is not applicable, (default).|Attempts to send pending data for a connection-oriented socket (TCP, for example) until the default IP protocol time-out expires.|  
+|`true` (enabled)|A nonzero time-out|Attempts to send pending data until the specified time-out expires, and if the attempt fails, then Winsock resets the connection.|  
+|`true` (enabled)|A zero timeout.|Discards any pending data. For connection-oriented socket (TCP, for example), Winsock resets the connection.|  
+  
+ The IP stack computes the default IP protocol time-out period to use based on the round trip time of the connection. In most cases, the time-out computed by the stack is more relevant than one defined by an application. This is the default behavior for a socket when the <xref:System.Net.Sockets.Socket.LingerState%2A> property is not set.  
+  
+ When the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.Socket.LingerState%2A> property is set greater than the default IP protocol time-out, the default IP protocol time-out will still apply and override.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LingerTime">
+      <MemberSignature Language="C#" Value="public int LingerTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LingerTime" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.LingerOption.LingerTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time to remain connected after calling the <see cref="M:System.Net.Sockets.Socket.Close" /> method if data remains to be sent.</summary>
+        <value>The amount of time, in seconds, to remain connected after calling <see cref="M:System.Net.Sockets.Socket.Close" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this value if you want to determine how long a closed <xref:System.Net.Sockets.Socket> will attempt to transfer unsent data before timing out. You can also set this value to the desired time-out period, in seconds.  
+  
+ If the <xref:System.Net.Sockets.LingerOption.Enabled%2A> property is `true`, and you set <xref:System.Net.Sockets.LingerOption.LingerTime%2A> to 0, the <xref:System.Net.Sockets.Socket> discards any pending data to send in the outgoing network buffer. If you change this value, you must pass the altered <xref:System.Net.Sockets.LingerOption> instance to the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method or set the <xref:System.Net.Sockets.TcpClient.LingerState%2A> or <xref:System.Net.Sockets.Socket.LingerState%2A> property.  
+  
+ The following table describes the behavior for the possible values of the <xref:System.Net.Sockets.LingerOption.Enabled%2A> property and the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.Socket.LingerState%2A> property.  
+  
+|`enable`|`seconds`|Behavior|  
+|--------------|---------------|--------------|  
+|`false` (disabled), the default value|The time-out is not applicable, (default).|Attempts to send pending data for a connection-oriented socket (TCP, for example) until the default IP protocol time-out expires.|  
+|`true` (enabled)|A nonzero time-out|Attempts to send pending data until the specified time-out expires, and if the attempt fails, then Winsock resets the connection.|  
+|`true` (enabled)|A zero timeout.|Discards any pending data. For connection-oriented socket (TCP, for example), Winsock resets the connection.|  
+  
+ The IP stack computes the default IP protocol time-out period to use based on the round trip time of the connection. In most cases, the time-out computed by the stack is more relevant than one defined by an application. This is the default behavior for a socket when the <xref:System.Net.Sockets.Socket.LingerState%2A> property is not set.  
+  
+ When the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property stored in the <xref:System.Net.Sockets.Socket.LingerState%2A> property is set greater than the default IP protocol time-out, the default IP protocol time-out will still apply and override.  
+  
+   
+  
+## Examples  
+ The following example displays the value of this property.  
+  
+ [!code-cpp[Socket_Socket_Options#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Socket_Options/CPP/source.cpp#2)]
+ [!code-csharp[Socket_Socket_Options#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Socket_Options/CS/source.cs#2)]
+ [!code-vb[Socket_Socket_Options#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Socket_Socket_Options/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

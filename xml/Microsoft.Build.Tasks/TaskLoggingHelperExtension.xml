@@ -1,0 +1,107 @@
+<Type Name="TaskLoggingHelperExtension" FullName="Microsoft.Build.Tasks.TaskLoggingHelperExtension">
+  <TypeSignature Language="C#" Value="public class TaskLoggingHelperExtension : Microsoft.Build.Utilities.TaskLoggingHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskLoggingHelperExtension extends Microsoft.Build.Utilities.TaskLoggingHelper" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Utilities.TaskLoggingHelper</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables logging of various messages. Also, enables loading and formatting of resources.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaskLoggingHelperExtension (Microsoft.Build.Framework.ITask taskInstance, System.Resources.ResourceManager primaryResources, System.Resources.ResourceManager sharedResources, string helpKeywordPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITask taskInstance, class System.Resources.ResourceManager primaryResources, class System.Resources.ResourceManager sharedResources, string helpKeywordPrefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.TaskLoggingHelperExtension.#ctor(Microsoft.Build.Framework.ITask,System.Resources.ResourceManager,System.Resources.ResourceManager,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="taskInstance" Type="Microsoft.Build.Framework.ITask" />
+        <Parameter Name="primaryResources" Type="System.Resources.ResourceManager" />
+        <Parameter Name="sharedResources" Type="System.Resources.ResourceManager" />
+        <Parameter Name="helpKeywordPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="taskInstance">A task containing an instance of the <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class.</param>
+        <param name="primaryResources">UI and string resources.</param>
+        <param name="sharedResources">Shared UI and string resources.</param>
+        <param name="helpKeywordPrefix">The prefix for composing Help keywords.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class with the task instance, primary resources, shared resources, and a Help keyword prefix.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatResourceString">
+      <MemberSignature Language="C#" Value="public override string FormatResourceString (string resourceName, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatResourceString(string resourceName, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.TaskLoggingHelperExtension.FormatResourceString(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="resourceName">The name of the string resource to load.</param>
+        <param name="args">Optional arguments for formatting the loaded string, or <see langword="null" />.</param>
+        <summary>Loads the specified resource string and optionally formats it using the given arguments. The current thread's culture is used for formatting.</summary>
+        <returns>The formatted string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method requires the owner task to have registered its resources either via the <xref:Microsoft.Build.Utilities.Task> base class constructor, or one of the following properties: <xref:Microsoft.Build.Utilities.Task.TaskResources%2A> or <xref:Microsoft.Build.Utilities.AppDomainIsolatedTask.TaskResources%2A>.  
+  
+ This method is thread-safe.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskSharedResources">
+      <MemberSignature Language="C#" Value="public System.Resources.ResourceManager TaskSharedResources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Resources.ResourceManager TaskSharedResources" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.TaskLoggingHelperExtension.TaskSharedResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Resources.ResourceManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shared UI and string resources.</summary>
+        <value>The shared UI and string resources.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to load culture-specific resources. Derived classes should register their resources either during construction, or via this property, if they have localized strings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

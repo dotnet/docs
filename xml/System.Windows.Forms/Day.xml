@@ -1,0 +1,153 @@
+<Type Name="Day" FullName="System.Windows.Forms.Day">
+  <TypeSignature Language="C#" Value="public enum Day" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Day extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Day" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the day of the week.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:System.Windows.Forms.MonthCalendar>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Default = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A default day of the week specified by the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Friday">
+      <MemberSignature Language="C#" Value="Friday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Friday = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Friday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Friday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Monday">
+      <MemberSignature Language="C#" Value="Monday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Monday = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Monday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Monday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Saturday">
+      <MemberSignature Language="C#" Value="Saturday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Saturday = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Saturday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Saturday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunday">
+      <MemberSignature Language="C#" Value="Sunday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Sunday = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Sunday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Sunday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Thursday">
+      <MemberSignature Language="C#" Value="Thursday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Thursday = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Thursday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Thursday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tuesday">
+      <MemberSignature Language="C#" Value="Tuesday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Tuesday = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Tuesday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Tuesday.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wednesday">
+      <MemberSignature Language="C#" Value="Wednesday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Day Wednesday = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Day.Wednesday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Day</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The day Wednesday.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

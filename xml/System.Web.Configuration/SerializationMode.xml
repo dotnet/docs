@@ -1,0 +1,97 @@
+<Type Name="SerializationMode" FullName="System.Web.Configuration.SerializationMode">
+  <TypeSignature Language="C#" Value="public enum SerializationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SerializationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines the serialization method used for a <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property of the <xref:System.Web.Configuration.ProfilePropertySettings> object controls the serialization mode for a single profile property setting.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfilePropertySettings.SerializeAs%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#17)]
+ [!code-vb[System.Web.Configuration.ProfileSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#17)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="Binary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode Binary = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object is serialized using binary serialization.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderSpecific">
+      <MemberSignature Language="C#" Value="ProviderSpecific" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode ProviderSpecific = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.ProviderSpecific" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The provider has implicit knowledge of the type and is responsible for deciding how to serialize the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object into the data store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode String = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> object is serialized to a simple string.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="Xml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.SerializationMode Xml = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.SerializationMode.Xml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The profile <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> is serialized as XML using XML serialization.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

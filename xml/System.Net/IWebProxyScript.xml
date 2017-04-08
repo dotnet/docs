@@ -1,0 +1,115 @@
+<Type Name="IWebProxyScript" FullName="System.Net.IWebProxyScript">
+  <TypeSignature Language="C#" Value="public interface IWebProxyScript" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebProxyScript" />
+  <TypeSignature Language="DocId" Value="T:System.Net.IWebProxyScript" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base interface to load and execute scripts for automatic proxy detection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IWebProxyScript.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes a script.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public bool Load (Uri scriptLocation, string script, Type helperType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Load(class System.Uri scriptLocation, string script, class System.Type helperType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IWebProxyScript.Load(System.Uri,System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptLocation" Type="System.Uri" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="helperType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="scriptLocation">Internal only.</param>
+        <param name="script">Internal only.</param>
+        <param name="helperType">Internal only.</param>
+        <summary>Loads a script.</summary>
+        <returns>A <see cref="T:System.Boolean" /> indicating whether the script was successfully loaded.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public string Run (string url, string host);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Run(string url, string host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IWebProxyScript.Run(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="host" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">Internal only.</param>
+        <param name="host">Internal only.</param>
+        <summary>Runs a script.</summary>
+        <returns>A <see cref="T:System.String" />.  
+  
+ An internal-only value returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Net.HttpWebRequest> object is run, it may need to run the WPAD (Web Proxy Automatic Detection) protocol to detect whether a proxy is required for reaching the destination URL. During this process, the system downloads and compiles the PAC (Proxy Auto-Configuration) script in memory and tries to execute the FindProxyForURL function as per the PAC specification.  
+  
+ When doing so, the system creates an internal application domain inside the application which runs with mimimal permissions and most importantly, it does not grant the UI permission to this new application domain. The evaluation of a proxy and running the FindProxyForURL javascript function happens in the context of this new application domain and during this process the system may need to run several helper functions as per the PAC specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

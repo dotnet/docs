@@ -1,0 +1,563 @@
+<Type Name="RelatedObjectQuery" FullName="System.Management.RelatedObjectQuery">
+  <TypeSignature Language="C#" Value="public class RelatedObjectQuery : System.Management.WqlObjectQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RelatedObjectQuery extends System.Management.WqlObjectQuery" />
+  <TypeSignature Language="DocId" Value="T:System.Management.RelatedObjectQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.WqlObjectQuery</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a WQL *ASSOCIATORS OF* data query. It can be used for both instances and schema queries.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelatedObjectQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelatedObjectQuery (string queryOrSourceObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrSourceObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="queryOrSourceObject" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queryOrSourceObject">The query string or the path of the source object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class. If the specified string can be successfully parsed as a WQL query, it is considered to be the query string; otherwise, it is assumed to be the path of the source object for the query. In this case, the query is assumed to be an instance query.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelatedObjectQuery (string sourceObject, string relatedClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceObject, string relatedClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourceObject" Type="System.String" />
+        <Parameter Name="relatedClass" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceObject">The path of the source object for this query.</param>
+        <param name="relatedClass">The related objects' class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class for the given source object and related class. The query is assumed to be an instance query (as opposed to a schema query).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelatedObjectQuery (bool isSchemaQuery, string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isSchemaQuery, string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isSchemaQuery" Type="System.Boolean" />
+        <Parameter Name="sourceObject" Type="System.String" />
+        <Parameter Name="relatedClass" Type="System.String" />
+        <Parameter Name="relationshipClass" Type="System.String" />
+        <Parameter Name="relatedQualifier" Type="System.String" />
+        <Parameter Name="relationshipQualifier" Type="System.String" />
+        <Parameter Name="relatedRole" Type="System.String" />
+        <Parameter Name="thisRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="isSchemaQuery">
+          <see langword="true" /> to indicate that this is a schema query; otherwise, <see langword="false" /> .</param>
+        <param name="sourceObject">The path of the source class.</param>
+        <param name="relatedClass">The related objects' required base class.</param>
+        <param name="relationshipClass">The relationship type.</param>
+        <param name="relatedQualifier">The qualifier required to be present on the related objects.</param>
+        <param name="relationshipQualifier">The qualifier required to be present on the relationships.</param>
+        <param name="relatedRole">The role that the related objects are required to play in the relationship.</param>
+        <param name="thisRole">The role that the source class is required to play in the relationship.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class for a schema query using the given set of parameters. This constructor is used for schema queries only: the first parameter must be set to <see langword="true" /> .</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelatedObjectQuery (string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceObject, string relatedClass, string relationshipClass, string relatedQualifier, string relationshipQualifier, string relatedRole, string thisRole, bool classDefinitionsOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sourceObject" Type="System.String" />
+        <Parameter Name="relatedClass" Type="System.String" />
+        <Parameter Name="relationshipClass" Type="System.String" />
+        <Parameter Name="relatedQualifier" Type="System.String" />
+        <Parameter Name="relationshipQualifier" Type="System.String" />
+        <Parameter Name="relatedRole" Type="System.String" />
+        <Parameter Name="thisRole" Type="System.String" />
+        <Parameter Name="classDefinitionsOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sourceObject">The path of the source object.</param>
+        <param name="relatedClass">The related objects' required class.</param>
+        <param name="relationshipClass">The relationship type.</param>
+        <param name="relatedQualifier">The qualifier required to be present on the related objects.</param>
+        <param name="relationshipQualifier">The qualifier required to be present on the relationships.</param>
+        <param name="relatedRole">The role that the related objects are required to play in the relationship.</param>
+        <param name="thisRole">The role that the source object is required to play in the relationship.</param>
+        <param name="classDefinitionsOnly">
+          <see langword="true" /> to return only the class definitions of the related objects; otherwise, false .</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.RelatedObjectQuery" /> class for the given set of parameters. The query is assumed to be an instance query (as opposed to a schema query).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildQuery">
+      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.BuildQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Builds the query string according to the current property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassDefinitionsOnly">
+      <MemberSignature Language="C#" Value="public bool ClassDefinitionsOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ClassDefinitionsOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.ClassDefinitionsOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating that for all instances that adhere to the query, only their class definitions be returned. This parameter is only valid for instance queries.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating that for all instances that adhere to the query, only their class definitions are to be returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new flag.  
+  
+## Property Value  
+ `true` if the query requests only class definitions of the result set; otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the object.</summary>
+        <returns>The copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSchemaQuery">
+      <MemberSignature Language="C#" Value="public bool IsSchemaQuery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaQuery" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.IsSchemaQuery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this is a schema query or an instance query.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether this is a schema query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new query type.  
+  
+## Property Value  
+ `true` if this query should be evaluated over the schema; `false` if the query should be evaluated over instances.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseQuery">
+      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.RelatedObjectQuery.ParseQuery(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query string to be parsed.</param>
+        <summary>Parses the query string and sets the property values accordingly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedClass">
+      <MemberSignature Language="C#" Value="public string RelatedClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelatedClass" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelatedClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the class of the endpoint objects (the related class).</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the related class name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new related class.  
+  
+## Property Value  
+ A string containing the related class name.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example sets a WMI class to be related to a <xref:System.Management.RelatedObjectQuery>.  
+  
+ [!code-csharp[wminet_RelatedObjectQuery_RelatedClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_RelatedObjectQuery_RelatedClass/cs/RelatedObjectQuery_RelatedClass.cs#1)]
+ [!code-vb[wminet_RelatedObjectQuery_RelatedClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_RelatedObjectQuery_RelatedClass/vb/RelatedObjectQuery_RelatedClass.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedQualifier">
+      <MemberSignature Language="C#" Value="public string RelatedQualifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelatedQualifier" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelatedQualifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a qualifier required to be defined on the related objects.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the name of the qualifier required on the related object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new qualifier.  
+  
+## Property Value  
+ A string containing the name of the qualifier required on the related objects.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedRole">
+      <MemberSignature Language="C#" Value="public string RelatedRole { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelatedRole" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelatedRole" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the role that the related objects returned should be playing in the relationship.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the role of the related objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new role.  
+  
+## Property Value  
+ A string containing the role of the related objects.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipClass">
+      <MemberSignature Language="C#" Value="public string RelationshipClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationshipClass" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelationshipClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of relationship (association).</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the relationship class name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new relationship class.  
+  
+## Property Value  
+ A string containing the relationship class name.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example sets the type of relationship between a WMI class and a <xref:System.Management.RelatedObjectQuery>.  
+  
+ [!code-csharp[wminet_RelatedObjectQuery_RelationshipClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_RelatedObjectQuery_RelationshipClass/cs/RelatedObjectQuery_RelationshipClass.cs#1)]
+ [!code-vb[wminet_RelatedObjectQuery_RelationshipClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_RelatedObjectQuery_RelationshipClass/vb/RelatedObjectQuery_RelationshipClass.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipQualifier">
+      <MemberSignature Language="C#" Value="public string RelationshipQualifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationshipQualifier" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.RelationshipQualifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a qualifier required to be defined on the relationship objects.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the name of the qualifier required on the relationship objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new qualifier.  
+  
+## Property Value  
+ A string containing the name of the qualifier required on the relationship objects.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceObject">
+      <MemberSignature Language="C#" Value="public string SourceObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceObject" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.SourceObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the source object to be used for the query. For instance queries, this is typically an instance path. For schema queries, this is typically a class name.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the path of the object to be used for the query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new source object.  
+  
+## Property Value  
+ A string representing the path of the object to be used for the query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThisRole">
+      <MemberSignature Language="C#" Value="public string ThisRole { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ThisRole" />
+      <MemberSignature Language="DocId" Value="P:System.Management.RelatedObjectQuery.ThisRole" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the role that the source object should be playing in the relationship.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the role of this object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new role.  
+  
+## Property Value  
+ A string containing the role of this object.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

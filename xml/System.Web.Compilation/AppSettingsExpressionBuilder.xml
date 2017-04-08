@@ -1,0 +1,247 @@
+<Type Name="AppSettingsExpressionBuilder" FullName="System.Web.Compilation.AppSettingsExpressionBuilder">
+  <TypeSignature Language="C#" Value="public class AppSettingsExpressionBuilder : System.Web.Compilation.ExpressionBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppSettingsExpressionBuilder extends System.Web.Compilation.ExpressionBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.AppSettingsExpressionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Compilation.ExpressionBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.AppSettingsExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.Compilation.ExpressionPrefix("AppSettings")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Retrieves values, as specified in a declarative expression, from the <see langword="&lt;appSettings&gt;" /> section of the Web.config file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.AppSettingsExpressionBuilder> class provides access to values in the `<appSettings>` section of the Web.config file. The `<appSettings>` section of the Web.config file contains application-specific values in key/value pairs.  
+  
+ An application value is retrieved by assigning an expression of the form  
+  
+ `<%$ AppSettings: appSettingsKey %>`  
+  
+ to a property in a control declaration. The part of the expression before the colon (:) designates the type of expression to be retrieved, and the part after the colon signifies the key. The preceding expression would retrieve the following value from the Web.config file.  
+  
+ `<appSettings>`  
+  
+ `<add key="appSettingsKey" value="appSettingsValue"/>`  
+  
+ `</appSettings>`  
+  
+ When the page parser encounters an expression with the `AppSettings` prefix, it creates an instance of the <xref:System.Web.Compilation.AppSettingsExpressionBuilder> class to handle the expression.  
+  
+ If the expression is encountered in a page that will be compiled, the <xref:System.Web.Compilation.AppSettingsExpressionBuilder> object generates code to retrieve the specified value from the Web.config file. This code is executed during the execution of the generated page class. If the expression is encountered in a page that will not be compiled, the <xref:System.Web.Compilation.AppSettingsExpressionBuilder> object returns the value from the Web.config file when the page is parsed and executed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve an application settings value in a page that is not compiled.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Compilation.AppSettingsExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.AppSettingsExpressionBuilder/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Compilation.AppSettingsExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.AppSettingsExpressionBuilder/VB/Default.aspx#1)]  -->  
+  
+ This code retrieves the following expression from the Web.config file.  
+  
+ `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">`  
+  
+ `<appSettings>`  
+  
+ `<add key="thisSeason" value="Fall"/>`  
+  
+ `</appSettings>`  
+  
+ `</configuration>`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppSettingsExpressionBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.AppSettingsExpressionBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateExpression">
+      <MemberSignature Language="C#" Value="public override object EvaluateExpression (object target, System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(object target, class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="entry" Type="System.Web.UI.BoundPropertyEntry" />
+        <Parameter Name="parsedData" Type="System.Object" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object that contains the property entry.</param>
+        <param name="entry">The property to which the expression is bound..</param>
+        <param name="parsedData">The object that represents parsed data as returned by <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />.</param>
+        <param name="context">Properties for the control or page.</param>
+        <summary>Returns a value from the <see langword="&lt;appSettings&gt;" /> section of the Web.config file.</summary>
+        <returns>The <see cref="T:System.Object" /> associated with a key in the <see langword="&lt;appSettings&gt;" /> section of the Web.config file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when an expression of the form `<%$ AppSettings: someApplicationSetting %>` is encountered in a no-compile page. It retrieves the appropriate value from the key/value pairs in the `<appSettings>` section of the Web.config file. This method overrides <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> by calling the <xref:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting%2A> method with the <xref:System.Web.UI.BoundPropertyEntry.Expression%2A> property as the `key` parameter, the <xref:System.Web.UI.PropertyEntry.Name%2A> property on the <xref:System.Web.UI.PropertyEntry.PropertyInfo%2A?displayProperty=fullName> property as the `propertyName` parameter, and the <xref:System.Type> of the `target` parameter as the `targetType` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppSetting">
+      <MemberSignature Language="C#" Value="public static object GetAppSetting (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetAppSetting(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for the value to be retrieved from the configuration file.</param>
+        <summary>Returns a value from the <see langword="&lt;appSettings&gt;" /> section of the Web.config file.</summary>
+        <returns>The <see cref="T:System.Object" /> associated with the key in the <see langword="&lt;appSettings&gt;" /> section of the Web.config file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method retrieves the appropriate value from the key/value pairs in the `<appSettings>` section of the Web.config file. It retrieves the value by getting the <xref:System.Configuration.ConfigurationManager.AppSettings%2A> property with the key as the index. The <xref:System.Object> returned is of the type <xref:System.String>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The key is not found in Web.config.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppSetting">
+      <MemberSignature Language="C#" Value="public static object GetAppSetting (string key, Type targetType, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetAppSetting(string key, class System.Type targetType, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.GetAppSetting(System.String,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for a value to be retrieved from the configuration file.</param>
+        <param name="targetType">The type of the object that contains the property entry.</param>
+        <param name="propertyName">The name of the property to which the expression is bound.</param>
+        <summary>Returns a value from the <see langword="&lt;appSettings&gt;" /> section of the Web.config file with the value converted to a target type.</summary>
+        <returns>The <see cref="T:System.Object" /> associated with the key in the <see langword="&lt;appSettings&gt;" /> section of the Web.config file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method retrieves the appropriate value from the key/value pairs in the `<appSettings>` section of the Web.config file. The value is retrieved by getting the <xref:System.Configuration.ConfigurationManager.AppSettings%2A> property with the key as the index. The resulting string value is converted to a new type based on the `targetType` and `propertyName` parameters.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The key is not found in Web.config.  
+  
+ \- or -  
+  
+ The return value could not be converted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeExpression">
+      <MemberSignature Language="C#" Value="public override System.CodeDom.CodeExpression GetCodeExpression (System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.CodeExpression GetCodeExpression(class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.AppSettingsExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Web.UI.BoundPropertyEntry" />
+        <Parameter Name="parsedData" Type="System.Object" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The property to which the expression is bound.</param>
+        <param name="parsedData">The object that represents parsed data as returned by <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />.</param>
+        <param name="context">Properties for the control or page.</param>
+        <summary>Returns a code expression that is used to perform the property assignment in the generated page class.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeExpression" /> that is used in the property assignment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called during the CodeDOM creation for a page or control. The returned <xref:System.CodeDom.CodeExpression> object represents the code expression to add to the property assignment in the generated page class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsEvaluate">
+      <MemberSignature Language="C#" Value="public override bool SupportsEvaluate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsEvaluate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.AppSettingsExpressionBuilder.SupportsEvaluate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a value indicating whether an expression can be evaluated in a page that is not compiled.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.AppSettingsExpressionBuilder.SupportsEvaluate%2A> property indicates whether the <xref:System.Web.Compilation.AppSettingsExpressionBuilder.EvaluateExpression%2A> method has been implemented in the class and can return a value for the expression. <xref:System.Web.Compilation.AppSettingsExpressionBuilder.EvaluateExpression%2A> must be implemented within an expression builder for an expression to be evaluated in a page that is not compiled. The <xref:System.Web.Compilation.AppSettingsExpressionBuilder> class supports evaluation of an application setting in a page that is not compiled, so it always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,251 @@
+<Type Name="UserPreferenceCategory" FullName="Microsoft.Win32.UserPreferenceCategory">
+  <TypeSignature Language="C#" Value="public enum UserPreferenceCategory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserPreferenceCategory extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceCategory" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers that represent categories of user preferences.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Win32.UserPreferenceCategory> provides identifiers that can represent a category of user preferences.  
+  
+ Some of the user preferences in these categories can be changed using the Windows Control Panel, the Computer Management console, or programatically using an appropriate API.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accessibility">
+      <MemberSignature Language="C#" Value="Accessibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Accessibility = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Accessibility" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences associated with accessibility features of the system for users with disabilities.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="Color" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Color = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Color" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences associated with system colors. This category includes such as the default color of windows or menus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Desktop">
+      <MemberSignature Language="C#" Value="Desktop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Desktop = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Desktop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences associated with the system desktop. This category includes the background image or background image layout of the desktop.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="General">
+      <MemberSignature Language="C#" Value="General" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory General = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.General" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences that are not associated with any other category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Icon">
+      <MemberSignature Language="C#" Value="Icon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Icon = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Icon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences for icon settings, including icon height and spacing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Keyboard">
+      <MemberSignature Language="C#" Value="Keyboard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Keyboard = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Keyboard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences for keyboard settings, such as the key down repeat rate and delay.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="Locale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Locale = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Locale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates changes in user preferences for regional settings, such as the character encoding and culture strings.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Menu">
+      <MemberSignature Language="C#" Value="Menu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Menu = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Menu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences for menu settings, such as menu delays and text alignment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mouse">
+      <MemberSignature Language="C#" Value="Mouse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Mouse = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Mouse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences for mouse settings, such as double-click time and mouse sensitivity.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Policy">
+      <MemberSignature Language="C#" Value="Policy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Policy = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Policy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences for policy settings, such as user rights and access levels.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Power">
+      <MemberSignature Language="C#" Value="Power" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Power = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Power" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the user preferences for system power settings. This category includes power feature settings, such as the idle time before the system automatically enters low power mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Screensaver">
+      <MemberSignature Language="C#" Value="Screensaver" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Screensaver = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Screensaver" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences associated with the screensaver.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualStyle">
+      <MemberSignature Language="C#" Value="VisualStyle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory VisualStyle = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.VisualStyle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences associated with visual styles, such as enabling or disabling visual styles and switching from one visual style to another.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="Window" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.UserPreferenceCategory Window = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.UserPreferenceCategory.Window" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.UserPreferenceCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates user preferences associated with the dimensions and characteristics of windows on the system.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

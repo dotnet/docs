@@ -1,0 +1,344 @@
+<Type Name="HotSpotCollection" FullName="System.Web.UI.WebControls.HotSpotCollection">
+  <TypeSignature Language="C#" Value="public sealed class HotSpotCollection : System.Web.UI.StateManagedCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HotSpotCollection extends System.Web.UI.StateManagedCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HotSpotCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.StateManagedCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.HotSpotCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.HotSpot" /> objects inside an <see cref="T:System.Web.UI.WebControls.ImageMap" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HotSpotCollection> class represents a collection that enables an <xref:System.Web.UI.WebControls.ImageMap> control to maintain a list of the <xref:System.Web.UI.WebControls.HotSpot> objects it contains.  
+  
+ Use the <xref:System.Web.UI.WebControls.HotSpotCollection.Add%2A> method to add a specified <xref:System.Web.UI.WebControls.HotSpot> object to the collection at the end of an ordinal index array. Use the <xref:System.Web.UI.WebControls.HotSpotCollection.Insert%2A> method to add a <xref:System.Web.UI.WebControls.HotSpot> object to the collection at a specified index location. Use the <xref:System.Web.UI.WebControls.HotSpotCollection.Item%2A> indexer to directly access a <xref:System.Web.UI.WebControls.HotSpot> object in the collection at a specified index, using simple array notation.  
+  
+ Use the <xref:System.Web.UI.WebControls.HotSpotCollection.Remove%2A> method to remove a <xref:System.Web.UI.WebControls.HotSpot> object from the end of the collection. Use the <xref:System.Web.UI.WebControls.HotSpotCollection.RemoveAt%2A> method to remove a <xref:System.Web.UI.WebControls.HotSpot> object from a specified index location.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically create an <xref:System.Web.UI.WebControls.ImageMap> control and add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. The <xref:System.Web.UI.WebControls.ImageMap.HotSpots%2A> property is used to access the <xref:System.Web.UI.WebControls.HotSpotCollection> collection for the <xref:System.Web.UI.WebControls.ImageMap> control and add the <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HotSpotCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, this constructor initializes a new instance of the <xref:System.Web.UI.WebControls.HotSpotCollection> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CircleHotSpot.%23ctor%2A> constructor to programmatically create two <xref:System.Web.UI.WebControls.CircleHotSpot> objects and add them to an <xref:System.Web.UI.WebControls.ImageMap> control. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.HotSpot spot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.HotSpot spot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.Add(System.Web.UI.WebControls.HotSpot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spot" Type="System.Web.UI.WebControls.HotSpot" />
+      </Parameters>
+      <Docs>
+        <param name="spot">The <see cref="T:System.Web.UI.WebControls.HotSpot" /> object to append to the collection.</param>
+        <summary>Appends a specified <see cref="T:System.Web.UI.WebControls.HotSpot" /> object to the end of the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> collection.</summary>
+        <returns>The index at which the object was added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HotSpotCollection.Add%2A> method adds the specified <xref:System.Web.UI.WebControls.HotSpot> object to the end of the collection. To add a <xref:System.Web.UI.WebControls.HotSpot> object to the collection at a specific index location, use the <xref:System.Web.UI.WebControls.HotSpotCollection.Insert%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically create an <xref:System.Web.UI.WebControls.ImageMap> control and add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. The <xref:System.Web.UI.WebControls.ImageMap.HotSpots%2A> property is used to access the <xref:System.Web.UI.WebControls.HotSpotCollection> collection for the <xref:System.Web.UI.WebControls.ImageMap> control and add the <xref:System.Web.UI.WebControls.CircleHotSpot> objects to it. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMap.Cstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.Cstr/CS/imagemap.cstrcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMap.Cstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.Cstr/VB/imagemap.cstrvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateKnownType">
+      <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.CreateKnownType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownTypes">
+      <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.GetKnownTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.HotSpot spot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.HotSpot spot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.Insert(System.Int32,System.Web.UI.WebControls.HotSpot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="spot" Type="System.Web.UI.WebControls.HotSpot" />
+      </Parameters>
+      <Docs>
+        <param name="index">The array index at which to add the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object.</param>
+        <param name="spot">The <see cref="T:System.Web.UI.WebControls.HotSpot" /> object to add to the collection.</param>
+        <summary>Inserts a specified <see cref="T:System.Web.UI.WebControls.HotSpot" /> object into the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> collection at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HotSpotCollection.Insert%2A> method adds the specified <xref:System.Web.UI.WebControls.HotSpot> object to the collection at the specified index location. To append a <xref:System.Web.UI.WebControls.HotSpot> object to the end of the collection, use the <xref:System.Web.UI.WebControls.HotSpotCollection.Add%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to an <xref:System.Web.UI.WebControls.ImageMap> control. The <xref:System.Web.UI.WebControls.ImageMap.HotSpots%2A> property is used to access the <xref:System.Web.UI.WebControls.HotSpotCollection> collection. The <xref:System.Web.UI.WebControls.HotSpotCollection.Add%2A> method adds `Circle2` to the collection. The <xref:System.Web.UI.WebControls.HotSpotCollection.Insert%2A> method adds `Circle1` to the collection at the first element, in front of `Circle2`. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HotSpotCollection.Insert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HotSpotCollection.Insert/CS/hotspotcollection.insertcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HotSpotCollection.Insert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HotSpotCollection.Insert/VB/hotspotcollection.insertvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.HotSpot this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.HotSpot Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpotCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HotSpot</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The ordinal index value that specifies the location of the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object in the collection.</param>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object at the specified index in the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> collection.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> object at the specified index in the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this indexer to access a <xref:System.Web.UI.WebControls.HotSpot> object in the collection at the specified index, using array notation. The indexer allows you to modify or replace a <xref:System.Web.UI.WebControls.HotSpot> object in the collection directly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HotSpotCollection.Item%2A> property to directly access the <xref:System.Web.UI.WebControls.HotSpot> objects contained in the <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.HotSpotCollection> collection and display the value of each object's <xref:System.Web.UI.WebControls.HotSpot.AlternateText%2A> property in a label on the page. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HotSpotCollection.Item#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HotSpotCollection.Item/CS/hotspotcollection.itemcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HotSpotCollection.Item#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HotSpotCollection.Item/VB/hotspotcollection.itemvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidate">
+      <MemberSignature Language="C#" Value="protected override void OnValidate (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.OnValidate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.HotSpot spot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.HotSpot spot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.Remove(System.Web.UI.WebControls.HotSpot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spot" Type="System.Web.UI.WebControls.HotSpot" />
+      </Parameters>
+      <Docs>
+        <param name="spot">The <see cref="T:System.Web.UI.WebControls.HotSpot" /> object to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.HotSpot" /> object from the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HotSpotCollection.Remove%2A> method removes the specified <xref:System.Web.UI.WebControls.HotSpot> object from the collection. To remove a <xref:System.Web.UI.WebControls.HotSpot> object from the collection at a specified index location, use the <xref:System.Web.UI.WebControls.HotSpotCollection.RemoveAt%2A> method.  
+  
+ To add new <xref:System.Web.UI.WebControls.HotSpot> objects to the collection, use the <xref:System.Web.UI.WebControls.HotSpotCollection.Add%2A> or the <xref:System.Web.UI.WebControls.HotSpotCollection.Insert%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to an <xref:System.Web.UI.WebControls.ImageMap> control. After the two <xref:System.Web.UI.WebControls.CircleHotSpot> objects are added to the <xref:System.Web.UI.WebControls.HotSpotCollection> collection, the <xref:System.Web.UI.WebControls.HotSpotCollection.Remove%2A> method is used to delete `Circle1` from the collection. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HotSpotCollection.Remove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HotSpotCollection.Remove/CS/hotspotcollection.removecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HotSpotCollection.Remove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HotSpotCollection.Remove/VB/hotspotcollection.removevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The array index from which to remove the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object.</param>
+        <summary>Removes the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object at the specified index location from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HotSpotCollection.RemoveAt%2A> method removes the <xref:System.Web.UI.WebControls.HotSpot> object at the specified index location from the collection. To remove a specific <xref:System.Web.UI.WebControls.HotSpot> object from the collection by name, use the <xref:System.Web.UI.WebControls.HotSpotCollection.Remove%2A> method.  
+  
+ To add new <xref:System.Web.UI.WebControls.HotSpot> objects to the collection, use the <xref:System.Web.UI.WebControls.HotSpotCollection.Add%2A> or the <xref:System.Web.UI.WebControls.HotSpotCollection.Insert%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add two <xref:System.Web.UI.WebControls.CircleHotSpot> objects to an <xref:System.Web.UI.WebControls.ImageMap> control. After the two <xref:System.Web.UI.WebControls.CircleHotSpot> objects are added to the <xref:System.Web.UI.WebControls.HotSpotCollection> collection, the <xref:System.Web.UI.WebControls.HotSpotCollection.RemoveAt%2A> method is used to delete the object located at the first index in the collection. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HotSpotCollection.RemoveAt#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HotSpotCollection.RemoveAt/CS/hotspotcollection.removeatcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HotSpotCollection.RemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HotSpotCollection.RemoveAt/VB/hotspotcollection.removeatvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDirtyObject">
+      <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.SetDirtyObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

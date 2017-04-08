@@ -1,0 +1,67 @@
+<Type Name="DataGridViewRowEventHandler" FullName="System.Windows.Forms.DataGridViewRowEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewRowEventHandler(object sender, DataGridViewRowEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewRowEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewRowEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewRowEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle row-related events of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewRowEventHandler> handles the following <xref:System.Windows.Forms.DataGridView> events:  
+  
+-   <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded>  
+  
+-   <xref:System.Windows.Forms.DataGridView.NewRowNeeded>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowDefaultCellStyleChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowErrorTextChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowHeaderCellChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowHeightChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowMinimumHeightChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowUnshared>  
+  
+-   <xref:System.Windows.Forms.DataGridView.UserAddedRow>  
+  
+-   <xref:System.Windows.Forms.DataGridView.UserDeletedRow>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowContextMenuStripChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowDividerHeightChanged>  
+  
+ When you create a <xref:System.Windows.Forms.DataGridViewRowEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Windows.Forms.DataGridViewRowEventHandler> delegate to handle the <xref:System.Windows.Forms.DataGridView.NewRowNeeded> event. This code example is part of a larger example provided in the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView._Virtual#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CPP/virtual.cpp#20)]
+ [!code-csharp[System.Windows.Forms.DataGridView._Virtual#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CS/virtual.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridView._Virtual#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/VB/virtual.vb#20)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

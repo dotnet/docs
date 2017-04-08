@@ -1,0 +1,107 @@
+<Type Name="DataSourceOperation" FullName="System.Web.UI.DataSourceOperation">
+  <TypeSignature Language="C#" Value="public enum DataSourceOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSourceOperation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceOperation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a data operation performed by a data source control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceOperation> enumeration represents the actions that a data source control can perform on its underlying data. Data source controls such as <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.ObjectDataSource> use these enumeration values to track the type of operation being performed.  
+  
+ The five major data source operations are represented by the <xref:System.Web.UI.DataSourceOperation> enumeration. The Select and SelectCount values indicate operations that retrieve data from an underlying data source, while the Delete, Insert, and Update values indicate operations that modify data.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Delete = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation deletes records from a data source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Insert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation inserts one or more records into a data source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="Select" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Select = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Select" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation retrieves records from a data source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectCount">
+      <MemberSignature Language="C#" Value="SelectCount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation SelectCount = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.SelectCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation retrieves the total number of records for a query from the data source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceOperation Update = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceOperation.Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation updates records in a data source.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,60 @@
+<Type Name="ICallbackContainer" FullName="System.Web.UI.WebControls.ICallbackContainer">
+  <TypeSignature Language="C#" Value="public interface ICallbackContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICallbackContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ICallbackContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a method that enables controls to obtain a callback script.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that implement the <xref:System.Web.UI.WebControls.ICallbackContainer> interface provide controls with a script that will initiate a callback to the server. A callback differs from the more common postback in that the page processing for the callback recreates the page without changing state information held by the page. For more information on creating callbacks, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+  
+ Classes that implement the <xref:System.Web.UI.WebControls.ICallbackContainer> interface should also implement the <xref:System.Web.UI.ICallbackEventHandler> interface to handle the events raised by controls.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCallbackScript">
+      <MemberSignature Language="C#" Value="public string GetCallbackScript (System.Web.UI.WebControls.IButtonControl buttonControl, string argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCallbackScript(class System.Web.UI.WebControls.IButtonControl buttonControl, string argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript(System.Web.UI.WebControls.IButtonControl,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buttonControl" Type="System.Web.UI.WebControls.IButtonControl" />
+        <Parameter Name="argument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="buttonControl">The control initiating the callback request.</param>
+        <param name="argument">The arguments used to build the callback script.</param>
+        <summary>Creates a script for initiating a client callback to a Web server.</summary>
+        <returns>A script that, when run on a client, will initiate a callback to the Web server.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations of the <xref:System.Web.UI.WebControls.ICallbackContainer.GetCallbackScript%2A> method should return a script that, when run on the client, will initiate a callback to the Web server.  
+  
+ The `argument` parameter is passed to the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method that handles the callback.  
+  
+ For more information on creating callbacks, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

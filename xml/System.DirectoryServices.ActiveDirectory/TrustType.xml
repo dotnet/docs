@@ -1,0 +1,130 @@
+<Type Name="TrustType" FullName="System.DirectoryServices.ActiveDirectory.TrustType">
+  <TypeSignature Language="C#" Value="public enum TrustType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrustType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustType" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the type of a <see cref="T:System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CrossLink">
+      <MemberSignature Language="C#" Value="CrossLink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType CrossLink = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.CrossLink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trust relationship is a shortcut between two domains that exists to optimize the authentication processing between two domains that are in separate domain trees.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="External">
+      <MemberSignature Language="C#" Value="External" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType External = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.External" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trust relationship is with a domain outside of the current forest.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forest">
+      <MemberSignature Language="C#" Value="Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType Forest = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trust relationship is between two forest root domains in separate Windows Server 2003 forests.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Kerberos">
+      <MemberSignature Language="C#" Value="Kerberos" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType Kerberos = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.Kerberos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trusted domain is an MIT Kerberos realm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentChild">
+      <MemberSignature Language="C#" Value="ParentChild" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType ParentChild = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.ParentChild" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trust relationship is between a parent and a child domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TreeRoot">
+      <MemberSignature Language="C#" Value="TreeRoot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType TreeRoot = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.TreeRoot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One of the domains in the trust relationship is a tree root.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustType Unknown = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trust is a non-specific type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

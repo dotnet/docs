@@ -1,0 +1,269 @@
+<Type Name="ObfuscationAttribute" FullName="System.Reflection.ObfuscationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ObfuscationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObfuscationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.ObfuscationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Event | System.AttributeTargets.Interface | System.AttributeTargets.Parameter | System.AttributeTargets.Delegate, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Instructs obfuscation tools to take the specified actions for an assembly, type, or member.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Reflection.ObfuscationAttribute> and <xref:System.Reflection.ObfuscateAssemblyAttribute> attributes allow assembly authors to annotate their binaries so that obfuscation tools can process them correctly with minimal external configuration.  
+  
+> [!IMPORTANT]
+>  Applying this attribute does not automatically obfuscate the code entity to which you apply it. Applying the attribute is an alternative to creating a configuration file for the obfuscation tool. That is, it merely provides instructions for an obfuscation tool. Microsoft recommends that vendors of obfuscation tools follow the semantics described here. However, there is no guarantee that a particular tool follows Microsoft recommendations.  
+  
+ The <xref:System.Reflection.ObfuscationAttribute> attribute has a string <xref:System.Reflection.ObfuscationAttribute.Feature%2A> property. Obfuscation tools can map the string values of this property to features they implement, preferably by using an XML configuration file that users can access. The <xref:System.Reflection.ObfuscationAttribute> defines two feature strings, "default" and "all". The string "default" should map to the default obfuscation features of a tool, and "all" should map to the complete set of obfuscation features supported by a tool. The default value of the <xref:System.Reflection.ObfuscationAttribute.Feature%2A> property is "all", enabling the complete set of obfuscation features.  
+  
+ When applied to an assembly, <xref:System.Reflection.ObfuscationAttribute> also applies to all types within the assembly. If the <xref:System.Reflection.ObfuscationAttribute.ApplyToMembers%2A> property is not specified, or is set to `true`, the attribute applies to all members as well. <xref:System.Reflection.ObfuscationAttribute> does not specify whether an assembly is public or private. To specify whether an assembly is public or private, use the <xref:System.Reflection.ObfuscateAssemblyAttribute> attribute.  
+  
+ When applied to classes and structures, <xref:System.Reflection.ObfuscationAttribute> also applies to all members of the type if the <xref:System.Reflection.ObfuscationAttribute.ApplyToMembers%2A> property is not specified, or is set to `true`.  
+  
+ When applied to methods, parameters, fields, and properties, the attribute affects only the entity to which it is applied.  
+  
+   
+  
+## Examples  
+ The following code example shows a public assembly with two types: `Type1` and `Type2`. The assembly is marked for obfuscation with the <xref:System.Reflection.ObfuscateAssemblyAttribute>, which marks the assembly to be treated as public (that is, the <xref:System.Reflection.ObfuscateAssemblyAttribute.AssemblyIsPrivate%2A> property is `false`).  
+  
+ `Type1` is marked for obfuscation because the assembly is marked for obfuscation. One member of `Type1` is excluded from obfuscation, using the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property.  
+  
+ `Type2` is excluded from obfuscation, but its members are marked for obfuscation because the <xref:System.Reflection.ObfuscationAttribute.ApplyToMembers%2A> property is `false`.  
+  
+ The `MethodA` method of `Type2` is marked with the value `"default"` for the <xref:System.Reflection.ObfuscationAttribute.Feature%2A> property. It is necessary to specify `false` for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property to avoid excluding `MethodA` from obfuscation, because the default for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property is `true`. The obfuscation tool should not strip the attribute after obfuscation because the <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is `false`. All the other attributes in this code example are stripped after obfuscation, because the <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is not specified, and therefore defaults to `true`.  
+  
+ The code example includes code to display the attributes and their properties. You can also examine the attributes by opening the DLL with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
+  
+ [!code-csharp[ObfuscationAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObfuscationAttribute/cs/source.cs#1)]
+ [!code-vb[ObfuscationAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObfuscationAttribute/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObfuscationAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.ObfuscationAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.ObfuscationAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Reflection.ObfuscationAttribute> does not specify whether an assembly is public or private. To specify whether an assembly is public or private, use <xref:System.Reflection.ObfuscateAssemblyAttribute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyToMembers">
+      <MemberSignature Language="C#" Value="public bool ApplyToMembers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ApplyToMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.ApplyToMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value indicating whether the attribute of a type is to apply to the members of the type.</summary>
+        <value>
+          <see langword="true" /> if the attribute is to apply to the members of the type; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is ignored when the attribute is applied to a member.  
+  
+> [!IMPORTANT]
+>  Applying this attribute does not automatically obfuscate the code entity to which you apply it. Applying the attribute is an alternative to creating a configuration file for the obfuscation tool. That is, it merely provides instructions for an obfuscation tool. Microsoft recommends that vendors of obfuscation tools follow the semantics described here. However, there is no guarantee that a particular tool follows Microsoft recommendations.  
+  
+   
+  
+## Examples  
+ The following code example shows a type that is excluded from obfuscation, but the exclusion does not apply to its members because the <xref:System.Reflection.ObfuscationAttribute.ApplyToMembers%2A> property is `false`.  
+  
+ This code is part of a larger example that can be compiled and executed. See the <xref:System.Reflection.ObfuscationAttribute> class.  
+  
+ [!code-csharp[ObfuscationAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR/ObfuscationAttribute/cs/source.cs#2)]
+ [!code-vb[ObfuscationAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObfuscationAttribute/vb/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exclude">
+      <MemberSignature Language="C#" Value="public bool Exclude { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Exclude" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.Exclude" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value indicating whether the obfuscation tool should exclude the type or member from obfuscation.</summary>
+        <value>
+          <see langword="true" /> if the type or member to which this attribute is applied should be excluded from obfuscation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Applying this attribute does not automatically obfuscate the code entity to which you apply it. Applying the attribute is an alternative to creating a configuration file for the obfuscation tool. That is, it merely provides instructions for an obfuscation tool. Microsoft recommends that vendors of obfuscation tools follow the semantics described here. However, there is no guarantee that a particular tool follows Microsoft recommendations.  
+  
+   
+  
+## Examples  
+ The following code example shows a type that is marked to be excluded from obfuscation. It is not necessary to specify the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property, because it defaults to `true`, but specifying it explicitly makes your intent clear. The <xref:System.Reflection.ObfuscationAttribute.ApplyToMembers%2A> is set to `false`, so that the exclusion from obfuscation does not apply to the members of the class. That is, the class name is visible but the members are obfuscated.  
+  
+ The `MethodA` method is marked with the value `"default"` for the <xref:System.Reflection.ObfuscationAttribute.Feature%2A> property. It is necessary to specify `false` for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property in order to avoid excluding `MethodA` from obfuscation, because the default for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property is `true`. The <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is `false` so that the obfuscation tool will not strip the attribute after obfuscation.  
+  
+ This code is part of a larger example that can be compiled and executed. See the <xref:System.Reflection.ObfuscationAttribute> class.  
+  
+ [!code-csharp[ObfuscationAttribute#4](~/samples/snippets/csharp/VS_Snippets_CLR/ObfuscationAttribute/cs/source.cs#4)]
+ [!code-vb[ObfuscationAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObfuscationAttribute/vb/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Feature">
+      <MemberSignature Language="C#" Value="public string Feature { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Feature" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.Feature" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string value that is recognized by the obfuscation tool, and which specifies processing options.</summary>
+        <value>A string value that is recognized by the obfuscation tool, and which specifies processing options. The default is "all".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value passed to this property depends on the obfuscation tool used. It is recommended that vendors of obfuscation tools support at least "default" and "all". Vendors can use these settings in conjunction with the XML configuration file.  
+  
+> [!IMPORTANT]
+>  Applying this attribute does not automatically obfuscate the code entity to which you apply it. Applying the attribute is an alternative to creating a configuration file for the obfuscation tool. That is, it merely provides instructions for an obfuscation tool. Microsoft recommends that vendors of obfuscation tools follow the semantics described here. However, there is no guarantee that a particular tool follows Microsoft recommendations.  
+  
+   
+  
+## Examples  
+ The following code example shows a method that is marked with the value `"default"` for the <xref:System.Reflection.ObfuscationAttribute.Feature%2A> property. It is necessary to specify `false` for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property to avoid excluding `MethodA` from obfuscation, because the default for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property is `true`. The <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is `false` so that the obfuscation tool will not strip the attribute after obfuscation.  
+  
+ This code is part of a larger example that can be compiled and executed. See the <xref:System.Reflection.ObfuscationAttribute> class.  
+  
+ [!code-csharp[ObfuscationAttribute#3](~/samples/snippets/csharp/VS_Snippets_CLR/ObfuscationAttribute/cs/source.cs#3)]
+ [!code-vb[ObfuscationAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObfuscationAttribute/vb/source.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StripAfterObfuscation">
+      <MemberSignature Language="C#" Value="public bool StripAfterObfuscation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StripAfterObfuscation" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.ObfuscationAttribute.StripAfterObfuscation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value indicating whether the obfuscation tool should remove this attribute after processing.</summary>
+        <value>
+          <see langword="true" /> if an obfuscation tool should remove the attribute after processing; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attributes should not be stripped if your library will be included as part of another application, and obfuscated as part of that application.  
+  
+> [!IMPORTANT]
+>  Applying this attribute does not automatically obfuscate the code entity to which you apply it. Applying the attribute is an alternative to creating a configuration file for the obfuscation tool. That is, it merely provides instructions for an obfuscation tool. Microsoft recommends that vendors of obfuscation tools follow the semantics described here. However, there is no guarantee that a particular tool follows Microsoft recommendations.  
+  
+   
+  
+## Examples  
+ The following code example shows an <xref:System.Reflection.ObfuscationAttribute> whose <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is `false` so that the obfuscation tool will not strip the attribute after obfuscation. It is necessary to specify `false` for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property to avoid excluding `MethodA` from obfuscation, because the default for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property is `true`.  
+  
+ This code is part of a larger example that can be compiled and executed. See the <xref:System.Reflection.ObfuscationAttribute> class.  
+  
+ [!code-csharp[ObfuscationAttribute#4](~/samples/snippets/csharp/VS_Snippets_CLR/ObfuscationAttribute/cs/source.cs#4)]
+ [!code-vb[ObfuscationAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObfuscationAttribute/vb/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

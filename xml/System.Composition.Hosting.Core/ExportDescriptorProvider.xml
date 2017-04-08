@@ -1,0 +1,109 @@
+<Type Name="ExportDescriptorProvider" FullName="System.Composition.Hosting.Core.ExportDescriptorProvider">
+  <TypeSignature Language="C#" Value="public abstract class ExportDescriptorProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExportDescriptorProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptorProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Hosting</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExportDescriptorProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExportDescriptors">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetExportDescriptors (System.Composition.Hosting.Core.CompositionContract contract, System.Composition.Hosting.Core.DependencyAccessor descriptorAccessor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; GetExportDescriptors(class System.Composition.Hosting.Core.CompositionContract contract, class System.Composition.Hosting.Core.DependencyAccessor descriptorAccessor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorProvider.GetExportDescriptors(System.Composition.Hosting.Core.CompositionContract,System.Composition.Hosting.Core.DependencyAccessor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="descriptorAccessor" Type="System.Composition.Hosting.Core.DependencyAccessor" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <param name="descriptorAccessor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoDependencies">
+      <MemberSignature Language="C#" Value="protected static readonly Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt; NoDependencies;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Func`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt;&gt; NoDependencies" />
+      <MemberSignature Language="DocId" Value="F:System.Composition.Hosting.Core.ExportDescriptorProvider.NoDependencies" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoExportDescriptors">
+      <MemberSignature Language="C#" Value="protected static readonly System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; NoExportDescriptors;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; NoExportDescriptors" />
+      <MemberSignature Language="DocId" Value="F:System.Composition.Hosting.Core.ExportDescriptorProvider.NoExportDescriptors" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMetadata">
+      <MemberSignature Language="C#" Value="protected static readonly System.Collections.Generic.IDictionary&lt;string,object&gt; NoMetadata;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Collections.Generic.IDictionary`2&lt;string, object&gt; NoMetadata" />
+      <MemberSignature Language="DocId" Value="F:System.Composition.Hosting.Core.ExportDescriptorProvider.NoMetadata" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

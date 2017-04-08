@@ -1,0 +1,14 @@
+﻿<Window x:Class="ProcessTasksAsTheyFinish.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Process Tasks As They Finish" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="335*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold"  Height="40" FontSize="14" Grid.ColumnSpan="2" Click="startButton_Click" />
+        <Button x:Name="cancelButton" Content="Cancel" Margin="93.551,10,41,0" VerticalAlignment="Top" RenderTransformOrigin="0.187,-0.3" FontWeight="Bold"  Height="40" FontSize="14" Grid.Column="1" Click="cancelButton_Click" />
+        <TextBox x:Name="resultsTextBox" HorizontalAlignment="Left" Height="247" TextWrapping="Wrap" VerticalAlignment="Bottom" SpellCheck.IsEnabled="True" FontFamily="Lucida Console" Width="509" VerticalScrollBarVisibility="Visible" Background="#FFF9EEEC" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

@@ -1,7 +1,7 @@
 ---
 title: "Application Compatibility in the .NET Framework 4.7 | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/07/2017"
 ms.prod: ".net-framework-4.6"
 ms.reviewer: ""
 ms.suite: ""
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "application compatibility, .NET Framework"
   - "application compatibility, .NET Framework 4.7"
 ms.assetid: 1d29b9b3-effd-41b9-b0a7-ef004f535ab6
-caps.latest.revision: 2
+caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -44,13 +44,12 @@ In both topics, we have classified individual items by their expected impact, as
  This is a change that has no noticeable effect on the app's developer or user. The app should not require modification because of this change.  
   
 ## See Also  
- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)   
- [Application Compatibility in 4.5](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md)      
- [Application Compatibility in 4.5.1](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md)   
- [Application Compatibility in 4.5.2](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-2.md)   
- [Application Compatibility in 4.6](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6.md)   
- [Application Compatibility in 4.6.1](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)   
- [Application Compatibility in 4.6.2](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-2.md)   
- [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)   
- [.NET 4.6.2 List of Changes on GitHub](http://go.microsoft.com/fwlink/?LinkId=708778)
+ [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)   
+ [Application Compatibility in 4.5](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md)      
+ [Application Compatibility in 4.5.1](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md)   
+ [Application Compatibility in 4.5.2](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-2.md)   
+ [Application Compatibility in 4.6](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6.md)   
+ [Application Compatibility in 4.6.1](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)   
+ [Application Compatibility in 4.6.2](~/docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-2.md)   
+ [Application Compatibility](~/docs/framework/migration-guide/application-compatibility.md)    
    

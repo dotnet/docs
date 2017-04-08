@@ -1,7 +1,7 @@
 ---
 title: "Adjusting the Size and Scale of Windows Forms | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/07/2017"
 ms.prod: ".net-framework-4.6"
 ms.reviewer: ""
 ms.suite: ""
@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "Windows Forms, adjusting size"
   - "Windows Forms, changing scale"
 ms.assetid: a014d2b3-3273-4521-95e1-00171033bf58
-caps.latest.revision: 8
+caps.latest.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -25,13 +25,13 @@ manager: "wpickett"
 This topic provides links to information about resizing Windows Forms.  
   
 ## In This Section  
- [How to: Resize Windows Forms](../../../docs/framework/winforms/how-to-resize-windows-forms.md)  
+ [How to: Resize Windows Forms](~/docs/framework/winforms/how-to-resize-windows-forms.md)  
  Provides instructions for specifying the size of Windows Forms.  
   
- [Automatic Scaling in Windows Forms](../../../docs/framework/winforms/automatic-scaling-in-windows-forms.md)  
+ [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md)  
  Discusses how automatic scaling enables a form and its controls to be displayed appropriately between machines.  
   
-[High DPI Support in Windows Forms](../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)
+[High DPI Support in Windows Forms](../../../docs/framework/winforms/high-dpi-support.md)    
 Discusses Windows Forms' support for High DPI and dynamic scaling. 
   
 ## Reference  
@@ -45,5 +45,5 @@ Discusses Windows Forms' support for High DPI and dynamic scaling.
  Describes this class and has links to all of its members.  
   
 ## Related Sections  
- [Changing the Appearance of Windows Forms](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
+ [Changing the Appearance of Windows Forms](~/docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
  Provides links to topics describing other ways to change the appearance of Windows Forms.

@@ -1,7 +1,7 @@
 ---
 title: "Retargeting Changes in the .NET Framework 4.7 | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/07/2017"
 ms.prod: ".net-framework-4.6"
 ms.reviewer: ""
 ms.suite: ""
@@ -12,150 +12,56 @@ helpviewer_keywords:
   - "retargeting changes,.NET Framework 4.7"
   - "application compatibility"
 ms.assetid: d98bf1e3-0017-4933-8e7b-191ac3542fcc
-caps.latest.revision: 1
+caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Retargeting Changes in the .NET Framework 4.7
-## Welcome to CAPS Markdown Editor!
 
-CAPS is using GitHub Flavored Markdown(GFM) which is one of the most popular Markdown flavor. Lets' learn how to make your customized document with below rules.  
+In rare cases, retargeting changes may affect apps that are recompiled to target the .NET Framework 4.7. They do not affect binaries that target a previous version of the .NET Framework but are running under version 4.7. The .NET Framework 4.7 includes retargeting changes in the following areas:  
 
-*View the [Markdown Basics](https://help.github.com/articles/markdown-basics/)*
-*View the [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)*
-*View the [Online sample](http://github.github.com/github-flavored-markdown/sample_content.html).*
+-   [Core](#Core)  
+-   [ASP.NET](#asp) 
+-   [Windows Communication Foundation (WCF)](#WCF)  
+-   [Windows Presentation Foundation (WPF)](#WPF)
+ 
+ The Scope column in the following tables specifies the significance of each change:  
   
-Quick Guidance
----
-When you are authoring your Markdown content in CAPS, you could get help from different ways:
-- Use `Alt + F1` in IE or `F1` in Chrome to open `Command Palette`
-- Use `Ctrl + space` at any place to open insert.
-- Use authoring tool bar on the top of the editor to help create your content
-
-Format your content
----
-- **Paragraph**
-  Paragraphs in Markdown are just one or more lines of consecutive text followed by one or more blank lines.
+-   Major. A significant change that affects a large number of apps or that requires substantial modification of code. Note that none of the retargeting changes fall into this category.  
   
-  ```
-  On July 2, an alien ship entered Earth's orbit and deployed several dozen saucer-shaped "destroyer" spacecraft, each 15 miles (24 km) wide.
+-   Minor. A change that either affects a small number of apps or that requires minor modification of code.  
   
-  On July 3, the Black Knights, a squadron of Marine Corps F/A-18 Hornets, participated 
-  ```
+-   Edge. A change that affects apps under very specific scenarios that are not common.  
   
-- **Headings**  
-  You can either you header dropdown list provided in the authoring toolbar, or manually add '---' or '===' in the     next line under your section title. You can also create a heading by adding one or more `#` symbols before your     heading text. The number of `#` you use will determine the size of the heading.
-
-  ```
-  ## The second largest heading (an <h2> tag)
-  …
-  ###### The 6th largest heading (an <h6> tag)
-  ```
-
-- **Block quotes**
-  You can indicate block quotes with a `>`.
-  ```
-  In the words of Abraham Lincoln:
+-   Transparent. A change that has no noticeable effect on the app's developer or user. The app should not require modification because of this change.  
   
-  > Pardon my French
-  > Second line of the quote
-  ```
+## <a name="Core" /> Core
 
-- **Styling text**
-  You can make your text **Bold** or *italic*
-  ```
-  **This text will be bold**
-  *This text will be italic*  
-  ```
-  You can also use authoring toolbar to achieve this
+| Feature | Change | Impact | Scope |
+|----|----|----|----|
+|<xref:System.Security.Cryptography.CspParameters.ParentWindowHandle%2A> | Applications that target the .NET Framework 4.6.2 and earlier versions expect the value assigned to this property to be an <xref:System.IntPtr> to the specified location in memory where the HWND value resides.<br/></br>Starting with apps that target the .NET Framework 4.7, a Windows Forms application can set the value of this property with code like the following: <br/><br/>` cspParameters.ParentWindowHandle = form.Handle; ` | Apps that find this change of behavior inconvenient can opt out of the new behavior. Similarly, apps that target earlier versions of the .NET Framework but are running on the .NET Framework 4.7 can opt into the new behavior. For more information, see [Mitigation: CspParameters.ParentWindowHandle Expects an HWND](../../../docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md). | Minor |
+| Serialization with the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> | Starting with apps that target the .NET Framework 4.7, the serialization of control characters with the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is now compatible with ECMAScript V6 and V8 | This change conforms to the ECMAScript standard and should have little impact. If it does, a compatibility switch is available to restore the previous behavior. For more information, see [Mitigation: Serialization of Control Characters with the DataContractJsonSerializer](../../../docs/framework/migration-guide/mitigation-serialization-control-characters.md)  | Edge |
 
-- **Lists**
-  You can add an unordered list by preceding list items with `*` or `-`
-  ```
-  * Item
-  * Item
-  * Item
-  
-  - Item
-  - Item
-  - Item  
-  ```
-  You can add ordered list by preceding list items with a number
-  ```
-  1. Item 1
-  2. Item 2
-  3. Item 3  
-  ```
-  You can create nested lists by indenting list items by two spaces.
-  ```
-  1. Item 1
-    1. A corollary to the above item.
-    2. Yet another point to consider.
-  2. Item 2
-    * A corollary that does not need to be ordered.
-      * This is indented four spaces, because it's two spaces further than the item above.
-      * You might want to consider making a new list.
-  3. Item 3 
-  ```
-  You can also use authoring toolbar to achieve this
-  
-- **Code formatting**
-  You can use triple ticks (```) to format text as its own distinct block.
-  Check out this neat program I wrote:  
-  ~~~~
-  ```
-  x = 0
-  x = 2 + 2
-  what is x
-  ```
-  ~~~~
+## <a name="asp" /> ASP.NET
 
-Add Reference to your content
----
-- **Insert Links**
-  You can create an inline link by wrapping link text in brackets `[Link Label]`, and then wrapping the link in    parentheses `(http://URL)`. 
-  [Bing.com](http://www.bing.com)
-  
-  You can also create a link to an existing topic in CAPS with the authoring toolbar
-  
-- **Insert Image**
-  You can reference a online image from external resource by using `![Image Label]`, and then wrapping the image resource url in parentheses `(http://ImageURL)`
-  
-  You can also insert an image from CAPS with the authoring toolbar
+| Feature  |Change  |Impact | Scope | 
+---------|---------|---------|-----|
+Throttle concurrent requests per session | In the .NET Framework 4.6.2 and earlier, ASP.NET executes requests with the same <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> sequentially, and ASP.NET always issues the <xref:System.Web.SessionState.HttpSessionState.SessionID%2A> through a cookie by default. If a page takes long time to load, pressing <kbd>F5</kbd> of the browser significantly degrades server performance.<br/><br/>Starting with the .NET Framework 4.7, a counter tracks the queued requests and terminates the requests when they exceed a specified limit. The default value is 50. If the the limit is reached, a warning is logged in the event log, and an HTTP 500 response may be recorded in the IIS log.|This change can improve overall server performance.<br/><br/>To restore the old behavior, you can add the following setting to your web.config file to opt out of the new behavior.<br/><br/>`<appSettings>`<br/>&nbsp;&nbsp;&nbsp;`<add key="aspnet:RequestQueueLimitPerSession" value="2147483647"/>`<br/>`</appSettings>` | Edge |
 
+## <a name="WCF" /> Windows Communication Foundation
 
-Using tables in your content
----
-You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and then separating each column with a pipe |:
+| Feature  |Change  |Impact | Scope | 
+---------|---------|---------|-----|
+| WCF message security | Apps running under the .NET Framework 4.7 or later are able to use TLS 1.1 and TLS 1.2 in WCF message security through application configuration settings. This is an opt-in feature; by default, support for TLS 1.1 and TLS 1.2 in WCF message security are disabled. | The default behavior of WCF message security remains unchanged. <br/><br/> To enable support for TLS 1.1 and TLS 1.2, add the following configuration setting to the [runtime](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the `app.config` or `web.config` file:  <br/><br/>`<runtime>` <br/> &nbsp;&nbsp;&nbsp;`<AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols=false;`<br/>&nbsp;&nbsp;&nbsp;`Switch.System.Net.DontEnableSchUseStrongCrypto=false" />`<br/>`</runtime>` | Edge |         
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+## <a name="WPF" /> Windows Presentation Foundation (WPF)  
 
-You can also include inline Markdown format syntax such as links, bold, italics, or strike through:
-
-| Name | Description          |
-| ------------- | ----------- |
-| Help      | ~~Display the~~ help window.|
-| Close     | _Closes_ a window     |
-
-You can have more formatting control by including colons : within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-
-A colon on the **left-most** side indicates a left-aligned column; a colon on the **right-most** side indicates a right-aligned column; a colon on **both** sides indicates a center-aligned column.
-
-
-HTML
----
-You can use a subset of HTML within your content. 
-A full list of our supported tags and attributes can be found [here](https://github.com/github/markup/tree/master#html-sanitization)
-
-
-  
+| Feature | Change | Impact | Scope |
+|---|---|---|---|
+| The <xref:System.Windows.Controls.Grid> control's space allocation to star-columns | Starting with apps that target the .NET Framework 4.7, WPF replaces the algorithm that the <xref:System.Windows.Controls.Grid> control uses to allocate space to \*-columns.md) | For applications that target the versions of the .NET Framework starting with the .NET Framework 4.7, this change affects the actual width assigned to \*-columns in a number of cases. If this change is undesirable, the previous algorithm can continue to be applied by adding a entry to the application configuration file. For more information, see [Mitigation: Grid Control's Space Allocation to Star-columns](../../../docs/framework/migration-guide/mitigation-grid-control.md). | Minor |
+| <xref:System.Windows.Media.ImageSourceConverter.ConvertFrom%2A> | In applications that target the .NET Framework 4.6.2 and earlier versions, an error in the exception handling code for the <xref:System.Windows.Media.ImageSourceConverter.ConvertFrom%2A> method caused a [NullReferenceException](assetId:///T:System.NullReferenceException] to be thrown instead of the intended exception (such as a [DirectoryNotFoundException](assetId:///T:System.IO.DirectoryNotFoundException) or a [FileNotFoundException](assetId:///T:System.IO.FileNotFoundException).<br/><br/>Starting with apps that target the .NET Framework 4.7, the correct exception is thrown.  | Applications that target the .NET Framework 4.7 and that depend on handling a [NullReferenceException](assetId:///T:System.NullReferenceException) can restore the previous behavior by adding the following to the configuration setting to the [runtime](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the `app.config` file: <br/><br/>`<runtime>`<br/>&nbsp;&nbsp;&nbsp;`<AppContextSwitchOverrides value="Switch.System.Windows.Media.ImageSourceConverter.OverrideExceptionWithNullReferenceException=true"/>`<br/>`</runtime>`| Edge | 
+| Opt-in support for a `WM_POINTER`-based touch/stylus stack | Starting with apps that target the .NET Framework 4.7, WPF adds support for an optional `WM_POINTER-based touch.  | This is an opt-in feature that is available on Windows systems starting with Windows 10 Creators Update. WPF apps that do not explicitly opt in to pointer-based touch/stylus support are unaffected. For more information, see [Mitigation: Pointer-based Touch and Stylus Support](../Topic/Mitigation:%20Pointer-based%20Touch%20and%20Stylus%20Support.md). | Edge |
+| [PrintQueue](assetId:///T:System.Printing.PrintQueue) class | Starting with the .NET Framework 4.7, WPF printing APIs using [PrintQueue](assetId:///T:System.Printing.PrintQueue) by default call the Windows Print Document Package API instead of the now-deprecated XPS Print API.<br/><br/>The old printing stack continues to work as before on older Windows versions. | Neither users nor developers should see any changes in behavior or API usage. <br/><br/>To use the old stack in Windows 10 Creators Update, set the `UseXpsOMPrinting` `REG_DWORD` value of the `HKEY_CURRENT_USER\Software\Microsoft.NETFramework\Windows Presentation Foundation\Printing` registry key to 1. | Edge | 
+## See also
+[Application Compatibility in the .NET Framework 4.7](Application%20Compatibility%20in%20the%20.NET%20Framework%204.7.md)

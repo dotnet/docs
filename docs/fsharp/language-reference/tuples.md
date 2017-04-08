@@ -64,15 +64,15 @@ Generally, it is better to use pattern matching to access individual tuple eleme
 ## Using Tuples
 Tuples provide a convenient way to return multiple values from a function, as shown in the following example. This example performs integer division and returns the rounded result of the operation as a first member of a tuple pair and the remainder as a second member of the pair.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/using-tuples.fsx#L1-L4)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fs#L83-L86)]
 
 Tuples can also be used as function arguments when you want to avoid the implicit currying of function arguments that is implied by the usual function syntax.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/using-tuples.fsx#L6)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fs#L88)]
 
 The usual syntax for defining the function `let sum a b = a + b` enables you to define a function that is the partial application of the first argument of the function, as shown in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/using-tuples.fsx#L8-L12)]
+[!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/basic-examples.fs#L90-L94)]
 
 Using a tuple as the parameter disables currying. For more information, see "Partial Application of Arguments" in [Functions](functions/index.md).
 
@@ -83,14 +83,58 @@ When you write out the name of a type that is a tuple, you use the `*` symbol to
 int * float * string
 ```
 
-## Compiled Form of Tuples
-If you are only using tuples from F# and not exposing them to other languages, and if you are not targeting a version of the .NET Framework that preceded version 4, you can ignore this section.
+## Interoperation with C# and VB.NET Tuples
+
+C# 7 and VB.NET 15 introduced tuples to their respective languages.  Tuples in both C# and VB.NET are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C# and VB.NET code which uses tuples, you must use struct tuples.
+
+This is quite easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
+
+```csharp
+namespace TupleInterop
+{
+    public static class Example
+    {
+        public static (int newX, int newY) AddOneToXAndY((int x, int y)) =>
+            (x + 1, y + 1);
+    }
+}
+```
+
+In your F# code, you can then pass a struct tuple as the parameter and cosume the result as a struct tuple.
+
+```fsharp
+open TupleInterop
+
+let struct(newX, newY) = Example.AddOneToXAndY(struct(1, 2))
+// newX is now 2, and newY is now 3
+```
+
+The same is true for VB.NET tuples:
+
+```vb
+' TODO - write this shit proper yo
+Public Function (Int newX, Int newY) AddOneToXAndYFromVB((Int x, Int y)) Begin
+        (x + 1, y + 1)
+End
+```
+
+And the F# code is virtually the same:
+
+```fsharp
+open TupleInterop
+
+let struct(newX, newY) = Example.AddOneToXAndYFromVB(struct(1, 2))
+// newX is now 2, and newY is now 3
+```
+
+## Compiled Form of Reference Tuples
+This section explains the form of tuples when they're compiled.  The information here isn't necessary to read unless you are targeting .NET Framework 3.5 or lower.
 
 Tuples are compiled into objects of one of several generic types, all named `System.Tuple`, that are overloaded on the arity, or number of type parameters. Tuple types appear in this form when you view them from another language, such as C# or Visual Basic, or when you are using a tool that is not aware of F# constructs. The `Tuple` types were introduced in .NET Framework 4. If you are targeting an earlier version of the .NET Framework, the compiler uses versions of [System.Tuple](https://msdn.microsoft.com/library/5ac7953d-acdc-4a58-bfb7-c1f6406c0fa3) from the 2.0 version of the F# Core Library. The types in this library are used only for applications that target the 2.0, 3.0, and 3.5 versions of the .NET Framework. Type forwarding is used to ensure binary compatibility between .NET Framework 2.0 and .NET Framework 4 F# components.
 
-### Struct Tuple Compiled Form
+### Compiled Form of Struct Tuples
 
-blurb
+Struct tuples (e.g., `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the `System.ValueTuple` type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../tuples.md) and VB.NET 15 Tuples, and interoperate bidirectionally.
 
 ## See Also
 [F# Language Reference](index.md)

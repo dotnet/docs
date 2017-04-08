@@ -77,6 +77,9 @@ let d = snd (1, 2)
 //
 let third (_, _, c) = c
 
+//
+// Using Tuples section
+//
 let divRem a b =
    let x = a / b
    let y = a % b
